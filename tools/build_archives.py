@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Build MUGEN 1.1-compatible SFFv1 and SNDv1 archives for Eida."""
+"""Build MUGEN 1.1-compatible SFFv2 and SND archives for Eida."""
 
 from __future__ import annotations
 
-import io
 import struct
-import tempfile
 from pathlib import Path
 
 from PIL import Image
@@ -47,7 +45,7 @@ SPRITES = [
 ]
 
 
-def png_to_pcx(path: Path) -> tuple[bytes, int, int]:
+def png_to_indexed(path: Path) -> tuple[bytes, bytes, int, int, int, int]:
     rgba = Image.open(path).convert("RGBA")
     alpha = rgba.getchannel("A")
     rgb = rgba.convert("RGB")
@@ -55,14 +53,13 @@ def png_to_pcx(path: Path) -> tuple[bytes, int, int]:
     source = quant.tobytes()
     mask = alpha.tobytes()
     indices = bytes(0 if a < 128 else value + 1 for value, a in zip(source, mask))
-    pal = quant.getpalette()[: 255 * 3]
-    palette = [0, 0, 0] + pal
-    palette.extend([0] * (768 - len(palette)))
-    indexed = Image.frombytes("P", rgba.size, indices)
-    indexed.putpalette(palette)
-    stream = io.BytesIO()
-    indexed.save(stream, format="PCX")
-    return stream.getvalue(), rgba.width // 2, max(0, rgba.height - 2)
+    rgb_palette = quant.getpalette()[: 255 * 3]
+    palette = bytearray((0, 0, 0, 0))
+    for i in range(255):
+        base = i * 3
+        palette.extend(rgb_palette[base : base + 3])
+        palette.append(255)
+    return indices, bytes(palette), rgba.width, rgba.height, rgba.width // 2, max(0, rgba.height - 2)
 
 
 def build_sff(destination: Path) -> None:
@@ -70,43 +67,77 @@ def build_sff(destination: Path) -> None:
     for group, number, path in SPRITES:
         if not path.exists():
             raise FileNotFoundError(path)
-        pcx, axis_x, axis_y = png_to_pcx(path)
+        pixels, palette, width, height, axis_x, axis_y = png_to_indexed(path)
         if group in (8000, 9000):
             axis_x = axis_y = 0
-        records.append((group, number, axis_x, axis_y, pcx))
+        records.append((group, number, width, height, axis_x, axis_y, pixels, palette))
 
-    offset = 512
-    chunks = []
-    for index, (group, number, axis_x, axis_y, pcx) in enumerate(records):
-        next_offset = 0 if index == len(records) - 1 else offset + 32 + len(pcx)
-        header = struct.pack(
-            "<IIhhHHHBB12s",
-            next_offset,
-            len(pcx),
-            axis_x,
-            axis_y,
-            group,
-            number,
-            0,
-            0,
-            0,
-            b"\0" * 12,
+    # SFF v2.0.1.0, matching the working Code.sff supplied by the user.
+    # Each sprite has its own 256-color RGBA palette and uses raw indexed data
+    # (format 0), avoiding the PCX decoding differences of legacy MUGEN builds.
+    palette_header_offset = 512
+    sprite_header_offset = palette_header_offset + len(records) * 16
+    ldata_offset = sprite_header_offset + len(records) * 28
+
+    palette_headers = []
+    sprite_headers = []
+    data_chunks = []
+    data_offset = 0
+    for index, (group, number, width, height, axis_x, axis_y, pixels, palette) in enumerate(records):
+        palette_offset = data_offset
+        data_chunks.append(palette)
+        data_offset += len(palette)
+        pixel_offset = data_offset
+        data_chunks.append(pixels)
+        data_offset += len(pixels)
+
+        palette_headers.append(
+            struct.pack("<HHHHII", 1, index + 1, 256, 0, palette_offset, len(palette))
         )
-        chunks.append(header + pcx)
-        offset = next_offset
+        sprite_headers.append(
+            struct.pack(
+                "<HHHHhhHBBIIHH",
+                group,
+                number,
+                width,
+                height,
+                axis_x,
+                axis_y,
+                0,       # no linked sprite
+                0,       # raw indexed pixels
+                8,       # 8-bit color depth
+                pixel_offset,
+                len(pixels),
+                index,   # palette table index
+                0,       # local-data flag
+            )
+        )
 
-    groups = len({group for group, *_ in records})
     header = bytearray(512)
     header[:12] = b"ElecbyteSpr\0"
-    # SFF v1 stores the version as four individual bytes (high to low), not
-    # as a little-endian integer.  Ikemen accepts the reversed form, while
-    # Elecbyte MUGEN 1.1 can abort while loading it.
-    header[12:16] = bytes((1, 0, 0, 0))
-    struct.pack_into("<IIII", header, 16, groups, len(records), 512, 32)
-    header[32] = 0
+    header[12:16] = bytes((0, 1, 0, 2))
+    header[24:28] = bytes((0, 1, 0, 2))
+    struct.pack_into(
+        "<IIIIIIII",
+        header,
+        36,
+        sprite_header_offset,
+        len(records),
+        palette_header_offset,
+        len(records),
+        ldata_offset,
+        data_offset,
+        ldata_offset + data_offset,
+        0,
+    )
     comment = b"Eida TBV for Jump Force MUGEN 1.1"
-    header[36 : 36 + len(comment)] = comment
-    destination.write_bytes(bytes(header) + b"".join(chunks))
+    header[76 : 76 + len(comment)] = comment
+    destination.write_bytes(
+        bytes(header)
+        + b"".join(palette_headers)
+        + b"".join(sprite_headers)
+        + b"".join(data_chunks)
+    )
 
 
 def build_snd(destination: Path) -> None:
@@ -143,10 +174,8 @@ def build_snd(destination: Path) -> None:
 
     header = bytearray(512)
     header[:12] = b"ElecbyteSnd\0"
-    # As with SFF, SND's version is four literal bytes.  Writing two uint16
-    # values reverses each pair and produces an invalid legacy header.
-    header[12:16] = bytes((1, 0, 0, 0))
-    struct.pack_into("<II", header, 16, len(records), 512)
+    # Match the version fields used by the working Code.snd reference.
+    struct.pack_into("<HHII", header, 12, 1, 1, len(records), 512)
     comment = b"Eida TBV Japanese voice and original SFX"
     header[24 : 24 + len(comment)] = comment
     destination.write_bytes(bytes(header) + b"".join(chunks))

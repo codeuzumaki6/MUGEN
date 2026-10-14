@@ -10,9 +10,6 @@ import struct
 import wave
 from pathlib import Path
 
-from PIL import Image
-
-
 ROOT = Path("/workspace/MUGEN/Eida")
 errors: list[str] = []
 notes: list[str] = []
@@ -27,27 +24,58 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
     data = path.read_bytes()
     check(data[:12] == b"ElecbyteSpr\0", "Eida.sff: invalid signature")
     check(len(data) >= 512, "Eida.sff: truncated header")
-    check(data[12:16] == bytes((1, 0, 0, 0)), "Eida.sff: invalid SFF v1 version bytes")
-    count, first = struct.unpack_from("<II", data, 20)
-    offset = first
+    check(data[12:16] == bytes((0, 1, 0, 2)), "Eida.sff: expected SFF v2.0.1.0")
+    (
+        sprite_headers,
+        count,
+        palette_headers,
+        palette_count,
+        ldata_offset,
+        ldata_size,
+        tdata_offset,
+        tdata_size,
+    ) = struct.unpack_from("<IIIIIIII", data, 36)
+    check(sprite_headers + count * 28 <= len(data), "Eida.sff: sprite header table outside file")
+    check(palette_headers + palette_count * 16 <= len(data), "Eida.sff: palette header table outside file")
+    check(ldata_offset + ldata_size <= len(data), "Eida.sff: local data outside file")
+    check(tdata_offset + tdata_size <= len(data), "Eida.sff: translated data outside file")
+
+    palettes: list[tuple[int, int]] = []
+    for index in range(palette_count):
+        group, number, colors, link, offset, size = struct.unpack_from(
+            "<HHHHII", data, palette_headers + index * 16
+        )
+        check(colors == 256, f"Eida.sff: palette {index} does not have 256 colors")
+        check(size == 1024, f"Eida.sff: palette {index} is not 256-color RGBA")
+        check(offset + size <= ldata_size, f"Eida.sff: palette {index} data outside local block")
+        palettes.append((group, number))
+
     sprites: set[tuple[int, int]] = set()
     for index in range(count):
-        check(offset + 32 <= len(data), f"Eida.sff: sprite {index} header outside file")
-        if offset + 32 > len(data):
-            break
-        next_offset, size, _, _, group, number = struct.unpack_from("<IIhhHH", data, offset)
-        payload = data[offset + 32 : offset + 32 + size]
-        check(len(payload) == size, f"Eida.sff: sprite {group},{number} truncated")
-        check(len(payload) >= 4 and payload[3] == 8, f"Eida.sff: sprite {group},{number} is not 8-bit PCX")
-        try:
-            Image.open(io.BytesIO(payload)).verify()
-        except Exception as exc:
-            errors.append(f"Eida.sff: sprite {group},{number} PCX invalid: {exc}")
+        (
+            group,
+            number,
+            width,
+            height,
+            axis_x,
+            axis_y,
+            link,
+            image_format,
+            color_depth,
+            offset,
+            size,
+            palette_index,
+            flags,
+        ) = struct.unpack_from("<HHHHhhHBBIIHH", data, sprite_headers + index * 28)
+        check(width > 0 and height > 0, f"Eida.sff: sprite {group},{number} has invalid dimensions")
+        check(image_format == 0, f"Eida.sff: sprite {group},{number} is not raw format 0")
+        check(color_depth == 8, f"Eida.sff: sprite {group},{number} is not 8-bit indexed")
+        check(flags == 0, f"Eida.sff: sprite {group},{number} is not in local data")
+        check(size == width * height, f"Eida.sff: sprite {group},{number} raw size mismatch")
+        check(offset + size <= ldata_size, f"Eida.sff: sprite {group},{number} data outside local block")
+        check(palette_index < palette_count, f"Eida.sff: sprite {group},{number} palette index outside table")
         check((group, number) not in sprites, f"Eida.sff: duplicate sprite {group},{number}")
         sprites.add((group, number))
-        if index < count - 1:
-            check(next_offset > offset, f"Eida.sff: sprite {group},{number} has invalid next offset")
-            offset = next_offset
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites
 
@@ -55,7 +83,7 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
 def parse_snd(path: Path) -> set[tuple[int, int]]:
     data = path.read_bytes()
     check(data[:12] == b"ElecbyteSnd\0", "Eida.snd: invalid signature")
-    check(data[12:16] == bytes((1, 0, 0, 0)), "Eida.snd: invalid SND v1 version bytes")
+    check(data[12:16] == bytes((1, 0, 1, 0)), "Eida.snd: invalid SND version fields")
     count, offset = struct.unpack_from("<II", data, 16)
     sounds: set[tuple[int, int]] = set()
     for index in range(count):
@@ -185,7 +213,7 @@ def main() -> None:
         ref = (int(match.group(1)), int(match.group(2)))
         check(ref in sounds, f"Eida.cns: references missing sound {ref[0]},{ref[1]}")
 
-    notes.append(f"SFF: {len(sprites)} sprites, all PCX payloads decoded")
+    notes.append(f"SFF v2.0.1.0: {len(sprites)} raw indexed sprites and palettes validated")
     notes.append(f"SND: {len(sounds)} mono PCM sounds, all WAV payloads decoded")
     notes.append(f"AIR: {len(actions)} actions; idle uses {len(idle_refs)} idle-only frames")
     notes.append(f"CNS: {len(all_states)} states across Eida.cns and common1.cns")

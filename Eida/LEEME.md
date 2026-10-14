@@ -2,7 +2,7 @@
 
 Personaje para MUGEN 1.1 / Jump Force MUGEN V14. Daemon funciona como `Helper` independiente y ejecuta los ataques físicos principales.
 
-Esta revisión incluye la corrección de compatibilidad para MUGEN 1.1 de los encabezados binarios SFF v1 y SND v1. Sustituye por completo cualquier carpeta `Eida` instalada desde el ZIP anterior.
+Esta revisión reconstruye los sprites como SFF v2.0.1.0 nativo, el mismo formato del personaje Code suministrado como referencia. Sustituye por completo cualquier carpeta `Eida` instalada desde un ZIP anterior.
 
 ## Instalación
 
@@ -38,7 +38,7 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 
 ## Validación realizada
 
-- `Eida.sff`: 91 sprites PCX de 8 bits decodificados correctamente.
+- `Eida.sff`: 91 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0.
 - `Eida.snd`: 14 entradas WAV mono PCM de 16 bits decodificadas correctamente.
 - `Eida.air`: 83 acciones; todas las referencias `(grupo, índice)` existen en el SFF.
 - `Eida.cns` y `common1.cns`: 83 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
