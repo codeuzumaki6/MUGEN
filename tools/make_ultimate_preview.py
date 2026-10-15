@@ -62,6 +62,13 @@ def stage_frame(eida: Image.Image, kfm: Image.Image, enemy_life=1000, power=3000
     return canvas
 
 
+def emblem(canvas: Image.Image, logo: Image.Image, x: int, y: int, size: int, opacity: int = 210):
+    sprite = logo.resize((size, size), Image.Resampling.LANCZOS)
+    alpha = sprite.getchannel("A").point(lambda value: value * opacity // 255)
+    sprite.putalpha(alpha)
+    canvas.alpha_composite(sprite, (x - size // 2, y - size // 2))
+
+
 def button_prompt(canvas: Image.Image, pulse: float):
     draw = ImageDraw.Draw(canvas, "RGBA")
     radius = round(12 + pulse * 2)
@@ -102,6 +109,7 @@ def main():
     kfm_hit = kfm_sff.image(5000, 20)[0]
     eida_idle = [load("eida", f"idle_{i}") for i in range(6)]
     eida_power = [load("eida_extra", f"power_{i}") for i in range(4)]
+    logo = Image.open(ROOT / "Eida/assets/effects/senrigan_logo.png").convert("RGBA")
     panels = [Image.open(PANEL_DIR / f"panel_{i}.png").convert("RGBA") for i in range(4)]
     frames: list[Image.Image] = []
     durations: list[int] = []
@@ -116,6 +124,9 @@ def main():
     # Activation: power is consumed, Eida casts and the super pause darkens the fight.
     for i in range(10):
         canvas = stage_frame(eida_power[min(3, i // 3)], kfm_idle, power=max(0, 3000 - (i + 1) * 300))
+        emblem(canvas, logo, 66, 142, 92 + i * 4, 175)
+        # Keep Eida in front of the emblem, matching the in-game Explod layer.
+        place(canvas, eida_power[min(3, i // 3)], 66, 190)
         dark = Image.new("RGBA", (W, H), (2, 5, 25, 95 + i * 10))
         canvas = Image.alpha_composite(canvas, dark)
         draw = ImageDraw.Draw(canvas, "RGBA")

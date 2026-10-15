@@ -18,6 +18,11 @@ command = /s
 time = 1
 
 [Command]
+name = "Despertar"
+command = s
+time = 1
+
+[Command]
 name = "DaemonRapido"
 command = ~D,DF,F,a
 time = 18
@@ -39,13 +44,13 @@ time = 18
 
 [Command]
 name = "Senrigan"
-command = ~D,DF,F,c
-time = 18
+command = ~DB,z
+time = 10
 
 [Command]
-name = "DefensaDaemon"
-command = ~D,DB,B,c
-time = 18
+name = "ParryDaemon"
+command = ~DB,y
+time = 10
 
 [Command]
 name = "FF"
@@ -149,6 +154,16 @@ triggerall = statetype != A
 triggerall = numhelper = 0
 trigger1 = ctrl
 
+[State -1, Despertar Eida]
+type = ChangeState
+value = 4000
+triggerall = AILevel = 0
+triggerall = command = "Despertar"
+triggerall = power >= 3000
+triggerall = Var(40) = 0
+triggerall = statetype != A
+trigger1 = ctrl
+
 [State -1, Carga]
 type = ChangeState
 value = 500
@@ -157,6 +172,47 @@ triggerall = command = "Carga"
 triggerall = power < 3000
 triggerall = statetype != A
 trigger1 = ctrl
+
+[State -1, Despertar ataque]
+type = ChangeState
+value = 4003
+triggerall = AILevel = 0
+triggerall = Var(40) = 1
+triggerall = ctrl
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+
+[State -1, Despertar salto]
+type = ChangeState
+value = 40
+triggerall = AILevel = 0
+triggerall = Var(40) = 1
+triggerall = ctrl
+trigger1 = command = "holdup"
+
+[State -1, Despertar agacharse]
+type = ChangeState
+value = 10
+triggerall = AILevel = 0
+triggerall = Var(40) = 1
+triggerall = ctrl
+trigger1 = command = "holddown"
+
+[State -1, Despertar avance]
+type = ChangeState
+value = 4002
+triggerall = AILevel = 0
+triggerall = Var(40) = 1
+triggerall = ctrl
+trigger1 = command = "holdfwd"
+
+[State -1, Regresar a postura despierta]
+type = ChangeState
+value = 4001
+triggerall = Var(40) = 1
+triggerall = ctrl
+trigger1 = StateNo = 0
 
 [State -1, Daemon rapido]
 type = ChangeState
@@ -198,16 +254,18 @@ type = ChangeState
 value = 1200
 triggerall = AILevel = 0
 triggerall = command = "Senrigan"
+triggerall = power >= 1000
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Defensa combinada]
+[State -1, Parry Daemon dos segundos]
 type = ChangeState
-value = 1300
+value = 1350
 triggerall = AILevel = 0
-triggerall = command = "DefensaDaemon"
+triggerall = command = "ParryDaemon"
+triggerall = power >= 1000
 triggerall = statetype != A
-triggerall = numhelper(1301) = 0
+triggerall = numhelper(1351) = 0
 trigger1 = ctrl
 
 [State -1, Ataque ligero]

@@ -45,6 +45,8 @@ SPRITES = [
     *sequence(310, "eida_extra/jump_{index}.png", 4),
     *sequence(320, "eida_extra/land_{index}.png", 4),
     *sequence(330, "eida_extra/power_{index}.png", 4),
+    *sequence(4000, "eida_awaken/awaken_{index:02d}.png", 16),
+    (8100, 0, ASSETS / "effects/senrigan_logo.png"),
     *sequence(8000, "cinematic/panel_{index}.png", 4),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
     (9000, 1, ASSETS / "portrait/portrait_big.png"),
@@ -76,6 +78,8 @@ def build_sff(destination: Path) -> None:
         pixels, palette, width, height, axis_x, axis_y = png_to_indexed(path)
         if group in (8000, 9000):
             axis_x = axis_y = 0
+        elif group == 8100:
+            axis_x, axis_y = width // 2, height // 2
         records.append((group, number, width, height, axis_x, axis_y, pixels, palette))
 
     # SFF v2.0.1.0, matching the working Code.sff supplied by the user.

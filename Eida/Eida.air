@@ -364,6 +364,18 @@ Clsn2Default: 1
 230,1,0,0,6
 230,2,0,0,6
 
+; Daemon's two-second parry stance. The broad Clsn1 catches incoming attacks.
+[Begin Action 1350]
+Clsn2Default: 1
+ Clsn2[0] = -22,-72,22,0
+Clsn1Default: 1
+ Clsn1[0] = -25,-82,48,4
+Loopstart
+1000,12,0,0,6
+1000,13,0,0,6
+1000,14,0,0,6
+1000,15,0,0,6
+
 [Begin Action 3000]
 Clsn2Default: 1
  Clsn2[0] = -15,-70,15,0
@@ -371,6 +383,44 @@ Clsn1Default: 1
  Clsn1[0] = -320,-240,320,0
 330,1,0,0,10
 330,2,0,0,10
+
+; Eida Awakening: transformation, flowing idle, burst movement and attack.
+[Begin Action 4000]
+Clsn2Default: 1
+ Clsn2[0] = -22,-92,22,0
+4000,0,0,0,8
+4000,1,0,0,8
+4000,2,0,0,8
+4000,3,0,0,10
+
+[Begin Action 4001]
+Clsn2Default: 1
+ Clsn2[0] = -24,-94,24,0
+Loopstart
+4000,4,0,0,6
+4000,5,0,0,6
+4000,6,0,0,6
+4000,7,0,0,6
+
+[Begin Action 4002]
+Clsn2Default: 1
+ Clsn2[0] = -28,-75,30,0
+4000,8,0,0,4
+4000,9,0,0,4
+4000,10,0,0,4
+4000,11,0,0,5
+
+[Begin Action 4003]
+Clsn2Default: 1
+ Clsn2[0] = -25,-94,25,0
+4000,12,0,0,5
+4000,13,0,0,5
+Clsn1: 1
+ Clsn1[0] = 10,-88,95,-18
+4000,14,0,0,7
+Clsn1: 1
+ Clsn1[0] = 12,-82,115,-15
+4000,15,0,0,9
 
 [Begin Action 8000]
 8000,0,0,0,-1
@@ -380,6 +430,10 @@ Clsn1Default: 1
 8000,2,0,0,-1
 [Begin Action 8003]
 8000,3,0,0,-1
+
+; Senrigan emblem supplied by the user. Positioned by Explod controllers.
+[Begin Action 8100]
+8100,0,0,0,-1
 
 ; Required hit reactions use Eida's own recovered frames.
 [Begin Action 5000]

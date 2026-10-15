@@ -57,6 +57,49 @@ type = AngleDraw
 trigger1 = 1
 scale = 1,1
 
+[State -2, Awakening timer]
+type = VarAdd
+trigger1 = Var(40) = 1
+trigger1 = Var(41) > 0
+trigger1 = RoundState = 2
+v = 41
+value = -1
+
+[State -2, End Awakening]
+type = VarSet
+trigger1 = Var(40) = 1
+trigger1 = Var(41) <= 0
+v = 40
+value = 0
+
+[State -2, Awakening attack boost]
+type = AttackMulSet
+trigger1 = Var(40) = 1
+value = 1.25
+
+[State -2, Normal attack multiplier]
+type = AttackMulSet
+trigger1 = Var(40) = 0
+value = 1
+
+[State -2, Awakening defence boost]
+type = DefenceMulSet
+trigger1 = Var(40) = 1
+value = 1.15
+
+[State -2, Normal defence multiplier]
+type = DefenceMulSet
+trigger1 = Var(40) = 0
+value = 1
+
+[State -2, Awakening tint]
+type = PalFX
+trigger1 = Var(40) = 1
+time = 2
+add = 0,12,28
+mul = 225,245,256
+sinadd = 0,12,28,12
+
 ; Compatibility sink for the dash spark helper requested by Code's proven
 ; common movement states. Eida uses no borrowed visual effect here.
 [Statedef 105]
@@ -102,7 +145,7 @@ value = S0,1
 channel = 0
 
 ; ---------------------------------------------------------------------------
-; Power charge (physical LB maps to internal Start / s in the supplied cfg)
+; Power charge (hold physical Start/Pause, internal s in the supplied cfg)
 
 [Statedef 500]
 type = S
@@ -141,6 +184,130 @@ ctrl = 1
 type = ChangeState
 trigger1 = command != "Carga"
 value = 0
+ctrl = 1
+
+; ---------------------------------------------------------------------------
+; Eida Awakening — press Start/Pause again at three full power bars.
+
+[Statedef 4000]
+type = S
+movetype = I
+physics = S
+anim = 4000
+ctrl = 0
+velset = 0,0
+poweradd = -3000
+sprpriority = 3
+
+[State 4000, Enable Awakening]
+type = VarSet
+trigger1 = Time = 0
+v = 40
+value = 1
+
+[State 4000, Fifteen second timer]
+type = VarSet
+trigger1 = Time = 0
+v = 41
+value = 900
+
+[State 4000, Super pause]
+type = SuperPause
+trigger1 = Time = 0
+time = 16
+movetime = 16
+anim = -1
+sound = -1
+darken = 1
+
+[State 4000, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,1
+channel = 0
+
+[State 4000, Senrigan emblem]
+type = Explod
+trigger1 = Time = 0
+anim = 8100
+ID = 8104
+pos = 0,-48
+postype = P1
+bindtime = -1
+removetime = 36
+scale = .72,.72
+sprpriority = -2
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+
+[State 4000, Enter awakened stance]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4001
+ctrl = 1
+
+[Statedef 4001]
+type = S
+movetype = I
+physics = S
+anim = 4001
+ctrl = 1
+velset = 0,0
+sprpriority = 3
+
+[State 4001, Expired]
+type = ChangeState
+trigger1 = Var(40) = 0
+value = 0
+ctrl = 1
+
+[Statedef 4002]
+type = S
+movetype = I
+physics = N
+anim = 4002
+ctrl = 0
+velset = 5.5,0
+sprpriority = 3
+
+[State 4002, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = IfElse(Var(40) = 1,4001,0)
+ctrl = 1
+
+[Statedef 4003]
+type = S
+movetype = A
+physics = S
+anim = 4003
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 4003, Awakened strike]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 70,10
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 10,12
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,2
+guardsound = S1,0
+ground.velocity = -7,-4
+air.velocity = -6,-5
+fall = 1
+
+[State 4003, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = IfElse(Var(40) = 1,4001,0)
 ctrl = 1
 
 ; ---------------------------------------------------------------------------
@@ -634,12 +801,55 @@ physics = S
 anim = 1200
 ctrl = 0
 velset = 0,0
+poweradd = -1000
 
 [State 1200, Voice]
 type = PlaySnd
 trigger1 = Time = 0
 value = S0,1
 channel = 0
+
+[State 1200, Senrigan emblem small pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 8100
+ID = 8100
+pos = 0,-38
+postype = P1
+bindtime = -1
+removetime = 12
+scale = .36,.36
+sprpriority = -2
+ownpal = 1
+removeongethit = 1
+
+[State 1200, Senrigan emblem medium pulse]
+type = Explod
+trigger1 = Time = 12
+anim = 8100
+ID = 8101
+pos = 0,-38
+postype = P1
+bindtime = -1
+removetime = 12
+scale = .43,.43
+sprpriority = -2
+ownpal = 1
+removeongethit = 1
+
+[State 1200, Senrigan emblem large pulse]
+type = Explod
+trigger1 = Time = 24
+anim = 8100
+ID = 8102
+pos = 0,-38
+postype = P1
+bindtime = -1
+removetime = 31
+scale = .5,.5
+sprpriority = -2
+ownpal = 1
+removeongethit = 1
 
 [State 1200, Eye tint]
 type = PalFX
@@ -672,17 +882,24 @@ anim = 230
 ctrl = 0
 velset = 0,0
 
-[State 1201, Counter Daemon]
-type = Helper
-trigger1 = Time = 0
-helpertype = Normal
-name = "Daemon Senrigan counter"
-ID = 1202
-stateno = 1202
-pos = P2BodyDist X - 24,0
-postype = P1
-facing = 1
-ownpal = 1
+[State 1201, Eida Senrigan counter damage]
+type = TargetLifeAdd
+trigger1 = Time = 10
+value = -90
+kill = 1
+absolute = 1
+
+[State 1201, Eida Senrigan counter launch]
+type = TargetVelSet
+trigger1 = Time = 10
+x = -5
+y = -4
+
+[State 1201, Eida Senrigan counter sound]
+type = PlaySnd
+trigger1 = Time = 10
+value = S1,2
+channel = 5
 
 [State 1201, End]
 type = ChangeState
@@ -818,6 +1035,160 @@ type = DestroySelf
 trigger1 = Time >= 18
 
 ; ---------------------------------------------------------------------------
+; Daemon parry jutsu — down-back + Xbox RB. Costs one power bar and is active
+; for 120 ticks (two seconds). Daemon disappears when the window closes.
+
+[Statedef 1350]
+type = S
+movetype = I
+physics = S
+anim = 1300
+ctrl = 0
+velset = 0,0
+poweradd = -1000
+
+[State 1350, Reset confirmation]
+type = VarSet
+trigger1 = Time = 0
+v = 30
+value = 0
+
+[State 1350, Daemon parry helper]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon two second parry"
+ID = 1351
+stateno = 1351
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1350, Eida protected by Daemon]
+type = NotHitBy
+trigger1 = Time = [0,119]
+value = SCA, NA, SA, HA, NP, SP, HP
+time = 2
+
+[State 1350, End after counter]
+type = ChangeState
+trigger1 = Var(30) = 1
+trigger1 = NumHelper(1351) = 0
+value = 0
+ctrl = 1
+
+[State 1350, End on whiff]
+type = ChangeState
+trigger1 = Time >= 120
+value = 0
+ctrl = 1
+
+[Statedef 1351]
+type = S
+movetype = A
+physics = N
+anim = 1350
+ctrl = 0
+velset = 0,0
+sprpriority = 4
+
+[State 1351, Catch incoming hit]
+type = ReversalDef
+trigger1 = Time = [1,119]
+reversal.attr = SCA, NA, SA, HA, NP, SP, HP
+pausetime = 10,14
+sparkno = -1
+hitsound = S1,1
+p1stateno = 1352
+p2stateno = 1355
+
+[State 1351, Expire]
+type = DestroySelf
+trigger1 = Time >= 120
+
+[Statedef 1352]
+type = S
+movetype = A
+physics = N
+anim = 1010
+ctrl = 0
+velset = 7,0
+sprpriority = 5
+
+[State 1352, Confirm parry]
+type = ParentVarSet
+trigger1 = Time = 0
+v = 30
+value = 1
+
+[State 1352, Bind captured rival]
+type = TargetBind
+trigger1 = Time = [0,9]
+pos = 38,-4
+
+[State 1352, Unblockable counter damage]
+type = TargetLifeAdd
+trigger1 = Time = 10
+value = -140
+kill = 1
+absolute = 1
+
+[State 1352, Counter sound]
+type = PlaySnd
+trigger1 = Time = 10
+value = S1,1
+channel = 5
+
+[State 1352, Launch rival]
+type = TargetVelSet
+trigger1 = Time = 10
+x = -7
+y = -5
+
+[State 1352, Counter shake]
+type = EnvShake
+trigger1 = Time = 10
+time = 14
+freq = 95
+ampl = -5
+
+[State 1352, Finish]
+type = DestroySelf
+trigger1 = Time >= 24
+
+[Statedef 1355]
+type = S
+movetype = H
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State 1355, Forced hit reaction]
+type = ChangeAnim
+trigger1 = Time = 0
+value = 5002
+
+[State 1355, No blocking]
+type = AssertSpecial
+trigger1 = 1
+flag = nostandguard
+flag2 = nocrouchguard
+flag3 = noairguard
+
+[State 1355, Hold for counter]
+type = VelSet
+trigger1 = Time < 10
+x = 0
+y = 0
+
+[State 1355, Release as fall]
+type = SelfState
+trigger1 = Time >= 22
+value = 5050
+ctrl = 0
+
+; ---------------------------------------------------------------------------
 ; Omnipotence — gameplay adaptation of the manga event.
 
 [Statedef 3000]
@@ -835,6 +1206,21 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S0,2
 channel = 0
+
+[State 3000, Senrigan emblem]
+type = Explod
+trigger1 = Time = 0
+anim = 8100
+ID = 8103
+pos = 0,-40
+postype = P1
+bindtime = -1
+removetime = 18
+scale = .62,.62
+sprpriority = -2
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
 
 [State 3000, Soundscape]
 type = PlaySnd
