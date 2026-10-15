@@ -1,309 +1,467 @@
+; Physical Xbox controls are documented in CONTROLES_XBOX.md.
 [Remap]
-x = x
-y = y
-z = z
 a = a
 b = b
 c = c
+x = x
+y = y
+z = z
 s = s
 
 [Command]
 name = "Omnipotencia"
 command = x
-time = 1
+time = 20
+buffer.time = 3
 
 [Command]
 name = "Carga"
 command = /s
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "Despertar"
-command = /$D,s
-time = 10
+command = /D,s
+time = 20
+buffer.time = 3
 
+; X: carrera y dos golpes
 [Command]
 name = "DaemonRapido"
 command = ~D,DF,F,a
-time = 18
+time = 20
+buffer.time = 3
 
+[Command]
+name = "DaemonRapido"
+command = /DF,a
+time = 20
+buffer.time = 3
+
+; X: rafaga de cinco golpes
 [Command]
 name = "DaemonCombo"
 command = ~D,DB,B,a
-time = 18
+time = 20
+buffer.time = 3
 
+[Command]
+name = "DaemonCombo"
+command = /DB,a
+time = 20
+buffer.time = 3
+
+; X: patada ascendente
+[Command]
+name = "DaemonEleva"
+command = /D,a
+time = 20
+buffer.time = 3
+
+; Y: patada de empuje
 [Command]
 name = "DaemonPatadas"
 command = ~D,DF,F,b
-time = 18
+time = 20
+buffer.time = 3
 
 [Command]
-name = "Encantamiento"
+name = "DaemonPatadas"
+command = /DF,b
+time = 20
+buffer.time = 3
+
+; Y: observacion y contraataque
+[Command]
+name = "Senrigan"
 command = ~D,DB,B,b
-time = 18
+time = 20
+buffer.time = 3
 
 [Command]
 name = "Senrigan"
-command = ~D,DB,B,z
-time = 18
+command = /DB,b
+time = 20
+buffer.time = 3
+
+; Y: corazon rasante
+[Command]
+name = "Encantamiento"
+command = /D,b
+time = 20
+buffer.time = 3
+
+; B: barrido bajo
+[Command]
+name = "DaemonBarrido"
+command = ~D,DF,F,c
+time = 20
+buffer.time = 3
 
 [Command]
+name = "DaemonBarrido"
+command = /DF,c
+time = 20
+buffer.time = 3
+
+; B: corazon antiaereo
+[Command]
+name = "EncantoArco"
+command = ~D,DB,B,c
+time = 20
+buffer.time = 3
+
+[Command]
+name = "EncantoArco"
+command = /DB,c
+time = 20
+buffer.time = 3
+
+; B: defensa corta y contraataque
+[Command]
+name = "DefensaDaemon"
+command = /D,c
+time = 20
+buffer.time = 3
+
+; RB: parry de dos segundos
+[Command]
 name = "ParryDaemon"
-command = ~D,DB,B,y
-time = 18
+command = y
+time = 20
+buffer.time = 3
+
+; RT: asalto de seis impactos
+[Command]
+name = "AsaltoDoble"
+command = z
+time = 20
+buffer.time = 3
 
 [Command]
 name = "FF"
 command = F,F
-time = 10
+time = 20
+buffer.time = 3
 
 [Command]
 name = "BB"
 command = B,B
-time = 10
+time = 20
+buffer.time = 3
 
 [Command]
 name = "recovery"
-command = x+y
-time = 1
+command = a+b
+time = 20
+buffer.time = 3
 
 [Command]
 name = "a"
 command = a
-time = 15
+time = 20
+buffer.time = 1
 
 [Command]
 name = "b"
 command = b
-time = 15
+time = 20
+buffer.time = 1
 
 [Command]
 name = "c"
 command = c
-time = 15
+time = 20
+buffer.time = 1
 
 [Command]
 name = "x"
 command = x
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "y"
 command = y
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "z"
 command = z
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "s"
 command = s
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "holdfwd"
 command = /$F
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "holdback"
 command = /$B
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "holdup"
 command = /$U
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "holddown"
 command = /$D
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "up"
 command = $U
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "down"
 command = $D
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "fwd"
 command = $F
-time = 1
+time = 20
+buffer.time = 1
 
 [Command]
 name = "back"
 command = $B
-time = 1
+time = 20
+buffer.time = 1
 
 [Statedef -1]
 
-[State -1, Omnipotencia]
+[State -1, Omnipotencia physical Xbox A]
 type = ChangeState
 value = 3000
-triggerall = AILevel = 0
 triggerall = command = "Omnipotencia"
 triggerall = power >= 3000
 triggerall = statetype != A
-triggerall = numhelper = 0
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1101) = 0
 trigger1 = ctrl
 
-[State -1, Despertar Eida]
+[State -1, Despertar abajo y pausa]
 type = ChangeState
 value = 4000
-triggerall = AILevel = 0
 triggerall = command = "Despertar"
 triggerall = power >= 3000
 triggerall = Var(40) = 0
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Carga]
+[State -1, X: carrera y dos golpes]
+type = ChangeState
+value = 1000
+triggerall = command = "DaemonRapido"
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, X: rafaga de cinco golpes]
+type = ChangeState
+value = 1010
+triggerall = command = "DaemonCombo"
+triggerall = power >= 750
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, X: patada ascendente]
+type = ChangeState
+value = 1020
+triggerall = command = "DaemonEleva"
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, Y: patada de empuje]
+type = ChangeState
+value = 1030
+triggerall = command = "DaemonPatadas"
+triggerall = power >= 750
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, Y: observacion y contraataque]
+type = ChangeState
+value = 1200
+triggerall = command = "Senrigan"
+triggerall = power >= 1000
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+
+[State -1, Y: corazon rasante]
+type = ChangeState
+value = 1100
+triggerall = command = "Encantamiento"
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = NumHelper(1101) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, B: barrido bajo]
+type = ChangeState
+value = 1050
+triggerall = command = "DaemonBarrido"
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, B: corazon antiaereo]
+type = ChangeState
+value = 1120
+triggerall = command = "EncantoArco"
+triggerall = power >= 750
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = NumHelper(1101) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, B: defensa corta y contraataque]
+type = ChangeState
+value = 1300
+triggerall = command = "DefensaDaemon"
+triggerall = power >= 500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl
+
+[State -1, RB: parry de dos segundos]
+type = ChangeState
+value = 1350
+triggerall = command = "ParryDaemon"
+triggerall = power >= 1000
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+
+[State -1, RT: asalto de seis impactos]
+type = ChangeState
+value = 1060
+triggerall = command = "AsaltoDoble"
+triggerall = power >= 1500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+trigger1 = ctrl
+trigger2 = StateNo = [200,202]
+trigger2 = MoveHit
+
+[State -1, Carga pausa]
 type = ChangeState
 value = 500
-triggerall = AILevel = 0
 triggerall = command = "Carga"
 triggerall = power < 3000
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Despertar ataque]
-type = ChangeState
-value = 4003
-triggerall = AILevel = 0
-triggerall = Var(40) = 1
-triggerall = ctrl
-trigger1 = command = "a"
-trigger2 = command = "b"
-trigger3 = command = "c"
-
-[State -1, Despertar salto]
-type = ChangeState
-value = 40
-triggerall = AILevel = 0
-triggerall = Var(40) = 1
-triggerall = ctrl
-trigger1 = command = "holdup"
-
-[State -1, Despertar agacharse]
-type = ChangeState
-value = 10
-triggerall = AILevel = 0
-triggerall = Var(40) = 1
-triggerall = ctrl
-trigger1 = command = "holddown"
-
-[State -1, Despertar avance]
-type = ChangeState
-value = 4002
-triggerall = AILevel = 0
-triggerall = Var(40) = 1
-triggerall = ctrl
-trigger1 = command = "holdfwd"
-
-[State -1, Regresar a postura despierta]
-type = ChangeState
-value = 4001
-triggerall = Var(40) = 1
-triggerall = ctrl
-trigger1 = StateNo = 0
-
-[State -1, Daemon rapido]
-type = ChangeState
-value = 1000
-triggerall = AILevel = 0
-triggerall = command = "DaemonRapido"
-triggerall = statetype != A
-triggerall = numhelper(1001) = 0
-trigger1 = ctrl
-
-[State -1, Daemon combo]
-type = ChangeState
-value = 1010
-triggerall = AILevel = 0
-triggerall = command = "DaemonCombo"
-triggerall = statetype != A
-triggerall = numhelper(1011) = 0
-trigger1 = ctrl
-
-[State -1, Daemon patadas]
-type = ChangeState
-value = 1030
-triggerall = AILevel = 0
-triggerall = command = "DaemonPatadas"
-triggerall = statetype != A
-triggerall = numhelper(1031) = 0
-trigger1 = ctrl
-
-[State -1, Encantamiento]
-type = ChangeState
-value = 1100
-triggerall = AILevel = 0
-triggerall = command = "Encantamiento"
-triggerall = statetype != A
-trigger1 = ctrl
-
-[State -1, Senrigan]
-type = ChangeState
-value = 1200
-triggerall = AILevel = 0
-triggerall = command = "Senrigan"
-triggerall = power >= 1000
-triggerall = statetype != A
-trigger1 = ctrl
-
-[State -1, Parry Daemon dos segundos]
-type = ChangeState
-value = 1350
-triggerall = AILevel = 0
-triggerall = command = "ParryDaemon"
-triggerall = power >= 1000
-triggerall = statetype != A
-triggerall = numhelper(1351) = 0
-trigger1 = ctrl
-
-[State -1, Ataque ligero]
+[State -1, Normal a]
 type = ChangeState
 value = 200
-triggerall = AILevel = 0
 triggerall = command = "a"
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Ataque fuerte]
+[State -1, Normal b]
 type = ChangeState
 value = 210
-triggerall = AILevel = 0
 triggerall = command = "b"
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Ataque bajo]
+[State -1, Normal c]
 type = ChangeState
 value = 220
-triggerall = AILevel = 0
 triggerall = command = "c"
 triggerall = statetype != A
 trigger1 = ctrl
 
-[State -1, Ataque aereo ligero]
+[State -1, Aerial a]
 type = ChangeState
 value = 600
-triggerall = AILevel = 0
 triggerall = command = "a"
 triggerall = statetype = A
 trigger1 = ctrl
 
-[State -1, Ataque aereo fuerte]
+[State -1, Aerial b]
 type = ChangeState
 value = 610
-triggerall = AILevel = 0
 triggerall = command = "b"
+triggerall = statetype = A
+trigger1 = ctrl
+
+[State -1, Aerial c]
+type = ChangeState
+value = 620
+triggerall = command = "c"
 triggerall = statetype = A
 trigger1 = ctrl

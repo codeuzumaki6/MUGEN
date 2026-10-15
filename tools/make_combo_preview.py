@@ -102,6 +102,20 @@ class Sff2:
         raw = self.data[block + offset : block + offset + size]
         if fmt == 4:
             pixels = lz5_decode(raw[4:], width * height)
+        elif fmt == 2:
+            output = bytearray()
+            i = 4
+            while i < len(raw):
+                value = raw[i]
+                i += 1
+                if value & 0xC0 == 0x40:
+                    output.extend([raw[i]] * (value & 0x3F))
+                    i += 1
+                else:
+                    output.append(value)
+            if len(output) != width * height:
+                raise ValueError("Invalid RLE8 size")
+            pixels = bytes(output)
         elif fmt == 0:
             pixels = raw
         else:

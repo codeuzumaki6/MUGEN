@@ -1,0 +1,1213 @@
+; Daemon emerges beside Eida. All offensive helpers share ID 1001.
+; They run across the stage, have hurtboxes, and expire on a miss.
+
+[Statedef 1000]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -500
+
+[State 1000, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 0
+
+[State 1000, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1000, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon DaemonRapido"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1000, Recovery]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 1010]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -750
+
+[State 1010, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 1
+
+[State 1010, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1010, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon DaemonCombo"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1010, Recovery]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 1020]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -500
+
+[State 1020, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 2
+
+[State 1020, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1020, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon DaemonEleva"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1020, Recovery]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 1030]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -750
+
+[State 1030, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 3
+
+[State 1030, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1030, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon DaemonPatadas"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1030, Recovery]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 1050]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -500
+
+[State 1050, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 4
+
+[State 1050, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1050, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon DaemonBarrido"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1050, Recovery]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 1060]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+poweradd = -1500
+
+[State 1060, Variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 5
+
+[State 1060, Call]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1060, Summon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon AsaltoDoble"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+facing = 1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1060, Recovery]
+type = ChangeState
+trigger1 = Time >= 36
+value = 0
+ctrl = 1
+
+[Statedef 1500]
+type = S
+movetype = I
+physics = N
+anim = 1030
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1500, Store requested attack]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = Parent,Var(45)
+
+[State 1500, Emergence sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,8
+channel = 2
+
+[State 1500, Emergence flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8420
+pos = 0,-23
+postype = P1
+removetime = -2
+scale = .27,.27
+sprpriority = -1
+ownpal = 1
+trans = Add
+
+[State 1500, Fade in]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 64+Time*32,256-Time*32
+
+[State 1500, Dash]
+type = ChangeState
+trigger1 = Time >= 6
+value = 1501
+
+[Statedef 1501]
+type = S
+movetype = I
+physics = N
+anim = 1510
+ctrl = 0
+velset = 6.8,0
+sprpriority = 3
+
+[State 1501, Whoosh]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,0
+channel = 1
+
+[State 1501, Dash trail]
+type = Explod
+trigger1 = Time % 7 = 0
+anim = 8410
+pos = -5,-3
+postype = P1
+removetime = -2
+scale = .22,.22
+sprpriority = -1
+ownpal = 1
+trans = Add
+
+[State 1501, Attack when in reach]
+type = ChangeState
+triggerall = P2Dist X >= -8
+trigger1 = P2Dist X <= 34
+value = 1520+Var(45)
+
+[State 1501, Finite dash distance]
+type = ChangeState
+trigger1 = Time >= 46
+trigger2 = FrontEdgeDist < -12
+trigger3 = P2Dist X < -35
+value = 1590
+
+[Statedef 1520]
+type = S
+movetype = A
+physics = N
+anim = 1520
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1520, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1520, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 23,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1520, Follow connected target 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = [0,2]
+x = 1.1
+
+[State 1520, Stop after follow 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = 3
+x = 0
+
+[State 1520, Swing 2]
+type = PlaySnd
+trigger1 = Animelem = 3
+value = S1,0
+channel = 1
+
+[State 1520, Hit 2]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 35,3
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,6
+guardsound = S1,9
+ground.type = High
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -3.8,0
+air.hittime = 24
+air.velocity = -3.8,0
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1520, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1521]
+type = S
+movetype = A
+physics = N
+anim = 1521
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1521, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1521, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 18,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1521, Follow connected target 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = [0,2]
+x = 1.1
+
+[State 1521, Stop after follow 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = 3
+x = 0
+
+[State 1521, Swing 2]
+type = PlaySnd
+trigger1 = Animelem = 3
+value = S1,0
+channel = 1
+
+[State 1521, Hit 2]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 18,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,6
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1521, Follow connected target 2]
+type = VelSet
+trigger1 = AnimelemTime(3) = [0,2]
+x = 1.1
+
+[State 1521, Stop after follow 2]
+type = VelSet
+trigger1 = AnimelemTime(3) = 3
+x = 0
+
+[State 1521, Swing 3]
+type = PlaySnd
+trigger1 = Animelem = 5
+value = S1,0
+channel = 1
+
+[State 1521, Hit 3]
+type = HitDef
+trigger1 = Animelem = 5
+attr = S, SA
+damage = 20,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1521, Follow connected target 3]
+type = VelSet
+trigger1 = AnimelemTime(5) = [0,2]
+x = 1.1
+
+[State 1521, Stop after follow 3]
+type = VelSet
+trigger1 = AnimelemTime(5) = 3
+x = 0
+
+[State 1521, Swing 4]
+type = PlaySnd
+trigger1 = Animelem = 6
+value = S1,0
+channel = 1
+
+[State 1521, Hit 4]
+type = HitDef
+trigger1 = Animelem = 6
+attr = S, SA
+damage = 20,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,6
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1521, Follow connected target 4]
+type = VelSet
+trigger1 = AnimelemTime(6) = [0,2]
+x = 1.1
+
+[State 1521, Stop after follow 4]
+type = VelSet
+trigger1 = AnimelemTime(6) = 3
+x = 0
+
+[State 1521, Swing 5]
+type = PlaySnd
+trigger1 = Animelem = 8
+value = S1,0
+channel = 1
+
+[State 1521, Hit 5]
+type = HitDef
+trigger1 = Animelem = 8
+attr = S, SA
+damage = 36,4
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -4.6,-3
+air.hittime = 24
+air.velocity = -4.6,-3
+fall = 1
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1521, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1522]
+type = S
+movetype = A
+physics = N
+anim = 1522
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1522, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1522, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 68,7
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -2.5,-8
+air.hittime = 24
+air.velocity = -2.5,-8
+fall = 1
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1522, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1523]
+type = S
+movetype = A
+physics = N
+anim = 1523
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1523, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1523, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 48,5
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1523, Follow connected target 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = [0,2]
+x = 1.1
+
+[State 1523, Stop after follow 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = 3
+x = 0
+
+[State 1523, Swing 2]
+type = PlaySnd
+trigger1 = Animelem = 3
+value = S1,0
+channel = 1
+
+[State 1523, Hit 2]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 56,6
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -8,-3.5
+air.hittime = 24
+air.velocity = -8,-3.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1523, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1524]
+type = C
+movetype = A
+physics = N
+anim = 1524
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1524, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1524, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = C, SA
+damage = 62,6
+animtype = Heavy
+guardflag = L
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,7
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -3,-3
+air.hittime = 24
+air.velocity = -3,-3
+fall = 1
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1524, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1525]
+type = S
+movetype = A
+physics = N
+anim = 1525
+ctrl = 0
+velset = 0,0
+sprpriority = 3
+
+[State 1525, Swing 1]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+channel = 1
+
+[State 1525, Hit 1]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 20,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1525, Follow connected target 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = [0,2]
+x = 1.1
+
+[State 1525, Stop after follow 1]
+type = VelSet
+trigger1 = AnimelemTime(2) = 3
+x = 0
+
+[State 1525, Swing 2]
+type = PlaySnd
+trigger1 = Animelem = 3
+value = S1,0
+channel = 1
+
+[State 1525, Hit 2]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 20,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,6
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1525, Follow connected target 2]
+type = VelSet
+trigger1 = AnimelemTime(3) = [0,2]
+x = 1.1
+
+[State 1525, Stop after follow 2]
+type = VelSet
+trigger1 = AnimelemTime(3) = 3
+x = 0
+
+[State 1525, Swing 3]
+type = PlaySnd
+trigger1 = Animelem = 5
+value = S1,0
+channel = 1
+
+[State 1525, Hit 3]
+type = HitDef
+trigger1 = Animelem = 5
+attr = S, SA
+damage = 22,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1525, Follow connected target 3]
+type = VelSet
+trigger1 = AnimelemTime(5) = [0,2]
+x = 1.1
+
+[State 1525, Stop after follow 3]
+type = VelSet
+trigger1 = AnimelemTime(5) = 3
+x = 0
+
+[State 1525, Swing 4]
+type = PlaySnd
+trigger1 = Animelem = 6
+value = S1,0
+channel = 1
+
+[State 1525, Hit 4]
+type = HitDef
+trigger1 = Animelem = 6
+attr = S, SA
+damage = 22,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,6
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1525, Follow connected target 4]
+type = VelSet
+trigger1 = AnimelemTime(6) = [0,2]
+x = 1.1
+
+[State 1525, Stop after follow 4]
+type = VelSet
+trigger1 = AnimelemTime(6) = 3
+x = 0
+
+[State 1525, Swing 5]
+type = PlaySnd
+trigger1 = Animelem = 8
+value = S1,0
+channel = 1
+
+[State 1525, Hit 5]
+type = HitDef
+trigger1 = Animelem = 8
+attr = S, SA
+damage = 24,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 18
+ground.slidetime = 14
+ground.velocity = -0.8,0
+air.hittime = 24
+air.velocity = -0.8,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1525, Follow connected target 5]
+type = VelSet
+trigger1 = AnimelemTime(8) = [0,2]
+x = 1.1
+
+[State 1525, Stop after follow 5]
+type = VelSet
+trigger1 = AnimelemTime(8) = 3
+x = 0
+
+[State 1525, Swing 6]
+type = PlaySnd
+trigger1 = Animelem = 9
+value = S1,0
+channel = 1
+
+[State 1525, Hit 6]
+type = HitDef
+trigger1 = Animelem = 9
+attr = S, SA
+damage = 62,6
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = S8400
+guard.sparkno = -1
+sparkxy = 0,-30
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 22
+ground.slidetime = 14
+ground.velocity = -7,-5
+air.hittime = 24
+air.velocity = -7,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,0
+givepower = 16,8
+envshake.time = 7
+envshake.ampl = -3
+
+[State 1525, Fade out]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1590
+
+[Statedef 1590]
+type = S
+movetype = I
+physics = N
+anim = 1030
+ctrl = 0
+velset = 0,0
+
+[State 1590, Vanish sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,8
+channel = 2
+
+[State 1590, Fade]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 256-Time*32,Time*32
+
+[State 1590, Gone]
+type = DestroySelf
+trigger1 = Time >= 8
+
+; Aura follows Eida's existing sprite and uses additive blue color mixing.
+[Statedef 8301]
+type = S
+movetype = I
+physics = N
+anim = 8300
+ctrl = 0
+velset = 0,0
+sprpriority = -2
+
+[State 8301, Follow]
+type = BindToRoot
+trigger1 = 1
+pos = 0,0
+time = 1
+ignorehitpause = 1
+
+[State 8301, Natural scale]
+type = AngleDraw
+trigger1 = 1
+scale = .46,.50
+ignorehitpause = 1
+
+[State 8301, Cyan blue]
+type = PalFX
+trigger1 = 1
+time = 1
+mul = 35,140,256
+ignorehitpause = 1
+
+[State 8301, Glow]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 170,256
+ignorehitpause = 1
+
+[State 8301, No shadow]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 8301, Energy hum]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,4
+channel = 6
+loop = 1
+volume = -160
+
+[State 8301, Stop hum]
+type = StopSnd
+trigger1 = Root,Var(40) = 0
+trigger2 = RoundState != 2
+channel = 6
+
+[State 8301, Off]
+type = DestroySelf
+trigger1 = Root,Var(40) = 0
+trigger2 = RoundState != 2
+ignorehitpause = 1

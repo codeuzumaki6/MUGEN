@@ -8,9 +8,10 @@ import io
 import re
 import struct
 import wave
+import sys
 from pathlib import Path
 
-ROOT = Path("/workspace/MUGEN/Eida")
+ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parents[1] / 'Eida'
 errors: list[str] = []
 notes: list[str] = []
 
@@ -75,6 +76,8 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
         check(offset + size <= ldata_size, f"Eida.sff: sprite {group},{number} data outside local block")
         check(palette_index < palette_count, f"Eida.sff: sprite {group},{number} palette index outside table")
         check((group, number) not in sprites, f"Eida.sff: duplicate sprite {group},{number}")
+        if group == 1000:
+            check(height <= 51, f'Eida.sff: Daemon {number} exceeds child helper scale')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites
@@ -179,7 +182,7 @@ def main() -> None:
     check(re.search(r'(?is)name\s*=\s*"Omnipotencia".*?command\s*=\s*x', cmd_text) is not None, "Eida.cmd: Omnipotencia is not mapped to internal x")
     check(re.search(r'(?is)name\s*=\s*"Carga".*?command\s*=\s*/s', cmd_text) is not None, "Eida.cmd: charge is not mapped to held internal s")
 
-    cns_paths = (ROOT / "Eida.cns", ROOT / "common1.cns")
+    cns_paths = (ROOT / "Eida.cns", ROOT / "Specials.cns", ROOT / "common1.cns")
     all_states: set[int] = set()
     parsed_sections = []
     for path in cns_paths:
@@ -187,9 +190,12 @@ def main() -> None:
         for header, body in sections(text):
             match = re.match(r"\[Statedef\s+(-?\d+)\]", header, re.I)
             if match:
-                all_states.add(int(match.group(1)))
+                state_number = int(match.group(1))
+                check(state_number not in all_states or path.name == 'common1.cns', f'{path.name}: duplicate state {state_number}')
+                all_states.add(state_number)
             parsed_sections.append((path.name, header, body))
 
+    parsed_sections.extend(('Eida.cmd', header, body) for header,body in sections(cmd_text))
     local_refs: list[tuple[str, str, int]] = []
     for filename, header, body in parsed_sections:
         controller = (field(body, "type") or "").lower().split(";")[-1].strip()
@@ -208,15 +214,15 @@ def main() -> None:
     for filename, header, state in local_refs:
         check(state in all_states, f"{filename} {header}: references missing state {state}")
 
-    eida_cns = (ROOT / "Eida.cns").read_text(encoding="utf-8")
-    for match in re.finditer(r"(?im)^\s*value\s*=\s*S(\d+)\s*,\s*(\d+)\s*$", eida_cns):
+    eida_cns = '\n'.join(path.read_text(encoding='latin-1') for path in cns_paths)
+    for match in re.finditer(r"(?im)^\s*(?:value|hitsound|guardsound)\s*=\s*S(\d+)\s*,\s*(\d+)\s*$", eida_cns):
         ref = (int(match.group(1)), int(match.group(2)))
         check(ref in sounds, f"Eida.cns: references missing sound {ref[0]},{ref[1]}")
 
     notes.append(f"SFF v2.0.1.0: {len(sprites)} raw indexed sprites and palettes validated")
     notes.append(f"SND: {len(sounds)} mono PCM sounds, all WAV payloads decoded")
     notes.append(f"AIR: {len(actions)} actions; idle uses {len(idle_refs)} idle-only frames")
-    notes.append(f"CNS: {len(all_states)} states across Eida.cns and common1.cns")
+    notes.append(f"CNS: {len(all_states)} states across Eida.cns, Specials.cns and common1.cns")
     if errors:
         print("VALIDATION FAILED")
         for item in errors:

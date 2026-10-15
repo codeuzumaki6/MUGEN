@@ -1,57 +1,31 @@
 # Eida — Boruto: Two Blue Vortex
 
-Personaje para MUGEN 1.1 / Jump Force MUGEN V14. Daemon funciona como `Helper` independiente y ejecuta los ataques físicos principales.
+Carpeta para MUGEN 1.1 / Jump Force MUGEN V14. Copia `Eida` dentro de `chars/` y añade `Eida/Eida.def` en `[Characters]` de `data/select.def`. Sustituye la carpeta anterior por la nueva completa.
 
-Esta revisión reconstruye los sprites como SFF v2.0.1.0 nativo, el mismo formato del personaje Code suministrado como referencia. Sustituye por completo cualquier carpeta `Eida` instalada desde un ZIP anterior.
+Consulta **CONTROLES_XBOX.md**: incluye las nueve combinaciones con abajo/diagonales y X/Y/B, las técnicas de RB y RT, los combos normales, la carga, el despertar y la ulti con A.
 
-## Instalación
+## Cambios de esta revisión
 
-1. Copia la carpeta `Eida` dentro de `chars/`.
-2. Añade `Eida/Eida.def` a la sección `[Characters]` de `data/select.def`.
-3. Conserva todos los archivos de la carpeta; `Eida.def` referencia `Eida.sff`, `Eida.snd`, `Eida.air`, `Eida.cmd`, `Eida.cns` y `common1.cns`.
+- Aura del despertar: 13 cuadros del efecto de energía de la referencia Nezuko, con color azul y mezcla aditiva del motor. Mantiene los sprites normales de Eida y evita el arco rígido anterior.
+- Daemon: sprites reducidos al 68% del tamaño anterior, colisiones ajustadas, aparición junto a Eida, carrera con alcance limitado, ataques a corta distancia y desaparición gradual. Se puede interrumpir golpeándolo o golpeando a Eida.
+- Once técnicas con consumo de energía y entradas físicas de Xbox. Los controles se invierten de acuerdo con la orientación.
+- Cadenas normales en X, Y y B; launcher con Daemon y continuaciones aéreas.
+- Encantamiento rasante y ascendente con colisión, bloqueo, alcance finito y aturdimiento de 45 ticks.
+- Sonidos de aparición, desplazamiento, guardia, lanzamientos e impactos; chispas y polvo del combate.
+- Nuevos estados en `Specials.cns`, referenciados en `Eida.def`. Conservar ese archivo junto con los demás.
 
-## Controles verificados contra el `mugen.cfg` suministrado
+## Comprobaciones
 
-- Joystick izquierda/derecha: caminar y cambiar de orientación.
-- Joystick arriba: saltar; arriba con izquierda/derecha: salto diagonal.
-- Joystick abajo: agacharse.
-- Botones internos `a`, `b`, `c`: ataques normales; también funcionan en el aire.
-- **X físico de Xbox**: pulsa repetidamente para encadenar cuatro golpes. Los tres primeros son ataques de Eida y el cuarto llama a Daemon; el remate lanza al rival al aire y permite continuar con salto y ataque aéreo. En el `mugen.cfg` suministrado, X físico llega como el botón interno `a`.
-- Abajo, diagonal adelante, adelante + `a`: Daemon rápido.
-- Abajo, diagonal atrás, atrás + `a`: combo de Daemon.
-- Abajo, diagonal adelante, adelante + `b`: patadas de Daemon.
-- Abajo, diagonal atrás, atrás + `b`: encantamiento temporal.
-- Abajo, diagonal atrás, atrás + **RB**: parry de Daemon durante dos segundos. Consume 1000 de energía y el contraataque confirmado no se puede bloquear. En el `mugen.cfg` suministrado, RB llega como el botón interno `y`.
-- Abajo, diagonal atrás, atrás + **RT**: Senrigan y contraataque. Consume 1000 de energía. En el `mugen.cfg` suministrado, RT llega como el botón interno `z`.
-- Botón físico **A de Xbox**: Omnipotencia. En la configuración suministrada llega a MUGEN como el botón interno `x` y exige 3000 de energía.
-- Mantener **LB/Pausa**: cargar energía. En la configuración suministrada llega como el botón interno `s`/Start.
-- Con 3000 de energía, abajo + **LB/Pausa** activa el despertar durante 15 segundos.
+- SFF v2.0.1.0: 155 sprites, paletas y datos binarios validados. Retrato de combate 25×25 y retrato de selección 120×140.
+- SND: 20 muestras mono PCM de 16 bits.
+- AIR: 106 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
+- 110 estados entre `Eida.cns`, `Specials.cns` y `common1.cns`; referencias estáticas de estados y sonidos verificadas.
+- Ikemen GO nightly: 42 escenarios con entradas direccionales y botones simulados que atraviesan el CMD real, tanto mirando a derecha como a izquierda. Incluyen atajos diagonales, combos, consumo de energía, bloqueo de Encantamiento, asistencia que falla al esquivar y técnicas durante el despertar. El informe reproducible está en el repositorio (`previews/engine_moveset_checks.json`).
 
-Los comandos adelante/atrás son relativos a la orientación de Eida, como exige MUGEN.
+Las pruebas del motor usan copias temporales e instrumentación fuera de la carpeta entregada. No se pudo ejecutar el binario exacto de Jump Force MUGEN V14 del usuario ni comprobar físicamente su mando Xbox. El equilibrio frente a todo su plantel requiere partidas locales.
 
-## Implementación
+## Procedencia y límites visuales
 
-- El reposo usa exclusivamente seis cuadros de idle; no recorre ataques.
-- Los 54 cuadros originales de Eida se recortaron nuevamente desde la hoja completa para recuperar cabezas, cabello, piernas y pies que los recortes anteriores habían cortado. También se limpió la contaminación verde del fondo.
-- Se añadieron 16 cuadros nuevos basados en esos originales para giro, salto, caída, aterrizaje, encantamiento, Senrigan, carga y victoria. Ninguno se usa en el idle.
-- Daemon usa 16 poses reconstruidas a escala de combate, aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
-- Los golpes de Daemon reproducen sonido de movimiento y de impacto; los efectos se normalizaron para que sean audibles en la mezcla de Jump Force MUGEN.
-- Encantamiento lanza un corazón visible a distancia. Tiene alcance finito, puede fallar o bloquearse y aplica la inmovilización únicamente si su caja de colisión toca al rival.
-- Senrigan usa `ReversalDef` y llama a Daemon cuando detecta una agresión.
-- El despertar conserva los sprites normales de Eida y añade un aura azul animada detrás de ella; no cambia el cuerpo, diseño ni escala del personaje.
-- Omnipotencia usa únicamente recortes, escala y transiciones de las referencias originales suministradas. No se redibujaron paneles ni caras. Es una adaptación jugable de 8,5 segundos y consume toda la barra.
-- Las voces de los grupos `0,0` a `0,2` proceden de tres fragmentos femeninos aislados del MP3 japonés entregado. No se generaron voces.
+Eida conserva los sprites recuperados de los recursos del usuario y los cuadros adicionales de movimiento. Daemon usa las 16 poses reconstruidas anteriormente, ahora a escala de ayudante. Esta revisión reutiliza esos dibujos en nuevas secuencias; no agrega una hoja nueva de ilustraciones. El nivel artístico de Sumire sigue siendo la referencia de acabado y no se declara alcanzado.
 
-## Validación realizada
-
-- `Eida.sff`: 140 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0. El retrato de combate `9000,0` mide 25×25 y el retrato de selección `9000,1` mide 120×140.
-- `Eida.snd`: 17 entradas WAV mono PCM de 16 bits decodificadas correctamente.
-- `Eida.air`: 96 acciones; todas las referencias `(grupo, índice)` existen en el SFF y el idle conserva únicamente cuadros de reposo.
-- `Eida.cns` y `common1.cns`: 96 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
-- Ikemen GO nightly: esta compilación del SFF y SND cargó y completó una ronda sin errores de Eida. El salto se redujo y los 16 cuadros del despertar se normalizaron a 82 píxeles de alto para conservar la escala del personaje.
-
-## Límite visual conocido
-
-Los 54 cuadros base de Eida proceden de una captura de 600×868; los 16 adicionales se generaron tomando esos cuadros como referencia directa y se normalizaron a la misma escala. Daemon se creó como una hoja nueva a partir de las referencias del manga. La cinematografía de Omnipotencia conserva exclusivamente los paneles originales suministrados.
-
-No fue posible ejecutar el binario exacto de Jump Force MUGEN V14 del usuario. Antes de sustituir una versión instalada, prueba esta carpeta como personaje adicional y revisa escala, posición del piso, volumen y mapeo del mando en una pelea local.
+Omnipotencia conserva los paneles originales del manga. Las voces pertenecen a los fragmentos femeninos del MP3 japonés suministrado. Consulta `CREDITOS_Y_FUENTES.md`.

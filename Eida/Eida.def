@@ -13,6 +13,7 @@ cmd = Eida.cmd
 cns = Eida.cns
 stcommon = common1.cns
 st = Eida.cns
+st1 = Specials.cns
 
 [Arcade]
 intro.storyboard =

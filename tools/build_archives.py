@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import struct
+import json
 from pathlib import Path
 
 from PIL import Image
@@ -45,10 +46,12 @@ SPRITES = [
     *sequence(310, "eida_extra/jump_{index}.png", 4),
     *sequence(320, "eida_extra/land_{index}.png", 4),
     *sequence(330, "eida_extra/power_{index}.png", 4),
-    *sequence(4000, "eida_awaken/awaken_{index:02d}.png", 16),
     (8100, 0, ASSETS / "effects/senrigan_logo.png"),
     *sequence(8200, "effects/charm/heart_{index}.png", 6),
-    *sequence(8300, "effects/awakening_aura/aura_{index}.png", 6),
+    *sequence(8300, "effects/reference/8300_{index}.png", 13),
+    *sequence(8400, "effects/reference/8400_{index}.png", 4),
+    *sequence(8410, "effects/reference/8410_{index}.png", 14),
+    *sequence(8420, "effects/reference/8420_{index}.png", 6),
     *sequence(8000, "cinematic/panel_{index}.png", 4),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
     # Standard MUGEN portraits: 9000,0 is the 25x25 fight icon and 9000,1
@@ -76,6 +79,7 @@ def png_to_indexed(
     mask = alpha.tobytes()
     indices = bytes(0 if a < 128 else value + 1 for value, a in zip(source, mask))
     rgb_palette = quant.getpalette()[: 255 * 3]
+    rgb_palette += [0] * (255 * 3 - len(rgb_palette))
     palette = bytearray((0, 0, 0, 0))
     for i in range(255):
         base = i * 3
@@ -86,11 +90,13 @@ def png_to_indexed(
 
 def build_sff(destination: Path) -> None:
     records = []
+    effect_axes = json.loads((ASSETS / 'effects/reference/axes.json').read_text())
     for group, number, path in SPRITES:
         if not path.exists():
             raise FileNotFoundError(path)
         target_size = (25, 25) if (group, number) == (9000, 0) else None
-        target_height = 82 if group == 4000 else None
+        factor = .68 if group == 1000 else .11 if group == 8400 else 1
+        target_height = max(1, round(Image.open(path).height * factor)) if factor != 1 else None
         pixels, palette, width, height, axis_x, axis_y = png_to_indexed(
             path, target_size=target_size, target_height=target_height
         )
@@ -98,6 +104,8 @@ def build_sff(destination: Path) -> None:
             axis_x = axis_y = 0
         elif group in (8100, 8200):
             axis_x, axis_y = width // 2, height // 2
+        elif f'{group},{number}' in effect_axes:
+            axis_x, axis_y = (round(v * factor) for v in effect_axes[f'{group},{number}'])
         records.append((group, number, width, height, axis_x, axis_y, pixels, palette))
 
     # SFF v2.0.1.0, matching the working Code.sff supplied by the user.
@@ -183,6 +191,9 @@ def build_snd(destination: Path) -> None:
         (1, 5, ASSETS / "sound/hit_light.wav"),
         (1, 6, ASSETS / "sound/hit_medium.wav"),
         (1, 7, ASSETS / "sound/hit_launcher.wav"),
+        (1, 8, ASSETS / "sound/appear.wav"),
+        (1, 9, ASSETS / "sound/guard.wav"),
+        (1, 10, ASSETS / "sound/charm_cast.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),

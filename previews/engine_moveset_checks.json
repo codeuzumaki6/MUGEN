@@ -1,0 +1,1019 @@
+[
+  {
+    "case": {
+      "name": "DaemonRapido",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "mode": 0,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1000
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.29999542236328,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonCombo",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "mode": 1,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1010
+    ],
+    "damage": 112,
+    "spawn_distance": 20.0,
+    "travel_distance": 107.99998092651367,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonEleva",
+      "button": "a",
+      "direction": "D",
+      "state": 1020,
+      "cost": 500,
+      "mode": 2,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1020
+    ],
+    "damage": 68,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.00001525878906,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonPatadas",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "mode": 3,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1030
+    ],
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.300048828125,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Senrigan",
+      "button": "b",
+      "direction": "B",
+      "state": 1200,
+      "cost": 1000,
+      "mode": null,
+      "facing": 1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1200,
+      1201
+    ],
+    "damage": 90,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Encantamiento",
+      "button": "b",
+      "direction": "D",
+      "state": 1100,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1100
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonBarrido",
+      "button": "c",
+      "direction": "F",
+      "state": 1050,
+      "cost": 500,
+      "mode": 4,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1050
+    ],
+    "damage": 62,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.00003051757812,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoArco",
+      "button": "c",
+      "direction": "B",
+      "state": 1120,
+      "cost": 750,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1120
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DefensaDaemon",
+      "button": "c",
+      "direction": "D",
+      "state": 1300,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1300,
+      1302
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ParryDaemon",
+      "button": "y",
+      "direction": "N",
+      "state": 1350,
+      "cost": 1000,
+      "mode": null,
+      "facing": 1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      1350
+    ],
+    "damage": 140,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "AsaltoDoble",
+      "button": "z",
+      "direction": "N",
+      "state": 1060,
+      "cost": 1500,
+      "mode": 5,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      1060
+    ],
+    "damage": 170,
+    "spawn_distance": 20.0,
+    "travel_distance": 104.50011444091797,
+    "minimum_power": 1500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonRapido",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "mode": 0,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1000
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.3000259399414,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonCombo",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "mode": 1,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1010
+    ],
+    "damage": 112,
+    "spawn_distance": 20.0,
+    "travel_distance": 108.00001525878906,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonEleva",
+      "button": "a",
+      "direction": "D",
+      "state": 1020,
+      "cost": 500,
+      "mode": 2,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1020
+    ],
+    "damage": 68,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.0,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonPatadas",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "mode": 3,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1030
+    ],
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.29998779296875,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Senrigan",
+      "button": "b",
+      "direction": "B",
+      "state": 1200,
+      "cost": 1000,
+      "mode": null,
+      "facing": -1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1200,
+      1201
+    ],
+    "damage": 90,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Encantamiento",
+      "button": "b",
+      "direction": "D",
+      "state": 1100,
+      "cost": 500,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1100
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonBarrido",
+      "button": "c",
+      "direction": "F",
+      "state": 1050,
+      "cost": 500,
+      "mode": 4,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1050
+    ],
+    "damage": 62,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.00003051757812,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoArco",
+      "button": "c",
+      "direction": "B",
+      "state": 1120,
+      "cost": 750,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1120
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DefensaDaemon",
+      "button": "c",
+      "direction": "D",
+      "state": 1300,
+      "cost": 500,
+      "mode": null,
+      "facing": -1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1300,
+      1302
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ParryDaemon",
+      "button": "y",
+      "direction": "N",
+      "state": 1350,
+      "cost": 1000,
+      "mode": null,
+      "facing": -1,
+      "distance": 42,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      1350
+    ],
+    "damage": 140,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "AsaltoDoble",
+      "button": "z",
+      "direction": "N",
+      "state": 1060,
+      "cost": 1500,
+      "mode": 5,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      1060
+    ],
+    "damage": 170,
+    "spawn_distance": 20.0,
+    "travel_distance": 104.50011444091797,
+    "minimum_power": 1500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "X chain",
+      "button": "a",
+      "direction": "N",
+      "state": 203,
+      "cost": 0,
+      "mode": 2,
+      "facing": 1,
+      "distance": 40,
+      "kind": "combo"
+    },
+    "states": [
+      0,
+      200,
+      201,
+      202,
+      203
+    ],
+    "damage": 168,
+    "spawn_distance": 20.0,
+    "travel_distance": 20.0,
+    "minimum_power": 3000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Charm blocked",
+      "button": "b",
+      "direction": "D",
+      "state": 1100,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "block"
+    },
+    "states": [
+      0,
+      10,
+      1100
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Assist finite miss",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "mode": 0,
+      "facing": 1,
+      "distance": 120,
+      "kind": "miss"
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1000
+    ],
+    "damage": 0,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.29999542236328,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Insufficient energy",
+      "button": "z",
+      "direction": "N",
+      "state": 1060,
+      "cost": 1500,
+      "mode": 5,
+      "facing": 1,
+      "distance": 120,
+      "kind": "empty"
+    },
+    "states": [
+      0
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Awakening",
+      "button": "s",
+      "direction": "D",
+      "state": 4000,
+      "cost": 3000,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "aura"
+    },
+    "states": [
+      0,
+      10,
+      4000
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonRapido diagonal shortcut",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "mode": 0,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1000
+    ],
+    "damage": 58,
+    "spawn_distance": 20.000003814697266,
+    "travel_distance": 91.30000305175781,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonCombo diagonal shortcut",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "mode": 1,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1010
+    ],
+    "damage": 112,
+    "spawn_distance": 20.000003814697266,
+    "travel_distance": 101.19998931884766,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonPatadas diagonal shortcut",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "mode": 3,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1030
+    ],
+    "damage": 112,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30004119873047,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Senrigan diagonal shortcut",
+      "button": "b",
+      "direction": "B",
+      "state": 1200,
+      "cost": 1000,
+      "mode": null,
+      "facing": 1,
+      "distance": 42,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1200,
+      1201
+    ],
+    "damage": 104,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonBarrido diagonal shortcut",
+      "button": "c",
+      "direction": "F",
+      "state": 1050,
+      "cost": 500,
+      "mode": 4,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1050
+    ],
+    "damage": 90,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.0000228881836,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoArco diagonal shortcut",
+      "button": "c",
+      "direction": "B",
+      "state": 1120,
+      "cost": 750,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1120
+    ],
+    "damage": 62,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonRapido diagonal shortcut",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "mode": 0,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1000
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 104.90003204345703,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonCombo diagonal shortcut",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "mode": 1,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1010
+    ],
+    "damage": 112,
+    "spawn_distance": 20.0,
+    "travel_distance": 101.20001220703125,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonPatadas diagonal shortcut",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "mode": 3,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1030
+    ],
+    "damage": 112,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30000305175781,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Senrigan diagonal shortcut",
+      "button": "b",
+      "direction": "B",
+      "state": 1200,
+      "cost": 1000,
+      "mode": null,
+      "facing": -1,
+      "distance": 42,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1200,
+      1201
+    ],
+    "damage": 104,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "DaemonBarrido diagonal shortcut",
+      "button": "c",
+      "direction": "F",
+      "state": 1050,
+      "cost": 500,
+      "mode": 4,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1050
+    ],
+    "damage": 90,
+    "spawn_distance": 20.000003814697266,
+    "travel_distance": 88.00000762939453,
+    "minimum_power": 2500,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoArco diagonal shortcut",
+      "button": "c",
+      "direction": "B",
+      "state": 1120,
+      "cost": 750,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move",
+      "shortcut": true
+    },
+    "states": [
+      0,
+      10,
+      11,
+      1120
+    ],
+    "damage": 62,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "b normal chain",
+      "button": "b",
+      "direction": "N",
+      "state": 211,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 40,
+      "kind": "combo"
+    },
+    "states": [
+      0,
+      210,
+      211
+    ],
+    "damage": 122,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "c normal chain",
+      "button": "c",
+      "direction": "N",
+      "state": 221,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 40,
+      "kind": "combo"
+    },
+    "states": [
+      0,
+      220,
+      221
+    ],
+    "damage": 122,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "RT during awakening",
+      "button": "z",
+      "direction": "N",
+      "state": 1060,
+      "cost": 1500,
+      "mode": 5,
+      "facing": 1,
+      "distance": 120,
+      "kind": "awakened"
+    },
+    "states": [
+      0,
+      1060
+    ],
+    "damage": 170,
+    "spawn_distance": 20.0,
+    "travel_distance": 104.50011444091797,
+    "minimum_power": 1500,
+    "failures": []
+  }
+]

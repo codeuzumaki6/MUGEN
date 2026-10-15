@@ -57,6 +57,12 @@ type = AngleDraw
 trigger1 = 1
 scale = 1,1
 
+[State -2, Stop released charge]
+type = StopSnd
+triggerall = IsHelper = 0
+trigger1 = StateNo != 500
+channel = 7
+
 [State -2, Awakening timer]
 type = VarAdd
 trigger1 = Var(40) = 1
@@ -100,24 +106,42 @@ add = 0,12,28
 mul = 225,245,256
 sinadd = 0,12,28,12
 
-[State -2, Persistent blue awakening aura]
-type = Explod
+[State -2, Blue aura helper]
+type = Helper
+triggerall = IsHelper = 0
 triggerall = Var(40) = 1
-trigger1 = NumExplod(8300) = 0
-anim = 8300
-ID = 8300
+triggerall = RoundState = 2
+trigger1 = NumHelper(8301) = 0
+helpertype = Normal
+name = "Blue energy"
+ID = 8301
+stateno = 8301
 pos = 0,0
 postype = P1
-bindtime = -1
-removetime = -1
-sprpriority = -1
 ownpal = 1
-removeongethit = 0
 
-[State -2, Remove expired awakening aura]
-type = RemoveExplod
-trigger1 = Var(40) = 0
-ID = 8300
+[State -2, Dismiss interrupted Daemon]
+type = DestroySelf
+triggerall = IsHelper(1001)
+trigger1 = MoveType = H
+trigger2 = Root,MoveType = H
+trigger3 = RoundState != 2
+ignorehitpause = 1
+
+[State -2, Normal impact sparkle]
+type = Explod
+triggerall = IsHelper = 0
+triggerall = StateNo = [200,620]
+triggerall = MoveType = A
+trigger1 = MoveHit = 1
+anim = 8400
+pos = 0,-38
+postype = P2
+removetime = -2
+ownpal = 1
+sprpriority = 5
+trans = Add
+ignorehitpause = 1
 
 ; Compatibility sink for the dash spark helper requested by Code's proven
 ; common movement states. Eida uses no borrowed visual effect here.
@@ -178,7 +202,8 @@ velset = 0,0
 type = PlaySnd
 trigger1 = Time = 0
 value = S1,4
-channel = 5
+channel = 7
+loop = 1
 
 [State 500, Power]
 type = PowerAdd
@@ -246,25 +271,10 @@ trigger1 = Time = 0
 value = S0,1
 channel = 0
 
-[State 4000, Senrigan emblem]
-type = Explod
-trigger1 = Time = 0
-anim = 8100
-ID = 8104
-pos = 0,-48
-postype = P1
-bindtime = -1
-removetime = 36
-scale = .72,.72
-sprpriority = -2
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
 [State 4000, Enter awakened stance]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 4001
+value = 0
 ctrl = 1
 
 [Statedef 4001]
@@ -363,14 +373,29 @@ guardsound = S1,0
 ground.type = High
 ground.slidetime = 8
 ground.hittime = 11
-ground.velocity = -3.2
-air.velocity = -2.5,-3.0
+ground.velocity = -1.4
+air.velocity = -1.4,-3.0
 getpower = 30,15
 
-[State 200, Continue physical-X combo]
+[State 200, Reset buffered press]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+
+[State 200, Buffer next press]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "a"
+v = 25
+value = 1
+ignorehitpause = 1
+
+[State 200, Continue physical X chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "a"
+triggerall = NumHelper(1001) = 0
+trigger1 = Var(25) = 1
 value = 201
 
 [State 200, End]
@@ -413,10 +438,25 @@ ground.velocity = -2.6
 air.velocity = -2.5,-3.0
 getpower = 35,15
 
-[State 201, Continue physical-X combo]
+[State 201, Reset buffered press]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+
+[State 201, Buffer next press]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "a"
+v = 25
+value = 1
+ignorehitpause = 1
+
+[State 201, Continue physical X chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "a"
+triggerall = NumHelper(1001) = 0
+trigger1 = Var(25) = 1
 value = 202
 
 [State 201, End]
@@ -454,15 +494,30 @@ hitsound = S1,6
 guardsound = S1,0
 ground.type = High
 ground.slidetime = 11
-ground.hittime = 16
-ground.velocity = -3.0
+ground.hittime = 23
+ground.velocity = -1.5
 air.velocity = -3.0,-3.5
 getpower = 40,20
 
-[State 202, Continue to Daemon launcher]
+[State 202, Reset buffered press]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+
+[State 202, Buffer next press]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "a"
+v = 25
+value = 1
+ignorehitpause = 1
+
+[State 202, Continue physical X chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "a"
+triggerall = NumHelper(1001) = 0
+trigger1 = Var(25) = 1
 value = 203
 
 [State 202, End]
@@ -479,72 +534,36 @@ anim = 203
 ctrl = 0
 velset = 0,0
 
+[State 203, Launcher variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 2
+
 [State 203, Daemon launcher]
 type = Helper
 trigger1 = Time = 3
 helpertype = Normal
 name = "Daemon physical-X launcher"
-ID = 204
-stateno = 204
-pos = P2BodyDist X - 22,0
+ID = 1001
+stateno = 1500
+pos = 20,0
 postype = P1
 facing = 1
 ownpal = 1
+
+[State 203, Jump after confirmed launcher]
+type = ChangeState
+triggerall = NumHelper(1001) > 0
+triggerall = Helper(1001),MoveHit
+trigger1 = command = "holdup"
+value = 40
 
 [State 203, End]
 type = ChangeState
 trigger1 = Time >= 28
 value = 0
 ctrl = 1
-
-[Statedef 204]
-type = S
-movetype = A
-physics = N
-anim = 1040
-ctrl = 0
-velset = 3.0,0
-sprpriority = 4
-
-[State 204, Swing]
-type = PlaySnd
-trigger1 = Animelem = 1
-value = S1,0
-channel = 1
-
-[State 204, Launcher]
-type = HitDef
-trigger1 = Animelem = 2
-attr = S, NA
-damage = 72,8
-animtype = Up
-guardflag = MA
-hitflag = MAF
-priority = 5,Hit
-pausetime = 11,13
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,7
-guardsound = S1,0
-ground.type = High
-ground.slidetime = 12
-ground.hittime = 20
-ground.velocity = -3.5,-8.5
-air.velocity = -3.5,-8.5
-fall = 1
-fall.recover = 0
-getpower = 55,25
-
-[State 204, Launcher shake]
-type = EnvShake
-trigger1 = MoveHit = 1
-time = 12
-freq = 90
-ampl = -5
-
-[State 204, End]
-type = DestroySelf
-trigger1 = AnimTime = 0
 
 [Statedef 210]
 type = S
@@ -578,6 +597,13 @@ ground.slidetime = 12
 ground.hittime = 16
 ground.velocity = -4.8
 air.velocity = -3.6,-4.2
+
+[State 210, Chain]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "b"
+trigger1 = Time > 2
+value = 211
 
 [State 210, End]
 type = ChangeState
@@ -618,6 +644,13 @@ ground.hittime = 15
 ground.velocity = -4.0
 air.velocity = -3.0,-3.5
 
+[State 220, Chain]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "c"
+trigger1 = Time > 2
+value = 221
+
 [State 220, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -654,6 +687,13 @@ ground.hittime = 14
 ground.velocity = -3.5
 air.velocity = -3.0,-4.0
 
+[State 600, Chain]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "a"
+trigger1 = Time > 2
+value = 610
+
 [State 600, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -686,6 +726,13 @@ ground.velocity = -4.8
 air.velocity = -4.0,-5.0
 fall = 1
 
+[State 610, Chain]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "c"
+trigger1 = Time > 2
+value = 620
+
 [State 610, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -694,236 +741,6 @@ ctrl = 1
 
 ; ---------------------------------------------------------------------------
 ; Daemon: rapid strike
-
-[Statedef 1000]
-type = S
-movetype = A
-physics = S
-anim = 230
-ctrl = 0
-velset = 0,0
-
-[State 1000, Voice]
-type = PlaySnd
-trigger1 = Time = 0
-value = S0,0
-channel = 0
-
-[State 1000, Daemon]
-type = Helper
-trigger1 = Time = 4
-helpertype = Normal
-name = "Daemon rapid"
-ID = 1001
-stateno = 1001
-pos = P2BodyDist X - 24,0
-postype = P1
-facing = 1
-ownpal = 1
-
-[State 1000, End]
-type = ChangeState
-trigger1 = Time >= 34
-value = 0
-ctrl = 1
-
-[Statedef 1001]
-type = S
-movetype = A
-physics = N
-anim = 1000
-ctrl = 0
-velset = 4.6,0
-sprpriority = 3
-
-[State 1001, Daemon rush sound]
-type = PlaySnd
-trigger1 = Animelem = 1
-value = S1,0
-channel = 1
-
-[State 1001, Hit one]
-type = HitDef
-trigger1 = Animelem = 2
-attr = S, SA
-damage = 25,3
-animtype = Light
-guardflag = MA
-hitflag = MAF
-pausetime = 4,5
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,1
-ground.hittime = 10
-ground.velocity = -2.0
-
-[State 1001, Hit two]
-type = HitDef
-trigger1 = Animelem = 3
-attr = S, SA
-damage = 32,4
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-pausetime = 5,6
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,1
-ground.hittime = 12
-ground.velocity = -3.8
-air.velocity = -3,-3
-
-[State 1001, Stop]
-type = VelSet
-trigger1 = Time >= 14
-x = 0
-
-[State 1001, End]
-type = DestroySelf
-trigger1 = AnimTime = 0
-
-; Daemon combo
-[Statedef 1010]
-type = S
-movetype = A
-physics = S
-anim = 230
-ctrl = 0
-velset = 0,0
-
-[State 1010, Daemon]
-type = Helper
-trigger1 = Time = 3
-helpertype = Normal
-name = "Daemon combo"
-ID = 1011
-stateno = 1011
-pos = P2BodyDist X - 24,0
-postype = P1
-facing = 1
-ownpal = 1
-
-[State 1010, End]
-type = ChangeState
-trigger1 = Time >= 42
-value = 0
-ctrl = 1
-
-[Statedef 1011]
-type = S
-movetype = A
-physics = N
-anim = 1000
-ctrl = 0
-velset = 3.6,0
-sprpriority = 3
-
-[State 1011, Daemon combo swing]
-type = PlaySnd
-trigger1 = Animelem = 1
-trigger2 = Animelem = 3
-value = S1,0
-channel = 1
-
-[State 1011, Multi hit]
-type = HitDef
-trigger1 = Animelem = 2
-trigger2 = Animelem = 3
-attr = S, SA
-damage = 28,3
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-pausetime = 5,6
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,1
-ground.hittime = 14
-ground.velocity = -2.8
-air.velocity = -2.8,-3.2
-
-[State 1011, End]
-type = DestroySelf
-trigger1 = AnimTime = 0
-
-; Daemon kicks
-[Statedef 1030]
-type = S
-movetype = A
-physics = S
-anim = 230
-ctrl = 0
-velset = 0,0
-
-[State 1030, Daemon]
-type = Helper
-trigger1 = Time = 3
-helpertype = Normal
-name = "Daemon kicks"
-ID = 1031
-stateno = 1031
-pos = P2BodyDist X - 24,0
-postype = P1
-facing = 1
-ownpal = 1
-
-[State 1030, End]
-type = ChangeState
-trigger1 = Time >= 42
-value = 0
-ctrl = 1
-
-[Statedef 1031]
-type = S
-movetype = A
-physics = N
-anim = 1010
-ctrl = 0
-velset = 3.2,0
-sprpriority = 3
-
-[State 1031, Daemon kick swing]
-type = PlaySnd
-trigger1 = Animelem = 1
-trigger2 = Animelem = 3
-value = S1,0
-channel = 1
-
-[State 1031, Kick one]
-type = HitDef
-trigger1 = Animelem = 2
-attr = S, SA
-damage = 40,5
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-pausetime = 6,8
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,1
-ground.hittime = 14
-ground.velocity = -3.4
-
-[State 1031, Kick two]
-type = HitDef
-trigger1 = Animelem = 3
-attr = S, SA
-damage = 55,7
-animtype = Heavy
-guardflag = MA
-hitflag = MAF
-pausetime = 8,10
-sparkno = -1
-guard.sparkno = -1
-hitsound = S1,1
-ground.hittime = 18
-ground.velocity = -5.4
-air.velocity = -4.2,-4.8
-fall = 1
-
-[State 1031, End]
-type = DestroySelf
-trigger1 = AnimTime = 0
 
 ; ---------------------------------------------------------------------------
 ; Eida charm: visible, blockable projectile with finite range. The rival is
@@ -936,6 +753,7 @@ physics = S
 anim = 1100
 ctrl = 0
 velset = 0,0
+poweradd = -500
 
 [State 1100, Voice]
 type = PlaySnd
@@ -1020,6 +838,15 @@ physics = S
 ctrl = 0
 velset = 0,0
 
+[State 1105, Fall when airborne]
+type = Gravity
+trigger1 = Pos Y < 0
+
+[State 1105, Set floor]
+type = PosSet
+trigger1 = Pos Y > 0
+y = 0
+
 [State 1105, Stunned animation]
 type = ChangeAnim
 trigger1 = Time = 0
@@ -1035,8 +862,8 @@ sinadd = 30,0,45,8
 
 [State 1105, Release]
 type = SelfState
-trigger1 = Time >= 75
-value = 0
+trigger1 = Time >= 45
+value = IfElse(Pos Y < 0,50,0)
 ctrl = 1
 
 ; ---------------------------------------------------------------------------
@@ -1209,78 +1036,90 @@ physics = S
 anim = 1300
 ctrl = 0
 velset = 0,0
+poweradd = -500
 
-[State 1300, Daemon]
+[State 1300, Daemon guard]
 type = Helper
 trigger1 = Time = 0
 helpertype = Normal
-name = "Daemon guard"
+name = "Daemon close guard"
 ID = 1301
 stateno = 1301
-pos = 15,0
+pos = 17,0
 postype = P1
-facing = 1
 ownpal = 1
 
-[State 1300, Protected]
-type = NotHitBy
-trigger1 = Time = [4,46]
-value = SCA, NA, SA, HA, NP, SP, HP
-time = 2
+[State 1300, Catch contact]
+type = ReversalDef
+trigger1 = Time = [5,25]
+reversal.attr = SCA, NA, SA, HA
+pausetime = 8,10
+sparkno = S8400
+hitsound = S1,9
+p1stateno = 1302
+p2stateno = 1205
 
-[State 1300, End]
+[State 1300, Recovery]
 type = ChangeState
-trigger1 = Time >= 50
+trigger1 = Time >= 40
 value = 0
 ctrl = 1
 
 [Statedef 1301]
 type = S
-movetype = A
+movetype = I
 physics = N
 anim = 1020
 ctrl = 0
 velset = 0,0
-sprpriority = 4
+sprpriority = 3
 
-[State 1301, Reflect]
-type = ReversalDef
-trigger1 = Time = [5,30]
-reversal.attr = SCA, NA, SA, HA, NP, SP, HP
-pausetime = 8,12
-sparkno = -1
-hitsound = S1,1
-p1stateno = 1302
+[State 1301, Stay beside Eida]
+type = BindToRoot
+trigger1 = 1
+pos = 17,0
+time = 1
+
+[State 1301, Guard sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,9
+channel = 2
 
 [State 1301, End]
 type = DestroySelf
-trigger1 = AnimTime = 0
+trigger1 = Root,StateNo != 1300
 
 [Statedef 1302]
 type = S
 movetype = A
-physics = N
-anim = 1010
+physics = S
+anim = 230
 ctrl = 0
 velset = 0,0
 
-[State 1302, Counter hit]
-type = HitDef
+[State 1302, Variant]
+type = VarSet
 trigger1 = Time = 0
-attr = S, HA
-damage = 75,10
-animtype = Heavy
-hitflag = MAF
-pausetime = 8,10
-sparkno = -1
-hitsound = S1,1
-ground.velocity = -6.0
-air.velocity = -4.0,-5.0
-fall = 1
+v = 45
+value = 0
+
+[State 1302, Counter from Eida]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon guard counter"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+ownpal = 1
 
 [State 1302, End]
-type = DestroySelf
-trigger1 = Time >= 18
+type = ChangeState
+trigger1 = Time >= 26
+value = 0
+ctrl = 1
 
 ; ---------------------------------------------------------------------------
 ; Daemon parry jutsu — down-back + Xbox RB. Costs one power bar and is active
@@ -1341,6 +1180,17 @@ ctrl = 0
 velset = 0,0
 sprpriority = 4
 
+[State 1351, Stay beside Eida]
+type = BindToRoot
+trigger1 = 1
+pos = 17,0
+time = 1
+
+[State 1351, Parry sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,9
+
 [State 1351, Catch incoming hit]
 type = ReversalDef
 trigger1 = Time = [1,119]
@@ -1361,7 +1211,7 @@ movetype = A
 physics = N
 anim = 1010
 ctrl = 0
-velset = 7,0
+velset = 0,0
 sprpriority = 5
 
 [State 1352, Confirm parry]
@@ -1645,3 +1495,165 @@ type = SelfState
 trigger1 = Time >= 505
 value = 5050
 ctrl = 0
+
+[Statedef 620]
+type = A
+movetype = A
+physics = A
+anim = 610
+ctrl = 0
+
+[State 620, Air finisher]
+type = HitDef
+trigger1 = Animelem = 2
+attr = A, NA
+damage = 65,6
+animtype = Heavy
+guardflag = HA
+hitflag = MAF
+pausetime = 8,11
+sparkno = S8400
+hitsound = S1,7
+guardsound = S1,9
+ground.velocity = -5,3
+air.velocity = -5,5
+fall = 1
+
+[State 620, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 1120]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = -750
+
+[State 1120, Cast sound]
+type = PlaySnd
+trigger1 = Time = 5
+value = S1,10
+
+[State 1120, Rising heart]
+type = Helper
+trigger1 = Time = 9
+helpertype = Normal
+name = "Rising charm heart"
+ID = 1101
+stateno = 1121
+pos = 24,-36
+postype = P1
+ownpal = 1
+
+[State 1120, Recovery]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1121]
+type = A
+movetype = A
+physics = N
+anim = 1110
+ctrl = 0
+velset = 4.5,-2.3
+sprpriority = 4
+
+[State 1121, Collision]
+type = HitDef
+trigger1 = Time = 0
+attr = A, SP
+damage = 0,0
+animtype = Light
+guardflag = HA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 3,5
+sparkno = S8400
+hitsound = S1,2
+guardsound = S1,9
+ground.velocity = 0
+air.velocity = 0,0
+p2stateno = 1105
+
+[State 1121, Finite range]
+type = DestroySelf
+trigger1 = Time >= 50
+trigger2 = MoveContact
+trigger3 = FrontEdgeDist < -25
+
+[Statedef 211]
+type = S
+movetype = A
+physics = S
+anim = 202
+ctrl = 0
+velset = 1.8,0
+
+[State 211, Swing]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,0
+
+[State 211, Finish]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, NA
+damage = 62,6
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+pausetime = 8,10
+sparkno = S8400
+hitsound = S1,7
+guardsound = S1,9
+ground.velocity = -4,-6
+air.velocity = -4,-6
+fall = 1
+
+[State 211, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 221]
+type = S
+movetype = A
+physics = S
+anim = 220
+ctrl = 0
+velset = 1.8,0
+
+[State 221, Swing]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,0
+
+[State 221, Finish]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, NA
+damage = 58,6
+animtype = Heavy
+guardflag = L
+hitflag = MAF
+pausetime = 8,10
+sparkno = S8400
+hitsound = S1,7
+guardsound = S1,9
+ground.velocity = -4,-3
+air.velocity = -4,-3
+fall = 1
+
+[State 221, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

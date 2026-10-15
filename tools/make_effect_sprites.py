@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the ranged charm projectile and awakening aura sprites."""
+"""Generate the ranged charm projectile sprites. The aura uses extracted reference effects."""
 
 from __future__ import annotations
 
@@ -48,48 +48,11 @@ def make_heart(frame: int) -> Image.Image:
     return downsample(canvas, (size, size))
 
 
-def make_aura(frame: int) -> Image.Image:
-    scale = 4
-    width, height = 96, 104
-    canvas = Image.new("RGBA", (width * scale, height * scale), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(canvas)
-    phase = frame * 0.55
-    cx = width * scale // 2
-    floor = (height - 3) * scale
-
-    # Layered blue flames remain behind Eida and keep the normal sprite visible.
-    for layer, color in enumerate(((30, 90, 255, 145), (30, 205, 255, 185), (190, 250, 255, 210))):
-        inset = (8 + layer * 5) * scale
-        top = (6 + layer * 7 + math.sin(phase + layer) * 3) * scale
-        draw.ellipse((inset, top, width * scale - inset, floor), outline=color, width=(5 - layer) * scale)
-
-    for flame in range(7):
-        x = (14 + flame * 11) * scale
-        sway = math.sin(phase + flame * 0.9) * 4 * scale
-        base_y = (height - 8) * scale
-        peak_y = (18 + (flame % 3) * 11 + math.sin(phase + flame) * 6) * scale
-        half = (5 + flame % 2) * scale
-        draw.polygon(
-            ((x - half, base_y), (x - half // 2 + sway, peak_y + 17 * scale), (x + sway, peak_y),
-             (x + half // 2 + sway, peak_y + 18 * scale), (x + half, base_y)),
-            fill=(25, 145 + flame * 8, 255, 155),
-        )
-
-    glow = canvas.filter(ImageFilter.GaussianBlur(4 * scale))
-    combined = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
-    combined.alpha_composite(glow)
-    combined.alpha_composite(canvas)
-    return downsample(combined, (width, height))
-
-
 def main() -> None:
     charm_dir = ROOT / "charm"
-    aura_dir = ROOT / "awakening_aura"
     charm_dir.mkdir(parents=True, exist_ok=True)
-    aura_dir.mkdir(parents=True, exist_ok=True)
     for frame in range(6):
         make_heart(frame).save(charm_dir / f"heart_{frame}.png")
-        make_aura(frame).save(aura_dir / f"aura_{frame}.png")
 
 
 if __name__ == "__main__":
