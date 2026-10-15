@@ -49,12 +49,24 @@ SPRITES = [
     (8100, 0, ASSETS / "effects/senrigan_logo.png"),
     *sequence(8000, "cinematic/panel_{index}.png", 4),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
-    (9000, 1, ASSETS / "portrait/portrait_big.png"),
+    # Standard MUGEN portraits: 9000,0 is the 25x25 fight icon and 9000,1
+    # is the 120x140 select portrait. Use the same clean face source so the
+    # lifebar can never display the 320x240 manga reference at full size.
+    (9000, 1, ASSETS / "portrait/portrait_small.png"),
 ]
 
 
-def png_to_indexed(path: Path) -> tuple[bytes, bytes, int, int, int, int]:
+def png_to_indexed(
+    path: Path,
+    target_size: tuple[int, int] | None = None,
+    target_height: int | None = None,
+) -> tuple[bytes, bytes, int, int, int, int]:
     rgba = Image.open(path).convert("RGBA")
+    if target_size is not None:
+        rgba = rgba.resize(target_size, Image.Resampling.LANCZOS)
+    elif target_height is not None and rgba.height != target_height:
+        width = max(1, round(rgba.width * target_height / rgba.height))
+        rgba = rgba.resize((width, target_height), Image.Resampling.LANCZOS)
     alpha = rgba.getchannel("A")
     rgb = rgba.convert("RGB")
     quant = rgb.quantize(colors=255, method=Image.Quantize.MEDIANCUT)
@@ -75,7 +87,11 @@ def build_sff(destination: Path) -> None:
     for group, number, path in SPRITES:
         if not path.exists():
             raise FileNotFoundError(path)
-        pixels, palette, width, height, axis_x, axis_y = png_to_indexed(path)
+        target_size = (25, 25) if (group, number) == (9000, 0) else None
+        target_height = 82 if group == 4000 else None
+        pixels, palette, width, height, axis_x, axis_y = png_to_indexed(
+            path, target_size=target_size, target_height=target_height
+        )
         if group in (8000, 9000):
             axis_x = axis_y = 0
         elif group == 8100:

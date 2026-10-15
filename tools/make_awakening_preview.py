@@ -56,7 +56,11 @@ def main():
     kfm_hit = kfm.image(5000, 20)[0]
     normal = [load("eida", f"idle_{i}") for i in range(6)]
     charge = [load("eida_extra", f"power_{i}") for i in range(4)]
-    awakened = [Image.open(ROOT / "Eida/assets/eida_awaken" / f"awaken_{i:02d}.png").convert("RGBA") for i in range(16)]
+    awakened = []
+    for i in range(16):
+        sprite = Image.open(ROOT / "Eida/assets/eida_awaken" / f"awaken_{i:02d}.png").convert("RGBA")
+        sprite = sprite.resize((max(1, round(sprite.width * 82 / sprite.height)), 82), Image.Resampling.LANCZOS)
+        awakened.append(sprite)
     logo = Image.open(ROOT / "Eida/assets/effects/senrigan_logo.png").convert("RGBA")
     frames: list[Image.Image] = []
     durations: list[int] = []

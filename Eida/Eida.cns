@@ -34,19 +34,19 @@ walk.fwd = 2.6
 walk.back = -2.2
 run.fwd = 5.2,0
 run.back = -4.5,-3.5
-jump.neu = 0,-8.5
-jump.back = -3.0
-jump.fwd = 3.2
-runjump.back = -3.5
-runjump.fwd = 4.2
-airjump.neu = 0,-8.0
+jump.neu = 0,-6.0
+jump.back = -2.7
+jump.fwd = 2.9
+runjump.back = -3.1
+runjump.fwd = 3.6
+airjump.neu = 0,-5.8
 airjump.back = -2.8
 airjump.fwd = 2.8
 
 [Movement]
 airjump.num = 0
 airjump.height = 35
-yaccel = .48
+yaccel = .55
 stand.friction = .82
 crouch.friction = .82
 
@@ -542,6 +542,12 @@ ctrl = 0
 velset = 4.6,0
 sprpriority = 3
 
+[State 1001, Daemon rush sound]
+type = PlaySnd
+trigger1 = Animelem = 1
+value = S1,0
+channel = 1
+
 [State 1001, Hit one]
 type = HitDef
 trigger1 = Animelem = 2
@@ -618,6 +624,13 @@ ctrl = 0
 velset = 3.6,0
 sprpriority = 3
 
+[State 1011, Daemon combo swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+trigger2 = Animelem = 3
+value = S1,0
+channel = 1
+
 [State 1011, Multi hit]
 type = HitDef
 trigger1 = Animelem = 2
@@ -674,6 +687,13 @@ anim = 1010
 ctrl = 0
 velset = 3.2,0
 sprpriority = 3
+
+[State 1031, Daemon kick swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+trigger2 = Animelem = 3
+value = S1,0
+channel = 1
 
 [State 1031, Kick one]
 type = HitDef

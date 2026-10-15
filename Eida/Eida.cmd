@@ -19,8 +19,8 @@ time = 1
 
 [Command]
 name = "Despertar"
-command = s
-time = 1
+command = /$D,s
+time = 10
 
 [Command]
 name = "DaemonRapido"
@@ -44,13 +44,13 @@ time = 18
 
 [Command]
 name = "Senrigan"
-command = ~DB,z
-time = 10
+command = ~D,DB,B,z
+time = 18
 
 [Command]
 name = "ParryDaemon"
-command = ~DB,y
-time = 10
+command = ~D,DB,B,y
+time = 18
 
 [Command]
 name = "FF"

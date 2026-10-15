@@ -387,7 +387,7 @@ Clsn1Default: 1
 ; Eida Awakening: transformation, flowing idle, burst movement and attack.
 [Begin Action 4000]
 Clsn2Default: 1
- Clsn2[0] = -22,-92,22,0
+ Clsn2[0] = -18,-70,18,0
 4000,0,0,0,8
 4000,1,0,0,8
 4000,2,0,0,8
@@ -395,7 +395,7 @@ Clsn2Default: 1
 
 [Begin Action 4001]
 Clsn2Default: 1
- Clsn2[0] = -24,-94,24,0
+ Clsn2[0] = -19,-72,19,0
 Loopstart
 4000,4,0,0,6
 4000,5,0,0,6
@@ -404,7 +404,7 @@ Loopstart
 
 [Begin Action 4002]
 Clsn2Default: 1
- Clsn2[0] = -28,-75,30,0
+ Clsn2[0] = -22,-58,24,0
 4000,8,0,0,4
 4000,9,0,0,4
 4000,10,0,0,4
@@ -412,14 +412,14 @@ Clsn2Default: 1
 
 [Begin Action 4003]
 Clsn2Default: 1
- Clsn2[0] = -25,-94,25,0
+ Clsn2[0] = -20,-72,20,0
 4000,12,0,0,5
 4000,13,0,0,5
 Clsn1: 1
- Clsn1[0] = 10,-88,95,-18
+ Clsn1[0] = 8,-68,72,-14
 4000,14,0,0,7
 Clsn1: 1
- Clsn1[0] = 12,-82,115,-15
+ Clsn1[0] = 9,-63,86,-12
 4000,15,0,0,9
 
 [Begin Action 8000]

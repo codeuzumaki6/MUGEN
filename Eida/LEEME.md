@@ -20,10 +20,11 @@ Esta revisión reconstruye los sprites como SFF v2.0.1.0 nativo, el mismo format
 - Abajo, diagonal atrás, atrás + `a`: combo de Daemon.
 - Abajo, diagonal adelante, adelante + `b`: patadas de Daemon.
 - Abajo, diagonal atrás, atrás + `b`: encantamiento temporal.
-- Abajo, diagonal adelante, adelante + `c`: Senrigan y contraataque.
-- Abajo, diagonal atrás, atrás + `c`: defensa y contraataque de Daemon.
+- Abajo, diagonal atrás, atrás + **RB**: parry de Daemon durante dos segundos. Consume 1000 de energía y el contraataque confirmado no se puede bloquear. En el `mugen.cfg` suministrado, RB llega como el botón interno `y`.
+- Abajo, diagonal atrás, atrás + **RT**: Senrigan y contraataque. Consume 1000 de energía. En el `mugen.cfg` suministrado, RT llega como el botón interno `z`.
 - Botón físico **A de Xbox**: Omnipotencia. En la configuración suministrada llega a MUGEN como el botón interno `x` y exige 3000 de energía.
-- Mantener **LB**: cargar energía. En la configuración suministrada llega como el botón interno `s`/Start.
+- Mantener **LB/Pausa**: cargar energía. En la configuración suministrada llega como el botón interno `s`/Start.
+- Con 3000 de energía, abajo + **LB/Pausa** activa el despertar durante 15 segundos.
 
 Los comandos adelante/atrás son relativos a la orientación de Eida, como exige MUGEN.
 
@@ -33,6 +34,7 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 - Los 54 cuadros originales de Eida se recortaron nuevamente desde la hoja completa para recuperar cabezas, cabello, piernas y pies que los recortes anteriores habían cortado. También se limpió la contaminación verde del fondo.
 - Se añadieron 16 cuadros nuevos basados en esos originales para giro, salto, caída, aterrizaje, encantamiento, Senrigan, carga y victoria. Ninguno se usa en el idle.
 - Daemon aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
+- Los golpes de Daemon reproducen sonido de movimiento y de impacto; los efectos se normalizaron para que sean audibles en la mezcla de Jump Force MUGEN.
 - Encantamiento no causa daño: aplica una inmovilización temporal.
 - Senrigan usa `ReversalDef` y llama a Daemon cuando detecta una agresión.
 - Omnipotencia usa únicamente recortes, escala y transiciones de las referencias originales suministradas. No se redibujaron paneles ni caras. Es una adaptación jugable de 8,5 segundos y consume toda la barra.
@@ -40,11 +42,11 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 
 ## Validación realizada
 
-- `Eida.sff`: 111 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0.
+- `Eida.sff`: 128 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0. El retrato de combate `9000,0` mide 25×25 y el retrato de selección `9000,1` mide 120×140.
 - `Eida.snd`: 14 entradas WAV mono PCM de 16 bits decodificadas correctamente.
-- `Eida.air`: 84 acciones; todas las referencias `(grupo, índice)` existen en el SFF.
-- `Eida.cns` y `common1.cns`: 83 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
-- Ikemen GO nightly: el SFF v2 cargó y el personaje completó una ronda sin errores de Eida usando los cuadros corregidos y nuevos. En una copia temporal de pruebas se habilitó la IA para recorrer sus comandos; Eida terminó con 1000 de vida y redujo a Kung Fu Man de 1000 a 348. Esa modificación de IA no forma parte de la entrega.
+- `Eida.air`: 90 acciones; todas las referencias `(grupo, índice)` existen en el SFF y el idle conserva únicamente cuadros de reposo.
+- `Eida.cns` y `common1.cns`: 91 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
+- Ikemen GO nightly: esta compilación del SFF y SND cargó y completó una ronda sin errores de Eida. El salto se redujo y los 16 cuadros del despertar se normalizaron a 82 píxeles de alto para conservar la escala del personaje.
 
 ## Límite visual conocido
 
