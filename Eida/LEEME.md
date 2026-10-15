@@ -30,6 +30,7 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 ## Implementación
 
 - El reposo usa exclusivamente seis cuadros de idle; no recorre ataques.
+- Los 54 cuadros de Eida se recortaron de la hoja original suministrada y se limpió la contaminación verde del fondo sin redibujar el pixel art.
 - Daemon aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
 - Encantamiento no causa daño: aplica una inmovilización temporal.
 - Senrigan usa `ReversalDef` y llama a Daemon cuando detecta una agresión.
@@ -42,7 +43,7 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 - `Eida.snd`: 14 entradas WAV mono PCM de 16 bits decodificadas correctamente.
 - `Eida.air`: 83 acciones; todas las referencias `(grupo, índice)` existen en el SFF.
 - `Eida.cns` y `common1.cns`: 83 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
-- Ikemen GO nightly: el personaje cargó y completó rondas sin errores de Eida en modo fuera de pantalla. Una prueba automatizada de especiales redujo a Kung Fu Man de 1000 a 73 de vida; otra ejercitó salto, ataques normales y ataques aéreos; Omnipotencia capturó y dañó al rival.
+- Ikemen GO nightly: el SFF v2 cargó y el personaje completó una ronda sin errores de Eida. En una copia temporal de pruebas se habilitó la IA para recorrer sus comandos; Eida terminó con 1000 de vida y redujo a Kung Fu Man de 1000 a 350. Esa modificación de IA no forma parte de la entrega.
 
 ## Límite visual conocido
 
