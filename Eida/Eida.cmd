@@ -70,17 +70,17 @@ time = 1
 [Command]
 name = "a"
 command = a
-time = 1
+time = 15
 
 [Command]
 name = "b"
 command = b
-time = 1
+time = 15
 
 [Command]
 name = "c"
 command = c
-time = 1
+time = 15
 
 [Command]
 name = "x"

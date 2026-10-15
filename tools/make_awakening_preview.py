@@ -55,12 +55,10 @@ def main():
     kfm_idle = kfm.image(0, 0)[0]
     kfm_hit = kfm.image(5000, 20)[0]
     normal = [load("eida", f"idle_{i}") for i in range(6)]
+    walk = [load("eida", f"walk_{i}") for i in range(8)]
+    punch = [load("eida", f"punch_{i}") for i in range(6)]
     charge = [load("eida_extra", f"power_{i}") for i in range(4)]
-    awakened = []
-    for i in range(16):
-        sprite = Image.open(ROOT / "Eida/assets/eida_awaken" / f"awaken_{i:02d}.png").convert("RGBA")
-        sprite = sprite.resize((max(1, round(sprite.width * 82 / sprite.height)), 82), Image.Resampling.LANCZOS)
-        awakened.append(sprite)
+    aura = [Image.open(ROOT / "Eida/assets/effects/awakening_aura" / f"aura_{i}.png").convert("RGBA") for i in range(6)]
     logo = Image.open(ROOT / "Eida/assets/effects/senrigan_logo.png").convert("RGBA")
     frames: list[Image.Image] = []
     durations: list[int] = []
@@ -75,34 +73,36 @@ def main():
         frames.append(canvas)
         durations.append(80)
 
-    # Release and press Start once at maximum power.
+    # Release and press down + Start once at maximum power.
     for i in range(5):
         canvas = background()
         place(canvas, normal[(i // 2) % 6], 66, 190)
         place(canvas, kfm_idle, 255, 190)
         hud(canvas, power=3000)
-        center(canvas, "PULSA START: DESPERTAR", 194, (255, 232, 95, 255))
+        center(canvas, "ABAJO + START: DESPERTAR", 194, (255, 232, 95, 255))
         frames.append(canvas)
         durations.append(90)
 
-    # Four transformation keyframes, with Eida always in front of the emblem.
+    # Transformation keeps Eida's normal sprite and adds only the blue aura.
     for i in range(12):
         idx = min(3, i // 3)
         canvas = background()
         dark = Image.new("RGBA", (320, 240), (2, 7, 28, 105 + i * 5))
         canvas = Image.alpha_composite(canvas, dark)
         logo_behind(canvas, logo, 110 + i * 4, 180)
-        place(canvas, awakened[idx], 66, 190)
+        place(canvas, aura[i % 6], 66, 190)
+        place(canvas, normal[idx], 66, 190)
         place(canvas, kfm_idle, 255, 190)
         hud(canvas, power=max(0, 3000 - (idx + 1) * 750))
         center(canvas, "DESPERTAR DE EIDA", 40, (220, 247, 255, 255))
         frames.append(canvas)
         durations.append(80)
 
-    # Flowing awakened stance.
+    # Normal idle remains unchanged while the aura flows behind her.
     for i in range(12):
         canvas = background()
-        place(canvas, awakened[4 + (i // 3) % 4], 66, 190)
+        place(canvas, aura[i % 6], 66, 190)
+        place(canvas, normal[(i // 2) % 6], 66, 190)
         place(canvas, kfm_idle, 255, 190)
         hud(canvas, power=0, awakened=1 - i / 180)
         center(canvas, "ATAQUE +25%   DEFENSA +15%", 39, (170, 235, 255, 255), "small")
@@ -112,16 +112,16 @@ def main():
     # Burst movement into Eida's awakened strike.
     for i in range(8):
         canvas = background()
-        idx = 8 + min(3, i // 2)
-        place(canvas, awakened[idx], 66 + i * 14, 190)
+        place(canvas, aura[i % 6], 66 + i * 14, 190)
+        place(canvas, walk[(i // 1) % 8], 66 + i * 14, 190)
         place(canvas, kfm_idle, 255, 190)
         hud(canvas, power=0, awakened=.92)
         frames.append(canvas)
         durations.append(70)
     for i in range(10):
         canvas = background()
-        idx = 12 + min(3, i // 3)
-        place(canvas, awakened[idx], 166, 190)
+        place(canvas, aura[i % 6], 166, 190)
+        place(canvas, punch[min(5, i // 2)], 166, 190)
         place(canvas, kfm_hit if i >= 6 else kfm_idle, 257, 190)
         hud(canvas, enemy_life=915 if i >= 6 else 1000, power=0, awakened=.88)
         if i in (6, 7):
@@ -133,7 +133,8 @@ def main():
 
     for i in range(8):
         canvas = background()
-        place(canvas, awakened[4 + (i // 2) % 4], 66, 190)
+        place(canvas, aura[i % 6], 66, 190)
+        place(canvas, normal[(i // 2) % 6], 66, 190)
         place(canvas, kfm_hit, 273, 185)
         hud(canvas, enemy_life=915, power=0, awakened=.84)
         frames.append(canvas)

@@ -47,6 +47,8 @@ SPRITES = [
     *sequence(330, "eida_extra/power_{index}.png", 4),
     *sequence(4000, "eida_awaken/awaken_{index:02d}.png", 16),
     (8100, 0, ASSETS / "effects/senrigan_logo.png"),
+    *sequence(8200, "effects/charm/heart_{index}.png", 6),
+    *sequence(8300, "effects/awakening_aura/aura_{index}.png", 6),
     *sequence(8000, "cinematic/panel_{index}.png", 4),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
     # Standard MUGEN portraits: 9000,0 is the 25x25 fight icon and 9000,1
@@ -94,7 +96,7 @@ def build_sff(destination: Path) -> None:
         )
         if group in (8000, 9000):
             axis_x = axis_y = 0
-        elif group == 8100:
+        elif group in (8100, 8200):
             axis_x, axis_y = width // 2, height // 2
         records.append((group, number, width, height, axis_x, axis_y, pixels, palette))
 
@@ -176,6 +178,11 @@ def build_snd(destination: Path) -> None:
         (1, 2, ASSETS / "sound/charm.wav"),
         (1, 3, ASSETS / "sound/omnipotence.wav"),
         (1, 4, ASSETS / "sound/charge.wav"),
+        # Non-verbal hit effects selected from the Nezuko reference character
+        # supplied by the user. Eida's voice groups remain exclusively Japanese Eida.
+        (1, 5, ASSETS / "sound/hit_light.wav"),
+        (1, 6, ASSETS / "sound/hit_medium.wav"),
+        (1, 7, ASSETS / "sound/hit_launcher.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),

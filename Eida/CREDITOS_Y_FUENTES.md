@@ -7,4 +7,5 @@
 - Animaciones adicionales de Eida: 16 cuadros creados con IA a partir de la hoja original suministrada, usados únicamente para completar giro, salto, aterrizaje y poses especiales.
 - Voz: fragmentos femeninos del archivo japonés `Eida_voz_japonesa_fuente.mp3`. Se excluyeron las intervenciones masculinas atribuidas a Code.
 - Base técnica de estados comunes: copia revisada del `common1.cns` del personaje Code funcional suministrado. Los archivos originales de Code no fueron modificados.
+- Referencias de jugabilidad: los personajes Tanjiro S3 y Nezuko Advanced Demon Form suministrados por el usuario se analizaron para reproducir cadenas de golpes por pulsaciones, launchers, pausas de impacto y efectos de combate. Tres efectos no verbales de impacto proceden del SND de Nezuko; no se copiaron voces ni sprites de Nezuko.
 - Programación específica, SFF, SND, AIR, CMD, CNS, efectos no verbales y validadores: creados para esta entrega.

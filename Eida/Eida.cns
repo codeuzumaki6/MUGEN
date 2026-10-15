@@ -100,6 +100,25 @@ add = 0,12,28
 mul = 225,245,256
 sinadd = 0,12,28,12
 
+[State -2, Persistent blue awakening aura]
+type = Explod
+triggerall = Var(40) = 1
+trigger1 = NumExplod(8300) = 0
+anim = 8300
+ID = 8300
+pos = 0,0
+postype = P1
+bindtime = -1
+removetime = -1
+sprpriority = -1
+ownpal = 1
+removeongethit = 0
+
+[State -2, Remove expired awakening aura]
+type = RemoveExplod
+trigger1 = Var(40) = 0
+ID = 8300
+
 ; Compatibility sink for the dash spark helper requested by Code's proven
 ; common movement states. Eida uses no borrowed visual effect here.
 [Statedef 105]
@@ -187,7 +206,8 @@ value = 0
 ctrl = 1
 
 ; ---------------------------------------------------------------------------
-; Eida Awakening — press Start/Pause again at three full power bars.
+; Eida Awakening — down + Start/Pause at three full power bars. Actions
+; 4000-4003 reuse Eida's normal sprites; only the blue aura is added.
 
 [Statedef 4000]
 type = S
@@ -330,7 +350,7 @@ value = S1,0
 type = HitDef
 trigger1 = Animelem = 3
 attr = S, NA
-damage = 35,5
+damage = 28,4
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -338,19 +358,193 @@ priority = 3,Hit
 pausetime = 6,7
 sparkno = -1
 guard.sparkno = -1
-hitsound = S1,1
+hitsound = S1,5
 guardsound = S1,0
 ground.type = High
 ground.slidetime = 8
 ground.hittime = 11
 ground.velocity = -3.2
 air.velocity = -2.5,-3.0
+getpower = 30,15
+
+[State 200, Continue physical-X combo]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "a"
+value = 201
 
 [State 200, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[Statedef 201]
+type = S
+movetype = A
+physics = S
+anim = 201
+ctrl = 0
+velset = 1.1,0
+
+[State 201, Swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+value = S1,0
+
+[State 201, Second hit]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, NA
+damage = 32,4
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 3,Hit
+pausetime = 6,8
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,5
+guardsound = S1,0
+ground.type = High
+ground.slidetime = 9
+ground.hittime = 13
+ground.velocity = -2.6
+air.velocity = -2.5,-3.0
+getpower = 35,15
+
+[State 201, Continue physical-X combo]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "a"
+value = 202
+
+[State 201, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 202]
+type = S
+movetype = A
+physics = S
+anim = 202
+ctrl = 0
+velset = 1.4,0
+
+[State 202, Swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+value = S1,0
+
+[State 202, Driving kick]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, NA
+damage = 40,5
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 8,10
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,6
+guardsound = S1,0
+ground.type = High
+ground.slidetime = 11
+ground.hittime = 16
+ground.velocity = -3.0
+air.velocity = -3.0,-3.5
+getpower = 40,20
+
+[State 202, Continue to Daemon launcher]
+type = ChangeState
+triggerall = MoveContact
+trigger1 = command = "a"
+value = 203
+
+[State 202, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 203]
+type = S
+movetype = A
+physics = S
+anim = 203
+ctrl = 0
+velset = 0,0
+
+[State 203, Daemon launcher]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Daemon physical-X launcher"
+ID = 204
+stateno = 204
+pos = P2BodyDist X - 22,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 203, End]
+type = ChangeState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+[Statedef 204]
+type = S
+movetype = A
+physics = N
+anim = 1040
+ctrl = 0
+velset = 3.0,0
+sprpriority = 4
+
+[State 204, Swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+value = S1,0
+channel = 1
+
+[State 204, Launcher]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, NA
+damage = 72,8
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 11,13
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,7
+guardsound = S1,0
+ground.type = High
+ground.slidetime = 12
+ground.hittime = 20
+ground.velocity = -3.5,-8.5
+air.velocity = -3.5,-8.5
+fall = 1
+fall.recover = 0
+getpower = 55,25
+
+[State 204, Launcher shake]
+type = EnvShake
+trigger1 = MoveHit = 1
+time = 12
+freq = 90
+ampl = -5
+
+[State 204, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
 
 [Statedef 210]
 type = S
@@ -732,7 +926,8 @@ type = DestroySelf
 trigger1 = AnimTime = 0
 
 ; ---------------------------------------------------------------------------
-; Eida charm: non-damaging temporary stun
+; Eida charm: visible, blockable projectile with finite range. The rival is
+; charmed only when the travelling heart actually makes contact.
 
 [Statedef 1100]
 type = S
@@ -753,25 +948,55 @@ type = PlaySnd
 trigger1 = Time = 6
 value = S1,2
 
-[State 1100, Charm tint]
-type = AllPalFX
-trigger1 = Time = 8
-time = 24
-add = 35,0,55
-mul = 256,210,256
-sinadd = 25,0,40,6
+[State 1100, Casting tint]
+type = PalFX
+trigger1 = Time = [4,22]
+time = 2
+add = 25,0,35
+mul = 256,220,256
+sinadd = 18,0,28,6
 
-[State 1100, Charm]
+[State 1100, Launch charm heart]
+type = Helper
+trigger1 = Time = 9
+helpertype = Normal
+name = "Charm heart projectile"
+ID = 1101
+stateno = 1101
+pos = 24,-42
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1100, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1101]
+type = A
+movetype = A
+physics = N
+anim = 1110
+ctrl = 0
+velset = 5.2,0
+sprpriority = 5
+
+[State 1101, Charm collision]
 type = HitDef
-trigger1 = Animelem = 3
-attr = S, SP
+trigger1 = Time = 0
+attr = A, SP
 damage = 0,0
 animtype = Light
+guardflag = MA
 hitflag = MAF
-priority = 7,Hit
-pausetime = 0,0
+priority = 5,Hit
+pausetime = 3,5
 sparkno = -1
 guard.sparkno = -1
+hitsound = S1,2
+guardsound = S1,0
 ground.hittime = 75
 air.hittime = 75
 ground.velocity = 0
@@ -779,11 +1004,14 @@ air.velocity = 0,0
 p2stateno = 1105
 fall = 0
 
-[State 1100, End]
-type = ChangeState
-trigger1 = AnimTime = 0
-value = 0
-ctrl = 1
+[State 1101, Vanish on contact]
+type = DestroySelf
+trigger1 = MoveContact
+
+[State 1101, Finite range]
+type = DestroySelf
+trigger1 = Time >= 62
+trigger2 = FrontEdgeDist < -20
 
 [Statedef 1105]
 type = S
