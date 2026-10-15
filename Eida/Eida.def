@@ -1,0 +1,19 @@
+[Info]
+name = "Eida"
+displayname = "Eida"
+versiondate = 14/10/2026
+mugenversion = 1.1
+author = "Codex, based on Vaydra sprite material supplied by the user"
+
+[Files]
+sprite = Eida.sff
+anim = Eida.air
+sound = Eida.snd
+cmd = Eida.cmd
+cns = Eida.cns
+stcommon = common1.cns
+st = Eida.cns
+
+[Arcade]
+intro.storyboard =
+ending.storyboard =

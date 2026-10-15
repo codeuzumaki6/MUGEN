@@ -1,0 +1,508 @@
+; Eida animation data. Idle contains idle sprites only.
+
+[Begin Action 0]
+Clsn2Default: 1
+ Clsn2[0] = -13,-68,13,0
+0,0,0,0,8
+0,1,0,0,8
+0,2,0,0,8
+0,3,0,0,8
+0,4,0,0,8
+0,5,0,0,8
+
+[Begin Action 5]
+Clsn2Default: 1
+ Clsn2[0] = -13,-68,13,0
+300,0,0,0,2
+300,1,0,0,2
+300,2,0,0,2
+300,3,0,0,2
+
+[Begin Action 6]
+Clsn2Default: 1
+ Clsn2[0] = -17,-42,17,0
+10,2,0,0,3
+10,1,0,0,3
+
+[Begin Action 10]
+Clsn2Default: 1
+ Clsn2[0] = -16,-52,16,0
+10,0,0,0,3
+10,1,0,0,3
+
+[Begin Action 11]
+Clsn2Default: 1
+ Clsn2[0] = -18,-40,18,0
+10,1,0,0,10
+10,2,0,0,10
+
+[Begin Action 12]
+Clsn2Default: 1
+ Clsn2[0] = -16,-52,16,0
+10,1,0,0,3
+10,0,0,0,3
+
+[Begin Action 20]
+Clsn2Default: 1
+ Clsn2[0] = -14,-72,14,0
+20,0,0,0,5
+20,1,0,0,5
+20,2,0,0,5
+20,3,0,0,5
+20,4,0,0,5
+20,5,0,0,5
+20,6,0,0,5
+20,7,0,0,5
+
+[Begin Action 21]
+Clsn2Default: 1
+ Clsn2[0] = -14,-72,14,0
+20,7,0,0,5
+20,6,0,0,5
+20,5,0,0,5
+20,4,0,0,5
+20,3,0,0,5
+20,2,0,0,5
+20,1,0,0,5
+20,0,0,0,5
+
+[Begin Action 40]
+Clsn2Default: 1
+ Clsn2[0] = -18,-60,18,0
+310,0,0,0,3
+310,1,0,0,3
+
+[Begin Action 41]
+Clsn2Default: 1
+ Clsn2[0] = -15,-65,15,-5
+310,2,0,0,-1
+
+[Begin Action 42]
+Clsn2Default: 1
+ Clsn2[0] = -15,-65,15,-5
+310,2,0,0,-1
+
+[Begin Action 43]
+Clsn2Default: 1
+ Clsn2[0] = -15,-65,15,-5
+310,2,0,0,-1
+
+[Begin Action 44]
+Clsn2Default: 1
+ Clsn2[0] = -22,-42,22,-5
+44,2,0,0,6
+44,3,0,0,6
+
+[Begin Action 45]
+Clsn2Default: 1
+ Clsn2[0] = -15,-65,15,-5
+310,1,0,0,-1
+
+[Begin Action 47]
+Clsn2Default: 1
+ Clsn2[0] = -18,-65,18,0
+320,0,0,0,3
+320,1,0,0,3
+320,2,0,0,3
+320,3,0,0,4
+
+[Begin Action 100]
+Clsn2Default: 1
+ Clsn2[0] = -14,-70,14,0
+20,0,0,0,3
+20,1,0,0,3
+20,2,0,0,3
+20,3,0,0,3
+20,4,0,0,3
+20,5,0,0,3
+20,6,0,0,3
+20,7,0,0,3
+
+[Begin Action 105]
+Clsn2Default: 1
+ Clsn2[0] = -14,-70,14,0
+20,7,0,0,4,H
+20,6,0,0,4,H
+20,5,0,0,4,H
+20,4,0,0,4,H
+
+[Begin Action 120]
+Clsn2Default: 1
+ Clsn2[0] = -16,-68,16,0
+120,0,0,0,3
+120,1,0,0,3
+
+[Begin Action 121]
+Clsn2Default: 1
+ Clsn2[0] = -18,-68,18,0
+120,1,0,0,-1
+
+[Begin Action 122]
+Clsn2Default: 1
+ Clsn2[0] = -16,-68,16,0
+120,1,0,0,3
+120,0,0,0,3
+
+[Begin Action 130]
+Clsn2Default: 1
+ Clsn2[0] = -19,-42,19,0
+10,1,0,0,3
+10,2,0,0,3
+
+[Begin Action 131]
+Clsn2Default: 1
+ Clsn2[0] = -20,-42,20,0
+10,2,0,0,-1
+
+[Begin Action 132]
+Clsn2Default: 1
+ Clsn2[0] = -19,-42,19,0
+10,2,0,0,3
+10,1,0,0,3
+
+[Begin Action 140]
+Clsn2Default: 1
+ Clsn2[0] = -17,-60,17,-5
+140,0,0,0,3
+140,1,0,0,-1
+
+[Begin Action 141]
+Clsn2Default: 1
+ Clsn2[0] = -17,-60,17,-5
+140,1,0,0,-1
+
+[Begin Action 142]
+Clsn2Default: 1
+ Clsn2[0] = -17,-60,17,-5
+140,1,0,0,3
+140,0,0,0,3
+
+[Begin Action 150]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+140,0,0,0,4
+
+[Begin Action 151]
+Clsn2Default: 1
+ Clsn2[0] = -18,-65,18,0
+140,1,0,0,4
+
+[Begin Action 152]
+Clsn2Default: 1
+ Clsn2[0] = -20,-55,20,0
+140,2,0,0,5
+
+[Begin Action 170]
+Clsn2Default: 1
+ Clsn2[0] = -36,-18,36,0
+170,0,0,0,-1
+
+[Begin Action 175]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+0,5,0,0,-1
+
+[Begin Action 180]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+330,3,0,0,-1
+
+[Begin Action 181]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+330,3,0,0,-1
+
+[Begin Action 190]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+190,0,0,0,8
+190,1,0,0,8
+190,2,0,0,8
+
+[Begin Action 195]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+330,3,0,0,-1
+
+[Begin Action 500]
+Clsn2Default: 1
+ Clsn2[0] = -18,-70,18,0
+330,2,0,0,4
+330,2,0,0,4,H
+
+[Begin Action 200]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+200,0,0,0,3
+200,1,0,0,3
+Clsn1: 1
+ Clsn1[0] = 5,-60,34,-34
+200,2,0,0,3
+Clsn1: 1
+ Clsn1[0] = 8,-60,40,-30
+200,3,0,0,4
+200,4,0,0,3
+200,5,0,0,3
+
+[Begin Action 210]
+Clsn2Default: 1
+ Clsn2[0] = -16,-70,16,0
+210,0,0,0,4
+Clsn1: 1
+ Clsn1[0] = 8,-52,47,-25
+210,1,0,0,4
+Clsn1: 1
+ Clsn1[0] = 10,-55,45,-20
+210,2,0,0,4
+210,3,0,0,5
+
+[Begin Action 220]
+Clsn2Default: 1
+ Clsn2[0] = -19,-45,19,0
+220,0,0,0,4
+220,1,0,0,4
+Clsn1: 1
+ Clsn1[0] = 5,-28,45,-5
+220,2,0,0,4
+Clsn1: 1
+ Clsn1[0] = 8,-25,49,-2
+220,3,0,0,4
+220,4,0,0,4
+220,5,0,0,4
+
+[Begin Action 230]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+230,0,0,0,6
+230,1,0,0,6
+230,2,0,0,6
+
+[Begin Action 600]
+Clsn2Default: 1
+ Clsn2[0] = -20,-55,20,-4
+600,2,0,0,3
+600,3,0,0,3
+Clsn1: 1
+ Clsn1[0] = 5,-45,47,-14
+600,4,0,0,4
+Clsn1: 1
+ Clsn1[0] = 7,-42,50,-10
+600,5,0,0,4
+600,6,0,0,4
+
+[Begin Action 610]
+Clsn2Default: 1
+ Clsn2[0] = -20,-55,20,-4
+600,5,0,0,4
+Clsn1: 1
+ Clsn1[0] = 4,-38,50,-8
+600,6,0,0,5
+600,7,0,0,5
+600,8,0,0,5
+
+; Daemon helper animations
+[Begin Action 1000]
+Clsn2Default: 1
+ Clsn2[0] = -17,-70,17,0
+1000,4,0,0,4
+Clsn1: 1
+ Clsn1[0] = 7,-57,40,-30
+1000,5,0,0,4
+Clsn1: 1
+ Clsn1[0] = 10,-60,45,-27
+1000,6,0,0,4
+1000,7,0,0,4
+
+[Begin Action 1010]
+Clsn2Default: 1
+ Clsn2[0] = -18,-70,18,0
+1000,8,0,0,4
+Clsn1: 1
+ Clsn1[0] = 8,-62,48,-20
+1000,9,0,0,5
+Clsn1: 1
+ Clsn1[0] = 8,-60,52,-12
+1000,10,0,0,5
+1000,11,0,0,5
+
+[Begin Action 1020]
+Clsn2Default: 1
+ Clsn2[0] = -19,-70,19,0
+1000,12,0,0,5
+1000,13,0,0,7
+1000,14,0,0,7
+1000,15,0,0,5
+
+[Begin Action 1030]
+Clsn2Default: 1
+ Clsn2[0] = -17,-70,17,0
+1000,0,0,0,6
+1000,1,0,0,6
+1000,2,0,0,6
+1000,3,0,0,6
+
+[Begin Action 1100]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+230,0,0,0,8
+230,1,0,0,8
+Clsn1: 1
+ Clsn1[0] = -160,-120,160,0
+330,0,0,0,12
+
+[Begin Action 1200]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+180,0,0,0,8
+330,1,0,0,12
+180,1,0,0,8
+
+[Begin Action 1300]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+230,0,0,0,6
+230,1,0,0,6
+230,2,0,0,6
+
+[Begin Action 3000]
+Clsn2Default: 1
+ Clsn2[0] = -15,-70,15,0
+Clsn1Default: 1
+ Clsn1[0] = -320,-240,320,0
+330,1,0,0,10
+330,2,0,0,10
+
+[Begin Action 8000]
+8000,0,0,0,-1
+[Begin Action 8001]
+8000,1,0,0,-1
+[Begin Action 8002]
+8000,2,0,0,-1
+[Begin Action 8003]
+8000,3,0,0,-1
+
+; Required hit reactions use Eida's own recovered frames.
+[Begin Action 5000]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+140,0,0,0,4
+[Begin Action 5001]
+Clsn2Default: 1
+ Clsn2[0] = -17,-65,17,0
+140,1,0,0,4
+[Begin Action 5002]
+Clsn2Default: 1
+ Clsn2[0] = -19,-58,19,0
+140,2,0,0,5
+[Begin Action 5005]
+Clsn2Default: 1
+ Clsn2[0] = -15,-68,15,0
+140,0,0,0,4
+[Begin Action 5006]
+Clsn2Default: 1
+ Clsn2[0] = -17,-65,17,0
+140,1,0,0,4
+[Begin Action 5007]
+Clsn2Default: 1
+ Clsn2[0] = -19,-58,19,0
+140,2,0,0,5
+[Begin Action 5010]
+Clsn2Default: 1
+ Clsn2[0] = -15,-48,15,0
+10,1,0,0,4
+[Begin Action 5011]
+Clsn2Default: 1
+ Clsn2[0] = -17,-45,17,0
+10,2,0,0,4
+[Begin Action 5012]
+Clsn2Default: 1
+ Clsn2[0] = -19,-42,19,0
+140,2,0,0,5
+[Begin Action 5015]
+Clsn2Default: 1
+ Clsn2[0] = -15,-48,15,0
+10,1,0,0,4
+[Begin Action 5016]
+Clsn2Default: 1
+ Clsn2[0] = -17,-45,17,0
+10,2,0,0,4
+[Begin Action 5017]
+Clsn2Default: 1
+ Clsn2[0] = -19,-42,19,0
+140,2,0,0,5
+[Begin Action 5020]
+Clsn2Default: 1
+ Clsn2[0] = -18,-55,18,-4
+140,2,0,0,4
+[Begin Action 5021]
+Clsn2Default: 1
+ Clsn2[0] = -20,-48,20,-4
+140,3,0,0,4
+[Begin Action 5022]
+Clsn2Default: 1
+ Clsn2[0] = -22,-42,22,-4
+44,2,0,0,5
+[Begin Action 5030]
+Clsn2Default: 1
+ Clsn2[0] = -22,-42,22,-4
+44,2,0,0,5
+[Begin Action 5035]
+Clsn2Default: 1
+ Clsn2[0] = -22,-42,22,-4
+44,3,0,0,5
+[Begin Action 5040]
+Clsn2Default: 1
+ Clsn2[0] = -28,-32,28,-2
+44,3,0,0,5
+[Begin Action 5050]
+Clsn2Default: 1
+ Clsn2[0] = -25,-38,25,-3
+44,2,0,0,5
+[Begin Action 5051]
+Clsn2Default: 1
+ Clsn2[0] = -28,-34,28,-3
+44,3,0,0,5
+[Begin Action 5060]
+Clsn2Default: 1
+ Clsn2[0] = -30,-30,30,-3
+44,3,0,0,5
+[Begin Action 5070]
+Clsn2Default: 1
+ Clsn2[0] = -35,-22,35,-2
+170,0,0,0,-1
+[Begin Action 5080]
+Clsn2Default: 1
+ Clsn2[0] = -35,-22,35,-2
+170,0,0,0,-1
+[Begin Action 5090]
+Clsn2Default: 1
+ Clsn2[0] = -35,-22,35,-2
+170,0,0,0,-1
+[Begin Action 5100]
+Clsn2Default: 1
+ Clsn2[0] = -38,-16,38,0
+170,0,0,0,-1
+[Begin Action 5110]
+Clsn2Default: 1
+ Clsn2[0] = -38,-16,38,0
+170,0,0,0,-1
+[Begin Action 5120]
+Clsn2Default: 1
+ Clsn2[0] = -38,-16,38,0
+170,0,0,0,8
+171,0,0,0,6
+171,1,0,0,6
+320,2,0,0,4
+320,3,0,0,4
+[Begin Action 5150]
+Clsn2Default: 1
+ Clsn2[0] = -38,-16,38,0
+170,0,0,0,-1
+[Begin Action 5160]
+Clsn2Default: 1
+ Clsn2[0] = -35,-22,35,-2
+170,0,0,0,-1
+[Begin Action 5170]
+Clsn2Default: 1
+ Clsn2[0] = -35,-22,35,-2
+170,0,0,0,-1

@@ -1,0 +1,1013 @@
+[Data]
+life = 1000
+power = 3000
+attack = 100
+defence = 100
+fall.defence_up = 50
+liedown.time = 60
+airjuggle = 15
+sparkno = -1
+guard.sparkno = -1
+KO.echo = 0
+volume = 0
+IntPersistIndex = 60
+FloatPersistIndex = 40
+
+[Size]
+xscale = 1
+yscale = 1
+ground.back = 12
+ground.front = 12
+air.back = 10
+air.front = 10
+height = 70
+attack.dist = 80
+proj.attack.dist = 90
+proj.doscale = 1
+head.pos = 0,-62
+mid.pos = 0,-35
+shadowoffset = 0
+draw.offset = 0,0
+
+[Velocity]
+walk.fwd = 2.6
+walk.back = -2.2
+run.fwd = 5.2,0
+run.back = -4.5,-3.5
+jump.neu = 0,-8.5
+jump.back = -3.0
+jump.fwd = 3.2
+runjump.back = -3.5
+runjump.fwd = 4.2
+airjump.neu = 0,-8.0
+airjump.back = -2.8
+airjump.fwd = 2.8
+
+[Movement]
+airjump.num = 0
+airjump.height = 35
+yaccel = .48
+stand.friction = .82
+crouch.friction = .82
+
+[Statedef -2]
+
+[State -2, Preserve normal scale]
+type = AngleDraw
+trigger1 = 1
+scale = 1,1
+
+; Compatibility sink for the dash spark helper requested by Code's proven
+; common movement states. Eida uses no borrowed visual effect here.
+[Statedef 105]
+type = A
+movetype = I
+physics = N
+anim = -1
+ctrl = 0
+
+[State 105, End]
+type = DestroySelf
+trigger1 = Time = 0
+
+; ---------------------------------------------------------------------------
+; Intro / victory
+
+[Statedef 190]
+type = S
+movetype = I
+physics = S
+anim = 190
+ctrl = 0
+velset = 0,0
+
+[State 190, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 180]
+type = S
+movetype = I
+physics = S
+anim = 180
+ctrl = 0
+velset = 0,0
+
+[State 180, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,1
+channel = 0
+
+; ---------------------------------------------------------------------------
+; Power charge (physical LB maps to internal Start / s in the supplied cfg)
+
+[Statedef 500]
+type = S
+movetype = I
+physics = S
+anim = 500
+ctrl = 0
+velset = 0,0
+
+[State 500, Charge sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,4
+channel = 5
+
+[State 500, Power]
+type = PowerAdd
+trigger1 = Time > 4
+value = 14
+
+[State 500, Aura]
+type = PalFX
+trigger1 = 1
+time = 2
+add = 0,20,45
+mul = 220,240,256
+sinadd = 0,20,45,8
+
+[State 500, End full]
+type = ChangeState
+trigger1 = Power >= 3000
+value = 0
+ctrl = 1
+
+[State 500, End release]
+type = ChangeState
+trigger1 = command != "Carga"
+value = 0
+ctrl = 1
+
+; ---------------------------------------------------------------------------
+; Normal attacks
+
+[Statedef 200]
+type = S
+movetype = A
+physics = S
+anim = 200
+ctrl = 0
+velset = 0,0
+
+[State 200, Swing]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+
+[State 200, Hit]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, NA
+damage = 35,5
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 3,Hit
+pausetime = 6,7
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+guardsound = S1,0
+ground.type = High
+ground.slidetime = 8
+ground.hittime = 11
+ground.velocity = -3.2
+air.velocity = -2.5,-3.0
+
+[State 200, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 210]
+type = S
+movetype = A
+physics = S
+anim = 210
+ctrl = 0
+velset = 0,0
+
+[State 210, Swing]
+type = PlaySnd
+trigger1 = Animelem = 1
+value = S1,0
+
+[State 210, Hit]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, NA
+damage = 60,8
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 8,10
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+guardsound = S1,0
+ground.type = High
+ground.slidetime = 12
+ground.hittime = 16
+ground.velocity = -4.8
+air.velocity = -3.6,-4.2
+
+[State 210, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 220]
+type = C
+movetype = A
+physics = C
+anim = 220
+ctrl = 0
+velset = 0,0
+
+[State 220, Swing]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+
+[State 220, Hit]
+type = HitDef
+trigger1 = Animelem = 3
+attr = C, NA
+damage = 52,7
+animtype = Medium
+guardflag = L
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,9
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+guardsound = S1,0
+ground.type = Low
+ground.slidetime = 11
+ground.hittime = 15
+ground.velocity = -4.0
+air.velocity = -3.0,-3.5
+
+[State 220, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 11
+ctrl = 1
+
+[Statedef 600]
+type = A
+movetype = A
+physics = A
+anim = 600
+ctrl = 0
+
+[State 600, Swing]
+type = PlaySnd
+trigger1 = Animelem = 2
+value = S1,0
+
+[State 600, Hit]
+type = HitDef
+trigger1 = Animelem = 3
+attr = A, NA
+damage = 42,6
+animtype = Medium
+guardflag = HA
+hitflag = MAF
+priority = 3,Hit
+pausetime = 7,8
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.type = High
+ground.hittime = 14
+ground.velocity = -3.5
+air.velocity = -3.0,-4.0
+
+[State 600, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 610]
+type = A
+movetype = A
+physics = A
+anim = 610
+ctrl = 0
+
+[State 610, Hit]
+type = HitDef
+trigger1 = Animelem = 2
+attr = A, NA
+damage = 68,8
+animtype = Heavy
+guardflag = HA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 9,11
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.type = High
+ground.hittime = 17
+ground.velocity = -4.8
+air.velocity = -4.0,-5.0
+fall = 1
+
+[State 610, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+; ---------------------------------------------------------------------------
+; Daemon: rapid strike
+
+[Statedef 1000]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+
+[State 1000, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,0
+channel = 0
+
+[State 1000, Daemon]
+type = Helper
+trigger1 = Time = 4
+helpertype = Normal
+name = "Daemon rapid"
+ID = 1001
+stateno = 1001
+pos = P2BodyDist X - 24,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1000, End]
+type = ChangeState
+trigger1 = Time >= 34
+value = 0
+ctrl = 1
+
+[Statedef 1001]
+type = S
+movetype = A
+physics = N
+anim = 1000
+ctrl = 0
+velset = 4.6,0
+sprpriority = 3
+
+[State 1001, Hit one]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 25,3
+animtype = Light
+guardflag = MA
+hitflag = MAF
+pausetime = 4,5
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.hittime = 10
+ground.velocity = -2.0
+
+[State 1001, Hit two]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 32,4
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+pausetime = 5,6
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.hittime = 12
+ground.velocity = -3.8
+air.velocity = -3,-3
+
+[State 1001, Stop]
+type = VelSet
+trigger1 = Time >= 14
+x = 0
+
+[State 1001, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
+
+; Daemon combo
+[Statedef 1010]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+
+[State 1010, Daemon]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Daemon combo"
+ID = 1011
+stateno = 1011
+pos = P2BodyDist X - 24,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1010, End]
+type = ChangeState
+trigger1 = Time >= 42
+value = 0
+ctrl = 1
+
+[Statedef 1011]
+type = S
+movetype = A
+physics = N
+anim = 1000
+ctrl = 0
+velset = 3.6,0
+sprpriority = 3
+
+[State 1011, Multi hit]
+type = HitDef
+trigger1 = Animelem = 2
+trigger2 = Animelem = 3
+attr = S, SA
+damage = 28,3
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+pausetime = 5,6
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.hittime = 14
+ground.velocity = -2.8
+air.velocity = -2.8,-3.2
+
+[State 1011, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
+
+; Daemon kicks
+[Statedef 1030]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+
+[State 1030, Daemon]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Daemon kicks"
+ID = 1031
+stateno = 1031
+pos = P2BodyDist X - 24,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1030, End]
+type = ChangeState
+trigger1 = Time >= 42
+value = 0
+ctrl = 1
+
+[Statedef 1031]
+type = S
+movetype = A
+physics = N
+anim = 1010
+ctrl = 0
+velset = 3.2,0
+sprpriority = 3
+
+[State 1031, Kick one]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, SA
+damage = 40,5
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+pausetime = 6,8
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.hittime = 14
+ground.velocity = -3.4
+
+[State 1031, Kick two]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SA
+damage = 55,7
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+pausetime = 8,10
+sparkno = -1
+guard.sparkno = -1
+hitsound = S1,1
+ground.hittime = 18
+ground.velocity = -5.4
+air.velocity = -4.2,-4.8
+fall = 1
+
+[State 1031, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
+
+; ---------------------------------------------------------------------------
+; Eida charm: non-damaging temporary stun
+
+[Statedef 1100]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+
+[State 1100, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,1
+channel = 0
+
+[State 1100, Charm sound]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,2
+
+[State 1100, Charm tint]
+type = AllPalFX
+trigger1 = Time = 8
+time = 24
+add = 35,0,55
+mul = 256,210,256
+sinadd = 25,0,40,6
+
+[State 1100, Charm]
+type = HitDef
+trigger1 = Animelem = 3
+attr = S, SP
+damage = 0,0
+animtype = Light
+hitflag = MAF
+priority = 7,Hit
+pausetime = 0,0
+sparkno = -1
+guard.sparkno = -1
+ground.hittime = 75
+air.hittime = 75
+ground.velocity = 0
+air.velocity = 0,0
+p2stateno = 1105
+fall = 0
+
+[State 1100, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1105]
+type = S
+movetype = H
+physics = S
+ctrl = 0
+velset = 0,0
+
+[State 1105, Stunned animation]
+type = ChangeAnim
+trigger1 = Time = 0
+value = 5000
+
+[State 1105, Charm]
+type = PalFX
+trigger1 = 1
+time = 2
+add = 35,0,55
+mul = 256,205,256
+sinadd = 30,0,45,8
+
+[State 1105, Release]
+type = SelfState
+trigger1 = Time >= 75
+value = 0
+ctrl = 1
+
+; ---------------------------------------------------------------------------
+; Senrigan observation and counter
+
+[Statedef 1200]
+type = S
+movetype = I
+physics = S
+anim = 1200
+ctrl = 0
+velset = 0,0
+
+[State 1200, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,1
+channel = 0
+
+[State 1200, Eye tint]
+type = PalFX
+trigger1 = Time < 55
+time = 2
+add = 0,35,55
+mul = 210,245,256
+
+[State 1200, Observe]
+type = ReversalDef
+trigger1 = Time = [8,48]
+reversal.attr = SCA, NA, SA, HA, NP, SP, HP
+pausetime = 10,12
+sparkno = -1
+hitsound = S1,2
+p1stateno = 1201
+p2stateno = 1205
+
+[State 1200, End]
+type = ChangeState
+trigger1 = Time >= 58
+value = 0
+ctrl = 1
+
+[Statedef 1201]
+type = S
+movetype = A
+physics = S
+anim = 230
+ctrl = 0
+velset = 0,0
+
+[State 1201, Counter Daemon]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon Senrigan counter"
+ID = 1202
+stateno = 1202
+pos = P2BodyDist X - 24,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1201, End]
+type = ChangeState
+trigger1 = Time >= 30
+value = 0
+ctrl = 1
+
+[Statedef 1202]
+type = S
+movetype = A
+physics = N
+anim = 1010
+ctrl = 0
+velset = 6,0
+sprpriority = 4
+
+[State 1202, Counter]
+type = HitDef
+trigger1 = Animelem = 2
+attr = S, HA
+damage = 90,12
+animtype = Heavy
+hitflag = MAF
+pausetime = 10,12
+sparkno = -1
+hitsound = S1,1
+ground.velocity = -7.0
+air.velocity = -5.0,-5.0
+fall = 1
+
+[State 1202, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
+
+[Statedef 1205]
+type = S
+movetype = H
+physics = S
+ctrl = 0
+
+[State 1205, Recoiling]
+type = ChangeAnim
+trigger1 = Time = 0
+value = 5002
+
+[State 1205, Release]
+type = SelfState
+trigger1 = Time >= 28
+value = 0
+ctrl = 1
+
+; ---------------------------------------------------------------------------
+; Daemon combined guard and counter
+
+[Statedef 1300]
+type = S
+movetype = I
+physics = S
+anim = 1300
+ctrl = 0
+velset = 0,0
+
+[State 1300, Daemon]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon guard"
+ID = 1301
+stateno = 1301
+pos = 15,0
+postype = P1
+facing = 1
+ownpal = 1
+
+[State 1300, Protected]
+type = NotHitBy
+trigger1 = Time = [4,46]
+value = SCA, NA, SA, HA, NP, SP, HP
+time = 2
+
+[State 1300, End]
+type = ChangeState
+trigger1 = Time >= 50
+value = 0
+ctrl = 1
+
+[Statedef 1301]
+type = S
+movetype = A
+physics = N
+anim = 1020
+ctrl = 0
+velset = 0,0
+sprpriority = 4
+
+[State 1301, Reflect]
+type = ReversalDef
+trigger1 = Time = [5,30]
+reversal.attr = SCA, NA, SA, HA, NP, SP, HP
+pausetime = 8,12
+sparkno = -1
+hitsound = S1,1
+p1stateno = 1302
+
+[State 1301, End]
+type = DestroySelf
+trigger1 = AnimTime = 0
+
+[Statedef 1302]
+type = S
+movetype = A
+physics = N
+anim = 1010
+ctrl = 0
+velset = 0,0
+
+[State 1302, Counter hit]
+type = HitDef
+trigger1 = Time = 0
+attr = S, HA
+damage = 75,10
+animtype = Heavy
+hitflag = MAF
+pausetime = 8,10
+sparkno = -1
+hitsound = S1,1
+ground.velocity = -6.0
+air.velocity = -4.0,-5.0
+fall = 1
+
+[State 1302, End]
+type = DestroySelf
+trigger1 = Time >= 18
+
+; ---------------------------------------------------------------------------
+; Omnipotence — gameplay adaptation of the manga event.
+
+[Statedef 3000]
+type = S
+movetype = A
+physics = S
+anim = 3000
+ctrl = 0
+velset = 0,0
+poweradd = -3000
+sprpriority = 2
+
+[State 3000, Voice]
+type = PlaySnd
+trigger1 = Time = 0
+value = S0,2
+channel = 0
+
+[State 3000, Soundscape]
+type = PlaySnd
+trigger1 = Time = 8
+value = S1,3
+channel = 6
+
+[State 3000, Initial super pause]
+type = SuperPause
+trigger1 = Time = 0
+time = 20
+movetime = 20
+anim = -1
+sound = -1
+darken = 1
+p2defmul = 1
+
+[State 3000, Capture target]
+type = HitDef
+trigger1 = Time = 2
+attr = S, HA
+damage = 0,0
+animtype = Heavy
+hitflag = MAF
+priority = 9,Hit
+pausetime = 0,0
+sparkno = -1
+guard.sparkno = -1
+ground.hittime = 520
+air.hittime = 520
+ground.velocity = 0
+air.velocity = 0,0
+p2stateno = 3010
+ID = 3000
+fall = 0
+kill = 0
+
+[State 3000, Freeze fight]
+type = Pause
+trigger1 = Time = 8
+time = 500
+movetime = 500
+endcmdbuftime = 0
+pausebg = 0
+
+[State 3000, Hide interface]
+type = AssertSpecial
+trigger1 = Time = [8,508]
+flag = nobardisplay
+flag2 = noFG
+flag3 = nomusic
+
+[State 3000, Panel one]
+type = Explod
+trigger1 = Time = 18
+anim = 8000
+ID = 8000
+pos = 0,0
+postype = Left
+bindtime = -1
+removetime = 120
+sprpriority = 10
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+
+[State 3000, Panel two]
+type = Explod
+trigger1 = Time = 138
+anim = 8001
+ID = 8001
+pos = 0,0
+postype = Left
+bindtime = -1
+removetime = 120
+sprpriority = 10
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+
+[State 3000, Panel three]
+type = Explod
+trigger1 = Time = 258
+anim = 8002
+ID = 8002
+pos = 0,0
+postype = Left
+bindtime = -1
+removetime = 120
+sprpriority = 10
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+
+[State 3000, Panel four]
+type = Explod
+trigger1 = Time = 378
+anim = 8003
+ID = 8003
+pos = 0,0
+postype = Left
+bindtime = -1
+removetime = 120
+sprpriority = 10
+ownpal = 1
+supermovetime = 999
+pausemovetime = 999
+
+[State 3000, Memory distortion]
+type = AllPalFX
+trigger1 = Time = [18,498]
+time = 2
+add = 0,0,20
+mul = 235,235,256
+sinadd = 35,20,55,24
+invertall = 0
+color = 180
+
+[State 3000, Shake]
+type = EnvShake
+trigger1 = Time = 480
+time = 24
+freq = 90
+ampl = -6
+
+[State 3000, Damage]
+type = TargetLifeAdd
+trigger1 = Time = 490
+ID = 3000
+value = -350
+kill = 1
+absolute = 1
+
+[State 3000, End]
+type = ChangeState
+trigger1 = Time >= 515
+value = 0
+ctrl = 1
+
+[Statedef 3010]
+type = S
+movetype = H
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State 3010, Memory lock]
+type = ChangeAnim
+trigger1 = Time = 0
+value = 5000
+
+[State 3010, Bind]
+type = VelSet
+trigger1 = 1
+x = 0
+y = 0
+
+[State 3010, Screen]
+type = ScreenBound
+trigger1 = 1
+value = 1
+movecamera = 0,0
+
+[State 3010, Distortion]
+type = PalFX
+trigger1 = 1
+time = 2
+add = 20,0,35
+mul = 235,220,256
+sinadd = 30,10,45,16
+
+[State 3010, Release as fall]
+type = SelfState
+trigger1 = Time >= 505
+value = 5050
+ctrl = 0

@@ -30,7 +30,8 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 ## Implementación
 
 - El reposo usa exclusivamente seis cuadros de idle; no recorre ataques.
-- Los 54 cuadros de Eida se recortaron de la hoja original suministrada y se limpió la contaminación verde del fondo sin redibujar el pixel art.
+- Los 54 cuadros originales de Eida se recortaron nuevamente desde la hoja completa para recuperar cabezas, cabello, piernas y pies que los recortes anteriores habían cortado. También se limpió la contaminación verde del fondo.
+- Se añadieron 16 cuadros nuevos basados en esos originales para giro, salto, caída, aterrizaje, encantamiento, Senrigan, carga y victoria. Ninguno se usa en el idle.
 - Daemon aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
 - Encantamiento no causa daño: aplica una inmovilización temporal.
 - Senrigan usa `ReversalDef` y llama a Daemon cuando detecta una agresión.
@@ -39,14 +40,14 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 
 ## Validación realizada
 
-- `Eida.sff`: 91 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0.
+- `Eida.sff`: 111 sprites indexados de 8 bits y sus paletas en SFF v2.0.1.0.
 - `Eida.snd`: 14 entradas WAV mono PCM de 16 bits decodificadas correctamente.
-- `Eida.air`: 83 acciones; todas las referencias `(grupo, índice)` existen en el SFF.
+- `Eida.air`: 84 acciones; todas las referencias `(grupo, índice)` existen en el SFF.
 - `Eida.cns` y `common1.cns`: 83 estados; las referencias estáticas de estados, ayudantes y sonidos están resueltas.
-- Ikemen GO nightly: el SFF v2 cargó y el personaje completó una ronda sin errores de Eida. En una copia temporal de pruebas se habilitó la IA para recorrer sus comandos; Eida terminó con 1000 de vida y redujo a Kung Fu Man de 1000 a 350. Esa modificación de IA no forma parte de la entrega.
+- Ikemen GO nightly: el SFF v2 cargó y el personaje completó una ronda sin errores de Eida usando los cuadros corregidos y nuevos. En una copia temporal de pruebas se habilitó la IA para recorrer sus comandos; Eida terminó con 1000 de vida y redujo a Kung Fu Man de 1000 a 348. Esa modificación de IA no forma parte de la entrega.
 
 ## Límite visual conocido
 
-Los cuadros de Eida recuperados proceden de una captura de 600×868. Son coherentes y utilizables, pero su resolución original no alcanza todavía el detalle del GIF de Sumire. Daemon se creó como una hoja nueva a partir de las referencias del manga y se normalizó al tamaño nativo de Eida. Esta entrega no presenta esos cuadros como arte final equivalente a Sumire.
+Los 54 cuadros base de Eida proceden de una captura de 600×868; los 16 adicionales se generaron tomando esos cuadros como referencia directa y se normalizaron a la misma escala. Daemon se creó como una hoja nueva a partir de las referencias del manga. La cinematografía de Omnipotencia conserva exclusivamente los paneles originales suministrados.
 
 No fue posible ejecutar el binario exacto de Jump Force MUGEN V14 del usuario. Antes de sustituir una versión instalada, prueba esta carpeta como personaje adicional y revisa escala, posición del piso, volumen y mapeo del mando en una pelea local.

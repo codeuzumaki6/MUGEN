@@ -163,7 +163,7 @@ def main() -> None:
             check(ref in sprites, f"Eida.air: action {current_action} references missing sprite {ref[0]},{ref[1]}")
             if current_action == 0:
                 idle_refs.append(ref)
-    required_actions = {0, 10, 11, 12, 20, 21, 40, 41, 42, 43, 44, 47, 200, 210, 220, 600, 1000, 1010, 1020, 1100, 1200, 1300, 3000, 8000, 8001, 8002, 8003, 5000, 5050, 5100, 5110, 5120}
+    required_actions = {0, 10, 11, 12, 20, 21, 40, 41, 42, 43, 44, 47, 200, 210, 220, 500, 600, 1000, 1010, 1020, 1100, 1200, 1300, 3000, 8000, 8001, 8002, 8003, 5000, 5050, 5100, 5110, 5120}
     check(required_actions <= actions, f"Eida.air: missing actions {sorted(required_actions - actions)}")
     check(len(idle_refs) >= 4 and all(group == 0 for group, _ in idle_refs), "Eida.air: idle contains a non-idle sprite group")
 
