@@ -87,9 +87,7 @@ def cinematic_frame(panel: Image.Image, progress: float, panel_no: int) -> Image
     overlay = Image.new("RGBA", (W, H), (25, 25, 80, round(28 + 28 * math.sin(progress * math.pi))))
     canvas = Image.alpha_composite(canvas, overlay)
     draw = ImageDraw.Draw(canvas, "RGBA")
-    # Memory distortion scanlines and edge flashes; the manga art is unchanged.
-    for y in range((panel_no * 3) % 6, H, 6):
-        draw.line((0, y, W, y), fill=(115, 160, 255, 26), width=1)
+    # Soft edge flashes keep the transition readable without covering the art.
     if progress < 0.14:
         alpha = round(210 * (1 - progress / 0.14))
         draw.rectangle((0, 0, W, H), fill=(235, 245, 255, alpha))
