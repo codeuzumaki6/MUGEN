@@ -33,7 +33,7 @@ Los comandos adelante/atrás son relativos a la orientación de Eida, como exige
 - El reposo usa exclusivamente seis cuadros de idle; no recorre ataques.
 - Los 54 cuadros originales de Eida se recortaron nuevamente desde la hoja completa para recuperar cabezas, cabello, piernas y pies que los recortes anteriores habían cortado. También se limpió la contaminación verde del fondo.
 - Se añadieron 16 cuadros nuevos basados en esos originales para giro, salto, caída, aterrizaje, encantamiento, Senrigan, carga y victoria. Ninguno se usa en el idle.
-- Daemon aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
+- Daemon usa 16 poses reconstruidas a escala de combate, aparece cerca del rival, ataca o protege a Eida y se destruye al terminar la animación.
 - Los golpes de Daemon reproducen sonido de movimiento y de impacto; los efectos se normalizaron para que sean audibles en la mezcla de Jump Force MUGEN.
 - Encantamiento no causa daño: aplica una inmovilización temporal.
 - Senrigan usa `ReversalDef` y llama a Daemon cuando detecta una agresión.
