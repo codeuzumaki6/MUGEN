@@ -15,6 +15,27 @@ ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).reso
 errors: list[str] = []
 notes: list[str] = []
 
+# MUGEN 1.1 expression calls. Ikemen accepts extensions (notably Min/Max)
+# even for mugenversion=1.1; loading there alone cannot check this contract.
+MUGEN11_CALLS = set('''abs acos animelem animelemno animelemtime animexist asin
+atan ceil const const240p const480p const720p cos exp floor fvar gethitvar
+helper hitvel ifelse ishelper ln log numexplod numhelper numprojid numtarget
+playerid playeridexist projcanceltime projcontact projcontacttime projguarded
+projguardedtime projhit projhittime selfanimexist sin sysfvar sysvar tan
+var'''.split())
+
+
+def check_mugen11_calls(path: Path) -> None:
+    for line_number,line in enumerate(path.read_text(encoding='latin-1').splitlines(),1):
+        code=line.split(';',1)[0]
+        if '=' not in code or code.lstrip().startswith('['):
+            continue
+        expression=code.split('=',1)[1]
+        expression=re.sub(r'"[^"\n]*"','',expression)
+        for name in re.findall(r'\b([a-zA-Z_]\w*)\s*\(',expression):
+            check(name.lower() in MUGEN11_CALLS,
+                  f'{path.name}:{line_number}: expression call {name}() is not in the MUGEN 1.1 function list')
+
 
 def check(condition: bool, message: str) -> None:
     if not condition:
@@ -188,6 +209,7 @@ def main() -> None:
     all_states: set[int] = set()
     parsed_sections = []
     for path in cns_paths:
+        check_mugen11_calls(path)
         text = path.read_text(encoding="latin-1")
         for header, body in sections(text):
             match = re.match(r"\[Statedef\s+(-?\d+)\]", header, re.I)
@@ -198,6 +220,7 @@ def main() -> None:
             parsed_sections.append((path.name, header, body))
 
     parsed_sections.extend(('Eida.cmd', header, body) for header,body in sections(cmd_text))
+    check_mugen11_calls(ROOT/'Eida.cmd')
     local_refs: list[tuple[str, str, int]] = []
     for filename, header, body in parsed_sections:
         if filename in {'Eida.cns','Specials.cns','Omnipotencia.cns'}:
@@ -232,6 +255,7 @@ def main() -> None:
     notes.append(f"SND: {len(sounds)} mono PCM sounds, all WAV payloads decoded")
     notes.append(f"AIR: {len(actions)} actions; idle uses {len(idle_refs)} idle-only frames")
     notes.append(f"CNS: {len(all_states)} states across {len(cns_paths)} files")
+    notes.append('CNS/CMD expression calls checked against MUGEN 1.1; Ikemen-only Min/Max calls rejected')
     if errors:
         print("VALIDATION FAILED")
         for item in errors:

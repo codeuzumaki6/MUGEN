@@ -150,7 +150,7 @@ ID = 8000
 pos = -GameWidth*(.01+(Time-12)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-12)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-12)*.0006),GameWidth/1280.0*(1.02+(Time-12)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-12)*24),256-Min(256,(Time-12)*24)
+alpha = IfElse((Time-12)*24<256,(Time-12)*24,256),256-IfElse((Time-12)*24<256,(Time-12)*24,256)
 
 [State 3001, Transition sound 1]
 type = PlaySnd
@@ -185,7 +185,7 @@ ID = 8001
 pos = -GameWidth*(.01+(Time-82)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-82)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-82)*.0006),GameWidth/1280.0*(1.02+(Time-82)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-82)*24),256-Min(256,(Time-82)*24)
+alpha = IfElse((Time-82)*24<256,(Time-82)*24,256),256-IfElse((Time-82)*24<256,(Time-82)*24,256)
 
 [State 3001, Transition sound 2]
 type = PlaySnd
@@ -220,7 +220,7 @@ ID = 8002
 pos = -GameWidth*(.01+(Time-152)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-152)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-152)*.0006),GameWidth/1280.0*(1.02+(Time-152)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-152)*24),256-Min(256,(Time-152)*24)
+alpha = IfElse((Time-152)*24<256,(Time-152)*24,256),256-IfElse((Time-152)*24<256,(Time-152)*24,256)
 
 [State 3001, Transition sound 3]
 type = PlaySnd
@@ -255,7 +255,7 @@ ID = 8003
 pos = -GameWidth*(.01+(Time-222)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-222)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-222)*.0006),GameWidth/1280.0*(1.02+(Time-222)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-222)*24),256-Min(256,(Time-222)*24)
+alpha = IfElse((Time-222)*24<256,(Time-222)*24,256),256-IfElse((Time-222)*24<256,(Time-222)*24,256)
 
 [State 3001, Transition sound 4]
 type = PlaySnd
@@ -290,7 +290,7 @@ ID = 8004
 pos = -GameWidth*(.01+(Time-292)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-292)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-292)*.0006),GameWidth/1280.0*(1.02+(Time-292)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-292)*24),256-Min(256,(Time-292)*24)
+alpha = IfElse((Time-292)*24<256,(Time-292)*24,256),256-IfElse((Time-292)*24<256,(Time-292)*24,256)
 
 [State 3001, Transition sound 5]
 type = PlaySnd
@@ -325,7 +325,7 @@ ID = 8005
 pos = -GameWidth*(.01+(Time-362)*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+(Time-362)*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+(Time-362)*.0006),GameWidth/1280.0*(1.02+(Time-362)*.0006)
 trans = AddAlpha
-alpha = Min(256,(Time-362)*24),256-Min(256,(Time-362)*24)
+alpha = IfElse((Time-362)*24<256,(Time-362)*24,256),256-IfElse((Time-362)*24<256,(Time-362)*24,256)
 
 [State 3001, Transition sound 6]
 type = PlaySnd

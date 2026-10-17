@@ -1,6 +1,8 @@
 # Eida para Jump Force MUGEN V14
 
-[Descargar Eida: Omnipotencia y combos](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_OMNIPOTENCIA_COMBOS.zip)
+[Descargar Eida: corrección de carga para MUGEN 1.1](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_FIX_CARGA_MUGEN11.zip)
+
+Corrección de carga: los fundidos de Omnipotencia usaban `Min()`, una extensión de Ikemen que MUGEN 1.1 no reconoce. Se sustituyó por `IfElse()` conservando el mismo cálculo. El validador ahora rechaza llamadas de expresiones ajenas a MUGEN 1.1; detecta el fallo en el ZIP anterior y acepta el corregido. Reemplaza la carpeta `chars/Eida` completa, incluido `Omnipotencia.cns`.
 
 [Controles físicos de Xbox](Eida/CONTROLES_XBOX.md) · [Detalles y límites de las pruebas](Eida/LEEME.md)
 

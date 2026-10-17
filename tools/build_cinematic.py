@@ -215,7 +215,7 @@ ID = {8000+i}
 pos = -GameWidth*(.01+{age}*.0003),(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*(.01+{age}*.0003)*9.0/16.0
 scale = GameWidth/1280.0*(1.02+{age}*.0006),GameWidth/1280.0*(1.02+{age}*.0006)
 trans = AddAlpha
-alpha = Min(256,{age}*24),256-Min(256,{age}*24)
+alpha = IfElse({age}*24<256,{age}*24,256),256-IfElse({age}*24<256,{age}*24,256)
 
 [State 3001, Transition sound {i+1}]
 type = PlaySnd

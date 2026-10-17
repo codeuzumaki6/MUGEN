@@ -6,6 +6,7 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 ## Cambios de esta revisión
 
+- Corrección de carga para MUGEN 1.1: los fundidos de Omnipotencia ahora usan `IfElse()` en lugar de `Min()`. Esta última es una extensión aceptada por Ikemen y puede impedir que MUGEN compile el personaje al seleccionarlo. La operación y la animación se conservan. El validador comprueba ahora las llamadas de las expresiones CNS/CMD; reproducir el fallo en el ZIP anterior forma parte de la comprobación de regresión. Esto no sustituye una ejecución en el MUGEN exacto del usuario.
 - Omnipotencia reconstruida: seis encuadres de los originales del manga a 1280×720, cámara suave, fundidos, sello de apertura, ambiente sonoro, transiciones y remate. Los originales se recortan y escalan; no se redibujaron ni se cambiaron sus caras.
 - La apertura de la ulti debe conectar. Se puede bloquear, esquivar saltando o dejar fuera de alcance; en esos casos gasta las tres barras sin cinemática ni daño. Al conectar causa 350 de daño y libera al rival al terminar.
 - Tres técnicas nuevas: abajo + A, doble encanto; abajo + RB, retroceso y respuesta de Senrigan; abajo + RT, apertura combinada con Daemon.
