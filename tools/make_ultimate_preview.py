@@ -5,6 +5,7 @@ Audio is mixed offline: the headless engine's audio device is disabled.
 The samples and their timings match the CNS. No voice synthesis is used.
 """
 from pathlib import Path
+import json
 import os
 import subprocess
 import sys
@@ -27,7 +28,8 @@ with tempfile.TemporaryDirectory(prefix='eida-ultimate-') as directory:
     sound=ROOT/'Eida/assets/sound'
     tracks=[('charm_cast.wav',(cast-12+2)/60),('voice_ultimate.wav',cinema),
             ('memory_build.wav',cinema+.05),('memory_release.wav',cinema+435/60)]
-    tracks += [('memory_transition.wav',cinema+(12+i*70)/60) for i in range(6)]
+    timeline=json.loads((ROOT/'Eida/assets/cinematic/timeline.json').read_text())
+    tracks += [('memory_transition.wav',cinema+shot['start']/60) for shot in timeline]
     command=['ffmpeg','-y','-hide_banner','-loglevel','error','-framerate','15',
              '-i',str(Path(directory)/'Ikemen_GO%03d.png')]
     for filename,_ in tracks:command+=['-i',str(sound/filename)]

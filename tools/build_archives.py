@@ -46,13 +46,15 @@ SPRITES = [
     *sequence(310, "eida_extra/jump_{index}.png", 4),
     *sequence(320, "eida_extra/land_{index}.png", 4),
     *sequence(330, "eida_extra/power_{index}.png", 4),
+    *sequence(340, "eida_support/support_{index}.png", 6),
     (8100, 0, ASSETS / "effects/senrigan_logo.png"),
     *sequence(8200, "effects/charm/heart_{index}.png", 6),
     *sequence(8300, "effects/reference/8300_{index}.png", 13),
     *sequence(8400, "effects/reference/8400_{index}.png", 4),
     *sequence(8410, "effects/reference/8410_{index}.png", 14),
     *sequence(8420, "effects/reference/8420_{index}.png", 6),
-    *sequence(8000, "cinematic/panel_{index}.png", 6),
+    *sequence(8000, "cinematic/panel_{index}.png", 8),
+    (8001, 0, ASSETS / "cinematic/matte.png"),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
     # Standard MUGEN portraits: 9000,0 is the 25x25 fight icon and 9000,1
     # is the 120x140 select portrait. Use the same clean face source so the
@@ -100,7 +102,7 @@ def build_sff(destination: Path) -> None:
         pixels, palette, width, height, axis_x, axis_y = png_to_indexed(
             path, target_size=target_size, target_height=target_height
         )
-        if group in (8000, 9000):
+        if group in (8000, 8001, 9000):
             axis_x = axis_y = 0
         elif group in (8100, 8200):
             axis_x, axis_y = width // 2, height // 2
@@ -197,6 +199,9 @@ def build_snd(destination: Path) -> None:
         (1, 11, ASSETS / "sound/memory_build.wav"),
         (1, 12, ASSETS / "sound/memory_transition.wav"),
         (1, 13, ASSETS / "sound/memory_release.wav"),
+        (1, 14, ASSETS / "sound/daemon_finish.wav"),
+        (1, 15, ASSETS / "sound/daemon_lift.wav"),
+        (1, 16, ASSETS / "sound/support_gesture.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),

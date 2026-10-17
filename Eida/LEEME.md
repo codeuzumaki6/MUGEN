@@ -6,6 +6,16 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 ## Cambios de esta revisión
 
+- Seis cuadros nuevos de apoyo: preparar la mano, acercarla al ojo, observar, extender la palma y recoger el brazo. Se usan en las llamadas de Daemon, encanto y apertura de Omnipotencia. No se agregan al reposo. La silueta mide 68 píxeles de alto, igual que el reposo original; los seis comparten eje de pies.
+- Daemon encadena los contactos con tiempos distintos, recupera puños o piernas tras el remate y da un paso de retirada antes de desaparecer. Conserva sus dibujos y tamaño.
+- Tres efectos no verbales adicionales: acento del gesto, remate de impacto y lanzamiento. Los dos últimos suenan únicamente al conectar el remate; la voz japonesa auténtica permanece intacta.
+- Omnipotencia tiene ocho encuadres originales a 1280×720 con tiempos distintos, movimientos de cámara alternados y fondo negro durante la escena. No se generó ni retocó ningún panel con IA. Se mantienen la apertura evadible, coste de tres barras y daño de 350.
+- Las chispas normales se emiten una vez por impacto durante hitpause. Los remates normales tienen un movimiento de cámara breve y pequeño.
+- Limpieza de ayudantes corregida en sus propios estados, con desvío de los golpes recibidos a un estado de eliminación. Evita que entren en los estados de daño de Eida y queden bloqueando nuevas invocaciones.
+- Comprobaciones adicionales de defensa: bloquear Y/B impide la rama de Daemon; bloquear o esquivar encanto impide su continuación y su coste adicional; golpear a Eida interrumpe una ayuda activa en un máximo de un tick. También se verifica golpear únicamente a Daemon, sin dañar a Eida: el ayudante desaparece al impacto.
+
+### Correcciones y rutas conservadas
+
 - Derribos corregidos: el impacto contra el suelo y el asentamiento tienen duración finita; el estado tumbado pasa automáticamente al levantarse cuando Eida sigue viva. El levantarse ajusta sus cajas al incorporarse.
 - Nuevas rutas Y → X (ráfaga de Daemon), B → Y (launcher de Daemon) y abajo + Y → X (seguimiento de Daemon solo tras encanto confirmado, 250 de energía extra). Las dos primeras no gastan energía.
 - Abajo + X permite salto de persecución hacia el rival y continuación aérea. También se puede perseguir el launcher normal de Daemon.
@@ -14,12 +24,12 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 - Corrección del error de la captura `Error parsing trigger2` en `Eida.cmd:304`: se sustituyeron las diez condiciones que combinaban un intervalo sin agrupar con `||` por grupos `trigger2` a `trigger8`, uno por estado permitido y siempre condicionado a `MoveHit`. Se mantienen las rutas de combo, los costes y los controles. La comprobación de regresión reproduce esa misma línea del ZIP anterior y la rechaza.
 - Corrección de carga para MUGEN 1.1: los fundidos de Omnipotencia ahora usan `IfElse()` en lugar de `Min()`. Esta última es una extensión aceptada por Ikemen y puede impedir que MUGEN compile el personaje al seleccionarlo. La operación y la animación se conservan. El validador comprueba ahora las llamadas de las expresiones CNS/CMD; reproducir el fallo en el ZIP anterior forma parte de la comprobación de regresión. Esto no sustituye una ejecución en el MUGEN exacto del usuario.
-- Omnipotencia reconstruida: seis encuadres de los originales del manga a 1280×720, cámara suave, fundidos, sello de apertura, ambiente sonoro, transiciones y remate. Los originales se recortan y escalan; no se redibujaron ni se cambiaron sus caras.
+- Omnipotencia reconstruida: ocho encuadres de los originales del manga a 1280×720, cámara suave, fundidos, sello de apertura, ambiente sonoro, transiciones y remate. Los originales se recortan y escalan; no se redibujaron ni se cambiaron sus caras.
 - La apertura de la ulti debe conectar. Se puede bloquear, esquivar saltando o dejar fuera de alcance; en esos casos gasta las tres barras sin cinemática ni daño. Al conectar causa 350 de daño y libera al rival al terminar.
 - Tres técnicas nuevas: abajo + A, doble encanto; abajo + RB, retroceso y respuesta de Senrigan; abajo + RT, apertura combinada con Daemon.
 - Rutas mixtas X → Y → Y y X → B → B; continuaciones de Y/B y cancelaciones ofensivas aceptan pulsaciones durante las pausas de impacto.
 - Salto neutral aumentado moderadamente: velocidad vertical de -6 a -7.1, con la misma gravedad. Apex medido de unas 49 unidades.
-- Los sprites y los estados ofensivos de Daemon se mantienen; no se cambió su diseño ni su escala.
+- Se conservan los sprites y el diseño de Daemon; esta revisión ajusta los tiempos y la recuperación de sus ataques.
 - Segundo golpe de X: conserva la orientación hacia el rival; se eliminó el volteo horizontal del cuerpo completo.
 - Enlace aéreo X → Y → B corregido según los botones físicos del mando, con memoria de la pulsación durante las pausas de impacto.
 - Corazón visible sobre la cabeza del rival únicamente después de confirmar Encantamiento. No agrega daño ni prolonga el aturdimiento.
@@ -34,18 +44,18 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 ## Comprobaciones
 
-- SFF v2.0.1.0: 157 sprites; los seis paneles conservan 1280×720 dentro del archivo. Retrato de combate 25×25 y retrato de selección 120×140.
-- SND: 23 muestras mono PCM de 16 bits, incluidos tres efectos nuevos de la cinemática.
-- AIR: 112 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
-- 121 estados en cuatro CNS; referencias estáticas de estados, animaciones locales y sonidos verificadas.
-- 83 escenarios en Ikemen GO con entradas y colisiones reales: 68 de movimiento/técnicas/combos, 6 de derribos y recuperación, y 9 de ultimate. Barrido, rebote y caída aérea se comprueban en ambas orientaciones: recibe daño, cae, se levanta y vuelve a atacar. Además, cuatro pruebas de regresión del validador cubren los errores de carga previos y el impacto infinito.
+- SFF v2.0.1.0: 166 sprites; los ocho paneles conservan 1280×720 dentro del archivo. Retrato de combate 25×25 y retrato de selección 120×140.
+- SND: 26 muestras mono PCM de 16 bits, incluidos tres efectos nuevos de la cinemática.
+- AIR: 119 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
+- 123 estados en cuatro CNS; referencias estáticas de estados, animaciones locales y sonidos verificadas.
+- 95 escenarios en Ikemen GO con entradas y colisiones reales: 80 de movimiento/técnicas/combos, 6 de derribos y recuperación, y 9 de ultimate. Barrido, rebote y caída aérea se comprueban en ambas orientaciones: recibe daño, cae, se levanta y vuelve a atacar. Además, cuatro pruebas de regresión del validador cubren los errores de carga previos y el impacto infinito.
 - Las pruebas cubren técnicas, rutas mixtas, enlaces durante hitpause, salto, costes, ayudas que pueden fallar y apertura de ultimate bloqueada, esquivada o fuera de alcance. Informes reproducibles en `previews/engine_moveset_checks.json` y `previews/engine_ultimate_checks.json` y `previews/engine_recovery_checks.json` del repositorio.
 
 Las pruebas del motor usan copias temporales e instrumentación fuera de la carpeta entregada. No se pudo ejecutar el binario exacto de Jump Force MUGEN V14 del usuario ni comprobar físicamente su mando Xbox. El equilibrio frente a todo su plantel requiere partidas locales.
 
 ## Procedencia y límites visuales
 
-Eida conserva los sprites recuperados de los recursos del usuario y los cuadros adicionales de movimiento. Daemon usa las 16 poses reconstruidas anteriormente, ahora a escala de ayudante. Esta revisión reutiliza esos dibujos en nuevas secuencias; no agrega una hoja nueva de ilustraciones. El nivel artístico de Sumire sigue siendo la referencia de acabado y no se declara alcanzado.
+Eida conserva los sprites recuperados de los recursos del usuario y los cuadros adicionales de movimiento. Daemon usa las 16 poses reconstruidas anteriormente, ahora a escala de ayudante. Esta revisión añade seis poses de apoyo generadas con IA a partir del aspecto de los sprites actuales y reutiliza los dibujos de Daemon en nuevas secuencias. El resto de las animaciones de Eida conserva el material previo. El nivel artístico de Sumire sigue siendo la referencia de acabado y no se declara alcanzado.
 
 Omnipotencia conserva los paneles originales del manga. Las voces pertenecen a los fragmentos femeninos del MP3 japonés suministrado. Consulta `CREDITOS_Y_FUENTES.md`.
 

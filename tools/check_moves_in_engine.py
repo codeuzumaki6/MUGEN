@@ -56,6 +56,16 @@ for face in (1,-1):
                           mode=None,facing=face,distance=120,kind='charmfollow'))
     scenarios.append(dict(name='Natural launcher pursuit',button='a',direction='D',state=600,cost=500,
                           mode=None,facing=face,distance=100,kind='pursuit'))
+    for button,follow,state in [('b','a',210),('c','b',220)]:
+        scenarios.append(dict(name='Guard stops Daemon branch '+button,button=button,follow_button=follow,
+            direction='N',state=state,cost=0,mode=None,facing=face,distance=36,kind='branchblocked'))
+    for kind in ('followblocked','followmiss'):
+        scenarios.append(dict(name='Charm '+kind,button='b',direction='D',state=1100,cost=500,
+            mode=None,facing=face,distance=120,kind=kind))
+    scenarios.append(dict(name='Interrupt assist at Eida',button='a',direction='F',state=1000,cost=500,
+        mode=None,facing=face,distance=120,kind='interrupted'))
+    scenarios.append(dict(name='Strike Daemon without Eida',button='a',direction='F',state=1000,cost=500,
+        mode=None,facing=face,distance=120,kind='assistonlyhit'))
 ultimate_only=os.environ.get('EIDA_ULTIMATE_CHECK')=='1'
 recovery_only=os.environ.get('EIDA_RECOVERY_CHECK')=='1'
 CASE_TICKS=560 if ultimate_only else 280 if recovery_only else 180
@@ -147,8 +157,16 @@ for idx,case in enumerate(scenarios):
         starter=210 if case['button']=='b' else 220
         trigger=f'Var(59) = {idx} && StateNo = {starter} && MoveHit && HitPauseTime = 4'
         fixture+=ctrl('confirmed Daemon branch','AssertInput',trigger,f'flag = {case["follow_button"]}')
-    if case['kind']=='charmfollow':
+    if case['kind']=='branchblocked':
+        starter=case['state']
+        trigger=f'Var(59) = {idx} && StateNo = {starter} && MoveGuarded && HitPauseTime = 4'
+        fixture+=ctrl('try Daemon branch on guard','AssertInput',trigger,f'flag = {case["follow_button"]}')
+    if case['kind'] in ('charmfollow','followblocked','followmiss'):
         fixture+=ctrl('queue confirmed charm followup','AssertInput',f'Var(59) = {idx} && StateNo = 1100 && Time = 12','flag = a')
+    if case['kind'] in ('interrupted','assistonlyhit'):
+        incoming_distance=70 if case['kind']=='assistonlyhit' else 36
+        other+=ctrl('approach exposed assist','PosSet',at(32),f'x = (P2,Pos X) + {face*incoming_distance}\ny = 0')
+        other+=ctrl('interrupt with an actual punch','ChangeState',at(34),'value = 9702\nctrl = 0')
     if case['kind']=='pursuit':
         fixture+=ctrl('up after helper hit','AssertInput',f'Var(59) = {idx} && NumHelper(1001)>0 && (Helper(1001),MoveHit)','flag = U')
         trigger=f'Var(59) = {idx} && StateNo = 50 && Time = 2 && Var(57) = 0'
@@ -157,9 +175,11 @@ for idx,case in enumerate(scenarios):
     if case['state'] in (1200,1300,1350):
         other+=ctrl('place incoming strike','PosSet',at(36),f'x = (P2,Pos X) + {face*36}\ny = 0')
         other+=ctrl('incoming strike','ChangeState',at(38),'value = 210\nctrl = 0')
-    if case['kind'] in ('block','ultiblock'):
+    if case['kind'] in ('block','ultiblock','branchblocked','followblocked'):
         other+=ctrl('hold guard','AssertInput',f'Var(58) = [{base+15},{base+120}]',f'flag = {"R" if face==1 else "L"}')
-    if case['kind'] in ('miss','charmmiss','ultimiss'):
+        if case['kind']=='branchblocked' and case['button']=='c':
+            other+=ctrl('crouch to guard the low starter','AssertInput',f'Var(58) = [{base+15},{base+120}]','flag = D')
+    if case['kind'] in ('miss','charmmiss','ultimiss','followmiss'):
         other+=ctrl('evade','PosSet',f'Var(58) = [{base+18},{base+150}]','y = -160')
         other+=ctrl('hold evade','VelSet',f'Var(58) = [{base+18},{base+150}]','x = 0\ny = 0')
         other+=ctrl('airborne evade','ChangeState',at(18),'value = 50\nctrl = 0')
@@ -238,6 +258,43 @@ ctrl = 0
 '''
     with (dummy/'kfm.cns').open('a') as file:file.write(attacks)
 
+if any(c['kind'] in ('interrupted','assistonlyhit') for c in scenarios):
+    # Fast fixture strike: real visible hitbox collision, never a forced Eida state.
+    with (dummy/'kfm.air').open('a') as file:file.write('''
+[Begin Action 9702]
+Clsn2Default: 1
+ Clsn2[0] = -12,-90,12,0
+Clsn1Default: 1
+ Clsn1[0] = 8,-65,50,-20
+200,2,0,0,6
+''')
+    with (dummy/'kfm.cns').open('a') as file:file.write('''
+[Statedef 9702]
+type = S
+movetype = A
+physics = S
+anim = 9702
+ctrl = 0
+velset = 0,0
+[State 9702, Actual interruption collision]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NA
+damage = 50,0
+guardflag = MA
+hitflag = MAF
+pausetime = 6,8
+ground.hittime = 16
+ground.velocity = -2
+air.velocity = -2,-3
+sparkno = -1
+[State 9702, Recover]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 0
+''')
+
 module=engine/'external/mods/eida_checks.lua'
 module.parent.mkdir(exist_ok=True)
 module_text='''local last = -1
@@ -252,15 +309,23 @@ hook.add('loop','eida_checks',function()
   local case = math.floor((clock-1)/CASE_TICKS)
   local tick = (clock-1)%CASE_TICKS+1
   if case >= CASECOUNT then player(2); setLife(100); player(1); setTime(0); return end
-  if rows[case] == nil then rows[case] = {states={}, damage=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false, marker=false, invalidMarker=false, lateMarker=false, dashTravel=0, apex=0, victimEnd=0} end
+  if rows[case] == nil then rows[case] = {states={}, damage=0, received=0, previousHelpers=0, activeAtHit=false, lingered=false, latestHelperTick=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false, marker=false, invalidMarker=false, lateMarker=false, dashTravel=0, apex=0, victimEnd=0} end
   local r=rows[case]
   if tick > 4 then
     r.states[stateNo()]=true
+    r.received=math.max(r.received,1000-life())
+    if r.received>0 and r.interruptedTick==nil then
+      r.interruptedTick=tick
+      r.activeAtHit=r.previousHelpers>0
+    end
+    if r.interruptedTick~=nil and tick>r.interruptedTick+1 and numHelper(1001)>0 then r.lingered=true end
+    r.previousHelpers=numHelper(1001)
     r.power=math.min(r.power,power())
     local x=posX()
     r.apex=math.min(r.apex,posY())
     if stateNo()==100 then r.dashTravel=math.max(r.dashTravel, math.abs(x-(STARTPOSITIONS)[case+1])) end
     r.helpers=math.max(r.helpers,numHelper(1001))
+    if numHelper(1001)>0 then r.latestHelperTick=tick end
     if helper(1001) then
       if r.spawn<0 then r.spawn=math.abs(posX()-x) end
       r.helperDistance=math.max(r.helperDistance,math.abs(posX()-x))
@@ -291,7 +356,7 @@ hook.add('loop','eida_checks',function()
     local states={}
     for k,_ in pairs(r.states) do table.insert(states,k) end
     table.sort(states)
-    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\t'..tostring(r.marker)..'\\t'..tostring(r.invalidMarker)..'\\t'..tostring(r.lateMarker)..'\\t'..r.dashTravel..'\\t'..r.apex..'\\t'..r.victimEnd..'\\n')
+    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\t'..tostring(r.marker)..'\\t'..tostring(r.invalidMarker)..'\\t'..tostring(r.lateMarker)..'\\t'..r.dashTravel..'\\t'..r.apex..'\\t'..r.victimEnd..'\\t'..r.received..'\\t'..numHelper(1001)..'\\t'..tostring(r.activeAtHit)..'\\t'..tostring(r.lingered)..'\\t'..r.latestHelperTick..'\\n')
     f:flush()
   end
 end)
@@ -310,6 +375,7 @@ if capture_dir:
 module.write_text(module_text)
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 (engine/'eida_checks.tsv').write_text('')
+if capture_dir:(engine/'eida_capture_cues.tsv').write_text('')
 debug_path=engine/'external/script/debug.lua'
 debug_original=debug_path.read_text()
 debug_path.write_text(debug_original+"\ndofile('external/mods/eida_checks.lua')\n")
@@ -332,7 +398,7 @@ assert sorted(first_records)==list(range(len(scenarios))),sorted(first_records)
 lines=[first_records[i] for i in range(len(scenarios))]
 failures=[];report=[]
 for line,case in zip(lines,scenarios):
-    idx,states,damage,charm,spawn,distance,helpers,power,aura,marker,invalid_marker,late_marker,dash_travel,apex,victim_end=line.split('\t')
+    idx,states,damage,charm,spawn,distance,helpers,power,aura,marker,invalid_marker,late_marker,dash_travel,apex,victim_end,received,helpers_end,active_at_hit,lingered,latest_helper_tick=line.split('\t')
     states=set(map(int,states.split(',')));damage=int(damage);spawn=float(spawn);distance=float(distance);power=int(power)
     failures_here=[]
     if case['kind']=='empty':
@@ -383,7 +449,20 @@ for line,case in zip(lines,scenarios):
         if marker!='true' or damage<=0 or not 0<=spawn<=28:failures_here.append('confirmed charm followup failed')
     if case['kind']=='pursuit':
         if 204 not in states or 600 not in states or damage<=68:failures_here.append('natural aerial pursuit did not connect after launcher')
-    row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),jump_apex=float(apex),victim_end_state=int(victim_end),failures=failures_here)
+    if case['kind']=='branchblocked':
+        if {231,232}&states or int(helpers)!=0:failures_here.append('Daemon followup bypassed normal guard')
+        if damage>8:failures_here.append('normal guard did not prevent full damage')
+    if case['kind'] in ('followblocked','followmiss'):
+        if 234 in states or int(helpers)!=0 or marker=='true':failures_here.append('charm followup activated without a confirmed hit')
+        if power!=2500:failures_here.append('unconfirmed followup spent extra energy')
+    if case['kind']=='interrupted':
+        if int(received)<=0:failures_here.append('fixture did not actually hit exposed Eida')
+        if int(helpers)==0 or int(helpers_end)!=0:failures_here.append('offensive Daemon did not disappear after Eida was hit')
+        if active_at_hit!='true' or lingered=='true':failures_here.append('active assist was not interrupted within one tick of the hit')
+    if case['kind']=='assistonlyhit':
+        if int(received)!=0:failures_here.append('fixture also hit Eida')
+        if int(helpers)==0 or not 32<=int(latest_helper_tick)<=36:failures_here.append('struck helper failed to terminate at impact')
+    row=dict(case=case,states=sorted(states),damage=damage,received_damage=int(received),helpers_end=int(helpers_end),active_assist_on_hit=active_at_hit=='true',assist_lingered_after_hit=lingered=='true',latest_helper_tick=int(latest_helper_tick),spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),jump_apex=float(apex),victim_end_state=int(victim_end),failures=failures_here)
     report.append(row)
     print(('FAIL' if failures_here else 'PASS'),case['name'],case['facing'],row)
     failures+=failures_here

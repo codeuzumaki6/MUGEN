@@ -103,6 +103,9 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
             check(height <= 51, f'Eida.sff: Daemon {number} exceeds child helper scale')
         if group == 8000:
             check((width,height)==(1280,720), f'Eida.sff: manga panel {number} lost its HD source resolution')
+        if group == 340:
+            check((width,height,axis_x,axis_y)==(96,72,48,70),
+                  f'Eida.sff: support frame {number} changed its shared scale/origin')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites

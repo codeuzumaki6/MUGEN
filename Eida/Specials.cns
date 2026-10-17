@@ -37,6 +37,13 @@ size.ground.back = 8
 size.ground.front = 8
 size.height = 49
 
+[State 1000, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
+
 [State 1000, Recovery]
 type = ChangeState
 trigger1 = Time >= 28
@@ -79,6 +86,13 @@ size.ground.back = 8
 size.ground.front = 8
 size.height = 49
 
+[State 1010, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
+
 [State 1010, Recovery]
 type = ChangeState
 trigger1 = Time >= 28
@@ -120,6 +134,13 @@ ownpal = 1
 size.ground.back = 8
 size.ground.front = 8
 size.height = 49
+
+[State 1020, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
 
 [State 1020, Recovery]
 type = ChangeState
@@ -181,6 +202,13 @@ size.ground.back = 8
 size.ground.front = 8
 size.height = 49
 
+[State 1030, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
+
 [State 1030, Recovery]
 type = ChangeState
 trigger1 = Time >= 28
@@ -222,6 +250,13 @@ ownpal = 1
 size.ground.back = 8
 size.ground.front = 8
 size.height = 49
+
+[State 1050, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
 
 [State 1050, Recovery]
 type = ChangeState
@@ -265,6 +300,13 @@ size.ground.back = 8
 size.ground.front = 8
 size.height = 49
 
+[State 1060, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
+
 [State 1060, Recovery]
 type = ChangeState
 trigger1 = Time >= 36
@@ -279,6 +321,21 @@ anim = 1030
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1500, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1500, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1500, Store requested attack]
 type = VarSet
@@ -323,6 +380,21 @@ anim = 1510
 ctrl = 0
 velset = 6.8,0
 sprpriority = 3
+
+[State 1501, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1501, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1501, Whoosh]
 type = PlaySnd
@@ -376,6 +448,21 @@ anim = 1520
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1520, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1520, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1520, Swing 1]
 type = PlaySnd
@@ -457,10 +544,20 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1520, Fade out]
+[State 1520, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 3
+value = S1,14
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1520, Recover the final pose]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1590
+value = 1580
 
 [Statedef 1521]
 type = S
@@ -470,6 +567,21 @@ anim = 1521
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1521, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1521, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1521, Swing 1]
 type = PlaySnd
@@ -686,10 +798,20 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1521, Fade out]
+[State 1521, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 8
+value = S1,14
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1521, Recover the final pose]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1590
+value = 1580
 
 [Statedef 1522]
 type = S
@@ -699,6 +821,21 @@ anim = 1522
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1522, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1522, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1522, Swing 1]
 type = PlaySnd
@@ -735,10 +872,20 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1522, Fade out]
+[State 1522, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 2
+value = S1,15
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1522, Recover the final pose]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1590
+value = 1580
 
 [Statedef 1523]
 type = S
@@ -748,6 +895,21 @@ anim = 1523
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1523, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1523, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1523, Swing 1]
 type = PlaySnd
@@ -829,10 +991,20 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1523, Fade out]
+[State 1523, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 3
+value = S1,14
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1523, Recover the final pose]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1590
+value = 1580
 
 [Statedef 1524]
 type = C
@@ -842,6 +1014,21 @@ anim = 1524
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1524, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1524, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1524, Swing 1]
 type = PlaySnd
@@ -878,10 +1065,20 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1524, Fade out]
+[State 1524, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 2
+value = S1,14
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1524, Recover the final pose]
 type = ChangeState
 trigger1 = AnimTime = 0
-value = 1590
+value = 1580
 
 [Statedef 1525]
 type = S
@@ -891,6 +1088,21 @@ anim = 1525
 ctrl = 0
 velset = 0,0
 sprpriority = 3
+
+[State 1525, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1525, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1525, Swing 1]
 type = PlaySnd
@@ -1152,7 +1364,53 @@ givepower = 16,8
 envshake.time = 7
 envshake.ampl = -3
 
-[State 1525, Fade out]
+[State 1525, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= 9
+value = S1,14
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+[State 1525, Recover the final pose]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1580
+
+[Statedef 1580]
+type = S
+movetype = I
+physics = N
+anim = IfElse(Var(45)=4,1584,1580)
+ctrl = 0
+velset = 0,0
+
+[State 1580, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1580, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
+
+[State 1580, Recover kick or fist]
+type = ChangeAnim
+trigger1 = Time = 0
+trigger1 = Var(45) = 0
+trigger2 = Time = 0
+trigger2 = Var(45) = 1
+value = 1581
+
+[State 1580, Return from the attack]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1590
@@ -1161,9 +1419,24 @@ value = 1590
 type = S
 movetype = I
 physics = N
-anim = 1030
+anim = 1590
 ctrl = 0
-velset = 0,0
+velset = -1.2,0
+
+[State 1590, Helper interruption lifecycle]
+type = DestroySelf
+trigger1 = Root,MoveType = H
+trigger2 = RoundState != 2
+ignorehitpause = 1
+
+[State 1590, Helper receive-hit lifecycle]
+type = HitOverride
+trigger1 = Time = 0
+attr = SCA, NA, SA, HA, NP, SP, HP, NT, ST, HT
+slot = 0
+stateno = 1595
+time = -1
+ignorehitpause = 1
 
 [State 1590, Vanish sound]
 type = PlaySnd
@@ -1410,7 +1683,7 @@ value = 1
 [State 231, Signal Daemon]
 type = PlaySnd
 trigger1 = Time = 0
-value = S1,8
+value = S1,16
 channel = 2
 
 [State 231, Y into Daemon flurry]
@@ -1459,7 +1732,7 @@ value = 2
 [State 232, Signal Daemon]
 type = PlaySnd
 trigger1 = Time = 0
-value = S1,8
+value = S1,16
 channel = 2
 
 [State 232, B into Daemon launcher]
@@ -1508,7 +1781,7 @@ value = 0
 [State 234, Signal Daemon]
 type = PlaySnd
 trigger1 = Time = 0
-value = S1,8
+value = S1,16
 channel = 2
 
 [State 234, Confirmed charm into Daemon]
@@ -1571,3 +1844,15 @@ alpha = 224-Time*12,32+Time*12
 type = DestroySelf
 trigger1 = Time >= 18
 trigger2 = Root,StateNo != 1020
+
+; Hittable helpers terminate here instead of borrowing Eida's hit animations.
+[Statedef 1595]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+
+[State 1595, Remove struck helper immediately]
+type = DestroySelf
+trigger1 = 1
+ignorehitpause = 1

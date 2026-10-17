@@ -47,7 +47,7 @@ Daemon mide aproximadamente el 70% de la altura de Eida. Aparece a su lado, entr
 
 Encantamiento necesita tocar al rival con el corazón: se puede bloquear y esquivar, recorre una distancia limitada y aturde durante 45 ticks (0.75 segundos). Al conectar muestra un corazón pequeño sobre su cabeza; desaparece al acabar el aturdimiento o al recibir otro golpe. No aparece al bloquear o esquivar. La variante ascendente sigue una trayectoria diagonal fija.
 
-Omnipotencia lanza un sello de Senrigan que debe tocar al rival. Se puede bloquear, saltar o evitar quedándose fuera de alcance. Si falla, gasta las tres barras, no muestra los paneles y no hace daño. Al conectar comienza una cinemática de aproximadamente ocho segundos con seis encuadres del manga y 350 de daño. A sin abajo activa la ulti; abajo + A es la nueva técnica de encanto.
+Omnipotencia lanza un sello de Senrigan que debe tocar al rival. Se puede bloquear, saltar o evitar quedándose fuera de alcance. Si falla, gasta las tres barras, no muestra los paneles y no hace daño. Al conectar comienza una cinemática de aproximadamente ocho segundos con ocho encuadres originales del manga y 350 de daño. A sin abajo activa la ulti; abajo + A es la nueva técnica de encanto.
 
 El despertar mantiene los sprites y el tamaño normales de Eida, con aura azul y bonificaciones temporales. El salto es un poco más alto que en la revisión anterior.
 
@@ -58,3 +58,5 @@ Daemon realiza los ataques fuertes, las ráfagas y las respuestas físicas. Senr
 El encanto es una influencia pasiva en el canon; los corazones con alcance y bloqueo son una representación jugable. Omnipotencia altera recuerdos y no es un rayo de daño controlable a voluntad en el manga: su apertura, coste y daño son reglas de esta adaptación. El despertar con aura azul también es un estado de juego, no una transformación canónica nueva.
 
 Si Eida recibe un derribo y sigue viva, vuelve a levantarse automáticamente. Después puedes moverla o atacar; no hace falta pulsar un botón especial para salir del suelo.
+
+Esta revisión conserva los controles y añade cuadros de preparación y recuperación a las técnicas de apoyo. Daemon termina su movimiento antes de retirarse. Las nuevas ramas Y → X y B → Y requieren que el primer golpe conecte; bloquearlo corta la rama. Golpear a Eida cancela la ayuda ofensiva activa.

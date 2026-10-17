@@ -1,143 +1,30 @@
 [
   {
     "case": {
-      "name": "Daemon branch b a",
-      "button": "b",
-      "follow_button": "a",
+      "name": "ultimatehit",
+      "button": "x",
       "direction": "N",
-      "state": 231,
-      "cost": 0,
-      "mode": null,
-      "facing": 1,
-      "distance": 36,
-      "kind": "daemonbranch"
-    },
-    "states": [
-      0,
-      210,
-      231
-    ],
-    "damage": 172,
-    "spawn_distance": 20.0,
-    "travel_distance": 33.20000171661377,
-    "minimum_power": 3000,
-    "charm_marker": false,
-    "dash_travel": 0.0,
-    "jump_apex": 0.0,
-    "victim_end_state": 5110,
-    "failures": []
-  },
-  {
-    "case": {
-      "name": "Daemon branch c b",
-      "button": "c",
-      "follow_button": "b",
-      "direction": "N",
-      "state": 232,
-      "cost": 0,
-      "mode": null,
-      "facing": 1,
-      "distance": 36,
-      "kind": "daemonbranch"
-    },
-    "states": [
-      0,
-      220,
-      232
-    ],
-    "damage": 120,
-    "spawn_distance": 20.0,
-    "travel_distance": 20.0,
-    "minimum_power": 3000,
-    "charm_marker": false,
-    "dash_travel": 0.0,
-    "jump_apex": 0.0,
-    "victim_end_state": 5110,
-    "failures": []
-  },
-  {
-    "case": {
-      "name": "Charm into Daemon",
-      "button": "b",
-      "direction": "D",
-      "state": 234,
-      "cost": 750,
+      "state": 3000,
+      "cost": 3000,
       "mode": null,
       "facing": 1,
       "distance": 120,
-      "kind": "charmfollow"
+      "kind": "ultimatehit"
     },
     "states": [
       0,
-      10,
-      234,
-      1100
+      3000,
+      3001
     ],
-    "damage": 58,
-    "spawn_distance": 20.0,
-    "travel_distance": 91.30004119873047,
-    "minimum_power": 2250,
-    "charm_marker": true,
-    "dash_travel": 0.0,
-    "jump_apex": 0.0,
-    "victim_end_state": 0,
-    "failures": []
-  },
-  {
-    "case": {
-      "name": "Natural launcher pursuit",
-      "button": "a",
-      "direction": "D",
-      "state": 600,
-      "cost": 500,
-      "mode": null,
-      "facing": 1,
-      "distance": 100,
-      "kind": "pursuit"
-    },
-    "states": [
-      0,
-      10,
-      50,
-      52,
-      204,
-      600,
-      1020
-    ],
-    "damage": 110,
-    "spawn_distance": 20.0,
-    "travel_distance": 67.60001373291016,
-    "minimum_power": 2500,
-    "charm_marker": false,
-    "dash_travel": 0.0,
-    "jump_apex": -49.399993896484375,
-    "victim_end_state": 5110,
-    "failures": []
-  },
-  {
-    "case": {
-      "name": "Senrigan",
-      "button": "b",
-      "direction": "B",
-      "state": 1200,
-      "cost": 1000,
-      "mode": null,
-      "facing": 1,
-      "distance": 42,
-      "kind": "move"
-    },
-    "states": [
-      0,
-      10,
-      12,
-      20,
-      1200,
-      1201
-    ],
-    "damage": 104,
-    "spawn_distance": 20.0,
-    "travel_distance": 23.29999542236328,
-    "minimum_power": 2000,
+    "damage": 350,
+    "received_damage": 0,
+    "helpers_end": 0,
+    "active_assist_on_hit": false,
+    "assist_lingered_after_hit": false,
+    "latest_helper_tick": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 0,
     "charm_marker": false,
     "dash_travel": 0.0,
     "jump_apex": 0.0,

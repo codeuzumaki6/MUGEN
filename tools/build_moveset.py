@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the reviewable command map and Daemon's finite-range assist states."""
 from pathlib import Path
+from helper_lifecycle import install as install_helper_lifecycle
 
 ROOT = Path(__file__).resolve().parents[1]
 CHAR = ROOT / 'Eida'
@@ -203,6 +204,13 @@ size.ground.back = 8
 size.ground.front = 8
 size.height = 49
 
+[State {st}, Support gesture accent]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,16
+channel = 3
+volume = -70
+
 [State {st}, Recovery]
 type = ChangeState
 trigger1 = Time >= {36 if mode == 5 else 28}
@@ -328,7 +336,7 @@ trigger3 = P2Dist X < -35
 value = 1590
 
 '''
-    # Durations are AIR element timings. Every hit uses a different pose.
+    # AIR poses have anticipation, fast contacts and a longer finishing beat.
     specs=[
         (0,1520,[(2,23),(3,35)],-3.8,0,False,'MA'),
         (1,1521,[(2,18),(3,18),(5,20),(6,20),(8,36)],-4.6,-3,True,'MA'),
@@ -386,6 +394,18 @@ envshake.time = {7 if last else 3}
 envshake.ampl = {-3 if last else -1}
 
 '''
+            if last:
+                out+=f'''[State {st}, Confirmed finishing accent]
+type = PlaySnd
+triggerall = MoveHit = 1
+trigger1 = AnimElemNo(0) >= {element}
+value = S1,{15 if mode==2 else 14}
+channel = 4
+volume = -50
+persistent = 0
+ignorehitpause = 1
+
+'''
             if not last:
                 out+=f'''[State {st}, Follow connected target {j+1}]
 type = VelSet
@@ -398,19 +418,40 @@ trigger1 = AnimelemTime({element}) = 3
 x = 0
 
 '''
-        out+=f'''[State {st}, Fade out]
+        out+=f'''[State {st}, Recover the final pose]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 1580
+
+'''
+    out+='''[Statedef 1580]
+type = S
+movetype = I
+physics = N
+anim = IfElse(Var(45)=4,1584,1580)
+ctrl = 0
+velset = 0,0
+
+[State 1580, Recover kick or fist]
+type = ChangeAnim
+trigger1 = Time = 0
+trigger1 = Var(45) = 0
+trigger2 = Time = 0
+trigger2 = Var(45) = 1
+value = 1581
+
+[State 1580, Return from the attack]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 1590
 
-'''
-    out+='''[Statedef 1590]
+[Statedef 1590]
 type = S
 movetype = I
 physics = N
-anim = 1030
+anim = 1590
 ctrl = 0
-velset = 0,0
+velset = -1.2,0
 
 [State 1590, Vanish sound]
 type = PlaySnd
@@ -661,7 +702,7 @@ value = {mode}
 [State {state}, Signal Daemon]
 type = PlaySnd
 trigger1 = Time = 0
-value = S1,8
+value = S1,16
 channel = 2
 
 [State {state}, {label}]
@@ -726,6 +767,20 @@ type = DestroySelf
 trigger1 = Time >= 18
 trigger2 = Root,StateNo != 1020
 '''
+    out+='''
+; Hittable helpers terminate here instead of borrowing Eida's hit animations.
+[Statedef 1595]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+
+[State 1595, Remove struck helper immediately]
+type = DestroySelf
+trigger1 = 1
+ignorehitpause = 1
+'''
+    out=install_helper_lifecycle(out,[1500,1501,1520,1521,1522,1523,1524,1525,1580,1590])
     (CHAR/'Specials.cns').write_text(out)
 
 
