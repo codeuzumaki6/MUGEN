@@ -48,14 +48,29 @@ for face in (1,-1):
 scenarios.append(dict(name='Higher neutral jump',button='U',direction='N',state=50,cost=0,mode=None,facing=1,distance=120,kind='jump'))
 for follow,state,cost in [('b',1100,500),('z',1160,1500)]:
     scenarios.append(dict(name='X into Down '+follow,button='a',follow_button=follow,direction='N',state=state,cost=cost,mode=None,facing=1,distance=36,kind='specialcancel'))
+for face in (1,-1):
+    for button,follow,state in [('b','a',231),('c','b',232)]:
+        scenarios.append(dict(name='Daemon branch '+button+' '+follow,button=button,follow_button=follow,
+            direction='N',state=state,cost=0,mode=None,facing=face,distance=36,kind='daemonbranch'))
+    scenarios.append(dict(name='Charm into Daemon',button='b',direction='D',state=234,cost=750,
+                          mode=None,facing=face,distance=120,kind='charmfollow'))
+    scenarios.append(dict(name='Natural launcher pursuit',button='a',direction='D',state=600,cost=500,
+                          mode=None,facing=face,distance=100,kind='pursuit'))
 ultimate_only=os.environ.get('EIDA_ULTIMATE_CHECK')=='1'
-CASE_TICKS=560 if ultimate_only else 180
+recovery_only=os.environ.get('EIDA_RECOVERY_CHECK')=='1'
+CASE_TICKS=560 if ultimate_only else 280 if recovery_only else 180
 if ultimate_only:
     scenarios=[]
     for face in (1,-1):
         for kind in ('ultimatehit','ultiblock','ultimiss','ultifar'):
             scenarios.append(dict(name=kind,button='x',direction='N',state=3000,cost=3000,mode=None,facing=face,distance=340 if kind=='ultifar' else 120,kind=kind))
     scenarios.append(dict(name='Ultimate empty',button='x',direction='N',state=3000,cost=3000,mode=None,facing=1,distance=120,kind='empty'))
+if recovery_only:
+    scenarios=[]
+    for face in (1,-1):
+        for variant in ('sweep','bounce','airbounce'):
+            scenarios.append(dict(name='Recovery '+variant,button='a',direction='N',state=5120,
+                cost=0,mode=None,facing=face,distance=40,kind='knockdown',variant=variant))
 if os.environ.get('EIDA_TEST_CASES'):
     names=json.loads(os.environ['EIDA_TEST_CASES'])
     scenarios=[c for c in scenarios if c['name'] in names]
@@ -86,10 +101,12 @@ for idx,case in enumerate(scenarios):
         text+=ctrl(f'case {idx}','VarSet',at(1),f'v = 59\nvalue = {idx}')
         text+=ctrl('reset pos','PosSet',at(1),f'x = {x}\ny = 0')
         text+=ctrl('reset vel','VelSet',at(1),'x = 0\ny = 0')
+        text+=ctrl('reset fall flag','HitFallSet',at(1),'value = 0')
         text+=ctrl('reset face','Turn',at(1)+f' && Facing != {desired}','')
         text+=ctrl('reset life','LifeSet',at(1),'value = 1000')
         text+=ctrl('reset power','PowerSet',at(1),f'value = {0 if case["kind"]=="empty" else 3000}')
         text+=ctrl('reset awakening','VarSet',at(1),'v = 40\nvalue = 0')
+        text+=ctrl('reset pursuit input flag','VarSet',at(1),'v = 57\nvalue = 0')
         if who=='root' and case['kind']=='awakened':
             text+=ctrl('set awakening','VarSet',at(1),'v = 40\nvalue = 1')
             text+=ctrl('timer awakening','VarSet',at(1),'v = 41\nvalue = 900')
@@ -108,9 +125,16 @@ for idx,case in enumerate(scenarios):
         fixture+=ctrl('down input','AssertInput',f'Var(58) = [{base+20},{base+24}]','flag = D')
         press=22
     else:press=22
-    presses=[22,32,46,60] if case['kind']=='combo' else [press]
+    presses=[220] if case['kind']=='knockdown' else [22,32,46,60] if case['kind']=='combo' else [press]
     for tick in presses:
         fixture+=ctrl('button input','AssertInput',at(tick),f'flag = {button}')
+    if case['kind']=='knockdown':
+        if case['variant']=='airbounce':
+            fixture+=ctrl('airborne victim position','PosSet',at(15),'y = -70')
+            fixture+=ctrl('airborne victim velocity','VelSet',at(15),'y = -2')
+            fixture+=ctrl('airborne victim state','ChangeState',at(15),'value = 50\nctrl = 0')
+        other+=ctrl('real incoming knockdown','ChangeState',at(20),
+                    f'value = {9700 if case["variant"]=="sweep" else 9701}\nctrl = 0')
     if case['kind']=='mixed':
         follow=case['follow_button']
         fixture+=ctrl('mixed branch in hitpause','AssertInput',f'Var(59) = {idx} && StateNo = 200 && MoveHit && HitPauseTime = 4',f'flag = {follow}')
@@ -119,6 +143,17 @@ for idx,case in enumerate(scenarios):
         trigger=f'Var(59) = {idx} && StateNo = 200 && MoveHit && HitPauseTime = 4'
         fixture+=ctrl('special down in hitpause','AssertInput',trigger,'flag = D')
         fixture+=ctrl('special button in hitpause','AssertInput',trigger,f'flag = {case["follow_button"]}')
+    if case['kind']=='daemonbranch':
+        starter=210 if case['button']=='b' else 220
+        trigger=f'Var(59) = {idx} && StateNo = {starter} && MoveHit && HitPauseTime = 4'
+        fixture+=ctrl('confirmed Daemon branch','AssertInput',trigger,f'flag = {case["follow_button"]}')
+    if case['kind']=='charmfollow':
+        fixture+=ctrl('queue confirmed charm followup','AssertInput',f'Var(59) = {idx} && StateNo = 1100 && Time = 12','flag = a')
+    if case['kind']=='pursuit':
+        fixture+=ctrl('up after helper hit','AssertInput',f'Var(59) = {idx} && NumHelper(1001)>0 && (Helper(1001),MoveHit)','flag = U')
+        trigger=f'Var(59) = {idx} && StateNo = 50 && Time = 2 && Var(57) = 0'
+        fixture+=ctrl('natural aerial attack','AssertInput',trigger,'flag = a')
+        fixture+=ctrl('only one pursuit attack','VarSet',trigger,'v = 57\nvalue = 1')
     if case['state'] in (1200,1300,1350):
         other+=ctrl('place incoming strike','PosSet',at(36),f'x = (P2,Pos X) + {face*36}\ny = 0')
         other+=ctrl('incoming strike','ChangeState',at(38),'value = 210\nctrl = 0')
@@ -164,6 +199,44 @@ for directory,text,filename in [(char,fixture,'Eida.cns'),(dummy,other,'kfm.cns'
         s=re.sub(r'(?im)^(\[Statedef -2\])',lambda m:m[1]+'\n'+text,s,count=1)
     else:s+='\n[Statedef -2]\n'+text
     p.write_text(s,encoding='latin-1')
+
+if recovery_only:
+    # Test-only attacks collide normally. Never force Eida into a get-hit or
+    # get-up state; that would hide a broken transition in her recovery path.
+    attacks=''
+    for state,animation,bounce,ground_type in [(9700,440,0,'Trip'),(9701,210,-4,'High')]:
+        attacks+=f'''\n[Statedef {state}]
+type = S
+movetype = A
+physics = S
+anim = {animation}
+ctrl = 0
+velset = 0,0
+[State {state}, Real knockdown collision]
+type = HitDef
+trigger1 = Time = 0
+attr = S, NA
+damage = 60,0
+hitflag = MAF
+guardflag = MA
+pausetime = 6,8
+ground.type = {ground_type}
+animtype = Hard
+ground.hittime = 18
+ground.velocity = -2,-5
+air.velocity = -2,-5
+fall = 1
+fall.recover = 0
+fall.yvelocity = {bounce}
+sparkno = -1
+hitsound = 5,2
+[State {state}, Finish]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 0
+'''
+    with (dummy/'kfm.cns').open('a') as file:file.write(attacks)
 
 module=engine/'external/mods/eida_checks.lua'
 module.parent.mkdir(exist_ok=True)
@@ -224,13 +297,15 @@ hook.add('loop','eida_checks',function()
 end)
 '''.replace('CASECOUNT',str(len(scenarios)))
 module_text=module_text.replace('CASE_TICKS',str(CASE_TICKS))
+if recovery_only:
+    module_text=module_text.replace('player(2)\n    r.damage=', 'player(1)\n    r.damage=')
 module_text=module_text.replace('STARTPOSITIONS', '{'+','.join(str(-c['facing']*c['distance']/2) for c in scenarios)+'}')
 if capture_dir:
     module_text="modifyGameOption('Config.ScreenshotFolder',"+json.dumps(str(Path(capture_dir).resolve())+'/')+")\n"+module_text
     module_text="local cues=assert(io.open('eida_capture_cues.tsv','w'))\n"+module_text
     module_text=module_text.replace('local r=rows[case]', "local r=rows[case]\n  if stateNo()~=r.lastState then cues:write(case..'\\t'..tick..'\\t'..stateNo()..'\\n'); cues:flush(); r.lastState=stateNo() end")
     log_marker=f'if tick=={CASE_TICKS}-1 and not r.logged then'
-    capture_end=548 if ultimate_only else 150
+    capture_end=548 if ultimate_only else 260 if recovery_only else 150
     module_text=module_text.replace(log_marker, f'if tick >= 10 and tick <= {capture_end} and tick % 4 == 0 and not r.logged then screenshot() end\n  '+log_marker)
 module.write_text(module_text)
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
@@ -271,6 +346,8 @@ for line,case in zip(lines,scenarios):
         if case['distance']>70 and distance<45:failures_here.append('assist did not travel')
     if case['kind']=='move' and case['state'] in (1200,1300,1350) and damage<=0:
         failures_here.append('counter did not trigger on an incoming collision')
+    if case['kind']=='move' and case['state'] in (1200,1300) and not 0<=spawn<=28:
+        failures_here.append('physical counter did not summon Daemon beside Eida')
     if case['kind']=='move' and case['state'] in (1100,1120) and charm!='true':
         # Anti-air is tested against a standing dummy separately: a miss is valid.
         if case['state']==1100:failures_here.append('heart did not charm on contact')
@@ -295,10 +372,21 @@ for line,case in zip(lines,scenarios):
     if case['kind']=='ultimatehit' and int(victim_end) in (3010,3011):failures_here.append('ultimate did not release victim')
     if case['kind'] in ('ultiblock','ultimiss','ultifar') and (3001 in states or damage!=0):failures_here.append('ultimate hit was guaranteed or cinematic started without contact')
     if case['kind']=='jump' and not 40<=-float(apex)<=55:failures_here.append('jump height outside intended range')
+    if case['kind']=='knockdown':
+        if damage<=0:failures_here.append('fixture did not actually hit Eida')
+        if 5110 not in states:failures_here.append('did not reach lying-down state')
+        if 5120 not in states:failures_here.append('never started getting up')
+        if 200 not in states:failures_here.append('could not attack after getting up')
+    if case['kind']=='daemonbranch':
+        if damage<100 or not 0<=spawn<=28:failures_here.append('Daemon combo branch failed to connect')
+    if case['kind']=='charmfollow':
+        if marker!='true' or damage<=0 or not 0<=spawn<=28:failures_here.append('confirmed charm followup failed')
+    if case['kind']=='pursuit':
+        if 204 not in states or 600 not in states or damage<=68:failures_here.append('natural aerial pursuit did not connect after launcher')
     row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),jump_apex=float(apex),victim_end_state=int(victim_end),failures=failures_here)
     report.append(row)
     print(('FAIL' if failures_here else 'PASS'),case['name'],case['facing'],row)
     failures+=failures_here
-out=ROOT/'previews'/('engine_visual_checks.json' if capture_dir else 'engine_ultimate_checks.json' if ultimate_only else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
+out=ROOT/'previews'/('engine_visual_checks.json' if capture_dir else 'engine_recovery_checks.json' if recovery_only else 'engine_ultimate_checks.json' if ultimate_only else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not failures,failures
 print(f'PASSED: {len(scenarios)} raw-input/collision scenarios. Report: {out}')

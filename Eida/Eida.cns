@@ -52,6 +52,32 @@ crouch.friction = .82
 
 [Statedef -2]
 
+[State -2, Clear Daemon combo branch outside starters]
+type = VarSet
+triggerall = StateNo != 210
+trigger1 = StateNo != 220
+v = 28
+value = 0
+ignorehitpause = 1
+
+[State -2, Buffer physical X after Y]
+type = VarSet
+trigger1 = StateNo = 210
+trigger1 = Time > 0
+trigger1 = command = "a"
+v = 28
+value = 1
+ignorehitpause = 1
+
+[State -2, Buffer physical Y after B]
+type = VarSet
+trigger1 = StateNo = 220
+trigger1 = Time > 0
+trigger1 = command = "b"
+v = 28
+value = 1
+ignorehitpause = 1
+
 [State -2, Reset mixed combo input]
 type = VarSet
 trigger1 = StateNo != [200,202]
@@ -151,6 +177,13 @@ triggerall = IsHelper(1001)
 trigger1 = MoveType = H
 trigger2 = Root,MoveType = H
 trigger3 = RoundState != 2
+ignorehitpause = 1
+
+[State -2, Remove interrupted projectile and defensive helpers]
+type = DestroySelf
+triggerall = IsHelper(1101) || IsHelper(1301) || IsHelper(1351)
+trigger1 = MoveType = H
+trigger2 = RoundState != 2
 ignorehitpause = 1
 
 [State -2, Normal impact sparkle]
@@ -604,12 +637,26 @@ type = ChangeState
 triggerall = NumHelper(1001) > 0
 triggerall = Helper(1001),MoveHit
 trigger1 = command = "holdup"
-value = 40
+value = 204
 
 [State 203, End]
 type = ChangeState
 trigger1 = Time >= 28
 value = 0
+ctrl = 1
+
+[Statedef 204]
+type = A
+movetype = I
+physics = A
+anim = 42
+ctrl = 1
+velset = 6.2,-7.1
+
+[State 204, Continue as a normal airborne fighter]
+type = ChangeState
+trigger1 = Time >= 3
+value = 50
 ctrl = 1
 
 [Statedef 210]
@@ -641,8 +688,8 @@ hitsound = S1,1
 guardsound = S1,0
 ground.type = High
 ground.slidetime = 12
-ground.hittime = 16
-ground.velocity = -4.8
+ground.hittime = 24
+ground.velocity = -2.8
 air.velocity = -3.6,-4.2
 
 [State 210, Reset continuation]
@@ -701,8 +748,8 @@ hitsound = S1,1
 guardsound = S1,0
 ground.type = Low
 ground.slidetime = 11
-ground.hittime = 15
-ground.velocity = -4.0
+ground.hittime = 22
+ground.velocity = -2.4
 air.velocity = -3.0,-3.5
 
 [State 220, Reset continuation]
@@ -864,6 +911,29 @@ trigger1 = Time = 0
 value = S0,1
 channel = 0
 
+[State 1100, Reset followup input]
+type = VarSet
+trigger1 = Time = 0
+v = 29
+value = 0
+
+[State 1100, Buffer physical X followup]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "a"
+v = 29
+value = 1
+ignorehitpause = 1
+
+[State 1100, Daemon follows only a confirmed charm]
+type = ChangeState
+triggerall = Var(29) = 1
+triggerall = Power >= 250
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1101) > 0
+trigger1 = Helper(1101),StateNo = 1130
+value = 234
+
 [State 1100, Charm sound]
 type = PlaySnd
 trigger1 = Time = 6
@@ -903,6 +973,19 @@ anim = 1110
 ctrl = 0
 velset = 5.2,0
 sprpriority = 5
+
+[State 1101, Faint heart trail]
+type = AfterImage
+trigger1 = Time = 0
+time = 18
+length = 3
+timegap = 3
+framegap = 2
+palcolor = 256
+palbright = 0,0,0
+palcontrast = 180,150,180
+paladd = 0,0,0
+trans = Add
 
 [State 1101, Charm collision]
 type = HitDef
@@ -1002,7 +1085,7 @@ pos = 0,-38
 postype = P1
 bindtime = -1
 removetime = 12
-scale = .36,.36
+scale = .12,.12
 sprpriority = -2
 ownpal = 1
 removeongethit = 1
@@ -1016,7 +1099,7 @@ pos = 0,-38
 postype = P1
 bindtime = -1
 removetime = 12
-scale = .43,.43
+scale = .14,.14
 sprpriority = -2
 ownpal = 1
 removeongethit = 1
@@ -1030,7 +1113,7 @@ pos = 0,-38
 postype = P1
 bindtime = -1
 removetime = 31
-scale = .5,.5
+scale = .16,.16
 sprpriority = -2
 ownpal = 1
 removeongethit = 1
@@ -1066,18 +1149,25 @@ anim = 230
 ctrl = 0
 velset = 0,0
 
-[State 1201, Eida Senrigan counter damage]
-type = TargetLifeAdd
-trigger1 = Time = 10
-value = -90
-kill = 1
-absolute = 1
+[State 1201, Daemon physical response variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 3
 
-[State 1201, Eida Senrigan counter launch]
-type = TargetVelSet
-trigger1 = Time = 10
-x = -5
-y = -4
+[State 1201, Observation prepares Daemon's counter]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon Senrigan response"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
 
 [State 1201, Eida Senrigan counter sound]
 type = PlaySnd
@@ -1194,6 +1284,18 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,9
 channel = 2
+
+[State 1301, Arrival dust]
+type = Explod
+trigger1 = Time = 0
+anim = 8420
+pos = 0,-8
+postype = P1
+scale = .14,.14
+removetime = -2
+sprpriority = -1
+ownpal = 1
+trans = Add
 
 [State 1301, End]
 type = DestroySelf

@@ -133,14 +133,14 @@
       1200,
       1201
     ],
-    "damage": 90,
-    "spawn_distance": -1.0,
-    "travel_distance": 0.0,
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
     "jump_apex": 0.0,
-    "victim_end_state": 0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -523,14 +523,14 @@
       1200,
       1201
     ],
-    "damage": 90,
-    "spawn_distance": -1.0,
-    "travel_distance": 0.0,
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
     "jump_apex": 0.0,
-    "victim_end_state": 0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1023,14 +1023,14 @@
       1200,
       1201
     ],
-    "damage": 90,
-    "spawn_distance": -1.0,
-    "travel_distance": 0.0,
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
     "jump_apex": 0.0,
-    "victim_end_state": 0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1198,14 +1198,14 @@
       1200,
       1201
     ],
-    "damage": 90,
-    "spawn_distance": -1.0,
-    "travel_distance": 0.0,
+    "damage": 104,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
     "jump_apex": 0.0,
-    "victim_end_state": 0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1228,8 +1228,8 @@
       1050
     ],
     "damage": 62,
-    "spawn_distance": 20.000003814697266,
-    "travel_distance": 88.00000762939453,
+    "spawn_distance": 20.0,
+    "travel_distance": 88.0000228881836,
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
@@ -1338,7 +1338,7 @@
     ],
     "damage": 170,
     "spawn_distance": 20.0,
-    "travel_distance": 104.50011444091797,
+    "travel_distance": 104.50006103515625,
     "minimum_power": 1500,
     "charm_marker": false,
     "dash_travel": 0.0,
@@ -1687,6 +1687,236 @@
     "dash_travel": 0.0,
     "jump_apex": 0.0,
     "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Daemon branch b a",
+      "button": "b",
+      "follow_button": "a",
+      "direction": "N",
+      "state": 231,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "daemonbranch"
+    },
+    "states": [
+      0,
+      210,
+      231
+    ],
+    "damage": 172,
+    "spawn_distance": 20.0,
+    "travel_distance": 33.199981689453125,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Daemon branch c b",
+      "button": "c",
+      "follow_button": "b",
+      "direction": "N",
+      "state": 232,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "daemonbranch"
+    },
+    "states": [
+      0,
+      220,
+      232
+    ],
+    "damage": 120,
+    "spawn_distance": 20.0,
+    "travel_distance": 20.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Charm into Daemon",
+      "button": "b",
+      "direction": "D",
+      "state": 234,
+      "cost": 750,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "charmfollow"
+    },
+    "states": [
+      0,
+      10,
+      234,
+      1100
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30001831054688,
+    "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Natural launcher pursuit",
+      "button": "a",
+      "direction": "D",
+      "state": 600,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 100,
+      "kind": "pursuit"
+    },
+    "states": [
+      0,
+      10,
+      50,
+      52,
+      204,
+      600,
+      1020
+    ],
+    "damage": 110,
+    "spawn_distance": 20.0,
+    "travel_distance": 67.60002136230469,
+    "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": -49.399993896484375,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Daemon branch b a",
+      "button": "b",
+      "follow_button": "a",
+      "direction": "N",
+      "state": 231,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 36,
+      "kind": "daemonbranch"
+    },
+    "states": [
+      0,
+      210,
+      231
+    ],
+    "damage": 172,
+    "spawn_distance": 20.0,
+    "travel_distance": 33.199981689453125,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Daemon branch c b",
+      "button": "c",
+      "follow_button": "b",
+      "direction": "N",
+      "state": 232,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 36,
+      "kind": "daemonbranch"
+    },
+    "states": [
+      0,
+      220,
+      232
+    ],
+    "damage": 120,
+    "spawn_distance": 20.0,
+    "travel_distance": 20.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Charm into Daemon",
+      "button": "b",
+      "direction": "D",
+      "state": 234,
+      "cost": 750,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "charmfollow"
+    },
+    "states": [
+      0,
+      10,
+      234,
+      1100
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30000305175781,
+    "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Natural launcher pursuit",
+      "button": "a",
+      "direction": "D",
+      "state": 600,
+      "cost": 500,
+      "mode": null,
+      "facing": -1,
+      "distance": 100,
+      "kind": "pursuit"
+    },
+    "states": [
+      0,
+      10,
+      50,
+      52,
+      204,
+      600,
+      1020
+    ],
+    "damage": 110,
+    "spawn_distance": 20.0,
+    "travel_distance": 67.60000610351562,
+    "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": -49.399993896484375,
+    "victim_end_state": 5110,
     "failures": []
   }
 ]

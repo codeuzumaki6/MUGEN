@@ -637,6 +637,24 @@ triggerall = command != "holddown"
 trigger1 = Var(27) > 0
 value = IfElse(Var(27) = 1,210,220)
 
+[State -1, Y into Daemon flurry]
+type = ChangeState
+triggerall = StateNo = 210
+triggerall = MoveHit
+triggerall = NumHelper(1001) = 0
+triggerall = command != "holddown"
+trigger1 = Var(28) = 1
+value = 231
+
+[State -1, B into Daemon launcher]
+type = ChangeState
+triggerall = StateNo = 220
+triggerall = MoveHit
+triggerall = NumHelper(1001) = 0
+triggerall = command != "holddown"
+trigger1 = Var(28) = 1
+value = 232
+
 [State -1, Normal a]
 type = ChangeState
 value = 200

@@ -6,6 +6,12 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 ## Cambios de esta revisión
 
+- Derribos corregidos: el impacto contra el suelo y el asentamiento tienen duración finita; el estado tumbado pasa automáticamente al levantarse cuando Eida sigue viva. El levantarse ajusta sus cajas al incorporarse.
+- Nuevas rutas Y → X (ráfaga de Daemon), B → Y (launcher de Daemon) y abajo + Y → X (seguimiento de Daemon solo tras encanto confirmado, 250 de energía extra). Las dos primeras no gastan energía.
+- Abajo + X permite salto de persecución hacia el rival y continuación aérea. También se puede perseguir el launcher normal de Daemon.
+- Senrigan prepara un contraataque físico de Daemon: se retiró el daño directo de la observación. El encanto, el reflejo y Omnipotencia conservan reglas adaptadas al combate; no son una reproducción literal de habilidades activas del canon.
+- Nuevas transiciones de poses para las rutas Y/X y B/Y, estelas cortas de movimiento para Daemon y el corazón, polvo de aparición y desaparición, y un sello pequeño de Senrigan en abajo + X. Se reutilizan los dibujos existentes.
+
 - Corrección del error de la captura `Error parsing trigger2` en `Eida.cmd:304`: se sustituyeron las diez condiciones que combinaban un intervalo sin agrupar con `||` por grupos `trigger2` a `trigger8`, uno por estado permitido y siempre condicionado a `MoveHit`. Se mantienen las rutas de combo, los costes y los controles. La comprobación de regresión reproduce esa misma línea del ZIP anterior y la rechaza.
 - Corrección de carga para MUGEN 1.1: los fundidos de Omnipotencia ahora usan `IfElse()` en lugar de `Min()`. Esta última es una extensión aceptada por Ikemen y puede impedir que MUGEN compile el personaje al seleccionarlo. La operación y la animación se conservan. El validador comprueba ahora las llamadas de las expresiones CNS/CMD; reproducir el fallo en el ZIP anterior forma parte de la comprobación de regresión. Esto no sustituye una ejecución en el MUGEN exacto del usuario.
 - Omnipotencia reconstruida: seis encuadres de los originales del manga a 1280×720, cámara suave, fundidos, sello de apertura, ambiente sonoro, transiciones y remate. Los originales se recortan y escalan; no se redibujaron ni se cambiaron sus caras.
@@ -30,9 +36,10 @@ Consulta **CONTROLES_XBOX.md**: incluye 14 técnicas, rutas de combo, carga, des
 
 - SFF v2.0.1.0: 157 sprites; los seis paneles conservan 1280×720 dentro del archivo. Retrato de combate 25×25 y retrato de selección 120×140.
 - SND: 23 muestras mono PCM de 16 bits, incluidos tres efectos nuevos de la cinemática.
-- AIR: 110 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
-- 116 estados en cuatro CNS; referencias estáticas de estados, animaciones locales y sonidos verificadas.
-- Pruebas de Ikemen GO con entradas y colisiones reales: técnicas, rutas mixtas, enlaces durante hitpause, salto, costes, ayudas que pueden fallar y apertura de ultimate bloqueada, esquivada o fuera de alcance. Informes reproducibles en `previews/engine_moveset_checks.json` y `previews/engine_ultimate_checks.json` del repositorio.
+- AIR: 112 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
+- 121 estados en cuatro CNS; referencias estáticas de estados, animaciones locales y sonidos verificadas.
+- 83 escenarios en Ikemen GO con entradas y colisiones reales: 68 de movimiento/técnicas/combos, 6 de derribos y recuperación, y 9 de ultimate. Barrido, rebote y caída aérea se comprueban en ambas orientaciones: recibe daño, cae, se levanta y vuelve a atacar. Además, cuatro pruebas de regresión del validador cubren los errores de carga previos y el impacto infinito.
+- Las pruebas cubren técnicas, rutas mixtas, enlaces durante hitpause, salto, costes, ayudas que pueden fallar y apertura de ultimate bloqueada, esquivada o fuera de alcance. Informes reproducibles en `previews/engine_moveset_checks.json` y `previews/engine_ultimate_checks.json` y `previews/engine_recovery_checks.json` del repositorio.
 
 Las pruebas del motor usan copias temporales e instrumentación fuera de la carpeta entregada. No se pudo ejecutar el binario exacto de Jump Force MUGEN V14 del usuario ni comprobar físicamente su mando Xbox. El equilibrio frente a todo su plantel requiere partidas locales.
 

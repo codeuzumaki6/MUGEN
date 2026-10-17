@@ -111,6 +111,24 @@ triggerall = command != "holddown"
 trigger1 = Var(27) > 0
 value = IfElse(Var(27) = 1,210,220)
 
+[State -1, Y into Daemon flurry]
+type = ChangeState
+triggerall = StateNo = 210
+triggerall = MoveHit
+triggerall = NumHelper(1001) = 0
+triggerall = command != "holddown"
+trigger1 = Var(28) = 1
+value = 231
+
+[State -1, B into Daemon launcher]
+type = ChangeState
+triggerall = StateNo = 220
+triggerall = MoveHit
+triggerall = NumHelper(1001) = 0
+triggerall = command != "holddown"
+trigger1 = Var(28) = 1
+value = 232
+
 '''
     for b,st in [('a',200),('b',210),('c',220)]:
         out+=f'''[State -1, Normal {b}]
@@ -192,6 +210,26 @@ value = 0
 ctrl = 1
 
 '''
+        if st==1020:
+            out+='''[State 1020, Senrigan glance prepares the assist]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Senrigan glance"
+ID = 8150
+stateno = 8150
+pos = 4,-56
+postype = P1
+ownpal = 1
+
+[State 1020, Pursue a confirmed Daemon launcher]
+type = ChangeState
+triggerall = NumHelper(1001) > 0
+triggerall = Helper(1001),MoveHit
+trigger1 = command = "holdup"
+value = 204
+
+'''
     out+='''[Statedef 1500]
 type = S
 movetype = I
@@ -250,6 +288,19 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,0
 channel = 1
+
+[State 1501, Short motion trail]
+type = AfterImage
+trigger1 = Time = 0
+time = 12
+length = 6
+timegap = 2
+framegap = 2
+palcolor = 128
+palbright = 0,8,16
+palcontrast = 160,190,220
+paladd = 0,0,0
+trans = Add
 
 [State 1501, Dash trail]
 type = Explod
@@ -366,6 +417,18 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,8
 channel = 2
+
+[State 1590, Departure dust]
+type = Explod
+trigger1 = Time = 0
+anim = 8420
+pos = 0,-14
+postype = P1
+scale = .18,.18
+removetime = -2
+ownpal = 1
+sprpriority = -1
+trans = Add
 
 [State 1590, Fade]
 type = Trans
@@ -576,6 +639,92 @@ type = ChangeState
 trigger1 = Time >= 34
 value = 0
 ctrl = 1
+'''
+    for state,mode,cost,label in [(231,1,0,'Y into Daemon flurry'),
+                                  (232,2,0,'B into Daemon launcher'),
+                                  (234,0,250,'Confirmed charm into Daemon')]:
+        out+=f'''\n[Statedef {state}]
+type = S
+movetype = A
+physics = S
+anim = {state if state in (231,232) else 230}
+ctrl = 0
+velset = 0,0
+poweradd = -{cost}
+
+[State {state}, Existing physical attack variant]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = {mode}
+
+[State {state}, Signal Daemon]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,8
+channel = 2
+
+[State {state}, {label}]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Daemon combo support"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State {state}, Jump after launcher]
+type = ChangeState
+triggerall = Var(45) = 2
+triggerall = NumHelper(1001) > 0
+triggerall = Helper(1001),MoveHit
+trigger1 = command = "holdup"
+value = 204
+
+[State {state}, Recovery]
+type = ChangeState
+trigger1 = Time >= 32
+value = 0
+ctrl = 1
+'''
+    out+='''
+; Cosmetic eye cue only: no collision, damage, or opponent control.
+[Statedef 8150]
+type = S
+movetype = I
+physics = N
+anim = 8100
+ctrl = 0
+velset = 0,0
+sprpriority = 5
+
+[State 8150, Follow eye position]
+type = BindToRoot
+trigger1 = 1
+pos = 4,-56
+time = 1
+
+[State 8150, Small crescent motion]
+type = AngleDraw
+trigger1 = 1
+value = Time*6
+scale = .045+Time*.001,.045+Time*.001
+
+[State 8150, Fade]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 224-Time*12,32+Time*12
+
+[State 8150, Gone]
+type = DestroySelf
+trigger1 = Time >= 18
+trigger2 = Root,StateNo != 1020
 '''
     (CHAR/'Specials.cns').write_text(out)
 

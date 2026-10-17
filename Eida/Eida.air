@@ -309,6 +309,29 @@ Clsn2Default: 1
 230,1,0,0,6
 230,2,0,0,6
 
+[Begin Action 231]
+; Recover the kick, then signal Daemon using Eida's original gesture poses.
+Clsn2Default: 1
+ Clsn2[0] = -16,-70,16,0
+210,3,0,0,3
+230,0,0,0,4
+230,1,0,0,5
+230,2,0,0,-1
+
+[Begin Action 232]
+; Rise from the low strike before the launcher assist.
+Clsn2Default: 1
+ Clsn2[0] = -16,-70,16,0
+Clsn2: 1
+ Clsn2[0] = -24,-45,24,0
+220,1,0,0,3
+Clsn2: 1
+ Clsn2[0] = -21,-52,21,0
+220,0,0,0,3
+230,0,0,0,4
+230,1,0,0,5
+230,2,0,0,-1
+
 [Begin Action 600]
 Clsn2Default: 1
  Clsn2[0] = -20,-55,20,-4
@@ -391,7 +414,7 @@ Clsn2Default: 1
  Clsn2[0] = -15,-70,15,0
 230,0,0,0,8
 230,1,0,0,8
-330,0,0,0,12
+230,2,0,0,12
 
 ; Ranged charm projectile. Its collision box travels with the visible heart.
 [Begin Action 1130]
@@ -628,18 +651,26 @@ Clsn2Default: 1
 [Begin Action 5100]
 Clsn2Default: 1
  Clsn2[0] = -38,-16,38,0
-170,0,0,0,-1
+170,0,0,0,6
 [Begin Action 5110]
 Clsn2Default: 1
  Clsn2[0] = -38,-16,38,0
 170,0,0,0,-1
 [Begin Action 5120]
-Clsn2Default: 1
+Clsn2: 1
  Clsn2[0] = -38,-16,38,0
 170,0,0,0,8
+Clsn2: 1
+ Clsn2[0] = -24,-35,24,0
 171,0,0,0,6
+Clsn2: 1
+ Clsn2[0] = -18,-55,18,0
 171,1,0,0,6
+Clsn2: 1
+ Clsn2[0] = -15,-68,15,0
 320,2,0,0,4
+Clsn2: 1
+ Clsn2[0] = -14,-70,14,0
 320,3,0,0,4
 [Begin Action 5150]
 Clsn2Default: 1
@@ -652,7 +683,7 @@ Clsn2Default: 1
 [Begin Action 5170]
 Clsn2Default: 1
  Clsn2[0] = -35,-22,35,-2
-170,0,0,0,-1
+170,0,0,0,4
 
 [Begin Action 1510]
 Clsn2Default: 1

@@ -177,6 +177,7 @@ def main() -> None:
     air_text = (ROOT / "Eida.air").read_text(encoding="utf-8")
     actions: set[int] = set()
     idle_refs: list[tuple[int, int]] = []
+    frame_times: dict[int,list[int]] = {}
     current_action = None
     for line in air_text.splitlines():
         match = re.match(r"^\s*\[Begin Action\s+(-?\d+)\]", line, re.I)
@@ -184,6 +185,7 @@ def main() -> None:
             current_action = int(match.group(1))
             check(current_action not in actions, f"Eida.air: duplicate action {current_action}")
             actions.add(current_action)
+            frame_times[current_action]=[]
             continue
         match = re.match(r"^\s*(\d+)\s*,\s*(\d+)\s*,", line)
         if match:
@@ -191,9 +193,16 @@ def main() -> None:
             check(ref in sprites, f"Eida.air: action {current_action} references missing sprite {ref[0]},{ref[1]}")
             if current_action == 0:
                 idle_refs.append(ref)
+            timing=re.match(r'^\s*\d+\s*,\s*\d+\s*,\s*-?\d+\s*,\s*-?\d+\s*,\s*(-?\d+)',line)
+            if timing and current_action is not None:
+                frame_times[current_action].append(int(timing.group(1)))
     required_actions = {0, 10, 11, 12, 20, 21, 40, 41, 42, 43, 44, 47, 200, 210, 220, 500, 600, 1000, 1010, 1020, 1100, 1200, 1300, 3000, 8000, 8001, 8002, 8003, 5000, 5050, 5100, 5110, 5120}
     check(required_actions <= actions, f"Eida.air: missing actions {sorted(required_actions - actions)}")
     check(len(idle_refs) >= 4 and all(group == 0 for group, _ in idle_refs), "Eida.air: idle contains a non-idle sprite group")
+    for action in (5100,5170,5120):
+        times=frame_times.get(action,[])
+        check(bool(times) and all(time>=0 for time in times) and sum(times)>0,
+              f'Eida.air: recovery transition {action} must finish; an infinite frame can trap knockdown recovery')
 
     cmd_text = (ROOT / "Eida.cmd").read_text(encoding="utf-8")
     defined_commands: set[str] = set()

@@ -3378,6 +3378,12 @@ trigger1 = Time = 0
 ampl = 200, 7, -.467
 time = 30
 waveform = sine
+[State 5110, Automatic get-up while alive]
+type = ChangeState
+trigger1 = Alive
+trigger1 = Time >= Const(data.liedown.time)
+value = 5120
+ctrl = 0
 ;---------------------------------------------------------------------------
 ; HIT_GETUP
 [Statedef 5120]

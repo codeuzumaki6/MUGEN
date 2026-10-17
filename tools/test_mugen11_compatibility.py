@@ -48,4 +48,17 @@ class CompatibilityRegression(unittest.TestCase):
             self.assertNotEqual(result.returncode,0,result.stdout+result.stderr)
             self.assertIn('Eida.cmd:304: bare interval comparison',result.stdout)
 
+    def test_infinite_ground_impact_animation_is_rejected(self):
+        with tempfile.TemporaryDirectory(prefix='eida-getup-regression-') as directory:
+            character=Path(directory)/'Eida';character.mkdir()
+            for source in (ROOT/'Eida').iterdir():
+                if source.is_file():shutil.copy2(source,character/source.name)
+            path=character/'Eida.air'
+            text,count=re.subn(r'(\[Begin Action 5100\][\s\S]*?170,0,0,0,)6',r'\g<1>-1',path.read_text(),count=1)
+            self.assertEqual(count,1)
+            path.write_text(text)
+            result=validate(character)
+            self.assertNotEqual(result.returncode,0)
+            self.assertIn('recovery transition 5100 must finish',result.stdout)
+
 if __name__=='__main__':unittest.main()
