@@ -24,6 +24,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -51,6 +53,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -76,6 +80,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -103,6 +109,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -131,6 +139,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -156,6 +166,8 @@
     "minimum_power": 2500,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -183,6 +195,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -210,6 +224,8 @@
     "minimum_power": 2250,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -236,6 +252,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -260,6 +278,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -284,6 +304,89 @@
     "minimum_power": 1500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoDoble",
+      "button": "x",
+      "direction": "D",
+      "state": 1140,
+      "cost": 1000,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1140
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "PasoSenrigan",
+      "button": "y",
+      "direction": "D",
+      "state": 1150,
+      "cost": 750,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1150
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "AperturaCombinada",
+      "button": "z",
+      "direction": "D",
+      "state": 1160,
+      "cost": 1500,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1160
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30004119873047,
+    "minimum_power": 1500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -311,6 +414,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -338,6 +443,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -363,6 +470,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -390,6 +499,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -418,6 +529,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -443,6 +556,8 @@
     "minimum_power": 2500,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -470,6 +585,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -497,6 +614,8 @@
     "minimum_power": 2250,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -523,6 +642,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -547,6 +668,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -571,6 +694,89 @@
     "minimum_power": 1500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "EncantoDoble",
+      "button": "x",
+      "direction": "D",
+      "state": 1140,
+      "cost": 1000,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1140
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2000,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "PasoSenrigan",
+      "button": "y",
+      "direction": "D",
+      "state": 1150,
+      "cost": 750,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1150
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "AperturaCombinada",
+      "button": "z",
+      "direction": "D",
+      "state": 1160,
+      "cost": 1500,
+      "mode": null,
+      "facing": -1,
+      "distance": 120,
+      "kind": "move"
+    },
+    "states": [
+      0,
+      10,
+      1160
+    ],
+    "damage": 58,
+    "spawn_distance": 20.0,
+    "travel_distance": 91.30004119873047,
+    "minimum_power": 1500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -598,6 +804,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -623,6 +831,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -650,6 +860,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 52,
     "failures": []
   },
   {
@@ -673,6 +885,8 @@
     "minimum_power": 0,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -698,6 +912,8 @@
     "minimum_power": 0,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -725,6 +941,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -752,6 +970,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -779,6 +999,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -807,6 +1029,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -834,6 +1058,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -861,6 +1087,8 @@
     "minimum_power": 2250,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -888,6 +1116,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -915,6 +1145,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -942,6 +1174,8 @@
     "minimum_power": 2250,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -970,6 +1204,8 @@
     "minimum_power": 2000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -997,6 +1233,8 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -1024,6 +1262,8 @@
     "minimum_power": 2250,
     "charm_marker": true,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -1049,6 +1289,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -1074,6 +1316,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5120,
     "failures": []
   },
   {
@@ -1098,6 +1342,8 @@
     "minimum_power": 1500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1124,6 +1370,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 26.555496215820312,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -1152,6 +1400,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": -55.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1178,6 +1428,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 72.41950988769531,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   },
   {
@@ -1206,6 +1458,8 @@
     "minimum_power": 3000,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": -55.0,
+    "victim_end_state": 5110,
     "failures": []
   },
   {
@@ -1231,6 +1485,208 @@
     "minimum_power": 2500,
     "charm_marker": false,
     "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 52,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Mixed X b",
+      "button": "a",
+      "follow_button": "b",
+      "direction": "N",
+      "state": 211,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "mixed"
+    },
+    "states": [
+      0,
+      200,
+      210,
+      211
+    ],
+    "damage": 150,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Mixed X c",
+      "button": "a",
+      "follow_button": "c",
+      "direction": "N",
+      "state": 221,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "mixed"
+    },
+    "states": [
+      0,
+      200,
+      220,
+      221
+    ],
+    "damage": 138,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Mixed X b",
+      "button": "a",
+      "follow_button": "b",
+      "direction": "N",
+      "state": 211,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 36,
+      "kind": "mixed"
+    },
+    "states": [
+      0,
+      200,
+      210,
+      211
+    ],
+    "damage": 150,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Mixed X c",
+      "button": "a",
+      "follow_button": "c",
+      "direction": "N",
+      "state": 221,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 36,
+      "kind": "mixed"
+    },
+    "states": [
+      0,
+      200,
+      220,
+      221
+    ],
+    "damage": 138,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 5110,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Higher neutral jump",
+      "button": "U",
+      "direction": "N",
+      "state": 50,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "jump"
+    },
+    "states": [
+      0,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "jump_apex": -49.399993896484375,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "X into Down b",
+      "button": "a",
+      "follow_button": "b",
+      "direction": "N",
+      "state": 1100,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "specialcancel"
+    },
+    "states": [
+      0,
+      200,
+      1100
+    ],
+    "damage": 28,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "X into Down z",
+      "button": "a",
+      "follow_button": "z",
+      "direction": "N",
+      "state": 1160,
+      "cost": 1500,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "specialcancel"
+    },
+    "states": [
+      0,
+      200,
+      1160
+    ],
+    "damage": 86,
+    "spawn_distance": 20.0,
+    "travel_distance": 23.29999542236328,
+    "minimum_power": 1500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
+    "jump_apex": 0.0,
+    "victim_end_state": 0,
     "failures": []
   }
 ]

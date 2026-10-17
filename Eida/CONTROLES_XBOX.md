@@ -1,6 +1,6 @@
 # Controles físicos de Xbox
 
-Para el `mugen.cfg` suministrado: **X=a, Y=b, B=c, A=x, RB=y, RT=z, Pausa/carga=s** (las letras a/b/c/x/y/z son internas de MUGEN).
+Correspondencia usada en el proyecto y en tu guía Xbox: **X=a, Y=b, B=c, A=x, RB=y, RT=z, LB/carga=s** (las letras a/b/c/x/y/z son internas de MUGEN). Si tu configuración anterior usa Pausa para la entrada de carga `s`, ese botón sigue funcionando; el personaje no modifica la configuración global del mando.
 
 La tabla muestra a Eida mirando a la derecha. Si mira a la izquierda, se invierten las direcciones horizontales. Puedes mantener la diagonal y pulsar el botón, o realizar el cuarto de círculo completo (↓ ↘ → / ↓ ↙ ←).
 
@@ -15,11 +15,14 @@ La tabla muestra a Eida mirando a la derecha. Si mira a la izquierda, se inviert
 | ↓↘ + B | Daemon: barrido bajo | 500 |
 | ↓↙ + B | Eida: corazón ascendente para cubrir el aire | 750 |
 | ↓ + B | Daemon: defensa corta y respuesta | 500 |
+| ↓ + A | Eida: doble pulso de encanto a dos alturas | 1000 |
+| ↓ + RB | Paso de Senrigan: retroceso y corazón de respuesta | 750 |
+| ↓ + RT | Apertura combinada: corazón y entrada de Daemon | 1500 |
 | RB | Daemon: parry durante 2 segundos; contraataque confirmado imbloqueable | 1000 |
 | RT | Daemon: asalto de seis impactos con remate | 1500 |
-| A | Omnipotencia | 3000 |
-| Mantener Pausa/carga | Cargar energía | — |
-| ↓ + Pausa/carga con barra llena | Despertar durante 15 segundos | 3000 |
+| A sin dirección abajo | Omnipotencia, apertura a media distancia | 3000 |
+| Mantener LB/carga | Cargar energía | — |
+| ↓ + LB/carga con barra llena | Despertar durante 15 segundos | 3000 |
 
 Una barra equivale a 1000 de energía. Las técnicas tienen recuperación y pueden fallar. Se permite una ayuda ofensiva de Daemon a la vez; los especiales ofensivos pueden cancelar un golpe normal conectado.
 
@@ -29,10 +32,15 @@ Una barra equivale a 1000 de energía. Las técnicas tienen recuperación y pued
 - **X, X, X, X:** dos puñetazos, patada y ayuda de Daemon con launcher. Sigue pulsando para avanzar; si el primer golpe falla, no avanza automáticamente la cadena. Después del launcher confirmado puedes pulsar arriba para perseguir.
 - **Y, Y:** patada y remate ascendente.
 - **B, B:** ataque bajo y derribo.
+- **X, Y, Y** o **X, X, Y, Y:** ruta de patadas con remate ascendente.
+- **X, B, B** o **X, X, B, B:** ruta baja con derribo.
+- Tras un normal conectado puedes cancelar a los especiales ofensivos. Las pulsaciones dentro de la pausa de impacto se aceptan; fallar el golpe no concede ese enlace.
 - En el aire: X/Y/B atacan; X puede enlazar con Y y Y con B al conectar.
 
 Daemon mide aproximadamente el 70% de la altura de Eida. Aparece a su lado, entra en carrera, golpea al llegar al alcance y desaparece. Puede recibir golpes y no se teletransporta delante del rival.
 
 Encantamiento necesita tocar al rival con el corazón: se puede bloquear y esquivar, recorre una distancia limitada y aturde durante 45 ticks (0.75 segundos). Al conectar muestra un corazón pequeño sobre su cabeza; desaparece al acabar el aturdimiento o al recibir otro golpe. No aparece al bloquear o esquivar. La variante ascendente sigue una trayectoria diagonal fija.
 
-El despertar mantiene todos los sprites y controles normales de Eida; agrega un aura azul aditiva y bonificaciones temporales. A sigue reservada para Omnipotencia.
+Omnipotencia lanza un sello de Senrigan que debe tocar al rival. Se puede bloquear, saltar o evitar quedándose fuera de alcance. Si falla, gasta las tres barras, no muestra los paneles y no hace daño. Al conectar comienza una cinemática de aproximadamente ocho segundos con seis encuadres del manga y 350 de daño. A sin abajo activa la ulti; abajo + A es la nueva técnica de encanto.
+
+El despertar mantiene los sprites y el tamaño normales de Eida, con aura azul y bonificaciones temporales. El salto es un poco más alto que en la revisión anterior.

@@ -19,6 +19,9 @@ MOVES = [
     ('DefensaDaemon','c','D',1300,500,None,'B: defensa corta y contraataque'),
     ('ParryDaemon','y','N',1350,1000,None,'RB: parry de dos segundos'),
     ('AsaltoDoble','z','N',1060,1500,5,'RT: asalto de seis impactos'),
+    ('EncantoDoble','x','D',1140,1000,None,'A con abajo: doble pulso de encanto'),
+    ('PasoSenrigan','y','D',1150,750,None,'RB con abajo: retroceso y corazon de respuesta'),
+    ('AperturaCombinada','z','D',1160,1500,None,'RT con abajo: encanto y entrada de Daemon'),
 ]
 
 
@@ -52,6 +55,7 @@ def make_commands():
 type = ChangeState
 value = 3000
 triggerall = command = "Omnipotencia"
+triggerall = command != "holddown"
 triggerall = power >= 3000
 triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
@@ -68,9 +72,10 @@ triggerall = statetype != A
 trigger1 = ctrl
 
 '''
-    for name,b,d,st,cost,mode,description in MOVES:
+    for name,b,d,st,cost,mode,description in sorted(MOVES,key=lambda move:move[2]=='N'):
         out+=f'''[State -1, {description}]
 type = ChangeState
+ignorehitpause = 1
 value = {st}
 triggerall = command = "{name}"
 triggerall = power >= {cost}
@@ -79,12 +84,12 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 '''
-        if st in (1100,1120):out+='triggerall = NumHelper(1101) = 0\n'
+        if st in (1100,1120,1140,1150,1160):out+='triggerall = NumHelper(1101) = 0\n'
         if d == 'D':
             out+='triggerall = command = "holddown"\ntriggerall = command != "holdfwd"\ntriggerall = command != "holdback"\n'
         out+='trigger1 = ctrl\n'
-        if mode is not None or st in (1100,1120):
-            out+='trigger2 = StateNo = [200,202]\ntrigger2 = MoveHit\n'
+        if mode is not None or st in (1100,1120,1140,1160):
+            out+='trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221\ntrigger2 = MoveHit\n'
         out+='\n'
     out+='''[State -1, Carga pausa]
 type = ChangeState
@@ -93,6 +98,15 @@ triggerall = command = "Carga"
 triggerall = power < 3000
 triggerall = statetype != A
 trigger1 = ctrl
+
+'''
+    out+='''[State -1, Confirmed X into Y or B]
+type = ChangeState
+triggerall = StateNo = [200,202]
+triggerall = MoveHit
+triggerall = command != "holddown"
+trigger1 = Var(27) > 0
+value = IfElse(Var(27) = 1,210,220)
 
 '''
     for b,st in [('a',200),('b',210),('c',220)]:
@@ -422,10 +436,148 @@ trigger1 = Root,Var(40) = 0
 trigger2 = RoundState != 2
 ignorehitpause = 1
 '''
+    out+='''
+; New Eida support routes. Daemon's existing body and attack states are intact.
+[Statedef 1140]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = -1000
+
+[State 1140, Cast sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,10
+
+[State 1140, Two distinct travelling pulses]
+type = Helper
+trigger1 = Time = 9
+trigger2 = Time = 18
+helpertype = Normal
+name = "Double charm pulse"
+ID = 1101
+stateno = 1101
+pos = 24,IfElse(Time = 9,-32,-60)
+postype = P1
+ownpal = 1
+
+[State 1140, Recovery]
+type = ChangeState
+trigger1 = Time >= 34
+value = 0
+ctrl = 1
+
+[Statedef 1150]
+type = S
+movetype = I
+physics = N
+anim = 21
+ctrl = 0
+velset = -4,0
+poweradd = -750
+
+[State 1150, Stop retreat]
+type = VelSet
+trigger1 = Time = 12
+x = 0
+
+[State 1150, Cast pose]
+type = ChangeAnim
+trigger1 = Time = 12
+value = 1100
+
+[State 1150, Senrigan seal]
+type = Explod
+trigger1 = Time = 0
+anim = 8100
+pos = 0,-46
+postype = P1
+scale = .12,.12
+removetime = 12
+ownpal = 1
+sprpriority = 3
+trans = Add
+
+[State 1150, Sound]
+type = PlaySnd
+trigger1 = Time = 12
+value = S1,10
+
+[State 1150, Travelling reply]
+type = Helper
+trigger1 = Time = 16
+helpertype = Normal
+name = "Senrigan retreat reply"
+ID = 1101
+stateno = 1101
+pos = 24,-42
+postype = P1
+ownpal = 1
+
+[State 1150, Recovery]
+type = ChangeState
+trigger1 = Time >= 36
+value = 0
+ctrl = 1
+
+[Statedef 1160]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = -1500
+
+[State 1160, Existing Daemon rapid mode]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 0
+
+[State 1160, Cast sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,10
+
+[State 1160, Opening heart]
+type = Helper
+trigger1 = Time = 9
+helpertype = Normal
+name = "Combined opening heart"
+ID = 1101
+stateno = 1101
+pos = 24,-42
+postype = P1
+ownpal = 1
+
+[State 1160, Daemon follows from Eida]
+type = Helper
+trigger1 = Time = 20
+helpertype = Normal
+name = "Daemon combined opening"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1160, Normal followup window]
+type = ChangeState
+trigger1 = Time >= 34
+value = 0
+ctrl = 1
+'''
     (CHAR/'Specials.cns').write_text(out)
 
 
 if __name__=='__main__':
     make_commands()
     make_states()
-    print('Built Eida.cmd and Specials.cns: 11 physical-Xbox jutsus')
+    print(f'Built Eida.cmd and Specials.cns: {len(MOVES)} physical-Xbox jutsus')

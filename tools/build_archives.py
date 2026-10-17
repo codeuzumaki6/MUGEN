@@ -52,7 +52,7 @@ SPRITES = [
     *sequence(8400, "effects/reference/8400_{index}.png", 4),
     *sequence(8410, "effects/reference/8410_{index}.png", 14),
     *sequence(8420, "effects/reference/8420_{index}.png", 6),
-    *sequence(8000, "cinematic/panel_{index}.png", 4),
+    *sequence(8000, "cinematic/panel_{index}.png", 6),
     (9000, 0, ASSETS / "portrait/portrait_small.png"),
     # Standard MUGEN portraits: 9000,0 is the 25x25 fight icon and 9000,1
     # is the 120x140 select portrait. Use the same clean face source so the
@@ -194,6 +194,9 @@ def build_snd(destination: Path) -> None:
         (1, 8, ASSETS / "sound/appear.wav"),
         (1, 9, ASSETS / "sound/guard.wav"),
         (1, 10, ASSETS / "sound/charm_cast.wav"),
+        (1, 11, ASSETS / "sound/memory_build.wav"),
+        (1, 12, ASSETS / "sound/memory_transition.wav"),
+        (1, 13, ASSETS / "sound/memory_release.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),

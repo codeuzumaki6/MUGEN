@@ -24,6 +24,7 @@ scenarios=[]
 for facing in (1,-1):
     for name,button,direction,state,cost,mode,description in MOVES:
         scenarios.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,mode=mode,facing=facing,distance=42 if state in (1200,1300,1350) else 120,kind='move'))
+base_moves=list(scenarios)
 scenarios += [
     dict(name='X chain',button='a',direction='N',state=203,cost=0,mode=2,facing=1,distance=40,kind='combo'),
     dict(name='Charm blocked',button='b',direction='D',state=1100,cost=500,mode=None,facing=1,distance=120,kind='block'),
@@ -31,7 +32,7 @@ scenarios += [
     dict(name='Insufficient energy',button='z',direction='N',state=1060,cost=1500,mode=5,facing=1,distance=120,kind='empty'),
     dict(name='Awakening',button='s',direction='D',state=4000,cost=3000,mode=None,facing=1,distance=120,kind='aura'),
 ]
-for case in list(scenarios[:22]):
+for case in base_moves:
     if case['direction'] in ('F','B'):
         scenarios.append({**case,'name':case['name']+' diagonal shortcut','shortcut':True})
 for button,state in [('b',211),('c',221)]:
@@ -41,6 +42,23 @@ for facing in (1,-1):
     scenarios.append(dict(name='Forward dash and attack',button='a',direction='N',state=100,cost=0,mode=None,facing=facing,distance=160,kind='dash'))
     scenarios.append(dict(name='Aerial X Y B during hitpause',button='a',direction='N',state=620,cost=0,mode=None,facing=facing,distance=36,kind='aircombo'))
 scenarios.append(dict(name='Charm finite miss',button='b',direction='D',state=1100,cost=500,mode=None,facing=1,distance=120,kind='charmmiss'))
+for face in (1,-1):
+    for button,state in [('b',211),('c',221)]:
+        scenarios.append(dict(name='Mixed X '+button,button='a',follow_button=button,direction='N',state=state,cost=0,mode=None,facing=face,distance=36,kind='mixed'))
+scenarios.append(dict(name='Higher neutral jump',button='U',direction='N',state=50,cost=0,mode=None,facing=1,distance=120,kind='jump'))
+for follow,state,cost in [('b',1100,500),('z',1160,1500)]:
+    scenarios.append(dict(name='X into Down '+follow,button='a',follow_button=follow,direction='N',state=state,cost=cost,mode=None,facing=1,distance=36,kind='specialcancel'))
+ultimate_only=os.environ.get('EIDA_ULTIMATE_CHECK')=='1'
+CASE_TICKS=560 if ultimate_only else 180
+if ultimate_only:
+    scenarios=[]
+    for face in (1,-1):
+        for kind in ('ultimatehit','ultiblock','ultimiss','ultifar'):
+            scenarios.append(dict(name=kind,button='x',direction='N',state=3000,cost=3000,mode=None,facing=face,distance=340 if kind=='ultifar' else 120,kind=kind))
+    scenarios.append(dict(name='Ultimate empty',button='x',direction='N',state=3000,cost=3000,mode=None,facing=1,distance=120,kind='empty'))
+if os.environ.get('EIDA_TEST_CASES'):
+    names=json.loads(os.environ['EIDA_TEST_CASES'])
+    scenarios=[c for c in scenarios if c['name'] in names]
 capture_dir=os.environ.get('EIDA_CAPTURE')
 if capture_dir:
     requested=os.environ.get('EIDA_CAPTURE_CASES')
@@ -49,7 +67,7 @@ if capture_dir:
         selected=[next(c for c in scenarios if c['name']==name and c['facing']==1) for name in names]
         scenarios=selected
     else:
-        scenarios=[scenarios[0],scenarios[26]]
+        scenarios=[scenarios[0],next(c for c in scenarios if c['kind']=='aura')]
     Path(capture_dir).mkdir(parents=True,exist_ok=True)
 
 
@@ -61,7 +79,7 @@ clock=ctrl('clock','VarAdd','1','v = 58\nvalue = 1')
 fixture=clock
 other=clock
 for idx,case in enumerate(scenarios):
-    base=idx*180
+    base=idx*CASE_TICKS
     at=lambda tick:f'Var(58) = {base+tick}'
     face=case['facing']; distance=case['distance'];root_x=-face*distance/2; target_x=face*distance/2
     for who,text,x,desired in [('root',fixture,root_x,face),('dummy',other,target_x,-face)]:
@@ -93,12 +111,20 @@ for idx,case in enumerate(scenarios):
     presses=[22,32,46,60] if case['kind']=='combo' else [press]
     for tick in presses:
         fixture+=ctrl('button input','AssertInput',at(tick),f'flag = {button}')
+    if case['kind']=='mixed':
+        follow=case['follow_button']
+        fixture+=ctrl('mixed branch in hitpause','AssertInput',f'Var(59) = {idx} && StateNo = 200 && MoveHit && HitPauseTime = 4',f'flag = {follow}')
+        fixture+=ctrl('mixed finisher in hitpause','AssertInput',f'Var(59) = {idx} && StateNo = {210 if follow=="b" else 220} && MoveContact && HitPauseTime = 4',f'flag = {follow}')
+    if case['kind']=='specialcancel':
+        trigger=f'Var(59) = {idx} && StateNo = 200 && MoveHit && HitPauseTime = 4'
+        fixture+=ctrl('special down in hitpause','AssertInput',trigger,'flag = D')
+        fixture+=ctrl('special button in hitpause','AssertInput',trigger,f'flag = {case["follow_button"]}')
     if case['state'] in (1200,1300,1350):
         other+=ctrl('place incoming strike','PosSet',at(36),f'x = (P2,Pos X) + {face*36}\ny = 0')
         other+=ctrl('incoming strike','ChangeState',at(38),'value = 210\nctrl = 0')
-    if case['kind']=='block':
+    if case['kind'] in ('block','ultiblock'):
         other+=ctrl('hold guard','AssertInput',f'Var(58) = [{base+15},{base+120}]',f'flag = {"R" if face==1 else "L"}')
-    if case['kind'] in ('miss','charmmiss'):
+    if case['kind'] in ('miss','charmmiss','ultimiss'):
         other+=ctrl('evade','PosSet',f'Var(58) = [{base+18},{base+150}]','y = -160')
         other+=ctrl('hold evade','VelSet',f'Var(58) = [{base+18},{base+150}]','x = 0\ny = 0')
         other+=ctrl('airborne evade','ChangeState',at(18),'value = 50\nctrl = 0')
@@ -115,15 +141,18 @@ for idx,case in enumerate(scenarios):
             if who=='root':fixture=text
             else:other=text
         for state,button in [(600,'b'),(610,'c')]:
-            fixture+=ctrl('press next button inside hitpause','AssertInput',f'StateNo = {state} && MoveContact && HitPauseTime = 5',f'flag = {button}')
+            fixture+=ctrl('press next button inside hitpause','AssertInput',f'Var(59) = {idx} && StateNo = {state} && MoveContact && HitPauseTime = 5',f'flag = {button}')
 
 # Dismiss any helper left over across fixture resets.
 fixture+='''\n[State -2, CHECK helper cleanup]
 type = DestroySelf
 triggerall = IsHelper
-trigger1 = Root,Var(58) % 180 = [1,3]
+trigger1 = Root,Var(58) % CASE_TICKS = [1,3]
 ignorehitpause = 1
 '''
+fixture=fixture.replace('CASE_TICKS',str(CASE_TICKS))
+if os.environ.get('EIDA_DEBUG_INPUT'):
+    fixture+=ctrl('trace mixed inputs','PrintToConsole','StateNo = [200,202]', 'text = "INPUT %d var=%d a=%d b=%d c=%d"\nparams = Var(58),Var(27),command = "a",command = "b",command = "c"')
 for directory,text,filename in [(char,fixture,'Eida.cns'),(dummy,other,'kfm.cns')]:
     if directory==dummy:
         # One authoritative timeline: the defender can spend ticks in a
@@ -147,15 +176,16 @@ hook.add('loop','eida_checks',function()
   local clock = var(58)
   if clock == frameSeen or clock < 1 then return end
   frameSeen = clock
-  local case = math.floor((clock-1)/180)
-  local tick = (clock-1)%180+1
+  local case = math.floor((clock-1)/CASE_TICKS)
+  local tick = (clock-1)%CASE_TICKS+1
   if case >= CASECOUNT then player(2); setLife(100); player(1); setTime(0); return end
-  if rows[case] == nil then rows[case] = {states={}, damage=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false, marker=false, invalidMarker=false, lateMarker=false, dashTravel=0} end
+  if rows[case] == nil then rows[case] = {states={}, damage=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false, marker=false, invalidMarker=false, lateMarker=false, dashTravel=0, apex=0, victimEnd=0} end
   local r=rows[case]
   if tick > 4 then
     r.states[stateNo()]=true
     r.power=math.min(r.power,power())
     local x=posX()
+    r.apex=math.min(r.apex,posY())
     if stateNo()==100 then r.dashTravel=math.max(r.dashTravel, math.abs(x-(STARTPOSITIONS)[case+1])) end
     r.helpers=math.max(r.helpers,numHelper(1001))
     if helper(1001) then
@@ -168,7 +198,11 @@ hook.add('loop','eida_checks',function()
       if stateNo()==1130 then
         r.marker=true
         player(2)
-        if stateNo()~=1105 then r.invalidMarker=true end
+        -- Hit resolution can follow the marker's update in this same frame.
+        if stateNo()~=1105 then
+          r.markerLag=(r.markerLag or 0)+1
+          if r.markerLag>1 then r.invalidMarker=true end
+        else r.markerLag=0 end
       end
       player(1)
     end
@@ -178,20 +212,26 @@ hook.add('loop','eida_checks',function()
     if stateNo()==1105 then r.charm=true end
     player(1)
   end
-  if tick==179 and not r.logged then
+  if tick==CASE_TICKS-1 and not r.logged then
     r.logged=true
+    player(2); r.victimEnd=stateNo(); player(1)
     local states={}
     for k,_ in pairs(r.states) do table.insert(states,k) end
     table.sort(states)
-    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\t'..tostring(r.marker)..'\\t'..tostring(r.invalidMarker)..'\\t'..tostring(r.lateMarker)..'\\t'..r.dashTravel..'\\n')
+    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\t'..tostring(r.marker)..'\\t'..tostring(r.invalidMarker)..'\\t'..tostring(r.lateMarker)..'\\t'..r.dashTravel..'\\t'..r.apex..'\\t'..r.victimEnd..'\\n')
     f:flush()
   end
 end)
 '''.replace('CASECOUNT',str(len(scenarios)))
+module_text=module_text.replace('CASE_TICKS',str(CASE_TICKS))
 module_text=module_text.replace('STARTPOSITIONS', '{'+','.join(str(-c['facing']*c['distance']/2) for c in scenarios)+'}')
 if capture_dir:
     module_text="modifyGameOption('Config.ScreenshotFolder',"+json.dumps(str(Path(capture_dir).resolve())+'/')+")\n"+module_text
-    module_text=module_text.replace('if tick==179 and not r.logged then', 'if tick >= 10 and tick <= 150 and tick % 4 == 0 and not r.logged then screenshot() end\n  if tick==179 and not r.logged then')
+    module_text="local cues=assert(io.open('eida_capture_cues.tsv','w'))\n"+module_text
+    module_text=module_text.replace('local r=rows[case]', "local r=rows[case]\n  if stateNo()~=r.lastState then cues:write(case..'\\t'..tick..'\\t'..stateNo()..'\\n'); cues:flush(); r.lastState=stateNo() end")
+    log_marker=f'if tick=={CASE_TICKS}-1 and not r.logged then'
+    capture_end=548 if ultimate_only else 150
+    module_text=module_text.replace(log_marker, f'if tick >= 10 and tick <= {capture_end} and tick % 4 == 0 and not r.logged then screenshot() end\n  '+log_marker)
 module.write_text(module_text)
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 (engine/'eida_checks.tsv').write_text('')
@@ -217,7 +257,7 @@ assert sorted(first_records)==list(range(len(scenarios))),sorted(first_records)
 lines=[first_records[i] for i in range(len(scenarios))]
 failures=[];report=[]
 for line,case in zip(lines,scenarios):
-    idx,states,damage,charm,spawn,distance,helpers,power,aura,marker,invalid_marker,late_marker,dash_travel=line.split('\t')
+    idx,states,damage,charm,spawn,distance,helpers,power,aura,marker,invalid_marker,late_marker,dash_travel,apex,victim_end=line.split('\t')
     states=set(map(int,states.split(',')));damage=int(damage);spawn=float(spawn);distance=float(distance);power=int(power)
     failures_here=[]
     if case['kind']=='empty':
@@ -234,6 +274,8 @@ for line,case in zip(lines,scenarios):
     if case['kind']=='move' and case['state'] in (1100,1120) and charm!='true':
         # Anti-air is tested against a standing dummy separately: a miss is valid.
         if case['state']==1100:failures_here.append('heart did not charm on contact')
+    if case['kind']=='move' and case['state'] in (1140,1150) and marker!='true':failures_here.append('new travelling charm did not connect')
+    if case['kind']=='move' and case['state']==1160 and (damage<=0 or not 0<=spawn<=28):failures_here.append('combined opening did not approach and hit')
     if case['kind']=='block' and charm=='true':failures_here.append('charm bypassed block')
     if case['kind']=='move' and case['state']==1100 and marker!='true':failures_here.append('confirmed charm marker absent')
     if case['kind'] in ('block','charmmiss') and marker=='true':failures_here.append('charm marker appeared without a hit')
@@ -244,11 +286,19 @@ for line,case in zip(lines,scenarios):
     if case['kind']=='charmmiss' and charm=='true':failures_here.append('heart charmed outside its collision')
     if case['kind']=='miss' and damage>0:failures_here.append('assist hit airborne target outside collision')
     if case['kind']=='combo' and (case['state'] not in states or damage<100):failures_here.append('normal chain failed')
+    if case['kind']=='mixed' and (case['state'] not in states or damage<100):failures_here.append('mixed hitpause route failed')
+    if case['kind']=='specialcancel' and 200 not in states:failures_here.append('special skipped initial normal')
+    if case['kind']=='specialcancel' and case['state']==1100 and marker!='true':failures_here.append('normal into charm failed to collide')
+    if case['kind']=='specialcancel' and case['state']==1160 and damage<60:failures_here.append('normal into combined opening failed')
     if case['kind']=='aura' and aura!='true':failures_here.append('aura absent')
-    row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),failures=failures_here)
+    if case['kind']=='ultimatehit' and (3001 not in states or damage!=350):failures_here.append('ultimate did not confirm and deal its finite damage')
+    if case['kind']=='ultimatehit' and int(victim_end) in (3010,3011):failures_here.append('ultimate did not release victim')
+    if case['kind'] in ('ultiblock','ultimiss','ultifar') and (3001 in states or damage!=0):failures_here.append('ultimate hit was guaranteed or cinematic started without contact')
+    if case['kind']=='jump' and not 40<=-float(apex)<=55:failures_here.append('jump height outside intended range')
+    row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),jump_apex=float(apex),victim_end_state=int(victim_end),failures=failures_here)
     report.append(row)
     print(('FAIL' if failures_here else 'PASS'),case['name'],case['facing'],row)
     failures+=failures_here
-out=ROOT/'previews'/('engine_visual_checks.json' if capture_dir else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
+out=ROOT/'previews'/('engine_visual_checks.json' if capture_dir else 'engine_ultimate_checks.json' if ultimate_only else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not failures,failures
 print(f'PASSED: {len(scenarios)} raw-input/collision scenarios. Report: {out}')

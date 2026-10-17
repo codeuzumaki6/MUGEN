@@ -3,7 +3,7 @@
 - Sprites de Eida: hoja `Sheet Eida` de Vaydra, recuperada de la captura suministrada por el usuario. Solo se recortó el fondo verde y se empaquetó; no se usaron sprites de la V4 rota.
 - Referencia de acabado: GIF de Sumire entregado por el usuario. Sumire no fue copiada ni convertida en Eida.
 - Daemon: 16 poses reconstruidas con IA a partir de la hoja de combate y las referencias proporcionadas, con cabello verde, proporciones consistentes y el atuendo rojo de *Two Blue Vortex*.
-- Cinemática de Omnipotencia: paneles originales en `manga_referencia_02.png` y `manga_referencia_03.png`, suministrados por el usuario. Solo se recortaron, escalaron y animaron; no se redibujaron con IA.
+- Cinemática de Omnipotencia: paneles originales en `manga_referencia_02.png` y `manga_referencia_03.png`, suministrados por el usuario y conservados en `source_material/references/` del repositorio. Se recortan, encuadran y componen en seis imágenes de 1280×720 mediante `tools/build_cinematic.py`. No se redibujaron con IA. Los tres nuevos sonidos de ambiente, transición y liberación son efectos sintéticos no verbales; la voz auténtica existente permanece intacta.
 - Animaciones adicionales de Eida: 16 cuadros creados con IA a partir de la hoja original suministrada, usados únicamente para completar giro, salto, aterrizaje y poses especiales.
 - Voz: fragmentos femeninos del archivo japonés `Eida_voz_japonesa_fuente.mp3`. Se excluyeron las intervenciones masculinas atribuidas a Code.
 - Base técnica de estados comunes: copia revisada del `common1.cns` del personaje Code funcional suministrado. Los archivos originales de Code no fueron modificados.

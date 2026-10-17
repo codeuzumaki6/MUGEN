@@ -449,10 +449,13 @@ Loopstart
 [Begin Action 3000]
 Clsn2Default: 1
  Clsn2[0] = -15,-70,15,0
+330,1,0,0,8
+330,2,0,0,8
+
+[Begin Action 3050]
 Clsn1Default: 1
- Clsn1[0] = -320,-240,320,0
-330,1,0,0,10
-330,2,0,0,10
+ Clsn1[0] = -12,-12,12,12
+8100,0,0,0,6
 
 ; Eida Awakening: transformation, flowing idle, burst movement and attack.
 [Begin Action 4000]
@@ -782,3 +785,9 @@ Clsn1: 1
 8420,3,0,0,2,,A
 8420,4,0,0,2,,A
 8420,5,0,0,2,,A
+
+[Begin Action 8004]
+8000,4,0,0,-1
+
+[Begin Action 8005]
+8000,5,0,0,-1

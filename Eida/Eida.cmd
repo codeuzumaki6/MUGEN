@@ -139,6 +139,27 @@ command = z
 time = 20
 buffer.time = 3
 
+; A con abajo: doble pulso de encanto
+[Command]
+name = "EncantoDoble"
+command = /D,x
+time = 20
+buffer.time = 3
+
+; RB con abajo: retroceso y corazon de respuesta
+[Command]
+name = "PasoSenrigan"
+command = /D,y
+time = 20
+buffer.time = 3
+
+; RT con abajo: encanto y entrada de Daemon
+[Command]
+name = "AperturaCombinada"
+command = /D,z
+time = 20
+buffer.time = 3
+
 [Command]
 name = "FF"
 command = F,F
@@ -253,6 +274,7 @@ buffer.time = 1
 type = ChangeState
 value = 3000
 triggerall = command = "Omnipotencia"
+triggerall = command != "holddown"
 triggerall = power >= 3000
 triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
@@ -270,6 +292,7 @@ trigger1 = ctrl || StateNo = 100
 
 [State -1, X: carrera y dos golpes]
 type = ChangeState
+ignorehitpause = 1
 value = 1000
 triggerall = command = "DaemonRapido"
 triggerall = power >= 500
@@ -278,11 +301,12 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, X: rafaga de cinco golpes]
 type = ChangeState
+ignorehitpause = 1
 value = 1010
 triggerall = command = "DaemonCombo"
 triggerall = power >= 750
@@ -291,11 +315,12 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, X: patada ascendente]
 type = ChangeState
+ignorehitpause = 1
 value = 1020
 triggerall = command = "DaemonEleva"
 triggerall = power >= 500
@@ -307,11 +332,12 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, Y: patada de empuje]
 type = ChangeState
+ignorehitpause = 1
 value = 1030
 triggerall = command = "DaemonPatadas"
 triggerall = power >= 750
@@ -320,11 +346,12 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, Y: observacion y contraataque]
 type = ChangeState
+ignorehitpause = 1
 value = 1200
 triggerall = command = "Senrigan"
 triggerall = power >= 1000
@@ -336,6 +363,7 @@ trigger1 = ctrl || StateNo = 100
 
 [State -1, Y: corazon rasante]
 type = ChangeState
+ignorehitpause = 1
 value = 1100
 triggerall = command = "Encantamiento"
 triggerall = power >= 500
@@ -348,11 +376,12 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, B: barrido bajo]
 type = ChangeState
+ignorehitpause = 1
 value = 1050
 triggerall = command = "DaemonBarrido"
 triggerall = power >= 500
@@ -361,11 +390,12 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, B: corazon antiaereo]
 type = ChangeState
+ignorehitpause = 1
 value = 1120
 triggerall = command = "EncantoArco"
 triggerall = power >= 750
@@ -375,11 +405,12 @@ triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 triggerall = NumHelper(1101) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, B: defensa corta y contraataque]
 type = ChangeState
+ignorehitpause = 1
 value = 1300
 triggerall = command = "DefensaDaemon"
 triggerall = power >= 500
@@ -392,8 +423,61 @@ triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
 
+[State -1, A con abajo: doble pulso de encanto]
+type = ChangeState
+ignorehitpause = 1
+value = 1140
+triggerall = command = "EncantoDoble"
+triggerall = power >= 1000
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = NumHelper(1101) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl || StateNo = 100
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = MoveHit
+
+[State -1, RB con abajo: retroceso y corazon de respuesta]
+type = ChangeState
+ignorehitpause = 1
+value = 1150
+triggerall = command = "PasoSenrigan"
+triggerall = power >= 750
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = NumHelper(1101) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl || StateNo = 100
+
+[State -1, RT con abajo: encanto y entrada de Daemon]
+type = ChangeState
+ignorehitpause = 1
+value = 1160
+triggerall = command = "AperturaCombinada"
+triggerall = power >= 1500
+triggerall = statetype != A
+triggerall = NumHelper(1001) = 0
+triggerall = NumHelper(1351) = 0
+triggerall = NumHelper(1301) = 0
+triggerall = NumHelper(1101) = 0
+triggerall = command = "holddown"
+triggerall = command != "holdfwd"
+triggerall = command != "holdback"
+trigger1 = ctrl || StateNo = 100
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = MoveHit
+
 [State -1, RB: parry de dos segundos]
 type = ChangeState
+ignorehitpause = 1
 value = 1350
 triggerall = command = "ParryDaemon"
 triggerall = power >= 1000
@@ -405,6 +489,7 @@ trigger1 = ctrl || StateNo = 100
 
 [State -1, RT: asalto de seis impactos]
 type = ChangeState
+ignorehitpause = 1
 value = 1060
 triggerall = command = "AsaltoDoble"
 triggerall = power >= 1500
@@ -413,7 +498,7 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202]
+trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
 trigger2 = MoveHit
 
 [State -1, Carga pausa]
@@ -423,6 +508,14 @@ triggerall = command = "Carga"
 triggerall = power < 3000
 triggerall = statetype != A
 trigger1 = ctrl || StateNo = 100
+
+[State -1, Confirmed X into Y or B]
+type = ChangeState
+triggerall = StateNo = [200,202]
+triggerall = MoveHit
+triggerall = command != "holddown"
+trigger1 = Var(27) > 0
+value = IfElse(Var(27) = 1,210,220)
 
 [State -1, Normal a]
 type = ChangeState

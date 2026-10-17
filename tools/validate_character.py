@@ -78,6 +78,8 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
         check((group, number) not in sprites, f"Eida.sff: duplicate sprite {group},{number}")
         if group == 1000:
             check(height <= 51, f'Eida.sff: Daemon {number} exceeds child helper scale')
+        if group == 8000:
+            check((width,height)==(1280,720), f'Eida.sff: manga panel {number} lost its HD source resolution')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites
@@ -182,7 +184,7 @@ def main() -> None:
     check(re.search(r'(?is)name\s*=\s*"Omnipotencia".*?command\s*=\s*x', cmd_text) is not None, "Eida.cmd: Omnipotencia is not mapped to internal x")
     check(re.search(r'(?is)name\s*=\s*"Carga".*?command\s*=\s*/s', cmd_text) is not None, "Eida.cmd: charge is not mapped to held internal s")
 
-    cns_paths = (ROOT / "Eida.cns", ROOT / "Specials.cns", ROOT / "common1.cns")
+    cns_paths = tuple(ROOT / name for name in ('Eida.cns','Specials.cns','Omnipotencia.cns','common1.cns'))
     all_states: set[int] = set()
     parsed_sections = []
     for path in cns_paths:
@@ -198,7 +200,7 @@ def main() -> None:
     parsed_sections.extend(('Eida.cmd', header, body) for header,body in sections(cmd_text))
     local_refs: list[tuple[str, str, int]] = []
     for filename, header, body in parsed_sections:
-        if filename in {'Eida.cns','Specials.cns'}:
+        if filename in {'Eida.cns','Specials.cns','Omnipotencia.cns'}:
             # Check literal local animation references as well as sprite rows.
             # Common states retain legacy overrides; opponent-owned animations
             # in custom states and computed expressions are checked at runtime.
@@ -229,7 +231,7 @@ def main() -> None:
     notes.append(f"SFF v2.0.1.0: {len(sprites)} raw indexed sprites and palettes validated")
     notes.append(f"SND: {len(sounds)} mono PCM sounds, all WAV payloads decoded")
     notes.append(f"AIR: {len(actions)} actions; idle uses {len(idle_refs)} idle-only frames")
-    notes.append(f"CNS: {len(all_states)} states across Eida.cns, Specials.cns and common1.cns")
+    notes.append(f"CNS: {len(all_states)} states across {len(cns_paths)} files")
     if errors:
         print("VALIDATION FAILED")
         for item in errors:

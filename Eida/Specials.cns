@@ -1211,3 +1211,140 @@ type = DestroySelf
 trigger1 = Root,Var(40) = 0
 trigger2 = RoundState != 2
 ignorehitpause = 1
+
+; New Eida support routes. Daemon's existing body and attack states are intact.
+[Statedef 1140]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = -1000
+
+[State 1140, Cast sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,10
+
+[State 1140, Two distinct travelling pulses]
+type = Helper
+trigger1 = Time = 9
+trigger2 = Time = 18
+helpertype = Normal
+name = "Double charm pulse"
+ID = 1101
+stateno = 1101
+pos = 24,IfElse(Time = 9,-32,-60)
+postype = P1
+ownpal = 1
+
+[State 1140, Recovery]
+type = ChangeState
+trigger1 = Time >= 34
+value = 0
+ctrl = 1
+
+[Statedef 1150]
+type = S
+movetype = I
+physics = N
+anim = 21
+ctrl = 0
+velset = -4,0
+poweradd = -750
+
+[State 1150, Stop retreat]
+type = VelSet
+trigger1 = Time = 12
+x = 0
+
+[State 1150, Cast pose]
+type = ChangeAnim
+trigger1 = Time = 12
+value = 1100
+
+[State 1150, Senrigan seal]
+type = Explod
+trigger1 = Time = 0
+anim = 8100
+pos = 0,-46
+postype = P1
+scale = .12,.12
+removetime = 12
+ownpal = 1
+sprpriority = 3
+trans = Add
+
+[State 1150, Sound]
+type = PlaySnd
+trigger1 = Time = 12
+value = S1,10
+
+[State 1150, Travelling reply]
+type = Helper
+trigger1 = Time = 16
+helpertype = Normal
+name = "Senrigan retreat reply"
+ID = 1101
+stateno = 1101
+pos = 24,-42
+postype = P1
+ownpal = 1
+
+[State 1150, Recovery]
+type = ChangeState
+trigger1 = Time >= 36
+value = 0
+ctrl = 1
+
+[Statedef 1160]
+type = S
+movetype = A
+physics = S
+anim = 1100
+ctrl = 0
+velset = 0,0
+poweradd = -1500
+
+[State 1160, Existing Daemon rapid mode]
+type = VarSet
+trigger1 = Time = 0
+v = 45
+value = 0
+
+[State 1160, Cast sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,10
+
+[State 1160, Opening heart]
+type = Helper
+trigger1 = Time = 9
+helpertype = Normal
+name = "Combined opening heart"
+ID = 1101
+stateno = 1101
+pos = 24,-42
+postype = P1
+ownpal = 1
+
+[State 1160, Daemon follows from Eida]
+type = Helper
+trigger1 = Time = 20
+helpertype = Normal
+name = "Daemon combined opening"
+ID = 1001
+stateno = 1500
+pos = 20,0
+postype = P1
+ownpal = 1
+size.ground.back = 8
+size.ground.front = 8
+size.height = 49
+
+[State 1160, Normal followup window]
+type = ChangeState
+trigger1 = Time >= 34
+value = 0
+ctrl = 1

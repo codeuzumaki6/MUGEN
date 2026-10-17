@@ -34,7 +34,7 @@ walk.fwd = 2.6
 walk.back = -2.2
 run.fwd = 5.2,0
 run.back = -4.5,-3.5
-jump.neu = 0,-6.0
+jump.neu = 0,-7.1
 jump.back = -2.7
 jump.fwd = 2.9
 runjump.back = -3.1
@@ -51,6 +51,31 @@ stand.friction = .82
 crouch.friction = .82
 
 [Statedef -2]
+
+[State -2, Reset mixed combo input]
+type = VarSet
+trigger1 = StateNo != [200,202]
+v = 27
+value = 0
+ignorehitpause = 1
+
+[State -2, Buffer physical Y in X combo]
+type = VarSet
+trigger1 = StateNo = [200,202]
+trigger1 = Time > 0
+trigger1 = command = "b"
+v = 27
+value = 1
+ignorehitpause = 1
+
+[State -2, Buffer physical B in X combo]
+type = VarSet
+trigger1 = StateNo = [200,202]
+trigger1 = Time > 0
+trigger1 = command = "c"
+v = 27
+value = 2
+ignorehitpause = 1
 
 [State -2, Preserve normal scale]
 type = AngleDraw
@@ -620,10 +645,24 @@ ground.hittime = 16
 ground.velocity = -4.8
 air.velocity = -3.6,-4.2
 
+[State 210, Reset continuation]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+
+[State 210, Buffer continuation]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "b"
+v = 25
+value = 1
+ignorehitpause = 1
+
 [State 210, Chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "b"
+trigger1 = Var(25) = 1
 trigger1 = Time > 2
 value = 211
 
@@ -666,10 +705,24 @@ ground.hittime = 15
 ground.velocity = -4.0
 air.velocity = -3.0,-3.5
 
+[State 220, Reset continuation]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+
+[State 220, Buffer continuation]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "c"
+v = 25
+value = 1
+ignorehitpause = 1
+
 [State 220, Chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "c"
+trigger1 = Var(25) = 1
 trigger1 = Time > 2
 value = 221
 
@@ -1343,214 +1396,7 @@ value = 5050
 ctrl = 0
 
 ; ---------------------------------------------------------------------------
-; Omnipotence — gameplay adaptation of the manga event.
-
-[Statedef 3000]
-type = S
-movetype = A
-physics = S
-anim = 3000
-ctrl = 0
-velset = 0,0
-poweradd = -3000
-sprpriority = 2
-
-[State 3000, Voice]
-type = PlaySnd
-trigger1 = Time = 0
-value = S0,2
-channel = 0
-
-[State 3000, Senrigan emblem]
-type = Explod
-trigger1 = Time = 0
-anim = 8100
-ID = 8103
-pos = 0,-40
-postype = P1
-bindtime = -1
-removetime = 18
-scale = .62,.62
-sprpriority = -2
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
-[State 3000, Soundscape]
-type = PlaySnd
-trigger1 = Time = 8
-value = S1,3
-channel = 6
-
-[State 3000, Initial super pause]
-type = SuperPause
-trigger1 = Time = 0
-time = 20
-movetime = 20
-anim = -1
-sound = -1
-darken = 1
-p2defmul = 1
-
-[State 3000, Capture target]
-type = HitDef
-trigger1 = Time = 2
-attr = S, HA
-damage = 0,0
-animtype = Heavy
-hitflag = MAF
-priority = 9,Hit
-pausetime = 0,0
-sparkno = -1
-guard.sparkno = -1
-ground.hittime = 520
-air.hittime = 520
-ground.velocity = 0
-air.velocity = 0,0
-p2stateno = 3010
-ID = 3000
-fall = 0
-kill = 0
-
-[State 3000, Freeze fight]
-type = Pause
-trigger1 = Time = 8
-time = 500
-movetime = 500
-endcmdbuftime = 0
-pausebg = 0
-
-[State 3000, Hide interface]
-type = AssertSpecial
-trigger1 = Time = [8,508]
-flag = nobardisplay
-flag2 = noFG
-flag3 = nomusic
-
-[State 3000, Panel one]
-type = Explod
-trigger1 = Time = 18
-anim = 8000
-ID = 8000
-pos = 0,0
-postype = Left
-bindtime = -1
-removetime = 120
-sprpriority = 10
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
-[State 3000, Panel two]
-type = Explod
-trigger1 = Time = 138
-anim = 8001
-ID = 8001
-pos = 0,0
-postype = Left
-bindtime = -1
-removetime = 120
-sprpriority = 10
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
-[State 3000, Panel three]
-type = Explod
-trigger1 = Time = 258
-anim = 8002
-ID = 8002
-pos = 0,0
-postype = Left
-bindtime = -1
-removetime = 120
-sprpriority = 10
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
-[State 3000, Panel four]
-type = Explod
-trigger1 = Time = 378
-anim = 8003
-ID = 8003
-pos = 0,0
-postype = Left
-bindtime = -1
-removetime = 120
-sprpriority = 10
-ownpal = 1
-supermovetime = 999
-pausemovetime = 999
-
-[State 3000, Memory distortion]
-type = AllPalFX
-trigger1 = Time = [18,498]
-time = 2
-add = 0,0,20
-mul = 235,235,256
-sinadd = 35,20,55,24
-invertall = 0
-color = 180
-
-[State 3000, Shake]
-type = EnvShake
-trigger1 = Time = 480
-time = 24
-freq = 90
-ampl = -6
-
-[State 3000, Damage]
-type = TargetLifeAdd
-trigger1 = Time = 490
-ID = 3000
-value = -350
-kill = 1
-absolute = 1
-
-[State 3000, End]
-type = ChangeState
-trigger1 = Time >= 515
-value = 0
-ctrl = 1
-
-[Statedef 3010]
-type = S
-movetype = H
-physics = N
-ctrl = 0
-velset = 0,0
-
-[State 3010, Memory lock]
-type = ChangeAnim
-trigger1 = Time = 0
-value = 5000
-
-[State 3010, Bind]
-type = VelSet
-trigger1 = 1
-x = 0
-y = 0
-
-[State 3010, Screen]
-type = ScreenBound
-trigger1 = 1
-value = 1
-movecamera = 0,0
-
-[State 3010, Distortion]
-type = PalFX
-trigger1 = 1
-time = 2
-add = 20,0,35
-mul = 235,220,256
-sinadd = 30,10,45,16
-
-[State 3010, Release as fall]
-type = SelfState
-trigger1 = Time >= 505
-value = 5050
-ctrl = 0
+; Omnipotencia is defined in Omnipotencia.cns.
 
 [Statedef 620]
 type = A
