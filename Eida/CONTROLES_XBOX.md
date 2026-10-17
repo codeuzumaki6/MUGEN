@@ -25,6 +25,7 @@ Una barra equivale a 1000 de energía. Las técnicas tienen recuperación y pued
 
 ## Combos normales
 
+- **Dos toques hacia delante:** dash; suelta la dirección para parar. Puedes atacar, saltar o usar una técnica durante el desplazamiento. Por ahora utiliza los cuadros de caminata existentes a mayor velocidad.
 - **X, X, X, X:** dos puñetazos, patada y ayuda de Daemon con launcher. Sigue pulsando para avanzar; si el primer golpe falla, no avanza automáticamente la cadena. Después del launcher confirmado puedes pulsar arriba para perseguir.
 - **Y, Y:** patada y remate ascendente.
 - **B, B:** ataque bajo y derribo.
@@ -32,6 +33,6 @@ Una barra equivale a 1000 de energía. Las técnicas tienen recuperación y pued
 
 Daemon mide aproximadamente el 70% de la altura de Eida. Aparece a su lado, entra en carrera, golpea al llegar al alcance y desaparece. Puede recibir golpes y no se teletransporta delante del rival.
 
-Encantamiento necesita tocar al rival con el corazón: se puede bloquear y esquivar, recorre una distancia limitada y aturde durante 45 ticks (0.75 segundos). La variante ascendente sigue una trayectoria diagonal fija.
+Encantamiento necesita tocar al rival con el corazón: se puede bloquear y esquivar, recorre una distancia limitada y aturde durante 45 ticks (0.75 segundos). Al conectar muestra un corazón pequeño sobre su cabeza; desaparece al acabar el aturdimiento o al recibir otro golpe. No aparece al bloquear o esquivar. La variante ascendente sigue una trayectoria diagonal fija.
 
 El despertar mantiene todos los sprites y controles normales de Eida; agrega un aura azul aditiva y bonificaciones temporales. A sigue reservada para Omnipotencia.

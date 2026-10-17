@@ -22,6 +22,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 91.29999542236328,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -47,6 +49,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 107.99998092651367,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -70,6 +74,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 88.00001525878906,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -95,6 +101,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 91.300048828125,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -121,6 +129,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -144,6 +154,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -169,6 +181,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 88.00003051757812,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -194,6 +208,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -218,6 +234,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 23.29999542236328,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -240,6 +258,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -262,6 +282,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 104.50011444091797,
     "minimum_power": 1500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -287,6 +309,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 91.3000259399414,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -312,6 +336,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 108.00001525878906,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -335,6 +361,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 88.0,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -360,6 +388,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 91.29998779296875,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -386,6 +416,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -409,6 +441,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2500,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -434,6 +468,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 88.00003051757812,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -459,6 +495,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -483,6 +521,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 23.29999542236328,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -505,6 +545,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -527,6 +569,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 104.50011444091797,
     "minimum_power": 1500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -552,6 +596,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 20.0,
     "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -575,6 +621,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -600,6 +648,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 91.29999542236328,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -621,6 +671,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 0,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -644,6 +696,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 0,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -669,6 +723,8 @@
     "spawn_distance": 20.000003814697266,
     "travel_distance": 91.30000305175781,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -694,6 +750,8 @@
     "spawn_distance": 20.000003814697266,
     "travel_distance": 101.19998931884766,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -715,10 +773,12 @@
       11,
       1030
     ],
-    "damage": 112,
+    "damage": 104,
     "spawn_distance": 20.0,
     "travel_distance": 91.30004119873047,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -741,10 +801,12 @@
       1200,
       1201
     ],
-    "damage": 104,
+    "damage": 90,
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -766,10 +828,12 @@
       11,
       1050
     ],
-    "damage": 90,
+    "damage": 62,
     "spawn_distance": 20.0,
     "travel_distance": 88.0000228881836,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -791,10 +855,12 @@
       11,
       1120
     ],
-    "damage": 62,
+    "damage": 0,
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -818,8 +884,10 @@
     ],
     "damage": 58,
     "spawn_distance": 20.0,
-    "travel_distance": 104.90003204345703,
+    "travel_distance": 91.3000259399414,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -845,6 +913,8 @@
     "spawn_distance": 20.0,
     "travel_distance": 101.20001220703125,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -866,10 +936,12 @@
       11,
       1030
     ],
-    "damage": 112,
+    "damage": 104,
     "spawn_distance": 20.0,
     "travel_distance": 91.30000305175781,
     "minimum_power": 2250,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -892,10 +964,12 @@
       1200,
       1201
     ],
-    "damage": 104,
+    "damage": 90,
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -917,10 +991,12 @@
       11,
       1050
     ],
-    "damage": 90,
+    "damage": 62,
     "spawn_distance": 20.000003814697266,
     "travel_distance": 88.00000762939453,
     "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -942,10 +1018,12 @@
       11,
       1120
     ],
-    "damage": 62,
+    "damage": 0,
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 2250,
+    "charm_marker": true,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -969,6 +1047,8 @@
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -988,10 +1068,12 @@
       220,
       221
     ],
-    "damage": 122,
+    "damage": 110,
     "spawn_distance": -1.0,
     "travel_distance": 0.0,
     "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   },
   {
@@ -1014,6 +1096,141 @@
     "spawn_distance": 20.0,
     "travel_distance": 104.50011444091797,
     "minimum_power": 1500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Forward dash and attack",
+      "button": "a",
+      "direction": "N",
+      "state": 100,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 160,
+      "kind": "dash"
+    },
+    "states": [
+      0,
+      20,
+      100,
+      200
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 26.555496215820312,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Aerial X Y B during hitpause",
+      "button": "a",
+      "direction": "N",
+      "state": 620,
+      "cost": 0,
+      "mode": null,
+      "facing": 1,
+      "distance": 36,
+      "kind": "aircombo"
+    },
+    "states": [
+      0,
+      50,
+      52,
+      600,
+      610,
+      620
+    ],
+    "damage": 175,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Forward dash and attack",
+      "button": "a",
+      "direction": "N",
+      "state": 100,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 160,
+      "kind": "dash"
+    },
+    "states": [
+      0,
+      20,
+      100,
+      200
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 72.41950988769531,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Aerial X Y B during hitpause",
+      "button": "a",
+      "direction": "N",
+      "state": 620,
+      "cost": 0,
+      "mode": null,
+      "facing": -1,
+      "distance": 36,
+      "kind": "aircombo"
+    },
+    "states": [
+      0,
+      50,
+      52,
+      600,
+      610,
+      620
+    ],
+    "damage": 175,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 3000,
+    "charm_marker": false,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Charm finite miss",
+      "button": "b",
+      "direction": "D",
+      "state": 1100,
+      "cost": 500,
+      "mode": null,
+      "facing": 1,
+      "distance": 120,
+      "kind": "charmmiss"
+    },
+    "states": [
+      0,
+      10,
+      1100
+    ],
+    "damage": 0,
+    "spawn_distance": -1.0,
+    "travel_distance": 0.0,
+    "minimum_power": 2500,
+    "charm_marker": false,
+    "dash_travel": 0.0,
     "failures": []
   }
 ]

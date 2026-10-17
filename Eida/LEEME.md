@@ -6,6 +6,10 @@ Consulta **CONTROLES_XBOX.md**: incluye las nueve combinaciones con abajo/diagon
 
 ## Cambios de esta revisión
 
+- Segundo golpe de X: conserva la orientación hacia el rival; se eliminó el volteo horizontal del cuerpo completo.
+- Enlace aéreo X → Y → B corregido según los botones físicos del mando, con memoria de la pulsación durante las pausas de impacto.
+- Corazón visible sobre la cabeza del rival únicamente después de confirmar Encantamiento. No agrega daño ni prolonga el aturdimiento.
+- Dash con dos toques hacia delante, interrumpible con salto o ataque y sin invulnerabilidad. Usa los cuadros de caminata actuales; todavía necesita un ciclo de carrera propio para parecerse al video.
 - Aura del despertar: 13 cuadros del efecto de energía de la referencia Nezuko, con color azul y mezcla aditiva del motor. Mantiene los sprites normales de Eida y evita el arco rígido anterior.
 - Daemon: sprites reducidos al 68% del tamaño anterior, colisiones ajustadas, aparición junto a Eida, carrera con alcance limitado, ataques a corta distancia y desaparición gradual. Se puede interrumpir golpeándolo o golpeando a Eida.
 - Once técnicas con consumo de energía y entradas físicas de Xbox. Los controles se invierten de acuerdo con la orientación.
@@ -18,9 +22,9 @@ Consulta **CONTROLES_XBOX.md**: incluye las nueve combinaciones con abajo/diagon
 
 - SFF v2.0.1.0: 155 sprites, paletas y datos binarios validados. Retrato de combate 25×25 y retrato de selección 120×140.
 - SND: 20 muestras mono PCM de 16 bits.
-- AIR: 106 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
-- 110 estados entre `Eida.cns`, `Specials.cns` y `common1.cns`; referencias estáticas de estados y sonidos verificadas.
-- Ikemen GO nightly: 42 escenarios con entradas direccionales y botones simulados que atraviesan el CMD real, tanto mirando a derecha como a izquierda. Incluyen atajos diagonales, combos, consumo de energía, bloqueo de Encantamiento, asistencia que falla al esquivar y técnicas durante el despertar. El informe reproducible está en el repositorio (`previews/engine_moveset_checks.json`).
+- AIR: 107 acciones con referencias válidas. El idle usa exclusivamente sus seis cuadros de reposo.
+- 111 estados entre `Eida.cns`, `Specials.cns` y `common1.cns`; referencias estáticas de estados, animaciones locales y sonidos verificadas.
+- Ikemen GO nightly: 47 escenarios con entradas direccionales y botones simulados que atraviesan el CMD real, tanto mirando a derecha como a izquierda. Incluyen atajos diagonales, combos, consumo de energía, bloqueo de Encantamiento, asistencia que falla al esquivar, técnicas durante el despertar, dash y cadenas aéreas pulsadas dentro de la pausa de impacto. El informe reproducible está en el repositorio (`previews/engine_moveset_checks.json`).
 
 Las pruebas del motor usan copias temporales e instrumentación fuera de la carpeta entregada. No se pudo ejecutar el binario exacto de Jump Force MUGEN V14 del usuario ni comprobar físicamente su mando Xbox. El equilibrio frente a todo su plantel requiere partidas locales.
 

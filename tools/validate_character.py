@@ -198,6 +198,13 @@ def main() -> None:
     parsed_sections.extend(('Eida.cmd', header, body) for header,body in sections(cmd_text))
     local_refs: list[tuple[str, str, int]] = []
     for filename, header, body in parsed_sections:
+        if filename in {'Eida.cns','Specials.cns'}:
+            # Check literal local animation references as well as sprite rows.
+            # Common states retain legacy overrides; opponent-owned animations
+            # in custom states and computed expressions are checked at runtime.
+            animation=integer(field(body, 'anim'))
+            if animation is not None and animation >= 0:
+                check(animation in actions, f'{filename} {header}: references missing animation {animation}')
         controller = (field(body, "type") or "").lower().split(";")[-1].strip()
         target = None
         if controller in {"changestate", "selfstate", "targetstate"}:

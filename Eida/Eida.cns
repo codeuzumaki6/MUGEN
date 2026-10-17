@@ -143,6 +143,28 @@ sprpriority = 5
 trans = Add
 ignorehitpause = 1
 
+[Statedef 100]
+type = S
+movetype = I
+physics = N
+anim = 100
+ctrl = 0
+velset = 5.2,0
+
+; Reuses Eida's existing movement poses until a dedicated run cycle is drawn.
+; No invulnerability, teleport, sprite replacement, or scale change.
+[State 100, Jump out of dash]
+type = ChangeState
+trigger1 = command = "holdup"
+value = 40
+
+[State 100, Stop released dash]
+type = ChangeState
+trigger1 = command != "holdfwd"
+trigger2 = Time >= 40
+value = 0
+ctrl = 1
+
 ; Compatibility sink for the dash spark helper requested by Code's proven
 ; common movement states. Eida uses no borrowed visual effect here.
 [Statedef 105]
@@ -687,10 +709,24 @@ ground.hittime = 14
 ground.velocity = -3.5
 air.velocity = -3.0,-4.0
 
+[State 600, Reset next aerial press]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+
+[State 600, Buffer physical Xbox Y during hitpause]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "b"
+v = 26
+value = 1
+ignorehitpause = 1
+
 [State 600, Chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "a"
+trigger1 = Var(26) = 1
 trigger1 = Time > 2
 value = 610
 
@@ -726,10 +762,24 @@ ground.velocity = -4.8
 air.velocity = -4.0,-5.0
 fall = 1
 
+[State 610, Reset next aerial press]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+
+[State 610, Buffer physical Xbox B during hitpause]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "c"
+v = 26
+value = 1
+ignorehitpause = 1
+
 [State 610, Chain]
 type = ChangeState
 triggerall = MoveContact
-trigger1 = command = "c"
+trigger1 = Var(26) = 1
 trigger1 = Time > 2
 value = 620
 
@@ -822,9 +872,15 @@ air.velocity = 0,0
 p2stateno = 1105
 fall = 0
 
-[State 1101, Vanish on contact]
+[State 1101, Confirmed charm marker]
+type = ChangeState
+trigger1 = MoveHit
+trigger1 = NumTarget > 0
+value = 1130
+
+[State 1101, Vanish on block]
 type = DestroySelf
-trigger1 = MoveContact
+trigger1 = MoveGuarded
 
 [State 1101, Finite range]
 type = DestroySelf
@@ -1582,11 +1638,56 @@ ground.velocity = 0
 air.velocity = 0,0
 p2stateno = 1105
 
+[State 1121, Confirmed charm marker]
+type = ChangeState
+trigger1 = MoveHit
+trigger1 = NumTarget > 0
+value = 1130
+
 [State 1121, Finite range]
 type = DestroySelf
 trigger1 = Time >= 50
-trigger2 = MoveContact
+trigger2 = MoveGuarded
 trigger3 = FrontEdgeDist < -25
+
+[Statedef 1130]
+type = A
+movetype = I
+physics = N
+anim = 1130
+ctrl = 0
+velset = 0,0
+sprpriority = 6
+
+; The projectile retains its own target and sprite ownership. A blocked or
+; missed heart never reaches this state. No extra damage or stun is applied.
+[State 1130, Remove expired marker]
+type = DestroySelf
+trigger1 = NumTarget = 0
+trigger2 = Time >= 45
+trigger3 = RoundState != 2
+
+[State 1130, Remove marker after stun or a followup hit]
+type = DestroySelf
+triggerall = NumTarget > 0
+trigger1 = Target,StateNo != 1105
+
+[State 1130, Follow the charmed opponent]
+type = BindToTarget
+trigger1 = NumTarget > 0
+time = 1
+pos = 0,-14,head
+
+[State 1130, Small heart]
+type = AngleDraw
+trigger1 = 1
+scale = .45,.45
+
+[State 1130, Soft transparency]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 220,36
 
 [Statedef 211]
 type = S

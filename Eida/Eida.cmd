@@ -257,7 +257,7 @@ triggerall = power >= 3000
 triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1101) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Despertar abajo y pausa]
 type = ChangeState
@@ -266,7 +266,7 @@ triggerall = command = "Despertar"
 triggerall = power >= 3000
 triggerall = Var(40) = 0
 triggerall = statetype != A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, X: carrera y dos golpes]
 type = ChangeState
@@ -277,7 +277,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -290,7 +290,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -306,7 +306,7 @@ triggerall = NumHelper(1301) = 0
 triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -319,7 +319,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -332,7 +332,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Y: corazon rasante]
 type = ChangeState
@@ -347,7 +347,7 @@ triggerall = NumHelper(1101) = 0
 triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -360,7 +360,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -374,7 +374,7 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 triggerall = NumHelper(1101) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -390,7 +390,7 @@ triggerall = NumHelper(1301) = 0
 triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, RB: parry de dos segundos]
 type = ChangeState
@@ -401,7 +401,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, RT: asalto de seis impactos]
 type = ChangeState
@@ -412,7 +412,7 @@ triggerall = statetype != A
 triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 trigger2 = StateNo = [200,202]
 trigger2 = MoveHit
 
@@ -422,46 +422,54 @@ value = 500
 triggerall = command = "Carga"
 triggerall = power < 3000
 triggerall = statetype != A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Normal a]
 type = ChangeState
 value = 200
 triggerall = command = "a"
 triggerall = statetype != A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Normal b]
 type = ChangeState
 value = 210
 triggerall = command = "b"
 triggerall = statetype != A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Normal c]
 type = ChangeState
 value = 220
 triggerall = command = "c"
 triggerall = statetype != A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Aerial a]
 type = ChangeState
 value = 600
 triggerall = command = "a"
 triggerall = statetype = A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Aerial b]
 type = ChangeState
 value = 610
 triggerall = command = "b"
 triggerall = statetype = A
-trigger1 = ctrl
+trigger1 = ctrl || StateNo = 100
 
 [State -1, Aerial c]
 type = ChangeState
 value = 620
 triggerall = command = "c"
 triggerall = statetype = A
+trigger1 = ctrl || StateNo = 100
+
+[State -1, Forward dash]
+type = ChangeState
+value = 100
+triggerall = command = "FF"
+triggerall = StateType = S
+triggerall = command != "holddown"
 trigger1 = ctrl

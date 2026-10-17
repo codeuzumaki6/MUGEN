@@ -248,14 +248,14 @@ Clsn1: 1
 [Begin Action 201]
 Clsn2Default: 1
  Clsn2[0] = -16,-70,16,0
-200,1,0,0,3,H
+200,1,0,0,3
 Clsn1: 1
  Clsn1[0] = 7,-60,40,-28
-200,2,0,0,3,H
+200,2,0,0,3
 Clsn1: 1
  Clsn1[0] = 10,-58,46,-25
-200,3,0,0,4,H
-200,4,0,0,3,H
+200,3,0,0,4
+200,4,0,0,3
 
 [Begin Action 202]
 Clsn2Default: 1
@@ -394,6 +394,15 @@ Clsn2Default: 1
 330,0,0,0,12
 
 ; Ranged charm projectile. Its collision box travels with the visible heart.
+[Begin Action 1130]
+; Confirmed charm marker: deliberately no attack or hurt boxes.
+8200,0,0,0,5
+8200,1,0,-2,5
+8200,2,0,-4,5
+8200,3,0,-4,5
+8200,4,0,-2,5
+8200,5,0,0,5
+
 [Begin Action 1110]
 Clsn2Default: 1
  Clsn2[0] = -17,-17,17,17

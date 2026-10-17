@@ -113,6 +113,18 @@ triggerall = statetype = A
 trigger1 = ctrl
 
 '''
+    # Eida owns the dash state; Code's legacy dash references missing effects
+    # and adds long invulnerability. Ground actions may interrupt this dash.
+    out=out.replace('trigger1 = ctrl\n', 'trigger1 = ctrl || StateNo = 100\n')
+    out+='''[State -1, Forward dash]
+type = ChangeState
+value = 100
+triggerall = command = "FF"
+triggerall = StateType = S
+triggerall = command != "holddown"
+trigger1 = ctrl
+
+'''
     (CHAR/'Eida.cmd').write_text(out.rstrip()+'\n')
 
 

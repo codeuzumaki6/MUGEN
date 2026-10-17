@@ -15,7 +15,7 @@ for key,value in re.findall(r'(?im)^\s*([a-z0-9]+)\s*=\s*([^;\r\n]+)',text):
     if key in {'sprite','sound','anim','cmd','cns','stcommon','st'} or re.fullmatch(r'st\d+',key):
         files.add(value.strip())
 files.update(p.name for p in char.glob('*.md'))
-destination=root/'Eida_VERSUS_11_JUTSUS.zip'
+destination=root/'Eida_REVISION_VIDEO.zip'
 with ZipFile(destination,'w',ZIP_DEFLATED,compresslevel=9) as archive:
     for name in sorted(files):
         archive.write(char/name,'Eida/'+name)

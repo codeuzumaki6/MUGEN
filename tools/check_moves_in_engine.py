@@ -37,9 +37,19 @@ for case in list(scenarios[:22]):
 for button,state in [('b',211),('c',221)]:
     scenarios.append(dict(name=f'{button} normal chain',button=button,direction='N',state=state,cost=0,mode=None,facing=1,distance=40,kind='combo'))
 scenarios.append({**scenarios[10],'name':'RT during awakening','kind':'awakened'})
+for facing in (1,-1):
+    scenarios.append(dict(name='Forward dash and attack',button='a',direction='N',state=100,cost=0,mode=None,facing=facing,distance=160,kind='dash'))
+    scenarios.append(dict(name='Aerial X Y B during hitpause',button='a',direction='N',state=620,cost=0,mode=None,facing=facing,distance=36,kind='aircombo'))
+scenarios.append(dict(name='Charm finite miss',button='b',direction='D',state=1100,cost=500,mode=None,facing=1,distance=120,kind='charmmiss'))
 capture_dir=os.environ.get('EIDA_CAPTURE')
 if capture_dir:
-    scenarios=[scenarios[0],scenarios[26]]
+    requested=os.environ.get('EIDA_CAPTURE_CASES')
+    if requested:
+        names=json.loads(requested)
+        selected=[next(c for c in scenarios if c['name']==name and c['facing']==1) for name in names]
+        scenarios=selected
+    else:
+        scenarios=[scenarios[0],scenarios[26]]
     Path(capture_dir).mkdir(parents=True,exist_ok=True)
 
 
@@ -88,9 +98,24 @@ for idx,case in enumerate(scenarios):
         other+=ctrl('incoming strike','ChangeState',at(38),'value = 210\nctrl = 0')
     if case['kind']=='block':
         other+=ctrl('hold guard','AssertInput',f'Var(58) = [{base+15},{base+120}]',f'flag = {"R" if face==1 else "L"}')
-    if case['kind']=='miss':
-        other+=ctrl('evade','PosSet',f'Var(58) = [{base+30},{base+150}]','y = -160')
-        other+=ctrl('hold evade','VelSet',f'Var(58) = [{base+30},{base+150}]','x = 0\ny = 0')
+    if case['kind'] in ('miss','charmmiss'):
+        other+=ctrl('evade','PosSet',f'Var(58) = [{base+18},{base+150}]','y = -160')
+        other+=ctrl('hold evade','VelSet',f'Var(58) = [{base+18},{base+150}]','x = 0\ny = 0')
+        other+=ctrl('airborne evade','ChangeState',at(18),'value = 50\nctrl = 0')
+    if case['kind']=='dash':
+        side='R' if face==1 else 'L'
+        for start,end in [(12,14),(18,34)]:
+            fixture+=ctrl('forward dash input','AssertInput',f'Var(58) = [{base+start},{base+end}]',f'flag = {side}')
+    if case['kind']=='aircombo':
+        for who,text in [('root',fixture),('dummy',other)]:
+            # Keep both fighters at contact height to isolate input buffering.
+            text+=ctrl('airborne contact height','PosSet',f'Var(58) = [{base+15},{base+110}]','y = -55')
+            text+=ctrl('airborne fixture velocity','VelSet',f'Var(58) = [{base+15},{base+110}]','y = 0')
+            text+=ctrl('airborne setup','ChangeState',at(15),'value = 50\nctrl = '+('1' if who=='root' else '0'))
+            if who=='root':fixture=text
+            else:other=text
+        for state,button in [(600,'b'),(610,'c')]:
+            fixture+=ctrl('press next button inside hitpause','AssertInput',f'StateNo = {state} && MoveContact && HitPauseTime = 5',f'flag = {button}')
 
 # Dismiss any helper left over across fixture resets.
 fixture+='''\n[State -2, CHECK helper cleanup]
@@ -100,6 +125,10 @@ trigger1 = Root,Var(58) % 180 = [1,3]
 ignorehitpause = 1
 '''
 for directory,text,filename in [(char,fixture,'Eida.cns'),(dummy,other,'kfm.cns')]:
+    if directory==dummy:
+        # One authoritative timeline: the defender can spend ticks in a
+        # foreign custom state, so its own counter must not schedule inputs.
+        text=text.replace('Var(58)', '(EnemyNear,Var(58))')
     p=directory/filename;s=p.read_text(encoding='latin-1')
     import re
     if re.search(r'(?im)^\[Statedef -2\]',s):
@@ -121,12 +150,13 @@ hook.add('loop','eida_checks',function()
   local case = math.floor((clock-1)/180)
   local tick = (clock-1)%180+1
   if case >= CASECOUNT then player(2); setLife(100); player(1); setTime(0); return end
-  if rows[case] == nil then rows[case] = {states={}, damage=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false} end
+  if rows[case] == nil then rows[case] = {states={}, damage=0, charm=false, spawn=-1, helperDistance=0, helpers=0, power=3000, aura=false, marker=false, invalidMarker=false, lateMarker=false, dashTravel=0} end
   local r=rows[case]
   if tick > 4 then
     r.states[stateNo()]=true
     r.power=math.min(r.power,power())
     local x=posX()
+    if stateNo()==100 then r.dashTravel=math.max(r.dashTravel, math.abs(x-(STARTPOSITIONS)[case+1])) end
     r.helpers=math.max(r.helpers,numHelper(1001))
     if helper(1001) then
       if r.spawn<0 then r.spawn=math.abs(posX()-x) end
@@ -134,6 +164,15 @@ hook.add('loop','eida_checks',function()
       player(1)
     end
     if helper(8301) then r.aura=true; player(1) end
+    if helper(1101) then
+      if stateNo()==1130 then
+        r.marker=true
+        player(2)
+        if stateNo()~=1105 then r.invalidMarker=true end
+      end
+      player(1)
+    end
+    if tick>130 and numHelper(1101)>0 then r.lateMarker=true end
     player(2)
     r.damage=math.max(r.damage,1000-life())
     if stateNo()==1105 then r.charm=true end
@@ -144,11 +183,12 @@ hook.add('loop','eida_checks',function()
     local states={}
     for k,_ in pairs(r.states) do table.insert(states,k) end
     table.sort(states)
-    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\n')
+    f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..tostring(r.charm)..'\\t'..r.spawn..'\\t'..r.helperDistance..'\\t'..r.helpers..'\\t'..r.power..'\\t'..tostring(r.aura)..'\\t'..tostring(r.marker)..'\\t'..tostring(r.invalidMarker)..'\\t'..tostring(r.lateMarker)..'\\t'..r.dashTravel..'\\n')
     f:flush()
   end
 end)
 '''.replace('CASECOUNT',str(len(scenarios)))
+module_text=module_text.replace('STARTPOSITIONS', '{'+','.join(str(-c['facing']*c['distance']/2) for c in scenarios)+'}')
 if capture_dir:
     module_text="modifyGameOption('Config.ScreenshotFolder',"+json.dumps(str(Path(capture_dir).resolve())+'/')+")\n"+module_text
     module_text=module_text.replace('if tick==179 and not r.logged then', 'if tick >= 10 and tick <= 150 and tick % 4 == 0 and not r.logged then screenshot() end\n  if tick==179 and not r.logged then')
@@ -177,7 +217,7 @@ assert sorted(first_records)==list(range(len(scenarios))),sorted(first_records)
 lines=[first_records[i] for i in range(len(scenarios))]
 failures=[];report=[]
 for line,case in zip(lines,scenarios):
-    idx,states,damage,charm,spawn,distance,helpers,power,aura=line.split('\t')
+    idx,states,damage,charm,spawn,distance,helpers,power,aura,marker,invalid_marker,late_marker,dash_travel=line.split('\t')
     states=set(map(int,states.split(',')));damage=int(damage);spawn=float(spawn);distance=float(distance);power=int(power)
     failures_here=[]
     if case['kind']=='empty':
@@ -195,10 +235,17 @@ for line,case in zip(lines,scenarios):
         # Anti-air is tested against a standing dummy separately: a miss is valid.
         if case['state']==1100:failures_here.append('heart did not charm on contact')
     if case['kind']=='block' and charm=='true':failures_here.append('charm bypassed block')
+    if case['kind']=='move' and case['state']==1100 and marker!='true':failures_here.append('confirmed charm marker absent')
+    if case['kind'] in ('block','charmmiss') and marker=='true':failures_here.append('charm marker appeared without a hit')
+    if invalid_marker=='true':failures_here.append('charm marker outlived stun')
+    if late_marker=='true':failures_here.append('charm helper did not expire')
+    if case['kind']=='dash' and (float(dash_travel)<10 or 200 not in states):failures_here.append('dash failed to move or cancel into attack')
+    if case['kind']=='aircombo' and not {600,610,620}.issubset(states):failures_here.append('aerial hitpause chain failed')
+    if case['kind']=='charmmiss' and charm=='true':failures_here.append('heart charmed outside its collision')
     if case['kind']=='miss' and damage>0:failures_here.append('assist hit airborne target outside collision')
     if case['kind']=='combo' and (case['state'] not in states or damage<100):failures_here.append('normal chain failed')
     if case['kind']=='aura' and aura!='true':failures_here.append('aura absent')
-    row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,failures=failures_here)
+    row=dict(case=case,states=sorted(states),damage=damage,spawn_distance=spawn,travel_distance=distance,minimum_power=power,charm_marker=marker=='true',dash_travel=float(dash_travel),failures=failures_here)
     report.append(row)
     print(('FAIL' if failures_here else 'PASS'),case['name'],case['facing'],row)
     failures+=failures_here
