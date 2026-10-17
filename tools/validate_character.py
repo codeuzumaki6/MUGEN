@@ -32,6 +32,8 @@ def check_mugen11_calls(path: Path) -> None:
             continue
         expression=code.split('=',1)[1]
         expression=re.sub(r'"[^"\n]*"','',expression)
+        check(re.search(r'(?:!?=)\s*\[[^\[\]\n]+,[^\[\]\n]+\]\s*(?:\|\||&&)',expression) is None,
+              f'{path.name}:{line_number}: bare interval comparison before a logical operator; use separate trigger groups')
         for name in re.findall(r'\b([a-zA-Z_]\w*)\s*\(',expression):
             check(name.lower() in MUGEN11_CALLS,
                   f'{path.name}:{line_number}: expression call {name}() is not in the MUGEN 1.1 function list')
@@ -256,6 +258,7 @@ def main() -> None:
     notes.append(f"AIR: {len(actions)} actions; idle uses {len(idle_refs)} idle-only frames")
     notes.append(f"CNS: {len(all_states)} states across {len(cns_paths)} files")
     notes.append('CNS/CMD expression calls checked against MUGEN 1.1; Ikemen-only Min/Max calls rejected')
+    notes.append('CNS/CMD interval comparisons checked for the reported MUGEN parsing failure')
     if errors:
         print("VALIDATION FAILED")
         for item in errors:

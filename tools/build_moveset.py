@@ -89,7 +89,10 @@ triggerall = NumHelper(1301) = 0
             out+='triggerall = command = "holddown"\ntriggerall = command != "holdfwd"\ntriggerall = command != "holdback"\n'
         out+='trigger1 = ctrl\n'
         if mode is not None or st in (1100,1120,1140,1160):
-            out+='trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221\ntrigger2 = MoveHit\n'
+            # MUGEN rejects the former bare range followed by || at CMD:304.
+            # Separate trigger groups preserve the same hit-confirmed routes.
+            for trigger_number,normal_state in enumerate((200,201,202,210,211,220,221),2):
+                out+=f'trigger{trigger_number} = StateNo = {normal_state}\ntrigger{trigger_number} = MoveHit\n'
         out+='\n'
     out+='''[State -1, Carga pausa]
 type = ChangeState

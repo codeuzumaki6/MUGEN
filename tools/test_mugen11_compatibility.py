@@ -33,4 +33,19 @@ class CompatibilityRegression(unittest.TestCase):
             self.assertNotEqual(result.returncode,0,result.stdout+result.stderr)
             self.assertIn('Min() is not in the MUGEN 1.1 function list',result.stdout)
 
+    def test_reported_cmd_trigger2_parse_failure_is_rejected(self):
+        with tempfile.TemporaryDirectory(prefix='eida-cmd-regression-') as directory:
+            character=Path(directory)/'Eida';character.mkdir()
+            for source in (ROOT/'Eida').iterdir():
+                if source.is_file():shutil.copy2(source,character/source.name)
+            path=character/'Eida.cmd'
+            text,count=re.subn(r'(?m)^trigger2 = StateNo = 200$',
+                'trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221',
+                path.read_text(),count=1)
+            self.assertEqual(count,1,'Expected a real special cancel to exercise')
+            path.write_text(text)
+            result=validate(character)
+            self.assertNotEqual(result.returncode,0,result.stdout+result.stderr)
+            self.assertIn('Eida.cmd:304: bare interval comparison',result.stdout)
+
 if __name__=='__main__':unittest.main()

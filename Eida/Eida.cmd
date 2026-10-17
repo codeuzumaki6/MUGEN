@@ -301,8 +301,20 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, X: rafaga de cinco golpes]
 type = ChangeState
@@ -315,8 +327,20 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, X: patada ascendente]
 type = ChangeState
@@ -332,8 +356,20 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, Y: patada de empuje]
 type = ChangeState
@@ -346,8 +382,20 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, Y: observacion y contraataque]
 type = ChangeState
@@ -376,8 +424,20 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, B: barrido bajo]
 type = ChangeState
@@ -390,8 +450,20 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, B: corazon antiaereo]
 type = ChangeState
@@ -405,8 +477,20 @@ triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 triggerall = NumHelper(1101) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, B: defensa corta y contraataque]
 type = ChangeState
@@ -438,8 +522,20 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, RB con abajo: retroceso y corazon de respuesta]
 type = ChangeState
@@ -472,8 +568,20 @@ triggerall = command = "holddown"
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, RB: parry de dos segundos]
 type = ChangeState
@@ -498,8 +606,20 @@ triggerall = NumHelper(1001) = 0
 triggerall = NumHelper(1351) = 0
 triggerall = NumHelper(1301) = 0
 trigger1 = ctrl || StateNo = 100
-trigger2 = StateNo = [200,202] || StateNo = 210 || StateNo = 211 || StateNo = 220 || StateNo = 221
+trigger2 = StateNo = 200
 trigger2 = MoveHit
+trigger3 = StateNo = 201
+trigger3 = MoveHit
+trigger4 = StateNo = 202
+trigger4 = MoveHit
+trigger5 = StateNo = 210
+trigger5 = MoveHit
+trigger6 = StateNo = 211
+trigger6 = MoveHit
+trigger7 = StateNo = 220
+trigger7 = MoveHit
+trigger8 = StateNo = 221
+trigger8 = MoveHit
 
 [State -1, Carga pausa]
 type = ChangeState
