@@ -1,9 +1,9 @@
 # Revisión visual de Pochita
 
-Propuesta de diseño generada con IA a partir de las tres imágenes de referencia proporcionadas por el usuario el 18 de octubre de 2026. No es una captura del motor, una animación terminada ni un recurso ya integrado al personaje publicado.
+Arte generado con IA a partir de las tres imágenes de referencia del usuario. `propuesta_tres_poses.png` es la primera propuesta visual; no es una captura del motor. Su bufanda llega a los bordes en los extremos. Esa composición no se utilizó como una tira de reposo ni se introdujo directamente en el SFF.
 
-Objetivo: reproducir la silueta robusta, casco dentado, armadura negra segmentada, cuatro brazos con motosierras y bufanda intestinal roja de las referencias. Se presentan reposo, preparación de ataque y embestida para revisar la anatomía antes de producir los ciclos completos.
+Las cuatro hojas en `sheets/` desarrollan el modelo robusto de armadura negra segmentada, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja. El manifiesto identifica las poses utilizadas. El constructor separa las siluetas completas por componentes, conserva sus márgenes y descarta la dependencia de celdas rígidas que podrían cortar partes del cuerpo. Se normaliza cada hoja con sus poses neutrales; las rotaciones aéreas usan el torso como eje.
 
-Pendientes para usar este arte en combate: completar el margen de la bufanda en las poses de los extremos, producir cuadros intermedios y movimientos/daño con el mismo modelo, ajustar todos los cuadros a una escala común y validar ejes y colisiones en el motor. El PNG actual no debe convertirse en un reposo que alterne las tres poses de ataque.
+Se utilizaron 118 poses fuente distintas en 127 entradas del SFF, con repeticiones para ciclos y acciones compartidas, más dos retratos. No se presentan como 127 dibujos diferentes. El SFF rediseñado, AIR y cajas de ataque se validaron en Ikemen GO; los GIF `previews/Pochita_rediseno_*_motor.gif` sí son capturas reales.
 
-El ZIP publicado anteriormente sigue siendo la versión anterior. Esta propuesta no atribuye el nuevo arte a Ducksysys o Spider-Monkie; sus créditos corresponden a la hoja original utilizada en aquel ZIP. Las referencias siguen perteneciendo a sus autores.
+El arte generado conserva variaciones de detalle; no equivale a una hoja manual perfectamente consistente. Los originales proporcionados por el usuario permanecen sin modificar. Este arte no se atribuye a Ducksysys o Spider-Monkie, cuyos créditos corresponden a la versión anterior basada en su hoja.

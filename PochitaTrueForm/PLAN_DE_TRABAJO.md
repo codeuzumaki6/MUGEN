@@ -1,7 +1,7 @@
-# Pochita True Form — entrega
+# Pochita True Form — rediseño integrado
 
-Hoja original recibida y utilizada: 127 poses de cuerpo, dos retratos y escala uniforme. Los SFF/SND grandes de SX no son necesarios. Código original de SX conservado como referencia; los originales proporcionados no se modificaron.
+Modelo nuevo de armadura negra, cuatro brazos y bufanda roja generado a partir de las referencias del usuario. Integrados 118 poses fuente en 127 entradas de cuerpo, más dos retratos. Escala calibrada por hoja, ejes aéreos al torso y alcance de ataque limitado a las motosierras visibles.
 
-Implementados y comprobados: movimiento, salto, guardia, daño, derribo y recuperación; cadenas X/Y/B y aérea; nueve especiales de abajo/dirección y botón; RB, RT, carga y ultimate que puede fallar. Archivo y referencias validados; 78 escenarios en Ikemen GO y una prueba de CPU completados.
+Completados: movimiento, salto, guardia, daño, derribo y recuperación; cadenas X/Y/B y aérea; nueve especiales; RB, RT, carga y ultimate que puede fallar. Validación de archivos y geometría de ataque, 84 escenarios en Ikemen GO y una prueba de CPU. Capturas reales y ZIP rediseñado preparados.
 
-Entrega instalable descrita en LEEME.md, controles en CONTROLES_XBOX.md y fuentes en CREDITOS_Y_FUENTES.md. Pendientes: pruebas en el binario exacto de Jump Force MUGEN V14, mando físico y equilibrio contra todo el plantel.
+Pendientes de prueba local: Jump Force MUGEN V14 exacto, mando físico y equilibrio contra el plantel completo. Persisten variaciones pequeñas propias del arte generado, descritas en LEEME.md.

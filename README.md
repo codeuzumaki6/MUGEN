@@ -1,21 +1,23 @@
-# Pochita True Form
+# Pochita True Form — rediseño visual
 
-[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm.zip)
+[**Descargar Pochita True Form REDISEÑADO para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_REDISENO.zip)
 
-Extrae el ZIP en `chars` y agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def`. Incluye todos los recursos de ejecución; no necesita los grandes SFF/SND de Chainsaw Man SX.
+Sustituye `chars/PochitaTrueForm` por la carpeta completa del ZIP. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no aparece. Incluye todos los recursos de ejecución.
 
-Pochita de cuatro brazos con 127 poses originales, armadura negra, bufanda roja, cadenas X/Y/B y aérea, nueve especiales de abajo/dirección y botón, defensa con respuesta en RB y asalto en RT. A activa la ultimate con apertura bloqueable y evadible; LB acelera los motores y carga energía. Siete efectos no verbales de motosierras, cortes e impactos. Los ataques son adaptaciones físicas; los nombres descriptivos no son técnicas oficiales nuevas del manga.
+Nuevo modelo de armadura negra robusta, cuatro brazos con motosierras, casco dentado y bufanda roja, basado en las imágenes del usuario. Se generaron con IA las hojas de movimiento, ataques y daño. Hay 118 poses fuente distintas en 127 entradas de cuerpo y dos retratos; las repeticiones permiten compartir poses y cerrar ciclos. Los detalles todavía varían ligeramente entre algunos cuadros.
 
-[Combo X en el motor](previews/Pochita_combo_motor.gif) · [Carnicería](previews/Pochita_carniceria_motor.gif) · [Ultimate](previews/Pochita_ultimate_motor.gif) · [Derribo y recuperación](previews/Pochita_recuperacion_motor.gif)
+Conserva combos X/Y/B y aérea, nueve especiales direccionales, RB, RT, carga LB y ultimate A que puede ser bloqueada o esquivada. El alcance ofensivo sigue el extremo visible de las motosierras, con seis comprobaciones de fallos desde lejos. Las rotaciones aéreas usan el torso como eje y el lanzamiento X tiene una altura menor para conservar el encuadre. Los siete sonidos no verbales de motosierras e impactos permanecen en el SND.
 
-[Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación, comprobaciones y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
+[**Ver el combo nuevo en GIF**](previews/Pochita_rediseno_combo_motor.gif) · [Carnicería](previews/Pochita_rediseno_carniceria_motor.gif) · [Ultimate](previews/Pochita_rediseno_ultimate_motor.gif) · [Derribo y recuperación](previews/Pochita_rediseno_recuperacion_motor.gif)
 
-Los GIF son capturas reales de Ikemen GO y no tienen audio. Pasaron [78 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json) y [una comprobación de la CPU](previews/Pochita_AI_checks.json). El validador comprueba SFF, SND, referencias y expresiones de MUGEN 1.1. Quedan por probar el binario exacto de Jump Force MUGEN V14, el mando físico y el equilibrio contra todo el plantel.
+[Hoja de sprites usada](previews/Pochita_redesign_sprites.png) · [Propuesta visual inicial](design/Pochita_revision_visual/propuesta_tres_poses.png) · [Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
 
-Para reconstruir desde el checkout existente, con Python/Pillow, ffmpeg e Ikemen GO verificado:
+Las capturas son reales de Ikemen GO y no tienen audio. Pasaron [84 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json), [una prueba de CPU](previews/Pochita_AI_checks.json) y el [control de alcance del validador](previews/Pochita_validator_checks.json). El validador comprueba SFF/SND, referencias, recuperación y expresiones de MUGEN 1.1; decodifica los sprites del SFF para limitar las cajas de ataque al dibujo. Faltan las pruebas en el binario exacto de Jump Force MUGEN V14, mando físico y plantel completo.
+
+Reconstrucción en el checkout existente con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
 ```sh
-python3 tools/build_pochita_assets.py
+python3 tools/build_pochita_redesign.py
 python3 tools/build_pochita_sound.py --from-wav
 python3 tools/build_pochita_runtime.py
 python3 tools/validate_pochita.py
@@ -25,7 +27,7 @@ python3 tools/make_pochita_previews.py /ruta/al/ikemen
 python3 tools/package_pochita.py
 ```
 
-La hoja original y las muestras WAV seleccionadas están en el repositorio; no se necesita el SND original completo para reconstruir. Los PNG de `assets/sprites` conservan la paleta de origen; el SFF aplica la paleta negra/roja al empaquetar. Los archivos originales de referencia no se modificaron.
+Las cuatro hojas nuevas y las muestras WAV seleccionadas están en el repositorio. El constructor `build_pochita_assets.py` se conserva para reconstruir la versión ANTERIOR desde la hoja original; no debe ejecutarse para regenerar este rediseño. No se modificaron las fuentes originales ni Eida.
 
 ---
 

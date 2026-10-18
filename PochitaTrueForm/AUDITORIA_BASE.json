@@ -161,11 +161,12 @@
     "size_bytes": 224218,
     "validated": "All seven RIFF payloads decoded; mono PCM 16-bit 22050 Hz; no voice groups selected"
   },
-  "sprite_sheet_status": "Uploaded original PNG, extracted 127 body frames and 2 portraits; SFF built and tested",
+  "sprite_sheet_status": "AI visual redesign based on user references; 118 unique source poses in 127 body entries, two new portraits",
   "runtime_validation": {
     "engine": "Ikemen GO",
-    "raw_input_collision_cases_passed": 78,
+    "raw_input_collision_cases_passed": 84,
     "cpu_smoke_passed": 1,
     "exact_jump_force_mugen_v14_run": false
-  }
+  },
+  "visual_revision": "design/Pochita_revision_visual/LEEME.md"
 }

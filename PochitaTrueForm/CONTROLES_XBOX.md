@@ -31,3 +31,5 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | A | Ultimate: embestida, seis cortes y lanzamiento si conecta | 3000 |
 
 1000 equivale a una barra. Sin la energía requerida para abajo+X/Y/B se ejecuta el normal agachado correspondiente. Los especiales ofensivos pueden cancelar un normal de suelo que haya conectado. Repetir el botón durante una guardia rival no concede automáticamente la continuación del combo. RB tiene aproximadamente 0,4 segundos de ventana activa, con preparación y recuperación; no refleja todo el daño ni asegura contras contra cualquier proyectil.
+
+En el rediseño, Ascenso, Barrido y Rasante son de corta distancia. Las cajas de ataque se ajustaron a las motosierras visibles; no alcanzan al rival automáticamente desde lejos.

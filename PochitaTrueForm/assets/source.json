@@ -1,10 +1,59 @@
 {
-  "author_credit": "Ducksysys, shared by Spider-Monkie",
-  "source_page": "https://www.deviantart.com/spider-monkie/art/Denji-Pochita-Chainsaw-Devil-Sprite-Sheet-1244509920",
-  "original_size": [
-    5934,
-    5764
-  ],
-  "sha256": "9202440d025d1d3fedb115ff667c6b426473ae631963ee04693753829ddd5691",
-  "uniform_scale": 0.84
+  "type": "AI-generated visual redesign based on user references",
+  "master_reference": "design/Pochita_revision_visual/propuesta_tres_poses.png",
+  "body_sprite_entries": 127,
+  "unique_source_poses": 118,
+  "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",
+  "sheet_scales": {
+    "movimiento": 91.55294117647058,
+    "basicos": 87.13636363636363,
+    "combos": 97.13207547169812,
+    "remates_dano": 88.54700854700855
+  },
+  "neutral_calibration_cells": {
+    "movimiento": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "basicos": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "combos": [
+      15,
+      33,
+      34,
+      35
+    ],
+    "remates_dano": [
+      34,
+      35
+    ]
+  },
+  "sheets": {
+    "movimiento": {
+      "file": "movimiento.png",
+      "sha256": "90283b5f16a450d837b4f6fdc10100af32a440dcff79570d27884f6e7daca791"
+    },
+    "basicos": {
+      "file": "basicos.png",
+      "sha256": "339c2c6a733d07e76e1b90473f65699e05c3ce5fd1a314389c89b67315bf3f38"
+    },
+    "combos": {
+      "file": "combos.png",
+      "sha256": "2a5909525a288578ba506716083f80df0bd0e81a87a4b3231fc055d595e39ba3"
+    },
+    "remates_dano": {
+      "file": "remates_dano.png",
+      "sha256": "637e7e7cab32f1fd3c8b78735fb1741548009f1745e90ee218c796c57ab53912"
+    }
+  }
 }

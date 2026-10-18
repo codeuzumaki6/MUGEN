@@ -15,7 +15,7 @@ for label,case in [('combo','Combo X'),('carniceria','Carniceria'),('ultimate','
   assert len(frames)>=45,(case,len(frames))
   # Separate runs prevent a dropped capture from mixing two attacks in a GIF.
   for i,p in enumerate(frames):p.rename(Path(directory)/f'frame_{i:04d}.png')
-  target=ROOT/'previews'/f'Pochita_{label}_motor.gif'
+  target=ROOT/'previews'/f'Pochita_rediseno_{label}_motor.gif'
   subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-framerate','15','-i',directory+'/frame_%04d.png','-filter_complex','[0:v]scale=640:-1:flags=neighbor,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=none','-loop','0',str(target)],check=True)
   print(label,len(frames),'engine captures',target.stat().st_size,'bytes',flush=True)
 (ROOT/'previews/Pochita_engine_visual_checks.json').write_text(json.dumps(reports,indent=2)+'\n')

@@ -1,18 +1,19 @@
 {
-  "archive": "PochitaTrueForm.zip",
-  "bytes": 291764,
-  "sha256": "063abc2d9bcf3b9f74d8f2250f6c0b3c102f30b0c2c36db7feeba36a46442daf",
+  "archive": "PochitaTrueForm_REDISENO.zip",
+  "alias": "PochitaTrueForm.zip",
+  "bytes": 594565,
+  "sha256": "61fdc27f3a377fac9d805f84ad193806ef01ab8cd344e4b3a37189db07cc7386",
   "files": {
-    "PochitaTrueForm.def": "37c070c4fd77e12f883cd212947b805d66df7e9a97bb2639edf87f456580ca0b",
-    "PochitaTrueForm.sff": "7ba1165a154d0ff8cf2e6e33954d37d7377248973ef2061267d59de015dfd629",
+    "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
+    "PochitaTrueForm.sff": "a0aa41ab53b217b365eb472d6ee681c0b4ef2bc54904cbdb1eaafb8ed563fa00",
     "PochitaTrueForm.snd": "1e86e610ecd7dd8eeb07d83e14798c65161b3e1fa43cc4649abf6d4a8ec1aa22",
-    "PochitaTrueForm.air": "6d346f4c94344c5d084165c3fe6750eea21412d98c12a91b85371af0a6ee391d",
-    "PochitaTrueForm.cmd": "e76f98a5c4940a4e84deaed67a354a4210b43b034effc939fa740cf2c91bcc92",
-    "PochitaTrueForm.cns": "347e598b7ade0fdb96fa2e273604a95eaeed51a831b9a0411bd25dfef5ed7198",
+    "PochitaTrueForm.air": "dd1040e93a1b1a25e66e8d9dd07a9b31cbe38e13dcdb6150db767ea394ae526d",
+    "PochitaTrueForm.cmd": "eac975b526c286f8dcec62177c2a1d00c1a0bb5a859c4191eb95271cfd0add1c",
+    "PochitaTrueForm.cns": "65b6318f124cc3da3cb63b2b5ae12a0ce8824652739da374c19dc145db0b54fc",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "49fb85612d30cdd4d2302e09638fce51f8c351da09651fd7392c26c0d7e2e575",
-    "CONTROLES_XBOX.md": "da1bad78e7981d20b021663377f4bce2e6f3e84c3d603d6c8a8a12e1652cb86b",
-    "CREDITOS_Y_FUENTES.md": "ed1142d0ab368646d29ad7854017610a9a2fdf6593ecf129e85e0c6d62594d27"
+    "LEEME.md": "cb26a22706d9c03d99eb7c0fb46ec7f70be3b223fccbef502eb2072375cee684",
+    "CONTROLES_XBOX.md": "15da99a999a3607733c961b80ef91193aacd40417e930642e2798e374f70d887",
+    "CREDITOS_Y_FUENTES.md": "815a9d800fa8750cf697f7081a170a59f46840de1429f9f96355e9fcd40bc0bf"
   },
-  "validation": "Ikemen GO: 78 raw-input/collision scenarios + 1 CPU smoke; exact Jump Force MUGEN V14 not executed"
+  "validation": "Ikemen GO: 84 raw-input/collision scenarios + 1 CPU smoke; exact Jump Force MUGEN V14 not executed"
 }

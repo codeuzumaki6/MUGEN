@@ -9,9 +9,11 @@ shutil.copy2(character/'PochitaTrueForm.def',character/'PochitaCheck.def');shuti
 specs=[('Desgarro','a','F',1000,500),('Cuatro brazos','a','B',1010,750),('Ascenso','a','D',1020,500),('Estocada','b','F',1030,750),('Barrido','b','B',1040,500),('Guillotina','b','D',1050,1000),('Embestida','c','F',1060,1000),('Carniceria','c','B',1070,1500),('Rasante','c','D',1080,500),('Asalto RT','z','N',1100,1500)]
 cases=[]
 for face in [1,-1]:
- for name,button,direction,state,cost in specs:cases.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,kind='special',facing=face,distance=70))
+ for name,button,direction,state,cost in specs:cases.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,kind='special',facing=face,distance=50 if state in [1020,1040,1080] else 70))
  for name,button,direction,state,cost in specs:
-  if direction in ['F','B']:cases.append(dict(name=name+' diagonal shortcut',button=button,direction=direction,state=state,cost=cost,kind='shortcut',facing=face,distance=70))
+  if state in [1020,1040,1080]:cases.append(dict(name=name+' outside blade reach',button=button,direction=direction,state=state,cost=cost,kind='reachwhiff',facing=face,distance=105))
+ for name,button,direction,state,cost in specs:
+  if direction in ['F','B']:cases.append(dict(name=name+' diagonal shortcut',button=button,direction=direction,state=state,cost=cost,kind='shortcut',facing=face,distance=50 if state==1040 else 70))
  for button,state in [('a',400),('b',410),('c',420)]:cases.append(dict(name='Low power crouch '+button,button=button,direction='D',state=state,cost=0,kind='crouch',facing=face,distance=42))
  for direction in ['F','B']:
   cases.append(dict(name='Walk '+direction,button='a',direction=direction,state=20,cost=0,kind='walk',facing=face,distance=180))
@@ -115,17 +117,17 @@ hook.add('loop','pochita_qa',function()
  local t=var(58);if t==frame or t<1 then return end;frame=t
  local case=math.floor((t-1)/240);local tick=(t-1)%240+1
  if case>=COUNT then player(2);setLife(100);player(1);setTime(0);return end
- if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,last=0,final=0,dx=0} end
+ if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,vapex=0,last=0,final=0,dx=0} end
  local r=rows[case]
  if tick>4 then
   r.states[stateNo()]=true;r.last=stateNo();r.received=math.max(r.received,1100-life());r.minpower=math.min(r.minpower,power());r.maxpower=math.max(r.maxpower,power());r.apex=math.min(r.apex,posY())
   if stateNo()==100 or stateNo()==20 or stateNo()==50 then r.dx=math.max(r.dx,math.abs(posX()-(STARTS)[case+1])) end
-  player(2);r.damage=math.max(r.damage,1000-life());r.final=stateNo();player(1)
+  player(2);r.damage=math.max(r.damage,1000-life());r.final=stateNo();r.vapex=math.min(r.vapex,posY());player(1)
  end
  CAPTURE
  if tick==239 and not r.saved then
   r.saved=true;local states={};for k,_ in pairs(r.states) do table.insert(states,k) end;table.sort(states)
-  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\t'..r.vapex..'\\n');f:flush()
  end
 end)
 '''.replace('COUNT',str(len(cases))).replace('STARTS','{'+','.join(str(-c['facing']*c['distance']/2) for c in cases)+'}')
@@ -145,7 +147,7 @@ for line in (ENGINE/'pochita_checks.tsv').read_text().splitlines():raw.setdefaul
 assert sorted(raw)==list(range(len(cases))),sorted(raw)
 report=[];errors=[]
 for i,c in enumerate(cases):
- _,states,damage,received,minimum,maximum,apex,last,final,dx=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
+ _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
  if kind=='empty':
   if 3000 in states:fail.append('ultimate spent unavailable power')
  else:
@@ -155,15 +157,17 @@ for i,c in enumerate(cases):
  if kind in ['combo','special','shortcut','crouch','aircombo','counter'] and damage<=0:fail.append('no collision damage')
  if kind=='aircombo' and (not {600,610,620}.issubset(states) or damage<139):fail.append('air links failed')
  if kind=='combo' and damage<{'a':126,'b':104,'c':118}[c['button']]:fail.append('not every normal actually hit')
+ if kind=='combo' and c['button']=='a' and not 20<=-float(vapex)<=80:fail.append('launcher height outside the intended camera range')
  if kind=='charge' and (int(maximum)<500 or int(last)==500):fail.append('charge failed or did not release')
  if kind=='recovery' and (int(received)<=0 or not {5110,5120,200}.issubset(states)):fail.append('actual knockdown/get-up/new attack failed')
  if kind=='ultihit' and (damage!=350 or 3001 not in states or int(final) in [3010,3011]):fail.append('confirmed ultimate damage/release failed')
  if kind in ['ultiblock','ultijump','ultifar'] and (damage>0 or 3001 in states):fail.append('ultimate could not be avoided')
+ if kind=='reachwhiff' and (damage!=0 or int(last)!=0):fail.append('short blade hit outside visible reach or failed to recover')
  if kind=='jump' and not 45<=-float(apex)<=75:fail.append('neutral jump height outside intended range')
  if kind=='jump' and (int(last)!=0 or (c['direction']!='N' and float(dx)<15)):fail.append('jump landing or diagonal travel failed')
  if kind=='walk' and (float(dx)<20 or int(last)!=0):fail.append('walk/release failed')
  if kind=='guard' and (int(received)!=0 or 150 not in states):fail.append('incoming strike not blocked')
  if kind=='dash' and (100 not in states or float(dx)<10):fail.append('dash failed to move/cancel')
- row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
+ row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
 path=ROOT/'previews'/('Pochita_engine_visual_checks.json' if capture else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
 print('PASSED',len(report),'raw-input/collision scenarios')

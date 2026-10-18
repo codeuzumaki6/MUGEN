@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Pochita's own finite, hit-confirmed combat using the original poses.
+"""Build Pochita's finite, hit-confirmed combat using current sprite geometry.
 SX is the mechanical reference (chains, air followups, recovery), not a blind
 sprite swap: no Denji dialogue, dance, allies, large first-hit multipliers or QTE.
 """
@@ -7,12 +7,16 @@ from pathlib import Path
 import re,json
 ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'PochitaTrueForm'
 SPR=json.loads((CHAR/'assets/sprites.json').read_text());air=[]
+GEOMETRY={(frame['group'],frame['number']):frame for frames in SPR.values() for frame in frames}
 def action(no,group,indices,times=4,active=(),reach=70,low=False,loop=False):
     if isinstance(times,int):times=[times]*len(indices)
     body=f'[Begin Action {no}]\nClsn2Default: 1\n Clsn2[0] = -17,{-44 if low else -72},17,0\n'
     if loop:body+='Loopstart\n'
     for e,(idx,t) in enumerate(zip(indices,times),1):
-        if e in active:body+=f'Clsn1: 1\n Clsn1[0] = 12,{-38 if low else -66},{reach},{-2 if low else -18}\n'
+        if e in active:
+            visible=GEOMETRY[(group,idx)].get('attack_extent',reach)
+            actualreach=min(reach,max(24,visible+1))
+            body+=f'Clsn1: 1\n Clsn1[0] = 12,{-38 if low else -66},{actualreach},{-2 if low else -18}\n'
         body+=f'{group},{idx},0,0,{t}\n'
     air.append(body+'\n')
 action(0,0,list(range(6)),7,loop=True);action(5,0,[1,0],[3,3]);action(6,10,[1,0],[3,3])
@@ -160,9 +164,9 @@ def change(label,no,conditions):return f'[State -1, {label}]\ntype = ChangeState
 for label,no,extra in [
  ('AI counter',1400,'triggerall = Power >= 500\ntriggerall = P2Dist X < 75\ntriggerall = P2MoveType = A\ntriggerall = Random < AILevel*3\n'),
  ('AI ultimate',3000,'triggerall = Power >= 3000\ntriggerall = P2Dist X < 160\ntriggerall = Random < AILevel*2\n'),
- ('AI reach',1030,'triggerall = Power >= 750\ntriggerall = P2Dist X = [85,150]\ntriggerall = Random < AILevel*5\n'),
- ('AI close',200,'triggerall = P2Dist X < 78\ntriggerall = Random < 160+AILevel*30\n'),
- ('AI approach',100,'triggerall = P2Dist X > 95\ntriggerall = Random < 60+AILevel*10\n')]:
+ ('AI reach',1030,'triggerall = Power >= 750\ntriggerall = P2Dist X = [55,75]\ntriggerall = Random < AILevel*5\n'),
+ ('AI close',200,'triggerall = P2Dist X < 55\ntriggerall = Random < 160+AILevel*30\n'),
+ ('AI approach',100,'triggerall = P2Dist X > 55\ntriggerall = Random < 60+AILevel*10\n')]:
  cmd+=change(label,no,'triggerall = AILevel > 0\ntriggerall = StateType != A\n'+extra+'trigger1 = Ctrl\n')
 cmd+=change('AI air cut',600,'triggerall = AILevel > 0\ntriggerall = StateType = A\ntriggerall = P2Dist X < 90\ntriggerall = Random < 180\ntrigger1 = Ctrl\n')
 cmd+=change('Xbox A Ultimate',3000,'triggerall = command = "x"\ntriggerall = Power >= 3000\ntriggerall = StateType != A\ntrigger1 = Ctrl\ntrigger2 = StateNo = 100\n')
@@ -284,17 +288,17 @@ for no,g,indices,active,reach,damage,fall in NORMALS:
     aerial=no in [600,610,620];cns+=f'\n[Statedef {no}]\ntype = {"A" if aerial else "S"}\nmovetype = A\nphysics = {"A" if aerial else "S"}\nanim = {no}\nctrl = 0\n'
     if not aerial:cns+='velset = 0,0\n'
     cns+=f'[State {no}, Saw]\ntype = PlaySnd\ntrigger1 = Time = 0\nvalue = S1,{1 if no in [202,211,221] else 0}\nchannel = 1\n'
-    cns+=hitdef(no,active[0],damage,fall,reach=reach,air=aerial,vy=-8.2 if no==202 else None)
+    cns+=hitdef(no,active[0],damage,fall,reach=reach,air=aerial,vy=-6.0 if no==202 else None)
     cns+=f'[State {no}, Reset press]\ntype = VarSet\ntrigger1 = Time = 0\nv = 25\nvalue = 0\nignorehitpause = 1\n'
     follows={200:'a',201:'a',210:'b',220:'c',600:'b',610:'c'}
     if no in follows:cns+=f'[State {no}, Buffer press]\ntype = VarSet\ntrigger1 = Time > 0\ntrigger1 = command = "{follows[no]}"\nv = 25\nvalue = 1\nignorehitpause = 1\n'
     cns+=f'[State {no}, End]\ntype = ChangeState\ntrigger1 = AnimTime = 0\nvalue = {50 if aerial else 0}\nctrl = 1\n'
 for name,b,d,no,cost,g,indices,hits,damages,reach,fall in MOVES:
-    cns+=f'\n[Statedef {no}]\ntype = S\nmovetype = A\nphysics = S\nanim = {no}\nctrl = 0\nvelset = {5.5 if no in [1000,1060,1100] else 1.2 if no in [1010,1070] else 0},0\npoweradd = -{cost}\n'
+    cns+=f'\n[Statedef {no}]\ntype = S\nmovetype = A\nphysics = S\nanim = {no}\nctrl = 0\nvelset = {5.5 if no in [1000,1060,1100] else 3.5 if no==1030 else 1.2 if no in [1010,1070] else 0},0\npoweradd = -{cost}\n'
     cns+=f'[State {no}, Motor]\ntype = PlaySnd\ntrigger1 = Time = 0\nvalue = S1,{3 if no in [1070,1100] else 1}\nchannel = 1\n'
     if no in [1000,1060,1100]:cns+=f'[State {no}, Stop lunge]\ntype = VelSet\ntrigger1 = Time >= {10 if no==1000 else 16}\nx = 0\n'
     for i,(element,damage) in enumerate(zip(hits,damages)):
-        cns+=hitdef(no,element,damage,fall,last=i==len(hits)-1,reach=reach,air=no==1050,vy=-8.5 if no==1020 else None,guard='L' if no in [1040,1080] else 'MA')
+        cns+=hitdef(no,element,damage,fall,last=i==len(hits)-1,reach=reach,air=no==1050,vy=-6.8 if no==1020 else None,guard='L' if no in [1040,1080] else 'MA')
     cns+=f'[State {no}, End]\ntype = ChangeState\ntrigger1 = AnimTime = 0\nvalue = 0\nctrl = 1\n'
     if no==1020:cns+='[State 1020, Jump after contact]\ntype = ChangeState\ntriggerall = MoveHit\ntrigger1 = command = "holdup"\nvalue = 40\n'
 cns+='''
@@ -512,7 +516,7 @@ for state in [200,201,210,220,600,610]:
 name = "Pochita True Form"
 displayname = "Pochita"
 mugenversion = 1.1
-author = "Pochita project; sprites Ducksysys / Spider-Monkie; gameplay reference STAND USER X"
+author = "Pochita project; AI visual redesign; gameplay reference STAND USER X"
 [Files]
 sprite = PochitaTrueForm.sff
 sound = PochitaTrueForm.snd
@@ -525,4 +529,4 @@ stcommon = common1.cns
 intro.storyboard =
 ending.storyboard =
 ''')
-print('Built original-pose AIR, Xbox commands and finite Pochita combat states')
+print('Built geometry-aware AIR, Xbox commands and finite Pochita combat states')

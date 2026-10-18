@@ -5,18 +5,21 @@
       "number": 0,
       "file": "assets/sprites/idle/0.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        206,
-        680,
-        301,
-        765
+        46,
+        74
       ],
       "size": [
-        84,
-        75
+        88,
+        76
+      ],
+      "attack_extent": 39,
+      "source_sheet": "movimiento",
+      "source_cell": 0,
+      "source_box": [
+        10,
+        38,
+        208,
+        208
       ]
     },
     {
@@ -24,18 +27,21 @@
       "number": 1,
       "file": "assets/sprites/idle/1.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        438,
-        680,
-        533,
-        765
+        42,
+        74
       ],
       "size": [
         84,
-        75
+        76
+      ],
+      "attack_extent": 39,
+      "source_sheet": "movimiento",
+      "source_cell": 1,
+      "source_box": [
+        222,
+        38,
+        410,
+        208
       ]
     },
     {
@@ -43,18 +49,21 @@
       "number": 2,
       "file": "assets/sprites/idle/2.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        670,
-        680,
-        765,
-        765
+        42,
+        74
       ],
       "size": [
-        84,
-        75
+        88,
+        76
+      ],
+      "attack_extent": 43,
+      "source_sheet": "movimiento",
+      "source_cell": 2,
+      "source_box": [
+        433,
+        38,
+        632,
+        208
       ]
     },
     {
@@ -62,18 +71,21 @@
       "number": 3,
       "file": "assets/sprites/idle/3.png",
       "axis": [
-        33,
-        75
-      ],
-      "source_box": [
-        902,
-        678,
-        996,
-        765
+        39,
+        74
       ],
       "size": [
-        83,
-        77
+        84,
+        76
+      ],
+      "attack_extent": 42,
+      "source_sheet": "movimiento",
+      "source_cell": 3,
+      "source_box": [
+        660,
+        38,
+        849,
+        208
       ]
     },
     {
@@ -81,18 +93,21 @@
       "number": 4,
       "file": "assets/sprites/idle/4.png",
       "axis": [
-        33,
-        75
-      ],
-      "source_box": [
-        1134,
-        678,
-        1228,
-        765
+        41,
+        74
       ],
       "size": [
         83,
-        77
+        76
+      ],
+      "attack_extent": 39,
+      "source_sheet": "movimiento",
+      "source_cell": 4,
+      "source_box": [
+        874,
+        39,
+        1061,
+        208
       ]
     },
     {
@@ -100,18 +115,21 @@
       "number": 5,
       "file": "assets/sprites/idle/5.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        1366,
-        680,
-        1461,
-        765
+        43,
+        74
       ],
       "size": [
-        84,
-        75
+        88,
+        76
+      ],
+      "attack_extent": 42,
+      "source_sheet": "movimiento",
+      "source_cell": 5,
+      "source_box": [
+        1082,
+        38,
+        1281,
+        208
       ]
     }
   ],
@@ -121,18 +139,21 @@
       "number": 0,
       "file": "assets/sprites/walk/0.png",
       "axis": [
-        29,
-        70
-      ],
-      "source_box": [
-        211,
-        923,
-        302,
-        1004
+        41,
+        75
       ],
       "size": [
-        80,
-        72
+        90,
+        77
+      ],
+      "attack_extent": 46,
+      "source_sheet": "movimiento",
+      "source_cell": 6,
+      "source_box": [
+        14,
+        241,
+        217,
+        414
       ]
     },
     {
@@ -140,18 +161,21 @@
       "number": 1,
       "file": "assets/sprites/walk/1.png",
       "axis": [
-        30,
-        71
-      ],
-      "source_box": [
-        403,
-        922,
-        494,
-        1004
+        38,
+        76
       ],
       "size": [
-        80,
-        73
+        87,
+        78
+      ],
+      "attack_extent": 46,
+      "source_sheet": "movimiento",
+      "source_cell": 7,
+      "source_box": [
+        236,
+        240,
+        431,
+        414
       ]
     },
     {
@@ -159,18 +183,21 @@
       "number": 2,
       "file": "assets/sprites/walk/2.png",
       "axis": [
-        30,
-        73
-      ],
-      "source_box": [
-        595,
-        920,
-        686,
-        1004
+        35,
+        75
       ],
       "size": [
-        80,
-        75
+        83,
+        77
+      ],
+      "attack_extent": 45,
+      "source_sheet": "movimiento",
+      "source_cell": 8,
+      "source_box": [
+        451,
+        241,
+        638,
+        414
       ]
     },
     {
@@ -178,18 +205,21 @@
       "number": 3,
       "file": "assets/sprites/walk/3.png",
       "axis": [
-        29,
-        72
-      ],
-      "source_box": [
-        787,
-        921,
-        880,
-        1004
+        41,
+        76
       ],
       "size": [
-        82,
-        74
+        92,
+        78
+      ],
+      "attack_extent": 48,
+      "source_sheet": "movimiento",
+      "source_cell": 9,
+      "source_box": [
+        660,
+        240,
+        867,
+        414
       ]
     },
     {
@@ -197,18 +227,21 @@
       "number": 4,
       "file": "assets/sprites/walk/4.png",
       "axis": [
-        27,
-        71
-      ],
-      "source_box": [
-        979,
-        921,
-        1072,
-        1003
+        36,
+        75
       ],
       "size": [
-        82,
-        73
+        87,
+        77
+      ],
+      "attack_extent": 48,
+      "source_sheet": "movimiento",
+      "source_cell": 10,
+      "source_box": [
+        891,
+        241,
+        1087,
+        414
       ]
     },
     {
@@ -216,18 +249,21 @@
       "number": 5,
       "file": "assets/sprites/walk/5.png",
       "axis": [
-        31,
-        72
-      ],
-      "source_box": [
-        1171,
-        920,
-        1262,
-        1003
+        36,
+        76
       ],
       "size": [
-        80,
-        74
+        87,
+        78
+      ],
+      "attack_extent": 48,
+      "source_sheet": "movimiento",
+      "source_cell": 11,
+      "source_box": [
+        1095,
+        240,
+        1290,
+        414
       ]
     },
     {
@@ -235,18 +271,21 @@
       "number": 6,
       "file": "assets/sprites/walk/6.png",
       "axis": [
-        29,
-        70
-      ],
-      "source_box": [
-        1363,
-        922,
-        1453,
-        1003
+        41,
+        75
       ],
       "size": [
-        80,
-        72
+        90,
+        77
+      ],
+      "attack_extent": 46,
+      "source_sheet": "movimiento",
+      "source_cell": 6,
+      "source_box": [
+        14,
+        241,
+        217,
+        414
       ]
     }
   ],
@@ -256,18 +295,21 @@
       "number": 0,
       "file": "assets/sprites/run/0.png",
       "axis": [
-        39,
-        62
-      ],
-      "source_box": [
-        173,
-        1111,
-        301,
-        1182
+        19,
+        71
       ],
       "size": [
-        112,
-        64
+        104,
+        73
+      ],
+      "attack_extent": 82,
+      "source_sheet": "movimiento",
+      "source_cell": 12,
+      "source_box": [
+        18,
+        453,
+        253,
+        616
       ]
     },
     {
@@ -276,17 +318,20 @@
       "file": "assets/sprites/run/1.png",
       "axis": [
         28,
-        59
-      ],
-      "source_box": [
-        433,
-        1115,
-        522,
-        1183
+        71
       ],
       "size": [
-        79,
-        61
+        96,
+        73
+      ],
+      "attack_extent": 65,
+      "source_sheet": "movimiento",
+      "source_cell": 13,
+      "source_box": [
+        251,
+        454,
+        468,
+        616
       ]
     },
     {
@@ -294,18 +339,21 @@
       "number": 2,
       "file": "assets/sprites/run/2.png",
       "axis": [
-        24,
-        63
-      ],
-      "source_box": [
-        651,
-        1109,
-        775,
-        1182
+        26,
+        69
       ],
       "size": [
-        108,
-        65
+        94,
+        71
+      ],
+      "attack_extent": 65,
+      "source_sheet": "movimiento",
+      "source_cell": 14,
+      "source_box": [
+        467,
+        457,
+        679,
+        616
       ]
     },
     {
@@ -313,18 +361,21 @@
       "number": 3,
       "file": "assets/sprites/run/3.png",
       "axis": [
-        35,
-        62
-      ],
-      "source_box": [
-        889,
-        1107,
-        1012,
-        1178
+        17,
+        70
       ],
       "size": [
-        107,
-        64
+        88,
+        72
+      ],
+      "attack_extent": 68,
+      "source_sheet": "movimiento",
+      "source_cell": 15,
+      "source_box": [
+        689,
+        456,
+        888,
+        616
       ]
     },
     {
@@ -332,18 +383,21 @@
       "number": 4,
       "file": "assets/sprites/run/4.png",
       "axis": [
-        44,
-        61
-      ],
-      "source_box": [
-        1157,
-        1111,
-        1240,
-        1181
+        32,
+        71
       ],
       "size": [
-        74,
-        63
+        93,
+        73
+      ],
+      "attack_extent": 58,
+      "source_sheet": "movimiento",
+      "source_cell": 16,
+      "source_box": [
+        900,
+        453,
+        1110,
+        616
       ]
     },
     {
@@ -351,18 +405,21 @@
       "number": 5,
       "file": "assets/sprites/run/5.png",
       "axis": [
-        35,
-        57
-      ],
-      "source_box": [
-        1399,
-        1116,
-        1477,
-        1182
+        29,
+        69
       ],
       "size": [
-        70,
-        59
+        83,
+        71
+      ],
+      "attack_extent": 51,
+      "source_sheet": "movimiento",
+      "source_cell": 17,
+      "source_box": [
+        1105,
+        458,
+        1292,
+        616
       ]
     },
     {
@@ -370,18 +427,21 @@
       "number": 6,
       "file": "assets/sprites/run/6.png",
       "axis": [
-        23,
-        62
-      ],
-      "source_box": [
-        1635,
-        1110,
-        1731,
-        1182
+        19,
+        71
       ],
       "size": [
-        85,
-        64
+        104,
+        73
+      ],
+      "attack_extent": 82,
+      "source_sheet": "movimiento",
+      "source_cell": 12,
+      "source_box": [
+        18,
+        453,
+        253,
+        616
       ]
     }
   ],
@@ -391,18 +451,21 @@
       "number": 0,
       "file": "assets/sprites/crouch/0.png",
       "axis": [
-        33,
-        70
-      ],
-      "source_box": [
-        206,
-        1325,
-        303,
-        1406
+        34,
+        58
       ],
       "size": [
-        85,
-        72
+        79,
+        60
+      ],
+      "attack_extent": 42,
+      "source_sheet": "movimiento",
+      "source_cell": 18,
+      "source_box": [
+        20,
+        669,
+        196,
+        801
       ]
     },
     {
@@ -410,18 +473,21 @@
       "number": 1,
       "file": "assets/sprites/crouch/1.png",
       "axis": [
-        26,
-        52
-      ],
-      "source_box": [
-        406,
-        1347,
-        498,
-        1406
+        41,
+        58
       ],
       "size": [
-        81,
-        54
+        87,
+        60
+      ],
+      "attack_extent": 43,
+      "source_sheet": "movimiento",
+      "source_cell": 19,
+      "source_box": [
+        212,
+        673,
+        409,
+        806
       ]
     },
     {
@@ -429,18 +495,21 @@
       "number": 2,
       "file": "assets/sprites/crouch/2.png",
       "axis": [
-        27,
-        52
-      ],
-      "source_box": [
-        596,
-        1346,
-        690,
-        1406
+        39,
+        59
       ],
       "size": [
-        83,
-        54
+        86,
+        61
+      ],
+      "attack_extent": 44,
+      "source_sheet": "movimiento",
+      "source_cell": 20,
+      "source_box": [
+        428,
+        675,
+        621,
+        810
       ]
     },
     {
@@ -448,18 +517,21 @@
       "number": 3,
       "file": "assets/sprites/crouch/3.png",
       "axis": [
-        27,
-        52
-      ],
-      "source_box": [
-        787,
-        1346,
-        882,
-        1406
+        40,
+        59
       ],
       "size": [
         84,
-        54
+        61
+      ],
+      "attack_extent": 41,
+      "source_sheet": "movimiento",
+      "source_cell": 21,
+      "source_box": [
+        648,
+        675,
+        836,
+        810
       ]
     },
     {
@@ -467,18 +539,21 @@
       "number": 4,
       "file": "assets/sprites/crouch/4.png",
       "axis": [
-        27,
-        52
-      ],
-      "source_box": [
-        980,
-        1346,
-        1074,
-        1406
+        39,
+        59
       ],
       "size": [
         83,
-        54
+        61
+      ],
+      "attack_extent": 41,
+      "source_sheet": "movimiento",
+      "source_cell": 22,
+      "source_box": [
+        865,
+        675,
+        1052,
+        810
       ]
     },
     {
@@ -486,18 +561,21 @@
       "number": 5,
       "file": "assets/sprites/crouch/5.png",
       "axis": [
-        26,
-        52
-      ],
-      "source_box": [
-        1174,
-        1347,
-        1266,
-        1406
+        37,
+        57
       ],
       "size": [
-        81,
-        54
+        82,
+        59
+      ],
+      "attack_extent": 42,
+      "source_sheet": "movimiento",
+      "source_cell": 23,
+      "source_box": [
+        1087,
+        680,
+        1270,
+        810
       ]
     }
   ],
@@ -507,18 +585,21 @@
       "number": 0,
       "file": "assets/sprites/jump/0.png",
       "axis": [
-        22,
-        112
-      ],
-      "source_box": [
-        243,
-        1579,
-        304,
-        1710
+        39,
+        66
       ],
       "size": [
-        55,
-        114
+        79,
+        54
+      ],
+      "attack_extent": 37,
+      "source_sheet": "movimiento",
+      "source_cell": 24,
+      "source_box": [
+        19,
+        881,
+        197,
+        999
       ]
     },
     {
@@ -526,18 +607,21 @@
       "number": 1,
       "file": "assets/sprites/jump/1.png",
       "axis": [
-        26,
-        105
-      ],
-      "source_box": [
-        370,
-        1572,
-        432,
-        1695
+        43,
+        75
       ],
       "size": [
-        56,
-        107
+        88,
+        74
+      ],
+      "attack_extent": 42,
+      "source_sheet": "movimiento",
+      "source_cell": 25,
+      "source_box": [
+        210,
+        820,
+        409,
+        986
       ]
     },
     {
@@ -545,18 +629,21 @@
       "number": 2,
       "file": "assets/sprites/jump/2.png",
       "axis": [
-        22,
-        110
-      ],
-      "source_box": [
-        509,
-        1540,
-        569,
-        1668
+        43,
+        72
       ],
       "size": [
-        54,
-        112
+        85,
+        67
+      ],
+      "attack_extent": 39,
+      "source_sheet": "movimiento",
+      "source_cell": 26,
+      "source_box": [
+        418,
+        824,
+        610,
+        973
       ]
     },
     {
@@ -564,18 +651,21 @@
       "number": 3,
       "file": "assets/sprites/jump/3.png",
       "axis": [
-        31,
-        68
-      ],
-      "source_box": [
-        643,
-        1578,
-        734,
-        1656
+        53,
+        62
       ],
       "size": [
-        80,
-        70
+        109,
+        46
+      ],
+      "attack_extent": 53,
+      "source_sheet": "movimiento",
+      "source_cell": 27,
+      "source_box": [
+        617,
+        880,
+        864,
+        978
       ]
     },
     {
@@ -583,18 +673,21 @@
       "number": 4,
       "file": "assets/sprites/jump/4.png",
       "axis": [
-        55,
-        49
-      ],
-      "source_box": [
-        752,
-        1633,
-        877,
-        1689
+        42,
+        68
       ],
       "size": [
-        109,
-        51
+        84,
+        61
+      ],
+      "attack_extent": 39,
+      "source_sheet": "movimiento",
+      "source_cell": 28,
+      "source_box": [
+        881,
+        864,
+        1071,
+        998
       ]
     },
     {
@@ -602,18 +695,21 @@
       "number": 5,
       "file": "assets/sprites/jump/5.png",
       "axis": [
-        55,
-        50
-      ],
-      "source_box": [
-        887,
-        1652,
-        1012,
-        1709
+        46,
+        66
       ],
       "size": [
-        109,
-        52
+        86,
+        55
+      ],
+      "attack_extent": 37,
+      "source_sheet": "movimiento",
+      "source_cell": 29,
+      "source_box": [
+        1089,
+        883,
+        1282,
+        1004
       ]
     },
     {
@@ -621,18 +717,21 @@
       "number": 6,
       "file": "assets/sprites/jump/6.png",
       "axis": [
-        27,
-        52
-      ],
-      "source_box": [
-        1063,
-        1661,
-        1157,
-        1721
+        46,
+        66
       ],
       "size": [
-        83,
-        54
+        86,
+        55
+      ],
+      "attack_extent": 37,
+      "source_sheet": "movimiento",
+      "source_cell": 29,
+      "source_box": [
+        1089,
+        883,
+        1282,
+        1004
       ]
     }
   ],
@@ -642,18 +741,21 @@
       "number": 0,
       "file": "assets/sprites/air1/0.png",
       "axis": [
-        31,
-        68
-      ],
-      "source_box": [
-        219,
-        1995,
-        310,
-        2073
+        40,
+        73
       ],
       "size": [
-        80,
-        70
+        86,
+        69
+      ],
+      "attack_extent": 43,
+      "source_sheet": "basicos",
+      "source_cell": 0,
+      "source_box": [
+        13,
+        26,
+        213,
+        185
       ]
     },
     {
@@ -661,18 +763,21 @@
       "number": 1,
       "file": "assets/sprites/air1/1.png",
       "axis": [
-        26,
-        47
-      ],
-      "source_box": [
-        523,
-        1999,
-        602,
-        2053
+        49,
+        76
       ],
       "size": [
-        70,
-        49
+        96,
+        75
+      ],
+      "attack_extent": 44,
+      "source_sheet": "basicos",
+      "source_cell": 12,
+      "source_box": [
+        15,
+        424,
+        241,
+        597
       ]
     },
     {
@@ -680,18 +785,21 @@
       "number": 2,
       "file": "assets/sprites/air1/2.png",
       "axis": [
-        20,
-        39
-      ],
-      "source_box": [
-        810,
-        2002,
-        888,
-        2046
+        44,
+        69
       ],
       "size": [
-        70,
-        41
+        91,
+        62
+      ],
+      "attack_extent": 44,
+      "source_sheet": "basicos",
+      "source_cell": 2,
+      "source_box": [
+        428,
+        39,
+        641,
+        181
       ]
     },
     {
@@ -699,18 +807,21 @@
       "number": 3,
       "file": "assets/sprites/air1/3.png",
       "axis": [
-        66,
-        66
-      ],
-      "source_box": [
-        1073,
-        1993,
-        1160,
-        2069
+        48,
+        73
       ],
       "size": [
-        77,
-        68
+        90,
+        67
+      ],
+      "attack_extent": 39,
+      "source_sheet": "basicos",
+      "source_cell": 3,
+      "source_box": [
+        650,
+        32,
+        859,
+        185
       ]
     },
     {
@@ -718,18 +829,21 @@
       "number": 4,
       "file": "assets/sprites/air1/4.png",
       "axis": [
-        66,
-        63
-      ],
-      "source_box": [
-        1376,
-        1994,
-        1463,
-        2067
+        43,
+        70
       ],
       "size": [
-        77,
-        65
+        89,
+        63
+      ],
+      "attack_extent": 43,
+      "source_sheet": "basicos",
+      "source_cell": 4,
+      "source_box": [
+        869,
+        39,
+        1076,
+        184
       ]
     },
     {
@@ -737,18 +851,21 @@
       "number": 5,
       "file": "assets/sprites/air1/5.png",
       "axis": [
-        66,
-        63
-      ],
-      "source_box": [
-        1683,
-        1994,
-        1770,
-        2067
+        41,
+        71
       ],
       "size": [
-        77,
+        80,
         65
+      ],
+      "attack_extent": 36,
+      "source_sheet": "basicos",
+      "source_cell": 5,
+      "source_box": [
+        1084,
+        44,
+        1271,
+        192
       ]
     },
     {
@@ -756,18 +873,21 @@
       "number": 6,
       "file": "assets/sprites/air1/6.png",
       "axis": [
-        60,
-        68
-      ],
-      "source_box": [
-        1960,
-        1995,
-        2084,
-        2074
+        41,
+        71
       ],
       "size": [
-        108,
-        70
+        80,
+        65
+      ],
+      "attack_extent": 36,
+      "source_sheet": "basicos",
+      "source_cell": 5,
+      "source_box": [
+        1084,
+        44,
+        1271,
+        192
       ]
     }
   ],
@@ -777,18 +897,21 @@
       "number": 0,
       "file": "assets/sprites/air2/0.png",
       "axis": [
-        20,
-        68
-      ],
-      "source_box": [
-        236,
-        2215,
-        311,
-        2293
+        44,
+        72
       ],
       "size": [
-        67,
-        70
+        89,
+        66
+      ],
+      "attack_extent": 42,
+      "source_sheet": "basicos",
+      "source_cell": 6,
+      "source_box": [
+        15,
+        225,
+        222,
+        376
       ]
     },
     {
@@ -796,18 +919,21 @@
       "number": 1,
       "file": "assets/sprites/air2/1.png",
       "axis": [
-        33,
-        68
-      ],
-      "source_box": [
-        518,
-        2218,
-        615,
-        2297
+        41,
+        81
       ],
       "size": [
-        85,
-        70
+        78,
+        83
+      ],
+      "attack_extent": 34,
+      "source_sheet": "basicos",
+      "source_cell": 7,
+      "source_box": [
+        252,
+        204,
+        432,
+        397
       ]
     },
     {
@@ -815,18 +941,21 @@
       "number": 2,
       "file": "assets/sprites/air2/2.png",
       "axis": [
-        22,
-        62
-      ],
-      "source_box": [
-        824,
-        2224,
-        935,
-        2296
+        47,
+        68
       ],
       "size": [
-        97,
-        64
+        90,
+        63
+      ],
+      "attack_extent": 40,
+      "source_sheet": "basicos",
+      "source_cell": 8,
+      "source_box": [
+        440,
+        239,
+        649,
+        383
       ]
     },
     {
@@ -834,18 +963,21 @@
       "number": 3,
       "file": "assets/sprites/air2/3.png",
       "axis": [
-        22,
-        63
-      ],
-      "source_box": [
-        1118,
-        2223,
-        1223,
-        2296
+        32,
+        79
       ],
       "size": [
-        92,
-        65
+        58,
+        79
+      ],
+      "attack_extent": 23,
+      "source_sheet": "basicos",
+      "source_cell": 9,
+      "source_box": [
+        686,
+        224,
+        819,
+        408
       ]
     },
     {
@@ -853,18 +985,21 @@
       "number": 4,
       "file": "assets/sprites/air2/4.png",
       "axis": [
-        23,
-        63
-      ],
-      "source_box": [
-        1412,
-        2223,
-        1518,
-        2296
+        41,
+        78
       ],
       "size": [
-        93,
-        65
+        80,
+        79
+      ],
+      "attack_extent": 36,
+      "source_sheet": "basicos",
+      "source_cell": 10,
+      "source_box": [
+        874,
+        220,
+        1059,
+        403
       ]
     }
   ],
@@ -874,18 +1009,21 @@
       "number": 0,
       "file": "assets/sprites/air3/0.png",
       "axis": [
-        36,
-        68
-      ],
-      "source_box": [
-        216,
-        2438,
-        321,
-        2516
+        49,
+        76
       ],
       "size": [
-        92,
-        70
+        96,
+        75
+      ],
+      "attack_extent": 44,
+      "source_sheet": "basicos",
+      "source_cell": 12,
+      "source_box": [
+        15,
+        424,
+        241,
+        597
       ]
     },
     {
@@ -893,18 +1031,21 @@
       "number": 1,
       "file": "assets/sprites/air3/1.png",
       "axis": [
-        24,
-        69
-      ],
-      "source_box": [
-        632,
-        2435,
-        714,
-        2515
+        43,
+        72
       ],
       "size": [
-        73,
-        71
+        87,
+        66
+      ],
+      "attack_extent": 41,
+      "source_sheet": "basicos",
+      "source_cell": 13,
+      "source_box": [
+        226,
+        435,
+        429,
+        587
       ]
     },
     {
@@ -912,18 +1053,21 @@
       "number": 2,
       "file": "assets/sprites/air3/2.png",
       "axis": [
-        59,
-        67
-      ],
-      "source_box": [
-        990,
-        2444,
-        1124,
-        2521
+        46,
+        77
       ],
       "size": [
-        117,
-        69
+        87,
+        78
+      ],
+      "attack_extent": 38,
+      "source_sheet": "basicos",
+      "source_cell": 14,
+      "source_box": [
+        429,
+        431,
+        633,
+        611
       ]
     },
     {
@@ -931,18 +1075,21 @@
       "number": 3,
       "file": "assets/sprites/air3/3.png",
       "axis": [
-        66,
-        68
-      ],
-      "source_box": [
-        1376,
-        2442,
-        1510,
-        2521
+        43,
+        74
       ],
       "size": [
-        117,
-        70
+        88,
+        74
+      ],
+      "attack_extent": 42,
+      "source_sheet": "basicos",
+      "source_cell": 15,
+      "source_box": [
+        650,
+        442,
+        856,
+        614
       ]
     },
     {
@@ -950,18 +1097,21 @@
       "number": 4,
       "file": "assets/sprites/air3/4.png",
       "axis": [
-        66,
-        68
-      ],
-      "source_box": [
-        1771,
-        2442,
-        1905,
-        2521
+        39,
+        71
       ],
       "size": [
-        117,
+        72,
         70
+      ],
+      "attack_extent": 30,
+      "source_sheet": "basicos",
+      "source_cell": 16,
+      "source_box": [
+        876,
+        464,
+        1043,
+        625
       ]
     },
     {
@@ -969,18 +1119,21 @@
       "number": 5,
       "file": "assets/sprites/air3/5.png",
       "axis": [
-        27,
-        68
-      ],
-      "source_box": [
-        2198,
-        2438,
-        2284,
-        2516
+        38,
+        66
       ],
       "size": [
-        76,
-        70
+        78,
+        55
+      ],
+      "attack_extent": 37,
+      "source_sheet": "basicos",
+      "source_cell": 17,
+      "source_box": [
+        1083,
+        497,
+        1265,
+        621
       ]
     }
   ],
@@ -990,18 +1143,21 @@
       "number": 0,
       "file": "assets/sprites/attack1/0.png",
       "axis": [
-        41,
-        75
-      ],
-      "source_box": [
-        216,
-        2874,
-        306,
-        2961
+        42,
+        69
       ],
       "size": [
         80,
-        77
+        71
+      ],
+      "attack_extent": 35,
+      "source_sheet": "basicos",
+      "source_cell": 18,
+      "source_box": [
+        15,
+        642,
+        202,
+        805
       ]
     },
     {
@@ -1009,18 +1165,21 @@
       "number": 1,
       "file": "assets/sprites/attack1/1.png",
       "axis": [
-        40,
-        72
-      ],
-      "source_box": [
-        449,
-        2878,
-        520,
-        2961
+        36,
+        66
       ],
       "size": [
-        64,
-        74
+        85,
+        68
+      ],
+      "attack_extent": 46,
+      "source_sheet": "basicos",
+      "source_cell": 19,
+      "source_box": [
+        224,
+        643,
+        422,
+        800
       ]
     },
     {
@@ -1028,18 +1187,21 @@
       "number": 2,
       "file": "assets/sprites/attack1/2.png",
       "axis": [
-        40,
-        72
-      ],
-      "source_box": [
-        681,
-        2878,
-        751,
-        2961
+        33,
+        66
       ],
       "size": [
-        63,
-        74
+        94,
+        68
+      ],
+      "attack_extent": 58,
+      "source_sheet": "basicos",
+      "source_cell": 20,
+      "source_box": [
+        417,
+        643,
+        637,
+        800
       ]
     },
     {
@@ -1047,18 +1209,21 @@
       "number": 3,
       "file": "assets/sprites/attack1/3.png",
       "axis": [
-        59,
-        73
-      ],
-      "source_box": [
-        889,
-        2877,
-        1031,
-        2961
+        43,
+        64
       ],
       "size": [
-        123,
-        75
+        89,
+        66
+      ],
+      "attack_extent": 43,
+      "source_sheet": "basicos",
+      "source_cell": 21,
+      "source_box": [
+        653,
+        652,
+        861,
+        804
       ]
     },
     {
@@ -1066,18 +1231,21 @@
       "number": 4,
       "file": "assets/sprites/attack1/4.png",
       "axis": [
-        56,
-        68
-      ],
-      "source_box": [
-        1124,
-        2883,
-        1233,
-        2961
+        28,
+        63
       ],
       "size": [
-        96,
-        70
+        85,
+        65
+      ],
+      "attack_extent": 54,
+      "source_sheet": "basicos",
+      "source_cell": 22,
+      "source_box": [
+        870,
+        652,
+        1068,
+        802
       ]
     },
     {
@@ -1085,18 +1253,21 @@
       "number": 5,
       "file": "assets/sprites/attack1/5.png",
       "axis": [
-        55,
-        66
-      ],
-      "source_box": [
-        1357,
-        2885,
-        1468,
-        2961
+        40,
+        67
       ],
       "size": [
-        97,
-        68
+        80,
+        69
+      ],
+      "attack_extent": 37,
+      "source_sheet": "basicos",
+      "source_cell": 23,
+      "source_box": [
+        1075,
+        647,
+        1261,
+        805
       ]
     },
     {
@@ -1104,18 +1275,21 @@
       "number": 6,
       "file": "assets/sprites/attack1/6.png",
       "axis": [
-        33,
-        69
-      ],
-      "source_box": [
-        1615,
-        2881,
-        1714,
-        2961
+        40,
+        67
       ],
       "size": [
-        87,
-        71
+        80,
+        69
+      ],
+      "attack_extent": 37,
+      "source_sheet": "basicos",
+      "source_cell": 23,
+      "source_box": [
+        1075,
+        647,
+        1261,
+        805
       ]
     }
   ],
@@ -1125,18 +1299,21 @@
       "number": 0,
       "file": "assets/sprites/attack2/0.png",
       "axis": [
-        33,
-        69
-      ],
-      "source_box": [
-        224,
-        3065,
-        323,
-        3145
+        40,
+        67
       ],
       "size": [
-        87,
-        71
+        79,
+        69
+      ],
+      "attack_extent": 36,
+      "source_sheet": "basicos",
+      "source_cell": 24,
+      "source_box": [
+        20,
+        827,
+        203,
+        986
       ]
     },
     {
@@ -1144,18 +1321,21 @@
       "number": 1,
       "file": "assets/sprites/attack2/1.png",
       "axis": [
-        49,
-        74
-      ],
-      "source_box": [
-        508,
-        3059,
-        624,
-        3145
+        29,
+        56
       ],
       "size": [
-        101,
-        76
+        96,
+        58
+      ],
+      "attack_extent": 64,
+      "source_sheet": "basicos",
+      "source_cell": 25,
+      "source_box": [
+        219,
+        856,
+        444,
+        987
       ]
     },
     {
@@ -1163,18 +1343,21 @@
       "number": 2,
       "file": "assets/sprites/attack2/2.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        800,
-        3060,
-        938,
-        3145
+        22,
+        50
       ],
       "size": [
-        120,
-        75
+        109,
+        52
+      ],
+      "attack_extent": 84,
+      "source_sheet": "basicos",
+      "source_cell": 26,
+      "source_box": [
+        439,
+        861,
+        696,
+        979
       ]
     },
     {
@@ -1182,18 +1365,21 @@
       "number": 3,
       "file": "assets/sprites/attack2/3.png",
       "axis": [
-        58,
-        73
-      ],
-      "source_box": [
-        1100,
-        3060,
-        1234,
-        3145
+        36,
+        54
       ],
       "size": [
-        117,
-        75
+        90,
+        56
+      ],
+      "attack_extent": 51,
+      "source_sheet": "basicos",
+      "source_cell": 27,
+      "source_box": [
+        670,
+        865,
+        879,
+        992
       ]
     },
     {
@@ -1201,18 +1387,21 @@
       "number": 4,
       "file": "assets/sprites/attack2/4.png",
       "axis": [
-        58,
-        73
-      ],
-      "source_box": [
-        1401,
-        3060,
-        1535,
-        3145
+        29,
+        62
       ],
       "size": [
-        117,
-        75
+        80,
+        64
+      ],
+      "attack_extent": 48,
+      "source_sheet": "basicos",
+      "source_cell": 28,
+      "source_box": [
+        888,
+        842,
+        1075,
+        988
       ]
     },
     {
@@ -1220,18 +1409,21 @@
       "number": 5,
       "file": "assets/sprites/attack2/5.png",
       "axis": [
-        58,
-        73
-      ],
-      "source_box": [
-        1703,
-        3061,
-        1836,
-        3145
+        39,
+        60
       ],
       "size": [
-        116,
-        75
+        84,
+        62
+      ],
+      "attack_extent": 42,
+      "source_sheet": "basicos",
+      "source_cell": 29,
+      "source_box": [
+        1079,
+        847,
+        1274,
+        989
       ]
     }
   ],
@@ -1241,18 +1433,21 @@
       "number": 0,
       "file": "assets/sprites/attack3/0.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        220,
-        3327,
-        315,
-        3412
+        44,
+        69
       ],
       "size": [
-        84,
-        75
+        81,
+        71
+      ],
+      "attack_extent": 34,
+      "source_sheet": "combos",
+      "source_cell": 0,
+      "source_box": [
+        15,
+        56,
+        186,
+        204
       ]
     },
     {
@@ -1260,18 +1455,21 @@
       "number": 1,
       "file": "assets/sprites/attack3/1.png",
       "axis": [
-        40,
-        75
-      ],
-      "source_box": [
-        533,
-        3325,
-        644,
-        3412
+        38,
+        66
       ],
       "size": [
-        97,
-        77
+        92,
+        68
+      ],
+      "attack_extent": 51,
+      "source_sheet": "combos",
+      "source_cell": 1,
+      "source_box": [
+        222,
+        63,
+        417,
+        204
       ]
     },
     {
@@ -1279,18 +1477,21 @@
       "number": 2,
       "file": "assets/sprites/attack3/2.png",
       "axis": [
-        54,
-        74
-      ],
-      "source_box": [
-        860,
-        3326,
-        981,
-        3412
+        35,
+        69
       ],
       "size": [
-        106,
-        76
+        92,
+        71
+      ],
+      "attack_extent": 54,
+      "source_sheet": "combos",
+      "source_cell": 2,
+      "source_box": [
+        436,
+        56,
+        631,
+        204
       ]
     },
     {
@@ -1298,18 +1499,21 @@
       "number": 3,
       "file": "assets/sprites/attack3/3.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        1191,
-        3328,
-        1319,
-        3412
+        28,
+        69
       ],
       "size": [
-        112,
-        75
+        94,
+        71
+      ],
+      "attack_extent": 63,
+      "source_sheet": "combos",
+      "source_cell": 3,
+      "source_box": [
+        651,
+        57,
+        850,
+        204
       ]
     },
     {
@@ -1317,18 +1521,21 @@
       "number": 4,
       "file": "assets/sprites/attack3/4.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        1525,
-        3328,
-        1653,
-        3412
+        30,
+        69
       ],
       "size": [
-        112,
-        75
+        92,
+        71
+      ],
+      "attack_extent": 59,
+      "source_sheet": "combos",
+      "source_cell": 4,
+      "source_box": [
+        854,
+        57,
+        1048,
+        204
       ]
     },
     {
@@ -1336,18 +1543,21 @@
       "number": 5,
       "file": "assets/sprites/attack3/5.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        1859,
-        3328,
-        1987,
-        3412
+        29,
+        69
       ],
       "size": [
-        112,
-        75
+        92,
+        71
+      ],
+      "attack_extent": 60,
+      "source_sheet": "combos",
+      "source_cell": 5,
+      "source_box": [
+        1073,
+        57,
+        1268,
+        204
       ]
     },
     {
@@ -1355,18 +1565,21 @@
       "number": 6,
       "file": "assets/sprites/attack3/6.png",
       "axis": [
-        49,
-        74
-      ],
-      "source_box": [
-        2200,
-        3326,
-        2316,
-        3412
+        34,
+        66
       ],
       "size": [
-        101,
-        76
+        98,
+        68
+      ],
+      "attack_extent": 61,
+      "source_sheet": "combos",
+      "source_cell": 6,
+      "source_box": [
+        14,
+        255,
+        221,
+        396
       ]
     },
     {
@@ -1374,18 +1587,21 @@
       "number": 7,
       "file": "assets/sprites/attack3/7.png",
       "axis": [
-        37,
-        72
-      ],
-      "source_box": [
-        2545,
-        3329,
-        2691,
-        3412
+        29,
+        69
       ],
       "size": [
-        127,
-        74
+        92,
+        71
+      ],
+      "attack_extent": 60,
+      "source_sheet": "combos",
+      "source_cell": 7,
+      "source_box": [
+        238,
+        249,
+        432,
+        396
       ]
     },
     {
@@ -1393,18 +1609,21 @@
       "number": 8,
       "file": "assets/sprites/attack3/8.png",
       "axis": [
-        40,
-        64
-      ],
-      "source_box": [
-        2875,
-        3338,
-        3120,
-        3412
+        28,
+        61
       ],
       "size": [
-        210,
-        66
+        99,
+        63
+      ],
+      "attack_extent": 68,
+      "source_sheet": "combos",
+      "source_cell": 8,
+      "source_box": [
+        439,
+        265,
+        649,
+        396
       ]
     },
     {
@@ -1412,18 +1631,21 @@
       "number": 9,
       "file": "assets/sprites/attack3/9.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        3208,
-        3338,
-        3451,
-        3412
+        28,
+        67
       ],
       "size": [
-        208,
-        66
+        86,
+        69
+      ],
+      "attack_extent": 55,
+      "source_sheet": "combos",
+      "source_cell": 9,
+      "source_box": [
+        651,
+        252,
+        832,
+        396
       ]
     },
     {
@@ -1431,18 +1653,21 @@
       "number": 10,
       "file": "assets/sprites/attack3/10.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        3542,
-        3338,
-        3785,
-        3412
+        30,
+        66
       ],
       "size": [
-        208,
-        66
+        98,
+        68
+      ],
+      "attack_extent": 65,
+      "source_sheet": "combos",
+      "source_cell": 10,
+      "source_box": [
+        852,
+        254,
+        1059,
+        396
       ]
     },
     {
@@ -1450,18 +1675,21 @@
       "number": 11,
       "file": "assets/sprites/attack3/11.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        3876,
-        3338,
-        4119,
-        3412
+        27,
+        66
       ],
       "size": [
-        208,
-        66
+        96,
+        68
+      ],
+      "attack_extent": 66,
+      "source_sheet": "combos",
+      "source_cell": 11,
+      "source_box": [
+        1070,
+        254,
+        1274,
+        396
       ]
     },
     {
@@ -1469,18 +1697,21 @@
       "number": 12,
       "file": "assets/sprites/attack3/12.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        4210,
-        3338,
-        4453,
-        3412
+        45,
+        67
       ],
       "size": [
-        208,
-        66
+        96,
+        69
+      ],
+      "attack_extent": 48,
+      "source_sheet": "combos",
+      "source_cell": 12,
+      "source_box": [
+        15,
+        452,
+        219,
+        596
       ]
     },
     {
@@ -1488,18 +1719,21 @@
       "number": 13,
       "file": "assets/sprites/attack3/13.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        4544,
-        3338,
-        4722,
-        3412
+        31,
+        67
       ],
       "size": [
-        154,
-        66
+        88,
+        69
+      ],
+      "attack_extent": 54,
+      "source_sheet": "combos",
+      "source_cell": 13,
+      "source_box": [
+        247,
+        452,
+        433,
+        596
       ]
     },
     {
@@ -1507,18 +1741,21 @@
       "number": 14,
       "file": "assets/sprites/attack3/14.png",
       "axis": [
-        50,
-        67
-      ],
-      "source_box": [
-        4868,
-        3335,
-        4983,
-        3412
+        45,
+        72
       ],
       "size": [
-        101,
-        69
+        88,
+        74
+      ],
+      "attack_extent": 40,
+      "source_sheet": "combos",
+      "source_cell": 14,
+      "source_box": [
+        456,
+        442,
+        642,
+        596
       ]
     },
     {
@@ -1526,18 +1763,21 @@
       "number": 15,
       "file": "assets/sprites/attack3/15.png",
       "axis": [
-        49,
-        67
-      ],
-      "source_box": [
-        5202,
-        3335,
-        5318,
-        3412
+        43,
+        74
       ],
       "size": [
-        101,
-        69
+        83,
+        76
+      ],
+      "attack_extent": 37,
+      "source_sheet": "combos",
+      "source_cell": 15,
+      "source_box": [
+        669,
+        436,
+        843,
+        596
       ]
     },
     {
@@ -1545,18 +1785,21 @@
       "number": 16,
       "file": "assets/sprites/attack3/16.png",
       "axis": [
-        47,
-        67
-      ],
-      "source_box": [
-        5539,
-        3335,
-        5652,
-        3412
+        38,
+        64
       ],
       "size": [
-        99,
-        69
+        97,
+        66
+      ],
+      "attack_extent": 56,
+      "source_sheet": "combos",
+      "source_cell": 16,
+      "source_box": [
+        861,
+        459,
+        1066,
+        596
       ]
     }
   ],
@@ -1566,18 +1809,21 @@
       "number": 0,
       "file": "assets/sprites/attack3b/0.png",
       "axis": [
-        33,
-        73
-      ],
-      "source_box": [
-        220,
-        3493,
-        315,
-        3578
+        38,
+        67
       ],
       "size": [
-        84,
-        75
+        86,
+        69
+      ],
+      "attack_extent": 45,
+      "source_sheet": "combos",
+      "source_cell": 17,
+      "source_box": [
+        1087,
+        452,
+        1269,
+        596
       ]
     },
     {
@@ -1585,18 +1831,21 @@
       "number": 1,
       "file": "assets/sprites/attack3b/1.png",
       "axis": [
-        40,
-        75
-      ],
-      "source_box": [
-        396,
-        3491,
-        507,
-        3578
+        39,
+        66
       ],
       "size": [
-        97,
-        77
+        86,
+        68
+      ],
+      "attack_extent": 44,
+      "source_sheet": "combos",
+      "source_cell": 18,
+      "source_box": [
+        22,
+        659,
+        203,
+        801
       ]
     },
     {
@@ -1604,18 +1853,21 @@
       "number": 2,
       "file": "assets/sprites/attack3b/2.png",
       "axis": [
-        54,
-        74
-      ],
-      "source_box": [
-        586,
-        3492,
-        707,
-        3578
+        36,
+        86
       ],
       "size": [
-        106,
-        76
+        82,
+        88
+      ],
+      "attack_extent": 43,
+      "source_sheet": "combos",
+      "source_cell": 19,
+      "source_box": [
+        224,
+        616,
+        397,
+        801
       ]
     },
     {
@@ -1623,18 +1875,21 @@
       "number": 3,
       "file": "assets/sprites/attack3b/3.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        780,
-        3494,
-        908,
-        3578
+        42,
+        75
       ],
       "size": [
-        112,
-        75
+        91,
+        77
+      ],
+      "attack_extent": 46,
+      "source_sheet": "combos",
+      "source_cell": 20,
+      "source_box": [
+        425,
+        640,
+        617,
+        801
       ]
     },
     {
@@ -1642,18 +1897,21 @@
       "number": 4,
       "file": "assets/sprites/attack3b/4.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        977,
-        3494,
-        1105,
-        3578
+        44,
+        79
       ],
       "size": [
-        112,
-        75
+        90,
+        81
+      ],
+      "attack_extent": 43,
+      "source_sheet": "combos",
+      "source_cell": 21,
+      "source_box": [
+        658,
+        633,
+        849,
+        803
       ]
     },
     {
@@ -1661,18 +1919,21 @@
       "number": 5,
       "file": "assets/sprites/attack3b/5.png",
       "axis": [
-        57,
-        73
-      ],
-      "source_box": [
-        1174,
-        3494,
-        1302,
-        3578
+        33,
+        79
       ],
       "size": [
-        112,
-        75
+        90,
+        81
+      ],
+      "attack_extent": 54,
+      "source_sheet": "combos",
+      "source_cell": 22,
+      "source_box": [
+        875,
+        630,
+        1066,
+        801
       ]
     },
     {
@@ -1680,18 +1941,21 @@
       "number": 6,
       "file": "assets/sprites/attack3b/6.png",
       "axis": [
-        49,
-        74
-      ],
-      "source_box": [
-        1378,
-        3492,
-        1494,
-        3578
+        41,
+        73
       ],
       "size": [
-        101,
-        76
+        86,
+        75
+      ],
+      "attack_extent": 42,
+      "source_sheet": "combos",
+      "source_cell": 23,
+      "source_box": [
+        1074,
+        647,
+        1254,
+        803
       ]
     },
     {
@@ -1699,18 +1963,21 @@
       "number": 7,
       "file": "assets/sprites/attack3b/7.png",
       "axis": [
-        37,
-        72
-      ],
-      "source_box": [
-        1586,
-        3495,
-        1709,
-        3578
+        39,
+        69
       ],
       "size": [
-        107,
-        74
+        99,
+        71
+      ],
+      "attack_extent": 57,
+      "source_sheet": "combos",
+      "source_cell": 24,
+      "source_box": [
+        16,
+        832,
+        226,
+        980
       ]
     },
     {
@@ -1718,18 +1985,21 @@
       "number": 8,
       "file": "assets/sprites/attack3b/8.png",
       "axis": [
-        40,
-        64
-      ],
-      "source_box": [
-        1779,
-        3504,
-        1905,
-        3578
+        33,
+        66
       ],
       "size": [
-        110,
-        66
+        92,
+        68
+      ],
+      "attack_extent": 56,
+      "source_sheet": "combos",
+      "source_cell": 25,
+      "source_box": [
+        243,
+        842,
+        437,
+        983
       ]
     },
     {
@@ -1737,18 +2007,21 @@
       "number": 9,
       "file": "assets/sprites/attack3b/9.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        1975,
-        3504,
-        2102,
-        3578
+        30,
+        61
       ],
       "size": [
-        111,
-        66
+        93,
+        63
+      ],
+      "attack_extent": 60,
+      "source_sheet": "combos",
+      "source_cell": 26,
+      "source_box": [
+        455,
+        852,
+        651,
+        982
       ]
     },
     {
@@ -1756,18 +2029,21 @@
       "number": 10,
       "file": "assets/sprites/attack3b/10.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        2172,
-        3504,
-        2299,
-        3578
+        38,
+        60
       ],
       "size": [
-        111,
-        66
+        86,
+        62
+      ],
+      "attack_extent": 45,
+      "source_sheet": "combos",
+      "source_cell": 27,
+      "source_box": [
+        674,
+        851,
+        856,
+        980
       ]
     },
     {
@@ -1775,18 +2051,21 @@
       "number": 11,
       "file": "assets/sprites/attack3b/11.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        2369,
-        3504,
-        2496,
-        3578
+        38,
+        78
       ],
       "size": [
-        111,
-        66
+        90,
+        80
+      ],
+      "attack_extent": 49,
+      "source_sheet": "combos",
+      "source_cell": 28,
+      "source_box": [
+        870,
+        813,
+        1061,
+        980
       ]
     },
     {
@@ -1794,18 +2073,21 @@
       "number": 12,
       "file": "assets/sprites/attack3b/12.png",
       "axis": [
-        41,
-        64
-      ],
-      "source_box": [
-        2566,
-        3504,
-        2693,
-        3578
+        37,
+        55
       ],
       "size": [
-        111,
-        66
+        87,
+        57
+      ],
+      "attack_extent": 47,
+      "source_sheet": "combos",
+      "source_cell": 29,
+      "source_box": [
+        1084,
+        862,
+        1267,
+        980
       ]
     },
     {
@@ -1814,17 +2096,20 @@
       "file": "assets/sprites/attack3b/13.png",
       "axis": [
         41,
-        64
-      ],
-      "source_box": [
-        2763,
-        3504,
-        2890,
-        3578
+        56
       ],
       "size": [
-        111,
-        66
+        88,
+        58
+      ],
+      "attack_extent": 44,
+      "source_sheet": "combos",
+      "source_cell": 30,
+      "source_box": [
+        30,
+        1045,
+        215,
+        1164
       ]
     },
     {
@@ -1832,18 +2117,21 @@
       "number": 14,
       "file": "assets/sprites/attack3b/14.png",
       "axis": [
-        50,
-        67
-      ],
-      "source_box": [
-        2950,
-        3501,
-        3065,
-        3578
+        38,
+        59
       ],
       "size": [
-        101,
-        69
+        96,
+        61
+      ],
+      "attack_extent": 55,
+      "source_sheet": "combos",
+      "source_cell": 31,
+      "source_box": [
+        233,
+        1035,
+        437,
+        1161
       ]
     },
     {
@@ -1851,18 +2139,21 @@
       "number": 15,
       "file": "assets/sprites/attack3b/15.png",
       "axis": [
-        49,
-        67
-      ],
-      "source_box": [
-        3147,
-        3501,
-        3263,
-        3578
+        38,
+        60
       ],
       "size": [
-        101,
-        69
+        89,
+        62
+      ],
+      "attack_extent": 48,
+      "source_sheet": "combos",
+      "source_cell": 32,
+      "source_box": [
+        452,
+        1032,
+        639,
+        1161
       ]
     },
     {
@@ -1870,18 +2161,21 @@
       "number": 16,
       "file": "assets/sprites/attack3b/16.png",
       "axis": [
-        47,
-        67
-      ],
-      "source_box": [
-        3347,
-        3501,
-        3460,
-        3578
+        44,
+        73
       ],
       "size": [
-        99,
-        69
+        84,
+        75
+      ],
+      "attack_extent": 37,
+      "source_sheet": "combos",
+      "source_cell": 33,
+      "source_box": [
+        665,
+        1014,
+        841,
+        1170
       ]
     }
   ],
@@ -1891,18 +2185,21 @@
       "number": 0,
       "file": "assets/sprites/attack4/0.png",
       "axis": [
-        50,
-        62
-      ],
-      "source_box": [
-        215,
-        3749,
-        321,
-        3820
+        46,
+        51
       ],
       "size": [
-        93,
-        64
+        83,
+        53
+      ],
+      "attack_extent": 34,
+      "source_sheet": "remates_dano",
+      "source_cell": 0,
+      "source_box": [
+        15,
+        100,
+        208,
+        219
       ]
     },
     {
@@ -1910,18 +2207,21 @@
       "number": 1,
       "file": "assets/sprites/attack4/1.png",
       "axis": [
-        50,
-        62
-      ],
-      "source_box": [
-        446,
-        3749,
-        554,
-        3820
+        38,
+        53
       ],
       "size": [
-        95,
-        64
+        81,
+        55
+      ],
+      "attack_extent": 40,
+      "source_sheet": "remates_dano",
+      "source_cell": 1,
+      "source_box": [
+        239,
+        98,
+        427,
+        222
       ]
     },
     {
@@ -1929,18 +2229,21 @@
       "number": 2,
       "file": "assets/sprites/attack4/2.png",
       "axis": [
-        47,
-        78
-      ],
-      "source_box": [
-        681,
-        3730,
-        811,
-        3820
+        30,
+        61
       ],
       "size": [
-        113,
-        80
+        72,
+        63
+      ],
+      "attack_extent": 39,
+      "source_sheet": "remates_dano",
+      "source_cell": 2,
+      "source_box": [
+        461,
+        76,
+        627,
+        219
       ]
     },
     {
@@ -1948,18 +2251,21 @@
       "number": 3,
       "file": "assets/sprites/attack4/3.png",
       "axis": [
-        48,
-        77
-      ],
-      "source_box": [
-        910,
-        3731,
-        1040,
-        3820
+        40,
+        71
       ],
       "size": [
-        113,
-        79
+        75,
+        73
+      ],
+      "attack_extent": 32,
+      "source_sheet": "remates_dano",
+      "source_cell": 3,
+      "source_box": [
+        668,
+        51,
+        840,
+        219
       ]
     },
     {
@@ -1967,18 +2273,21 @@
       "number": 4,
       "file": "assets/sprites/attack4/4.png",
       "axis": [
-        49,
-        83
-      ],
-      "source_box": [
-        1140,
-        3723,
-        1249,
-        3820
+        39,
+        88
       ],
       "size": [
-        96,
-        85
+        75,
+        90
+      ],
+      "attack_extent": 33,
+      "source_sheet": "remates_dano",
+      "source_cell": 4,
+      "source_box": [
+        880,
+        10,
+        1052,
+        219
       ]
     },
     {
@@ -1986,18 +2295,21 @@
       "number": 5,
       "file": "assets/sprites/attack4/5.png",
       "axis": [
-        49,
-        83
-      ],
-      "source_box": [
-        1371,
-        3723,
-        1480,
-        3820
+        33,
+        87
       ],
       "size": [
-        96,
-        85
+        75,
+        89
+      ],
+      "attack_extent": 39,
+      "source_sheet": "remates_dano",
+      "source_cell": 5,
+      "source_box": [
+        1104,
+        12,
+        1277,
+        219
       ]
     }
   ],
@@ -2007,18 +2319,21 @@
       "number": 0,
       "file": "assets/sprites/attack5/0.png",
       "axis": [
-        41,
-        75
-      ],
-      "source_box": [
-        222,
-        3957,
-        329,
-        4044
+        33,
+        66
       ],
       "size": [
-        94,
-        77
+        82,
+        68
+      ],
+      "attack_extent": 46,
+      "source_sheet": "remates_dano",
+      "source_cell": 6,
+      "source_box": [
+        10,
+        251,
+        200,
+        406
       ]
     },
     {
@@ -2026,18 +2341,21 @@
       "number": 1,
       "file": "assets/sprites/attack5/1.png",
       "axis": [
-        32,
-        78
-      ],
-      "source_box": [
-        557,
-        3953,
-        645,
-        4044
+        44,
+        66
       ],
       "size": [
-        78,
-        80
+        76,
+        68
+      ],
+      "attack_extent": 29,
+      "source_sheet": "remates_dano",
+      "source_cell": 7,
+      "source_box": [
+        227,
+        251,
+        402,
+        406
       ]
     },
     {
@@ -2045,18 +2363,21 @@
       "number": 2,
       "file": "assets/sprites/attack5/2.png",
       "axis": [
-        52,
-        90
-      ],
-      "source_box": [
-        867,
-        3941,
-        995,
-        4046
+        50,
+        62
       ],
       "size": [
-        112,
-        92
+        87,
+        64
+      ],
+      "attack_extent": 34,
+      "source_sheet": "remates_dano",
+      "source_cell": 8,
+      "source_box": [
+        430,
+        260,
+        633,
+        406
       ]
     },
     {
@@ -2064,18 +2385,21 @@
       "number": 3,
       "file": "assets/sprites/attack5/3.png",
       "axis": [
-        57,
-        83
-      ],
-      "source_box": [
-        1190,
-        3950,
-        1312,
-        4046
+        35,
+        65
       ],
       "size": [
-        106,
-        85
+        92,
+        67
+      ],
+      "attack_extent": 54,
+      "source_sheet": "remates_dano",
+      "source_cell": 9,
+      "source_box": [
+        653,
+        254,
+        867,
+        407
       ]
     },
     {
@@ -2083,18 +2407,21 @@
       "number": 4,
       "file": "assets/sprites/attack5/4.png",
       "axis": [
-        58,
-        63
-      ],
-      "source_box": [
-        1512,
-        3973,
-        1637,
-        4046
+        36,
+        62
       ],
       "size": [
-        109,
-        65
+        81,
+        64
+      ],
+      "attack_extent": 42,
+      "source_sheet": "remates_dano",
+      "source_cell": 10,
+      "source_box": [
+        888,
+        260,
+        1075,
+        406
       ]
     },
     {
@@ -2102,18 +2429,21 @@
       "number": 5,
       "file": "assets/sprites/attack5/5.png",
       "axis": [
-        58,
-        63
-      ],
-      "source_box": [
-        1837,
-        3973,
-        1932,
-        4046
+        39,
+        66
       ],
       "size": [
-        84,
-        65
+        80,
+        68
+      ],
+      "attack_extent": 38,
+      "source_sheet": "remates_dano",
+      "source_cell": 11,
+      "source_box": [
+        1100,
+        251,
+        1286,
+        406
       ]
     },
     {
@@ -2121,18 +2451,21 @@
       "number": 6,
       "file": "assets/sprites/attack5/6.png",
       "axis": [
-        58,
-        63
-      ],
-      "source_box": [
-        2162,
-        3973,
-        2257,
-        4046
+        39,
+        69
       ],
       "size": [
-        84,
-        65
+        82,
+        71
+      ],
+      "attack_extent": 40,
+      "source_sheet": "remates_dano",
+      "source_cell": 12,
+      "source_box": [
+        15,
+        439,
+        204,
+        602
       ]
     },
     {
@@ -2140,18 +2473,21 @@
       "number": 7,
       "file": "assets/sprites/attack5/7.png",
       "axis": [
-        47,
-        67
-      ],
-      "source_box": [
-        2495,
-        3967,
-        2608,
-        4044
+        36,
+        64
       ],
       "size": [
-        99,
-        69
+        80,
+        66
+      ],
+      "attack_extent": 41,
+      "source_sheet": "remates_dano",
+      "source_cell": 13,
+      "source_box": [
+        229,
+        452,
+        415,
+        602
       ]
     }
   ],
@@ -2161,18 +2497,21 @@
       "number": 0,
       "file": "assets/sprites/damage/0.png",
       "axis": [
-        26,
-        55
-      ],
-      "source_box": [
-        225,
-        4212,
-        307,
-        4275
+        39,
+        69
       ],
       "size": [
-        73,
-        57
+        82,
+        71
+      ],
+      "attack_extent": 40,
+      "source_sheet": "remates_dano",
+      "source_cell": 12,
+      "source_box": [
+        15,
+        439,
+        204,
+        602
       ]
     },
     {
@@ -2180,18 +2519,21 @@
       "number": 1,
       "file": "assets/sprites/damage/1.png",
       "axis": [
-        26,
-        52
-      ],
-      "source_box": [
-        365,
-        4215,
-        449,
-        4275
+        36,
+        64
       ],
       "size": [
-        75,
-        54
+        80,
+        66
+      ],
+      "attack_extent": 41,
+      "source_sheet": "remates_dano",
+      "source_cell": 13,
+      "source_box": [
+        229,
+        452,
+        415,
+        602
       ]
     },
     {
@@ -2199,18 +2541,21 @@
       "number": 2,
       "file": "assets/sprites/damage/2.png",
       "axis": [
-        33,
-        66
-      ],
-      "source_box": [
-        493,
-        4199,
-        594,
-        4275
+        43,
+        64
       ],
       "size": [
-        89,
-        68
+        84,
+        66
+      ],
+      "attack_extent": 38,
+      "source_sheet": "remates_dano",
+      "source_cell": 14,
+      "source_box": [
+        440,
+        451,
+        636,
+        602
       ]
     },
     {
@@ -2218,18 +2563,21 @@
       "number": 3,
       "file": "assets/sprites/damage/3.png",
       "axis": [
-        28,
-        62
-      ],
-      "source_box": [
-        788,
-        4206,
-        848,
-        4277
+        40,
+        55
       ],
       "size": [
-        54,
-        64
+        88,
+        57
+      ],
+      "attack_extent": 45,
+      "source_sheet": "remates_dano",
+      "source_cell": 15,
+      "source_box": [
+        652,
+        474,
+        856,
+        602
       ]
     },
     {
@@ -2237,18 +2585,21 @@
       "number": 4,
       "file": "assets/sprites/damage/4.png",
       "axis": [
-        41,
-        59
-      ],
-      "source_box": [
-        919,
-        4207,
-        1009,
-        4275
+        50,
+        52
       ],
       "size": [
-        80,
-        61
+        82,
+        54
+      ],
+      "attack_extent": 29,
+      "source_sheet": "remates_dano",
+      "source_cell": 16,
+      "source_box": [
+        871,
+        479,
+        1062,
+        602
       ]
     },
     {
@@ -2256,18 +2607,21 @@
       "number": 5,
       "file": "assets/sprites/damage/5.png",
       "axis": [
-        40,
-        57
-      ],
-      "source_box": [
-        1073,
-        4208,
-        1171,
-        4274
+        42,
+        56
       ],
       "size": [
-        86,
-        59
+        81,
+        58
+      ],
+      "attack_extent": 36,
+      "source_sheet": "remates_dano",
+      "source_cell": 17,
+      "source_box": [
+        1086,
+        471,
+        1274,
+        602
       ]
     },
     {
@@ -2275,18 +2629,21 @@
       "number": 6,
       "file": "assets/sprites/damage/6.png",
       "axis": [
-        20,
-        62
-      ],
-      "source_box": [
-        1249,
-        4203,
-        1334,
-        4275
+        49,
+        51
       ],
       "size": [
-        75,
-        64
+        80,
+        53
+      ],
+      "attack_extent": 28,
+      "source_sheet": "remates_dano",
+      "source_cell": 18,
+      "source_box": [
+        14,
+        684,
+        200,
+        803
       ]
     },
     {
@@ -2294,18 +2651,21 @@
       "number": 7,
       "file": "assets/sprites/damage/7.png",
       "axis": [
-        20,
-        63
-      ],
-      "source_box": [
-        1410,
-        4203,
-        1492,
-        4276
+        57,
+        65
       ],
       "size": [
-        73,
-        65
+        79,
+        67
+      ],
+      "attack_extent": 19,
+      "source_sheet": "remates_dano",
+      "source_cell": 19,
+      "source_box": [
+        229,
+        650,
+        412,
+        803
       ]
     },
     {
@@ -2313,18 +2673,21 @@
       "number": 8,
       "file": "assets/sprites/damage/8.png",
       "axis": [
-        38,
-        51
-      ],
-      "source_box": [
-        1595,
-        4211,
-        1679,
-        4269
+        30,
+        77
       ],
       "size": [
-        75,
-        53
+        71,
+        75
+      ],
+      "attack_extent": 38,
+      "source_sheet": "remates_dano",
+      "source_cell": 20,
+      "source_box": [
+        457,
+        631,
+        620,
+        803
       ]
     },
     {
@@ -2332,18 +2695,21 @@
       "number": 9,
       "file": "assets/sprites/damage/9.png",
       "axis": [
-        58,
-        48
-      ],
-      "source_box": [
-        1783,
-        4219,
-        1880,
-        4274
+        35,
+        75
       ],
       "size": [
-        85,
-        50
+        74,
+        74
+      ],
+      "attack_extent": 36,
+      "source_sheet": "remates_dano",
+      "source_cell": 21,
+      "source_box": [
+        647,
+        611,
+        818,
+        781
       ]
     },
     {
@@ -2351,18 +2717,21 @@
       "number": 10,
       "file": "assets/sprites/damage/10.png",
       "axis": [
-        22,
-        74
-      ],
-      "source_box": [
-        1960,
-        4205,
-        2052,
-        4291
+        44,
+        73
       ],
       "size": [
-        81,
-        76
+        85,
+        67
+      ],
+      "attack_extent": 38,
+      "source_sheet": "remates_dano",
+      "source_cell": 22,
+      "source_box": [
+        856,
+        636,
+        1053,
+        789
       ]
     },
     {
@@ -2370,18 +2739,21 @@
       "number": 11,
       "file": "assets/sprites/damage/11.png",
       "axis": [
-        22,
-        74
-      ],
-      "source_box": [
-        2164,
-        4216,
-        2255,
-        4302
+        43,
+        62
       ],
       "size": [
-        80,
-        76
+        87,
+        52
+      ],
+      "attack_extent": 41,
+      "source_sheet": "remates_dano",
+      "source_cell": 23,
+      "source_box": [
+        1081,
+        685,
+        1283,
+        803
       ]
     },
     {
@@ -2389,18 +2761,21 @@
       "number": 12,
       "file": "assets/sprites/damage/12.png",
       "axis": [
-        37,
-        45
-      ],
-      "source_box": [
-        2388,
-        4257,
-        2477,
-        4308
+        44,
+        35
       ],
       "size": [
-        79,
-        47
+        84,
+        37
+      ],
+      "attack_extent": 37,
+      "source_sheet": "remates_dano",
+      "source_cell": 26,
+      "source_box": [
+        432,
+        897,
+        628,
+        977
       ]
     },
     {
@@ -2408,18 +2783,21 @@
       "number": 13,
       "file": "assets/sprites/damage/13.png",
       "axis": [
-        36,
-        47
-      ],
-      "source_box": [
-        2594,
-        4254,
-        2681,
-        4308
+        44,
+        34
       ],
       "size": [
-        77,
-        49
+        86,
+        36
+      ],
+      "attack_extent": 39,
+      "source_sheet": "remates_dano",
+      "source_cell": 27,
+      "source_box": [
+        649,
+        897,
+        848,
+        976
       ]
     },
     {
@@ -2427,18 +2805,21 @@
       "number": 14,
       "file": "assets/sprites/damage/14.png",
       "axis": [
-        36,
-        47
-      ],
-      "source_box": [
-        2799,
-        4254,
-        2886,
-        4308
+        44,
+        35
       ],
       "size": [
-        77,
-        49
+        84,
+        37
+      ],
+      "attack_extent": 37,
+      "source_sheet": "remates_dano",
+      "source_cell": 26,
+      "source_box": [
+        432,
+        897,
+        628,
+        977
       ]
     }
   ]

@@ -222,7 +222,7 @@ value = 1030
 triggerall = AILevel > 0
 triggerall = StateType != A
 triggerall = Power >= 750
-triggerall = P2Dist X = [85,150]
+triggerall = P2Dist X = [55,75]
 triggerall = Random < AILevel*5
 trigger1 = Ctrl
 
@@ -231,7 +231,7 @@ type = ChangeState
 value = 200
 triggerall = AILevel > 0
 triggerall = StateType != A
-triggerall = P2Dist X < 78
+triggerall = P2Dist X < 55
 triggerall = Random < 160+AILevel*30
 trigger1 = Ctrl
 
@@ -240,7 +240,7 @@ type = ChangeState
 value = 100
 triggerall = AILevel > 0
 triggerall = StateType != A
-triggerall = P2Dist X > 95
+triggerall = P2Dist X > 55
 triggerall = Random < 60+AILevel*10
 trigger1 = Ctrl
 

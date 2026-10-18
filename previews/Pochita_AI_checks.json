@@ -12,26 +12,24 @@
     },
     "states": [
       0,
-      40,
-      50,
-      52,
+      10,
       100,
       200,
       201,
       202,
-      600,
-      1020,
-      1050,
-      1080
+      1000,
+      1010,
+      1040
     ],
-    "damage": 252,
+    "damage": 296,
     "received": 0,
-    "minimum_power": 1000,
+    "minimum_power": 1340,
     "maximum_power": 3000,
-    "apex": -65.24998474121094,
-    "last": 202,
-    "victim_final": 5035,
-    "dash_travel": 105.67268371582031,
+    "apex": 0.0,
+    "victim_apex": -54.450008392333984,
+    "last": 100,
+    "victim_final": 5100,
+    "dash_travel": 105.3125,
     "failures": []
   }
 ]
