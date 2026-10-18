@@ -1,0 +1,16 @@
+[Info]
+name = "Pochita True Form"
+displayname = "Pochita"
+mugenversion = 1.1
+author = "Pochita project; sprites Ducksysys / Spider-Monkie; gameplay reference STAND USER X"
+[Files]
+sprite = PochitaTrueForm.sff
+sound = PochitaTrueForm.snd
+anim = PochitaTrueForm.air
+cmd = PochitaTrueForm.cmd
+cns = PochitaTrueForm.cns
+st = PochitaTrueForm.cns
+stcommon = common1.cns
+[Arcade]
+intro.storyboard =
+ending.storyboard =

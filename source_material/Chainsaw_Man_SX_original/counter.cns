@@ -1,0 +1,933 @@
+;--------------------------------------------------------
+;Chainsaw man JUS SX Char by stand user X
+;https://www.youtube.com/channel/UCVAaMeaPCrHtdoBhErAZVDg
+;SPRITES BY REKULL:
+;https://www.deviantart.com/rekull/gallery
+;SPRITES ADDONS:
+;Saxcreed
+;https://www.deviantart.com/shaulmorales
+;--------------------------------------------------------
+
+; Slash Spark New
+[Statedef 8900]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8920
+sprpriority = 8
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, Null]
+type = Null
+trigger1 = time = 1
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S3,3
+volumescale = 45
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = 1+(time)*.022,1+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 6
+trans = add
+alpha = 256-(time)*16,256
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .25,.25
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+remappal = 7,19
+
+[State 200, End]
+type = Destroyself
+trigger1 = animtime = 0
+ignorehitpause = 1
+;persistent =
+
+; Slash Spark New
+[Statedef 8901]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8921
+sprpriority = 18
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(16) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,331
+dest = 0,332
+ignorehitpause = 1
+
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+volumescale = 75
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S3,3
+volumescale = 85
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = 1+(time)*.022,1+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 10
+trans = add
+alpha = 256-(time-10)*14,236
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 10,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 10,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+trans = sub
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 19
+movetime = 19
+anim = -1
+sound = -1
+pos = 0,0
+darken = 0
+unhittable = 1
+p2defmul = 1
+
+[State 0]
+Type=null
+Trigger1=Time=[0,19]
+Scale= 1.1
+ignorehitpause = 1
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = frontedgebodydist <= 12
+trigger1 = time = 0
+x = -50
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = backedgebodydist <= 12
+trigger1 = time = 0
+x = 50
+ignorehitpause = 1
+;persistent = 
+
+[State 200, End]
+type = Destroyself
+trigger1 = animtime = 0
+ignorehitpause = 1
+;persistent =
+
+; Slash Spark New
+[Statedef 8902]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8922
+sprpriority = 18
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(16) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+volumescale = 75
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S3,3
+volumescale = 85
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = .5+(time)*.022,.5+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 10
+trans = add
+alpha = 256-(time-10)*14,256
+ignorehitpause = 1
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,333
+dest = 0,334
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+remappal = 7,19
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .34,.34
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+trans = sub
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 19
+movetime = 19
+anim = -1
+sound = -1
+pos = 0,0
+darken = 0
+unhittable = 1
+p2defmul = 1
+
+[State 0]
+Type=null
+Trigger1=Time=[0,19]
+Scale= 1.2
+ignorehitpause = 1
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = frontedgebodydist <= 12
+trigger1 = time = 0
+x = -50
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = backedgebodydist <= 12
+trigger1 = time = 0
+x = 50
+ignorehitpause = 1
+;persistent = 
+
+[State 200, End]
+type = Destroyself
+trigger1 = animtime = 0
+ignorehitpause = 1
+;persistent =
+
+[Statedef 8903]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8916
+sprpriority = 8
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 15
+anim = -1
+sound = -1
+pos = 0,0
+movetime = 0
+darken = 0
+p2defmul = 1
+poweradd = 0
+unhittable = 1
+ignorehitpause = 1
+persistent = 0
+
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,2
+volumescale = 15+random%25
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 80+random%20
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 20+random%20
+persistent = 0
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,335
+dest = 0,336
+ignorehitpause = 1
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = .5+(time)*.022,.5+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 5
+trans = add
+alpha = 256-(time)*16,256
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8315
+ID = 8315
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+remappal = 0,336
+
+[State 200, End]
+type = Destroyself
+trigger1 = animtime = 0
+ignorehitpause = 1
+;persistent =
+
+; Slash Spark New
+[Statedef 8907]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8915
+sprpriority = 8
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 15
+anim = -1
+sound = -1
+pos = 0,0
+movetime = 0
+darken = 0
+p2defmul = 1
+poweradd = 0
+unhittable = 1
+ignorehitpause = 1
+persistent = 0
+
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,335
+dest = 0,334
+ignorehitpause = 1
+
+[State 0, Null]
+type = Null
+trigger1 = time = 1
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,2
+volumescale = 15+random%25
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 80+random%20
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 20+random%20
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S8900,0
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = 1+(time)*.022,1+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 6
+trans = add
+alpha = 256-(time)*16,256
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8315
+ID = 8315
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .3,.3
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = animtime = 0
+ignorehitpause = 1
+;persistent =
+
+; Slash Spark New
+[Statedef 8908]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8912
+sprpriority = 18
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = frontedgebodydist <= 12
+trigger1 = time = 0
+x = -50
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = backedgebodydist <= 12
+trigger1 = time = 0
+x = 50
+ignorehitpause = 1
+;persistent = 
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(16) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+volumescale = 75
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S3,3
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,2
+volumescale = 50
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 50
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+volumescale = 50
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = .5+(time)*.022,.5+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 10
+trans = add
+alpha = 256-(time)*16,256
+ignorehitpause = 1
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,335
+dest = 0,334
+ignorehitpause = 1
+;persistent =
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+remappal = 7,19
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .34,.34
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 14
+pausemovetime = 14
+trans = sub
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 19
+movetime = 19
+anim = -1
+sound = -1
+pos = 0,0
+darken = 0
+unhittable = 1
+p2defmul = 1
+
+[State 0]
+Type=null
+Trigger1=Time=[0,19]
+Scale= 1.2
+ignorehitpause = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 22
+ignorehitpause = 1
+;persistent =
+
+[Statedef 8909]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 8913
+sprpriority = 18
+
+[State 0, Turn]
+type = Turn
+trigger1 = facing = -1
+ignorehitpause = 1
+;persistent = 
+
+
+[State 0, Null]
+type = Null
+trigger1 = time = 0
+trigger1 = root,cond(1,var(18) := 0,0)
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S8900,0
+volumescale = 75
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = !time
+value = S3,3
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,2
+volumescale = 50
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+persistent = 0
+
+[State 0, PlaySnd]
+type = PlaySnd
+trigger1 = time = 0
+value = S2,3
+persistent = 0
+
+[State 210, 5]
+type = angledraw
+trigger1 = 1
+scale = 1+(time)*.022,1+(time)*.022
+ignorehitpause = 1
+;persistent =
+
+[State 0, Trans]
+type = Trans
+trigger1 = time <= 14
+trans = add
+alpha = 256,216
+ignorehitpause = 1
+
+
+[State 0, Trans]
+type = Trans
+trigger1 = time > 14
+trans = add
+alpha = 256-(time-12)*16,216
+ignorehitpause = 1
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 0,335
+dest = 0,336
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 10,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .35,.35
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 34
+pausemovetime = 34
+remappal = 0,337
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 8306
+ID = 8306
+pos = 10,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .33,.33
+sprpriority = -3
+ontop = 0
+ownpal = 1
+removeongethit = 1
+supermovetime = 34
+pausemovetime = 34
+trans = sub
+
+[State 3000, SuperPause]
+type = SuperPause
+trigger1 = time = 0
+time = 22
+movetime = 22
+anim = -1
+sound = -1
+pos = 0,0
+darken = 0
+unhittable = 1
+p2defmul = 1
+
+[State 0]
+Type=null
+Trigger1=Time=[0,22]
+Scale= 1.1
+ignorehitpause = 1
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = frontedgebodydist <= 2
+trigger1 = time = 0
+x = -50
+ignorehitpause = 1
+;persistent = 
+
+[State 0, PosAdd]
+type = PosAdd
+triggerall = backedgebodydist <= 2
+trigger1 = time = 0
+x = 50
+ignorehitpause = 1
+;persistent = 
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 25
+ignorehitpause = 1
+;persistent =

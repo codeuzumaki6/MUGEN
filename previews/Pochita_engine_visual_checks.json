@@ -1,0 +1,116 @@
+[
+  {
+    "case": {
+      "name": "Combo X",
+      "button": "a",
+      "direction": "N",
+      "state": 202,
+      "cost": 0,
+      "kind": "combo",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      200,
+      201,
+      202
+    ],
+    "damage": 126,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Carniceria",
+      "button": "c",
+      "direction": "B",
+      "state": 1070,
+      "cost": 1500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1070
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 2.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultihit",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultihit",
+      "facing": 1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000,
+      3001
+    ],
+    "damage": 350,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up bounce",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "bounce",
+      "facing": 1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      200,
+      5000,
+      5030,
+      5050,
+      5100,
+      5101,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -38.25000762939453,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  }
+]

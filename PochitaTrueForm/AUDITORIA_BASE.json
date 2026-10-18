@@ -1,0 +1,171 @@
+{
+  "selected_reference": "Chainsaw Man SX, Stand User X / Ismael The Epic 1.0 edit",
+  "original_files_modified": false,
+  "def_dependencies": [
+    {
+      "key": "sprite",
+      "filename": "Chainsaw Man.sff",
+      "available": false
+    },
+    {
+      "key": "anim",
+      "filename": "Chainsaw Man.air",
+      "available": true
+    },
+    {
+      "key": "sound",
+      "filename": "Chainsaw Man.snd",
+      "available": false
+    },
+    {
+      "key": "cmd",
+      "filename": "Chainsaw Man.cmd",
+      "available": true
+    },
+    {
+      "key": "cns",
+      "filename": "Chainsaw Man.cns",
+      "available": true
+    },
+    {
+      "key": "stcommon",
+      "filename": "common1.cns",
+      "available": true
+    },
+    {
+      "key": "st",
+      "filename": "Chainsaw Man.cns",
+      "available": true
+    },
+    {
+      "key": "pal1",
+      "filename": "1.act",
+      "available": true
+    },
+    {
+      "key": "pal2",
+      "filename": "2.act",
+      "available": true
+    },
+    {
+      "key": "pal3",
+      "filename": "3.act",
+      "available": true
+    },
+    {
+      "key": "pal4",
+      "filename": "4.act",
+      "available": true
+    },
+    {
+      "key": "pal5",
+      "filename": "5.act",
+      "available": true
+    },
+    {
+      "key": "pal6",
+      "filename": "6.act",
+      "available": true
+    },
+    {
+      "key": "pal7",
+      "filename": "siete.act",
+      "available": true
+    },
+    {
+      "key": "pal8",
+      "filename": "ocho.act",
+      "available": true
+    },
+    {
+      "key": "pal9",
+      "filename": "nueve.act",
+      "available": true
+    },
+    {
+      "key": "pal10",
+      "filename": "diez.act",
+      "available": true
+    },
+    {
+      "key": "pal11",
+      "filename": "once.act",
+      "available": true
+    },
+    {
+      "key": "pal12",
+      "filename": "doce.act",
+      "available": true
+    },
+    {
+      "key": "st1",
+      "filename": "IA.cns",
+      "available": true
+    },
+    {
+      "key": "st2",
+      "filename": "Specials.cns",
+      "available": true
+    },
+    {
+      "key": "st3",
+      "filename": "Supers.cns",
+      "available": true
+    },
+    {
+      "key": "st4",
+      "filename": "counter.cns",
+      "available": true
+    },
+    {
+      "key": "st5",
+      "filename": "chispas.cns",
+      "available": true
+    },
+    {
+      "key": "st6",
+      "filename": "e-especial.cns",
+      "available": true
+    },
+    {
+      "key": "intro.storyboard",
+      "filename": "intro.def",
+      "available": true
+    },
+    {
+      "key": "ending.storyboard",
+      "filename": "ending.def",
+      "available": true
+    }
+  ],
+  "state_definition_counts": {
+    "counter.cns": 7,
+    "Supers.cns": 49,
+    "chispas.cns": 3,
+    "Specials.cns": 94,
+    "IA.cns": 2,
+    "e-especial.cns": 3,
+    "sn.st": 1,
+    "common1.cns": 62,
+    "Misc.cns": 1,
+    "Chainsaw Man.cns": 319
+  },
+  "air_actions": 492,
+  "blocked_assets": {},
+  "next_steps": [],
+  "asset_strategy": "Build new Pochita SFF from Spider-Monkie original sheet and own compact SND; SX code is a gameplay reference, no longer require the two 80+ MB archives.",
+  "sprite_source_url": "https://www.deviantart.com/spider-monkie/art/Denji-Pochita-Chainsaw-Devil-Sprite-Sheet-1244509920",
+  "sound_archive": {
+    "file": "PochitaTrueForm.snd",
+    "samples": 7,
+    "size_bytes": 224218,
+    "validated": "All seven RIFF payloads decoded; mono PCM 16-bit 22050 Hz; no voice groups selected"
+  },
+  "sprite_sheet_status": "Uploaded original PNG, extracted 127 body frames and 2 portraits; SFF built and tested",
+  "runtime_validation": {
+    "engine": "Ikemen GO",
+    "raw_input_collision_cases_passed": 78,
+    "cpu_smoke_passed": 1,
+    "exact_jump_force_mugen_v14_run": false
+  }
+}

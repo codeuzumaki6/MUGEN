@@ -1,0 +1,218 @@
+; Smoke Spark  New
+[Statedef 6000]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 6015
+sprpriority = 7
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = 1
+time = 9999
+add = -0,-200,-200
+sinadd = 40,80,40,10
+color = 0
+invertall = 0
+ignorehitpause = 1
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+;special cancel
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 6015
+ID = 6015
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .06,.06
+sprpriority = 6
+ontop = 0
+ownpal = 0
+removeongethit = 1
+supermovetime = 99999
+pausemovetime = 99999
+ignorehitpause = 1
+persistent = 0
+trans = sub
+
+;special cancel
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 6007
+ID = 6007
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .12,.13
+sprpriority = 5
+ontop = 0
+ownpal = 0
+removeongethit = 1
+supermovetime = 99999
+pausemovetime = 99999
+ignorehitpause = 1
+persistent = 0
+trans = add
+
+;special cancel
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 6007
+ID = 6007
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .12,.13
+sprpriority = 4
+ontop = 0
+ownpal = 0
+removeongethit = 1
+supermovetime = 99999
+pausemovetime = 99999
+ignorehitpause = 1
+persistent = 0
+trans = sub
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 6027
+ID = 6027
+pos = 0,floor(-.5)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .16,.16
+sprpriority = -2
+ontop = 0
+ownpal = 0
+removeongethit = 1
+supermovetime = 99999
+pausemovetime = 99999
+ignorehitpause = 1
+persistent = 0
+trans = sub
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 6027
+ID = 6027
+pos = 0,floor(-.5)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 1
+removetime = -2
+scale = .16,.16
+sprpriority = -1
+ontop = 0
+ownpal = 0
+removeongethit = 1
+supermovetime = 99999
+pausemovetime = 99999
+ignorehitpause = 1
+persistent = 0
+trans = addalpha
+alpha = 256,256
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = time > 20
+flag = invisible
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 30
+
+; Smoke Spark  New
+[Statedef 6001]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 6016
+sprpriority = 4
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = 1
+time = 9999
+add = -0,-200,-200
+sinadd = 40,80,40,10
+color = 0
+invertall = 0
+ignorehitpause = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+
+; Smoke Spark  New
+[Statedef 6005]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 6007
+sprpriority = 4
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+
+[State 0, PalFXWiz]
+type = PalFX
+triggerall = power > 9000
+trigger1 = !Time
+time = 99999
+add = -64,-32,0
+mul = 512,512,512
+sinadd = 0,0,0,1
+invertall = 0
+color = 0
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = 1
+time = 9999
+add = -0,-200,-200
+sinadd = 40,80,40,10
+color = 0
+invertall = 0
+ignorehitpause = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+
+

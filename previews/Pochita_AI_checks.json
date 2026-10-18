@@ -1,0 +1,37 @@
+[
+  {
+    "case": {
+      "name": "CPU offense",
+      "button": "s",
+      "direction": "N",
+      "state": 0,
+      "cost": 0,
+      "kind": "ai",
+      "facing": 1,
+      "distance": 55
+    },
+    "states": [
+      0,
+      40,
+      50,
+      52,
+      100,
+      200,
+      201,
+      202,
+      600,
+      1020,
+      1050,
+      1080
+    ],
+    "damage": 252,
+    "received": 0,
+    "minimum_power": 1000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 202,
+    "victim_final": 5035,
+    "dash_travel": 105.67268371582031,
+    "failures": []
+  }
+]

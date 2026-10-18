@@ -1,3 +1,34 @@
+# Pochita True Form
+
+[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm.zip)
+
+Extrae el ZIP en `chars` y agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def`. Incluye todos los recursos de ejecución; no necesita los grandes SFF/SND de Chainsaw Man SX.
+
+Pochita de cuatro brazos con 127 poses originales, armadura negra, bufanda roja, cadenas X/Y/B y aérea, nueve especiales de abajo/dirección y botón, defensa con respuesta en RB y asalto en RT. A activa la ultimate con apertura bloqueable y evadible; LB acelera los motores y carga energía. Siete efectos no verbales de motosierras, cortes e impactos. Los ataques son adaptaciones físicas; los nombres descriptivos no son técnicas oficiales nuevas del manga.
+
+[Combo X en el motor](previews/Pochita_combo_motor.gif) · [Carnicería](previews/Pochita_carniceria_motor.gif) · [Ultimate](previews/Pochita_ultimate_motor.gif) · [Derribo y recuperación](previews/Pochita_recuperacion_motor.gif)
+
+[Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación, comprobaciones y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
+
+Los GIF son capturas reales de Ikemen GO y no tienen audio. Pasaron [78 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json) y [una comprobación de la CPU](previews/Pochita_AI_checks.json). El validador comprueba SFF, SND, referencias y expresiones de MUGEN 1.1. Quedan por probar el binario exacto de Jump Force MUGEN V14, el mando físico y el equilibrio contra todo el plantel.
+
+Para reconstruir desde el checkout existente, con Python/Pillow, ffmpeg e Ikemen GO verificado:
+
+```sh
+python3 tools/build_pochita_assets.py
+python3 tools/build_pochita_sound.py --from-wav
+python3 tools/build_pochita_runtime.py
+python3 tools/validate_pochita.py
+python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
+POCHITA_AI=8 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
+python3 tools/make_pochita_previews.py /ruta/al/ikemen
+python3 tools/package_pochita.py
+```
+
+La hoja original y las muestras WAV seleccionadas están en el repositorio; no se necesita el SND original completo para reconstruir. Los PNG de `assets/sprites` conservan la paleta de origen; el SFF aplica la paleta negra/roja al empaquetar. Los archivos originales de referencia no se modificaron.
+
+---
+
 # Eida para Jump Force MUGEN V14
 
 [Descargar Eida: coreografía y Omnipotencia](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_COREOGRAFIA_Y_OMNIPOTENCIA.zip)

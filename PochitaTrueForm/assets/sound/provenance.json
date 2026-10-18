@@ -1,0 +1,65 @@
+[
+  {
+    "group": 1,
+    "number": 0,
+    "filename": "chainsaw_accel.wav",
+    "source_group": 1000,
+    "source_number": 0,
+    "source_sha256": "8c2cc631739facc91eec1750fc86026d9efe0c101b5712e3d1129f34032d1216",
+    "duration": 0.7667
+  },
+  {
+    "group": 1,
+    "number": 1,
+    "filename": "chainsaw_short.wav",
+    "source_group": 1000,
+    "source_number": 1,
+    "source_sha256": "9db8bb89662342ec2b01186c0c667809e62f89b11ec45dfe8f58d5bc821564d2",
+    "duration": 0.9333
+  },
+  {
+    "group": 1,
+    "number": 2,
+    "filename": "chainsaw_cut.wav",
+    "source_group": 1000,
+    "source_number": 2,
+    "source_sha256": "e135206689ae76e5f06fb12aaaea68417ba5cd8b1465045b140915779192d076",
+    "duration": 0.7667
+  },
+  {
+    "group": 1,
+    "number": 3,
+    "filename": "chainsaw_long.wav",
+    "source_group": 1000,
+    "source_number": 3,
+    "source_sha256": "31e55b0643afec7be7d2bbbf5a33e134885980ba7b7f52d77d7888b00336eb42",
+    "duration": 1.4
+  },
+  {
+    "group": 1,
+    "number": 4,
+    "filename": "impact_light.wav",
+    "source_group": 5,
+    "source_number": 0,
+    "source_sha256": "a4c7fe82e8b074dd92720d67820d2e79ac092f5046552ae76cf073a909021487",
+    "duration": 0.2105
+  },
+  {
+    "group": 1,
+    "number": 5,
+    "filename": "impact_heavy.wav",
+    "source_group": 5,
+    "source_number": 2,
+    "source_sha256": "03b2e1710990a2548b50d66758271e36631ad45f29cf006a8ea7e983bb75f0e0",
+    "duration": 0.8
+  },
+  {
+    "group": 1,
+    "number": 6,
+    "filename": "swing.wav",
+    "source_group": 4,
+    "source_number": 0,
+    "source_sha256": "e5c2ae8220827d443d5f7e624513151ffd43e042b9db116b0bff24be0d3b0827",
+    "duration": 0.1806
+  }
+]

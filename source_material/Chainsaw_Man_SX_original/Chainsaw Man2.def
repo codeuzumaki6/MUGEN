@@ -1,0 +1,61 @@
+[Info]
+name ="Chainsaw Man2"
+displayname ="Chainsaw Man2"
+versiondate =12/03/2022
+mugenversion =1.0
+author = "STAND USER X, 1.0 Edit By Ismael The Epic"
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+;--------------------------------------------------------
+;Chainsaw man JUS SX Char by stand user X
+;https://www.youtube.com/channel/UCVAaMeaPCrHtdoBhErAZVDg
+;SPRITES BY REKULL:
+;https://www.deviantart.com/rekull/gallery
+;SPRITES ADDONS:
+;Saxcreed
+;https://www.deviantart.com/shaulmorales
+;--------------------------------------------------------
+
+[Files]
+sprite =Chainsaw Man.sff
+anim =Chainsaw Man.air
+sound =Chainsaw Man.snd
+cmd =Chainsaw Man.cmd
+cns =Chainsaw Man.cns
+stcommon =common1.cns
+st =Chainsaw Man.cns
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+pal5=5.act
+pal6=6.act
+pal7=siete.act
+pal8=ocho.act
+pal9=nueve.act
+pal10=diez.act
+pal11=once.act
+pal12=doce.act
+st1=IA.cns
+st2=Specials.cns
+st3=Supers.cns
+st4=counter.cns
+st5=chispas.cns
+st6=e-especial.cns
+[Palette Keymap]
+x = 4
+y = 5
+z = 6
+a = 1
+b = 2
+c = 3
+x2 = 10
+y2 = 11
+z2 = 12
+a2 = 7
+b2 = 8
+c2 = 9
+; Arcade mode
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = ending.def

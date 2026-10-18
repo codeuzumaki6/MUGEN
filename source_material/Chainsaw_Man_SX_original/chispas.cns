@@ -1,0 +1,275 @@
+;--------------------------------------------------------
+;Chainsaw man JUS SX Char by stand user X
+;https://www.youtube.com/channel/UCVAaMeaPCrHtdoBhErAZVDg
+;SPRITES BY REKULL:
+;https://www.deviantart.com/rekull/gallery
+;SPRITES ADDONS:
+;Saxcreed
+;https://www.deviantart.com/shaulmorales
+;--------------------------------------------------------
+[Statedef 8215]
+type    = A
+movetype= I
+physics = N
+juggle  = 0
+ctrl = 0
+anim = 8210
+sprpriority = 5
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = Noshadow
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = 1 + random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = 1
+time = 9999
+add = -0,-200,-200
+sinadd = 40,80,40,10
+color = 0
+invertall = 0
+ignorehitpause = 1
+
+[State 0, Slash moradito]
+type = Helper
+triggerall = numhelper(8704) < 1
+trigger1 = !time
+helpertype = normal
+name = "particles"
+ID = 8704
+stateno = 8704
+pos = 24,-5
+postype = p1
+facing = 1
+ownpal = 1
+size.xscale = .004
+size.yscale = .004
+ignorehitpause = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+
+[Statedef 8704]
+type    = S
+movetype= I
+physics = S
+ctrl = 0
+anim = 9999
+sprpriority = 5
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = 1 + random%360
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+
+[State 0, AssertSpecial]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+fv = 1
+value = (2+random%4)*.001
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+fv = 2
+value = (2+random%4)*.001
+
+[State 0, Explod]
+type = Explod
+trigger1 = time < 2
+anim = 8704
+ID = 8704
+pos = cond(p2bodydist x < 100,p2dist x,0),cond(p2bodydist y < -100,p2dist y - 32,0)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 0
+vel = (-3-random%3)*cos((random%360*pi)/180),(-3-random%4)*sin((random%360*pi)/180)
+removetime = -2
+scale = fvar(1),fvar(1)
+sprpriority = 5
+ontop = 0
+ownpal = 0
+angle = var(1)
+ignorehitpause = 1
+
+[State 0, Explod]
+type = Explod
+trigger1 = time < 2
+anim = 8705
+ID = 8705
+pos = cond(p2bodydist x < 100,p2dist x,0),cond(p2bodydist y < -100,p2dist y - 32,0)
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 0
+vel = (3+random%3)*cos((random%360*pi)/180),(3+random%4)*sin((random%360*pi)/180)
+removetime = -2
+scale = fvar(2),fvar(2)
+sprpriority = 5
+ontop = 0
+ownpal = 0
+angle = var(1)
+ignorehitpause = 1
+
+
+[State 0, ModifyExplod]
+type = ModifyExplod
+trigger1 = 1
+ID = 8704
+trans = add
+alpha = 256-(time-4)*8,256
+
+[State 0, ModifyExplod]
+type = ModifyExplod
+trigger1 = 1
+ID = 8705
+trans = add
+alpha = 256-(time-4)*8,256
+
+[State 0, VelSet]
+type = VelSet
+trigger1 = power > 6000
+x = 4*cos((random%360*pi)/180)
+y = -4*sin((random%360*pi)/180)
+ignorehitpause = 1
+;persistent =
+
+[State 0, PalFX]
+type = PalFX
+trigger1 = 1
+time = 9999
+add = -0,-200,-200
+sinadd = 40,80,40,10
+color = 0
+invertall = 0
+ignorehitpause = 1
+
+[State 0]
+type=Trans
+trigger1= time >= 5
+trans=addalpha
+alpha=256-(18*(time-0)),256
+
+[State 200, End]
+type = Destroyself
+trigger1 = time = 22
+
+[Statedef 7020]
+type    = A
+movetype= I
+physics = N
+ctrl = 0
+anim = 7020
+sprpriority = 8
+
+[State 0, VarSet]
+type = VarSet
+trigger1 = time = 0
+v = 1
+value = -45 + random%90
+
+[State 0, AngleDraw]
+type = AngleDraw
+trigger1 = 1
+value = var(1)
+
+[State 0, RemapPal]
+type = RemapPal
+trigger1 = 1
+source = 6010,0
+dest = 5,5
+ignorehitpause = 1
+persistent = 0
+
+[State 0, Slash moradito]
+type = Helper
+triggerall = numhelper(8704) < 1
+trigger1 = !time
+helpertype = normal
+name = "particles"
+ID = 8704
+stateno = 8704
+pos = 0,0
+postype = p1
+facing = 1
+ownpal = 1
+size.xscale = .004
+size.yscale = .004
+ignorehitpause = 1
+
+
+[State 0, Explod]
+type = Explod
+trigger1 = time = 0
+anim = 7029
+ID = 7029
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 0
+removetime = -2
+scale = .145,.145
+sprpriority = 5
+ontop = 0
+ownpal = 1
+angle = var(1) +25
+ignorehitpause = 1
+remappal = 0,40
+
+[State 0, Explod]
+type = Explod
+triggerall = root,var(39) = 1
+trigger1 = time = 0
+anim = 7033
+ID = 7033
+pos = 0,0
+postype = p1
+facing = 1
+vfacing = 1
+bindtime = 0
+removetime = -2
+scale = .15,.15
+sprpriority = 5
+ontop = 0
+ownpal = 1
+angle = var(1) +25
+ignorehitpause = 1
+
+[State 200, End]
+type = Destroyself
+trigger1 = AnimTime = 0
+;--------------------------------------------------------
+;Chainsaw man JUS SX Char by stand user X
+;https://www.youtube.com/channel/UCVAaMeaPCrHtdoBhErAZVDg
+;SPRITES BY REKULL:
+;https://www.deviantart.com/rekull/gallery
+;SPRITES ADDONS:
+;Saxcreed
+;https://www.deviantart.com/shaulmorales
+;--------------------------------------------------------

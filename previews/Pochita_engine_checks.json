@@ -1,0 +1,2103 @@
+[
+  {
+    "case": {
+      "name": "Desgarro",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1000
+    ],
+    "damage": 84,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 2.5,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Cuatro brazos",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1010
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 2.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Ascenso",
+      "button": "a",
+      "direction": "D",
+      "state": 1020,
+      "cost": 500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1020
+    ],
+    "damage": 78,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Estocada",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1030
+    ],
+    "damage": 100,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 34.12499237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Barrido",
+      "button": "b",
+      "direction": "B",
+      "state": 1040,
+      "cost": 500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1040
+    ],
+    "damage": 76,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 38.62499237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Guillotina",
+      "button": "b",
+      "direction": "D",
+      "state": 1050,
+      "cost": 1000,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      52,
+      1050
+    ],
+    "damage": 110,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": -29.25,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Embestida",
+      "button": "c",
+      "direction": "F",
+      "state": 1060,
+      "cost": 1000,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1060
+    ],
+    "damage": 115,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 39.18749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Carniceria",
+      "button": "c",
+      "direction": "B",
+      "state": 1070,
+      "cost": 1500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1070
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 43.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Rasante",
+      "button": "c",
+      "direction": "D",
+      "state": 1080,
+      "cost": 500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1080
+    ],
+    "damage": 72,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Asalto RT",
+      "button": "z",
+      "direction": "N",
+      "state": 1100,
+      "cost": 1500,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      1100
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Desgarro diagonal shortcut",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1000
+    ],
+    "damage": 84,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Cuatro brazos diagonal shortcut",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1010
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Estocada diagonal shortcut",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1030
+    ],
+    "damage": 100,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Barrido diagonal shortcut",
+      "button": "b",
+      "direction": "B",
+      "state": 1040,
+      "cost": 500,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1040
+    ],
+    "damage": 76,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Embestida diagonal shortcut",
+      "button": "c",
+      "direction": "F",
+      "state": 1060,
+      "cost": 1000,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1060
+    ],
+    "damage": 115,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Carniceria diagonal shortcut",
+      "button": "c",
+      "direction": "B",
+      "state": 1070,
+      "cost": 1500,
+      "kind": "shortcut",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1070
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch a",
+      "button": "a",
+      "direction": "D",
+      "state": 400,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      400
+    ],
+    "damage": 25,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch b",
+      "button": "b",
+      "direction": "D",
+      "state": 410,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      410
+    ],
+    "damage": 32,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch c",
+      "button": "c",
+      "direction": "D",
+      "state": 420,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      420
+    ],
+    "damage": 40,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Walk F",
+      "button": "a",
+      "direction": "F",
+      "state": 20,
+      "cost": 0,
+      "kind": "walk",
+      "facing": 1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 53.3125,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Diagonal jump F",
+      "button": "U",
+      "direction": "F",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": 1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 88.55230712890625,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Walk B",
+      "button": "a",
+      "direction": "B",
+      "state": 20,
+      "cost": 0,
+      "kind": "walk",
+      "facing": 1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 66.9375,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Diagonal jump B",
+      "button": "U",
+      "direction": "B",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": 1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 65.12501525878906,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Guard incoming strike",
+      "button": "a",
+      "direction": "N",
+      "state": 150,
+      "cost": 0,
+      "kind": "guard",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      20,
+      120,
+      130,
+      150
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 52.96253204345703,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo X",
+      "button": "a",
+      "direction": "N",
+      "state": 202,
+      "cost": 0,
+      "kind": "combo",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      200,
+      201,
+      202
+    ],
+    "damage": 126,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo Y",
+      "button": "b",
+      "direction": "N",
+      "state": 211,
+      "cost": 0,
+      "kind": "combo",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      210,
+      211
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo B",
+      "button": "c",
+      "direction": "N",
+      "state": 221,
+      "cost": 0,
+      "kind": "combo",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      220,
+      221
+    ],
+    "damage": 118,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Aerial XYZ",
+      "button": "a",
+      "direction": "N",
+      "state": 620,
+      "cost": 0,
+      "kind": "aircombo",
+      "facing": 1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      50,
+      52,
+      600,
+      610,
+      620
+    ],
+    "damage": 139,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -60.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 41.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "RB physical counter",
+      "button": "y",
+      "direction": "N",
+      "state": 1401,
+      "cost": 500,
+      "kind": "counter",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      1400,
+      1401
+    ],
+    "damage": 90,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up sweep",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "sweep",
+      "facing": 1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      200,
+      5070,
+      5071,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -33.25000762939453,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up bounce",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "bounce",
+      "facing": 1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      200,
+      5000,
+      5030,
+      5050,
+      5100,
+      5101,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -38.25000762939453,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up airbounce",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "airbounce",
+      "facing": 1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      50,
+      200,
+      5020,
+      5030,
+      5050,
+      5100,
+      5101,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -74.69999694824219,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 38.87499237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultihit",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultihit",
+      "facing": 1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000,
+      3001
+    ],
+    "damage": 350,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultiblock",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultiblock",
+      "facing": 1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultijump",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultijump",
+      "facing": 1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultifar",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultifar",
+      "facing": 1,
+      "distance": 320
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Neutral jump",
+      "button": "U",
+      "direction": "N",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": 1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 41.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Dash into X",
+      "button": "a",
+      "direction": "N",
+      "state": 200,
+      "cost": 0,
+      "kind": "dash",
+      "facing": 1,
+      "distance": 140
+    },
+    "states": [
+      0,
+      20,
+      100,
+      200
+    ],
+    "damage": 30,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 47.41253662109375,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Desgarro",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1000
+    ],
+    "damage": 84,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 44.1875,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Cuatro brazos",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1010
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 39.6875,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Ascenso",
+      "button": "a",
+      "direction": "D",
+      "state": 1020,
+      "cost": 500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1020
+    ],
+    "damage": 78,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Estocada",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1030
+    ],
+    "damage": 100,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 7.5625,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Barrido",
+      "button": "b",
+      "direction": "B",
+      "state": 1040,
+      "cost": 500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1040
+    ],
+    "damage": 76,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 3.0625,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Guillotina",
+      "button": "b",
+      "direction": "D",
+      "state": 1050,
+      "cost": 1000,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      52,
+      1050
+    ],
+    "damage": 110,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": -29.25,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Embestida",
+      "button": "c",
+      "direction": "F",
+      "state": 1060,
+      "cost": 1000,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1060
+    ],
+    "damage": 115,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 39.18749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Carniceria",
+      "button": "c",
+      "direction": "B",
+      "state": 1070,
+      "cost": 1500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      12,
+      20,
+      1070
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 43.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Rasante",
+      "button": "c",
+      "direction": "D",
+      "state": 1080,
+      "cost": 500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1080
+    ],
+    "damage": 72,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Asalto RT",
+      "button": "z",
+      "direction": "N",
+      "state": 1100,
+      "cost": 1500,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      1100
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Desgarro diagonal shortcut",
+      "button": "a",
+      "direction": "F",
+      "state": 1000,
+      "cost": 500,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1000
+    ],
+    "damage": 84,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Cuatro brazos diagonal shortcut",
+      "button": "a",
+      "direction": "B",
+      "state": 1010,
+      "cost": 750,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1010
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Estocada diagonal shortcut",
+      "button": "b",
+      "direction": "F",
+      "state": 1030,
+      "cost": 750,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1030
+    ],
+    "damage": 100,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Barrido diagonal shortcut",
+      "button": "b",
+      "direction": "B",
+      "state": 1040,
+      "cost": 500,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1040
+    ],
+    "damage": 76,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Embestida diagonal shortcut",
+      "button": "c",
+      "direction": "F",
+      "state": 1060,
+      "cost": 1000,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1060
+    ],
+    "damage": 115,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Carniceria diagonal shortcut",
+      "button": "c",
+      "direction": "B",
+      "state": 1070,
+      "cost": 1500,
+      "kind": "shortcut",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1070
+    ],
+    "damage": 180,
+    "received": 0,
+    "minimum_power": 1500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch a",
+      "button": "a",
+      "direction": "D",
+      "state": 400,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      400
+    ],
+    "damage": 25,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch b",
+      "button": "b",
+      "direction": "D",
+      "state": 410,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      410
+    ],
+    "damage": 32,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Low power crouch c",
+      "button": "c",
+      "direction": "D",
+      "state": 420,
+      "cost": 0,
+      "kind": "crouch",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      10,
+      420
+    ],
+    "damage": 40,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 30,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Walk F",
+      "button": "a",
+      "direction": "F",
+      "state": 20,
+      "cost": 0,
+      "kind": "walk",
+      "facing": -1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 53.3125,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Diagonal jump F",
+      "button": "U",
+      "direction": "F",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": -1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 88.55230712890625,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Walk B",
+      "button": "a",
+      "direction": "B",
+      "state": 20,
+      "cost": 0,
+      "kind": "walk",
+      "facing": -1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 66.9375,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Diagonal jump B",
+      "button": "U",
+      "direction": "B",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": -1,
+      "distance": 180
+    },
+    "states": [
+      0,
+      20,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 65.12501525878906,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Guard incoming strike",
+      "button": "a",
+      "direction": "N",
+      "state": 150,
+      "cost": 0,
+      "kind": "guard",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      20,
+      120,
+      130,
+      150
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 52.96253204345703,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo X",
+      "button": "a",
+      "direction": "N",
+      "state": 202,
+      "cost": 0,
+      "kind": "combo",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      200,
+      201,
+      202
+    ],
+    "damage": 126,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo Y",
+      "button": "b",
+      "direction": "N",
+      "state": 211,
+      "cost": 0,
+      "kind": "combo",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      210,
+      211
+    ],
+    "damage": 104,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Combo B",
+      "button": "c",
+      "direction": "N",
+      "state": 221,
+      "cost": 0,
+      "kind": "combo",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      220,
+      221
+    ],
+    "damage": 118,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Aerial XYZ",
+      "button": "a",
+      "direction": "N",
+      "state": 620,
+      "cost": 0,
+      "kind": "aircombo",
+      "facing": -1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      50,
+      52,
+      600,
+      610,
+      620
+    ],
+    "damage": 139,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -60.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 41.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "RB physical counter",
+      "button": "y",
+      "direction": "N",
+      "state": 1401,
+      "cost": 500,
+      "kind": "counter",
+      "facing": -1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      1400,
+      1401
+    ],
+    "damage": 90,
+    "received": 0,
+    "minimum_power": 2500,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up sweep",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "sweep",
+      "facing": -1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      200,
+      5070,
+      5071,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -33.25000762939453,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up bounce",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "bounce",
+      "facing": -1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      200,
+      5000,
+      5030,
+      5050,
+      5100,
+      5101,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -38.25000762939453,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Get up airbounce",
+      "button": "a",
+      "direction": "N",
+      "state": 5120,
+      "cost": 0,
+      "kind": "recovery",
+      "variant": "airbounce",
+      "facing": -1,
+      "distance": 40
+    },
+    "states": [
+      0,
+      50,
+      200,
+      5020,
+      5030,
+      5050,
+      5100,
+      5101,
+      5110,
+      5120
+    ],
+    "damage": 0,
+    "received": 60,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -74.69999694824219,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 38.87499237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultihit",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultihit",
+      "facing": -1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000,
+      3001
+    ],
+    "damage": 350,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultiblock",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultiblock",
+      "facing": -1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultijump",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultijump",
+      "facing": -1,
+      "distance": 90
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "ultifar",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "ultifar",
+      "facing": -1,
+      "distance": 320
+    },
+    "states": [
+      0,
+      3000
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Neutral jump",
+      "button": "U",
+      "direction": "N",
+      "state": 50,
+      "cost": 0,
+      "kind": "jump",
+      "facing": -1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      40,
+      50,
+      52
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -65.24998474121094,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 41.68749237060547,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Dash into X",
+      "button": "a",
+      "direction": "N",
+      "state": 200,
+      "cost": 0,
+      "kind": "dash",
+      "facing": -1,
+      "distance": 140
+    },
+    "states": [
+      0,
+      20,
+      100,
+      200
+    ],
+    "damage": 30,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 47.41253662109375,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Insufficient ultimate power",
+      "button": "x",
+      "direction": "N",
+      "state": 3000,
+      "cost": 3000,
+      "kind": "empty",
+      "facing": 1,
+      "distance": 90
+    },
+    "states": [
+      0
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 0,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "LB charge and release",
+      "button": "s",
+      "direction": "N",
+      "state": 500,
+      "cost": 0,
+      "kind": "charge",
+      "facing": 1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      500
+    ],
+    "damage": 0,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 780,
+    "apex": 0.0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  }
+]

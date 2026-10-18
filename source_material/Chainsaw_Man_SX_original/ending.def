@@ -1,0 +1,151 @@
+;--------------------------------------------------------
+;Chainsaw man JUS SX Char by stand user X
+;https://www.youtube.com/channel/UCVAaMeaPCrHtdoBhErAZVDg
+;SPRITES BY REKULL:
+;https://www.deviantart.com/rekull/gallery
+;SPRITES ADDONS:
+;Saxcreed
+;https://www.deviantart.com/shaulmorales
+;--------------------------------------------------------
+[SceneDef]
+spr = ending.sff
+startscene = 0         ;Starting scene number (for debugging)
+
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 60       ;Time to take for fading in
+fadein.col = 0,0,0     ;Use 255,255,255 for white-fade
+fadeout.time = 15
+fadeout.col = 255,255,255
+; Screen color
+clearcolor = 255,255,255
+; Overlay Anims (from 0 to 9)
+layerall.pos = 160,0   ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+layer0.offset = 0,32   ;Position offset
+layer0.starttime = 0   ;Time to start display
+layer1.anim =  1
+layer1.offset = 0,176
+; Music
+bgm = ending.mp3       ;Name of music file to play
+bgm.loop = 0
+; Total time
+end.time = 460
+
+;------------------------------------
+[Scene 1]
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+; Screen color
+; The previous clearcolor value is carried over by default
+; Overlay Anims (from 0 to 9)
+; The previous layerall.pos value is carried over by default
+layer0.anim =  10
+layer0.offset = 0,32
+layer0.starttime = 0
+layer1.anim =  11
+layer1.offset = 0,176
+; Total time
+end.time = 500
+
+;------------------------------------
+[Scene 2]
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 90
+fadeout.col = 0,0,0
+; Overlay Anims (from 0 to 9)
+layer0.anim =  20
+layer0.offset = 0,32
+layer0.starttime = 0
+layer1.anim =  21
+layer1.offset = 0,176
+; Total time
+end.time = 600
+
+;Background image
+[Begin Action 0]
+0,0, 0,0,5
+0,1, 0,0,5
+0,2, 0,0,5
+0,3, 0,0,5
+0,4, 0,0,5
+0,5, 0,0,5
+0,6, 0,0,7
+0,7, 0,0,7
+0,8, 0,0,7
+0,9, 0,0,7
+0,10, 0,0,7
+0,11, 0,0,7
+0,12, 0,0,7
+0,13, 0,0,7
+0,14, 0,0,7
+0,15, 0,0,5
+0,16, 0,0,5
+0,17, 0,0,5
+0,18, 0,0,5
+0,19, 0,0,5
+0,20, 0,0,5
+0,21, 0,0,7
+0,22, 0,0,7
+0,23, 0,0,7
+0,24, 0,0,7
+0,25, 0,0,7
+0,26, 0,0,7
+0,27, 0,0,7
+0,28, 0,0,5
+0,29, 0,0,5
+0,30, 0,0,5
+0,31, 0,0,5
+0,32, 0,0,6
+0,33, 0,0,6
+0,34, 0,0,5
+0,35, 0,0,6
+0,36, 0,0,6
+0,37, 0,0,5
+0,38, 0,0,6
+0,39, 0,0,6
+0,40, 0,0,6
+0,41, 0,0,-1
+
+;Text
+[Begin Action 1]
+1,0, 0,0, 200, ,A
+1,1, 0,0, -1, ,A
+
+
+;Background image
+[Begin Action 10]
+0,42, 0,0, 4
+0,43, 0,0, 4
+0,44, 0,0, 4
+0,45, 0,0, 54
+0,46, 0,0, 4
+0,47, 0,0, 4
+0,48, 0,0, 4
+0,49, 0,0, 4
+0,50, 0,0, 4
+0,51, 0,0, 4
+0,52, 0,0, 4
+0,53, 0,0, 4
+0,54, 0,0, 4
+0,55, 0,0, 4
+0,56, 0,0, 4
+0,57, 0,0, -1
+
+;Text
+[Begin Action 11]
+11,0, 0,0, -1, ,A
+
+;Background image
+[Begin Action 20]
+20,0, 0,0, -1
+
+;Text
+[Begin Action 21]
+21,0, 0,0, -1, ,A
