@@ -16,7 +16,7 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
  check(m is not None,f'DEF missing {key}')
  if m:check((CHAR/m[1].strip()).is_file(),f'DEF missing target for {key}')
 sprites=shared.parse_sff(CHAR/(stem+'.sff'));sounds=shared.parse_snd(CHAR/(stem+'.snd'))
-check(len(sprites)==149,'Expected 135 body entries, 12 effects and two portraits')
+check(len(sprites)==161,'Expected 147 body entries, 12 effects and two portraits')
 check(len(sounds)==10,'Expected ten nonverbal effects')
 raw=(CHAR/(stem+'.sff')).read_bytes();sh,count,ph,pcount,ld,*_=struct.unpack_from('<IIIIIIII',raw,36);geometry={}
 palettes=[]
@@ -64,6 +64,8 @@ for name in [stem+'.cns','common1.cns',stem+'.cmd']:
    if current_state is not None:state_controllers[current_state]+=1
    check(bool(field(body,'type')),f'{name} {header}: controller missing type')
    check(any(re.match(r'(?i)\s*trigger[1-9]\d*\s*=',line) for line in body),f'{name} {header}: controller missing numbered trigger')
+   groups={int(m[1]) for line in body if (m:=re.match(r'(?i)\s*trigger([1-9]\d*)\s*=',line))}
+   if groups:check(groups==set(range(1,max(groups)+1)),f'{name} {header}: nonconsecutive trigger groups can leave cancel routes ignored')
   if header.lower()=='[command]':commands.add((field(body,'name') or '').strip('"').lower())
 for (name,n),count in state_controllers.items():
  check(count>0,f'{name}: Statedef {n} needs at least one state controller (MUGEN load error)')

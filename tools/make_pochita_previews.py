@@ -5,14 +5,15 @@ import json, os, subprocess, sys, tempfile, wave
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 engine=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
-reports=[]; manifest=[]
+reports=[]; manifest=[];flow=os.environ.get('POCHITA_PREVIEW_SET')=='flow'
 sounds=json.loads((ROOT/'PochitaTrueForm/assets/sound/provenance.json').read_text())
-for label,case in [('combo_x','Combo X'),('combo_y','Combo Y'),('combo_b','Combo B'),('ultimate','ultihit')]:
+scenarios=([('mixto','Mixed XYB'),('persecucion','Launcher aerial pursuit'),('cancelaciones','Mixed into two specials'),('embestida','Asalto RT')] if flow else [('combo_x','Combo X'),('combo_y','Combo Y'),('combo_b','Combo B'),('ultimate','ultihit')])
+for label,case in scenarios:
  with tempfile.TemporaryDirectory(prefix='pochita-preview-') as directory:
   folder=Path(directory);env=os.environ.copy();env['POCHITA_CAPTURE']=directory;env['POCHITA_CAPTURE_CASES']=json.dumps([case])
   run=subprocess.run([sys.executable,str(ROOT/'tools/check_pochita_in_engine.py'),engine],env=env,capture_output=True,text=True)
   assert run.returncode==0,run.stdout+run.stderr
-  reports+=json.loads((ROOT/'previews/Pochita_engine_visual_checks.json').read_text())
+  reports+=json.loads((ROOT/'previews'/('Pochita_flow_visual_checks.json' if flow else 'Pochita_engine_visual_checks.json')).read_text())
   frames=[tuple(map(int,line.split())) for line in (folder/'frames.tsv').read_text().splitlines()]
   cues=[tuple(map(int,line.split())) for line in (folder/'audio.tsv').read_text().splitlines()]
   assert len(frames)>=35,(case,len(frames))
@@ -37,7 +38,7 @@ for label,case in [('combo_x','Combo X'),('combo_y','Combo Y'),('combo_b','Combo
   mix=mix[:round(duration*22050)];peak=np.max(np.abs(mix));mix/=max(1,peak/.95)
   with wave.open(str(folder/'audio.wav'),'wb') as wav:
    wav.setnchannels(1);wav.setsampwidth(2);wav.setframerate(22050);wav.writeframes((mix*32767).astype('<i2').tobytes())
-  target=ROOT/'previews'/f'Pochita_remates_{label}_motor'
+  target=ROOT/'previews'/f'Pochita_{"jugabilidad" if flow else "remates"}_{label}_motor'
   base=['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(folder/'frames.txt')]
   subprocess.run(base+['-filter_complex','[0:v]fps=15,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=none','-loop','0',str(target.with_suffix('.gif'))],check=True)
   subprocess.run(base+['-i',str(folder/'audio.wav'),'-vf','fps=30','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-t',str(duration),'-movflags','+faststart',str(target.with_suffix('.mp4'))],check=True)
@@ -47,5 +48,6 @@ for label,case in [('combo_x','Combo X'),('combo_y','Combo Y'),('combo_b','Combo
    shutil.copy2(folder/f'Ikemen_GO{peakframe[0]:03d}.png',ROOT/'previews/Pochita_remates_ultimate_motor.png')
   manifest.append(dict(case=case,frames=frames,cues=cues,duration=duration,audio='Offline mix of character WAV samples using engine event timestamps; not device audio capture.'))
   print(label,len(frames),'real engine captures',round(duration,3),'seconds',flush=True)
-(ROOT/'previews/Pochita_engine_visual_checks.json').write_text(json.dumps(reports,indent=2)+'\n')
-(ROOT/'previews/Pochita_preview_timing.json').write_text(json.dumps(manifest,indent=2)+'\n')
+(ROOT/'previews'/('Pochita_flow_visual_checks.json' if flow else 'Pochita_engine_visual_checks.json')).write_text(json.dumps(reports,indent=2)+'\n')
+(ROOT/'previews'/('Pochita_flow_preview_timing.json' if flow else 'Pochita_preview_timing.json')).write_text(json.dumps(manifest,indent=2)+'\n')
+if flow:subprocess.run([sys.executable,str(ROOT/'tools/make_pochita_showcase.py')],check=True)

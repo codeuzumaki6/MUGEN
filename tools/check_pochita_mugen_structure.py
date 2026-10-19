@@ -20,5 +20,9 @@ with tempfile.TemporaryDirectory(prefix='pochita-mugen-structure-') as temp:
   run=validate(copy);expected=f'Statedef {state} needs at least one state controller'
   assert run.returncode!=0 and expected in run.stdout,(name,state,run.stdout,run.stderr)
   path.write_text(original);results.append(dict(case=f'empty {name} state {state}',rejected=True,passed=True))
+ path=copy/'PochitaTrueForm.cmd';original=path.read_text();assert 'trigger10 = StateNo' in original
+ path.write_text(original.replace('trigger10 = StateNo','trigger30 = StateNo',1))
+ run=validate(copy);assert run.returncode!=0 and 'nonconsecutive trigger groups' in run.stdout,run.stdout
+ path.write_text(original);results.append(dict(case='gap before special cancel trigger group',rejected=True,passed=True))
 (ROOT/'previews/Pochita_mugen_structure_checks.json').write_text(json.dumps(results,indent=2)+'\n')
-print(f'PASS: valid character and {len(results)-1} empty-state regression fixtures')
+print(f'PASS: valid character and {len(results)-1} MUGEN structure regression fixtures')

@@ -285,6 +285,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1010
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1020
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1030
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1040
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1050
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, CuatroBrazos]
 type = ChangeState
 value = 1010
@@ -307,6 +344,43 @@ trigger8 = StateNo = 220
 trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
+
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1020
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1030
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1040
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1050
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
 
 [State -1, Ascenso]
 type = ChangeState
@@ -333,6 +407,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1030
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1040
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1050
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, Estocada]
 type = ChangeState
 value = 1030
@@ -356,6 +467,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1040
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1050
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, Barrido]
 type = ChangeState
 value = 1040
@@ -378,6 +526,43 @@ trigger8 = StateNo = 220
 trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
+
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1050
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
 
 [State -1, Guillotina]
 type = ChangeState
@@ -404,6 +589,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1040
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1060
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, Embestida]
 type = ChangeState
 value = 1060
@@ -427,6 +649,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1040
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1050
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1070
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, Carniceria]
 type = ChangeState
 value = 1070
@@ -449,6 +708,43 @@ trigger8 = StateNo = 220
 trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
+
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1040
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1050
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1060
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1080
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
 
 [State -1, Rasante]
 type = ChangeState
@@ -475,6 +771,43 @@ trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
 
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1040
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1050
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1060
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1070
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1100
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
+
 [State -1, Asalto]
 type = ChangeState
 value = 1100
@@ -497,6 +830,43 @@ trigger8 = StateNo = 220
 trigger8 = MoveHit
 trigger9 = StateNo = 221
 trigger9 = MoveHit
+
+trigger10 = StateNo = 1000
+trigger10 = MoveHit
+trigger10 = Time > 0
+trigger10 = Var(32) < 2
+trigger11 = StateNo = 1010
+trigger11 = MoveHit
+trigger11 = Time > 0
+trigger11 = Var(32) < 2
+trigger12 = StateNo = 1020
+trigger12 = MoveHit
+trigger12 = Time > 0
+trigger12 = Var(32) < 2
+trigger13 = StateNo = 1030
+trigger13 = MoveHit
+trigger13 = Time > 0
+trigger13 = Var(32) < 2
+trigger14 = StateNo = 1040
+trigger14 = MoveHit
+trigger14 = Time > 0
+trigger14 = Var(32) < 2
+trigger15 = StateNo = 1050
+trigger15 = MoveHit
+trigger15 = Time > 0
+trigger15 = Var(32) < 2
+trigger16 = StateNo = 1060
+trigger16 = MoveHit
+trigger16 = Time > 0
+trigger16 = Var(32) < 2
+trigger17 = StateNo = 1070
+trigger17 = MoveHit
+trigger17 = Time > 0
+trigger17 = Var(32) < 2
+trigger18 = StateNo = 1080
+trigger18 = MoveHit
+trigger18 = Time > 0
+trigger18 = Var(32) < 2
 
 [State -1, RB Chainsaw guard]
 type = ChangeState
@@ -527,6 +897,91 @@ value = 105
 triggerall = command = "BB"
 triggerall = StateType = S
 trigger1 = Ctrl
+
+[State -1, Mixed route from 200]
+type = ChangeState
+triggerall = StateNo = 200
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Mixed route from 210]
+type = ChangeState
+triggerall = StateNo = 210
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Mixed route from 220]
+type = ChangeState
+triggerall = StateNo = 220
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Mixed route from 201]
+type = ChangeState
+triggerall = StateNo = 201
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Mixed route from 211]
+type = ChangeState
+triggerall = StateNo = 211
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Mixed route from 221]
+type = ChangeState
+triggerall = StateNo = 221
+triggerall = Time > 0
+triggerall = MoveHit
+trigger1 = Var(31) > 0
+value = Var(31)
+ignorehitpause = 1
+
+[State -1, Pursue launcher]
+type = ChangeState
+triggerall = StateNo = 202
+triggerall = MoveHit
+triggerall = NumTarget > 0
+triggerall = command = "holdup"
+triggerall = Time >= 9
+trigger1 = HitPauseTime = 0
+value = 650
+
+[State -1, Pursuit air attack a]
+type = ChangeState
+triggerall = StateNo = 650
+triggerall = Time >= 3
+trigger1 = command = "a"
+value = 600
+
+[State -1, Pursuit air attack b]
+type = ChangeState
+triggerall = StateNo = 650
+triggerall = Time >= 3
+trigger1 = command = "b"
+value = 610
+
+[State -1, Pursuit air attack c]
+type = ChangeState
+triggerall = StateNo = 650
+triggerall = Time >= 3
+trigger1 = command = "c"
+value = 620
 
 [State -1, Hit confirmed 200 to 201]
 type = ChangeState

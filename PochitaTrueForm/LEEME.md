@@ -1,10 +1,18 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_CORREGIDO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_JUGABILIDAD.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
 ## Corrección de carga en MUGEN
 
-Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; las 119 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
+Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; otra rechaza grupos de triggers con saltos de numeración; las 181 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
+
+## Rutas nuevas
+
+Pulsar tres veces X/Y/B permite mezclar botones, por ejemplo X-Y-B, Y-B-X y B-X-Y. Son 27 secuencias que comparten nueve ataques; el último X lanza, Y tritura y B remata contra el suelo. La continuación requiere acertar y pulsar, con entrada guardada durante el golpe. Al bloquear o fallar se corta la ruta.
+
+XXX, arriba al acertar el lanzamiento, X-Y-B en el aire permite perseguir con un salto real y terminar con un corte descendente. La prueba conecta seis impactos y causa 324 sobre 1000 de vida; el rival no se congela ni se teletransporta. X-Y, abajo adelante X, abajo atrás X conecta normales y dos especiales por 600 de energía, causando 312 en el muñeco. La segunda técnica debe ser diferente y acertar la anterior; una tercera se rechaza durante la secuencia. Las técnicas aéreas no admiten esta cancelación de suelo.
+
+Se añadieron doce poses para persecución, embestida RT y remate aéreo, con escala compartida. Los cortes iniciales también muestran efectos al acertar. Las pruebas incluyen todas las cadenas mixtas en ambas orientaciones, la persecución con física libre, el límite de especiales con una tercera entrada reconocida y los fallos/bloqueos sin cancelación ni sangre.
 
 ## Cambios jugables
 
@@ -27,14 +35,14 @@ El daño total se limita al menor entre **500 y el 50 % de la vida máxima del r
 
 ## Arte y audio
 
-Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 149 entradas: 135 de cuerpo (126 poses fuente distintas), 12 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
+Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 161 entradas: 147 de cuerpo (138 poses fuente distintas), 12 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
 
 Hay diez sonidos no verbales: siete muestras seleccionadas del DENJI suministrado y tres mezclas adicionales de motores, cortes e impactos. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
 
 ## Comprobaciones y prueba local
 
-Pasaron 119 escenarios de entradas y colisiones en Ikemen GO, una prueba de CPU y dos pruebas de ultimate contra un rival de solo 500 de vida. Se comprueban los costes exactos, presupuesto mínimo, cadenas X/Y/B, bloqueos y fallos, nueve especiales, atajos diagonales, defensa, movimiento, salto, carga, seis derribos con recuperación y ultimate acertada, bloqueada, saltada y fuera de alcance en ambas orientaciones. Los efectos aparecen al acertar y expiran; la sangre no aparece al bloquear. El validador revisa SFF/SND, referencias, funciones de MUGEN 1.1, recuperación finita y alcance visible; una regresión confirma que rechaza una caja ofensiva exagerada.
+Pasaron 181 escenarios de entradas y colisiones en Ikemen GO, una prueba de CPU y dos pruebas de ultimate contra un rival de solo 500 de vida. Se comprueban los costes exactos, presupuesto mínimo, cadenas X/Y/B, bloqueos y fallos, nueve especiales, atajos diagonales, defensa, movimiento, salto, carga, seis derribos con recuperación y ultimate acertada, bloqueada, saltada y fuera de alcance en ambas orientaciones. Los efectos aparecen al acertar y expiran; la sangre no aparece al bloquear. El validador revisa SFF/SND, referencias, funciones de MUGEN 1.1, recuperación finita y alcance visible; una regresión confirma que rechaza una caja ofensiva exagerada.
 
 Los GIF y fotogramas proceden del motor real. El audio de los MP4 se monta con las muestras del personaje y los tiempos registrados de sus eventos; no es una grabación de la salida de audio del motor. Las entradas automáticas se aplican solo a copias de prueba. No se ha ejecutado el binario exacto de Jump Force MUGEN V14 ni conectado el mando físico a este entorno. El equilibrio contra todo el plantel requiere partidas locales.
 
-Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces al conectar; cadena aérea; especiales; RB ante un golpe; RT; cargar con LB. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.
+Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces mezclando botones al conectar; XXX-arriba-X-Y-B en el aire; dos especiales seguidos; especiales; RB ante un golpe; RT; cargar con LB. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.

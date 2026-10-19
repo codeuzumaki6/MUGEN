@@ -149,7 +149,7 @@ trigger1 = Var(25) = 1
 ignorehitpause = 1
 
 ''';cmd=cmd.replace('[State -1, Normal a]',header+'[State -1, Normal a]')
- for state in [202,211,221,620,1020,1040,1050,1060,1070,1080,1100,1401]:
+ for state in [200,201,202,210,211,220,221,600,610,620,1020,1040,1050,1060,1070,1080,1100,1401]:
   add_to_state(state,hitfx(state,dust=state in [1040,1050,1080],big=state in [202,620,1070,1100]))
  for state in [202,212,222,620]:
   add_to_state(state,f'''[State {state}, Blade afterimages]

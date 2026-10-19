@@ -27,5 +27,10 @@
     "case": "empty PochitaTrueForm.cmd state -1",
     "rejected": true,
     "passed": true
+  },
+  {
+    "case": "gap before special cancel trigger group",
+    "rejected": true,
+    "passed": true
   }
 ]

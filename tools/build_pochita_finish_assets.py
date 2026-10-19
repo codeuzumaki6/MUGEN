@@ -69,3 +69,27 @@ def append_finish_sounds(records,manifest):
   stream=io.BytesIO()
   with wave.open(stream,'wb') as w:w.setnchannels(1);w.setsampwidth(2);w.setframerate(fs);w.writeframes((out*32767).astype('<i2').tobytes())
   payload=stream.getvalue();path=folder/(name+'.wav');path.write_bytes(payload);records.append((1,number,payload));manifest.append({'group':1,'number':number,'filename':path.name,'type':'original nonverbal sound mix','sources':['chainsaw_long.wav','chainsaw_cut.wav','impact_heavy.wav','impact_light.wav'],'duration':duration,'sha256':hashlib.sha256(payload).hexdigest(),'voice':False})
+
+def append_flow_assets(metadata,review):
+ im=Image.open(ROOT/'design/Pochita_combate/movilidad_y_remate.png').convert('RGBA')
+ pixels=np.array(im);labels,n=label(pixels[:,:,3]>=128,np.ones((3,3)));objects=find_objects(labels);areas=np.bincount(labels.ravel())
+ bodies=[i+1 for i,s in enumerate(objects) if areas[i+1]>10000];assert len(bodies)==12
+ def row(i):
+  center=(objects[i-1][0].start+objects[i-1][0].stop)/2/im.height
+  return 0 if center<.42 else 1 if center<.70 else 2
+ assert [sum(row(i)==r for i in bodies) for r in range(3)]==[4,4,4]
+ bodies.sort(key=lambda i:(row(i),objects[i-1][1].start));poses=[]
+ for i in bodies:
+  mask=Image.fromarray((labels==i).astype('uint8')*255);box=mask.getbbox();assert box[0]>0 and box[1]>0 and box[2]<im.width and box[3]<im.height,box
+  pic=im.copy();pic.putalpha(mask);poses.append((pic.crop(box),box))
+ factor=72/poses[11][0].height;folder=CHAR/'assets/sprites/flow';folder.mkdir(parents=True,exist_ok=True);records=[];metadata['flow']=[]
+ for i,(pic,box) in enumerate(poses):
+  pic=pic.resize((round(pic.width*factor),round(pic.height*factor)),Image.Resampling.NEAREST)
+  foot=pic.getchannel('A').crop((0,pic.height-7,pic.width,pic.height)).getbbox();axis=((foot[0]+foot[2])//2+2,pic.height+2)
+  if i in [1,2,3,8,9]:
+   values=np.array(pic);torso=(values[:,:,3]>128)&(values[:,:,:3].max(axis=2)<65)
+   torso[:round(pic.height*.30)]=False;torso[round(pic.height*.80):]=False;yy,xx=np.where(torso);assert len(xx);axis=(round(float(xx.mean()))+2,round(float(yy.mean()))+38)
+  padded=Image.new('RGBA',(pic.width+4,pic.height+4));padded.alpha_composite(pic,(2,2));path=folder/f'{i}.png';padded.save(path)
+  values=np.array(padded);body=(values[:,:,3]>128)&~((values[:,:,0]>70)&(values[:,:,0]>values[:,:,1]*1.3));extent=int(np.where(body)[1].max())-axis[0]
+  metadata['flow'].append(dict(group=3200,number=i,file=str(path.relative_to(CHAR)),size=padded.size,axis=axis,attack_extent=extent,source_sheet='movilidad_y_remate',source_cell=i,source_box=box));records.append((3200,i,path,axis));review.append(('flow',i,padded))
+ return records

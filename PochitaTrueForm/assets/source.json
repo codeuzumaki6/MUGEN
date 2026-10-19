@@ -5,10 +5,14 @@
     "ultimate_poses.png": "eedb86efe4814b70c1768f90054b3a13b6a6828c8a954adfdd2aeda643d2574e",
     "effects.png": "588c7552cbde65c186a942c6711afb4c1491d2f4a51d3d86054a661ee50de301"
   },
-  "body_sprite_entries": 135,
+  "body_sprite_entries": 147,
+  "mobility_source": {
+    "file": "design/Pochita_combate/movilidad_y_remate.png",
+    "sha256": "4b1530197415c4bc9f4a1fdd6810ce53542a5695614980af2575fa8b0f9deb18"
+  },
   "effect_sprite_entries": 12,
   "manga_panel_embedded": false,
-  "unique_source_poses": 126,
+  "unique_source_poses": 138,
   "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",
   "sheet_scales": {
     "movimiento": 91.55294117647058,

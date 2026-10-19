@@ -12,9 +12,11 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | Atrás / abajo+atrás | Guardia alta / baja | 0 |
 | Adelante dos veces | Correr; X/Y/B permiten atacar desde carrera | 0 |
 | Atrás dos veces | Retirada corta | 0 |
+| Tres pulsaciones mezclando X/Y/B al acertar | Ruta de tres golpes; X final lanza, Y tritura, B derriba | 0 |
 | X, X, X al conectar | Tres cortes y lanzamiento | 0 |
 | Y, Y, Y al conectar | Extensión, triturado multigolpe y empuje | 0 |
 | B, B, B al conectar | Giro, salto corto y remate contra el suelo | 0 |
+| XXX y mantener arriba al acertar, luego X → Y → B en el aire | Perseguir el lanzamiento y rematar hacia el suelo | 0 |
 | X → Y → B en el aire al conectar | Cadena aérea de tres ataques | 0 |
 | Abajo+adelante+X | Desgarro: avance con dos cortes | 250 |
 | Abajo+atrás+X | Cuatro brazos: tres contactos | 350 |
@@ -37,3 +39,15 @@ En el rediseño, Ascenso, Barrido y Rasante son de corta distancia. Las cajas de
 La ultimate consume **dos barras al activarla**, incluso si falla o la bloquean; exige 2000 de energía disponible. Su daño total es el menor entre 500 y la mitad de la vida máxima del rival, redondeado hacia abajo. Un rival con vida completa sobrevive; uno ya herido puede morir. No hay daño de la secuencia al bloquear o esquivar la apertura.
 
 Los remates de X/Y/B tienen cortes visibles, sangre al acertar y respuestas distintas: lanzamiento, triturado con empuje y golpe contra el suelo. En el muñeco de 1000 de vida las cadenas completas causan 152 / 180 / 205. Estos valores pueden variar con las defensas y reglas del rival.
+
+## Rutas para empezar a jugar
+
+- **X → Y → B**: corte rápido, extensión de motosierras y remate contra el suelo; 179 en el muñeco de prueba.
+- **Y → B → X**: entrada fuerte, giro y lanzamiento; 173.
+- **B → X → Y**: giro, corte y triturado; 185.
+- **X → X → X + arriba, después X → Y → B en el aire**: persecución con salto real y corte descendente; 324 en seis impactos. Mantén arriba al conectar el último X; pulsa el X aéreo durante el salto. No es un teletransporte.
+- **X → Y → abajo adelante X → abajo atrás X**: enlaza dos especiales diferentes; gasto total 600, daño 312 en el muñeco. Introduce la segunda técnica después de que conecten los cortes de la primera.
+
+Puedes mezclar los tres botones en las tres etapas: son 27 secuencias que comparten ataques, no 27 animaciones diferentes. La pulsación del siguiente golpe se guarda durante el ataque y se ejecuta al acertar. Si fallas o te bloquean, la ruta se corta. Un golpe independiente tras recuperar control puede iniciar otra cadena.
+
+Se permite **como máximo una segunda técnica especial en la misma secuencia**, siempre diferente de la actual, acertando y pagando su coste. Una tercera técnica se rechaza hasta recuperar control. Las continuaciones de especiales se ejecutan en suelo; Guillotina es un salto corto y no recibe nuevas cancelaciones mientras siga en el aire. La ulti conserva su entrada A y no se encadena automáticamente desde los normales.

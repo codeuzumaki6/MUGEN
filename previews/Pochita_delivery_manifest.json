@@ -1,19 +1,19 @@
 {
-  "archive": "PochitaTrueForm_CORREGIDO.zip",
+  "archive": "PochitaTrueForm_JUGABILIDAD.zip",
   "alias": "PochitaTrueForm.zip",
-  "bytes": 744109,
-  "sha256": "082162d93657448d34054a5417b419ef6b9fbf2c65d2357c3fcfec11a5c3f9bd",
+  "bytes": 799095,
+  "sha256": "59e59cc69e6cafc6e44488a87c4b33d70635244b59607db9f5af1bc567ac63e7",
   "files": {
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
-    "PochitaTrueForm.sff": "50efe074fe1ccfc984b316ef8b07a5723ccf520781e97faf2dbf9077c67fe9d1",
+    "PochitaTrueForm.sff": "7e4e953400da94a71664905b63775bdc509f1b0fadf0fd8d856a333993b9ee49",
     "PochitaTrueForm.snd": "c6b66c662dedbd0b78cb4a59c7cef57ad788ea1e9a95167dc086d970578b33d1",
-    "PochitaTrueForm.air": "9d8c4f9baa360d20f8276869013e0aab67eb61b6a3417c09dae58f98b703d057",
-    "PochitaTrueForm.cmd": "82b35e286f2a8d3fcbae619f88fbf192a8e930179c598e35c82d530f8985dd8a",
-    "PochitaTrueForm.cns": "5f09420ad22130782e1d58221bcca817f9b8605499109bfc5adf5c3a9063ca76",
+    "PochitaTrueForm.air": "800dba8f9242204853304077c7a8832e0dfd94b7b9457a55a6d559110aebf24d",
+    "PochitaTrueForm.cmd": "37cdd540c8f3f2befa05f7290587078631a4bb5fb95af8c92a9d5db8c3049e77",
+    "PochitaTrueForm.cns": "b3e7023535114bae3ea01d2e62b3da8d6f5d2f4aa76d87838612769a90bc9aba",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "b0a079a27cbcda7ab6c4422be2b4d54b423b87be2b68f1ae5c6db276e475c7a2",
-    "CONTROLES_XBOX.md": "5728412c430195e6b97a35248bf34d67c33cecc5f4d74d2ec0ae68fe13950a39",
-    "CREDITOS_Y_FUENTES.md": "2a323185f862d412c529eb67f49c0083ff2b555f1100ae2b03909b39db69ef9e"
+    "LEEME.md": "63bb447250652f958a19dcb760d88c8f04b87264eca0835cb97b07e12274f51b",
+    "CONTROLES_XBOX.md": "4d0f9749394fcf118799dc5f5c38c50d6babc24064e9414fce6d8805c3210fff",
+    "CREDITOS_Y_FUENTES.md": "9e18db4ce00bd334eddd496d4c0e1cb9c1e5a1984619c73b6b929e47716759cf"
   },
-  "validation": "119 Ikemen combat scenarios rerun after fixing controllerless states 170/175/180; 5 empty-state regression fixtures rejected. Prior CPU + 2 low-LifeMax scenarios passed. Exact Jump Force MUGEN V14 not executed."
+  "validation": "181 Ikemen raw-input/collision scenarios, CPU, two low-LifeMax ultimate scenarios; six MUGEN structure regressions rejected. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
 }

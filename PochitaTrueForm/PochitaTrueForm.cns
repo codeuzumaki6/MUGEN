@@ -61,6 +61,14 @@ trigger1 = Vel Y > 0
 value = 52
 ctrl = 1
 
+[State -2, Reset special chain budget]
+type = VarSet
+trigger1 = Ctrl
+trigger2 = MoveType = H
+trigger3 = RoundState != 2
+v = 32
+value = 0
+ignorehitpause = 1
 [Statedef 170]
 type = S
 movetype = I
@@ -185,6 +193,75 @@ trigger1 = MoveHit
 v = 25
 value = 1
 ignorehitpause = 1
+[State 200, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 200, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 200, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 200, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 200, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 200, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",201,IfElse(command = "b",211,221))
+ignorehitpause = 1
 [State 200, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -251,6 +328,75 @@ trigger1 = Time > 0
 trigger1 = MoveHit
 v = 25
 value = 1
+ignorehitpause = 1
+[State 201, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 201, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 201, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 201, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 201, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 201, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",202,IfElse(command = "b",212,222))
 ignorehitpause = 1
 [State 201, End]
 type = ChangeState
@@ -370,6 +516,14 @@ palcontrast = 210,210,210
 palmul = .8,.8,.8
 trans = add
 
+[State 202, Step into launcher]
+type = VelSet
+trigger1 = Time < 6
+x = 4
+[State 202, Plant feet]
+type = VelSet
+trigger1 = Time >= 6
+x = 0
 [State 202, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -436,6 +590,75 @@ trigger1 = Time > 0
 trigger1 = MoveHit
 v = 25
 value = 1
+ignorehitpause = 1
+[State 210, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 210, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 210, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 210, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 210, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 210, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",201,IfElse(command = "b",211,221))
 ignorehitpause = 1
 [State 210, End]
 type = ChangeState
@@ -558,6 +781,22 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 211, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 211, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",202,IfElse(command = "b",212,222))
+ignorehitpause = 1
 [State 211, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -624,6 +863,75 @@ trigger1 = Time > 0
 trigger1 = MoveHit
 v = 25
 value = 1
+ignorehitpause = 1
+[State 220, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 220, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 220, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 220, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 220, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 220, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",201,IfElse(command = "b",211,221))
 ignorehitpause = 1
 [State 220, End]
 type = ChangeState
@@ -746,6 +1054,22 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 221, Clear route press]
+type = VarSet
+trigger1 = Time = 0
+v = 31
+value = 0
+ignorehitpause = 1
+[State 221, Buffer route press]
+type = VarSet
+triggerall = Time > 0
+triggerall = command != "holddown"
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+v = 31
+value = IfElse(command = "a",202,IfElse(command = "b",212,222))
+ignorehitpause = 1
 [State 221, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -812,6 +1136,59 @@ trigger1 = MoveHit
 v = 25
 value = 1
 ignorehitpause = 1
+[State 600, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 600, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 600, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 600, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 600, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -878,6 +1255,59 @@ trigger1 = MoveHit
 v = 25
 value = 1
 ignorehitpause = 1
+[State 610, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 610, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 610, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 610, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 610, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -912,9 +1342,9 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 22
 ground.slidetime = 12
-ground.velocity = -3.2,-5
+ground.velocity = -2,5
 air.hittime = 24
-air.velocity = -3.2,-5
+air.velocity = -2,7
 fall = 1
 fall.recover = 1
 fall.recovertime = 28
@@ -995,6 +1425,12 @@ palcontrast = 210,210,210
 palmul = .8,.8,.8
 trans = add
 
+[State 620, Dive momentum]
+type = VelSet
+trigger1 = MoveHit
+trigger1 = HitPauseTime = 0
+x = .8
+y = 4.5
 [State 620, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1230,6 +1666,12 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1000, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1000, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1333,6 +1775,12 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1010, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1010, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1433,6 +1881,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1020, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1020, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1513,6 +1967,12 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1030, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1030, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1632,6 +2092,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1040, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1040, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1757,6 +2223,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1050, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1050, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1889,6 +2361,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1060, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1060, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2101,6 +2579,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1070, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1070, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2220,6 +2704,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1080, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1080, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2436,6 +2926,12 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1100, Count special in sequence]
+type = VarAdd
+trigger1 = Time = 0
+v = 32
+value = 1
+persistent = 0
 [State 1100, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -3384,6 +3880,35 @@ palmul = .8,.8,.8
 trans = add
 
 [State 222, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 650]
+type = A
+movetype = I
+physics = A
+anim = 650
+ctrl = 0
+velset = 3.8,-6
+[State 650, Rising motors]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,6
+channel = 3
+[State 650, Trail]
+type = AfterImage
+trigger1 = Time = 0
+time = 10
+length = 4
+timegap = 1
+framegap = 2
+palcolor = 256
+palbright = 5,-20,-20
+palmul = .8,.7,.7
+trans = add
+[State 650, Return to air control]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50

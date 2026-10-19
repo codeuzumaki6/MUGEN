@@ -3258,5 +3258,271 @@
         887
       ]
     }
+  ],
+  "flow": [
+    {
+      "group": 3200,
+      "number": 0,
+      "file": "assets/sprites/flow/0.png",
+      "size": [
+        107,
+        60
+      ],
+      "axis": [
+        55,
+        58
+      ],
+      "attack_extent": 49,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 0,
+      "source_box": [
+        38,
+        221,
+        356,
+        393
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 1,
+      "file": "assets/sprites/flow/1.png",
+      "size": [
+        112,
+        130
+      ],
+      "axis": [
+        52,
+        107
+      ],
+      "attack_extent": 57,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 1,
+      "source_box": [
+        417,
+        15,
+        751,
+        402
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 2,
+      "file": "assets/sprites/flow/2.png",
+      "size": [
+        122,
+        100
+      ],
+      "axis": [
+        58,
+        90
+      ],
+      "attack_extent": 61,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 2,
+      "source_box": [
+        782,
+        63,
+        1146,
+        360
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 3,
+      "file": "assets/sprites/flow/3.png",
+      "size": [
+        114,
+        71
+      ],
+      "axis": [
+        59,
+        75
+      ],
+      "attack_extent": 52,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 3,
+      "source_box": [
+        1167,
+        128,
+        1507,
+        335
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 4,
+      "file": "assets/sprites/flow/4.png",
+      "size": [
+        124,
+        64
+      ],
+      "axis": [
+        28,
+        62
+      ],
+      "attack_extent": 93,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 4,
+      "source_box": [
+        31,
+        474,
+        400,
+        658
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 5,
+      "file": "assets/sprites/flow/5.png",
+      "size": [
+        107,
+        76
+      ],
+      "axis": [
+        36,
+        74
+      ],
+      "attack_extent": 68,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 5,
+      "source_box": [
+        432,
+        437,
+        751,
+        658
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 6,
+      "file": "assets/sprites/flow/6.png",
+      "size": [
+        111,
+        70
+      ],
+      "axis": [
+        46,
+        68
+      ],
+      "attack_extent": 62,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 6,
+      "source_box": [
+        791,
+        454,
+        1121,
+        658
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 7,
+      "file": "assets/sprites/flow/7.png",
+      "size": [
+        127,
+        65
+      ],
+      "axis": [
+        56,
+        63
+      ],
+      "attack_extent": 68,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 7,
+      "source_box": [
+        1141,
+        471,
+        1520,
+        658
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 8,
+      "file": "assets/sprites/flow/8.png",
+      "size": [
+        103,
+        90
+      ],
+      "axis": [
+        50,
+        87
+      ],
+      "attack_extent": 50,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 8,
+      "source_box": [
+        53,
+        694,
+        358,
+        959
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 9,
+      "file": "assets/sprites/flow/9.png",
+      "size": [
+        88,
+        98
+      ],
+      "axis": [
+        41,
+        85
+      ],
+      "attack_extent": 44,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 9,
+      "source_box": [
+        452,
+        690,
+        710,
+        980
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 10,
+      "file": "assets/sprites/flow/10.png",
+      "size": [
+        117,
+        71
+      ],
+      "axis": [
+        53,
+        69
+      ],
+      "attack_extent": 61,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 10,
+      "source_box": [
+        782,
+        786,
+        1131,
+        994
+      ]
+    },
+    {
+      "group": 3200,
+      "number": 11,
+      "file": "assets/sprites/flow/11.png",
+      "size": [
+        116,
+        76
+      ],
+      "axis": [
+        56,
+        74
+      ],
+      "attack_extent": 57,
+      "source_sheet": "movilidad_y_remate",
+      "source_cell": 11,
+      "source_box": [
+        1161,
+        757,
+        1507,
+        979
+      ]
+    }
   ]
 }

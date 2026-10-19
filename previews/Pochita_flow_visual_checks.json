@@ -1,0 +1,150 @@
+[
+  {
+    "case": {
+      "name": "Mixed XYB",
+      "button": "a",
+      "sequence": [
+        "a",
+        "b",
+        "c"
+      ],
+      "route": [
+        200,
+        211,
+        222
+      ],
+      "expected": 179,
+      "direction": "N",
+      "state": 222,
+      "cost": 0,
+      "kind": "mixedcombo",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      52,
+      200,
+      211,
+      222
+    ],
+    "damage": 179,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -15.050000190734863,
+    "victim_apex": 0.0,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 1,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Launcher aerial pursuit",
+      "button": "a",
+      "direction": "N",
+      "state": 620,
+      "cost": 0,
+      "kind": "pursuit",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      52,
+      200,
+      201,
+      202,
+      600,
+      610,
+      620,
+      650
+    ],
+    "damage": 324,
+    "received": 0,
+    "minimum_power": 3000,
+    "maximum_power": 3000,
+    "apex": -35.74999237060547,
+    "victim_apex": -48.20000076293945,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Mixed into two specials",
+      "button": "a",
+      "direction": "N",
+      "state": 1010,
+      "cost": 600,
+      "kind": "specialchain",
+      "facing": 1,
+      "distance": 42
+    },
+    "states": [
+      0,
+      200,
+      211,
+      1000,
+      1010
+    ],
+    "damage": 312,
+    "received": 0,
+    "minimum_power": 2400,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "victim_apex": 0.0,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "Asalto RT",
+      "button": "z",
+      "direction": "N",
+      "state": 1100,
+      "cost": 750,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      1100
+    ],
+    "damage": 236,
+    "received": 0,
+    "minimum_power": 2250,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "victim_apex": -38.25000762939453,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "last": 0,
+    "victim_final": 0,
+    "dash_travel": 0.0,
+    "failures": []
+  }
+]
