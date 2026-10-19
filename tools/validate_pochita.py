@@ -48,16 +48,25 @@ for line in (CHAR/(stem+'.air')).read_text().splitlines():
   if transient and re.match(r'(?i)\s*Clsn1\[',line):pending_attack=x2
 check(idle==[(0,n) for n in range(6)],'Idle must use only its six dedicated idle poses')
 for n in [52,5100,5170,5120]:check(n in actions and actions[n] and min(actions[n])>=0,f'Recovery animation {n} must finish')
-states=set();sections=[];commands=set()
+states=set();sections=[];commands=set();state_controllers={}
 for name in [stem+'.cns','common1.cns',stem+'.cmd']:
  path=CHAR/name;shared.check_mugen11_calls(path);text=path.read_text(encoding='latin-1')
  check('assertinput' not in text.lower(),f'{name}: test input controller leaked into delivery')
+ current_state=None
  for header,body in shared.sections(text):
   sections.append((name,header,body))
   m=re.match(r'(?i)\[Statedef (-?\d+)\]',header)
   if m:
    n=int(m[1]);check(n not in states,f'Duplicate state {n}');states.add(n)
+   current_state=(name,n);state_controllers[current_state]=0
+  elif re.match(r'(?i)\[State\s+',header):
+   check(current_state is not None,f'{name} {header}: controller outside a Statedef')
+   if current_state is not None:state_controllers[current_state]+=1
+   check(bool(field(body,'type')),f'{name} {header}: controller missing type')
+   check(any(re.match(r'(?i)\s*trigger[1-9]\d*\s*=',line) for line in body),f'{name} {header}: controller missing numbered trigger')
   if header.lower()=='[command]':commands.add((field(body,'name') or '').strip('"').lower())
+for (name,n),count in state_controllers.items():
+ check(count>0,f'{name}: Statedef {n} needs at least one state controller (MUGEN load error)')
 usedcommands=set()
 for name,header,body in sections:
  typ=(field(body,'type') or '').lower();n=integer(field(body,'anim'))

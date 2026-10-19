@@ -1,0 +1,31 @@
+[
+  {
+    "case": "delivered character",
+    "passed": true
+  },
+  {
+    "case": "empty PochitaTrueForm.cns state 170",
+    "rejected": true,
+    "passed": true
+  },
+  {
+    "case": "empty PochitaTrueForm.cns state 175",
+    "rejected": true,
+    "passed": true
+  },
+  {
+    "case": "empty PochitaTrueForm.cns state 180",
+    "rejected": true,
+    "passed": true
+  },
+  {
+    "case": "empty common1.cns state 0",
+    "rejected": true,
+    "passed": true
+  },
+  {
+    "case": "empty PochitaTrueForm.cmd state -1",
+    "rejected": true,
+    "passed": true
+  }
+]

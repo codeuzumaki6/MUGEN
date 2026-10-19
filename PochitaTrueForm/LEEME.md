@@ -1,6 +1,10 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_REMATES.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_CORREGIDO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+
+## Corrección de carga en MUGEN
+
+Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; las 119 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
 
 ## Cambios jugables
 

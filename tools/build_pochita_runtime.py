@@ -253,6 +253,10 @@ for no,end,anim in [(170,999,170),(175,999,175),(180,999,180),(190,20,190),(195,
     cns+=f'\n[Statedef {no}]\ntype = S\nmovetype = I\nphysics = S\nanim = {anim}\nctrl = 0\nvelset = 0,0\n'
     if no==190:cns+='[State 190, Intro]\ntype = AssertSpecial\ntrigger1 = Time < 20\nflag = Intro\n'
     if end<999:cns+=f'[State {no}, End]\ntype = ChangeState\ntrigger1 = Time >= {end}\nvalue = 0\nctrl = 1\n'
+    else:
+        # MUGEN rejects a Statedef with no controllers, even for held round-end
+        # poses. Ikemen accepts it, so engine checks alone missed this failure.
+        cns+=f'[State {no}, Hold round-end pose]\ntype = Null\ntrigger1 = 1\n'
 def hitdef(no,element,damage,fall=False,last=True,reach=70,air=False,vy=None,guard='MA',ultimate=False):
     value=f'''[State {no}, Contact {element}]
 type = HitDef

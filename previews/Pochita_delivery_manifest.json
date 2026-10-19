@@ -1,19 +1,19 @@
 {
-  "archive": "PochitaTrueForm_REMATES.zip",
+  "archive": "PochitaTrueForm_CORREGIDO.zip",
   "alias": "PochitaTrueForm.zip",
-  "bytes": 743818,
-  "sha256": "bbae034c1a72a752585f75e9ad0a0424dc75c4f9d012a8dee7b856dc3c372f78",
+  "bytes": 744109,
+  "sha256": "082162d93657448d34054a5417b419ef6b9fbf2c65d2357c3fcfec11a5c3f9bd",
   "files": {
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
     "PochitaTrueForm.sff": "50efe074fe1ccfc984b316ef8b07a5723ccf520781e97faf2dbf9077c67fe9d1",
     "PochitaTrueForm.snd": "c6b66c662dedbd0b78cb4a59c7cef57ad788ea1e9a95167dc086d970578b33d1",
     "PochitaTrueForm.air": "9d8c4f9baa360d20f8276869013e0aab67eb61b6a3417c09dae58f98b703d057",
     "PochitaTrueForm.cmd": "82b35e286f2a8d3fcbae619f88fbf192a8e930179c598e35c82d530f8985dd8a",
-    "PochitaTrueForm.cns": "06af8fd84b03be2a8df796f1b797a3575324f59df75511033139d52c79342a1f",
+    "PochitaTrueForm.cns": "5f09420ad22130782e1d58221bcca817f9b8605499109bfc5adf5c3a9063ca76",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "35a8579051fed5b30817606da4ff0a2744b414fa4cdeedc1674c928ec883d505",
+    "LEEME.md": "b0a079a27cbcda7ab6c4422be2b4d54b423b87be2b68f1ae5c6db276e475c7a2",
     "CONTROLES_XBOX.md": "5728412c430195e6b97a35248bf34d67c33cecc5f4d74d2ec0ae68fe13950a39",
     "CREDITOS_Y_FUENTES.md": "2a323185f862d412c529eb67f49c0083ff2b555f1100ae2b03909b39db69ef9e"
   },
-  "validation": "Ikemen GO: 119 raw-input/collision scenarios + 1 CPU smoke + 2 low-LifeMax ultimate scenarios; exact Jump Force MUGEN V14 not executed"
+  "validation": "119 Ikemen combat scenarios rerun after fixing controllerless states 170/175/180; 5 empty-state regression fixtures rejected. Prior CPU + 2 low-LifeMax scenarios passed. Exact Jump Force MUGEN V14 not executed."
 }

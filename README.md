@@ -1,8 +1,10 @@
 # Pochita True Form — combos y remates
 
-[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_REMATES.zip)
+[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_CORREGIDO.zip)
 
 Sustituye `chars/PochitaTrueForm` por la carpeta completa del ZIP. Añade `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no aparece.
+
+Corregido el cierre al seleccionar al personaje: los estados 170, 175 y 180 estaban sin controladores, lo que MUGEN rechaza. Ahora incluyen `Null`; el validador detecta ese fallo en todos los CNS/CMD y cinco [regresiones](previews/Pochita_mugen_structure_checks.json) lo reproducen. Las 119 pruebas de combate volvieron a pasar.
 
 X/X/X termina con lanzamiento; Y/Y/Y tritura y empuja; B/B/B salta y remata contra el suelo. Los cortes confirmados tienen sangre y efectos de impacto. Los especiales cuestan entre 250 y 750; RB 250 y RT 750. La carga sigue en LB. El modelo conserva armadura negra robusta, cuatro brazos con motosierras y bufanda roja.
 
@@ -21,6 +23,7 @@ python3 tools/build_pochita_redesign.py
 python3 tools/build_pochita_sound.py --from-wav
 python3 tools/build_pochita_runtime.py
 python3 tools/validate_pochita.py
+python3 tools/check_pochita_mugen_structure.py
 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_AI=8 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_DUMMY_LIFE=500 POCHITA_CASES='["ultihit"]' python3 tools/check_pochita_in_engine.py /ruta/al/ikemen

@@ -68,6 +68,9 @@ physics = S
 anim = 170
 ctrl = 0
 velset = 0,0
+[State 170, Hold round-end pose]
+type = Null
+trigger1 = 1
 
 [Statedef 175]
 type = S
@@ -76,6 +79,9 @@ physics = S
 anim = 175
 ctrl = 0
 velset = 0,0
+[State 175, Hold round-end pose]
+type = Null
+trigger1 = 1
 
 [Statedef 180]
 type = S
@@ -84,6 +90,9 @@ physics = S
 anim = 180
 ctrl = 0
 velset = 0,0
+[State 180, Hold round-end pose]
+type = Null
+trigger1 = 1
 
 [Statedef 190]
 type = S
