@@ -1,8 +1,14 @@
 {
   "type": "AI-generated visual redesign based on user references",
   "master_reference": "design/Pochita_revision_visual/propuesta_tres_poses.png",
-  "body_sprite_entries": 127,
-  "unique_source_poses": 118,
+  "finisher_sources": {
+    "ultimate_poses.png": "eedb86efe4814b70c1768f90054b3a13b6a6828c8a954adfdd2aeda643d2574e",
+    "effects.png": "588c7552cbde65c186a942c6711afb4c1491d2f4a51d3d86054a661ee50de301"
+  },
+  "body_sprite_entries": 135,
+  "effect_sprite_entries": 12,
+  "manga_panel_embedded": false,
+  "unique_source_poses": 126,
   "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",
   "sheet_scales": {
     "movimiento": 91.55294117647058,

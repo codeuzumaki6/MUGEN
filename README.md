@@ -1,20 +1,20 @@
-# Pochita True Form — rediseño visual
+# Pochita True Form — combos y remates
 
-[**Descargar Pochita True Form REDISEÑADO para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_REDISENO.zip)
+[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_REMATES.zip)
 
-Sustituye `chars/PochitaTrueForm` por la carpeta completa del ZIP. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no aparece. Incluye todos los recursos de ejecución.
+Sustituye `chars/PochitaTrueForm` por la carpeta completa del ZIP. Añade `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no aparece.
 
-Nuevo modelo de armadura negra robusta, cuatro brazos con motosierras, casco dentado y bufanda roja, basado en las imágenes del usuario. Se generaron con IA las hojas de movimiento, ataques y daño. Hay 118 poses fuente distintas en 127 entradas de cuerpo y dos retratos; las repeticiones permiten compartir poses y cerrar ciclos. Los detalles todavía varían ligeramente entre algunos cuadros.
+X/X/X termina con lanzamiento; Y/Y/Y tritura y empuja; B/B/B salta y remata contra el suelo. Los cortes confirmados tienen sangre y efectos de impacto. Los especiales cuestan entre 250 y 750; RB 250 y RT 750. La carga sigue en LB. El modelo conserva armadura negra robusta, cuatro brazos con motosierras y bufanda roja.
 
-Conserva combos X/Y/B y aérea, nueve especiales direccionales, RB, RT, carga LB y ultimate A que puede ser bloqueada o esquivada. El alcance ofensivo sigue el extremo visible de las motosierras, con seis comprobaciones de fallos desde lejos. Las rotaciones aéreas usan el torso como eje y el lanzamiento X tiene una altura menor para conservar el encuadre. Los siete sonidos no verbales de motosierras e impactos permanecen en el SND.
+**A consume dos barras incluso si falla o la bloquean.** Debe acertar su embestida para ejecutar los cinco cortes animados. Ocho poses nuevas despliegan los cuatro brazos; no se muestra el panel del manga. Su daño máximo es el menor entre 500 y la mitad de la vida máxima del rival. No mata desde la vida completa; puede rematar a un rival ya herido.
 
-[**Ver el combo nuevo en GIF**](previews/Pochita_rediseno_combo_motor.gif) · [Carnicería](previews/Pochita_rediseno_carniceria_motor.gif) · [Ultimate](previews/Pochita_rediseno_ultimate_motor.gif) · [Derribo y recuperación](previews/Pochita_rediseno_recuperacion_motor.gif)
+[Combo X](previews/Pochita_remates_combo_x_motor.gif) · [Combo Y](previews/Pochita_remates_combo_y_motor.gif) · [Combo B](previews/Pochita_remates_combo_b_motor.gif) · [Ultimate GIF](previews/Pochita_remates_ultimate_motor.gif) · [Ultimate MP4 con audio montado](previews/Pochita_remates_ultimate_motor.mp4)
 
-[Hoja de sprites usada](previews/Pochita_redesign_sprites.png) · [Propuesta visual inicial](design/Pochita_revision_visual/propuesta_tres_poses.png) · [Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
+Las capturas son reales de Ikemen GO. El audio del MP4 se mezcla con las muestras del personaje y los tiempos registrados de sus eventos; no es grabación de la salida de audio del juego. Pasaron [119 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json), [CPU](previews/Pochita_AI_checks.json), [dos pruebas contra un rival de 500 de vida](previews/Pochita_low_life_ultimate_checks.json) y [el control de alcance del validador](previews/Pochita_validator_checks.json). Falta probar el binario exacto de Jump Force MUGEN V14 y el mando físico.
 
-Las capturas son reales de Ikemen GO y no tienen audio. Pasaron [84 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json), [una prueba de CPU](previews/Pochita_AI_checks.json) y el [control de alcance del validador](previews/Pochita_validator_checks.json). El validador comprueba SFF/SND, referencias, recuperación y expresiones de MUGEN 1.1; decodifica los sprites del SFF para limitar las cajas de ataque al dibujo. Faltan las pruebas en el binario exacto de Jump Force MUGEN V14, mando físico y plantel completo.
+El SFF incluye 149 entradas: 135 de cuerpo (126 poses fuente distintas), doce efectos y dos retratos. Hay diez sonidos no verbales. Arte generado con IA; algunos detalles varían entre cuadros. [Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md) · [Fuentes de los remates](design/Pochita_remates/LEEME.md)
 
-Reconstrucción en el checkout existente con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
+Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
 ```sh
 python3 tools/build_pochita_redesign.py
@@ -23,11 +23,12 @@ python3 tools/build_pochita_runtime.py
 python3 tools/validate_pochita.py
 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_AI=8 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
+POCHITA_DUMMY_LIFE=500 POCHITA_CASES='["ultihit"]' python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 python3 tools/make_pochita_previews.py /ruta/al/ikemen
 python3 tools/package_pochita.py
 ```
 
-Las cuatro hojas nuevas y las muestras WAV seleccionadas están en el repositorio. El constructor `build_pochita_assets.py` se conserva para reconstruir la versión ANTERIOR desde la hoja original; no debe ejecutarse para regenerar este rediseño. No se modificaron las fuentes originales ni Eida.
+Las fuentes de arte y las muestras seleccionadas están en el repositorio. El constructor `build_pochita_assets.py` conserva la versión anterior desde la hoja original; no debe ejecutarse para regenerar este diseño. Eida y los originales no se modificaron.
 
 ---
 

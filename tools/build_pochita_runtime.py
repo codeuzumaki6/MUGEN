@@ -27,23 +27,23 @@ action(100,100,list(range(7)),3,loop=True);action(105,100,[3,4,5],[4,4,4])
 for n in [120,121,122,130,131,132,140,150,151,152]:action(n,10,[2],[-1],low=n in [121,131,151])
 action(170,5000,[12,13,14],[6,6,-1]);action(175,5000,[14],[-1]);action(180,0,[0,1,2,3,4,5],7,loop=True);action(190,0,[0,1,2],[6,6,8]);action(195,0,[0,1,2],[6,6,8])
 # Every contact has a visible active pose, with recovery frames after it.
-NORMALS=[(200,200,list(range(7)),(3,4,5),70,30,False),(201,210,list(range(6)),(2,3,4),75,36,False),
-(202,240,list(range(6)),(3,4,5),70,60,True),(210,230,list(range(8)),(3,4,5),75,42,False),
-(211,220,list(range(7,17)),(2,3,4,5),145,62,False),(220,250,list(range(8)),(3,4,5,6),75,48,False),
-(221,250,list(range(1,8)),(2,3,4,5),80,70,True),(600,600,list(range(7)),(2,3,4,5),70,40,False),
-(610,610,list(range(5)),(2,3,4),75,44,False),(620,620,list(range(6)),(2,3,4,5),80,55,True),(400,10,[1,2,3,4,5],(2,3,4),55,25,False),(410,10,[2,3,4,5],(2,3),60,32,False),(420,10,[2,4,5],(2,),65,40,True)]
+NORMALS=[(200,200,list(range(7)),(3,4,5),70,32,False),(201,210,list(range(6)),(2,3,4),75,40,False),
+(202,240,list(range(6)),(3,4,5),70,80,True),(210,230,list(range(8)),(3,4,5),75,48,False),
+(211,220,list(range(7,17)),(2,3,4,5),145,42,False),(220,250,list(range(8)),(3,4,5,6),75,55,False),
+(221,250,list(range(1,8)),(2,3,4,5),80,45,False),(600,600,list(range(7)),(2,3,4,5),70,50,False),
+(610,610,list(range(5)),(2,3,4),75,52,False),(620,620,list(range(6)),(2,3,4,5),80,70,True),(400,10,[1,2,3,4,5],(2,3,4),55,25,False),(410,10,[2,3,4,5],(2,3),60,32,False),(420,10,[2,4,5],(2,),65,40,True)]
 for no,g,idx,active,reach,damage,fall in NORMALS:action(no,g,idx,3 if no!=211 else 4,active,reach,low=no in [400,410,420])
 # Nine simple directional specials, RB guard, RT rush. All are physical collisions.
-MOVES=[('Desgarro','a','F',1000,500,200,list(range(7)),[3,5],(38,46),80,False),
-('CuatroBrazos','a','B',1010,750,230,list(range(8)),[3,5,7],(28,28,48),85,False),
-('Ascenso','a','D',1020,500,240,list(range(6)),[3],(78,),80,True),
-('Estocada','b','F',1030,750,220,list(range(7,17)),[3,5],(40,60),150,False),
-('Barrido','b','B',1040,500,250,list(range(1,8)),[4],(76,),82,True),
-('Guillotina','b','D',1050,1000,620,list(range(6)),[3],(110,),90,True),
-('Embestida','c','F',1060,1000,200,list(range(7)),[3,5],(50,65),90,True),
-('Carniceria','c','B',1070,1500,230,list(range(17)),[3,5,7,9,12],(24,24,28,28,76),90,True),
-('Rasante','c','D',1080,500,250,list(range(8)),[5],(72,),80,True),
-('Asalto','z','N',1100,1500,220,list(range(17)),[3,5,7,9,12],(24,24,28,28,76),145,True)]
+MOVES=[('Desgarro','a','F',1000,250,200,list(range(7)),[3,5],(48, 58),80,False),
+('CuatroBrazos','a','B',1010,350,230,list(range(8)),[3,5,7],(36, 36, 60),85,False),
+('Ascenso','a','D',1020,250,240,list(range(6)),[3],(98,),80,True),
+('Estocada','b','F',1030,350,220,list(range(7,17)),[3,5],(50, 76),150,False),
+('Barrido','b','B',1040,250,250,list(range(1,8)),[4],(96,),82,True),
+('Guillotina','b','D',1050,500,620,list(range(6)),[3],(145,),90,True),
+('Embestida','c','F',1060,500,200,list(range(7)),[3,5],(65, 80),90,True),
+('Carniceria','c','B',1070,750,230,list(range(17)),[3,5,7,9,12],(30, 30, 34, 34, 90),90,True),
+('Rasante','c','D',1080,250,250,list(range(8)),[5],(92,),80,True),
+('Asalto','z','N',1100,750,220,list(range(17)),[3,5,7,9,12],(32, 32, 36, 36, 100),145,True)]
 for name,b,d,no,cost,g,idx,hits,damages,reach,fall in MOVES:action(no,g,idx,4,tuple(range(2,max(hits)+2)),reach,low=no in [1040,1080])
 action(1400,10,[2,3,4,5],6,loop=True);air[-1]=air[-1].replace('Loopstart','Clsn1Default: 1\n Clsn1[0] = -25,-80,55,4\nLoopstart');action(1401,210,list(range(6)),4,(2,3,4),95)
 action(500,0,list(range(6)),4,loop=True)
@@ -162,21 +162,21 @@ cmd+='[Statedef -1]\n\n'
 def change(label,no,conditions):return f'[State -1, {label}]\ntype = ChangeState\nvalue = {no}\n'+conditions+'\n'
 # Lightweight CPU decisions use the same states/costs as human input.
 for label,no,extra in [
- ('AI counter',1400,'triggerall = Power >= 500\ntriggerall = P2Dist X < 75\ntriggerall = P2MoveType = A\ntriggerall = Random < AILevel*3\n'),
- ('AI ultimate',3000,'triggerall = Power >= 3000\ntriggerall = P2Dist X < 160\ntriggerall = Random < AILevel*2\n'),
- ('AI reach',1030,'triggerall = Power >= 750\ntriggerall = P2Dist X = [55,75]\ntriggerall = Random < AILevel*5\n'),
- ('AI close',200,'triggerall = P2Dist X < 55\ntriggerall = Random < 160+AILevel*30\n'),
+ ('AI counter',1400,'triggerall = Power >= 250\ntriggerall = P2Dist X < 75\ntriggerall = P2MoveType = A\ntriggerall = Random < AILevel*3\n'),
+ ('AI ultimate',3000,'triggerall = Power >= 2000\ntriggerall = P2Dist X < 160\ntriggerall = Random < AILevel*2\n'),
+ ('AI reach',1030,'triggerall = Power >= 350\ntriggerall = P2Dist X = [55,75]\ntriggerall = Random < AILevel*5\n'),
+ ('AI close','IfElse(Random < 333,200,IfElse(Random < 500,210,220))','triggerall = P2Dist X < 55\ntriggerall = Random < 160+AILevel*30\n'),
  ('AI approach',100,'triggerall = P2Dist X > 55\ntriggerall = Random < 60+AILevel*10\n')]:
  cmd+=change(label,no,'triggerall = AILevel > 0\ntriggerall = StateType != A\n'+extra+'trigger1 = Ctrl\n')
 cmd+=change('AI air cut',600,'triggerall = AILevel > 0\ntriggerall = StateType = A\ntriggerall = P2Dist X < 90\ntriggerall = Random < 180\ntrigger1 = Ctrl\n')
-cmd+=change('Xbox A Ultimate',3000,'triggerall = command = "x"\ntriggerall = Power >= 3000\ntriggerall = StateType != A\ntrigger1 = Ctrl\ntrigger2 = StateNo = 100\n')
+cmd+=change('Xbox A Ultimate',3000,'triggerall = command = "x"\ntriggerall = Power >= 2000\ntriggerall = StateType != A\ntrigger1 = Ctrl\ntrigger2 = StateNo = 100\n')
 for name,b,d,no,cost,*_ in MOVES:
     conditions=f'triggerall = command = "{name}"\ntriggerall = Power >= {cost}\ntriggerall = StateType != A\n'
     if d=='D':conditions+='triggerall = command != "holdfwd"\ntriggerall = command != "holdback"\n'
     conditions+='trigger1 = Ctrl\ntrigger2 = StateNo = 100\n'
     for j,state in enumerate([200,201,202,210,211,220,221],3):conditions+=f'trigger{j} = StateNo = {state}\ntrigger{j} = MoveHit\n'
     cmd+=change(name,no,conditions)
-cmd+=change('RB Chainsaw guard',1400,'triggerall = command = "y"\ntriggerall = Power >= 500\ntriggerall = StateType != A\ntrigger1 = Ctrl\n')
+cmd+=change('RB Chainsaw guard',1400,'triggerall = command = "y"\ntriggerall = Power >= 250\ntriggerall = StateType != A\ntrigger1 = Ctrl\n')
 cmd+=change('LB Rev motor',500,'triggerall = command = "holdcharge"\ntriggerall = Power < 3000\ntriggerall = StateType != A\ntrigger1 = Ctrl\n')
 for label,no in [('FF',100),('BB',105)]:cmd+=change(label,no,f'triggerall = command = "{label}"\ntriggerall = StateType = S\ntrigger1 = Ctrl\n')
 # Input buffering during hitpause requires a NEW press after entering a normal.
@@ -187,10 +187,10 @@ for b,no in [('a',400),('b',410),('c',420)]:cmd+=change('Crouch '+b,no,f'trigger
 for b,no in [('a',600),('b',610),('c',620)]:cmd+=change('Air '+b,no,f'triggerall = command = "{b}"\ntriggerall = StateType = A\ntrigger1 = Ctrl\n')
 (CHAR/'PochitaTrueForm.cmd').write_text(cmd.rstrip()+'\n')
 cns='''[Data]
-life = 1100
+life = 1250
 power = 3000
 attack = 100
-defence = 100
+defence = 110
 fall.defence_up = 50
 liedown.time = 55
 airjuggle = 12
@@ -277,7 +277,7 @@ air.velocity = {-3.2 if last else -.6},{vy if vy is not None else -5 if last els
 fall = {int(fall and last)}
 fall.recover = 1
 fall.recovertime = 28
-getpower = {0 if no>=1000 else 30},10
+getpower = {0 if no>=1000 else 40},10
 givepower = 15,5
 envshake.time = {5 if last else 2}
 envshake.ampl = {-2 if last else -1}
@@ -319,7 +319,7 @@ volume = -160
 [State 500, Power]
 type = PowerAdd
 trigger1 = 1
-value = 12
+value = 18
 [State 500, Stop]
 type = ChangeState
 trigger1 = command != "holdcharge"
@@ -334,7 +334,7 @@ physics = S
 anim = 1400
 ctrl = 0
 velset = 0,0
-poweradd = -500
+poweradd = -250
 [State 1400, Guard motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -361,7 +361,7 @@ anim = 1401
 ctrl = 0
 velset = 0,0
 '''
-cns+=hitdef(1401,2,90,True)
+cns+=hitdef(1401,2,115,True)
 cns+='''[State 1401, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -390,7 +390,7 @@ physics = N
 anim = 3000
 ctrl = 0
 velset = 0,0
-poweradd = -3000
+poweradd = -2000
 [State 3000, Tell]
 type = PlaySnd
 trigger1 = Time = 0
@@ -530,3 +530,6 @@ intro.storyboard =
 ending.storyboard =
 ''')
 print('Built geometry-aware AIR, Xbox commands and finite Pochita combat states')
+
+from build_pochita_climaxes import apply_climax_runtime
+apply_climax_runtime(CHAR)

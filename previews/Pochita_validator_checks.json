@@ -1,4 +1,12 @@
 {
   "delivered_character_valid": true,
-  "invisible_attack_extension_rejected": true
+  "invisible_attack_extension_rejected": true,
+  "reproducible_build": true,
+  "runtime_sha256": {
+    "PochitaTrueForm.sff": "50efe074fe1ccfc984b316ef8b07a5723ccf520781e97faf2dbf9077c67fe9d1",
+    "PochitaTrueForm.snd": "c6b66c662dedbd0b78cb4a59c7cef57ad788ea1e9a95167dc086d970578b33d1",
+    "PochitaTrueForm.air": "9d8c4f9baa360d20f8276869013e0aab67eb61b6a3417c09dae58f98b703d057",
+    "PochitaTrueForm.cmd": "82b35e286f2a8d3fcbae619f88fbf192a8e930179c598e35c82d530f8985dd8a",
+    "PochitaTrueForm.cns": "06af8fd84b03be2a8df796f1b797a3575324f59df75511033139d52c79342a1f"
+  }
 }

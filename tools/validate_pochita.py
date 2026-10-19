@@ -6,6 +6,8 @@ import validate_character as shared
 
 CHAR=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path(__file__).resolve().parents[1]/'PochitaTrueForm'
 check=shared.check;field=shared.field;integer=shared.integer
+# Target(id), trigger is a native MUGEN player redirect, not an Ikemen function.
+shared.MUGEN11_CALLS.add('target')
 stem='PochitaTrueForm';files=[stem+x for x in ['.def','.sff','.snd','.air','.cmd','.cns']]+['common1.cns']
 for name in files:check((CHAR/name).is_file(),f'Missing {name}')
 if shared.errors:raise SystemExit('\n'.join(shared.errors))
@@ -14,8 +16,8 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
  check(m is not None,f'DEF missing {key}')
  if m:check((CHAR/m[1].strip()).is_file(),f'DEF missing target for {key}')
 sprites=shared.parse_sff(CHAR/(stem+'.sff'));sounds=shared.parse_snd(CHAR/(stem+'.snd'))
-check(len(sprites)==129,'Expected 127 body sprite entries and two standard portraits')
-check(len(sounds)==7,'Expected seven nonverbal effects')
+check(len(sprites)==149,'Expected 135 body entries, 12 effects and two portraits')
+check(len(sounds)==10,'Expected ten nonverbal effects')
 raw=(CHAR/(stem+'.sff')).read_bytes();sh,count,ph,pcount,ld,*_=struct.unpack_from('<IIIIIIII',raw,36);geometry={}
 palettes=[]
 for i in range(pcount):
@@ -59,10 +61,10 @@ for name in [stem+'.cns','common1.cns',stem+'.cmd']:
 usedcommands=set()
 for name,header,body in sections:
  typ=(field(body,'type') or '').lower();n=integer(field(body,'anim'))
- if n is not None:check(n in actions,f'{name} {header}: missing animation {n}')
+ if n is not None and n>=0:check(n in actions,f'{name} {header}: missing animation {n}')
  if typ in ['changeanim','changeanim2'] and typ!='changeanim2':
   n=integer(field(body,'value'))
-  if n is not None:check(n in actions,f'{name} {header}: missing animation {n}')
+  if n is not None and n>=0:check(n in actions,f'{name} {header}: missing animation {n}')
  for key in (['value'] if typ in ['changestate','selfstate','targetstate'] else ['p1stateno','p2stateno'] if typ in ['hitdef','reversaldef'] else []):
   n=integer(field(body,key))
   if n is not None and n>=0:check(n in states,f'{name} {header}: missing state {n}')

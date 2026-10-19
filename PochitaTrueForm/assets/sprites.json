@@ -2822,5 +2822,441 @@
         977
       ]
     }
+  ],
+  "ultimate": [
+    {
+      "group": 3100,
+      "number": 0,
+      "file": "assets/sprites/ultimate/0.png",
+      "size": [
+        110,
+        76
+      ],
+      "axis": [
+        55,
+        74
+      ],
+      "attack_extent": 52,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 0,
+      "source_box": [
+        22,
+        49,
+        499,
+        372
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 1,
+      "file": "assets/sprites/ultimate/1.png",
+      "size": [
+        100,
+        61
+      ],
+      "axis": [
+        50,
+        59
+      ],
+      "attack_extent": 47,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 1,
+      "source_box": [
+        569,
+        118,
+        999,
+        372
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 2,
+      "file": "assets/sprites/ultimate/2.png",
+      "size": [
+        105,
+        74
+      ],
+      "axis": [
+        44,
+        72
+      ],
+      "attack_extent": 58,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 2,
+      "source_box": [
+        1013,
+        60,
+        1466,
+        372
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 3,
+      "file": "assets/sprites/ultimate/3.png",
+      "size": [
+        113,
+        71
+      ],
+      "axis": [
+        47,
+        69
+      ],
+      "attack_extent": 63,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 3,
+      "source_box": [
+        1477,
+        73,
+        1966,
+        372
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 4,
+      "file": "assets/sprites/ultimate/4.png",
+      "size": [
+        126,
+        77
+      ],
+      "axis": [
+        57,
+        75
+      ],
+      "attack_extent": 66,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 4,
+      "source_box": [
+        20,
+        420,
+        566,
+        746
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 5,
+      "file": "assets/sprites/ultimate/5.png",
+      "size": [
+        105,
+        77
+      ],
+      "axis": [
+        46,
+        75
+      ],
+      "attack_extent": 56,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 5,
+      "source_box": [
+        569,
+        414,
+        1022,
+        743
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 6,
+      "file": "assets/sprites/ultimate/6.png",
+      "size": [
+        98,
+        71
+      ],
+      "axis": [
+        51,
+        69
+      ],
+      "attack_extent": 44,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 6,
+      "source_box": [
+        1031,
+        442,
+        1453,
+        744
+      ]
+    },
+    {
+      "group": 3100,
+      "number": 7,
+      "file": "assets/sprites/ultimate/7.png",
+      "size": [
+        96,
+        70
+      ],
+      "axis": [
+        47,
+        68
+      ],
+      "attack_extent": 46,
+      "source_sheet": "ultimate_poses",
+      "source_cell": 7,
+      "source_box": [
+        1506,
+        449,
+        1919,
+        743
+      ]
+    }
+  ],
+  "slash_fx": [
+    {
+      "group": 9200,
+      "number": 0,
+      "file": "assets/sprites/slash_fx/0.png",
+      "size": [
+        160,
+        104
+      ],
+      "axis": [
+        80,
+        52
+      ],
+      "source_sheet": "effects",
+      "source_cell": 0,
+      "source_box": [
+        0,
+        0,
+        364,
+        329
+      ]
+    },
+    {
+      "group": 9200,
+      "number": 1,
+      "file": "assets/sprites/slash_fx/1.png",
+      "size": [
+        160,
+        104
+      ],
+      "axis": [
+        80,
+        52
+      ],
+      "source_sheet": "effects",
+      "source_cell": 1,
+      "source_box": [
+        364,
+        0,
+        882,
+        329
+      ]
+    },
+    {
+      "group": 9200,
+      "number": 2,
+      "file": "assets/sprites/slash_fx/2.png",
+      "size": [
+        160,
+        104
+      ],
+      "axis": [
+        80,
+        52
+      ],
+      "source_sheet": "effects",
+      "source_cell": 2,
+      "source_box": [
+        882,
+        0,
+        1362,
+        329
+      ]
+    },
+    {
+      "group": 9200,
+      "number": 3,
+      "file": "assets/sprites/slash_fx/3.png",
+      "size": [
+        160,
+        104
+      ],
+      "axis": [
+        80,
+        52
+      ],
+      "source_sheet": "effects",
+      "source_cell": 3,
+      "source_box": [
+        1362,
+        0,
+        1774,
+        329
+      ]
+    }
+  ],
+  "blood_fx": [
+    {
+      "group": 9201,
+      "number": 0,
+      "file": "assets/sprites/blood_fx/0.png",
+      "size": [
+        160,
+        100
+      ],
+      "axis": [
+        48,
+        50
+      ],
+      "source_sheet": "effects",
+      "source_cell": 4,
+      "source_box": [
+        0,
+        329,
+        364,
+        642
+      ]
+    },
+    {
+      "group": 9201,
+      "number": 1,
+      "file": "assets/sprites/blood_fx/1.png",
+      "size": [
+        160,
+        100
+      ],
+      "axis": [
+        48,
+        50
+      ],
+      "source_sheet": "effects",
+      "source_cell": 5,
+      "source_box": [
+        364,
+        329,
+        882,
+        642
+      ]
+    },
+    {
+      "group": 9201,
+      "number": 2,
+      "file": "assets/sprites/blood_fx/2.png",
+      "size": [
+        160,
+        100
+      ],
+      "axis": [
+        48,
+        50
+      ],
+      "source_sheet": "effects",
+      "source_cell": 6,
+      "source_box": [
+        882,
+        329,
+        1362,
+        642
+      ]
+    },
+    {
+      "group": 9201,
+      "number": 3,
+      "file": "assets/sprites/blood_fx/3.png",
+      "size": [
+        160,
+        100
+      ],
+      "axis": [
+        48,
+        50
+      ],
+      "source_sheet": "effects",
+      "source_cell": 7,
+      "source_box": [
+        1362,
+        329,
+        1774,
+        642
+      ]
+    }
+  ],
+  "ground_fx": [
+    {
+      "group": 9202,
+      "number": 0,
+      "file": "assets/sprites/ground_fx/0.png",
+      "size": [
+        160,
+        70
+      ],
+      "axis": [
+        80,
+        64
+      ],
+      "source_sheet": "effects",
+      "source_cell": 8,
+      "source_box": [
+        0,
+        642,
+        364,
+        887
+      ]
+    },
+    {
+      "group": 9202,
+      "number": 1,
+      "file": "assets/sprites/ground_fx/1.png",
+      "size": [
+        160,
+        70
+      ],
+      "axis": [
+        80,
+        64
+      ],
+      "source_sheet": "effects",
+      "source_cell": 9,
+      "source_box": [
+        364,
+        642,
+        882,
+        887
+      ]
+    },
+    {
+      "group": 9202,
+      "number": 2,
+      "file": "assets/sprites/ground_fx/2.png",
+      "size": [
+        160,
+        70
+      ],
+      "axis": [
+        80,
+        64
+      ],
+      "source_sheet": "effects",
+      "source_cell": 10,
+      "source_box": [
+        882,
+        642,
+        1362,
+        887
+      ]
+    },
+    {
+      "group": 9202,
+      "number": 3,
+      "file": "assets/sprites/ground_fx/3.png",
+      "size": [
+        160,
+        70
+      ],
+      "axis": [
+        80,
+        64
+      ],
+      "source_sheet": "effects",
+      "source_cell": 11,
+      "source_box": [
+        1362,
+        642,
+        1774,
+        887
+      ]
+    }
   ]
 }

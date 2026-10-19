@@ -1,21 +1,36 @@
-# Pochita True Form — rediseño visual para MUGEN 1.1
+# Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta del ZIP `PochitaTrueForm_REDISENO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_REMATES.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
-Esta revisión usa el modelo robusto de armadura negra, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja de las imágenes de referencia del usuario. El arte nuevo se generó con IA a partir de esa propuesta visual. Hay 118 poses fuente distintas, organizadas en 127 entradas de cuerpo del SFF y dos retratos estándar. Algunas poses se reutilizan para cerrar ciclos o compartir movimientos; no se presentan como 127 dibujos diferentes. Cada hoja se calibra con sus poses neutrales a una altura de 72 píxeles, sin estirar individualmente los cuadros. El reposo conserva seis cuadros propios y no recorre los ataques.
+## Cambios jugables
 
-Se renovaron reposo, caminar, carrera, agacharse, salto, ataques de suelo y aire, especiales, ultimate, daño y caída. Las rotaciones aéreas usan el torso como eje. Los alcances de los golpes se limitaron al extremo visible de las motosierras. Ascenso, Barrido y Rasante necesitan cercanía; pueden fallar desde lejos aunque gasten energía. La estocada tiene un avance corto para acompañar su alcance. El lanzamiento del tercer X mantiene al rival más cerca del encuadre.
+- X → X → X: tres cortes y lanzamiento del rival, 152 de daño en el muñeco de prueba.
+- Y → Y → Y: extensión, triturado multigolpe y empuje, 180 de daño.
+- B → B → B: giro, salto corto y corte contra el suelo, 205 de daño.
+- X → Y → B en el aire: cadena con derribo, 172 de daño.
+- Nueve especiales direccionales entre 250 y 750 de energía; RB cuesta 250 y RT 750. Cada barra equivale a 1000.
+- Vida 1250, defensa 110, carga con LB de 18 unidades por tick hasta 3000. Los combos normales generan energía al conectar.
 
-Se conservan los combos X/Y/B y la cadena aérea, nueve especiales direccionales, defensa con respuesta en RB, asalto en RT, carga en LB y ultimate con A. Los siete efectos de motosierras, cortes e impactos siguen en el SND; no se incluyen voces humanas de Denji. `CONTROLES_XBOX.md` contiene las entradas y sus costes.
+Las continuaciones requieren acertar y volver a pulsar el botón. Bloquear o estar fuera de alcance corta la cadena. Los especiales ofensivos pueden cancelar un normal de suelo confirmado. Los nombres de movimientos son descripciones de adaptaciones físicas, no nombres oficiales de técnicas del manga. No se implementa el borrado permanente de conceptos ni regeneración ilimitada.
 
-La ultimate cuesta 3000 y su embestida debe conectar. Bloquearla, saltarla o quedar fuera de alcance evita la secuencia. Al acertar, realiza seis cortes, causa 350 y libera al rival con un lanzamiento. Los movimientos son adaptaciones físicas de Pochita; sus nombres descriptivos no son nombres oficiales de nuevas técnicas del manga. No se implementa el borrado permanente de conceptos ni regeneración ilimitada.
+## Ultimate con A
 
-## Validación y límites
+**Consume 2000 al activarla, incluso si falla o la bloquean.** Con menos de dos barras no se ejecuta. La embestida debe conectar; bloquear, saltar o quedarse fuera de alcance evita la secuencia y su daño. Tiene preparación y recuperación vulnerables al fallar.
 
-Pasaron 84 escenarios de entradas y colisiones en Ikemen GO: comandos, atajos diagonales, combos, defensa, movimiento, saltos, carga y consumo, seis derribos con recuperación, ultimate acertada/bloqueada/esquivada/fuera de alcance y seis comprobaciones de que los cortes cortos fallan a distancia. Otra prueba ejercitó la CPU. El validador revisa SFF/SND, referencias, recuperación finita, funciones de MUGEN 1.1 y que las cajas ofensivas no sobrepasen las hojas visibles de los sprites empaquetados. Una prueba alteró una caja para confirmar que el validador rechaza el alcance invisible.
+Al acertar usa ocho poses nuevas: despliegue de los cuatro brazos, cortes cruzados, barrido y remate final. Cinco contactos sincronizan motosierras, arcos de corte, sangre, pausas de impacto y lanzamiento. La imagen del manga fue una referencia de acción y no se muestra en el ataque.
 
-Los GIF son capturas reales del motor y no tienen audio. Las entradas automáticas se aplicaron solo a copias de prueba, fuera de esta carpeta. No se ha ejecutado el binario exacto de Jump Force MUGEN V14 ni conectado el mando físico a este entorno. El escenario y las barras de las capturas son distintos de los de tu juego.
+El daño total se limita al menor entre **500 y el 50 % de la vida máxima del rival**, redondeado hacia abajo. Un rival con 1000 de vida recibe 500; uno con 500 recibe 250. La ultimate sola no mata desde la vida completa. Puede rematar a alguien previamente herido. La secuencia libera al rival y ambos vuelven a sus estados normales.
 
-El arte generado conserva variaciones pequeñas de detalle entre cuadros y necesita revisión artística si se busca la consistencia de una hoja dibujada manualmente cuadro por cuadro. Las pruebas de colisiones no certifican calidad artística. La IA es básica y el equilibrio contra todo el plantel requiere partidas locales.
+## Arte y audio
 
-Prueba local: caminar, agacharse y saltar; X tres veces al conectar; salto X→Y→B; los nueve especiales; RB ante un golpe; RT; cargar LB; A acertada, bloqueada y desde lejos. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global del mando antes de modificar el CMD.
+Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 149 entradas: 135 de cuerpo (126 poses fuente distintas), 12 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
+
+Hay diez sonidos no verbales: siete muestras seleccionadas del DENJI suministrado y tres mezclas adicionales de motores, cortes e impactos. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
+
+## Comprobaciones y prueba local
+
+Pasaron 119 escenarios de entradas y colisiones en Ikemen GO, una prueba de CPU y dos pruebas de ultimate contra un rival de solo 500 de vida. Se comprueban los costes exactos, presupuesto mínimo, cadenas X/Y/B, bloqueos y fallos, nueve especiales, atajos diagonales, defensa, movimiento, salto, carga, seis derribos con recuperación y ultimate acertada, bloqueada, saltada y fuera de alcance en ambas orientaciones. Los efectos aparecen al acertar y expiran; la sangre no aparece al bloquear. El validador revisa SFF/SND, referencias, funciones de MUGEN 1.1, recuperación finita y alcance visible; una regresión confirma que rechaza una caja ofensiva exagerada.
+
+Los GIF y fotogramas proceden del motor real. El audio de los MP4 se monta con las muestras del personaje y los tiempos registrados de sus eventos; no es una grabación de la salida de audio del motor. Las entradas automáticas se aplican solo a copias de prueba. No se ha ejecutado el binario exacto de Jump Force MUGEN V14 ni conectado el mando físico a este entorno. El equilibrio contra todo el plantel requiere partidas locales.
+
+Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces al conectar; cadena aérea; especiales; RB ante un golpe; RT; cargar con LB. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.

@@ -61,5 +61,50 @@
     "source_number": 0,
     "source_sha256": "e5c2ae8220827d443d5f7e624513151ffd43e042b9db116b0bff24be0d3b0827",
     "duration": 0.1806
+  },
+  {
+    "group": 1,
+    "number": 7,
+    "filename": "motor_grind_finish.wav",
+    "type": "original nonverbal sound mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.74,
+    "sha256": "ee9859c658cd38d8e8afc917cb53ea4a7a8b4dbb2db72848523ea4416591579f",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 8,
+    "filename": "cross_saw_cut.wav",
+    "type": "original nonverbal sound mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.5,
+    "sha256": "9a1d582f2a1a9b8ef4d9e7c94cc8078e7afffc1a61624e9dcf79292f753ae5f7",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 9,
+    "filename": "heavy_saw_cleave.wav",
+    "type": "original nonverbal sound mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.92,
+    "sha256": "305aa9b338da2b73788ee22e7067c134f7e6bb10d0c3cf9cd61bbc154cad94af",
+    "voice": false
   }
 ]

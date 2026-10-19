@@ -200,7 +200,7 @@ type = ChangeState
 value = 1400
 triggerall = AILevel > 0
 triggerall = StateType != A
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = P2Dist X < 75
 triggerall = P2MoveType = A
 triggerall = Random < AILevel*3
@@ -211,7 +211,7 @@ type = ChangeState
 value = 3000
 triggerall = AILevel > 0
 triggerall = StateType != A
-triggerall = Power >= 3000
+triggerall = Power >= 2000
 triggerall = P2Dist X < 160
 triggerall = Random < AILevel*2
 trigger1 = Ctrl
@@ -221,14 +221,14 @@ type = ChangeState
 value = 1030
 triggerall = AILevel > 0
 triggerall = StateType != A
-triggerall = Power >= 750
+triggerall = Power >= 350
 triggerall = P2Dist X = [55,75]
 triggerall = Random < AILevel*5
 trigger1 = Ctrl
 
 [State -1, AI close]
 type = ChangeState
-value = 200
+value = IfElse(Random < 333,200,IfElse(Random < 500,210,220))
 triggerall = AILevel > 0
 triggerall = StateType != A
 triggerall = P2Dist X < 55
@@ -257,7 +257,7 @@ trigger1 = Ctrl
 type = ChangeState
 value = 3000
 triggerall = command = "x"
-triggerall = Power >= 3000
+triggerall = Power >= 2000
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -266,7 +266,7 @@ trigger2 = StateNo = 100
 type = ChangeState
 value = 1000
 triggerall = command = "Desgarro"
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -289,7 +289,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1010
 triggerall = command = "CuatroBrazos"
-triggerall = Power >= 750
+triggerall = Power >= 350
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -312,7 +312,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1020
 triggerall = command = "Ascenso"
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = StateType != A
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
@@ -337,7 +337,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1030
 triggerall = command = "Estocada"
-triggerall = Power >= 750
+triggerall = Power >= 350
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -360,7 +360,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1040
 triggerall = command = "Barrido"
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -383,7 +383,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1050
 triggerall = command = "Guillotina"
-triggerall = Power >= 1000
+triggerall = Power >= 500
 triggerall = StateType != A
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
@@ -408,7 +408,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1060
 triggerall = command = "Embestida"
-triggerall = Power >= 1000
+triggerall = Power >= 500
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -431,7 +431,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1070
 triggerall = command = "Carniceria"
-triggerall = Power >= 1500
+triggerall = Power >= 750
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -454,7 +454,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1080
 triggerall = command = "Rasante"
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = StateType != A
 triggerall = command != "holdfwd"
 triggerall = command != "holdback"
@@ -479,7 +479,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1100
 triggerall = command = "Asalto"
-triggerall = Power >= 1500
+triggerall = Power >= 750
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
@@ -502,7 +502,7 @@ trigger9 = MoveHit
 type = ChangeState
 value = 1400
 triggerall = command = "y"
-triggerall = Power >= 500
+triggerall = Power >= 250
 triggerall = StateType != A
 trigger1 = Ctrl
 
@@ -577,6 +577,24 @@ ignorehitpause = 1
 type = ChangeState
 value = 620
 triggerall = StateNo = 610
+triggerall = MoveHit
+triggerall = Time > 0
+trigger1 = Var(25) = 1
+ignorehitpause = 1
+
+[State -1, Hit confirmed 211 to 212]
+type = ChangeState
+value = 212
+triggerall = StateNo = 211
+triggerall = MoveHit
+triggerall = Time > 0
+trigger1 = Var(25) = 1
+ignorehitpause = 1
+
+[State -1, Hit confirmed 221 to 222]
+type = ChangeState
+value = 222
+triggerall = StateNo = 221
 triggerall = MoveHit
 triggerall = Time > 0
 trigger1 = Var(25) = 1

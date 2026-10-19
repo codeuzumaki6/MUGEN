@@ -1,8 +1,8 @@
 [Data]
-life = 1100
+life = 1250
 power = 3000
 attack = 100
-defence = 100
+defence = 110
 fall.defence_up = 50
 liedown.time = 55
 airjuggle = 12
@@ -131,7 +131,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
-damage = 30,2
+damage = 32,2
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -150,7 +150,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -198,7 +198,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, NA
-damage = 36,3
+damage = 40,3
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -217,7 +217,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -265,7 +265,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
-damage = 60,5
+damage = 80,6
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -284,7 +284,7 @@ air.velocity = -3.2,-6.0
 fall = 1
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -295,6 +295,72 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 202, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 202, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 202, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 202, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 202, Blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 14
+length = 6
+timegap = 1
+framegap = 2
+palcolor = 256
+palbright = 10,-20,-20
+palcontrast = 210,210,210
+palmul = .8,.8,.8
+trans = add
+
 [State 202, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -317,7 +383,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
-damage = 42,3
+damage = 48,4
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -336,7 +402,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -384,7 +450,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, NA
-damage = 62,5
+damage = 42,3
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -403,7 +469,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -414,6 +480,75 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 211, Reset press]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+ignorehitpause = 1
+[State 211, Buffer third press]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "b"
+trigger2 = AILevel > 0
+trigger2 = MoveHit
+v = 25
+value = 1
+ignorehitpause = 1
+
+[State 211, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 211, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 211, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 211, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 211, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -436,7 +571,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, NA
-damage = 48,4
+damage = 55,4
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -455,7 +590,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -503,7 +638,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, NA
-damage = 70,5
+damage = 45,3
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -516,13 +651,13 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 22
 ground.slidetime = 12
-ground.velocity = -3.2,-5
+ground.velocity = -3.2,0
 air.hittime = 24
 air.velocity = -3.2,-5
-fall = 1
+fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -533,6 +668,75 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 221, Reset press]
+type = VarSet
+trigger1 = Time = 0
+v = 25
+value = 0
+ignorehitpause = 1
+[State 221, Buffer third press]
+type = VarSet
+trigger1 = Time > 0
+trigger1 = command = "c"
+trigger2 = AILevel > 0
+trigger2 = MoveHit
+v = 25
+value = 1
+ignorehitpause = 1
+
+[State 221, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 221, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 221, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 221, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 221, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -554,7 +758,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = A, NA
-damage = 40,3
+damage = 50,4
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -573,7 +777,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -620,7 +824,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = A, NA
-damage = 44,3
+damage = 52,4
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -639,7 +843,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -686,7 +890,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 2
 attr = A, NA
-damage = 55,4
+damage = 70,5
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -705,7 +909,7 @@ air.velocity = -3.2,-5
 fall = 1
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -716,6 +920,72 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 620, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 620, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 620, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 620, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
+[State 620, Blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 14
+length = 6
+timegap = 1
+framegap = 2
+palcolor = 256
+palbright = 10,-20,-20
+palcontrast = 210,210,210
+palmul = .8,.8,.8
+trans = add
+
 [State 620, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -757,7 +1027,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -809,7 +1079,7 @@ air.velocity = -3.2,-5
 fall = 0
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -861,7 +1131,7 @@ air.velocity = -3.2,-5
 fall = 1
 fall.recover = 1
 fall.recovertime = 28
-getpower = 30,10
+getpower = 40,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
@@ -885,7 +1155,7 @@ physics = S
 anim = 1000
 ctrl = 0
 velset = 5.5,0
-poweradd = -500
+poweradd = -250
 [State 1000, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -899,7 +1169,7 @@ x = 0
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 38,3
+damage = 48,4
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -927,7 +1197,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 46,3
+damage = 58,4
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -964,7 +1234,7 @@ physics = S
 anim = 1010
 ctrl = 0
 velset = 1.2,0
-poweradd = -750
+poweradd = -350
 [State 1010, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -974,7 +1244,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 28,2
+damage = 36,3
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1002,7 +1272,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 28,2
+damage = 36,3
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1030,7 +1300,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 7
 attr = S, SA
-damage = 48,4
+damage = 60,5
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1067,7 +1337,7 @@ physics = S
 anim = 1020
 ctrl = 0
 velset = 0,0
-poweradd = -500
+poweradd = -250
 [State 1020, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1077,7 +1347,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 78,6
+damage = 98,8
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1101,6 +1371,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1020, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1020, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1020, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1020, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1020, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1119,7 +1442,7 @@ physics = S
 anim = 1030
 ctrl = 0
 velset = 3.5,0
-poweradd = -750
+poweradd = -350
 [State 1030, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1129,7 +1452,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 40,3
+damage = 50,4
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1157,7 +1480,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 60,5
+damage = 76,6
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1194,7 +1517,7 @@ physics = S
 anim = 1040
 ctrl = 0
 velset = 0,0
-poweradd = -500
+poweradd = -250
 [State 1040, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1204,7 +1527,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, SA
-damage = 76,6
+damage = 96,8
 animtype = Heavy
 guardflag = L
 hitflag = MAF
@@ -1228,6 +1551,78 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1040, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1040, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1040, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1040, Ground burst]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9202
+ID = 9402
+postype = p1
+pos = 40,-Pos Y
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1040, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1040, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1241,7 +1636,7 @@ physics = A
 anim = 1050
 ctrl = 0
 velset = 3.8,-5.4
-poweradd = -1000
+poweradd = -500
 [State 1050, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1251,7 +1646,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = A, SA
-damage = 110,9
+damage = 145,12
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1281,6 +1676,78 @@ trigger1 = Pos Y >= 0
 trigger1 = Vel Y > 0
 value = 52
 ctrl = 1
+[State 1050, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1050, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1050, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1050, Ground burst]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9202
+ID = 9402
+postype = p1
+pos = 40,-Pos Y
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1050, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1050, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1294,7 +1761,7 @@ physics = S
 anim = 1060
 ctrl = 0
 velset = 5.5,0
-poweradd = -1000
+poweradd = -500
 [State 1060, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1308,7 +1775,7 @@ x = 0
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 50,4
+damage = 65,5
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1336,7 +1803,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 65,5
+damage = 80,6
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1360,6 +1827,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1060, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1060, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1060, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1060, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1060, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1373,7 +1893,7 @@ physics = S
 anim = 1070
 ctrl = 0
 velset = 1.2,0
-poweradd = -1500
+poweradd = -750
 [State 1070, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1383,7 +1903,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 24,2
+damage = 30,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1411,7 +1931,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 24,2
+damage = 30,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1439,7 +1959,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 7
 attr = S, SA
-damage = 28,2
+damage = 34,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1467,7 +1987,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-damage = 28,2
+damage = 34,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1495,7 +2015,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 12
 attr = S, SA
-damage = 76,6
+damage = 90,7
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1519,6 +2039,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1070, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1070, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1070, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1070, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1070, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1532,7 +2105,7 @@ physics = S
 anim = 1080
 ctrl = 0
 velset = 0,0
-poweradd = -500
+poweradd = -250
 [State 1080, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1542,7 +2115,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 72,6
+damage = 92,7
 animtype = Heavy
 guardflag = L
 hitflag = MAF
@@ -1566,6 +2139,78 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1080, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1080, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1080, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1080, Ground burst]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9202
+ID = 9402
+postype = p1
+pos = 40,-Pos Y
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1080, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1080, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1579,7 +2224,7 @@ physics = S
 anim = 1100
 ctrl = 0
 velset = 5.5,0
-poweradd = -1500
+poweradd = -750
 [State 1100, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1593,7 +2238,7 @@ x = 0
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 24,2
+damage = 32,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1621,7 +2266,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 5
 attr = S, SA
-damage = 24,2
+damage = 32,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1649,7 +2294,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 7
 attr = S, SA
-damage = 28,2
+damage = 36,3
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1677,7 +2322,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
-damage = 28,2
+damage = 36,3
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1705,7 +2350,7 @@ envshake.ampl = -1
 type = HitDef
 trigger1 = AnimElem = 12
 attr = S, SA
-damage = 76,6
+damage = 100,8
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1728,6 +2373,59 @@ getpower = 0,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
+
+[State 1100, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1100, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1100, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1100, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
 
 [State 1100, End]
 type = ChangeState
@@ -1752,7 +2450,7 @@ volume = -160
 [State 500, Power]
 type = PowerAdd
 trigger1 = 1
-value = 12
+value = 18
 [State 500, Stop]
 type = ChangeState
 trigger1 = command != "holdcharge"
@@ -1767,7 +2465,7 @@ physics = S
 anim = 1400
 ctrl = 0
 velset = 0,0
-poweradd = -500
+poweradd = -250
 [State 1400, Guard motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1797,7 +2495,7 @@ velset = 0,0
 type = HitDef
 trigger1 = AnimElem = 2
 attr = S, SA
-damage = 90,7
+damage = 115,9
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1820,6 +2518,59 @@ getpower = 0,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
+
+[State 1401, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1401, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1401, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1401, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
 
 [State 1401, End]
 type = ChangeState
@@ -1849,7 +2600,7 @@ physics = N
 anim = 3000
 ctrl = 0
 velset = 0,0
-poweradd = -3000
+poweradd = -2000
 [State 3000, Tell]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1907,165 +2658,413 @@ physics = N
 anim = 3001
 ctrl = 0
 velset = 0,0
-[State 3001, Confirmed protection]
+[State 3001, Damage ceiling]
+type = VarSet
+trigger1 = Time = 0
+trigger1 = NumTarget(3000) > 0
+v = 28
+value = IfElse((Target(3000),LifeMax) > 1000,500,Floor((Target(3000),LifeMax)*.5))
+[State 3001, Damage applied]
+type = VarSet
+trigger1 = Time = 0
+v = 29
+value = 0
+[State 3001, Confirm freeze]
+type = SuperPause
+trigger1 = Time = 0
+time = 8
+movetime = 8
+anim = -1
+darken = 1
+[State 3001, Confirm protection]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
-[State 3001, Red scene]
+[State 3001, Scene shade]
 type = BGPalFX
 trigger1 = Time = 0
-time = 82
-mul = 140,70,70
-[State 3001, Bind close]
+time = 116
+mul = 100,70,75
+[State 3001, Victim position]
 type = TargetBind
-trigger1 = Time < 76
+trigger1 = Time < 100
+trigger1 = NumTarget(3000) > 0
 ID = 3000
-pos = 52,0
-[State 3001, Motor]
+pos = 64,0
+[State 3001, Motors]
 type = PlaySnd
-trigger1 = Time = 0
-trigger2 = Time = 24
-trigger3 = Time = 48
-value = S1,3
+trigger1 = Time = 8
+trigger2 = Time = 40
+trigger3 = Time = 72
+value = S1,7
 channel = 1
-[State 3001, Confirmed cut 10]
+[State 3001, Actual cut 30]
 type = TargetLifeAdd
-trigger1 = Time = 10
+trigger1 = Time = 30
 trigger1 = NumTarget(3000) > 0
 ID = 3000
-value = -35
+value = -(Floor(Var(28)*60/500.0))
 kill = 0
 absolute = 1
-[State 3001, Cut sound 10]
+[State 3001, Record damage 30]
+type = VarAdd
+trigger1 = Time = 30
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*60/500.0)
+[State 3001, Cut sound 30]
 type = PlaySnd
-trigger1 = Time = 10
-value = S1,5
+trigger1 = Time = 30
+trigger1 = NumTarget(3000) > 0
+value = S1,8
 channel = 2
-[State 3001, Cut shake 10]
+persistent = 0
+[State 3001, Impact shake 30]
 type = EnvShake
-trigger1 = Time = 10
-time = 3
-freq = 90
-ampl = -1
-[State 3001, Confirmed cut 22]
+trigger1 = Time = 30
+trigger1 = NumTarget(3000) > 0
+time = 4
+freq = 95
+ampl = -2
+[State 3001, Four saw trail 30]
+type = Explod
+trigger1 = Time = 30
+trigger1 = NumTarget(3000) > 0
+anim = 9200
+ID = 9400
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Blood cut 30]
+type = Explod
+trigger1 = Time = 30
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .9,.9
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Actual cut 42]
 type = TargetLifeAdd
-trigger1 = Time = 22
+trigger1 = Time = 42
 trigger1 = NumTarget(3000) > 0
 ID = 3000
-value = -35
+value = -(Floor(Var(28)*60/500.0))
 kill = 0
 absolute = 1
-[State 3001, Cut sound 22]
+[State 3001, Record damage 42]
+type = VarAdd
+trigger1 = Time = 42
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*60/500.0)
+[State 3001, Cut sound 42]
 type = PlaySnd
-trigger1 = Time = 22
-value = S1,5
+trigger1 = Time = 42
+trigger1 = NumTarget(3000) > 0
+value = S1,8
 channel = 2
-[State 3001, Cut shake 22]
+persistent = 0
+[State 3001, Impact shake 42]
 type = EnvShake
-trigger1 = Time = 22
-time = 3
-freq = 90
-ampl = -1
-[State 3001, Confirmed cut 34]
+trigger1 = Time = 42
+trigger1 = NumTarget(3000) > 0
+time = 4
+freq = 95
+ampl = -2
+[State 3001, Four saw trail 42]
+type = Explod
+trigger1 = Time = 42
+trigger1 = NumTarget(3000) > 0
+anim = 9200
+ID = 9400
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Blood cut 42]
+type = Explod
+trigger1 = Time = 42
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .9,.9
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Actual cut 54]
 type = TargetLifeAdd
-trigger1 = Time = 34
+trigger1 = Time = 54
 trigger1 = NumTarget(3000) > 0
 ID = 3000
-value = -40
+value = -(Floor(Var(28)*70/500.0))
 kill = 0
 absolute = 1
-[State 3001, Cut sound 34]
+[State 3001, Record damage 54]
+type = VarAdd
+trigger1 = Time = 54
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*70/500.0)
+[State 3001, Cut sound 54]
 type = PlaySnd
-trigger1 = Time = 34
-value = S1,5
+trigger1 = Time = 54
+trigger1 = NumTarget(3000) > 0
+value = S1,8
 channel = 2
-[State 3001, Cut shake 34]
+persistent = 0
+[State 3001, Impact shake 54]
 type = EnvShake
-trigger1 = Time = 34
-time = 3
-freq = 90
-ampl = -1
-[State 3001, Confirmed cut 46]
+trigger1 = Time = 54
+trigger1 = NumTarget(3000) > 0
+time = 4
+freq = 95
+ampl = -2
+[State 3001, Four saw trail 54]
+type = Explod
+trigger1 = Time = 54
+trigger1 = NumTarget(3000) > 0
+anim = 9200
+ID = 9400
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Blood cut 54]
+type = Explod
+trigger1 = Time = 54
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .9,.9
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Actual cut 66]
 type = TargetLifeAdd
-trigger1 = Time = 46
+trigger1 = Time = 66
 trigger1 = NumTarget(3000) > 0
 ID = 3000
-value = -40
+value = -(Floor(Var(28)*70/500.0))
 kill = 0
 absolute = 1
-[State 3001, Cut sound 46]
+[State 3001, Record damage 66]
+type = VarAdd
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*70/500.0)
+[State 3001, Cut sound 66]
 type = PlaySnd
-trigger1 = Time = 46
-value = S1,5
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+value = S1,8
 channel = 2
-[State 3001, Cut shake 46]
+persistent = 0
+[State 3001, Impact shake 66]
 type = EnvShake
-trigger1 = Time = 46
-time = 3
-freq = 90
-ampl = -1
-[State 3001, Confirmed cut 58]
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+time = 4
+freq = 95
+ampl = -2
+[State 3001, Four saw trail 66]
+type = Explod
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+anim = 9200
+ID = 9400
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Blood cut 66]
+type = Explod
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .9,.9
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Actual cut 92]
 type = TargetLifeAdd
-trigger1 = Time = 58
+trigger1 = Time = 92
 trigger1 = NumTarget(3000) > 0
 ID = 3000
-value = -50
-kill = 0
-absolute = 1
-[State 3001, Cut sound 58]
-type = PlaySnd
-trigger1 = Time = 58
-value = S1,5
-channel = 2
-[State 3001, Cut shake 58]
-type = EnvShake
-trigger1 = Time = 58
-time = 3
-freq = 90
-ampl = -1
-[State 3001, Confirmed cut 74]
-type = TargetLifeAdd
-trigger1 = Time = 74
-trigger1 = NumTarget(3000) > 0
-ID = 3000
-value = -150
+value = -(Var(28)-Var(29))
 kill = 1
 absolute = 1
-[State 3001, Cut sound 74]
+[State 3001, Record damage 92]
+type = VarAdd
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Var(28)-Var(29)
+[State 3001, Cut sound 92]
 type = PlaySnd
-trigger1 = Time = 74
-value = S1,5
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+value = S1,9
 channel = 2
-[State 3001, Cut shake 74]
+persistent = 0
+[State 3001, Impact shake 92]
 type = EnvShake
-trigger1 = Time = 74
-time = 9
-freq = 90
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+time = 10
+freq = 95
 ampl = -4
+[State 3001, Four saw trail 92]
+type = Explod
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+anim = 9200
+ID = 9400
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = 1.15,1.15
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Blood cut 92]
+type = Explod
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 64,-38
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = 1.2,1.2
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+persistent = 0
+[State 3001, Final flash]
+type = EnvColor
+trigger1 = Time = 92
+time = 2
+value = 255,235,220
+under = 0
+[State 3001, Finish emphasis]
+type = Pause
+trigger1 = Time = 92
+time = 6
+movetime = 6
 [State 3001, Release]
 type = TargetState
-trigger1 = Time = 78
+trigger1 = Time = 100
 ID = 3000
 value = 3011
 [State 3001, End]
 type = ChangeState
-trigger1 = Time >= 96
+trigger1 = Time >= 118
 value = 0
 ctrl = 1
+
 [Statedef 3010]
 type = S
 movetype = H
 physics = N
 ctrl = 0
 velset = 0,0
-[State 3010, Hurt]
+[State 3010, Own hurt]
 type = ChangeAnim
 trigger1 = Time = 0
 value = 5000
+[State 3010, Cut recoil]
+type = ChangeAnim
+trigger1 = Time = 25
+trigger2 = Time = 48
+trigger3 = Time = 72
+value = IfElse(SelfAnimExist(5001),5001,5000)
+[State 3010, Contact tint]
+type = PalFX
+trigger1 = Time = 20
+time = 70
+mul = 256,180,180
 [State 3010, Emergency release]
 type = SelfState
-trigger1 = Time >= 140
+trigger1 = Time >= 170
 trigger2 = NumEnemy > 0
 trigger2 = EnemyNear,StateNo != 3000
 trigger2 = EnemyNear,StateNo != 3001
@@ -2076,9 +3075,307 @@ type = A
 movetype = H
 physics = N
 ctrl = 0
-velset = -5,-6
+velset = -6,-4.5
 [State 3011, Fall]
 type = SelfState
 trigger1 = 1
 value = 5050
 ctrl = 0
+[Statedef 212]
+type = S
+movetype = A
+physics = S
+anim = 212
+ctrl = 0
+velset = 1.1,0
+[State 212, Motor grind]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,7
+channel = 1
+[State 212, Blade contact 3]
+type = HitDef
+trigger1 = AnimElem = 3
+attr = S, NA
+damage = 18,2
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = 1
+hitsound = S1,7
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 16
+ground.velocity = -0.4,0
+air.hittime = 28
+air.velocity = -0.4,-0.5
+fall = 0
+fall.yvelocity = 0
+fall.recover = 1
+fall.recovertime = 30
+getpower = 40,8
+givepower = 15,5
+envshake.time = 3
+envshake.ampl = -1
+[State 212, Blade contact 6]
+type = HitDef
+trigger1 = AnimElem = 6
+attr = S, NA
+damage = 18,2
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = 1
+hitsound = S1,7
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 16
+ground.velocity = -0.4,0
+air.hittime = 28
+air.velocity = -0.4,-0.5
+fall = 0
+fall.yvelocity = 0
+fall.recover = 1
+fall.recovertime = 30
+getpower = 40,8
+givepower = 15,5
+envshake.time = 3
+envshake.ampl = -1
+[State 212, Blade contact 9]
+type = HitDef
+trigger1 = AnimElem = 9
+attr = S, NA
+damage = 54,2
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 9,12
+sparkno = 1
+hitsound = S1,7
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 16
+ground.velocity = -5.8,-2
+air.hittime = 28
+air.velocity = -5.8,-2
+fall = 1
+fall.yvelocity = 0
+fall.recover = 1
+fall.recovertime = 30
+getpower = 40,8
+givepower = 15,5
+envshake.time = 8
+envshake.ampl = -4
+[State 212, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 212, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 212, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 212, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+[State 212, Blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 14
+length = 6
+timegap = 1
+framegap = 2
+palcolor = 256
+palbright = 10,-20,-20
+palcontrast = 210,210,210
+palmul = .8,.8,.8
+trans = add
+
+[State 212, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 222]
+type = A
+movetype = A
+physics = A
+anim = 222
+ctrl = 0
+velset = .8,-3.8
+[State 222, Cleave motor]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,8
+channel = 1
+[State 222, Blade contact 3]
+type = HitDef
+trigger1 = AnimElem = 3
+attr = A, NA
+damage = 105,2
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 9,12
+sparkno = 1
+hitsound = S1,9
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 16
+ground.velocity = -2,4
+air.hittime = 28
+air.velocity = -2,6
+fall = 1
+fall.yvelocity = 0
+fall.recover = 1
+fall.recovertime = 30
+getpower = 40,8
+givepower = 15,5
+envshake.time = 8
+envshake.ampl = -4
+[State 222, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 222, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .95,.95
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 222, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 222, Ground burst]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9202
+ID = 9402
+postype = p1
+pos = 40,-Pos Y
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .85,.85
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 222, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+[State 222, Land]
+type = ChangeState
+trigger1 = Pos Y >= 0
+trigger1 = Vel Y > 0
+value = 52
+ctrl = 0
+[State 222, Blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 14
+length = 6
+timegap = 1
+framegap = 2
+palcolor = 256
+palbright = 10,-20,-20
+palcontrast = 210,210,210
+palmul = .8,.8,.8
+trans = add
+
+[State 222, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
