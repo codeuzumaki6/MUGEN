@@ -218,7 +218,7 @@ trigger1 = Ctrl
 
 [State -1, AI reach]
 type = ChangeState
-value = 1030
+value = 11030
 triggerall = AILevel > 0
 triggerall = StateType != A
 triggerall = Power >= 350
@@ -264,7 +264,7 @@ trigger2 = StateNo = 100
 
 [State -1, Desgarro]
 type = ChangeState
-value = 1000
+value = 11000
 triggerall = command = "Desgarro"
 triggerall = Power >= 250
 triggerall = StateType != A
@@ -324,7 +324,7 @@ trigger18 = Var(32) < 2
 
 [State -1, CuatroBrazos]
 type = ChangeState
-value = 1010
+value = 11010
 triggerall = command = "CuatroBrazos"
 triggerall = Power >= 350
 triggerall = StateType != A
@@ -446,7 +446,7 @@ trigger18 = Var(32) < 2
 
 [State -1, Estocada]
 type = ChangeState
-value = 1030
+value = 11030
 triggerall = command = "Estocada"
 triggerall = Power >= 350
 triggerall = StateType != A
@@ -506,7 +506,7 @@ trigger18 = Var(32) < 2
 
 [State -1, Barrido]
 type = ChangeState
-value = 1040
+value = 11040
 triggerall = command = "Barrido"
 triggerall = Power >= 250
 triggerall = StateType != A
@@ -628,7 +628,7 @@ trigger18 = Var(32) < 2
 
 [State -1, Embestida]
 type = ChangeState
-value = 1060
+value = 11060
 triggerall = command = "Embestida"
 triggerall = Power >= 500
 triggerall = StateType != A
@@ -688,7 +688,7 @@ trigger18 = Var(32) < 2
 
 [State -1, Carniceria]
 type = ChangeState
-value = 1070
+value = 11070
 triggerall = command = "Carniceria"
 triggerall = Power >= 750
 triggerall = StateType != A

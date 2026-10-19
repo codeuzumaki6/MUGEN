@@ -539,3 +539,6 @@ from build_pochita_climaxes import apply_climax_runtime
 apply_climax_runtime(CHAR)
 from build_pochita_flow import apply_flow_runtime
 apply_flow_runtime(CHAR)
+
+from build_pochita_special_startup import apply_startup_runtime
+apply_startup_runtime(CHAR)

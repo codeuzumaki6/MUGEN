@@ -51,3 +51,9 @@ Los remates de X/Y/B tienen cortes visibles, sangre al acertar y respuestas dist
 Puedes mezclar los tres botones en las tres etapas: son 27 secuencias que comparten ataques, no 27 animaciones diferentes. La pulsación del siguiente golpe se guarda durante el ataque y se ejecuta al acertar. Si fallas o te bloquean, la ruta se corta. Un golpe independiente tras recuperar control puede iniciar otra cadena.
 
 Se permite **como máximo una segunda técnica especial en la misma secuencia**, siempre diferente de la actual, acertando y pagando su coste. Una tercera técnica se rechaza hasta recuperar control. Las continuaciones de especiales se ejecutan en suelo; Guillotina es un salto corto y no recibe nuevas cancelaciones mientras siga en el aire. La ulti conserva su entrada A y no se encadena automáticamente desde los normales.
+
+## Sonido y destello de los seis especiales
+
+Abajo adelante/atrás + X/Y/B inicia una preparación breve, destello rojo y sonido de activación; después sale la técnica. Se mantiene el mismo mapeo Xbox. Mirando a la derecha, abajo adelante es abajo → derecha y abajo atrás es abajo → izquierda; al cambiar de lado se invierten.
+
+La señal debe escucharse aunque el ataque falle o sea bloqueado, siempre que haya energía suficiente. Usa un canal separado de la motosierra. No debe sonar al pulsar un normal ni al intentar el especial sin su energía mínima. La preparación paga el coste una sola vez: 250/350 para X, 350/250 para Y y 500/750 para B (adelante/atrás, respectivamente).

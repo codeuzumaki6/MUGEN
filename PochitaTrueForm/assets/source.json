@@ -10,7 +10,11 @@
     "file": "design/Pochita_combate/movilidad_y_remate.png",
     "sha256": "4b1530197415c4bc9f4a1fdd6810ce53542a5695614980af2575fa8b0f9deb18"
   },
-  "effect_sprite_entries": 12,
+  "startup_source": {
+    "file": "design/Pochita_especiales/activation_fx.png",
+    "sha256": "a61024a3254d9805d5475b0dd7209d89d12846f92210fdfa987cf9a85c374338"
+  },
+  "effect_sprite_entries": 20,
   "manga_panel_embedded": false,
   "unique_source_poses": 138,
   "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",

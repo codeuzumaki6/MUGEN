@@ -1,19 +1,19 @@
 {
-  "archive": "PochitaTrueForm_JUGABILIDAD.zip",
+  "archive": "PochitaTrueForm_ESPECIALES_CON_SONIDO.zip",
   "alias": "PochitaTrueForm.zip",
-  "bytes": 799095,
-  "sha256": "59e59cc69e6cafc6e44488a87c4b33d70635244b59607db9f5af1bc567ac63e7",
+  "bytes": 864141,
+  "sha256": "3b7fbc7723e83d42da8c528037a524a0284c9bf82baf03fed44894553d1ee455",
   "files": {
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
-    "PochitaTrueForm.sff": "7e4e953400da94a71664905b63775bdc509f1b0fadf0fd8d856a333993b9ee49",
-    "PochitaTrueForm.snd": "c6b66c662dedbd0b78cb4a59c7cef57ad788ea1e9a95167dc086d970578b33d1",
-    "PochitaTrueForm.air": "800dba8f9242204853304077c7a8832e0dfd94b7b9457a55a6d559110aebf24d",
-    "PochitaTrueForm.cmd": "37cdd540c8f3f2befa05f7290587078631a4bb5fb95af8c92a9d5db8c3049e77",
-    "PochitaTrueForm.cns": "b3e7023535114bae3ea01d2e62b3da8d6f5d2f4aa76d87838612769a90bc9aba",
+    "PochitaTrueForm.sff": "e5182a9dadef09c86d50bf42a8c53b39d098e937c1c19804d290705f603f84e0",
+    "PochitaTrueForm.snd": "04ae806e3ce20f016ed059be8e04c41e6017e4565aff28f5a58c8d3ec839a5a7",
+    "PochitaTrueForm.air": "ca7b283cd4da5f116cc716651f18e0009171f594c09b19920ea2542973cc8cd7",
+    "PochitaTrueForm.cmd": "5883bf97eee277679512b4bc66d84a617a8d6abf289a82c943b0f0de0f90ca2c",
+    "PochitaTrueForm.cns": "b4e26f725e2094e112509a2ef31414d8bedf3006bfb256b064d7965ca898e16f",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "63bb447250652f958a19dcb760d88c8f04b87264eca0835cb97b07e12274f51b",
-    "CONTROLES_XBOX.md": "4d0f9749394fcf118799dc5f5c38c50d6babc24064e9414fce6d8805c3210fff",
-    "CREDITOS_Y_FUENTES.md": "9e18db4ce00bd334eddd496d4c0e1cb9c1e5a1984619c73b6b929e47716759cf"
+    "LEEME.md": "3184ac84ed69b9a35b52cef4144a54a343a1fe4baf17f7e43a797e0f6fdb5617",
+    "CONTROLES_XBOX.md": "705f59feca3f770f6630f92f6aeccb7e5334647dadd13ba9d3895ef74370d820",
+    "CREDITOS_Y_FUENTES.md": "d4ec8a68f21f4abc3809e4b85fb684a53104e9e53ececa7378016df864f28a67"
   },
-  "validation": "181 Ikemen raw-input/collision scenarios, CPU, two low-LifeMax ultimate scenarios; six MUGEN structure regressions rejected. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
+  "validation": "205 Ikemen raw-input/collision scenarios, CPU, two low-LifeMax ultimate scenarios; six MUGEN structure regressions; six actual SDL audio/video recordings with activation SE detected. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
 }

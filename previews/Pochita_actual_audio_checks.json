@@ -1,0 +1,80 @@
+[
+  {
+    "case": "Desgarro",
+    "frames": 50,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "f9e0a51e333b5ec7b75c8b3215c9c7eb45c25893a485f1b2286d73908422cf78",
+    "activation_match_seconds": 4.783310657596372,
+    "activation_correlation": 0.4848905013541724,
+    "alignment_start_seconds": 4.516643990929706,
+    "duration": 3.65,
+    "peak": 0.6494140625,
+    "rms": 0.08055598839275079
+  },
+  {
+    "case": "Cuatro brazos",
+    "frames": 49,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "0f9ac5757b40d22d117995491955f87d4ca4355fe3e980280e94e1b6f9e42c4c",
+    "activation_match_seconds": 4.876190476190477,
+    "activation_correlation": 0.5124971476110716,
+    "alignment_start_seconds": 4.60952380952381,
+    "duration": 3.6666666666666665,
+    "peak": 0.6309814453125,
+    "rms": 0.0793371673848369
+  },
+  {
+    "case": "Estocada",
+    "frames": 50,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "1bcc510722284c82e12bc21d5864a0cb4a0a0780e450b0a04795bee5d4c418d4",
+    "activation_match_seconds": 5.2477097505668935,
+    "activation_correlation": 0.46922964942510315,
+    "alignment_start_seconds": 4.981043083900227,
+    "duration": 3.65,
+    "peak": 0.681488037109375,
+    "rms": 0.07920202541275449
+  },
+  {
+    "case": "Barrido",
+    "frames": 42,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "bc7732a1331cc066ce50eb5ae54507ff07ae85183fc7e385a39a8783029c7282",
+    "activation_match_seconds": 4.876190476190477,
+    "activation_correlation": 0.6437587698237909,
+    "alignment_start_seconds": 4.60952380952381,
+    "duration": 3.6333333333333333,
+    "peak": 0.595428466796875,
+    "rms": 0.08750648513321212
+  },
+  {
+    "case": "Embestida",
+    "frames": 43,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "818a78329216effdf93eb17faf155409dcda96311f44e7738961afd5098290ef",
+    "activation_match_seconds": 4.96907029478458,
+    "activation_correlation": 0.6625196094971306,
+    "alignment_start_seconds": 4.702403628117914,
+    "duration": 3.6166666666666667,
+    "peak": 0.65826416015625,
+    "rms": 0.0990040756008953
+  },
+  {
+    "case": "Carniceria",
+    "frames": 49,
+    "activation_tick": 28,
+    "audio_source": "Actual SDL disk driver output, AUDIO_S16SYS stereo 44100 Hz; no offline mix",
+    "audio_sha256": "0556062c55a19663ba24013685a4d2f5701e4cf914b9a3c9ed32fae44088058d",
+    "activation_match_seconds": 4.783310657596372,
+    "activation_correlation": 0.4710619356969076,
+    "alignment_start_seconds": 4.516643990929706,
+    "duration": 3.6333333333333333,
+    "peak": 0.670257568359375,
+    "rms": 0.09215633267290568
+  }
+]

@@ -16,8 +16,8 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
  check(m is not None,f'DEF missing {key}')
  if m:check((CHAR/m[1].strip()).is_file(),f'DEF missing target for {key}')
 sprites=shared.parse_sff(CHAR/(stem+'.sff'));sounds=shared.parse_snd(CHAR/(stem+'.snd'))
-check(len(sprites)==161,'Expected 147 body entries, 12 effects and two portraits')
-check(len(sounds)==10,'Expected ten nonverbal effects')
+check(len(sprites)==169,'Expected 147 body entries, 20 effects and two portraits')
+check(len(sounds)==11,'Expected eleven nonverbal effects')
 raw=(CHAR/(stem+'.sff')).read_bytes();sh,count,ph,pcount,ld,*_=struct.unpack_from('<IIIIIIII',raw,36);geometry={}
 palettes=[]
 for i in range(pcount):

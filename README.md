@@ -1,23 +1,22 @@
-# Pochita True Form — revisión del combate
+# Pochita True Form — especiales con sonido y presentación
 
-[**Descargar Pochita True Form para MUGEN 1.1**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_JUGABILIDAD.zip)
+[**Descargar Pochita con los seis especiales actualizados**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_ESPECIALES_CON_SONIDO.zip)
 
-Sustituye `chars/PochitaTrueForm` por la carpeta completa del ZIP. Añade `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no aparece. Incluye la corrección de los estados vacíos 170/175/180 que impedían cargar en MUGEN.
+[**Ver los seis especiales con audio real del motor**](previews/Pochita_ESPECIALES_CON_SONIDO.mp4) · [Ver el arranque en GIF](previews/Pochita_especial_activacion_motor.gif)
 
-[**Ver demostración del combate**](previews/Pochita_jugabilidad_demostracion.mp4) · [X-Y-B en GIF](previews/Pochita_jugabilidad_mixto_motor.gif) · [Persecución aérea](previews/Pochita_jugabilidad_persecucion_motor.gif) · [Dos especiales enlazados](previews/Pochita_jugabilidad_cancelaciones_motor.gif) · [RT](previews/Pochita_jugabilidad_embestida_motor.gif)
+Abajo adelante/atrás + X, Y o B ahora inicia una pose, oscurecimiento breve y destello horizontal rojo con sonido de activación separado; después sale la técnica de motosierras. La señal usa un canal propio y el motor no la corta. El coste se paga una sola vez, aunque el ataque falle o sea bloqueado; sin energía suficiente no se activa la presentación. La preparación dura 12 ticks, o 6 al enlazar una segunda técnica.
 
-- Mezcla X, Y y B en las tres etapas: 27 secuencias posibles compartiendo nueve ataques, no 27 animaciones diferentes. X final lanza, Y tritura y empuja, B remata contra el suelo. La entrada del siguiente golpe se guarda durante el ataque; bloqueo y fallo cortan la ruta.
-- XXX, mantener arriba al acertar el lanzamiento, X-Y-B en el aire: persecución con salto real y remate descendente, seis impactos y 324 de daño en el muñeco de 1000. Sin congelar ni teletransportar al rival.
-- X-Y, abajo adelante X, abajo atrás X: normales hacia dos especiales diferentes, 600 de energía y 312 de daño en el muñeco. El tercer especial se rechaza durante la secuencia hasta recuperar control.
-- Doce poses adicionales para persecución, embestida RT y remate aéreo. Cortes y sangre aparecen también en los golpes iniciales confirmados. El SFF contiene 161 entradas: 147 de cuerpo (138 poses fuente), doce efectos y dos retratos. Diez sonidos no verbales.
+La referencia fue el video de Goku enviado por el usuario. Se adapta su arranque visual; no se copian rayos, voces ni transformaciones. El SE proviene del Code funcional suministrado, grupo 950,2 (Super Charge), de MUGEN STARS. No se presenta como extracción exacta del audio mezclado del video. Se añadieron ocho efectos de destello/anillo generados con IA. El SFF tiene 169 entradas (147 de cuerpo, veinte efectos, dos retratos) y el SND once sonidos no verbales.
 
-**A consume dos barras incluso si falla o la bloquean.** Debe acertar su embestida para ejecutar los cinco cortes animados. No muestra el panel del manga. Su daño máximo es min(500, la mitad de la vida máxima del rival); no mata desde vida completa, pero puede rematar a un rival previamente herido. Carga con LB, defensa con respuesta RB, embestida RT y nueve especiales direccionales.
+Se conservan las cadenas mixtas de X/Y/B, XXX-arriba-X-Y-B en el aire, la segunda técnica enlazada con límite de dos, los nueve especiales direccionales, RB, RT y carga LB. **A cuesta dos barras incluso al fallar; su daño máximo es el menor entre 500 y la mitad de la vida máxima rival.** No mata a un rival desde vida completa.
 
-Se estudiaron los CMD suministrados de Tanjiro, Nezuko y Luffy, y las reglas de Chainsaw Man SX. [Análisis de la revisión](design/Pochita_combate/REVISION.md) · [Controles y ejemplos](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
+Sustituye `chars/PochitaTrueForm` completa por la carpeta del ZIP. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si hace falta. La corrección del crasheo por estados vacíos 170/175/180 sigue incluida.
 
-Pasaron [181 escenarios de entradas y colisiones](previews/Pochita_engine_checks.json), [CPU](previews/Pochita_AI_checks.json), [dos pruebas de ultimate contra un rival de 500 de vida](previews/Pochita_low_life_ultimate_checks.json), [seis regresiones de estructura](previews/Pochita_mugen_structure_checks.json) y el [control de alcance y reproducción de archivos](previews/Pochita_validator_checks.json). El límite de cancelación comprueba que el motor reconoció el tercer comando y lo rechazó. Los videos son capturas de Ikemen GO, con audio montado de las muestras según eventos registrados. No son grabación del dispositivo de audio. Falta probar el binario exacto de Jump Force MUGEN V14 y el mando físico.
+[Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md) · [Referencia y procedencia](design/Pochita_especiales/REFERENCIA.md) · [Revisión anterior del combate](design/Pochita_combate/REVISION.md)
 
-Las pruebas verifican funcionamiento; no certifican que ya sea divertido o tenga calidad artística profesional. El arte generado con IA conserva variaciones de detalle. El tamaño comprimido del ZIP no se usa como objetivo de calidad ni se rellena artificialmente.
+Pasaron [205 pruebas de comandos y colisiones](previews/Pochita_engine_checks.json), incluyendo los seis especiales y atajos diagonales, doce intentos sin energía suficiente, doce fallos desde lejos, costes exactos, combos, persecución y límite de cancelaciones. También [CPU](previews/Pochita_AI_checks.json), [ultimate contra un rival de 500 de vida](previews/Pochita_low_life_ultimate_checks.json), [seis regresiones de estructura](previews/Pochita_mugen_structure_checks.json) y [reconstrucción y alcance](previews/Pochita_validator_checks.json). Los [seis registros de audio real](previews/Pochita_actual_audio_checks.json) identifican el SE en la salida SDL del motor; las [capturas](previews/Pochita_special_visual_checks.json) verifican los efectos y su finalización. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico.
+
+Los nuevos MP4 de especiales contienen audio real del mezclador de Ikemen GO, sincronizado por correlación con el SE de activación. Los videos anteriores de remates/jugabilidad mantienen audio montado según eventos; son versiones anteriores. Las pruebas verifican funcionamiento, no una calidad artística profesional ni el equilibrio contra todo el plantel. El arte generado conserva variaciones de detalle.
 
 Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
@@ -30,11 +29,11 @@ python3 tools/check_pochita_mugen_structure.py
 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_AI=8 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_DUMMY_LIFE=500 POCHITA_CASES='["ultihit"]' python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
-POCHITA_PREVIEW_SET=flow python3 tools/make_pochita_previews.py /ruta/al/ikemen
+python3 tools/make_pochita_special_previews.py /ruta/al/ikemen
 python3 tools/package_pochita.py
 ```
 
-Las fuentes y muestras seleccionadas están en el repositorio. `build_pochita_assets.py` reconstruye la primera versión desde la hoja original; no debe usarse para regenerar este diseño. Eida y los originales no se modificaron.
+La grabación real requiere la configuración de sonido predeterminada de la herramienta: 44100 Hz estéreo, con SDL disk. No necesita un dispositivo físico. Eida y los originales no se modificaron.
 
 ---
 

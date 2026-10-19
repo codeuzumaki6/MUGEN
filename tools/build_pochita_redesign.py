@@ -10,6 +10,7 @@ import numpy as np
 from scipy.ndimage import label,find_objects
 from build_archives import png_to_indexed
 from build_pochita_finish_assets import append_finish_assets,append_flow_assets
+from build_pochita_special_startup import append_startup_assets
 ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'PochitaTrueForm';DESIGN=ROOT/'design/Pochita_revision_visual';ASSETS=CHAR/'assets'
 SPEC=[('movimiento',[('idle',0,6),('walk',20,7),('run',100,7),('crouch',10,6),('jump',40,7)]),('basicos',[('air1',600,7),('air2',610,5),('air3',620,6),('attack1',200,7),('attack2',210,6)]),('combos',[('attack3',220,17),('attack3b',230,17)]),('remates_dano',[('attack4',240,6),('attack5',250,8),('damage',5000,15)])]
 manifest=json.loads((DESIGN/'sheets/manifest.json').read_text());sheets={};allcells={}
@@ -72,6 +73,7 @@ for sheet,groups in SPEC:
 assert len(records)==127
 records.extend(append_finish_assets(metadata,review))
 records.extend(append_flow_assets(metadata,review))
+records.extend(append_startup_assets(metadata,review))
 # Standard HUD portraits use the new model's head/upper chest.
 idle=Image.open(ASSETS/'sprites/idle/0.png').convert('RGBA');portrait=idle.crop((0,0,idle.width,round(idle.height*.55)))
 for number,size in [(0,(25,25)),(1,(120,140))]:
@@ -88,10 +90,10 @@ header=bytearray(512);header[:12]=b'ElecbyteSpr\0';header[12:16]=bytes((0,1,0,2)
 (ASSETS/'sprites.json').write_text(json.dumps(metadata,indent=2)+'\n')
 (ASSETS/'redesign_quality.json').write_text(json.dumps(quality,indent=2)+'\n')
 unique_poses=len({(r['source_sheet'],r['source_cell']) for values in metadata.values() for r in values if r['group']<9000})
-(ASSETS/'source.json').write_text(json.dumps({'type':'AI-generated visual redesign based on user references','master_reference':'design/Pochita_revision_visual/propuesta_tres_poses.png','finisher_sources':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'design/Pochita_remates').glob('*.png')},'body_sprite_entries':147,'mobility_source':{'file':'design/Pochita_combate/movilidad_y_remate.png','sha256':hashlib.sha256((ROOT/'design/Pochita_combate/movilidad_y_remate.png').read_bytes()).hexdigest()},'effect_sprite_entries':12,'manga_panel_embedded':False,'unique_source_poses':unique_poses,'normalization':'each sheet calibrated once using neutral poses at 72px; no per-frame stretching','sheet_scales':sheet_scales,'neutral_calibration_cells':neutral_cells,'sheets':{name:{'file':manifest[name]['file'],'sha256':hashlib.sha256((DESIGN/'sheets'/manifest[name]['file']).read_bytes()).hexdigest()} for name,_ in SPEC}},indent=2)+'\n')
+(ASSETS/'source.json').write_text(json.dumps({'type':'AI-generated visual redesign based on user references','master_reference':'design/Pochita_revision_visual/propuesta_tres_poses.png','finisher_sources':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'design/Pochita_remates').glob('*.png')},'body_sprite_entries':147,'mobility_source':{'file':'design/Pochita_combate/movilidad_y_remate.png','sha256':hashlib.sha256((ROOT/'design/Pochita_combate/movilidad_y_remate.png').read_bytes()).hexdigest()},'startup_source':{'file':'design/Pochita_especiales/activation_fx.png','sha256':hashlib.sha256((ROOT/'design/Pochita_especiales/activation_fx.png').read_bytes()).hexdigest()},'effect_sprite_entries':20,'manga_panel_embedded':False,'unique_source_poses':unique_poses,'normalization':'each sheet calibrated once using neutral poses at 72px; no per-frame stretching','sheet_scales':sheet_scales,'neutral_calibration_cells':neutral_cells,'sheets':{name:{'file':manifest[name]['file'],'sha256':hashlib.sha256((DESIGN/'sheets'/manifest[name]['file']).read_bytes()).hexdigest()} for name,_ in SPEC}},indent=2)+'\n')
 canvas=Image.new('RGB',(1200,((len(review)+9)//10)*125),'#a8adb7');draw=ImageDraw.Draw(canvas)
 for i,(name,index,picture) in enumerate(review):
  p=picture.copy();p.thumbnail((115,100),Image.Resampling.NEAREST);x=i%10*120;y=i//10*125;canvas.paste(p,(x+(120-p.width)//2,y+20),p);draw.text((x+2,y+2),f'{name}:{index}',fill='black')
 canvas.save(ROOT/'previews/Pochita_redesign_sprites.png')
-print('Packed 147 body entries + 12 effects + 2 portraits; neutral-calibrated sheet scales',sheet_scales)
+print('Packed 147 body entries + 20 effects + 2 portraits; neutral-calibrated sheet scales',sheet_scales)
 print(json.dumps(quality))

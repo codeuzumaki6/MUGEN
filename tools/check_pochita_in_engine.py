@@ -15,6 +15,10 @@ for face in [1,-1]:
  for name,button,direction,state,cost in specs:cases.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,kind='special',facing=face,distance=50 if state in [1020,1040,1080] else 70))
  for name,button,direction,state,cost in specs:cases.append(dict(name=name+' exact budget',button=button,direction=direction,state=state,cost=cost,power=cost,kind='special',facing=face,distance=50 if state in [1020,1040,1080] else 70))
  for name,button,direction,state,cost in specs:
+  if state in [1000,1010,1030,1040,1060,1070]:
+   cases.append(dict(name=name+' insufficient power',button=button,direction=direction,state={'a':200,'b':210,'c':220}[button],forbidden=state+10000,cost=0,power=cost-1,kind='emptyspecial',facing=face,distance=220))
+   cases.append(dict(name=name+' startup whiff',button=button,direction=direction,state=state,cost=cost,kind='startupwhiff',facing=face,distance=300))
+ for name,button,direction,state,cost in specs:
   if state in [1020,1040,1080]:cases.append(dict(name=name+' outside blade reach',button=button,direction=direction,state=state,cost=cost,kind='reachwhiff',facing=face,distance=105))
  for name,button,direction,state,cost in specs:
   if direction in ['F','B']:cases.append(dict(name=name+' diagonal shortcut',button=button,direction=direction,state=state,cost=cost,kind='shortcut',facing=face,distance=50 if state==1040 else 70))
@@ -56,6 +60,7 @@ if capture:
 def ctl(typ,trig,params):return f'\n[State -2, QA only]\ntype = {typ}\ntriggerall = RoundState = 2\ntrigger1 = {trig}\nignorehitpause = 1\n{params}\n'
 clock=ctl('VarAdd','1','v = 58\nvalue = 1');p1=clock;p2=ctl('VarSet','NumEnemy > 0','v = 58\nvalue = EnemyNear,Var(58)')
 for variable,effect in [(52,9401),(53,9400),(54,9402)]:p1+=ctl('VarSet','1',f'v = {variable}\nvalue = NumExplod({effect})')
+for variable,effect in [(51,9450),(50,9451)]:p1+=ctl('VarSet','1',f'v = {variable}\nvalue = NumExplod({effect})')
 p1+=ctl('VarSet','1','v = 55\nvalue = Time')
 if os.environ.get('POCHITA_TRACE'):
  p1+=ctl('VarSet','1','v = 46\nvalue = HitCount')+ctl('VarSet','1','v = 44\nvalue = command = "CuatroBrazos"')
@@ -169,9 +174,10 @@ hook.add('loop','pochita_qa',function()
  local t=var(58);if t==frame or t<1 then return end;frame=t
  local case=math.floor((t-1)/240);local tick=(t-1)%240+1
  if case>=COUNT then player(2);setLife(100);player(1);setTime(0);return end
- if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,vapex=0,last=0,final=0,dx=0,blood=0,slashes=0,ground=0,endfx=0,cancelattempt=0} end
+ if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,vapex=0,last=0,final=0,dx=0,blood=0,slashes=0,ground=0,endfx=0,cancelattempt=0,flare=0,ring=0} end
  local r=rows[case]
  r.blood=math.max(r.blood,var(52));r.slashes=math.max(r.slashes,var(53));r.ground=math.max(r.ground,var(54));r.endfx=var(52)+var(53)+var(54)
+ r.flare=math.max(r.flare,var(51));r.ring=math.max(r.ring,var(50));r.endfx=r.endfx+var(51)+var(50)
  if tick>4 then r.cancelattempt=math.max(r.cancelattempt,var(42)) end
  if tick>4 then
   r.states[stateNo()]=true;r.last=stateNo();r.received=math.max(r.received,1250-life());r.minpower=math.min(r.minpower,power());r.maxpower=math.max(r.maxpower,power());r.apex=math.min(r.apex,posY())
@@ -181,7 +187,7 @@ hook.add('loop','pochita_qa',function()
  CAPTURE
  if tick==239 and not r.saved then
   r.saved=true;local states={};for k,_ in pairs(r.states) do table.insert(states,k) end;table.sort(states)
-  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\t'..r.vapex..'\\t'..r.blood..'\\t'..r.slashes..'\\t'..r.ground..'\\t'..r.endfx..'\\t'..r.cancelattempt..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\t'..r.vapex..'\\t'..r.blood..'\\t'..r.slashes..'\\t'..r.ground..'\\t'..r.endfx..'\\t'..r.cancelattempt..'\\t'..r.flare..'\\t'..r.ring..'\\n');f:flush()
  end
 end)
 '''.replace('DUMMYMAX',str(DUMMY_LIFE)).replace('COUNT',str(len(cases))).replace('STARTS','{'+','.join(str(-c['facing']*c['distance']/2) for c in cases)+'}')
@@ -198,6 +204,7 @@ if capture:
  local st=stateNo();local stime=var(55)
  if st~=cap.state then
   local sounds={[200]=0,[201]=0,[202]=1,[210]=0,[211]=1,[212]=7,[220]=0,[221]=1,[222]=8,[600]=0,[610]=0,[620]=0,[3000]=3,[1000]=1,[1010]=1,[1020]=1,[1030]=1,[1040]=1,[1050]=1,[1060]=1,[1070]=3,[1080]=1,[1100]=3}
+  if st==11000 or st==11010 or st==11030 or st==11040 or st==11060 or st==11070 then sounds[st]=10 end
   if sounds[st]~=nil then cue(t,sounds[st]) end
   cap.state=st;cap.lastut=-1
  end
@@ -223,8 +230,10 @@ else:module=module.replace('CAPTURE','')
 (ENGINE/'external/mods/pochita_checks.lua').write_text(module);(ENGINE/'pochita_checks.tsv').write_text('')
 debug=ENGINE/'external/script/debug.lua';original=debug.read_text();debug.write_text(original+"\ndofile('external/mods/pochita_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
+record_audio=os.environ.get('POCHITA_RECORD_AUDIO')
+if record_audio:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=str(Path(record_audio).resolve()),SDL_DISKAUDIODELAY='46')
 try:
- r=subprocess.run([str(ENGINE/'Ikemen_GO_Linux'),'-p1','PochitaCheck','-p2','PochitaDummy','-p1.ai',os.environ.get('POCHITA_AI','0'),'-p2.ai','0','-rounds','1','-time',str(max(600,len(cases)*4+30)),'-nosound']+(['-speed','0'] if capture else ['-speedtest']),cwd=ENGINE,env=env,capture_output=True,text=True,timeout=90)
+ r=subprocess.run([str(ENGINE/'Ikemen_GO_Linux'),'-p1','PochitaCheck','-p2','PochitaDummy','-p1.ai',os.environ.get('POCHITA_AI','0'),'-p2.ai','0','-rounds','1','-time',str(max(600,len(cases)*4+30))]+([] if record_audio else ['-nosound'])+(['-speed','0'] if capture or record_audio else ['-speedtest']),cwd=ENGINE,env=env,capture_output=True,text=True,timeout=90)
  print(r.stdout);print(r.stderr);assert r.returncode==0,r.returncode
 finally:
  debug.write_text(original);(ENGINE/'external/mods/pochita_checks.lua').rename(ENGINE/'external/mods/-pochita_checks.lua')
@@ -233,13 +242,16 @@ for line in (ENGINE/'pochita_checks.tsv').read_text().splitlines():raw.setdefaul
 assert sorted(raw)==list(range(len(cases))),sorted(raw)
 report=[];errors=[]
 for i,c in enumerate(cases):
- _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex,blood,slashes,ground,endfx,attempt=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
+ _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex,blood,slashes,ground,endfx,attempt,flare,ring=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
  if kind=='empty':
   if 3000 in states:fail.append('ultimate spent unavailable power')
  else:
   if c['state'] not in states:fail.append('expected state not reached')
   if c['cost'] and minimum!=c.get('power',3000)-c['cost']:fail.append('power cost differs from advertised reduced cost')
  if kind=='ai' and (damage<=0 or not {200,201,202,210,211,220,221,1030,3000}.intersection(states)):fail.append('CPU did not use its real offensive states')
+ if {11000,11010,11030,11040,11060,11070}.intersection(states) and (int(flare)==0 or int(ring)==0):fail.append('activated special missing startup flash or ground ring')
+ if kind=='startupwhiff' and damage!=0:fail.append('startup presentation dealt damage without an attack collision')
+ if kind=='emptyspecial' and (c['forbidden'] in states or int(flare)>0 or minimum!=c['power']):fail.append('special presentation activated without enough energy')
  if kind in ['combo','special','shortcut','crouch','aircombo','counter'] and damage<=0:fail.append('no collision damage')
  if kind in ['comboblock','combowhiff'] and (c['finish'] in states or damage>40):fail.append('third combo hit occurred without confirming earlier hits')
  if kind=='combowhiff' and damage!=0:fail.append('missed normal caused damage')
@@ -268,6 +280,6 @@ for i,c in enumerate(cases):
  if kind=='walk' and (float(dx)<20 or int(last)!=0):fail.append('walk/release failed')
  if kind=='guard' and (int(received)!=0 or 150 not in states):fail.append('incoming strike not blocked')
  if kind=='dash' and (100 not in states or float(dx)<10):fail.append('dash failed to move/cancel')
- row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),blood_effects=int(blood),slash_effects=int(slashes),ground_effects=int(ground),effects_at_end=int(endfx),third_special_input_recognized=int(attempt),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
-path=ROOT/'previews'/(('Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
+ row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),blood_effects=int(blood),slash_effects=int(slashes),ground_effects=int(ground),effects_at_end=int(endfx),third_special_input_recognized=int(attempt),activation_flash=int(flare),ground_ring=int(ring),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
+path=ROOT/'previews'/(('Pochita_special_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='special' else 'Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
 print('PASSED',len(report),'raw-input/collision scenarios')

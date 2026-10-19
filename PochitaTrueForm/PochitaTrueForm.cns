@@ -1600,7 +1600,7 @@ physics = S
 anim = 1000
 ctrl = 0
 velset = 5.5,0
-poweradd = -250
+poweradd = 0
 [State 1000, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1666,6 +1666,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1000, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1000, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1000, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1000, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1000, Count special in sequence]
 type = VarAdd
 trigger1 = Time = 0
@@ -1678,6 +1731,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1000, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1010]
 type = S
 movetype = A
@@ -1685,7 +1753,7 @@ physics = S
 anim = 1010
 ctrl = 0
 velset = 1.2,0
-poweradd = -350
+poweradd = 0
 [State 1010, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1775,6 +1843,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1010, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1010, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1010, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1010, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1010, Count special in sequence]
 type = VarAdd
 trigger1 = Time = 0
@@ -1787,6 +1908,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1010, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1020]
 type = S
 movetype = A
@@ -1905,7 +2041,7 @@ physics = S
 anim = 1030
 ctrl = 0
 velset = 3.5,0
-poweradd = -350
+poweradd = 0
 [State 1030, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -1967,6 +2103,59 @@ givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
 
+[State 1030, Reset impact gate]
+type = VarSet
+trigger1 = Time = 0
+v = 26
+value = 0
+ignorehitpause = 1
+[State 1030, Contact slash]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9200
+ID = 9400
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1030, Contact blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+anim = 9201
+ID = 9401
+postype = p1
+pos = 42,-36
+facing = 1
+bindtime = 0
+removetime = 16
+sprpriority = 5
+scale = .65,.65
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+supermovetime = 8
+
+[State 1030, Latch impact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+trigger1 = HitCount > Var(26)
+v = 26
+value = HitCount
+ignorehitpause = 1
+
 [State 1030, Count special in sequence]
 type = VarAdd
 trigger1 = Time = 0
@@ -1979,6 +2168,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1030, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1040]
 type = S
 movetype = A
@@ -1986,7 +2190,7 @@ physics = S
 anim = 1040
 ctrl = 0
 velset = 0,0
-poweradd = -250
+poweradd = 0
 [State 1040, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -2104,6 +2308,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1040, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1050]
 type = A
 movetype = A
@@ -2242,7 +2461,7 @@ physics = S
 anim = 1060
 ctrl = 0
 velset = 5.5,0
-poweradd = -500
+poweradd = 0
 [State 1060, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -2373,6 +2592,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1060, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1070]
 type = S
 movetype = A
@@ -2380,7 +2614,7 @@ physics = S
 anim = 1070
 ctrl = 0
 velset = 1.2,0
-poweradd = -750
+poweradd = 0
 [State 1070, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -2591,6 +2825,21 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[State 1070, Saw ground pulse]
+type = Explod
+trigger1 = Time = 0
+anim = 9301
+ID = 9451
+postype = p1
+pos = 0,-6
+bindtime = 0
+removetime = 15
+scale = .75,.25
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 1
+persistent = 0
 [Statedef 1080]
 type = S
 movetype = A
@@ -3913,3 +4162,321 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[Statedef 11000]
+type = S
+movetype = I
+physics = S
+anim = 11000
+ctrl = 0
+velset = 0,0
+poweradd = -250
+[State 11000, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11000, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11000, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11000, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1000
+ctrl = 0
+
+[Statedef 11010]
+type = S
+movetype = I
+physics = S
+anim = 11010
+ctrl = 0
+velset = 0,0
+poweradd = -350
+[State 11010, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11010, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11010, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11010, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1010
+ctrl = 0
+
+[Statedef 11030]
+type = S
+movetype = I
+physics = S
+anim = 11030
+ctrl = 0
+velset = 0,0
+poweradd = -350
+[State 11030, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11030, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11030, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11030, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1030
+ctrl = 0
+
+[Statedef 11040]
+type = S
+movetype = I
+physics = S
+anim = 11040
+ctrl = 0
+velset = 0,0
+poweradd = -250
+[State 11040, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11040, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11040, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11040, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1040
+ctrl = 0
+
+[Statedef 11060]
+type = S
+movetype = I
+physics = S
+anim = 11060
+ctrl = 0
+velset = 0,0
+poweradd = -500
+[State 11060, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11060, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11060, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11060, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1060
+ctrl = 0
+
+[Statedef 11070]
+type = S
+movetype = I
+physics = S
+anim = 11070
+ctrl = 0
+velset = 0,0
+poweradd = -750
+[State 11070, Activation SE]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 11070, Special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(Var(32) > 0,6,12)
+movetime = IfElse(Var(32) > 0,6,12)
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 11070, Horizontal activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 9300
+ID = 9450
+postype = p1
+pos = 26,-48
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .85,.85
+sprpriority = 6
+ownpal = 1
+supermovetime = 16
+pausemovetime = 16
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 11070, Release blades]
+type = ChangeState
+trigger1 = Time >= IfElse(Var(32) > 0,6,12)
+value = 1070
+ctrl = 0
