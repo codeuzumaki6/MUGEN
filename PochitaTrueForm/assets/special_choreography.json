@@ -16,13 +16,12 @@
     "animation_ticks": 66
   },
   "1030": {
-    "frames": 12,
-    "ticks_per_frame": 5,
+    "frames": 14,
+    "ticks_per_frame": 4,
     "contacts": 3,
     "damage": 126,
-    "family": "physical_chain_extension",
-    "animation_ticks": 60,
-    "visible_chain_reach": 220
+    "family": "thrust",
+    "animation_ticks": 56
   },
   "1040": {
     "frames": 14,

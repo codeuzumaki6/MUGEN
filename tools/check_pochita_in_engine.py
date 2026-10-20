@@ -58,7 +58,7 @@ if EXTENSION:
  for face in [1,-1]:
   for kind,hp,power in [('awake_wounded',800,3000),('awake_cap',1240,3000),('awake_full',1250,3000),('awake_empty',800,2999),('awake_held',800,3000),('awake_attack',800,3000),('awake_special',800,3000),('awake_counterhit',800,3000),('awake_cooldown',800,3000),('awake_again',800,3000)]:
    cases.append(dict(name=kind,button='s',direction='D',state=520,cost=0 if kind=='awake_empty' else 1250 if kind=='awake_special' else 1000,life=hp,power=power,kind=kind,facing=face,distance=42 if kind in ['awake_attack','awake_counterhit'] else 70 if kind=='awake_special' else 140))
-  for name,kind,button,direction,state,cost,dist in [('Cadena lejana','rangechain','b','F',1030,350,200),('Cadena bloqueada','rangechainblock','b','F',1030,350,200),('Cadena fuera de alcance','rangechainmiss','b','F',1030,350,280),('Cadena interrumpida','rangechainbreak','b','F',1030,350,42),('RT lejano','rangerush','z','N',1100,750,180),('Embestida lejana','rangerush','c','F',1060,500,170),('Desgarro lejano','rangerush','a','F',1000,250,150)]:
+  for name,kind,button,direction,state,cost,dist in [('Estocada con avance','rangeapproach','b','F',1030,350,200),('Estocada bloqueada','approachblock','b','F',1030,350,200),('Estocada fuera de alcance','approachmiss','b','F',1030,350,280),('Estocada interrumpida','approachbreak','b','F',1030,350,42),('RT lejano','rangerush','z','N',1100,750,180),('Embestida lejana','rangerush','c','F',1060,500,170),('Desgarro lejano','rangerush','a','F',1000,250,150)]:
    cases.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,kind=kind,facing=face,distance=dist))
   for kind,dist,power in [('devour_interrupted',42,3000),('devour_escape',90,3000)]:cases.append(dict(name=kind,button='x',direction='N',state=3000,cost=2000,power=power,kind=kind,facing=face,distance=dist))
   for kind,dist,power in [('oldhit',90,3000),('oldblock',90,3000),('oldfar',320,3000),('oldempty',90,999)]:cases.append(dict(name=kind,button='x',direction='D',state=1500,cost=1000 if kind!='oldempty' else 0,power=power,kind=kind,facing=face,distance=dist))
@@ -157,15 +157,15 @@ for i,c in enumerate(cases):
   if kind=='awake_again':p1+=ctl('AssertInput',window(980,990),'flag = D')+ctl('AssertInput',at(985),'flag = s')
  if kind=='devour_interrupted':p2+=ctl('ChangeState',at(24),'value = 9701\nctrl = 0')
  if kind=='devour_escape':p1+=ctl('ChangeState',at(85),'value = 0\nctrl = 1')
- if kind=='rangechainblock':p2+=ctl('AssertInput',window(10,220),'flag = '+('R' if face==1 else 'L'))
- if kind=='rangechainbreak':p2+=ctl('ChangeState',at(45),'value = 9701\nctrl = 0')
+ if kind=='approachblock':p2+=ctl('AssertInput',window(10,220),'flag = '+('R' if face==1 else 'L'))
+ if kind=='approachbreak':p2+=ctl('ChangeState',f'Var(59) = {i} && (EnemyNear,StateNo) = 1030 && (EnemyNear,Time) = 2','value = 9702\nctrl = 0')
  if kind=='oldblock':p2+=ctl('AssertInput',window(10,200),'flag = '+('R' if face==1 else 'L'))
  if kind=='ultiblock':p2+=ctl('AssertInput',window(10,150),'flag = '+('R' if face==1 else 'L'))
  if kind=='specialblock':p2+=ctl('AssertInput',window(10,150),'flag = '+('R' if face==1 else 'L'))
  if kind=='specialguard':p2+=ctl('AssertInput',window(10,220),'flag = '+('R' if face==1 else 'L'))+ctl('AssertInput',window(10,220),'flag = D')
  if kind=='ultijump':p2+=ctl('ChangeState',at(12),'value = 50\nctrl = 0')+ctl('PosSet',window(12,150),'y = -180')+ctl('VelSet',window(12,150),'y = 0')
 # Real test strikes: do not put the tested character into a get-up state.
-for state,anim,yvel,typ in [(9700,440,0,'Trip'),(9701,210,-4,'High')]:
+for state,anim,yvel,typ in [(9700,440,0,'Trip'),(9701,210,-4,'High'),(9702,400,-4,'Low')]:
  with (dummy/'kfm.cns').open('a') as f:f.write(f'''\n[Statedef {state}]
 type = S
 movetype = A
@@ -363,10 +363,10 @@ for i,c in enumerate(cases):
   if kind=='awake_attack' and (200 not in states or damage!=70):fail.append('awakening prevented normal combat')
   if kind=='awake_counterhit' and int(received)<=0:fail.append('awakening accidentally granted invulnerability')
   if kind=='awake_again' and (e['awakenings']!=2 or e['final_timer']<=0 or int(endfx)!=1):fail.append('awakening failed to re-enable after the cooldown')
- if kind=='rangechain' and (damage!=126 or int(maxhits)!=3 or int(finishes)!=1):fail.append('visible long chain failed to connect at distance 200')
- if kind=='rangechainmiss' and damage!=0:fail.append('chain hit past its physical length')
- if kind=='rangechainblock' and (damage>40 or int(blood)>0 or int(finishes)>0):fail.append('long chain bypassed guard')
- if kind=='rangechainbreak' and (int(received)<=0 or damage!=0):fail.append('chain move did not remain interruptible')
+ if kind=='rangeapproach' and (not 0<damage<=126 or int(maxhits)<1 or int(last)!=0):fail.append('physical approach failed to connect at distance 200')
+ if kind=='approachmiss' and damage!=0:fail.append('normal-size saws hit past the approach distance')
+ if kind=='approachblock' and (damage>40 or int(blood)>0 or int(finishes)>0):fail.append('approaching thrust bypassed guard')
+ if kind=='approachbreak' and (int(received)<=0 or damage!=0):fail.append('approaching thrust did not remain interruptible')
  if kind=='rangerush' and damage<=0:fail.append('forward physical move failed at its advertised test distance')
  if kind=='awake_special' and (1000 not in states or not 125<=damage<=128):fail.append('awakening failed to boost physical special contacts')
  if kind=='devour_interrupted' and (3001 in states or damage!=0 or int(received)<=0):fail.append('unconfirmed devour opening could not be interrupted')

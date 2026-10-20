@@ -613,12 +613,12 @@
       ]
     },
     "case": {
-      "name": "Cadena lejana",
+      "name": "Estocada con avance",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechain",
+      "kind": "rangeapproach",
       "facing": 1,
       "distance": 200
     },
@@ -630,23 +630,23 @@
       1030,
       11030
     ],
-    "damage": 126,
+    "damage": 96,
     "received": 0,
     "minimum_power": 2650,
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "blood_effects": 1,
+    "slash_effects": 1,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
     "distinct_trails": 1,
-    "confirmed_finish": 1,
-    "max_hitcount": 3,
-    "attack_time": 59,
+    "confirmed_finish": 0,
+    "max_hitcount": 2,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 5.625,
@@ -672,12 +672,12 @@
       ]
     },
     "case": {
-      "name": "Cadena bloqueada",
+      "name": "Estocada bloqueada",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainblock",
+      "kind": "approachblock",
       "facing": 1,
       "distance": 200
     },
@@ -702,13 +702,13 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 2,
+    "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 59,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 21.875,
+    "dash_travel": 21.75,
     "failures": []
   },
   {
@@ -730,12 +730,12 @@
       ]
     },
     "case": {
-      "name": "Cadena fuera de alcance",
+      "name": "Estocada fuera de alcance",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainmiss",
+      "kind": "approachmiss",
       "facing": 1,
       "distance": 280
     },
@@ -760,13 +760,13 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 2,
+    "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 59,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 11.6875,
+    "dash_travel": 39.1875,
     "failures": []
   },
   {
@@ -785,16 +785,16 @@
       "victim_power": 3000,
       "victim_states": [
         0,
-        9701
+        9702
       ]
     },
     "case": {
-      "name": "Cadena interrumpida",
+      "name": "Estocada interrumpida",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainbreak",
+      "kind": "approachbreak",
       "facing": 1,
       "distance": 42
     },
@@ -832,7 +832,7 @@
     "attack_time": 12,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 11.687496185302734,
+    "dash_travel": 39.18749237060547,
     "failures": []
   },
   {
@@ -955,7 +955,7 @@
     "attack_time": 59,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 9.375,
+    "dash_travel": 36.87499237060547,
     "failures": []
   },
   {
@@ -1988,12 +1988,12 @@
       ]
     },
     "case": {
-      "name": "Cadena lejana",
+      "name": "Estocada con avance",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechain",
+      "kind": "rangeapproach",
       "facing": -1,
       "distance": 200
     },
@@ -2005,23 +2005,23 @@
       1030,
       11030
     ],
-    "damage": 126,
+    "damage": 96,
     "received": 0,
     "minimum_power": 2650,
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "blood_effects": 1,
+    "slash_effects": 1,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
     "distinct_trails": 1,
-    "confirmed_finish": 1,
-    "max_hitcount": 3,
-    "attack_time": 59,
+    "confirmed_finish": 0,
+    "max_hitcount": 2,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 44.1875,
@@ -2047,12 +2047,12 @@
       ]
     },
     "case": {
-      "name": "Cadena bloqueada",
+      "name": "Estocada bloqueada",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainblock",
+      "kind": "approachblock",
       "facing": -1,
       "distance": 200
     },
@@ -2077,13 +2077,13 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 2,
+    "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 59,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 16.6875,
+    "dash_travel": 16.8125,
     "failures": []
   },
   {
@@ -2105,12 +2105,12 @@
       ]
     },
     "case": {
-      "name": "Cadena fuera de alcance",
+      "name": "Estocada fuera de alcance",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainmiss",
+      "kind": "approachmiss",
       "facing": -1,
       "distance": 280
     },
@@ -2135,13 +2135,13 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 2,
+    "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 59,
+    "attack_time": 55,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 26.875,
+    "dash_travel": 24.5625,
     "failures": []
   },
   {
@@ -2160,16 +2160,16 @@
       "victim_power": 3000,
       "victim_states": [
         0,
-        9701
+        9702
       ]
     },
     "case": {
-      "name": "Cadena interrumpida",
+      "name": "Estocada interrumpida",
       "button": "b",
       "direction": "F",
       "state": 1030,
       "cost": 350,
-      "kind": "rangechainbreak",
+      "kind": "approachbreak",
       "facing": -1,
       "distance": 42
     },
@@ -2207,7 +2207,7 @@
     "attack_time": 12,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 26.87499237060547,
+    "dash_travel": 24.56249237060547,
     "failures": []
   },
   {
@@ -2330,7 +2330,7 @@
     "attack_time": 59,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 29.1875,
+    "dash_travel": 22.24999237060547,
     "failures": []
   },
   {
@@ -2390,7 +2390,7 @@
     "attack_time": 56,
     "last": 0,
     "victim_final": 0,
-    "dash_travel": 19.24999237060547,
+    "dash_travel": 39.18749237060547,
     "failures": []
   },
   {

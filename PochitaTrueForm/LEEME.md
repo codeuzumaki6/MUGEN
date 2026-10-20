@@ -1,6 +1,6 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_DESPERTAR_Y_BORRADO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_SIN_SIERRA_GIGANTE.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
 ## Corrección de carga en MUGEN
 
@@ -32,14 +32,14 @@ Las seis técnicas adelante/atrás tienen secuencias ampliadas con poses de cuer
 |---|---:|---:|---:|---:|
 | Desgarro | 3 | 57 ticks | 106 | 250 |
 | Cuatro brazos | 5 | 66 ticks | 132 | 350 |
-| Estocada con cadena | 3 | 60 ticks | 126 | 350 |
+| Estocada con avance | 3 | 56 ticks | 126 | 350 |
 | Barrido | 2 | 56 ticks | 96 | 250 |
 | Embestida | 3 | 60 ticks | 145 | 500 |
 | Carnicería | 7 | 90 ticks | 218 | 750 |
 
 60 ticks equivalen a un segundo. La preparación y las pausas de impacto se suman a esos tiempos; los videos se reproducen a velocidad normal. El daño total se redistribuye entre los nuevos contactos, sin aumentar el coste. Avanza mediante velocidad y colisiones físicas. El golpe final confirmado tiene otro pulso visual, sonido y vibración breve; fallar o ser bloqueado no muestra ese impacto confirmado. Las estelas del movimiento sí aparecen al atacar sin acertar.
 
-Abajo adelante + Y extiende una cadena física con una hoja dentada hasta 220 unidades de alcance de colisión. La hoja puede verse algo más lejos que ese límite; no hay caja ofensiva más larga que el dibujo. Se verificó que conecta tres veces desde una separación de 200 y falla a 280. Se puede bloquear e interrumpir. Desgarro, Embestida y RT avanzan para cerrar distancia; se comprobaron desde 150, 170 y 180 respectivamente. La distancia inicial mayor puede hacer que los primeros cortes de una embestida fallen; no se garantiza el combo completo desde cualquier lugar.
+Abajo adelante + Y vuelve a usar el cuerpo y las motosierras de tamaño normal. Se retiró el arma gigante con cadena porque el usuario la rechazó como ajena a su referencia del personaje. El alcance proviene de un avance de Pochita; no hay una hoja alargada ni colisiones de 220 unidades desde una posición fija. Los primeros cortes pueden fallar desde lejos. Se verifican aproximación desde 200, fallo desde 280, bloqueo e interrupción. Desgarro, Embestida y RT conservan sus avances físicos.
 
 El video de Chainsaw Man enviado por el usuario (29,84 s) se revisó visualmente: preparación, avance de triturado con 22 contactos en la referencia, derribo y otra secuencia giratoria. Sirve de referencia de ritmo y separación entre preparación, ataque y remate. Pochita tiene las seis secuencias descritas arriba; no reproduce literalmente esa combinación de 22 contactos ni la invocación de la cabeza gigante. El audio del video no se evaluó por escucha en este entorno.
 
@@ -74,7 +74,7 @@ En el manga, devorar demonios puede borrar conceptos de la existencia. Aquí se 
 
 ## Arte y audio
 
-Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 221 entradas: 155 de cuerpo (146 poses fuente distintas), 64 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
+Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 213 entradas: 155 de cuerpo (146 poses fuente distintas), 56 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
 
 Hay catorce sonidos no verbales: siete muestras del DENJI suministrado, tres mezclas adicionales de motores/cortes/impactos y el SE de activación del Code suministrado, más tres mezclas nuevas para mordisco, borrado y regeneración. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
 
@@ -82,6 +82,6 @@ Hay catorce sonidos no verbales: siete muestras del DENJI suministrado, tres mez
 
 Pasaron 221 escenarios generales de entradas y colisiones en Ikemen GO, 46 casos específicos de despertar, alcance y Devastación, una prueba de CPU, cuatro pruebas de daños limitados frente a 500 de vida y una prueba de KO sin resurrección. Se verifican curación exacta, tope de vida, espera, botón mantenido, ataques durante el despertar, multiplicador que termina, falta de energía, apertura interrumpida y liberación si el atacante abandona la escena. El validador comprueba sprites, sonidos, sintaxis nativa, recuperación, controladores y alcance visible. Las regresiones de carga MUGEN y reconstrucción se mantienen.
 
-Los MP4 nuevos `Pochita_despertar_nuevo_motor.mp4`, `Pochita_borrado_nuevo_motor.mp4`, `Pochita_devastacion_nuevo_motor.mp4` y `Pochita_cadenas_nuevo_motor.mp4` y la demostración combinada contienen audio real SDL del mezclador de Ikemen GO. La señal se sincroniza por correlación con las muestras del SND. Los videos anteriores representan versiones anteriores; algunos usan audio montado por eventos. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico. La calidad artística y el equilibrio requieren revisión y partidas locales.
+Los MP4 nuevos `Pochita_despertar_nuevo_motor.mp4`, `Pochita_borrado_nuevo_motor.mp4`, `Pochita_devastacion_nuevo_motor.mp4` y `Pochita_estocada_nuevo_motor.mp4` y la demostración combinada contienen audio real SDL del mezclador de Ikemen GO. La señal se sincroniza por correlación con las muestras del SND. Los videos anteriores representan versiones anteriores; algunos usan audio montado por eventos. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico. La calidad artística y el equilibrio requieren revisión y partidas locales.
 
 Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces mezclando botones al conectar; XXX-arriba-X-Y-B en el aire; dos especiales seguidos; especiales; RB ante un golpe; RT; cargar con LB. Con la barra llena, prueba abajo+LB: una activación, seis segundos, curación limitada y mismo tamaño. Prueba abajo+A acertada, bloqueada y desde lejos: gasta una barra. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.

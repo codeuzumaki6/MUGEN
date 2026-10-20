@@ -5,7 +5,7 @@ import hashlib,json,os,shutil,subprocess,sys,tempfile,wave
 import numpy as np
 from scipy.signal import correlate,resample_poly
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews';engine=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
-scenarios=[('cadenas','Cadena lejana',True,360,10,'special_activation.wav','ABAJO > ADELANTE + Y | Cadena fisica de largo alcance'),('despertar','awake_attack',True,720,13,'regeneration_pulse.wav','ABAJO + LB / PAUSA | 6 s, hasta 240 de vida, golpes +20%'),('borrado','ultihit',False,360,10,'special_activation.wav','A: DEVORAR / BORRADO | Apertura bloqueable, dano limitado'),('devastacion','oldhit',True,360,3,'chainsaw_long.wav','ABAJO + A | Antigua ulti: cinco cortes, una barra')]
+scenarios=[('estocada','Estocada con avance',True,360,10,'special_activation.wav','ABAJO > ADELANTE + Y | Avance fisico, motosierras de tamano normal'),('despertar','awake_attack',True,720,13,'regeneration_pulse.wav','ABAJO + LB / PAUSA | 6 s, hasta 240 de vida, golpes +20%'),('borrado','ultihit',False,360,10,'special_activation.wav','A: DEVORAR / BORRADO | Apertura bloqueable, dano limitado'),('devastacion','oldhit',True,360,3,'chainsaw_long.wav','ABAJO + A | Antigua ulti: cinco cortes, una barra')]
 reports=[];evidence=[];clips=[]
 with tempfile.TemporaryDirectory(prefix='pochita-devour-preview-') as temp:
  folder=Path(temp)
@@ -34,12 +34,14 @@ with tempfile.TemporaryDirectory(prefix='pochita-devour-preview-') as temp:
   lines += [f"file '{path}'",'option framerate 60'];listing=capture/'frames.txt';listing.write_text('\n'.join(lines)+'\n')
   text=capture/'caption.txt';text.write_text(caption);clip=OUT/f'Pochita_{label}_nuevo_motor.mp4';clips.append(clip)
   subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(listing),'-i',str(actual),'-vf',f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={text}:x=(w-tw)/2:y=689:fontsize=21:fontcolor=white','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-t',str(duration),'-movflags','+faststart',str(clip)],check=True)
-  if label in ['despertar','borrado','cadenas']:
+  if label in ['despertar','borrado','estocada']:
    subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(clip),'-filter_complex','[0:v]fps=15,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=none','-loop','0',str(OUT/f'Pochita_{label}_nuevo_motor.gif')],check=True)
-   image=min(frames,key=lambda pair:abs(pair[1]-(activation[0]+80 if label=='borrado' else activation[0]+40 if label=='cadenas' else 140)));shutil.copy2(capture/f'Ikemen_GO{image[0]:03d}.png',OUT/f'Pochita_{label}_nuevo_motor.png')
+   image=min(frames,key=lambda pair:abs(pair[1]-(activation[0]+80 if label=='borrado' else activation[0]+40 if label=='estocada' else 140)));shutil.copy2(capture/f'Ikemen_GO{image[0]:03d}.png',OUT/f'Pochita_{label}_nuevo_motor.png')
   evidence.append(dict(case=name,frames=len(frames),cue=sound,activation_tick=activation[0],activation_correlation=confidence,duration=duration,audio_source='Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix',raw_audio_sha256=hashlib.sha256(raw.read_bytes()).hexdigest(),alignment_start_seconds=start))
   print(name,len(frames),'frames; actual engine audio correlation',round(confidence,3),flush=True)
  listing=folder/'clips.txt';listing.write_text(''.join(f"file '{p}'\n" for p in clips))
- subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(listing),'-c','copy','-movflags','+faststart',str(OUT/'Pochita_DESPERTAR_Y_BORRADO.mp4')],check=True)
+ subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(listing),'-c','copy','-movflags','+faststart',str(OUT/'Pochita_SIN_SIERRA_GIGANTE.mp4')],check=True)
 (OUT/'Pochita_devour_visual_checks.json').write_text(json.dumps(reports,indent=2)+'\n');(OUT/'Pochita_devour_audio_checks.json').write_text(json.dumps(evidence,indent=2)+'\n')
-print('Captured chains, awakening, devour and relocated five-cut special with actual engine audio')
+print('Captured physical thrust, awakening, devour and relocated five-cut special with actual engine audio')
+
+shutil.copy2(OUT/'Pochita_SIN_SIERRA_GIGANTE.mp4',OUT/'Pochita_DESPERTAR_Y_BORRADO.mp4')

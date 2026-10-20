@@ -1,17 +1,17 @@
 [
   {
-    "case": "current character",
+    "case": "current character without rejected weapon",
     "passed": true
   },
   {
     "case": "independent rebuild",
     "passed": true,
     "sha256": {
-      "PochitaTrueForm.sff": "6d242626a70d252bcde5d74985c88bd397ea1a16ec3098fca13190aac773ced7",
+      "PochitaTrueForm.sff": "de1a634ad9ec7474f30c8d10b8201af633d3fa3b71cc2d7c6578a5dfc7da3bef",
       "PochitaTrueForm.snd": "f8d08ceae40e34b2b051afe6e54520285781190c4c60727c5b8e1e7d055f3b77",
-      "PochitaTrueForm.air": "9374582380293a14ee3761bec06b8914882380af2ad2f93b6605d462067d708b",
+      "PochitaTrueForm.air": "85443792ad8d48ec5558c7ec85f2d557d9a51b826fbecf49cec20aec102316d6",
       "PochitaTrueForm.cmd": "54a43e6fc3ab84294ef6dba7a276a1bef87a1a33145811f671a1057021273a00",
-      "PochitaTrueForm.cns": "32db62b6d03cf545c057c6c33a1273de898366292706d63ffda977b7f9d9c5e1",
+      "PochitaTrueForm.cns": "3704a29d9cee0805218b63fc1658c0eeefa34221013e9a7699c1a1f891e39af7",
       "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9"
     }
   },

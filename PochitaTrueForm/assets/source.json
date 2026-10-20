@@ -20,10 +20,9 @@
   },
   "devour_sources": {
     "devour_fx.png": "229766f4e98c75ec4ffc407b8dfcdf323bc6ea4e158e4170c60d6eb18dbbd1bc",
-    "devour_poses.png": "38d44c76cbb8de000d983f5263be9e2271b391762c764ae56c418c084f3814e6",
-    "chain_extension.png": "dd3f92b68fab2f36e0b97fad7baa9bc27b85472c9174733f1d46057541faf5c8"
+    "devour_poses.png": "38d44c76cbb8de000d983f5263be9e2271b391762c764ae56c418c084f3814e6"
   },
-  "effect_sprite_entries": 64,
+  "effect_sprite_entries": 56,
   "manga_panel_embedded": false,
   "unique_source_poses": 146,
   "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",

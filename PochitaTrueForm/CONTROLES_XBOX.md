@@ -21,7 +21,7 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | Abajo+adelante+X | Desgarro: avance con tres cortes | 250 |
 | Abajo+atrás+X | Cuatro brazos: cinco contactos | 350 |
 | Abajo+X | Ascenso: corte que eleva al rival | 250 |
-| Abajo+adelante+Y | Estocada con cadena física: tres cortes de largo alcance | 350 |
+| Abajo+adelante+Y | Estocada con avance: cortes con motosierras normales | 350 |
 | Abajo+atrás+Y | Barrido bajo de dos contactos | 250 |
 | Abajo+Y | Guillotina: salto corto y corte descendente | 500 |
 | Abajo+adelante+B | Embestida de tres impactos | 500 |
@@ -72,4 +72,4 @@ Con tres barras, mantén abajo y pulsa LB (o el botón «Pausa» que envía `s` 
 
 Abajo + A ejecuta ahora la antigua secuencia de cinco cortes por una barra. A sin abajo activa devorar/borrado por dos barras: debe conectar, daña hasta min(450, 45 % de la vida máxima rival) y quita hasta 500 de energía rival. La desaparición es temporal: el oponente vuelve al combate. Puedes fallar y te pueden bloquear o interrumpir la apertura. Las dos habilidades consumen su coste al iniciarse.
 
-Abajo adelante + Y tiene ahora una cadena visible de largo alcance con tres contactos, por 350 de energía. Desgarro, Embestida y RT tienen mayor avance físico. La cadena se puede bloquear, interrumpir o dejar fuera de alcance; las embestidas no teletransportan al personaje.
+Abajo adelante + Y usa un avance físico y las motosierras normales de sus brazos, por 350 de energía. Se retiró la sierra gigante con cadena. Desgarro, Embestida y RT conservan su avance. Puedes bloquear, interrumpir o esquivar la estocada; desde lejos pueden fallar los cortes iniciales.

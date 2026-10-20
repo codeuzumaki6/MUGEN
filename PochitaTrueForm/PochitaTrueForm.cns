@@ -48,12 +48,6 @@ stand.friction = .82
 crouch.friction = .82
 
 [Statedef -2]
-[State -2, Remove composite body after chain move]
-type = RemoveExplod
-trigger1 = StateNo != 1030
-ID = 9480
-ignorehitpause = 1
-
 [State -2, Awakening attack multiplier]
 type = AttackMulSet
 trigger1 = 1
@@ -2513,23 +2507,10 @@ value = 40
 type = S
 movetype = A
 physics = S
-anim = 1031
-ctrl = 0
-velset = 0,0
-poweradd = 0
-[State 1030, Body under the physical chain]
-type = Explod
-trigger1 = Time = 0
 anim = 1030
-ID = 9480
-postype = p1
-pos = 0,0
-bindtime = -1
-removetime = -1
-sprpriority = -1
-ownpal = 1
-removeongethit = 1
-ignorehitpause = 0
+ctrl = 0
+velset = 3.5,0
+poweradd = 0
 [State 1030, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -2537,7 +2518,7 @@ value = S1,1
 channel = 1
 [State 1030, Choreographed blade contact 3]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = AnimElem = 3
 attr = S, SA
 damage = 30,2
 animtype = Light
@@ -2565,7 +2546,7 @@ envshake.ampl = -1
 
 [State 1030, Choreographed blade contact 7]
 type = HitDef
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 7
 attr = S, SA
 damage = 34,2
 animtype = Light
@@ -2593,7 +2574,7 @@ envshake.ampl = -1
 
 [State 1030, Choreographed blade contact 11]
 type = HitDef
-trigger1 = AnimElem = 9
+trigger1 = AnimElem = 11
 attr = S, SA
 damage = 62,5
 animtype = Heavy
@@ -2633,7 +2614,7 @@ trigger1 = HitCount > Var(26)
 anim = 9200
 ID = 9400
 postype = p1
-pos = P2Dist X,-36
+pos = 42,-36
 facing = 1
 bindtime = 0
 removetime = 16
@@ -2652,7 +2633,7 @@ trigger1 = HitCount > Var(26)
 anim = 9201
 ID = 9401
 postype = p1
-pos = P2Dist X,-36
+pos = 42,-36
 facing = 1
 bindtime = 0
 removetime = 16
@@ -2687,7 +2668,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 3]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 4
+trigger1 = AnimElem = 3
 anim = 9602
 ID = 9460
 postype = p1
@@ -2706,7 +2687,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 7]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 6
+trigger1 = AnimElem = 7
 anim = 9602
 ID = 9460
 postype = p1
@@ -2725,7 +2706,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 11]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 9
+trigger1 = AnimElem = 11
 anim = 9602
 ID = 9460
 postype = p1
@@ -2750,7 +2731,7 @@ trigger1 = Var(35) = 0
 anim = 9602
 ID = 9461
 postype = p1
-pos = P2Dist X,-34
+pos = 38,-34
 facing = 1
 bindtime = 0
 removetime = 12
@@ -2802,6 +2783,16 @@ palbright = 10,-15,-15
 palmul = .8,.7,.7
 trans = add
 
+[State 1030, Maintain physical approach speed]
+type = VelSet
+triggerall = Time < 20
+trigger1 = P2Dist X > 40
+x = 6.5
+[State 1030, Stop approach at contact distance]
+type = VelSet
+triggerall = Time < 20
+trigger1 = P2Dist X <= 40
+x = 0
 [State 1030, End]
 type = ChangeState
 trigger1 = AnimTime = 0
