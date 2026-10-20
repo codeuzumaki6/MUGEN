@@ -205,6 +205,18 @@ command = /$D,s
 time = 1
 buffer.time = 1
 
+[Command]
+name = "LazoIntestinal"
+command = /$D,y
+time = 1
+buffer.time = 3
+
+[Command]
+name = "SujetarYDesgarrar"
+command = /$D,z
+time = 1
+buffer.time = 3
+
 [Statedef -1]
 
 [State -1, AI counter]
@@ -263,6 +275,7 @@ triggerall = AILevel > 0
 triggerall = StateType = A
 triggerall = P2Dist X < 90
 triggerall = Random < 180
+triggerall = Var(18) < 3
 trigger1 = Ctrl
 
 [State -1, Down charge regeneration]
@@ -285,6 +298,60 @@ triggerall = Power >= 1000
 triggerall = StateType != A
 trigger1 = Ctrl
 trigger2 = StateNo = 100
+
+[State -1, LazoIntestinal]
+type = ChangeState
+triggerall = command = "LazoIntestinal"
+triggerall = StateType != A
+triggerall = Power >= 350
+trigger1 = Ctrl
+trigger2 = StateNo = 100
+trigger3 = StateNo = 200
+trigger3 = MoveHit
+trigger4 = StateNo = 201
+trigger4 = MoveHit
+trigger5 = StateNo = 202
+trigger5 = MoveHit
+trigger6 = StateNo = 210
+trigger6 = MoveHit
+trigger7 = StateNo = 211
+trigger7 = MoveHit
+trigger8 = StateNo = 212
+trigger8 = MoveHit
+trigger9 = StateNo = 220
+trigger9 = MoveHit
+trigger10 = StateNo = 221
+trigger10 = MoveHit
+trigger11 = StateNo = 222
+trigger11 = MoveHit
+value = 1200
+
+[State -1, SujetarYDesgarrar]
+type = ChangeState
+triggerall = command = "SujetarYDesgarrar"
+triggerall = StateType != A
+triggerall = Power >= 600
+trigger1 = Ctrl
+trigger2 = StateNo = 100
+trigger3 = StateNo = 200
+trigger3 = MoveHit
+trigger4 = StateNo = 201
+trigger4 = MoveHit
+trigger5 = StateNo = 202
+trigger5 = MoveHit
+trigger6 = StateNo = 210
+trigger6 = MoveHit
+trigger7 = StateNo = 211
+trigger7 = MoveHit
+trigger8 = StateNo = 212
+trigger8 = MoveHit
+trigger9 = StateNo = 220
+trigger9 = MoveHit
+trigger10 = StateNo = 221
+trigger10 = MoveHit
+trigger11 = StateNo = 222
+trigger11 = MoveHit
+value = 1210
 
 [State -1, Xbox A Ultimate]
 type = ChangeState
@@ -846,6 +913,7 @@ trigger18 = Var(32) < 2
 type = ChangeState
 value = 1100
 triggerall = command = "Asalto"
+triggerall = command != "holddown"
 triggerall = Power >= 750
 triggerall = StateType != A
 trigger1 = Ctrl
@@ -906,6 +974,7 @@ trigger18 = Var(32) < 2
 type = ChangeState
 value = 1400
 triggerall = command = "y"
+triggerall = command != "holddown"
 triggerall = Power >= 250
 triggerall = StateType != A
 trigger1 = Ctrl
@@ -1054,24 +1123,6 @@ triggerall = Time > 0
 trigger1 = Var(25) = 1
 ignorehitpause = 1
 
-[State -1, Hit confirmed 600 to 610]
-type = ChangeState
-value = 610
-triggerall = StateNo = 600
-triggerall = MoveHit
-triggerall = Time > 0
-trigger1 = Var(25) = 1
-ignorehitpause = 1
-
-[State -1, Hit confirmed 610 to 620]
-type = ChangeState
-value = 620
-triggerall = StateNo = 610
-triggerall = MoveHit
-triggerall = Time > 0
-trigger1 = Var(25) = 1
-ignorehitpause = 1
-
 [State -1, Hit confirmed 211 to 212]
 type = ChangeState
 value = 212
@@ -1088,6 +1139,16 @@ triggerall = StateNo = 221
 triggerall = MoveHit
 triggerall = Time > 0
 trigger1 = Var(25) = 1
+ignorehitpause = 1
+
+[State -1, Mixed aerial continuation]
+type = ChangeState
+triggerall = (StateNo = 600) || (StateNo = 610) || (StateNo = 620) || (StateNo = [660,662])
+triggerall = MoveHit
+triggerall = Time > 0
+triggerall = Var(18) < 3
+trigger1 = Var(19) > 0
+value = IfElse(Var(18) = 1,660,670)+Var(19)-1
 ignorehitpause = 1
 
 [State -1, Normal a]
@@ -1146,6 +1207,7 @@ type = ChangeState
 value = 600
 triggerall = command = "a"
 triggerall = StateType = A
+triggerall = Var(18) < 3
 trigger1 = Ctrl
 
 [State -1, Air b]
@@ -1153,6 +1215,7 @@ type = ChangeState
 value = 610
 triggerall = command = "b"
 triggerall = StateType = A
+triggerall = Var(18) < 3
 trigger1 = Ctrl
 
 [State -1, Air c]
@@ -1160,4 +1223,5 @@ type = ChangeState
 value = 620
 triggerall = command = "c"
 triggerall = StateType = A
+triggerall = Var(18) < 3
 trigger1 = Ctrl

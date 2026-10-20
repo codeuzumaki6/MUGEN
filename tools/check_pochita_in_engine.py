@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];ENGINE=Path(sys.argv[1] if len(sys.argv
 DUMMY_LIFE=int(os.environ.get('POCHITA_DUMMY_LIFE','1000'))
 EXTENSION=bool(os.environ.get('POCHITA_DEVOUR_CHECK'))
 KO_CHECK=bool(os.environ.get('POCHITA_KO_CHECK'))
+AIR_SCARF=bool(os.environ.get('POCHITA_AIR_SCARF_CHECK'))
 CHOREOGRAPHY=json.loads((ROOT/'PochitaTrueForm/assets/special_choreography.json').read_text())
 character=ENGINE/'chars/PochitaCheck';dummy=ENGINE/'chars/PochitaDummy';shutil.copytree(ROOT/'PochitaTrueForm',character,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True)
 shutil.copy2(character/'PochitaTrueForm.def',character/'PochitaCheck.def');shutil.copy2(dummy/'kfm.def',dummy/'PochitaDummy.def')
@@ -37,14 +38,14 @@ for face in [1,-1]:
   states=[{'a':200,'b':210,'c':220}[sequence[0]],{'a':201,'b':211,'c':221}[sequence[1]],{'a':202,'b':212,'c':222}[sequence[2]]]
   expected={'a':32,'b':48,'c':55}[sequence[0]]+{'a':40,'b':42,'c':45}[sequence[1]]+{'a':80,'b':90,'c':105}[sequence[2]]
   cases.append(dict(name='Mixed '+''.join({'a':'X','b':'Y','c':'B'}[b] for b in sequence),button=sequence[0],sequence=sequence,route=states,expected=expected,direction='N',state=states[-1],cost=0,kind='mixedcombo',facing=face,distance=42))
- cases.append(dict(name='Launcher aerial pursuit',button='a',direction='N',state=620,cost=0,kind='pursuit',facing=face,distance=42))
+ cases.append(dict(name='Launcher aerial pursuit',button='a',direction='N',state=672,cost=0,kind='pursuit',facing=face,distance=42))
  for kind in ['specialchain','chaincap']:
   cases.append(dict(name='Mixed into two specials'+(' capped' if kind=='chaincap' else ''),button='a',direction='N',state=1010,cost=600,kind=kind,facing=face,distance=42))
  for kind,distance in [('comboblock',42),('combowhiff',220)]:cases.append(dict(name='Mixed XYB '+kind,button='a',sequence=['a','b','c'],direction='N',state=200,finish=222,cost=0,kind=kind,facing=face,distance=distance))
  for kind,distance in [('specialblock',42),('specialwhiff',220)]:cases.append(dict(name=kind,button='a',direction='N',state=200,cost=0,kind=kind,facing=face,distance=distance))
  for button,first,final in [('a',200,202),('b',210,212),('c',220,222)]:
   for kind,distance in [('comboblock',42),('combowhiff',220)]:cases.append(dict(name=kind+' '+button,button=button,direction='N',state=first,finish=final,cost=0,kind=kind,facing=face,distance=distance))
- cases.append(dict(name='Aerial XYZ',button='a',direction='N',state=620,cost=0,kind='aircombo',facing=face,distance=40))
+ cases.append(dict(name='Aerial XYZ',button='a',direction='N',state=672,cost=0,kind='aircombo',facing=face,distance=40))
  cases.append(dict(name='RB physical counter',button='y',direction='N',state=1401,cost=250,kind='counter',facing=face,distance=42))
  for variant in ['sweep','bounce','airbounce']:cases.append(dict(name='Get up '+variant,button='a',direction='N',state=5120,cost=0,kind='recovery',variant=variant,facing=face,distance=40))
  for kind,dist in [('ultihit',90),('ultiblock',90),('ultijump',90),('ultifar',320)]:cases.append(dict(name=kind,button='x',direction='N',state=3000,cost=2000,kind=kind,facing=face,distance=dist))
@@ -62,6 +63,20 @@ if EXTENSION:
    cases.append(dict(name=name,button=button,direction=direction,state=state,cost=cost,kind=kind,facing=face,distance=dist))
   for kind,dist,power in [('devour_interrupted',42,3000),('devour_escape',90,3000)]:cases.append(dict(name=kind,button='x',direction='N',state=3000,cost=2000,power=power,kind=kind,facing=face,distance=dist))
   for kind,dist,power in [('oldhit',90,3000),('oldblock',90,3000),('oldfar',320,3000),('oldempty',90,999)]:cases.append(dict(name=kind,button='x',direction='D',state=1500,cost=1000 if kind!='oldempty' else 0,power=power,kind=kind,facing=face,distance=dist))
+if AIR_SCARF:
+ cases=[]
+ for face in [1,-1]:
+  for sequence in product('abc',repeat=3):
+   route=[{'a':600,'b':610,'c':620}[sequence[0]],660+'abc'.index(sequence[1]),670+'abc'.index(sequence[2])]
+   expected={'a':50,'b':52,'c':70}[sequence[0]]+{'a':45,'b':55,'c':55}[sequence[1]]+{'a':85,'b':95,'c':100}[sequence[2]]
+   cases.append(dict(name='Air '+''.join({'a':'X','b':'Y','c':'B'}[b] for b in sequence),button=sequence[0],sequence=sequence,route=route,expected=expected,direction='N',state=route[-1],cost=0,kind='airmixed',facing=face,distance=40))
+  for kind,dist in [('airmiss',260),('airguard',40),('aircap',40),('airlate',40)]:
+   cases.append(dict(name=kind,button='a',sequence=['a','b','c'],route=[600,661,672],expected=205,direction='N',state=600,cost=0,kind=kind,facing=face,distance=dist))
+if AIR_SCARF:
+ for face in [1,-1]:
+  for button,state,cost in [('y',1200,350),('z',1210,600)]:
+   for variant in ['hit','block','miss','jump','empty','exact','break','escape']+(['followup'] if state==1200 else []):
+    cases.append(dict(name=('Lazo RB ' if state==1200 else 'Agarre RT ')+variant,button=button,direction='D',state=state,cost=0 if variant=='empty' else cost,power=cost-1 if variant=='empty' else cost if variant=='exact' else 3000,kind='scarf_'+variant,facing=face,distance=250 if variant=='miss' else 90))
 if KO_CHECK:cases=[dict(name='awakening KO',button='s',direction='D',state=520,cost=1000,life=800,power=3000,kind='awake_ko',facing=1,distance=140)]
 if os.environ.get('POCHITA_AI'):
  cases=[dict(name='CPU offense',button='s',direction='N',state=0,cost=0,kind='ai',facing=1,distance=55)]
@@ -87,7 +102,7 @@ for i,c in enumerate(cases):
   block=ctl('VarSet',at(1),f'v = 59\nvalue = {i}')+ctl('LifeSet',at(1),f'value = {c.get("life",1250)}' if side==1 else f'value = {DUMMY_LIFE}')+ctl('PowerSet',at(1),f'value = {1999 if kind=='empty' else 0 if kind in ['charge','crouch','fullcharge'] else c.get('power',3000)}')+ctl('PosSet',at(1),f'x = {x}\ny = 0')+ctl('VelSet',at(1),'x = 0\ny = 0')+ctl('Turn',at(1)+f' && Facing != {direction}','')+ctl('HitFallSet',at(1),'value = 0')+ctl('ChangeState',at(1),'value = 0\nctrl = 1')
   if side==1:p1+=block
   else:p2+=block
- for variable in [33,36,37]:p1+=ctl('VarSet',at(2),f'v = {variable}\nvalue = 0')
+ for variable in [18,19,20,33,36,37,42,49]:p1+=ctl('VarSet',at(2),f'v = {variable}\nvalue = 0')
  if kind in ['specialchain','chaincap','specialblock','specialwhiff']:
   # ChangeState at tick 1 stops the -2 pass; clear fixture clocks on tick 2.
   for variable in [42,47,48,49]:p1+=ctl('VarSet',at(2),f'v = {variable}\nvalue = 0')
@@ -116,7 +131,7 @@ for i,c in enumerate(cases):
   if kind=='pursuit':
    p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = 202 && MoveHit','flag = U')
    p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = 650 && Time = 4','flag = a')
-   for state,button in [(600,'b'),(610,'c')]:p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = {state} && MoveHit && HitPauseTime = 4','flag = '+button)
+   for state,button in [(600,'b'),(661,'c')]:p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = {state} && MoveHit && HitPauseTime = 4','flag = '+button)
   else:
    def motion_after_hit(state,variable,direction,button,hits=1):
     condition=f'Var(59) = {i} && StateNo = {state} && Time >= {16 if hits==2 else 6} && MoveHit && Var({variable}) = 0'
@@ -135,13 +150,22 @@ for i,c in enumerate(cases):
  elif kind in ['comboblock','combowhiff']:
   for tick,button in zip([22,44,66],c.get('sequence',[c['button']]*3)):p1+=ctl('AssertInput',at(tick),'flag = '+button)
   if kind=='comboblock':p2+=ctl('AssertInput',window(10,150),'flag = '+('R' if face==1 else 'L'))
+ elif kind in ['airmixed','airmiss','airguard','aircap','airlate']:
+  p1+=ctl('AssertInput',at(22),'flag = U')
+  p2+=ctl('AssertInput',at(22),'flag = U')
+  p1+=ctl('AssertInput',at(30 if kind!='airlate' else 52),'flag = '+c['button'])
+  for state,button in zip(c['route'][:2],c['sequence'][1:]):p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = {state} && MoveHit && HitPauseTime = 4','flag = '+button)
+  if kind=='airguard':p2+=ctl('AssertInput',window(29,140),'flag = '+('R' if face==1 else 'L'))
+  if kind=='aircap':
+   p1+=ctl('AssertInput',f'Var(59) = {i} && StateType = A && Ctrl && Var(18) >= 3','flag = a')
+   p1+=ctl('VarSet',f'Var(59) = {i} && StateType = A && Ctrl && Var(18) >= 3 && command = "a"','v = 42\nvalue = 1')
  elif kind=='aircombo':
   for side in [1,2]:
    b=ctl('PosSet',window(12,115),'y = -60')+ctl('VelSet',window(12,115),'y = 0')+ctl('ChangeState',at(12),'value = 50\nctrl = '+('1' if side==1 else '0'))
    if side==1:p1+=b
    else:p2+=b
   p1+=ctl('AssertInput',at(22),'flag = a')
-  for state,button in [(600,'b'),(610,'c')]:p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = {state} && MoveHit && HitPauseTime = 4','flag = '+button)
+  for state,button in [(600,'b'),(661,'c')]:p1+=ctl('AssertInput',f'Var(59) = {i} && StateNo = {state} && MoveHit && HitPauseTime = 4','flag = '+button)
  elif kind=='dash':
   for a,b in [(12,14),(18,32)]:p1+=ctl('AssertInput',window(a,b),'flag = '+('R' if face==1 else 'L'))
   p1+=ctl('AssertInput',at(30),'flag = a')
@@ -155,6 +179,13 @@ for i,c in enumerate(cases):
   if kind in ['awake_cooldown','awake_again']:
    p1+=ctl('PowerSet',at(450),'value = 3000')+ctl('AssertInput',window(480,490),'flag = D')+ctl('AssertInput',at(485),'flag = s')
   if kind=='awake_again':p1+=ctl('AssertInput',window(980,990),'flag = D')+ctl('AssertInput',at(985),'flag = s')
+ if kind=='scarf_block':p2+=ctl('AssertInput',window(10,160),'flag = '+('R' if face==1 else 'L'))
+ if kind=='scarf_jump':p2+=ctl('AssertInput',at(20),'flag = U')
+ if kind=='scarf_break':p2+=ctl('PosAdd',at(23),'x = 58')+ctl('ChangeState',at(24),'value = 9702\nctrl = 0')
+ if kind=='scarf_escape':p1+=ctl('ChangeState',f'Var(59) = {i} && StateNo = {c["state"]+1} && Time = 8','value = 0\nctrl = 1')
+ if kind=='scarf_followup':
+  gate=f'Var(59) = {i} && StateNo = 0 && (EnemyNear,StateNo) = 1221 && Var(49) = 0'
+  p1+=ctl('AssertInput',gate,'flag = a')+ctl('VarSet',gate,'v = 49\nvalue = 1')
  if kind=='devour_interrupted':p2+=ctl('ChangeState',at(24),'value = 9701\nctrl = 0')
  if kind=='devour_escape':p1+=ctl('ChangeState',at(85),'value = 0\nctrl = 1')
  if kind=='approachblock':p2+=ctl('AssertInput',window(10,220),'flag = '+('R' if face==1 else 'L'))
@@ -251,7 +282,7 @@ if capture:
  capturecode="""
  local st=stateNo();local stime=var(55)
  if st~=cap.state then
-  local sounds={[200]=0,[201]=0,[202]=1,[210]=0,[211]=1,[212]=7,[220]=0,[221]=1,[222]=8,[600]=0,[610]=0,[620]=0,[3000]=10,[1500]=3,[520]=13,[1000]=1,[1010]=1,[1020]=1,[1030]=1,[1040]=1,[1050]=1,[1060]=1,[1070]=3,[1080]=1,[1100]=3}
+  local sounds={[200]=0,[201]=0,[202]=1,[210]=0,[211]=1,[212]=7,[220]=0,[221]=1,[222]=8,[600]=0,[610]=0,[620]=0,[660]=0,[661]=0,[662]=0,[670]=8,[671]=7,[672]=8,[1200]=10,[1210]=10,[3000]=10,[1500]=3,[520]=13,[1000]=1,[1010]=1,[1020]=1,[1030]=1,[1040]=1,[1050]=1,[1060]=1,[1070]=3,[1080]=1,[1100]=3}
   if st==11000 or st==11010 or st==11030 or st==11040 or st==11060 or st==11070 then sounds[st]=10 end
   if sounds[st]~=nil then cue(t,sounds[st]) end
   cap.state=st;cap.lastut=-1
@@ -307,7 +338,7 @@ assert sorted(extension)==list(range(len(cases))),sorted(extension)
 report=[];errors=[]
 for i,c in enumerate(cases):
  _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex,blood,slashes,ground,endfx,attempt,flare,ring,trails,finishes,maxhits,attacktime=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
- if kind=='empty' or kind=='oldempty' or kind=='awake_empty':
+ if kind in ['empty','oldempty','awake_empty','scarf_empty']:
   if c['state'] in states:fail.append('technique spent unavailable power')
  else:
   if c['state'] not in states:fail.append('expected state not reached')
@@ -326,10 +357,22 @@ for i,c in enumerate(cases):
  if kind in ['combo','special','shortcut','crouch','aircombo','counter'] and damage<=0:fail.append('no collision damage')
  if kind in ['comboblock','combowhiff'] and (c['finish'] in states or damage>40):fail.append('third combo hit occurred without confirming earlier hits')
  if kind=='combowhiff' and damage!=0:fail.append('missed normal caused damage')
- if kind=='aircombo' and (not {600,610,620}.issubset(states) or damage<172):fail.append('air links failed')
+ if kind=='aircombo' and (not {600,661,672}.issubset(states) or damage<205):fail.append('air links failed')
+ if kind in ['airmixed','aircap'] and (not set(c['route']).issubset(states) or damage!=c['expected']):fail.append('free-physics airborne chain lost a real contact or exceeded its damage budget')
+ if kind in ['airmixed','airmiss','airguard','aircap','airlate'] and (int(last)!=0 or int(final) in [1220,1221,1222]):fail.append('air route failed to land or release control')
+ if kind=='airmiss' and (damage!=0 or {661,672}.intersection(states)):fail.append('whiffed aerial attack chained or damaged at distance')
+ if kind=='airguard' and (damage>10 or {661,672}.intersection(states) or int(blood)>0):fail.append('aerial guard failed to stop the chain')
+ if kind=='aircap' and int(attempt)!=1:fail.append('fourth airborne button was never attempted')
+ if kind.startswith('scarf_'):
+  if int(last)!=0 or int(final) in [1220,1221,1222]:fail.append('scarf attack left attacker or victim trapped')
+  if kind in ['scarf_hit','scarf_exact'] and (c['state']+1 not in states or damage!=(40 if c['state']==1200 else 190) or 1220 not in extension[i]['victim_states']):fail.append('physical scarf failed to connect, hold and release its victim')
+  if kind in ['scarf_block','scarf_miss','scarf_jump','scarf_empty','scarf_break'] and (damage!=0 or c['state']+1 in states or 1220 in extension[i]['victim_states']):fail.append('scarf grabbed or damaged a blocked, distant, airborne or interrupted target')
+  if kind=='scarf_empty' and minimum!=c['power']:fail.append('scarf spent unavailable power')
+  if kind=='scarf_break' and int(received)<=0:fail.append('scarf opening could not be interrupted')
+  if kind=='scarf_followup' and (damage!=72 or 200 not in states):fail.append('brief scarf stun did not allow a normal follow-up')
  if kind=='combo' and damage<{'a':152,'b':180,'c':205}[c['button']]:fail.append('not every normal actually hit')
  if kind=='mixedcombo' and (not set(c['route']).issubset(states) or damage!=c['expected']):fail.append('mixed route failed to connect every physical hit')
- if kind=='pursuit' and (not {200,201,202,650,600,610,620}.issubset(states) or damage<324 or int(last)!=0):fail.append('physical launcher/pursuit/air finisher failed')
+ if kind=='pursuit' and (not {200,201,202,650,600,661,672}.issubset(states) or damage<357 or int(last)!=0):fail.append('physical launcher/pursuit/air finisher failed')
  if kind in ['specialchain','chaincap'] and (not {200,211,1000,1010}.issubset(states) or damage<200):fail.append('mixed normal into two paid specials failed')
  if kind=='chaincap' and 1030 in states:fail.append('third special bypassed the two-special sequence limit')
  if kind=='chaincap' and int(attempt)!=1:fail.append('third-special input was not recognized during the cap test')
@@ -374,5 +417,5 @@ for i,c in enumerate(cases):
  if kind=='oldhit' and (1501 not in states or damage!=min(250,DUMMY_LIFE//4)):fail.append('down-A five-cut special failed')
  if kind in ['oldblock','oldfar','oldempty'] and (1501 in states or 3000 in states or damage>0):fail.append('down-A missed or blocked move triggered automatic damage or ultimate')
  row=dict(extension=e,case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),blood_effects=int(blood),slash_effects=int(slashes),ground_effects=int(ground),effects_at_end=int(endfx),third_special_input_recognized=int(attempt),activation_flash=int(flare),ground_ring=int(ring),distinct_trails=int(trails),confirmed_finish=int(finishes),max_hitcount=int(maxhits),attack_time=int(attacktime),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
-path=ROOT/'previews'/(('Pochita_devour_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='devour' else 'Pochita_long_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='long' else 'Pochita_special_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='special' else 'Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_devour_checks.json' if EXTENSION else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
+path=ROOT/'previews'/(('Pochita_air_scarf_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='air_scarf' else 'Pochita_devour_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='devour' else 'Pochita_long_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='long' else 'Pochita_special_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='special' else 'Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_devour_checks.json' if EXTENSION else 'Pochita_air_scarf_checks.json' if AIR_SCARF else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
 print('PASSED',len(report),'raw-input/collision scenarios')

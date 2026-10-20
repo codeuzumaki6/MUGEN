@@ -1,6 +1,6 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_SIN_SIERRA_GIGANTE.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_AEREOS_Y_BUFANDA.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
 ## Corrección de carga en MUGEN
 
@@ -47,7 +47,7 @@ El video de Chainsaw Man enviado por el usuario (29,84 s) se revisó visualmente
 
 Pulsar tres veces X/Y/B permite mezclar botones, por ejemplo X-Y-B, Y-B-X y B-X-Y. Son 27 secuencias que comparten nueve ataques; el último X lanza, Y tritura y B remata contra el suelo. La continuación requiere acertar y pulsar, con entrada guardada durante el golpe. Al bloquear o fallar se corta la ruta.
 
-XXX, arriba al acertar el lanzamiento, X-Y-B en el aire permite perseguir con un salto real y terminar con un corte descendente. La prueba conecta seis impactos y causa 324 sobre 1000 de vida; el rival no se congela ni se teletransporta. X-Y, abajo adelante X, abajo atrás X conecta normales y dos especiales por 600 de energía, causando 266 en el muñeco. La segunda técnica debe ser diferente y acertar la anterior; una tercera se rechaza durante la secuencia. Las técnicas aéreas no admiten esta cancelación de suelo.
+XXX, arriba al acertar el lanzamiento, X-Y-B en el aire permite perseguir con un salto real y terminar con un corte descendente. La prueba conecta seis impactos y causa 357 sobre 1000 de vida; el rival no se congela ni se teletransporta. X-Y, abajo adelante X, abajo atrás X conecta normales y dos especiales por 600 de energía, causando 266 en el muñeco. La segunda técnica debe ser diferente y acertar la anterior; una tercera se rechaza durante la secuencia. Las técnicas aéreas no admiten esta cancelación de suelo.
 
 Se añadieron doce poses para persecución, embestida RT y remate aéreo, con escala compartida. Los cortes iniciales también muestran efectos al acertar. Las pruebas incluyen todas las cadenas mixtas en ambas orientaciones, la persecución con física libre, el límite de especiales con una tercera entrada reconocida y los fallos/bloqueos sin cancelación ni sangre.
 
@@ -56,7 +56,7 @@ Se añadieron doce poses para persecución, embestida RT y remate aéreo, con es
 - X → X → X: tres cortes y lanzamiento del rival, 152 de daño en el muñeco de prueba.
 - Y → Y → Y: extensión, triturado multigolpe y empuje, 180 de daño.
 - B → B → B: giro, salto corto y corte contra el suelo, 217 de daño.
-- X → Y → B en el aire: cadena con derribo, 172 de daño.
+- X → Y → B en el aire: cadena con derribo, 205 de daño.
 - Nueve especiales direccionales entre 250 y 750 de energía; RB cuesta 250 y RT 750. Cada barra equivale a 1000.
 - Vida 1250, defensa 110, carga con LB de 18 unidades por tick hasta 3000. Los combos normales generan energía al conectar.
 
@@ -85,3 +85,11 @@ Pasaron 221 escenarios generales de entradas y colisiones en Ikemen GO, 46 casos
 Los MP4 nuevos `Pochita_despertar_nuevo_motor.mp4`, `Pochita_borrado_nuevo_motor.mp4`, `Pochita_devastacion_nuevo_motor.mp4` y `Pochita_estocada_nuevo_motor.mp4` y la demostración combinada contienen audio real SDL del mezclador de Ikemen GO. La señal se sincroniza por correlación con las muestras del SND. Los videos anteriores representan versiones anteriores; algunos usan audio montado por eventos. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico. La calidad artística y el equilibrio requieren revisión y partidas locales.
 
 Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces mezclando botones al conectar; XXX-arriba-X-Y-B en el aire; dos especiales seguidos; especiales; RB ante un golpe; RT; cargar con LB. Con la barra llena, prueba abajo+LB: una activación, seis segundos, curación limitada y mismo tamaño. Prueba abajo+A acertada, bloqueada y desde lejos: gasta una barra. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.
+
+## Revisión: aire y apéndice intestinal
+
+Se sustituyó la única ruta aérea X-Y-B por tres etapas con X/Y/B mezclables: 27 secuencias que comparten nueve acciones, con lanzamiento, triturado y remate descendente según el botón final. Máximo tres ataques por vuelo, sin coste de energía, con seguimiento físico corto al acertar. La prueba nueva empieza pulsando arriba en ambos personajes y deja funcionar la gravedad; no congela su altura. Se comprueban todas las rutas en ambos sentidos, guardia aérea, fallo lejano, ataque a baja altura y cuarto botón rechazado hasta aterrizar. XXX-arriba-XYB alcanza 357 en el muñeco de prueba.
+
+Abajo+RB cuesta 350: lazo bloqueable, daño 40 y sujeción breve seguida de 20 ticks de tambaleo. Abajo+RT cuesta 600: sujeción confirmada y tres cortes, daño total 190. Tienen ocho poses de cuerpo nuevas con la bufanda roja, una sola escala corporal y cajas ceñidas al apéndice visible. Pueden fallar, ser bloqueados o interrumpidos; no sujetan objetivos aéreos. Los cortes del agarre RT usan daño fijo y no se multiplican por el despertar. El agarre y el tambaleo son adaptaciones de combate solicitadas, no técnicas con esos nombres en el manga. El rival se libera al terminar y también si el atacante sale de la secuencia.
+
+Archivo actual: 221 sprites SFF (163 entradas de cuerpo, 56 efectos, dos retratos), 14 sonidos. Los ataques aéreos reutilizan poses existentes; las ocho nuevas corresponden a la bufanda. Conserva RB/RT normales, despertar, Devastación y ultimate sin la sierra gigante rechazada. Prueba local adicional: saltar y enlazar XXX, XYY y XYB; después abajo+RB seguido de X, abajo+RT acertado/bloqueado/fallado y recibir un derribo tras usarlos.

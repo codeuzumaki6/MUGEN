@@ -16,7 +16,7 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
  check(m is not None,f'DEF missing {key}')
  if m:check((CHAR/m[1].strip()).is_file(),f'DEF missing target for {key}')
 sprites=shared.parse_sff(CHAR/(stem+'.sff'));sounds=shared.parse_snd(CHAR/(stem+'.snd'))
-check(len(sprites)==213,'Expected 155 body entries, 56 effects and two portraits')
+check(len(sprites)==221,'Expected 163 body entries, 56 effects and two portraits')
 check(not any(group==9800 for group,number in sprites),'Rejected giant saw must not be packed')
 check(len(sounds)==14,'Expected fourteen nonverbal effects')
 raw=(CHAR/(stem+'.sff')).read_bytes();sh,count,ph,pcount,ld,*_=struct.unpack_from('<IIIIIIII',raw,36);geometry={}
@@ -25,7 +25,7 @@ for i in range(pcount):
  _,_,_,_,offset,size=struct.unpack_from('<HHHHII',raw,ph+i*16);palettes.append(raw[ld+offset:ld+offset+size])
 for i in range(count):
  g,n,w,h,x,y,_,_,_,offset,size,pi,_=struct.unpack_from('<HHHHhhHBBIIHH',raw,sh+i*28);p=palettes[pi]
- nonred={j for j in range(256) if p[j*4+3] and not (p[j*4]>70 and p[j*4]>p[j*4+1]*1.3)}
+ nonred={j for j in range(256) if p[j*4+3] and (g==3400 or not (p[j*4]>70 and p[j*4]>p[j*4+1]*1.3))}
  positions=[j%w-x for j,pixel in enumerate(raw[ld+offset:ld+offset+size]) if pixel in nonred]
  if positions:geometry[g,n]=max(positions)
 actions={};current=None;idle=[];pending_attack=None;transient=False
@@ -41,7 +41,7 @@ for line in (CHAR/(stem+'.air')).read_text().splitlines():
   check(current is not None,'AIR frame outside action');actions[current].append(int(m[3]))
   if current==0:idle.append(ref)
   if pending_attack is not None:
-   check(ref in geometry and pending_attack<=geometry[ref]+2,f'Action {current}: attack extends beyond the rendered blade of sprite {ref}')
+   check(ref in geometry and pending_attack<=geometry[ref]+2,f'Action {current}: attack extends beyond the rendered weapon of sprite {ref}')
    pending_attack=None
  m=re.match(r'\s*Clsn[12]\[\d+\]\s*=\s*(-?\d+),\s*(-?\d+),\s*(-?\d+),\s*(-?\d+)',line,re.I)
  if m:
@@ -89,4 +89,4 @@ if shared.errors:
  print('VALIDATION FAILED')
  for error in shared.errors:print('-',error.replace('Eida','PochitaTrueForm'))
  raise SystemExit(1)
-print(f'PASSED: {len(sprites)} SFF sprites, {len(sounds)} decoded PCM sounds, {len(actions)} AIR actions, {len(states)} states; rendered blade reach, file references and MUGEN 1.1 expressions checked')
+print(f'PASSED: {len(sprites)} SFF sprites, {len(sounds)} decoded PCM sounds, {len(actions)} AIR actions, {len(states)} states; rendered weapon reach, file references and MUGEN 1.1 expressions checked')

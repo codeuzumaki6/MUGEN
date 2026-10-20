@@ -17,7 +17,7 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | Y, Y, Y al conectar | Extensión, triturado multigolpe y empuje | 0 |
 | B, B, B al conectar | Giro, salto corto y remate contra el suelo | 0 |
 | XXX y mantener arriba al acertar, luego X → Y → B en el aire | Perseguir el lanzamiento y rematar hacia el suelo | 0 |
-| X → Y → B en el aire al conectar | Cadena aérea de tres ataques | 0 |
+| Tres pulsaciones mezclando X/Y/B en el aire | 27 rutas: X final lanza, Y tritura, B remata hacia abajo | 0 |
 | Abajo+adelante+X | Desgarro: avance con tres cortes | 250 |
 | Abajo+atrás+X | Cuatro brazos: cinco contactos | 350 |
 | Abajo+X | Ascenso: corte que eleva al rival | 250 |
@@ -29,6 +29,8 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | Abajo+B | Rasante: corte bajo y derribo | 250 |
 | RB | Guardia de motosierras y respuesta si recibe un golpe durante la ventana | 250 |
 | RT | Asalto de cinco cortes con alcance extendido | 750 |
+| Abajo + RB | Lazo intestinal: sujeta y deja un tambaleo breve para enlazar un normal | 350 |
+| Abajo + RT | Sujeción intestinal y tres cortes de motosierras, con lanzamiento | 600 |
 | Mantener LB / antiguo Pausa | Acelerar motores y cargar; soltar para detener | Carga hasta 3000 |
 | Abajo + LB / antiguo Pausa | Despertar de 6 s, hasta 240 de curación y daño físico +20 %; exige barra llena | 1000 |
 | Abajo + A | Devastación: antigua ultimate de cinco cortes, daño limitado al 25 % rival o 250 | 1000 |
@@ -47,7 +49,7 @@ Los remates de X/Y/B tienen cortes visibles, sangre al acertar y respuestas dist
 - **X → Y → B**: corte rápido, extensión de motosierras y remate contra el suelo; 179 en el muñeco de prueba.
 - **Y → B → X**: entrada fuerte, giro y lanzamiento; 173.
 - **B → X → Y**: giro, corte y triturado; 185.
-- **X → X → X + arriba, después X → Y → B en el aire**: persecución con salto real y corte descendente; 324 en seis impactos. Mantén arriba al conectar el último X; pulsa el X aéreo durante el salto. No es un teletransporte.
+- **X → X → X + arriba, después X → Y → B en el aire**: persecución con salto real y corte descendente; 357 en seis impactos. Mantén arriba al conectar el último X; pulsa el X aéreo durante el salto. No es un teletransporte.
 - **X → Y → abajo adelante X → abajo atrás X**: enlaza dos especiales diferentes; gasto total 600, daño 266 en el muñeco. El ejemplo cancela la primera técnica tras sus dos contactos iniciales; dejarla terminar ejecuta su tercer corte.
 
 Puedes mezclar los tres botones en las tres etapas: son 27 secuencias que comparten ataques, no 27 animaciones diferentes. La pulsación del siguiente golpe se guarda durante el ataque y se ejecuta al acertar. Si fallas o te bloquean, la ruta se corta. Un golpe independiente tras recuperar control puede iniciar otra cadena.
@@ -73,3 +75,9 @@ Con tres barras, mantén abajo y pulsa LB (o el botón «Pausa» que envía `s` 
 Abajo + A ejecuta ahora la antigua secuencia de cinco cortes por una barra. A sin abajo activa devorar/borrado por dos barras: debe conectar, daña hasta min(450, 45 % de la vida máxima rival) y quita hasta 500 de energía rival. La desaparición es temporal: el oponente vuelve al combate. Puedes fallar y te pueden bloquear o interrumpir la apertura. Las dos habilidades consumen su coste al iniciarse.
 
 Abajo adelante + Y usa un avance físico y las motosierras normales de sus brazos, por 350 de energía. Se retiró la sierra gigante con cadena. Desgarro, Embestida y RT conservan su avance. Puedes bloquear, interrumpir o esquivar la estocada; desde lejos pueden fallar los cortes iniciales.
+
+## Combos aéreos y bufanda intestinal
+
+Salta y pulsa de nuevo X, Y o B al acertar: puedes repetir o mezclar los botones en las tres etapas. **XXX** aéreo causa 180 y lanza; **XYY** causa 200 con triturado de tres contactos en el último Y; **XYB** causa 205 y remata hacia abajo en el muñeco de 1000 de vida. Las 27 secuencias comparten nueve acciones, no son 27 animaciones dibujadas diferentes. No cuestan energía. Hay un máximo de tres ataques aéreos por vuelo: recuperar control en el aire no reinicia ese límite. Aterrizar o recibir un golpe lo reinicia. Un fallo o bloqueo no permite cancelar al siguiente ataque; puedes volver a atacar después de recuperar control si queda presupuesto del salto. El salto y la caída conservan física y las continuaciones dan un impulso corto al acertar.
+
+**Abajo + RB (350)** extiende la bufanda roja de intestinos, sujeta al conectar y libera con 20 ticks de tambaleo; recuperas control cuatro ticks después de soltarlo, dejando una ventana para un normal. Daño inicial: 40. **Abajo + RT (600)** sujeta y remata con tres cortes, daño total 190 antes de las defensas particulares del rival; la parte de cortes usa daño fijo. Ambas aperturas son bloqueables, interrumpibles, de alcance limitado al dibujo y fallan contra un rival en el aire. No agarran automáticamente desde cualquier distancia. El rival recupera sus estados propios al terminar o si Pochita abandona el agarre. Sujete/remate son adaptaciones jugables del apéndice intestinal; no son nombres ni técnicas oficiales del manga. RB y RT sin abajo conservan sus movimientos anteriores.

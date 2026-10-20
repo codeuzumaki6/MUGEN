@@ -15,13 +15,14 @@ with tempfile.TemporaryDirectory(prefix='pochita-delivery-') as directory:
   assert z.testzip() is None;z.extractall(directory)
  for name in files:assert (Path(directory)/'PochitaTrueForm'/name).read_bytes()==(CHAR/name).read_bytes()
  subprocess.run([sys.executable,str(ROOT/'tools/validate_pochita.py'),str(Path(directory)/'PochitaTrueForm')],check=True)
-alias=ROOT/'PochitaTrueForm_SIN_SIERRA_GIGANTE.zip';shutil.copy2(archive,alias)
+alias=ROOT/'PochitaTrueForm_AEREOS_Y_BUFANDA.zip';shutil.copy2(archive,alias)
+shutil.copy2(archive,ROOT/'PochitaTrueForm_SIN_SIERRA_GIGANTE.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_DESPERTAR_Y_BORRADO.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_ESPECIALES_LARGOS.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_ESPECIALES_CON_SONIDO.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_JUGABILIDAD.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_CORREGIDO.zip')
 shutil.copy2(archive,ROOT/'PochitaTrueForm_REMATES.zip')
-manifest={'archive':alias.name,'alias':archive.name,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'files':{name:hashlib.sha256((CHAR/name).read_bytes()).hexdigest() for name in files},'validation':'221 general Ikemen input/collision scenarios, 46 awakening/range/relocated-special scenarios, CPU, four low-LifeMax cinematic scenarios, KO/no-revive check, six MUGEN structure regressions, deterministic rebuild, four actual SDL audio/video captures. Exact Jump Force MUGEN V14 and physical Xbox controller not executed.'}
+manifest={'archive':alias.name,'alias':archive.name,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'files':{name:hashlib.sha256((CHAR/name).read_bytes()).hexdigest() for name in files},'validation':'221 general Ikemen input/collision scenarios, 96 aerial/scarf scenarios, 46 awakening/range/relocated-special scenarios, CPU, four low-LifeMax cinematic scenarios, KO/no-revive check, six MUGEN structure regressions, deterministic rebuild, four actual SDL audio/video captures. Exact Jump Force MUGEN V14 and physical Xbox controller not executed.'}
 (ROOT/'previews/Pochita_delivery_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(archive.name,manifest['bytes'],'bytes',manifest['sha256'])

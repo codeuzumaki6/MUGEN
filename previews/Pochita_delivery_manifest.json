@@ -1,19 +1,19 @@
 {
-  "archive": "PochitaTrueForm_SIN_SIERRA_GIGANTE.zip",
+  "archive": "PochitaTrueForm_AEREOS_Y_BUFANDA.zip",
   "alias": "PochitaTrueForm.zip",
-  "bytes": 1116602,
-  "sha256": "13725849a4a9ca9de916c490533b71656d07aae63704ebd527dd7535abbc5bc4",
+  "bytes": 1154360,
+  "sha256": "727c02f8844c0ee6a5f6f2ed98329efe923d2b002f6c6058a89fe3cdccc4dab1",
   "files": {
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
-    "PochitaTrueForm.sff": "de1a634ad9ec7474f30c8d10b8201af633d3fa3b71cc2d7c6578a5dfc7da3bef",
+    "PochitaTrueForm.sff": "70ce8ae11fdff3325bf2fe052a99d32632c46970992b5bae32fdd36eccb6e946",
     "PochitaTrueForm.snd": "f8d08ceae40e34b2b051afe6e54520285781190c4c60727c5b8e1e7d055f3b77",
-    "PochitaTrueForm.air": "85443792ad8d48ec5558c7ec85f2d557d9a51b826fbecf49cec20aec102316d6",
-    "PochitaTrueForm.cmd": "54a43e6fc3ab84294ef6dba7a276a1bef87a1a33145811f671a1057021273a00",
-    "PochitaTrueForm.cns": "3704a29d9cee0805218b63fc1658c0eeefa34221013e9a7699c1a1f891e39af7",
+    "PochitaTrueForm.air": "8e403d1b3c26795b42cabe29ebbb2e788bd0cb1c977c90d36458ac307bbab2fe",
+    "PochitaTrueForm.cmd": "b4dd0b23d37ef8181a3cbc829266e2f9dabbff39e92b6e33087687bd7089eafb",
+    "PochitaTrueForm.cns": "d0e003d6c3f3e59a81b6805434ad75fd732bf1901b33d1d019a5b841c724a113",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "b568ba028006f2bb93b4dee37c0e6b6a37f0a0b3523907741b8ee76e07343219",
-    "CONTROLES_XBOX.md": "3c6ce84f013d07203c43e370c54a585e4b68a2ad5bab6563f3cd16022eafc301",
-    "CREDITOS_Y_FUENTES.md": "fde16d46f5d81ce38705586720ea2b5186095b27a5b459d3adb36db5d155a80a"
+    "LEEME.md": "21189a70a68d7bae599caeab741d05604f9e3e786ef2f43ffa5d08fe17a4969f",
+    "CONTROLES_XBOX.md": "16bbbfd755590c2278f5c7addf4f1fcdee9bd29930a5aeab7b12859c06043c64",
+    "CREDITOS_Y_FUENTES.md": "7644c1d0db9c6b0cbfadbcd03c8193bb56da3f574fbf6bafc9e85ce4fdc46236"
   },
-  "validation": "221 general Ikemen input/collision scenarios, 46 awakening/range/relocated-special scenarios, CPU, four low-LifeMax cinematic scenarios, KO/no-revive check, six MUGEN structure regressions, deterministic rebuild, four actual SDL audio/video captures. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
+  "validation": "221 general Ikemen input/collision scenarios, 96 aerial/scarf scenarios, 46 awakening/range/relocated-special scenarios, CPU, four low-LifeMax cinematic scenarios, KO/no-revive check, six MUGEN structure regressions, deterministic rebuild, four actual SDL audio/video captures. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
 }

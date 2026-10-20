@@ -4648,5 +4648,191 @@
         1024
       ]
     }
+  ],
+  "scarf": [
+    {
+      "group": 3400,
+      "number": 0,
+      "file": "assets/sprites/scarf/0.png",
+      "size": [
+        92,
+        76
+      ],
+      "axis": [
+        45,
+        74
+      ],
+      "attack_extent": 44,
+      "scarf_extent": 44,
+      "source_sheet": "scarf_poses",
+      "source_cell": 0,
+      "source_box": [
+        119,
+        47,
+        448,
+        317
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 1,
+      "file": "assets/sprites/scarf/1.png",
+      "size": [
+        97,
+        72
+      ],
+      "axis": [
+        46,
+        70
+      ],
+      "attack_extent": 48,
+      "scarf_extent": 48,
+      "source_sheet": "scarf_poses",
+      "source_cell": 1,
+      "source_box": [
+        746,
+        64,
+        1093,
+        319
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 2,
+      "file": "assets/sprites/scarf/2.png",
+      "size": [
+        151,
+        70
+      ],
+      "axis": [
+        39,
+        68
+      ],
+      "attack_extent": 109,
+      "scarf_extent": 109,
+      "source_sheet": "scarf_poses",
+      "source_cell": 2,
+      "source_box": [
+        89,
+        360,
+        641,
+        609
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 3,
+      "file": "assets/sprites/scarf/3.png",
+      "size": [
+        146,
+        70
+      ],
+      "axis": [
+        42,
+        68
+      ],
+      "attack_extent": 101,
+      "scarf_extent": 101,
+      "source_sheet": "scarf_poses",
+      "source_cell": 3,
+      "source_box": [
+        694,
+        361,
+        1228,
+        609
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 4,
+      "file": "assets/sprites/scarf/4.png",
+      "size": [
+        129,
+        68
+      ],
+      "axis": [
+        42,
+        66
+      ],
+      "attack_extent": 84,
+      "scarf_extent": 84,
+      "source_sheet": "scarf_poses",
+      "source_cell": 4,
+      "source_box": [
+        109,
+        663,
+        579,
+        903
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 5,
+      "file": "assets/sprites/scarf/5.png",
+      "size": [
+        92,
+        70
+      ],
+      "axis": [
+        46,
+        68
+      ],
+      "attack_extent": 43,
+      "scarf_extent": 43,
+      "source_sheet": "scarf_poses",
+      "source_cell": 5,
+      "source_box": [
+        752,
+        654,
+        1083,
+        902
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 6,
+      "file": "assets/sprites/scarf/6.png",
+      "size": [
+        111,
+        79
+      ],
+      "axis": [
+        42,
+        77
+      ],
+      "attack_extent": 66,
+      "scarf_extent": 66,
+      "source_sheet": "scarf_poses",
+      "source_cell": 6,
+      "source_box": [
+        148,
+        924,
+        551,
+        1204
+      ]
+    },
+    {
+      "group": 3400,
+      "number": 7,
+      "file": "assets/sprites/scarf/7.png",
+      "size": [
+        94,
+        76
+      ],
+      "axis": [
+        46,
+        74
+      ],
+      "attack_extent": 45,
+      "scarf_extent": 45,
+      "source_sheet": "scarf_poses",
+      "source_cell": 7,
+      "source_box": [
+        743,
+        930,
+        1082,
+        1201
+      ]
+    }
   ]
 }

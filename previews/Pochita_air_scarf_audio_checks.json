@@ -1,0 +1,46 @@
+[
+  {
+    "case": "Air XYY",
+    "frames": 48,
+    "cue": 7,
+    "activation_tick": 49,
+    "activation_correlation": 0.9192193795194913,
+    "duration": 3.6333333333333333,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "2223cf2db66e8814683d91528bd8380db8b6206c69add9bd28c7e09fb5ae15f0",
+    "alignment_start_seconds": 5.2812018140589565
+  },
+  {
+    "case": "Air XYB",
+    "frames": 50,
+    "cue": 8,
+    "activation_tick": 49,
+    "activation_correlation": 0.7350689491169975,
+    "duration": 3.65,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "c1ad71a19c63640d905c0012bddcf89d46742f8857b82860e069f2f1ed1c9503",
+    "alignment_start_seconds": 4.637482993197279
+  },
+  {
+    "case": "Lazo RB followup",
+    "frames": 47,
+    "cue": 10,
+    "activation_tick": 23,
+    "activation_correlation": 0.43103371035229776,
+    "duration": 3.6166666666666667,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "080c7ebd2d2768a5891521e2c3170fa99a2710a9a29e55204fc9f0d29d735288",
+    "alignment_start_seconds": 4.460657596371882
+  },
+  {
+    "case": "Agarre RT hit",
+    "frames": 50,
+    "cue": 10,
+    "activation_tick": 23,
+    "activation_correlation": 0.45179498460349443,
+    "duration": 3.6166666666666667,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "1170717b1f2013cef3612843cde1545210e19cf8d7c1228b673d85d3bea7d40d",
+    "alignment_start_seconds": 4.507097505668934
+  }
+]
