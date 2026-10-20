@@ -1,22 +1,24 @@
-# Pochita True Form — especiales con sonido y presentación
+# Pochita True Form — especiales más largos y efectos distintos
 
-[**Descargar Pochita con los seis especiales actualizados**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_ESPECIALES_CON_SONIDO.zip)
+[**Descargar Pochita actualizado**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_ESPECIALES_LARGOS.zip)
 
-[**Ver los seis especiales con audio real del motor**](previews/Pochita_ESPECIALES_CON_SONIDO.mp4) · [Ver el arranque en GIF](previews/Pochita_especial_activacion_motor.gif)
+[**Ver los seis especiales con audio del motor**](previews/Pochita_ESPECIALES_LARGOS_Y_EFECTOS.mp4) · [Carnicería antes/ahora](previews/Pochita_CARNICERIA_ANTES_Y_AHORA.mp4) · [GIF](previews/Pochita_especiales_largos_motor.gif)
 
-Abajo adelante/atrás + X, Y o B ahora inicia una pose, oscurecimiento breve y destello horizontal rojo con sonido de activación separado; después sale la técnica de motosierras. La señal usa un canal propio y el motor no la corta. El coste se paga una sola vez, aunque el ataque falle o sea bloqueado; sin energía suficiente no se activa la presentación. La preparación dura 12 ticks, o 6 al enlazar una segunda técnica.
+Abajo adelante/atrás + X/Y/B ahora ejecuta secuencias ampliadas con estelas propias, cortes encadenados y remate confirmado. Desgarro tiene tres contactos, Cuatro brazos cinco, Estocada tres, Barrido dos, Embestida tres y Carnicería siete. La animación dura 56–90 ticks sin contar preparación y pausas de impacto. Se conserva el coste y daño total de cada técnica: los nuevos contactos reparten ese daño. Las grabaciones van a velocidad normal.
 
-La referencia fue el video de Goku enviado por el usuario. Se adapta su arranque visual; no se copian rayos, voces ni transformaciones. El SE proviene del Code funcional suministrado, grupo 950,2 (Super Charge), de MUGEN STARS. No se presenta como extracción exacta del audio mezclado del video. Se añadieron ocho efectos de destello/anillo generados con IA. El SFF tiene 169 entradas (147 de cuerpo, veinte efectos, dos retratos) y el SND once sonidos no verbales.
+Se añadieron 24 cuadros de efectos en seis familias: arco dentado, hojas cruzadas, estocada, polvo de barrido, avance y Carnicería. Las secuencias combinan poses de cuerpo existentes; no se presentan como nuevos dibujos del personaje. Los efectos de remate requieren acertar todos los contactos. Fallar o bloquear permite ver el movimiento, sin ese impacto confirmado. El avance usa física y las cajas ofensivas permanecen dentro de la hoja visible.
 
-Se conservan las cadenas mixtas de X/Y/B, XXX-arriba-X-Y-B en el aire, la segunda técnica enlazada con límite de dos, los nueve especiales direccionales, RB, RT y carga LB. **A cuesta dos barras incluso al fallar; su daño máximo es el menor entre 500 y la mitad de la vida máxima rival.** No mata a un rival desde vida completa.
+El video nuevo de Chainsaw Man aportado por el usuario se revisó visualmente para estudiar preparación, avance de triturado y derribo. Su secuencia de 22 contactos y su cabeza gigante no se reproducen literalmente. [Ficha y alcance de la revisión](design/Pochita_especiales_largos/REVISION.md). El audio de referencia no se evaluó por escucha. Se conservan la señal de activación de Code, motores y golpes del SND anterior, con once muestras no verbales.
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta del ZIP. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si hace falta. La corrección del crasheo por estados vacíos 170/175/180 sigue incluida.
+El SFF tiene 193 entradas: 147 de cuerpo (138 poses fuente distintas), 44 efectos y dos retratos. Se conservan las cadenas mixtas X/Y/B, persecución aérea, dos especiales por secuencia, nueve técnicas direccionales, RB, RT y carga LB. **A cuesta dos barras incluso al fallar; el daño máximo es el menor entre 500 y la mitad de la vida máxima rival.** No mata desde vida completa. La corrección del crasheo por estados vacíos 170/175/180 sigue incluida.
 
-[Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md) · [Referencia y procedencia](design/Pochita_especiales/REFERENCIA.md) · [Revisión anterior del combate](design/Pochita_combate/REVISION.md)
+Sustituye `chars/PochitaTrueForm` completa por la carpeta del ZIP. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si hace falta.
 
-Pasaron [205 pruebas de comandos y colisiones](previews/Pochita_engine_checks.json), incluyendo los seis especiales y atajos diagonales, doce intentos sin energía suficiente, doce fallos desde lejos, costes exactos, combos, persecución y límite de cancelaciones. También [CPU](previews/Pochita_AI_checks.json), [ultimate contra un rival de 500 de vida](previews/Pochita_low_life_ultimate_checks.json), [seis regresiones de estructura](previews/Pochita_mugen_structure_checks.json) y [reconstrucción y alcance](previews/Pochita_validator_checks.json). Los [seis registros de audio real](previews/Pochita_actual_audio_checks.json) identifican el SE en la salida SDL del motor; las [capturas](previews/Pochita_special_visual_checks.json) verifican los efectos y su finalización. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico.
+[Controles Xbox](PochitaTrueForm/CONTROLES_XBOX.md) · [Instalación y límites](PochitaTrueForm/LEEME.md) · [Créditos](PochitaTrueForm/CREDITOS_Y_FUENTES.md)
 
-Los nuevos MP4 de especiales contienen audio real del mezclador de Ikemen GO, sincronizado por correlación con el SE de activación. Los videos anteriores de remates/jugabilidad mantienen audio montado según eventos; son versiones anteriores. Las pruebas verifican funcionamiento, no una calidad artística profesional ni el equilibrio contra todo el plantel. El arte generado conserva variaciones de detalle.
+Pasaron [217 pruebas de entrada y colisión](previews/Pochita_engine_checks.json), incluyendo duración completa, número exacto de contactos y daño de los seis especiales, doce guardias, fallos, consumo de energía, cadenas, persecución y recuperación. También [CPU](previews/Pochita_AI_checks.json), [ultimate frente a 500 de vida](previews/Pochita_low_life_ultimate_checks.json), [regresiones de carga MUGEN](previews/Pochita_mugen_structure_checks.json) y [reconstrucción y alcance](previews/Pochita_validator_checks.json). Los [seis registros de audio real](previews/Pochita_long_audio_checks.json) identifican el SE en la salida SDL; las [capturas](previews/Pochita_long_visual_checks.json) verifican efectos y finalización. Se usó Ikemen GO; el binario exacto de Jump Force MUGEN V14 y el mando físico requieren prueba local.
+
+Los MP4 nuevos contienen audio real del mezclador de Ikemen GO. La comparación mantiene velocidad normal en ambas versiones y usa audio de la revisión nueva. Las pruebas verifican funcionamiento; la calidad artística y la diversión requieren revisión y partidas. El arte generado conserva variaciones de detalle.
 
 Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
@@ -29,11 +31,11 @@ python3 tools/check_pochita_mugen_structure.py
 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_AI=8 python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
 POCHITA_DUMMY_LIFE=500 POCHITA_CASES='["ultihit"]' python3 tools/check_pochita_in_engine.py /ruta/al/ikemen
-python3 tools/make_pochita_special_previews.py /ruta/al/ikemen
+POCHITA_SPECIAL_VERSION=long python3 tools/make_pochita_special_previews.py /ruta/al/ikemen
 python3 tools/package_pochita.py
 ```
 
-La grabación real requiere la configuración de sonido predeterminada de la herramienta: 44100 Hz estéreo, con SDL disk. No necesita un dispositivo físico. Eida y los originales no se modificaron.
+La captura de audio usa SDL disk a 44100 Hz estéreo. No necesita dispositivo físico. Eida y los originales permanecen sin cambios.
 
 ---
 

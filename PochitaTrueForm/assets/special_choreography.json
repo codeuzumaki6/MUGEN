@@ -1,0 +1,50 @@
+{
+  "1000": {
+    "frames": 19,
+    "ticks_per_frame": 3,
+    "contacts": 3,
+    "damage": 106,
+    "family": "crescent",
+    "animation_ticks": 57
+  },
+  "1010": {
+    "frames": 22,
+    "ticks_per_frame": 3,
+    "contacts": 5,
+    "damage": 132,
+    "family": "four_saws",
+    "animation_ticks": 66
+  },
+  "1030": {
+    "frames": 14,
+    "ticks_per_frame": 4,
+    "contacts": 3,
+    "damage": 126,
+    "family": "thrust",
+    "animation_ticks": 56
+  },
+  "1040": {
+    "frames": 14,
+    "ticks_per_frame": 4,
+    "contacts": 2,
+    "damage": 96,
+    "family": "ground_sweep",
+    "animation_ticks": 56
+  },
+  "1060": {
+    "frames": 20,
+    "ticks_per_frame": 3,
+    "contacts": 3,
+    "damage": 145,
+    "family": "rush_wake",
+    "animation_ticks": 60
+  },
+  "1070": {
+    "frames": 30,
+    "ticks_per_frame": 3,
+    "contacts": 7,
+    "damage": 218,
+    "family": "carnage",
+    "animation_ticks": 90
+  }
+}

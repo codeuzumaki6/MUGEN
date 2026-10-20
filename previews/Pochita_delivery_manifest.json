@@ -1,19 +1,19 @@
 {
-  "archive": "PochitaTrueForm_ESPECIALES_CON_SONIDO.zip",
+  "archive": "PochitaTrueForm_ESPECIALES_LARGOS.zip",
   "alias": "PochitaTrueForm.zip",
-  "bytes": 864141,
-  "sha256": "3b7fbc7723e83d42da8c528037a524a0284c9bf82baf03fed44894553d1ee455",
+  "bytes": 940898,
+  "sha256": "1eed7838f7161c5d2553b2540263d902a7685bbec917b5f277516bbbd350a418",
   "files": {
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
-    "PochitaTrueForm.sff": "e5182a9dadef09c86d50bf42a8c53b39d098e937c1c19804d290705f603f84e0",
+    "PochitaTrueForm.sff": "4d5eab6a388ffe37c4806a6225a01be5f82904647936616b5009ab1f4ed053f1",
     "PochitaTrueForm.snd": "04ae806e3ce20f016ed059be8e04c41e6017e4565aff28f5a58c8d3ec839a5a7",
-    "PochitaTrueForm.air": "ca7b283cd4da5f116cc716651f18e0009171f594c09b19920ea2542973cc8cd7",
+    "PochitaTrueForm.air": "faeb566a3db96b5c97403eb4c9446248a4916e3225446a92843d96f6837de15d",
     "PochitaTrueForm.cmd": "5883bf97eee277679512b4bc66d84a617a8d6abf289a82c943b0f0de0f90ca2c",
-    "PochitaTrueForm.cns": "b4e26f725e2094e112509a2ef31414d8bedf3006bfb256b064d7965ca898e16f",
+    "PochitaTrueForm.cns": "8abf70c9d4b9689f0695ce55e5da2c469505e07f4bb71d23124b1a5a98202bc0",
     "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9",
-    "LEEME.md": "3184ac84ed69b9a35b52cef4144a54a343a1fe4baf17f7e43a797e0f6fdb5617",
-    "CONTROLES_XBOX.md": "705f59feca3f770f6630f92f6aeccb7e5334647dadd13ba9d3895ef74370d820",
-    "CREDITOS_Y_FUENTES.md": "d4ec8a68f21f4abc3809e4b85fb684a53104e9e53ececa7378016df864f28a67"
+    "LEEME.md": "324b65bc484c2413dd3fbc247958a8815758738446304ea34e8982a26a20f9df",
+    "CONTROLES_XBOX.md": "dc877ce13c7f06085b332a4f14f1b96833daa6ac49d47f83dc7b802edacccd8e",
+    "CREDITOS_Y_FUENTES.md": "1ecfbb439bfa6a0da13b89d8c5ceb62d4285000dafe08d27b4c1781e83417708"
   },
-  "validation": "205 Ikemen raw-input/collision scenarios, CPU, two low-LifeMax ultimate scenarios; six MUGEN structure regressions; six actual SDL audio/video recordings with activation SE detected. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
+  "validation": "217 Ikemen raw-input/collision scenarios, CPU, two low-LifeMax ultimate scenarios; six MUGEN structure regressions; six actual SDL audio/video recordings with activation SE detected, exact six-special hit counts, damage and full duration; twelve special guard scenarios. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
 }

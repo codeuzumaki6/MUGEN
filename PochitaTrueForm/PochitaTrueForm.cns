@@ -1610,11 +1610,11 @@ channel = 1
 type = VelSet
 trigger1 = Time >= 10
 x = 0
-[State 1000, Contact 3]
+[State 1000, Choreographed blade contact 3]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 48,4
+damage = 28,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1627,7 +1627,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -1638,11 +1638,39 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1000, Contact 5]
+[State 1000, Choreographed blade contact 9]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 9
 attr = S, SA
-damage = 58,4
+damage = 32,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1000, Choreographed blade contact 16]
+type = HitDef
+trigger1 = AnimElem = 16
+attr = S, SA
+damage = 46,3
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1725,6 +1753,141 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1000, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1000, Animated saw path 3]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 3
+anim = 9600
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1000, Animated saw path 9]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 9
+anim = 9600
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1000, Animated saw path 16]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 16
+anim = 9600
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1000, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 45
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+anim = 9600
+ID = 9461
+postype = p1
+pos = 38,-34
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1000, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 45
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+value = S1,8
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1000, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 45
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1000, Latch finish]
+type = VarSet
+triggerall = Time >= 45
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1000, Moving blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 40
+length = 5
+timegap = 1
+framegap = 3
+palcolor = 256
+palbright = 10,-15,-15
+palmul = .8,.7,.7
+trans = add
+[State 1000, Physical follow-through]
+type = VelSet
+triggerall = Time >= 10
+triggerall = Time < 45
+triggerall = MoveHit
+trigger1 = P2Dist X > 34
+x = 2.4
+[State 1000, Plant feet for the last cut]
+type = VelSet
+trigger1 = Time >= 45
+x = 0
+
 [State 1000, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -1759,11 +1922,11 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,1
 channel = 1
-[State 1010, Contact 3]
+[State 1010, Choreographed blade contact 3]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 36,3
+damage = 20,1
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1776,7 +1939,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -1787,11 +1950,11 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1010, Contact 5]
+[State 1010, Choreographed blade contact 6]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 6
 attr = S, SA
-damage = 36,3
+damage = 20,1
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -1804,7 +1967,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -1815,11 +1978,67 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1010, Contact 7]
+[State 1010, Choreographed blade contact 9]
 type = HitDef
-trigger1 = AnimElem = 7
+trigger1 = AnimElem = 9
 attr = S, SA
-damage = 60,5
+damage = 24,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1010, Choreographed blade contact 13]
+type = HitDef
+trigger1 = AnimElem = 13
+attr = S, SA
+damage = 24,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1010, Choreographed blade contact 18]
+type = HitDef
+trigger1 = AnimElem = 18
+attr = S, SA
+damage = 44,3
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -1902,6 +2121,173 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1010, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1010, Animated saw path 3]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 3
+anim = 9601
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Animated saw path 6]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 6
+anim = 9601
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Animated saw path 9]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 9
+anim = 9601
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Animated saw path 13]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 13
+anim = 9601
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Animated saw path 18]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 18
+anim = 9601
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 5
+trigger1 = Var(35) = 0
+anim = 9601
+ID = 9461
+postype = p1
+pos = 38,-34
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1010, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 5
+trigger1 = Var(35) = 0
+value = S1,8
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1010, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 5
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1010, Latch finish]
+type = VarSet
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 5
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1010, Step into the opening cut]
+type = VelSet
+triggerall = Time < 8
+trigger1 = P2Dist X > 38
+x = 4
+[State 1010, Physical follow-through]
+type = VelSet
+triggerall = Time >= 10
+triggerall = Time < 51
+triggerall = MoveHit
+trigger1 = P2Dist X > 34
+x = 2.4
+[State 1010, Plant feet for the last cut]
+type = VelSet
+trigger1 = Time >= 51
+x = 0
+
 [State 1010, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2047,11 +2433,11 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,1
 channel = 1
-[State 1030, Contact 3]
+[State 1030, Choreographed blade contact 3]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 50,4
+damage = 30,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2064,7 +2450,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -2075,11 +2461,39 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1030, Contact 5]
+[State 1030, Choreographed blade contact 7]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 7
 attr = S, SA
-damage = 76,6
+damage = 34,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1030, Choreographed blade contact 11]
+type = HitDef
+trigger1 = AnimElem = 11
+attr = S, SA
+damage = 62,5
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -2162,6 +2576,130 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1030, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1030, Animated saw path 3]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 3
+anim = 9602
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .9,.65
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1030, Animated saw path 7]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 7
+anim = 9602
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .9,.65
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1030, Animated saw path 11]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 11
+anim = 9602
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .9,.65
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1030, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 40
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+anim = 9602
+ID = 9461
+postype = p1
+pos = 38,-34
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1030, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 40
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+value = S1,8
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1030, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 40
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1030, Latch finish]
+type = VarSet
+triggerall = Time >= 40
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1030, Moving blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 40
+length = 5
+timegap = 1
+framegap = 3
+palcolor = 256
+palbright = 10,-15,-15
+palmul = .8,.7,.7
+trans = add
+
 [State 1030, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2196,11 +2734,39 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,1
 channel = 1
-[State 1040, Contact 4]
+[State 1040, Choreographed blade contact 4]
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, SA
-damage = 96,8
+damage = 34,2
+animtype = Heavy
+guardflag = L
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,5
+guardsound = S1,6
+ground.type = Low
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -3.2,-5
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 5
+envshake.ampl = -2
+
+[State 1040, Choreographed blade contact 10]
+type = HitDef
+trigger1 = AnimElem = 10
+attr = S, SA
+damage = 62,5
 animtype = Heavy
 guardflag = L
 hitflag = MAF
@@ -2302,6 +2868,111 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1040, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1040, Animated saw path 4]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 4
+anim = 9603
+ID = 9460
+postype = p1
+pos = 26,0
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .85,.75
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1040, Animated saw path 10]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 10
+anim = 9603
+ID = 9460
+postype = p1
+pos = 26,0
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .85,.75
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1040, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 36
+triggerall = MoveHit
+triggerall = HitCount >= 2
+trigger1 = Var(35) = 0
+anim = 9603
+ID = 9461
+postype = p1
+pos = 30,0
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1040, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 36
+triggerall = MoveHit
+triggerall = HitCount >= 2
+trigger1 = Var(35) = 0
+value = S1,9
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1040, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 36
+triggerall = MoveHit
+triggerall = HitCount >= 2
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1040, Latch finish]
+type = VarSet
+triggerall = Time >= 36
+triggerall = MoveHit
+triggerall = HitCount >= 2
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1040, Physical follow-through]
+type = VelSet
+triggerall = Time >= 10
+triggerall = Time < 36
+triggerall = MoveHit
+trigger1 = P2Dist X > 34
+x = 2.4
+[State 1040, Plant feet for the last cut]
+type = VelSet
+trigger1 = Time >= 36
+x = 0
+
 [State 1040, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2471,11 +3142,11 @@ channel = 1
 type = VelSet
 trigger1 = Time >= 16
 x = 0
-[State 1060, Contact 3]
+[State 1060, Choreographed blade contact 3]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 65,5
+damage = 35,2
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2488,7 +3159,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -2499,11 +3170,39 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1060, Contact 5]
+[State 1060, Choreographed blade contact 10]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 10
 attr = S, SA
-damage = 80,6
+damage = 40,3
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1060, Choreographed blade contact 18]
+type = HitDef
+trigger1 = AnimElem = 18
+attr = S, SA
+damage = 70,5
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -2586,6 +3285,141 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1060, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1060, Animated saw path 3]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 3
+anim = 9604
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1060, Animated saw path 10]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 10
+anim = 9604
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1060, Animated saw path 18]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 18
+anim = 9604
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1060, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+anim = 9604
+ID = 9461
+postype = p1
+pos = 38,-34
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1060, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+value = S1,9
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1060, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1060, Latch finish]
+type = VarSet
+triggerall = Time >= 51
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1060, Moving blade afterimages]
+type = AfterImage
+trigger1 = Time = 3
+time = 40
+length = 5
+timegap = 1
+framegap = 3
+palcolor = 256
+palbright = 10,-15,-15
+palmul = .8,.7,.7
+trans = add
+[State 1060, Physical follow-through]
+type = VelSet
+triggerall = Time >= 10
+triggerall = Time < 51
+triggerall = MoveHit
+trigger1 = P2Dist X > 34
+x = 2.4
+[State 1060, Plant feet for the last cut]
+type = VelSet
+trigger1 = Time >= 51
+x = 0
+
 [State 1060, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2620,11 +3454,11 @@ type = PlaySnd
 trigger1 = Time = 0
 value = S1,3
 channel = 1
-[State 1070, Contact 3]
+[State 1070, Choreographed blade contact 3]
 type = HitDef
 trigger1 = AnimElem = 3
 attr = S, SA
-damage = 30,2
+damage = 18,1
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2637,7 +3471,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -2648,11 +3482,11 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1070, Contact 5]
+[State 1070, Choreographed blade contact 6]
 type = HitDef
-trigger1 = AnimElem = 5
+trigger1 = AnimElem = 6
 attr = S, SA
-damage = 30,2
+damage = 18,1
 animtype = Light
 guardflag = MA
 hitflag = MAF
@@ -2665,7 +3499,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -2676,38 +3510,94 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1070, Contact 7]
-type = HitDef
-trigger1 = AnimElem = 7
-attr = S, SA
-damage = 34,2
-animtype = Light
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 4,7
-sparkno = 1
-guard.sparkno = -1
-hitsound = S1,4
-guardsound = S1,6
-ground.type = High
-ground.hittime = 28
-ground.slidetime = 12
-ground.velocity = -0.6,0
-air.hittime = 24
-air.velocity = -0.6,-1.1
-fall = 0
-fall.recover = 1
-fall.recovertime = 28
-getpower = 0,10
-givepower = 15,5
-envshake.time = 2
-envshake.ampl = -1
-
-[State 1070, Contact 9]
+[State 1070, Choreographed blade contact 9]
 type = HitDef
 trigger1 = AnimElem = 9
 attr = S, SA
+damage = 20,1
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1070, Choreographed blade contact 13]
+type = HitDef
+trigger1 = AnimElem = 13
+attr = S, SA
+damage = 22,1
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1070, Choreographed blade contact 18]
+type = HitDef
+trigger1 = AnimElem = 18
+attr = S, SA
+damage = 26,2
+animtype = Light
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 4,7
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,4
+guardsound = S1,6
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 12
+ground.velocity = -.4,0
+air.hittime = 24
+air.velocity = -0.6,-1.1
+fall = 0
+fall.recover = 1
+fall.recovertime = 28
+getpower = 0,10
+givepower = 15,5
+envshake.time = 2
+envshake.ampl = -1
+
+[State 1070, Choreographed blade contact 23]
+type = HitDef
+trigger1 = AnimElem = 23
+attr = S, SA
 damage = 34,2
 animtype = Light
 guardflag = MA
@@ -2721,7 +3611,7 @@ guardsound = S1,6
 ground.type = High
 ground.hittime = 28
 ground.slidetime = 12
-ground.velocity = -0.6,0
+ground.velocity = -.4,0
 air.hittime = 24
 air.velocity = -0.6,-1.1
 fall = 0
@@ -2732,11 +3622,11 @@ givepower = 15,5
 envshake.time = 2
 envshake.ampl = -1
 
-[State 1070, Contact 12]
+[State 1070, Choreographed blade contact 28]
 type = HitDef
-trigger1 = AnimElem = 12
+trigger1 = AnimElem = 28
 attr = S, SA
-damage = 90,7
+damage = 80,6
 animtype = Heavy
 guardflag = MA
 hitflag = MAF
@@ -2819,6 +3709,211 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1070, Clear final impact latch]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 3]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 3
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 6]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 6
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 9]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 9
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 13]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 13
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 18]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 18
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 23]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 23
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Animated saw path 28]
+type = Explod
+triggerall = NumExplod(9460) < 2
+trigger1 = AnimElem = 28
+anim = 9605
+ID = 9460
+postype = p1
+pos = 34,-36
+facing = 1
+bindtime = -1
+removetime = 12
+scale = .8,.8
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1070, Confirmed finish sparks]
+type = Explod
+triggerall = Time >= 81
+triggerall = MoveHit
+triggerall = HitCount >= 7
+trigger1 = Var(35) = 0
+anim = 9605
+ID = 9461
+postype = p1
+pos = 38,-34
+facing = 1
+bindtime = 0
+removetime = 12
+scale = .95,.95
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 224,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1070, Finish impact sound]
+type = PlaySnd
+triggerall = Time >= 81
+triggerall = MoveHit
+triggerall = HitCount >= 7
+trigger1 = Var(35) = 0
+value = S1,9
+channel = 5
+volumescale = 80
+ignorehitpause = 1
+[State 1070, Finish stage vibration]
+type = EnvShake
+triggerall = Time >= 81
+triggerall = MoveHit
+triggerall = HitCount >= 7
+trigger1 = Var(35) = 0
+time = 7
+freq = 90
+ampl = -3
+ignorehitpause = 1
+[State 1070, Latch finish]
+type = VarSet
+triggerall = Time >= 81
+triggerall = MoveHit
+triggerall = HitCount >= 7
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+[State 1070, Step into the opening cut]
+type = VelSet
+triggerall = Time < 8
+trigger1 = P2Dist X > 38
+x = 4
+[State 1070, Physical follow-through]
+type = VelSet
+triggerall = Time >= 10
+triggerall = Time < 81
+triggerall = MoveHit
+trigger1 = P2Dist X > 34
+x = 2.4
+[State 1070, Plant feet for the last cut]
+type = VelSet
+trigger1 = Time >= 81
+x = 0
+
 [State 1070, End]
 type = ChangeState
 trigger1 = AnimTime = 0

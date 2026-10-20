@@ -1,12 +1,23 @@
-{
-  "delivered_character_valid": true,
-  "invisible_attack_extension_rejected": true,
-  "reproducible_build": true,
-  "runtime_sha256": {
-    "PochitaTrueForm.sff": "e5182a9dadef09c86d50bf42a8c53b39d098e937c1c19804d290705f603f84e0",
-    "PochitaTrueForm.snd": "04ae806e3ce20f016ed059be8e04c41e6017e4565aff28f5a58c8d3ec839a5a7",
-    "PochitaTrueForm.air": "ca7b283cd4da5f116cc716651f18e0009171f594c09b19920ea2542973cc8cd7",
-    "PochitaTrueForm.cmd": "5883bf97eee277679512b4bc66d84a617a8d6abf289a82c943b0f0de0f90ca2c",
-    "PochitaTrueForm.cns": "b4e26f725e2094e112509a2ef31414d8bedf3006bfb256b064d7965ca898e16f"
+[
+  {
+    "case": "current character",
+    "passed": true
+  },
+  {
+    "case": "independent rebuild",
+    "passed": true,
+    "sha256": {
+      "PochitaTrueForm.sff": "4d5eab6a388ffe37c4806a6225a01be5f82904647936616b5009ab1f4ed053f1",
+      "PochitaTrueForm.snd": "04ae806e3ce20f016ed059be8e04c41e6017e4565aff28f5a58c8d3ec839a5a7",
+      "PochitaTrueForm.air": "faeb566a3db96b5c97403eb4c9446248a4916e3225446a92843d96f6837de15d",
+      "PochitaTrueForm.cmd": "5883bf97eee277679512b4bc66d84a617a8d6abf289a82c943b0f0de0f90ca2c",
+      "PochitaTrueForm.cns": "8abf70c9d4b9689f0695ce55e5da2c469505e07f4bb71d23124b1a5a98202bc0",
+      "common1.cns": "ba1267d5411f8da01bd296ba0da30fa6920ece9e1b80cfdd68e5bc05b0a0bed9"
+    }
+  },
+  {
+    "case": "oversized offensive collision box",
+    "rejected": true,
+    "passed": true
   }
-}
+]

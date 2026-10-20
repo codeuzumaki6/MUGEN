@@ -14,7 +14,11 @@
     "file": "design/Pochita_especiales/activation_fx.png",
     "sha256": "a61024a3254d9805d5475b0dd7209d89d12846f92210fdfa987cf9a85c374338"
   },
-  "effect_sprite_entries": 20,
+  "spectacle_source": {
+    "file": "design/Pochita_especiales_largos/special_trails.png",
+    "sha256": "604b445d170ce5124330c41e19140f75805f07a122db69996a2c15ff9fd2e88c"
+  },
+  "effect_sprite_entries": 44,
   "manga_panel_embedded": false,
   "unique_source_poses": 138,
   "normalization": "each sheet calibrated once using neutral poses at 72px; no per-frame stretching",

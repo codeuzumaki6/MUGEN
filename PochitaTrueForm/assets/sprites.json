@@ -3696,5 +3696,521 @@
         887
       ]
     }
+  ],
+  "special_crescent": [
+    {
+      "group": 9600,
+      "number": 0,
+      "file": "assets/sprites/special_crescent/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 0,
+      "source_box": [
+        0,
+        0,
+        384,
+        171
+      ]
+    },
+    {
+      "group": 9600,
+      "number": 1,
+      "file": "assets/sprites/special_crescent/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 1,
+      "source_box": [
+        384,
+        0,
+        768,
+        171
+      ]
+    },
+    {
+      "group": 9600,
+      "number": 2,
+      "file": "assets/sprites/special_crescent/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 2,
+      "source_box": [
+        768,
+        0,
+        1152,
+        171
+      ]
+    },
+    {
+      "group": 9600,
+      "number": 3,
+      "file": "assets/sprites/special_crescent/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 3,
+      "source_box": [
+        1152,
+        0,
+        1536,
+        171
+      ]
+    }
+  ],
+  "special_four_saws": [
+    {
+      "group": 9601,
+      "number": 0,
+      "file": "assets/sprites/special_four_saws/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 4,
+      "source_box": [
+        0,
+        171,
+        384,
+        342
+      ]
+    },
+    {
+      "group": 9601,
+      "number": 1,
+      "file": "assets/sprites/special_four_saws/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 5,
+      "source_box": [
+        384,
+        171,
+        768,
+        342
+      ]
+    },
+    {
+      "group": 9601,
+      "number": 2,
+      "file": "assets/sprites/special_four_saws/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 6,
+      "source_box": [
+        768,
+        171,
+        1152,
+        342
+      ]
+    },
+    {
+      "group": 9601,
+      "number": 3,
+      "file": "assets/sprites/special_four_saws/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 7,
+      "source_box": [
+        1152,
+        171,
+        1536,
+        342
+      ]
+    }
+  ],
+  "special_thrust": [
+    {
+      "group": 9602,
+      "number": 0,
+      "file": "assets/sprites/special_thrust/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 8,
+      "source_box": [
+        0,
+        342,
+        384,
+        500
+      ]
+    },
+    {
+      "group": 9602,
+      "number": 1,
+      "file": "assets/sprites/special_thrust/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 9,
+      "source_box": [
+        384,
+        342,
+        768,
+        500
+      ]
+    },
+    {
+      "group": 9602,
+      "number": 2,
+      "file": "assets/sprites/special_thrust/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 10,
+      "source_box": [
+        768,
+        342,
+        1152,
+        500
+      ]
+    },
+    {
+      "group": 9602,
+      "number": 3,
+      "file": "assets/sprites/special_thrust/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 11,
+      "source_box": [
+        1152,
+        342,
+        1536,
+        500
+      ]
+    }
+  ],
+  "special_ground_sweep": [
+    {
+      "group": 9603,
+      "number": 0,
+      "file": "assets/sprites/special_ground_sweep/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 12,
+      "source_box": [
+        0,
+        500,
+        384,
+        660
+      ]
+    },
+    {
+      "group": 9603,
+      "number": 1,
+      "file": "assets/sprites/special_ground_sweep/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 13,
+      "source_box": [
+        384,
+        500,
+        768,
+        660
+      ]
+    },
+    {
+      "group": 9603,
+      "number": 2,
+      "file": "assets/sprites/special_ground_sweep/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 14,
+      "source_box": [
+        768,
+        500,
+        1152,
+        660
+      ]
+    },
+    {
+      "group": 9603,
+      "number": 3,
+      "file": "assets/sprites/special_ground_sweep/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 15,
+      "source_box": [
+        1152,
+        500,
+        1536,
+        660
+      ]
+    }
+  ],
+  "special_rush_wake": [
+    {
+      "group": 9604,
+      "number": 0,
+      "file": "assets/sprites/special_rush_wake/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 16,
+      "source_box": [
+        0,
+        660,
+        384,
+        795
+      ]
+    },
+    {
+      "group": 9604,
+      "number": 1,
+      "file": "assets/sprites/special_rush_wake/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 17,
+      "source_box": [
+        384,
+        660,
+        768,
+        795
+      ]
+    },
+    {
+      "group": 9604,
+      "number": 2,
+      "file": "assets/sprites/special_rush_wake/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 18,
+      "source_box": [
+        768,
+        660,
+        1152,
+        795
+      ]
+    },
+    {
+      "group": 9604,
+      "number": 3,
+      "file": "assets/sprites/special_rush_wake/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 19,
+      "source_box": [
+        1152,
+        660,
+        1536,
+        795
+      ]
+    }
+  ],
+  "special_carnage": [
+    {
+      "group": 9605,
+      "number": 0,
+      "file": "assets/sprites/special_carnage/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 20,
+      "source_box": [
+        0,
+        795,
+        384,
+        1024
+      ]
+    },
+    {
+      "group": 9605,
+      "number": 1,
+      "file": "assets/sprites/special_carnage/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 21,
+      "source_box": [
+        384,
+        795,
+        768,
+        1024
+      ]
+    },
+    {
+      "group": 9605,
+      "number": 2,
+      "file": "assets/sprites/special_carnage/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 22,
+      "source_box": [
+        768,
+        795,
+        1152,
+        1024
+      ]
+    },
+    {
+      "group": 9605,
+      "number": 3,
+      "file": "assets/sprites/special_carnage/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "special_trails",
+      "source_cell": 23,
+      "source_box": [
+        1152,
+        795,
+        1536,
+        1024
+      ]
+    }
   ]
 }

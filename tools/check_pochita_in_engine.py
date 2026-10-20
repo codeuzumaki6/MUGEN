@@ -5,6 +5,7 @@ from itertools import product
 import os,json,shutil,subprocess,sys,tempfile,re
 ROOT=Path(__file__).resolve().parents[1];ENGINE=Path(sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly')
 DUMMY_LIFE=int(os.environ.get('POCHITA_DUMMY_LIFE','1000'))
+CHOREOGRAPHY=json.loads((ROOT/'PochitaTrueForm/assets/special_choreography.json').read_text())
 character=ENGINE/'chars/PochitaCheck';dummy=ENGINE/'chars/PochitaDummy';shutil.copytree(ROOT/'PochitaTrueForm',character,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True)
 shutil.copy2(character/'PochitaTrueForm.def',character/'PochitaCheck.def');shutil.copy2(dummy/'kfm.def',dummy/'PochitaDummy.def')
 p=dummy/'kfm.cns';base=p.read_text(encoding='latin-1');base=re.sub(r'(?im)^(life\s*=\s*)1000',lambda m:m[1]+str(DUMMY_LIFE),base,count=1);p.write_text(base,encoding='latin-1')
@@ -18,6 +19,7 @@ for face in [1,-1]:
   if state in [1000,1010,1030,1040,1060,1070]:
    cases.append(dict(name=name+' insufficient power',button=button,direction=direction,state={'a':200,'b':210,'c':220}[button],forbidden=state+10000,cost=0,power=cost-1,kind='emptyspecial',facing=face,distance=220))
    cases.append(dict(name=name+' startup whiff',button=button,direction=direction,state=state,cost=cost,kind='startupwhiff',facing=face,distance=300))
+   cases.append(dict(name=name+' guarded sequence',button=button,direction=direction,state=state,cost=cost,kind='specialguard',facing=face,distance=50 if state==1040 else 70))
  for name,button,direction,state,cost in specs:
   if state in [1020,1040,1080]:cases.append(dict(name=name+' outside blade reach',button=button,direction=direction,state=state,cost=cost,kind='reachwhiff',facing=face,distance=105))
  for name,button,direction,state,cost in specs:
@@ -61,6 +63,8 @@ def ctl(typ,trig,params):return f'\n[State -2, QA only]\ntype = {typ}\ntriggeral
 clock=ctl('VarAdd','1','v = 58\nvalue = 1');p1=clock;p2=ctl('VarSet','NumEnemy > 0','v = 58\nvalue = EnemyNear,Var(58)')
 for variable,effect in [(52,9401),(53,9400),(54,9402)]:p1+=ctl('VarSet','1',f'v = {variable}\nvalue = NumExplod({effect})')
 for variable,effect in [(51,9450),(50,9451)]:p1+=ctl('VarSet','1',f'v = {variable}\nvalue = NumExplod({effect})')
+for variable,effect in [(39,9460),(38,9461)]:p1+=ctl('VarSet','1',f'v = {variable}\nvalue = NumExplod({effect})')
+p1+=ctl('VarSet','1','v = 41\nvalue = HitCount')
 p1+=ctl('VarSet','1','v = 55\nvalue = Time')
 if os.environ.get('POCHITA_TRACE'):
  p1+=ctl('VarSet','1','v = 46\nvalue = HitCount')+ctl('VarSet','1','v = 44\nvalue = command = "CuatroBrazos"')
@@ -131,6 +135,7 @@ for i,c in enumerate(cases):
  elif kind not in ['walk','guard']:p1+=ctl('AssertInput',at(press),'flag = '+c['button'])
  if kind=='ultiblock':p2+=ctl('AssertInput',window(10,150),'flag = '+('R' if face==1 else 'L'))
  if kind=='specialblock':p2+=ctl('AssertInput',window(10,150),'flag = '+('R' if face==1 else 'L'))
+ if kind=='specialguard':p2+=ctl('AssertInput',window(10,220),'flag = '+('R' if face==1 else 'L'))+ctl('AssertInput',window(10,220),'flag = D')
  if kind=='ultijump':p2+=ctl('ChangeState',at(12),'value = 50\nctrl = 0')+ctl('PosSet',window(12,150),'y = -180')+ctl('VelSet',window(12,150),'y = 0')
 # Real test strikes: do not put the tested character into a get-up state.
 for state,anim,yvel,typ in [(9700,440,0,'Trip'),(9701,210,-4,'High')]:
@@ -174,10 +179,15 @@ hook.add('loop','pochita_qa',function()
  local t=var(58);if t==frame or t<1 then return end;frame=t
  local case=math.floor((t-1)/240);local tick=(t-1)%240+1
  if case>=COUNT then player(2);setLife(100);player(1);setTime(0);return end
- if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,vapex=0,last=0,final=0,dx=0,blood=0,slashes=0,ground=0,endfx=0,cancelattempt=0,flare=0,ring=0} end
+ if not rows[case] then rows[case]={states={},damage=0,received=0,minpower=3000,maxpower=0,apex=0,vapex=0,last=0,final=0,dx=0,blood=0,slashes=0,ground=0,endfx=0,cancelattempt=0,flare=0,ring=0,trails=0,finishes=0,maxhits=0,attacktime=0} end
  local r=rows[case]
  r.blood=math.max(r.blood,var(52));r.slashes=math.max(r.slashes,var(53));r.ground=math.max(r.ground,var(54));r.endfx=var(52)+var(53)+var(54)
  r.flare=math.max(r.flare,var(51));r.ring=math.max(r.ring,var(50));r.endfx=r.endfx+var(51)+var(50)
+ r.trails=math.max(r.trails,var(39));r.finishes=math.max(r.finishes,var(38));r.endfx=r.endfx+var(39)+var(38)
+ if tick>4 then
+  r.maxhits=math.max(r.maxhits,var(41))
+  local st=stateNo();if st==1000 or st==1010 or st==1030 or st==1040 or st==1060 or st==1070 then r.attacktime=math.max(r.attacktime,var(55)) end
+ end
  if tick>4 then r.cancelattempt=math.max(r.cancelattempt,var(42)) end
  if tick>4 then
   r.states[stateNo()]=true;r.last=stateNo();r.received=math.max(r.received,1250-life());r.minpower=math.min(r.minpower,power());r.maxpower=math.max(r.maxpower,power());r.apex=math.min(r.apex,posY())
@@ -187,7 +197,7 @@ hook.add('loop','pochita_qa',function()
  CAPTURE
  if tick==239 and not r.saved then
   r.saved=true;local states={};for k,_ in pairs(r.states) do table.insert(states,k) end;table.sort(states)
-  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\t'..r.vapex..'\\t'..r.blood..'\\t'..r.slashes..'\\t'..r.ground..'\\t'..r.endfx..'\\t'..r.cancelattempt..'\\t'..r.flare..'\\t'..r.ring..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(states,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minpower..'\\t'..r.maxpower..'\\t'..r.apex..'\\t'..r.last..'\\t'..r.final..'\\t'..r.dx..'\\t'..r.vapex..'\\t'..r.blood..'\\t'..r.slashes..'\\t'..r.ground..'\\t'..r.endfx..'\\t'..r.cancelattempt..'\\t'..r.flare..'\\t'..r.ring..'\\t'..r.trails..'\\t'..r.finishes..'\\t'..r.maxhits..'\\t'..r.attacktime..'\\n');f:flush()
  end
 end)
 '''.replace('DUMMYMAX',str(DUMMY_LIFE)).replace('COUNT',str(len(cases))).replace('STARTS','{'+','.join(str(-c['facing']*c['distance']/2) for c in cases)+'}')
@@ -242,7 +252,7 @@ for line in (ENGINE/'pochita_checks.tsv').read_text().splitlines():raw.setdefaul
 assert sorted(raw)==list(range(len(cases))),sorted(raw)
 report=[];errors=[]
 for i,c in enumerate(cases):
- _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex,blood,slashes,ground,endfx,attempt,flare,ring=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
+ _,states,damage,received,minimum,maximum,apex,last,final,dx,vapex,blood,slashes,ground,endfx,attempt,flare,ring,trails,finishes,maxhits,attacktime=raw[i].split('\t');states=set(map(int,states.split(',')));damage=int(damage);minimum=int(minimum);kind=c['kind'];fail=[]
  if kind=='empty':
   if 3000 in states:fail.append('ultimate spent unavailable power')
  else:
@@ -252,6 +262,13 @@ for i,c in enumerate(cases):
  if {11000,11010,11030,11040,11060,11070}.intersection(states) and (int(flare)==0 or int(ring)==0):fail.append('activated special missing startup flash or ground ring')
  if kind=='startupwhiff' and damage!=0:fail.append('startup presentation dealt damage without an attack collision')
  if kind=='emptyspecial' and (c['forbidden'] in states or int(flare)>0 or minimum!=c['power']):fail.append('special presentation activated without enough energy')
+ if kind=='special' and str(c['state']) in CHOREOGRAPHY:
+  choreography=CHOREOGRAPHY[str(c['state'])]
+  if damage!=choreography['damage'] or int(maxhits)!=choreography['contacts']:fail.append('extended special failed to connect all its physical contacts')
+  if int(attacktime)<choreography['animation_ticks']-3:fail.append('extended special animation ended before the intended recovery')
+  if int(trails)==0 or int(finishes)!=1:fail.append('extended special missing its unique trails or confirmed finish')
+ if kind in ['startupwhiff','specialguard'] and (int(trails)==0 or int(finishes)>0):fail.append('missed/guarded special lost its trails or emitted a confirmed finish')
+ if kind=='specialguard' and (int(blood)>0 or int(maxhits)>0 or damage>40):fail.append('guarded extended sequence became unblockable or emitted blood')
  if kind in ['combo','special','shortcut','crouch','aircombo','counter'] and damage<=0:fail.append('no collision damage')
  if kind in ['comboblock','combowhiff'] and (c['finish'] in states or damage>40):fail.append('third combo hit occurred without confirming earlier hits')
  if kind=='combowhiff' and damage!=0:fail.append('missed normal caused damage')
@@ -270,7 +287,7 @@ for i,c in enumerate(cases):
  if kind=='recovery' and (int(received)<=0 or not {5110,5120,200}.issubset(states)):fail.append('actual knockdown/get-up/new attack failed')
  if kind in ['combo','aircombo','ultihit'] and (int(blood)==0 or int(slashes)==0):fail.append('confirmed finisher has no slash/blood effects')
  if kind!='ai' and int(endfx)!=0:fail.append('visual effects failed to expire')
- if kind=='ai' and int(endfx)>6:fail.append('ongoing CPU combat accumulated too many effects')
+ if kind=='ai' and int(endfx)>9:fail.append('ongoing CPU combat accumulated too many effects')
  if kind in ['ultiblock','ultijump','ultifar','combowhiff','comboblock'] and int(blood)>0:fail.append('blood emitted without a real hit')
  if kind=='ultihit' and (damage!=min(500,DUMMY_LIFE//2) or 3001 not in states or int(final) in [3010,3011]):fail.append('confirmed ultimate damage/release failed')
  if kind in ['ultiblock','ultijump','ultifar'] and (damage>0 or 3001 in states):fail.append('ultimate could not be avoided')
@@ -280,6 +297,6 @@ for i,c in enumerate(cases):
  if kind=='walk' and (float(dx)<20 or int(last)!=0):fail.append('walk/release failed')
  if kind=='guard' and (int(received)!=0 or 150 not in states):fail.append('incoming strike not blocked')
  if kind=='dash' and (100 not in states or float(dx)<10):fail.append('dash failed to move/cancel')
- row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),blood_effects=int(blood),slash_effects=int(slashes),ground_effects=int(ground),effects_at_end=int(endfx),third_special_input_recognized=int(attempt),activation_flash=int(flare),ground_ring=int(ring),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
-path=ROOT/'previews'/(('Pochita_special_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='special' else 'Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
+ row=dict(case=c,states=sorted(states),damage=damage,received=int(received),minimum_power=minimum,maximum_power=int(maximum),apex=float(apex),victim_apex=float(vapex),blood_effects=int(blood),slash_effects=int(slashes),ground_effects=int(ground),effects_at_end=int(endfx),third_special_input_recognized=int(attempt),activation_flash=int(flare),ground_ring=int(ring),distinct_trails=int(trails),confirmed_finish=int(finishes),max_hitcount=int(maxhits),attack_time=int(attacktime),last=int(last),victim_final=int(final),dash_travel=float(dx),failures=fail);report.append(row);errors+=fail;print('FAIL' if fail else 'PASS',c['name'],c['facing'],row)
+path=ROOT/'previews'/(('Pochita_long_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='long' else 'Pochita_special_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='special' else 'Pochita_flow_visual_checks.json' if os.environ.get('POCHITA_PREVIEW_SET')=='flow' else 'Pochita_engine_visual_checks.json') if capture else 'Pochita_low_life_ultimate_checks.json' if DUMMY_LIFE!=1000 else 'Pochita_AI_checks.json' if os.environ.get('POCHITA_AI') else 'Pochita_engine_checks.json');path.write_text(json.dumps(report,indent=2)+'\n');assert not errors,errors
 print('PASSED',len(report),'raw-input/collision scenarios')

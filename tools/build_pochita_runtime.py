@@ -542,3 +542,6 @@ apply_flow_runtime(CHAR)
 
 from build_pochita_special_startup import apply_startup_runtime
 apply_startup_runtime(CHAR)
+
+from build_pochita_spectacle import apply_spectacle_runtime
+apply_spectacle_runtime(CHAR)

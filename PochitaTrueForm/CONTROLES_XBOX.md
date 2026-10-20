@@ -18,14 +18,14 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | B, B, B al conectar | Giro, salto corto y remate contra el suelo | 0 |
 | XXX y mantener arriba al acertar, luego X → Y → B en el aire | Perseguir el lanzamiento y rematar hacia el suelo | 0 |
 | X → Y → B en el aire al conectar | Cadena aérea de tres ataques | 0 |
-| Abajo+adelante+X | Desgarro: avance con dos cortes | 250 |
-| Abajo+atrás+X | Cuatro brazos: tres contactos | 350 |
+| Abajo+adelante+X | Desgarro: avance con tres cortes | 250 |
+| Abajo+atrás+X | Cuatro brazos: cinco contactos | 350 |
 | Abajo+X | Ascenso: corte que eleva al rival | 250 |
-| Abajo+adelante+Y | Estocada: extensión de largo alcance | 350 |
-| Abajo+atrás+Y | Barrido bajo | 250 |
+| Abajo+adelante+Y | Estocada: tres cortes de alcance extendido | 350 |
+| Abajo+atrás+Y | Barrido bajo de dos contactos | 250 |
 | Abajo+Y | Guillotina: salto corto y corte descendente | 500 |
-| Abajo+adelante+B | Embestida de dos impactos | 500 |
-| Abajo+atrás+B | Carnicería: cinco cortes y lanzamiento | 750 |
+| Abajo+adelante+B | Embestida de tres impactos | 500 |
+| Abajo+atrás+B | Carnicería: siete cortes y lanzamiento | 750 |
 | Abajo+B | Rasante: corte bajo y derribo | 250 |
 | RB | Guardia de motosierras y respuesta si recibe un golpe durante la ventana | 250 |
 | RT | Asalto de cinco cortes con alcance extendido | 750 |
@@ -46,7 +46,7 @@ Los remates de X/Y/B tienen cortes visibles, sangre al acertar y respuestas dist
 - **Y → B → X**: entrada fuerte, giro y lanzamiento; 173.
 - **B → X → Y**: giro, corte y triturado; 185.
 - **X → X → X + arriba, después X → Y → B en el aire**: persecución con salto real y corte descendente; 324 en seis impactos. Mantén arriba al conectar el último X; pulsa el X aéreo durante el salto. No es un teletransporte.
-- **X → Y → abajo adelante X → abajo atrás X**: enlaza dos especiales diferentes; gasto total 600, daño 312 en el muñeco. Introduce la segunda técnica después de que conecten los cortes de la primera.
+- **X → Y → abajo adelante X → abajo atrás X**: enlaza dos especiales diferentes; gasto total 600, daño 266 en el muñeco. El ejemplo cancela la primera técnica tras sus dos contactos iniciales; dejarla terminar ejecuta su tercer corte.
 
 Puedes mezclar los tres botones en las tres etapas: son 27 secuencias que comparten ataques, no 27 animaciones diferentes. La pulsación del siguiente golpe se guarda durante el ataque y se ejecuta al acertar. Si fallas o te bloquean, la ruta se corta. Un golpe independiente tras recuperar control puede iniciar otra cadena.
 
@@ -57,3 +57,9 @@ Se permite **como máximo una segunda técnica especial en la misma secuencia**,
 Abajo adelante/atrás + X/Y/B inicia una preparación breve, destello rojo y sonido de activación; después sale la técnica. Se mantiene el mismo mapeo Xbox. Mirando a la derecha, abajo adelante es abajo → derecha y abajo atrás es abajo → izquierda; al cambiar de lado se invierten.
 
 La señal debe escucharse aunque el ataque falle o sea bloqueado, siempre que haya energía suficiente. Usa un canal separado de la motosierra. No debe sonar al pulsar un normal ni al intentar el especial sin su energía mínima. La preparación paga el coste una sola vez: 250/350 para X, 350/250 para Y y 500/750 para B (adelante/atrás, respectivamente).
+
+## Duración y remates de los seis especiales
+
+Se ampliaron las secuencias de abajo adelante/atrás + X/Y/B, manteniendo costes y daño total. Tienen estelas animadas distintas, más contactos y recuperación visible. Carnicería conecta siete veces y termina lanzando al rival. Los destellos finales grandes, la vibración y el sonido de remate requieren acertar la secuencia; una guardia o un fallo no generan ese impacto confirmado.
+
+No hay cambios de botones, ultimate ni estadísticas en esta revisión. Los 24 cuadros nuevos son efectos; las secuencias combinan poses de cuerpo que ya existían.
