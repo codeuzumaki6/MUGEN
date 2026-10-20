@@ -21,7 +21,7 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | Abajo+adelante+X | Desgarro: avance con tres cortes | 250 |
 | Abajo+atrás+X | Cuatro brazos: cinco contactos | 350 |
 | Abajo+X | Ascenso: corte que eleva al rival | 250 |
-| Abajo+adelante+Y | Estocada: tres cortes de alcance extendido | 350 |
+| Abajo+adelante+Y | Estocada con cadena física: tres cortes de largo alcance | 350 |
 | Abajo+atrás+Y | Barrido bajo de dos contactos | 250 |
 | Abajo+Y | Guillotina: salto corto y corte descendente | 500 |
 | Abajo+adelante+B | Embestida de tres impactos | 500 |
@@ -30,13 +30,15 @@ Adelante/atrás son relativos a la orientación: mirando a la derecha, adelante 
 | RB | Guardia de motosierras y respuesta si recibe un golpe durante la ventana | 250 |
 | RT | Asalto de cinco cortes con alcance extendido | 750 |
 | Mantener LB / antiguo Pausa | Acelerar motores y cargar; soltar para detener | Carga hasta 3000 |
-| A | Ultimate: embestida, cinco cortes con cuatro brazos y lanzamiento si conecta | 2000 |
+| Abajo + LB / antiguo Pausa | Despertar de 6 s, hasta 240 de curación y daño físico +20 %; exige barra llena | 1000 |
+| Abajo + A | Devastación: antigua ultimate de cinco cortes, daño limitado al 25 % rival o 250 | 1000 |
+| A | Devorar / borrado: apertura física, mordisco y desaparición temporal si conecta | 2000 |
 
 1000 equivale a una barra. Sin la energía requerida para abajo+X/Y/B se ejecuta el normal agachado correspondiente. Los especiales ofensivos pueden cancelar un normal de suelo que haya conectado. Repetir el botón durante una guardia rival no concede automáticamente la continuación del combo. RB tiene aproximadamente 0,4 segundos de ventana activa, con preparación y recuperación; no refleja todo el daño ni asegura contras contra cualquier proyectil.
 
 En el rediseño, Ascenso, Barrido y Rasante son de corta distancia. Las cajas de ataque se ajustaron a las motosierras visibles; no alcanzan al rival automáticamente desde lejos.
 
-La ultimate consume **dos barras al activarla**, incluso si falla o la bloquean; exige 2000 de energía disponible. Su daño total es el menor entre 500 y la mitad de la vida máxima del rival, redondeado hacia abajo. Un rival con vida completa sobrevive; uno ya herido puede morir. No hay daño de la secuencia al bloquear o esquivar la apertura.
+La ultimate consume **dos barras al activarla**, incluso si falla o la bloquean; exige 2000 de energía disponible. Su daño total es el menor entre 450 y el 45 % de la vida máxima del rival, redondeado hacia abajo. Un rival con vida completa sobrevive; uno ya herido puede morir. No hay daño de la secuencia al bloquear o esquivar la apertura.
 
 Los remates de X/Y/B tienen cortes visibles, sangre al acertar y respuestas distintas: lanzamiento, triturado con empuje y golpe contra el suelo. En el muñeco de 1000 de vida las cadenas completas causan 152 / 180 / 205. Estos valores pueden variar con las defensas y reglas del rival.
 
@@ -62,4 +64,12 @@ La señal debe escucharse aunque el ataque falle o sea bloqueado, siempre que ha
 
 Se ampliaron las secuencias de abajo adelante/atrás + X/Y/B, manteniendo costes y daño total. Tienen estelas animadas distintas, más contactos y recuperación visible. Carnicería conecta siete veces y termina lanzando al rival. Los destellos finales grandes, la vibración y el sonido de remate requieren acertar la secuencia; una guardia o un fallo no generan ese impacto confirmado.
 
-No hay cambios de botones, ultimate ni estadísticas en esta revisión. Los 24 cuadros nuevos son efectos; las secuencias combinan poses de cuerpo que ya existían.
+Los seis especiales direccionales mantienen sus botones y costes. Los 24 cuadros nuevos son efectos; las secuencias combinan poses de cuerpo que ya existían.
+
+## Despertar y nueva ultimate
+
+Con tres barras, mantén abajo y pulsa LB (o el botón «Pausa» que envía `s` en tu configuración). Consume una barra, dura 360 ticks y cura hasta 240 sin exceder la vida máxima. Daño de ataques por colisión +20 % durante el efecto; las dos cinemáticas mantienen sus topes. No cambia el cuerpo ni su tamaño y no evita recibir golpes. Hay 900 ticks entre activaciones. Mantener el botón no lo renueva. Carga normal: LB sin abajo.
+
+Abajo + A ejecuta ahora la antigua secuencia de cinco cortes por una barra. A sin abajo activa devorar/borrado por dos barras: debe conectar, daña hasta min(450, 45 % de la vida máxima rival) y quita hasta 500 de energía rival. La desaparición es temporal: el oponente vuelve al combate. Puedes fallar y te pueden bloquear o interrumpir la apertura. Las dos habilidades consumen su coste al iniciarse.
+
+Abajo adelante + Y tiene ahora una cadena visible de largo alcance con tres contactos, por 350 de energía. Desgarro, Embestida y RT tienen mayor avance físico. La cadena se puede bloquear, interrumpir o dejar fuera de alcance; las embestidas no teletransportan al personaje.

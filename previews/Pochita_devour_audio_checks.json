@@ -1,0 +1,46 @@
+[
+  {
+    "case": "Cadena lejana",
+    "frames": 77,
+    "cue": 10,
+    "activation_tick": 28,
+    "activation_correlation": 0.4672162426803231,
+    "duration": 5.633333333333334,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "886e6ada71186b46c9906fa8e668dcaf0f02dd106d456dd904425c1f58135632",
+    "alignment_start_seconds": 4.516643990929706
+  },
+  {
+    "case": "awake_attack",
+    "frames": 127,
+    "cue": 13,
+    "activation_tick": 23,
+    "activation_correlation": 0.36509658740837114,
+    "duration": 9.2,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "84c762566be9642043c8a8082a319273ff8e5eba71e1a5431683ec96ed96eb93",
+    "alignment_start_seconds": 4.553537414965986
+  },
+  {
+    "case": "ultihit",
+    "frames": 77,
+    "cue": 10,
+    "activation_tick": 23,
+    "activation_correlation": 0.5257349654512027,
+    "duration": 5.65,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "c02efe3e55b57b05716b08484537e20d8d58175575e399c306c847be10f16b39",
+    "alignment_start_seconds": 4.599977324263039
+  },
+  {
+    "case": "oldhit",
+    "frames": 70,
+    "cue": 3,
+    "activation_tick": 23,
+    "activation_correlation": 0.262847334242322,
+    "duration": 5.666666666666667,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "0fc61d8256ac038980e646fac6feedca45208e333064a58dc739642dbe736a58",
+    "alignment_start_seconds": 4.460657596371882
+  }
+]

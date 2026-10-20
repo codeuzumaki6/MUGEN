@@ -4212,5 +4212,611 @@
         1024
       ]
     }
+  ],
+  "devour": [
+    {
+      "group": 3300,
+      "number": 0,
+      "file": "assets/sprites/devour/0.png",
+      "size": [
+        97,
+        76
+      ],
+      "axis": [
+        47,
+        74
+      ],
+      "attack_extent": 47,
+      "source_sheet": "devour_poses",
+      "source_cell": 0,
+      "source_box": [
+        22,
+        107,
+        410,
+        409
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 1,
+      "file": "assets/sprites/devour/1.png",
+      "size": [
+        108,
+        62
+      ],
+      "axis": [
+        52,
+        60
+      ],
+      "attack_extent": 53,
+      "source_sheet": "devour_poses",
+      "source_cell": 1,
+      "source_box": [
+        450,
+        165,
+        887,
+        409
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 2,
+      "file": "assets/sprites/devour/2.png",
+      "size": [
+        108,
+        64
+      ],
+      "axis": [
+        40,
+        62
+      ],
+      "attack_extent": 65,
+      "source_sheet": "devour_poses",
+      "source_cell": 2,
+      "source_box": [
+        894,
+        156,
+        1330,
+        409
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 3,
+      "file": "assets/sprites/devour/3.png",
+      "size": [
+        102,
+        84
+      ],
+      "axis": [
+        49,
+        82
+      ],
+      "attack_extent": 50,
+      "source_sheet": "devour_poses",
+      "source_cell": 3,
+      "source_box": [
+        1342,
+        73,
+        1751,
+        409
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 4,
+      "file": "assets/sprites/devour/4.png",
+      "size": [
+        103,
+        63
+      ],
+      "axis": [
+        45,
+        61
+      ],
+      "attack_extent": 55,
+      "source_sheet": "devour_poses",
+      "source_cell": 4,
+      "source_box": [
+        22,
+        586,
+        436,
+        835
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 5,
+      "file": "assets/sprites/devour/5.png",
+      "size": [
+        99,
+        73
+      ],
+      "axis": [
+        48,
+        71
+      ],
+      "attack_extent": 48,
+      "source_sheet": "devour_poses",
+      "source_cell": 5,
+      "source_box": [
+        465,
+        547,
+        864,
+        835
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 6,
+      "file": "assets/sprites/devour/6.png",
+      "size": [
+        103,
+        93
+      ],
+      "axis": [
+        52,
+        91
+      ],
+      "attack_extent": 48,
+      "source_sheet": "devour_poses",
+      "source_cell": 6,
+      "source_box": [
+        901,
+        461,
+        1318,
+        835
+      ]
+    },
+    {
+      "group": 3300,
+      "number": 7,
+      "file": "assets/sprites/devour/7.png",
+      "size": [
+        98,
+        79
+      ],
+      "axis": [
+        49,
+        77
+      ],
+      "attack_extent": 46,
+      "source_sheet": "devour_poses",
+      "source_cell": 7,
+      "source_box": [
+        1352,
+        519,
+        1745,
+        835
+      ]
+    }
+  ],
+  "regeneration_fx": [
+    {
+      "group": 9700,
+      "number": 0,
+      "file": "assets/sprites/regeneration_fx/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 0,
+      "source_box": [
+        0,
+        0,
+        384,
+        341
+      ]
+    },
+    {
+      "group": 9700,
+      "number": 1,
+      "file": "assets/sprites/regeneration_fx/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 1,
+      "source_box": [
+        384,
+        0,
+        768,
+        341
+      ]
+    },
+    {
+      "group": 9700,
+      "number": 2,
+      "file": "assets/sprites/regeneration_fx/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 2,
+      "source_box": [
+        768,
+        0,
+        1152,
+        341
+      ]
+    },
+    {
+      "group": 9700,
+      "number": 3,
+      "file": "assets/sprites/regeneration_fx/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        110
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 3,
+      "source_box": [
+        1152,
+        0,
+        1536,
+        341
+      ]
+    }
+  ],
+  "erasure_fx": [
+    {
+      "group": 9701,
+      "number": 0,
+      "file": "assets/sprites/erasure_fx/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 4,
+      "source_box": [
+        0,
+        341,
+        384,
+        682
+      ]
+    },
+    {
+      "group": 9701,
+      "number": 1,
+      "file": "assets/sprites/erasure_fx/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 5,
+      "source_box": [
+        384,
+        341,
+        768,
+        682
+      ]
+    },
+    {
+      "group": 9701,
+      "number": 2,
+      "file": "assets/sprites/erasure_fx/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 6,
+      "source_box": [
+        768,
+        341,
+        1152,
+        682
+      ]
+    },
+    {
+      "group": 9701,
+      "number": 3,
+      "file": "assets/sprites/erasure_fx/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 7,
+      "source_box": [
+        1152,
+        341,
+        1536,
+        682
+      ]
+    }
+  ],
+  "bite_fx": [
+    {
+      "group": 9702,
+      "number": 0,
+      "file": "assets/sprites/bite_fx/0.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 8,
+      "source_box": [
+        0,
+        682,
+        384,
+        1024
+      ]
+    },
+    {
+      "group": 9702,
+      "number": 1,
+      "file": "assets/sprites/bite_fx/1.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 9,
+      "source_box": [
+        384,
+        682,
+        768,
+        1024
+      ]
+    },
+    {
+      "group": 9702,
+      "number": 2,
+      "file": "assets/sprites/bite_fx/2.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 10,
+      "source_box": [
+        768,
+        682,
+        1152,
+        1024
+      ]
+    },
+    {
+      "group": 9702,
+      "number": 3,
+      "file": "assets/sprites/bite_fx/3.png",
+      "size": [
+        144,
+        120
+      ],
+      "axis": [
+        72,
+        60
+      ],
+      "source_sheet": "devour_fx",
+      "source_cell": 11,
+      "source_box": [
+        1152,
+        682,
+        1536,
+        1024
+      ]
+    }
+  ],
+  "chain_extension": [
+    {
+      "group": 9800,
+      "number": 0,
+      "file": "assets/sprites/chain_extension/0.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 0,
+      "source_box": [
+        0,
+        0,
+        443,
+        443
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 1,
+      "file": "assets/sprites/chain_extension/1.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 1,
+      "source_box": [
+        443,
+        0,
+        887,
+        443
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 2,
+      "file": "assets/sprites/chain_extension/2.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 2,
+      "source_box": [
+        887,
+        0,
+        1330,
+        443
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 3,
+      "file": "assets/sprites/chain_extension/3.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 3,
+      "source_box": [
+        1330,
+        0,
+        1774,
+        443
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 4,
+      "file": "assets/sprites/chain_extension/4.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 4,
+      "source_box": [
+        0,
+        443,
+        443,
+        887
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 5,
+      "file": "assets/sprites/chain_extension/5.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 5,
+      "source_box": [
+        443,
+        443,
+        887,
+        887
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 6,
+      "file": "assets/sprites/chain_extension/6.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 6,
+      "source_box": [
+        887,
+        443,
+        1330,
+        887
+      ]
+    },
+    {
+      "group": 9800,
+      "number": 7,
+      "file": "assets/sprites/chain_extension/7.png",
+      "size": [
+        256,
+        148
+      ],
+      "axis": [
+        0,
+        74
+      ],
+      "source_sheet": "chain_extension",
+      "source_cell": 7,
+      "source_box": [
+        1330,
+        443,
+        1774,
+        887
+      ]
+    }
   ]
 }

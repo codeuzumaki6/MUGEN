@@ -1,5 +1,24 @@
 [
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro",
       "button": "a",
@@ -41,6 +60,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos",
       "button": "a",
@@ -82,6 +120,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Ascenso",
       "button": "a",
@@ -120,6 +183,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada",
       "button": "b",
@@ -144,8 +226,8 @@
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -154,13 +236,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 31.12499237060547,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido",
       "button": "b",
@@ -202,6 +310,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Guillotina",
       "button": "b",
@@ -241,6 +374,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida",
       "button": "c",
@@ -282,6 +441,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria",
       "button": "c",
@@ -323,6 +507,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Rasante",
       "button": "c",
@@ -361,6 +570,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Asalto RT",
       "button": "z",
@@ -398,6 +633,86 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        1510,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
+    "case": {
+      "name": "Devastacion",
+      "button": "x",
+      "direction": "D",
+      "state": 1500,
+      "cost": 1000,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1500,
+      1501
+    ],
+    "damage": 250,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "victim_apex": -31.20000648498535,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "activation_flash": 0,
+    "ground_ring": 0,
+    "distinct_trails": 0,
+    "confirmed_finish": 0,
+    "max_hitcount": 1,
+    "attack_time": 0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 295,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro exact budget",
       "button": "a",
@@ -440,6 +755,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 425,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos exact budget",
       "button": "a",
@@ -482,6 +816,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 265,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Ascenso exact budget",
       "button": "a",
@@ -521,6 +880,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 395,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada exact budget",
       "button": "b",
@@ -546,8 +924,8 @@
     "maximum_power": 350,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -556,13 +934,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 39.18749237060547,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 280,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido exact budget",
       "button": "b",
@@ -605,6 +1009,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 515,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Guillotina exact budget",
       "button": "b",
@@ -645,6 +1074,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 545,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida exact budget",
       "button": "c",
@@ -687,6 +1142,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 855,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria exact budget",
       "button": "c",
@@ -729,6 +1209,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 265,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Rasante exact budget",
       "button": "c",
@@ -768,6 +1273,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 825,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Asalto RT exact budget",
       "button": "z",
@@ -806,6 +1337,85 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 1015,
+      "victim_states": [
+        0,
+        1510,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
+    "case": {
+      "name": "Devastacion exact budget",
+      "button": "x",
+      "direction": "D",
+      "state": 1500,
+      "cost": 1000,
+      "power": 1000,
+      "kind": "special",
+      "facing": 1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1500,
+      1501
+    ],
+    "damage": 250,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 1000,
+    "apex": 0.0,
+    "victim_apex": -31.20000648498535,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "activation_flash": 0,
+    "ground_ring": 0,
+    "distinct_trails": 0,
+    "confirmed_finish": 0,
+    "max_hitcount": 1,
+    "attack_time": 0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 249,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Desgarro insufficient power",
       "button": "a",
@@ -848,6 +1458,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Desgarro startup whiff",
       "button": "a",
@@ -889,6 +1516,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Desgarro guarded sequence",
       "button": "a",
@@ -930,6 +1582,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 349,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Cuatro brazos insufficient power",
       "button": "a",
@@ -972,6 +1641,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Cuatro brazos startup whiff",
       "button": "a",
@@ -1013,6 +1699,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Cuatro brazos guarded sequence",
       "button": "a",
@@ -1054,6 +1765,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 349,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Estocada insufficient power",
       "button": "b",
@@ -1096,6 +1824,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Estocada startup whiff",
       "button": "b",
@@ -1127,16 +1872,41 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 1,
+    "distinct_trails": 2,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 33.875,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Estocada guarded sequence",
       "button": "b",
@@ -1171,13 +1941,30 @@
     "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 38.87499237060547,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 249,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido insufficient power",
       "button": "b",
@@ -1220,6 +2007,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido startup whiff",
       "button": "b",
@@ -1261,6 +2065,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Barrido guarded sequence",
       "button": "b",
@@ -1302,6 +2131,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 499,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Embestida insufficient power",
       "button": "c",
@@ -1344,6 +2190,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Embestida startup whiff",
       "button": "c",
@@ -1385,6 +2248,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Embestida guarded sequence",
       "button": "c",
@@ -1426,6 +2314,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 749,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Carniceria insufficient power",
       "button": "c",
@@ -1468,6 +2373,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Carniceria startup whiff",
       "button": "c",
@@ -1509,6 +2431,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Carniceria guarded sequence",
       "button": "c",
@@ -1550,6 +2497,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Ascenso outside blade reach",
       "button": "a",
@@ -1588,6 +2552,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido outside blade reach",
       "button": "b",
@@ -1629,6 +2610,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Rasante outside blade reach",
       "button": "c",
@@ -1667,6 +2665,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro diagonal shortcut",
       "button": "a",
@@ -1706,6 +2723,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos diagonal shortcut",
       "button": "a",
@@ -1745,6 +2781,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada diagonal shortcut",
       "button": "b",
@@ -1767,8 +2822,8 @@
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -1777,13 +2832,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 0.0,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido diagonal shortcut",
       "button": "b",
@@ -1823,6 +2904,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida diagonal shortcut",
       "button": "c",
@@ -1862,6 +2969,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria diagonal shortcut",
       "button": "c",
@@ -1901,6 +3033,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Low power crouch a",
       "button": "a",
@@ -1939,6 +3090,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Low power crouch b",
       "button": "b",
@@ -1977,6 +3147,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Low power crouch c",
       "button": "c",
@@ -2015,6 +3210,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Walk F",
       "button": "a",
@@ -2052,6 +3264,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Diagonal jump F",
       "button": "U",
@@ -2092,6 +3321,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Walk B",
       "button": "a",
@@ -2129,6 +3375,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Diagonal jump B",
       "button": "U",
@@ -2169,6 +3432,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Guard incoming strike",
       "button": "a",
@@ -2209,6 +3490,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo X",
       "button": "a",
@@ -2248,6 +3555,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo Y",
       "button": "b",
@@ -2287,6 +3618,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo B",
       "button": "c",
@@ -2327,6 +3681,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XXY",
       "button": "a",
@@ -2377,6 +3755,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XXB",
       "button": "a",
@@ -2428,6 +3829,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYX",
       "button": "a",
@@ -2478,6 +3905,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYY",
       "button": "a",
@@ -2528,6 +3979,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYB",
       "button": "a",
@@ -2579,6 +4053,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBX",
       "button": "a",
@@ -2629,6 +4129,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBY",
       "button": "a",
@@ -2679,6 +4203,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBB",
       "button": "a",
@@ -2730,6 +4277,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXX",
       "button": "b",
@@ -2780,6 +4353,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXY",
       "button": "b",
@@ -2830,6 +4427,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXB",
       "button": "b",
@@ -2881,6 +4501,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YYX",
       "button": "b",
@@ -2931,6 +4577,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YYB",
       "button": "b",
@@ -2982,6 +4651,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBX",
       "button": "b",
@@ -3032,6 +4727,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBY",
       "button": "b",
@@ -3082,6 +4801,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBB",
       "button": "b",
@@ -3133,6 +4875,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXX",
       "button": "c",
@@ -3183,6 +4951,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXY",
       "button": "c",
@@ -3233,6 +5025,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXB",
       "button": "c",
@@ -3284,6 +5099,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYX",
       "button": "c",
@@ -3334,6 +5175,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYY",
       "button": "c",
@@ -3384,6 +5249,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYB",
       "button": "c",
@@ -3435,6 +5323,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BBX",
       "button": "c",
@@ -3485,6 +5399,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BBY",
       "button": "c",
@@ -3535,6 +5473,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5020,
+        5030,
+        5035,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Launcher aerial pursuit",
       "button": "a",
@@ -3579,6 +5543,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Mixed into two specials",
       "button": "a",
@@ -3621,6 +5604,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Mixed into two specials capped",
       "button": "a",
@@ -3663,6 +5665,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "Mixed XYB comboblock",
       "button": "a",
@@ -3707,6 +5729,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Mixed XYB combowhiff",
       "button": "a",
@@ -3751,6 +5790,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "specialblock",
       "button": "a",
@@ -3788,6 +5847,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "specialwhiff",
       "button": "a",
@@ -3825,6 +5901,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock a",
       "button": "a",
@@ -3863,6 +5959,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff a",
       "button": "a",
@@ -3901,6 +6014,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock b",
       "button": "b",
@@ -3939,6 +6072,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff b",
       "button": "b",
@@ -3977,6 +6127,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock c",
       "button": "c",
@@ -4015,6 +6185,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff c",
       "button": "c",
@@ -4053,6 +6240,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        50,
+        5020,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Aerial XYZ",
       "button": "a",
@@ -4094,6 +6307,33 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        1410,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120,
+        9701
+      ]
+    },
     "case": {
       "name": "RB physical counter",
       "button": "y",
@@ -4132,6 +6372,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9700
+      ]
+    },
     "case": {
       "name": "Get up sweep",
       "button": "a",
@@ -4174,6 +6432,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Get up bounce",
       "button": "a",
@@ -4219,6 +6495,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Get up airbounce",
       "button": "a",
@@ -4265,6 +6559,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 1,
+      "bite": 1,
+      "awakenings": 0,
+      "victim_power": 2500,
+      "victim_states": [
+        0,
+        3010,
+        3012,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "ultihit",
       "button": "x",
@@ -4280,14 +6597,14 @@
       3000,
       3001
     ],
-    "damage": 500,
+    "damage": 450,
     "received": 0,
     "minimum_power": 1000,
     "maximum_power": 3000,
     "apex": 0.0,
-    "victim_apex": -31.20000648498535,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "victim_apex": -24.90000343322754,
+    "blood_effects": 1,
+    "slash_effects": 0,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -4303,6 +6620,27 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130,
+        150
+      ]
+    },
     "case": {
       "name": "ultiblock",
       "button": "x",
@@ -4340,6 +6678,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        52
+      ]
+    },
     "case": {
       "name": "ultijump",
       "button": "x",
@@ -4377,6 +6733,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "ultifar",
       "button": "x",
@@ -4414,6 +6787,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 1,
+      "bite": 1,
+      "awakenings": 0,
+      "victim_power": 1500,
+      "victim_states": [
+        0,
+        3010,
+        3012,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Ultimate exact budget",
       "button": "x",
@@ -4430,14 +6826,14 @@
       3000,
       3001
     ],
-    "damage": 500,
+    "damage": 450,
     "received": 0,
     "minimum_power": 0,
     "maximum_power": 2000,
     "apex": 0.0,
-    "victim_apex": -31.20000648498535,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "victim_apex": -24.90000343322754,
+    "blood_effects": 1,
+    "slash_effects": 0,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -4453,6 +6849,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Neutral jump",
       "button": "U",
@@ -4492,6 +6905,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Dash into X",
       "button": "a",
@@ -4531,6 +6963,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro",
       "button": "a",
@@ -4572,6 +7023,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos",
       "button": "a",
@@ -4613,6 +7083,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Ascenso",
       "button": "a",
@@ -4651,6 +7146,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada",
       "button": "b",
@@ -4675,8 +7189,8 @@
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -4685,13 +7199,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 10.5625,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido",
       "button": "b",
@@ -4733,6 +7273,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Guillotina",
       "button": "b",
@@ -4772,6 +7337,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida",
       "button": "c",
@@ -4813,6 +7404,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria",
       "button": "c",
@@ -4854,6 +7470,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Rasante",
       "button": "c",
@@ -4892,6 +7533,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Asalto RT",
       "button": "z",
@@ -4929,6 +7596,86 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        1510,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
+    "case": {
+      "name": "Devastacion",
+      "button": "x",
+      "direction": "D",
+      "state": 1500,
+      "cost": 1000,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1500,
+      1501
+    ],
+    "damage": 250,
+    "received": 0,
+    "minimum_power": 2000,
+    "maximum_power": 3000,
+    "apex": 0.0,
+    "victim_apex": -31.20000648498535,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "activation_flash": 0,
+    "ground_ring": 0,
+    "distinct_trails": 0,
+    "confirmed_finish": 0,
+    "max_hitcount": 1,
+    "attack_time": 0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 295,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro exact budget",
       "button": "a",
@@ -4971,6 +7718,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 425,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos exact budget",
       "button": "a",
@@ -5013,6 +7779,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 265,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Ascenso exact budget",
       "button": "a",
@@ -5052,6 +7843,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 395,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada exact budget",
       "button": "b",
@@ -5077,8 +7887,8 @@
     "maximum_power": 350,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -5087,13 +7897,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 39.18749237060547,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 280,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido exact budget",
       "button": "b",
@@ -5136,6 +7972,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 515,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Guillotina exact budget",
       "button": "b",
@@ -5176,6 +8037,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 545,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida exact budget",
       "button": "c",
@@ -5218,6 +8105,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 855,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria exact budget",
       "button": "c",
@@ -5260,6 +8172,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 265,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Rasante exact budget",
       "button": "c",
@@ -5299,6 +8236,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 825,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Asalto RT exact budget",
       "button": "z",
@@ -5337,6 +8300,85 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 1015,
+      "victim_states": [
+        0,
+        1510,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
+    "case": {
+      "name": "Devastacion exact budget",
+      "button": "x",
+      "direction": "D",
+      "state": 1500,
+      "cost": 1000,
+      "power": 1000,
+      "kind": "special",
+      "facing": -1,
+      "distance": 70
+    },
+    "states": [
+      0,
+      10,
+      1500,
+      1501
+    ],
+    "damage": 250,
+    "received": 0,
+    "minimum_power": 0,
+    "maximum_power": 1000,
+    "apex": 0.0,
+    "victim_apex": -31.20000648498535,
+    "blood_effects": 2,
+    "slash_effects": 2,
+    "ground_effects": 0,
+    "effects_at_end": 0,
+    "third_special_input_recognized": 0,
+    "activation_flash": 0,
+    "ground_ring": 0,
+    "distinct_trails": 0,
+    "confirmed_finish": 0,
+    "max_hitcount": 1,
+    "attack_time": 0,
+    "last": 0,
+    "victim_final": 5110,
+    "dash_travel": 0.0,
+    "failures": []
+  },
+  {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 249,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Desgarro insufficient power",
       "button": "a",
@@ -5379,6 +8421,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Desgarro startup whiff",
       "button": "a",
@@ -5420,6 +8479,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Desgarro guarded sequence",
       "button": "a",
@@ -5461,6 +8545,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 349,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Cuatro brazos insufficient power",
       "button": "a",
@@ -5503,6 +8604,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Cuatro brazos startup whiff",
       "button": "a",
@@ -5544,6 +8662,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Cuatro brazos guarded sequence",
       "button": "a",
@@ -5585,6 +8728,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 349,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Estocada insufficient power",
       "button": "b",
@@ -5627,6 +8787,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Estocada startup whiff",
       "button": "b",
@@ -5658,16 +8835,41 @@
     "third_special_input_recognized": 0,
     "activation_flash": 1,
     "ground_ring": 1,
-    "distinct_trails": 1,
+    "distinct_trails": 2,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 33.87501525878906,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Estocada guarded sequence",
       "button": "b",
@@ -5702,13 +8904,30 @@
     "distinct_trails": 1,
     "confirmed_finish": 0,
     "max_hitcount": 0,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 38.87499237060547,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 249,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido insufficient power",
       "button": "b",
@@ -5751,6 +8970,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido startup whiff",
       "button": "b",
@@ -5792,6 +9028,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Barrido guarded sequence",
       "button": "b",
@@ -5833,6 +9094,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 499,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Embestida insufficient power",
       "button": "c",
@@ -5875,6 +9153,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Embestida startup whiff",
       "button": "c",
@@ -5916,6 +9211,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Embestida guarded sequence",
       "button": "c",
@@ -5957,6 +9277,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 749,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Carniceria insufficient power",
       "button": "c",
@@ -5999,6 +9336,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Carniceria startup whiff",
       "button": "c",
@@ -6040,6 +9394,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        10,
+        11,
+        12,
+        120,
+        131,
+        140,
+        152,
+        153
+      ]
+    },
     "case": {
       "name": "Carniceria guarded sequence",
       "button": "c",
@@ -6081,6 +9460,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Ascenso outside blade reach",
       "button": "a",
@@ -6119,6 +9515,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Barrido outside blade reach",
       "button": "b",
@@ -6160,6 +9573,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Rasante outside blade reach",
       "button": "c",
@@ -6198,6 +9628,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Desgarro diagonal shortcut",
       "button": "a",
@@ -6237,6 +9686,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Cuatro brazos diagonal shortcut",
       "button": "a",
@@ -6276,6 +9744,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Estocada diagonal shortcut",
       "button": "b",
@@ -6298,8 +9785,8 @@
     "maximum_power": 3000,
     "apex": 0.0,
     "victim_apex": 0.0,
-    "blood_effects": 1,
-    "slash_effects": 1,
+    "blood_effects": 2,
+    "slash_effects": 2,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -6308,13 +9795,39 @@
     "distinct_trails": 1,
     "confirmed_finish": 1,
     "max_hitcount": 3,
-    "attack_time": 55,
+    "attack_time": 59,
     "last": 0,
     "victim_final": 0,
     "dash_travel": 0.0,
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Barrido diagonal shortcut",
       "button": "b",
@@ -6354,6 +9867,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Embestida diagonal shortcut",
       "button": "c",
@@ -6393,6 +9932,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Carniceria diagonal shortcut",
       "button": "c",
@@ -6432,6 +9996,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Low power crouch a",
       "button": "a",
@@ -6470,6 +10053,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Low power crouch b",
       "button": "b",
@@ -6508,6 +10110,31 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 15,
+      "victim_states": [
+        0,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Low power crouch c",
       "button": "c",
@@ -6546,6 +10173,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Walk F",
       "button": "a",
@@ -6583,6 +10227,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Diagonal jump F",
       "button": "U",
@@ -6623,6 +10284,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Walk B",
       "button": "a",
@@ -6660,6 +10338,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Diagonal jump B",
       "button": "U",
@@ -6700,6 +10395,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Guard incoming strike",
       "button": "a",
@@ -6740,6 +10453,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo X",
       "button": "a",
@@ -6779,6 +10518,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo Y",
       "button": "b",
@@ -6818,6 +10581,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Combo B",
       "button": "c",
@@ -6858,6 +10644,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XXY",
       "button": "a",
@@ -6908,6 +10718,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XXB",
       "button": "a",
@@ -6959,6 +10792,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYX",
       "button": "a",
@@ -7009,6 +10868,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYY",
       "button": "a",
@@ -7059,6 +10942,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XYB",
       "button": "a",
@@ -7110,6 +11016,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBX",
       "button": "a",
@@ -7160,6 +11092,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBY",
       "button": "a",
@@ -7210,6 +11166,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed XBB",
       "button": "a",
@@ -7261,6 +11240,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXX",
       "button": "b",
@@ -7311,6 +11316,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXY",
       "button": "b",
@@ -7361,6 +11390,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YXB",
       "button": "b",
@@ -7412,6 +11464,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YYX",
       "button": "b",
@@ -7462,6 +11540,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YYB",
       "button": "b",
@@ -7513,6 +11614,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBX",
       "button": "b",
@@ -7563,6 +11690,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBY",
       "button": "b",
@@ -7613,6 +11764,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed YBB",
       "button": "b",
@@ -7664,6 +11838,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXX",
       "button": "c",
@@ -7714,6 +11914,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXY",
       "button": "c",
@@ -7764,6 +11988,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BXB",
       "button": "c",
@@ -7815,6 +12062,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYX",
       "button": "c",
@@ -7865,6 +12138,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYY",
       "button": "c",
@@ -7915,6 +12212,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BYB",
       "button": "c",
@@ -7966,6 +12286,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BBX",
       "button": "c",
@@ -8016,6 +12362,30 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5030,
+        5035,
+        5050,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Mixed BBY",
       "button": "c",
@@ -8066,6 +12436,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001,
+        5020,
+        5030,
+        5035,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Launcher aerial pursuit",
       "button": "a",
@@ -8110,6 +12506,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Mixed into two specials",
       "button": "a",
@@ -8152,6 +12567,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Mixed into two specials capped",
       "button": "a",
@@ -8194,6 +12628,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "Mixed XYB comboblock",
       "button": "a",
@@ -8238,6 +12692,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Mixed XYB combowhiff",
       "button": "a",
@@ -8282,6 +12753,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "specialblock",
       "button": "a",
@@ -8319,6 +12810,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "specialwhiff",
       "button": "a",
@@ -8356,6 +12864,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock a",
       "button": "a",
@@ -8394,6 +12922,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff a",
       "button": "a",
@@ -8432,6 +12977,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock b",
       "button": "b",
@@ -8470,6 +13035,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff b",
       "button": "b",
@@ -8508,6 +13090,26 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130
+      ]
+    },
     "case": {
       "name": "comboblock c",
       "button": "c",
@@ -8546,6 +13148,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "combowhiff c",
       "button": "c",
@@ -8584,6 +13203,32 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        50,
+        5020,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120
+      ]
+    },
     "case": {
       "name": "Aerial XYZ",
       "button": "a",
@@ -8625,6 +13270,33 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        1410,
+        5000,
+        5030,
+        5035,
+        5050,
+        5100,
+        5101,
+        5110,
+        5120,
+        9701
+      ]
+    },
     "case": {
       "name": "RB physical counter",
       "button": "y",
@@ -8663,6 +13335,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9700
+      ]
+    },
     "case": {
       "name": "Get up sweep",
       "button": "a",
@@ -8705,6 +13395,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Get up bounce",
       "button": "a",
@@ -8750,6 +13458,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1195,
+      "final_life": 1195,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        9701
+      ]
+    },
     "case": {
       "name": "Get up airbounce",
       "button": "a",
@@ -8796,6 +13522,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 1,
+      "bite": 1,
+      "awakenings": 0,
+      "victim_power": 2500,
+      "victim_states": [
+        0,
+        3010,
+        3012,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "ultihit",
       "button": "x",
@@ -8811,14 +13560,14 @@
       3000,
       3001
     ],
-    "damage": 500,
+    "damage": 450,
     "received": 0,
     "minimum_power": 1000,
     "maximum_power": 3000,
     "apex": 0.0,
-    "victim_apex": -31.20000648498535,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "victim_apex": -24.90000343322754,
+    "blood_effects": 1,
+    "slash_effects": 0,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -8834,6 +13583,27 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        20,
+        120,
+        130,
+        150
+      ]
+    },
     "case": {
       "name": "ultiblock",
       "button": "x",
@@ -8871,6 +13641,24 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        52
+      ]
+    },
     "case": {
       "name": "ultijump",
       "button": "x",
@@ -8908,6 +13696,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "ultifar",
       "button": "x",
@@ -8945,6 +13750,29 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 1,
+      "bite": 1,
+      "awakenings": 0,
+      "victim_power": 1500,
+      "victim_states": [
+        0,
+        3010,
+        3012,
+        5050,
+        5100,
+        5101,
+        5110
+      ]
+    },
     "case": {
       "name": "Ultimate exact budget",
       "button": "x",
@@ -8961,14 +13789,14 @@
       3000,
       3001
     ],
-    "damage": 500,
+    "damage": 450,
     "received": 0,
     "minimum_power": 0,
     "maximum_power": 2000,
     "apex": 0.0,
-    "victim_apex": -31.20000648498535,
-    "blood_effects": 2,
-    "slash_effects": 2,
+    "victim_apex": -24.90000343322754,
+    "blood_effects": 1,
+    "slash_effects": 0,
     "ground_effects": 0,
     "effects_at_end": 0,
     "third_special_input_recognized": 0,
@@ -8984,6 +13812,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Neutral jump",
       "button": "U",
@@ -9023,6 +13868,25 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 3000,
+      "victim_states": [
+        0,
+        5000,
+        5001
+      ]
+    },
     "case": {
       "name": "Dash into X",
       "button": "a",
@@ -9062,6 +13926,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 1999,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "Insufficient ultimate power",
       "button": "x",
@@ -9098,6 +13979,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 0,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "LB charge and release",
       "button": "s",
@@ -9135,6 +14033,23 @@
     "failures": []
   },
   {
+    "extension": {
+      "peak_timer": 0,
+      "healed": 0,
+      "maximum_life": 1250,
+      "minimum_life": 1250,
+      "final_life": 1250,
+      "final_timer": 0,
+      "final_cooldown": 0,
+      "aura": 0,
+      "erasure": 0,
+      "bite": 0,
+      "awakenings": 0,
+      "victim_power": 0,
+      "victim_states": [
+        0
+      ]
+    },
     "case": {
       "name": "LB full charge",
       "button": "s",

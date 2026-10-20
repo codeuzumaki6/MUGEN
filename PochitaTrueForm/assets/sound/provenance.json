@@ -118,5 +118,47 @@
     "duration": 1.0653514739229024,
     "voice": false,
     "note": "Nonverbal Super Charge SE; level adjusted, not extracted from Goku video"
+  },
+  {
+    "group": 1,
+    "number": 11,
+    "filename": "devour_bite.wav",
+    "type": "nonverbal original effect mix",
+    "sources": [
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "chainsaw_long.wav"
+    ],
+    "duration": 0.55,
+    "sha256": "0d4d721d19f83870a2faff8d526517eb535f347a0f01be389d568aca90329f49",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 12,
+    "filename": "erasure_collapse.wav",
+    "type": "nonverbal original effect mix",
+    "sources": [
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "chainsaw_long.wav"
+    ],
+    "duration": 1.15,
+    "sha256": "08ca78cc54577259f508c2a8b80813922fd8568eb965dd392df2d2412578ce76",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 13,
+    "filename": "regeneration_pulse.wav",
+    "type": "nonverbal original effect mix",
+    "sources": [
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "chainsaw_long.wav"
+    ],
+    "duration": 0.65,
+    "sha256": "7f8d004d216c1c16ecc5c681d208bacff606d0c360e78e473751418f6a7e3ae3",
+    "voice": false
   }
 ]

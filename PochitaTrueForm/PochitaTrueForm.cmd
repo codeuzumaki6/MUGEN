@@ -193,6 +193,18 @@ command = z
 time = 20
 buffer.time = 3
 
+[Command]
+name = "Devastacion"
+command = /$D,x
+time = 1
+buffer.time = 3
+
+[Command]
+name = "Despertar"
+command = /$D,s
+time = 1
+buffer.time = 1
+
 [Statedef -1]
 
 [State -1, AI counter]
@@ -253,10 +265,32 @@ triggerall = P2Dist X < 90
 triggerall = Random < 180
 trigger1 = Ctrl
 
+[State -1, Down charge regeneration]
+type = ChangeState
+value = 520
+triggerall = command = "Despertar"
+triggerall = Power >= 3000
+triggerall = Var(36) = 0
+triggerall = Var(37) = 0
+triggerall = Alive
+triggerall = StateType != A
+trigger1 = Ctrl
+trigger2 = StateNo = 500
+
+[State -1, Down A former ultimate]
+type = ChangeState
+value = 1500
+triggerall = command = "Devastacion"
+triggerall = Power >= 1000
+triggerall = StateType != A
+trigger1 = Ctrl
+trigger2 = StateNo = 100
+
 [State -1, Xbox A Ultimate]
 type = ChangeState
 value = 3000
 triggerall = command = "x"
+triggerall = command != "holddown"
 triggerall = Power >= 2000
 triggerall = StateType != A
 trigger1 = Ctrl
@@ -880,6 +914,7 @@ trigger1 = Ctrl
 type = ChangeState
 value = 500
 triggerall = command = "holdcharge"
+triggerall = command != "holddown"
 triggerall = Power < 3000
 triggerall = StateType != A
 trigger1 = Ctrl

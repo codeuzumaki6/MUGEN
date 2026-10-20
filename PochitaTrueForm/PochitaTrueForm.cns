@@ -48,6 +48,85 @@ stand.friction = .82
 crouch.friction = .82
 
 [Statedef -2]
+[State -2, Remove composite body after chain move]
+type = RemoveExplod
+trigger1 = StateNo != 1030
+ID = 9480
+ignorehitpause = 1
+
+[State -2, Awakening attack multiplier]
+type = AttackMulSet
+trigger1 = 1
+value = IfElse(Var(36) > 0 && Alive && RoundState = 2,1.2,1)
+ignorehitpause = 1
+[State -2, Reset awakening at round end or KO]
+type = VarSet
+trigger1 = RoundState != 2
+trigger2 = !Alive
+v = 36
+value = 0
+ignorehitpause = 1
+[State -2, Reset awakening cooldown between rounds]
+type = VarSet
+trigger1 = RoundState != 2
+v = 37
+value = 0
+ignorehitpause = 1
+[State -2, Regeneration restored health counter]
+type = VarAdd
+triggerall = Alive
+triggerall = RoundState = 2
+triggerall = Var(36) > 0
+triggerall = Var(36)%6 = 0
+trigger1 = Life < Const(data.life)
+v = 33
+value = IfElse(Life <= Const(data.life)-4,4,Const(data.life)-Life)
+ignorehitpause = 1
+[State -2, Regeneration health]
+type = LifeAdd
+triggerall = Alive
+triggerall = RoundState = 2
+triggerall = Var(36) > 0
+triggerall = Var(36)%6 = 0
+trigger1 = Life < Const(data.life)
+value = IfElse(Life <= Const(data.life)-4,4,Const(data.life)-Life)
+absolute = 1
+ignorehitpause = 1
+[State -2, Regeneration red embers]
+type = Explod
+triggerall = Alive
+triggerall = Var(36) > 0
+trigger1 = NumExplod(9470) = 0
+anim = 9700
+ID = 9470
+postype = p1
+pos = 0,0
+bindtime = -1
+removetime = 24
+scale = .9,.9
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 220,100
+ignorehitpause = 1
+[State -2, Remove ended aura]
+type = RemoveExplod
+trigger1 = Var(36) <= 0
+ID = 9470
+ignorehitpause = 1
+[State -2, Awakening countdown]
+type = VarAdd
+trigger1 = Var(36) > 0
+v = 36
+value = -1
+ignorehitpause = 1
+[State -2, Awakening cooldown]
+type = VarAdd
+trigger1 = Var(37) > 0
+v = 37
+value = -1
+ignorehitpause = 1
+
 [State -2, Stop rev loop outside charge]
 type = StopSnd
 trigger1 = StateNo != 500
@@ -1888,6 +1967,16 @@ type = VelSet
 trigger1 = Time >= 45
 x = 0
 
+[State 1000, Maintain physical approach speed]
+type = VelSet
+triggerall = Time < 20
+trigger1 = P2Dist X > 40
+x = 4.5
+[State 1000, Stop approach at contact distance]
+type = VelSet
+triggerall = Time < 20
+trigger1 = P2Dist X <= 40
+x = 0
 [State 1000, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2424,10 +2513,23 @@ value = 40
 type = S
 movetype = A
 physics = S
-anim = 1030
+anim = 1031
 ctrl = 0
-velset = 3.5,0
+velset = 0,0
 poweradd = 0
+[State 1030, Body under the physical chain]
+type = Explod
+trigger1 = Time = 0
+anim = 1030
+ID = 9480
+postype = p1
+pos = 0,0
+bindtime = -1
+removetime = -1
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+ignorehitpause = 0
 [State 1030, Motor]
 type = PlaySnd
 trigger1 = Time = 0
@@ -2435,7 +2537,7 @@ value = S1,1
 channel = 1
 [State 1030, Choreographed blade contact 3]
 type = HitDef
-trigger1 = AnimElem = 3
+trigger1 = AnimElem = 4
 attr = S, SA
 damage = 30,2
 animtype = Light
@@ -2463,7 +2565,7 @@ envshake.ampl = -1
 
 [State 1030, Choreographed blade contact 7]
 type = HitDef
-trigger1 = AnimElem = 7
+trigger1 = AnimElem = 6
 attr = S, SA
 damage = 34,2
 animtype = Light
@@ -2491,7 +2593,7 @@ envshake.ampl = -1
 
 [State 1030, Choreographed blade contact 11]
 type = HitDef
-trigger1 = AnimElem = 11
+trigger1 = AnimElem = 9
 attr = S, SA
 damage = 62,5
 animtype = Heavy
@@ -2531,7 +2633,7 @@ trigger1 = HitCount > Var(26)
 anim = 9200
 ID = 9400
 postype = p1
-pos = 42,-36
+pos = P2Dist X,-36
 facing = 1
 bindtime = 0
 removetime = 16
@@ -2550,7 +2652,7 @@ trigger1 = HitCount > Var(26)
 anim = 9201
 ID = 9401
 postype = p1
-pos = 42,-36
+pos = P2Dist X,-36
 facing = 1
 bindtime = 0
 removetime = 16
@@ -2585,7 +2687,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 3]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 3
+trigger1 = AnimElem = 4
 anim = 9602
 ID = 9460
 postype = p1
@@ -2604,7 +2706,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 7]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 7
+trigger1 = AnimElem = 6
 anim = 9602
 ID = 9460
 postype = p1
@@ -2623,7 +2725,7 @@ ignorehitpause = 1
 [State 1030, Animated saw path 11]
 type = Explod
 triggerall = NumExplod(9460) < 2
-trigger1 = AnimElem = 11
+trigger1 = AnimElem = 9
 anim = 9602
 ID = 9460
 postype = p1
@@ -2648,7 +2750,7 @@ trigger1 = Var(35) = 0
 anim = 9602
 ID = 9461
 postype = p1
-pos = 38,-34
+pos = P2Dist X,-34
 facing = 1
 bindtime = 0
 removetime = 12
@@ -3420,6 +3522,16 @@ type = VelSet
 trigger1 = Time >= 51
 x = 0
 
+[State 1060, Maintain physical approach speed]
+type = VelSet
+triggerall = Time < 16
+trigger1 = P2Dist X > 40
+x = 5.5
+[State 1060, Stop approach at contact distance]
+type = VelSet
+triggerall = Time < 16
+trigger1 = P2Dist X <= 40
+x = 0
 [State 1060, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -4276,6 +4388,16 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1100, Maintain physical approach speed]
+type = VelSet
+triggerall = Time < 16
+trigger1 = P2Dist X > 40
+x = 6
+[State 1100, Stop approach at contact distance]
+type = VelSet
+triggerall = Time < 16
+trigger1 = P2Dist X <= 40
+x = 0
 [State 1100, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -4442,27 +4564,27 @@ trigger1 = Time >= 14
 value = 0
 ctrl = 1
 
-[Statedef 3000]
+[Statedef 1500]
 type = S
 movetype = A
 physics = N
-anim = 3000
+anim = 1500
 ctrl = 0
 velset = 0,0
-poweradd = -2000
-[State 3000, Tell]
+poweradd = -1000
+[State 1500, Tell]
 type = PlaySnd
 trigger1 = Time = 0
 value = S1,3
-[State 3000, Rush]
+[State 1500, Rush]
 type = VelSet
 trigger1 = Time = 8
 x = 7
-[State 3000, Stop]
+[State 1500, Stop]
 type = VelSet
 trigger1 = Time = 26
 x = 0
-[State 3000, Contact 4]
+[State 1500, Contact 4]
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, HA
@@ -4489,97 +4611,97 @@ getpower = 0,10
 givepower = 15,5
 envshake.time = 5
 envshake.ampl = -2
-p1stateno = 3001
-p2stateno = 3010
-ID = 3000
+p1stateno = 1501
+p2stateno = 1510
+ID = 1500
 kill = 0
 
-[State 3000, Recover on miss]
+[State 1500, Recover on miss]
 type = ChangeState
 trigger1 = Time >= 52
 value = 0
 ctrl = 1
 
-[Statedef 3001]
+[Statedef 1501]
 type = S
 movetype = A
 physics = N
-anim = 3001
+anim = 1501
 ctrl = 0
 velset = 0,0
-[State 3001, Damage ceiling]
+[State 1501, Damage ceiling]
 type = VarSet
 trigger1 = Time = 0
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 28
-value = IfElse((Target(3000),LifeMax) > 1000,500,Floor((Target(3000),LifeMax)*.5))
-[State 3001, Damage applied]
+value = IfElse((Target(1500),LifeMax) > 1000,250,Floor((Target(1500),LifeMax)*.25))
+[State 1501, Damage applied]
 type = VarSet
 trigger1 = Time = 0
 v = 29
 value = 0
-[State 3001, Confirm freeze]
+[State 1501, Confirm freeze]
 type = SuperPause
 trigger1 = Time = 0
 time = 8
 movetime = 8
 anim = -1
 darken = 1
-[State 3001, Confirm protection]
+[State 1501, Confirm protection]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
-[State 3001, Scene shade]
+[State 1501, Scene shade]
 type = BGPalFX
 trigger1 = Time = 0
 time = 116
 mul = 100,70,75
-[State 3001, Victim position]
+[State 1501, Victim position]
 type = TargetBind
 trigger1 = Time < 100
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 pos = 64,0
-[State 3001, Motors]
+[State 1501, Motors]
 type = PlaySnd
 trigger1 = Time = 8
 trigger2 = Time = 40
 trigger3 = Time = 72
 value = S1,7
 channel = 1
-[State 3001, Actual cut 30]
+[State 1501, Actual cut 30]
 type = TargetLifeAdd
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 value = -(Floor(Var(28)*60/500.0))
 kill = 0
 absolute = 1
-[State 3001, Record damage 30]
+[State 1501, Record damage 30]
 type = VarAdd
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 29
 value = Floor(Var(28)*60/500.0)
-[State 3001, Cut sound 30]
+[State 1501, Cut sound 30]
 type = PlaySnd
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 value = S1,8
 channel = 2
 persistent = 0
-[State 3001, Impact shake 30]
+[State 1501, Impact shake 30]
 type = EnvShake
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 time = 4
 freq = 95
 ampl = -2
-[State 3001, Four saw trail 30]
+[State 1501, Four saw trail 30]
 type = Explod
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9200
 ID = 9400
 postype = p1
@@ -4594,10 +4716,10 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Blood cut 30]
+[State 1501, Blood cut 30]
 type = Explod
 trigger1 = Time = 30
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9201
 ID = 9401
 postype = p1
@@ -4612,38 +4734,38 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Actual cut 42]
+[State 1501, Actual cut 42]
 type = TargetLifeAdd
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 value = -(Floor(Var(28)*60/500.0))
 kill = 0
 absolute = 1
-[State 3001, Record damage 42]
+[State 1501, Record damage 42]
 type = VarAdd
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 29
 value = Floor(Var(28)*60/500.0)
-[State 3001, Cut sound 42]
+[State 1501, Cut sound 42]
 type = PlaySnd
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 value = S1,8
 channel = 2
 persistent = 0
-[State 3001, Impact shake 42]
+[State 1501, Impact shake 42]
 type = EnvShake
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 time = 4
 freq = 95
 ampl = -2
-[State 3001, Four saw trail 42]
+[State 1501, Four saw trail 42]
 type = Explod
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9200
 ID = 9400
 postype = p1
@@ -4658,10 +4780,10 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Blood cut 42]
+[State 1501, Blood cut 42]
 type = Explod
 trigger1 = Time = 42
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9201
 ID = 9401
 postype = p1
@@ -4676,38 +4798,38 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Actual cut 54]
+[State 1501, Actual cut 54]
 type = TargetLifeAdd
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 value = -(Floor(Var(28)*70/500.0))
 kill = 0
 absolute = 1
-[State 3001, Record damage 54]
+[State 1501, Record damage 54]
 type = VarAdd
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 29
 value = Floor(Var(28)*70/500.0)
-[State 3001, Cut sound 54]
+[State 1501, Cut sound 54]
 type = PlaySnd
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 value = S1,8
 channel = 2
 persistent = 0
-[State 3001, Impact shake 54]
+[State 1501, Impact shake 54]
 type = EnvShake
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 time = 4
 freq = 95
 ampl = -2
-[State 3001, Four saw trail 54]
+[State 1501, Four saw trail 54]
 type = Explod
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9200
 ID = 9400
 postype = p1
@@ -4722,10 +4844,10 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Blood cut 54]
+[State 1501, Blood cut 54]
 type = Explod
 trigger1 = Time = 54
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9201
 ID = 9401
 postype = p1
@@ -4740,38 +4862,38 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Actual cut 66]
+[State 1501, Actual cut 66]
 type = TargetLifeAdd
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 value = -(Floor(Var(28)*70/500.0))
 kill = 0
 absolute = 1
-[State 3001, Record damage 66]
+[State 1501, Record damage 66]
 type = VarAdd
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 29
 value = Floor(Var(28)*70/500.0)
-[State 3001, Cut sound 66]
+[State 1501, Cut sound 66]
 type = PlaySnd
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 value = S1,8
 channel = 2
 persistent = 0
-[State 3001, Impact shake 66]
+[State 1501, Impact shake 66]
 type = EnvShake
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 time = 4
 freq = 95
 ampl = -2
-[State 3001, Four saw trail 66]
+[State 1501, Four saw trail 66]
 type = Explod
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9200
 ID = 9400
 postype = p1
@@ -4786,10 +4908,10 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Blood cut 66]
+[State 1501, Blood cut 66]
 type = Explod
 trigger1 = Time = 66
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9201
 ID = 9401
 postype = p1
@@ -4804,38 +4926,38 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Actual cut 92]
+[State 1501, Actual cut 92]
 type = TargetLifeAdd
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
-ID = 3000
+trigger1 = NumTarget(1500) > 0
+ID = 1500
 value = -(Var(28)-Var(29))
 kill = 1
 absolute = 1
-[State 3001, Record damage 92]
+[State 1501, Record damage 92]
 type = VarAdd
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 v = 29
 value = Var(28)-Var(29)
-[State 3001, Cut sound 92]
+[State 1501, Cut sound 92]
 type = PlaySnd
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 value = S1,9
 channel = 2
 persistent = 0
-[State 3001, Impact shake 92]
+[State 1501, Impact shake 92]
 type = EnvShake
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 time = 10
 freq = 95
 ampl = -4
-[State 3001, Four saw trail 92]
+[State 1501, Four saw trail 92]
 type = Explod
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9200
 ID = 9400
 postype = p1
@@ -4850,10 +4972,10 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Blood cut 92]
+[State 1501, Blood cut 92]
 type = Explod
 trigger1 = Time = 92
-trigger1 = NumTarget(3000) > 0
+trigger1 = NumTarget(1500) > 0
 anim = 9201
 ID = 9401
 postype = p1
@@ -4868,64 +4990,64 @@ removeongethit = 1
 ignorehitpause = 1
 supermovetime = 8
 persistent = 0
-[State 3001, Final flash]
+[State 1501, Final flash]
 type = EnvColor
 trigger1 = Time = 92
 time = 2
 value = 255,235,220
 under = 0
-[State 3001, Finish emphasis]
+[State 1501, Finish emphasis]
 type = Pause
 trigger1 = Time = 92
 time = 6
 movetime = 6
-[State 3001, Release]
+[State 1501, Release]
 type = TargetState
 trigger1 = Time = 100
-ID = 3000
-value = 3011
-[State 3001, End]
+ID = 1500
+value = 1511
+[State 1501, End]
 type = ChangeState
 trigger1 = Time >= 118
 value = 0
 ctrl = 1
 
-[Statedef 3010]
+[Statedef 1510]
 type = S
 movetype = H
 physics = N
 ctrl = 0
 velset = 0,0
-[State 3010, Own hurt]
+[State 1510, Own hurt]
 type = ChangeAnim
 trigger1 = Time = 0
 value = 5000
-[State 3010, Cut recoil]
+[State 1510, Cut recoil]
 type = ChangeAnim
 trigger1 = Time = 25
 trigger2 = Time = 48
 trigger3 = Time = 72
 value = IfElse(SelfAnimExist(5001),5001,5000)
-[State 3010, Contact tint]
+[State 1510, Contact tint]
 type = PalFX
 trigger1 = Time = 20
 time = 70
 mul = 256,180,180
-[State 3010, Emergency release]
+[State 1510, Emergency release]
 type = SelfState
 trigger1 = Time >= 170
 trigger2 = NumEnemy > 0
-trigger2 = EnemyNear,StateNo != 3000
-trigger2 = EnemyNear,StateNo != 3001
+trigger2 = EnemyNear,StateNo != 1500
+trigger2 = EnemyNear,StateNo != 1501
 value = 0
 ctrl = 1
-[Statedef 3011]
+[Statedef 1511]
 type = A
 movetype = H
 physics = N
 ctrl = 0
 velset = -6,-4.5
-[State 3011, Fall]
+[State 1511, Fall]
 type = SelfState
 trigger1 = 1
 value = 5050
@@ -5574,4 +5696,421 @@ ignorehitpause = 1
 type = ChangeState
 trigger1 = Time >= IfElse(Var(32) > 0,6,12)
 value = 1070
+ctrl = 0
+
+[Statedef 520]
+type = S
+movetype = I
+physics = S
+anim = 520
+ctrl = 0
+velset = 0,0
+poweradd = -1000
+[State 520, Regeneration duration]
+type = VarSet
+trigger1 = Time = 0
+v = 36
+value = 360
+[State 520, Regeneration cooldown]
+type = VarSet
+trigger1 = Time = 0
+v = 37
+value = 900
+[State 520, Clear restored health]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+[State 520, Awakening pulse]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,13
+channel = 4
+[State 520, Return to combat]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 3000]
+type = S
+movetype = A
+physics = N
+anim = 3000
+ctrl = 0
+velset = 0,0
+poweradd = -2000
+[State 3000, Devour tell]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,10
+channel = 4
+[State 3000, Rush]
+type = VelSet
+trigger1 = Time = 8
+x = 7
+[State 3000, Stop]
+type = VelSet
+trigger1 = Time = 24
+x = 0
+[State 3000, Physical opening]
+type = HitDef
+trigger1 = AnimElem = 3
+attr = S, HA
+damage = 0,0
+animtype = Heavy
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 7,10
+sparkno = 1
+guard.sparkno = -1
+hitsound = S1,5
+guardsound = S1,6
+ground.type = High
+ground.hittime = 22
+ground.velocity = -1,0
+air.hittime = 24
+air.velocity = -1,-2
+fall = 0
+getpower = 0,0
+givepower = 0,0
+p1stateno = 3001
+p2stateno = 3010
+ID = 3000
+kill = 0
+[State 3000, Recover after missed opening]
+type = ChangeState
+trigger1 = Time >= 52
+value = 0
+ctrl = 1
+
+[Statedef 3001]
+type = S
+movetype = A
+physics = N
+anim = 3001
+ctrl = 0
+velset = 0,0
+[State 3001, Victim health ceiling]
+type = VarSet
+trigger1 = Time = 0
+trigger1 = NumTarget(3000) > 0
+v = 28
+value = IfElse((Target(3000),LifeMax) > 1000,450,Floor((Target(3000),LifeMax)*.45))
+[State 3001, Clear damage account]
+type = VarSet
+trigger1 = Time = 0
+v = 29
+value = 0
+[State 3001, Protect confirmed cinematic]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+[State 3001, Hold bitten opponent only after confirmation]
+type = TargetBind
+triggerall = NumTarget(3000) > 0
+trigger1 = Time < 128
+ID = 3000
+pos = 46,0
+[State 3001, Dim scene]
+type = BGPalFX
+trigger1 = Time = 0
+time = 138
+mul = 90,60,65
+[State 3001, Chainsaw chew]
+type = PlaySnd
+trigger1 = Time = 18
+trigger2 = Time = 46
+value = S1,7
+channel = 1
+[State 3001, White erasure space]
+type = EnvColor
+trigger1 = Time = 66
+time = 44
+value = 242,242,242
+under = 1
+[State 3001, Erase victim representation]
+type = TargetState
+trigger1 = Time = 66
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = 3012
+[State 3001, Drain a bounded amount of energy]
+type = TargetPowerAdd
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = -500
+[State 3001, Erasure collapse sound]
+type = PlaySnd
+trigger1 = Time = 66
+value = S1,12
+channel = 2
+[State 3001, Devour damage 34]
+type = TargetLifeAdd
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = -(Floor(Var(28)*60/450.0))
+kill = 0
+absolute = 1
+[State 3001, Account damage 34]
+type = VarAdd
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*60/450.0)
+[State 3001, Bite impact 34]
+type = PlaySnd
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+value = S1,11
+channel = 3
+[State 3001, Bite or erasure particles 34]
+type = Explod
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+anim = 9702
+ID = 9472
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 16
+sprpriority = 5
+ownpal = 1
+scale = .85,.85
+removeongethit = 1
+[State 3001, Impact vibration 34]
+type = EnvShake
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+time = 6
+freq = 90
+ampl = -3
+[State 3001, Physical bite blood 34]
+type = Explod
+trigger1 = Time = 34
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 14
+sprpriority = 4
+ownpal = 1
+scale = .7,.7
+[State 3001, Devour damage 58]
+type = TargetLifeAdd
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = -(Floor(Var(28)*100/450.0))
+kill = 0
+absolute = 1
+[State 3001, Account damage 58]
+type = VarAdd
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*100/450.0)
+[State 3001, Bite impact 58]
+type = PlaySnd
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+value = S1,11
+channel = 3
+[State 3001, Bite or erasure particles 58]
+type = Explod
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+anim = 9702
+ID = 9472
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 16
+sprpriority = 5
+ownpal = 1
+scale = .85,.85
+removeongethit = 1
+[State 3001, Impact vibration 58]
+type = EnvShake
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+time = 6
+freq = 90
+ampl = -3
+[State 3001, Physical bite blood 58]
+type = Explod
+trigger1 = Time = 58
+trigger1 = NumTarget(3000) > 0
+anim = 9201
+ID = 9401
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 14
+sprpriority = 4
+ownpal = 1
+scale = .7,.7
+[State 3001, Devour damage 92]
+type = TargetLifeAdd
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = -(Floor(Var(28)*120/450.0))
+kill = 0
+absolute = 1
+[State 3001, Account damage 92]
+type = VarAdd
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Floor(Var(28)*120/450.0)
+[State 3001, Bite impact 92]
+type = PlaySnd
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+value = S1,12
+channel = 3
+[State 3001, Bite or erasure particles 92]
+type = Explod
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+anim = 9701
+ID = 9471
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 24
+sprpriority = 5
+ownpal = 1
+scale = .85,.85
+removeongethit = 1
+[State 3001, Impact vibration 92]
+type = EnvShake
+trigger1 = Time = 92
+trigger1 = NumTarget(3000) > 0
+time = 6
+freq = 90
+ampl = -3
+[State 3001, Devour damage 116]
+type = TargetLifeAdd
+trigger1 = Time = 116
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = -(Var(28)-Var(29))
+kill = 1
+absolute = 1
+[State 3001, Account damage 116]
+type = VarAdd
+trigger1 = Time = 116
+trigger1 = NumTarget(3000) > 0
+v = 29
+value = Var(28)-Var(29)
+[State 3001, Bite impact 116]
+type = PlaySnd
+trigger1 = Time = 116
+trigger1 = NumTarget(3000) > 0
+value = S1,12
+channel = 3
+[State 3001, Bite or erasure particles 116]
+type = Explod
+trigger1 = Time = 116
+trigger1 = NumTarget(3000) > 0
+anim = 9701
+ID = 9471
+postype = p1
+pos = 46,-40
+bindtime = 0
+removetime = 24
+sprpriority = 5
+ownpal = 1
+scale = .85,.85
+removeongethit = 1
+[State 3001, Impact vibration 116]
+type = EnvShake
+trigger1 = Time = 116
+trigger1 = NumTarget(3000) > 0
+time = 6
+freq = 90
+ampl = -3
+[State 3001, Restore opponent to combat]
+type = TargetState
+trigger1 = Time = 128
+trigger1 = NumTarget(3000) > 0
+ID = 3000
+value = 3011
+[State 3001, Lost opponent safety]
+type = ChangeState
+trigger1 = NumTarget(3000) = 0
+value = 0
+ctrl = 1
+[State 3001, End]
+type = ChangeState
+trigger1 = Time >= 154
+value = 0
+ctrl = 1
+
+[Statedef 3010]
+type = S
+movetype = H
+physics = N
+ctrl = 0
+velset = 0,0
+[State 3010, Opponent own hurt sprite]
+type = ChangeAnim
+trigger1 = Time = 0
+value = 5000
+[State 3010, Safety release]
+type = SelfState
+trigger1 = Time >= 180
+trigger2 = NumEnemy = 0
+trigger3 = NumEnemy > 0
+trigger3 = EnemyNear,StateNo != 3000
+trigger3 = EnemyNear,StateNo != 3001
+value = 0
+ctrl = 1
+
+[Statedef 3012]
+type = S
+movetype = H
+physics = N
+ctrl = 0
+velset = 0,0
+[State 3012, Shrink into erasure]
+type = AngleDraw
+trigger1 = Time < 8
+scale = 1-Time*.11,1-Time*.11
+[State 3012, Brief absence]
+type = AssertSpecial
+trigger1 = Time = [8,43]
+flag = invisible
+flag2 = noshadow
+[State 3012, Reappear]
+type = AngleDraw
+trigger1 = Time = [44,51]
+scale = .12+(Time-44)*.11,.12+(Time-44)*.11
+[State 3012, Safety release]
+type = SelfState
+trigger1 = Time >= 80
+trigger2 = NumEnemy = 0
+trigger3 = NumEnemy > 0
+trigger3 = EnemyNear,StateNo != 3001
+value = 0
+ctrl = 1
+
+[Statedef 3011]
+type = A
+movetype = H
+physics = N
+ctrl = 0
+velset = -5,-4
+[State 3011, Fall in own states]
+type = SelfState
+trigger1 = 1
+value = 5050
 ctrl = 0

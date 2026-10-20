@@ -56,6 +56,8 @@ from build_pochita_finish_assets import append_finish_sounds
 append_finish_sounds(records,manifest)
 from build_pochita_special_startup import append_startup_sound
 append_startup_sound(records,manifest)
+from build_pochita_devour import append_devour_sounds
+append_devour_sounds(records,manifest)
 
 header=bytearray(512);header[:12]=b'ElecbyteSnd\0'
 struct.pack_into('<HHII',header,12,1,1,len(records),512)
@@ -68,7 +70,7 @@ destination=DEST/'PochitaTrueForm.snd'
 destination.write_bytes(bytes(header)+b''.join(chunks))
 # Re-read the archive, independently of the writer's source list.
 packed=destination.read_bytes();count,offset=struct.unpack_from('<II',packed,16)
-assert count==len(CHOICES)+4
+assert count==len(CHOICES)+7
 for index in range(count):
     nxt,size,group,number=struct.unpack_from('<IIii',packed,offset)
     with wave.open(io.BytesIO(packed[offset+16:offset+16+size])) as stream:

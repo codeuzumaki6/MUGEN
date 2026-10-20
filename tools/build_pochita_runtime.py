@@ -545,3 +545,9 @@ apply_startup_runtime(CHAR)
 
 from build_pochita_spectacle import apply_spectacle_runtime
 apply_spectacle_runtime(CHAR)
+
+from build_pochita_devour import apply_devour_runtime
+apply_devour_runtime(CHAR)
+
+from build_pochita_chain import apply_chain_runtime
+apply_chain_runtime(CHAR)

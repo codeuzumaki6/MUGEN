@@ -1,16 +1,26 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_ESPECIALES_LARGOS.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_DESPERTAR_Y_BORRADO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
 ## Corrección de carga en MUGEN
 
-Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; otra rechaza grupos de triggers con saltos de numeración; las 217 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
+Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; otra rechaza grupos de triggers con saltos de numeración; las 221 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
+
+## Despertar regenerativo
+
+Mantén abajo y pulsa el botón que carga energía (LB físico, interno `s`; «Pausa» en el mapeo anterior). Exige las tres barras llenas, consume una y activa 360 ticks de regeneración, aproximadamente seis segundos de juego activo. Cura cuatro puntos cada seis ticks: hasta 240 en total, sin exceder 1250 de vida. No revive al morir. Durante el efecto, los ataques que calculan daño por HitDef tienen multiplicador 1,20; las cinemáticas conservan sus límites fijos.
+
+El cuerpo, sus animaciones y su escala permanecen iguales. Se ven brasas rojas bajas en un efecto independiente. Puedes caminar, saltar y atacar tras la preparación de 24 ticks; puedes recibir golpes también. La curación no concede invulnerabilidad. Hay 900 ticks de espera entre activaciones, unos 15 segundos desde el inicio, y hace falta volver a llenar la barra. Mantener el botón no repite el despertar. Para cargar normalmente, mantén LB sin abajo.
+
+## Abajo + A: Devastación
+
+La ultimate anterior de cinco cortes pasa a abajo + A físico (interno `x`). Consume 1000 al activarla, incluso si falla. La apertura sigue siendo bloqueable, esquivable y de alcance físico. Al acertar realiza la animación de cinco cortes, con daño máximo igual al menor entre 250 y el 25 % de la vida máxima rival. No dispara la nueva ultimate cuando se pulsa abajo + A, tampoco si falta energía.
 
 ## Seis especiales con presentación de activación
 
 Abajo adelante/atrás + X/Y/B conserva las seis técnicas y sus costes. Se añade una pose de preparación, oscurecimiento del escenario, destello rojo horizontal y el sonido de activación en un canal separado de la motosierra. La preparación dura 12 ticks (0,2 segundos); en la segunda técnica enlazada dura 6 ticks. Tras esa pausa salen las animaciones y colisiones del ataque, con un pulso dentado de suelo. No se genera daño durante el destello.
 
-El coste se paga una sola vez al activar la preparación, incluso si después fallas o te bloquean. Sin energía suficiente no hay preparación ni sonido de especial. La presentación no concede invulnerabilidad y los efectos terminan automáticamente o se retiran al recibir un golpe. La ultimate con A conserva su coste de dos barras y su límite de daño.
+El coste se paga una sola vez al activar la preparación, incluso si después fallas o te bloquean. Sin energía suficiente no hay preparación ni sonido de especial. La presentación no concede invulnerabilidad y los efectos terminan automáticamente o se retiran al recibir un golpe. La nueva ultimate con A consume dos barras y tiene el límite de daño descrito más abajo.
 
 El video de Goku enviado por el usuario se usó como referencia de pose/oscurecimiento/destello. No se copiaron voces, rayos ni transformaciones de Goku. El SE separado procede de Code, grupo 950,2, usado por su código como Super Charge, convertido y ajustado de volumen. No se presenta como una extracción exacta del sonido mezclado del video.
 
@@ -22,12 +32,14 @@ Las seis técnicas adelante/atrás tienen secuencias ampliadas con poses de cuer
 |---|---:|---:|---:|---:|
 | Desgarro | 3 | 57 ticks | 106 | 250 |
 | Cuatro brazos | 5 | 66 ticks | 132 | 350 |
-| Estocada | 3 | 56 ticks | 126 | 350 |
+| Estocada con cadena | 3 | 60 ticks | 126 | 350 |
 | Barrido | 2 | 56 ticks | 96 | 250 |
 | Embestida | 3 | 60 ticks | 145 | 500 |
 | Carnicería | 7 | 90 ticks | 218 | 750 |
 
 60 ticks equivalen a un segundo. La preparación y las pausas de impacto se suman a esos tiempos; los videos se reproducen a velocidad normal. El daño total se redistribuye entre los nuevos contactos, sin aumentar el coste. Avanza mediante velocidad y colisiones físicas. El golpe final confirmado tiene otro pulso visual, sonido y vibración breve; fallar o ser bloqueado no muestra ese impacto confirmado. Las estelas del movimiento sí aparecen al atacar sin acertar.
+
+Abajo adelante + Y extiende una cadena física con una hoja dentada hasta 220 unidades de alcance de colisión. La hoja puede verse algo más lejos que ese límite; no hay caja ofensiva más larga que el dibujo. Se verificó que conecta tres veces desde una separación de 200 y falla a 280. Se puede bloquear e interrumpir. Desgarro, Embestida y RT avanzan para cerrar distancia; se comprobaron desde 150, 170 y 180 respectivamente. La distancia inicial mayor puede hacer que los primeros cortes de una embestida fallen; no se garantiza el combo completo desde cualquier lugar.
 
 El video de Chainsaw Man enviado por el usuario (29,84 s) se revisó visualmente: preparación, avance de triturado con 22 contactos en la referencia, derribo y otra secuencia giratoria. Sirve de referencia de ritmo y separación entre preparación, ataque y remate. Pochita tiene las seis secuencias descritas arriba; no reproduce literalmente esa combinación de 22 contactos ni la invocación de la cabeza gigante. El audio del video no se evaluó por escucha en este entorno.
 
@@ -48,26 +60,28 @@ Se añadieron doce poses para persecución, embestida RT y remate aéreo, con es
 - Nueve especiales direccionales entre 250 y 750 de energía; RB cuesta 250 y RT 750. Cada barra equivale a 1000.
 - Vida 1250, defensa 110, carga con LB de 18 unidades por tick hasta 3000. Los combos normales generan energía al conectar.
 
-Las continuaciones requieren acertar y volver a pulsar el botón. Bloquear o estar fuera de alcance corta la cadena. Los especiales ofensivos pueden cancelar un normal de suelo confirmado. Los nombres de movimientos son descripciones de adaptaciones físicas, no nombres oficiales de técnicas del manga. No se implementa el borrado permanente de conceptos ni regeneración ilimitada.
+Las continuaciones requieren acertar y volver a pulsar el botón. Bloquear o estar fuera de alcance corta la cadena. Los especiales ofensivos pueden cancelar un normal de suelo confirmado. Los nombres de movimientos son descripciones de adaptaciones físicas, no nombres oficiales de técnicas del manga. El borrado conceptual se representa mediante la adaptación temporal descrita más abajo; la regeneración tiene duración y cantidad limitadas.
 
-## Ultimate con A
+## A: Devorar y borrado conceptual, adaptación de combate
 
-**Consume 2000 al activarla, incluso si falla o la bloquean.** Con menos de dos barras no se ejecuta. La embestida debe conectar; bloquear, saltar o quedarse fuera de alcance evita la secuencia y su daño. Tiene preparación y recuperación vulnerables al fallar.
+**Consume 2000 al activarla, incluso si falla o la bloquean.** Con menos de dos barras no se ejecuta. No se activa con abajo mantenido: ese comando corresponde a Devastación. La apertura avanza por el suelo y tiene que colisionar. Bloquearla, saltarla, alejarse o golpear a Pochita durante su preparación evita la cinemática y el daño.
 
-Al acertar usa ocho poses nuevas: despliegue de los cuatro brazos, cortes cruzados, barrido y remate final. Cinco contactos sincronizan motosierras, arcos de corte, sangre, pausas de impacto y lanzamiento. La imagen del manga fue una referencia de acción y no se muestra en el ataque.
+Al acertar usa ocho poses nuevas: acecho, aproximación, apertura de mandíbula, mordisco, masticación, deglución y recuperación. El rival conserva su propio sprite de daño, se contrae, desaparece brevemente entre fragmentos de tinta y vuelve al escenario para caer y recuperar control. Hay sangre estilizada en los mordiscos, una pausa visual blanca y efectos de cierre; no hay un panel del manga ni un retrato sustituyendo la animación. La captura confirmada protege la cinemática; no da invulnerabilidad a la apertura.
 
-El daño total se limita al menor entre **500 y el 50 % de la vida máxima del rival**, redondeado hacia abajo. Un rival con 1000 de vida recibe 500; uno con 500 recibe 250. La ultimate sola no mata desde la vida completa. Puede rematar a alguien previamente herido. La secuencia libera al rival y ambos vuelven a sus estados normales.
+El daño total es el menor entre **450 y el 45 % de la vida máxima del rival**, redondeado hacia abajo. Contra 1000 causa 450; contra 500 causa 225. Un enemigo con vida completa sobrevive. Puede rematar a uno previamente herido. Quita hasta 500 de energía rival, sin dejar su barra negativa. El despertar no multiplica estos daños fijos.
+
+En el manga, devorar demonios puede borrar conceptos de la existencia. Aquí se representa esa idea con devorar, una ausencia temporal y pérdida de energía. **No se borran permanentemente personajes, conceptos, nombres, recuerdos, archivos ni comandos del oponente.** Se trata de una adaptación jugable: el rival reaparece y sigue combatiendo. La regeneración automática de abajo+carga también es una adaptación con límites, no curación infinita.
 
 ## Arte y audio
 
-Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 193 entradas: 147 de cuerpo (138 poses fuente distintas), 44 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
+Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 221 entradas: 155 de cuerpo (146 poses fuente distintas), 64 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
 
-Hay once sonidos no verbales: siete muestras del DENJI suministrado, tres mezclas adicionales de motores/cortes/impactos y el SE de activación del Code suministrado. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
+Hay catorce sonidos no verbales: siete muestras del DENJI suministrado, tres mezclas adicionales de motores/cortes/impactos y el SE de activación del Code suministrado, más tres mezclas nuevas para mordisco, borrado y regeneración. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
 
 ## Comprobaciones y prueba local
 
-Pasaron 217 escenarios de entradas y colisiones en Ikemen GO, una prueba de CPU y dos pruebas de ultimate contra un rival de solo 500 de vida. Se comprueban los costes exactos, presupuesto mínimo, cadenas X/Y/B, bloqueos y fallos, nueve especiales, atajos diagonales, defensa, movimiento, salto, carga, seis derribos con recuperación y ultimate acertada, bloqueada, saltada y fuera de alcance en ambas orientaciones. Los efectos de impacto aparecen al acertar y expiran; la sangre no aparece al bloquear. El destello de activación sí aparece al ejecutar el especial, incluso si después falla. Se comprueban doce casos de energía insuficiente y doce de especiales fallados desde lejos, en ambas orientaciones. Se comprueban también doce bloqueos de los seis especiales, duración completa, número exacto de contactos y daño de cada secuencia. Se grabaron los seis especiales ampliados con audio real y se verificó la presencia de su SE mediante correlación con la muestra empaquetada. El validador revisa SFF/SND, referencias, funciones de MUGEN 1.1, recuperación finita y alcance visible; una regresión confirma que rechaza una caja ofensiva exagerada.
+Pasaron 221 escenarios generales de entradas y colisiones en Ikemen GO, 46 casos específicos de despertar, alcance y Devastación, una prueba de CPU, cuatro pruebas de daños limitados frente a 500 de vida y una prueba de KO sin resurrección. Se verifican curación exacta, tope de vida, espera, botón mantenido, ataques durante el despertar, multiplicador que termina, falta de energía, apertura interrumpida y liberación si el atacante abandona la escena. El validador comprueba sprites, sonidos, sintaxis nativa, recuperación, controladores y alcance visible. Las regresiones de carga MUGEN y reconstrucción se mantienen.
 
-Los GIF y fotogramas proceden del motor real. Los MP4 nuevos `Pochita_largo_especial_*_motor.mp4` y `Pochita_ESPECIALES_LARGOS_Y_EFECTOS.mp4` contienen salida real del mezclador de Ikemen GO, capturada con el controlador SDL a disco. Se sincronizan con las imágenes identificando la muestra de activación en la grabación. Los videos anteriores de remates/jugabilidad conservan audio montado a partir de eventos; son pruebas distintas. Las entradas automáticas se aplican solo a copias de prueba. No se ha ejecutado el binario exacto de Jump Force MUGEN V14 ni conectado el mando físico a este entorno. El equilibrio contra todo el plantel requiere partidas locales.
+Los MP4 nuevos `Pochita_despertar_nuevo_motor.mp4`, `Pochita_borrado_nuevo_motor.mp4`, `Pochita_devastacion_nuevo_motor.mp4` y `Pochita_cadenas_nuevo_motor.mp4` y la demostración combinada contienen audio real SDL del mezclador de Ikemen GO. La señal se sincroniza por correlación con las muestras del SND. Los videos anteriores representan versiones anteriores; algunos usan audio montado por eventos. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni se conectó el mando físico. La calidad artística y el equilibrio requieren revisión y partidas locales.
 
-Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces mezclando botones al conectar; XXX-arriba-X-Y-B en el aire; dos especiales seguidos; especiales; RB ante un golpe; RT; cargar con LB. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.
+Prueba en tu juego: caminar, agacharse, saltar; X/Y/B tres veces mezclando botones al conectar; XXX-arriba-X-Y-B en el aire; dos especiales seguidos; especiales; RB ante un golpe; RT; cargar con LB. Con la barra llena, prueba abajo+LB: una activación, seis segundos, curación limitada y mismo tamaño. Prueba abajo+A acertada, bloqueada y desde lejos: gasta una barra. Usa A acertada, bloqueada y desde lejos: siempre gasta dos barras si se activa. Con menos de dos barras no debe salir. Recibe un barrido y un lanzamiento: debe levantarse y volver a atacar. Repite mirando hacia ambos lados. Si A o LB no coinciden, revisa el mapeo global antes de modificar el CMD. Consulta `CONTROLES_XBOX.md`.
