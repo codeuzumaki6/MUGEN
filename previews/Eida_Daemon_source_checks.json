@@ -1,0 +1,137 @@
+{
+  "static_file_checks": true,
+  "source_sha256": "4cb499bad7fcdc70130926f2df9fe3f51b6022c4e6943f3fefaa3deb1b64aa39",
+  "source_author": "Vahidras",
+  "source_original_pose_indices": [
+    0,
+    16
+  ],
+  "supplemental_ai_unique_poses": 16,
+  "runtime_entries": 19,
+  "distinct_png_poses": 18,
+  "canvas": [
+    96,
+    56
+  ],
+  "feet_axis": [
+    48,
+    54
+  ],
+  "second_runtime_resize": false,
+  "poses": [
+    {
+      "number": 0,
+      "source": "original supplied pose",
+      "opaque_height": 49,
+      "png_sha256": "0cebb8c26d2f1af611be80105cb0a75d18b4a23ba285387a177584291bd4c027"
+    },
+    {
+      "number": 1,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 48,
+      "png_sha256": "f06a30447557f19768d3035c6fc254acd730b9655946f7ed21d9621975b46d41"
+    },
+    {
+      "number": 2,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 48,
+      "png_sha256": "e7564bf4afbdb17f44d663abd92c7c6813daaa6ae846d1bbe633772b330882e6"
+    },
+    {
+      "number": 3,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 48,
+      "png_sha256": "f06a30447557f19768d3035c6fc254acd730b9655946f7ed21d9621975b46d41"
+    },
+    {
+      "number": 4,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 48,
+      "png_sha256": "0ef0bf5e9c37699ec0878381b8813c835517577ca17fd4e426c9b1bf29aad783"
+    },
+    {
+      "number": 5,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 48,
+      "png_sha256": "53676c6808d649ee3f2a4a4c8859b83e98108d52334d2c33734d9eff1e9ea9ad"
+    },
+    {
+      "number": 6,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 47,
+      "png_sha256": "c7ae75f1a612a976ca6f16a789dfc86ec15f8b8d6f1129c1c121b63ae5630ea0"
+    },
+    {
+      "number": 7,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 47,
+      "png_sha256": "60036756e51040a9b43535a89926ac2d224f0a11205d9ae26fa8fa2a1678ada3"
+    },
+    {
+      "number": 8,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 49,
+      "png_sha256": "0f4a38ae091b8c5e76cdaca76da2753005a4c1413c9e411ae1c8507c4756c122"
+    },
+    {
+      "number": 9,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 49,
+      "png_sha256": "639893b6053170fb6f95a0f888aba9bc544db800b7d6ca028d739d781d55f5d9"
+    },
+    {
+      "number": 10,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 42,
+      "png_sha256": "67e4605146b6951d764367b10a8a2b1ed86c6b89cdd05d1e50f016d7448b1484"
+    },
+    {
+      "number": 11,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 41,
+      "png_sha256": "3ae77cb05a8f96d77b7dfe24222e1d0dd5ff3cad95ab0ffb021c910927cb3b0e"
+    },
+    {
+      "number": 12,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 32,
+      "png_sha256": "e699efd3445dee056c6423bd63e256e62d69fa797ff831e0324bfabeca1c6ce0"
+    },
+    {
+      "number": 13,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 29,
+      "png_sha256": "ceaefc61f388704dbb536d940e715bc5455bdf63117545eedf864f09d44be172"
+    },
+    {
+      "number": 14,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 39,
+      "png_sha256": "4b83b11c768d09eb24ae11e9e88881746ac6d86a0d0d46c8ec811780cd50ed85"
+    },
+    {
+      "number": 15,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 39,
+      "png_sha256": "26245d1accddd97074cdb301f4ee4e81d7ca56c9217b049ccc01b3afed8db7c9"
+    },
+    {
+      "number": 16,
+      "source": "original supplied pose",
+      "opaque_height": 38,
+      "png_sha256": "01622ca89310a2b1a7707efe8a7fc9ac26b6eededf78f13462d2ea524f0e8842"
+    },
+    {
+      "number": 17,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 39,
+      "png_sha256": "cffca99d47c7b1780076f6c0e13a48dd5945bfcb00371384ba12d803956ddeb7"
+    },
+    {
+      "number": 18,
+      "source": "AI supplemental pose based on supplied model",
+      "opaque_height": 39,
+      "png_sha256": "b82a8e764853655743679cfb22a704e9e8b0cf87d6f0c5f184516285c8400fed"
+    }
+  ]
+}

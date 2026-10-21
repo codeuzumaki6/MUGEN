@@ -10,9 +10,12 @@ from check_eida_compact_scene import inspect_compact_scene
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews'
 engine=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
 jobs=[('especiales',[m[0] for m in MOVES],False,False),('senrigan_sin_ataque',['Senrigan sin ataque'],False,True),('omnipotencia_abrazo',['ultimatehit'],True,False)]
+daemon_review=os.environ.get('EIDA_DAEMON_MODEL_REVIEW')=='1'
+if daemon_review:
+    jobs=[('daemon_modelo',['DaemonRapido','DaemonCombo','DaemonEleva','DaemonPatadas','DaemonBarrido','AsaltoDoble'],False,False)]
 reports=[]
 runtime=hashlib.sha256(b''.join((ROOT/'Eida'/n).read_bytes() for n in ['Eida.cns','Specials.cns','Omnipotencia.cns','Eida.air','Eida.sff','Eida.snd','Eida.cmd'])).hexdigest()
-checkpoint_path=OUT/'Eida_technique_capture_checkpoint.json'
+checkpoint_path=OUT/('Eida_Daemon_modelo_capture_checkpoint.json' if daemon_review else 'Eida_technique_capture_checkpoint.json')
 checkpoint=json.loads(checkpoint_path.read_text()) if checkpoint_path.exists() else {}
 def scope_hash(name):
     if name=='omnipotencia_abrazo':return runtime
@@ -112,11 +115,11 @@ with tempfile.TemporaryDirectory(prefix='eida-technique-video-') as temp:
             lines += [f"file '{path}'",'option framerate 60',f'duration {audio_time(following)-audio_time(tick):.9f}']
         lines += [f"file '{path}'",'option framerate 60'];listing.write_text('\n'.join(lines)+'\n')
         caption=folder/'caption.txt'
-        caption.write_text('A: OMNIPOTENCIA | Dos sprites originales, abrazo compacto y liberacion' if ultimate else 'ABAJO + ATRAS + Y: SENRIGAN | Espera un golpe; sin golpe no hay contraataque' if idle else '14 JUTSUS | Activacion, sonido y combate capturados del motor')
+        caption.write_text('DAEMON | Modelo original, poses de apoyo y seis ataques en el motor' if daemon_review else 'A: OMNIPOTENCIA | Dos sprites originales, abrazo compacto y liberacion' if ultimate else 'ABAJO + ATRAS + Y: SENRIGAN | Espera un golpe; sin golpe no hay contraataque' if idle else '14 JUTSUS | Activacion, sonido y combate capturados del motor')
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(listing),'-i',str(wav),'-vf',f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={caption}:x=(w-tw)/2:y=689:fontsize=19:fontcolor=white','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-t',str(duration),'-movflags','+faststart',str(clip)],check=True)
-        if ultimate or idle:
+        if ultimate or idle or daemon_review:
             subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(clip),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(clip.with_suffix('.gif'))],check=True)
-        thumbnail=compact_review['engine_trace']['thumbnail_frame'] if ultimate else cues[0][0]+5
+        thumbnail=compact_review['engine_trace']['thumbnail_frame'] if ultimate else cues[0][0]+42 if daemon_review else cues[0][0]+5
         chosen=min(frames,key=lambda p:abs(p[1]-thumbnail));shutil.copy2(folder/f'Ikemen_GO{chosen[0]:03d}.png',clip.with_suffix('.png'))
         report=dict(name=name,runtime_sha256=runtime,frames=len(frames),duration=duration,audio_source='Actual SDL stereo S16LE 44100 Hz output; no offline mix',image_sync='Piecewise synchronization to each actual activation waveform; audio is neither remixed nor time-stretched',activations=activations,combat_checks=checks,raw_audio_sha256=hashlib.sha256(raw.read_bytes()).hexdigest(),near_full_scale_fraction=float(np.mean(np.abs(audio)>.999)))
         if compact_review:
@@ -125,6 +128,6 @@ with tempfile.TemporaryDirectory(prefix='eida-technique-video-') as temp:
         reports.append(report);checkpoint['jobs'][name]=dict(video_sha256=hashlib.sha256(clip.read_bytes()).hexdigest(),report=report)
         checkpoint['jobs'][name]['scope_sha256']=scope_hash(name)
         checkpoint_path.write_text(json.dumps(checkpoint,indent=2)+'\n');print(name,'PASS',len(activations),'actual activation samples,',len(frames),'frames',flush=True)
-(OUT/'Eida_technique_audio_checks.json').write_text(json.dumps(reports,indent=2)+'\n')
+(OUT/('Eida_Daemon_modelo_audio_checks.json' if daemon_review else 'Eida_technique_audio_checks.json')).write_text(json.dumps(reports,indent=2)+'\n')
 (OUT/'Eida_live_review_checks.json').write_text(json.dumps([case for report in reports for case in report['combat_checks']],indent=2)+'\n')
-print('All activations, counter whiff and Kawaki embrace recorded with actual audio')
+print('Daemon model recorded with six real activations and actual audio' if daemon_review else 'All activations, counter whiff and Kawaki embrace recorded with actual audio')

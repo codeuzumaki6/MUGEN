@@ -1,0 +1,684 @@
+[
+  {
+    "group": 1000,
+    "number": 0,
+    "file": "assets/daemon/daemon_0.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.12531969309462915,
+    "source_sha256": "4cb499bad7fcdc70130926f2df9fe3f51b6022c4e6943f3fefaa3deb1b64aa39",
+    "kind": "original supplied pose",
+    "source": "design/Daemon_original/daemon_vahidras_original.jpg",
+    "source_box": [
+      5,
+      52,
+      170,
+      461
+    ],
+    "ai_redrawn": false,
+    "trim_box": [
+      11,
+      9,
+      155,
+      400
+    ],
+    "native_figure_size": [
+      18,
+      49
+    ],
+    "feet_source_x": 77.5,
+    "packed_pos": [
+      40,
+      5
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 1,
+    "file": "assets/daemon/daemon_1.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 0,
+    "source_box": [
+      0,
+      20,
+      337,
+      330
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      71,
+      13,
+      260,
+      306
+    ],
+    "native_figure_size": [
+      31,
+      48
+    ],
+    "feet_source_x": 165.5,
+    "packed_pos": [
+      33,
+      6
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 2,
+    "file": "assets/daemon/daemon_2.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 1,
+    "source_box": [
+      337,
+      20,
+      674,
+      330
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      82,
+      13,
+      253,
+      306
+    ],
+    "native_figure_size": [
+      28,
+      48
+    ],
+    "feet_source_x": 167.5,
+    "packed_pos": [
+      34,
+      6
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 3,
+    "file": "assets/daemon/daemon_3.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 0,
+    "source_box": [
+      0,
+      20,
+      337,
+      330
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      71,
+      13,
+      260,
+      306
+    ],
+    "native_figure_size": [
+      31,
+      48
+    ],
+    "feet_source_x": 165.5,
+    "packed_pos": [
+      33,
+      6
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 4,
+    "file": "assets/daemon/daemon_4.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 2,
+    "source_box": [
+      674,
+      20,
+      1011,
+      330
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      57,
+      13,
+      269,
+      306
+    ],
+    "native_figure_size": [
+      35,
+      48
+    ],
+    "feet_source_x": 163.0,
+    "packed_pos": [
+      31,
+      6
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 5,
+    "file": "assets/daemon/daemon_5.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 3,
+    "source_box": [
+      1011,
+      20,
+      1349,
+      330
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      70,
+      13,
+      315,
+      306
+    ],
+    "native_figure_size": [
+      40,
+      48
+    ],
+    "feet_source_x": 171.5,
+    "packed_pos": [
+      31,
+      6
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 6,
+    "file": "assets/daemon/daemon_6.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 4,
+    "source_box": [
+      0,
+      330,
+      337,
+      641
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      64,
+      13,
+      323,
+      302
+    ],
+    "native_figure_size": [
+      42,
+      47
+    ],
+    "feet_source_x": 171.0,
+    "packed_pos": [
+      30,
+      7
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 7,
+    "file": "assets/daemon/daemon_7.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 5,
+    "source_box": [
+      337,
+      330,
+      674,
+      641
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      83,
+      13,
+      274,
+      302
+    ],
+    "native_figure_size": [
+      31,
+      47
+    ],
+    "feet_source_x": 178.5,
+    "packed_pos": [
+      32,
+      7
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 8,
+    "file": "assets/daemon/daemon_8.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 6,
+    "source_box": [
+      674,
+      330,
+      1011,
+      641
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      113,
+      6,
+      241,
+      307
+    ],
+    "native_figure_size": [
+      21,
+      49
+    ],
+    "feet_source_x": 150.5,
+    "packed_pos": [
+      42,
+      5
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 9,
+    "file": "assets/daemon/daemon_9.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 7,
+    "source_box": [
+      1011,
+      330,
+      1349,
+      641
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      81,
+      8,
+      302,
+      305
+    ],
+    "native_figure_size": [
+      36,
+      49
+    ],
+    "feet_source_x": 129.0,
+    "packed_pos": [
+      40,
+      5
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 10,
+    "file": "assets/daemon/daemon_10.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 8,
+    "source_box": [
+      0,
+      641,
+      337,
+      908
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      77,
+      5,
+      312,
+      261
+    ],
+    "native_figure_size": [
+      38,
+      42
+    ],
+    "feet_source_x": 139.5,
+    "packed_pos": [
+      38,
+      12
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 11,
+    "file": "assets/daemon/daemon_11.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 9,
+    "source_box": [
+      337,
+      641,
+      674,
+      908
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      120,
+      5,
+      251,
+      258
+    ],
+    "native_figure_size": [
+      21,
+      41
+    ],
+    "feet_source_x": 175.5,
+    "packed_pos": [
+      39,
+      13
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 12,
+    "file": "assets/daemon/daemon_12.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 10,
+    "source_box": [
+      674,
+      641,
+      1011,
+      908
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      28,
+      64,
+      299,
+      257
+    ],
+    "native_figure_size": [
+      44,
+      32
+    ],
+    "feet_source_x": 146.0,
+    "packed_pos": [
+      29,
+      22
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 13,
+    "file": "assets/daemon/daemon_13.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 11,
+    "source_box": [
+      1011,
+      641,
+      1349,
+      908
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      49,
+      82,
+      315,
+      257
+    ],
+    "native_figure_size": [
+      44,
+      29
+    ],
+    "feet_source_x": 142.0,
+    "packed_pos": [
+      33,
+      25
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 14,
+    "file": "assets/daemon/daemon_14.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 12,
+    "source_box": [
+      0,
+      908,
+      337,
+      1160
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      83,
+      7,
+      274,
+      244
+    ],
+    "native_figure_size": [
+      31,
+      39
+    ],
+    "feet_source_x": 178.5,
+    "packed_pos": [
+      32,
+      15
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 15,
+    "file": "assets/daemon/daemon_15.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 13,
+    "source_box": [
+      337,
+      908,
+      674,
+      1160
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      68,
+      7,
+      281,
+      244
+    ],
+    "native_figure_size": [
+      35,
+      39
+    ],
+    "feet_source_x": 164.0,
+    "packed_pos": [
+      32,
+      15
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 16,
+    "file": "assets/daemon/daemon_16.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.12531969309462915,
+    "source_sha256": "4cb499bad7fcdc70130926f2df9fe3f51b6022c4e6943f3fefaa3deb1b64aa39",
+    "kind": "original supplied pose",
+    "source": "design/Daemon_original/daemon_vahidras_original.jpg",
+    "source_box": [
+      190,
+      135,
+      530,
+      465
+    ],
+    "ai_redrawn": false,
+    "trim_box": [
+      20,
+      13,
+      320,
+      317
+    ],
+    "native_figure_size": [
+      38,
+      38
+    ],
+    "feet_source_x": 42.5,
+    "packed_pos": [
+      45,
+      16
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 17,
+    "file": "assets/daemon/daemon_17.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 14,
+    "source_box": [
+      674,
+      908,
+      1011,
+      1160
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      30,
+      7,
+      269,
+      244
+    ],
+    "native_figure_size": [
+      39,
+      39
+    ],
+    "feet_source_x": 50.0,
+    "packed_pos": [
+      45,
+      15
+    ]
+  },
+  {
+    "group": 1000,
+    "number": 18,
+    "file": "assets/daemon/daemon_18.png",
+    "axis": [
+      48,
+      54
+    ],
+    "scale": 0.16382252559726962,
+    "source_sha256": "e35202d5e9830b3dc9311404e2820427c7bbf64a72e0e319beebb4c6cf3ea4d1",
+    "kind": "AI supplemental pose based on supplied model",
+    "source": "design/Daemon_original/supplemental_poses.png",
+    "source_cell": 15,
+    "source_box": [
+      1011,
+      908,
+      1349,
+      1160
+    ],
+    "ai_redrawn": true,
+    "trim_box": [
+      44,
+      7,
+      292,
+      244
+    ],
+    "native_figure_size": [
+      41,
+      39
+    ],
+    "feet_source_x": 103.5,
+    "packed_pos": [
+      38,
+      15
+    ]
+  }
+]

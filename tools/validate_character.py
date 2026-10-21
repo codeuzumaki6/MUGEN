@@ -100,7 +100,8 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
         check(palette_index < palette_count, f"Eida.sff: sprite {group},{number} palette index outside table")
         check((group, number) not in sprites, f"Eida.sff: duplicate sprite {group},{number}")
         if group == 1000:
-            check(height <= 51, f'Eida.sff: Daemon {number} exceeds child helper scale')
+            check((width,height,axis_x,axis_y)==(96,56,48,54) and 0<=number<=18,
+                  f'Eida.sff: Daemon {number} changed its child scale/shared feet origin')
         if group == 8000:
             check((width,height)==(1280,720), f'Eida.sff: manga panel {number} lost its HD source resolution')
         if group == 340:

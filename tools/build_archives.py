@@ -13,6 +13,7 @@ from PIL import Image
 ROOT = Path("/workspace/MUGEN")
 CHAR = ROOT / "Eida"
 ASSETS = CHAR / "assets"
+DAEMON = json.loads((ASSETS/'daemon/manifest.json').read_text())
 
 
 def sequence(group: int, pattern: str, count: int):
@@ -41,7 +42,7 @@ SPRITES = [
     *sequence(220, "eida/low_{index}.png", 6),
     *sequence(230, "eida/cast_{index}.png", 3),
     *sequence(600, "eida/air_{index}.png", 10),
-    *sequence(1000, "daemon/daemon_{index}.png", 16),
+    *[(1000, pose['number'], CHAR/pose['file']) for pose in DAEMON],
     *sequence(300, "eida_extra/turn_{index}.png", 4),
     *sequence(310, "eida_extra/jump_{index}.png", 4),
     *sequence(320, "eida_extra/land_{index}.png", 4),
@@ -99,11 +100,14 @@ def build_sff(destination: Path) -> None:
     if hug_manifest.exists():polish+=json.loads(hug_manifest.read_text())
     extra = [(p['group'],p['number'],CHAR/p['file']) for p in polish]
     effect_axes.update({f"{p['group']},{p['number']}":p['axis'] for p in polish})
+    effect_axes.update({f"1000,{p['number']}":p['axis'] for p in DAEMON})
     for group, number, path in SPRITES + extra:
         if not path.exists():
             raise FileNotFoundError(path)
         target_size = (25, 25) if (group, number) == (9000, 0) else None
-        factor = .68 if group == 1000 else .11 if group == 8400 else 1
+        # Daemon's importer already calibrates every pose to a 49px child.
+        # Keep its shared native canvas; reducing it again would shrink it.
+        factor = .11 if group == 8400 else 1
         target_height = max(1, round(Image.open(path).height * factor)) if factor != 1 else None
         pixels, palette, width, height, axis_x, axis_y = png_to_indexed(
             path, target_size=target_size, target_height=target_height

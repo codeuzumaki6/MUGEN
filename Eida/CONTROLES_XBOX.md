@@ -68,3 +68,5 @@ Los 14 jutsus tienen un sonido de activación independiente del golpe, destello 
 **↓atrás + Y: Senrigan es un contraataque.** Eida lleva la mano al ojo y observa durante unos 0.8 segundos. Si un golpe entra en su caja de reversión en esa ventana, Daemon responde con una patada física. Si nadie ataca, no causa daño: baja la mano, desaparece el ojo y termina. No es un proyectil ni daño por mirar al rival.
 
 **A: Omnipotencia.** La apertura debe acertar antes de mostrar el abrazo animado a Kawaki y liberar la onda de alteración de recuerdos. Kawaki aparece en esa escena canónica, sin sustituir permanentemente al rival. Conserva el coste de 3000 y daño de 350.
+
+**Daemon actualizado:** usa el modelo de la hoja que aportaste, con poses propias de carrera, puños, patadas, barrido y defensa. Sigue apareciendo junto a Eida y entrando al alcance del rival. Los botones, tiempos, costes y daños se conservan.

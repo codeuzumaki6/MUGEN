@@ -1,23 +1,23 @@
 {
-  "archive": "Eida_ULTI_SPRITES_ORIGINALES.zip",
-  "bytes": 4104153,
-  "sha256": "86d4ac814e09d681280fa9e181c50e80cc21904265413e5e2451c7e7c08411ad",
+  "archive": "Eida_DAEMON_ORIGINAL.zip",
+  "bytes": 4104201,
+  "sha256": "45e00e0023cef0e57f3eb6d04e5dd5e23915bd34cb30a36d3e4f1730f4b86911",
   "files": {
-    "Eida/CONTROLES_XBOX.md": "a5e792fd7d054798362ce63517b3ea49e4e86c97d62eca9b3be5eb7ad7e7f395",
-    "Eida/CREDITOS_Y_FUENTES.md": "97cc7a710fbc533480834b6ab5dc3365c35d880bbe7ab3756f94000e8af58329",
-    "Eida/Eida.air": "1efeeecbfb02f872155ce89bf6c87a25d8d1ecca7aeef896a5e710f2d6aa1260",
+    "Eida/CONTROLES_XBOX.md": "190c4dc391bf5205b2819615a4a871fabd012eac92ed5fec04a66ffa53e9688d",
+    "Eida/CREDITOS_Y_FUENTES.md": "ca439796367a871f4f9c9a3fd9d6a8c05adc6e8910d5f197aec3c9dd59ab7869",
+    "Eida/Eida.air": "a06348e703a457549198148b2f0ebe28a43bfd8f91e641259578a426dfbd5b71",
     "Eida/Eida.cmd": "2df864408a96c03fb0eb2b116ab4dd3effd1218b55efc49f0fd20ede2b20b161",
     "Eida/Eida.cns": "a5f3ca21431aa63f2775c70aa5187cd30e7e94184750e8828ecdd7e8471d8580",
     "Eida/Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
-    "Eida/Eida.sff": "31e60e6dc06f779ccd0f2bba30109705b6f768b2594e8253d2fe974dd6bf7cfa",
+    "Eida/Eida.sff": "d7553253e421b357b31b3174798a53e9d95d544081fffea5c47060abe1179a82",
     "Eida/Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
-    "Eida/LEEME.md": "9e4b43789413be7c47c094498d14ebf2deacc09ffafe6138d856be0c16c10908",
+    "Eida/LEEME.md": "15fcdb12de098528f5963da32bbc16aca08fcdff10bc76bc6fefb3820bb5b945",
     "Eida/Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
     "Eida/Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
     "Eida/common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
   },
   "engine_cases": 121,
-  "activation_audio_cases": 16,
+  "activation_audio_cases": 6,
   "videos": {
     "Eida_especiales_nuevo_motor.mp4": {
       "bytes": 6022181,
@@ -40,7 +40,8 @@
         "format": {
           "duration": "44.269002"
         }
-      }
+      },
+      "scope": "Historical prior Daemon appearance; activation sound unchanged."
     },
     "Eida_senrigan_sin_ataque_nuevo_motor.mp4": {
       "bytes": 317105,
@@ -63,7 +64,8 @@
         "format": {
           "duration": "2.966667"
         }
-      }
+      },
+      "scope": "Historical prior Daemon appearance; activation sound unchanged."
     },
     "Eida_omnipotencia_abrazo_nuevo_motor.mp4": {
       "bytes": 503206,
@@ -86,9 +88,38 @@
         "format": {
           "duration": "3.682993"
         }
-      }
+      },
+      "scope": "Omnipotencia unchanged; non-Daemon SFF records and CNS identical to prior capture."
+    },
+    "Eida_daemon_modelo_nuevo_motor.mp4": {
+      "bytes": 2943549,
+      "sha256": "1f77f2f8f0c54f322069da59ce83265a099532cd20a4eba5de4416438e556a4a",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "19.133333"
+        }
+      },
+      "scope": "Current Daemon model; six actual captured attacks."
     }
   },
-  "revision": "Two original supplied embrace sprites, native scale 1; confirmed scene 160 ticks. Nine ultimate cases rerun; other historical combat cases retained unchanged.",
-  "native_source_proof": "previews/Eida_compact_scene_checks.json"
+  "revision": "Supplied Vahidras model used for Daemon: 2 original poses plus 16 AI supplemental poses, 19 entries / 18 distinct PNGs. 80 gameplay cases rerun. Other 41 historical engine cases retained; unchanged CNS/CMD/SND and 180 non-Daemon SFF records verified.",
+  "native_source_proof": "previews/Eida_compact_scene_checks.json",
+  "engine_cases_rerun_this_revision": 80,
+  "historical_activation_audio_cases": 16,
+  "daemon_source_proof": "previews/Eida_Daemon_source_checks.json",
+  "daemon_preservation_proof": "previews/Eida_Daemon_preservation_checks.json"
 }

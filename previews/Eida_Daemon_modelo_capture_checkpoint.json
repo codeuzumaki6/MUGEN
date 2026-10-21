@@ -1,0 +1,270 @@
+{
+  "runtime_sha256": "6c7edc89cc1e19d968de263927b04a5c7c31071b94c77832e68e3517b279f2e4",
+  "jobs": {
+    "daemon_modelo": {
+      "video_sha256": "1f77f2f8f0c54f322069da59ce83265a099532cd20a4eba5de4416438e556a4a",
+      "report": {
+        "name": "daemon_modelo",
+        "runtime_sha256": "6c7edc89cc1e19d968de263927b04a5c7c31071b94c77832e68e3517b279f2e4",
+        "frames": 272,
+        "duration": 19.128715469416274,
+        "audio_source": "Actual SDL stereo S16LE 44100 Hz output; no offline mix",
+        "image_sync": "Piecewise synchronization to each actual activation waveform; audio is neither remixed nor time-stretched",
+        "activations": [
+          {
+            "case": "DaemonRapido",
+            "state": 1000,
+            "cue_frame": 29,
+            "actual_sample_seconds": 4.783310657596372,
+            "normalized_correlation": 0.5138741051510632,
+            "timing_error_seconds": 0.0
+          },
+          {
+            "case": "DaemonCombo",
+            "state": 1010,
+            "cue_frame": 221,
+            "actual_sample_seconds": 8.17342403628118,
+            "normalized_correlation": 0.43721573828995797,
+            "timing_error_seconds": 0.1656064690026966
+          },
+          {
+            "case": "DaemonEleva",
+            "state": 1020,
+            "cue_frame": 407,
+            "actual_sample_seconds": 11.284897959183674,
+            "normalized_correlation": 0.559430657352894,
+            "timing_error_seconds": 0.15333932315064303
+          },
+          {
+            "case": "DaemonPatadas",
+            "state": 1030,
+            "cue_frame": 605,
+            "actual_sample_seconds": 14.535691609977324,
+            "normalized_correlation": 0.5082895980649978,
+            "timing_error_seconds": 0.07886022333461717
+          },
+          {
+            "case": "DaemonBarrido",
+            "state": 1050,
+            "cue_frame": 797,
+            "actual_sample_seconds": 17.740045351473924,
+            "normalized_correlation": 0.5587509313300824,
+            "timing_error_seconds": 0.05870705514910668
+          },
+          {
+            "case": "AsaltoDoble",
+            "state": 1060,
+            "cue_frame": 983,
+            "actual_sample_seconds": 20.805079365079365,
+            "normalized_correlation": 0.43901473745526337,
+            "timing_error_seconds": 0.0
+          }
+        ],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "DaemonRapido",
+              "button": "a",
+              "direction": "F",
+              "state": 1000,
+              "cost": 500,
+              "mode": 0,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              10,
+              12,
+              20,
+              1000
+            ],
+            "damage": 58,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 93,
+            "spawn_distance": 20.0,
+            "travel_distance": 91.29999542236328,
+            "minimum_power": 2500,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 0,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "DaemonCombo",
+              "button": "a",
+              "direction": "B",
+              "state": 1010,
+              "cost": 750,
+              "mode": 1,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              10,
+              12,
+              20,
+              1010
+            ],
+            "damage": 112,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 123,
+            "spawn_distance": 20.0,
+            "travel_distance": 107.99998092651367,
+            "minimum_power": 2250,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 5110,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "DaemonEleva",
+              "button": "a",
+              "direction": "D",
+              "state": 1020,
+              "cost": 500,
+              "mode": 2,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              10,
+              1020
+            ],
+            "damage": 68,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 84,
+            "spawn_distance": 20.0,
+            "travel_distance": 88.00001525878906,
+            "minimum_power": 2500,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 5110,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "DaemonPatadas",
+              "button": "b",
+              "direction": "F",
+              "state": 1030,
+              "cost": 750,
+              "mode": 3,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              10,
+              12,
+              20,
+              1030
+            ],
+            "damage": 104,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 94,
+            "spawn_distance": 20.0,
+            "travel_distance": 91.300048828125,
+            "minimum_power": 2250,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 5110,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "DaemonBarrido",
+              "button": "c",
+              "direction": "F",
+              "state": 1050,
+              "cost": 500,
+              "mode": 4,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              10,
+              12,
+              20,
+              1050
+            ],
+            "damage": 62,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 90,
+            "spawn_distance": 20.0,
+            "travel_distance": 88.00003051757812,
+            "minimum_power": 2500,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 5120,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "AsaltoDoble",
+              "button": "z",
+              "direction": "N",
+              "state": 1060,
+              "cost": 1500,
+              "mode": 5,
+              "facing": 1,
+              "distance": 120,
+              "kind": "move"
+            },
+            "states": [
+              0,
+              1060
+            ],
+            "damage": 170,
+            "received_damage": 0,
+            "helpers_end": 0,
+            "active_assist_on_hit": false,
+            "assist_lingered_after_hit": false,
+            "latest_helper_tick": 126,
+            "spawn_distance": 20.0,
+            "travel_distance": 104.50011444091797,
+            "minimum_power": 1500,
+            "charm_marker": false,
+            "dash_travel": 0.0,
+            "jump_apex": 0.0,
+            "victim_end_state": 5110,
+            "failures": []
+          }
+        ],
+        "raw_audio_sha256": "9587ace6993bbe6e95cc6c21887247e29cd13648b425755f1bfb93fe47a15efc",
+        "near_full_scale_fraction": 0.0
+      },
+      "scope_sha256": "f20938fb8b3face600e559c34caef7babb81d28bfa14fb56448f4d11d0ab7df7"
+    }
+  }
+}
