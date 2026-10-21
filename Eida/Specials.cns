@@ -10,6 +10,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -500
 
+; EIDA ACTIVATION BEGIN
+[State 1000, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1000, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1000, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1000, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1000, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -59,6 +120,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -750
 
+; EIDA ACTIVATION BEGIN
+[State 1010, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1010, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1010, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1010, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1010, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -108,6 +230,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -500
 
+; EIDA ACTIVATION BEGIN
+[State 1020, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1020, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1020, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1020, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1020, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -175,6 +358,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -750
 
+; EIDA ACTIVATION BEGIN
+[State 1030, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1030, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1030, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1030, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1030, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -224,6 +468,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -500
 
+; EIDA ACTIVATION BEGIN
+[State 1050, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1050, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1050, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1050, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1050, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -273,6 +578,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -1500
 
+; EIDA ACTIVATION BEGIN
+[State 1060, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1060, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1060, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1060, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1060, Variant]
 type = VarSet
 trigger1 = Time = 0
@@ -2229,6 +2595,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -1000
 
+; EIDA ACTIVATION BEGIN
+[State 1140, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1140, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1140, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1140, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1140, Cast sound]
 type = PlaySnd
 trigger1 = Time = 3
@@ -2261,6 +2688,67 @@ ctrl = 0
 velset = -4,0
 poweradd = -750
 
+; EIDA ACTIVATION BEGIN
+[State 1150, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1150, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1150, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1150, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1150, Stop retreat]
 type = VelSet
 trigger1 = Time = 12
@@ -2314,6 +2802,67 @@ ctrl = 0
 velset = 0,0
 poweradd = -1500
 
+; EIDA ACTIVATION BEGIN
+[State 1160, Distinct special activation sound]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+[State 1160, Brief special focus]
+type = SuperPause
+trigger1 = Time = 0
+time = IfElse(PrevStateNo >= 200 && PrevStateNo <= 221,6,12)
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+[State 1160, Activation flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8510
+ID = 8560
+postype = P1
+pos = 14,-48
+scale = .7,.4
+bindtime = 1
+removetime = 12
+sprpriority = 6
+ownpal = 1
+trans = AddAlpha
+alpha = 230,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+[State 1160, Senrigan activation crescent]
+type = Explod
+trigger1 = Time = 0
+anim = 8520
+ID = 8561
+postype = P1
+pos = 4,-56
+scale = .35,.35
+bindtime = 1
+removetime = 12
+sprpriority = 7
+ownpal = 1
+trans = AddAlpha
+alpha = 200,256
+supermovetime = 12
+pausemovetime = 12
+removeongethit = 1
+persistent = 0
+ignorehitpause = 1
+; EIDA ACTIVATION END
 [State 1160, Existing Daemon rapid mode]
 type = VarSet
 trigger1 = Time = 0

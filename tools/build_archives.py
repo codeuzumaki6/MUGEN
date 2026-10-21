@@ -95,6 +95,8 @@ def build_sff(destination: Path) -> None:
     effect_axes = json.loads((ASSETS / 'effects/reference/axes.json').read_text())
     polish_manifest = ASSETS/'polish/manifest.json'
     polish = json.loads(polish_manifest.read_text()) if polish_manifest.exists() else []
+    hug_manifest=ASSETS/'omni_hug/manifest.json'
+    if hug_manifest.exists():polish+=json.loads(hug_manifest.read_text())
     extra = [(p['group'],p['number'],CHAR/p['file']) for p in polish]
     effect_axes.update({f"{p['group']},{p['number']}":p['axis'] for p in polish})
     for group, number, path in SPRITES + extra:
@@ -210,6 +212,7 @@ def build_snd(destination: Path) -> None:
         (1, 18, ASSETS / "sound/senrigan_release.wav"),
         (1, 19, ASSETS / "sound/daemon_impact_finish.wav"),
         (1, 20, ASSETS / "sound/soft_footfall.wav"),
+        (1, 21, ASSETS / "sound/special_activation.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),

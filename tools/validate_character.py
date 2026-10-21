@@ -109,6 +109,9 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
         if group in (350,351):
             check((width,height,axis_x,axis_y)==(128,80,64,78),
                   f'Eida.sff: presentation frame {group},{number} lost its shared feet origin')
+        if group == 8600:
+            check((width,height,axis_x,axis_y)==(320,224,160,216),
+                  f'Eida.sff: cinematic embrace {number} lost its retained detail/origin')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites
@@ -181,6 +184,10 @@ def main() -> None:
     sounds = parse_snd(ROOT / "Eida.snd")
 
     air_text = (ROOT / "Eida.air").read_text(encoding="utf-8")
+    for counter in (1200,1300,1350):
+        action=re.search(rf'(?ims)^\[Begin Action {counter}\].*?(?=^\[Begin Action|\Z)',air_text)
+        check(bool(action and re.search(r'(?im)^Clsn1(?:Default)?:\s*[1-9]',action[0])),
+              f'Eida.air: counter {counter} is missing its reversal collision box')
     actions: set[int] = set()
     idle_refs: list[tuple[int, int]] = []
     frame_times: dict[int,list[int]] = {}
@@ -269,6 +276,11 @@ def main() -> None:
         check(state in all_states, f"{filename} {header}: references missing state {state}")
 
     eida_cns = '\n'.join(path.read_text(encoding='latin-1') for path in cns_paths)
+    for state in (1000,1010,1020,1030,1050,1060,1100,1120,1140,1150,1160,1200,1300,1350):
+        block=re.search(rf'(?ims)^\[Statedef {state}\].*?(?=^\[Statedef|\Z)',eida_cns)
+        check(bool(block and re.search(r'(?ims)type = PlaySnd\ntrigger1 = Time = 0\nvalue = S1,21',block[0])),
+              f'Eida: special {state} is missing its distinct activation sound')
+    check((1,21) in sounds,'Eida.snd: missing special activation sample 1,21')
     for match in re.finditer(r"(?im)^\s*(?:value|hitsound|guardsound)\s*=\s*S(\d+)\s*,\s*(\d+)\s*$", eida_cns):
         ref = (int(match.group(1)), int(match.group(2)))
         check(ref in sounds, f"Eida.cns: references missing sound {ref[0]},{ref[1]}")

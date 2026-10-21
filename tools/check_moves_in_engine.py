@@ -81,9 +81,13 @@ if recovery_only:
         for variant in ('sweep','bounce','airbounce'):
             scenarios.append(dict(name='Recovery '+variant,button='a',direction='N',state=5120,
                 cost=0,mode=None,facing=face,distance=40,kind='knockdown',variant=variant))
+if os.environ.get('EIDA_SENRIGAN_IDLE_CHECK')=='1':
+    scenarios=[dict(name='Senrigan sin ataque',button='b',direction='B',state=1200,cost=1000,mode=None,facing=face,distance=120,kind='counterwait') for face in (1,-1)]
 if os.environ.get('EIDA_TEST_CASES'):
     names=json.loads(os.environ['EIDA_TEST_CASES'])
     scenarios=[c for c in scenarios if c['name'] in names]
+if os.environ.get('EIDA_REVIEW_FACING'):
+    scenarios=[c for c in scenarios if c['facing']==int(os.environ['EIDA_REVIEW_FACING'])]
 capture_dir=os.environ.get('EIDA_CAPTURE')
 if capture_dir:
     requested=os.environ.get('EIDA_CAPTURE_CASES')
@@ -172,7 +176,7 @@ for idx,case in enumerate(scenarios):
         trigger=f'Var(59) = {idx} && StateNo = 50 && Time = 2 && Var(57) = 0'
         fixture+=ctrl('natural aerial attack','AssertInput',trigger,'flag = a')
         fixture+=ctrl('only one pursuit attack','VarSet',trigger,'v = 57\nvalue = 1')
-    if case['state'] in (1200,1300,1350):
+    if case['state'] in (1200,1300,1350) and case['kind']!='counterwait':
         other+=ctrl('place incoming strike','PosSet',at(36),f'x = (P2,Pos X) + {face*36}\ny = 0')
         other+=ctrl('incoming strike','ChangeState',at(38),'value = 210\nctrl = 0')
     if case['kind'] in ('block','ultiblock','branchblocked','followblocked'):
@@ -372,15 +376,46 @@ if capture_dir:
     log_marker=f'if tick=={CASE_TICKS}-1 and not r.logged then'
     capture_end=548 if ultimate_only else 260 if recovery_only else 150
     module_text=module_text.replace(log_marker, f'if tick >= 10 and tick <= {capture_end} and tick % 4 == 0 and not r.logged then screenshot() end\n  '+log_marker)
+live_capture=os.environ.get('EIDA_LIVE_CAPTURE')
+record_audio=os.environ.get('EIDA_RECORD_AUDIO')
+if live_capture:
+    directory=str(Path(live_capture).resolve())+'/'
+    Path(directory).mkdir(parents=True,exist_ok=True)
+    observer="modifyGameOption('Config.ScreenshotFolder',"+json.dumps(directory)+")\nlocal folder="+json.dumps(directory)+"\n"
+    observer+='''
+local live=assert(io.open(folder..'trace.tsv','w'))
+local images=assert(io.open(folder..'frames.tsv','w'))
+local sound=assert(io.open(folder..'audio.tsv','w'))
+local rendered=0;local cap={index=0,pending=nil,last=-1000};local entered={}
+local expected=EXPECTED
+hook.add('loop','eida_live_review',function()
+ if not player(1) or roundState()~=2 or var(58)<1 then return end
+ rendered=rendered+1
+ local case=math.floor((var(58)-1)/CASETICKS)
+ if case>=#expected then return end
+ local st=stateNo();local tm=time()-1
+ local vals={rendered,case,var(58),st,tm,numExplod(8560),numExplod(8561),numExplod(8600),numExplod(8100)+numExplod(8101)+numExplod(8102),numHelper(1001),power()}
+ for i,v in ipairs(vals) do live:write(tostring(v)..(i==#vals and string.char(10) or string.char(9))) end;live:flush()
+ if not entered[case] and st==expected[case+1] and (st~=3000 or tm>=2) then sound:write(rendered..string.char(9)..case..string.char(9)..tostring(21)..string.char(10));sound:flush();entered[case]=true end
+ if cap.pending~=nil then
+  local png=io.open(folder..string.format('Ikemen_GO%03d.png',cap.index),'rb')
+  if png then png:close();images:write(cap.index..string.char(9)..cap.pending..string.char(10));images:flush();cap.index=cap.index+1;cap.pending=nil end
+ end
+ if rendered>=12 and rendered-cap.last>=4 and cap.pending==nil then screenshot();cap.pending=rendered;cap.last=rendered end
+end)
+'''.replace('EXPECTED','{'+','.join(str(c['state']) for c in scenarios)+'}').replace('CASETICKS',str(CASE_TICKS))
+    module_text+=observer
+module_text="modifyGameOption('Debug.RetryLoadOnError',false)\n"+module_text
 module.write_text(module_text)
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
+if record_audio:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=record_audio,SDL_DISKAUDIODELAY='46')
 (engine/'eida_checks.tsv').write_text('')
 if capture_dir:(engine/'eida_capture_cues.tsv').write_text('')
 debug_path=engine/'external/script/debug.lua'
 debug_original=debug_path.read_text()
 debug_path.write_text(debug_original+"\ndofile('external/mods/eida_checks.lua')\n")
 try:
-    run=subprocess.run([str(engine/'Ikemen_GO_Linux'),'-p1','EidaCheck','-p1.ai','0','-p2','EidaDummy','-p2.ai','0','-p1.power','3000','-rounds','1','-time','300']+(['-speed','0'] if capture_dir else ['-speedtest'])+['-nosound','-log','eida_moveset_engine.log'],cwd=engine,env=env,capture_output=True,text=True,timeout=60)
+    run=subprocess.run([str(engine/'Ikemen_GO_Linux'),'-p1','EidaCheck','-p1.ai','0','-p2','EidaDummy','-p2.ai','0','-p1.power','3000','-rounds','1','-time','300']+(['-speed','0'] if capture_dir or record_audio else ['-speedtest'])+([] if record_audio else ['-nosound'])+['-log','eida_moveset_engine.log'],cwd=engine,env=env,capture_output=True,text=True,timeout=120 if live_capture else 60)
     print(run.stdout);print(run.stderr)
     if run.returncode:raise RuntimeError(f'engine exited {run.returncode}')
 finally:
@@ -414,6 +449,7 @@ for line,case in zip(lines,scenarios):
         failures_here.append('counter did not trigger on an incoming collision')
     if case['kind']=='move' and case['state'] in (1200,1300) and not 0<=spawn<=28:
         failures_here.append('physical counter did not summon Daemon beside Eida')
+    if case['kind']=='counterwait' and (damage!=0 or int(helpers)!=0 or 1201 in states):failures_here.append('Senrigan attacked without an incoming hit')
     if case['kind']=='move' and case['state'] in (1100,1120) and charm!='true':
         # Anti-air is tested against a standing dummy separately: a miss is valid.
         if case['state']==1100:failures_here.append('heart did not charm on contact')
@@ -466,6 +502,6 @@ for line,case in zip(lines,scenarios):
     report.append(row)
     print(('FAIL' if failures_here else 'PASS'),case['name'],case['facing'],row)
     failures+=failures_here
-out=ROOT/'previews'/('engine_visual_checks.json' if capture_dir else 'engine_recovery_checks.json' if recovery_only else 'engine_ultimate_checks.json' if ultimate_only else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
+out=ROOT/'previews'/('Eida_live_review_checks.json' if live_capture else 'Eida_Senrigan_idle_checks.json' if os.environ.get('EIDA_SENRIGAN_IDLE_CHECK') else 'engine_visual_checks.json' if capture_dir else 'engine_recovery_checks.json' if recovery_only else 'engine_ultimate_checks.json' if ultimate_only else 'engine_moveset_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not failures,failures
 print(f'PASSED: {len(scenarios)} raw-input/collision scenarios. Report: {out}')

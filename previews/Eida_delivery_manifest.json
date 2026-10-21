@@ -1,19 +1,92 @@
 {
-  "archive": "Eida_ACABADO.zip",
-  "bytes": 4052632,
-  "sha256": "f8ce33652650f23887d2be905dc1dd4da797003f0672801b9e82f6dae8e6938b",
+  "archive": "Eida_SONIDO_Y_ABRAZO.zip",
+  "bytes": 4234798,
+  "sha256": "a77b83147e0b5db11a408aec01b41e471a045770a3fa12a5c969f2592bd386fd",
   "files": {
-    "Eida/CONTROLES_XBOX.md": "735b83bf4399123a30c3b3de79d680f40400bf5b902dcf54784283286386149e",
-    "Eida/CREDITOS_Y_FUENTES.md": "a4d91109cd23a25f489d48584d8bc9c6197b6deec51edaa411e0b418ba05c690",
-    "Eida/Eida.air": "40360bb0606debbc16ab4b086b0a35e2e433706bd7a7e5d508774840565b1a9d",
+    "Eida/CONTROLES_XBOX.md": "4a9f2a26fce5cac492d525a29820c4a425a396b363bb700a93e4132f8b19d006",
+    "Eida/CREDITOS_Y_FUENTES.md": "9a87a4363c7e0a04952d5ed4b0d203f3bce0ab37877ab5846a88160457a03a66",
+    "Eida/Eida.air": "6b7907c002c435c1184666180c88acb35e195a6903fa84ad05a5add1d3dfdcdd",
     "Eida/Eida.cmd": "2df864408a96c03fb0eb2b116ab4dd3effd1218b55efc49f0fd20ede2b20b161",
-    "Eida/Eida.cns": "215908f0d3c2fafe79d90e8db25fc7451f0e55ed0d0a12cb7d0a395ea43373d4",
+    "Eida/Eida.cns": "a5f3ca21431aa63f2775c70aa5187cd30e7e94184750e8828ecdd7e8471d8580",
     "Eida/Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
-    "Eida/Eida.sff": "1e9ccc215937f417643f7c9750c665d3a7b45117f2f68e8a93962ac76051feef",
-    "Eida/Eida.snd": "ac6f6ccb99497db3bc99c60f9e7663141534c8d8a0d3c6f993c1a9953f728610",
-    "Eida/LEEME.md": "cd71e76cacb2aad55aa44cd308d01cb064a0ed53a3ff44cc417e78af40d0d337",
-    "Eida/Omnipotencia.cns": "2a4ffab849e2d98ce9a8d80d0503fd078764dbcd7261ad63cb2a0b82edf76280",
-    "Eida/Specials.cns": "d6adc13120f0ece26fdec08f1864bdb2c5696f74c4275c555bcad3c9317b07b5",
+    "Eida/Eida.sff": "f9bab21772f87df0aa18f47518ac3a32b882501226440ad117cfbf57bb0b518a",
+    "Eida/Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
+    "Eida/LEEME.md": "42446e3b649df42c4827313eebb8b3b80b80897a8a15e04ef0bbb4a0548f2c4c",
+    "Eida/Omnipotencia.cns": "60d43dd3a867a3e90d7f0d43a0c2b6091602c31ab3c0b64d7f42ad9837d7294c",
+    "Eida/Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
     "Eida/common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
+  },
+  "engine_cases": 121,
+  "activation_audio_cases": 16,
+  "videos": {
+    "Eida_especiales_nuevo_motor.mp4": {
+      "bytes": 6022181,
+      "sha256": "fb6db9bce7faf15c20f887de8ebd832e7580b310ac4eff9219e9ed14b6af483d",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "44.269002"
+        }
+      }
+    },
+    "Eida_senrigan_sin_ataque_nuevo_motor.mp4": {
+      "bytes": 317105,
+      "sha256": "f1ba262e8a73fae6269cf8b1c94dd7eb23b30c9064018d74c2f3b511f958af0f",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "2.966667"
+        }
+      }
+    },
+    "Eida_omnipotencia_abrazo_nuevo_motor.mp4": {
+      "bytes": 1911322,
+      "sha256": "fc00d177421a0b0aa025fdc4f5f02ea829add5d7342a5f035851e83fd249867c",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "9.133333"
+        }
+      }
+    }
   }
 }

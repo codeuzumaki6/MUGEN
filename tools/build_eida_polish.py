@@ -9,6 +9,7 @@ import hashlib, json, re, wave
 import numpy as np
 from PIL import Image
 from scipy.ndimage import label, find_objects
+from build_eida_activation import remove_activation, install as install_activation
 
 ROOT = Path(__file__).resolve().parents[1]
 CHAR = ROOT/'Eida'
@@ -90,7 +91,7 @@ def make_sounds():
 
 def apply_runtime():
     paths={name:CHAR/name for name in ['Eida.cns','Specials.cns','Eida.air']}
-    texts={name:re.sub(r'(?ms)^; EIDA POLISH BEGIN.*?^; EIDA POLISH END\n?','',p.read_text()).rstrip()+'\n' for name,p in paths.items()}
+    texts={name:re.sub(r'(?ms)^; EIDA POLISH BEGIN.*?^; EIDA POLISH END\n?','',remove_activation(p.read_text())).rstrip()+'\n' for name,p in paths.items()}
     # State 106 is owned by this module. Keep it outside controller markers:
     # the preceding state's end must never swallow another marker's opening.
     texts['Eida.cns']=re.sub(r'(?ims)^\[Statedef 106\].*?(?=^\[Statedef|\Z)','',texts['Eida.cns'])
@@ -281,5 +282,5 @@ ignorehitpause = 1
 
 
 if __name__ == '__main__':
-    import_art(); make_sounds(); apply_runtime()
+    import_art(); make_sounds(); apply_runtime(); install_activation()
     print('Imported 16 body poses / 12 FX and 4 nonverbal sounds; installed Eida presentation')

@@ -60,3 +60,11 @@ El encanto es una influencia pasiva en el canon; los corazones con alcance y blo
 Si Eida recibe un derribo y sigue viva, vuelve a levantarse automáticamente. Después puedes moverla o atacar; no hace falta pulsar un botón especial para salir del suelo.
 
 Esta revisión conserva los controles y añade cuadros de preparación y recuperación a las técnicas de apoyo. Daemon termina su movimiento antes de retirarse. Las nuevas ramas Y → X y B → Y requieren que el primer golpe conecte; bloquearlo corta la rama. Golpear a Eida cancela la ayuda ofensiva activa.
+
+## Activación y Senrigan
+
+Los 14 jutsus tienen un sonido de activación independiente del golpe, destello y pausa breve. No hace falta acertar para oír la activación; sí hace falta energía para ejecutar el jutsu.
+
+**↓atrás + Y: Senrigan es un contraataque.** Eida lleva la mano al ojo y observa durante unos 0.8 segundos. Si un golpe entra en su caja de reversión en esa ventana, Daemon responde con una patada física. Si nadie ataca, no causa daño: baja la mano, desaparece el ojo y termina. No es un proyectil ni daño por mirar al rival.
+
+**A: Omnipotencia.** La apertura debe acertar antes de mostrar el abrazo animado a Kawaki y liberar la onda de alteración de recuerdos. Kawaki aparece en esa escena canónica, sin sustituir permanentemente al rival. Conserva el coste de 3000 y daño de 350.

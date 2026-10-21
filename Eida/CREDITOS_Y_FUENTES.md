@@ -15,3 +15,6 @@
 
 - Acabado: 16 poses nuevas de carga, carrera, frenado, aterrizaje y victoria, y doce cuadros de polvo/contacto/arcos generados con IA. Fuentes conservadas en `design/Eida_acabado/` y manifiesto de recortes/ejes en `Eida/assets/polish/manifest.json`. Los cuerpos de pie se calibran a la altura del reposo; no se redibujaron paneles ni se alteraron voces.
 - `senrigan_charge_loop.wav`, `senrigan_release.wav`, `daemon_impact_finish.wav`, `soft_footfall.wav`: efectos no verbales originales de osciladores y ruido filtrado; parámetros y SHA-256 en `Eida/assets/polish/sounds.json`.
+
+- Activación: SND 1,21 es la muestra de Code_FUNCIONAL 950,2 ya convertida y normalizada para Pochita. Se copia el WAV sin cambiarlo; es un efecto no verbal. Se añade a los 14 jutsus y a la entrada de Omnipotencia. Manifiesto en `Eida/assets/polish/activation_sound.json`.
+- Abrazo de Omnipotencia: ocho poses nuevas de Eida y Kawaki generadas con IA a partir de las referencias de postura/sprites aportadas por el usuario en esta revisión. Hoja en `design/Eida_omnipotencia/embrace_sheet.png` y recortes en `Eida/assets/omni_hug/manifest.json`. No se redibujó ni modificó ningún panel original del manga.

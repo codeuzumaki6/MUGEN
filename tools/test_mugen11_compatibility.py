@@ -15,6 +15,27 @@ def validate(character):
                           capture_output=True,text=True)
 
 class CompatibilityRegression(unittest.TestCase):
+    def test_missing_senrigan_reversal_box_is_rejected(self):
+        with tempfile.TemporaryDirectory(prefix='eida-counter-regression-') as directory:
+            character=Path(directory)/'Eida';character.mkdir()
+            for source in (ROOT/'Eida').iterdir():
+                if source.is_file():shutil.copy2(source,character/source.name)
+            path=character/'Eida.air';text=path.read_text()
+            text,count=re.subn(r'(\[Begin Action 1200\]\n)Clsn1Default: 1\n Clsn1\[0\] = [^\n]*\n',r'\1',text,count=1)
+            self.assertEqual(count,1);path.write_text(text)
+            result=validate(character);self.assertNotEqual(result.returncode,0)
+            self.assertIn('counter 1200 is missing its reversal collision box',result.stdout)
+
+    def test_missing_jutsu_activation_is_rejected(self):
+        with tempfile.TemporaryDirectory(prefix='eida-sound-regression-') as directory:
+            character=Path(directory)/'Eida';character.mkdir()
+            for source in (ROOT/'Eida').iterdir():
+                if source.is_file():shutil.copy2(source,character/source.name)
+            path=character/'Specials.cns';text=path.read_text();self.assertIn('value = S1,21',text)
+            path.write_text(text.replace('value = S1,21','value = S1,16',1))
+            result=validate(character);self.assertNotEqual(result.returncode,0)
+            self.assertIn('special 1000 is missing its distinct activation sound',result.stdout)
+
     def test_invalid_victory_flag_is_rejected(self):
         with tempfile.TemporaryDirectory(prefix='eida-victory-regression-') as directory:
             character=Path(directory)/'Eida';character.mkdir()

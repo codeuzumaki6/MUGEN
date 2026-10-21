@@ -50,29 +50,27 @@ Eida y los originales se conservan sin cambios.
 
 ---
 
-# Eida — movimiento, Senrigan e impactos
+# Eida — especiales audibles y Omnipotencia con Kawaki
 
-[**Descargar Eida actualizada**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_ACABADO.zip)
+[**Descargar Eida corregida**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_SONIDO_Y_ABRAZO.zip)
 
-[**Ver el acabado con audio real del motor**](previews/Eida_ACABADO.mp4) · [Carga](previews/Eida_acabado_charge_motor.gif) · [Carrera y frenado](previews/Eida_acabado_run_motor.gif) · [Daemon](previews/Eida_acabado_daemon_motor.gif) · [Victoria](previews/Eida_acabado_win_motor.gif)
+[**Ver los 14 jutsus con audio real**](previews/Eida_especiales_nuevo_motor.mp4) · [**Ver la ulti del abrazo a Kawaki**](previews/Eida_omnipotencia_abrazo_nuevo_motor.mp4) · [Senrigan sin golpe recibido](previews/Eida_senrigan_sin_ataque_nuevo_motor.mp4)
 
-- **Movimiento y carga:** 16 poses nuevas repartidas entre carrera, frenado, aterrizaje, carga Senrigan y victoria. Cabello en movimiento, apoyo de pies y polvo. La carga se detiene al soltar LB, llenar la barra o recibir un golpe.
-- **Contactos y remates:** doce cuadros de efectos nuevos y cuatro sonidos no verbales. Eida y Daemon distinguen impacto, bloqueo y fallo; el estallido final requiere acertar esa parte del ataque. Contadores por estado evitan repetir efectos durante hitpause o heredar el impacto del ataque anterior.
-- **Victoria:** gesto, cabello y pose final con la misma blusa y shorts del combate; énfasis temporal del escenario y margen de cámara. Se comprueba tras un KO real de prueba en ambas orientaciones.
-- **Combate conservado:** 14 técnicas, ramas de Daemon, persecución aérea, encanto por proyectil, parry, costes y recuperación tras derribo. El reposo mantiene sus seis cuadros y el despertar mantiene su cuerpo y tamaño. Daemon conserva su diseño y escala.
-- **Omnipotencia con A:** ocho encuadres originales a 1280×720, voz japonesa intacta, coste de tres barras y daño de 350. La apertura debe conectar: bloquearla, saltarla o dejarla fuera de alcance consume la energía sin iniciar la escena.
+- **Activación de especiales:** los 14 jutsus incorporan el mismo sonido no verbal que Pochita, un destello y una pausa breve. El sonido es independiente del impacto y se reproduce aunque el ataque falle. Está en el SND como 1,21, canal 4 al 100 %. La pausa dura 12 ticks, o seis al cancelar un normal. No añade invulnerabilidad ni cambia los costes.
+- **Senrigan ↓atrás + Y:** es un contraataque. Eida lleva la mano al ojo y observa durante unos 0.8 segundos. Si recibe un golpe en su caja de reversión, Daemon aparece junto a ella y responde físicamente. Si nadie ataca, no hay daño ni invocación: desaparece el ojo, baja la mano y termina. Se conservó la caja de reversión al cambiar la pose.
+- **Omnipotencia con A:** ocho poses nuevas de acercamiento y abrazo a Kawaki, con movimiento de cabello y liberación de la onda. La escena principal es de sprites, sobre un panel original de la onda atenuado. La apertura tiene que acertar; sigue siendo bloqueable, evadible y de alcance finito. Consume tres barras y causa 350 al confirmar.
 
-Sustituye `chars/Eida` completa por la carpeta del ZIP. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si hace falta. [Controles Xbox](Eida/CONTROLES_XBOX.md) · [Instalación y límites](Eida/LEEME.md) · [Créditos y fuentes](Eida/CREDITOS_Y_FUENTES.md) · [Procedencia del nuevo arte](design/Eida_acabado/REVISION.md).
+El abrazo representa el recuerdo canónico con Kawaki aunque el rival sea otro personaje. El rival elegido sigue siendo el objetivo y regresa al combate; no se transforma permanentemente en Kawaki. Los sprites del abrazo son arte nuevo generado con IA. No se redibujaron ni retocaron con IA los paneles originales, y no se generaron voces. [Procedencia del abrazo](design/Eida_omnipotencia/REVISION.md) · [Sonido y lectura de Senrigan](design/Eida_acabado/ACTIVACION.md).
 
-La voz, los paneles originales del manga y los dibujos de Daemon se conservan. Las poses y efectos nuevos se generaron con IA; no se modificaron caras de los paneles ni se generaron voces. Las nuevas poses se calibran a los 68 píxeles del reposo y comparten escala dentro de cada hoja. El SFF contiene 194 entradas, el SND 30 muestras y el AIR 123 acciones. El material conserva variaciones de detalle y no se declara alcanzado el acabado de Sumire.
+Se conservan carrera, frenado, aterrizaje, carga, victoria, remates, cadenas y ayudas de Daemon. El reposo mantiene sus seis cuadros y el despertar conserva el cuerpo y tamaño originales. El SFF tiene 202 entradas, el SND 31 muestras y el AIR 124 acciones; no se declara alcanzado el acabado artístico de Sumire.
 
-Senrigan prepara la respuesta física de Daemon; observar no causa daño. Encanto, parry, despertar y apertura/daño de Omnipotencia mantienen reglas adaptadas al juego de pelea. No se añadieron poderes ofensivos nuevos.
+Sustituye `chars/Eida` completa por la carpeta del ZIP. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si hace falta. [Controles Xbox](Eida/CONTROLES_XBOX.md) · [Instalación y límites](Eida/LEEME.md) · [Créditos](Eida/CREDITOS_Y_FUENTES.md).
 
-Pruebas en Ikemen GO: [80 controles y colisiones](previews/engine_moveset_checks.json), [seis derribos y recuperación](previews/engine_recovery_checks.json), [nueve aperturas de ultimate](previews/engine_ultimate_checks.json), [22 de presentación](previews/Eida_polish_checks.json) y [dos victorias reales](previews/Eida_polish_win_checks.json): **119 escenarios**. Se añaden cinco regresiones del validador para errores de carga, impacto infinito y flag de victoria inválido, y [reconstrucción determinista](previews/Eida_polish_rebuild_checks.json).
+Pruebas en Ikemen GO: [80 controles y colisiones](previews/engine_moveset_checks.json), [seis derribos y recuperación](previews/engine_recovery_checks.json), [nueve aperturas de ultimate](previews/engine_ultimate_checks.json) y [dos pruebas de Senrigan sin ataque rival](previews/Eida_Senrigan_idle_checks.json). Las pruebas de la revisión de movimiento anterior se conservan en [22 casos de presentación](previews/Eida_polish_checks.json) y [dos victorias reales](previews/Eida_polish_win_checks.json). El validador tiene siete regresiones: errores de carga anteriores, impacto infinito, flag de victoria inválido, caja de reversión ausente y sonido de jutsu ausente. [Reconstrucción determinista](previews/Eida_polish_rebuild_checks.json).
 
-El [video nuevo](previews/Eida_ACABADO.mp4) reproduce seis escenas a velocidad normal y captura audio real SDL a 44100 Hz estéreo, alineado por correlación con las muestras del SND. [Registro de audio](previews/Eida_polish_audio_checks.json) · [Comprobaciones de captura](previews/Eida_polish_visual_checks.json). No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando físico; el escenario y las barras de las pruebas son diferentes.
+Los nuevos videos capturan audio real SDL a 44100 Hz estéreo, sin mezcla de efectos fuera del motor. [Registro de activaciones y cinemática](previews/Eida_technique_audio_checks.json). Cada activación se contrasta con la muestra empaquetada; las imágenes se sincronizan con esos eventos de audio sin estirar ni mezclar la grabación. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando físico.
 
-[Omnipotencia anterior en MP4 720p](previews/Omnipotencia_motor_HD.mp4) · [Y → X con Daemon](previews/Eida_Y_X_Daemon_motor.gif) · [Persecución aérea](previews/Eida_persecucion_aerea_motor.gif) · [Recuperación](previews/Eida_se_levanta_motor.gif). El MP4 antiguo de Omnipotencia usa audio mezclado fuera del motor y representa la revisión anterior de esa cinemática.
+[Video anterior de movimiento y acabado](previews/Eida_ACABADO.mp4) · [Omnipotencia anterior con paneles](previews/Omnipotencia_motor_HD.mp4). Representan revisiones anteriores; el video antiguo de paneles usaba audio mezclado fuera del motor.
 
 Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
@@ -81,6 +79,7 @@ python3 tools/build_presentation.py
 python3 tools/build_moveset.py
 python3 tools/build_cinematic.py
 python3 tools/build_eida_polish.py
+python3 tools/build_eida_hug_ultimate.py
 python3 tools/build_archives.py
 python3 tools/validate_character.py Eida
 python3 tools/test_mugen11_compatibility.py
@@ -88,9 +87,8 @@ python3 tools/check_eida_rebuild.py
 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
 EIDA_RECOVERY_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
 EIDA_ULTIMATE_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
+EIDA_SENRIGAN_IDLE_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
 python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
-EIDA_WIN_CHECK=1 python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
-EIDA_WIN_CHECK=1 EIDA_WIN_FACING=-1 python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
-python3 tools/make_eida_polish_previews.py /ruta/al/ikemen
+python3 tools/make_eida_technique_previews.py /ruta/al/ikemen
 python3 tools/package_character.py
 ```

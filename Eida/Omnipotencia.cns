@@ -22,7 +22,9 @@ p2defmul = 1
 [State 3000, Telegraph sound]
 type = PlaySnd
 trigger1 = Time = 2
-value = S1,10
+value = S1,21
+channel = 4
+volumescale = 100
 
 [State 3000, Travelling opening]
 type = Projectile
@@ -76,7 +78,6 @@ physics = N
 anim = 3000
 ctrl = 0
 velset = 0,0
-
 [State 3001, Freeze confirmed scene only]
 type = Pause
 trigger1 = Time = 0
@@ -84,46 +85,28 @@ time = 430
 movetime = 430
 pausebg = 1
 endcmdbuftime = 0
-
-[State 3001, Protection during confirmed cinematic]
+[State 3001, Protect the confirmed scene]
 type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
-
-[State 3001, Interface]
+[State 3001, Quiet cinematic interface]
 type = AssertSpecial
 trigger1 = Time < 440
 flag = NoBarDisplay
 flag2 = NoFG
 flag3 = NoMusic
-
-[State 3001, Japanese Eida voice]
+[State 3001, Authentic Japanese Eida voice]
 type = PlaySnd
 trigger1 = Time = 0
 value = S0,2
 channel = 0
-
 [State 3001, Memory sound bed]
 type = PlaySnd
 trigger1 = Time = 3
 value = S1,11
 channel = 5
-
-[State 3001, Senrigan seal]
-type = Explod
-trigger1 = Time = 0
-anim = 8100
-postype = P1
-pos = 0,-40
-scale = .35,.35
-removetime = 12
-ownpal = 1
-pausemovetime = 999
-trans = Add
-sprpriority = 6
-
-[State 3001, Cinematic black matte]
+[State 3001, Black cinematic backdrop]
 type = Explod
 trigger1 = Time = 8
 anim = 8090
@@ -138,305 +121,103 @@ sprpriority = 19
 ownpal = 1
 pausemovetime = 999
 supermovetime = 999
-
-[State 3001, Original manga shot 1]
+[State 3001, Original manga world behind embrace]
 type = Explod
 trigger1 = Time = 12
-anim = 8000
-ID = 8000
+anim = 8001
+ID = 8611
 space = Screen
 postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
+pos = 0,(GameHeight-GameWidth*9.0/16.0)/2.0
+scale = GameWidth/1280.0,GameWidth/1280.0
 bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 76
+removetime = 425
 sprpriority = 20
 ownpal = 1
 pausemovetime = 999
 supermovetime = 999
 trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 1]
+alpha = 56,200
+[State 3001, Original world becomes visible]
 type = ModifyExplod
-trigger1 = Time = [12,87]
-ID = 8000
-pos = GameWidth*((1-(1.03+((Time-12)/76.0)*0.018))/2.0+((Time-12)/76.0)*-0.008),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-12)/76.0)*0.018))/2.0+GameWidth*9.0/16.0*((Time-12)/76.0)*-0.002
-scale = GameWidth/1280.0*(1.03+((Time-12)/76.0)*0.018),GameWidth/1280.0*(1.03+((Time-12)/76.0)*0.018)
+trigger1 = Time = [12,431]
+ID = 8611
+trans = AddAlpha
+alpha = 48+IfElse(Time<340,Time/8,42),208-IfElse(Time<340,Time/8,42)
+[State 3001, Eida cradles Kawaki animated sprites]
+type = Explod
+trigger1 = Time = 12
+anim = 8600
+ID = 8600
+space = Screen
+postype = Left
+pos = GameWidth*.5,GameHeight*.91
+facing = 1
+vfacing = 1
+bindtime = -1
+scale = GameHeight/180.0*.566667,GameHeight/180.0*.566667
+removetime = 425
+sprpriority = 23
+ownpal = 1
+pausemovetime = 999
+supermovetime = 999
+trans = AddAlpha
+alpha = 0,256
+[State 3001, Smooth approach to the embrace]
+type = ModifyExplod
+trigger1 = Time = [12,431]
+ID = 8600
+pos = GameWidth*.5,GameHeight*.91
+scale = GameHeight/180.0*(.566667+Time*.00008311),GameHeight/180.0*(.566667+Time*.00008311)
 trans = AddAlpha
 alpha = IfElse((Time-12)*24<256,(Time-12)*24,256),256-IfElse((Time-12)*24<256,(Time-12)*24,256)
-
-[State 3001, Transition sound 1]
+[State 3001, Embrace sound accent]
 type = PlaySnd
-trigger1 = Time = 12
+trigger1 = Time = 44
 value = S1,12
 channel = 6
-
-[State 3001, Original manga shot 2]
+[State 3001, Senrigan pulse over the pair]
 type = Explod
-trigger1 = Time = 76
-anim = 8001
-ID = 8001
+trigger1 = Time = 80
+trigger2 = Time = 180
+trigger3 = Time = 280
+trigger4 = Time = 380
+anim = 8520
+ID = 8620
 space = Screen
 postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
+pos = GameWidth*.5,GameHeight*.4
+scale = GameHeight/180.0*.75,GameHeight/180.0*.75
 bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 54
-sprpriority = 20
+removetime = 14
+sprpriority = 24
 ownpal = 1
 pausemovetime = 999
 supermovetime = 999
 trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 2]
-type = ModifyExplod
-trigger1 = Time = [76,129]
-ID = 8001
-pos = GameWidth*((1-(1.03+((Time-76)/54.0)*0.028))/2.0+((Time-76)/54.0)*0.006),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-76)/54.0)*0.028))/2.0+GameWidth*9.0/16.0*((Time-76)/54.0)*-0.01
-scale = GameWidth/1280.0*(1.03+((Time-76)/54.0)*0.028),GameWidth/1280.0*(1.03+((Time-76)/54.0)*0.028)
-trans = AddAlpha
-alpha = IfElse((Time-76)*24<256,(Time-76)*24,256),256-IfElse((Time-76)*24<256,(Time-76)*24,256)
-
-[State 3001, Transition sound 2]
+alpha = 150,256
+[State 3001, Memory change accents]
 type = PlaySnd
-trigger1 = Time = 76
+trigger1 = Time = 180
+trigger2 = Time = 280
+trigger3 = Time = 380
 value = S1,12
 channel = 6
-
-[State 3001, Original manga shot 3]
-type = Explod
-trigger1 = Time = 118
-anim = 8002
-ID = 8002
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 47
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 3]
-type = ModifyExplod
-trigger1 = Time = [118,164]
-ID = 8002
-pos = GameWidth*((1-(1.03+((Time-118)/47.0)*0.008))/2.0+((Time-118)/47.0)*-0.003),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-118)/47.0)*0.008))/2.0+GameWidth*9.0/16.0*((Time-118)/47.0)*0
-scale = GameWidth/1280.0*(1.03+((Time-118)/47.0)*0.008),GameWidth/1280.0*(1.03+((Time-118)/47.0)*0.008)
-trans = AddAlpha
-alpha = IfElse((Time-118)*24<256,(Time-118)*24,256),256-IfElse((Time-118)*24<256,(Time-118)*24,256)
-
-[State 3001, Transition sound 3]
-type = PlaySnd
-trigger1 = Time = 118
-value = S1,12
-channel = 6
-
-[State 3001, Original manga shot 4]
-type = Explod
-trigger1 = Time = 153
-anim = 8003
-ID = 8003
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 53
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 4]
-type = ModifyExplod
-trigger1 = Time = [153,205]
-ID = 8003
-pos = GameWidth*((1-(1.03+((Time-153)/53.0)*0.01))/2.0+((Time-153)/53.0)*0.004),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-153)/53.0)*0.01))/2.0+GameWidth*9.0/16.0*((Time-153)/53.0)*0
-scale = GameWidth/1280.0*(1.03+((Time-153)/53.0)*0.01),GameWidth/1280.0*(1.03+((Time-153)/53.0)*0.01)
-trans = AddAlpha
-alpha = IfElse((Time-153)*24<256,(Time-153)*24,256),256-IfElse((Time-153)*24<256,(Time-153)*24,256)
-
-[State 3001, Transition sound 4]
-type = PlaySnd
-trigger1 = Time = 153
-value = S1,12
-channel = 6
-
-[State 3001, Original manga shot 5]
-type = Explod
-trigger1 = Time = 194
-anim = 8004
-ID = 8004
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 81
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 5]
-type = ModifyExplod
-trigger1 = Time = [194,274]
-ID = 8004
-pos = GameWidth*((1-(1.03+((Time-194)/81.0)*0.018))/2.0+((Time-194)/81.0)*0),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-194)/81.0)*0.018))/2.0+GameWidth*9.0/16.0*((Time-194)/81.0)*-0.01
-scale = GameWidth/1280.0*(1.03+((Time-194)/81.0)*0.018),GameWidth/1280.0*(1.03+((Time-194)/81.0)*0.018)
-trans = AddAlpha
-alpha = IfElse((Time-194)*24<256,(Time-194)*24,256),256-IfElse((Time-194)*24<256,(Time-194)*24,256)
-
-[State 3001, Transition sound 5]
-type = PlaySnd
-trigger1 = Time = 194
-value = S1,12
-channel = 6
-
-[State 3001, Original manga shot 6]
-type = Explod
-trigger1 = Time = 263
-anim = 8005
-ID = 8005
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 77
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 6]
-type = ModifyExplod
-trigger1 = Time = [263,339]
-ID = 8005
-pos = GameWidth*((1-(1.03+((Time-263)/77.0)*0.025))/2.0+((Time-263)/77.0)*0),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-263)/77.0)*0.025))/2.0+GameWidth*9.0/16.0*((Time-263)/77.0)*-0.012
-scale = GameWidth/1280.0*(1.03+((Time-263)/77.0)*0.025),GameWidth/1280.0*(1.03+((Time-263)/77.0)*0.025)
-trans = AddAlpha
-alpha = IfElse((Time-263)*24<256,(Time-263)*24,256),256-IfElse((Time-263)*24<256,(Time-263)*24,256)
-
-[State 3001, Transition sound 6]
-type = PlaySnd
-trigger1 = Time = 263
-value = S1,12
-channel = 6
-
-[State 3001, Original manga shot 7]
-type = Explod
-trigger1 = Time = 328
-anim = 8006
-ID = 8006
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 74
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 7]
-type = ModifyExplod
-trigger1 = Time = [328,401]
-ID = 8006
-pos = GameWidth*((1-(1.03+((Time-328)/74.0)*0.01))/2.0+((Time-328)/74.0)*-0.006),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-328)/74.0)*0.01))/2.0+GameWidth*9.0/16.0*((Time-328)/74.0)*0
-scale = GameWidth/1280.0*(1.03+((Time-328)/74.0)*0.01),GameWidth/1280.0*(1.03+((Time-328)/74.0)*0.01)
-trans = AddAlpha
-alpha = IfElse((Time-328)*24<256,(Time-328)*24,256),256-IfElse((Time-328)*24<256,(Time-328)*24,256)
-
-[State 3001, Transition sound 7]
-type = PlaySnd
-trigger1 = Time = 328
-value = S1,12
-channel = 6
-
-[State 3001, Original manga shot 8]
-type = Explod
-trigger1 = Time = 390
-anim = 8007
-ID = 8007
-space = Screen
-postype = Left
-pos = -GameWidth*.01,(GameHeight-GameWidth*9.0/16.0)/2.0-GameWidth*.01*9.0/16.0
-facing = 1
-vfacing = 1
-bindtime = -1
-scale = GameWidth/1280.0*1.02,GameWidth/1280.0*1.02
-removetime = 47
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-
-[State 3001, Camera and crossfade shot 8]
-type = ModifyExplod
-trigger1 = Time = [390,436]
-ID = 8007
-pos = GameWidth*((1-(1.03+((Time-390)/47.0)*0.018))/2.0+((Time-390)/47.0)*0.004),(GameHeight-GameWidth*9.0/16.0*(1.03+((Time-390)/47.0)*0.018))/2.0+GameWidth*9.0/16.0*((Time-390)/47.0)*-0.004
-scale = GameWidth/1280.0*(1.03+((Time-390)/47.0)*0.018),GameWidth/1280.0*(1.03+((Time-390)/47.0)*0.018)
-trans = AddAlpha
-alpha = IfElse((Time-390)*24<256,(Time-390)*24,256),256-IfElse((Time-390)*24<256,(Time-390)*24,256)
-
-[State 3001, Transition sound 8]
-type = PlaySnd
-trigger1 = Time = 390
-value = S1,12
-channel = 6
-
-[State 3001, White memory flash]
+[State 3001, Omnipotence release flash]
 type = EnvColor
 trigger1 = Time = 432
 value = 245,248,255
 time = 5
 under = 0
-
-[State 3001, Remove remaining panel]
+[State 3001, Clear the cinematic]
 type = RemoveExplod
 trigger1 = Time = 437
-
 [State 3001, Release sound]
 type = PlaySnd
 trigger1 = Time = 435
 value = S1,13
 channel = 6
-
-[State 3001, Confirmed damage]
+[State 3001, Confirmed finite damage]
 type = TargetLifeAdd
 trigger1 = Time = 436
 trigger1 = NumTarget(3000) > 0
@@ -444,21 +225,18 @@ ID = 3000
 value = -350
 kill = 1
 absolute = 1
-
 [State 3001, Release victim]
 type = TargetState
 trigger1 = Time = 438
 trigger1 = NumTarget(3000) > 0
 ID = 3000
 value = 3011
-
-[State 3001, Final impact]
+[State 3001, Release impact]
 type = EnvShake
 trigger1 = Time = 438
 time = 12
 freq = 80
 ampl = -3
-
 [State 3001, Recovery]
 type = ChangeState
 trigger1 = Time >= 462
