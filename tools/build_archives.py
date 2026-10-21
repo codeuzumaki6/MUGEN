@@ -93,7 +93,11 @@ def png_to_indexed(
 def build_sff(destination: Path) -> None:
     records = []
     effect_axes = json.loads((ASSETS / 'effects/reference/axes.json').read_text())
-    for group, number, path in SPRITES:
+    polish_manifest = ASSETS/'polish/manifest.json'
+    polish = json.loads(polish_manifest.read_text()) if polish_manifest.exists() else []
+    extra = [(p['group'],p['number'],CHAR/p['file']) for p in polish]
+    effect_axes.update({f"{p['group']},{p['number']}":p['axis'] for p in polish})
+    for group, number, path in SPRITES + extra:
         if not path.exists():
             raise FileNotFoundError(path)
         target_size = (25, 25) if (group, number) == (9000, 0) else None
@@ -202,6 +206,10 @@ def build_snd(destination: Path) -> None:
         (1, 14, ASSETS / "sound/daemon_finish.wav"),
         (1, 15, ASSETS / "sound/daemon_lift.wav"),
         (1, 16, ASSETS / "sound/support_gesture.wav"),
+        (1, 17, ASSETS / "sound/senrigan_charge_loop.wav"),
+        (1, 18, ASSETS / "sound/senrigan_release.wav"),
+        (1, 19, ASSETS / "sound/daemon_impact_finish.wav"),
+        (1, 20, ASSETS / "sound/soft_footfall.wav"),
         # Generic movement/get-up aliases used by the proven Code common-state
         # implementation retained for MUGEN 1.1 compatibility.
         (100, 0, ASSETS / "sound/swing.wav"),
@@ -237,5 +245,5 @@ if __name__ == "__main__":
     CHAR.mkdir(parents=True, exist_ok=True)
     build_sff(CHAR / "Eida.sff")
     build_snd(CHAR / "Eida.snd")
-    print(f"Built {CHAR / 'Eida.sff'} with {len(SPRITES)} sprites")
+    print(f"Built {CHAR / 'Eida.sff'} with {struct.unpack_from('<I', (CHAR/'Eida.sff').read_bytes(),40)[0]} sprites")
     print(f"Built {CHAR / 'Eida.snd'}")

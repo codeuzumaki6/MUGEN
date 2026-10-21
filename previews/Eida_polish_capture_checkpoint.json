@@ -1,0 +1,283 @@
+{
+  "runtime_sha256": "3c846c9214634ebd815d83c49841db3a33c8a28c3624b67120750ae1fee2aae2",
+  "scenes": {
+    "charge": {
+      "video_sha256": "f5a6a33a98db9c7256b532e6d451e1b1b1d788bb8c9067cc57fb9206f4dc09df",
+      "audio": {
+        "case": "charge",
+        "frames": 53,
+        "duration": 3.6333333333333333,
+        "cue": "senrigan_charge_loop.wav",
+        "activation_tick": 21,
+        "activation_correlation": 0.9990087131801675,
+        "alignment_start_seconds": 4.5404081632653055,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "4353c256380e22ecb5baec1e312a4e591a3f605ce47b642ff39ec61a00d42d9d",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "charge",
+            "face": 1,
+            "distance": 180
+          },
+          "states": [
+            0,
+            500
+          ],
+          "new_poses": [
+            [
+              350,
+              0
+            ],
+            [
+              350,
+              1
+            ],
+            [
+              350,
+              2
+            ],
+            [
+              350,
+              3
+            ]
+          ],
+          "damage": 0.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 0.0,
+          "max_finish_fx": 0.0,
+          "failures": []
+        }
+      ]
+    },
+    "run": {
+      "video_sha256": "95660a0b659ca9e1fc002958c2788bc428a5dec0ef71ebdcecefb1e94d0343d6",
+      "audio": {
+        "case": "run",
+        "frames": 53,
+        "duration": 3.6166666666666667,
+        "cue": "soft_footfall.wav",
+        "activation_tick": 36,
+        "activation_correlation": 0.8123990593414929,
+        "alignment_start_seconds": 4.661950113378684,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "ad74f8548f5ca43da53357119aebecf27e0c751529289fdae5609cc83db56731",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "run",
+            "face": 1,
+            "distance": 280
+          },
+          "states": [
+            0,
+            20,
+            100,
+            106
+          ],
+          "new_poses": [
+            [
+              351,
+              0
+            ],
+            [
+              351,
+              1
+            ],
+            [
+              351,
+              2
+            ],
+            [
+              351,
+              3
+            ],
+            [
+              351,
+              4
+            ],
+            [
+              351,
+              5
+            ]
+          ],
+          "damage": 0.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 2.0,
+          "max_finish_fx": 0.0,
+          "failures": []
+        }
+      ]
+    },
+    "land": {
+      "video_sha256": "71330854a95d561e54c157b6e8ad9532f9bff811c663437b34870b9096d6a204",
+      "audio": {
+        "case": "land",
+        "frames": 32,
+        "duration": 3.6166666666666667,
+        "cue": "soft_footfall.wav",
+        "activation_tick": 54,
+        "activation_correlation": 0.8562832201604941,
+        "alignment_start_seconds": 4.5941496598639455,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "4931a6b0b3c91f8c2c91aec1389030611c10effaa02f2686685902f7ec22ab6f",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "land",
+            "face": 1,
+            "distance": 180
+          },
+          "states": [
+            0,
+            40,
+            50,
+            52
+          ],
+          "new_poses": [
+            [
+              351,
+              6
+            ],
+            [
+              351,
+              7
+            ]
+          ],
+          "damage": 0.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 1.0,
+          "max_finish_fx": 0.0,
+          "failures": []
+        }
+      ]
+    },
+    "finisher": {
+      "video_sha256": "7cfd6bbec0f374938164df51b50707aa9f3a034804f8714c0cea181f91043607",
+      "audio": {
+        "case": "finisher",
+        "frames": 49,
+        "duration": 3.6333333333333333,
+        "cue": "daemon_impact_finish.wav",
+        "activation_tick": 40,
+        "activation_correlation": 0.58643662814995,
+        "alignment_start_seconds": 5.774829931972789,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "2634e7c528849d5273a264ce296d1aec7f337537f43c00a92dc89ba701fcb082",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "finisher",
+            "face": 1,
+            "distance": 36
+          },
+          "states": [
+            0,
+            210,
+            211
+          ],
+          "new_poses": [],
+          "damage": 122.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 0.0,
+          "max_finish_fx": 1.0,
+          "failures": []
+        }
+      ]
+    },
+    "daemon": {
+      "video_sha256": "a8de5ff82b60c71e08288f1ac1befeb36c82edd489a3f63df23dc72b82e78dbd",
+      "audio": {
+        "case": "daemon",
+        "frames": 44,
+        "duration": 3.6333333333333333,
+        "cue": "daemon_impact_finish.wav",
+        "activation_tick": 92,
+        "activation_correlation": 0.5866570648136482,
+        "alignment_start_seconds": 5.69764172335601,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "60784e61979f2ecf53d563988cfb92ca8992d563dd82920b406641a0e3f21473",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "daemon",
+            "face": 1,
+            "distance": 120
+          },
+          "states": [
+            0,
+            1060
+          ],
+          "new_poses": [],
+          "damage": 170.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 0.0,
+          "max_finish_fx": 1.0,
+          "failures": []
+        }
+      ]
+    },
+    "win": {
+      "video_sha256": "e839e16b842d4f576d089c086cf036330b2b9fcd914c60614369a73d00055d1a",
+      "audio": {
+        "case": "win",
+        "frames": 80,
+        "duration": 6.35,
+        "cue": "senrigan_release.wav",
+        "activation_tick": 160,
+        "activation_correlation": 0.48650456353529825,
+        "alignment_start_seconds": 7.146394557823129,
+        "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+        "raw_audio_sha256": "baa8ddc74766909c5c344cc50371a6cc4ceee69acd1723e83107afbfbb8eba00",
+        "near_full_scale_fraction": 0.0
+      },
+      "reports": [
+        {
+          "case": {
+            "kind": "win",
+            "face": 1,
+            "distance": 36
+          },
+          "states": [
+            0,
+            180,
+            200
+          ],
+          "new_poses": [
+            [
+              350,
+              4
+            ],
+            [
+              350,
+              5
+            ],
+            [
+              350,
+              6
+            ],
+            [
+              350,
+              7
+            ]
+          ],
+          "damage": 24.0,
+          "received_damage": 0.0,
+          "max_foot_fx": 0.0,
+          "max_finish_fx": 0.0,
+          "failures": []
+        }
+      ]
+    }
+  }
+}

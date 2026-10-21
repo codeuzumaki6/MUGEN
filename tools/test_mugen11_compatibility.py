@@ -15,6 +15,18 @@ def validate(character):
                           capture_output=True,text=True)
 
 class CompatibilityRegression(unittest.TestCase):
+    def test_invalid_victory_flag_is_rejected(self):
+        with tempfile.TemporaryDirectory(prefix='eida-victory-regression-') as directory:
+            character=Path(directory)/'Eida';character.mkdir()
+            for source in (ROOT/'Eida').iterdir():
+                if source.is_file():shutil.copy2(source,character/source.name)
+            path=character/'Eida.cns'
+            text=path.read_text();self.assertIn('flag = RoundNotOver',text)
+            path.write_text(text.replace('flag = RoundNotOver','flag = WinPose',1))
+            result=validate(character)
+            self.assertNotEqual(result.returncode,0)
+            self.assertIn('invalid MUGEN AssertSpecial flag WinPose',result.stdout)
+
     def test_current_runtime_passes(self):
         result=validate(ROOT/'Eida')
         self.assertEqual(result.returncode,0,result.stdout+result.stderr)

@@ -106,6 +106,9 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
         if group == 340:
             check((width,height,axis_x,axis_y)==(96,72,48,70),
                   f'Eida.sff: support frame {number} changed its shared scale/origin')
+        if group in (350,351):
+            check((width,height,axis_x,axis_y)==(128,80,64,78),
+                  f'Eida.sff: presentation frame {group},{number} lost its shared feet origin')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites
@@ -245,6 +248,11 @@ def main() -> None:
             if animation is not None and animation >= 0:
                 check(animation in actions, f'{filename} {header}: references missing animation {animation}')
         controller = (field(body, "type") or "").lower().split(";")[-1].strip()
+        if controller == 'assertspecial':
+            flags=set('intro invisible roundnotover nobardisplay nobg nofg noshadow globalnoshadow nomusic noautoturn nowalk timerfreeze unguardable nojugglecheck noko nokosnd nokoslow noguarddist noairguard nocrouchguard nostandguard'.split())
+            for key in ('flag','flag2','flag3'):
+                value=field(body,key)
+                if value:check(value.lower() in flags,f'{filename} {header}: invalid MUGEN AssertSpecial flag {value}')
         target = None
         if controller in {"changestate", "selfstate", "targetstate"}:
             target = integer(field(body, "value"))

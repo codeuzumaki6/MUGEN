@@ -440,6 +440,25 @@ trigger2 = FrontEdgeDist < -12
 trigger3 = P2Dist X < -35
 value = 1590
 
+; EIDA POLISH BEGIN
+[State 1501, Boot dust follows travelled distance]
+type = Explod
+triggerall = NumExplod(8550) < 2
+trigger1 = Time%8 = 0
+anim = 8500
+ID = 8550
+postype = P1
+pos = -8,0
+bindtime = 0
+removetime = 14
+scale = .45,.45
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1520]
 type = S
 movetype = A
@@ -449,6 +468,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1520, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1520, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1520, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1520, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -559,6 +598,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1520, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1520, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1520, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1520, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1520, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1520, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1520, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1521]
 type = S
 movetype = A
@@ -568,6 +699,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1521, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1521, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1521, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1521, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -813,6 +964,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1521, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1521, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1521, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1521, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1521, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1521, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1521, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1522]
 type = S
 movetype = A
@@ -822,6 +1065,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1522, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1522, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1522, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1522, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -887,6 +1150,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1522, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1522, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1522, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1522, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1522, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1522, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1522, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1523]
 type = S
 movetype = A
@@ -896,6 +1251,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1523, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1523, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1523, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1523, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -1006,6 +1381,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1523, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1523, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1523, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1523, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1523, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1523, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1523, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1524]
 type = C
 movetype = A
@@ -1015,6 +1482,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1524, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1524, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1524, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1524, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -1080,6 +1567,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1524, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-18
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1524, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-18
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1524, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1524, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1524, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1524, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-18
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1524, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1525]
 type = S
 movetype = A
@@ -1089,6 +1668,26 @@ ctrl = 0
 velset = 0,0
 sprpriority = 3
 
+; EIDA POLISH BEGIN
+[State 1525, Fresh presentation latch 33]
+type = VarSet
+trigger1 = Time = 0
+v = 33
+value = 0
+ignorehitpause = 1
+[State 1525, Fresh presentation latch 34]
+type = VarSet
+trigger1 = Time = 0
+v = 34
+value = 0
+ignorehitpause = 1
+[State 1525, Fresh presentation latch 35]
+type = VarSet
+trigger1 = Time = 0
+v = 35
+value = 0
+ignorehitpause = 1
+; EIDA POLISH END
 [State 1525, Helper interruption lifecycle]
 type = DestroySelf
 trigger1 = Root,MoveType = H
@@ -1379,6 +1978,98 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 1580
 
+; EIDA POLISH BEGIN
+[State 1525, Confirmed contact fragments]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+anim = 8510
+ID = 8551
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1525, Confirmed finishing burst]
+type = Explod
+triggerall = Time >= 28
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+anim = 8510
+ID = 8553
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .9,.8
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1525, Weight on confirmed finisher]
+type = PlaySnd
+triggerall = Time >= 28
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+value = S1,19
+channel = 5
+volumescale = 75
+ignorehitpause = 1
+[State 1525, Latch finishing presentation]
+type = VarSet
+triggerall = Time >= 28
+triggerall = MoveHit
+triggerall = HitCount > Var(33)
+trigger1 = Var(34) = 0
+v = 34
+value = 1
+ignorehitpause = 1
+[State 1525, Remember emitted contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+trigger1 = HitCount > Var(33)
+v = 33
+value = HitCount
+ignorehitpause = 1
+[State 1525, Small guarded contact]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+anim = 8510
+ID = 8554
+postype = P1
+pos = 30,-30
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 210,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1525, Remember guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(35) = 0
+v = 35
+value = 1
+ignorehitpause = 1
+; EIDA POLISH END
 [Statedef 1580]
 type = S
 movetype = I

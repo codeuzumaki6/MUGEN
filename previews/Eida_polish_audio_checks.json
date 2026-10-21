@@ -1,0 +1,74 @@
+[
+  {
+    "case": "charge",
+    "frames": 53,
+    "duration": 3.6333333333333333,
+    "cue": "senrigan_charge_loop.wav",
+    "activation_tick": 21,
+    "activation_correlation": 0.9990087131801675,
+    "alignment_start_seconds": 4.5404081632653055,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "4353c256380e22ecb5baec1e312a4e591a3f605ce47b642ff39ec61a00d42d9d",
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "run",
+    "frames": 53,
+    "duration": 3.6166666666666667,
+    "cue": "soft_footfall.wav",
+    "activation_tick": 36,
+    "activation_correlation": 0.8123990593414929,
+    "alignment_start_seconds": 4.661950113378684,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "ad74f8548f5ca43da53357119aebecf27e0c751529289fdae5609cc83db56731",
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "land",
+    "frames": 32,
+    "duration": 3.6166666666666667,
+    "cue": "soft_footfall.wav",
+    "activation_tick": 54,
+    "activation_correlation": 0.8562832201604941,
+    "alignment_start_seconds": 4.5941496598639455,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "4931a6b0b3c91f8c2c91aec1389030611c10effaa02f2686685902f7ec22ab6f",
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "finisher",
+    "frames": 49,
+    "duration": 3.6333333333333333,
+    "cue": "daemon_impact_finish.wav",
+    "activation_tick": 40,
+    "activation_correlation": 0.58643662814995,
+    "alignment_start_seconds": 5.774829931972789,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "2634e7c528849d5273a264ce296d1aec7f337537f43c00a92dc89ba701fcb082",
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "daemon",
+    "frames": 44,
+    "duration": 3.6333333333333333,
+    "cue": "daemon_impact_finish.wav",
+    "activation_tick": 92,
+    "activation_correlation": 0.5866570648136482,
+    "alignment_start_seconds": 5.69764172335601,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "60784e61979f2ecf53d563988cfb92ca8992d563dd82920b406641a0e3f21473",
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "win",
+    "frames": 80,
+    "duration": 6.35,
+    "cue": "senrigan_release.wav",
+    "activation_tick": 160,
+    "activation_correlation": 0.48650456353529825,
+    "alignment_start_seconds": 7.146394557823129,
+    "audio_source": "Actual SDL disk output, stereo S16LE 44100 Hz; no offline SFX mix",
+    "raw_audio_sha256": "baa8ddc74766909c5c344cc50371a6cc4ceee69acd1723e83107afbfbb8eba00",
+    "near_full_scale_fraction": 0.0
+  }
+]

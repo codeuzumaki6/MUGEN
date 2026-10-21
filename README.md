@@ -50,49 +50,47 @@ Eida y los originales se conservan sin cambios.
 
 ---
 
-# Eida para Jump Force MUGEN V14
+# Eida — movimiento, Senrigan e impactos
 
-[Descargar Eida: coreografía y Omnipotencia](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_COREOGRAFIA_Y_OMNIPOTENCIA.zip)
+[**Descargar Eida actualizada**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_ACABADO.zip)
 
-Sustituye la carpeta `chars/Eida` completa por la del ZIP. Incluye todos los archivos de ejecución y los controles. Se conserva la corrección del derribo: Eida se levanta automáticamente mientras siga viva.
+[**Ver el acabado con audio real del motor**](previews/Eida_ACABADO.mp4) · [Carga](previews/Eida_acabado_charge_motor.gif) · [Carrera y frenado](previews/Eida_acabado_run_motor.gif) · [Daemon](previews/Eida_acabado_daemon_motor.gif) · [Victoria](previews/Eida_acabado_win_motor.gif)
 
-Esta revisión añade seis poses de apoyo de Eida, ajustadas al tamaño del reposo: preparación, observación, extensión de la mano y recuperación. Se aplican a las llamadas de Daemon, encanto y apertura de Omnipotencia. El reposo conserva sus seis cuadros originales. Daemon tiene contactos con distintos tiempos, recuperación del golpe y retirada antes de desaparecer. Hay tres efectos no verbales nuevos y chispas normales que se emiten una vez por impacto.
+- **Movimiento y carga:** 16 poses nuevas repartidas entre carrera, frenado, aterrizaje, carga Senrigan y victoria. Cabello en movimiento, apoyo de pies y polvo. La carga se detiene al soltar LB, llenar la barra o recibir un golpe.
+- **Contactos y remates:** doce cuadros de efectos nuevos y cuatro sonidos no verbales. Eida y Daemon distinguen impacto, bloqueo y fallo; el estallido final requiere acertar esa parte del ataque. Contadores por estado evitan repetir efectos durante hitpause o heredar el impacto del ataque anterior.
+- **Victoria:** gesto, cabello y pose final con la misma blusa y shorts del combate; énfasis temporal del escenario y margen de cámara. Se comprueba tras un KO real de prueba en ambas orientaciones.
+- **Combate conservado:** 14 técnicas, ramas de Daemon, persecución aérea, encanto por proyectil, parry, costes y recuperación tras derribo. El reposo mantiene sus seis cuadros y el despertar mantiene su cuerpo y tamaño. Daemon conserva su diseño y escala.
+- **Omnipotencia con A:** ocho encuadres originales a 1280×720, voz japonesa intacta, coste de tres barras y daño de 350. La apertura debe conectar: bloquearla, saltarla o dejarla fuera de alcance consume la energía sin iniciar la escena.
 
-Omnipotencia usa ocho encuadres de los paneles originales a 1280×720, con tiempos distintos, cámara alternada y un fondo negro que separa la escena del combate. Conserva la voz japonesa suministrada. La apertura con A debe conectar: bloquearla, saltarla o dejarla fuera de alcance consume las tres barras sin iniciar la escena ni causar daño. Al acertar, causa 350 y libera al rival.
+Sustituye `chars/Eida` completa por la carpeta del ZIP. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si hace falta. [Controles Xbox](Eida/CONTROLES_XBOX.md) · [Instalación y límites](Eida/LEEME.md) · [Créditos y fuentes](Eida/CREDITOS_Y_FUENTES.md) · [Procedencia del nuevo arte](design/Eida_acabado/REVISION.md).
 
-Daemon concentra la ofensiva fuerte. Senrigan prepara su respuesta física; no causa daño por observar. Encanto, parry, despertar y apertura/daño de Omnipotencia tienen reglas adaptadas a un juego de pelea. Las nuevas poses no completan todos los ciclos pendientes ni alcanzan por sí solas la referencia artística de Sumire.
+La voz, los paneles originales del manga y los dibujos de Daemon se conservan. Las poses y efectos nuevos se generaron con IA; no se modificaron caras de los paneles ni se generaron voces. Las nuevas poses se calibran a los 68 píxeles del reposo y comparten escala dentro de cada hoja. El SFF contiene 194 entradas, el SND 30 muestras y el AIR 123 acciones. El material conserva variaciones de detalle y no se declara alcanzado el acabado de Sumire.
 
-[Controles físicos de Xbox](Eida/CONTROLES_XBOX.md) · [Detalles y límites](Eida/LEEME.md) · [Fuentes del arte y sonido](Eida/CREDITOS_Y_FUENTES.md)
+Senrigan prepara la respuesta física de Daemon; observar no causa daño. Encanto, parry, despertar y apertura/daño de Omnipotencia mantienen reglas adaptadas al juego de pelea. No se añadieron poderes ofensivos nuevos.
 
-## Capturas del motor
+Pruebas en Ikemen GO: [80 controles y colisiones](previews/engine_moveset_checks.json), [seis derribos y recuperación](previews/engine_recovery_checks.json), [nueve aperturas de ultimate](previews/engine_ultimate_checks.json), [22 de presentación](previews/Eida_polish_checks.json) y [dos victorias reales](previews/Eida_polish_win_checks.json): **119 escenarios**. Se añaden cinco regresiones del validador para errores de carga, impacto infinito y flag de victoria inválido, y [reconstrucción determinista](previews/Eida_polish_rebuild_checks.json).
 
-Capturadas en Ikemen GO. El escenario y las barras de Jump Force MUGEN V14 son diferentes. El audio del MP4 se mezcla fuera del motor con las mismas muestras y tiempos de la cinemática; no es una grabación del dispositivo de sonido del juego.
+El [video nuevo](previews/Eida_ACABADO.mp4) reproduce seis escenas a velocidad normal y captura audio real SDL a 44100 Hz estéreo, alineado por correlación con las muestras del SND. [Registro de audio](previews/Eida_polish_audio_checks.json) · [Comprobaciones de captura](previews/Eida_polish_visual_checks.json). No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando físico; el escenario y las barras de las pruebas son diferentes.
 
-[Omnipotencia en MP4 720p con audio](previews/Omnipotencia_motor_HD.mp4) · [Omnipotencia GIF](previews/Omnipotencia_motor_HD.gif)
+[Omnipotencia anterior en MP4 720p](previews/Omnipotencia_motor_HD.mp4) · [Y → X con Daemon](previews/Eida_Y_X_Daemon_motor.gif) · [Persecución aérea](previews/Eida_persecucion_aerea_motor.gif) · [Recuperación](previews/Eida_se_levanta_motor.gif). El MP4 antiguo de Omnipotencia usa audio mezclado fuera del motor y representa la revisión anterior de esa cinemática.
 
-[Y → X con Daemon](previews/Eida_Y_X_Daemon_motor.gif) · [B → Y launcher](previews/Eida_B_Y_Daemon_motor.gif) · [Encanto → Daemon](previews/Eida_encanto_Daemon_motor.gif)
-
-[Persecución aérea](previews/Eida_persecucion_aerea_motor.gif) · [Senrigan con respuesta física](previews/Eida_Senrigan_Daemon_motor.gif) · [Recuperación tras derribo](previews/Eida_se_levanta_motor.gif)
-
-## Desarrollo y validación
-
-Trabaja en el checkout existente. Requisitos: Python 3 con Pillow, ffmpeg y el motor Ikemen GO verificado en `/workspace/.eida-tools/ikemen-nightly`. No se necesitan servidores. El binario exacto de Jump Force MUGEN V14 y el mando físico requieren pruebas locales.
+Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
 ```sh
 python3 tools/build_presentation.py
 python3 tools/build_moveset.py
 python3 tools/build_cinematic.py
+python3 tools/build_eida_polish.py
 python3 tools/build_archives.py
 python3 tools/validate_character.py Eida
 python3 tools/test_mugen11_compatibility.py
-python3 tools/check_moves_in_engine.py /ruta/al/motor/ikemen
-EIDA_RECOVERY_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/motor/ikemen
-EIDA_ULTIMATE_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/motor/ikemen
-python3 tools/make_recovery_combo_previews.py /ruta/al/motor/ikemen
-python3 tools/make_ultimate_preview.py /ruta/al/motor/ikemen
+python3 tools/check_eida_rebuild.py
+python3 tools/check_moves_in_engine.py /ruta/al/ikemen
+EIDA_RECOVERY_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
+EIDA_ULTIMATE_CHECK=1 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
+python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
+EIDA_WIN_CHECK=1 python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
+EIDA_WIN_CHECK=1 EIDA_WIN_FACING=-1 python3 tools/check_eida_polish_in_engine.py /ruta/al/ikemen
+python3 tools/make_eida_polish_previews.py /ruta/al/ikemen
 python3 tools/package_character.py
 ```
-
-Los 95 escenarios comprobados se distribuyen en [80 de movimientos, combos y defensa](previews/engine_moveset_checks.json), [6 de derribos y recuperación](previews/engine_recovery_checks.json) y [9 de Omnipotencia](previews/engine_ultimate_checks.json). Las nuevas comprobaciones verifican que bloquear los normales corta las ramas de Daemon, que bloquear/esquivar encanto evita la ayuda y su coste adicional, que golpear a Eida interrumpe una ayuda activa en un máximo de un tick, y que golpear solo a Daemon lo elimina al impacto sin dejar un ayudante bloqueado. Cuatro pruebas del validador cubren el archivo actual y las regresiones de compatibilidad y caída.
-
-Las pruebas usan copias instrumentadas fuera de la carpeta entregada y restauran el diagnóstico del motor. Los CNS/CMD/AIR entregados usan sintaxis de MUGEN 1.1. La carga en Ikemen y el validador no sustituyen ejecutar el juego exacto del usuario ni equilibrar partidas contra todo su plantel.

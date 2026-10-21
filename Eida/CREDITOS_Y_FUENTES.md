@@ -12,3 +12,6 @@
 
 - Revisión de coreografía: seis poses nuevas de apoyo de Eida generadas con IA con las referencias de sprites actuales. La hoja de procedencia se conserva en `Eida/assets/provenance/eida_support_sheet.png` del repositorio. Se separaron sus celdas y ajustaron a la altura visible del reposo, sin sustituirlo. No se usó IA para los paneles del manga ni para voces.
 - `daemon_finish.wav`, `daemon_lift.wav` y `support_gesture.wav`: efectos no verbales creados con osciladores y ruido mediante `tools/build_presentation.py`.
+
+- Acabado: 16 poses nuevas de carga, carrera, frenado, aterrizaje y victoria, y doce cuadros de polvo/contacto/arcos generados con IA. Fuentes conservadas en `design/Eida_acabado/` y manifiesto de recortes/ejes en `Eida/assets/polish/manifest.json`. Los cuerpos de pie se calibran a la altura del reposo; no se redibujaron paneles ni se alteraron voces.
+- `senrigan_charge_loop.wav`, `senrigan_release.wav`, `daemon_impact_finish.wav`, `soft_footfall.wav`: efectos no verbales originales de osciladores y ruido filtrado; parámetros y SHA-256 en `Eida/assets/polish/sounds.json`.

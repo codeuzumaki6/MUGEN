@@ -1,0 +1,37 @@
+[
+  {
+    "case": {
+      "kind": "win",
+      "face": 1,
+      "distance": 36
+    },
+    "states": [
+      0,
+      180,
+      200
+    ],
+    "new_poses": [
+      [
+        350,
+        4
+      ],
+      [
+        350,
+        5
+      ],
+      [
+        350,
+        6
+      ],
+      [
+        350,
+        7
+      ]
+    ],
+    "damage": 24.0,
+    "received_damage": 0.0,
+    "max_foot_fx": 0.0,
+    "max_finish_fx": 0.0,
+    "failures": []
+  }
+]
