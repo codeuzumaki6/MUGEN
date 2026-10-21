@@ -643,9 +643,9 @@
   },
   {
     "name": "omnipotencia_abrazo",
-    "runtime_sha256": "d201561e1cd5814fc32b6395971c486b5982cb7b68d8b62ce3e48528cf649e95",
-    "frames": 91,
-    "duration": 9.133333333333333,
+    "runtime_sha256": "0353538c9f5828b8bccd455dca667671fcf04f97d7f10a8b061f350c3c66a65c",
+    "frames": 51,
+    "duration": 3.6833333333333336,
     "audio_source": "Actual SDL stereo S16LE 44100 Hz output; no offline mix",
     "image_sync": "Piecewise synchronization to each actual activation waveform; audio is neither remixed nor time-stretched",
     "activations": [
@@ -653,8 +653,8 @@
         "case": "ultimatehit",
         "state": 3000,
         "cue_frame": 25,
-        "actual_sample_seconds": 4.96907029478458,
-        "normalized_correlation": 0.6405549411951197,
+        "actual_sample_seconds": 5.015510204081632,
+        "normalized_correlation": 0.6649045801564307,
         "timing_error_seconds": 0.0
       }
     ],
@@ -688,11 +688,125 @@
         "charm_marker": false,
         "dash_travel": 0.0,
         "jump_apex": 0.0,
-        "victim_end_state": 5110,
+        "victim_end_state": 0,
         "failures": []
       }
     ],
-    "raw_audio_sha256": "d456901bcda6db0fbcbaef32849103a958b3626343ba841fbc2aea8e9c9ed9aa",
-    "near_full_scale_fraction": 0.0
+    "raw_audio_sha256": "547acab87582261a4c1f8e9ae9286ea7f3a408678af8042aef70f8f35bd3630c",
+    "near_full_scale_fraction": 0.0,
+    "compact_scene_checks": {
+      "kind": "static file checks",
+      "source_frame_references": [
+        [
+          8600,
+          0
+        ],
+        [
+          8600,
+          1
+        ]
+      ],
+      "authored_rows": 9,
+      "authored_ticks": 98,
+      "recovery_controller_tick": 160,
+      "sprites": [
+        {
+          "group": 8600,
+          "number": 0,
+          "width": 96,
+          "height": 88,
+          "axis": [
+            48,
+            86
+          ]
+        },
+        {
+          "group": 8600,
+          "number": 1,
+          "width": 96,
+          "height": 88,
+          "axis": [
+            48,
+            86
+          ]
+        }
+      ],
+      "damage": 350,
+      "original_source": {
+        "file": "design/Eida_omnipotencia/original/Eida_sprites_en_captura.png",
+        "sha256": "a08cc811e7c2773a9105b55b628fea455c51090e9def8f4f21df28fee306a25e",
+        "poses": [
+          {
+            "number": 0,
+            "source_box": [
+              8,
+              624,
+              64,
+              709
+            ],
+            "trim_box": [
+              3,
+              3,
+              53,
+              82
+            ],
+            "native_figure_size": [
+              50,
+              79
+            ],
+            "canvas": [
+              96,
+              88
+            ],
+            "feet_axis": [
+              48,
+              86
+            ],
+            "visible_pixels": 2031,
+            "rgba_pixels_match_source": true
+          },
+          {
+            "number": 1,
+            "source_box": [
+              66,
+              622,
+              118,
+              707
+            ],
+            "trim_box": [
+              3,
+              3,
+              49,
+              82
+            ],
+            "native_figure_size": [
+              46,
+              79
+            ],
+            "canvas": [
+              96,
+              88
+            ],
+            "feet_axis": [
+              48,
+              86
+            ],
+            "visible_pixels": 1886,
+            "rgba_pixels_match_source": true
+          }
+        ],
+        "processing": "Green alpha key and packing only; source RGBA comparison at native scale. SFF may quantize colors for its indexed palette."
+      },
+      "engine_trace": {
+        "first_scene_frame": 49.0,
+        "last_scene_frame": 208.0,
+        "last_scene_time": 159.0,
+        "first_hug_time": 12.0,
+        "last_hug_time": 109.0,
+        "returned_idle_frame": 209.0,
+        "thumbnail_frame": 94.0,
+        "visible_frame_samples": 98
+      }
+    }
   }
 ]

@@ -1,18 +1,18 @@
 {
-  "archive": "Eida_SONIDO_Y_ABRAZO.zip",
-  "bytes": 4234798,
-  "sha256": "a77b83147e0b5db11a408aec01b41e471a045770a3fa12a5c969f2592bd386fd",
+  "archive": "Eida_ULTI_SPRITES_ORIGINALES.zip",
+  "bytes": 4104153,
+  "sha256": "86d4ac814e09d681280fa9e181c50e80cc21904265413e5e2451c7e7c08411ad",
   "files": {
-    "Eida/CONTROLES_XBOX.md": "4a9f2a26fce5cac492d525a29820c4a425a396b363bb700a93e4132f8b19d006",
-    "Eida/CREDITOS_Y_FUENTES.md": "9a87a4363c7e0a04952d5ed4b0d203f3bce0ab37877ab5846a88160457a03a66",
-    "Eida/Eida.air": "6b7907c002c435c1184666180c88acb35e195a6903fa84ad05a5add1d3dfdcdd",
+    "Eida/CONTROLES_XBOX.md": "a5e792fd7d054798362ce63517b3ea49e4e86c97d62eca9b3be5eb7ad7e7f395",
+    "Eida/CREDITOS_Y_FUENTES.md": "97cc7a710fbc533480834b6ab5dc3365c35d880bbe7ab3756f94000e8af58329",
+    "Eida/Eida.air": "1efeeecbfb02f872155ce89bf6c87a25d8d1ecca7aeef896a5e710f2d6aa1260",
     "Eida/Eida.cmd": "2df864408a96c03fb0eb2b116ab4dd3effd1218b55efc49f0fd20ede2b20b161",
     "Eida/Eida.cns": "a5f3ca21431aa63f2775c70aa5187cd30e7e94184750e8828ecdd7e8471d8580",
     "Eida/Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
-    "Eida/Eida.sff": "f9bab21772f87df0aa18f47518ac3a32b882501226440ad117cfbf57bb0b518a",
+    "Eida/Eida.sff": "31e60e6dc06f779ccd0f2bba30109705b6f768b2594e8253d2fe974dd6bf7cfa",
     "Eida/Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
-    "Eida/LEEME.md": "42446e3b649df42c4827313eebb8b3b80b80897a8a15e04ef0bbb4a0548f2c4c",
-    "Eida/Omnipotencia.cns": "60d43dd3a867a3e90d7f0d43a0c2b6091602c31ab3c0b64d7f42ad9837d7294c",
+    "Eida/LEEME.md": "9e4b43789413be7c47c094498d14ebf2deacc09ffafe6138d856be0c16c10908",
+    "Eida/Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
     "Eida/Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
     "Eida/common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
   },
@@ -66,8 +66,8 @@
       }
     },
     "Eida_omnipotencia_abrazo_nuevo_motor.mp4": {
-      "bytes": 1911322,
-      "sha256": "fc00d177421a0b0aa025fdc4f5f02ea829add5d7342a5f035851e83fd249867c",
+      "bytes": 503206,
+      "sha256": "a251103adedc9ba4c17f42e2266cad3eebe922df473b861db712a1b539b4f00c",
       "media": {
         "programs": [],
         "stream_groups": [],
@@ -84,9 +84,11 @@
           }
         ],
         "format": {
-          "duration": "9.133333"
+          "duration": "3.682993"
         }
       }
     }
-  }
+  },
+  "revision": "Two original supplied embrace sprites, native scale 1; confirmed scene 160 ticks. Nine ultimate cases rerun; other historical combat cases retained unchanged.",
+  "native_source_proof": "previews/Eida_compact_scene_checks.json"
 }

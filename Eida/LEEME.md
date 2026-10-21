@@ -1,29 +1,36 @@
-# Eida — especiales audibles y Omnipotencia con Kawaki
+# Eida — Omnipotencia con los sprites originales
 
-Sustituye `chars/Eida` completa por la carpeta del ZIP `Eida_SONIDO_Y_ABRAZO.zip`. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si no estaba. Todos los archivos referenciados están incluidos.
+Sustituye `chars/Eida` completa por la carpeta del ZIP `Eida_ULTI_SPRITES_ORIGINALES.zip`. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si no estaba. Conserva juntos todos los archivos referenciados por el DEF.
 
 Consulta **CONTROLES_XBOX.md**. Mapeo físico conservado: X/Y/B para normales y jutsus, A para Omnipotencia, LB/Pausa para cargar, ↓LB/Pausa con tres barras para despertar.
 
-## Cambios
+## Omnipotencia compacta
 
-- Los 14 jutsus reproducen el efecto de activación no verbal que utiliza Pochita: muestra de Code_FUNCIONAL 950,2, empaquetada como SND 1,21, canal 4 al 100 %. Se oye al iniciar el jutsu, aunque el golpe falle. Hay un destello y una pausa de 12 ticks, o seis al cancelar un normal confirmado. No agrega invulnerabilidad ni cambia el coste.
-- Senrigan ↓atrás+Y es una espera de contraataque de unos 0.8 segundos. Eida lleva la mano al ojo; su caja de reversión conserva el tamaño anterior y funciona entre Time 0 y 48. Al confirmar, Daemon sale desde Eida y responde con un ataque físico. Sin golpe entrante no hay daño ni invocación: baja la mano, desaparece el icono y termina.
-- A inicia una apertura por colisión. Solo al acertar empieza Omnipotencia: ocho poses nuevas de acercamiento y abrazo a Kawaki, cabello animado y liberación de la onda. Los sprites de la cinemática conservan 180 píxeles de detalle de altura y se muestran a una escala controlada; no cambian el tamaño del cuerpo de combate.
-- El abrazo representa el recuerdo canónico con Kawaki aunque el rival sea otro personaje. El rival elegido sigue siendo el objetivo y regresa a sus propios estados. La apertura puede bloquearse, saltarse o quedar fuera de alcance. Cuesta 3000 incluso si falla; al confirmar causa 350 de daño, igual que antes.
-- El fondo de la escena usa un panel original de la onda de Omnipotencia atenuado, sin redibujarlo. No se retocaron los paneles ni las voces japonesas auténticas. Los ocho sprites nuevos sí se generaron con IA a partir de las referencias de postura y sprites aportadas.
+A conserva la apertura por colisión: puede bloquearse, saltarse o quedar fuera de alcance. Cuesta 3000 incluso si falla; solo al acertar empieza la escena y se aplican sus 350 de daño.
 
-Se conservan carrera, frenado, aterrizaje, carga, victoria y remates, las cadenas mixtas, persecución aérea, encanto por proyectil y parry de Daemon. El reposo mantiene sus seis cuadros exclusivos. El despertar mantiene el cuerpo, tamaño y aura existentes. Daemon conserva diseño, escala y aparición junto a Eida; puede fallar y ser interrumpido.
+El abrazo utiliza exactamente los dos sprites originales de Eida y Kawaki de la hoja suministrada. Se retira su fondo verde y se empaquetan a escala nativa 1, sin redibujar, agrandar ni sustituir sus píxeles visibles. Las figuras miden 50×79 y 46×79, dentro de lienzos transparentes de 96×88 con eje de pies 48,86. El cuerpo del personaje durante el combate no cambia.
+
+La escena permanece dentro del escenario, que se atenúa brevemente. No hay fondo de manga a pantalla completa ni acercamiento cinematográfico. Eida prepara el gesto durante los primeros 12 ticks; los dos cuadros del abrazo aparecen entre Time 12 y 109. El estallido comienza en 106, el daño se aplica en 122, el rival sale de la retención en 126 y Eida vuelve al control en 160: unos 2.67 segundos desde que se confirma la escena.
+
+Son dos cuadros originales con animación limitada. No se presenta su alternancia como un nuevo ciclo dibujado de acercamiento de manos y cuello. Las ocho poses generadas con IA de la versión anterior ya no se usan en el personaje. Los paneles originales y las voces japonesas se conservan sin modificar; no se generan voces.
+
+El abrazo representa el recuerdo canónico con Kawaki aunque el rival sea otro personaje. El rival elegido sigue siendo el objetivo y regresa a sus propios estados; no se convierte permanentemente en Kawaki. La apertura y el daño son una adaptación para un juego de pelea.
+
+## Especiales y Senrigan conservados
+
+- Los 14 jutsus mantienen el efecto de activación no verbal que utiliza Pochita: muestra de Code_FUNCIONAL 950,2, empaquetada como SND 1,21, canal 4 al 100 %. Se oye al iniciar el jutsu, aunque el golpe falle. Hay destello y pausa de 12 ticks, o seis al cancelar un normal confirmado. No agrega invulnerabilidad ni cambia el coste.
+- Senrigan ↓atrás+Y espera un golpe durante unos 0.8 segundos. Eida lleva la mano al ojo y su caja de reversión funciona entre Time 0 y 48. Al confirmar, Daemon aparece junto a Eida y responde físicamente. Sin golpe entrante no hay daño ni invocación: baja la mano, desaparece el icono y termina.
+
+Se conservan carrera, frenado, aterrizaje, carga, victoria, remates, cadenas mixtas, persecución aérea, encanto por proyectil y parry de Daemon. El reposo mantiene sus seis cuadros exclusivos. El despertar mantiene el cuerpo, tamaño y aura existentes. Daemon conserva diseño, escala y aparición junto a Eida; puede fallar y ser interrumpido.
 
 La recuperación tras derribos permanece corregida: mientras siga viva, Eida cae, se levanta y recupera el control. Los ayudantes golpeados se eliminan en sus propios estados en lugar de usar los de daño de Eida.
 
-## Comprobaciones
+## Archivos y comprobaciones
 
-SFF v2.0.1.0 con 202 entradas; SND con 31 muestras mono PCM de 16 bits; AIR con 124 acciones; 124 estados en cuatro CNS. Retrato de combate 25×25 y selección 120×140. Los ocho paneles originales siguen conservados a 1280×720 en el SFF, aunque la nueva escena principal utiliza los sprites del abrazo.
+SFF v2.0.1.0 con 196 entradas; SND con 31 muestras mono PCM de 16 bits; AIR con 124 acciones; 124 estados en cuatro CNS. Retrato de combate 25×25 y selección 120×140. Los ocho paneles originales conservados a 1280×720 siguen en los recursos, pero no forman el fondo de esta ulti.
 
-Pruebas en Ikemen GO: 80 escenarios de comandos/combate, seis de recuperación, nueve de apertura de ultimate, 22 de presentación, dos victorias reales y dos esperas de Senrigan sin ataque. Las siete regresiones estáticas incluyen los errores anteriores de carga, impacto infinito, flag de victoria inválido, caja de reversión ausente y especial sin sonido de activación. La reconstrucción repetida valida que no se acumulen estados o controladores.
+`tools/check_eida_compact_scene.py` contrasta los dos PNG con los recortes exactos de la hoja original, su SHA-256 y el empaquetado a escala 1. Comprueba las referencias AIR/SFF, la duración finita, el retorno previsto en 160 y el daño de 350. Con un registro de motor también comprueba la presencia del abrazo, su desaparición antes de Time 130 y el regreso observado a idle. Distingue esas comprobaciones de archivo de las observaciones del motor; no infiere control físico ni calidad visual a partir del texto. El informe de captura se guarda en `previews/Eida_compact_scene_checks.json` del repositorio.
 
-Los videos nuevos de especiales, Senrigan y abrazo capturan audio real SDL a 44100 Hz estéreo. Cada activación se contrasta con el WAV empaquetado; las imágenes se sincronizan con esos eventos de audio sin estirar ni mezclar la grabación. Los videos de revisiones anteriores no representan todos estos cambios.
+Las comprobaciones de combate y las capturas se realizan en Ikemen GO sobre copias instrumentadas fuera de la carpeta entregada. Las grabaciones nuevas usan audio real SDL a 44100 Hz estéreo, contrastado con las muestras del SND; no mezclan efectos fuera del motor. Los videos de revisiones anteriores no representan esta ulti.
 
-No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando Xbox físico. Las pruebas usan copias instrumentadas fuera de la carpeta entregada. El equilibrio contra todo el plantel requiere partidas locales. Las poses generadas tienen variaciones de detalle; no se declara alcanzada la referencia artística de Sumire.
-
-Los ataques de Daemon, encanto, parry, despertar y la apertura/daño de Omnipotencia son adaptaciones para un juego de pelea; no equivalen a que Eida controle a voluntad todos esos efectos en el canon. Consulta `CREDITOS_Y_FUENTES.md` para la procedencia del arte, voces y sonido.
+No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando Xbox físico. El equilibrio frente a todo el plantel requiere partidas locales. La hoja recuperada tiene resolución limitada y no se declara alcanzada la referencia artística de Sumire. Consulta `CREDITOS_Y_FUENTES.md` para la procedencia del arte, voces y sonido.

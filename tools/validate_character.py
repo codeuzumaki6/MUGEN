@@ -110,8 +110,8 @@ def parse_sff(path: Path) -> set[tuple[int, int]]:
             check((width,height,axis_x,axis_y)==(128,80,64,78),
                   f'Eida.sff: presentation frame {group},{number} lost its shared feet origin')
         if group == 8600:
-            check((width,height,axis_x,axis_y)==(320,224,160,216),
-                  f'Eida.sff: cinematic embrace {number} lost its retained detail/origin')
+            check((width,height,axis_x,axis_y)==(96,88,48,86) and number in (0,1),
+                  f'Eida.sff: original embrace {number} changed native scale/origin')
         sprites.add((group, number))
     check(len(sprites) == count, f"Eida.sff: header says {count} sprites, parsed {len(sprites)}")
     return sprites

@@ -75,14 +75,14 @@ ctrl = 1
 type = S
 movetype = A
 physics = N
-anim = 3000
+anim = 1100
 ctrl = 0
 velset = 0,0
 [State 3001, Freeze confirmed scene only]
 type = Pause
 trigger1 = Time = 0
-time = 430
-movetime = 430
+time = 130
+movetime = 130
 pausebg = 1
 endcmdbuftime = 0
 [State 3001, Protect the confirmed scene]
@@ -90,107 +90,64 @@ type = NotHitBy
 trigger1 = 1
 value = SCA
 time = 1
-[State 3001, Quiet cinematic interface]
+[State 3001, Keep foreground clear during the compact scene]
 type = AssertSpecial
-trigger1 = Time < 440
-flag = NoBarDisplay
-flag2 = NoFG
-flag3 = NoMusic
+trigger1 = Time < 130
+flag = NoFG
+flag2 = NoMusic
+[State 3001, Replace Eida with her original paired pose briefly]
+type = AssertSpecial
+trigger1 = Time = [12,109]
+flag = Invisible
 [State 3001, Authentic Japanese Eida voice]
 type = PlaySnd
 trigger1 = Time = 0
 value = S0,2
 channel = 0
-[State 3001, Memory sound bed]
-type = PlaySnd
-trigger1 = Time = 3
-value = S1,11
-channel = 5
-[State 3001, Black cinematic backdrop]
-type = Explod
-trigger1 = Time = 8
-anim = 8090
-ID = 8090
-space = Screen
-postype = Left
-pos = 0,0
-bindtime = -1
-scale = GameWidth/1280.0,GameHeight/720.0
-removetime = 429
-sprpriority = 19
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-[State 3001, Original manga world behind embrace]
-type = Explod
-trigger1 = Time = 12
-anim = 8001
-ID = 8611
-space = Screen
-postype = Left
-pos = 0,(GameHeight-GameWidth*9.0/16.0)/2.0
-scale = GameWidth/1280.0,GameWidth/1280.0
-bindtime = -1
-removetime = 425
-sprpriority = 20
-ownpal = 1
-pausemovetime = 999
-supermovetime = 999
-trans = AddAlpha
-alpha = 56,200
-[State 3001, Original world becomes visible]
-type = ModifyExplod
-trigger1 = Time = [12,431]
-ID = 8611
-trans = AddAlpha
-alpha = 48+IfElse(Time<340,Time/8,42),208-IfElse(Time<340,Time/8,42)
-[State 3001, Eida cradles Kawaki animated sprites]
+[State 3001, Stage stays visible at natural combat scale]
+type = BGPalFX
+trigger1 = Time = 0
+time = 130
+mul = 165,180,205
+[State 3001, Original two-frame hug beside the fighter]
 type = Explod
 trigger1 = Time = 12
 anim = 8600
 ID = 8600
-space = Screen
-postype = Left
-pos = GameWidth*.5,GameHeight*.91
+postype = P1
+pos = 0,0
 facing = 1
 vfacing = 1
 bindtime = -1
-scale = GameHeight/180.0*.566667,GameHeight/180.0*.566667
-removetime = 425
-sprpriority = 23
+scale = 1,1
+removetime = 98
+sprpriority = 3
 ownpal = 1
 pausemovetime = 999
 supermovetime = 999
-trans = AddAlpha
-alpha = 0,256
-[State 3001, Smooth approach to the embrace]
+[State 3001, Brief arrival of the original hug]
 type = ModifyExplod
-trigger1 = Time = [12,431]
+trigger1 = Time = [12,17]
 ID = 8600
-pos = GameWidth*.5,GameHeight*.91
-scale = GameHeight/180.0*(.566667+Time*.00008311),GameHeight/180.0*(.566667+Time*.00008311)
 trans = AddAlpha
-alpha = IfElse((Time-12)*24<256,(Time-12)*24,256),256-IfElse((Time-12)*24<256,(Time-12)*24,256)
+alpha = IfElse((Time-12)*64<256,(Time-12)*64,256),256-IfElse((Time-12)*64<256,(Time-12)*64,256)
 [State 3001, Embrace sound accent]
 type = PlaySnd
-trigger1 = Time = 44
+trigger1 = Time = 28
 value = S1,12
 channel = 6
-[State 3001, Senrigan pulse over the pair]
+[State 3001, Small eye cue during the embrace]
 type = Explod
-trigger1 = Time = 80
-trigger2 = Time = 180
-trigger3 = Time = 280
-trigger4 = Time = 380
+trigger1 = Time = 34
+trigger2 = Time = 66
 anim = 8520
 ID = 8620
-space = Screen
-postype = Left
-pos = GameWidth*.5,GameHeight*.4
-scale = GameHeight/180.0*.75,GameHeight/180.0*.75
+postype = P1
+pos = -5,-54
+scale = .35,.35
 bindtime = -1
 removetime = 14
-sprpriority = 24
+sprpriority = 5
 ownpal = 1
 pausemovetime = 999
 supermovetime = 999
@@ -198,28 +155,41 @@ trans = AddAlpha
 alpha = 150,256
 [State 3001, Memory change accents]
 type = PlaySnd
-trigger1 = Time = 180
-trigger2 = Time = 280
-trigger3 = Time = 380
-value = S1,12
+trigger1 = Time = 66
+value = S1,18
 channel = 6
+[State 3001, Omnipotence release burst]
+type = Explod
+trigger1 = Time = 106
+anim = 8510
+ID = 8621
+postype = P1
+pos = 0,-38
+scale = 1.1,.9
+removetime = 14
+sprpriority = 6
+ownpal = 1
+pausemovetime = 999
+supermovetime = 999
+trans = AddAlpha
+alpha = 230,256
 [State 3001, Omnipotence release flash]
 type = EnvColor
-trigger1 = Time = 432
+trigger1 = Time = 108
 value = 245,248,255
-time = 5
+time = 3
 under = 0
 [State 3001, Clear the cinematic]
 type = RemoveExplod
-trigger1 = Time = 437
+trigger1 = Time = 130
 [State 3001, Release sound]
 type = PlaySnd
-trigger1 = Time = 435
+trigger1 = Time = 106
 value = S1,13
 channel = 6
 [State 3001, Confirmed finite damage]
 type = TargetLifeAdd
-trigger1 = Time = 436
+trigger1 = Time = 122
 trigger1 = NumTarget(3000) > 0
 ID = 3000
 value = -350
@@ -227,19 +197,19 @@ kill = 1
 absolute = 1
 [State 3001, Release victim]
 type = TargetState
-trigger1 = Time = 438
+trigger1 = Time = 126
 trigger1 = NumTarget(3000) > 0
 ID = 3000
 value = 3011
 [State 3001, Release impact]
 type = EnvShake
-trigger1 = Time = 438
-time = 12
+trigger1 = Time = 106
+time = 6
 freq = 80
-ampl = -3
+ampl = -1
 [State 3001, Recovery]
 type = ChangeState
-trigger1 = Time >= 462
+trigger1 = Time >= 160
 value = 0
 ctrl = 1
 

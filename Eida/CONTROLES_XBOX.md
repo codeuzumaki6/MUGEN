@@ -47,7 +47,7 @@ Daemon mide aproximadamente el 70% de la altura de Eida. Aparece a su lado, entr
 
 Encantamiento necesita tocar al rival con el corazón: se puede bloquear y esquivar, recorre una distancia limitada y aturde durante 45 ticks (0.75 segundos). Al conectar muestra un corazón pequeño sobre su cabeza; desaparece al acabar el aturdimiento o al recibir otro golpe. No aparece al bloquear o esquivar. La variante ascendente sigue una trayectoria diagonal fija.
 
-Omnipotencia lanza un sello de Senrigan que debe tocar al rival. Se puede bloquear, saltar o evitar quedándose fuera de alcance. Si falla, gasta las tres barras, no muestra los paneles y no hace daño. Al conectar comienza una cinemática de aproximadamente ocho segundos con ocho encuadres originales del manga y 350 de daño. A sin abajo activa la ulti; abajo + A es la nueva técnica de encanto.
+Omnipotencia lanza un sello de Senrigan que debe tocar al rival. Se puede bloquear, saltar o evitar quedándose fuera de alcance. Si falla, gasta las tres barras y no hace daño ni inicia la escena. Al conectar muestra los dos sprites originales del abrazo a Kawaki a escala nativa, dentro del escenario, y libera un estallido. La escena confirmada dura unos 2.67 segundos y causa 350 de daño. A sin abajo activa la ulti; abajo + A es la técnica de encanto.
 
 El despertar mantiene los sprites y el tamaño normales de Eida, con aura azul y bonificaciones temporales. El salto es un poco más alto que en la revisión anterior.
 

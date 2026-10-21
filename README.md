@@ -50,27 +50,25 @@ Eida y los originales se conservan sin cambios.
 
 ---
 
-# Eida — especiales audibles y Omnipotencia con Kawaki
+# Eida — Omnipotencia con tus sprites originales
 
-[**Descargar Eida corregida**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_SONIDO_Y_ABRAZO.zip)
+[**Descargar Eida actualizada**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Eida_ULTI_SPRITES_ORIGINALES.zip)
 
-[**Ver los 14 jutsus con audio real**](previews/Eida_especiales_nuevo_motor.mp4) · [**Ver la ulti del abrazo a Kawaki**](previews/Eida_omnipotencia_abrazo_nuevo_motor.mp4) · [Senrigan sin golpe recibido](previews/Eida_senrigan_sin_ataque_nuevo_motor.mp4)
+[**Ver la ulti compacta en el motor**](previews/Eida_omnipotencia_abrazo_nuevo_motor.mp4) · [**GIF del abrazo**](previews/Eida_omnipotencia_abrazo_nuevo_motor.gif) · [Los 14 jutsus con audio real](previews/Eida_especiales_nuevo_motor.mp4) · [Senrigan sin golpe recibido](previews/Eida_senrigan_sin_ataque_nuevo_motor.mp4)
 
-- **Activación de especiales:** los 14 jutsus incorporan el mismo sonido no verbal que Pochita, un destello y una pausa breve. El sonido es independiente del impacto y se reproduce aunque el ataque falle. Está en el SND como 1,21, canal 4 al 100 %. La pausa dura 12 ticks, o seis al cancelar un normal. No añade invulnerabilidad ni cambia los costes.
-- **Senrigan ↓atrás + Y:** es un contraataque. Eida lleva la mano al ojo y observa durante unos 0.8 segundos. Si recibe un golpe en su caja de reversión, Daemon aparece junto a ella y responde físicamente. Si nadie ataca, no hay daño ni invocación: desaparece el ojo, baja la mano y termina. Se conservó la caja de reversión al cambiar la pose.
-- **Omnipotencia con A:** ocho poses nuevas de acercamiento y abrazo a Kawaki, con movimiento de cabello y liberación de la onda. La escena principal es de sprites, sobre un panel original de la onda atenuado. La apertura tiene que acertar; sigue siendo bloqueable, evadible y de alcance finito. Consume tres barras y causa 350 al confirmar.
+- **Omnipotencia con A:** usa los dos cuadros originales de Eida y Kawaki de la hoja aportada, a escala nativa 1. Preparación, abrazo y estallido ocurren dentro del escenario; la escena confirmada termina en 160 ticks, unos 2.67 segundos. El video completo con apertura y recuperación dura 3.7 segundos. La apertura puede bloquearse, saltarse o fallar por distancia. Consume tres barras y causa 350 solo al confirmar.
+- **Activación de especiales:** los 14 jutsus conservan el mismo sonido no verbal que Pochita, un destello y una pausa breve. El sonido se reproduce aunque el ataque falle. Está en el SND como 1,21, canal 4 al 100 %. La pausa dura 12 ticks, o seis al cancelar un normal; no cambia los costes.
+- **Senrigan ↓atrás + Y:** Eida lleva la mano al ojo y observa durante unos 0.8 segundos. Si un golpe entra en su caja de reversión, Daemon responde físicamente. Sin golpe entrante no hay daño ni invocación: desaparece el ojo, baja la mano y termina.
 
-El abrazo representa el recuerdo canónico con Kawaki aunque el rival sea otro personaje. El rival elegido sigue siendo el objetivo y regresa al combate; no se transforma permanentemente en Kawaki. Los sprites del abrazo son arte nuevo generado con IA. No se redibujaron ni retocaron con IA los paneles originales, y no se generaron voces. [Procedencia del abrazo](design/Eida_omnipotencia/REVISION.md) · [Sonido y lectura de Senrigan](design/Eida_acabado/ACTIVACION.md).
+El abrazo conserva exactamente dos poses fuente, con animación limitada. Se elimina el fondo verde y se empaquetan sin reescalar ni redibujar. El rival sigue siendo el objetivo y regresa al combate; Kawaki representa ese recuerdo canónico. Los paneles originales y las voces japonesas permanecen sin modificar. [Procedencia y tiempos](design/Eida_omnipotencia/REVISION.md) · [Sonido y lectura de Senrigan](design/Eida_acabado/ACTIVACION.md).
 
-Se conservan carrera, frenado, aterrizaje, carga, victoria, remates, cadenas y ayudas de Daemon. El reposo mantiene sus seis cuadros y el despertar conserva el cuerpo y tamaño originales. El SFF tiene 202 entradas, el SND 31 muestras y el AIR 124 acciones; no se declara alcanzado el acabado artístico de Sumire.
+Se conservan carrera, frenado, aterrizaje, carga, victoria, remates, cadenas y ayudas de Daemon. El reposo mantiene sus seis cuadros y el despertar conserva cuerpo y tamaño. El SFF tiene 196 entradas, el SND 31 muestras y el AIR 124 acciones. La hoja original tiene resolución limitada; no se declara alcanzado el acabado artístico de Sumire.
 
 Sustituye `chars/Eida` completa por la carpeta del ZIP. Añade `Eida/Eida.def` a `[Characters]` en `data/select.def` si hace falta. [Controles Xbox](Eida/CONTROLES_XBOX.md) · [Instalación y límites](Eida/LEEME.md) · [Créditos](Eida/CREDITOS_Y_FUENTES.md).
 
-Pruebas en Ikemen GO: [80 controles y colisiones](previews/engine_moveset_checks.json), [seis derribos y recuperación](previews/engine_recovery_checks.json), [nueve aperturas de ultimate](previews/engine_ultimate_checks.json) y [dos pruebas de Senrigan sin ataque rival](previews/Eida_Senrigan_idle_checks.json). Las pruebas de la revisión de movimiento anterior se conservan en [22 casos de presentación](previews/Eida_polish_checks.json) y [dos victorias reales](previews/Eida_polish_win_checks.json). El validador tiene siete regresiones: errores de carga anteriores, impacto infinito, flag de victoria inválido, caja de reversión ausente y sonido de jutsu ausente. [Reconstrucción determinista](previews/Eida_polish_rebuild_checks.json).
+Esta revisión pasó [nueve casos de apertura y recuperación de la ulti](previews/engine_ultimate_checks.json), siete regresiones de carga/sintaxis y [dos reconstrucciones idénticas](previews/Eida_polish_rebuild_checks.json). La [comprobación de la escena compacta](previews/Eida_compact_scene_checks.json) compara los PNG con los recortes originales y registra por separado su presencia y regreso a idle observados en el motor. Se conservan los informes de las revisiones de combate: [80 controles y colisiones](previews/engine_moveset_checks.json), [seis derribos](previews/engine_recovery_checks.json), [Senrigan sin ataque rival](previews/Eida_Senrigan_idle_checks.json), [22 casos de presentación](previews/Eida_polish_checks.json) y [dos victorias](previews/Eida_polish_win_checks.json).
 
-Los nuevos videos capturan audio real SDL a 44100 Hz estéreo, sin mezcla de efectos fuera del motor. [Registro de activaciones y cinemática](previews/Eida_technique_audio_checks.json). Cada activación se contrasta con la muestra empaquetada; las imágenes se sincronizan con esos eventos de audio sin estirar ni mezclar la grabación. No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando físico.
-
-[Video anterior de movimiento y acabado](previews/Eida_ACABADO.mp4) · [Omnipotencia anterior con paneles](previews/Omnipotencia_motor_HD.mp4). Representan revisiones anteriores; el video antiguo de paneles usaba audio mezclado fuera del motor.
+La nueva captura de la ulti utiliza audio real SDL a 44100 Hz estéreo. Los videos de especiales y Senrigan conservan su captura anterior: sus estados, sprites y sonido relevantes no cambiaron. [Registro de activaciones y cinemática](previews/Eida_technique_audio_checks.json). No se ejecutó el binario exacto de Jump Force MUGEN V14 ni el mando físico.
 
 Reconstrucción con Python, Pillow, NumPy, SciPy, ffmpeg e Ikemen GO verificado:
 
@@ -82,6 +80,7 @@ python3 tools/build_eida_polish.py
 python3 tools/build_eida_hug_ultimate.py
 python3 tools/build_archives.py
 python3 tools/validate_character.py Eida
+python3 tools/check_eida_compact_scene.py
 python3 tools/test_mugen11_compatibility.py
 python3 tools/check_eida_rebuild.py
 python3 tools/check_moves_in_engine.py /ruta/al/ikemen
