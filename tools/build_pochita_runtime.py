@@ -554,3 +554,6 @@ apply_approach_runtime(CHAR)
 
 from build_pochita_air_scarf import apply_air_scarf_runtime
 apply_air_scarf_runtime(CHAR)
+
+from build_pochita_polish import apply_polish_runtime
+apply_polish_runtime(CHAR)

@@ -4834,5 +4834,635 @@
         1201
       ]
     }
+  ],
+  "charge_victory": [
+    {
+      "group": 3500,
+      "number": 0,
+      "file": "assets/sprites/charge_victory/0.png",
+      "size": [
+        101,
+        75
+      ],
+      "axis": [
+        54,
+        73
+      ],
+      "attack_extent": 44,
+      "source_sheet": "charge_victory",
+      "source_cell": 0,
+      "source_box": [
+        107,
+        42,
+        483,
+        318
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 1,
+      "file": "assets/sprites/charge_victory/1.png",
+      "size": [
+        104,
+        73
+      ],
+      "axis": [
+        58,
+        71
+      ],
+      "attack_extent": 43,
+      "source_sheet": "charge_victory",
+      "source_cell": 1,
+      "source_box": [
+        735,
+        48,
+        1124,
+        318
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 2,
+      "file": "assets/sprites/charge_victory/2.png",
+      "size": [
+        113,
+        68
+      ],
+      "axis": [
+        60,
+        66
+      ],
+      "attack_extent": 50,
+      "source_sheet": "charge_victory",
+      "source_cell": 2,
+      "source_box": [
+        71,
+        363,
+        494,
+        611
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 3,
+      "file": "assets/sprites/charge_victory/3.png",
+      "size": [
+        104,
+        73
+      ],
+      "axis": [
+        62,
+        71
+      ],
+      "attack_extent": 39,
+      "source_sheet": "charge_victory",
+      "source_cell": 3,
+      "source_box": [
+        699,
+        344,
+        1087,
+        612
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 4,
+      "file": "assets/sprites/charge_victory/4.png",
+      "size": [
+        91,
+        76
+      ],
+      "axis": [
+        52,
+        74
+      ],
+      "attack_extent": 36,
+      "source_sheet": "charge_victory",
+      "source_cell": 4,
+      "source_box": [
+        123,
+        634,
+        462,
+        913
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 5,
+      "file": "assets/sprites/charge_victory/5.png",
+      "size": [
+        102,
+        66
+      ],
+      "axis": [
+        56,
+        64
+      ],
+      "attack_extent": 43,
+      "source_sheet": "charge_victory",
+      "source_cell": 5,
+      "source_box": [
+        725,
+        671,
+        1105,
+        913
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 6,
+      "file": "assets/sprites/charge_victory/6.png",
+      "size": [
+        109,
+        77
+      ],
+      "axis": [
+        61,
+        75
+      ],
+      "attack_extent": 45,
+      "source_sheet": "charge_victory",
+      "source_cell": 6,
+      "source_box": [
+        92,
+        931,
+        500,
+        1214
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3500,
+      "number": 7,
+      "file": "assets/sprites/charge_victory/7.png",
+      "size": [
+        89,
+        76
+      ],
+      "axis": [
+        49,
+        74
+      ],
+      "attack_extent": 37,
+      "source_sheet": "charge_victory",
+      "source_cell": 7,
+      "source_box": [
+        754,
+        935,
+        1085,
+        1215
+      ],
+      "shared_scale": 0.2571428571428571
+    }
+  ],
+  "locomotion": [
+    {
+      "group": 3501,
+      "number": 0,
+      "file": "assets/sprites/locomotion/0.png",
+      "size": [
+        135,
+        69
+      ],
+      "axis": [
+        96,
+        67
+      ],
+      "attack_extent": 36,
+      "source_sheet": "locomotion",
+      "source_cell": 0,
+      "source_box": [
+        53,
+        53,
+        561,
+        304
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 1,
+      "file": "assets/sprites/locomotion/1.png",
+      "size": [
+        110,
+        73
+      ],
+      "axis": [
+        81,
+        71
+      ],
+      "attack_extent": 26,
+      "source_sheet": "locomotion",
+      "source_cell": 1,
+      "source_box": [
+        722,
+        35,
+        1135,
+        303
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 2,
+      "file": "assets/sprites/locomotion/2.png",
+      "size": [
+        131,
+        70
+      ],
+      "axis": [
+        98,
+        68
+      ],
+      "attack_extent": 30,
+      "source_sheet": "locomotion",
+      "source_cell": 2,
+      "source_box": [
+        58,
+        355,
+        551,
+        613
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 3,
+      "file": "assets/sprites/locomotion/3.png",
+      "size": [
+        128,
+        68
+      ],
+      "axis": [
+        69,
+        66
+      ],
+      "attack_extent": 56,
+      "source_sheet": "locomotion",
+      "source_cell": 3,
+      "source_box": [
+        692,
+        361,
+        1174,
+        611
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 4,
+      "file": "assets/sprites/locomotion/4.png",
+      "size": [
+        107,
+        72
+      ],
+      "axis": [
+        55,
+        70
+      ],
+      "attack_extent": 49,
+      "source_sheet": "locomotion",
+      "source_cell": 4,
+      "source_box": [
+        179,
+        651,
+        579,
+        915
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 5,
+      "file": "assets/sprites/locomotion/5.png",
+      "size": [
+        105,
+        68
+      ],
+      "axis": [
+        59,
+        66
+      ],
+      "attack_extent": 43,
+      "source_sheet": "locomotion",
+      "source_cell": 5,
+      "source_box": [
+        716,
+        668,
+        1110,
+        915
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 6,
+      "file": "assets/sprites/locomotion/6.png",
+      "size": [
+        95,
+        76
+      ],
+      "axis": [
+        43,
+        74
+      ],
+      "attack_extent": 49,
+      "source_sheet": "locomotion",
+      "source_cell": 6,
+      "source_box": [
+        200,
+        933,
+        553,
+        1212
+      ],
+      "shared_scale": 0.2571428571428571
+    },
+    {
+      "group": 3501,
+      "number": 7,
+      "file": "assets/sprites/locomotion/7.png",
+      "size": [
+        114,
+        65
+      ],
+      "axis": [
+        71,
+        63
+      ],
+      "attack_extent": 40,
+      "source_sheet": "locomotion",
+      "source_cell": 7,
+      "source_box": [
+        692,
+        976,
+        1119,
+        1212
+      ],
+      "shared_scale": 0.2571428571428571
+    }
+  ],
+  "foot_dust": [
+    {
+      "group": 9900,
+      "number": 0,
+      "file": "assets/sprites/foot_dust/0.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        70
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 0,
+      "source_box": [
+        0,
+        0,
+        384,
+        360
+      ]
+    },
+    {
+      "group": 9900,
+      "number": 1,
+      "file": "assets/sprites/foot_dust/1.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        70
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 1,
+      "source_box": [
+        384,
+        0,
+        768,
+        360
+      ]
+    },
+    {
+      "group": 9900,
+      "number": 2,
+      "file": "assets/sprites/foot_dust/2.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        70
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 2,
+      "source_box": [
+        768,
+        0,
+        1152,
+        360
+      ]
+    },
+    {
+      "group": 9900,
+      "number": 3,
+      "file": "assets/sprites/foot_dust/3.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        70
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 3,
+      "source_box": [
+        1152,
+        0,
+        1536,
+        360
+      ]
+    }
+  ],
+  "metal_sparks": [
+    {
+      "group": 9901,
+      "number": 0,
+      "file": "assets/sprites/metal_sparks/0.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 4,
+      "source_box": [
+        0,
+        360,
+        384,
+        650
+      ]
+    },
+    {
+      "group": 9901,
+      "number": 1,
+      "file": "assets/sprites/metal_sparks/1.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 5,
+      "source_box": [
+        384,
+        360,
+        768,
+        650
+      ]
+    },
+    {
+      "group": 9901,
+      "number": 2,
+      "file": "assets/sprites/metal_sparks/2.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 6,
+      "source_box": [
+        768,
+        360,
+        1152,
+        650
+      ]
+    },
+    {
+      "group": 9901,
+      "number": 3,
+      "file": "assets/sprites/metal_sparks/3.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 7,
+      "source_box": [
+        1152,
+        360,
+        1536,
+        650
+      ]
+    }
+  ],
+  "finish_edge": [
+    {
+      "group": 9902,
+      "number": 0,
+      "file": "assets/sprites/finish_edge/0.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 8,
+      "source_box": [
+        0,
+        650,
+        384,
+        1024
+      ]
+    },
+    {
+      "group": 9902,
+      "number": 1,
+      "file": "assets/sprites/finish_edge/1.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 9,
+      "source_box": [
+        384,
+        650,
+        768,
+        1024
+      ]
+    },
+    {
+      "group": 9902,
+      "number": 2,
+      "file": "assets/sprites/finish_edge/2.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 10,
+      "source_box": [
+        768,
+        650,
+        1152,
+        1024
+      ]
+    },
+    {
+      "group": 9902,
+      "number": 3,
+      "file": "assets/sprites/finish_edge/3.png",
+      "size": [
+        128,
+        96
+      ],
+      "axis": [
+        64,
+        48
+      ],
+      "source_sheet": "motion_fx",
+      "source_cell": 11,
+      "source_box": [
+        1152,
+        650,
+        1536,
+        1024
+      ]
+    }
   ]
 }

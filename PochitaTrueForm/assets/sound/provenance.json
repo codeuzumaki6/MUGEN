@@ -160,5 +160,65 @@
     "duration": 0.65,
     "sha256": "7f8d004d216c1c16ecc5c681d208bacff606d0c360e78e473751418f6a7e3ae3",
     "voice": false
+  },
+  {
+    "group": 1,
+    "number": 14,
+    "filename": "motor_rev_loop.wav",
+    "type": "original nonverbal edit/mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 1.2,
+    "sha256": "ffedcd543a9cc8a2962bdc995dc04b47762b1a9befdff6eac596e249d2337d5d",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 15,
+    "filename": "motor_spindown.wav",
+    "type": "original nonverbal edit/mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.9,
+    "sha256": "ee0ab877185913974bca855469e5d21797b0398641aae0aa7ffb2b518caa2d82",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 16,
+    "filename": "serrated_finish.wav",
+    "type": "original nonverbal edit/mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.6,
+    "sha256": "3497cb6cd0982fbd083e374df73be845ab5579e18d26ae2360fe9850425ae5f0",
+    "voice": false
+  },
+  {
+    "group": 1,
+    "number": 17,
+    "filename": "footfall_dust.wav",
+    "type": "original nonverbal edit/mix",
+    "sources": [
+      "chainsaw_long.wav",
+      "chainsaw_cut.wav",
+      "impact_heavy.wav",
+      "impact_light.wav"
+    ],
+    "duration": 0.22,
+    "sha256": "eb3db29bf3aca90ce56fed51bac85f99adddc6bfd84141c287fb9fd4679c9dcd",
+    "voice": false
   }
 ]

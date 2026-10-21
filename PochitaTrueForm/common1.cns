@@ -1860,7 +1860,7 @@ type = ChangeState
 trigger1 = Time > 5
 trigger1 = command != "holdfwd"
 trigger2 = Time >= 40
-value = 0
+value = 106
 ctrl = 1
 
 [Statedef 105]

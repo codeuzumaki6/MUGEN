@@ -16,9 +16,9 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
  check(m is not None,f'DEF missing {key}')
  if m:check((CHAR/m[1].strip()).is_file(),f'DEF missing target for {key}')
 sprites=shared.parse_sff(CHAR/(stem+'.sff'));sounds=shared.parse_snd(CHAR/(stem+'.snd'))
-check(len(sprites)==221,'Expected 163 body entries, 56 effects and two portraits')
+check(len(sprites)==249,'Expected 179 body entries, 68 effects and two portraits')
 check(not any(group==9800 for group,number in sprites),'Rejected giant saw must not be packed')
-check(len(sounds)==14,'Expected fourteen nonverbal effects')
+check(len(sounds)==18,'Expected eighteen nonverbal effects')
 raw=(CHAR/(stem+'.sff')).read_bytes();sh,count,ph,pcount,ld,*_=struct.unpack_from('<IIIIIIII',raw,36);geometry={}
 palettes=[]
 for i in range(pcount):
@@ -73,6 +73,12 @@ for (name,n),count in state_controllers.items():
 usedcommands=set()
 for name,header,body in sections:
  typ=(field(body,'type') or '').lower();n=integer(field(body,'anim'))
+ if typ=='assertspecial':
+  native_flags=set('intro invisible roundnotover nobardisplay nobg nofg noshadow globalnoshadow nomusic noautoturn nowalk timerfreeze unguardable nojugglecheck noko nokosnd nokoslow noguarddist noairguard nocrouchguard nostandguard'.split())
+  for key in ['flag','flag2','flag3']:
+   value=field(body,key)
+   if value:check(value.lower() in native_flags,f'{name} {header}: invalid MUGEN AssertSpecial flag {value}')
+
  if n is not None and n>=0:check(n in actions,f'{name} {header}: missing animation {n}')
  if typ in ['changeanim','changeanim2'] and typ!='changeanim2':
   n=integer(field(body,'value'))

@@ -1,10 +1,10 @@
 # Pochita True Form — combos y remates para MUGEN 1.1
 
-Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_AEREOS_Y_BUFANDA.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
+Sustituye `chars/PochitaTrueForm` completa por la carpeta de `PochitaTrueForm_ACABADO.zip`. Agrega `PochitaTrueForm/PochitaTrueForm.def` a `[Characters]` en `data/select.def` si todavía no está. Reinicia el juego.
 
 ## Corrección de carga en MUGEN
 
-Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Son poses de final de ronda que ahora contienen un controlador `Null` válido, sin alterar los ataques. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; otra rechaza grupos de triggers con saltos de numeración; las 221 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
+Se corrigió el error «Need at least one state controller» de los estados 170, 175 y 180. Los estados 170 y 175 contienen un controlador `Null` válido; 180 contiene la secuencia de victoria con controladores válidos. El constructor incluye la corrección y el validador rechaza cualquier estado sin controladores en CNS o CMD. Cinco pruebas de regresión reproducen y rechazan estados vacíos; otra rechaza grupos de triggers con saltos de numeración; las 221 pruebas de combate de Ikemen GO volvieron a pasar. El ZIP se valida también después de extraerlo. No se ejecutó el binario exacto de MUGEN del usuario.
 
 ## Despertar regenerativo
 
@@ -74,9 +74,9 @@ En el manga, devorar demonios puede borrar conceptos de la existencia. Aquí se 
 
 ## Arte y audio
 
-Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 213 entradas: 155 de cuerpo (146 poses fuente distintas), 56 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
+Armadura negra robusta, casco dentado, cuatro brazos con motosierras y bufanda intestinal roja, según las referencias del usuario. Se generaron con IA las hojas de movimiento, ataques, daño y los nuevos remates. El SFF contiene 249 entradas: 179 de cuerpo (170 poses fuente distintas), 68 efectos y dos retratos estándar. Las repeticiones cierran ciclos y comparten movimientos. El reposo conserva seis cuadros propios. El tamaño del cuerpo permanece calibrado al reposo de 72 píxeles; no se estiran individualmente los cuadros. Las cajas ofensivas siguen las motosierras visibles.
 
-Hay catorce sonidos no verbales: siete muestras del DENJI suministrado, tres mezclas adicionales de motores/cortes/impactos y el SE de activación del Code suministrado, más tres mezclas nuevas para mordisco, borrado y regeneración. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
+Hay 18 sonidos no verbales: siete muestras del DENJI suministrado, tres mezclas adicionales de motores/cortes/impactos y el SE de activación del Code suministrado, más tres mezclas para mordisco, borrado y regeneración y cuatro ediciones/mezclas para el acabado de motores, remates y pisadas. No se incluyen voces humanas ni voces generadas. Las hojas fuente, ejes y procedencia están en el repositorio. El arte generado conserva pequeñas variaciones de detalle entre cuadros; necesita revisión artística para alcanzar la consistencia de dibujo manual cuadro por cuadro.
 
 ## Comprobaciones y prueba local
 
@@ -92,4 +92,16 @@ Se sustituyó la única ruta aérea X-Y-B por tres etapas con X/Y/B mezclables: 
 
 Abajo+RB cuesta 350: lazo bloqueable, daño 40 y sujeción breve seguida de 20 ticks de tambaleo. Abajo+RT cuesta 600: sujeción confirmada y tres cortes, daño total 190. Tienen ocho poses de cuerpo nuevas con la bufanda roja, una sola escala corporal y cajas ceñidas al apéndice visible. Pueden fallar, ser bloqueados o interrumpidos; no sujetan objetivos aéreos. Los cortes del agarre RT usan daño fijo y no se multiplican por el despertar. El agarre y el tambaleo son adaptaciones de combate solicitadas, no técnicas con esos nombres en el manga. El rival se libera al terminar y también si el atacante sale de la secuencia.
 
-Archivo actual: 221 sprites SFF (163 entradas de cuerpo, 56 efectos, dos retratos), 14 sonidos. Los ataques aéreos reutilizan poses existentes; las ocho nuevas corresponden a la bufanda. Conserva RB/RT normales, despertar, Devastación y ultimate sin la sierra gigante rechazada. Prueba local adicional: saltar y enlazar XXX, XYY y XYB; después abajo+RB seguido de X, abajo+RT acertado/bloqueado/fallado y recibir un derribo tras usarlos.
+Archivo de la revisión aérea anterior: 221 sprites SFF (163 entradas de cuerpo, 56 efectos, dos retratos), 14 sonidos. Los ataques aéreos reutilizan poses existentes; las ocho nuevas corresponden a la bufanda. Conserva RB/RT normales, despertar, Devastación y ultimate sin la sierra gigante rechazada. Prueba local adicional: saltar y enlazar XXX, XYY y XYB; después abajo+RB seguido de X, abajo+RT acertado/bloqueado/fallado y recibir un derribo tras usarlos.
+
+## Acabado: motores, movimiento, contactos y victoria
+
+LB tiene cuatro poses de carga propias: brazos y mandíbula tensos, bufanda en cuatro fases y una vibración de un píxel. El motor acelera al iniciar, mantiene una muestra de motosierra en bucle y desacelera al soltar o completar la barra. Se conserva la carga de 18 por tick, el tope 3000 y el despertar con abajo+LB. El efecto se interrumpe al recibir golpes; el tamaño corporal procede de una calibración común.
+
+La carrera utiliza cuatro poses nuevas con piernas y bufanda en distintas fases. Hay dos poses de frenado y dos de aterrizaje. El frenado permite actuar inmediatamente; el aterrizaje conserva nueve ticks de recuperación. Polvo bajo en pasos, frenado y aterrizaje, con un máximo de dos efectos simultáneos. Se incorporan sonidos discretos de pisada.
+
+Los cortes tienen estelas dentadas rojas y plateadas, chispas metálicas propias y sombras de movimiento en tonos rojos oscuros. Se sustituye la chispa genérica de golpe por los recursos del personaje. El destello final y el sonido de remate requieren un impacto confirmado y se disparan una vez; fallos y bloqueos no generan sangre ni ese remate. Los últimos contactos seleccionados ganan dos ticks de pausa para marcar el peso. Las cajas de ataque, daños y costes conservan los valores de la revisión anterior.
+
+Al ganar una ronda, Pochita recoge los brazos, sacude las sierras, se incorpora y deja bajar los motores. Son cuatro poses con sangre estilizada al sacudir y un oscurecimiento temporal del escenario. El encuadre mantiene al ganador visible aunque el rival caiga lejos. La pose de victoria mantiene una cadencia normal tras el KO para distinguir los motores. La secuencia se comprobó después de un KO real contra un muñeco de poca vida, mirando hacia ambos lados; perder o empatar conserva sus estados propios.
+
+Recursos nuevos: 16 poses de cuerpo, 12 cuadros de polvo/chispas/corte y cuatro ediciones o mezclas no verbales de sonidos ya acreditados. Archivo actual: 249 sprites SFF (179 entradas de cuerpo, 68 de efectos, dos retratos) y 18 sonidos. Los videos `Pochita_acabado_*_motor.mp4` y `Pochita_ACABADO.mp4` muestran capturas de Ikemen GO con audio real SDL, no una mezcla de sonido montada fuera del motor. El binario exacto de Jump Force MUGEN V14 requiere prueba local.

@@ -24,5 +24,9 @@ with tempfile.TemporaryDirectory(prefix='pochita-mugen-structure-') as temp:
  path.write_text(original.replace('trigger10 = StateNo','trigger30 = StateNo',1))
  run=validate(copy);assert run.returncode!=0 and 'nonconsecutive trigger groups' in run.stdout,run.stdout
  path.write_text(original);results.append(dict(case='gap before special cancel trigger group',rejected=True,passed=True))
+ path=copy/'PochitaTrueForm.cns';original=path.read_text();assert 'flag = RoundNotOver' in original
+ path.write_text(original.replace('flag = RoundNotOver','flag = WinPose',1))
+ run=validate(copy);assert run.returncode!=0 and 'invalid MUGEN AssertSpecial flag WinPose' in run.stdout,run.stdout
+ path.write_text(original);results.append(dict(case='unsupported victory assertion',rejected=True,passed=True))
 (ROOT/'previews/Pochita_mugen_structure_checks.json').write_text(json.dumps(results,indent=2)+'\n')
 print(f'PASS: valid character and {len(results)-1} MUGEN structure regression fixtures')

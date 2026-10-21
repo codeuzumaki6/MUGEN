@@ -48,6 +48,65 @@ stand.friction = .82
 crouch.friction = .82
 
 [Statedef -2]
+[State -2, Restore drawing offset outside charge]
+type = Offset
+trigger1 = StateNo != 500
+x = 0
+y = 0
+ignorehitpause = 1
+[State -2, Charge exit motor deceleration]
+type = PlaySnd
+triggerall = PrevStateNo = 500
+triggerall = StateNo != 500
+trigger1 = Time = 1
+value = S1,15
+channel = 2
+volumescale = 70
+[State -2, Clear charge embers after release or injury]
+type = RemoveExplod
+trigger1 = StateNo != 500
+trigger2 = MoveType = H
+ID = 9491
+ignorehitpause = 1
+[State -2, Footwork dust]
+type = Explod
+triggerall = RoundState = 2
+triggerall = NumExplod(9490) < 2
+trigger1 = StateNo = 100
+trigger1 = Time%10 = 0
+trigger2 = StateNo = 20
+trigger2 = Time%18 = 0
+trigger3 = StateNo = 52
+trigger3 = Time <= 1
+trigger4 = StateNo = 106
+trigger4 = Time = 1
+anim = 9900
+ID = 9490
+postype = p1
+pos = 0,0
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .65,.65
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State -2, Grounded footstep]
+type = PlaySnd
+triggerall = RoundState = 2
+trigger1 = StateNo = 100
+trigger1 = Time%12 = 0
+trigger2 = StateNo = 52
+trigger2 = Time <= 1
+trigger3 = StateNo = 106
+trigger3 = Time = 1
+value = S1,17
+channel = 7
+volumescale = 45
+
 [State -2, Reset air route on landing or injury]
 type = VarSet
 trigger1 = StateType != A
@@ -180,9 +239,65 @@ physics = S
 anim = 180
 ctrl = 0
 velset = 0,0
-[State 180, Hold round-end pose]
-type = Null
+[State 180, Keep winner within view]
+type = ScreenBound
 trigger1 = 1
+value = 1
+movecamera = 1,0
+[State 180, Left victory margin]
+type = PosAdd
+trigger1 = BackEdgeBodyDist < 54
+x = 54-BackEdgeBodyDist
+[State 180, Right victory margin]
+type = PosAdd
+trigger1 = FrontEdgeBodyDist < 54
+x = -(54-FrontEdgeBodyDist)
+[State 180, Let victory sequence finish]
+type = AssertSpecial
+trigger1 = Time < 110
+flag = RoundNotOver
+flag2 = NoKOSlow
+[State 180, Victory rev]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,0
+channel = 1
+volumescale = 65
+[State 180, Shake saws clean]
+type = PlaySnd
+trigger1 = Time = 14
+value = S1,8
+channel = 1
+volumescale = 65
+[State 180, Motors wind down]
+type = PlaySnd
+trigger1 = Time = 38
+value = S1,15
+channel = 1
+volumescale = 80
+[State 180, Dim stage for victory]
+type = BGPalFX
+trigger1 = Time = 0
+time = 90
+add = -25,-25,-25
+mul = 225,225,225
+[State 180, Blood shaken off saws]
+type = Explod
+trigger1 = Time = 14
+anim = 9201
+ID = 9495
+postype = p1
+pos = 28,-24
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 200,256
+removeongethit = 1
+ignorehitpause = 1
 
 [Statedef 190]
 type = S
@@ -214,6 +329,25 @@ trigger1 = Time >= 20
 value = 0
 ctrl = 1
 
+[State 200, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 200, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 200, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 200]
 type = S
 movetype = A
@@ -236,7 +370,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -344,11 +478,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",201,IfElse(command = "b",211,221))
 ignorehitpause = 1
+[State 200, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 200, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 200, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 200, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 200, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 200, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 201, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 201, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 201, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 201]
 type = S
@@ -372,7 +602,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -480,11 +710,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",202,IfElse(command = "b",212,222))
 ignorehitpause = 1
+[State 201, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 201, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 201, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 201, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 201, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 201, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 202, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 202, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 202, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 202]
 type = S
@@ -507,8 +833,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -593,11 +919,12 @@ length = 6
 timegap = 1
 framegap = 2
 palcolor = 256
-palbright = 10,-20,-20
-palcontrast = 210,210,210
-palmul = .8,.8,.8
-trans = add
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+palmul = .75,.45,.45
+trans = none
 
+paladd = 10,0,0
 [State 202, Step into launcher]
 type = VelSet
 trigger1 = Time < 6
@@ -606,11 +933,147 @@ x = 4
 type = VelSet
 trigger1 = Time >= 6
 x = 0
+[State 202, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 202, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 202, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 202, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 202, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 202, Confirmed final edge]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 202, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 202, Latch final presentation]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
+
 [State 202, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 210, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 210, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 210, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 210]
 type = S
@@ -634,7 +1097,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -742,11 +1205,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",201,IfElse(command = "b",211,221))
 ignorehitpause = 1
+[State 210, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 210, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 210, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 210, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 210, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 210, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 211, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 211, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 211, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 211]
 type = S
@@ -770,7 +1329,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -879,11 +1438,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",202,IfElse(command = "b",212,222))
 ignorehitpause = 1
+[State 211, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 211, Metal contact sparks]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 211, Latch metal contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 211, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 211, Latch guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 211, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 220, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 220, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 220, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 220]
 type = S
@@ -907,7 +1562,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1015,11 +1670,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",201,IfElse(command = "b",211,221))
 ignorehitpause = 1
+[State 220, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 220, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 220, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 220, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 220, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 220, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 221, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 221, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 221, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 221]
 type = S
@@ -1043,7 +1794,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1152,11 +1903,107 @@ trigger3 = command = "c"
 v = 31
 value = IfElse(command = "a",202,IfElse(command = "b",212,222))
 ignorehitpause = 1
+[State 221, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 221, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 221, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 221, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 221, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 221, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 600, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 600, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 600, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 600]
 type = A
@@ -1197,7 +2044,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -1273,11 +2120,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 600, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 600, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 600, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 600, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 600, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 600, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 610, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 610, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 610, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 610]
 type = A
@@ -1318,7 +2261,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -1394,11 +2337,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 610, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 610, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 610, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 610, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 610, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 610, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 620, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 620, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 620, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 620]
 type = A
@@ -1439,7 +2478,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -1515,11 +2554,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 620, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 620, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 620, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 620, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 620, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 620, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 400, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 400, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 400, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 400]
 type = S
@@ -1543,7 +2678,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1567,11 +2702,107 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 400, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 28,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .42,.32
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 400, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 400, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 400, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 400, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 400, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 410, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 410, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 410, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 410]
 type = S
@@ -1595,7 +2826,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1619,11 +2850,107 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 410, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 28,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .42,.32
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 410, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 410, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 410, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 410, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 410, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 420, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 420, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 420, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 420]
 type = S
@@ -1647,7 +2974,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1671,11 +2998,107 @@ trigger1 = Time = 0
 v = 25
 value = 0
 ignorehitpause = 1
+[State 420, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 28,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .42,.32
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 420, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 420, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 420, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 420, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 420, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 1000, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1000, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1000, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 1000]
 type = S
@@ -1704,7 +3127,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -1732,7 +3155,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -1759,8 +3182,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -1957,9 +3380,11 @@ length = 5
 timegap = 1
 framegap = 3
 palcolor = 256
-palbright = 10,-15,-15
-palmul = .8,.7,.7
-trans = add
+palbright = 20,-30,-30
+palmul = .75,.45,.45
+trans = none
+palcontrast = 200,140,140
+paladd = 10,0,0
 [State 1000, Physical follow-through]
 type = VelSet
 triggerall = Time >= 10
@@ -1982,6 +3407,85 @@ type = VelSet
 triggerall = Time < 20
 trigger1 = P2Dist X <= 40
 x = 0
+[State 1000, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 9
+trigger3 = AnimElem = 16
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1000, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1000, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1000, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1000, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1000, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2003,6 +3507,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1010, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1010, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1010, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1010]
 type = S
 movetype = A
@@ -2026,7 +3549,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2054,7 +3577,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2082,7 +3605,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2110,7 +3633,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2137,8 +3660,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -2382,6 +3905,87 @@ type = VelSet
 trigger1 = Time >= 51
 x = 0
 
+[State 1010, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 6
+trigger3 = AnimElem = 9
+trigger4 = AnimElem = 13
+trigger5 = AnimElem = 18
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1010, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1010, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1010, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1010, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1010, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2403,6 +4007,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1020, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1020, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1020, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1020]
 type = S
 movetype = A
@@ -2426,7 +4049,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -2503,6 +4126,83 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1020, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1020, Metal contact sparks]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1020, Latch metal contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1020, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1020, Latch guard contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1020, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2513,6 +4213,25 @@ type = ChangeState
 triggerall = MoveHit
 trigger1 = command = "holdup"
 value = 40
+
+[State 1030, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1030, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1030, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 1030]
 type = S
@@ -2537,7 +4256,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2565,7 +4284,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -2592,8 +4311,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -2790,10 +4509,12 @@ length = 5
 timegap = 1
 framegap = 3
 palcolor = 256
-palbright = 10,-15,-15
-palmul = .8,.7,.7
-trans = add
+palbright = 20,-30,-30
+palmul = .75,.45,.45
+trans = none
 
+palcontrast = 200,140,140
+paladd = 10,0,0
 [State 1030, Maintain physical approach speed]
 type = VelSet
 triggerall = Time < 20
@@ -2804,6 +4525,85 @@ type = VelSet
 triggerall = Time < 20
 trigger1 = P2Dist X <= 40
 x = 0
+[State 1030, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 7
+trigger3 = AnimElem = 11
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1030, Metal contact sparks]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1030, Latch metal contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1030, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1030, Latch guard contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1030, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -2825,6 +4625,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1040, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1040, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1040, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1040]
 type = S
 movetype = A
@@ -2848,7 +4667,7 @@ guardflag = L
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -2875,8 +4694,8 @@ animtype = Heavy
 guardflag = L
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -3077,6 +4896,84 @@ type = VelSet
 trigger1 = Time >= 36
 x = 0
 
+[State 1040, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 4
+trigger2 = AnimElem = 10
+anim = 9902
+ID = 9493
+postype = p1
+pos = 28,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .42,.32
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1040, Metal contact sparks]
+type = Explod
+triggerall = Time >= 12
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1040, Latch metal contact]
+type = VarSet
+triggerall = Time >= 12
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1040, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 12
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1040, Latch guard contact]
+type = VarSet
+triggerall = Time >= 12
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1040, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -3098,6 +4995,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1050, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1050, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1050, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1050]
 type = A
 movetype = A
@@ -3121,7 +5037,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -3223,11 +5139,107 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1050, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1050, Metal contact sparks]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1050, Latch metal contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1050, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1050, Latch guard contact]
+type = VarSet
+triggerall = Time >= 8
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1050, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 1060, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1060, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1060, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 1060]
 type = S
@@ -3256,7 +5268,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3284,7 +5296,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3311,8 +5323,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -3509,9 +5521,11 @@ length = 5
 timegap = 1
 framegap = 3
 palcolor = 256
-palbright = 10,-15,-15
-palmul = .8,.7,.7
-trans = add
+palbright = 20,-30,-30
+palmul = .75,.45,.45
+trans = none
+palcontrast = 200,140,140
+paladd = 10,0,0
 [State 1060, Physical follow-through]
 type = VelSet
 triggerall = Time >= 10
@@ -3534,6 +5548,85 @@ type = VelSet
 triggerall = Time < 16
 trigger1 = P2Dist X <= 40
 x = 0
+[State 1060, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 10
+trigger3 = AnimElem = 18
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1060, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1060, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1060, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1060, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1060, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -3555,6 +5648,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1070, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1070, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1070, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1070]
 type = S
 movetype = A
@@ -3578,7 +5690,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3606,7 +5718,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3634,7 +5746,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3662,7 +5774,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3690,7 +5802,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3718,7 +5830,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -3745,8 +5857,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -4028,6 +6140,89 @@ type = VelSet
 trigger1 = Time >= 81
 x = 0
 
+[State 1070, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 6
+trigger3 = AnimElem = 9
+trigger4 = AnimElem = 13
+trigger5 = AnimElem = 18
+trigger6 = AnimElem = 23
+trigger7 = AnimElem = 28
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1070, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1070, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1070, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1070, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1070, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -4049,6 +6244,25 @@ ownpal = 1
 removeongethit = 1
 ignorehitpause = 1
 persistent = 0
+[State 1080, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1080, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1080, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1080]
 type = S
 movetype = A
@@ -4072,7 +6286,7 @@ guardflag = L
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -4168,11 +6382,107 @@ trigger1 = Time = 0
 v = 32
 value = 1
 persistent = 0
+[State 1080, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 5
+anim = 9902
+ID = 9493
+postype = p1
+pos = 28,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .42,.32
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1080, Metal contact sparks]
+type = Explod
+triggerall = Time >= 16
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1080, Latch metal contact]
+type = VarSet
+triggerall = Time >= 16
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1080, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 16
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 36,-18
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1080, Latch guard contact]
+type = VarSet
+triggerall = Time >= 16
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1080, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 1100, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1100, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1100, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 1100]
 type = S
@@ -4201,7 +6511,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -4229,7 +6539,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -4257,7 +6567,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -4285,7 +6595,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,4
 guardsound = S1,6
@@ -4312,8 +6622,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 7,10
-sparkno = 1
+pausetime = 9,12
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -4400,6 +6710,87 @@ type = VelSet
 triggerall = Time < 16
 trigger1 = P2Dist X <= 40
 x = 0
+[State 1100, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+trigger3 = AnimElem = 7
+trigger4 = AnimElem = 9
+trigger5 = AnimElem = 12
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1100, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1100, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1100, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1100, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1100, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -4416,10 +6807,57 @@ velset = 0,0
 [State 500, Rev]
 type = PlaySnd
 trigger1 = Time = 0
-value = S1,3
+value = S1,14
 channel = 6
 loop = 1
-volume = -160
+volumescale = 75
+[State 500, Accelerate motors]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,0
+channel = 1
+[State 500, Small engine vibration]
+type = Offset
+trigger1 = 1
+x = IfElse(Time%4 < 2,-1,1)
+y = 0
+[State 500, Low motor embers]
+type = Explod
+triggerall = NumExplod(9491) = 0
+trigger1 = Time%12 = 0
+anim = 9901
+ID = 9491
+postype = p1
+pos = 22,-28
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .3,.3
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 500, Boot pressure dust]
+type = Explod
+triggerall = NumExplod(9490) < 2
+trigger1 = Time%22 = 0
+anim = 9900
+ID = 9490
+postype = p1
+pos = 0,0
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .7,.6
+sprpriority = -1
+ownpal = 1
+trans = addalpha
+alpha = 160,256
+removeongethit = 1
+ignorehitpause = 1
+
 [State 500, Power]
 type = PowerAdd
 trigger1 = 1
@@ -4457,6 +6895,25 @@ type = ChangeState
 trigger1 = Time >= 40
 value = 0
 ctrl = 1
+[State 1401, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 1401, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 1401, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 1401]
 type = S
 movetype = A
@@ -4474,7 +6931,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -4545,6 +7002,83 @@ v = 26
 value = HitCount
 ignorehitpause = 1
 
+[State 1401, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 1401, Metal contact sparks]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1401, Latch metal contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 1401, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 1401, Latch guard contact]
+type = VarSet
+triggerall = Time >= 4
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 1401, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -4596,7 +7130,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -5054,6 +7588,25 @@ type = SelfState
 trigger1 = 1
 value = 5050
 ctrl = 0
+[State 212, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 212, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 212, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 212]
 type = S
 movetype = A
@@ -5076,7 +7629,7 @@ guardflag = MA
 hitflag = MAF
 priority = 5,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 hitsound = S1,7
 guardsound = S1,6
 ground.type = High
@@ -5103,7 +7656,7 @@ guardflag = MA
 hitflag = MAF
 priority = 5,Hit
 pausetime = 4,7
-sparkno = 1
+sparkno = -1
 hitsound = S1,7
 guardsound = S1,6
 ground.type = High
@@ -5129,8 +7682,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
-pausetime = 9,12
-sparkno = 1
+pausetime = 11,14
+sparkno = -1
 hitsound = S1,7
 guardsound = S1,6
 ground.type = High
@@ -5207,16 +7760,155 @@ length = 6
 timegap = 1
 framegap = 2
 palcolor = 256
-palbright = 10,-20,-20
-palcontrast = 210,210,210
-palmul = .8,.8,.8
-trans = add
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+palmul = .75,.45,.45
+trans = none
+
+paladd = 10,0,0
+[State 212, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 6
+trigger3 = AnimElem = 9
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 212, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 212, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 212, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 212, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 212, Confirmed final edge]
+type = Explod
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 212, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 212, Latch final presentation]
+type = VarSet
+triggerall = Time >= 24
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
 
 [State 212, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 222, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 222, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 222, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 222]
 type = A
@@ -5239,8 +7931,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
-pausetime = 9,12
-sparkno = 1
+pausetime = 11,14
+sparkno = -1
 hitsound = S1,9
 guardsound = S1,6
 ground.type = High
@@ -5342,10 +8034,128 @@ length = 6
 timegap = 1
 framegap = 2
 palcolor = 256
-palbright = 10,-20,-20
-palcontrast = 210,210,210
-palmul = .8,.8,.8
-trans = add
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+palmul = .75,.45,.45
+trans = none
+
+paladd = 10,0,0
+[State 222, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 222, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 222, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 222, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 222, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 222, Confirmed final edge]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 222, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 222, Latch final presentation]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
 
 [State 222, End]
 type = ChangeState
@@ -5373,9 +8183,11 @@ length = 4
 timegap = 1
 framegap = 2
 palcolor = 256
-palbright = 5,-20,-20
-palmul = .8,.7,.7
-trans = add
+palbright = 20,-30,-30
+palmul = .75,.45,.45
+trans = none
+palcontrast = 200,140,140
+paladd = 10,0,0
 [State 650, Return to air control]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -5765,7 +8577,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 7,10
-sparkno = 1
+sparkno = -1
 guard.sparkno = -1
 hitsound = S1,5
 guardsound = S1,6
@@ -6117,6 +8929,25 @@ trigger1 = 1
 value = 5050
 ctrl = 0
 
+[State 660, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 660, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 660, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
+
 [Statedef 660]
 type = A
 movetype = A
@@ -6156,7 +8987,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -6232,11 +9063,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 660, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 660, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 660, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 660, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 660, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 660, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 661, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 661, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 661, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 661]
 type = A
@@ -6277,7 +9204,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -6353,11 +9280,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 661, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 661, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 661, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 661, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 661, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 661, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 662, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 662, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 662, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 662]
 type = A
@@ -6398,7 +9421,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -6474,11 +9497,107 @@ trigger1 = HitCount > Var(20)
 v = 20
 value = HitCount
 ignorehitpause = 1
+[State 662, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 662, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 662, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 662, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 662, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
 [State 662, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 670, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 670, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 670, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 670]
 type = A
@@ -6518,8 +9637,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 8,12
-sparkno = 1
+pausetime = 10,14
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,7
@@ -6579,12 +9698,153 @@ time = 14
 length = 4
 timegap = 1
 framegap = 2
-trans = add
+trans = none
+palcolor = 256
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+paladd = 10,0,0
+palmul = .75,.45,.45
+[State 670, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 670, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 670, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 670, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 670, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 670, Confirmed final edge]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 670, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 670, Latch final presentation]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
+
 [State 670, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 671, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 671, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 671, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 671]
 type = A
@@ -6625,7 +9885,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -6651,7 +9911,7 @@ guardflag = MA
 hitflag = MAF
 priority = 4,Hit
 pausetime = 6,10
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,4
@@ -6676,8 +9936,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 8,12
-sparkno = 1
+pausetime = 10,14
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,7
@@ -6744,12 +10004,155 @@ time = 14
 length = 4
 timegap = 1
 framegap = 2
-trans = add
+trans = none
+palcolor = 256
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+paladd = 10,0,0
+palmul = .75,.45,.45
+[State 671, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 5
+trigger3 = AnimElem = 7
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 671, Metal contact sparks]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 671, Latch metal contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 671, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 671, Latch guard contact]
+type = VarSet
+triggerall = Time >= 6
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 671, Confirmed final edge]
+type = Explod
+triggerall = Time >= 18
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 671, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 18
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 671, Latch final presentation]
+type = VarSet
+triggerall = Time >= 18
+triggerall = MoveHit
+triggerall = HitCount >= 3
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
+
 [State 671, End]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 50
 ctrl = 1
+
+[State 672, Reset presentation latch 12]
+type = VarSet
+trigger1 = Time = 0
+v = 12
+value = 0
+ignorehitpause = 1
+[State 672, Reset presentation latch 14]
+type = VarSet
+trigger1 = Time = 0
+v = 14
+value = 0
+ignorehitpause = 1
+[State 672, Reset presentation latch 15]
+type = VarSet
+trigger1 = Time = 0
+v = 15
+value = 0
+ignorehitpause = 1
 
 [Statedef 672]
 type = A
@@ -6789,8 +10192,8 @@ animtype = Heavy
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
-pausetime = 8,12
-sparkno = 1
+pausetime = 10,14
+sparkno = -1
 sparkxy = -10,-38
 guardsound = S1,6
 hitsound = S1,9
@@ -6850,13 +10253,135 @@ time = 14
 length = 4
 timegap = 1
 framegap = 2
-trans = add
+trans = none
+palcolor = 256
+palbright = 20,-30,-30
+palcontrast = 200,140,140
+paladd = 10,0,0
+palmul = .75,.45,.45
 [State 672, Dive with confirmed finisher]
 type = VelSet
 trigger1 = MoveHit
 trigger1 = HitPauseTime = 0
 x = 1
 y = 5
+[State 672, Visible serrated blade path]
+type = Explod
+triggerall = NumExplod(9493) < 2
+trigger1 = AnimElem = 2
+anim = 9902
+ID = 9493
+postype = p1
+pos = 30,-42
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .5,.5
+sprpriority = 3
+ownpal = 1
+trans = addalpha
+alpha = 145,256
+removeongethit = 1
+ignorehitpause = 1
+
+[State 672, Metal contact sparks]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .48,.48
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 220,256
+removeongethit = 1
+ignorehitpause = 1
+[State 672, Latch metal contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = NumExplod(9492) < 2
+trigger1 = HitCount > Var(14)
+v = 14
+value = HitCount
+ignorehitpause = 1
+
+[State 672, Guard sparks without blood]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+anim = 9901
+ID = 9492
+postype = p1
+pos = 38,-40
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .35,.35
+sprpriority = 4
+ownpal = 1
+trans = addalpha
+alpha = 170,256
+removeongethit = 1
+ignorehitpause = 1
+[State 672, Latch guard contact]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveGuarded
+trigger1 = Var(12) = 0
+v = 12
+value = 1
+ignorehitpause = 1
+
+[State 672, Confirmed final edge]
+type = Explod
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+anim = 9902
+ID = 9494
+postype = p1
+pos = 42,-38
+facing = 1
+bindtime = 0
+removetime = 14
+scale = .8,.65
+sprpriority = 5
+ownpal = 1
+trans = addalpha
+alpha = 235,256
+removeongethit = 1
+ignorehitpause = 1
+[State 672, Finisher weight]
+type = PlaySnd
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+value = S1,16
+channel = 5
+volumescale = 70
+ignorehitpause = 1
+[State 672, Latch final presentation]
+type = VarSet
+triggerall = Time >= 3
+triggerall = MoveHit
+triggerall = HitCount >= 1
+trigger1 = Var(15) = 0
+v = 15
+value = 1
+ignorehitpause = 1
+
 [State 672, End]
 type = ChangeState
 trigger1 = AnimTime = 0
@@ -6891,7 +10416,7 @@ guardflag = MA
 hitflag = M
 priority = 4,Hit
 pausetime = 6,9
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 hitsound = S1,4
 guardsound = S1,6
@@ -6969,7 +10494,7 @@ guardflag = MA
 hitflag = M
 priority = 4,Hit
 pausetime = 6,9
-sparkno = 1
+sparkno = -1
 sparkxy = -10,-38
 hitsound = S1,4
 guardsound = S1,6
@@ -7229,3 +10754,16 @@ type = SelfState
 trigger1 = Time = 0
 value = 5050
 ctrl = 0
+
+[Statedef 106]
+type = S
+movetype = I
+physics = S
+anim = 106
+ctrl = 1
+velset = 0,0
+[State 106, End braking pose]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

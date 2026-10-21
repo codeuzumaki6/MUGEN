@@ -1,0 +1,490 @@
+{
+  "runtime_sha256": "2526bfdc8b3b2f8a9d1a6c4f57dd6fd7ce459f31d49ef1e2294871fb3bdf291e",
+  "scenarios": {
+    "carga": {
+      "video_sha256": "d3c8b729bb7eaafa362f9650c0d3ec4fd3e22f02b3a3d6ec284f93cef73088d4",
+      "reports": [
+        {
+          "presentation": {
+            "dust": 1.0,
+            "charge_embers": 1.0,
+            "metal": 0.0,
+            "paths": 0.0,
+            "finish": 0.0,
+            "final_effects": 0.0,
+            "charge_poses": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "run_poses": [],
+            "land_poses": []
+          },
+          "extension": {
+            "peak_timer": 0,
+            "healed": 0,
+            "maximum_life": 1250,
+            "minimum_life": 1250,
+            "final_life": 1250,
+            "final_timer": 0,
+            "final_cooldown": 0,
+            "aura": 0,
+            "erasure": 0,
+            "bite": 0,
+            "awakenings": 0,
+            "victim_power": 0,
+            "victim_states": [
+              0
+            ]
+          },
+          "case": {
+            "name": "Carga con motores",
+            "kind": "charge",
+            "state": 500,
+            "button": "s",
+            "direction": "N",
+            "distance": 180,
+            "finish": 202,
+            "cost": 0,
+            "facing": 1
+          },
+          "states": [
+            0,
+            500
+          ],
+          "damage": 0,
+          "received": 0,
+          "minimum_power": 0,
+          "maximum_power": 1170,
+          "apex": 0.0,
+          "victim_apex": 0.0,
+          "blood_effects": 0,
+          "slash_effects": 0,
+          "ground_effects": 0,
+          "effects_at_end": 0,
+          "third_special_input_recognized": 0,
+          "activation_flash": 0,
+          "ground_ring": 0,
+          "distinct_trails": 0,
+          "confirmed_finish": 0,
+          "max_hitcount": 0,
+          "attack_time": 0,
+          "last": 0,
+          "victim_final": 0,
+          "dash_travel": 0.0,
+          "failures": []
+        }
+      ],
+      "audio": {
+        "case": "Carga con motores",
+        "frames": 51,
+        "cue": 0,
+        "activation_tick": 23,
+        "activation_correlation": 0.5611496304450636,
+        "duration": 3.6666666666666665,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "24877f750579bcc4467458244c3dfddcaaa2f1bc7db9052414e4166fcfe4de4f",
+        "alignment_start_seconds": 5.853854875283447,
+        "near_full_scale_fraction": 0.0
+      },
+      "scope_sha256": "025405e48e18239c53ceecc2d1fc16324e0b5839f6b13a3620e4b2edb9029d47",
+      "runtime_sha256": "5a5eaf9cf658dfcd6948e823bfaa24b7a797ceb8032b0be0871f024e13029b66"
+    },
+    "carrera": {
+      "video_sha256": "45520349e22c7f0e772d6bef60f5bde5e49ed9c5cdeaf14817a136336f07acbc",
+      "reports": [
+        {
+          "presentation": {
+            "dust": 2.0,
+            "charge_embers": 0.0,
+            "metal": 0.0,
+            "paths": 0.0,
+            "finish": 0.0,
+            "final_effects": 0.0,
+            "charge_poses": [],
+            "run_poses": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "land_poses": []
+          },
+          "extension": {
+            "peak_timer": 0,
+            "healed": 0,
+            "maximum_life": 1250,
+            "minimum_life": 1250,
+            "final_life": 1250,
+            "final_timer": 0,
+            "final_cooldown": 0,
+            "aura": 0,
+            "erasure": 0,
+            "bite": 0,
+            "awakenings": 0,
+            "victim_power": 3000,
+            "victim_states": [
+              0
+            ]
+          },
+          "case": {
+            "name": "Carrera frenado",
+            "kind": "polishdash",
+            "state": 106,
+            "button": "a",
+            "direction": "N",
+            "distance": 300,
+            "finish": 202,
+            "cost": 0,
+            "facing": 1
+          },
+          "states": [
+            0,
+            20,
+            100,
+            106
+          ],
+          "damage": 0,
+          "received": 0,
+          "minimum_power": 3000,
+          "maximum_power": 3000,
+          "apex": 0.0,
+          "victim_apex": 0.0,
+          "blood_effects": 0,
+          "slash_effects": 0,
+          "ground_effects": 0,
+          "effects_at_end": 0,
+          "third_special_input_recognized": 0,
+          "activation_flash": 0,
+          "ground_ring": 0,
+          "distinct_trails": 0,
+          "confirmed_finish": 0,
+          "max_hitcount": 0,
+          "attack_time": 0,
+          "last": 0,
+          "victim_final": 0,
+          "dash_travel": 156.1500244140625,
+          "failures": []
+        }
+      ],
+      "audio": {
+        "case": "Carrera frenado",
+        "frames": 47,
+        "cue": 17,
+        "activation_tick": 31,
+        "activation_correlation": 0.8426820810778791,
+        "duration": 3.6166666666666667,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "334c469e0e617665b70bae36a6cf9f534e1f9c74a7da8e639f8ae15000800c9c",
+        "alignment_start_seconds": 4.884557823129252,
+        "near_full_scale_fraction": 0.0
+      },
+      "scope_sha256": "05649e4d0e3160ff8cc0e75ad9bc77f0331c1d215450b7e92bccc43d66cb5e0a",
+      "runtime_sha256": "5a5eaf9cf658dfcd6948e823bfaa24b7a797ceb8032b0be0871f024e13029b66"
+    },
+    "aterrizaje": {
+      "video_sha256": "5cf44b8f7376976793a4dffe0b40fd1e83ba7760f86fa9622507ae32ea70f909",
+      "reports": [
+        {
+          "presentation": {
+            "dust": 1.0,
+            "charge_embers": 0.0,
+            "metal": 0.0,
+            "paths": 0.0,
+            "finish": 0.0,
+            "final_effects": 0.0,
+            "charge_poses": [],
+            "run_poses": [],
+            "land_poses": [
+              6,
+              7
+            ]
+          },
+          "extension": {
+            "peak_timer": 0,
+            "healed": 0,
+            "maximum_life": 1250,
+            "minimum_life": 1250,
+            "final_life": 1250,
+            "final_timer": 0,
+            "final_cooldown": 0,
+            "aura": 0,
+            "erasure": 0,
+            "bite": 0,
+            "awakenings": 0,
+            "victim_power": 3000,
+            "victim_states": [
+              0
+            ]
+          },
+          "case": {
+            "name": "Salto aterrizaje",
+            "kind": "jump",
+            "state": 50,
+            "button": "U",
+            "direction": "N",
+            "distance": 180,
+            "finish": 202,
+            "cost": 0,
+            "facing": 1
+          },
+          "states": [
+            0,
+            40,
+            50,
+            52
+          ],
+          "damage": 0,
+          "received": 0,
+          "minimum_power": 3000,
+          "maximum_power": 3000,
+          "apex": -65.24998474121094,
+          "victim_apex": 0.0,
+          "blood_effects": 0,
+          "slash_effects": 0,
+          "ground_effects": 0,
+          "effects_at_end": 0,
+          "third_special_input_recognized": 0,
+          "activation_flash": 0,
+          "ground_ring": 0,
+          "distinct_trails": 0,
+          "confirmed_finish": 0,
+          "max_hitcount": 0,
+          "attack_time": 0,
+          "last": 0,
+          "victim_final": 0,
+          "dash_travel": 0.0,
+          "failures": []
+        }
+      ],
+      "audio": {
+        "case": "Salto aterrizaje",
+        "frames": 52,
+        "cue": 17,
+        "activation_tick": 58,
+        "activation_correlation": 0.889885588256914,
+        "duration": 3.6333333333333333,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "886bf125fca2380ad186b8dd30714910da73e4451916fa7956732de6a3b7e060",
+        "alignment_start_seconds": 4.573900226757369,
+        "near_full_scale_fraction": 0.0
+      },
+      "scope_sha256": "1e9f83a0a681c2323f9a039ebe54f818d27693ff0e0ad181ef13d7c1d89ee17a",
+      "runtime_sha256": "5a5eaf9cf658dfcd6948e823bfaa24b7a797ceb8032b0be0871f024e13029b66"
+    },
+    "remate": {
+      "runtime_sha256": "2526bfdc8b3b2f8a9d1a6c4f57dd6fd7ce459f31d49ef1e2294871fb3bdf291e",
+      "scope_sha256": "6c1942f131eb7411937dd5d8df353234aedf44aa054ee5bc4f1ed227de0bee99",
+      "video_sha256": "41e41591e2487a851d2491ab11a0b3c6add7ab2d54abb07f0e3d86fc77e9a3f5",
+      "reports": [
+        {
+          "presentation": {
+            "dust": 0.0,
+            "charge_embers": 0.0,
+            "metal": 2.0,
+            "paths": 2.0,
+            "finish": 1.0,
+            "final_effects": 0.0,
+            "charge_poses": [],
+            "run_poses": [],
+            "land_poses": []
+          },
+          "extension": {
+            "peak_timer": 0,
+            "healed": 0,
+            "maximum_life": 1250,
+            "minimum_life": 1250,
+            "final_life": 1250,
+            "final_timer": 0,
+            "final_cooldown": 0,
+            "aura": 0,
+            "erasure": 0,
+            "bite": 0,
+            "awakenings": 0,
+            "victim_power": 3000,
+            "victim_states": [
+              0,
+              5000,
+              5001,
+              5030,
+              5035,
+              5050,
+              5100,
+              5101,
+              5110,
+              5120
+            ]
+          },
+          "case": {
+            "name": "Remate X",
+            "kind": "combo",
+            "state": 202,
+            "button": "a",
+            "direction": "N",
+            "distance": 42,
+            "finish": 202,
+            "cost": 0,
+            "facing": 1
+          },
+          "states": [
+            0,
+            200,
+            201,
+            202
+          ],
+          "damage": 152,
+          "received": 0,
+          "minimum_power": 3000,
+          "maximum_power": 3000,
+          "apex": 0.0,
+          "victim_apex": -54.450008392333984,
+          "blood_effects": 2,
+          "slash_effects": 2,
+          "ground_effects": 0,
+          "effects_at_end": 0,
+          "third_special_input_recognized": 0,
+          "activation_flash": 0,
+          "ground_ring": 0,
+          "distinct_trails": 0,
+          "confirmed_finish": 0,
+          "max_hitcount": 1,
+          "attack_time": 0,
+          "last": 0,
+          "victim_final": 0,
+          "dash_travel": 0.0,
+          "failures": []
+        }
+      ],
+      "audio": {
+        "case": "Remate X",
+        "frames": 47,
+        "cue": 16,
+        "activation_tick": 55,
+        "activation_correlation": 0.39555501225167844,
+        "duration": 3.6166666666666667,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "9b6b5abed3723cacce3b66a297393948342932cdaf13df15fc87459f48169fb3",
+        "alignment_start_seconds": 5.088321995464852,
+        "near_full_scale_fraction": 0.0
+      }
+    },
+    "remate_aereo": {
+      "runtime_sha256": "2526bfdc8b3b2f8a9d1a6c4f57dd6fd7ce459f31d49ef1e2294871fb3bdf291e",
+      "scope_sha256": "34421d6a90ec198b8a50f5ca273bbe421d0414748548395cab011de4c24214e3",
+      "video_sha256": "41332205e07eaca7c85c0fa2e86256f294ad0b44fe6d1f187fe52b0d31dae114",
+      "reports": [
+        {
+          "presentation": {},
+          "extension": {
+            "peak_timer": 0,
+            "healed": 0,
+            "maximum_life": 1250,
+            "minimum_life": 1250,
+            "final_life": 1250,
+            "final_timer": 0,
+            "final_cooldown": 0,
+            "aura": 0,
+            "erasure": 0,
+            "bite": 0,
+            "awakenings": 0,
+            "victim_power": 3000,
+            "victim_states": [
+              0,
+              40,
+              50,
+              5020,
+              5030,
+              5035,
+              5100,
+              5101,
+              5110,
+              5120
+            ]
+          },
+          "case": {
+            "name": "Air XYB",
+            "button": "a",
+            "sequence": [
+              "a",
+              "b",
+              "c"
+            ],
+            "route": [
+              600,
+              661,
+              672
+            ],
+            "expected": 205,
+            "direction": "N",
+            "state": 672,
+            "cost": 0,
+            "kind": "airmixed",
+            "facing": 1,
+            "distance": 40
+          },
+          "states": [
+            0,
+            40,
+            50,
+            52,
+            600,
+            661,
+            672
+          ],
+          "damage": 205,
+          "received": 0,
+          "minimum_power": 3000,
+          "maximum_power": 3000,
+          "apex": -62.799991607666016,
+          "victim_apex": -59.75999450683594,
+          "blood_effects": 10,
+          "slash_effects": 10,
+          "ground_effects": 0,
+          "effects_at_end": 0,
+          "third_special_input_recognized": 0,
+          "activation_flash": 0,
+          "ground_ring": 0,
+          "distinct_trails": 0,
+          "confirmed_finish": 0,
+          "max_hitcount": 1,
+          "attack_time": 0,
+          "last": 0,
+          "victim_final": 0,
+          "dash_travel": 20.600001335144043,
+          "failures": []
+        }
+      ],
+      "audio": {
+        "case": "Air XYB",
+        "frames": 44,
+        "cue": 8,
+        "activation_tick": 49,
+        "activation_correlation": 0.7145749695476867,
+        "duration": 3.6,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "9e641e2ccf2f31d968628719b0da011da1b86727671630b247dcfbce82ecac68",
+        "alignment_start_seconds": 4.405283446712017,
+        "near_full_scale_fraction": 0.0
+      }
+    },
+    "victoria": {
+      "runtime_sha256": "2526bfdc8b3b2f8a9d1a6c4f57dd6fd7ce459f31d49ef1e2294871fb3bdf291e",
+      "scope_sha256": "938f4b91f9ff597d7f7f5ffa43857225df7124c7d470a9e1d014c09c73f4ced9",
+      "video_sha256": "f1c234609d534b14679d8d5c2739d22e5dc032d3c64877fb0271519cc9cd095a",
+      "reports": [],
+      "audio": {
+        "case": "Victoria real",
+        "frames": 88,
+        "cue": 15,
+        "activation_tick": 189,
+        "activation_correlation": 0.531737418563167,
+        "duration": 6.433333333333334,
+        "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+        "raw_audio_sha256": "74d3855f04f093591acf6cd1048cf23e4e67001b2cbabdc4ef2882df5703f14c",
+        "alignment_start_seconds": 5.920022675736962,
+        "near_full_scale_fraction": 0.0
+      }
+    }
+  }
+}

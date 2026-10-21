@@ -32,5 +32,10 @@
     "case": "gap before special cancel trigger group",
     "rejected": true,
     "passed": true
+  },
+  {
+    "case": "unsupported victory assertion",
+    "rejected": true,
+    "passed": true
   }
 ]

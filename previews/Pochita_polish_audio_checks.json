@@ -1,0 +1,74 @@
+[
+  {
+    "case": "Carga con motores",
+    "frames": 51,
+    "cue": 0,
+    "activation_tick": 23,
+    "activation_correlation": 0.5611496304450636,
+    "duration": 3.6666666666666665,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "24877f750579bcc4467458244c3dfddcaaa2f1bc7db9052414e4166fcfe4de4f",
+    "alignment_start_seconds": 5.853854875283447,
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "Carrera frenado",
+    "frames": 47,
+    "cue": 17,
+    "activation_tick": 31,
+    "activation_correlation": 0.8426820810778791,
+    "duration": 3.6166666666666667,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "334c469e0e617665b70bae36a6cf9f534e1f9c74a7da8e639f8ae15000800c9c",
+    "alignment_start_seconds": 4.884557823129252,
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "Salto aterrizaje",
+    "frames": 52,
+    "cue": 17,
+    "activation_tick": 58,
+    "activation_correlation": 0.889885588256914,
+    "duration": 3.6333333333333333,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "886bf125fca2380ad186b8dd30714910da73e4451916fa7956732de6a3b7e060",
+    "alignment_start_seconds": 4.573900226757369,
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "Remate X",
+    "frames": 47,
+    "cue": 16,
+    "activation_tick": 55,
+    "activation_correlation": 0.39555501225167844,
+    "duration": 3.6166666666666667,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "9b6b5abed3723cacce3b66a297393948342932cdaf13df15fc87459f48169fb3",
+    "alignment_start_seconds": 5.088321995464852,
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "Air XYB",
+    "frames": 44,
+    "cue": 8,
+    "activation_tick": 49,
+    "activation_correlation": 0.7145749695476867,
+    "duration": 3.6,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "9e641e2ccf2f31d968628719b0da011da1b86727671630b247dcfbce82ecac68",
+    "alignment_start_seconds": 4.405283446712017,
+    "near_full_scale_fraction": 0.0
+  },
+  {
+    "case": "Victoria real",
+    "frames": 88,
+    "cue": 15,
+    "activation_tick": 189,
+    "activation_correlation": 0.531737418563167,
+    "duration": 6.433333333333334,
+    "audio_source": "Actual SDL disk driver output, stereo S16LE 44100 Hz, no offline mix",
+    "raw_audio_sha256": "74d3855f04f093591acf6cd1048cf23e4e67001b2cbabdc4ef2882df5703f14c",
+    "alignment_start_seconds": 5.920022675736962,
+    "near_full_scale_fraction": 0.0
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "winner_min_screen_x": 69,
+    "passed": true,
+    "facing": 1,
+    "real_KO": true,
+    "victory_poses": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "last_victory_time": 344,
+    "final_victim_life": 0,
+    "capture": false
+  },
+  {
+    "winner_min_screen_x": 127,
+    "passed": true,
+    "facing": -1,
+    "real_KO": true,
+    "victory_poses": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "last_victory_time": 344,
+    "final_victim_life": 0,
+    "capture": false
+  }
+]
