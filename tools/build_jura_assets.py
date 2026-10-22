@@ -32,6 +32,20 @@ EFFECTS={
  8605:[(79,887,145,948),(145,887,203,948),(202,887,251,948)],
  8606:[(263,904,277,918)]}
 
+# Only the three iris shades in the supplied body poses change. Keep their
+# pixel positions, black outlines and every other part of the source drawing.
+RINNEGAN_PALETTE={(128,33,33):(95,83,122),
+                  (185,45,45):(164,148,190),
+                  (188,70,70):(204,194,224)}
+
+def normal_rinnegan(im):
+    pixels=np.array(im);original=pixels.copy();changed=0
+    face=np.indices(pixels.shape[:2])[0]<24
+    for old,new in RINNEGAN_PALETTE.items():
+        mask=face & (original[:,:,3]>0) & np.all(original[:,:,:3]==old,axis=2)
+        pixels[mask,:3]=new;changed+=int(mask.sum())
+    return Image.fromarray(pixels),changed
+
 def cut(sheet,box):
     im=sheet.crop(box).convert('RGBA');v=np.array(im);r,g,b=[v[:,:,i].astype(int) for i in range(3)]
     background=(g>r+45)&(g>b+45)&(r<65)&(b<65)
@@ -44,9 +58,9 @@ def main():
     source=SOURCE/'Jura_sheet.png';sheet=Image.open(source).convert('RGBA');assert sheet.size==(500,1300)
     records=[];manifest=[]
     for n,(role,box,absolute_axis) in enumerate(BODIES):
-        im,origin=cut(sheet,box);path=A/'sprites'/f'0_{n}.png';im.save(path)
+        im,origin=cut(sheet,box);im,eye_pixels=normal_rinnegan(im);path=A/'sprites'/f'0_{n}.png';im.save(path)
         axis=(absolute_axis-origin[0],im.height-1)
-        records.append((0,n,path,axis));manifest.append(dict(group=0,number=n,role=role,file=str(path.relative_to(CHAR)),axis=list(axis),source_rectangle=box,redrawn=False,rgba_sha256=hashlib.sha256(im.tobytes()).hexdigest()))
+        records.append((0,n,path,axis));manifest.append(dict(group=0,number=n,role=role,file=str(path.relative_to(CHAR)),axis=list(axis),source_rectangle=box,redrawn=False,eye_pixels_recolored=eye_pixels,rgba_sha256=hashlib.sha256(im.tobytes()).hexdigest()))
     for group,boxes in EFFECTS.items():
         for n,box in enumerate(boxes):
             im,origin=cut(sheet,box);axis=(im.width//2,im.height-1) if group in [8600,8601,8602] else (im.width//2,im.height//2)
@@ -83,7 +97,7 @@ def main():
         nxt=off+16+len(payload) if i+1<len(samples) else 0;parts.append(struct.pack('<IIII',nxt,len(payload),g,n)+payload);off=nxt;(A/'sound'/f'{g}_{n}.wav').write_bytes(payload)
     (CHAR/'Jura.snd').write_bytes(bytes(header)+b''.join(parts))
     (A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,redrawn=False,ai_generated=False,green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
+    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,redrawn=False,ai_generated=False,eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
     board=Image.new('RGB',(1200,720),(28,31,40));d=ImageDraw.Draw(board)
     for i,m in enumerate(manifest):
         im=Image.open(CHAR/m['file']);im=im.resize((im.width*2,im.height*2),Image.Resampling.NEAREST);im.thumbnail((190,150),Image.Resampling.NEAREST);x=i%6*200;y=i//6*120;im.thumbnail((190,96),Image.Resampling.NEAREST);board.paste(im,(x+(200-im.width)//2,y),im);d.text((x+3,y+100),f"{m['number']}: {m['role']}",fill='white')

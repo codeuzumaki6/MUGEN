@@ -2,6 +2,8 @@
 
 [**Descargar Jura**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Jura_SHINJU.zip) · [Controles Xbox](Jura/CONTROLES_XBOX.md) · [Instalación](Jura/LEEME.md) · [Créditos](Jura/CREDITOS_Y_FUENTES.md)
 
+Corrección visual: ojos con Rinnegan violeta claro en las poses y retratos. Las grabaciones siguientes conservan el color rojo anterior; el combate no cambió. [Comprobación de píxeles](previews/Jura_eye_color_checks.json).
+
 [Bijūdamas y francotirador ocular con sonido real](previews/Jura_ocular_motor.mp4) · [Madera y raíces](previews/Jura_madera_motor.mp4) · [Ultimate](previews/Jura_ultimate_motor.mp4) · [Marcas de garra](previews/Jura_garras_motor.mp4) · [Combos](previews/Jura_combos_motor.mp4) · [Aéreos](previews/Jura_aereos_motor.mp4) · [Carga](previews/Jura_carga_motor.mp4) · [Amplificación](previews/Jura_despertar_motor.mp4)
 
 Conserva las 36 poses originales de Vahidras / Vaydra a escala nativa. Combate propio para MUGEN, adaptado de la referencia visual Vaydra Senki.mp4: tres cadenas terrestres, tres cadenas aéreas, 13 técnicas de madera, ojo, garras y levitación, dash en ambos sentidos y carga con aura turquesa. Los especiales tienen sonido y destello de activación.

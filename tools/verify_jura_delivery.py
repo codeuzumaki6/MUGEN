@@ -13,7 +13,15 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 names=['Jura.def','Jura.sff','Jura.snd','Jura.air','Jura.cns','Jura.cmd','common1.cns']
 before={n:sha(CHAR/n) for n in names}
 runtime=hashlib.sha256(b''.join((CHAR/n).read_bytes() for n in names)).hexdigest()
-checkpoint=json.loads((OUT/'Jura_capture_checkpoint.json').read_text());assert checkpoint['runtime_sha256']==runtime,'Previews use older runtime'
+checkpoint=json.loads((OUT/'Jura_capture_checkpoint.json').read_text())
+exact_preview=checkpoint['runtime_sha256']==runtime
+if not exact_preview:
+    # The recorded attacks remain applicable after a strictly checked iris-only
+    # palette correction; keep the older recording hash visible and honest.
+    color=json.loads((OUT/'Jura_eye_color_checks.json').read_text())
+    assert color['previous_runtime_sha256']==checkpoint['runtime_sha256'] and color['runtime_sha256']==runtime,'Unverified runtime change since recording'
+    assert color['sff_sha256']==sha(CHAR/'Jura.sff')
+    assert all(color[k] for k in ['non_iris_pixels_identical','axes_dimensions_and_alpha_identical','gameplay_and_sounds_unchanged','source_sheet_unchanged'])
 for job,entry in checkpoint['jobs'].items():
     assert sha(OUT/f'Jura_{job}_motor.mp4')==entry['video_sha256'],job
 assert len(checkpoint['jobs'])==8
@@ -68,6 +76,6 @@ for row in combat:
         assert row['charge_aura']==1 and row['aura_after_charge']==0
 delivery=json.loads((OUT/'Jura_delivery_manifest.json').read_text());assert delivery['sha256']==sha(ROOT/delivery['archive'])
 for n,checksum in delivery['files'].items():assert sha(CHAR/n)==checksum,n
-proof=dict(existing_character_files_unchanged=len(baseline),protected_sha256=baseline,source_sha256=source,engine_reports=reports,engine_cases=sum(r['cases'] for r in reports),static_regressions=7,deterministic_rebuilds=2,runtime_files_sha256=before,runtime_sha256=runtime,preview_matches_delivered_runtime=True,original_body_poses=36,code_mark_pixels_preserved=True,code_crossed_bands_pixels_preserved=True,code_effect_frames_preserved=40,claw_entrance_exit_and_travel_tested=True,double_tap_dash_cases=8,charge_and_interruption_cases=8,exact_mugen_v14_executable_tested=False)
+proof=dict(existing_character_files_unchanged=len(baseline),protected_sha256=baseline,source_sha256=source,engine_reports=reports,engine_cases=sum(r['cases'] for r in reports),static_regressions=7,deterministic_rebuilds=2,runtime_files_sha256=before,runtime_sha256=runtime,preview_matches_delivered_runtime=exact_preview,preview_matches_delivered_gameplay=True,preview_eye_color='current' if exact_preview else 'older red iris; see Jura_eye_color_checks.json',original_body_poses=36,code_mark_pixels_preserved=True,code_crossed_bands_pixels_preserved=True,code_effect_frames_preserved=40,claw_entrance_exit_and_travel_tested=True,double_tap_dash_cases=8,charge_and_interruption_cases=8,exact_mugen_v14_executable_tested=False)
 reportpath.write_text(json.dumps(proof,indent=2)+'\n')
-print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged, all eight previews match ZIP runtime')
+print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged;', 'exact recorded runtime' if exact_preview else 'only iris colors differ from recorded runtime')

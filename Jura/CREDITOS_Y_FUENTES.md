@@ -8,6 +8,8 @@
 - Sonidos no verbales: biblioteca del proyecto y cuatro efectos de chakra, disparo y explosión sintetizados para esta adaptación. Sin voces generadas ni doblaje imitado.
 - Programación de combate, estados comunes, ensamblado y validación: Codex, adaptación para el usuario.
 
+Por petición del usuario, únicamente los tres tonos rojos de los iris pasan a violeta claro de Rinnegan normal, también en los retratos. Se conservan posiciones, contornos y todos los demás píxeles.
+
 Las poses corporales se recortan de la hoja sin redibujarlas ni cambiar su escala. Se elimina el fondo verde y se indexan las paletas a un máximo de 255 colores opacos por sprite para el SFF. Los ejes se anclan al cuerpo y al suelo para que puños extendidos y patadas no desplacen toda la figura.
 
 La implementación se centra en bijūdama ocular, Mokuton, levitación y marcas de garra. La ultimate y la amplificación son adaptaciones de jugabilidad. No utiliza el Kokugan de Kawaki ni sus cubos negros. La esfera gris de la referencia fan no se usa como bijūdama.

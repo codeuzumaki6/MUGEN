@@ -5,6 +5,45 @@
   "body_entries": 36,
   "redrawn": false,
   "ai_generated": false,
+  "eye_color": "Normal Rinnegan: pale violet, only original red iris pixels replaced",
+  "eye_palette": [
+    {
+      "original": [
+        128,
+        33,
+        33
+      ],
+      "corrected": [
+        95,
+        83,
+        122
+      ]
+    },
+    {
+      "original": [
+        185,
+        45,
+        45
+      ],
+      "corrected": [
+        164,
+        148,
+        190
+      ]
+    },
+    {
+      "original": [
+        188,
+        70,
+        70
+      ],
+      "corrected": [
+        204,
+        194,
+        224
+      ]
+    }
+  ],
   "green_mask": "G>R+45 and G>B+45, R/B<65",
   "packed_palette_limit": 255,
   "tree_reference_only": "Jura_tree_reference.jpg",
