@@ -1,0 +1,102 @@
+{
+  "techniques": [
+    [
+      "Brazo",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Latigo",
+      "a",
+      "B",
+      1010,
+      500
+    ],
+    [
+      "Mandibula",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "Taladro",
+      "b",
+      "B",
+      1030,
+      650
+    ],
+    [
+      "Maza",
+      "c",
+      "F",
+      1040,
+      650
+    ],
+    [
+      "Espinas",
+      "c",
+      "B",
+      1050,
+      500
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      250
+    ],
+    [
+      "Perforacion",
+      "b",
+      "D",
+      1410,
+      400
+    ],
+    [
+      "TaladroAscendente",
+      "c",
+      "D",
+      1420,
+      500
+    ],
+    [
+      "Guardia",
+      "y",
+      "N",
+      1200,
+      500
+    ],
+    [
+      "Asalto",
+      "z",
+      "N",
+      1210,
+      1000
+    ],
+    [
+      "Retirada",
+      "y",
+      "D",
+      1430,
+      350
+    ],
+    [
+      "Division",
+      "z",
+      "D",
+      1440,
+      750
+    ]
+  ],
+  "clone_limit": 6,
+  "clone_life": 180,
+  "clone_ticks": 480,
+  "clone_generation_decision_delay": "10+6*min(generation,5)",
+  "ultimate_damage": "min(350, floor(enemy_lifemax*.35))",
+  "ultimate_cost": 3000,
+  "original_art_changed": false
+}

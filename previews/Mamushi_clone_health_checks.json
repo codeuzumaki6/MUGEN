@@ -1,0 +1,64 @@
+[
+  {
+    "case": {
+      "name": "clone_damage",
+      "kind": "clone_damage",
+      "face": 1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      10,
+      1440,
+      5000,
+      5001
+    ],
+    "damage": 74,
+    "received": 228,
+    "max_clones": 1,
+    "clones_after_root_hit": 1,
+    "clone_contact_samples": 33,
+    "clone_hurt_samples": 47,
+    "clone_min_health": -48,
+    "root_control_while_clone_alive": true,
+    "movement": 0.0,
+    "jump_apex": 0.0,
+    "min_power": 2250,
+    "max_power": 3000,
+    "end_clones": 0,
+    "end_state": 0,
+    "victim_end": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "clone_damage",
+      "kind": "clone_damage",
+      "face": -1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      10,
+      1440,
+      5000,
+      5001
+    ],
+    "damage": 120,
+    "received": 228,
+    "max_clones": 1,
+    "clones_after_root_hit": 1,
+    "clone_contact_samples": 26,
+    "clone_hurt_samples": 47,
+    "clone_min_health": -48,
+    "root_control_while_clone_alive": true,
+    "movement": 0.0,
+    "jump_apex": 0.0,
+    "min_power": 2250,
+    "max_power": 3000,
+    "end_clones": 0,
+    "end_state": 0,
+    "victim_end": 0,
+    "failures": []
+  }
+]

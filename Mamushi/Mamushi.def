@@ -1,0 +1,15 @@
+[Info]
+name = "Mamushi"
+displayname = "Mamushi Shinju"
+versiondate = 10,21,2026
+mugenversion = 1.1
+author = "misterioso924 (source), Vahidras (sprites), Codex (combat rebuild)"
+localcoord = 320,240
+[Files]
+sprite = Mamushi.sff
+sound = Mamushi.snd
+anim = Mamushi.air
+cmd = Mamushi.cmd
+cns = Mamushi.cns
+st = Mamushi.cns
+stcommon = common1.cns

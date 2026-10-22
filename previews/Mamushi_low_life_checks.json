@@ -1,0 +1,31 @@
+[
+  {
+    "case": {
+      "name": "low life ultimate",
+      "kind": "ultimate",
+      "face": 1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      3000,
+      3001
+    ],
+    "damage": 175,
+    "received": 0,
+    "max_clones": 0,
+    "clones_after_root_hit": 0,
+    "clone_contact_samples": 0,
+    "clone_hurt_samples": 0,
+    "clone_min_health": 180,
+    "root_control_while_clone_alive": false,
+    "movement": 30.0,
+    "jump_apex": 0.0,
+    "min_power": 0,
+    "max_power": 3000,
+    "end_clones": 0,
+    "end_state": 0,
+    "victim_end": 0,
+    "failures": []
+  }
+]

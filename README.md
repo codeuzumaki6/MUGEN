@@ -95,3 +95,42 @@ python3 tools/make_eida_technique_previews.py /ruta/al/ikemen
 EIDA_DAEMON_MODEL_REVIEW=1 python3 tools/make_eida_technique_previews.py /ruta/al/ikemen
 python3 tools/package_character.py
 ```
+
+
+---
+
+# Mamushi Shinju — división autónoma y combate reconstruido
+
+[**Descargar Mamushi**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Mamushi_SHINJU.zip)
+
+[**Ver la división con seis copias**](previews/Mamushi_division_motor.mp4) · [GIF de división](previews/Mamushi_division_motor.gif) · [Combos originales enlazados](previews/Mamushi_combos_motor.gif) · [Seis especiales con sonido real](previews/Mamushi_especiales_motor.mp4) · [Ultimate con A](previews/Mamushi_ultimate_motor.mp4)
+
+Se reconstruyó la programación de la base AC_Mamushi incompleta. Se mantienen los dibujos, colores y escala de las 80 entradas originales de cuerpo y armas; no se generan cuerpos con IA. Los retratos vacíos ahora usan un recorte de su propio rostro. Se conservan los originales recibidos y sus hashes en `source_material/Mamushi_original/`.
+
+- **X/X/X, Y/Y/Y y B/B/B:** cadenas de tres golpes con remate que lanza o derriba; permiten mezclar botones al acertar. Tres familias aéreas con un máximo de tres ataques por salto.
+- **Especiales:** seis direccionales y técnicas con abajo + X/Y/B, RB/RT y abajo + RB/RT, usando brazo, látigo, mandíbula, taladro, maza y espinas de la hoja. Activación audible, anticipación, colisiones y recuperación finita.
+- **Abajo + RT:** una copia autónoma por 750. Persigue y ataca mientras controlas al cuerpo principal. Las generaciones posteriores deciden más lento, con un tope de espera; sus golpes mantienen el daño base. Seis copias simultáneas, 180 de resistencia y ocho segundos de duración son reglas de esta adaptación. Se pueden derrotar individualmente; golpear al cuerpo principal no las borra.
+- **A:** Enjambre Shinju por tres barras. La apertura debe tocar al rival en el suelo y se puede bloquear, saltar o evitar por distancia. Al confirmar atacan las copias de la escena; daño total min(350, 35 % de vida máxima rival), con liberación y regreso al combate. No mata desde vida completa.
+- **LB/Pausa:** carga. **Abajo + LB** con tres barras activa seis segundos de concentración, cuesta una barra y aumenta un 15 % los golpes por colisión. Conserva el cuerpo y la escala, sin regeneración ni invulnerabilidad.
+
+Instala `Mamushi` dentro de `chars/` y añade `Mamushi/Mamushi.def` a `select.def`. También se incluye `AC_Mamushi.def` como alias si copias todos los archivos a tu carpeta antigua. [Controles Xbox](Mamushi/CONTROLES_XBOX.md) · [Instalación](Mamushi/LEEME.md) · [Créditos y adaptación](Mamushi/CREDITOS_Y_FUENTES.md).
+
+Comprobaciones en Ikemen GO: [66 casos generales](previews/Mamushi_engine_checks.json), [18 atajos y cadenas mezcladas](previews/Mamushi_extra_checks.json), [dos de daño independiente a las copias](previews/Mamushi_clone_health_checks.json), [ultimate contra 500 de vida](previews/Mamushi_low_life_checks.json) y [CPU](previews/Mamushi_CPU_checks.json). Se verifican ambos lados, energía, seis copias, control del jugador durante su actividad, persistencia al recibir daño, caducidad, derribo/levantada y una ulti que acierta, falla, se bloquea o no tiene energía. Hay seis regresiones de carga, arte, sonido y ayudantes, y [dos reconstrucciones idénticas](previews/Mamushi_rebuild_checks.json).
+
+[Conservación del arte, los originales y los otros personajes](previews/Mamushi_preservation_checks.json). SFF con 97 entradas, SND con 13 efectos no verbales, 127 acciones AIR y 99 estados. La hoja conserva su resolución y sus límites; no se presenta como nuevo arte profesional. Las capturas de especiales, división y ulti usan audio real SDL, sin mezclar golpes o voces después. La demostración de seis copias repone energía como prueba de entrenamiento; cada copia cuesta 750 en el personaje. [Registro de capturas](previews/Mamushi_preview_checks.json).
+
+No se ejecutó el binario exacto de Jump Force MUGEN V14 ni un mando físico. La estrategia CPU es básica y el equilibrio frente al plantel completo requiere partidas locales.
+
+```sh
+python3 tools/build_mamushi_assets.py
+python3 tools/build_mamushi_runtime.py
+python3 tools/validate_mamushi.py
+python3 tools/test_mamushi_regressions.py
+python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
+MAMUSHI_EXTRA_CHECKS=1 python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
+MAMUSHI_CLONE_HEALTH_CHECK=1 python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
+MAMUSHI_LOW_LIFE=1 python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
+MAMUSHI_CPU_CHECK=1 python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
+python3 tools/make_mamushi_previews.py /ruta/al/ikemen
+python3 tools/package_mamushi.py
+```
