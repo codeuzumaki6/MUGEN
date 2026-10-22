@@ -1,0 +1,42 @@
+{
+  "previous_commit": "ccfb65d7090a461aed7a64a99fd73a6e07c757f4",
+  "previous_runtime_sha256": "82f9338c0e24afa066b46f6d15375b3519fd8fdb6d0c87f386c9e07b677a4e23",
+  "runtime_sha256": "f67e5e1fe1ba18fdf3ced719b26bb56f1e69dabd210a461ee87c762023839d0f",
+  "files": {
+    "JuraShinju.def": {
+      "previous": "Jura.def",
+      "sha256": "ac50ab9088a0abc1f16584ffb6ab3c5b647c06fbd300d8dd0671e1abd88f7a90"
+    },
+    "JuraShinju.sff": {
+      "previous": "Jura.sff",
+      "sha256": "2028170f001cfe88b7046c96f0a66244f599ddab7d931de4b00cb5f28eb18d93"
+    },
+    "JuraShinju.snd": {
+      "previous": "Jura.snd",
+      "sha256": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5"
+    },
+    "JuraShinju.air": {
+      "previous": "Jura.air",
+      "sha256": "76e83975f7576e6b6668bd5a95c464081726b84c364677bb11b3174240c9a426"
+    },
+    "JuraShinju.cns": {
+      "previous": "Jura.cns",
+      "sha256": "57a38f9d83e4fe658ed0a66b96c822906aac5e3f13a7d6c221056533ec4e6e0b"
+    },
+    "JuraShinju.cmd": {
+      "previous": "Jura.cmd",
+      "sha256": "b157621ac9bbd9249f21e470122203b37908ac195c56413817376c5f286d2b87"
+    },
+    "JuraShinju_common.cns": {
+      "previous": "common1.cns",
+      "sha256": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013"
+    }
+  },
+  "only_def_identity_and_file_references_changed": true,
+  "gameplay_sprites_eye_color_and_sounds_unchanged": true,
+  "independent_zip_folder": "JuraShinju",
+  "internal_name": "Jura Shinju",
+  "display_name": "Jura Shinju",
+  "engine_smoke": "Loaded JuraShinju against Jura in the same match; both internal names verified",
+  "exact_windows_pack_tested": false
+}

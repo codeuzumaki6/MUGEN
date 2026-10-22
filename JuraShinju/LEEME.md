@@ -4,9 +4,11 @@ Adaptación jugable de la hoja de Vahidras / Vaydra. Conserva sus 36 poses a esc
 
 ## Instalación
 
-1. Extrae la carpeta `Jura` del ZIP dentro de `chars`.
-2. Añade `Jura/Jura.def` al apartado `[Characters]` de `data/select.def`.
+1. Extrae la carpeta `JuraShinju` del ZIP dentro de `chars`.
+2. Añade `JuraShinju/JuraShinju.def` al apartado `[Characters]` de `data/select.def`.
 3. Consulta CONTROLES_XBOX.md. Las letras Xbox dependen de la asignación de tu juego.
+
+El nombre interno y visible es **Jura Shinju**. La carpeta y los archivos usan el prefijo `JuraShinju` para evitar el conflicto con otro Jura instalado.
 
 La carpeta es independiente; no necesita Code, Kawaki ni otros personajes instalados. Incluye archivos DEF, AIR, CMD, CNS, SFF, SND y estados comunes.
 

@@ -1,5 +1,5 @@
 [Info]
-name="Jura"
+name="Jura Shinju"
 displayname="Jura Shinju"
 versiondate=10,22,2026
 mugenversion=1.1
@@ -7,13 +7,13 @@ author="Vahidras / Vaydra (sprites), Codex (fan adaptation)"
 localcoord=320,240
 pal.defaults=1
 [Files]
-sprite=Jura.sff
-sound=Jura.snd
-anim=Jura.air
-cmd=Jura.cmd
-cns=Jura.cns
-st=Jura.cns
-stcommon=common1.cns
+sprite=JuraShinju.sff
+sound=JuraShinju.snd
+anim=JuraShinju.air
+cmd=JuraShinju.cmd
+cns=JuraShinju.cns
+st=JuraShinju.cns
+stcommon=JuraShinju_common.cns
 [Palette Keymap]
 a=1
 b=1

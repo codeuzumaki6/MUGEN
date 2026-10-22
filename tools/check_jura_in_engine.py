@@ -33,8 +33,8 @@ if os.environ.get('JURA_CASES'):
 if os.environ.get('JURA_FORM'):cases=[c for c in cases if c['form']==int(os.environ['JURA_FORM'])]
 assert cases
 char=ENGINE/'chars/JuraCheck';dummy=ENGINE/'chars/JuraDummy'
-shutil.copytree(ROOT/'Jura',char,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True)
-shutil.copy2(char/'Jura.def',char/'JuraCheck.def');shutil.copy2(dummy/'kfm.def',dummy/'JuraDummy.def')
+shutil.copytree(ROOT/'JuraShinju',char,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True)
+shutil.copy2(char/'JuraShinju.def',char/'JuraCheck.def');shutil.copy2(dummy/'kfm.def',dummy/'JuraDummy.def')
 def fctl(kind,when,params):return f'\n[State -2, Test fixture]\ntype={kind}\ntriggerall=!IsHelper\ntriggerall=RoundState=2\ntrigger1={when}\nignorehitpause=1\n{params}\n'
 p1=fctl('VarAdd','1','v=58\nvalue=1');p2=fctl('VarSet','NumEnemy>0','v=58\nvalue=EnemyNear,Var(58)')
 for index,case in enumerate(cases):
@@ -80,7 +80,7 @@ for index,case in enumerate(cases):
   p1+=press(28,'x')
   if kind=='ultiblock':p2+=fctl('AssertInput',window(18,170),'flag='+('R' if face==1 else 'L'))
   if kind=='ultijump':p2+=fctl('PosSet',at(20),'y=-170')+fctl('ChangeState',at(20),'value=9702\nctrl=0')
-for path,fixture in [(char/'Jura.cns',p1),(dummy/'kfm.cns',p2)]:
+for path,fixture in [(char/'JuraShinju.cns',p1),(dummy/'kfm.cns',p2)]:
  text=path.read_text(encoding='latin-1')
  text=text.replace('[Statedef -2]','[Statedef -2]\n'+fixture,1) if '[Statedef -2]' in text else text+'\n[Statedef -2]\n'+fixture
  if path==dummy/'kfm.cns':text=re.sub(r'(?im)^life\s*=.*$',f'life={DUMMYLIFE}',text,count=1)
@@ -146,7 +146,7 @@ if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIO
 try:
  run=subprocess.run([str(ENGINE/'Ikemen_GO_Linux'),'-p1','JuraCheck','-p1.ai','8' if CPU else '0','-p2','JuraDummy','-p2.ai','0','-rounds','1','-time','300' if CAP else '9999']+(['-speed','0'] if CAP else ['-speedtest'])+([] if AUDIO else ['-nosound'])+['-log','jura_engine.log'],cwd=ENGINE,env=env,capture_output=True,text=True,timeout=180 if CAP else 110)
  print(run.stdout);print(run.stderr);assert run.returncode==0,f'Engine returned {run.returncode}'
- assert not re.search(r"WARNING: Jura's[^\n]*Unknown state controller parameter",run.stdout+run.stderr),'Jura controller parameter ignored by the engine'
+ assert not re.search(r"WARNING: Jura Shinju's[^\n]*Unknown state controller parameter",run.stdout+run.stderr),'Jura controller parameter ignored by the engine'
 finally:
  debug.write_text(saved)
  if module.exists():module.rename(module.with_name('-jura_checks.lua'))

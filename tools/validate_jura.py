@@ -5,13 +5,13 @@ import json,re,sys,struct
 from PIL import Image
 import validate_character as shared
 
-ROOT=Path(__file__).resolve().parents[1];CHAR=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else ROOT/'Jura'
+ROOT=Path(__file__).resolve().parents[1];CHAR=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else ROOT/'JuraShinju'
 shared.errors.clear();shared.MUGEN11_CALLS.add('target');check=shared.check;field=shared.field;integer=shared.integer
-for suffix in ['def','cns','cmd','air','sff','snd']:check((CHAR/f'Jura.{suffix}').is_file(),f'Missing {suffix}')
-check((CHAR/'common1.cns').is_file(),'Missing standalone common states')
+for suffix in ['def','cns','cmd','air','sff','snd']:check((CHAR/f'JuraShinju.{suffix}').is_file(),f'Missing {suffix}')
+check((CHAR/'JuraShinju_common.cns').is_file(),'Missing standalone common states')
 if shared.errors:raise SystemExit('\n'.join(shared.errors))
 for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
-    m=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'Jura.def').read_text());check(m and (CHAR/m[1].strip()).is_file(),f'Broken DEF {key}')
+    m=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'JuraShinju.def').read_text());check(m and (CHAR/m[1].strip()).is_file(),f'Broken DEF {key}')
 def parse_sff(path):
     data=path.read_bytes();check(data[:16]==b'ElecbyteSpr\0'+bytes((0,1,0,2)),'Invalid SFF v2 header')
     sh,count,ph,pc,lo,ls,to,ts=struct.unpack_from('<8I',data,36)
@@ -25,12 +25,12 @@ def parse_sff(path):
         check(w>0 and h>0 and fmt==0 and depth==8 and flags==0 and size==w*h and off+size<=ls and pal<pc,f'Invalid sprite {g},{n}')
         check((g,n) not in sprites,f'Duplicate sprite {g},{n}');sprites.add((g,n))
     return sprites
-sprites=parse_sff(CHAR/'Jura.sff');sounds=shared.parse_snd(CHAR/'Jura.snd')
+sprites=parse_sff(CHAR/'JuraShinju.sff');sounds=shared.parse_snd(CHAR/'JuraShinju.snd')
 check(not any(g in [8860,8870] for g,n in sprites),'Kokugan rod/cube graphics remain in SFF')
 check((1,21) in sounds,'Missing audible startup')
 for n in range(36):check((0,n) in sprites,f'Missing original body pose {n}')
 actions={};current=None
-for line in (CHAR/'Jura.air').read_text().splitlines():
+for line in (CHAR/'JuraShinju.air').read_text().splitlines():
     m=re.match(r'(?i)\[Begin Action (\d+)\]',line)
     if m:current=int(m[1]);check(current not in actions,f'Duplicate animation {current}');actions[current]=[]
     m=re.match(r'\s*(\d+),\s*(\d+),\s*(-?\d+),\s*(-?\d+),\s*(-?\d+)',line)
@@ -40,7 +40,7 @@ check(actions.get(0)==[(0,0,10),(0,1,10),(0,2,10)],'Attack poses entered idle')
 check(not set(actions)&{8860,8870,8871},'Kokugan action introduced')
 for n in [5100,5110,5120]:check(n in actions and all(t>=0 for _,_,t in actions[n]),f'Infinite recovery {n}')
 states=set();sections=[];counts={};commands=set();used=set()
-for name in ['Jura.cns','Jura.cmd','common1.cns']:
+for name in ['JuraShinju.cns','JuraShinju.cmd','JuraShinju_common.cns']:
     path=CHAR/name;shared.check_mugen11_calls(path);text=path.read_text();current=None
     check(not re.search(r'(?im)^type\s*=\s*(AssertInput|PrintToConsole)',text),'Fixture leaked into download')
     for header,body in shared.sections(text):

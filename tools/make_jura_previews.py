@@ -16,7 +16,7 @@ JOBS=[('combos',['Combo a','Combo b','Combo c'],210,False,'JURA | X X X / Y Y Y 
       ('ultimate',['ultimate'],420,True,'A: BIJUDAMA DEL DIEZ COLAS | Inicio esquivable y dano limitado',0),
       ('carga',['charge'],210,True,'CARGA | Chakra verde animado, ondas de presion y sonido del motor',0)]
 JOBS.sort(key=lambda j:0 if j[0]=='ultimate' else 1)
-runtime=hashlib.sha256(b''.join((ROOT/'Jura'/n).read_bytes() for n in ['Jura.def','Jura.sff','Jura.snd','Jura.air','Jura.cns','Jura.cmd','common1.cns'])).hexdigest()
+runtime=hashlib.sha256(b''.join((ROOT/'JuraShinju'/n).read_bytes() for n in ['JuraShinju.def','JuraShinju.sff','JuraShinju.snd','JuraShinju.air','JuraShinju.cns','JuraShinju.cmd','JuraShinju_common.cns'])).hexdigest()
 cachepath=OUT/'Jura_capture_checkpoint.json';cache=json.loads(cachepath.read_text()) if cachepath.exists() else {};cache=cache if cache.get('runtime_sha256')==runtime else dict(runtime_sha256=runtime,jobs={})
 reports=[]
 with tempfile.TemporaryDirectory(prefix='jura-video-') as temp:
@@ -37,7 +37,7 @@ with tempfile.TemporaryDirectory(prefix='jura-video-') as temp:
         cues=[tuple(map(int,line.split())) for line in (folder/'audio.tsv').read_text().splitlines()]
         matches=[];audio_args=[]
         if record:
-            with wave.open(str(ROOT/('Jura/assets/sound/1_35.wav' if name=='despertar' else 'Jura/assets/sound/1_4.wav' if name=='carga' else 'Jura/assets/sound/1_21.wav'))) as f:
+            with wave.open(str(ROOT/('JuraShinju/assets/sound/1_35.wav' if name=='despertar' else 'JuraShinju/assets/sound/1_4.wav' if name=='carga' else 'JuraShinju/assets/sound/1_21.wav'))) as f:
                 assert f.getsampwidth()==2
                 source=np.frombuffer(f.readframes(f.getnframes()),dtype='<i2').reshape(-1,f.getnchannels()).mean(axis=1)/32768
                 divisor=math.gcd(44100,f.getframerate());cue=resample_poly(source,44100//divisor,f.getframerate()//divisor)

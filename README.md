@@ -1,6 +1,8 @@
 # Jura Shinju — bijūdama ocular y Mokuton
 
-[**Descargar Jura**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Jura_SHINJU.zip) · [Controles Xbox](Jura/CONTROLES_XBOX.md) · [Instalación](Jura/LEEME.md) · [Créditos](Jura/CREDITOS_Y_FUENTES.md)
+[**Descargar Jura Shinju**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/JuraShinju.zip) · [Controles Xbox](JuraShinju/CONTROLES_XBOX.md) · [Instalación](JuraShinju/LEEME.md) · [Créditos](JuraShinju/CREDITOS_Y_FUENTES.md)
+
+Se instala como `JuraShinju`, con nombre interno y visible **Jura Shinju**, para añadirlo junto a otros personajes llamados Jura.
 
 Corrección visual: ojos con Rinnegan violeta claro en las poses y retratos. Las grabaciones siguientes conservan el color rojo anterior; el combate no cambió. [Comprobación de píxeles](previews/Jura_eye_color_checks.json).
 
@@ -12,7 +14,7 @@ La ultimate con A dispara desde el ojo y sólo inicia su secuencia si conecta; p
 
 Pruebas y registros: [entradas y colisiones](previews/Jura_engine_checks.json), [guardias](previews/Jura_guard_checks.json), [CPU](previews/Jura_CPU_checks.json), [vida reducida](previews/Jura_low_life_checks.json), [regeneración](previews/Jura_regen_checks.json), [grabaciones](previews/Jura_preview_checks.json) y [conservación y reconstrucción](previews/Jura_preservation_checks.json). Las capturas proceden de Ikemen GO; el binario exacto de Jump Force MUGEN V14 y el mando físico quedan por probar. Los videos de combos son silenciosos; los de técnicas capturan el sonido real del motor.
 
-Instala la carpeta `Jura` en `chars` y añade `Jura/Jura.def` al apartado `[Characters]` de `data/select.def`. Los personajes anteriores se conservan.
+Instala la carpeta `JuraShinju` en `chars` y añade `JuraShinju/JuraShinju.def` al apartado `[Characters]` de `data/select.def`. Los personajes anteriores se conservan.
 
 Reconstrucción: `python3 tools/build_jura_assets.py`, `python3 tools/build_jura_runtime.py`, `python3 tools/validate_jura.py`, `python3 tools/check_jura_in_engine.py`, `python3 tools/make_jura_previews.py` y `python3 tools/package_jura.py`. Las variantes `JURA_GUARD=1`, `JURA_CPU=1`, `JURA_LOW_LIFE=1` y `JURA_REGEN=1` activan las pruebas específicas del motor.
 

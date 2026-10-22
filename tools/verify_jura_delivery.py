@@ -8,19 +8,27 @@ from make_combo_preview import Sff2
 from read_reference_sff import ReferenceSff
 from build_archives import png_to_indexed
 
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews';CHAR=ROOT/'Jura'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews';CHAR=ROOT/'JuraShinju'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-names=['Jura.def','Jura.sff','Jura.snd','Jura.air','Jura.cns','Jura.cmd','common1.cns']
+names=['JuraShinju.def','JuraShinju.sff','JuraShinju.snd','JuraShinju.air','JuraShinju.cns','JuraShinju.cmd','JuraShinju_common.cns']
 before={n:sha(CHAR/n) for n in names}
 runtime=hashlib.sha256(b''.join((CHAR/n).read_bytes() for n in names)).hexdigest()
 checkpoint=json.loads((OUT/'Jura_capture_checkpoint.json').read_text())
 exact_preview=checkpoint['runtime_sha256']==runtime
+recording_runtime=runtime
+namespace_path=OUT/'Jura_namespace_checks.json'
+if namespace_path.exists():
+    namespace=json.loads(namespace_path.read_text())
+    assert namespace['runtime_sha256']==runtime,'Namespace verification is stale'
+    assert namespace['only_def_identity_and_file_references_changed'] and namespace['gameplay_sprites_eye_color_and_sounds_unchanged']
+    for n,entry in namespace['files'].items():assert entry['sha256']==sha(CHAR/n),n
+    recording_runtime=namespace['previous_runtime_sha256']
 if not exact_preview:
     # The recorded attacks remain applicable after a strictly checked iris-only
     # palette correction; keep the older recording hash visible and honest.
     color=json.loads((OUT/'Jura_eye_color_checks.json').read_text())
-    assert color['previous_runtime_sha256']==checkpoint['runtime_sha256'] and color['runtime_sha256']==runtime,'Unverified runtime change since recording'
-    assert color['sff_sha256']==sha(CHAR/'Jura.sff')
+    assert color['previous_runtime_sha256']==checkpoint['runtime_sha256'] and color['runtime_sha256']==recording_runtime,'Unverified runtime change since recording'
+    assert color['sff_sha256']==sha(CHAR/'JuraShinju.sff')
     assert all(color[k] for k in ['non_iris_pixels_identical','axes_dimensions_and_alpha_identical','gameplay_and_sounds_unchanged','source_sheet_unchanged'])
 for job,entry in checkpoint['jobs'].items():
     assert sha(OUT/f'Jura_{job}_motor.mp4')==entry['video_sha256'],job
@@ -44,7 +52,7 @@ for dirname in ['Jura_original']:
     manifest=ROOT/'source_material'/dirname/'sha256.json'
     if manifest.exists():
         for n,checksum in json.loads(manifest.read_text()).items():assert sha(manifest.parent/n)==checksum,n
-packed=Sff2(CHAR/'Jura.sff')
+packed=Sff2(CHAR/'JuraShinju.sff')
 for pose in json.loads((CHAR/'assets/sprites.json').read_text()):
     actual,axis=packed.image(pose['group'],pose['number']);expected=Image.open(CHAR/pose['file']).convert('RGBA')
     a=np.array(actual);b=np.array(expected);mask=b[:,:,3]>0
@@ -78,4 +86,4 @@ delivery=json.loads((OUT/'Jura_delivery_manifest.json').read_text());assert deli
 for n,checksum in delivery['files'].items():assert sha(CHAR/n)==checksum,n
 proof=dict(existing_character_files_unchanged=len(baseline),protected_sha256=baseline,source_sha256=source,engine_reports=reports,engine_cases=sum(r['cases'] for r in reports),static_regressions=7,deterministic_rebuilds=2,runtime_files_sha256=before,runtime_sha256=runtime,preview_matches_delivered_runtime=exact_preview,preview_matches_delivered_gameplay=True,preview_eye_color='current' if exact_preview else 'older red iris; see Jura_eye_color_checks.json',original_body_poses=36,code_mark_pixels_preserved=True,code_crossed_bands_pixels_preserved=True,code_effect_frames_preserved=40,claw_entrance_exit_and_travel_tested=True,double_tap_dash_cases=8,charge_and_interruption_cases=8,exact_mugen_v14_executable_tested=False)
 reportpath.write_text(json.dumps(proof,indent=2)+'\n')
-print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged;', 'exact recorded runtime' if exact_preview else 'only iris colors differ from recorded runtime')
+print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged;', 'exact recorded runtime' if exact_preview else 'only iris colors and verified namespace differ from recorded runtime')

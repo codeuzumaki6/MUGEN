@@ -4,7 +4,7 @@ from pathlib import Path
 import json,re
 from PIL import Image
 
-ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'Jura'
+ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'JuraShinju'
 MOVES=[('Espinas','a','F',1000,350),('Raiz','a','B',1010,450),
  ('Bijudama','b','F',1020,500),('BijudamaCargada','b','B',1030,700),
  ('Garras','c','F',1040,400),('Arbol','c','B',1050,650),
@@ -319,7 +319,7 @@ def common():
     put(state(5150,5150,'L','H','N')+c(5150,'Stay defeated','Null','1'))
     for n in [5200,5210]:put(state(n,n,'A',physics='A',velocity='-2,-5')+recover(n,'Time>=8',True))
     put(state(5300,5300,physics='S')+recover(5300))
-    (CHAR/'common1.cns').write_text('; Jura common states, derived from project native MUGEN guard and recovery.\n'+''.join(common))
+    (CHAR/'JuraShinju_common.cns').write_text('; Jura common states, derived from project native MUGEN guard and recovery.\n'+''.join(common))
 
 
 def commands():
@@ -362,7 +362,7 @@ trigger3=Time>=6''',f'value={base}+IfElse(ctrl,0,IfElse(StateNo=200 || StateNo=2
         out+=ctl(-1,'CPU legal technique','ChangeState',f'triggerall=AILevel>0\ntriggerall=RoundState=2\ntriggerall=ctrl\ntriggerall=StateType!=A\ntriggerall=Power>={costexpr(cost)}{extra}\ntrigger1=P2BodyDist X<{dist}\ntrigger1=Random<8+AILevel*2',f'value={n}')
     out+=ctl(-1,'CPU taijutsu','ChangeState','triggerall=AILevel>0\ntriggerall=RoundState=2\ntriggerall=ctrl\ntriggerall=StateType!=A\ntrigger1=P2BodyDist X<70','value=200')
     out+=ctl(-1,'CPU approach','ChangeState','triggerall=AILevel>0\ntriggerall=RoundState=2\ntriggerall=ctrl\ntriggerall=StateType!=A\ntrigger1=P2BodyDist X>=70','value=20\nctrl=1')
-    (CHAR/'Jura.cmd').write_text(out)
+    (CHAR/'JuraShinju.cmd').write_text(out)
 
 def system():
     s='\n[Statedef -2]\n'
@@ -436,10 +436,10 @@ crouch.friction=.82
 stand.friction.threshold=2
 crouch.friction.threshold=.05
 '''
-    (CHAR/'Jura.cns').write_text('; Jura: Vaydra sheet, own MUGEN combat and finite helpers.\n'+constants+''.join(states)+system())
-    (CHAR/'Jura.air').write_text('; Original Jura poses; no body redraw or alternate giant model.\n'+''.join(air))
-    (CHAR/'Jura.def').write_text('''[Info]
-name="Jura"
+    (CHAR/'JuraShinju.cns').write_text('; Jura: Vaydra sheet, own MUGEN combat and finite helpers.\n'+constants+''.join(states)+system())
+    (CHAR/'JuraShinju.air').write_text('; Original Jura poses; no body redraw or alternate giant model.\n'+''.join(air))
+    (CHAR/'JuraShinju.def').write_text('''[Info]
+name="Jura Shinju"
 displayname="Jura Shinju"
 versiondate=10,22,2026
 mugenversion=1.1
@@ -447,13 +447,13 @@ author="Vahidras / Vaydra (sprites), Codex (fan adaptation)"
 localcoord=320,240
 pal.defaults=1
 [Files]
-sprite=Jura.sff
-sound=Jura.snd
-anim=Jura.air
-cmd=Jura.cmd
-cns=Jura.cns
-st=Jura.cns
-stcommon=common1.cns
+sprite=JuraShinju.sff
+sound=JuraShinju.snd
+anim=JuraShinju.air
+cmd=JuraShinju.cmd
+cns=JuraShinju.cns
+st=JuraShinju.cns
+stcommon=JuraShinju_common.cns
 [Palette Keymap]
 a=1
 b=1

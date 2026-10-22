@@ -8,7 +8,7 @@ from build_mamushi_assets import pack_sff
 from make_combo_preview import Sff2
 from read_reference_sff import ReferenceSff
 
-ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'Jura';A=CHAR/'assets';SOURCE=ROOT/'source_material/Jura_original'
+ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'JuraShinju';A=CHAR/'assets';SOURCE=ROOT/'source_material/Jura_original'
 # Source rectangles include every extremity. Axes follow the planted body,
 # rather than centering extended punches on the whole sprite rectangle.
 BODIES=[
@@ -78,7 +78,7 @@ def main():
     for n,size in [(0,(25,25)),(1,(120,140))]:
         p=head.copy();p.thumbnail(size,Image.Resampling.NEAREST);factor=min(size[0]/head.width,size[1]/head.height);p=head.resize((round(head.width*factor),round(head.height*factor)),Image.Resampling.NEAREST)
         im=Image.new('RGBA',size);im.alpha_composite(p,((size[0]-p.width)//2,(size[1]-p.height)//2));path=A/f'portrait_{n}.png';im.save(path);records.append((9000,n,path,(0,0)))
-    pack_sff(records,CHAR/'Jura.sff')
+    pack_sff(records,CHAR/'JuraShinju.sff')
     original=(ROOT/'Shibai/Shibai.snd').read_bytes();number,off=struct.unpack_from('<II',original,16);samples={}
     for _ in range(number):
         nxt,size,g,n=struct.unpack_from('<IIII',original,off);samples[g,n]=original[off+16:off+16+size];off=nxt
@@ -95,7 +95,7 @@ def main():
     header=bytearray(512);header[:12]=b'ElecbyteSnd\0';header[12:16]=bytes((1,0,1,0));struct.pack_into('<II',header,16,len(samples),512);parts=[];off=512
     for i,((g,n),payload) in enumerate(sorted(samples.items())):
         nxt=off+16+len(payload) if i+1<len(samples) else 0;parts.append(struct.pack('<IIII',nxt,len(payload),g,n)+payload);off=nxt;(A/'sound'/f'{g}_{n}.wav').write_bytes(payload)
-    (CHAR/'Jura.snd').write_bytes(bytes(header)+b''.join(parts))
+    (CHAR/'JuraShinju.snd').write_bytes(bytes(header)+b''.join(parts))
     (A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
     (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,redrawn=False,ai_generated=False,eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
     board=Image.new('RGB',(1200,720),(28,31,40));d=ImageDraw.Draw(board)
