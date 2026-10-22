@@ -16,9 +16,11 @@ LB/Pausa, con la barra llena, activa durante doce segundos el cuerpo azul de
 la izquierda. Ambas formas conservan la escala y tienen movimiento, guardia,
 caída y recuperación. Consulta `CONTROLES_XBOX.md` para todas las entradas.
 
-Hay combos de viento terrestres y aéreos, tornados, estacas expansibles, cubos,
-tormentas, repulsión, contraataques y una marca de garra persistente que puedes
-usar para viajar. Los especiales tienen sonido de activación en el SND real.
+Hay combos de viento terrestres y aéreos, tornados, ráfagas cortantes,
+tormentas, repulsión, contraataques y una marca de garra vertical que puedes
+usar para viajar. El despertar amplía los ataques, agrega remates encadenados
+y refuerza los efectos; no contiene estacas, cubos ni Kokugan. Los especiales
+tienen sonido de activación en el SND real.
 La ultimate con A debe conectar y no elimina desde vida completa.
 
 Los dibujos nuevos se completaron con IA a partir de los dos modelos que

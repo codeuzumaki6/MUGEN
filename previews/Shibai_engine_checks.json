@@ -30,6 +30,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -63,11 +68,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Estacas",
+      "name": "RafagaCortante",
       "kind": "move",
       "form": 0,
       "face": 1,
@@ -96,11 +106,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Cubos",
+      "name": "TruenoDoble",
       "kind": "move",
       "form": 0,
       "face": 1,
@@ -129,6 +144,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -162,6 +182,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -195,6 +220,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -226,11 +256,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "EstacasBajas",
+      "name": "RemolinoBajo",
       "kind": "move",
       "form": 0,
       "face": 1,
@@ -257,6 +292,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -288,6 +328,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -319,6 +364,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -350,6 +400,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 1,
+    "claw_portals": 2,
+    "claw_mark_y": -39.0,
+    "claw_travel": 124.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -382,6 +437,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -413,6 +473,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 3,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -443,6 +508,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -476,6 +546,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -506,6 +581,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -539,6 +619,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -569,6 +654,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -602,6 +692,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -629,6 +724,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -655,6 +755,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -681,6 +786,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 9702,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -707,6 +817,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -732,6 +847,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -762,6 +882,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -795,6 +920,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -828,11 +958,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Estacas",
+      "name": "RafagaCortante",
       "kind": "move",
       "form": 0,
       "face": -1,
@@ -861,11 +996,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Cubos",
+      "name": "TruenoDoble",
       "kind": "move",
       "form": 0,
       "face": -1,
@@ -894,6 +1034,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -927,6 +1072,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -960,6 +1110,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -991,11 +1146,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "EstacasBajas",
+      "name": "RemolinoBajo",
       "kind": "move",
       "form": 0,
       "face": -1,
@@ -1022,6 +1182,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1053,6 +1218,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1084,6 +1254,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1115,6 +1290,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 1,
+    "claw_portals": 2,
+    "claw_mark_y": -39.0,
+    "claw_travel": 125.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1147,6 +1327,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1178,6 +1363,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 3,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1208,6 +1398,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1241,6 +1436,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1271,6 +1471,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1304,6 +1509,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1334,6 +1544,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1367,6 +1582,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1394,6 +1614,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1420,6 +1645,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1446,6 +1676,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 9702,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1472,6 +1707,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1497,6 +1737,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1527,6 +1772,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1548,9 +1798,9 @@
       20,
       1000
     ],
-    "damage": 338,
+    "damage": 419,
     "received": 0,
-    "movement": 69.69999694824219,
+    "movement": 72.94999694824219,
     "jump_apex": 0.0,
     "min_power": 2820,
     "max_power": 3000,
@@ -1560,6 +1810,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1581,9 +1836,9 @@
       20,
       1010
     ],
-    "damage": 304,
+    "damage": 514,
     "received": 0,
-    "movement": 112.0,
+    "movement": 63.75,
     "jump_apex": 0.0,
     "min_power": 2730,
     "max_power": 3000,
@@ -1593,11 +1848,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Estacas",
+      "name": "RafagaCortante",
       "kind": "move",
       "form": 1,
       "face": 1,
@@ -1614,9 +1874,9 @@
       20,
       1020
     ],
-    "damage": 389,
+    "damage": 597,
     "received": 0,
-    "movement": 37.19999694824219,
+    "movement": 23.949996948242188,
     "jump_apex": 0.0,
     "min_power": 2760,
     "max_power": 3000,
@@ -1626,11 +1886,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Cubos",
+      "name": "TruenoDoble",
       "kind": "move",
       "form": 1,
       "face": 1,
@@ -1647,7 +1912,7 @@
       20,
       1030
     ],
-    "damage": 148,
+    "damage": 176,
     "received": 0,
     "movement": 2.5,
     "jump_apex": 0.0,
@@ -1659,6 +1924,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1680,7 +1950,7 @@
       20,
       1040
     ],
-    "damage": 230,
+    "damage": 274,
     "received": 0,
     "movement": 2.8000030517578125,
     "jump_apex": 0.0,
@@ -1692,6 +1962,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1713,7 +1988,7 @@
       20,
       1050
     ],
-    "damage": 239,
+    "damage": 400,
     "received": 0,
     "movement": 2.5,
     "jump_apex": 0.0,
@@ -1725,6 +2000,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1744,7 +2024,7 @@
       11,
       1400
     ],
-    "damage": 148,
+    "damage": 176,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1756,11 +2036,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "EstacasBajas",
+      "name": "RemolinoBajo",
       "kind": "move",
       "form": 1,
       "face": 1,
@@ -1775,7 +2060,7 @@
       11,
       1410
     ],
-    "damage": 210,
+    "damage": 247,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1787,6 +2072,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1806,7 +2096,7 @@
       11,
       1420
     ],
-    "damage": 181,
+    "damage": 352,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1818,6 +2108,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1837,7 +2132,7 @@
       1200,
       1202
     ],
-    "damage": 214,
+    "damage": 254,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1849,6 +2144,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1868,7 +2168,7 @@
       1210,
       1211
     ],
-    "damage": 223,
+    "damage": 400,
     "received": 0,
     "movement": 124.0,
     "jump_apex": 0.0,
@@ -1880,6 +2180,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 1,
+    "claw_portals": 2,
+    "claw_mark_y": -39.0,
+    "claw_travel": 124.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1900,7 +2205,7 @@
       1202,
       1430
     ],
-    "damage": 214,
+    "damage": 254,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1912,6 +2217,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1931,7 +2241,7 @@
       11,
       1440
     ],
-    "damage": 223,
+    "damage": 263,
     "received": 0,
     "movement": 80.00000762939453,
     "jump_apex": 0.0,
@@ -1943,6 +2253,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 3,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1961,7 +2276,7 @@
       201,
       202
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -1973,6 +2288,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -1994,7 +2314,7 @@
       601,
       602
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2006,6 +2326,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2024,7 +2349,7 @@
       211,
       212
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2036,6 +2361,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2057,7 +2387,7 @@
       611,
       612
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2069,6 +2399,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2087,7 +2422,7 @@
       221,
       222
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2099,6 +2434,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2120,7 +2460,7 @@
       621,
       622
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2132,6 +2472,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2159,6 +2504,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2185,6 +2535,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2211,6 +2566,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 9702,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2237,6 +2597,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2262,6 +2627,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2292,6 +2662,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2313,9 +2688,9 @@
       20,
       1000
     ],
-    "damage": 338,
+    "damage": 419,
     "received": 0,
-    "movement": 69.69999694824219,
+    "movement": 72.94999694824219,
     "jump_apex": 0.0,
     "min_power": 2820,
     "max_power": 3000,
@@ -2325,6 +2700,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2346,9 +2726,9 @@
       20,
       1010
     ],
-    "damage": 304,
+    "damage": 514,
     "received": 0,
-    "movement": 112.0,
+    "movement": 63.75,
     "jump_apex": 0.0,
     "min_power": 2730,
     "max_power": 3000,
@@ -2358,11 +2738,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Estacas",
+      "name": "RafagaCortante",
       "kind": "move",
       "form": 1,
       "face": -1,
@@ -2379,9 +2764,9 @@
       20,
       1020
     ],
-    "damage": 389,
+    "damage": 597,
     "received": 0,
-    "movement": 37.19999694824219,
+    "movement": 23.949996948242188,
     "jump_apex": 0.0,
     "min_power": 2760,
     "max_power": 3000,
@@ -2391,11 +2776,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "Cubos",
+      "name": "TruenoDoble",
       "kind": "move",
       "form": 1,
       "face": -1,
@@ -2412,7 +2802,7 @@
       20,
       1030
     ],
-    "damage": 148,
+    "damage": 176,
     "received": 0,
     "movement": 2.5,
     "jump_apex": 0.0,
@@ -2424,6 +2814,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2445,7 +2840,7 @@
       20,
       1040
     ],
-    "damage": 230,
+    "damage": 274,
     "received": 0,
     "movement": 2.8000030517578125,
     "jump_apex": 0.0,
@@ -2457,6 +2852,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2478,7 +2878,7 @@
       20,
       1050
     ],
-    "damage": 239,
+    "damage": 400,
     "received": 0,
     "movement": 2.5,
     "jump_apex": 0.0,
@@ -2490,6 +2890,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2509,7 +2914,7 @@
       11,
       1400
     ],
-    "damage": 148,
+    "damage": 176,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2521,11 +2926,16 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
     "case": {
-      "name": "EstacasBajas",
+      "name": "RemolinoBajo",
       "kind": "move",
       "form": 1,
       "face": -1,
@@ -2540,7 +2950,7 @@
       11,
       1410
     ],
-    "damage": 210,
+    "damage": 247,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2552,6 +2962,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2571,7 +2986,7 @@
       11,
       1420
     ],
-    "damage": 181,
+    "damage": 352,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2583,6 +2998,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2602,7 +3022,7 @@
       1200,
       1202
     ],
-    "damage": 214,
+    "damage": 254,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2614,6 +3034,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2633,7 +3058,7 @@
       1210,
       1211
     ],
-    "damage": 223,
+    "damage": 400,
     "received": 0,
     "movement": 125.0,
     "jump_apex": 0.0,
@@ -2645,6 +3070,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 1,
+    "claw_portals": 2,
+    "claw_mark_y": -39.0,
+    "claw_travel": 125.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2665,7 +3095,7 @@
       1202,
       1430
     ],
-    "damage": 214,
+    "damage": 254,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2677,6 +3107,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2696,7 +3131,7 @@
       11,
       1440
     ],
-    "damage": 223,
+    "damage": 263,
     "received": 0,
     "movement": 80.00000762939453,
     "jump_apex": 0.0,
@@ -2708,6 +3143,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 3,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2726,7 +3166,7 @@
       201,
       202
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2738,6 +3178,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2759,7 +3204,7 @@
       601,
       602
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2771,6 +3216,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2789,7 +3239,7 @@
       211,
       212
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2801,6 +3251,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2822,7 +3277,7 @@
       611,
       612
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2834,6 +3289,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2852,7 +3312,7 @@
       221,
       222
     ],
-    "damage": 336,
+    "damage": 398,
     "received": 0,
     "movement": 0.0,
     "jump_apex": 0.0,
@@ -2864,6 +3324,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2885,7 +3350,7 @@
       621,
       622
     ],
-    "damage": 276,
+    "damage": 328,
     "received": 0,
     "movement": 0.0,
     "jump_apex": -100.92000579833984,
@@ -2897,6 +3362,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2924,6 +3394,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2950,6 +3425,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -2976,6 +3456,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 9702,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3002,6 +3487,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3027,6 +3517,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3057,6 +3552,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3083,6 +3583,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3111,6 +3616,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3140,6 +3650,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3166,6 +3681,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3193,6 +3713,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3219,6 +3744,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3247,6 +3777,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3276,6 +3811,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3302,6 +3842,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   },
   {
@@ -3329,6 +3874,11 @@
     "end_animation": 0,
     "end_state": 0,
     "victim_end": 0,
+    "claw_marks": 0,
+    "claw_portals": 0,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   }
 ]

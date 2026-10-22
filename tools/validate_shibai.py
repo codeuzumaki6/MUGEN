@@ -13,6 +13,7 @@ if shared.errors:raise SystemExit('\n'.join(shared.errors))
 for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
     m=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'Shibai.def').read_text());check(m and (CHAR/m[1].strip()).is_file(),f'Broken DEF {key}')
 sprites=shared.parse_sff(CHAR/'Shibai.sff');sounds=shared.parse_snd(CHAR/'Shibai.snd')
+check(not any(g in [8860,8870] for g,n in sprites),'Kokugan rod/cube graphics remain in SFF')
 check((1,21) in sounds,'Missing audible startup')
 for form in [0,1]:
     for n in range(24):check((form,n) in sprites,f'Missing articulated form {form} pose {n}')
@@ -25,6 +26,7 @@ for line in (CHAR/'Shibai.air').read_text().splitlines():
         g,n,x,y,t=map(int,m.groups());check((g,n) in sprites,f'Action {current}: missing sprite {g},{n}');actions[current].append((g,n,t))
 check(actions.get(0)==[(0,0,10),(0,1,10),(0,2,10)],'Attack poses entered idle')
 check(actions.get(10000)==[(1,0,10),(1,1,10),(1,2,10)],'Wrong awakened idle')
+check(not set(actions)&{8860,8870,8871},'Kokugan rod/cube actions remain in AIR')
 for n,frames in actions.items():
     if frames and frames[0][0] in [0,1] and n<10000:
         check(actions.get(n+10000)==[(1,no,t) for _,no,t in frames],f'Awakened timing/pose mismatch at {n}')

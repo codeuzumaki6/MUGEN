@@ -47,37 +47,37 @@ time=20
 buffer.time=4
 
 [Command]
-name="Estacas"
+name="RafagaCortante"
 command=~D,DF,F,b
 time=20
 buffer.time=4
 
 [Command]
-name="Estacas"
+name="RafagaCortante"
 command=~D,F,b
 time=20
 buffer.time=4
 
 [Command]
-name="Estacas"
+name="RafagaCortante"
 command=/DF,b
 time=20
 buffer.time=4
 
 [Command]
-name="Cubos"
+name="TruenoDoble"
 command=~D,DB,B,b
 time=20
 buffer.time=4
 
 [Command]
-name="Cubos"
+name="TruenoDoble"
 command=~D,B,b
 time=20
 buffer.time=4
 
 [Command]
-name="Cubos"
+name="TruenoDoble"
 command=/DB,b
 time=20
 buffer.time=4
@@ -125,7 +125,7 @@ time=20
 buffer.time=4
 
 [Command]
-name="EstacasBajas"
+name="RemolinoBajo"
 command=/D,b
 time=20
 buffer.time=4
@@ -306,19 +306,19 @@ triggerall = Power>=IfElse(Var(40)>0,270,450)
 trigger1 = ctrl
 value=1010
 
-[State -1, Estacas]
+[State -1, RafagaCortante]
 type = ChangeState
 triggerall = AILevel=0
-triggerall = command="Estacas"
+triggerall = command="RafagaCortante"
 triggerall = StateType!=A
 triggerall = Power>=IfElse(Var(40)>0,240,400)
 trigger1 = ctrl
 value=1020
 
-[State -1, Cubos]
+[State -1, TruenoDoble]
 type = ChangeState
 triggerall = AILevel=0
-triggerall = command="Cubos"
+triggerall = command="TruenoDoble"
 triggerall = StateType!=A
 triggerall = Power>=IfElse(Var(40)>0,330,550)
 trigger1 = ctrl
@@ -351,10 +351,10 @@ triggerall = Power>=IfElse(Var(40)>0,150,250)
 trigger1 = ctrl
 value=1400
 
-[State -1, EstacasBajas]
+[State -1, RemolinoBajo]
 type = ChangeState
 triggerall = AILevel=0
-triggerall = command="EstacasBajas"
+triggerall = command="RemolinoBajo"
 triggerall = StateType!=A
 triggerall = Power>=IfElse(Var(40)>0,210,350)
 trigger1 = ctrl
@@ -589,6 +589,28 @@ triggerall=StateNo<120 || StateNo>155
 trigger1=ctrl
 value=20
 ctrl=1
+
+[State -1, CPU travel through the placed claw]
+type = ChangeState
+triggerall=AILevel>0
+triggerall=RoundState=2
+triggerall=ctrl
+triggerall=StateType!=A
+triggerall=Power>=IfElse(Var(40)>0,180,300)
+triggerall=NumHelper(9600)>0
+trigger1=P2BodyDist X>90
+value=1211
+
+[State -1, CPU claw approach from a distance]
+type = ChangeState
+triggerall=AILevel>0
+triggerall=RoundState=2
+triggerall=ctrl
+triggerall=StateType!=A
+triggerall=Power>=IfElse(Var(40)>0,360,600)
+triggerall=NumHelper(9600)=0
+trigger1=P2BodyDist X>150
+value=1210
 
 [State -1, CPU legal technique]
 type = ChangeState

@@ -90,18 +90,21 @@ hook.add('loop','shibai_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,move=0,apex=0,minPower=3000,maxPower=0,awake=0,blue=0} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,move=0,apex=0,minPower=3000,maxPower=0,awake=0,blue=0,marks=0,portals=0,markY=0,travel=0} end
  local r=rows[case];local st=stateNo()
  if tick>4 then
   r.states[st]=true;r.received=math.max(r.received,1300-life());r.minPower=math.min(r.minPower,power());r.maxPower=math.max(r.maxPower,power());r.apex=math.min(r.apex,posY());r.awake=math.max(r.awake,var(40))
   if anim()>=10000 then r.blue=r.blue+1 end
   if tick==8 then r.startX=posX() end
   if tick>8 and tick<100 then r.move=math.max(r.move,math.abs(posX()-(r.startX or posX()))) end
+  r.marks=math.max(r.marks,numHelper(9600));r.portals=math.max(r.portals,numHelper(9601))
+  if numHelper(9600)>0 and helper(9600) then r.markY=posY();player(1) end
+  if st==1211 then r.travel=math.max(r.travel,math.abs(posX()-(r.startX or posX()))) end
   player(2);r.damage=math.max(r.damage,DUMMYLIFE-life());r.victim=stateNo();player(1)
  end
  if tick==TICKS-1 then
   local ss={};for n,_ in pairs(r.states) do table.insert(ss,n) end;table.sort(ss);for i,v in ipairs(ss) do ss[i]=tostring(v) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.awake..'\\t'..r.blue..'\\t'..var(40)..'\\t'..anim()..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..tostring(ctrl())..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.awake..'\\t'..r.blue..'\\t'..var(40)..'\\t'..anim()..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..tostring(ctrl())..'\\t'..r.marks..'\\t'..r.portals..'\\t'..r.markY..'\\t'..r.travel..'\\t'..numHelper(9600)..'\\n');f:flush()
  end
  CAPTURE
 end)
@@ -122,6 +125,7 @@ if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIO
 try:
  run=subprocess.run([str(ENGINE/'Ikemen_GO_Linux'),'-p1','ShibaiCheck','-p1.ai','8' if CPU else '0','-p2','ShibaiDummy','-p2.ai','0','-rounds','1','-time','300' if CAP else '9999']+(['-speed','0'] if CAP else ['-speedtest'])+([] if AUDIO else ['-nosound'])+['-log','shibai_engine.log'],cwd=ENGINE,env=env,capture_output=True,text=True,timeout=180 if CAP else 110)
  print(run.stdout);print(run.stderr);assert run.returncode==0,f'Engine returned {run.returncode}'
+ assert not re.search(r"WARNING: Shibai's[^\n]*Unknown state controller parameter",run.stdout+run.stderr),'Shibai controller parameter ignored by the engine'
 finally:
  debug.write_text(saved)
  if module.exists():module.rename(module.with_name('-shibai_checks.lua'))
@@ -133,9 +137,11 @@ for i,case in enumerate(cases):
   if case['state'] not in ss:bad.append('requested raw input did not enter technique')
   if damage<=0:bad.append('no actual collision damage')
   if case['name'] in ['Reflejo','Senrigan'] and 1202 not in ss:bad.append('incoming strike did not trigger counter')
+  if case['name']=='Garra' and (1211 not in ss or int(row[15])!=1 or int(row[16])<2 or float(row[17])!=-39 or float(row[18])<100 or int(row[19])!=0):bad.append('claw placement, visible entry/exit, travel or consumed mark failed')
+  if case['name']=='SalidaGarra' and int(row[16])<2:bad.append('claw retreat did not display both portals')
   if lowpower>3000-case['cost']:bad.append('energy was not spent')
  if kind in ['combo','air'] and (case['state'] not in ss or damage<180):bad.append('three-stage wind chain did not land')
- if kind=='cpu' and damage<=0:bad.append('CPU did no damage')
+ if kind=='cpu' and (damage<=0 or not {1210,1211}<=ss):bad.append('CPU did no damage or did not use claw placement and travel')
  if kind=='walk' and movement<40:bad.append('walk failed')
  if kind in ['jump','diagonal'] and not -110<apex<-60:bad.append('jump apex outside calibrated range')
  if kind=='charge' and (500 not in ss or highpower<900):bad.append('charge did not gain real energy')
@@ -145,8 +151,17 @@ for i,case in enumerate(cases):
  if kind=='ultimate' and (3001 not in ss or damage!=(210 if LOW else 420) or victim in [3010,3011]):bad.append('ultimate confirmation / bounded damage / safe release failed')
  if kind in ['ultiblock','ultijump','ultifar','empty'] and (damage>0 or 3001 in ss):bad.append('ultimate hit when it should fail')
  if case['form'] and blue<20:bad.append('awakened form never rendered')
- result=dict(case=case,states=sorted(ss),damage=damage,received=received,movement=movement,jump_apex=apex,min_power=lowpower,max_power=highpower,max_awakening=awake,blue_frames=blue,end_awakening=endawake,end_animation=endanim,end_state=endstate,victim_end=victim,failures=bad);report.append(result)
+ result=dict(case=case,states=sorted(ss),damage=damage,received=received,movement=movement,jump_apex=apex,min_power=lowpower,max_power=highpower,max_awakening=awake,blue_frames=blue,end_awakening=endawake,end_animation=endanim,end_state=endstate,victim_end=victim,claw_marks=int(row[15]),claw_portals=int(row[16]),claw_mark_y=float(row[17]),claw_travel=float(row[18]),claw_marks_remaining=int(row[19]),failures=bad);report.append(result)
  print('FAIL' if bad else 'PASS',case['name'],case['form'],case['face'],bad,damage)
+base_rows={(r['case']['name'],r['case']['face']):r for r in report if not r['case']['form']}
+comparisons=0
+for result in report:
+ case=result['case'];base=base_rows.get((case['name'],case['face']))
+ if case['form'] and base and case['kind'] in ['move','combo','air']:
+  comparisons+=1
+  if result['damage']<base['damage']*1.5:result['failures'].append('awakening did not increase real damage by at least 50 percent')
+  if result['damage']>=950:result['failures'].append('one technique exceeds intended versus damage budget')
 out=ROOT/'previews'/('Shibai_guard_checks.json' if GUARD else 'Shibai_CPU_checks.json' if CPU else 'Shibai_low_life_checks.json' if LOW else 'Shibai_capture_checks.json' if CAP else 'Shibai_engine_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not any(r['failures'] for r in report),str(out)
+if comparisons:print('PASS',comparisons,'awakened techniques and chains: greater collision damage, below full-life knockout')
 print('PASSED',len(report),'Shibai raw-input and collision cases')

@@ -721,20 +721,21 @@
     }
   ],
   "engine_cases": 126,
-  "static_regressions": 6,
+  "static_regressions": 7,
   "deterministic_rebuilds": 2,
   "runtime_files_sha256": {
     "Shibai.def": "fee9ccfd27b34de6d8dd592a7f5487eba8229c10f11b9ba852a05367c2ec8273",
-    "Shibai.sff": "1f1aeb860a592e72ebbcbb9006d672f92746ecb28449fffa67d90b1bbffc21ab",
+    "Shibai.sff": "0baa5f733315c1cd1c8119386806ba1eea65d37be589404e858515521bf5d18a",
     "Shibai.snd": "20859420ccaff05dbc6ac57fe8dc738f0e0aa883d6ac5a1bd39396f540a018f8",
-    "Shibai.air": "032cdf4dc8cc554cb35223699452124d188f412ac368f0b9a84256079fdcb256",
-    "Shibai.cns": "960c88874315739dba84fa33cc2e525afa04e5675014f4aed248aea8365c494e",
-    "Shibai.cmd": "f88e0373e71649dd55a144ff47368bdaf4b77d2e3f435ff8fe60240b51ac1083",
+    "Shibai.air": "30ed0d1f451aace639e8c5b90ba708130cdd0acb37decb8dda4b91018366bf9b",
+    "Shibai.cns": "6473087df7e186644ebc2a2b79fd3b5bb4932141ccc46a5d3ad7483a8624f391",
+    "Shibai.cmd": "9533f2365068d6941ca9308649fab9102392104635e54ed36d1a477dfc763bb3",
     "common1.cns": "8a14a43cbccffce9fefd1079f61c088d390c11280bef412b31f83c4ba6a511de"
   },
-  "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+  "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
   "preview_matches_delivered_runtime": true,
   "articulation_poses_per_form": 24,
   "code_mark_pixels_preserved": true,
+  "claw_entrance_exit_and_travel_tested": true,
   "exact_mugen_v14_executable_tested": false
 }

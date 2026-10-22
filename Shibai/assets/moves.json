@@ -15,14 +15,14 @@
       450
     ],
     [
-      "Estacas",
+      "RafagaCortante",
       "b",
       "F",
       1020,
       400
     ],
     [
-      "Cubos",
+      "TruenoDoble",
       "b",
       "B",
       1030,
@@ -50,7 +50,7 @@
       250
     ],
     [
-      "EstacasBajas",
+      "RemolinoBajo",
       "b",
       "D",
       1410,
@@ -98,12 +98,142 @@
     "cost": 1500,
     "technique_cost_multiplier": 0.6,
     "normal_attack_multiplier": 1.2,
-    "awakened_attack_multiplier": 1.65
+    "awakened_attack_multiplier": 1.95,
+    "projectile_scale_multiplier": 1.65,
+    "projectile_speed_multiplier": 1.15,
+    "extra_attacks": {
+      "1000": [
+        [
+          36,
+          8800,
+          75,
+          80,
+          0,
+          6.8,
+          0
+        ]
+      ],
+      "1010": [
+        [
+          40,
+          8800,
+          80,
+          190,
+          0,
+          1.6,
+          0
+        ]
+      ],
+      "1020": [
+        [
+          34,
+          8830,
+          60,
+          45,
+          -28,
+          12,
+          0
+        ],
+        [
+          42,
+          8830,
+          75,
+          45,
+          -48,
+          12,
+          0
+        ]
+      ],
+      "1030": [
+        [
+          44,
+          8810,
+          80,
+          230,
+          0,
+          0,
+          0
+        ]
+      ],
+      "1040": [
+        [
+          50,
+          8810,
+          60,
+          255,
+          0,
+          0,
+          0
+        ],
+        [
+          58,
+          8810,
+          75,
+          300,
+          0,
+          0,
+          0
+        ]
+      ],
+      "1050": [
+        [
+          25,
+          8850,
+          60,
+          0,
+          -38,
+          6.2,
+          0
+        ],
+        [
+          25,
+          8850,
+          60,
+          0,
+          -38,
+          -6.2,
+          0
+        ]
+      ],
+      "1400": [
+        [
+          19,
+          8830,
+          55,
+          32,
+          -13,
+          9,
+          0
+        ]
+      ],
+      "1410": [
+        [
+          32,
+          8830,
+          70,
+          35,
+          -13,
+          11,
+          0
+        ]
+      ],
+      "1420": [
+        [
+          24,
+          8810,
+          70,
+          110,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
   },
   "ultimate": {
     "cost": 3000,
     "budget": "min(420,floor(enemy_lifemax*.42))",
     "must_hit": true
   },
-  "canon_note": "Wind and thunder inspired by description; Kokugan, claw marks, repulsion and scripted combat are requested fan adaptations."
+  "canon_note": "Wind and thunder inspired by description. No Kokugan, rods or cubes. Claw marks, repulsion and scripted combat remain explicitly requested fan adaptations."
 }

@@ -24,12 +24,14 @@ def sound(folder):
  p.write_bytes(data)
 def archive(folder):
  p=folder/'Shibai.sff';b=bytearray(p.read_bytes());b[0]=0;p.write_bytes(b)
+def kokugan(folder):
+ with (folder/'Shibai.air').open('a') as f:f.write('\n[Begin Action 8860]\n8830,0,0,0,1\n')
 
 with tempfile.TemporaryDirectory(prefix='shibai-regressions-') as temp:
- for name,mutation in [('empty state',empty),('unsupported MUGEN function',extension),('wrong awakened body',wrongform),('infinite getup',infinite),('missing actual activation sample',sound),('corrupt SFF header',archive)]:
+ for name,mutation in [('empty state',empty),('unsupported MUGEN function',extension),('wrong awakened body',wrongform),('infinite getup',infinite),('missing actual activation sample',sound),('corrupt SFF header',archive),('Kokugan action reintroduced',kokugan)]:
   folder=Path(temp)/name;folder.mkdir()
   for p in (ROOT/'Shibai').iterdir():
    if p.is_file():shutil.copy2(p,folder/p.name)
   mutation(folder);run=subprocess.run([sys.executable,str(ROOT/'tools/validate_shibai.py'),str(folder)],capture_output=True,text=True)
   assert run.returncode!=0,(name,'corruption passed validation');print('PASS rejected',name)
-print('PASSED 6 Shibai file/syntax regressions')
+print('PASSED 7 Shibai file/syntax regressions')

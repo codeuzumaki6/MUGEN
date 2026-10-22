@@ -66,26 +66,9 @@ def main():
             p=A/'effects'/f'{8800+row*10}_{n}.png';cell.save(p)
             axis=(cell.width//2,cell.height-1 if row in [0,1,2] else cell.height//2)
             records.append((8800+row*10,n,p,axis))
-    # Otsutsuki stakes and cubes use authored geometry, with explicit visible boundaries.
+    # These former Kokugan objects do not belong in Shibai's current move set.
     for group in [8860,8870]:
-        for n in range(4):
-            if group==8860:
-                pic=Image.new('RGBA',(42,24));d=ImageDraw.Draw(pic)
-                d.polygon([(1,12),(34,9),(41,12),(34,15)],fill=(18,14,27),outline=(164,126,196))
-                d.line([(4,11),(32,10)],fill=(222,219,243),width=1);axis=(21,12)
-            else:
-                pic=Image.new('RGBA',(78,78));d=ImageDraw.Draw(pic);a=3+n
-                d.polygon([(a,16),(50,3),(75,22),(28,37)],fill=(49,39,62),outline=(179,154,211))
-                d.polygon([(a,16),(28,37),(28,75),(a,53)],fill=(17,13,24),outline=(116,96,149))
-                d.polygon([(28,37),(75,22),(75,59),(28,75)],fill=(30,23,42),outline=(179,154,211))
-                for y in [39,49,59]:d.line([(39,y),(60,y-6)],fill=(85,67,107))
-                axis=(39,77)
-            # Sukunahikona-inspired reveal: the object expands from a small
-            # stored object into its full combat silhouette, on a fixed canvas.
-            full=pic;factor=[.2,.45,.75,1][n];small=full.resize((max(1,round(full.width*factor)),max(1,round(full.height*factor))),Image.Resampling.NEAREST)
-            pic=Image.new('RGBA',full.size)
-            pic.alpha_composite(small,((full.width-small.width)//2,(full.height-small.height) if group==8870 else (full.height-small.height)//2))
-            p=A/'effects'/f'{group}_{n}.png';pic.save(p);records.append((group,n,p,axis))
+        for n in range(4):(A/'effects'/f'{group}_{n}.png').unlink(missing_ok=True)
     reference=Sff2(ROOT/'Mamushi/Mamushi.sff')
     for g,count in [(8700,4),(8710,4),(8720,6)]:
         for n in range(count):

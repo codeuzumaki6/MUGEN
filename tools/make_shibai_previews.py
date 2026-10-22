@@ -8,8 +8,8 @@ from scipy.signal import correlate,find_peaks,resample_poly
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews';ENGINE=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
 JOBS=[('combos',['Combo a','Combo b','Combo c'],210,False,'BASE | X X X / Y Y Y / B B B: viento y remates',0),
-      ('especiales',['Vendaval','Ciclon','Estacas','Cubos','Tormenta','Repulsion'],210,True,'BASE | Tornados, estacas, cubos, rayos y repulsion',0),
-      ('divino',['Vendaval','Estacas','Cubos','Tormenta'],210,True,'DESPERTAR | Mas alcance, mayor dano, ataques adicionales y menor coste',1),
+      ('especiales',['Vendaval','Ciclon','RafagaCortante','TruenoDoble','Tormenta','Repulsion'],210,True,'BASE | Tornados, rafagas cortantes, truenos y repulsion',0),
+      ('divino',['Vendaval','RafagaCortante','TruenoDoble','Tormenta'],210,True,'DESPERTAR | Tornados mayores, rafagas multiples y rayos encadenados',1),
       ('despertar',['awakening'],850,True,'ABAJO + PAUSA | Forma azul durante 12 segundos; misma escala corporal',0),
       ('garras',['Garra','SalidaGarra'],210,True,'RT: colocar marca y volver a pulsar para viajar | ABAJO RT: retirada',0),
       ('ultimate',['ultimate'],420,True,'A: CONVERGENCIA DIVINA | Debe conectar; dano total limitado',0)]
@@ -73,7 +73,7 @@ with tempfile.TemporaryDirectory(prefix='shibai-video-') as temp:
         vf=f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={title}:x=(w-tw)/2:y=690:fontsize=17:fontcolor=white'
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat)]+audio_args+['-vf',vf,'-c:v','libx264','-crf','18','-pix_fmt','yuv420p']+(['-c:a','aac','-b:a','160k'] if record else [])+['-t',str(duration),'-movflags','+faststart',str(video)],check=True)
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(video),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(gif)],check=True)
-        wanted=100 if name=='despertar' else 130 if name=='ultimate' else 100 if name=='garras' else 70
+        wanted=100 if name=='despertar' else 130 if name=='ultimate' else 110 if name=='garras' else 70
         selected=min(frames,key=lambda r:abs(r[3]-wanted));shutil.copy2(folder/f'Ikemen_GO{selected[0]:03d}.png',video.with_suffix('.png'))
         report=dict(name=name,runtime_sha256=runtime,duration=duration,frames=len(frames),audio='Actual SDL stereo 44100Hz; no offline sound mix' if record else 'Silent sprite-combo recording',activations=matches,combat_checks=checks)
         cache['jobs'][name]=dict(video_sha256=hashlib.sha256(video.read_bytes()).hexdigest(),report=report);cachepath.write_text(json.dumps(cache,indent=2)+'\n');reports.append(report)

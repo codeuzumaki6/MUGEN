@@ -76,9 +76,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 7,0
+velocity = 7*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 48,0
 guardflag = MA
@@ -101,7 +101,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 200, Return to movement]
 type = ChangeState
@@ -136,9 +136,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 7,0
+velocity = 7*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 62,0
 guardflag = MA
@@ -161,7 +161,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 201, Return to movement]
 type = ChangeState
@@ -196,9 +196,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.78*IfElse(Var(40)>0,1.35,1),0.78*IfElse(Var(40)>0,1.35,1)
+projscale = 0.78*IfElse(Var(40)>0,1.65,1),0.78*IfElse(Var(40)>0,1.65,1)
 offset = 38,0
-velocity = 7,0
+velocity = 7*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 94,0
 guardflag = MA
@@ -221,7 +221,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 202, Return to movement]
 type = ChangeState
@@ -256,9 +256,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 48,0
 guardflag = MA
@@ -281,7 +281,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 210, Return to movement]
 type = ChangeState
@@ -316,9 +316,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 62,0
 guardflag = MA
@@ -341,7 +341,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 211, Return to movement]
 type = ChangeState
@@ -376,9 +376,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.78*IfElse(Var(40)>0,1.35,1),0.78*IfElse(Var(40)>0,1.35,1)
+projscale = 0.78*IfElse(Var(40)>0,1.65,1),0.78*IfElse(Var(40)>0,1.65,1)
 offset = 38,0
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 94,0
 guardflag = MA
@@ -401,7 +401,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 212, Return to movement]
 type = ChangeState
@@ -436,9 +436,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 48,0
 guardflag = MA
@@ -461,7 +461,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 220, Return to movement]
 type = ChangeState
@@ -496,9 +496,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.8*IfElse(Var(40)>0,1.35,1),0.8*IfElse(Var(40)>0,1.35,1)
+projscale = 0.8*IfElse(Var(40)>0,1.65,1),0.8*IfElse(Var(40)>0,1.65,1)
 offset = 38,-39
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 62,0
 guardflag = MA
@@ -521,7 +521,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 221, Return to movement]
 type = ChangeState
@@ -556,9 +556,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 0.78*IfElse(Var(40)>0,1.35,1),0.78*IfElse(Var(40)>0,1.35,1)
+projscale = 0.78*IfElse(Var(40)>0,1.65,1),0.78*IfElse(Var(40)>0,1.65,1)
 offset = 38,0
-velocity = 5.5,0
+velocity = 5.5*IfElse(Var(40)>0,1.15,1),0
 attr = S, NP
 damage = 94,0
 guardflag = MA
@@ -581,7 +581,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 222, Return to movement]
 type = ChangeState
@@ -621,9 +621,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 42,0
 guardflag = MA
@@ -646,7 +646,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 600, One brief air lift]
 type = VelSet
@@ -698,9 +698,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 56,0
 guardflag = MA
@@ -723,7 +723,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 601, One brief air lift]
 type = VelSet
@@ -775,9 +775,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 70,0
 guardflag = MA
@@ -800,7 +800,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 602, One brief air lift]
 type = VelSet
@@ -852,9 +852,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 42,0
 guardflag = MA
@@ -877,7 +877,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 610, One brief air lift]
 type = VelSet
@@ -929,9 +929,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 56,0
 guardflag = MA
@@ -954,7 +954,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 611, One brief air lift]
 type = VelSet
@@ -1006,9 +1006,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 70,0
 guardflag = MA
@@ -1031,7 +1031,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 612, One brief air lift]
 type = VelSet
@@ -1083,9 +1083,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 42,0
 guardflag = MA
@@ -1108,7 +1108,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 620, One brief air lift]
 type = VelSet
@@ -1160,9 +1160,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 56,0
 guardflag = MA
@@ -1185,7 +1185,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 621, One brief air lift]
 type = VelSet
@@ -1237,9 +1237,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-32
-velocity = 6,0
+velocity = 6*IfElse(Var(40)>0,1.15,1),0
 attr = A, NP
 damage = 70,0
 guardflag = MA
@@ -1262,7 +1262,7 @@ fall.recovertime = 45
 getpower = 40,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 622, One brief air lift]
 type = VelSet
@@ -1327,6 +1327,36 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1000, Visible technique effect]
+type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1000, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1000, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1000, Technique sound]
 type = PlaySnd
 trigger1 = Time = 9
@@ -1346,9 +1376,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 40,0
-velocity = 5,0
+velocity = 5*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 58,4
 guardflag = MA
@@ -1371,7 +1401,7 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1000, Technique sound]
 type = PlaySnd
@@ -1392,9 +1422,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 48,0
-velocity = 5.8,0
+velocity = 5.8*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 82,4
 guardflag = MA
@@ -1417,12 +1447,19 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1000, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 36
+value = S1,30
+channel = 1
 
 [State 1000, Physical visible attack]
 type = Projectile
 triggerall = Var(40)>0
-trigger1 = Time = 34
+trigger1 = Time = 36
 projID = 1008
 projanim = 8800
 projhitanim = 8801
@@ -1433,11 +1470,11 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 45,0
-velocity = 8,0
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 80,0
+velocity = 6.8*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
-damage = 65,4
+damage = 75,4
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
@@ -1458,7 +1495,13 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1000, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 49
+value = 0
+ctrl = 1
 
 [State 1000, Return to movement]
 type = ChangeState
@@ -1511,6 +1554,36 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1010, Visible technique effect]
+type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1010, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1010, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1010, Technique sound]
 type = PlaySnd
 trigger1 = Time = 12
@@ -1530,9 +1603,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 80,0
-velocity = 1.2,0
+velocity = 1.2*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 92,4
 guardflag = MA
@@ -1555,7 +1628,7 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1010, Technique sound]
 type = PlaySnd
@@ -1576,9 +1649,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 130,0
-velocity = 1,0
+velocity = 1*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 92,4
 guardflag = MA
@@ -1601,7 +1674,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1010, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 40
+value = S1,30
+channel = 1
+
+[State 1010, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 40
+projID = 1018
+projanim = 8800
+projhitanim = 8801
+projremanim = 8801
+projremove = 1
+projremovetime = 65
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 190,0
+velocity = 1.6*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 80,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1010, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 53
+value = 0
+ctrl = 1
 
 [State 1010, Return to movement]
 type = ChangeState
@@ -1656,29 +1783,45 @@ removeongethit = 0
 
 [State 1020, Visible technique effect]
 type = Explod
+triggerall = Var(40)>0
 trigger1 = Time = 4
-anim = 8840
+anim = 8850
 postype = P1
-pos = 0,-68
-scale = 0.32,0.32
-removetime = 12
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
 ownpal = 1
-sprpriority = 3
+sprpriority = -2
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1020, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1020, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1020, Technique sound]
 type = PlaySnd
 trigger1 = Time = 10
-value = S1,32
+value = S1,30
 channel = 1
 
 [State 1020, Physical visible attack]
 type = Projectile
 trigger1 = Time = 10
 projID = 1020
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -1687,9 +1830,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 35,-28
-velocity = 10,0
+velocity = 10*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 48,4
 guardflag = MA
@@ -1712,19 +1855,19 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1020, Technique sound]
 type = PlaySnd
 trigger1 = Time = 18
-value = S1,32
+value = S1,30
 channel = 1
 
 [State 1020, Physical visible attack]
 type = Projectile
 trigger1 = Time = 18
 projID = 1021
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -1733,9 +1876,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 35,-48
-velocity = 10,0
+velocity = 10*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 48,4
 guardflag = MA
@@ -1758,19 +1901,19 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1020, Technique sound]
 type = PlaySnd
 trigger1 = Time = 26
-value = S1,32
+value = S1,30
 channel = 1
 
 [State 1020, Physical visible attack]
 type = Projectile
 trigger1 = Time = 26
 projID = 1022
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -1779,9 +1922,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 35,-35
-velocity = 11,0
+velocity = 11*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 75,4
 guardflag = MA
@@ -1804,14 +1947,21 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1020, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 34
+value = S1,30
+channel = 1
 
 [State 1020, Physical visible attack]
 type = Projectile
 triggerall = Var(40)>0
-trigger1 = Time = 36
+trigger1 = Time = 34
 projID = 1028
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -1820,11 +1970,59 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 45,-38
-velocity = 8,0
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 45,-28
+velocity = 12*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
-damage = 65,4
+damage = 60,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,9
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 34
+ground.slidetime = 22
+ground.velocity = -1,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
+
+[State 1020, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 42
+value = S1,30
+channel = 1
+
+[State 1020, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 42
+projID = 1029
+projanim = 8830
+projhitanim = 8700
+projremanim = 8700
+projremove = 1
+projremovetime = 65
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 45,-48
+velocity = 12*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 75,4
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
@@ -1845,7 +2043,13 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1020, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 51
+value = 0
+ctrl = 1
 
 [State 1020, Return to movement]
 type = ChangeState
@@ -1900,40 +2104,56 @@ removeongethit = 0
 
 [State 1030, Visible technique effect]
 type = Explod
+triggerall = Var(40)>0
 trigger1 = Time = 4
-anim = 8840
+anim = 8850
 postype = P1
-pos = 0,-68
-scale = 0.32,0.32
-removetime = 12
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
 ownpal = 1
-sprpriority = 3
+sprpriority = -2
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1030, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1030, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1030, Technique sound]
 type = PlaySnd
 trigger1 = Time = 16
-value = S1,33
+value = S1,31
 channel = 1
 
 [State 1030, Physical visible attack]
 type = Projectile
 trigger1 = Time = 16
 projID = 1030
-projanim = 8870
-projhitanim = 8871
+projanim = 8810
+projhitanim = 8811
 projremanim = 8700
 projremove = 1
-projremovetime = 65
+projremovetime = 20
 projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 100,-160
-velocity = 0,6
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 100,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 90,4
 guardflag = MA
@@ -1956,30 +2176,30 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1030, Technique sound]
 type = PlaySnd
 trigger1 = Time = 32
-value = S1,33
+value = S1,31
 channel = 1
 
 [State 1030, Physical visible attack]
 type = Projectile
 trigger1 = Time = 32
 projID = 1031
-projanim = 8870
-projhitanim = 8871
+projanim = 8810
+projhitanim = 8811
 projremanim = 8700
 projremove = 1
-projremovetime = 65
+projremovetime = 20
 projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 175,-160
-velocity = 0,6
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 175,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 90,4
 guardflag = MA
@@ -2002,27 +2222,34 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1030, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 44
+value = S1,31
+channel = 1
 
 [State 1030, Physical visible attack]
 type = Projectile
 triggerall = Var(40)>0
-trigger1 = Time = 42
+trigger1 = Time = 44
 projID = 1038
-projanim = 8870
-projhitanim = 8871
+projanim = 8810
+projhitanim = 8811
 projremanim = 8700
 projremove = 1
-projremovetime = 65
+projremovetime = 20
 projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 230,-160
-velocity = 0,6
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 230,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
-damage = 65,4
+damage = 80,4
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
@@ -2043,7 +2270,13 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1030, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 57
+value = 0
+ctrl = 1
 
 [State 1030, Return to movement]
 type = ChangeState
@@ -2096,6 +2329,36 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1040, Visible technique effect]
+type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1040, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1040, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1040, Technique sound]
 type = PlaySnd
 trigger1 = Time = 12
@@ -2115,9 +2378,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 90,0
-velocity = 0,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 70,4
 guardflag = MA
@@ -2140,7 +2403,7 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1040, Technique sound]
 type = PlaySnd
@@ -2161,9 +2424,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 145,0
-velocity = 0,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 70,4
 guardflag = MA
@@ -2186,7 +2449,7 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1040, Technique sound]
 type = PlaySnd
@@ -2207,9 +2470,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 200,0
-velocity = 0,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 90,4
 guardflag = MA
@@ -2232,12 +2495,19 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1040, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 50
+value = S1,31
+channel = 1
 
 [State 1040, Physical visible attack]
 type = Projectile
 triggerall = Var(40)>0
-trigger1 = Time = 52
+trigger1 = Time = 50
 projID = 1048
 projanim = 8810
 projhitanim = 8811
@@ -2248,11 +2518,59 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
-offset = 230,0
-velocity = 0,0
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 255,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
-damage = 65,4
+damage = 60,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,9
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 34
+ground.slidetime = 22
+ground.velocity = -1,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
+
+[State 1040, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 58
+value = S1,31
+channel = 1
+
+[State 1040, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 58
+projID = 1049
+projanim = 8810
+projhitanim = 8811
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 300,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 75,4
 guardflag = MA
 hitflag = MAF
 priority = 5,Hit
@@ -2273,7 +2591,13 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1040, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 67
+value = 0
+ctrl = 1
 
 [State 1040, Return to movement]
 type = ChangeState
@@ -2328,6 +2652,36 @@ removeongethit = 0
 
 [State 1050, Visible technique effect]
 type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1050, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1050, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
+[State 1050, Visible technique effect]
+type = Explod
 trigger1 = Time = 4
 anim = 8840
 postype = P1
@@ -2359,9 +2713,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 0,-38
-velocity = 5.3,0
+velocity = 5.3*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 145,4
 guardflag = MA
@@ -2384,7 +2738,7 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 1050, Technique sound]
 type = PlaySnd
@@ -2405,9 +2759,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 0,-38
-velocity = -5.3,0
+velocity = -5.3*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 145,4
 guardflag = MA
@@ -2430,7 +2784,109 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1050, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 25
+value = S1,30
+channel = 1
+
+[State 1050, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 25
+projID = 1058
+projanim = 8850
+projhitanim = 8700
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 0,-38
+velocity = 6.2*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 60,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,9
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 34
+ground.slidetime = 22
+ground.velocity = -1,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
+
+[State 1050, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 25
+value = S1,30
+channel = 1
+
+[State 1050, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 25
+projID = 1059
+projanim = 8850
+projhitanim = 8700
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 0,-38
+velocity = -6.2*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 60,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1050, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 37
+value = 0
+ctrl = 1
 
 [State 1050, Return to movement]
 type = ChangeState
@@ -2483,6 +2939,36 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1400, Visible technique effect]
+type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1400, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1400, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1400, Technique sound]
 type = PlaySnd
 trigger1 = Time = 8
@@ -2502,9 +2988,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 32,-13
-velocity = 7,0
+velocity = 7*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 90,4
 guardflag = L
@@ -2527,7 +3013,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1400, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 19
+value = S1,30
+channel = 1
+
+[State 1400, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 19
+projID = 1408
+projanim = 8830
+projhitanim = 8700
+projremanim = 8700
+projremove = 1
+projremovetime = 65
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 32,-13
+velocity = 9*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 55,4
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1400, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 33
+value = 0
+ctrl = 1
 
 [State 1400, Return to movement]
 type = ChangeState
@@ -2582,29 +3122,45 @@ removeongethit = 0
 
 [State 1410, Visible technique effect]
 type = Explod
+triggerall = Var(40)>0
 trigger1 = Time = 4
-anim = 8840
+anim = 8850
 postype = P1
-pos = 0,-68
-scale = 0.32,0.32
-removetime = 12
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
 ownpal = 1
-sprpriority = 3
+sprpriority = -2
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1410, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1410, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1410, Technique sound]
 type = PlaySnd
 trigger1 = Time = 10
-value = S1,32
+value = S1,30
 channel = 1
 
 [State 1410, Physical visible attack]
 type = Projectile
 trigger1 = Time = 10
 projID = 1410
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -2613,9 +3169,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 35,-13
-velocity = 11,0
+velocity = 11*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 52,4
 guardflag = L
@@ -2638,19 +3194,19 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 3
-envshake.ampl = -1
+envshake.ampl = IfElse(Var(40)>0,-2,-1)
 
 [State 1410, Technique sound]
 type = PlaySnd
 trigger1 = Time = 22
-value = S1,32
+value = S1,30
 channel = 1
 
 [State 1410, Physical visible attack]
 type = Projectile
 trigger1 = Time = 22
 projID = 1411
-projanim = 8860
+projanim = 8830
 projhitanim = 8700
 projremanim = 8700
 projremove = 1
@@ -2659,9 +3215,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 35,-13
-velocity = 11,0
+velocity = 11*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 75,4
 guardflag = L
@@ -2684,7 +3240,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1410, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 32
+value = S1,30
+channel = 1
+
+[State 1410, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 32
+projID = 1418
+projanim = 8830
+projhitanim = 8700
+projremanim = 8700
+projremove = 1
+projremovetime = 65
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 35,-13
+velocity = 11*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 70,4
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1410, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 47
+value = 0
+ctrl = 1
 
 [State 1410, Return to movement]
 type = ChangeState
@@ -2737,6 +3347,36 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1420, Visible technique effect]
+type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1420, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
 [State 1420, Technique sound]
 type = PlaySnd
 trigger1 = Time = 12
@@ -2756,9 +3396,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 48,0
-velocity = 0,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 110,4
 guardflag = MA
@@ -2781,7 +3421,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1420, Divine chained technique sound]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 24
+value = S1,31
+channel = 1
+
+[State 1420, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 24
+projID = 1428
+projanim = 8810
+projhitanim = 8811
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 110,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 70,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1420, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 37
+value = 0
+ctrl = 1
 
 [State 1420, Return to movement]
 type = ChangeState
@@ -2836,21 +3530,50 @@ removeongethit = 0
 
 [State 1211, Visible technique effect]
 type = Explod
-trigger1 = Time = 3
-anim = 8880
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
 postype = P1
-pos = 0,0
-scale = 1.2,1.2
-removetime = 30
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
 ownpal = 1
-sprpriority = -1
+sprpriority = -2
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1211, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1211, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
+[State 1211, Visible claw entrance or exit]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Garra transito"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,-39
+facing = 1
+keyctrl = 0
+ownpal = 1
+
 [State 1211, Visible technique effect]
 type = Explod
-trigger1 = Time = 10
+trigger1 = Time = 9
 anim = 8890
 postype = P1
 pos = 0,-42
@@ -2861,6 +3584,16 @@ sprpriority = 3
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
+
+[State 1211, Enter the slit before crossing]
+type = AssertSpecial
+trigger1 = Time >= 10 && Time < 18
+flag = Invisible
+
+[State 1211, Cross without pushing through bodies]
+type = PlayerPush
+trigger1 = Time >= 8 && Time <= 18
+value = 0
 
 [State 1211, Read saved physical mark]
 type = VarSet
@@ -2877,6 +3610,33 @@ x = Var(22)
 type = Turn
 trigger1 = Time = 15 && P2Dist X<0
 
+
+[State 1211, Visible claw entrance or exit]
+type = Helper
+trigger1 = Time = 15
+helpertype = Normal
+name = "Garra transito"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,-39
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 1211, Visible technique effect]
+type = Explod
+trigger1 = Time = 15
+anim = 8890
+postype = P1
+pos = 0,-42
+scale = 1,1
+removetime = 16
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
 
 [State 1211, Teleport sound]
 type = PlaySnd
@@ -2897,9 +3657,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 38,0
-velocity = 5.8,0
+velocity = 5.8*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 135,4
 guardflag = MA
@@ -2922,7 +3682,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1211, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 30
+projID = 1219
+projanim = 8810
+projhitanim = 8811
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 110,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 70,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1211, Thunder through the exit]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 30
+value = S1,31
+channel = 1
+
+[State 1211, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 36
+value = 0
+ctrl = 1
 
 [State 1211, Return to movement]
 type = ChangeState
@@ -2977,21 +3791,50 @@ removeongethit = 0
 
 [State 1440, Visible technique effect]
 type = Explod
-trigger1 = Time = 3
-anim = 8880
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
 postype = P1
-pos = 0,0
-scale = 1.2,1.2
-removetime = 30
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
 ownpal = 1
-sprpriority = -1
+sprpriority = -2
 pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
+[State 1440, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 1440, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
+[State 1440, Visible claw entrance or exit]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Garra transito"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,-39
+facing = 1
+keyctrl = 0
+ownpal = 1
+
 [State 1440, Visible technique effect]
 type = Explod
-trigger1 = Time = 10
+trigger1 = Time = 9
 anim = 8890
 postype = P1
 pos = 0,-42
@@ -3003,24 +3846,60 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
-[State 1440, Visible technique effect]
-type = Explod
+[State 1440, Enter the slit before crossing]
+type = AssertSpecial
+trigger1 = Time >= 10 && Time < 18
+flag = Invisible
+
+[State 1440, Cross without pushing through bodies]
+type = PlayerPush
+trigger1 = Time >= 8 && Time <= 18
+value = 0
+
+[State 1440, Visible claw entrance or exit]
+type = Helper
 trigger1 = Time = 3
-anim = 8880
+helpertype = Normal
+name = "Garra transito"
+ID = 9601
+stateno = 9601
 postype = P1
-pos = -80,0
-scale = 1.2,1.2
-removetime = 30
+pos = -80,-39
+facing = 1
+keyctrl = 0
 ownpal = 1
-sprpriority = -1
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
 [State 1440, Finite backward claw crossing]
 type = PosAdd
 trigger1 = Time = 14
 x = -80
+
+[State 1440, Visible claw entrance or exit]
+type = Helper
+trigger1 = Time = 15
+helpertype = Normal
+name = "Garra transito"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,-39
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 1440, Visible technique effect]
+type = Explod
+trigger1 = Time = 15
+anim = 8890
+postype = P1
+pos = 0,-42
+scale = 1,1
+removetime = 16
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
 
 [State 1440, Teleport sound]
 type = PlaySnd
@@ -3041,9 +3920,9 @@ projhits = 1
 projmisstime = 1
 projedgebound = 30
 projpriority = 2
-projscale = 1*IfElse(Var(40)>0,1.35,1),1*IfElse(Var(40)>0,1.35,1)
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
 offset = 38,0
-velocity = 5.8,0
+velocity = 5.8*IfElse(Var(40)>0,1.15,1),0
 attr = S, SP
 damage = 135,4
 guardflag = MA
@@ -3066,7 +3945,61 @@ fall.recovertime = 45
 getpower = 0,0
 givepower = 12,8
 envshake.time = 8
-envshake.ampl = -4
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1440, Physical visible attack]
+type = Projectile
+triggerall = Var(40)>0
+trigger1 = Time = 30
+projID = 1448
+projanim = 8810
+projhitanim = 8811
+projremanim = 8700
+projremove = 1
+projremovetime = 20
+projhits = 1
+projmisstime = 1
+projedgebound = 30
+projpriority = 2
+projscale = 1*IfElse(Var(40)>0,1.65,1),1*IfElse(Var(40)>0,1.65,1)
+offset = 110,0
+velocity = 0*IfElse(Var(40)>0,1.15,1),0
+attr = S, SP
+damage = 70,4
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 26
+ground.slidetime = 22
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-4.5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = IfElse(Var(40)>0,-6,-4)
+
+[State 1440, Thunder through the exit]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 30
+value = S1,31
+channel = 1
+
+[State 1440, Return to movement]
+type = ChangeState
+trigger1 = Var(40)=0 && Time >= 36
+value = 0
+ctrl = 1
 
 [State 1440, Return to movement]
 type = ChangeState
@@ -3127,10 +4060,16 @@ name = "Marca de garra"
 ID = 9600
 stateno = 9600
 postype = P1
-pos = 125,0
+pos = 125,-39
 facing = 1
 keyctrl = 0
 ownpal = 1
+
+[State 1210, Audible claw placement]
+type = PlaySnd
+trigger1 = Time = 6
+value = S1,32
+channel = 1
 
 [State 1210, Return to movement]
 type = ChangeState
@@ -3157,14 +4096,70 @@ trigger1 = 1
 value = SCA
 time = 1
 
-[State 9600, Visible ground mark priority]
+[State 9600, Upright original Code slash]
+type = AngleDraw
+trigger1 = 1
+value = 70
+scale = 1.9,1.65
+
+[State 9600, Claw highlights]
+type = PalFX
+trigger1 = 1
+time = 1
+mul = 256,105,220
+
+[State 9600, Readable claw priority]
 type = SprPriority
 trigger1 = 1
-value = -1
+value = 2
 
 [State 9600, Finite portal lifetime]
 type = DestroySelf
 trigger1 = Time >= 600
+trigger2 = RoundState != 2
+trigger3 = Root,StateNo = 1211
+trigger3 = Root,Time >= 14
+
+
+[Statedef 9601]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8880
+velset = 0,0
+
+[State 9601, Mark is not a fighter]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 9601, Mark does not absorb hits]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 9601, Upright original Code slash]
+type = AngleDraw
+trigger1 = 1
+value = 70
+scale = 1.9,1.65
+
+[State 9601, Claw highlights]
+type = PalFX
+trigger1 = 1
+time = 1
+mul = 256,105,220
+
+[State 9601, Readable claw priority]
+type = SprPriority
+trigger1 = 1
+value = 2
+
+[State 9601, Finite portal lifetime]
+type = DestroySelf
+trigger1 = Time >= 30
 trigger2 = RoundState != 2
 
 
@@ -3398,6 +4393,36 @@ removeongethit = 0
 
 [State 3000, Visible technique effect]
 type = Explod
+triggerall = Var(40)>0
+trigger1 = Time = 4
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.85,0.85
+removetime = 18
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3000, Divine storm contrast]
+type = BGPalFX
+triggerall = Var(40)>0
+trigger1 = Time = 4
+time = 10
+mul = 100,135,190
+
+[State 3000, Divine pressure]
+type = EnvShake
+triggerall = Var(40)>0
+trigger1 = Time = 6
+time = 8
+freq = 65
+ampl = -3
+
+[State 3000, Visible technique effect]
+type = Explod
 trigger1 = Time = 4
 anim = 8830
 postype = P1
@@ -3501,7 +4526,7 @@ trigger1 = Time = 18
 anim = 8840
 postype = P1
 pos = 100,-75
-scale = 1.2,1.2
+scale = 1.2*IfElse(Var(40)>0,1.4,1),1.2*IfElse(Var(40)>0,1.4,1)
 removetime = 22
 ownpal = 1
 sprpriority = 6
@@ -3528,7 +4553,7 @@ type = EnvShake
 trigger1 = Time = 18
 time = 7
 freq = 65
-ampl = -4
+ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 3001, Visible technique effect]
 type = Explod
@@ -3536,7 +4561,7 @@ trigger1 = Time = 43
 anim = 8800
 postype = P1
 pos = 100,0
-scale = 1.2,1.2
+scale = 1.2*IfElse(Var(40)>0,1.4,1),1.2*IfElse(Var(40)>0,1.4,1)
 removetime = 22
 ownpal = 1
 sprpriority = 6
@@ -3563,7 +4588,7 @@ type = EnvShake
 trigger1 = Time = 43
 time = 7
 freq = 65
-ampl = -4
+ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 3001, Visible technique effect]
 type = Explod
@@ -3571,7 +4596,7 @@ trigger1 = Time = 68
 anim = 8810
 postype = P1
 pos = 100,0
-scale = 1.2,1.2
+scale = 1.2*IfElse(Var(40)>0,1.4,1),1.2*IfElse(Var(40)>0,1.4,1)
 removetime = 22
 ownpal = 1
 sprpriority = 6
@@ -3598,7 +4623,7 @@ type = EnvShake
 trigger1 = Time = 68
 time = 7
 freq = 65
-ampl = -4
+ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 3001, Visible technique effect]
 type = Explod
@@ -3606,7 +4631,7 @@ trigger1 = Time = 93
 anim = 8850
 postype = P1
 pos = 100,-38
-scale = 1.2,1.2
+scale = 1.2*IfElse(Var(40)>0,1.4,1),1.2*IfElse(Var(40)>0,1.4,1)
 removetime = 22
 ownpal = 1
 sprpriority = 6
@@ -3633,7 +4658,7 @@ type = EnvShake
 trigger1 = Time = 93
 time = 7
 freq = 65
-ampl = -4
+ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 3001, Visible technique effect]
 type = Explod
@@ -3641,7 +4666,7 @@ trigger1 = Time = 122
 anim = 8850
 postype = P1
 pos = 100,-38
-scale = 1.5,1.5
+scale = 1.5*IfElse(Var(40)>0,1.4,1),1.5*IfElse(Var(40)>0,1.4,1)
 removetime = 22
 ownpal = 1
 sprpriority = 6
@@ -3668,7 +4693,7 @@ type = EnvShake
 trigger1 = Time = 122
 time = 7
 freq = 65
-ampl = -4
+ampl = IfElse(Var(40)>0,-6,-4)
 
 [State 3001, Release target safely]
 type = TargetState
@@ -3918,7 +4943,7 @@ elem=AnimElemNo(0)
 [State -2, Strong but bounded damage]
 type = AttackMulSet
 trigger1 = !IsHelper
-value=IfElse(Var(40)>0,1.65,1.2)
+value=IfElse(Var(40)>0,1.95,1.2)
 
 [State -2, Transcendent durability]
 type = DefenceMulSet
@@ -3935,6 +4960,20 @@ value=0
 type = StopSnd
 trigger1 = StateNo!=500
 channel=3
+
+[State -2, Visible technique effect]
+type = Explod
+trigger1 = !IsHelper && Var(40)>0 && RoundState=2 && GameTime%30=0
+anim = 8850
+postype = P1
+pos = 0,-40
+scale = 0.6,0.6
+removetime = 16
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
 
 [State -2, Clean round effects]
 type = RemoveExplod

@@ -1,29 +1,74 @@
 [
   {
     "case": {
-      "name": "ultimate",
-      "kind": "ultimate",
+      "name": "Garra",
+      "kind": "move",
       "form": 0,
       "face": 1,
-      "distance": 120
+      "button": "z",
+      "d": "N",
+      "state": 1210,
+      "cost": 300,
+      "distance": 180
     },
     "states": [
       0,
-      3000,
-      3001
+      1210,
+      1211
     ],
-    "damage": 420,
+    "damage": 162,
     "received": 0,
-    "movement": 0.0,
+    "movement": 125.0,
     "jump_apex": 0.0,
-    "min_power": 0,
+    "min_power": 2400,
     "max_power": 3000,
     "max_awakening": 0,
     "blue_frames": 0,
     "end_awakening": 0,
     "end_animation": 0,
     "end_state": 0,
-    "victim_end": 0,
+    "victim_end": 5110,
+    "claw_marks": 1,
+    "claw_portals": 2,
+    "claw_mark_y": -39.0,
+    "claw_travel": 125.0,
+    "claw_marks_remaining": 0,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "SalidaGarra",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "button": "z",
+      "d": "D",
+      "state": 1440,
+      "cost": 650,
+      "distance": 90
+    },
+    "states": [
+      0,
+      11,
+      1440
+    ],
+    "damage": 162,
+    "received": 0,
+    "movement": 80.00000762939453,
+    "jump_apex": 0.0,
+    "min_power": 2350,
+    "max_power": 3000,
+    "max_awakening": 0,
+    "blue_frames": 0,
+    "end_awakening": 0,
+    "end_animation": 0,
+    "end_state": 0,
+    "victim_end": 5120,
+    "claw_marks": 0,
+    "claw_portals": 3,
+    "claw_mark_y": 0.0,
+    "claw_travel": 0.0,
+    "claw_marks_remaining": 0,
     "failures": []
   }
 ]
