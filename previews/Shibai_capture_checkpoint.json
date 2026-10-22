@@ -1,11 +1,152 @@
 {
-  "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
+  "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
   "jobs": {
+    "carga": {
+      "video_sha256": "f556a88ccd0938b076e8caabaf63cffa75baa2feabfb45b05968d4b6b9dd22e3",
+      "report": {
+        "name": "carga",
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 3.2666666666666666,
+        "frames": 49,
+        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+        "activations": [
+          {
+            "frame": 21,
+            "case": 0,
+            "sample_seconds": 3.692471655328798,
+            "normalized_correlation": 0.3147991908277639
+          }
+        ],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "charge",
+              "kind": "charge",
+              "form": 0,
+              "face": 1,
+              "distance": 220
+            },
+            "states": [
+              0,
+              500
+            ],
+            "damage": 0,
+            "received": 0,
+            "movement": 0.0,
+            "jump_apex": 0.0,
+            "min_power": 0,
+            "max_power": 1364,
+            "max_awakening": 0,
+            "blue_frames": 0,
+            "end_awakening": 0,
+            "end_animation": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "claw_marks": 0,
+            "claw_portals": 0,
+            "claw_mark_y": 0.0,
+            "claw_travel": 0.0,
+            "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 1,
+            "aura_after_charge": 0,
+            "failures": []
+          }
+        ]
+      }
+    },
+    "dash": {
+      "video_sha256": "086103bd336e605f9c9f7f3ff75355de4b4ebb48d8c22bb381e1192e71c773b4",
+      "report": {
+        "name": "dash",
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 6.766666666666667,
+        "frames": 99,
+        "audio": "Silent sprite-combo recording",
+        "activations": [],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "Dash izquierda",
+              "kind": "dash",
+              "form": 0,
+              "face": 1,
+              "button": "L",
+              "state": 105,
+              "distance": 100
+            },
+            "states": [
+              0,
+              20,
+              105
+            ],
+            "damage": 0,
+            "received": 0,
+            "movement": 58.79998779296875,
+            "jump_apex": 0.0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "max_awakening": 0,
+            "blue_frames": 0,
+            "end_awakening": 0,
+            "end_animation": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "claw_marks": 0,
+            "claw_portals": 0,
+            "claw_mark_y": 0.0,
+            "claw_travel": 0.0,
+            "claw_marks_remaining": 0,
+            "dash_signed_distance": -67.65000915527344,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "Dash derecha",
+              "kind": "dash",
+              "form": 0,
+              "face": 1,
+              "button": "R",
+              "state": 100,
+              "distance": 100
+            },
+            "states": [
+              0,
+              20,
+              100
+            ],
+            "damage": 0,
+            "received": 0,
+            "movement": 92.59999465942383,
+            "jump_apex": 0.0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "max_awakening": 0,
+            "blue_frames": 0,
+            "end_awakening": 0,
+            "end_animation": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "claw_marks": 0,
+            "claw_portals": 0,
+            "claw_mark_y": 0.0,
+            "claw_travel": 0.0,
+            "claw_marks_remaining": 0,
+            "dash_signed_distance": 92.59999084472656,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
+            "failures": []
+          }
+        ]
+      }
+    },
     "combos": {
-      "video_sha256": "f0853d637cb04321f0c8bd256e2dcb9496d38e7a37c09c58a22fad998f48b609",
+      "video_sha256": "3ea275d4241ef3fee0fe1e0b6e7d073bf564fcb5a1b71191a519921a2e785fff",
       "report": {
         "name": "combos",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
         "duration": 10.266666666666667,
         "frames": 148,
         "audio": "Silent sprite-combo recording",
@@ -44,6 +185,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -79,6 +223,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -114,55 +261,58 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]
       }
     },
     "especiales": {
-      "video_sha256": "e7129a31d37b8464193baebf7fe17eadedbc481d2ac46d36748533d5dd66b0de",
+      "video_sha256": "02d25695753610ad6b16f1314fcf774879de0cd9681aff25b379a6f042a1b833",
       "report": {
         "name": "especiales",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
-        "duration": 21.71282479213908,
-        "frames": 298,
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 21.72724327826369,
+        "frames": 299,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.458231292517007,
-            "normalized_correlation": 0.6418953799641438
+            "sample_seconds": 4.504671201814059,
+            "normalized_correlation": 0.6387437213637428
           },
           {
             "frame": 239,
             "case": 1,
-            "sample_seconds": 8.126984126984127,
-            "normalized_correlation": 0.649433464895982
+            "sample_seconds": 8.17342403628118,
+            "normalized_correlation": 0.6405755864383891
           },
           {
             "frame": 449,
             "case": 2,
             "sample_seconds": 11.795736961451247,
-            "normalized_correlation": 0.5520336564311756
+            "normalized_correlation": 0.5571191680504021
           },
           {
             "frame": 659,
             "case": 3,
-            "sample_seconds": 15.464489795918368,
-            "normalized_correlation": 0.5976512061158197
+            "sample_seconds": 15.418049886621315,
+            "normalized_correlation": 0.588536370323487
           },
           {
             "frame": 869,
             "case": 4,
             "sample_seconds": 19.086802721088436,
-            "normalized_correlation": 0.5037616624725163
+            "normalized_correlation": 0.511865477106143
           },
           {
             "frame": 1079,
             "case": 5,
             "sample_seconds": 22.755555555555556,
-            "normalized_correlation": 0.7932343249843765
+            "normalized_correlation": 0.7932344161199166
           }
         ],
         "combat_checks": [
@@ -202,6 +352,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -240,6 +393,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -278,6 +434,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -316,6 +475,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -354,6 +516,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -392,43 +557,46 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]
       }
     },
     "divino": {
-      "video_sha256": "a0f8bfc1caa521279238970af73c827dbd7f128c12c67302906338b72006a8d7",
+      "video_sha256": "1b891cc72e84b4754a2e7cc1070bc24ea403ad1d19abc18b39cfce7773c0334b",
       "report": {
         "name": "divino",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
-        "duration": 14.447898067163374,
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 14.369539934492318,
         "frames": 197,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.458231292517007,
-            "normalized_correlation": 0.628912954047164
+            "sample_seconds": 4.504671201814059,
+            "normalized_correlation": 0.6308579196432482
           },
           {
             "frame": 239,
             "case": 1,
             "sample_seconds": 8.126984126984127,
-            "normalized_correlation": 0.5183515786583028
+            "normalized_correlation": 0.5092346076559273
           },
           {
             "frame": 449,
             "case": 2,
             "sample_seconds": 11.795736961451247,
-            "normalized_correlation": 0.5797887053331109
+            "normalized_correlation": 0.5741685758264194
           },
           {
             "frame": 659,
             "case": 3,
             "sample_seconds": 15.464489795918368,
-            "normalized_correlation": 0.5124913600013024
+            "normalized_correlation": 0.5290956148453855
           }
         ],
         "combat_checks": [
@@ -468,6 +636,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -506,6 +677,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -544,6 +718,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -582,25 +759,28 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]
       }
     },
     "despertar": {
-      "video_sha256": "285227d4132d9a73f81e88a03751b3c4529877a9464959f35ccebee38528930f",
+      "video_sha256": "8bda0cf72a66b569899810f5ad8a3c1f8156e54c0698e70bfdc7a56b3cf1aa29",
       "report": {
         "name": "despertar",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
-        "duration": 12.999999999999998,
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 13.0,
         "frames": 195,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.504671201814059,
-            "normalized_correlation": 0.9641203511992503
+            "sample_seconds": 4.458231292517007,
+            "normalized_correlation": 0.9584782026426695
           }
         ],
         "combat_checks": [
@@ -634,25 +814,28 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]
       }
     },
     "ultimate": {
-      "video_sha256": "27561eb0bfff799a17c902928b91596509700ac5122a39a70163a75d5a8d0025",
+      "video_sha256": "42142689b3a45aea1d8085803ccb88e1406c1408565f4ce471359bbf9b5b9ed1",
       "report": {
         "name": "ultimate",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
-        "duration": 4.849999999999999,
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 4.866666666666665,
         "frames": 72,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.458231292517007,
-            "normalized_correlation": 0.7531335754972999
+            "sample_seconds": 4.504671201814059,
+            "normalized_correlation": 0.7531335754973002
           }
         ],
         "combat_checks": [
@@ -686,37 +869,40 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]
       }
     },
     "garras": {
-      "video_sha256": "e3e93dda90641d26bd5eb0b30953599da6a0702487a196b6b8ba2fbdc34a55f0",
+      "video_sha256": "2bf392833b224e76b0c5b63533018bcdc703013ea3b145c1454001e1a4765396",
       "report": {
         "name": "garras",
-        "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
-        "duration": 7.452057445200302,
+        "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
+        "duration": 7.362273620559336,
         "frames": 99,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.458231292517007,
-            "normalized_correlation": 0.8298682910718717
+            "sample_seconds": 4.551111111111111,
+            "normalized_correlation": 0.7786069364934136
           },
           {
             "frame": 79,
             "case": 0,
-            "sample_seconds": 5.479909297052155,
-            "normalized_correlation": 0.8290405035144275
+            "sample_seconds": 5.526349206349207,
+            "normalized_correlation": 0.8264404008162631
           },
           {
             "frame": 239,
             "case": 1,
-            "sample_seconds": 8.312743764172335,
-            "normalized_correlation": 0.8286111145408245
+            "sample_seconds": 8.359183673469389,
+            "normalized_correlation": 0.827857051808742
           }
         ],
         "combat_checks": [
@@ -751,9 +937,12 @@
             "victim_end": 5110,
             "claw_marks": 1,
             "claw_portals": 2,
-            "claw_mark_y": -39.0,
+            "claw_mark_y": 0.0,
             "claw_travel": 125.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           },
           {
@@ -790,6 +979,9 @@
             "claw_mark_y": 0.0,
             "claw_travel": 0.0,
             "claw_marks_remaining": 0,
+            "dash_signed_distance": 0.0,
+            "charge_aura": 0,
+            "aura_after_charge": 0,
             "failures": []
           }
         ]

@@ -2,7 +2,7 @@
 """Film the actual Shibai character. Audio is captured from SDL, never mixed."""
 from pathlib import Path
 from itertools import combinations
-import hashlib,json,os,shutil,subprocess,sys,tempfile,wave
+import hashlib,json,math,os,shutil,subprocess,sys,tempfile,wave
 import numpy as np
 from scipy.signal import correlate,find_peaks,resample_poly
 
@@ -11,8 +11,11 @@ JOBS=[('combos',['Combo a','Combo b','Combo c'],210,False,'BASE | X X X / Y Y Y 
       ('especiales',['Vendaval','Ciclon','RafagaCortante','TruenoDoble','Tormenta','Repulsion'],210,True,'BASE | Tornados, rafagas cortantes, truenos y repulsion',0),
       ('divino',['Vendaval','RafagaCortante','TruenoDoble','Tormenta'],210,True,'DESPERTAR | Tornados mayores, rafagas multiples y rayos encadenados',1),
       ('despertar',['awakening'],850,True,'ABAJO + PAUSA | Forma azul durante 12 segundos; misma escala corporal',0),
-      ('garras',['Garra','SalidaGarra'],210,True,'RT: colocar marca y volver a pulsar para viajar | ABAJO RT: retirada',0),
-      ('ultimate',['ultimate'],420,True,'A: CONVERGENCIA DIVINA | Debe conectar; dano total limitado',0)]
+      ('garras',['Garra','SalidaGarra'],210,True,'GARRAS DE CODE | Marcas en el suelo y bandas cruzadas al entrar y salir',0),
+      ('ultimate',['ultimate'],420,True,'A: CONVERGENCIA DIVINA | Debe conectar; dano total limitado',0),
+      ('dash',['Dash izquierda','Dash derecha'],210,False,'DASH | Izquierda dos veces / derecha dos veces; ambas formas',0),
+      ('carga',['charge'],210,True,'CARGA | Aura azul animada, ondas de presion y particulas ascendentes',0)]
+JOBS.sort(key=lambda job: {'garras':0,'carga':1,'dash':2}.get(job[0],3))
 runtime=hashlib.sha256(b''.join((ROOT/'Shibai'/n).read_bytes() for n in ['Shibai.def','Shibai.sff','Shibai.snd','Shibai.air','Shibai.cns','Shibai.cmd','common1.cns'])).hexdigest()
 cachepath=OUT/'Shibai_capture_checkpoint.json';cache=json.loads(cachepath.read_text()) if cachepath.exists() else {};cache=cache if cache.get('runtime_sha256')==runtime else dict(runtime_sha256=runtime,jobs={})
 reports=[]
@@ -34,8 +37,10 @@ with tempfile.TemporaryDirectory(prefix='shibai-video-') as temp:
         cues=[tuple(map(int,line.split())) for line in (folder/'audio.tsv').read_text().splitlines()]
         matches=[];audio_args=[]
         if record:
-            with wave.open(str(ROOT/('Shibai/assets/sound/1_35.wav' if name=='despertar' else 'Shibai/assets/sound/1_21.wav'))) as f:
-                cue=resample_poly(np.frombuffer(f.readframes(f.getnframes()),dtype='<i2').astype(float)/32768,2,1)
+            with wave.open(str(ROOT/('Shibai/assets/sound/1_35.wav' if name=='despertar' else 'Shibai/assets/sound/1_4.wav' if name=='carga' else 'Shibai/assets/sound/1_21.wav'))) as f:
+                assert f.getsampwidth()==2
+                source=np.frombuffer(f.readframes(f.getnframes()),dtype='<i2').reshape(-1,f.getnchannels()).mean(axis=1)/32768
+                divisor=math.gcd(44100,f.getframerate());cue=resample_poly(source,44100//divisor,f.getframerate()//divisor)
             stereo=np.frombuffer(raw.read_bytes(),dtype='<i2').reshape(-1,2).astype(float)/32768;mono=stereo.mean(axis=1)
             cross=correlate(mono,cue,mode='valid',method='fft');energy=np.r_[0,np.cumsum(mono*mono)]
             norm=np.sqrt(np.maximum(0,energy[len(cue):]-energy[:-len(cue)])*np.sum(cue*cue));score=np.abs(cross)/np.maximum(norm,1e-12)
@@ -73,8 +78,9 @@ with tempfile.TemporaryDirectory(prefix='shibai-video-') as temp:
         vf=f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={title}:x=(w-tw)/2:y=690:fontsize=17:fontcolor=white'
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat)]+audio_args+['-vf',vf,'-c:v','libx264','-crf','18','-pix_fmt','yuv420p']+(['-c:a','aac','-b:a','160k'] if record else [])+['-t',str(duration),'-movflags','+faststart',str(video)],check=True)
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(video),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(gif)],check=True)
-        wanted=100 if name=='despertar' else 130 if name=='ultimate' else 110 if name=='garras' else 70
-        selected=min(frames,key=lambda r:abs(r[3]-wanted));shutil.copy2(folder/f'Ikemen_GO{selected[0]:03d}.png',video.with_suffix('.png'))
+        wanted=100 if name=='despertar' else 130 if name=='ultimate' else 110 if name=='garras' else 60 if name=='carga' else 36 if name=='dash' else 70
+        candidates=[f for f in frames if f[2]==0]
+        selected=min(candidates,key=lambda r:abs(r[3]-wanted));shutil.copy2(folder/f'Ikemen_GO{selected[0]:03d}.png',video.with_suffix('.png'))
         report=dict(name=name,runtime_sha256=runtime,duration=duration,frames=len(frames),audio='Actual SDL stereo 44100Hz; no offline sound mix' if record else 'Silent sprite-combo recording',activations=matches,combat_checks=checks)
         cache['jobs'][name]=dict(video_sha256=hashlib.sha256(video.read_bytes()).hexdigest(),report=report);cachepath.write_text(json.dumps(cache,indent=2)+'\n');reports.append(report)
         print('CAPTURED',name,len(frames),'frames',round(duration,2),'seconds',len(matches),'real sound anchors',flush=True)

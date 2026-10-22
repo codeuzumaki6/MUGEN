@@ -21,12 +21,14 @@ cambiar de lado. No se modifica tu configuración global del mando.
 | ↓ B | Descarga eléctrica cercana | 400 |
 | RB | Reflejo de un golpe físico durante una ventana breve | 450 |
 | ↓ RB | Senrigan: ventana de observación y contraataque más larga | 500 |
-| RT sin marca | Abre una garra vertical delante, durante diez segundos | 300 |
+| RT sin marca | Coloca una marca de garra sobre el suelo, durante diez segundos | 300 |
 | RT con marca | Entra por una garra, sale por la marca y lanza un tornado; consume la marca | 300 |
 | ↓ RT | Retirada por marcas con tornado hacia el frente | 650 |
 | A | Convergencia divina: ultimate que debe acertar | 3000 |
-| Mantener LB/Pausa | Cargar energía; soltar termina | — |
+| Mantener LB/Pausa | Cargar energía con aura azul, ondas y partículas; soltar termina | — |
 | ↓ LB/Pausa con 3000 | Despertar: cambia a la forma azul | 1500 |
+| ← ← | Dash hacia la izquierda, también al cambiar de lado | 0 |
+| → → | Dash hacia la derecha, también al cambiar de lado | 0 |
 
 Para continuar los combos, pulsa el siguiente botón cuando el viento alcance
 al rival. Fallar o ser bloqueado impide continuar la cadena. Los normales
@@ -35,7 +37,13 @@ aéreas tienen un máximo de tres ataques por salto.
 
 Se aceptan ↓→, ↓←, los cuartos de círculo completos y las diagonales
 mantenidas. Arriba salta, arriba diagonal salta avanzando, abajo agacha,
-dos toques adelante corren y dos toques atrás retroceden con salto corto.
+dos toques a izquierda o derecha hacen un dash corto por el suelo. Se suelta
+entre ambos toques; no requiere mantener la segunda pulsación. Funciona en
+ambas formas, termina automáticamente y respeta los bordes del escenario.
+
+La carga tiene una envoltura de energía animada de 24 fotogramas detrás del
+cuerpo, ondas en el suelo y partículas que suben. Suelta LB/Pausa para apagarla;
+también se corta al recibir un golpe, al llenar la barra o al terminar la ronda.
 
 ## Despertar
 
@@ -65,7 +73,9 @@ su sistema de estados al terminar.
 La marca de RT se coloca físicamente: no sigue al rival ni lo golpea de forma
 automática. Pulsa RT una segunda vez para aprovechar su posición. Dura diez
 segundos o hasta usarla; tras cruzarla, RT puede colocar otra. Se muestran las
-aberturas de entrada y salida con el gráfico original de Code, elevado y girado
-para distinguirlo del suelo. La CPU también coloca y cruza garras para acercarse
+marcas bajas originales 90,3 de Code y sus bandas cruzadas 200,24 durante la
+entrada y la salida, como en el video suministrado. Conservan el negro y los
+puntos blancos; el tránsito incluye apertura, desaparición y reaparición.
+La CPU también coloca y cruza garras para acercarse
 desde lejos. Los rayos y remolinos se crean en posiciones
 anunciadas y no persiguen al enemigo. No hay estacas, cubos ni Kokugan.

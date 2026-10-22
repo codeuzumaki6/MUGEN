@@ -17,8 +17,9 @@ la izquierda. Ambas formas conservan la escala y tienen movimiento, guardia,
 caída y recuperación. Consulta `CONTROLES_XBOX.md` para todas las entradas.
 
 Hay combos de viento terrestres y aéreos, tornados, ráfagas cortantes,
-tormentas, repulsión, contraataques y una marca de garra vertical que puedes
-usar para viajar. El despertar amplía los ataques, agrega remates encadenados
+tormentas, repulsión, contraataques y marcas bajas de Code que puedes usar
+para viajar entre bandas cruzadas. Hay dash a izquierda y derecha con doble
+toque y un aura azul animada al cargar energía. El despertar amplía los ataques, agrega remates encadenados
 y refuerza los efectos; no contiene estacas, cubos ni Kokugan. Los especiales
 tienen sonido de activación en el SND real.
 La ultimate con A debe conectar y no elimina desde vida completa.
@@ -38,7 +39,8 @@ No se dispone del ejecutable exacto de tu Jump Force MUGEN V14 ni de tu mando
 físico aquí. La carga en Ikemen GO no sustituye esa comprobación final.
 
 Al instalarlo, comprueba caminar, salto diagonal, agacharse y levantarse tras
-un derribo. Prueba X X X y los especiales desde ambos lados. Carga con Pausa,
+un derribo. Prueba doble toque a izquierda y derecha, X X X y los especiales
+desde ambos lados. Carga con Pausa y comprueba que el aura se corta al soltar;
 activa abajo más Pausa y verifica que vuelve a la túnica tras doce segundos.
 Con RT coloca una marca y vuelve a pulsar para viajar. Prueba A cerca, a
 distancia, contra guardia y contra un salto; fallar debe gastar las tres barras.

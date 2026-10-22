@@ -85,29 +85,93 @@ ctrl = 1
 [Statedef 100]
 type = S
 movetype = I
-physics = S
-ctrl = 1
+physics = N
+ctrl = 0
 anim = 100 + IfElse(Var(40)>0,10000,0)
-velset = 6.8,0
+velset = 7.6,0
+
+[State 100, Grounded dash to either side]
+type = PosSet
+trigger1 = 1
+y = 0
+
+[State 100, Maintain the short dash impulse]
+type = VelSet
+trigger1 = Time < 14
+x = 7.6
+y = 0
+
+[State 100, Short dash wind]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,30
+channel = 2
+
+[State 100, End the short dash cue]
+type = StopSnd
+trigger1 = Time = 8
+channel = 2
+
+[State 100, Dash motion trail]
+type = AfterImage
+trigger1 = Time = 0
+time = 12
+length = 4
+timegap = 2
+framegap = 2
+palcontrast = 90,130,180
+trans = Add
 
 [State 100, Return to movement]
 type = ChangeState
-trigger1 = AILevel=0 && command != "holdfwd"
+trigger1 = Time >= 14
 value = 0
 ctrl = 1
 
 [Statedef 105]
-type = A
+type = S
 movetype = I
-physics = A
+physics = N
 ctrl = 0
 anim = 105 + IfElse(Var(40)>0,10000,0)
-velset = -4.5,-4
+velset = -7.6,0
 
-[State 105, Backdash landing]
+[State 105, Grounded dash to either side]
+type = PosSet
+trigger1 = 1
+y = 0
+
+[State 105, Maintain the short dash impulse]
+type = VelSet
+trigger1 = Time < 14
+x = -7.6
+y = 0
+
+[State 105, Short dash wind]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,30
+channel = 2
+
+[State 105, End the short dash cue]
+type = StopSnd
+trigger1 = Time = 8
+channel = 2
+
+[State 105, Dash motion trail]
+type = AfterImage
+trigger1 = Time = 0
+time = 12
+length = 4
+timegap = 2
+framegap = 2
+palcontrast = 90,130,180
+trans = Add
+
+[State 105, Return to movement]
 type = ChangeState
-trigger1 = Vel Y>0 && Pos Y>=0
-value = 52
+trigger1 = Time >= 14
+value = 0
 ctrl = 1
 
 [Statedef 40]

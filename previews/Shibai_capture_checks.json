@@ -30,9 +30,12 @@
     "victim_end": 5110,
     "claw_marks": 1,
     "claw_portals": 2,
-    "claw_mark_y": -39.0,
+    "claw_mark_y": 0.0,
     "claw_travel": 125.0,
     "claw_marks_remaining": 0,
+    "dash_signed_distance": 0.0,
+    "charge_aura": 0,
+    "aura_after_charge": 0,
     "failures": []
   },
   {
@@ -69,6 +72,9 @@
     "claw_mark_y": 0.0,
     "claw_travel": 0.0,
     "claw_marks_remaining": 0,
+    "dash_signed_distance": 0.0,
+    "charge_aura": 0,
+    "aura_after_charge": 0,
     "failures": []
   }
 ]

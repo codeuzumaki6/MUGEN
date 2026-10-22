@@ -55,7 +55,7 @@ def divine_cast(n):
             +awakened(c(n,'Divine storm contrast','BGPalFX','Time = 4','time = 10\nmul = 100,135,190'))
             +awakened(c(n,'Divine pressure','EnvShake','Time = 6','time = 8\nfreq = 65\nampl = -3')))
 def claw_portal(n,when,x=0):
-    return c(n,'Visible claw entrance or exit','Helper',when,f'helpertype = Normal\nname = "Garra transito"\nID = 9601\nstateno = 9601\npostype = P1\npos = {x},-39\nfacing = 1\nkeyctrl = 0\nownpal = 1')
+    return c(n,'Crossed Code bands at entrance or exit','Helper',when,f'helpertype = Normal\nname = "Garras cruzadas"\nID = 9601\nstateno = 9601\npostype = P1\npos = {x},0\nfacing = 1\nkeyctrl = 0\nownpal = 1')
 def projectile(n,tick,anim,damage,x=30,y=-36,vx=6,vy=0,fin=False,low=False,pid=None,lifetime=65,scale=1,normal=False):
     pid=n if pid is None else pid
     return c(n,'Physical visible attack','Projectile',f'Time = {tick}',f'''projID = {pid}
@@ -101,7 +101,7 @@ def animations():
     for n in [6,10,11,12,121,131,141,151]:animation(n,[(9,5)])
     animation(20,[(3,5),(4,5),(5,5)],loop=True);animation(21,[(5,6),(4,6),(3,6)],loop=True)
     animation(100,[(3,3),(4,3),(5,3)],loop=True)
-    animation(40,[(6,4)]);animation(105,[(7,5),(8,6)])
+    animation(40,[(6,4)]);animation(105,[(5,3),(4,3),(3,3)],loop=True)
     for n in [41,42,43,44,45,46,47]:animation(n,[(7 if n<44 else 8,6)])
     animation(52,[(6,3),(22,3),(0,3)])
     animation(170,[(0,10),(1,10)],loop=True);animation(180,[(20,10),(21,10),(0,20)],loop=True)
@@ -120,7 +120,10 @@ def animations():
     fxaction(8840,8840,6,3)
     fxaction(8850,8850,6,3,hitbox='-58,-58,58,58')
     air.append('\n[Begin Action 8880]\n8880,0,0,0,6\nLoopstart\n8880,0,0,0,6\n')
-    fxaction(8890,8890,8,2)
+    fxaction(8881,8881,1,6,loop=True,add=False)
+    fxaction(8900,8900,24,2,loop=True)
+    fxaction(8910,8910,5,2)
+    fxaction(8920,8920,9,2)
 
 def normals():
     for family,base in enumerate([200,210,220]):
@@ -170,8 +173,10 @@ def specials():
     for n,cost,retreat in [(1211,300,False),(1440,650,True)]:
         animation(n,[(19,6),(20,8),(16,12),(0,22)])
         s=state(n,n,move='A',physics='N',cost=cost)+startup(n)+divine_cast(n)
-        s+=claw_portal(n,'Time = 3')+effect(n,'Time = 9',8890,0,-42,1,16)
+        s+=claw_portal(n,'Time = 3')
+        s+=c(n,'Fade into the crossed bands','Trans','Time >= 7 && Time < 11','trans = AddAlpha\nalpha = 256-(Time-7)*64,(Time-7)*64')
         s+=c(n,'Enter the slit before crossing','AssertSpecial','Time >= 10 && Time < 18','flag = Invisible')
+        s+=c(n,'Emerge through the destination bands','Trans','Time >= 18 && Time < 22','trans = AddAlpha\nalpha = (Time-17)*64,256-(Time-17)*64')
         s+=c(n,'Cross without pushing through bodies','PlayerPush','Time >= 8 && Time <= 18','value = 0')
         if n==1211:
             s+=c(n,'Read saved physical mark','VarSet','Time = 0 && NumHelper(9600)>0','v = 22\nvalue = Floor(Helper(9600),Pos X)')
@@ -180,7 +185,7 @@ def specials():
         else:
             s+=claw_portal(n,'Time = 3',-80)
             s+=c(n,'Finite backward claw crossing','PosAdd','Time = 14','x = -80')
-        s+=claw_portal(n,'Time = 15')+effect(n,'Time = 15',8890,0,-42,1,16)
+        s+=claw_portal(n,'Time = 15')
         s+=c(n,'Teleport sound','PlaySnd','Time = 14','value = S1,32\nchannel = 1')
         s+=projectile(n,19,8800,135,38,0,5.8,0,fin=True,lifetime=55)
         s+=awakened(projectile(n,30,8810,70,110,0,0,0,fin=True,pid=n+8,lifetime=20))
@@ -188,17 +193,17 @@ def specials():
         s+=recover(n,'Var(40)=0 && Time >= 36')+recover(n);states.append(s)
     animation(1210,[(19,5),(20,8),(0,12)])
     s=state(1210,1210,cost=300,physics='S')+startup(1210)
-    s+=c(1210,'Place an actual persistent claw mark','Helper','Time = 6','helpertype = Normal\nname = "Marca de garra"\nID = 9600\nstateno = 9600\npostype = P1\npos = 125,-39\nfacing = 1\nkeyctrl = 0\nownpal = 1')
+    s+=c(1210,'Place the original flat ground mark','Helper','Time = 6','helpertype = Normal\nname = "Marca de garra"\nID = 9600\nstateno = 9600\npostype = P1\npos = 125,0\nfacing = 1\nkeyctrl = 0\nownpal = 1')
     s+=c(1210,'Audible claw placement','PlaySnd','Time = 6','value = S1,32\nchannel = 1')
     s+=recover(1210);states.append(s)
     for n in [9600,9601]:
-        s=state(n,8880,physics='N',body=False)
+        s=state(n,8880 if n==9600 else 8881,physics='N',body=False)
         s+=c(n,'Mark is not a fighter','PlayerPush','1','value = 0')
         s+=c(n,'Mark does not absorb hits','NotHitBy','1','value = SCA\ntime = 1')
-        s+=c(n,'Upright original Code slash','AngleDraw','1','value = 70\nscale = 1.9,1.65')
-        s+=c(n,'Claw highlights','PalFX','1','time = 1\nmul = 256,105,220')
-        s+=c(n,'Readable claw priority','SprPriority','1','value = 2')
-        expiry='trigger1 = Time >= 600\ntrigger2 = RoundState != 2\ntrigger3 = Root,StateNo = 1211\ntrigger3 = Root,Time >= 14' if n==9600 else 'trigger1 = Time >= 30\ntrigger2 = RoundState != 2'
+        s+=c(n,'Ground marks stay flat; crossed bands open naturally','AngleDraw','1','value = 0\nscale = 1,1' if n==9600 else 'value = 0\nscale = IfElse(Time<6,.4+Time*.1,IfElse(Time>=30,(36-Time)/6.0,1)),1.35')
+        s+=c(n,'Mark has no independent fighter shadow','AssertSpecial','1','flag = NoShadow')
+        s+=c(n,'Original black bands and white studs','SprPriority','1',f'value = {-2 if n==9600 else 3}')
+        expiry='trigger1 = Time >= 600\ntrigger2 = RoundState != 2\ntrigger3 = Root,StateNo = 1211\ntrigger3 = Root,Time >= 14' if n==9600 else 'trigger1 = Time >= 36\ntrigger2 = RoundState != 2'
         s+=ctl(n,'Finite portal lifetime','DestroySelf',expiry);states.append(s)
     for n,cost,ticks in [(1200,450,34),(1430,500,60)]:
         animation(n,[(19,6),(19,ticks-12),(0,6)],hitbox='-23,-78,38,-1')
@@ -248,13 +253,25 @@ def utility():
         states.append(s)
     s=state(500,500,physics='S')+c(500,'Charge energy','PowerAdd','1','value = 22')
     s+=c(500,'Charge hum','PlaySnd','Time = 0','value = S1,4\nchannel = 3\nloop = 1')
-    s+=effect(500,'Time % 18 = 0',8840,0,-40,.7,18)
+    s+=c(500,'Actual animated chakra envelope','Helper','Time = 0','helpertype = Normal\nname = "Aura de Shibai"\nID = 9550\nstateno = 9550\npostype = P1\npos = 0,-40\nfacing = 1\nkeyctrl = 0\nownpal = 1')
+    s+=c(500,'Ground pressure waves','Explod','Time % 12 = 2','anim = 8910\nID = 9551\npostype = P1\npos = 0,-1\nscale = .34,.26\nremovetime = -2\nownpal = 1\nsprpriority = -1\nremoveongethit = 1')
+    s+=c(500,'Ascending chakra particles','Explod','Time % 12 = 4','anim = 8920\nID = 9552\npostype = P1\npos = IfElse(Time%24<12,-19,19),-30\nvel = 0,-.9\nscale = .23,.23\nremovetime = 18\nownpal = 1\nsprpriority = 2\nremoveongethit = 1')
     s+=ctl(500,'Release charge','ChangeState','trigger1 = AILevel = 0 && command != "hold_s"\ntrigger2 = Power >= 3000\ntrigger3 = AILevel>0 && Time>=65','value = 0\nctrl = 1');states.append(s)
     s=state(520,520,physics='S')+startup(520,35)
     s+=c(520,'Awakening energy price','PowerAdd','Time = 0','value = -1500')
     s+=c(520,'Timed transcendence','VarSet','Time = 8','v = 40\nvalue = 720')
     s+=c(520,'Awakening cooldown','VarSet','Time = 8','v = 41\nvalue = 1200')
     s+=effect(520,'Time = 8',8850,0,-40,1.5,24)+c(520,'Transformation feedback','EnvShake','Time = 8','time = 10\nampl = -3')+recover(520);states.append(s)
+    s=state(9550,8900,physics='N',body=False)
+    s+=c(9550,'Energy follows the charging body','BindToRoot','1','time = 1\npos = 0,-40')
+    s+=c(9550,'Aura never blocks the opponent','PlayerPush','1','value = 0')
+    s+=c(9550,'Aura is not an extra hurt box','NotHitBy','1','value = SCA\ntime = 1')
+    s+=c(9550,'Tall flowing chakra rather than a rigid cage','AngleDraw','1','value = 90\nscale = .36,.42')
+    s+=c(9550,'Blue-white chakra','PalFX','1','time = 1\nmul = 80,170,256')
+    s+=c(9550,'Translucent glow behind the model','Trans','1','trans = AddAlpha\nalpha = 190,256')
+    s+=c(9550,'Keep the body readable','SprPriority','1','value = -2')
+    s+=c(9550,'No artificial aura shadow','AssertSpecial','1','flag = NoShadow')
+    s+=ctl(9550,'Stop aura immediately on release or interruption','DestroySelf','trigger1 = Root,StateNo != 500\ntrigger2 = Root,Life <= 0\ntrigger3 = RoundState != 2');states.append(s)
 
 def common():
     common=[]
@@ -270,8 +287,14 @@ def common():
     s+=c(20,'Walk backward','VelSet','command = "holdback" && AILevel=0','x = Const(velocity.walk.back.x)')
     s+=c(20,'Walk animation','ChangeAnim','Anim != IfElse(Vel X<0,21,20)+IfElse(Var(40)>0,10000,0)','value = IfElse(Vel X<0,21,20)+IfElse(Var(40)>0,10000,0)')
     s+=recover(20,'AILevel=0 && command != "holdfwd" && command != "holdback"');put(s)
-    put(state(100,100,physics='S',control=1,velocity='6.8,0')+recover(100,'AILevel=0 && command != "holdfwd"'))
-    put(state(105,105,'A',physics='A',velocity='-4.5,-4')+c(105,'Backdash landing','ChangeState','Vel Y>0 && Pos Y>=0','value = 52\nctrl = 1'))
+    for n,speed in [(100,7.6),(105,-7.6)]:
+        s=state(n,n,physics='N',velocity=f'{speed},0')
+        s+=c(n,'Grounded dash to either side','PosSet','1','y = 0')
+        s+=c(n,'Maintain the short dash impulse','VelSet','Time < 14',f'x = {speed}\ny = 0')
+        s+=c(n,'Short dash wind','PlaySnd','Time = 0','value = S1,30\nchannel = 2')
+        s+=c(n,'End the short dash cue','StopSnd','Time = 8','channel = 2')
+        s+=c(n,'Dash motion trail','AfterImage','Time = 0','time = 12\nlength = 4\ntimegap = 2\nframegap = 2\npalcontrast = 90,130,180\ntrans = Add')
+        s+=recover(n,'Time >= 14');put(s)
     s=state(40,40,physics='S')
     s+=c(40,'Jump impulse','VelSet','Time = 3','x = IfElse(command="holdfwd",3.2,IfElse(command="holdback",-3,0))\ny = -9')
     s+=c(40,'Air control','ChangeState','Time >= 4','value = 50\nctrl = 1');put(s)
@@ -378,6 +401,7 @@ def system():
     s+=c(-2,'Transcendent durability','DefenceMulSet','!IsHelper','value=IfElse(Var(40)>0,1.25,1)')
     s+=c(-2,'Aerial count reset','VarSet','!IsHelper && StateType!=A','v=12\nvalue=0')
     s+=c(-2,'Charge hum cleanup','StopSnd','StateNo!=500','channel=3')
+    for eid in [9551,9552]:s+=c(-2,'Charge particle cleanup','RemoveExplod','!IsHelper && StateNo!=500',f'ID = {eid}')
     s+=effect(-2,'!IsHelper && Var(40)>0 && RoundState=2 && GameTime%30=0',8850,0,-40,.6,16,-2)
     s+=c(-2,'Clean round effects','RemoveExplod','RoundState!=2','')
     return s

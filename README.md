@@ -142,7 +142,7 @@ python3 tools/package_mamushi.py
 
 La túnica negra es la forma base. Abajo más LB/Pausa, con la barra llena, cambia al cuerpo azul de la izquierda durante doce segundos. Cuesta 1500, usa la misma altura corporal de 78 píxeles y vuelve automáticamente a la base. La expansión nueva tiene 24 poses articuladas por forma, asistidas por IA a partir de los dos modelos de Vahidras suministrados. Las fuentes y las adaptaciones están documentadas en [los créditos](Shibai/CREDITOS_Y_FUENTES.md).
 
-Los normales X/Y/B son cadenas de viento y remates de tornado. Hay combos aéreos limitados a tres ataques, seis especiales direccionales, técnicas con abajo más botón, ráfagas cortantes, descargas, tormenta, repulsión y contraataques. Shibai no usa Kokugan, estacas ni cubos. RT coloca una marca de garra vertical y una segunda pulsación muestra la entrada, viaja a ella y consume la marca; usa el gráfico original 90,3 de Code. En el despertar el multiplicador de daño pasa de 1.20 a 1.95, los ataques crecen un 65 %, avanzan un 15 % más rápido y cuestan el 60 %. Las nueve técnicas de viento y rayos añaden uno o dos ataques; las salidas de garra añaden un relámpago. Pulsos, contraste de tormenta y sacudidas refuerzan la forma divina sin agrandar el cuerpo. A es una ultimate con apertura bloqueable y alcance finito, con daño limitado a `min(420, floor(vida máxima rival*.42))`.
+Los normales X/Y/B son cadenas de viento y remates de tornado. Hay combos aéreos limitados a tres ataques, seis especiales direccionales, técnicas con abajo más botón, ráfagas cortantes, descargas, tormenta, repulsión y contraataques. Shibai no usa Kokugan, estacas ni cubos. RT coloca la marca de suelo 90,3 de Code; una segunda pulsación abre sus bandas cruzadas 200,24, viaja hasta la marca y la consume. Se conserva el negro con puntos blancos del video de referencia, sin las tiras verticales de la entrega anterior. Doble toque a izquierda o derecha hace un dash terrestre, y la carga muestra un aura azul animada de 24 fotogramas con ondas y partículas. En el despertar el multiplicador de daño pasa de 1.20 a 1.95, los ataques crecen un 65 %, avanzan un 15 % más rápido y cuestan el 60 %. Las nueve técnicas de viento y rayos añaden uno o dos ataques; las salidas de garra añaden un relámpago. Pulsos, contraste de tormenta y sacudidas refuerzan la forma divina sin agrandar el cuerpo. A es una ultimate con apertura bloqueable y alcance finito, con daño limitado a `min(420, floor(vida máxima rival*.42))`.
 
 [Controles Xbox y costes](Shibai/CONTROLES_XBOX.md) · [Instalación y pruebas en V14](Shibai/LEEME.md)
 
@@ -153,6 +153,8 @@ Grabaciones del personaje real en Ikemen GO; especiales, despertar, marcas y ult
 - [Ataques de la forma divina](previews/Shibai_divino_motor.mp4).
 - [Activación y fin del despertar](previews/Shibai_despertar_motor.mp4).
 - [Marcas de garra y viaje](previews/Shibai_garras_motor.mp4).
+- [Dash con doble toque a ambos lados](previews/Shibai_dash_motor.mp4) — grabación visual sin audio.
+- [Aura durante la carga de energía](previews/Shibai_carga_motor.mp4).
 - [Ultimate confirmada por impacto](previews/Shibai_ultimate_motor.mp4).
 
 Las comprobaciones cubren controles en ambos lados y formas, daño por colisión, combos, recuperación, gasto real, transformación y expiración, guardia de pie/agachada/aérea, CPU y ultimate bloqueada, saltada, fuera de alcance o sin energía. El ejecutable exacto de Jump Force MUGEN V14 para Windows y el mando físico no están disponibles en este entorno; la prueba en Ikemen no sustituye esa comprobación.

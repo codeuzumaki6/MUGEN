@@ -663,49 +663,11 @@
     "Mamushi/assets/sprites/0_84.png": "35e9dcedc2dd19ddf4329673f2ef51179cba45cc5ab33e83dd89450ac6521ed0",
     "Mamushi/assets/sprites/0_9.png": "0713870a8f4f8ca1164ecf8fda9e93d4a691eaddfcdf5756d5a3ce81a80edee6"
   },
-  "source_sha256": {
-    "source_material/Shibai_original/shibai/shibai_god_otsutsuki_by_vahidras_dk63poa-375w-2x.jpg": "484711f4ac465e2a477cd5eaaadd21b53a0448add5561e6ff2df82e4e75306f8",
-    "source_material/Shibai_Code_reference/sha256.json": "9eaf60467b5821ad8ee720a0df9fe45c84ac32269835a0510f9e57d6fdc6dda0",
-    "source_material/Shibai_Code_reference/common1.cns": "75956d22ad60c51d0762c8027d37dae6fc3d65d3cbe1a52c773ecb18db5191ca",
-    "source_material/Shibai_Code_reference/Code.cns": "0e3c62fa34f96f7803a0806763f2f14bd4836e7a49a5004cb68875f231c92b2c",
-    "source_material/Shibai_Code_reference/AI.cns": "b9c01f958194a68f324c1bda3e283f73b59d7bf49e4be71720f9f5ef2800fa79",
-    "source_material/Shibai_Code_reference/code.aseprite": "8814a9f38f4b384b344bb963d5df444e9250b13dce5df78a271e9cffd8a7b5f2",
-    "source_material/Shibai_Code_reference/Code.sff": "9b1f04aa6c98028c20fb15c67f1bae3530b296a93c2aefc027cfd9021bc7a634",
-    "source_material/Shibai_Code_reference/Specials.cns": "5fc013d76f410362b441e2a5e729248f2e35d3c0aafd6dfbcd00d478978d4fcd",
-    "source_material/Shibai_Code_reference/Code.snd": "68227000758c7b72aeca96cb4663f74770ca477b700710866cd82923ca36fa41",
-    "source_material/Shibai_Code_reference/Code.air": "a97d1262a89f0b5d7f8284f14bbaa21388303dea21cac3745a6bb34c96e70c07",
-    "source_material/Shibai_Code_reference/Code.cmd": "e2c813c6dc7ea632636077470eba7b8de8db9fd973a1a85d91efd5c980692089",
-    "source_material/Shibai_Code_reference/Code.def": "bb93ecd1c757b60425d0ae3cdd0b614808d9b7991c386e91928516eaaa2603ba",
-    "source_material/Shibai_Code_reference/Supers.cns": "b7176fdcfc3f334b6c157eb170d0aab0b95a06600251ab8cf97120709ebee412",
-    "source_material/Shibai_Kawaki_reference/sha256.json": "2174a215c947d6d158f1629da6d08ce1eabb76c552fc7fae770eb6f29a2e50dc",
-    "source_material/Shibai_Kawaki_reference/Kawashiki.def": "d52b1dc3485c9e3ddcd8f15f8f9563f29fb7340228f66ffc2baf7054e2ba34bd",
-    "source_material/Shibai_Kawaki_reference/IA.cns": "be9040f17965824a74ada4d2c4d92bda7e39a579db57cd09450e571358ac468a",
-    "source_material/Shibai_Kawaki_reference/common1.cns": "50feaa70d8088985a95e34987353e82e7013da0768c249c554cd856621a9668c",
-    "source_material/Shibai_Kawaki_reference/Helpers.cns": "deebb88d5073c36d26b9bcfc0710868849b1bacbbec65bf48d23067b09770531",
-    "source_material/Shibai_Kawaki_reference/Specials.cns": "3567713a0242705f2a68acd91c6d39f55ba81e9039f1b83aec4ef1bead949e30",
-    "source_material/Shibai_Kawaki_reference/Kawashiki.cns": "ffbf838c9bd1f7b7a7925ad7e12425e2d21385824edfbf02b1f728db7605598b",
-    "source_material/Shibai_Kawaki_reference/Paleisshiki.act": "2d3e114be45b5801274a053a623f5a9fe3996fa5df917227122e06ef13d14672",
-    "source_material/Shibai_Kawaki_reference/Kawashiki.cmd": "eb5ce56c600335d53546f6e0cae0612ae6ac5d004ace2f7d01c51bc7ee6e7f1a",
-    "source_material/Shibai_Kawaki_reference/Kawashiki.snd": "c57fee5376e52e5cce794f0d9e437e43301b4a889912f164959d1acc597f1212",
-    "source_material/Shibai_Kawaki_reference/Supers.cns": "93335d058b57a220003d9d3a9b280435aaefa7c9728550f4ad7d225649dbf349",
-    "source_material/Shibai_Kawaki_reference/Kawashiki.air": "5be3918797f24bae92d55ef0b14a9b94e74317b308cf46c1b7f1b758712588ed",
-    "source_material/Zenosama_reference/drmanhattan.act": "6f767c89fa68e0e033b5d2bbe66006ae81ae2192defe7bea5895bda9acdfca78",
-    "source_material/Zenosama_reference/drmanhattan.cns": "1edfee795074bc5a32a8a3d486f033c663677ef9fa11ac21fb6ee252eb98f20b",
-    "source_material/Zenosama_reference/Dr.Manhattan.txt": "c12a428df67c4e9c87a318f8fa1e30f70a445368128d17a9fc45d45580b8344b",
-    "source_material/Zenosama_reference/drmanhattan2.cns": "fccf1e98cb4a48065ccb0440ded713a95ff2a4755bec4bcf189191832f85dddd",
-    "source_material/Zenosama_reference/drmanhattan.air": "1dc54ab7342e65a106ef8a80dba66fc1fb55961edc98983eaca0872c4c5d4f29",
-    "source_material/Zenosama_reference/drmanhattan.sff": "d1d55383569af37395ae323966edb941c9b691ea08148848d5311d14a3040f0c",
-    "source_material/Zenosama_reference/drmanhattan.snd": "169786375c7ccee6a4e1315b6ef4383908350c9e4a3d3509a6354cce75507811",
-    "source_material/Zenosama_reference/drmanhattan_cmd.cns": "06c2beaac1952dbabe82b28e859da9c20b51f4550086419266ee95819a588412",
-    "source_material/Zenosama_reference/Zenosama2.def": "af72c83527fff0f1a646f3383abe13d37c1e2338cb0d1b9200764e45f2c69bcf",
-    "source_material/Shibai_generated/shibai_effects.png": "50f5de3293de88a503ca527b218d44ecdf636073c96952435f6a17c43769a7a5",
-    "source_material/Shibai_generated/shibai_poses.png": "7756111faa8978ab05769262a80668f51ed5d81ea3a65fa407369594f7d86320",
-    "source_material/Shibai_generated/shibai_awakened_repairs.png": "977b8ac052316278aa5428c2bc48fc7b3e59322f929ed6ce7603ffe61f939a89"
-  },
+  "source_sha256": 7015,
   "engine_reports": [
     {
       "report": "Shibai_engine_checks.json",
-      "cases": 110
+      "cases": 124
     },
     {
       "report": "Shibai_guard_checks.json",
@@ -720,22 +682,26 @@
       "cases": 2
     }
   ],
-  "engine_cases": 126,
+  "engine_cases": 140,
   "static_regressions": 7,
   "deterministic_rebuilds": 2,
   "runtime_files_sha256": {
     "Shibai.def": "fee9ccfd27b34de6d8dd592a7f5487eba8229c10f11b9ba852a05367c2ec8273",
-    "Shibai.sff": "0baa5f733315c1cd1c8119386806ba1eea65d37be589404e858515521bf5d18a",
+    "Shibai.sff": "e9e6727b66510f52e1c9576eac30e8721229f64c81712205b6f1ca2401e14bb2",
     "Shibai.snd": "20859420ccaff05dbc6ac57fe8dc738f0e0aa883d6ac5a1bd39396f540a018f8",
-    "Shibai.air": "30ed0d1f451aace639e8c5b90ba708130cdd0acb37decb8dda4b91018366bf9b",
-    "Shibai.cns": "6473087df7e186644ebc2a2b79fd3b5bb4932141ccc46a5d3ad7483a8624f391",
+    "Shibai.air": "9b035b1a7ab6e232773024a57007df7202cd26b16b42a30caa9362a931d2fb67",
+    "Shibai.cns": "1f873bdd37ab49b7012742dd938f444c70d4ec4ddd550d070398d286d3170030",
     "Shibai.cmd": "9533f2365068d6941ca9308649fab9102392104635e54ed36d1a477dfc763bb3",
-    "common1.cns": "8a14a43cbccffce9fefd1079f61c088d390c11280bef412b31f83c4ba6a511de"
+    "common1.cns": "964af4c5057c85ae83f67c90182c0e90914a1d05f993903e0cae3cf5b0511164"
   },
-  "runtime_sha256": "502535e85e2bb17c7b29132e6f3e1682176bbc702c8c9ad70f1b5fb660c86d03",
+  "runtime_sha256": "e7536802f9ee25dcd88e6a0ddc608af87470d0182556a280c146081b3c24f2cc",
   "preview_matches_delivered_runtime": true,
   "articulation_poses_per_form": 24,
   "code_mark_pixels_preserved": true,
+  "code_crossed_bands_pixels_preserved": true,
+  "code_effect_frames_preserved": 40,
   "claw_entrance_exit_and_travel_tested": true,
+  "double_tap_dash_cases": 8,
+  "charge_and_interruption_cases": 8,
   "exact_mugen_v14_executable_tested": false
 }

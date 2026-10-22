@@ -75,8 +75,13 @@ def main():
             pic,axis=reference.image(g,n);p=A/'effects'/f'{g}_{n}.png';pic.save(p);records.append((g,n,p,axis))
     code=ReferenceSff(ROOT/'source_material/Shibai_Code_reference/Code.sff')
     pic,axis=code.image(90,3);p=A/'effects/8880_0.png';pic.save(p);records.append((8880,0,p,axis))
-    for n in range(8):
-        pic,axis=code.image(590,n);factor=.18;pic=pic.resize((round(pic.width*factor),round(pic.height*factor)),Image.Resampling.NEAREST);p=A/'effects'/f'8890_{n}.png';pic.save(p);records.append((8890,n,p,tuple(round(v*factor) for v in axis)))
+    # The reference clip uses flat ground marks and a separate crossed-band
+    # effect, not a stretched/rotated copy of the ground mark.
+    pic,axis=code.image(200,24);p=A/'effects/8881_0.png';pic.save(p);records.append((8881,0,p,axis))
+    for n in range(8):(A/'effects'/f'8890_{n}.png').unlink(missing_ok=True)
+    for dest,source,numbers in [(8900,576,range(24)),(8910,556,range(11,16)),(8920,7015,range(9))]:
+        for n,source_n in enumerate(numbers):
+            pic,axis=code.image(source,source_n);p=A/'effects'/f'{dest}_{n}.png';pic.save(p);records.append((dest,n,p,axis))
     base=Image.open(A/'sprites/0_0.png').convert('RGBA');head=base.crop((max(0,base.width//2-12),0,min(base.width,base.width//2+12),25))
     for n,size in [(0,(25,25)),(1,(120,140))]:
         pic=Image.new('RGBA',size);crop=head.resize((size[0],size[0]),Image.Resampling.NEAREST);pic.alpha_composite(crop,(0,(size[1]-size[0])//2));p=A/f'portrait_{n}.png';pic.save(p);records.append((9000,n,p,(0,0)))

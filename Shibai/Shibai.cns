@@ -3558,37 +3558,35 @@ time = 8
 freq = 65
 ampl = -3
 
-[State 1211, Visible claw entrance or exit]
+[State 1211, Crossed Code bands at entrance or exit]
 type = Helper
 trigger1 = Time = 3
 helpertype = Normal
-name = "Garra transito"
+name = "Garras cruzadas"
 ID = 9601
 stateno = 9601
 postype = P1
-pos = 0,-39
+pos = 0,0
 facing = 1
 keyctrl = 0
 ownpal = 1
 
-[State 1211, Visible technique effect]
-type = Explod
-trigger1 = Time = 9
-anim = 8890
-postype = P1
-pos = 0,-42
-scale = 1,1
-removetime = 16
-ownpal = 1
-sprpriority = 3
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
+[State 1211, Fade into the crossed bands]
+type = Trans
+trigger1 = Time >= 7 && Time < 11
+trans = AddAlpha
+alpha = 256-(Time-7)*64,(Time-7)*64
 
 [State 1211, Enter the slit before crossing]
 type = AssertSpecial
 trigger1 = Time >= 10 && Time < 18
 flag = Invisible
+
+[State 1211, Emerge through the destination bands]
+type = Trans
+trigger1 = Time >= 18 && Time < 22
+trans = AddAlpha
+alpha = (Time-17)*64,256-(Time-17)*64
 
 [State 1211, Cross without pushing through bodies]
 type = PlayerPush
@@ -3611,32 +3609,18 @@ type = Turn
 trigger1 = Time = 15 && P2Dist X<0
 
 
-[State 1211, Visible claw entrance or exit]
+[State 1211, Crossed Code bands at entrance or exit]
 type = Helper
 trigger1 = Time = 15
 helpertype = Normal
-name = "Garra transito"
+name = "Garras cruzadas"
 ID = 9601
 stateno = 9601
 postype = P1
-pos = 0,-39
+pos = 0,0
 facing = 1
 keyctrl = 0
 ownpal = 1
-
-[State 1211, Visible technique effect]
-type = Explod
-trigger1 = Time = 15
-anim = 8890
-postype = P1
-pos = 0,-42
-scale = 1,1
-removetime = 16
-ownpal = 1
-sprpriority = 3
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
 [State 1211, Teleport sound]
 type = PlaySnd
@@ -3819,52 +3803,50 @@ time = 8
 freq = 65
 ampl = -3
 
-[State 1440, Visible claw entrance or exit]
+[State 1440, Crossed Code bands at entrance or exit]
 type = Helper
 trigger1 = Time = 3
 helpertype = Normal
-name = "Garra transito"
+name = "Garras cruzadas"
 ID = 9601
 stateno = 9601
 postype = P1
-pos = 0,-39
+pos = 0,0
 facing = 1
 keyctrl = 0
 ownpal = 1
 
-[State 1440, Visible technique effect]
-type = Explod
-trigger1 = Time = 9
-anim = 8890
-postype = P1
-pos = 0,-42
-scale = 1,1
-removetime = 16
-ownpal = 1
-sprpriority = 3
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
+[State 1440, Fade into the crossed bands]
+type = Trans
+trigger1 = Time >= 7 && Time < 11
+trans = AddAlpha
+alpha = 256-(Time-7)*64,(Time-7)*64
 
 [State 1440, Enter the slit before crossing]
 type = AssertSpecial
 trigger1 = Time >= 10 && Time < 18
 flag = Invisible
 
+[State 1440, Emerge through the destination bands]
+type = Trans
+trigger1 = Time >= 18 && Time < 22
+trans = AddAlpha
+alpha = (Time-17)*64,256-(Time-17)*64
+
 [State 1440, Cross without pushing through bodies]
 type = PlayerPush
 trigger1 = Time >= 8 && Time <= 18
 value = 0
 
-[State 1440, Visible claw entrance or exit]
+[State 1440, Crossed Code bands at entrance or exit]
 type = Helper
 trigger1 = Time = 3
 helpertype = Normal
-name = "Garra transito"
+name = "Garras cruzadas"
 ID = 9601
 stateno = 9601
 postype = P1
-pos = -80,-39
+pos = -80,0
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -3874,32 +3856,18 @@ type = PosAdd
 trigger1 = Time = 14
 x = -80
 
-[State 1440, Visible claw entrance or exit]
+[State 1440, Crossed Code bands at entrance or exit]
 type = Helper
 trigger1 = Time = 15
 helpertype = Normal
-name = "Garra transito"
+name = "Garras cruzadas"
 ID = 9601
 stateno = 9601
 postype = P1
-pos = 0,-39
+pos = 0,0
 facing = 1
 keyctrl = 0
 ownpal = 1
-
-[State 1440, Visible technique effect]
-type = Explod
-trigger1 = Time = 15
-anim = 8890
-postype = P1
-pos = 0,-42
-scale = 1,1
-removetime = 16
-ownpal = 1
-sprpriority = 3
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
 [State 1440, Teleport sound]
 type = PlaySnd
@@ -4052,7 +4020,7 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
-[State 1210, Place an actual persistent claw mark]
+[State 1210, Place the original flat ground mark]
 type = Helper
 trigger1 = Time = 6
 helpertype = Normal
@@ -4060,7 +4028,7 @@ name = "Marca de garra"
 ID = 9600
 stateno = 9600
 postype = P1
-pos = 125,-39
+pos = 125,0
 facing = 1
 keyctrl = 0
 ownpal = 1
@@ -4096,22 +4064,21 @@ trigger1 = 1
 value = SCA
 time = 1
 
-[State 9600, Upright original Code slash]
+[State 9600, Ground marks stay flat; crossed bands open naturally]
 type = AngleDraw
 trigger1 = 1
-value = 70
-scale = 1.9,1.65
+value = 0
+scale = 1,1
 
-[State 9600, Claw highlights]
-type = PalFX
+[State 9600, Mark has no independent fighter shadow]
+type = AssertSpecial
 trigger1 = 1
-time = 1
-mul = 256,105,220
+flag = NoShadow
 
-[State 9600, Readable claw priority]
+[State 9600, Original black bands and white studs]
 type = SprPriority
 trigger1 = 1
-value = 2
+value = -2
 
 [State 9600, Finite portal lifetime]
 type = DestroySelf
@@ -4126,7 +4093,7 @@ type = S
 movetype = I
 physics = N
 ctrl = 0
-anim = 8880
+anim = 8881
 velset = 0,0
 
 [State 9601, Mark is not a fighter]
@@ -4140,26 +4107,25 @@ trigger1 = 1
 value = SCA
 time = 1
 
-[State 9601, Upright original Code slash]
+[State 9601, Ground marks stay flat; crossed bands open naturally]
 type = AngleDraw
 trigger1 = 1
-value = 70
-scale = 1.9,1.65
+value = 0
+scale = IfElse(Time<6,.4+Time*.1,IfElse(Time>=30,(36-Time)/6.0,1)),1.35
 
-[State 9601, Claw highlights]
-type = PalFX
+[State 9601, Mark has no independent fighter shadow]
+type = AssertSpecial
 trigger1 = 1
-time = 1
-mul = 256,105,220
+flag = NoShadow
 
-[State 9601, Readable claw priority]
+[State 9601, Original black bands and white studs]
 type = SprPriority
 trigger1 = 1
-value = 2
+value = 3
 
 [State 9601, Finite portal lifetime]
 type = DestroySelf
-trigger1 = Time >= 30
+trigger1 = Time >= 36
 trigger2 = RoundState != 2
 
 
@@ -4805,19 +4771,45 @@ value = S1,4
 channel = 3
 loop = 1
 
-[State 500, Visible technique effect]
-type = Explod
-trigger1 = Time % 18 = 0
-anim = 8840
+[State 500, Actual animated chakra envelope]
+type = Helper
+trigger1 = Time = 0
+helpertype = Normal
+name = "Aura de Shibai"
+ID = 9550
+stateno = 9550
 postype = P1
 pos = 0,-40
-scale = 0.7,0.7
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 500, Ground pressure waves]
+type = Explod
+trigger1 = Time % 12 = 2
+anim = 8910
+ID = 9551
+postype = P1
+pos = 0,-1
+scale = .34,.26
+removetime = -2
+ownpal = 1
+sprpriority = -1
+removeongethit = 1
+
+[State 500, Ascending chakra particles]
+type = Explod
+trigger1 = Time % 12 = 4
+anim = 8920
+ID = 9552
+postype = P1
+pos = IfElse(Time%24<12,-19,19),-30
+vel = 0,-.9
+scale = .23,.23
 removetime = 18
 ownpal = 1
-sprpriority = 3
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
+sprpriority = 2
+removeongethit = 1
 
 [State 500, Release charge]
 type = ChangeState
@@ -4914,6 +4906,66 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+[Statedef 9550]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8900
+velset = 0,0
+
+[State 9550, Energy follows the charging body]
+type = BindToRoot
+trigger1 = 1
+time = 1
+pos = 0,-40
+
+[State 9550, Aura never blocks the opponent]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 9550, Aura is not an extra hurt box]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 9550, Tall flowing chakra rather than a rigid cage]
+type = AngleDraw
+trigger1 = 1
+value = 90
+scale = .36,.42
+
+[State 9550, Blue-white chakra]
+type = PalFX
+trigger1 = 1
+time = 1
+mul = 80,170,256
+
+[State 9550, Translucent glow behind the model]
+type = Trans
+trigger1 = 1
+trans = AddAlpha
+alpha = 190,256
+
+[State 9550, Keep the body readable]
+type = SprPriority
+trigger1 = 1
+value = -2
+
+[State 9550, No artificial aura shadow]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 9550, Stop aura immediately on release or interruption]
+type = DestroySelf
+trigger1 = Root,StateNo != 500
+trigger2 = Root,Life <= 0
+trigger3 = RoundState != 2
+
+
 [Statedef -2]
 
 [State -2, Finite awakening timer]
@@ -4960,6 +5012,16 @@ value=0
 type = StopSnd
 trigger1 = StateNo!=500
 channel=3
+
+[State -2, Charge particle cleanup]
+type = RemoveExplod
+trigger1 = !IsHelper && StateNo!=500
+ID = 9551
+
+[State -2, Charge particle cleanup]
+type = RemoveExplod
+trigger1 = !IsHelper && StateNo!=500
+ID = 9552
 
 [State -2, Visible technique effect]
 type = Explod

@@ -12,11 +12,17 @@
 - Efectos nuevos de viento, relámpagos, ojos y distorsión: lámina asistida por
   IA, separada de los cuerpos. Las formas usan los mismos efectos a distinta
   escala y con secuencias propias del despertar.
-- Code, DEF de MUGEN STARS: se reutiliza el sprite 90,3 de la marca de garra
-  y la secuencia no corporal 590,0–7 de su transición. No se usan sus cuerpos
-  como sprites de Shibai ni sus estados de combate sin revisar. El dibujo
-  original de la marca se conserva; el motor lo gira, eleva y tiñe para mostrar
-  aberturas verticales en la colocación y ambos extremos del viaje.
+- Code, DEF de MUGEN STARS: se reutilizan la marca de suelo 90,3 y las bandas
+  cruzadas 200,24, un efecto aislado sin cuerpo de Code. Mantienen los píxeles,
+  colores y ejes originales; la marca queda plana y las bandas se abren durante
+  el tránsito. Se retiraron las tiras verticales teñidas y el efecto 590 que
+  usaba la versión anterior. No se usan los cuerpos de Code como Shibai.
+- Video del usuario `mugen-2026-10-21-22-59-42_AAWEth1L.mp4`: referencia visual
+  de las marcas bajas y el tránsito con bandas cruzadas, especialmente entre
+  17.2–19.4 y 25–29 segundos. No se colocan fotogramas del video en el juego.
+- Aura de carga: 24 fotogramas no corporales 576 de Code, más las ondas
+  556,11–15 y partículas 7015,0–8. Los recursos conservan sus píxeles originales;
+  el motor aplica luz azul, rotación y mezcla aditiva para la energía de Shibai.
 - Kawashiki, DEF de MFmugenPT-BR: referencia suministrada y consultada. La
   versión actual no utiliza recursos ni técnicas de su Kokugan.
 - Zeno Sama, DEF de Diogo Studios Mugen / base Dr. Manhattan: referencia de

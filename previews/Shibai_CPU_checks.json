@@ -10,15 +10,15 @@
     "states": [
       0,
       200,
-      1000,
+      1040,
       1210,
       1211
     ],
-    "damage": 1606,
+    "damage": 1432,
     "received": 0,
     "movement": 125.0,
     "jump_apex": 0.0,
-    "min_power": 1500,
+    "min_power": 510,
     "max_power": 3000,
     "max_awakening": 0,
     "blue_frames": 0,
@@ -28,9 +28,12 @@
     "victim_end": 5001,
     "claw_marks": 1,
     "claw_portals": 2,
-    "claw_mark_y": -39.0,
+    "claw_mark_y": 0.0,
     "claw_travel": 125.0,
     "claw_marks_remaining": 0,
+    "dash_signed_distance": 0.0,
+    "charge_aura": 0,
+    "aura_after_charge": 0,
     "failures": []
   },
   {
@@ -44,16 +47,17 @@
     "states": [
       0,
       200,
+      1000,
       1040,
       1210,
       1211
     ],
-    "damage": 2424,
+    "damage": 2807,
     "received": 0,
     "movement": 124.0,
     "jump_apex": 0.0,
-    "min_power": 2380,
-    "max_power": 2820,
+    "min_power": 2330,
+    "max_power": 2890,
     "max_awakening": 796,
     "blue_frames": 796,
     "end_awakening": 0,
@@ -62,9 +66,12 @@
     "victim_end": 5001,
     "claw_marks": 1,
     "claw_portals": 2,
-    "claw_mark_y": -39.0,
+    "claw_mark_y": 0.0,
     "claw_travel": 124.0,
     "claw_marks_remaining": 0,
+    "dash_signed_distance": 0.0,
+    "charge_aura": 0,
+    "aura_after_charge": 0,
     "failures": []
   }
 ]
