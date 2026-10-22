@@ -1,0 +1,693 @@
+[
+  {
+    "name": "combos",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 10.266666666666667,
+    "frames": 148,
+    "audio": "Silent sprite-combo recording",
+    "activations": [],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "Combo a",
+          "kind": "combo",
+          "form": 0,
+          "face": 1,
+          "button": "a",
+          "state": 202,
+          "distance": 90
+        },
+        "states": [
+          0,
+          200,
+          201,
+          202
+        ],
+        "damage": 245,
+        "received": 0,
+        "movement": 132.75,
+        "jump_apex": 0.0,
+        "min_power": 3000,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Combo b",
+          "kind": "combo",
+          "form": 0,
+          "face": 1,
+          "button": "b",
+          "state": 212,
+          "distance": 90
+        },
+        "states": [
+          0,
+          210,
+          211,
+          212
+        ],
+        "damage": 245,
+        "received": 0,
+        "movement": 33.5,
+        "jump_apex": 0.0,
+        "min_power": 3000,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Combo c",
+          "kind": "combo",
+          "form": 0,
+          "face": 1,
+          "button": "c",
+          "state": 222,
+          "distance": 90
+        },
+        "states": [
+          0,
+          220,
+          221,
+          222
+        ],
+        "damage": 245,
+        "received": 0,
+        "movement": 0.0,
+        "jump_apex": 0.0,
+        "min_power": 3000,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "name": "especiales",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 21.767933484504912,
+    "frames": 298,
+    "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+    "activations": [
+      {
+        "frame": 29,
+        "case": 0,
+        "sample_seconds": 4.504671201814059,
+        "normalized_correlation": 0.6418956128860811
+      },
+      {
+        "frame": 239,
+        "case": 1,
+        "sample_seconds": 8.126984126984127,
+        "normalized_correlation": 0.6547847279858618
+      },
+      {
+        "frame": 449,
+        "case": 2,
+        "sample_seconds": 11.842176870748299,
+        "normalized_correlation": 0.5624998948385546
+      },
+      {
+        "frame": 659,
+        "case": 3,
+        "sample_seconds": 15.51092970521542,
+        "normalized_correlation": 0.6339032333154947
+      },
+      {
+        "frame": 869,
+        "case": 4,
+        "sample_seconds": 19.17968253968254,
+        "normalized_correlation": 0.5124145213521364
+      },
+      {
+        "frame": 1079,
+        "case": 5,
+        "sample_seconds": 22.84843537414966,
+        "normalized_correlation": 0.7929687294427435
+      }
+    ],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "Vendaval",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "a",
+          "d": "F",
+          "state": 1000,
+          "cost": 300,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1000
+        ],
+        "damage": 168,
+        "received": 0,
+        "movement": 113.44999694824219,
+        "jump_apex": 0.0,
+        "min_power": 2700,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5120,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Ciclon",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "a",
+          "d": "B",
+          "state": 1010,
+          "cost": 450,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1010
+        ],
+        "damage": 220,
+        "received": 0,
+        "movement": 52.25000762939453,
+        "jump_apex": 0.0,
+        "min_power": 2550,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5120,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Estacas",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "b",
+          "d": "F",
+          "state": 1020,
+          "cost": 400,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1020
+        ],
+        "damage": 206,
+        "received": 0,
+        "movement": 2.8000030517578125,
+        "jump_apex": 0.0,
+        "min_power": 2600,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5120,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Cubos",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "b",
+          "d": "B",
+          "state": 1030,
+          "cost": 550,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1030
+        ],
+        "damage": 216,
+        "received": 0,
+        "movement": 2.5,
+        "jump_apex": 0.0,
+        "min_power": 2450,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5110,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Tormenta",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "c",
+          "d": "F",
+          "state": 1040,
+          "cost": 550,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1040
+        ],
+        "damage": 168,
+        "received": 0,
+        "movement": 2.8000030517578125,
+        "jump_apex": 0.0,
+        "min_power": 2450,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Repulsion",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "c",
+          "d": "B",
+          "state": 1050,
+          "cost": 650,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1050
+        ],
+        "damage": 174,
+        "received": 0,
+        "movement": 2.5,
+        "jump_apex": 0.0,
+        "min_power": 2350,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "name": "divino",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 14.430427815570672,
+    "frames": 198,
+    "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+    "activations": [
+      {
+        "frame": 29,
+        "case": 0,
+        "sample_seconds": 4.458231292517007,
+        "normalized_correlation": 0.6168636100912401
+      },
+      {
+        "frame": 239,
+        "case": 1,
+        "sample_seconds": 8.126984126984127,
+        "normalized_correlation": 0.5518527532371553
+      },
+      {
+        "frame": 449,
+        "case": 2,
+        "sample_seconds": 11.795736961451247,
+        "normalized_correlation": 0.6339032333154947
+      },
+      {
+        "frame": 659,
+        "case": 3,
+        "sample_seconds": 15.464489795918368,
+        "normalized_correlation": 0.511865500646733
+      }
+    ],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "Vendaval",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "button": "a",
+          "d": "F",
+          "state": 1000,
+          "cost": 180,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1000
+        ],
+        "damage": 338,
+        "received": 0,
+        "movement": 69.69999694824219,
+        "jump_apex": 0.0,
+        "min_power": 2820,
+        "max_power": 3000,
+        "max_awakening": 796,
+        "blue_frames": 205,
+        "end_awakening": 592,
+        "end_animation": 10000,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Estacas",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "button": "b",
+          "d": "F",
+          "state": 1020,
+          "cost": 240,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1020
+        ],
+        "damage": 389,
+        "received": 0,
+        "movement": 43.95000457763672,
+        "jump_apex": 0.0,
+        "min_power": 2760,
+        "max_power": 3000,
+        "max_awakening": 796,
+        "blue_frames": 205,
+        "end_awakening": 592,
+        "end_animation": 10000,
+        "end_state": 0,
+        "victim_end": 5120,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Cubos",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "button": "b",
+          "d": "B",
+          "state": 1030,
+          "cost": 330,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1030
+        ],
+        "damage": 296,
+        "received": 0,
+        "movement": 2.5,
+        "jump_apex": 0.0,
+        "min_power": 2670,
+        "max_power": 3000,
+        "max_awakening": 796,
+        "blue_frames": 205,
+        "end_awakening": 592,
+        "end_animation": 10000,
+        "end_state": 0,
+        "victim_end": 5110,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "Tormenta",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "button": "c",
+          "d": "F",
+          "state": 1040,
+          "cost": 330,
+          "distance": 120
+        },
+        "states": [
+          0,
+          11,
+          12,
+          20,
+          1040
+        ],
+        "damage": 230,
+        "received": 0,
+        "movement": 2.8000030517578125,
+        "jump_apex": 0.0,
+        "min_power": 2670,
+        "max_power": 3000,
+        "max_awakening": 796,
+        "blue_frames": 205,
+        "end_awakening": 592,
+        "end_animation": 10000,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "name": "despertar",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 12.999999999999998,
+    "frames": 195,
+    "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+    "activations": [
+      {
+        "frame": 29,
+        "case": 0,
+        "sample_seconds": 4.504671201814059,
+        "normalized_correlation": 0.9641203511992502
+      }
+    ],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "awakening",
+          "kind": "awakening",
+          "form": 0,
+          "face": 1,
+          "distance": 220
+        },
+        "states": [
+          0,
+          11,
+          520
+        ],
+        "damage": 0,
+        "received": 0,
+        "movement": 0.0,
+        "jump_apex": 0.0,
+        "min_power": 1500,
+        "max_power": 3000,
+        "max_awakening": 720,
+        "blue_frames": 719,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "name": "garras",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 7.362273620559336,
+    "frames": 99,
+    "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+    "activations": [
+      {
+        "frame": 29,
+        "case": 0,
+        "sample_seconds": 4.458231292517007,
+        "normalized_correlation": 0.9000065754920678
+      },
+      {
+        "frame": 79,
+        "case": 0,
+        "sample_seconds": 5.479909297052155,
+        "normalized_correlation": 0.8290403568874426
+      },
+      {
+        "frame": 239,
+        "case": 1,
+        "sample_seconds": 8.266303854875284,
+        "normalized_correlation": 0.8247194723475932
+      }
+    ],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "Garra",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "z",
+          "d": "N",
+          "state": 1210,
+          "cost": 300,
+          "distance": 180
+        },
+        "states": [
+          0,
+          1210,
+          1211
+        ],
+        "damage": 162,
+        "received": 0,
+        "movement": 125.0,
+        "jump_apex": 0.0,
+        "min_power": 2400,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5110,
+        "failures": []
+      },
+      {
+        "case": {
+          "name": "SalidaGarra",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "button": "z",
+          "d": "D",
+          "state": 1440,
+          "cost": 650,
+          "distance": 90
+        },
+        "states": [
+          0,
+          11,
+          1440
+        ],
+        "damage": 162,
+        "received": 0,
+        "movement": 80.00000762939453,
+        "jump_apex": 0.0,
+        "min_power": 2350,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 5120,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "name": "ultimate",
+    "runtime_sha256": "342f821621485479368494ee775a0a7e211da768c131e962b29351dccacb46b9",
+    "duration": 4.816666666666667,
+    "frames": 72,
+    "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+    "activations": [
+      {
+        "frame": 29,
+        "case": 0,
+        "sample_seconds": 4.458231292517007,
+        "normalized_correlation": 0.7531335754973001
+      }
+    ],
+    "combat_checks": [
+      {
+        "case": {
+          "name": "ultimate",
+          "kind": "ultimate",
+          "form": 0,
+          "face": 1,
+          "distance": 120
+        },
+        "states": [
+          0,
+          3000,
+          3001
+        ],
+        "damage": 420,
+        "received": 0,
+        "movement": 0.0,
+        "jump_apex": 0.0,
+        "min_power": 0,
+        "max_power": 3000,
+        "max_awakening": 0,
+        "blue_frames": 0,
+        "end_awakening": 0,
+        "end_animation": 0,
+        "end_state": 0,
+        "victim_end": 0,
+        "failures": []
+      }
+    ]
+  }
+]

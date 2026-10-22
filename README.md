@@ -134,3 +134,41 @@ MAMUSHI_CPU_CHECK=1 python3 tools/check_mamushi_in_engine.py /ruta/al/ikemen
 python3 tools/make_mamushi_previews.py /ruta/al/ikemen
 python3 tools/package_mamushi.py
 ```
+
+
+# Shibai Otsutsuki — dos formas y Shinjutsu
+
+[Descargar Shibai](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Shibai_OTSUTSUKI.zip). Extrae `Shibai` dentro de `chars` y añade `Shibai/Shibai.def` a `data/select.def`. El paquete contiene sus propios estados comunes, sprites, sonidos y controles; no requiere instalar los personajes de referencia.
+
+La túnica negra es la forma base. Abajo más LB/Pausa, con la barra llena, cambia al cuerpo azul de la izquierda durante doce segundos. Cuesta 1500, usa la misma altura corporal de 78 píxeles y vuelve automáticamente a la base. La expansión nueva tiene 24 poses articuladas por forma, asistidas por IA a partir de los dos modelos de Vahidras suministrados. Las fuentes y las adaptaciones están documentadas en [los créditos](Shibai/CREDITOS_Y_FUENTES.md).
+
+Los normales X/Y/B son cadenas de viento y remates de tornado. Hay combos aéreos limitados a tres ataques, seis especiales direccionales, técnicas con abajo más botón, estacas que crecen, cubos, tormenta, repulsión y contraataques. RT coloca una marca de garra persistente y una segunda pulsación viaja a ella; usa la marca original 90,3 de Code. En el despertar aumentan el daño y alcance, bajan los costes y varias técnicas agregan ataques. A es una ultimate con apertura bloqueable y alcance finito, con daño limitado a `min(420, floor(vida máxima rival*.42))`.
+
+[Controles Xbox y costes](Shibai/CONTROLES_XBOX.md) · [Instalación y pruebas en V14](Shibai/LEEME.md)
+
+Grabaciones del personaje real en Ikemen GO; especiales, despertar, marcas y ultimate conservan el audio capturado del motor, sin mezcla de golpes añadida:
+
+- [Combos base](previews/Shibai_combos_motor.mp4) — grabación visual sin audio.
+- [Especiales base con sonido](previews/Shibai_especiales_motor.mp4).
+- [Ataques de la forma divina](previews/Shibai_divino_motor.mp4).
+- [Activación y fin del despertar](previews/Shibai_despertar_motor.mp4).
+- [Marcas de garra y viaje](previews/Shibai_garras_motor.mp4).
+- [Ultimate confirmada por impacto](previews/Shibai_ultimate_motor.mp4).
+
+Las comprobaciones cubren controles en ambos lados y formas, daño por colisión, combos, recuperación, gasto real, transformación y expiración, guardia de pie/agachada/aérea, CPU y ultimate bloqueada, saltada, fuera de alcance o sin energía. El ejecutable exacto de Jump Force MUGEN V14 para Windows y el mando físico no están disponibles en este entorno; la prueba en Ikemen no sustituye esa comprobación.
+
+```bash
+python3 tools/build_shibai_assets.py
+python3 tools/build_shibai_runtime.py
+python3 tools/validate_shibai.py
+python3 tools/test_shibai_regressions.py
+python3 tools/check_shibai_in_engine.py
+SHIBAI_GUARD=1 python3 tools/check_shibai_in_engine.py
+SHIBAI_LOW_LIFE=1 python3 tools/check_shibai_in_engine.py
+SHIBAI_CPU=1 python3 tools/check_shibai_in_engine.py
+python3 tools/make_shibai_previews.py
+python3 tools/package_shibai.py
+python3 tools/verify_shibai_delivery.py
+```
+
+El constructor necesita Pillow, NumPy, SciPy y las referencias conservadas en `source_material`. Los informes están en `previews/Shibai_*checks.json`; la verificación final coteja dos reconstrucciones idénticas, los píxeles de la marca de Code, todas las poses empaquetadas y los archivos previos de Eida, Pochita y Mamushi. Esos tres personajes permanecen sin cambios.

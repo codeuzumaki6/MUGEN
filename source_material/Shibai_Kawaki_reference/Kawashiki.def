@@ -1,0 +1,28 @@
+[Info]
+name ="Kawashiki"
+displayname ="Kawashiki"
+versiondate =26/02/2022
+mugenversion =1.0
+author ="MFmugenPT-BR"
+pal.defaults=1
+
+[Files]
+sprite=Kawashiki.sff
+sound=Kawashiki.snd
+anim=Kawashiki.air
+cmd=Kawashiki.cmd
+cns=Kawashiki.cns
+st=Kawashiki.cns
+stcommon = common1.cns
+st1= IA.cns
+stcommon=common1.cns
+pal1=Paleisshiki.act
+st2=Specials.cns
+st3=Supers.cns
+st4=Helpers.cns
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

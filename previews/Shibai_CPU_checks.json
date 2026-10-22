@@ -1,0 +1,60 @@
+[
+  {
+    "case": {
+      "name": "CPU",
+      "kind": "cpu",
+      "form": 0,
+      "face": 1,
+      "distance": 220
+    },
+    "states": [
+      0,
+      20,
+      200,
+      1000,
+      1040
+    ],
+    "damage": 1028,
+    "received": 0,
+    "movement": 39.200042724609375,
+    "jump_apex": 0.0,
+    "min_power": 100,
+    "max_power": 3000,
+    "max_awakening": 0,
+    "blue_frames": 0,
+    "end_awakening": 0,
+    "end_animation": 200,
+    "end_state": 200,
+    "victim_end": 5030,
+    "failures": []
+  },
+  {
+    "case": {
+      "name": "CPU",
+      "kind": "cpu",
+      "form": 1,
+      "face": 1,
+      "distance": 220
+    },
+    "states": [
+      0,
+      20,
+      200,
+      1000,
+      3000
+    ],
+    "damage": 2213,
+    "received": 0,
+    "movement": 19.600006103515625,
+    "jump_apex": 0.0,
+    "min_power": 40,
+    "max_power": 3000,
+    "max_awakening": 796,
+    "blue_frames": 796,
+    "end_awakening": 0,
+    "end_animation": 200,
+    "end_state": 200,
+    "victim_end": 5001,
+    "failures": []
+  }
+]

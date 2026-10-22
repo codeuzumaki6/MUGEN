@@ -1,0 +1,323 @@
+[Statedef -1]
+[state ]
+type=parentvarset
+triggerall=ishelper
+trigger1=command="a"^^command="a2"
+trigger2=command="b"^^command="b2"
+trigger3=command="c"^^command="c2"
+trigger4=command="x"^^command="x2"
+trigger5=command="y"^^command="y2"
+trigger6=command="z"^^command="z2"
+trigger7=command="start"^^command="start2"
+trigger8=command="holdfwd"^^command="holdfwd2"
+trigger9=command="holdback"^^command="holdback2"
+trigger10=command="holdup"^^command="holdup2"
+trigger11=command="holddown"^^command="holddown2"
+var(59)=1
+ignorehitpause=1
+
+[state ]
+type=helper
+trigger1=!numhelper(0)
+name="0"
+id=0
+stateno=5150
+ownpal=0
+helpertype=player
+ignorehitpause=1
+supermovetime=9999999999
+pausemovetime=9999999999
+[state ]
+type=helper
+trigger1=!numhelper(1)
+name="1"
+id=1
+stateno=5150
+ownpal=0
+helpertype=player
+keyctrl=1
+ignorehitpause=1
+supermovetime=9999999999
+pausemovetime=9999999999
+[State -1]
+type=varset
+trigger1=!numhelper(0)
+trigger2=helper(0),stateno!=5150
+var(1)=1
+ignorehitpause=1
+[State -1]
+type=varadd
+triggerall=movetype=H
+trigger1=alive=1
+trigger2=!(random%((lifemax/life)-3))
+sysvar(2)=var(0)%10
+[State -1]
+type=varadd
+trigger1=!(random%3)
+trigger1=sysvar(2)>0
+sysvar(2)=-1-(random%5)
+ignorehitpause=1
+[State -1]
+type=statetypeset
+trigger1=movetype=h
+movetype=I
+ignorehitpause=1
+
+[State -1]
+type=changestate
+trigger1=!alive
+value=191
+ignorehitpause=1
+
+[State -1]
+type=changestate
+trigger1=RoundsExisted=0
+trigger1=roundstate=0
+value=190
+ignorehitpause=1
+[State -1]
+type=changestate
+trigger1=roundstate=2&&ctrl
+trigger1=command="FF"
+value=100
+ignorehitpause=1
+[State -1]
+type=changestate
+trigger1=roundstate=2&&ctrl
+trigger1=command="BB"
+value=105
+ignorehitpause=1
+[State -1]
+type=changestate
+trigger1=command="a"
+trigger1=roundstate=2&&statetype=S&&ctrl
+value=3000
+ignorehitpause=1
+[State -1]
+type=changestate
+trigger1=command="b"
+trigger1=roundstate=2&&statetype=S&&ctrl
+value=2000
+ignorehitpause=1
+[State -1]
+type=changestate
+triggerall=command="z"
+triggerall=roundstate=2&&ctrl
+trigger1=var(59)!=1
+trigger2=var(59)=1
+trigger2=!(random%7)||life<lifemax*.4
+value=4000
+ignorehitpause=1
+[State -1, Stand Strong Punch]
+type=changestate
+triggerall=command="c"
+triggerall=roundstate=2&&ctrl
+trigger1=var(59)!=1
+trigger2=var(59)=1
+trigger2=!(random%7)||life<lifemax*.4
+value=210
+ignorehitpause=1
+triggerall = statetype = S
+trigger1 = ctrl
+triggerall = !var(59)
+;Kamehameha Goku Deus
+[State -1,Kamehameha Deus]
+type = ChangeState
+value = 1999
+trigger1=command="x"
+triggerall = var (9) =0
+trigger1 = (statetype = s) && ctrl
+trigger2 = stateno = 200
+trigger2 = time > 18
+triggerall=power>20
+;Kamehameha Goku Deus2
+[State -1,Kamehameha Deus2]
+type = ChangeState
+value = 19999
+trigger1=command="y"
+triggerall = var (9) =0
+trigger1 = (statetype = s) && ctrl
+trigger2 = stateno = 200
+trigger2 = time > 18
+triggerall=power>50
+;-| Double Tap |-----------------------------------------------------------
+[Command]
+name = "FF"     ;Required (do not remove)
+command = F, F
+time = 10
+[Command]
+name = "BB"     ;Required (do not remove)
+command = B, B
+time = 10
+;-| 2/3 Button Combination |-----------------------------------------------
+[Command]
+name = "recovery";Required (do not remove)
+command = x+y
+time = 1
+;-| Dir + Button |---------------------------------------------------------
+[Command]
+name = "down_a"
+command = /$D,a
+time = 1
+[Command]
+name = "down_b"
+command = /$D,b
+time = 1
+;-| ’´•KŽE‹Z |--------------------------------------------------------
+
+[command]
+name = "Mu Ni Kaerou"
+command = b
+time = 20
+
+;-| Single Button |---------------------------------------------------------
+[Command]
+name = "a"
+command = a
+time = 1
+[Command]
+name = "b"
+command = b
+time = 1
+[Command]
+name = "c"
+command = c
+time = 1
+[Command]
+name = "x"
+command = x
+time = 1
+[Command]
+name = "y"
+command = y
+time = 1
+[Command]
+name = "z"
+command = z
+time = 1
+[Command]
+name = "start"
+command = s
+time = 1
+;-| Hold Dir |--------------------------------------------------------------
+[Command]
+name = "holdfwd";Required (do not remove)
+command = /$F
+time = 1
+[Command]
+name = "holdback";Required (do not remove)
+command = /$B
+time = 1
+[Command]
+name = "holdup" ;Required (do not remove)
+command = /$U
+time = 1
+[Command]
+name = "holddown";Required (do not remove)
+command = /$D
+time = 1
+
+[command]
+name = "holdc";Required (do not remove)
+command = /x
+time = 1
+
+[Command]
+name = "a2"
+command = a
+[Command]
+name = "b2"
+command = b
+time = 1
+[Command]
+name = "c2"
+command = c
+time = 1
+[Command]
+name = "x2"
+command = x
+time = 1
+[Command]
+name = "y2"
+command = y
+time = 1
+[Command]
+name = "z2"
+command = z
+time = 1
+[Command]
+name = "start2"
+command = s
+time = 1
+[Command]
+name = "holdfwd2";Required (do not remove)
+command = /$F
+[Command]
+name = "holdback2";Required (do not remove)
+command = /$B
+[Command]
+name = "holdup2" ;Required (do not remove)
+command = /$U
+[Command]
+name = "holddown2";Required (do not remove)
+command = /$D
+
+[command]
+name = "Poder 2"
+command = x
+;---------------------------------------------------------------------------
+;Mu Ni Kaerou
+[State -1, Mu Ni Kaerou]
+type = ChangeState
+value = 2000
+triggerall = !var(59)
+triggerall = command = "Mu Ni Kaerou"
+triggerall = Power >= 10
+trigger1 = statetype != A
+trigger1 = ctrl
+trigger2 = stateno = 200
+trigger3 = stateno = 210
+trigger4 = stateno = 215 && movecontact
+trigger5 = stateno = 230 && movecontact
+trigger6 = stateno = 240 && movecontact
+trigger7 = stateno = 245 && movecontact
+trigger8 = stateno = 300 && movecontact
+trigger9 = stateno = 400 && movecontact
+trigger10 = stateno = 410 && movecontact
+trigger11 = stateno = 430 && movecontact
+trigger12 = stateno = 440
+trigger13 = stateno = 1035 && movecontact
+trigger14 = stateno = 1030 && movecontact
+
+;Mu Ni Kaerou
+[State -1, Mu Ni Kaerou]
+type = ChangeState
+value = 10450
+triggerall = !var(59)
+triggerall = command = "10450"
+triggerall = Power >= 2000
+trigger1 = statetype != A
+trigger1 = ctrl
+
+[State -1, Mu Ni Kaerou]
+type = ChangeState
+value = 11000
+triggerall = !var(59)
+triggerall = command = "11010"
+triggerall = Power >= 2000
+trigger1 = statetype != A
+trigger1 = ctrl
+trigger2 = stateno = 200
+trigger3 = stateno = 210
+trigger4 = stateno = 215 && movecontact
+trigger5 = stateno = 230 && movecontact
+trigger6 = stateno = 240 && movecontact
+trigger7 = stateno = 245 && movecontact
+trigger8 = stateno = 300 && movecontact
+trigger9 = stateno = 400 && movecontact
+trigger10 = stateno = 410 && movecontact
+trigger11 = stateno = 430 && movecontact
+trigger12 = stateno = 440
+
+;---------------------------------------------------------------------------
+

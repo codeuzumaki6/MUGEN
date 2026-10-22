@@ -1,0 +1,29 @@
+[
+  {
+    "case": {
+      "name": "ultimate",
+      "kind": "ultimate",
+      "form": 0,
+      "face": 1,
+      "distance": 120
+    },
+    "states": [
+      0,
+      3000,
+      3001
+    ],
+    "damage": 420,
+    "received": 0,
+    "movement": 0.0,
+    "jump_apex": 0.0,
+    "min_power": 0,
+    "max_power": 3000,
+    "max_awakening": 0,
+    "blue_frames": 0,
+    "end_awakening": 0,
+    "end_animation": 0,
+    "end_state": 0,
+    "victim_end": 0,
+    "failures": []
+  }
+]

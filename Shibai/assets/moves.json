@@ -1,0 +1,109 @@
+{
+  "techniques": [
+    [
+      "Vendaval",
+      "a",
+      "F",
+      1000,
+      300
+    ],
+    [
+      "Ciclon",
+      "a",
+      "B",
+      1010,
+      450
+    ],
+    [
+      "Estacas",
+      "b",
+      "F",
+      1020,
+      400
+    ],
+    [
+      "Cubos",
+      "b",
+      "B",
+      1030,
+      550
+    ],
+    [
+      "Tormenta",
+      "c",
+      "F",
+      1040,
+      550
+    ],
+    [
+      "Repulsion",
+      "c",
+      "B",
+      1050,
+      650
+    ],
+    [
+      "RafagaBaja",
+      "a",
+      "D",
+      1400,
+      250
+    ],
+    [
+      "EstacasBajas",
+      "b",
+      "D",
+      1410,
+      350
+    ],
+    [
+      "Descarga",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Reflejo",
+      "y",
+      "N",
+      1200,
+      450
+    ],
+    [
+      "Garra",
+      "z",
+      "N",
+      1210,
+      300
+    ],
+    [
+      "Senrigan",
+      "y",
+      "D",
+      1430,
+      500
+    ],
+    [
+      "SalidaGarra",
+      "z",
+      "D",
+      1440,
+      650
+    ]
+  ],
+  "awakening": {
+    "ticks": 720,
+    "full_meter_required": true,
+    "cost": 1500,
+    "technique_cost_multiplier": 0.6,
+    "normal_attack_multiplier": 1.2,
+    "awakened_attack_multiplier": 1.65
+  },
+  "ultimate": {
+    "cost": 3000,
+    "budget": "min(420,floor(enemy_lifemax*.42))",
+    "must_hit": true
+  },
+  "canon_note": "Wind and thunder inspired by description; Kokugan, claw marks, repulsion and scripted combat are requested fan adaptations."
+}

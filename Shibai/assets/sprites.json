@@ -1,0 +1,530 @@
+[
+  {
+    "group": 0,
+    "number": 0,
+    "file": "assets/sprites/0_0.png",
+    "axis": [
+      29,
+      77
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "idle0"
+  },
+  {
+    "group": 0,
+    "number": 1,
+    "file": "assets/sprites/0_1.png",
+    "axis": [
+      29,
+      77
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "idle1"
+  },
+  {
+    "group": 0,
+    "number": 2,
+    "file": "assets/sprites/0_2.png",
+    "axis": [
+      28,
+      77
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "idle2"
+  },
+  {
+    "group": 0,
+    "number": 3,
+    "file": "assets/sprites/0_3.png",
+    "axis": [
+      28,
+      77
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "walk0"
+  },
+  {
+    "group": 0,
+    "number": 4,
+    "file": "assets/sprites/0_4.png",
+    "axis": [
+      27,
+      80
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "walk1"
+  },
+  {
+    "group": 0,
+    "number": 5,
+    "file": "assets/sprites/0_5.png",
+    "axis": [
+      27,
+      75
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "walk2"
+  },
+  {
+    "group": 0,
+    "number": 6,
+    "file": "assets/sprites/0_6.png",
+    "axis": [
+      27,
+      53
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "jump_start"
+  },
+  {
+    "group": 0,
+    "number": 7,
+    "file": "assets/sprites/0_7.png",
+    "axis": [
+      28,
+      74
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "jump_up"
+  },
+  {
+    "group": 0,
+    "number": 8,
+    "file": "assets/sprites/0_8.png",
+    "axis": [
+      25,
+      74
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "jump_down"
+  },
+  {
+    "group": 0,
+    "number": 9,
+    "file": "assets/sprites/0_9.png",
+    "axis": [
+      25,
+      57
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "crouch"
+  },
+  {
+    "group": 0,
+    "number": 10,
+    "file": "assets/sprites/0_10.png",
+    "axis": [
+      33,
+      72
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "hurt0"
+  },
+  {
+    "group": 0,
+    "number": 11,
+    "file": "assets/sprites/0_11.png",
+    "axis": [
+      21,
+      56
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "hurt1"
+  },
+  {
+    "group": 0,
+    "number": 12,
+    "file": "assets/sprites/0_12.png",
+    "axis": [
+      31,
+      75
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "palm_ready"
+  },
+  {
+    "group": 0,
+    "number": 13,
+    "file": "assets/sprites/0_13.png",
+    "axis": [
+      33,
+      74
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "palm"
+  },
+  {
+    "group": 0,
+    "number": 14,
+    "file": "assets/sprites/0_14.png",
+    "axis": [
+      32,
+      69
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "sweep"
+  },
+  {
+    "group": 0,
+    "number": 15,
+    "file": "assets/sprites/0_15.png",
+    "axis": [
+      29,
+      76
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "rising_palm"
+  },
+  {
+    "group": 0,
+    "number": 16,
+    "file": "assets/sprites/0_16.png",
+    "axis": [
+      32,
+      72
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "push"
+  },
+  {
+    "group": 0,
+    "number": 17,
+    "file": "assets/sprites/0_17.png",
+    "axis": [
+      26,
+      86
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "invoke"
+  },
+  {
+    "group": 0,
+    "number": 18,
+    "file": "assets/sprites/0_18.png",
+    "axis": [
+      27,
+      73
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "charge"
+  },
+  {
+    "group": 0,
+    "number": 19,
+    "file": "assets/sprites/0_19.png",
+    "axis": [
+      28,
+      72
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "reflect"
+  },
+  {
+    "group": 0,
+    "number": 20,
+    "file": "assets/sprites/0_20.png",
+    "axis": [
+      34,
+      72
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "cast"
+  },
+  {
+    "group": 0,
+    "number": 21,
+    "file": "assets/sprites/0_21.png",
+    "axis": [
+      38,
+      75
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "release"
+  },
+  {
+    "group": 0,
+    "number": 22,
+    "file": "assets/sprites/0_22.png",
+    "axis": [
+      27,
+      58
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "getup"
+  },
+  {
+    "group": 0,
+    "number": 23,
+    "file": "assets/sprites/0_23.png",
+    "axis": [
+      41,
+      22
+    ],
+    "uniform_scale": 0.42162162162162165,
+    "role": "prone"
+  },
+  {
+    "group": 1,
+    "number": 0,
+    "file": "assets/sprites/1_0.png",
+    "axis": [
+      27,
+      77
+    ],
+    "uniform_scale": 0.40625,
+    "role": "idle0"
+  },
+  {
+    "group": 1,
+    "number": 1,
+    "file": "assets/sprites/1_1.png",
+    "axis": [
+      24,
+      77
+    ],
+    "uniform_scale": 0.40625,
+    "role": "idle1"
+  },
+  {
+    "group": 1,
+    "number": 2,
+    "file": "assets/sprites/1_2.png",
+    "axis": [
+      26,
+      75
+    ],
+    "uniform_scale": 0.40625,
+    "role": "idle2"
+  },
+  {
+    "group": 1,
+    "number": 3,
+    "file": "assets/sprites/1_3.png",
+    "axis": [
+      23,
+      74
+    ],
+    "uniform_scale": 0.40625,
+    "role": "walk0"
+  },
+  {
+    "group": 1,
+    "number": 4,
+    "file": "assets/sprites/1_4.png",
+    "axis": [
+      21,
+      77
+    ],
+    "uniform_scale": 0.40625,
+    "role": "walk1"
+  },
+  {
+    "group": 1,
+    "number": 5,
+    "file": "assets/sprites/1_5.png",
+    "axis": [
+      22,
+      70
+    ],
+    "uniform_scale": 0.40625,
+    "role": "walk2"
+  },
+  {
+    "group": 1,
+    "number": 6,
+    "file": "assets/sprites/1_6.png",
+    "axis": [
+      23,
+      49
+    ],
+    "uniform_scale": 0.40625,
+    "role": "jump_start"
+  },
+  {
+    "group": 1,
+    "number": 7,
+    "file": "assets/sprites/1_7.png",
+    "axis": [
+      26,
+      68
+    ],
+    "uniform_scale": 0.40625,
+    "role": "jump_up"
+  },
+  {
+    "group": 1,
+    "number": 8,
+    "file": "assets/sprites/1_8.png",
+    "axis": [
+      21,
+      71
+    ],
+    "uniform_scale": 0.40625,
+    "role": "jump_down"
+  },
+  {
+    "group": 1,
+    "number": 9,
+    "file": "assets/sprites/1_9.png",
+    "axis": [
+      20,
+      56
+    ],
+    "uniform_scale": 0.40625,
+    "role": "crouch"
+  },
+  {
+    "group": 1,
+    "number": 10,
+    "file": "assets/sprites/1_10.png",
+    "axis": [
+      32,
+      66
+    ],
+    "uniform_scale": 0.40625,
+    "role": "hurt0"
+  },
+  {
+    "group": 1,
+    "number": 11,
+    "file": "assets/sprites/1_11.png",
+    "axis": [
+      17,
+      50
+    ],
+    "uniform_scale": 0.40625,
+    "role": "hurt1"
+  },
+  {
+    "group": 1,
+    "number": 12,
+    "file": "assets/sprites/1_12.png",
+    "axis": [
+      28,
+      68
+    ],
+    "uniform_scale": 0.40625,
+    "role": "palm_ready"
+  },
+  {
+    "group": 1,
+    "number": 13,
+    "file": "assets/sprites/1_13.png",
+    "axis": [
+      28,
+      69
+    ],
+    "uniform_scale": 0.40625,
+    "role": "palm"
+  },
+  {
+    "group": 1,
+    "number": 14,
+    "file": "assets/sprites/1_14.png",
+    "axis": [
+      29,
+      65
+    ],
+    "uniform_scale": 0.40625,
+    "role": "sweep"
+  },
+  {
+    "group": 1,
+    "number": 15,
+    "file": "assets/sprites/1_15.png",
+    "axis": [
+      26,
+      73
+    ],
+    "uniform_scale": 0.40625,
+    "role": "rising_palm"
+  },
+  {
+    "group": 1,
+    "number": 16,
+    "file": "assets/sprites/1_16.png",
+    "axis": [
+      26,
+      66
+    ],
+    "uniform_scale": 0.40625,
+    "role": "push"
+  },
+  {
+    "group": 1,
+    "number": 17,
+    "file": "assets/sprites/1_17.png",
+    "axis": [
+      24,
+      78
+    ],
+    "uniform_scale": 0.40625,
+    "role": "invoke"
+  },
+  {
+    "group": 1,
+    "number": 18,
+    "file": "assets/sprites/1_18.png",
+    "axis": [
+      24,
+      77
+    ],
+    "uniform_scale": 0.40625,
+    "role": "charge"
+  },
+  {
+    "group": 1,
+    "number": 19,
+    "file": "assets/sprites/1_19.png",
+    "axis": [
+      28,
+      72
+    ],
+    "uniform_scale": 0.40625,
+    "role": "reflect"
+  },
+  {
+    "group": 1,
+    "number": 20,
+    "file": "assets/sprites/1_20.png",
+    "axis": [
+      38,
+      77
+    ],
+    "uniform_scale": 0.40625,
+    "role": "cast"
+  },
+  {
+    "group": 1,
+    "number": 21,
+    "file": "assets/sprites/1_21.png",
+    "axis": [
+      31,
+      72
+    ],
+    "uniform_scale": 0.40625,
+    "role": "release"
+  },
+  {
+    "group": 1,
+    "number": 22,
+    "file": "assets/sprites/1_22.png",
+    "axis": [
+      23,
+      50
+    ],
+    "uniform_scale": 0.40625,
+    "role": "getup"
+  },
+  {
+    "group": 1,
+    "number": 23,
+    "file": "assets/sprites/1_23.png",
+    "axis": [
+      42,
+      16
+    ],
+    "uniform_scale": 0.40625,
+    "role": "prone"
+  }
+]

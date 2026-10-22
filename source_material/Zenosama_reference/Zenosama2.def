@@ -1,0 +1,29 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="Zeno Sama "
+displayname ="Zeno Sama "
+versiondate =15/03/17
+mugenversion =04,14,2001
+author ="Diogo Studios Mugen"
+pal.defaults =1
+
+[Files]
+sprite =drmanhattan.sff
+anim =drmanhattan.air
+sound =drmanhattan.snd
+cmd =drmanhattan_cmd.cns
+cns =drmanhattan.cns
+stcommon =common1.cns
+st =drmanhattan.cns
+pal1=drmanhattan.act
+st1=drmanhattan2.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;intro.storyboard = 
+;ending.storyboard = 
