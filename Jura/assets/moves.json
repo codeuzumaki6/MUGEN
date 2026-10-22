@@ -1,0 +1,112 @@
+{
+  "techniques": [
+    [
+      "Espinas",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Raiz",
+      "a",
+      "B",
+      1010,
+      450
+    ],
+    [
+      "Bijudama",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "BijudamaCargada",
+      "b",
+      "B",
+      1030,
+      700
+    ],
+    [
+      "Garras",
+      "c",
+      "F",
+      1040,
+      400
+    ],
+    [
+      "Arbol",
+      "c",
+      "B",
+      1050,
+      650
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      250
+    ],
+    [
+      "Lanzador",
+      "b",
+      "D",
+      1410,
+      400
+    ],
+    [
+      "RafagaOcular",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Francotirador",
+      "y",
+      "N",
+      1200,
+      250
+    ],
+    [
+      "Marca",
+      "z",
+      "N",
+      1210,
+      300
+    ],
+    [
+      "Levitar",
+      "y",
+      "D",
+      1430,
+      350
+    ],
+    [
+      "SalidaGarra",
+      "z",
+      "D",
+      1440,
+      500
+    ]
+  ],
+  "body_poses": 36,
+  "awakening": {
+    "ticks": 720,
+    "full_meter_required": true,
+    "cost": 1500,
+    "technique_cost_multiplier": 0.75,
+    "attack_multiplier_base": 1.15,
+    "attack_multiplier_awake": 1.5,
+    "regen": "3 life / 12 ticks; while alive and not being hit"
+  },
+  "ultimate": {
+    "cost": 3000,
+    "must_hit": true,
+    "budget": "min(450,floor(enemy_lifemax*.45))"
+  },
+  "source_video": "Vaydra Senki.mp4; visual reference only, own MUGEN states",
+  "canon_note": "Ocular Bijudama, wood and claw marks are the core. The ultimate is an original ocular Bijudama adaptation. No Kokugan or black cubes; fan Chibaku rock is not used by attacks."
+}

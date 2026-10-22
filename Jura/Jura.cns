@@ -1,0 +1,4032 @@
+; Jura: Vaydra sheet, own MUGEN combat and finite helpers.
+[Data]
+life=1300
+power=3000
+attack=100
+defence=115
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=84
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-72
+mid.pos=0,-42
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+[Statedef 200]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 200
+velset = 2.5,0
+
+[State 200, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 200, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 48,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 200, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 200, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 201]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 201
+velset = 2.5,0
+
+[State 201, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 201, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 62,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 201, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 201, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 202]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 202
+velset = 2.5,0
+
+[State 202, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 202, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 95,0
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 202, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 202, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 12
+projID = 202
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 18
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1.2,1.2
+offset = 18,-58
+velocity = 10,0
+attr = S, NP
+damage = 25,0
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 25,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 202, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 210]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 210
+velset = 2.5,0
+
+[State 210, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 210, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 48,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 210, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 210, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 211]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 211
+velset = 2.5,0
+
+[State 211, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 211, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 62,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 211, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 211, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 212]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 212
+velset = 2.5,0
+
+[State 212, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 212, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = S, NA
+damage = 95,0
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 212, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 212, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 12
+projID = 212
+projanim = 8600
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 18
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 0.65,0.65
+offset = 50,0
+velocity = 0,0
+attr = S, NP
+damage = 25,0
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 25,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 212, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 220]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 220
+velset = 2.5,0
+
+[State 220, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 220, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = C, NA
+damage = 48,0
+animtype = Medium
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 220, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 220, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 221]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 221
+velset = 2.5,0
+
+[State 221, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 221, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = C, NA
+damage = 62,0
+animtype = Medium
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 221, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 221, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 222]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 222
+velset = 2.5,0
+
+[State 222, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 222, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = C, NA
+damage = 95,0
+animtype = Up
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 222, Stop the approach]
+type = VelSet
+trigger1 = Time >= 8
+x = 0
+
+[State 222, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 12
+projID = 222
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 18
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1.2,1.2
+offset = 18,-58
+velocity = 10,0
+attr = S, NP
+damage = 25,0
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 25,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 222, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 600]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 600
+
+[State 600, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 600, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 600, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 42,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 600, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 600, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 600, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 601]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 601
+
+[State 601, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 601, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 601, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 56,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 601, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 601, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 601, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 602]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 602
+
+[State 602, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 602, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 602, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 70,0
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 602, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 602, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 602, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 610]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 610
+
+[State 610, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 610, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 610, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 42,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 610, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 610, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 610, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 611]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 611
+
+[State 611, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 611, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 611, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 56,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 611, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 611, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 611, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 612]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 612
+
+[State 612, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 612, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 612, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 70,0
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 612, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 612, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 612, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 620]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 620
+
+[State 620, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 620, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 620, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 42,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 620, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 620, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 620, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 621]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 621
+
+[State 621, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 621, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 621, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 56,0
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 4,7
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,7
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -0.4,0
+air.hittime = 30
+air.velocity = -0.4,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 2
+envshake.ampl = -1
+
+[State 621, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 621, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 621, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 622]
+type = A
+movetype = A
+physics = A
+ctrl = 0
+anim = 622
+
+[State 622, Finite air chain]
+type = VarAdd
+trigger1 = Time = 0
+v = 12
+value = 1
+
+[State 622, Contact sound]
+type = PlaySnd
+trigger1 = Time = 3
+value = S1,0
+channel = 1
+
+[State 622, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 3
+attr = A, NA
+damage = 70,0
+animtype = Up
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = High
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 30,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 622, Brief lift on actual contact]
+type = VelSet
+trigger1 = MoveHit = 1
+y = -1.5
+persistent = 0
+ignorehitpause = 1
+
+[State 622, Land safely]
+type = ChangeState
+trigger1 = Vel Y>0 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 622, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 50
+ctrl = 1
+
+[Statedef 1000]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1000
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,262,350)
+
+[State 1000, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1000, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1000, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1000, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 10
+value = S1,41
+channel = 1
+
+[State 1000, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 10
+projID = 1000
+projanim = 8600
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 65,0
+velocity = 0,0
+attr = S, SP
+damage = 55,5
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,8
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 33
+ground.slidetime = 20
+ground.velocity = -0.7,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1000, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 20
+value = S1,41
+channel = 1
+
+[State 1000, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 20
+projID = 1001
+projanim = 8600
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 110,0
+velocity = 0,0
+attr = S, SP
+damage = 55,5
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,8
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 33
+ground.slidetime = 20
+ground.velocity = -0.7,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1000, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 30
+value = S1,41
+channel = 1
+
+[State 1000, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 30
+projID = 1002
+projanim = 8600
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 155,0
+velocity = 0,0
+attr = S, SP
+damage = 80,5
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1000, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1010]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1010
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,338,450)
+
+[State 1010, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1010, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1010, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1010, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 15
+value = S1,41
+channel = 1
+
+[State 1010, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 15
+projID = 1010
+projanim = 8601
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 90,0
+velocity = 0,0
+attr = S, SP
+damage = 155,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1010, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1050]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1050
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,488,650)
+
+[State 1050, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1050, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1050, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1050, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 18
+value = S1,41
+channel = 1
+
+[State 1050, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 18
+projID = 1050
+projanim = 8602
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 115,0
+velocity = 0,0
+attr = S, SP
+damage = 185,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1050, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1040]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1040
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,300,400)
+
+[State 1040, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1040, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1040, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1040, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 12
+value = S1,32
+channel = 1
+
+[State 1040, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 12
+projID = 1040
+projanim = 8603
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 28
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 0.85,0.85
+offset = 55,-27
+velocity = 7,0
+attr = S, SP
+damage = 135,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1040, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1410]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1410
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,300,400)
+
+[State 1410, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1410, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1410, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1410, Wood or claw release]
+type = PlaySnd
+trigger1 = Time = 12
+value = S1,41
+channel = 1
+
+[State 1410, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 12
+projID = 1410
+projanim = 8600
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 35
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 50,0
+velocity = 0,0
+attr = S, SP
+damage = 135,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,41
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1410, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1020]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1020
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,375,500)
+
+[State 1020, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1020, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1020, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1020, Visible technique effect]
+type = Explod
+trigger1 = Time = 5
+anim = 8605
+postype = P1
+pos = 13,-65
+scale = 0.55,0.55
+removetime = 12
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1020, Orb damage]
+type = VarSet
+trigger1 = Time = 15
+v = 30
+value = 145
+
+[State 1020, Orb velocity]
+type = VarSet
+trigger1 = Time = 15
+v = 31
+value = 8
+
+[State 1020, Orb knockback]
+type = VarSet
+trigger1 = Time = 15
+v = 32
+value = 1
+
+[State 1020, Orb scale]
+type = VarSet
+trigger1 = Time = 15
+fv = 10
+value = 0.65
+
+[State 1020, Eye actually emits the Bijudama]
+type = Helper
+trigger1 = Time = 15 && NumHelper(9300)<3
+helpertype = Normal
+name = "Bijudama ocular"
+ID = 9300
+stateno = 9300
+postype = P1
+pos = 18,-65
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 1020, Bijudama release]
+type = PlaySnd
+trigger1 = Time = 15
+value = S1,40
+channel = 1
+
+[State 1020, Orb damage]
+type = VarSet
+triggerall = Var(40)>0
+trigger1 = Time = 30
+v = 30
+value = 65
+
+[State 1020, Orb velocity]
+type = VarSet
+triggerall = Var(40)>0
+trigger1 = Time = 30
+v = 31
+value = 10
+
+[State 1020, Orb knockback]
+type = VarSet
+triggerall = Var(40)>0
+trigger1 = Time = 30
+v = 32
+value = 1
+
+[State 1020, Orb scale]
+type = VarSet
+triggerall = Var(40)>0
+trigger1 = Time = 30
+fv = 10
+value = 0.4
+
+[State 1020, Eye actually emits the Bijudama]
+type = Helper
+triggerall = Var(40)>0
+trigger1 = Time = 30 && NumHelper(9300)<3
+helpertype = Normal
+name = "Bijudama ocular"
+ID = 9300
+stateno = 9300
+postype = P1
+pos = 18,-65
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 1020, Bijudama release]
+type = PlaySnd
+triggerall = Var(40)>0
+trigger1 = Time = 30
+value = S1,40
+channel = 1
+
+[State 1020, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1030]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1030
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,525,700)
+
+[State 1030, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1030, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1030, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1030, Visible technique effect]
+type = Explod
+trigger1 = Time = 5
+anim = 8605
+postype = P1
+pos = 13,-65
+scale = 0.55,0.55
+removetime = 12
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1030, Orb damage]
+type = VarSet
+trigger1 = Time = 30
+v = 30
+value = 225
+
+[State 1030, Orb velocity]
+type = VarSet
+trigger1 = Time = 30
+v = 31
+value = 6
+
+[State 1030, Orb knockback]
+type = VarSet
+trigger1 = Time = 30
+v = 32
+value = 1
+
+[State 1030, Orb scale]
+type = VarSet
+trigger1 = Time = 30
+fv = 10
+value = 1.1
+
+[State 1030, Eye actually emits the Bijudama]
+type = Helper
+trigger1 = Time = 30 && NumHelper(9300)<3
+helpertype = Normal
+name = "Bijudama ocular"
+ID = 9300
+stateno = 9300
+postype = P1
+pos = 18,-65
+facing = 1
+keyctrl = 0
+ownpal = 1
+
+[State 1030, Bijudama release]
+type = PlaySnd
+trigger1 = Time = 30
+value = S1,40
+channel = 1
+
+[State 1030, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1200]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1200
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,188,250)
+
+[State 1200, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1200, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1200, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1200, Visible technique effect]
+type = Explod
+trigger1 = Time = 4
+anim = 8605
+postype = P1
+pos = 13,-65
+scale = 0.38,0.38
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1200, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 10
+projID = 1200
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 18,-65
+velocity = 18,0
+attr = S, SP
+damage = 115,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1200, Ocular shot crack]
+type = PlaySnd
+trigger1 = Time = 10
+value = S1,42
+channel = 1
+
+[State 1200, Visible technique effect]
+type = Explod
+trigger1 = Time = 10
+anim = 8810
+postype = P1
+pos = 38,-65
+scale = 0.15,0.15
+removetime = 9
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1200, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1420]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1420
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,300,400)
+
+[State 1420, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1420, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1420, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Visible technique effect]
+type = Explod
+trigger1 = Time = 4
+anim = 8605
+postype = P1
+pos = 13,-65
+scale = 0.38,0.38
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 10
+projID = 1420
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 18,-65
+velocity = 15,0
+attr = S, SP
+damage = 55,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,8
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 33
+ground.slidetime = 20
+ground.velocity = -0.7,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1420, Ocular shot crack]
+type = PlaySnd
+trigger1 = Time = 10
+value = S1,42
+channel = 1
+
+[State 1420, Visible technique effect]
+type = Explod
+trigger1 = Time = 10
+anim = 8810
+postype = P1
+pos = 38,-65
+scale = 0.15,0.15
+removetime = 9
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 20
+projID = 1421
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 18,-65
+velocity = 15,0
+attr = S, SP
+damage = 55,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,8
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 33
+ground.slidetime = 20
+ground.velocity = -0.7,0
+air.hittime = 30
+air.velocity = -0.7,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1420, Ocular shot crack]
+type = PlaySnd
+trigger1 = Time = 20
+value = S1,42
+channel = 1
+
+[State 1420, Visible technique effect]
+type = Explod
+trigger1 = Time = 20
+anim = 8810
+postype = P1
+pos = 38,-65
+scale = 0.15,0.15
+removetime = 9
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 30
+projID = 1422
+projanim = 8606
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 1,1
+offset = 18,-65
+velocity = 15,0
+attr = S, SP
+damage = 55,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1420, Ocular shot crack]
+type = PlaySnd
+trigger1 = Time = 30
+value = S1,42
+channel = 1
+
+[State 1420, Visible technique effect]
+type = Explod
+trigger1 = Time = 30
+anim = 8810
+postype = P1
+pos = 38,-65
+scale = 0.15,0.15
+removetime = 9
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1420, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1400]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 1400
+velset = 4,0
+poweradd = -IfElse(Var(40)>0,188,250)
+
+[State 1400, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1400, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1400, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1400, Contact sound]
+type = PlaySnd
+trigger1 = Time = 4
+value = S1,0
+channel = 1
+
+[State 1400, Actual taijutsu contact]
+type = HitDef
+trigger1 = Time = 4
+attr = C, SA
+damage = 115,0
+animtype = Up
+guardflag = L
+hitflag = MAF
+priority = 5,Hit
+pausetime = 7,11
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-45
+hitsound = S1,19
+guardsound = S1,9
+ground.type = Low
+ground.hittime = 27
+ground.slidetime = 18
+ground.velocity = -5,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1400, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1430]
+type = A
+movetype = I
+physics = N
+ctrl = 1
+anim = 1430
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,262,350)
+
+[State 1430, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1430, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1430, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1430, Leave the floor]
+type = PosAdd
+trigger1 = Time = 0
+y = -35
+
+[State 1430, Finite flight steering]
+type = VelSet
+trigger1 = 1
+x = IfElse(command="holdfwd",3,IfElse(command="holdback",-3,0))
+y = IfElse(Time<10,-2,IfElse(Time>12 && command="holdup",-2,IfElse(Time>12 && command="holddown",2,0)))
+
+[State 1430, Land from flight]
+type = ChangeState
+trigger1 = Time>12 && Pos Y>=0
+value = 52
+ctrl = 1
+
+[State 1430, Return to movement]
+type = ChangeState
+trigger1 = Time >= 90
+value = 50
+ctrl = 1
+
+[Statedef 1210]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 1210
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,225,300)
+
+[State 1210, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1210, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1210, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1210, Place a physical ground mark]
+type = Helper
+trigger1 = Time = 6
+helpertype = Normal
+name = "Marca de garra"
+ID = 9600
+stateno = 9600
+postype = P1
+pos = 125,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1210, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1211]
+type = S
+movetype = A
+physics = N
+ctrl = 0
+anim = 1211
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,225,300)
+
+[State 1211, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1211, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1211, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1211, Original crossed claw bands]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Bandas de garra"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1211, Enter the mark]
+type = AssertSpecial
+trigger1 = Time>=10 && Time<18
+flag = Invisible
+
+[State 1211, Travel without pushing bodies]
+type = PlayerPush
+trigger1 = Time>=8 && Time<=18
+value = 0
+
+[State 1211, Read saved mark]
+type = VarSet
+trigger1 = Time=0 && NumHelper(9600)>0
+v = 22
+value = Floor(Helper(9600),Pos X)
+
+[State 1211, Travel to mark, never enemy coordinates]
+type = PosSet
+trigger1 = Time=14
+x = Var(22)
+
+[State 1211, Face opponent after exit]
+type = Turn
+trigger1 = Time=15 && P2Dist X<0
+
+
+[State 1211, Original crossed claw bands]
+type = Helper
+trigger1 = Time = 15
+helpertype = Normal
+name = "Bandas de garra"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1211, Claw travel sound]
+type = PlaySnd
+trigger1 = Time = 14
+value = S1,32
+channel = 1
+
+[State 1211, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 22
+projID = 1211
+projanim = 8603
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 0.65,0.65
+offset = 40,-35
+velocity = 7,0
+attr = S, SP
+damage = 150,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1211, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 1440]
+type = S
+movetype = A
+physics = N
+ctrl = 0
+anim = 1440
+velset = 0,0
+poweradd = -IfElse(Var(40)>0,375,500)
+
+[State 1440, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 1440, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1440, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 1440, Original crossed claw bands]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Bandas de garra"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1440, Enter the mark]
+type = AssertSpecial
+trigger1 = Time>=10 && Time<18
+flag = Invisible
+
+[State 1440, Travel without pushing bodies]
+type = PlayerPush
+trigger1 = Time>=8 && Time<=18
+value = 0
+
+[State 1440, Original crossed claw bands]
+type = Helper
+trigger1 = Time = 3
+helpertype = Normal
+name = "Bandas de garra"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = -80,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1440, Finite retreat]
+type = PosAdd
+trigger1 = Time=14
+x = -80
+
+[State 1440, Original crossed claw bands]
+type = Helper
+trigger1 = Time = 15
+helpertype = Normal
+name = "Bandas de garra"
+ID = 9601
+stateno = 9601
+postype = P1
+pos = 0,0
+facing = 1
+ownpal = 1
+keyctrl = 0
+
+[State 1440, Claw travel sound]
+type = PlaySnd
+trigger1 = Time = 14
+value = S1,32
+channel = 1
+
+[State 1440, Visible physical projectile]
+type = Projectile
+trigger1 = Time = 22
+projID = 1440
+projanim = 8603
+projhitanim = 8820
+projremanim = 8700
+projremove = 1
+projremovetime = 24
+projhits = 1
+projedgebound = 25
+projpriority = 2
+projscale = 0.65,0.65
+offset = 40,-35
+velocity = 7,0
+attr = S, SP
+damage = 150,5
+guardflag = MA
+hitflag = MAF
+priority = 5,Hit
+pausetime = 0,12
+sparkno = S8700
+guard.sparkno = -1
+hitsound = S1,42
+guardsound = S1,9
+ground.type = High
+ground.hittime = 28
+ground.slidetime = 20
+ground.velocity = -6,-7
+air.hittime = 30
+air.velocity = -5,-5
+fall = 1
+fall.recover = 1
+fall.recovertime = 45
+getpower = 0,0
+givepower = 12,8
+envshake.time = 8
+envshake.ampl = -4
+
+[State 1440, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 9600]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8880
+velset = 0,0
+
+[State 9600, No push]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 9600, No hurt box]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 9600, No extra shadow]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 9600, Native flat mark and crossed bands]
+type = AngleDraw
+trigger1 = 1
+value = 0
+scale = 1,1
+
+[State 9600, Band layer]
+type = SprPriority
+trigger1 = 1
+value = -2
+
+[State 9600, Finite mark lifetime]
+type = DestroySelf
+trigger1 = Time>=600
+trigger2 = RoundState!=2
+trigger3 = Root,StateNo=1211
+trigger3 = Root,Time>=14
+
+
+[Statedef 9601]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8881
+velset = 0,0
+
+[State 9601, No push]
+type = PlayerPush
+trigger1 = 1
+value = 0
+
+[State 9601, No hurt box]
+type = NotHitBy
+trigger1 = 1
+value = SCA
+time = 1
+
+[State 9601, No extra shadow]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 9601, Native flat mark and crossed bands]
+type = AngleDraw
+trigger1 = 1
+value = 0
+scale = 1,1.45
+
+[State 9601, Band layer]
+type = SprPriority
+trigger1 = 1
+value = 3
+
+[State 9601, Finite mark lifetime]
+type = DestroySelf
+trigger1 = Time>=36
+trigger2 = RoundState!=2
+
+
+[Statedef 9300]
+type = A
+movetype = A
+physics = N
+ctrl = 0
+anim = 8841
+velset = 0,0
+
+[State 9300, Read damage]
+type = VarSet
+trigger1 = Time=0
+v=0
+value=Parent,Var(30)
+
+[State 9300, Read knockback]
+type = VarSet
+trigger1 = Time=0
+v=1
+value=Parent,Var(32)
+
+[State 9300, Read velocity]
+type = VarSet
+trigger1 = Time=0
+v=2
+value=Parent,Var(31)
+
+[State 9300, Read size]
+type = VarSet
+trigger1 = Time=0
+fv=0
+value=Parent,FVar(10)
+
+[State 9300, Stable orb scale]
+type = AngleDraw
+trigger1 = 1
+value=0
+scale=FVar(0),FVar(0)
+
+[State 9300, Purple-black ocular chakra]
+type = PalFX
+trigger1 = 1
+time=1
+color=0
+mul=22,4,36
+
+[State 9300, Violet chakra rim]
+type = Explod
+trigger1 = Time=0
+anim=8840
+ID=9309
+postype=P1
+pos=0,0
+bindtime=-1
+scale=FVar(0)*.36,FVar(0)*.36
+removetime=70
+sprpriority=3
+ownpal=1
+removeongethit=1
+
+[State 9300, Actual orb velocity]
+type = VelSet
+trigger1 = 1
+x=Var(2)
+y=0
+
+[State 9300, No shadow]
+type = AssertSpecial
+trigger1 = 1
+flag=NoShadow
+
+[State 9300, No push]
+type = PlayerPush
+trigger1 = 1
+value=0
+
+[State 9300, Root power applies to the projectile]
+type = AttackMulSet
+trigger1 = 1
+value=IfElse(Root,Var(40)>0,1.5,1.15)
+
+[State 9300, Visible orb contact]
+type = HitDef
+trigger1 = Time=0
+attr=A,SP
+damage=Var(0),7
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,10
+sparkno=S8820
+guard.sparkno=-1
+hitsound=S1,41
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-6,IfElse(Var(1),-7,0)
+air.velocity=-5,-5
+fall=Var(1)
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=15,10
+envshake.time=9
+envshake.ampl=-4
+
+[State 9300, Projectile trade]
+type = HitOverride
+trigger1 = 1
+attr=SCA,NP,SP,HP
+stateno=9301
+time=1
+
+[State 9300, Remove rim after contact]
+type = RemoveExplod
+trigger1 = MoveContact || Time>=70
+ID=9309
+
+[State 9300, Burst after contact]
+type = ChangeState
+trigger1 = MoveContact || Time>=70
+value=9301
+
+[Statedef 9301]
+type = A
+movetype = I
+physics = N
+ctrl = 0
+anim = 8820
+velset = 0,0
+
+[State 9301, Orb burst sound]
+type = PlaySnd
+trigger1 = Time=0
+value=S1,41
+channel=1
+
+[State 9301, Safe final effect]
+type = DestroySelf
+trigger1 = Time>=15
+
+
+[Statedef 170]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 170
+velset = 0,0
+
+[State 170, Round pose]
+type = Null
+trigger1 = 1
+
+
+[Statedef 180]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 180
+velset = 0,0
+
+[State 180, Round pose]
+type = Null
+trigger1 = 1
+
+
+[Statedef 190]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 190
+velset = 0,0
+
+[State 190, Round pose]
+type = Null
+trigger1 = 1
+
+
+[State 190, Intro]
+type = AssertSpecial
+trigger1 = Time<22
+flag=Intro
+
+[State 190, Return to movement]
+type = ChangeState
+trigger1 = Time>=24
+value = 0
+ctrl = 1
+
+[Statedef 500]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 500
+velset = 0,0
+
+[State 500, Charge real energy]
+type = PowerAdd
+trigger1 = 1
+value=22
+
+[State 500, Charge hum]
+type = PlaySnd
+trigger1 = Time=0
+value=S1,4
+channel=3
+loop=1
+
+[State 500, Animated green chakra]
+type = Helper
+trigger1 = Time=0
+helpertype=Normal
+name="Chakra del Juubi"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-44
+ownpal=1
+keyctrl=0
+
+[State 500, Pressure ring]
+type = Explod
+trigger1 = Time%12=2
+anim=8910
+ID=9551
+postype=P1
+pos=0,-1
+scale=.34,.25
+removetime=-2
+sprpriority=-1
+ownpal=1
+removeongethit=1
+
+[State 500, Release charge]
+type = ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=65
+value=0
+ctrl=1
+
+[Statedef 9550]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8900
+velset = 0,0
+
+[State 9550, Follow charge]
+type = BindToRoot
+trigger1 = 1
+time=1
+pos=0,-44
+
+[State 9550, Energy envelope]
+type = AngleDraw
+trigger1 = 1
+value=90
+scale=.34,.4
+
+[State 9550, Green Juubi chakra]
+type = PalFX
+trigger1 = 1
+time=1
+color=0
+mul=60,256,90
+
+[State 9550, Additive energy]
+type = Trans
+trigger1 = 1
+trans=AddAlpha
+alpha=180,256
+
+[State 9550, Behind body]
+type = SprPriority
+trigger1 = 1
+value=-2
+
+[State 9550, No shadow]
+type = AssertSpecial
+trigger1 = 1
+flag=NoShadow
+
+[State 9550, No push]
+type = PlayerPush
+trigger1 = 1
+value=0
+
+[State 9550, Charge aura cleanup]
+type = DestroySelf
+trigger1=Root,StateNo!=500
+trigger2=Root,Life<=0
+trigger3=RoundState!=2
+
+
+[Statedef 520]
+type = S
+movetype = I
+physics = S
+ctrl = 0
+anim = 520
+velset = 0,0
+
+[State 520, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,35
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 520, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 520, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 520, Awakening price]
+type = PowerAdd
+trigger1 = Time=0
+value=-1500
+
+[State 520, Temporary chakra amplification]
+type = VarSet
+trigger1 = Time=8
+v=40
+value=720
+
+[State 520, Awakening cooldown]
+type = VarSet
+trigger1 = Time=8
+v=41
+value=1200
+
+[State 520, Visible technique effect]
+type = Explod
+trigger1 = Time=8
+anim = 8830
+postype = P1
+pos = 0,-40
+scale = 0.42,0.42
+removetime = 25
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 520, Return to movement]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[Statedef 3000]
+type = S
+movetype = A
+physics = S
+ctrl = 0
+anim = 3000
+velset = 0,0
+
+[State 3000, Three bars even on miss]
+type = PowerAdd
+trigger1 = Time=0
+value=-3000
+
+[State 3000, Audible technique activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+persistent = 0
+ignorehitpause = 1
+
+[State 3000, Brief technique focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 3000, Visible technique effect]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+postype = P1
+pos = 10,-55
+scale = 0.75,0.75
+removetime = 10
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3000, Visible technique effect]
+type = Explod
+trigger1 = Time=4
+anim = 8605
+postype = P1
+pos = 13,-65
+scale = 0.6,0.6
+removetime = 12
+ownpal = 1
+sprpriority = 3
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3000, Ocular opening must physically hit]
+type = Projectile
+trigger1 = Time=10
+projID=3000
+pausemovetime=180
+projanim=8606
+projhitanim=8700
+projremanim=8700
+projremovetime=22
+projhits=1
+projremove=1
+projscale=1.5,1.5
+offset=18,-65
+velocity=11,0
+attr=S,HP
+damage=0,0
+guardflag=MA
+hitflag=M
+pausetime=0,0
+sparkno=S8700
+hitsound=S1,42
+guardsound=S1,9
+ground.hittime=220
+ground.velocity=0,0
+p2stateno=3010
+ID=3000
+getpower=0,0
+givepower=0,0
+
+[State 3000, Only fresh contact confirms]
+type = ChangeState
+trigger1 = Time>=10 && NumTarget(3000)>0 && ProjHitTime(3000)>=0 && ProjHitTime(3000)<=2
+value=3001
+
+[State 3000, Return to movement]
+type = ChangeState
+trigger1 = Time>=58
+value = 0
+ctrl = 1
+
+[Statedef 3001]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 3001
+velset = 0,0
+
+[State 3001, Bounded confirmed sequence]
+type = Pause
+trigger1 = Time=0
+time=140
+movetime=140
+pausebg=1
+
+[State 3001, Protect only the confirmed animation]
+type = NotHitBy
+trigger1 = 1
+value=SCA
+time=1
+
+[State 3001, Dim background]
+type = BGPalFX
+trigger1 = Time=0
+time=140
+mul=75,95,80
+
+[State 3001, Bind only hit target]
+type = TargetBind
+trigger1 = Time<136 && NumTarget(3000)>0
+ID=3000
+time=1
+pos=115,0
+
+[State 3001, Life-relative damage budget]
+type = VarSet
+trigger1 = Time=0 && NumTarget(3000)>0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,450,Floor((Target(3000),LifeMax)*.45))
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=4
+anim = 8602
+postype = P1
+pos = 0,0
+scale = 0.65,0.65
+removetime = 135
+ownpal = 1
+sprpriority = -2
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Charge the ocular sphere]
+type = Helper
+trigger1 = Time=8
+helpertype=Normal
+name="Bijudama del Diez Colas"
+ID=9530
+stateno=9530
+postype=P1
+pos=18,-65
+keyctrl=0
+ownpal=1
+pausemovetime=140
+supermovetime=140
+
+[State 3001, Ocular chakra roar]
+type = PlaySnd
+trigger1 = Time=10
+value=S1,43
+channel=5
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=50
+anim = 8820
+postype = P1
+pos = 115,-40
+scale = 0.8,0.8
+removetime = 20
+ownpal = 1
+sprpriority = 6
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=50
+anim = 8830
+postype = P1
+pos = 115,-40
+scale = 0.38,0.38
+removetime = 20
+ownpal = 1
+sprpriority = 5
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Confirmed bounded damage]
+type = TargetLifeAdd
+trigger1 = Time=50 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+[State 3001, Impact sound]
+type = PlaySnd
+trigger1 = Time=50
+value=S1,41
+channel=1
+
+[State 3001, Impact feedback]
+type = EnvShake
+trigger1 = Time=50
+time=7
+freq=65
+ampl=-5
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=70
+anim = 8820
+postype = P1
+pos = 115,-40
+scale = 0.8,0.8
+removetime = 20
+ownpal = 1
+sprpriority = 6
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=70
+anim = 8830
+postype = P1
+pos = 115,-40
+scale = 0.38,0.38
+removetime = 20
+ownpal = 1
+sprpriority = 5
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Confirmed bounded damage]
+type = TargetLifeAdd
+trigger1 = Time=70 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+[State 3001, Impact sound]
+type = PlaySnd
+trigger1 = Time=70
+value=S1,41
+channel=1
+
+[State 3001, Impact feedback]
+type = EnvShake
+trigger1 = Time=70
+time=7
+freq=65
+ampl=-5
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=90
+anim = 8820
+postype = P1
+pos = 115,-40
+scale = 0.8,0.8
+removetime = 20
+ownpal = 1
+sprpriority = 6
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=90
+anim = 8830
+postype = P1
+pos = 115,-40
+scale = 0.38,0.38
+removetime = 20
+ownpal = 1
+sprpriority = 5
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Confirmed bounded damage]
+type = TargetLifeAdd
+trigger1 = Time=90 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+[State 3001, Impact sound]
+type = PlaySnd
+trigger1 = Time=90
+value=S1,41
+channel=1
+
+[State 3001, Impact feedback]
+type = EnvShake
+trigger1 = Time=90
+time=7
+freq=65
+ampl=-5
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=110
+anim = 8820
+postype = P1
+pos = 115,-40
+scale = 0.8,0.8
+removetime = 20
+ownpal = 1
+sprpriority = 6
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=110
+anim = 8830
+postype = P1
+pos = 115,-40
+scale = 0.38,0.38
+removetime = 20
+ownpal = 1
+sprpriority = 5
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Confirmed bounded damage]
+type = TargetLifeAdd
+trigger1 = Time=110 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+[State 3001, Impact sound]
+type = PlaySnd
+trigger1 = Time=110
+value=S1,41
+channel=1
+
+[State 3001, Impact feedback]
+type = EnvShake
+trigger1 = Time=110
+time=7
+freq=65
+ampl=-5
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=130
+anim = 8820
+postype = P1
+pos = 115,-40
+scale = 1.3,1.3
+removetime = 20
+ownpal = 1
+sprpriority = 6
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Visible technique effect]
+type = Explod
+trigger1 = Time=130
+anim = 8830
+postype = P1
+pos = 115,-40
+scale = 0.65,0.65
+removetime = 20
+ownpal = 1
+sprpriority = 5
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State 3001, Confirmed bounded damage]
+type = TargetLifeAdd
+trigger1 = Time=130 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/5)*4)
+absolute=1
+kill=1
+
+[State 3001, Impact sound]
+type = PlaySnd
+trigger1 = Time=130
+value=S1,41
+channel=1
+
+[State 3001, Impact feedback]
+type = EnvShake
+trigger1 = Time=130
+time=7
+freq=65
+ampl=-5
+
+[State 3001, Safe release]
+type = TargetState
+trigger1 = Time=138 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+[State 3001, Return to movement]
+type = ChangeState
+trigger1 = Time>=150
+value = 0
+ctrl = 1
+
+[Statedef 3010]
+type = S
+movetype = H
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State 3010, Victim keeps own graphics]
+type = ChangeAnim
+trigger1 = Time=0 && SelfAnimExist(5000)
+value=5000
+
+[State 3010, Safety release]
+type = SelfState
+trigger1=Time>220
+trigger2=NumEnemy=0
+trigger3=Time>12 && EnemyNear,StateNo!=3001
+value=5050
+ctrl=0
+
+[Statedef 3011]
+type = A
+movetype = H
+physics = N
+ctrl = 0
+velset = -7,-6
+
+[State 3011, Victim own fall state]
+type = SelfState
+trigger1 = 1
+value=5050
+ctrl=0
+
+[Statedef 9530]
+type = A
+movetype = I
+physics = N
+ctrl = 0
+anim = 8841
+velset = 0,0
+
+[State 9530, Dark ocular core]
+type = PalFX
+trigger1 = 1
+time=1
+color=0
+mul=22,4,36
+
+[State 9530, Sphere growth from the eye]
+type = AngleDraw
+trigger1 = 1
+value=0
+scale=.2+IfElse(Time<24,Time,24)*.045,.2+IfElse(Time<24,Time,24)*.045
+
+[State 9530, Charge at the eye]
+type = BindToRoot
+trigger1 = Time<24
+time=1
+pos=18,-65
+
+[State 9530, Visible flight toward confirmed target]
+type = VelSet
+trigger1 = Time>=24
+x=5
+y=1.5
+
+[State 9530, Living violet rim]
+type = Explod
+trigger1 = Time%4=0
+anim=8840
+postype=P1
+pos=0,0
+bindtime=-1
+scale=(.2+IfElse(Time<24,Time,24)*.045)*.36,(.2+IfElse(Time<24,Time,24)*.045)*.36
+removetime=5
+sprpriority=4
+ownpal=1
+pausemovetime=140
+
+[State 9530, No shadow]
+type = AssertSpecial
+trigger1 = 1
+flag=NoShadow
+
+[State 9530, No push]
+type = PlayerPush
+trigger1 = 1
+value=0
+
+[State 9530, Finite cinematic sphere]
+type = DestroySelf
+trigger1=Time>=43
+trigger2=Root,StateNo!=3001
+trigger3=RoundState!=2
+
+
+[Statedef -2]
+
+[State -2, Finite amplification timer]
+type = VarAdd
+trigger1 = !IsHelper && Var(40)>0
+v=40
+value=-1
+
+[State -2, Finite amplification timer]
+type = VarAdd
+trigger1 = !IsHelper && Var(41)>0
+v=41
+value=-1
+
+[State -2, Bounded power]
+type = AttackMulSet
+trigger1 = !IsHelper
+value=IfElse(Var(40)>0,1.5,1.15)
+
+[State -2, Awakened durability]
+type = DefenceMulSet
+trigger1 = !IsHelper
+value=IfElse(Var(40)>0,1.1,1)
+
+[State -2, Limited regeneration during amplification]
+type = LifeAdd
+trigger1 = !IsHelper && Var(40)>0 && GameTime%12=0 && Life<LifeMax && MoveType!=H && Alive
+value=3
+
+[State -2, Air-chain reset]
+type = VarSet
+trigger1 = !IsHelper && StateType!=A
+v=12
+value=0
+
+[State -2, Stop charge hum]
+type = StopSnd
+trigger1 = StateNo!=500
+channel=3
+
+[State -2, Charge wave cleanup]
+type = RemoveExplod
+trigger1 = !IsHelper && StateNo!=500
+ID=9551
+
+[State -2, Visible technique effect]
+type = Explod
+trigger1 = !IsHelper && Var(40)>0 && RoundState=2 && GameTime%24=0
+anim = 8605
+postype = P1
+pos = 10,-65
+scale = 0.4,0.4
+removetime = 12
+ownpal = 1
+sprpriority = -1
+pausemovetime = 999
+supermovetime = 999
+removeongethit = 0
+
+[State -2, Round effect cleanup]
+type = RemoveExplod
+trigger1 = RoundState!=2
+

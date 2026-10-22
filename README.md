@@ -1,3 +1,21 @@
+# Jura Shinju — bijūdama ocular y Mokuton
+
+[**Descargar Jura**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Jura_SHINJU.zip) · [Controles Xbox](Jura/CONTROLES_XBOX.md) · [Instalación](Jura/LEEME.md) · [Créditos](Jura/CREDITOS_Y_FUENTES.md)
+
+[Bijūdamas y francotirador ocular con sonido real](previews/Jura_ocular_motor.mp4) · [Madera y raíces](previews/Jura_madera_motor.mp4) · [Ultimate](previews/Jura_ultimate_motor.mp4) · [Marcas de garra](previews/Jura_garras_motor.mp4) · [Combos](previews/Jura_combos_motor.mp4) · [Aéreos](previews/Jura_aereos_motor.mp4) · [Carga](previews/Jura_carga_motor.mp4) · [Amplificación](previews/Jura_despertar_motor.mp4)
+
+Conserva las 36 poses originales de Vahidras / Vaydra a escala nativa. Combate propio para MUGEN, adaptado de la referencia visual Vaydra Senki.mp4: tres cadenas terrestres, tres cadenas aéreas, 13 técnicas de madera, ojo, garras y levitación, dash en ambos sentidos y carga con aura turquesa. Los especiales tienen sonido y destello de activación.
+
+La ultimate con A dispara desde el ojo y sólo inicia su secuencia si conecta; permite bloqueo, salto y fallo por distancia. Consume 3000 de energía y causa como máximo min(450, 45% de la vida máxima rival). Abajo + Pausa/LB activa una amplificación de 12 segundos: mayor daño, técnicas al 75% de coste y regeneración gradual limitada. No utiliza los cubos ni el Kokugan de Kawaki.
+
+Pruebas y registros: [entradas y colisiones](previews/Jura_engine_checks.json), [guardias](previews/Jura_guard_checks.json), [CPU](previews/Jura_CPU_checks.json), [vida reducida](previews/Jura_low_life_checks.json), [regeneración](previews/Jura_regen_checks.json), [grabaciones](previews/Jura_preview_checks.json) y [conservación y reconstrucción](previews/Jura_preservation_checks.json). Las capturas proceden de Ikemen GO; el binario exacto de Jump Force MUGEN V14 y el mando físico quedan por probar. Los videos de combos son silenciosos; los de técnicas capturan el sonido real del motor.
+
+Instala la carpeta `Jura` en `chars` y añade `Jura/Jura.def` al apartado `[Characters]` de `data/select.def`. Los personajes anteriores se conservan.
+
+Reconstrucción: `python3 tools/build_jura_assets.py`, `python3 tools/build_jura_runtime.py`, `python3 tools/validate_jura.py`, `python3 tools/check_jura_in_engine.py`, `python3 tools/make_jura_previews.py` y `python3 tools/package_jura.py`. Las variantes `JURA_GUARD=1`, `JURA_CPU=1`, `JURA_LOW_LIFE=1` y `JURA_REGEN=1` activan las pruebas específicas del motor.
+
+---
+
 # Pochita True Form — motores, movimiento y remates
 
 [**Descargar Pochita actualizado**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/PochitaTrueForm_ACABADO.zip)
