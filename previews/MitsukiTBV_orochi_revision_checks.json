@@ -1,0 +1,22 @@
+{
+  "previous_commit": "d9f67d6cd6ced311ddc6a9b31c77344472632ba4",
+  "previous_runtime_sha256": "d93ba018989980ce59b8ab292d2d697c1b4c14120177e46acb48ef039f70b951",
+  "runtime_sha256": "da5724764154a4e571bf8a87a56c351ed5e4d575809c1174c154cd1e022ec667",
+  "only_sage_orochi_presentation_changed": true,
+  "combat_mechanics_and_collision_unchanged": true,
+  "commands_sounds_identity_common_unchanged": true,
+  "existing_sprites_pixel_identical": 283,
+  "original_body_sprites_pixel_identical": 86,
+  "added_effect_frames": 8,
+  "green_effect_pixels": 26873,
+  "yellow_effect_pixels": 0,
+  "changed_states": [
+    11020,
+    9433
+  ],
+  "new_actions": [
+    8950,
+    8951
+  ],
+  "failures": []
+}

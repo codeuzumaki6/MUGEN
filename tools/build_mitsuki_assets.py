@@ -4,7 +4,7 @@ from pathlib import Path
 import hashlib,io,json,struct
 import numpy as np
 from scipy.ndimage import label
-from PIL import Image,ImageDraw
+from PIL import Image,ImageDraw,ImageFilter
 from build_mamushi_assets import pack_sff
 from make_combo_preview import Sff2
 ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'MitsukiTBV';A=CHAR/'assets';SRC=ROOT/'source_material/Mitsuki_TBV_original';DONOR=ROOT/'source_material/Mitsuki_CobraG6_voice_reference'
@@ -83,6 +83,39 @@ def main():
    tile=tile.resize((length,30+(frame%3)*3),Image.Resampling.NEAREST)
    canvas.alpha_composite(tile,(0,(48-tile.height)//2))
    put(group,frame,canvas,(0,24),role='Continuous Raiton arc',assembled_from='CobraG6 effect 2007,11..15',body_art=False)
+ # Senpo: Orochi Ikazuchi combines Vaydra's Sage serpent body with
+ # a new effect-only head atlas; the character's body art stays unchanged.
+ # Keep the leading edge at x=108, matching the existing projectile collision;
+ # the extra trailing tail and glow extend behind it rather than adding range.
+ heads=Image.open(ROOT/'source_material/Mitsuki_TBV_generated/orochi_heads.png').convert('RGBA')
+ for frame in range(8):
+  number=12+frame%2
+  serpent=Image.open(A/'effects'/f'8610_{number}.png').convert('RGBA')
+  serpent=serpent.resize((150,50+(frame%3)*3),Image.Resampling.NEAREST)
+  silhouette=Image.new('RGBA',(176,88))
+  # Replace only the effect's tiny tip with a readable snake head and fangs.
+  serpent=serpent.crop((0,0,122,serpent.height))
+  silhouette.alpha_composite(serpent,(16,(88-serpent.height)//2))
+  column=[0,1,2,3,2,1,0,1][frame]
+  head=heads.crop((column*heads.width//4,0,(column+1)*heads.width//4,heads.height))
+  hv=np.array(head);hv[:,:,3]=np.where(hv[:,:,3]>=128,255,0);head=Image.fromarray(hv);head=head.crop(head.getbbox())
+  height=round(head.height*34/head.width);head=head.resize((34,height),Image.Resampling.NEAREST)
+  silhouette.alpha_composite(head,(132,(88-height)//2))
+  alpha=silhouette.getchannel('A')
+  glow=Image.new('RGBA',silhouette.size,(20,255,30,0))
+  glow.putalpha(alpha.filter(ImageFilter.GaussianBlur(4)).point(lambda a: min(180,a*2)))
+  bright=np.array(silhouette);visible=bright[:,:,3]>0
+  # Low blue keeps the additive effect green even over a blue stage.
+  # Preserve dark mouth openings instead of turning every head pixel bright.
+  raw=bright.copy();visible &= np.max(raw[:,:,:3],axis=2)>=70
+  bright[:,:,3]=np.where(visible,bright[:,:,3],0)
+  bright[visible,0]=np.minimum(120,raw[visible,0]*.35+15).astype('uint8')
+  bright[visible,1]=np.minimum(255,raw[visible,1]*1.05+10).astype('uint8')
+  bright[visible,2]=np.minimum(70,raw[visible,2]*.15+10).astype('uint8')
+  highlights=visible&(raw[:,:,0]>220)&(raw[:,:,2]>220)
+  bright[highlights,:3]=(180,255,140)
+  glow.alpha_composite(Image.fromarray(bright))
+  put(8950,frame,glow,(58,44),role='Senpo: Orochi Ikazuchi, green lightning serpent',source_group=8610,source_number=number,body_art=False,original_serpent_body=True,head_source='source_material/Mitsuki_TBV_generated/orochi_heads.png',head_ai_generated=True)
  # Rooted coils have a distinct silhouette from travelling snake shots.
  for group,sourcegroup,numbers in [(8940,8600,[4,5,6,8]),(8941,8610,[6,7,10,11])]:
   for frame in range(4):

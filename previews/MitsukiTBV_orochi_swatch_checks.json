@@ -1,0 +1,47 @@
+{
+  "runtime_sha256": "da5724764154a4e571bf8a87a56c351ed5e4d575809c1174c154cd1e022ec667",
+  "cases": [
+    {
+      "case": {
+        "name": "Raiton",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "F",
+        "state": 11020,
+        "cost": 400,
+        "distance": 210
+      },
+      "states": [
+        0,
+        11,
+        12,
+        20,
+        11020
+      ],
+      "damage": 210,
+      "received": 0,
+      "min_power": 2600,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 642,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 5110,
+      "dash_distance": 0.0,
+      "aura": 1,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "actual_start_distance": 209.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 9,
+      "wrong_orochi_sprite_frames": 0,
+      "target_scale": 1.0,
+      "target_crouching": false,
+      "failures": []
+    }
+  ]
+}

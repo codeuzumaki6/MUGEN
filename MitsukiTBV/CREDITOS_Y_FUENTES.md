@@ -6,6 +6,8 @@
 - Video de Vaydra Senki que aportó el usuario: referencia visual para los asaltos, Raiton, Fūton, serpientes y modo sabio. Se realizó una adaptación propia a los controles y colisiones de MUGEN; no es una extracción del código del juego del video.
 - Adaptación de combate, controles, empaquetado y pruebas: Codex, por encargo del usuario. Personajes y franquicia pertenecen a sus titulares. Proyecto de aficionados; se conservan los créditos de los autores del material.
 
-Las técnicas, costes, duración del despertar y cifras de daño son decisiones de esta adaptación jugable. No se presentan como cifras oficiales del manga. No se han generado voces, cuerpos ni imágenes para sustituir los sprites aportados.
+Las técnicas, costes, duración del despertar y cifras de daño son decisiones de esta adaptación jugable. No se presentan como cifras oficiales del manga. Los cuerpos conservan los píxeles de la hoja aportada y las voces proceden del archivo original.
 
 Revisión de especiales: los arcos largos de Raiton escalan el efecto eléctrico original 2007,11..15; los cercos ensamblan únicamente fragmentos de serpiente de la hoja de Vaydra. Los cuadros 1550,4..6 del donante contienen su cuerpo y se excluyen del efecto de sustitución y del SFF final.
+
+Senpō: Orochi Ikazuchi: cuerpo de la serpiente de chakra tomado de las piezas verdes de Vaydra (8610,12..13), con un atlas nuevo de cabezas de efecto generado por IA para mostrar ojo, boca y colmillos al tamaño del juego. Solo se añade arte de efecto; los 86 cuerpos del personaje y las voces originales se conservan.

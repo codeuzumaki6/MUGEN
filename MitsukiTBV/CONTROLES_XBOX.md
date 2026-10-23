@@ -10,7 +10,7 @@ Configuración del paquete: **X=a, Y=b, B=c, A=x, RB=y, RT=z, Pausa/LB=s**. Si t
 | X/Y/B en el aire, hasta tres golpes | Cadena aérea; último golpe derriba | Cadena aérea de chakra y serpiente final |
 | ↓↘→ + X | Asalto de brazos: tres golpes avanzando | Asalto con dos serpientes adicionales |
 | ↓↙← + X | Tres serpientes blancas sucesivas | Cuatro serpientes de chakra más rápidas |
-| ↓↘→ + Y | Lanza eléctrica que recorre la pantalla | Lanza Raiton más rápida y fuerte |
+| ↓↘→ + Y | Lanza eléctrica que recorre la pantalla | Senpō: Orochi Ikazuchi — serpiente de rayos verde |
 | ↓↙← + Y | Fūton: una corriente de viento | Tres corrientes sucesivas |
 | ↓↘→ + B | Patada creciente: salta, golpea dos veces y cae | Ascenso envuelto en serpientes de chakra |
 | ↓↙← + B | Cerco en el suelo alrededor del rival cercano: tres golpes | Cerco de chakra más fuerte |
@@ -33,3 +33,5 @@ La ulti cuesta **3.000**, incluso si falla o la bloquean. Debe conectar su avanc
 Bloquea manteniendo atrás; atrás + abajo cubre los ataques bajos. Los combos se encadenan al acertar y requieren volver a pulsar el botón. Los especiales se activan en suelo; los combos normales también funcionan en el aire.
 
 El Raiton de ↓↘→ + Y viaja como proyectil; el de ↓ + RB se mantiene conectado a la mano durante la descarga. Los dos se pueden bloquear y esquivar. El rayo sostenido alcanza 230 unidades en base y 280 en sabio, más el desplazamiento desde la mano; fuera de ese alcance no golpea. El cerco tiene un límite de colocación de 180 unidades y no aparece directamente sobre un rival lejano.
+
+En modo sabio, **↓↘→ + Y es Senpō: Orochi Ikazuchi**: una serpiente eléctrica verde con cabeza y colmillos visibles. Su cuerpo ondula mientras avanza.

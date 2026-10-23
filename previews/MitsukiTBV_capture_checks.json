@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "d93ba018989980ce59b8ab292d2d697c1b4c14120177e46acb48ef039f70b951",
+  "runtime_sha256": "da5724764154a4e571bf8a87a56c351ed5e4d575809c1174c154cd1e022ec667",
   "cases": [
     {
       "case": {
@@ -36,6 +36,9 @@
       "actual_start_distance": 110.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -75,6 +78,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -114,6 +120,9 @@
       "actual_start_distance": 209.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -153,6 +162,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -193,6 +205,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": -45.89999771118164,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -232,6 +247,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -269,6 +287,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -307,6 +328,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": -21.09999656677246,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -344,6 +368,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -380,6 +407,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -416,6 +446,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -453,6 +486,9 @@
       "actual_start_distance": 209.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -491,6 +527,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -530,6 +569,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -569,6 +611,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -608,6 +653,9 @@
       "actual_start_distance": 209.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 9,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -647,6 +695,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -687,6 +738,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": -45.89999771118164,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -726,6 +780,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -763,6 +820,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -801,6 +861,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": -21.09999656677246,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -838,6 +901,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -874,6 +940,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -910,6 +979,9 @@
       "actual_start_distance": 109.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -947,6 +1019,9 @@
       "actual_start_distance": 209.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []
@@ -985,6 +1060,9 @@
       "actual_start_distance": 44.0,
       "actual_guard": 0,
       "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "orochi_serpent_frames": 0,
+      "wrong_orochi_sprite_frames": 0,
       "target_scale": 1.0,
       "target_crouching": false,
       "failures": []

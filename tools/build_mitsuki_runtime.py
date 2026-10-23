@@ -20,7 +20,7 @@ def fxaction(n,g,nums,t=3,box=None,loop=False,add=False):
  s=f'\n[Begin Action {n}]\n'
  if box:s+=f'Clsn1Default: 1\n Clsn1[0]={box}\n'
  if loop:s+='Loopstart\n'
- for p in nums:s+=f'{g},{p},0,0,{t}'+(',,A' if add else '')+'\n'
+ for p in nums:s+=f'{g},{p},0,0,{t}'+(',,A' if add is True else ',,'+add if add else '')+'\n'
  air.append(s)
 def effect(n,t,anim,x=0,y=-40,scale=.6,ticks=-2):return c(n,'Technique drawing','Explod',t,f'anim={anim}\npostype=P1\npos={x},{y}\nscale={scale},{scale}\nremovetime={ticks}\nsprpriority=3\nownpal=1\nremoveongethit=1\npausemovetime=180\nsupermovetime=180')
 def snd(n,t,g,no,channel=0,volume=80):return c(n,'Original voice' if g==0 else 'Technique sound','PlaySnd',t,f'value=S{g},{no}\nchannel={channel}\nvolumescale={volume}')
@@ -77,6 +77,8 @@ def animations():
  fxaction(8930,8930,range(8),2,box='0,-20,230,20',loop=True,add=True)
  fxaction(8931,8931,range(8),2,box='0,-20,280,20',loop=True,add=True)
  fxaction(8932,8932,range(8),2,box='0,-14,108,14',loop=True,add=True)
+ fxaction(8950,8950,range(8),2,box='0,-14,108,14',loop=True,add='AS256D96')
+ fxaction(8951,8941,range(4),2,add='AS256D0')
  for n in [8940,8941]:fxaction(n,n,range(4),3,box='-40,-88,40,-3',loop=True)
  for n,g,count in [(8630,8630,21),(8640,8640,9),(8650,8650,28),(8660,8660,9),(8670,8670,11),(8680,8680,4),(8820,8820,5),(8900,8900,24),(8910,8910,5)]:fxaction(n,g,range(count),2 if n!=8900 else 3,loop=n==8900,add=n not in [8680])
  # Wind has its own contact area, rather than an invisible full-screen hit.
@@ -124,8 +126,9 @@ def techniques():
     # A moving lightning lance, rather than another punching rush.
     action(n,[(44,8),(45,8),(47,20),(44,14),(0,10)] if not form else [(8,8),(12,8),(14,22),(13,12),(8,10)],form)
     s=state(n,n,move='A',cost=price)+startup(n,18)
-    s+=c(n,'Launch Raiton lance','Helper','Time=16',f'helpertype=Normal\nname="Raiton Hebi Mikazuchi"\nID={9432+form}\nstateno={9432+form}\npostype=P1\npos=27,-34\nownpal=1\nkeyctrl=0')
-    s+=effect(n,'Time=16',8650,29,-36,.8,12)+snd(n,'Time=16',1,42,1)+recover(n,60);states.append(s);continue
+    technique='Senpo: Orochi Ikazuchi' if form else 'Raiton Hebi Mikazuchi'
+    s+=c(n,'Launch Raiton lance','Helper','Time=16',f'helpertype=Normal\nname="{technique}"\nID={9432+form}\nstateno={9432+form}\npostype=P1\npos=27,-34\nownpal=1\nkeyctrl=0')
+    s+=effect(n,'Time=16',8951 if form else 8650,29,-36,.55 if form else .8,12)+snd(n,'Time=16',1,42,1)+recover(n,60);states.append(s);continue
    if base in [1040,1400,1410]:
     if base==1400:
      poses=[(16,7),(53,10),(43,8),(16,8),(0,10)] if not form else [(8,7),(5,10),(7,8),(12,8),(8,10)]
@@ -190,7 +193,7 @@ def lightning_helpers():
    s+=hit(n,t,[65,70,85][i]+(15 if form else 0),i==2,airborne=True,stun=28).replace('attr=A,SA','attr=A,SP')
   s+=ctl(n,'Beam ends on recovery or interruption','DestroySelf','trigger1=Time>=25\ntrigger2=Root,StateNo%10000!=1430\ntrigger3=RoundState!=2');states.append(s)
   n=9432+form
-  s=state(n,8932,'A','A','N',vel=f'{14 if form else 11},0')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
+  s=state(n,8950 if form else 8932,'A','A','N',vel=f'{14 if form else 11},0')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
   s+=hit(n,0,210 if form else 170,True,airborne=True).replace('attr=A,SA','attr=A,SP')+c(n,'Moving Raiton cleanup','DestroySelf','MoveContact || Time>=32 || FrontEdgeBodyDist<-120 || RoundState!=2');states.append(s)
   n=9440+form
   s=state(n,8940+form,'A','A','N')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')

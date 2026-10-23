@@ -106,7 +106,7 @@ hook.add('loop','mitsuki_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0,orochi=0,wrongOrochi=0} end
  local r=rows[case];local st=stateNo()
  if tick==8 then r.startDist=p2DistX();r.distance=p2DistX() end
  if tick>4 then
@@ -114,11 +114,12 @@ hook.add('loop','mitsuki_checks',function()
   if st==100 or st==105 then r.dash=(r.startDist-p2DistX())*FACES[case+1] end
   if var(42)==1 and spriteVar('group')~=1 and st~=520 then r.wrong=r.wrong+1 end
   if moveType()=='H' and numHelper(9430)+numHelper(9431)>0 then r.beamHurt=r.beamHurt+1 end
+  if numHelper(9433)>0 and helper(9433) then r.orochi=r.orochi+1;if spriteVar('group')~=8950 then r.wrongOrochi=r.wrongOrochi+1 end;player(1) end
   player(2);r.damage=math.max(r.damage,DUMMYLIFE-life());r.victim=stateNo();if stateNo()>=150 and stateNo()<=155 then r.guard=1 end;player(1)
  end
  if tick==TICKS-1 then
   local ss={};for n,_ in pairs(r.states) do table.insert(ss,n) end;table.sort(ss);for i,v in ipairs(ss) do ss[i]=tostring(v) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..numHelper(9550)..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..numHelper(9550)..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\t'..r.orochi..'\\t'..r.wrongOrochi..'\\n');f:flush()
  end
  CAPTURE
 end)
@@ -131,7 +132,7 @@ if CAP:
  if cap.prev~=st and (st%10000>=1000 and st%10000<=3000 or st==520) then cues:write(frames..'\\t'..st..'\\n');cues:flush() end;cap.prev=st
  if cap.pending~=nil then local png=io.open(FOLDER..string.format('Ikemen_GO%03d.png',cap.index),'rb');if png then png:close();images:write(cap.index..'\\t'..cap.pending..'\\t'..case..'\\t'..tick..'\\n');images:flush();cap.index=cap.index+1;cap.pending=nil end end
  if frames-cap.last>=CAPSTEP and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
- """.replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND',str(min(TICKS-12,230))).replace('CAPSTEP','6' if os.environ.get('MITSUKI_ALL_SPECIALS') else '4'))
+ """.replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND',str(min(TICKS-12,230))).replace('CAPSTEP','(st==11020 and 2 or 6)' if os.environ.get('MITSUKI_ALL_SPECIALS') else '4'))
 else:lua=lua.replace('CAPSETUP','').replace('CAPTURE','')
 module.write_text(lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/mitsuki_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
@@ -173,7 +174,8 @@ for i,case in enumerate(cases):
  if kind.startswith('expire') and (int(row[8]) or endstate!=0):bad.append('form expiry left sprite, attack or recoil stuck')
  if kind=='no_awake' and (520 in ss or int(row[8])):bad.append('awakening allowed without energy')
  if int(row[15])>1:bad.append('Sage form showed a base body')
+ if case.get('state')==11020 and (int(row[21])==0 or int(row[22])!=0):bad.append('Orochi Ikazuchi did not use its green serpent sprite group')
  if int(row[13])!=int(row[14]):bad.append('combat helper remained after recovery')
- result=dict(case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
+ result=dict(case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),orochi_serpent_frames=int(row[21]),wrong_orochi_sprite_frames=int(row[22]),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
 files=[f'MitsukiTBV.{s}' for s in ['def','cns','cmd','air','sff','snd']]+['MitsukiTBV_common.cns'];runtime=hashlib.sha256(b''.join((ROOT/'MitsukiTBV'/n).read_bytes() for n in files)).hexdigest()
-out=ROOT/'previews'/('MitsukiTBV_capture_checks.json' if CAP else f'MitsukiTBV_rays_{SCALE}_{int(CROUCH)}_checks.json' if RANGE else 'MitsukiTBV_low_life_checks.json' if LOW else 'MitsukiTBV_engine_checks.json');out.write_text(json.dumps(dict(runtime_sha256=runtime,cases=report),indent=2)+'\n');assert not any(r['failures'] for r in report),str(out);print('PASS',len(report),'Mitsuki actual-input engine cases')
+out=ROOT/'previews'/os.environ.get('MITSUKI_REPORT',('MitsukiTBV_capture_checks.json' if CAP else f'MitsukiTBV_rays_{SCALE}_{int(CROUCH)}_checks.json' if RANGE else 'MitsukiTBV_low_life_checks.json' if LOW else 'MitsukiTBV_engine_checks.json'));out.write_text(json.dumps(dict(runtime_sha256=runtime,cases=report),indent=2)+'\n');assert not any(r['failures'] for r in report),str(out);print('PASS',len(report),'Mitsuki actual-input engine cases')

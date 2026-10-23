@@ -4652,7 +4652,7 @@ supermovetime=180
 type=Helper
 trigger1=Time=16
 helpertype=Normal
-name="Raiton Hebi Mikazuchi"
+name="Senpo: Orochi Ikazuchi"
 ID=9433
 stateno=9433
 postype=P1
@@ -4664,10 +4664,10 @@ keyctrl=0
 [State 11020, Technique drawing]
 type=Explod
 trigger1=Time=16
-anim=8650
+anim=8951
 postype=P1
 pos=29,-36
-scale=0.8,0.8
+scale=0.55,0.55
 removetime=12
 sprpriority=3
 ownpal=1
@@ -6448,7 +6448,7 @@ type=A
 movetype=A
 physics=N
 ctrl=0
-anim=8932
+anim=8950
 velset=14,0
 
 [State 9433, No push]

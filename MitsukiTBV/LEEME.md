@@ -17,3 +17,5 @@ Incluye voces originales del Mitsuki de CobraG6 que suministraste, activación s
 Validación: archivos y referencias para MUGEN 1.1, y pruebas de entradas, colisiones y animación en Ikemen GO. No se ha ejecutado en tu instalación concreta de Jump Force MUGEN V14; las asignaciones físicas del mando dependen de ella.
 
 Actualización de especiales: patada creciente, deslizamiento bajo y golpe ascendente tienen secuencias y movimientos diferentes. Se corrigió el efecto de sustitución que mostraba al Mitsuki antiguo pequeño. Raiton dispone ahora de una lanza eléctrica viajera y un rayo sostenido con alcance real. Sustituye la carpeta completa al actualizar; se conservan los controles.
+
+Corrección de la técnica sabia: ↓↘→ + Y usa **Senpō: Orochi Ikazuchi**, una serpiente eléctrica verde.
