@@ -1,0 +1,117 @@
+{
+  "runtime_sha256": "a025bde64100773d1cbb63cfe1359af6f79fd68654fd1b26562933db36f8c6c4",
+  "cases": [
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 0,
+        "face": 1,
+        "distance": 90
+      },
+      "states": [
+        0,
+        3000,
+        3001
+      ],
+      "damage": 180,
+      "received": 0,
+      "min_power": 0,
+      "max_power": 3000,
+      "max_sage_timer": 0,
+      "end_timer": 0,
+      "end_form": 0,
+      "end_state": 0,
+      "victim_end": 0,
+      "dash_distance": 0.0,
+      "aura": 0,
+      "end_helpers": 0,
+      "wrong_sage_body_frames": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 0,
+        "face": -1,
+        "distance": 90
+      },
+      "states": [
+        0,
+        3000,
+        3001
+      ],
+      "damage": 180,
+      "received": 0,
+      "min_power": 0,
+      "max_power": 3000,
+      "max_sage_timer": 0,
+      "end_timer": 0,
+      "end_form": 0,
+      "end_state": 0,
+      "victim_end": 0,
+      "dash_distance": 0.0,
+      "aura": 0,
+      "end_helpers": 0,
+      "wrong_sage_body_frames": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": 1,
+        "distance": 90
+      },
+      "states": [
+        0,
+        13000,
+        13001
+      ],
+      "damage": 225,
+      "received": 0,
+      "min_power": 0,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 442,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 0,
+      "dash_distance": 0.0,
+      "aura": 1,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": -1,
+        "distance": 90
+      },
+      "states": [
+        0,
+        13000,
+        13001
+      ],
+      "damage": 225,
+      "received": 0,
+      "min_power": 0,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 442,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 0,
+      "dash_distance": 0.0,
+      "aura": 1,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "failures": []
+    }
+  ]
+}

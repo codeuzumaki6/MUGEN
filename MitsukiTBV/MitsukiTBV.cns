@@ -1,0 +1,8258 @@
+; Mitsuki TBV, original Vaydra sprites, CobraG6 dialogue.
+[Data]
+life=1200
+power=3000
+attack=100
+defence=105
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=80
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-68
+mid.pos=0,-42
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+
+[Statedef 200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=200
+velset=2.5,0
+
+[State 200, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 200, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 200, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 200, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 200, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=201
+velset=2.5,0
+
+[State 201, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 201, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 201, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 201, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 201, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=202
+velset=2.5,0
+
+[State 202, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 202, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 202, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=68,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 202, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 202, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=210
+velset=2.5,0
+
+[State 210, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 210, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 210, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 210, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 210, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=211
+velset=2.5,0
+
+[State 211, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 211, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 211, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 211, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 211, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=212
+velset=2.5,0
+
+[State 212, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 212, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 212, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=68,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 212, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 212, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=220
+velset=2.5,0
+
+[State 220, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 220, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 220, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 220, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 220, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=221
+velset=2.5,0
+
+[State 221, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 221, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 221, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 221, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 221, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=222
+velset=2.5,0
+
+[State 222, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 222, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 222, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=68,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 222, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 222, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=600
+
+[State 600, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 600, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 600, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 600, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=40,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 600, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 600, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=601
+
+[State 601, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 601, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 601, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 601, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=47,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 601, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 601, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=602
+
+[State 602, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 602, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 602, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 602, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=70,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 602, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 602, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=610
+
+[State 610, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 610, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 610, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 610, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=40,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 610, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 610, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=611
+
+[State 611, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 611, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 611, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 611, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=47,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 611, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 611, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=612
+
+[State 612, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 612, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 612, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 612, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=70,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 612, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 612, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=620
+
+[State 620, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 620, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 620, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 620, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=40,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 620, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 620, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=621
+
+[State 621, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 621, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 621, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 621, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=47,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 621, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 621, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=622
+
+[State 622, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 622, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 622, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 622, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=70,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 622, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 622, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10200
+velset=2.5,0
+
+[State 10200, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 10200, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10200, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=52,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10200, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10200, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10201
+velset=2.5,0
+
+[State 10201, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 10201, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10201, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10201, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10201, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10202
+velset=2.5,0
+
+[State 10202, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 10202, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10202, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=90,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10202, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10202, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10202, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10210
+velset=2.5,0
+
+[State 10210, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 10210, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10210, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=52,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10210, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10210, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10211
+velset=2.5,0
+
+[State 10211, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 10211, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10211, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10211, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10211, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10212
+velset=2.5,0
+
+[State 10212, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 10212, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10212, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=90,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10212, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10212, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10212, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10220
+velset=2.5,0
+
+[State 10220, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,12
+channel=0
+volumescale=65
+
+
+[State 10220, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10220, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=52,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10220, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10220, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10221
+velset=2.5,0
+
+[State 10221, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,13
+channel=0
+volumescale=65
+
+
+[State 10221, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10221, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10221, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10221, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10222
+velset=2.5,0
+
+[State 10222, Original voice]
+type=PlaySnd
+trigger1=Time=1
+value=S0,9
+channel=0
+volumescale=65
+
+
+[State 10222, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 10222, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=90,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10222, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10222, Short approach ends]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 10222, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10600
+
+[State 10600, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10600, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10600, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10600, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10600, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10600, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10601
+
+[State 10601, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10601, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10601, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10601, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10601, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10601, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10602
+
+[State 10602, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10602, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10602, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10602, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=85,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10602, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=38,-32
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10602, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10602, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10610
+
+[State 10610, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10610, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10610, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10610, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10610, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10610, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10611
+
+[State 10611, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10611, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10611, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10611, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10611, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10611, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10612
+
+[State 10612, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10612, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10612, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10612, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=85,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10612, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=38,-32
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10612, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10612, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10620
+
+[State 10620, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10620, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10620, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10620, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10620, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10620, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10621
+
+[State 10621, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10621, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10621, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10621, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10621, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10621, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 10622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10622
+
+[State 10622, Consume finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10622, Brief juggle hover]
+type=VelSet
+trigger1=Time<7
+x=1.8
+y=-.5
+
+
+[State 10622, Resume gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10622, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=85,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10622, Visible autonomous serpent]
+type=Helper
+trigger1=Time=5 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=38,-32
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 10622, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10622, Return control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 1000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1000
+velset=0,0
+poweradd=-350
+
+[State 1000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1000, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,5
+channel=0
+volumescale=80
+
+
+[State 1000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1000, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=3.5
+
+
+[State 1000, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 1000, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1000, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8660
+postype=P1
+pos=48,0
+scale=0.5,0.5
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1000, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 1010]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1010
+velset=0,0
+poweradd=-400
+
+[State 1010, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1010, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,6
+channel=0
+volumescale=80
+
+
+[State 1010, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=18 && NumHelper(9400)<5
+helpertype=Normal
+name="Serpiente"
+ID=9400
+stateno=9400
+postype=P1
+pos=60,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8670
+postype=P1
+pos=60,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=32 && NumHelper(9400)<5
+helpertype=Normal
+name="Serpiente"
+ID=9400
+stateno=9400
+postype=P1
+pos=98,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=32
+anim=8670
+postype=P1
+pos=98,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=46 && NumHelper(9400)<5
+helpertype=Normal
+name="Serpiente"
+ID=9400
+stateno=9400
+postype=P1
+pos=136,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=46
+anim=8670
+postype=P1
+pos=136,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1020
+velset=0,0
+poweradd=-500
+
+[State 1020, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1020, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,18
+channel=0
+volumescale=80
+
+
+[State 1020, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=3.5
+
+
+[State 1020, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 1020, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1020, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1020, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=21
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8640
+postype=P1
+pos=58,-40
+scale=0.65,0.65
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Technique sound]
+type=PlaySnd
+trigger1=Time=34
+value=S1,41
+channel=1
+volumescale=80
+
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8660
+postype=P1
+pos=48,0
+scale=0.5,0.5
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 1030]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1030
+velset=0,0
+poweradd=-450
+
+[State 1030, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1030, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,21
+channel=0
+volumescale=80
+
+
+[State 1030, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1030, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1030, Fuuton current]
+type=Helper
+trigger1=Time=18 && NumHelper(9420)<3
+helpertype=Normal
+name="Fuuton Toppa"
+ID=9420
+stateno=9420
+postype=P1
+pos=42,-15
+ownpal=1
+keyctrl=0
+
+
+[State 1030, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,30
+channel=1
+volumescale=80
+
+
+[State 1030, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1040]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1040
+velset=2.5,0
+poweradd=-450
+
+[State 1040, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1040, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 1040, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1040, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1040, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=140,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1040, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 1040, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1040, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 1050]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1050
+velset=0,0
+poweradd=-600
+
+[State 1050, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1050, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,6
+channel=0
+volumescale=80
+
+
+[State 1050, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1050, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=18 && NumHelper(9410)<5
+helpertype=Normal
+name="Serpiente"
+ID=9410
+stateno=9410
+postype=P1
+pos=60,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1050, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8670
+postype=P1
+pos=60,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=32 && NumHelper(9410)<5
+helpertype=Normal
+name="Serpiente"
+ID=9410
+stateno=9410
+postype=P1
+pos=98,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1050, Technique drawing]
+type=Explod
+trigger1=Time=32
+anim=8670
+postype=P1
+pos=98,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=46 && NumHelper(9410)<5
+helpertype=Normal
+name="Serpiente"
+ID=9410
+stateno=9410
+postype=P1
+pos=136,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1050, Technique drawing]
+type=Explod
+trigger1=Time=46
+anim=8670
+postype=P1
+pos=136,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1050, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1400]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1400
+velset=2.5,0
+poweradd=-200
+
+[State 1400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1400, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 1400, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1400, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1400, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=C,SA
+damage=140,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1400, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 1400, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1400, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 1410]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1410
+velset=2.5,0
+poweradd=-300
+
+[State 1410, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1410, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 1410, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1410, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1410, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=140,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1410, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 1410, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1410, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 1420]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1420
+velset=0,0
+poweradd=-350
+
+[State 1420, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1420, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,7
+channel=0
+volumescale=80
+
+
+[State 1420, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=18 && NumHelper(9410)<5
+helpertype=Normal
+name="Serpiente"
+ID=9410
+stateno=9410
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=34 && NumHelper(9410)<5
+helpertype=Normal
+name="Serpiente"
+ID=9410
+stateno=9410
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1200
+velset=0,0
+poweradd=-200
+
+[State 1200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1200, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,7
+channel=0
+volumescale=80
+
+
+[State 1200, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1200, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1200, Visible autonomous serpent]
+type=Helper
+trigger1=Time=18 && NumHelper(9400)<5
+helpertype=Normal
+name="Serpiente"
+ID=9400
+stateno=9400
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1200, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1200, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1210
+velset=0,0
+poweradd=-350
+
+[State 1210, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1210, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,5
+channel=0
+volumescale=80
+
+
+[State 1210, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=3.5
+
+
+[State 1210, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 1210, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1210, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1210, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8660
+postype=P1
+pos=48,0
+scale=0.5,0.5
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=21
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 1430]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1431
+velset=0,0
+poweradd=-550
+
+[State 1430, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1430, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,18
+channel=0
+volumescale=80
+
+
+[State 1430, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1430, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Physical contact]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=180,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1430, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8640
+postype=P1
+pos=60,-40
+scale=0.65,0.65
+removetime=24
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8650
+postype=P1
+pos=35,-47
+scale=0.7,0.7
+removetime=24
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1440]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=1440
+velset=0,0
+poweradd=-400
+
+[State 1440, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1440, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,15
+channel=0
+volumescale=80
+
+
+[State 1440, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1440, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1440, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8680
+postype=P1
+pos=0,-20
+scale=0.8,0.8
+removetime=32
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1440, Finite substitution counter]
+type=ReversalDef
+trigger1=Time>=8 && Time<=28
+reversal.attr=SCA,NA,SA,HA
+pausetime=0,10
+sparkno=S8700
+hitsound=S1,32
+p1stateno=1441
+
+
+[State 1440, Return control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 1441]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1441
+velset=5,0
+
+[State 1441, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8680
+postype=P1
+pos=0,-25
+scale=1,1
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1441, Brief escape]
+type=NotHitBy
+trigger1=Time<10
+value=SCA
+time=1
+
+
+[State 1441, Physical contact]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=165,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1441, Visible autonomous serpent]
+type=Helper
+trigger1=Time=8 && NumHelper(9400)<5
+helpertype=Normal
+name="Serpiente"
+ID=9400
+stateno=9400
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 1441, Return control]
+type=ChangeState
+trigger1=Time>=38
+value=0
+ctrl=1
+
+
+[Statedef 11000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11000
+velset=0,0
+poweradd=-280
+
+[State 11000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11000, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,5
+channel=0
+volumescale=80
+
+
+[State 11000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11000, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=4.5
+
+
+[State 11000, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 11000, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11000, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=58,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11000, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=92,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11000, Visible autonomous serpent]
+type=Helper
+trigger1=Time=17 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=45,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11000, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=55,-38
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11000, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 11010]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11010
+velset=0,0
+poweradd=-320
+
+[State 11010, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11010, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,6
+channel=0
+volumescale=80
+
+
+[State 11010, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=14 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=60,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=14
+anim=8670
+postype=P1
+pos=60,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=25 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=98,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=25
+anim=8670
+postype=P1
+pos=98,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=136,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=36
+anim=8670
+postype=P1
+pos=136,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Visible autonomous serpent]
+type=Helper
+trigger1=Time=47 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=174,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=47
+anim=8670
+postype=P1
+pos=174,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11020
+velset=0,0
+poweradd=-400
+
+[State 11020, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11020, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,18
+channel=0
+volumescale=80
+
+
+[State 11020, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=4.5
+
+
+[State 11020, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 11020, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11020, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=58,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11020, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=92,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=21
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8650
+postype=P1
+pos=35,-48
+scale=0.65,0.65
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8640
+postype=P1
+pos=58,-40
+scale=0.65,0.65
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Technique sound]
+type=PlaySnd
+trigger1=Time=34
+value=S1,41
+channel=1
+volumescale=80
+
+
+[State 11020, Visible autonomous serpent]
+type=Helper
+trigger1=Time=17 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=45,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11020, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=55,-38
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11020, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 11030]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11030
+velset=0,0
+poweradd=-360
+
+[State 11030, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11030, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,21
+channel=0
+volumescale=80
+
+
+[State 11030, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11030, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11030, Fuuton current]
+type=Helper
+trigger1=Time=18 && NumHelper(9420)<3
+helpertype=Normal
+name="Fuuton Toppa"
+ID=9420
+stateno=9420
+postype=P1
+pos=42,-15
+ownpal=1
+keyctrl=0
+
+
+[State 11030, Fuuton current]
+type=Helper
+trigger1=Time=32 && NumHelper(9420)<3
+helpertype=Normal
+name="Fuuton Toppa"
+ID=9420
+stateno=9420
+postype=P1
+pos=42,-15
+ownpal=1
+keyctrl=0
+
+
+[State 11030, Fuuton current]
+type=Helper
+trigger1=Time=46 && NumHelper(9420)<3
+helpertype=Normal
+name="Fuuton Toppa"
+ID=9420
+stateno=9420
+postype=P1
+pos=42,-15
+ownpal=1
+keyctrl=0
+
+
+[State 11030, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,30
+channel=1
+volumescale=80
+
+
+[State 11030, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11040]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11040
+velset=2.5,0
+poweradd=-360
+
+[State 11040, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11040, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 11040, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11040, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11040, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=175,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11040, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 11040, Visible autonomous serpent]
+type=Helper
+trigger1=Time=7 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-55
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11040, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11040, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 11050]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11050
+velset=0,0
+poweradd=-480
+
+[State 11050, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11050, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,6
+channel=0
+volumescale=80
+
+
+[State 11050, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=14 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=60,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=14
+anim=8670
+postype=P1
+pos=60,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=25 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=98,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=25
+anim=8670
+postype=P1
+pos=98,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=136,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=36
+anim=8670
+postype=P1
+pos=136,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Visible autonomous serpent]
+type=Helper
+trigger1=Time=47 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=174,-24
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=47
+anim=8670
+postype=P1
+pos=174,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11400]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11400
+velset=2.5,0
+poweradd=-160
+
+[State 11400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11400, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 11400, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11400, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11400, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=C,SA
+damage=175,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11400, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 11400, Visible autonomous serpent]
+type=Helper
+trigger1=Time=7 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-22
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11400, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11400, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 11410]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11410
+velset=2.5,0
+poweradd=-240
+
+[State 11410, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11410, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,9
+channel=0
+volumescale=80
+
+
+[State 11410, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11410, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11410, Physical contact]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=175,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11410, End step]
+type=VelSet
+trigger1=Time>14
+x=0
+
+
+[State 11410, Visible autonomous serpent]
+type=Helper
+trigger1=Time=7 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=40,-55
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11410, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8660
+postype=P1
+pos=30,-15
+scale=0.5,0.5
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11410, Return control]
+type=ChangeState
+trigger1=Time>=51
+value=0
+ctrl=1
+
+
+[Statedef 11420]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11420
+velset=0,0
+poweradd=-280
+
+[State 11420, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11420, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,7
+channel=0
+volumescale=80
+
+
+[State 11420, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=14 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=14
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=25 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=25
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=36
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Visible autonomous serpent]
+type=Helper
+trigger1=Time=47 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=47
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11200
+velset=0,0
+poweradd=-160
+
+[State 11200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11200, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,7
+channel=0
+volumescale=80
+
+
+[State 11200, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11200, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11200, Visible autonomous serpent]
+type=Helper
+trigger1=Time=14 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11200, Technique drawing]
+type=Explod
+trigger1=Time=14
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11200, Visible autonomous serpent]
+type=Helper
+trigger1=Time=26 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11200, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8670
+postype=P1
+pos=30,0
+scale=0.35,0.35
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11200, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11210
+velset=0,0
+poweradd=-280
+
+[State 11210, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11210, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,5
+channel=0
+volumescale=80
+
+
+[State 11210, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11210, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11210, Forward assault]
+type=VelSet
+trigger1=Time>=8 && Time<38
+x=4.5
+
+
+[State 11210, Stop rush]
+type=VelSet
+trigger1=Time>=38
+x=0
+
+
+[State 11210, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11210, Physical contact]
+type=HitDef
+trigger1=Time=21
+attr=S,SA
+damage=58,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11210, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=92,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11210, Visible autonomous serpent]
+type=Helper
+trigger1=Time=17 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=45,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11210, Visible autonomous serpent]
+type=Helper
+trigger1=Time=36 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=55,-38
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11210, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11210, Technique drawing]
+type=Explod
+trigger1=Time=21
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11210, Technique drawing]
+type=Explod
+trigger1=Time=34
+anim=8660
+postype=P1
+pos=30,0
+scale=0.7,0.7
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11210, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 11430]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11431
+velset=0,0
+poweradd=-440
+
+[State 11430, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11430, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,18
+channel=0
+volumescale=80
+
+
+[State 11430, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11430, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11430, Physical contact]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=210,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11430, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8640
+postype=P1
+pos=60,-40
+scale=0.9,0.9
+removetime=24
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11430, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8650
+postype=P1
+pos=35,-47
+scale=0.7,0.7
+removetime=24
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11430, Visible autonomous serpent]
+type=Helper
+trigger1=Time=20 && NumHelper(9411)<5
+helpertype=Normal
+name="Serpiente"
+ID=9411
+stateno=9411
+postype=P1
+pos=42,-30
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11430, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11440]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=11440
+velset=0,0
+poweradd=-320
+
+[State 11440, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11440, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,15
+channel=0
+volumescale=80
+
+
+[State 11440, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11440, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11440, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8680
+postype=P1
+pos=0,-20
+scale=0.8,0.8
+removetime=32
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11440, Finite substitution counter]
+type=ReversalDef
+trigger1=Time>=8 && Time<=28
+reversal.attr=SCA,NA,SA,HA
+pausetime=0,10
+sparkno=S8700
+hitsound=S1,32
+p1stateno=11441
+
+
+[State 11440, Return control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 11441]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11441
+velset=5,0
+
+[State 11441, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8680
+postype=P1
+pos=0,-25
+scale=1,1
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11441, Brief escape]
+type=NotHitBy
+trigger1=Time<10
+value=SCA
+time=1
+
+
+[State 11441, Physical contact]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=215,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11441, Visible autonomous serpent]
+type=Helper
+trigger1=Time=8 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=30,-35
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11441, Return control]
+type=ChangeState
+trigger1=Time>=38
+value=0
+ctrl=1
+
+
+[Statedef 9400]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8601
+velset=6,0
+
+[State 9400, Serpent has no push or shadow]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9400, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9400, Visible snake contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=62,3
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,9
+sparkno=S8700
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.7,0
+air.velocity=-2,-2
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=8,5
+
+
+[State 9400, Serpents disperse on real contact]
+type=DestroySelf
+trigger1=MoveContact || Time>=42 || FrontEdgeBodyDist<-60 || RoundState!=2
+
+
+
+[Statedef 9410]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8601
+velset=6,0
+
+[State 9410, Serpent has no push or shadow]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9410, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9410, Visible snake contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=80,3
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,9
+sparkno=S8700
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=46
+ground.slidetime=20
+ground.velocity=-4,-5
+air.velocity=-2,-2
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=8,5
+
+
+[State 9410, Serpents disperse on real contact]
+type=DestroySelf
+trigger1=MoveContact || Time>=42 || FrontEdgeBodyDist<-60 || RoundState!=2
+
+
+
+[Statedef 9401]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8611
+velset=7,0
+
+[State 9401, Serpent has no push or shadow]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9401, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9401, Visible snake contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=48,3
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,9
+sparkno=S8700
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.7,0
+air.velocity=-2,-2
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=8,5
+
+
+[State 9401, Serpents disperse on real contact]
+type=DestroySelf
+trigger1=MoveContact || Time>=42 || FrontEdgeBodyDist<-60 || RoundState!=2
+
+
+
+[Statedef 9411]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8611
+velset=7,0
+
+[State 9411, Serpent has no push or shadow]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9411, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9411, Visible snake contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=95,3
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,9
+sparkno=S8700
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=46
+ground.slidetime=20
+ground.velocity=-4,-5
+air.velocity=-2,-2
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=8,5
+
+
+[State 9411, Serpents disperse on real contact]
+type=DestroySelf
+trigger1=MoveContact || Time>=42 || FrontEdgeBodyDist<-60 || RoundState!=2
+
+
+
+[Statedef 9420]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8631
+velset=8,0
+
+[State 9420, Scale wind]
+type=AngleDraw
+trigger1=1
+value=0
+scale=.55,.55
+
+
+[State 9420, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9420, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9420, Finite wind impact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=95,4
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,8
+sparkno=S8700
+hitsound=S1,30
+guardsound=S1,9
+ground.type=High
+ground.hittime=32
+ground.velocity=-3,-4
+air.velocity=-3,-3
+fall=1
+fall.recover=1
+getpower=0,0
+givepower=8,5
+
+
+[State 9420, Finite wind cleanup]
+type=DestroySelf
+trigger1=MoveContact || Time>=38 || FrontEdgeBodyDist<-60 || RoundState!=2
+
+
+
+[Statedef 9550]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9550, Follow caster]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-38
+
+
+[State 9550, Upright chakra]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.32,.34
+
+
+[State 9550, Mint chakra]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=80,256,180
+
+
+[State 9550, Chakra blend]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=160,256
+
+
+[State 9550, Aura behind sprite]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9550, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9550, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9550, Aura cleanup]
+type=DestroySelf
+trigger1=Root,StateNo!=500 && Root,StateNo!=520 && Root,Var(42)=0
+trigger2=Root,Life<=0
+trigger3=RoundState!=2
+
+
+
+[Statedef 170]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=170+10000*Var(42)
+velset=0,0
+
+[State 170, Round pose]
+type=Null
+trigger1=1
+
+
+
+[State 170, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,17
+channel=0
+volumescale=80
+
+
+[Statedef 180]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=180+10000*Var(42)
+velset=0,0
+
+[State 180, Round pose]
+type=Null
+trigger1=1
+
+
+
+[State 180, Original voice]
+type=PlaySnd
+trigger1=Time=12
+value=S0,20
+channel=0
+volumescale=80
+
+
+[Statedef 190]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=190+10000*Var(42)
+velset=0,0
+
+[State 190, Round pose]
+type=Null
+trigger1=1
+
+
+
+[State 190, Original voice]
+type=PlaySnd
+trigger1=Time=2
+value=S0,4
+channel=0
+volumescale=80
+
+
+[State 190, Introduction]
+type=AssertSpecial
+trigger1=Time<40
+flag=Intro
+
+
+[State 190, Return control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 500]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=500+10000*Var(42)
+velset=0,0
+
+[State 500, Charge meter]
+type=PowerAdd
+trigger1=1
+value=22
+
+
+[State 500, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,2
+channel=0
+volumescale=80
+
+
+[State 500, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,4
+channel=3
+volumescale=60
+
+
+[State 500, Charge aura]
+type=Helper
+trigger1=Time=0 && NumHelper(9550)=0
+helpertype=Normal
+name="Chakra Mitsuki"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-38
+ownpal=1
+keyctrl=0
+
+
+[State 500, Technique drawing]
+type=Explod
+trigger1=Time%14=0
+anim=8910
+postype=P1
+pos=0,0
+scale=0.3,0.3
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 500, Release charging]
+type=ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 520]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=520
+velset=0,0
+
+[State 520, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 520, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,1
+channel=0
+volumescale=80
+
+
+[State 520, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Sage awakening cost]
+type=PowerAdd
+trigger1=Time=0
+value=-1500
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8720
+postype=P1
+pos=0,-40
+scale=1,1
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=24
+anim=8670
+postype=P1
+pos=0,0
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Start genuine Sage form]
+type=VarSet
+trigger1=Time=28
+v=42
+value=1
+
+
+[State 520, Sage duration]
+type=VarSet
+trigger1=Time=28
+v=40
+value=1200
+
+
+[State 520, Cooldown]
+type=VarSet
+trigger1=Time=28
+v=41
+value=1500
+
+
+[State 520, Sage manifestation]
+type=ChangeAnim
+trigger1=Time=28
+value=10500
+
+
+[State 520, Awakening aura]
+type=Helper
+trigger1=Time=8 && NumHelper(9550)=0
+helpertype=Normal
+name="Chakra del modo sabio"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-38
+ownpal=1
+keyctrl=0
+
+
+[State 520, Return control]
+type=ChangeState
+trigger1=Time>=60
+value=0
+ctrl=1
+
+
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3000
+velset=0,0
+poweradd=-3000
+
+[State 3000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 3000, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,18
+channel=0
+volumescale=80
+
+
+[State 3000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 3000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3000, Confirmed dash starter]
+type=VelSet
+trigger1=Time>=8 && Time<28
+x=6
+
+
+[State 3000, Stop if missed]
+type=VelSet
+trigger1=Time>=28
+x=0
+
+
+[State 3000, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=M
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+p2stateno=3010
+ID=3000
+
+
+[State 3000, Only real hit starts cinematic]
+type=ChangeState
+trigger1=MoveHit && NumTarget(3000)>0
+value=3001
+
+
+[State 3000, Return control]
+type=ChangeState
+trigger1=Time>=56
+value=0
+ctrl=1
+
+
+[Statedef 3001]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=3001
+velset=0,0
+
+[State 3001, Finite confirmed sequence]
+type=Pause
+trigger1=Time=0
+time=142
+movetime=142
+pausebg=1
+
+
+[State 3001, Protect confirmed cinematic]
+type=NotHitBy
+trigger1=Time<140
+value=SCA
+time=1
+
+
+[State 3001, Darken stage briefly]
+type=BGPalFX
+trigger1=Time=0
+time=142
+mul=75,90,100
+
+
+[State 3001, Bound only the struck opponent]
+type=TargetBind
+trigger1=Time<140 && NumTarget(3000)>0
+ID=3000
+time=1
+pos=95,0
+
+
+[State 3001, Bounded ultimate budget]
+type=VarSet
+trigger1=Time=0 && NumTarget(3000)>0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,360,Floor((Target(3000),LifeMax)*.36))
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8602
+postype=P1
+pos=75,-36
+scale=1,1
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8650
+postype=P1
+pos=75,-36
+scale=0.7,0.7
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=18 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 3001, Impact shake]
+type=EnvShake
+trigger1=Time=18
+time=7
+freq=65
+ampl=-4
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8602
+postype=P1
+pos=75,-36
+scale=1,1
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8650
+postype=P1
+pos=75,-36
+scale=0.7,0.7
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=38 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=38
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 3001, Impact shake]
+type=EnvShake
+trigger1=Time=38
+time=7
+freq=65
+ampl=-4
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=58
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=58
+anim=8602
+postype=P1
+pos=75,-36
+scale=1,1
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=58
+anim=8650
+postype=P1
+pos=75,-36
+scale=0.7,0.7
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=58 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=58
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 3001, Impact shake]
+type=EnvShake
+trigger1=Time=58
+time=7
+freq=65
+ampl=-4
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=80
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=80
+anim=8602
+postype=P1
+pos=75,-36
+scale=1,1
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=80
+anim=8650
+postype=P1
+pos=75,-36
+scale=0.7,0.7
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=80 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=80
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 3001, Impact shake]
+type=EnvShake
+trigger1=Time=80
+time=7
+freq=65
+ampl=-4
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=112
+anim=8640
+postype=P1
+pos=95,-35
+scale=1,1
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=112
+anim=8602
+postype=P1
+pos=75,-36
+scale=1,1
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=112
+anim=8650
+postype=P1
+pos=75,-36
+scale=0.7,0.7
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=112 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/5)*4)
+absolute=1
+kill=1
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=112
+value=S1,41
+channel=1
+volumescale=80
+
+
+[State 3001, Impact shake]
+type=EnvShake
+trigger1=Time=112
+time=7
+freq=65
+ampl=-4
+
+
+[State 3001, Victim released safely]
+type=TargetState
+trigger1=Time=140 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 3001, Return control]
+type=ChangeState
+trigger1=Time>=152
+value=0
+ctrl=1
+
+
+[Statedef 13000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=13000
+velset=0,0
+poweradd=-3000
+
+[State 13000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 13000, Original voice]
+type=PlaySnd
+trigger1=Time=0
+value=S0,8
+channel=0
+volumescale=80
+
+
+[State 13000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 13000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13000, Confirmed dash starter]
+type=VelSet
+trigger1=Time>=8 && Time<28
+x=6
+
+
+[State 13000, Stop if missed]
+type=VelSet
+trigger1=Time>=28
+x=0
+
+
+[State 13000, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=M
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+p2stateno=3010
+ID=3000
+
+
+[State 13000, Only real hit starts cinematic]
+type=ChangeState
+trigger1=MoveHit && NumTarget(3000)>0
+value=13001
+
+
+[State 13000, Return control]
+type=ChangeState
+trigger1=Time>=56
+value=0
+ctrl=1
+
+
+[Statedef 13001]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=13001
+velset=0,0
+
+[State 13001, Finite confirmed sequence]
+type=Pause
+trigger1=Time=0
+time=142
+movetime=142
+pausebg=1
+
+
+[State 13001, Protect confirmed cinematic]
+type=NotHitBy
+trigger1=Time<140
+value=SCA
+time=1
+
+
+[State 13001, Darken stage briefly]
+type=BGPalFX
+trigger1=Time=0
+time=142
+mul=75,90,100
+
+
+[State 13001, Bound only the struck opponent]
+type=TargetBind
+trigger1=Time<140 && NumTarget(3000)>0
+ID=3000
+time=1
+pos=95,0
+
+
+[State 13001, Bounded ultimate budget]
+type=VarSet
+trigger1=Time=0 && NumTarget(3000)>0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,450,Floor((Target(3000),LifeMax)*.45))
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=18
+anim=8612
+postype=P1
+pos=70,-40
+scale=1.15,1.15
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=18 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 13001, Impact shake]
+type=EnvShake
+trigger1=Time=18
+time=7
+freq=65
+ampl=-4
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8612
+postype=P1
+pos=70,-40
+scale=1.15,1.15
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=38 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=38
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 13001, Impact shake]
+type=EnvShake
+trigger1=Time=38
+time=7
+freq=65
+ampl=-4
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=58
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=58
+anim=8612
+postype=P1
+pos=70,-40
+scale=1.15,1.15
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=58 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=58
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 13001, Impact shake]
+type=EnvShake
+trigger1=Time=58
+time=7
+freq=65
+ampl=-4
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=80
+anim=8700
+postype=P1
+pos=95,-35
+scale=0.8,0.8
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=80
+anim=8612
+postype=P1
+pos=70,-40
+scale=1.15,1.15
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=80 && NumTarget(3000)>0
+ID=3000
+value=-Floor(Var(20)/5)
+absolute=1
+kill=1
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=80
+value=S1,7
+channel=1
+volumescale=80
+
+
+[State 13001, Impact shake]
+type=EnvShake
+trigger1=Time=80
+time=7
+freq=65
+ampl=-4
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=112
+anim=8640
+postype=P1
+pos=95,-35
+scale=1,1
+removetime=20
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=112
+anim=8612
+postype=P1
+pos=70,-40
+scale=1.15,1.15
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Damage belongs only to confirmed target]
+type=TargetLifeAdd
+trigger1=Time=112 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/5)*4)
+absolute=1
+kill=1
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=112
+value=S1,41
+channel=1
+volumescale=80
+
+
+[State 13001, Impact shake]
+type=EnvShake
+trigger1=Time=112
+time=7
+freq=65
+ampl=-4
+
+
+[State 13001, Victim released safely]
+type=TargetState
+trigger1=Time=140 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 13001, Return control]
+type=ChangeState
+trigger1=Time>=152
+value=0
+ctrl=1
+
+
+[Statedef 3010]
+type=S
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3010, Victim uses own hurt animation]
+type=ChangeAnim
+trigger1=Time=0 && SelfAnimExist(5000)
+value=5000
+
+
+[State 3010, Failsafe if owner interrupted]
+type=SelfState
+trigger1=Time>=210
+value=0
+ctrl=1
+
+
+[Statedef 3011]
+type=S
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3011, Victim uses own hurt animation]
+type=ChangeAnim
+trigger1=Time=0 && SelfAnimExist(5000)
+value=5000
+
+
+[State 3011, Return to own knockdown]
+type=SelfState
+trigger1=Time>=1
+value=5050
+ctrl=0
+
+
+[State 3011, Release knockback]
+type=VelSet
+trigger1=Time=0
+x=-5
+y=-7
+
+
+[Statedef -2]
+
+[State -2, Finite form timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(40)>0
+v=40
+value=-1
+ignorehitpause=1
+
+[State -2, Finite form timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(41)>0
+v=41
+value=-1
+ignorehitpause=1
+
+[State -2, Safe Sage expiry]
+type=VarSet
+trigger1=!IsHelper && Var(42)>0 && Var(40)=0 && Ctrl && MoveType!=H && StateNo!=500
+v=42
+value=0
+
+
+[State -2, Refresh form after expiry]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=0 && Anim>=10000 && StateNo<200
+value=Anim-10000
+
+
+[State -2, Preserve Sage artwork during native turn transitions]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=1 && Anim<10000 && SelfAnimExist(Anim+10000)
+value=Anim+10000
+
+
+[State -2, Air chain reset]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=12
+value=0
+
+
+[State -2, Stop charge hum]
+type=StopSnd
+trigger1=!IsHelper && StateNo!=500
+channel=3
+
+
+[State -2, Sage aura persists only during form]
+type=Helper
+trigger1=!IsHelper && RoundState=2 && Var(42)=1 && NumHelper(9550)=0
+helpertype=Normal
+name="Aura sabia"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-38
+ownpal=1
+keyctrl=0
+
+
+[State -2, Round form cleanup]
+type=VarSet
+trigger1=!IsHelper && RoundState!=2 && StateNo!=190
+v=42
+value=0
+
+
+[State -2, Round drawings cleanup]
+type=RemoveExplod
+trigger1=!IsHelper && RoundState!=2
+
+

@@ -1,0 +1,3765 @@
+[
+  {
+    "group": 0,
+    "number": 0,
+    "file": "assets/sprites/0_0.png",
+    "axis": [
+      15,
+      81
+    ],
+    "rgba_sha256": "35e42c5fbbdbfba5c5974c2e5f3805d9c50d44d700841d1c88518e6b0171d99e",
+    "role": "idle0",
+    "source_rectangle": [
+      47,
+      186,
+      80,
+      274
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 1,
+    "file": "assets/sprites/0_1.png",
+    "axis": [
+      16,
+      81
+    ],
+    "rgba_sha256": "b564975a9e26f93669d16657e66f1610e7df5e9f46a93f4140e643616d28dc8e",
+    "role": "idle1",
+    "source_rectangle": [
+      80,
+      186,
+      114,
+      274
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 2,
+    "file": "assets/sprites/0_2.png",
+    "axis": [
+      16,
+      81
+    ],
+    "rgba_sha256": "fb2d724c148bf2bfd98baa28a18fd336deb9c1be1ddd7fb3694196edc91e2d52",
+    "role": "idle2",
+    "source_rectangle": [
+      114,
+      186,
+      150,
+      274
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 3,
+    "file": "assets/sprites/0_3.png",
+    "axis": [
+      39,
+      58
+    ],
+    "rgba_sha256": "d83146c1bd22fcec451d97daa66819f9921c98574f1529032dcbfa3a6afe79e1",
+    "role": "run0",
+    "source_rectangle": [
+      35,
+      282,
+      106,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 4,
+    "file": "assets/sprites/0_4.png",
+    "axis": [
+      36,
+      59
+    ],
+    "rgba_sha256": "4461e36945e1e94b6c46a186c95085d4817a5017a8f162af40b7b77d1f08cd22",
+    "role": "run1",
+    "source_rectangle": [
+      106,
+      282,
+      179,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 5,
+    "file": "assets/sprites/0_5.png",
+    "axis": [
+      29,
+      61
+    ],
+    "rgba_sha256": "02edf002fc3b3c0a3ab7ebc0251b3a2d68dd476d8314d767b9728b4536cb39e3",
+    "role": "run2",
+    "source_rectangle": [
+      180,
+      282,
+      237,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 6,
+    "file": "assets/sprites/0_6.png",
+    "axis": [
+      38,
+      58
+    ],
+    "rgba_sha256": "1354d9f5c65533375021ee93a5bafe24dcf2784da931cbec9dbe52289c9ad320",
+    "role": "run3",
+    "source_rectangle": [
+      237,
+      282,
+      305,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 7,
+    "file": "assets/sprites/0_7.png",
+    "axis": [
+      37,
+      59
+    ],
+    "rgba_sha256": "0787ce7c84c74f6c73631aef8b5e5fa1a1bebc98087721e72c2de02993104c34",
+    "role": "run4",
+    "source_rectangle": [
+      305,
+      282,
+      377,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 8,
+    "file": "assets/sprites/0_8.png",
+    "axis": [
+      29,
+      61
+    ],
+    "rgba_sha256": "fe459580f4a1f7a2f8cbe8b06f703e75c33cba04abfa24667a0cc66945c4a7f4",
+    "role": "run5",
+    "source_rectangle": [
+      380,
+      282,
+      437,
+      349
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 9,
+    "file": "assets/sprites/0_9.png",
+    "axis": [
+      20,
+      74
+    ],
+    "rgba_sha256": "177e9031881f297b659cde3ef260bd0b57875f22b43ce377d9b0eb3f6435a5dd",
+    "role": "hurt0",
+    "source_rectangle": [
+      41,
+      352,
+      83,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 10,
+    "file": "assets/sprites/0_10.png",
+    "axis": [
+      16,
+      73
+    ],
+    "rgba_sha256": "914c65606137d48949ccba44fcc246e542979159b2b489ae916d73f91ab3fe25",
+    "role": "hurt1",
+    "source_rectangle": [
+      85,
+      352,
+      134,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 11,
+    "file": "assets/sprites/0_11.png",
+    "axis": [
+      17,
+      71
+    ],
+    "rgba_sha256": "c1d69435fe82c9a44f2f912005ded4bdc668d7b5ee77e470aa946d4de685c32a",
+    "role": "hurt2",
+    "source_rectangle": [
+      134,
+      352,
+      182,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 12,
+    "file": "assets/sprites/0_12.png",
+    "axis": [
+      29,
+      45
+    ],
+    "rgba_sha256": "8fcc22a393961a28d78cc714214d37a97b5627cebcfae37e8c658f313b16235b",
+    "role": "hurt3",
+    "source_rectangle": [
+      188,
+      352,
+      265,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 13,
+    "file": "assets/sprites/0_13.png",
+    "axis": [
+      32,
+      41
+    ],
+    "rgba_sha256": "466778f44ae0594c90c3ce1aad0729e34d5c556b768e7487ecd1ebef550a706e",
+    "role": "hurt4",
+    "source_rectangle": [
+      265,
+      352,
+      341,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 14,
+    "file": "assets/sprites/0_14.png",
+    "axis": [
+      37,
+      26
+    ],
+    "rgba_sha256": "f1304513a6122be0a47d3e77c3f456cd2285a57fee48f00439d21b02079e59ee",
+    "role": "hurt5",
+    "source_rectangle": [
+      342,
+      352,
+      429,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 15,
+    "file": "assets/sprites/0_15.png",
+    "axis": [
+      24,
+      46
+    ],
+    "rgba_sha256": "513d4d2bc1be91a4539aed8f671f311a918f045227341eacad1a342221cd5131",
+    "role": "hurt6",
+    "source_rectangle": [
+      433,
+      352,
+      506,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 16,
+    "file": "assets/sprites/0_16.png",
+    "axis": [
+      22,
+      53
+    ],
+    "rgba_sha256": "5ae183f3d6d9f22473ee8e9f65153e688d8e504a16916186842410a322cfb16b",
+    "role": "hurt7",
+    "source_rectangle": [
+      507,
+      352,
+      553,
+      433
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 17,
+    "file": "assets/sprites/0_17.png",
+    "axis": [
+      19,
+      75
+    ],
+    "rgba_sha256": "3498b1eec98a07d7b2f9b61c6ee5a590c26b236c28bb4d8bada4e7a06a41b3ba",
+    "role": "punch0",
+    "source_rectangle": [
+      43,
+      440,
+      87,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 18,
+    "file": "assets/sprites/0_18.png",
+    "axis": [
+      30,
+      66
+    ],
+    "rgba_sha256": "834bfc88b61e36aa069bb4dfca9263e6164fb0f5ec5d14f72f768c61f8b3fb5d",
+    "role": "punch1",
+    "source_rectangle": [
+      90,
+      440,
+      172,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 19,
+    "file": "assets/sprites/0_19.png",
+    "axis": [
+      28,
+      64
+    ],
+    "rgba_sha256": "01318adb276914a883c711975e80171ce736e5df06d778a8cb0fd62357b584f8",
+    "role": "punch2",
+    "source_rectangle": [
+      176,
+      440,
+      257,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 20,
+    "file": "assets/sprites/0_20.png",
+    "axis": [
+      30,
+      64
+    ],
+    "rgba_sha256": "2480d3c003b284cb64a47d51ee113e3689d2c0af19712682aaa379b6f44ab947",
+    "role": "punch3",
+    "source_rectangle": [
+      257,
+      440,
+      334,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 21,
+    "file": "assets/sprites/0_21.png",
+    "axis": [
+      29,
+      66
+    ],
+    "rgba_sha256": "28d3b0b97513db3d93de54750e531cdb57dd23092df3fed22d9ae100521de55d",
+    "role": "punch4",
+    "source_rectangle": [
+      334,
+      440,
+      408,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 22,
+    "file": "assets/sprites/0_22.png",
+    "axis": [
+      31,
+      66
+    ],
+    "rgba_sha256": "4d3559a863edf07cb8c73d27bcc1818499b7ae9e99d0106dbf6c1044de9ff0a7",
+    "role": "punch5",
+    "source_rectangle": [
+      408,
+      440,
+      480,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 23,
+    "file": "assets/sprites/0_23.png",
+    "axis": [
+      30,
+      67
+    ],
+    "rgba_sha256": "f40a8b417a99b090038f7429c819b4a86ed0aae413f672f598f18681c442cf3b",
+    "role": "punch6",
+    "source_rectangle": [
+      480,
+      440,
+      552,
+      521
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 24,
+    "file": "assets/sprites/0_24.png",
+    "axis": [
+      18,
+      74
+    ],
+    "rgba_sha256": "d4c6a2bbb4cc0b28652adae7f15364be4de7318d9440828c30ed9d3e4b0d617d",
+    "role": "kick0",
+    "source_rectangle": [
+      46,
+      525,
+      83,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 25,
+    "file": "assets/sprites/0_25.png",
+    "axis": [
+      26,
+      76
+    ],
+    "rgba_sha256": "627901b6be69f9a9f8c0b4537f79221e927abb578adad9156461e9f7607a2eb9",
+    "role": "kick1",
+    "source_rectangle": [
+      90,
+      525,
+      170,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 26,
+    "file": "assets/sprites/0_26.png",
+    "axis": [
+      26,
+      74
+    ],
+    "rgba_sha256": "2daf693536ded147971aea983ede55c18a9700e82feefe73e031fd09989156eb",
+    "role": "kick2",
+    "source_rectangle": [
+      174,
+      525,
+      253,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 27,
+    "file": "assets/sprites/0_27.png",
+    "axis": [
+      17,
+      78
+    ],
+    "rgba_sha256": "1f2f3073dad6fd448b56692e1449dbc6e0b548ef62ead088390c6cc29d93c95d",
+    "role": "kick3",
+    "source_rectangle": [
+      267,
+      525,
+      306,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 28,
+    "file": "assets/sprites/0_28.png",
+    "axis": [
+      28,
+      67
+    ],
+    "rgba_sha256": "f6d09b29dba1fcfb115543c9a09d5d81378864a755591274c678f7ccf4072839",
+    "role": "kick4",
+    "source_rectangle": [
+      310,
+      525,
+      397,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 29,
+    "file": "assets/sprites/0_29.png",
+    "axis": [
+      31,
+      67
+    ],
+    "rgba_sha256": "0ee27c0771b78c2ec568522683d287ebdaa42e3ad5f6779b483125c8e9c248bc",
+    "role": "kick5",
+    "source_rectangle": [
+      401,
+      525,
+      485,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 30,
+    "file": "assets/sprites/0_30.png",
+    "axis": [
+      27,
+      68
+    ],
+    "rgba_sha256": "105f6df4c185f0eed2037122860000c9d8b40bc7c7ac34fcc0e173ca9c3ba696",
+    "role": "kick6",
+    "source_rectangle": [
+      489,
+      525,
+      558,
+      611
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 31,
+    "file": "assets/sprites/0_31.png",
+    "axis": [
+      22,
+      79
+    ],
+    "rgba_sha256": "e5aee75225e3454ccb466e268be6fd44434006f9553c3640e98ee58bf2b7076f",
+    "role": "arm0",
+    "source_rectangle": [
+      41,
+      616,
+      91,
+      701
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 32,
+    "file": "assets/sprites/0_32.png",
+    "axis": [
+      26,
+      71
+    ],
+    "rgba_sha256": "92d5355c2342f2a18ecd2b26418f20b588695bfc818c4652a71528bcfad1d288",
+    "role": "arm1",
+    "source_rectangle": [
+      92,
+      616,
+      144,
+      701
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 33,
+    "file": "assets/sprites/0_33.png",
+    "axis": [
+      25,
+      71
+    ],
+    "rgba_sha256": "def827b88eb8d9def347a018d42b36fc399826d61874588a01e2c0db4c977b9b",
+    "role": "arm2",
+    "source_rectangle": [
+      147,
+      616,
+      202,
+      701
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 34,
+    "file": "assets/sprites/0_34.png",
+    "axis": [
+      23,
+      71
+    ],
+    "rgba_sha256": "64759c16b708ed7ea385879965bcb359cba4953d11591e9b376c7d8afce68415",
+    "role": "arm3",
+    "source_rectangle": [
+      205,
+      616,
+      259,
+      701
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 35,
+    "file": "assets/sprites/0_35.png",
+    "axis": [
+      21,
+      59
+    ],
+    "rgba_sha256": "458832b16f39d9c124af98749e193c436a74719e77ed03056045275ced739c7f",
+    "role": "spin0",
+    "source_rectangle": [
+      46,
+      702,
+      99,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 36,
+    "file": "assets/sprites/0_36.png",
+    "axis": [
+      21,
+      77
+    ],
+    "rgba_sha256": "ae001326b4a5f73364d70f531d515818ef0408063bf785e24cee0827be8ac52e",
+    "role": "spin1",
+    "source_rectangle": [
+      101,
+      702,
+      147,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 37,
+    "file": "assets/sprites/0_37.png",
+    "axis": [
+      20,
+      88
+    ],
+    "rgba_sha256": "2be69f03fafe09e6b0e86727bcf2dc64bf1f18f5480b7875826c3e1db3477609",
+    "role": "spin2",
+    "source_rectangle": [
+      147,
+      702,
+      190,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 38,
+    "file": "assets/sprites/0_38.png",
+    "axis": [
+      21,
+      74
+    ],
+    "rgba_sha256": "42f6b6a56f8b323fd99d97446fe4876d292781adcc625efb523732299a90b0f6",
+    "role": "spin3",
+    "source_rectangle": [
+      190,
+      702,
+      245,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 39,
+    "file": "assets/sprites/0_39.png",
+    "axis": [
+      21,
+      67
+    ],
+    "rgba_sha256": "b1073206ddb8d53a7e0b7fa9f4738abdeb00665b822da344a3c3d2d84ebaf8b1",
+    "role": "spin4",
+    "source_rectangle": [
+      235,
+      702,
+      289,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 40,
+    "file": "assets/sprites/0_40.png",
+    "axis": [
+      21,
+      70
+    ],
+    "rgba_sha256": "723e25774860aa0d31b57a95b4d1b518a2f12be3a18391560988a2152c1261fc",
+    "role": "spin5",
+    "source_rectangle": [
+      288,
+      702,
+      341,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 41,
+    "file": "assets/sprites/0_41.png",
+    "axis": [
+      20,
+      78
+    ],
+    "rgba_sha256": "9e70b42490e51b7e5289086d54673bab9fa447842099e88457e4cfbeabc21d96",
+    "role": "spin6",
+    "source_rectangle": [
+      347,
+      702,
+      391,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 42,
+    "file": "assets/sprites/0_42.png",
+    "axis": [
+      26,
+      72
+    ],
+    "rgba_sha256": "20d7e06f7bd4c71064d97c470285d120a208b288485265a7991590e81b495526",
+    "role": "spin7",
+    "source_rectangle": [
+      390,
+      702,
+      441,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 43,
+    "file": "assets/sprites/0_43.png",
+    "axis": [
+      24,
+      50
+    ],
+    "rgba_sha256": "6660a36a463c60943ca871221dd697b6d0f1800418e80753f3c881c701bcc21b",
+    "role": "spin8",
+    "source_rectangle": [
+      449,
+      702,
+      500,
+      800
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 44,
+    "file": "assets/sprites/0_44.png",
+    "axis": [
+      19,
+      78
+    ],
+    "rgba_sha256": "9e70b42490e51b7e5289086d54673bab9fa447842099e88457e4cfbeabc21d96",
+    "role": "wind0",
+    "source_rectangle": [
+      43,
+      807,
+      89,
+      891
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 45,
+    "file": "assets/sprites/0_45.png",
+    "axis": [
+      25,
+      68
+    ],
+    "rgba_sha256": "89613734c22dc9208ba244e034a25dd71857eb86f9b645f9b1b0fa4ecbf098dc",
+    "role": "wind1",
+    "source_rectangle": [
+      91,
+      807,
+      161,
+      891
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 46,
+    "file": "assets/sprites/0_46.png",
+    "axis": [
+      21,
+      78
+    ],
+    "rgba_sha256": "50d4d7d59945c667bbf42c3ae446292c5105eaa04deff24f6aa4553bfefb58e1",
+    "role": "wind2",
+    "source_rectangle": [
+      171,
+      807,
+      214,
+      891
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 47,
+    "file": "assets/sprites/0_47.png",
+    "axis": [
+      26,
+      68
+    ],
+    "rgba_sha256": "3a2b04fd4b02018e06b22785ade41f6278865fa84a3163aa329cba3acfe5cbf7",
+    "role": "wind3",
+    "source_rectangle": [
+      226,
+      807,
+      298,
+      891
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 48,
+    "file": "assets/sprites/0_48.png",
+    "axis": [
+      23,
+      79
+    ],
+    "rgba_sha256": "3558d0adadc2a32cca2257ad7e356408af98769dadb91c63f110c7e6d0a28f73",
+    "role": "air0",
+    "source_rectangle": [
+      37,
+      894,
+      83,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 49,
+    "file": "assets/sprites/0_49.png",
+    "axis": [
+      23,
+      76
+    ],
+    "rgba_sha256": "6eb4ef4fd013d9c0853ca70a3fe5b6a7ce0dbf39f5cc47fbb03989ea4122f644",
+    "role": "air1",
+    "source_rectangle": [
+      84,
+      894,
+      130,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 50,
+    "file": "assets/sprites/0_50.png",
+    "axis": [
+      17,
+      77
+    ],
+    "rgba_sha256": "979874d9977af4b0a68c140c15a3cc0646bbeadf80eca4788f2ba450906b4d45",
+    "role": "air2",
+    "source_rectangle": [
+      139,
+      894,
+      179,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 51,
+    "file": "assets/sprites/0_51.png",
+    "axis": [
+      16,
+      74
+    ],
+    "rgba_sha256": "e2daf77cdfc06c0708d073b830cfd0a1dad8f4952b6878c5000e840898055e3d",
+    "role": "air3",
+    "source_rectangle": [
+      185,
+      894,
+      221,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 52,
+    "file": "assets/sprites/0_52.png",
+    "axis": [
+      24,
+      75
+    ],
+    "rgba_sha256": "e1736ccca253c09ff0f453133f0e9b06d8f1e9a32a7a1ec8b4b7238c0a9e8537",
+    "role": "air4",
+    "source_rectangle": [
+      223,
+      894,
+      280,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 53,
+    "file": "assets/sprites/0_53.png",
+    "axis": [
+      25,
+      53
+    ],
+    "rgba_sha256": "85a3696b4062cffa5ff9c189e205a63dcc93f2316422d0687bcd6f3a13b553c6",
+    "role": "air5",
+    "source_rectangle": [
+      281,
+      894,
+      324,
+      981
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 54,
+    "file": "assets/sprites/0_54.png",
+    "axis": [
+      19,
+      75
+    ],
+    "rgba_sha256": "cf1801f5d1cab0d6ada98a0cd1d2ff9103893b75cdcf0ce6850682395c295f8e",
+    "role": "cast0",
+    "source_rectangle": [
+      38,
+      981,
+      81,
+      1064
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 55,
+    "file": "assets/sprites/0_55.png",
+    "axis": [
+      18,
+      75
+    ],
+    "rgba_sha256": "43fd53c1185a9be4504deeade22b06d51a4fdedc7746db6a8a1e6307bd519aa9",
+    "role": "cast1",
+    "source_rectangle": [
+      84,
+      981,
+      125,
+      1064
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 56,
+    "file": "assets/sprites/0_56.png",
+    "axis": [
+      16,
+      75
+    ],
+    "rgba_sha256": "55b6b0021d58fe549a0e2ecbcf080527d9d7ea5f4f5673c1a2c295fed28b6d00",
+    "role": "cast2",
+    "source_rectangle": [
+      132,
+      981,
+      171,
+      1064
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 57,
+    "file": "assets/sprites/0_57.png",
+    "axis": [
+      24,
+      75
+    ],
+    "rgba_sha256": "61901386ff0512802e07006dc61be1bfe98ae108191d7dcad6836744ae7ee435",
+    "role": "cast3",
+    "source_rectangle": [
+      198,
+      981,
+      259,
+      1064
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 58,
+    "file": "assets/sprites/0_58.png",
+    "axis": [
+      20,
+      75
+    ],
+    "rgba_sha256": "cf1801f5d1cab0d6ada98a0cd1d2ff9103893b75cdcf0ce6850682395c295f8e",
+    "role": "cast20",
+    "source_rectangle": [
+      39,
+      1067,
+      81,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 59,
+    "file": "assets/sprites/0_59.png",
+    "axis": [
+      18,
+      75
+    ],
+    "rgba_sha256": "43fd53c1185a9be4504deeade22b06d51a4fdedc7746db6a8a1e6307bd519aa9",
+    "role": "cast21",
+    "source_rectangle": [
+      83,
+      1067,
+      126,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 60,
+    "file": "assets/sprites/0_60.png",
+    "axis": [
+      16,
+      75
+    ],
+    "rgba_sha256": "55b6b0021d58fe549a0e2ecbcf080527d9d7ea5f4f5673c1a2c295fed28b6d00",
+    "role": "cast22",
+    "source_rectangle": [
+      132,
+      1067,
+      171,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 61,
+    "file": "assets/sprites/0_61.png",
+    "axis": [
+      28,
+      67
+    ],
+    "rgba_sha256": "8bf973903a90ed68fe4b3f04528562dae60f35177960514e9e8b240ec2260d52",
+    "role": "cast23",
+    "source_rectangle": [
+      186,
+      1067,
+      241,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 62,
+    "file": "assets/sprites/0_62.png",
+    "axis": [
+      29,
+      66
+    ],
+    "rgba_sha256": "e95a4da577f934da09802f56b22ab87188143d31907c964cdaf9a185bfd16dac",
+    "role": "cast24",
+    "source_rectangle": [
+      237,
+      1067,
+      290,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 63,
+    "file": "assets/sprites/0_63.png",
+    "axis": [
+      28,
+      68
+    ],
+    "rgba_sha256": "71047f9c70c5ceb6033c6797f487fc831cb0120d0376b9a5107e7b2c6f74ea6b",
+    "role": "cast25",
+    "source_rectangle": [
+      289,
+      1067,
+      339,
+      1148
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 64,
+    "file": "assets/sprites/0_64.png",
+    "axis": [
+      20,
+      78
+    ],
+    "rgba_sha256": "e24ceadb850bc40ea17858d0fd8910219210462a4d1c86998863601ee9f8f3cb",
+    "role": "stretch0",
+    "source_rectangle": [
+      38,
+      1153,
+      83,
+      1236
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 65,
+    "file": "assets/sprites/0_65.png",
+    "axis": [
+      20,
+      60
+    ],
+    "rgba_sha256": "7a09ad44417e1da19c2a2355e72a8261a04680232b16e42c04a8900608f9433a",
+    "role": "stretch1",
+    "source_rectangle": [
+      84,
+      1153,
+      145,
+      1236
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 0,
+    "number": 66,
+    "file": "assets/sprites/0_66.png",
+    "axis": [
+      22,
+      71
+    ],
+    "rgba_sha256": "14af594d158ae7f5658a1e4de82837a5d768f03120d5cbd752a4ffdc816057da",
+    "role": "stretch2",
+    "source_rectangle": [
+      188,
+      1153,
+      237,
+      1236
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 0,
+    "file": "assets/sprites/1_0.png",
+    "axis": [
+      16,
+      83
+    ],
+    "rgba_sha256": "39e4bd10fabb99d1585119deeae7ae6338e3d029b32fc9491e8c64d85f43677d",
+    "role": "idle0",
+    "source_rectangle": [
+      44,
+      1240,
+      79,
+      1332
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 1,
+    "file": "assets/sprites/1_1.png",
+    "axis": [
+      15,
+      85
+    ],
+    "rgba_sha256": "1f743ab4b83c27b7a9ea77bdbabb7f2a5d7426be6417bd3912873601d06ab4af",
+    "role": "idle1",
+    "source_rectangle": [
+      85,
+      1240,
+      120,
+      1332
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 2,
+    "file": "assets/sprites/1_2.png",
+    "axis": [
+      16,
+      86
+    ],
+    "rgba_sha256": "871368ccf22bbe75c65a622273326eb30da3c6cbb3c2c2c8ecb22ce004d6c60a",
+    "role": "idle2",
+    "source_rectangle": [
+      128,
+      1240,
+      163,
+      1332
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 3,
+    "file": "assets/sprites/1_3.png",
+    "axis": [
+      38,
+      99
+    ],
+    "rgba_sha256": "397e87d86f8b93904e2a5ad23b8c4d6a0b3599881365f403d869a7a32e7c0ae1",
+    "role": "coiled",
+    "source_rectangle": [
+      231,
+      1226,
+      305,
+      1331
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 4,
+    "file": "assets/sprites/1_4.png",
+    "axis": [
+      43,
+      84
+    ],
+    "rgba_sha256": "fe55dfbc96a51f7c2b88b1262e3df8d4f25c324a94b3fbf8b81135a96052dfe1",
+    "role": "coiled_fast",
+    "source_rectangle": [
+      304,
+      1241,
+      387,
+      1332
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 5,
+    "file": "assets/sprites/1_5.png",
+    "axis": [
+      38,
+      60
+    ],
+    "rgba_sha256": "9fc800aed43d994b6d29cfca3cf69801198196c216d1e0856767bd71e3baa303",
+    "role": "run0",
+    "source_rectangle": [
+      37,
+      1334,
+      108,
+      1403
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 6,
+    "file": "assets/sprites/1_6.png",
+    "axis": [
+      38,
+      60
+    ],
+    "rgba_sha256": "c98df8a7be305a34493e700c3830a4f71942ae9a0de3125f7e669837ca0c3387",
+    "role": "run1",
+    "source_rectangle": [
+      108,
+      1334,
+      177,
+      1403
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 7,
+    "file": "assets/sprites/1_7.png",
+    "axis": [
+      36,
+      62
+    ],
+    "rgba_sha256": "c3b09758748666aa9640cd820ff909b39f02264f8fd6448d7b41bab7f249f86e",
+    "role": "run2",
+    "source_rectangle": [
+      178,
+      1334,
+      250,
+      1403
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 8,
+    "file": "assets/sprites/1_8.png",
+    "axis": [
+      20,
+      78
+    ],
+    "rgba_sha256": "5c1a30d2281fc3e4c5b0b7989b9d2a31cd420323e771199d6835136c6e19c679",
+    "role": "punch0",
+    "source_rectangle": [
+      32,
+      1406,
+      75,
+      1490
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 9,
+    "file": "assets/sprites/1_9.png",
+    "axis": [
+      28,
+      67
+    ],
+    "rgba_sha256": "442a8ff85926afa6d40012ccab7c48d0ede8427ee477651f3b5d858c64c0460d",
+    "role": "punch1",
+    "source_rectangle": [
+      83,
+      1406,
+      165,
+      1490
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 10,
+    "file": "assets/sprites/1_10.png",
+    "axis": [
+      27,
+      68
+    ],
+    "rgba_sha256": "cc8f41d5c8c4f67ac23b41af7ea95e1c0e498643d754917c432aeb1758f9c40c",
+    "role": "punch2",
+    "source_rectangle": [
+      168,
+      1406,
+      249,
+      1490
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 11,
+    "file": "assets/sprites/1_11.png",
+    "axis": [
+      29,
+      68
+    ],
+    "rgba_sha256": "1b0c878b55d7e155bf085f0e4b5507a6a4b5cf5160731119efae38233fc7ad57",
+    "role": "punch3",
+    "source_rectangle": [
+      249,
+      1406,
+      328,
+      1490
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 12,
+    "file": "assets/sprites/1_12.png",
+    "axis": [
+      22,
+      77
+    ],
+    "rgba_sha256": "a10d3e3105be267b451f3cf874ff5bafc5f79ad6fb51c151cd01a1e3723a4529",
+    "role": "palm0",
+    "source_rectangle": [
+      32,
+      1486,
+      95,
+      1576
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 13,
+    "file": "assets/sprites/1_13.png",
+    "axis": [
+      19,
+      81
+    ],
+    "rgba_sha256": "c18763d2ce113296f2b6a2c30c14840ce5da1738feb059635146d3ddc674a80e",
+    "role": "palm1",
+    "source_rectangle": [
+      103,
+      1486,
+      147,
+      1576
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 14,
+    "file": "assets/sprites/1_14.png",
+    "axis": [
+      28,
+      71
+    ],
+    "rgba_sha256": "c5f4a9243d028ba635902dd66df44fc7c7670d5a26ff117c9d764b5c04bd07a1",
+    "role": "palm2",
+    "source_rectangle": [
+      151,
+      1486,
+      223,
+      1576
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 15,
+    "file": "assets/sprites/1_15.png",
+    "axis": [
+      22,
+      79
+    ],
+    "rgba_sha256": "99ea896fcf5608470dba64d5bd83a7a36800c68c4408c81272cded5a07d23b92",
+    "role": "cast0",
+    "source_rectangle": [
+      27,
+      1581,
+      77,
+      1670
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 16,
+    "file": "assets/sprites/1_16.png",
+    "axis": [
+      22,
+      77
+    ],
+    "rgba_sha256": "7d2067d7949fe27529be0fb0b19ab9e32354ce61861db795f71eb1298b0c01e4",
+    "role": "cast1",
+    "source_rectangle": [
+      77,
+      1581,
+      130,
+      1670
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 17,
+    "file": "assets/sprites/1_17.png",
+    "axis": [
+      23,
+      77
+    ],
+    "rgba_sha256": "be367f52e934a870e099b32f394abc98dc0c6babbc3f082c069b85e3e23138f4",
+    "role": "cast2",
+    "source_rectangle": [
+      134,
+      1581,
+      188,
+      1670
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 1,
+    "number": 18,
+    "file": "assets/sprites/1_18.png",
+    "axis": [
+      25,
+      77
+    ],
+    "rgba_sha256": "01c6c0873a914ab3361fa891269b30205ed021db549bf6b62c1887322fd3fd5d",
+    "role": "cast3",
+    "source_rectangle": [
+      191,
+      1581,
+      245,
+      1670
+    ],
+    "retained_component": "largest connected original body; exclude neighboring pose fragments",
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 0,
+    "file": "assets/effects/8600_0.png",
+    "axis": [
+      18,
+      23
+    ],
+    "rgba_sha256": "9d1f91b9398a67e2fefaff23477f3d1a65728ec16359c7214df827d2a1dbfb44",
+    "source_rectangle": [
+      496,
+      858,
+      536,
+      910
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 1,
+    "file": "assets/effects/8600_1.png",
+    "axis": [
+      19,
+      7
+    ],
+    "rgba_sha256": "204372d58d1f79fd69385178ef24fea99b50c749c5cc08aa71dc50bca7df5cb2",
+    "source_rectangle": [
+      577,
+      884,
+      616,
+      900
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 2,
+    "file": "assets/effects/8600_2.png",
+    "axis": [
+      18,
+      6
+    ],
+    "rgba_sha256": "38db8c3a04c9dedb750f5dbfc574bc0c9fbec2de2a2ed94dd9ee32f9b7932498",
+    "source_rectangle": [
+      657,
+      907,
+      698,
+      925
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 3,
+    "file": "assets/effects/8600_3.png",
+    "axis": [
+      18,
+      10
+    ],
+    "rgba_sha256": "2618002e17f7fb4e382439a0cf7e09f686e1d75110cc4bbd35a26d804b3395df",
+    "source_rectangle": [
+      473,
+      923,
+      514,
+      950
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 4,
+    "file": "assets/effects/8600_4.png",
+    "axis": [
+      28,
+      38
+    ],
+    "rgba_sha256": "f88a3b3026754f79651e15c6e84420f81e1e6d97168db1297c1c0b5d9fee5888",
+    "source_rectangle": [
+      543,
+      923,
+      605,
+      1005
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 5,
+    "file": "assets/effects/8600_5.png",
+    "axis": [
+      47,
+      24
+    ],
+    "rgba_sha256": "7b95b4307c02627e1d7ff5eda9d60fe07cf1520a5638cb9ae0446c77a2663a37",
+    "source_rectangle": [
+      615,
+      958,
+      712,
+      1012
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 6,
+    "file": "assets/effects/8600_6.png",
+    "axis": [
+      24,
+      28
+    ],
+    "rgba_sha256": "84da57b62bf65a082f63d906987554165b201a7b08ad6e7a6def9dd1c50a2da9",
+    "source_rectangle": [
+      741,
+      951,
+      796,
+      1014
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 7,
+    "file": "assets/effects/8600_7.png",
+    "axis": [
+      22,
+      32
+    ],
+    "rgba_sha256": "256e0dd23792a165a5f49c98ca99ea1720a0428cf161524c74db01ed2b5c770b",
+    "source_rectangle": [
+      387,
+      1013,
+      436,
+      1082
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 8,
+    "file": "assets/effects/8600_8.png",
+    "axis": [
+      43,
+      23
+    ],
+    "rgba_sha256": "fd79e19802b90544222b7a7a3406ad036f52826e177d68564ef13da3e0053c8f",
+    "source_rectangle": [
+      437,
+      1005,
+      528,
+      1057
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 9,
+    "file": "assets/effects/8600_9.png",
+    "axis": [
+      33,
+      28
+    ],
+    "rgba_sha256": "e304d07ace221af5bd7fcbb18f0f5c5aae1b8ec9edec09b08c2d19b6cc52e476",
+    "source_rectangle": [
+      535,
+      1024,
+      606,
+      1087
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8600,
+    "number": 10,
+    "file": "assets/effects/8600_10.png",
+    "axis": [
+      20,
+      18
+    ],
+    "rgba_sha256": "e8cc2d12f4e4a21a689a3b149d9451ae9737a3a11ecc21e6cd06904bb6e42cf1",
+    "source_rectangle": [
+      623,
+      1063,
+      666,
+      1107
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 0,
+    "file": "assets/effects/8610_0.png",
+    "axis": [
+      21,
+      40
+    ],
+    "rgba_sha256": "573f1f808f24e230a5b888fcde5c717b0d81b01296ccae963154e354decf393d",
+    "source_rectangle": [
+      410,
+      1253,
+      455,
+      1340
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 1,
+    "file": "assets/effects/8610_1.png",
+    "axis": [
+      22,
+      23
+    ],
+    "rgba_sha256": "748f1f1aa2f23d75a3ef4f4d07a13f0f3df961814105b9cd408613727b94fcd7",
+    "source_rectangle": [
+      449,
+      1256,
+      496,
+      1305
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 2,
+    "file": "assets/effects/8610_2.png",
+    "axis": [
+      34,
+      36
+    ],
+    "rgba_sha256": "8240f441d946e5b151ef6559bba55964b0141c8eabfb74267eedfed95efb78da",
+    "source_rectangle": [
+      499,
+      1251,
+      569,
+      1330
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 3,
+    "file": "assets/effects/8610_3.png",
+    "axis": [
+      34,
+      39
+    ],
+    "rgba_sha256": "c5ba7a7c2cdeb1c4e8ea0e4c5281732dd623529e632e0b90e81d467cd07c64e1",
+    "source_rectangle": [
+      567,
+      1249,
+      637,
+      1335
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 4,
+    "file": "assets/effects/8610_4.png",
+    "axis": [
+      35,
+      32
+    ],
+    "rgba_sha256": "25a796f5149a8f4bc8fc02c85fe35ef6b48a9a0e6164ce9f66d93f92bd43f517",
+    "source_rectangle": [
+      645,
+      1268,
+      719,
+      1338
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 5,
+    "file": "assets/effects/8610_5.png",
+    "axis": [
+      41,
+      42
+    ],
+    "rgba_sha256": "d3f02edf17e56f8edecadb7f8bb3226f9e2a68e02dac35841255b94385f531c4",
+    "source_rectangle": [
+      721,
+      1256,
+      808,
+      1345
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 6,
+    "file": "assets/effects/8610_6.png",
+    "axis": [
+      28,
+      37
+    ],
+    "rgba_sha256": "b8e78f71772120fa4279b36ad4b282fc7cfd56db808be146ca0cb10c5e0ec288",
+    "source_rectangle": [
+      378,
+      1370,
+      440,
+      1451
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 7,
+    "file": "assets/effects/8610_7.png",
+    "axis": [
+      38,
+      23
+    ],
+    "rgba_sha256": "4979ff00425bc6e6e9107f5f44173d41c9901b9a655d62345724172cb8944d52",
+    "source_rectangle": [
+      445,
+      1369,
+      524,
+      1423
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 8,
+    "file": "assets/effects/8610_8.png",
+    "axis": [
+      31,
+      27
+    ],
+    "rgba_sha256": "07898569f8e0f3ea816432201481d109f08f503d7c03ff6a0009c1eb5592daf9",
+    "source_rectangle": [
+      498,
+      1391,
+      564,
+      1451
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 9,
+    "file": "assets/effects/8610_9.png",
+    "axis": [
+      34,
+      19
+    ],
+    "rgba_sha256": "2bbc75e924b87022d69c930a7a94a9099604c4dbc0bcdaaa9bbb036f161455a9",
+    "source_rectangle": [
+      381,
+      1471,
+      455,
+      1515
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 10,
+    "file": "assets/effects/8610_10.png",
+    "axis": [
+      42,
+      23
+    ],
+    "rgba_sha256": "94b3d521b0a2bdee0af7409079095ec5f84ea153255a502e0b913760759d536e",
+    "source_rectangle": [
+      453,
+      1488,
+      540,
+      1540
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 11,
+    "file": "assets/effects/8610_11.png",
+    "axis": [
+      53,
+      24
+    ],
+    "rgba_sha256": "a18ff1a7767cadb04bd42953b990b83dedd419de79c41f58125fec88578e9c12",
+    "source_rectangle": [
+      556,
+      1490,
+      668,
+      1541
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 12,
+    "file": "assets/effects/8610_12.png",
+    "axis": [
+      86,
+      17
+    ],
+    "rgba_sha256": "7f800b572f58522ed66af011df982f757c2c434b57febd4768886458e1aed371",
+    "source_rectangle": [
+      480,
+      1545,
+      657,
+      1586
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 13,
+    "file": "assets/effects/8610_13.png",
+    "axis": [
+      85,
+      17
+    ],
+    "rgba_sha256": "d8b7d1f37f61b2905b387c471da302b289639ccb9c78a260f349cf38b36d6458",
+    "source_rectangle": [
+      475,
+      1591,
+      651,
+      1632
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 0,
+    "file": "assets/effects/8620_0.png",
+    "axis": [
+      11,
+      11
+    ],
+    "rgba_sha256": "7c7fb4ec013ed6f22409ab81a2224938b2e259312f5f4975314577050dd1b33a",
+    "source_rectangle": [
+      254,
+      1633,
+      279,
+      1662
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 1,
+    "file": "assets/effects/8620_1.png",
+    "axis": [
+      12,
+      11
+    ],
+    "rgba_sha256": "487c2087528a84f270c880e4c4a380715ca97bf8659a06cd7ec7ecce486aed20",
+    "source_rectangle": [
+      279,
+      1633,
+      307,
+      1662
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 2,
+    "file": "assets/effects/8620_2.png",
+    "axis": [
+      12,
+      11
+    ],
+    "rgba_sha256": "487c2087528a84f270c880e4c4a380715ca97bf8659a06cd7ec7ecce486aed20",
+    "source_rectangle": [
+      308,
+      1633,
+      335,
+      1662
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 3,
+    "file": "assets/effects/8620_3.png",
+    "axis": [
+      13,
+      12
+    ],
+    "rgba_sha256": "e96eb699fdf4ae3aec3bf29aed40cad3ec9b1f12d0a37eb6e3321b12055a7b4e",
+    "source_rectangle": [
+      339,
+      1631,
+      368,
+      1662
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 4,
+    "file": "assets/effects/8620_4.png",
+    "axis": [
+      13,
+      12
+    ],
+    "rgba_sha256": "50f993e2a420af159799c8fbef1284ea4c13610f37e29399a944002b4d544912",
+    "source_rectangle": [
+      371,
+      1632,
+      400,
+      1663
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 5,
+    "file": "assets/effects/8620_5.png",
+    "axis": [
+      11,
+      11
+    ],
+    "rgba_sha256": "011ffa1373f86743a5f3deb2c52dd12546f32d9ce3c9f6067dce5316adfe3013",
+    "source_rectangle": [
+      324,
+      1605,
+      349,
+      1633
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 6,
+    "file": "assets/effects/8620_6.png",
+    "axis": [
+      11,
+      11
+    ],
+    "rgba_sha256": "60b8e34aaf5e4ecc324815a9efdcb5a2a8c975099e1fbb7507fb73701ac6f274",
+    "source_rectangle": [
+      349,
+      1606,
+      375,
+      1634
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8620,
+    "number": 7,
+    "file": "assets/effects/8620_7.png",
+    "axis": [
+      11,
+      12
+    ],
+    "rgba_sha256": "9416f4d87b492db59d9e9e9014b1991148d570d6f6bdf7b9ca81250061eca8ed",
+    "source_rectangle": [
+      374,
+      1605,
+      400,
+      1635
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8630,
+    "number": 0,
+    "file": "assets/effects/8630_0.png",
+    "axis": [
+      195,
+      203
+    ],
+    "rgba_sha256": "c2bdc76457e286d6688ef3d8b3c46e768aa556a1a0b831259c7be7cccd719563",
+    "donor_group": 1050,
+    "donor_number": 0
+  },
+  {
+    "group": 8630,
+    "number": 1,
+    "file": "assets/effects/8630_1.png",
+    "axis": [
+      202,
+      203
+    ],
+    "rgba_sha256": "0159311e15e435d8b9e519aec55dc80d6c930c4f48da66e7b1355834b1abee38",
+    "donor_group": 1050,
+    "donor_number": 1
+  },
+  {
+    "group": 8630,
+    "number": 2,
+    "file": "assets/effects/8630_2.png",
+    "axis": [
+      199,
+      223
+    ],
+    "rgba_sha256": "446d79199257cd06d43c4b1d4913a053844f5e782801b11c8f6716a80cf1644e",
+    "donor_group": 1050,
+    "donor_number": 2
+  },
+  {
+    "group": 8630,
+    "number": 3,
+    "file": "assets/effects/8630_3.png",
+    "axis": [
+      200,
+      225
+    ],
+    "rgba_sha256": "837d60932c5c5855690cf37e521d53d18d49d45d313df8e4e5bfdb31e086296b",
+    "donor_group": 1050,
+    "donor_number": 3
+  },
+  {
+    "group": 8630,
+    "number": 4,
+    "file": "assets/effects/8630_4.png",
+    "axis": [
+      181,
+      216
+    ],
+    "rgba_sha256": "65eb4f4aeb57755baf375e4993ad6b0283b957810bdacef08114ce404440bcab",
+    "donor_group": 1050,
+    "donor_number": 4
+  },
+  {
+    "group": 8630,
+    "number": 5,
+    "file": "assets/effects/8630_5.png",
+    "axis": [
+      210,
+      212
+    ],
+    "rgba_sha256": "2d02df21f8e4e9206fd11efd6796a2ebaab65a0744b25be988db70bed8203055",
+    "donor_group": 1050,
+    "donor_number": 5
+  },
+  {
+    "group": 8630,
+    "number": 6,
+    "file": "assets/effects/8630_6.png",
+    "axis": [
+      213,
+      209
+    ],
+    "rgba_sha256": "20c59263fd62463886aa4a22ad8bdf7d456e3f75421f52cf31a4d9e1cfe9aef4",
+    "donor_group": 1050,
+    "donor_number": 6
+  },
+  {
+    "group": 8630,
+    "number": 7,
+    "file": "assets/effects/8630_7.png",
+    "axis": [
+      203,
+      222
+    ],
+    "rgba_sha256": "5a98079ffab69e82f47ab21a8278d09b52cc9730e8caf889a439efccb61616c3",
+    "donor_group": 1050,
+    "donor_number": 7
+  },
+  {
+    "group": 8630,
+    "number": 8,
+    "file": "assets/effects/8630_8.png",
+    "axis": [
+      194,
+      224
+    ],
+    "rgba_sha256": "52df75765fa3147c1122454d4372fb7b5cc8a5823df3a85775719752c576f2e5",
+    "donor_group": 1050,
+    "donor_number": 8
+  },
+  {
+    "group": 8630,
+    "number": 9,
+    "file": "assets/effects/8630_9.png",
+    "axis": [
+      195,
+      206
+    ],
+    "rgba_sha256": "e6bae9098b9475c2aa09323efb6ed92040d33d962a7b184c0c039e123b087522",
+    "donor_group": 1050,
+    "donor_number": 9
+  },
+  {
+    "group": 8630,
+    "number": 10,
+    "file": "assets/effects/8630_10.png",
+    "axis": [
+      193,
+      215
+    ],
+    "rgba_sha256": "866c89bddc94a59c2e0d45892ffec67444ad2a9ef4225f14af8e21d814ff8337",
+    "donor_group": 1050,
+    "donor_number": 10
+  },
+  {
+    "group": 8630,
+    "number": 11,
+    "file": "assets/effects/8630_11.png",
+    "axis": [
+      195,
+      206
+    ],
+    "rgba_sha256": "ff79d1fe7a2120d18f6a7f6fbdbe6df7aadcccb59ea01dac1b43aa54365d2ad8",
+    "donor_group": 1050,
+    "donor_number": 11
+  },
+  {
+    "group": 8630,
+    "number": 12,
+    "file": "assets/effects/8630_12.png",
+    "axis": [
+      194,
+      225
+    ],
+    "rgba_sha256": "997d28e8e594b1352ce0ee306735e0176b0846857135ba256ff8eb6f0d724413",
+    "donor_group": 1050,
+    "donor_number": 12
+  },
+  {
+    "group": 8630,
+    "number": 13,
+    "file": "assets/effects/8630_13.png",
+    "axis": [
+      194,
+      225
+    ],
+    "rgba_sha256": "aaa8a4b19bd5f507dac8dbf98aedf90eb9b0e64d02a261326301890f2955a234",
+    "donor_group": 1050,
+    "donor_number": 13
+  },
+  {
+    "group": 8630,
+    "number": 14,
+    "file": "assets/effects/8630_14.png",
+    "axis": [
+      153,
+      220
+    ],
+    "rgba_sha256": "a85091114f3a148b8d5135a9f35e7bc62ca6f1880b301686bf57050e0076702d",
+    "donor_group": 1050,
+    "donor_number": 14
+  },
+  {
+    "group": 8630,
+    "number": 15,
+    "file": "assets/effects/8630_15.png",
+    "axis": [
+      152,
+      214
+    ],
+    "rgba_sha256": "b5097e44cdcd9d0c875a58df8b6a93a657ded2e53090ef558c0bcc4bb0b3eb8f",
+    "donor_group": 1050,
+    "donor_number": 15
+  },
+  {
+    "group": 8630,
+    "number": 16,
+    "file": "assets/effects/8630_16.png",
+    "axis": [
+      151,
+      210
+    ],
+    "rgba_sha256": "9beef2a0470be115c5ffe8b2751f1203e758e38246836eaa4ad4859ecb1e2a09",
+    "donor_group": 1050,
+    "donor_number": 16
+  },
+  {
+    "group": 8630,
+    "number": 17,
+    "file": "assets/effects/8630_17.png",
+    "axis": [
+      194,
+      212
+    ],
+    "rgba_sha256": "0d62c9e0bb22564f16128703300f45d64a321c289375dbb57046631151a516b3",
+    "donor_group": 1050,
+    "donor_number": 17
+  },
+  {
+    "group": 8630,
+    "number": 18,
+    "file": "assets/effects/8630_18.png",
+    "axis": [
+      196,
+      221
+    ],
+    "rgba_sha256": "c0b75f28810b572d041785d221b52945669f4377790a6d490acd2f1545e30f5e",
+    "donor_group": 1050,
+    "donor_number": 18
+  },
+  {
+    "group": 8630,
+    "number": 19,
+    "file": "assets/effects/8630_19.png",
+    "axis": [
+      197,
+      225
+    ],
+    "rgba_sha256": "f671e8c1023093cc754d9db7b0b9b8664b394750a71728e64a619cc03d119aa4",
+    "donor_group": 1050,
+    "donor_number": 19
+  },
+  {
+    "group": 8630,
+    "number": 20,
+    "file": "assets/effects/8630_20.png",
+    "axis": [
+      195,
+      225
+    ],
+    "rgba_sha256": "508698f116e24345e48a6f53c23d1cbb644edc54dc8b40ef124b925fd3becb3e",
+    "donor_group": 1050,
+    "donor_number": 20
+  },
+  {
+    "group": 8640,
+    "number": 0,
+    "file": "assets/effects/8640_0.png",
+    "axis": [
+      30,
+      31
+    ],
+    "rgba_sha256": "ca830ba4e33e286adf48a66161ad201ab6f34d602b10e3d15ed8ce6cca4cd40d",
+    "donor_group": 1063,
+    "donor_number": 0
+  },
+  {
+    "group": 8640,
+    "number": 1,
+    "file": "assets/effects/8640_1.png",
+    "axis": [
+      57,
+      58
+    ],
+    "rgba_sha256": "1987d64a50b5178dbf4699afa191efb709b2aba74daff589243514185ee9baf5",
+    "donor_group": 1063,
+    "donor_number": 1
+  },
+  {
+    "group": 8640,
+    "number": 2,
+    "file": "assets/effects/8640_2.png",
+    "axis": [
+      78,
+      80
+    ],
+    "rgba_sha256": "570bf78871b886a2dcc3c5b1877eed8bce1566c69a6b537f1599359d3aabcbe9",
+    "donor_group": 1063,
+    "donor_number": 2
+  },
+  {
+    "group": 8640,
+    "number": 3,
+    "file": "assets/effects/8640_3.png",
+    "axis": [
+      95,
+      88
+    ],
+    "rgba_sha256": "d439220baac69c797e92194ff91702aab7a37ad4d071f49b36e470f9ae0118b7",
+    "donor_group": 1063,
+    "donor_number": 3
+  },
+  {
+    "group": 8640,
+    "number": 4,
+    "file": "assets/effects/8640_4.png",
+    "axis": [
+      96,
+      100
+    ],
+    "rgba_sha256": "a956462b84b1b018b6080eefa8f01fcee52d7aa79d0550b4e09ebd1ffc2ba427",
+    "donor_group": 1063,
+    "donor_number": 4
+  },
+  {
+    "group": 8640,
+    "number": 5,
+    "file": "assets/effects/8640_5.png",
+    "axis": [
+      108,
+      100
+    ],
+    "rgba_sha256": "4f525c5a855994ce33689f5cea1af231d4f8932bffde82113ebf5abf6d8ddd4e",
+    "donor_group": 1063,
+    "donor_number": 5
+  },
+  {
+    "group": 8640,
+    "number": 6,
+    "file": "assets/effects/8640_6.png",
+    "axis": [
+      112,
+      108
+    ],
+    "rgba_sha256": "06d5059ab5a043376499bf3308066672bbd890eda86c2ca7c3697926e2121386",
+    "donor_group": 1063,
+    "donor_number": 6
+  },
+  {
+    "group": 8640,
+    "number": 7,
+    "file": "assets/effects/8640_7.png",
+    "axis": [
+      107,
+      109
+    ],
+    "rgba_sha256": "dea67120abd68b6a2ea62c31758831f38851fb80603793ec4fe35f8ff607022f",
+    "donor_group": 1063,
+    "donor_number": 7
+  },
+  {
+    "group": 8640,
+    "number": 8,
+    "file": "assets/effects/8640_8.png",
+    "axis": [
+      117,
+      113
+    ],
+    "rgba_sha256": "155e2e387503bc8c44172a63cb30d892bdbe953fc3a13a41646af171281438db",
+    "donor_group": 1063,
+    "donor_number": 8
+  },
+  {
+    "group": 8650,
+    "number": 0,
+    "file": "assets/effects/8650_0.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "87a89ef3216181a5769b6a6d533a9a38ccddc4b40c5f7762ca4f67b4193efe47",
+    "donor_group": 2007,
+    "donor_number": 0
+  },
+  {
+    "group": 8650,
+    "number": 1,
+    "file": "assets/effects/8650_1.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "17ce3c2ccc2961b1a935b7835bf018754d0a4bfd92d80a4347bb1c7e5162b392",
+    "donor_group": 2007,
+    "donor_number": 1
+  },
+  {
+    "group": 8650,
+    "number": 2,
+    "file": "assets/effects/8650_2.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "c3db6d4915ca1e7dd511d67a63d124d92170a6e9b5150fa082c0fe9d7bacd479",
+    "donor_group": 2007,
+    "donor_number": 2
+  },
+  {
+    "group": 8650,
+    "number": 3,
+    "file": "assets/effects/8650_3.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "d4a1e67d01ee7778da90718d57c6c0e17fb950176dfa3feb343f51ebaf0bddb7",
+    "donor_group": 2007,
+    "donor_number": 3
+  },
+  {
+    "group": 8650,
+    "number": 4,
+    "file": "assets/effects/8650_4.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "50ef369df3b68a6b53e59e207d2d5ea5835ede8a634cd0678b6dd12e9bc65662",
+    "donor_group": 2007,
+    "donor_number": 4
+  },
+  {
+    "group": 8650,
+    "number": 5,
+    "file": "assets/effects/8650_5.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "9279c9d3a8902ced8a27c5e17b39282e3f114e42ac174b859d75c18f7d7cd876",
+    "donor_group": 2007,
+    "donor_number": 5
+  },
+  {
+    "group": 8650,
+    "number": 6,
+    "file": "assets/effects/8650_6.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "0ea78b0a9ed02076cf6056801784cdc8eb91ff6eda204e769296cecc20e33d4e",
+    "donor_group": 2007,
+    "donor_number": 6
+  },
+  {
+    "group": 8650,
+    "number": 7,
+    "file": "assets/effects/8650_7.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "6bc98a1970ed9b1059d3c49f5e84aa4381b45ac885bb104ada0ef71069d4a64c",
+    "donor_group": 2007,
+    "donor_number": 7
+  },
+  {
+    "group": 8650,
+    "number": 8,
+    "file": "assets/effects/8650_8.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "9b2d448f5d8acfa843e805d84748b61e3fed6d3c4996e7155854d5d751071aad",
+    "donor_group": 2007,
+    "donor_number": 8
+  },
+  {
+    "group": 8650,
+    "number": 9,
+    "file": "assets/effects/8650_9.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "04a9278579c95a4e513f6fdac3204eeac13954cc6593c7b8c943643d4350ccad",
+    "donor_group": 2007,
+    "donor_number": 9
+  },
+  {
+    "group": 8650,
+    "number": 10,
+    "file": "assets/effects/8650_10.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "c5728c795800782227a92ff6f12ebd1a67071ab66e571d5851c864e2eb847209",
+    "donor_group": 2007,
+    "donor_number": 10
+  },
+  {
+    "group": 8650,
+    "number": 11,
+    "file": "assets/effects/8650_11.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "ef66d858c906d211b69cac2b5e62b7dfe171300b7444a8e2d4e7f3e0960dc70a",
+    "donor_group": 2007,
+    "donor_number": 11
+  },
+  {
+    "group": 8650,
+    "number": 12,
+    "file": "assets/effects/8650_12.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "86325ecc044a10a8ee25c097e23c0ea9f6fb58611d77523dae60c0461164615f",
+    "donor_group": 2007,
+    "donor_number": 12
+  },
+  {
+    "group": 8650,
+    "number": 13,
+    "file": "assets/effects/8650_13.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "abbc4ac3effe7ef56560d269258187808fb654c03645d2aa092f14d813b2b0ea",
+    "donor_group": 2007,
+    "donor_number": 13
+  },
+  {
+    "group": 8650,
+    "number": 14,
+    "file": "assets/effects/8650_14.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "d7420672991d4421aa7fe5978ba1182e1c3724551ffe43dc397dd0c8d003eb8c",
+    "donor_group": 2007,
+    "donor_number": 14
+  },
+  {
+    "group": 8650,
+    "number": 15,
+    "file": "assets/effects/8650_15.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "97e196394aeab844ceafb2d0b72edc2278e78c4672581e4d14b32f2e6ffe4c93",
+    "donor_group": 2007,
+    "donor_number": 15
+  },
+  {
+    "group": 8650,
+    "number": 16,
+    "file": "assets/effects/8650_16.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "160ea780e226fe723024975ded4ac551125c0dcf51aa5c3b6d02186d9474d87f",
+    "donor_group": 2007,
+    "donor_number": 16
+  },
+  {
+    "group": 8650,
+    "number": 17,
+    "file": "assets/effects/8650_17.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "163f00b954ef76224854f8deb1cb46f63573710a4b4575e950d6036ec5435c90",
+    "donor_group": 2007,
+    "donor_number": 17
+  },
+  {
+    "group": 8650,
+    "number": 18,
+    "file": "assets/effects/8650_18.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "9982a5408ef257e529140ee0dd17bead8a1cf7e3cf14bf0f5031913d2122c26b",
+    "donor_group": 2007,
+    "donor_number": 18
+  },
+  {
+    "group": 8650,
+    "number": 19,
+    "file": "assets/effects/8650_19.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "ae6fb2d6d8a5970b2036fbc7996f1b8c51af21e5a6d4feebf539bcb3134b3729",
+    "donor_group": 2007,
+    "donor_number": 19
+  },
+  {
+    "group": 8650,
+    "number": 20,
+    "file": "assets/effects/8650_20.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "5d778cc4e842d957a11e9adbce008e73267293ebd90a2bcddffde3864dab7ff0",
+    "donor_group": 2007,
+    "donor_number": 20
+  },
+  {
+    "group": 8650,
+    "number": 21,
+    "file": "assets/effects/8650_21.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "0c00b99ed620d53c6ccfb7609ed9638fca34acd67284100d517354b544084ee1",
+    "donor_group": 2007,
+    "donor_number": 21
+  },
+  {
+    "group": 8650,
+    "number": 22,
+    "file": "assets/effects/8650_22.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "80cc49c4d892210ee667e510baad0d531e55898b05cd3de6c26a532062d86812",
+    "donor_group": 2007,
+    "donor_number": 22
+  },
+  {
+    "group": 8650,
+    "number": 23,
+    "file": "assets/effects/8650_23.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "464b3293b42fc92ab9c6705fb2174313c39415f3f63602a31caa2345d97ad5ae",
+    "donor_group": 2007,
+    "donor_number": 23
+  },
+  {
+    "group": 8650,
+    "number": 24,
+    "file": "assets/effects/8650_24.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "d29d9fcd7d38824931feae97ab1ba44edeb831a4e05d4ae23d4a4d0ca4e269cb",
+    "donor_group": 2007,
+    "donor_number": 24
+  },
+  {
+    "group": 8650,
+    "number": 25,
+    "file": "assets/effects/8650_25.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "27189324104e1662fc7e383bd3dd64d95e7eaab379a3efe7447e539deb0a7b85",
+    "donor_group": 2007,
+    "donor_number": 25
+  },
+  {
+    "group": 8650,
+    "number": 26,
+    "file": "assets/effects/8650_26.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "bb111e53aac4d1cc781b4c488aa1129bbee3cc8ba40963780d9a23bf63c001f2",
+    "donor_group": 2007,
+    "donor_number": 26
+  },
+  {
+    "group": 8650,
+    "number": 27,
+    "file": "assets/effects/8650_27.png",
+    "axis": [
+      49,
+      46
+    ],
+    "rgba_sha256": "0f330fd0d5569e17081281252674501c12a850d9f0b6b2c914c7cb2337d97485",
+    "donor_group": 2007,
+    "donor_number": 27
+  },
+  {
+    "group": 8660,
+    "number": 0,
+    "file": "assets/effects/8660_0.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "fa66bd2ba2f2e314aa801d84fd1691957fcec6a5c1cbb050095dcb70c6ea87ef",
+    "donor_group": 9012,
+    "donor_number": 0
+  },
+  {
+    "group": 8660,
+    "number": 1,
+    "file": "assets/effects/8660_1.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "efdbc8b6c477f3d15cd43aff90cedc6cdbdec4682f53b00beef588b422e565d5",
+    "donor_group": 9012,
+    "donor_number": 1
+  },
+  {
+    "group": 8660,
+    "number": 2,
+    "file": "assets/effects/8660_2.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "5e88e1896e804033667a98bc50fbf7a296d06b7b777d06a1cb9e3cc320bd96dc",
+    "donor_group": 9012,
+    "donor_number": 2
+  },
+  {
+    "group": 8660,
+    "number": 3,
+    "file": "assets/effects/8660_3.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "5deeec1fa3e3122754c699a6f3074ac5331ca0f9f7784387be3182d7593b1e70",
+    "donor_group": 9012,
+    "donor_number": 3
+  },
+  {
+    "group": 8660,
+    "number": 4,
+    "file": "assets/effects/8660_4.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "f1b6134da428d8c7cd0c342a33de5e7cabf5707ee11be076b98056fddcc75311",
+    "donor_group": 9012,
+    "donor_number": 4
+  },
+  {
+    "group": 8660,
+    "number": 5,
+    "file": "assets/effects/8660_5.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "335137b98b65f0e62e52e612ad6c10e616a0b103bf562e73d5ce56acb2996a0c",
+    "donor_group": 9012,
+    "donor_number": 5
+  },
+  {
+    "group": 8660,
+    "number": 6,
+    "file": "assets/effects/8660_6.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "73474081adf62b364f30cde1da6ea419388867176d8416ac9f1d82b962c12efd",
+    "donor_group": 9012,
+    "donor_number": 6
+  },
+  {
+    "group": 8660,
+    "number": 7,
+    "file": "assets/effects/8660_7.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "176eb634de8cef71b18a7da53eae747a50206a63e8cbf9a357295e1b0edf1703",
+    "donor_group": 9012,
+    "donor_number": 7
+  },
+  {
+    "group": 8660,
+    "number": 8,
+    "file": "assets/effects/8660_8.png",
+    "axis": [
+      128,
+      256
+    ],
+    "rgba_sha256": "084498969c3f34bcdd8c11ef4a0b562e16857fd35dab8b3c1319072b80131211",
+    "donor_group": 9012,
+    "donor_number": 8
+  },
+  {
+    "group": 8670,
+    "number": 0,
+    "file": "assets/effects/8670_0.png",
+    "axis": [
+      132,
+      -133
+    ],
+    "rgba_sha256": "20ed4375d607374813eb47401074ef538487085f64e0130a22a019d613aa68e2",
+    "donor_group": 9010,
+    "donor_number": 0
+  },
+  {
+    "group": 8670,
+    "number": 1,
+    "file": "assets/effects/8670_1.png",
+    "axis": [
+      170,
+      -121
+    ],
+    "rgba_sha256": "15cb1fe525b23bdf08c2888a062db73435f13348da0dfd799e120539ea20fe7c",
+    "donor_group": 9010,
+    "donor_number": 1
+  },
+  {
+    "group": 8670,
+    "number": 2,
+    "file": "assets/effects/8670_2.png",
+    "axis": [
+      205,
+      -110
+    ],
+    "rgba_sha256": "76529b9c57fc0edf25cb364a7565092120e2be1448ebe002163ccaa2d733e10f",
+    "donor_group": 9010,
+    "donor_number": 2
+  },
+  {
+    "group": 8670,
+    "number": 3,
+    "file": "assets/effects/8670_3.png",
+    "axis": [
+      239,
+      -103
+    ],
+    "rgba_sha256": "b266ed0beb1bacc7489c501124d1f5ab34b1a6718427bdd50e1e04c125e0c649",
+    "donor_group": 9010,
+    "donor_number": 3
+  },
+  {
+    "group": 8670,
+    "number": 4,
+    "file": "assets/effects/8670_4.png",
+    "axis": [
+      249,
+      -100
+    ],
+    "rgba_sha256": "45db90f17fb29b38ea611e059882b2bbd3d1c3975c0feeba2ce04b9de4eea57b",
+    "donor_group": 9010,
+    "donor_number": 4
+  },
+  {
+    "group": 8670,
+    "number": 5,
+    "file": "assets/effects/8670_5.png",
+    "axis": [
+      257,
+      -99
+    ],
+    "rgba_sha256": "14ac963ecee7ebe93fe47b0e2469c7494d8abf5d5ff071256e02282bc4d74b7a",
+    "donor_group": 9010,
+    "donor_number": 5
+  },
+  {
+    "group": 8670,
+    "number": 6,
+    "file": "assets/effects/8670_6.png",
+    "axis": [
+      268,
+      -97
+    ],
+    "rgba_sha256": "710cdbcb62ea6995f93693b17f4fee4ade185314854eee3aa1e522cda73885fc",
+    "donor_group": 9010,
+    "donor_number": 6
+  },
+  {
+    "group": 8670,
+    "number": 7,
+    "file": "assets/effects/8670_7.png",
+    "axis": [
+      277,
+      -95
+    ],
+    "rgba_sha256": "1b5f9642752f3a3ca043c2d65c6fd50990946de467b37aaaa14d90f31763a16f",
+    "donor_group": 9010,
+    "donor_number": 7
+  },
+  {
+    "group": 8670,
+    "number": 8,
+    "file": "assets/effects/8670_8.png",
+    "axis": [
+      286,
+      -94
+    ],
+    "rgba_sha256": "d29c334ded46ff85195881b3c5c9d849aec77cf9e717a2ba7e508d2bf28da4c4",
+    "donor_group": 9010,
+    "donor_number": 8
+  },
+  {
+    "group": 8670,
+    "number": 9,
+    "file": "assets/effects/8670_9.png",
+    "axis": [
+      291,
+      -92
+    ],
+    "rgba_sha256": "2c63ad291615a259938f4aff569ef9a4612db52f8513b8a40cdc37d6d892128e",
+    "donor_group": 9010,
+    "donor_number": 9
+  },
+  {
+    "group": 8670,
+    "number": 10,
+    "file": "assets/effects/8670_10.png",
+    "axis": [
+      294,
+      -92
+    ],
+    "rgba_sha256": "53ea13c1b4f44c9e09dd970bdef06ab97df3d409a5cd2cffe5e307cfac3c1cdc",
+    "donor_group": 9010,
+    "donor_number": 10
+  },
+  {
+    "group": 8680,
+    "number": 0,
+    "file": "assets/effects/8680_0.png",
+    "axis": [
+      25,
+      42
+    ],
+    "rgba_sha256": "fb4ec66e48c32bf32e0442840d54452339f8d2bdc9134ccc2db284d5eb13b1aa",
+    "donor_group": 1550,
+    "donor_number": 0
+  },
+  {
+    "group": 8680,
+    "number": 1,
+    "file": "assets/effects/8680_1.png",
+    "axis": [
+      16,
+      30
+    ],
+    "rgba_sha256": "5288e9a68edeb5352953b553e53bd3f9e0babce38e2cf8ebe95ce77dfb622d9a",
+    "donor_group": 1550,
+    "donor_number": 1
+  },
+  {
+    "group": 8680,
+    "number": 2,
+    "file": "assets/effects/8680_2.png",
+    "axis": [
+      31,
+      24
+    ],
+    "rgba_sha256": "4a4258f059bc878ce974b8bb9cbb0846b614edd21eb90992936b0b648711fccc",
+    "donor_group": 1550,
+    "donor_number": 2
+  },
+  {
+    "group": 8680,
+    "number": 3,
+    "file": "assets/effects/8680_3.png",
+    "axis": [
+      32,
+      49
+    ],
+    "rgba_sha256": "2fae187e56a3772e8496ac22044504e9a16835c1acde3e928457477b9ebc1580",
+    "donor_group": 1550,
+    "donor_number": 3
+  },
+  {
+    "group": 8680,
+    "number": 4,
+    "file": "assets/effects/8680_4.png",
+    "axis": [
+      28,
+      59
+    ],
+    "rgba_sha256": "ac056b2de8fd54abcbb86bd102cc6576abfbf8d5ccac606b5e399f2de3a97701",
+    "donor_group": 1550,
+    "donor_number": 4
+  },
+  {
+    "group": 8680,
+    "number": 5,
+    "file": "assets/effects/8680_5.png",
+    "axis": [
+      24,
+      63
+    ],
+    "rgba_sha256": "13de8fb96fc223a0c4b45ef4bffb4229d5a65fb7da06e94bdf7ab9ffffd25830",
+    "donor_group": 1550,
+    "donor_number": 5
+  },
+  {
+    "group": 8680,
+    "number": 6,
+    "file": "assets/effects/8680_6.png",
+    "axis": [
+      25,
+      63
+    ],
+    "rgba_sha256": "e425387da42073c06fc8b692adcc2b2dbdb3005fde708afb290c34fea69e19d7",
+    "donor_group": 1550,
+    "donor_number": 6
+  },
+  {
+    "group": 8700,
+    "number": 0,
+    "file": "assets/effects/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 1,
+    "file": "assets/effects/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 2,
+    "file": "assets/effects/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 3,
+    "file": "assets/effects/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 0,
+    "file": "assets/effects/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 1,
+    "file": "assets/effects/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 2,
+    "file": "assets/effects/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 3,
+    "file": "assets/effects/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 0,
+    "file": "assets/effects/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 1,
+    "file": "assets/effects/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 2,
+    "file": "assets/effects/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 3,
+    "file": "assets/effects/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 4,
+    "file": "assets/effects/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 5,
+    "file": "assets/effects/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 0,
+    "file": "assets/effects/8820_0.png",
+    "axis": [
+      72,
+      81
+    ],
+    "rgba_sha256": "f8bae3102beda2da5aa002bf5444a110df356dc0896cb6bf4308e5906342ae6e",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 1,
+    "file": "assets/effects/8820_1.png",
+    "axis": [
+      88,
+      98
+    ],
+    "rgba_sha256": "56ea9442e99ffa71c689f7b7d36c2db76340550eedadfd69c71185042a2ee6e5",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 2,
+    "file": "assets/effects/8820_2.png",
+    "axis": [
+      104,
+      107
+    ],
+    "rgba_sha256": "78d325c141ef77924c46cbaabc5763055088e8a67931a0ce558bab5fe74e85cc",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 3,
+    "file": "assets/effects/8820_3.png",
+    "axis": [
+      108,
+      114
+    ],
+    "rgba_sha256": "549dcd81dd39c4ab09dbfa4981a5baa601370241318e385081b704b3dfcdc8ff",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 4,
+    "file": "assets/effects/8820_4.png",
+    "axis": [
+      95,
+      118
+    ],
+    "rgba_sha256": "aeca10cd6ff7ef576027166c368debb88fc1bd119f4b1d678cd9143f0ee38be4",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 0,
+    "file": "assets/effects/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 1,
+    "file": "assets/effects/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 2,
+    "file": "assets/effects/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 3,
+    "file": "assets/effects/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 4,
+    "file": "assets/effects/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 5,
+    "file": "assets/effects/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 6,
+    "file": "assets/effects/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 7,
+    "file": "assets/effects/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 8,
+    "file": "assets/effects/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 9,
+    "file": "assets/effects/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 10,
+    "file": "assets/effects/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 11,
+    "file": "assets/effects/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 12,
+    "file": "assets/effects/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 13,
+    "file": "assets/effects/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 14,
+    "file": "assets/effects/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 15,
+    "file": "assets/effects/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 16,
+    "file": "assets/effects/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 17,
+    "file": "assets/effects/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 18,
+    "file": "assets/effects/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 19,
+    "file": "assets/effects/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 20,
+    "file": "assets/effects/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 21,
+    "file": "assets/effects/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 22,
+    "file": "assets/effects/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 23,
+    "file": "assets/effects/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 0,
+    "file": "assets/effects/8910_0.png",
+    "axis": [
+      117,
+      17
+    ],
+    "rgba_sha256": "f7c0cbc33ae085abd1aefe6fcbc2484b1146cde28f50c44ba48cdc6f5e7330b3",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 1,
+    "file": "assets/effects/8910_1.png",
+    "axis": [
+      165,
+      24
+    ],
+    "rgba_sha256": "72e6a61e5f9fe501f4eeb4e45bac32771fdf87bae2d9912117a9547f80bdaf06",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 2,
+    "file": "assets/effects/8910_2.png",
+    "axis": [
+      172,
+      23
+    ],
+    "rgba_sha256": "e94160a1090849e929c4b3a749089394995ca60aecf9571c0e43ea164b37fdce",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 3,
+    "file": "assets/effects/8910_3.png",
+    "axis": [
+      185,
+      25
+    ],
+    "rgba_sha256": "db7b0a5381d01bcb86fabc83c6d37dd9c38502d19d8939ef6a608309bcad9a37",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 4,
+    "file": "assets/effects/8910_4.png",
+    "axis": [
+      185,
+      25
+    ],
+    "rgba_sha256": "0358ce4d539f7d30aeb1255cb7bf06dfbcfc7e6c72497dc681e0705bd087b8a9",
+    "shared_project_effect": true
+  },
+  {
+    "group": 9000,
+    "number": 0,
+    "file": "assets/effects/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "caf78caf947aab78f349601a72ec1a983182ca99dbf5087d5f69cb6e17772e4c"
+  },
+  {
+    "group": 9000,
+    "number": 1,
+    "file": "assets/effects/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "4feccf998579fa60ef5493ba56730254b716785c3a58ba1943cc8512845f0098"
+  }
+]

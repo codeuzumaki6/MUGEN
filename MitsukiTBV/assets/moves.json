@@ -1,0 +1,119 @@
+{
+  "moves": [
+    [
+      "Brazos",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Serpientes",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Raiton",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "Fuuton",
+      "b",
+      "B",
+      1030,
+      450
+    ],
+    [
+      "Ascenso",
+      "c",
+      "F",
+      1040,
+      450
+    ],
+    [
+      "Cerco",
+      "c",
+      "B",
+      1050,
+      600
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Lanzador",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Atadura",
+      "c",
+      "D",
+      1420,
+      350
+    ],
+    [
+      "SerpienteRapida",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Asalto",
+      "z",
+      "N",
+      1210,
+      350
+    ],
+    [
+      "PalmaRaiton",
+      "y",
+      "D",
+      1430,
+      550
+    ],
+    [
+      "Sustitucion",
+      "z",
+      "D",
+      1440,
+      400
+    ]
+  ],
+  "base_states": [
+    1000,
+    1010,
+    1020,
+    1030,
+    1040,
+    1050,
+    1400,
+    1410,
+    1420,
+    1200,
+    1210,
+    1430,
+    1440
+  ],
+  "sage_offset": 10000,
+  "sage_ticks": 1200,
+  "sage_cost": 1500,
+  "activation_requires": 3000,
+  "ultimate_cost": 3000,
+  "ultimate_budget_base": "min(360,36% opponent max life)",
+  "ultimate_budget_sage": "min(450,45% opponent max life)",
+  "voices": "CobraG6 supplied SND group 0, unchanged WAV payloads",
+  "video": "User supplied Vaydra Senki gameplay, own MUGEN adaptation"
+}
