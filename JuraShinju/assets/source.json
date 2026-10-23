@@ -5,8 +5,14 @@
   "body_entries": 36,
   "original_body_redrawn": false,
   "original_body_ai_generated": false,
-  "supplemental_body_entries": 5,
-  "supplemental_art": "AI-generated seated pose, four book poses, root throne and four cocoon phases; see supplemental.json and source_material/Jura_generated",
+  "supplemental_body_entries": 1,
+  "supplemental_art": "AI-generated seated pose, four book-only props, root throne and four cocoon phases; victory body uses original group-0 poses only",
+  "victory_body_redrawn": false,
+  "victory_original_poses": [
+    24,
+    19,
+    20
+  ],
   "eye_color": "Normal Rinnegan: pale violet, only original red iris pixels replaced",
   "eye_palette": [
     {

@@ -72,16 +72,18 @@ def supplemental(records):
         records.append((g,n,path,axis));extra.append(dict(group=g,number=n,file=str(path.relative_to(CHAR)),axis=axis,role=role,ai_generated=True))
     put(8940,0,throne,(throne.width//2,throne.height-1),'Root throne, separate from caster')
     put(2,0,canvas,(36,70),'Seated Jura, crossed arms')
-    sheet=Image.open(generated/'book_and_regeneration.png').convert('RGBA');books=[];pods=[]
+    sheet=Image.open(generated/'book_and_regeneration.png').convert('RGBA');pods=[]
     for col in range(4):
-        books.append(clean_cut(sheet,(col*sheet.width//4,0,(col+1)*sheet.width//4,sheet.height//2)))
         pods.append(clean_cut(sheet,(col*sheet.width//4,sheet.height//2,(col+1)*sheet.width//4,sheet.height)))
-    scale=84/max(im.height for im in books)
+    # The winner is always a group-0 original body pose. Group 3 contains
+    # only the separate prop; the rejected generated bodies are never packed.
+    sheet=Image.open(generated/'book_props.png').convert('RGBA')
+    books=[clean_cut(sheet,(i*sheet.width//4,0,(i+1)*sheet.width//4,sheet.height)) for i in range(4)]
+    scale=min(18/max(im.width for im in books),18/max(im.height for im in books))
     for n,im in enumerate(books):
         im=im.resize((round(im.width*scale),round(im.height*scale)),Image.Resampling.NEAREST)
-        a=np.array(im);yy,xx=np.where(a[-7:,:,3]>0);anchor=round(float(np.mean(xx)))
-        canvas=Image.new('RGBA',(96,96));canvas.alpha_composite(im,(48-anchor,94-im.height))
-        put(3,n,canvas,(48,94),['Reach into cloak','Draw turquoise book','Read open book','Turn a page'][n])
+        canvas=Image.new('RGBA',(32,24));canvas.alpha_composite(im,((32-im.width)//2,18-im.height))
+        put(3,n,canvas,(16,18),['Closed book prop','Book rotating open','Open book prop','Turning page prop'][n])
     scale=110/max(im.height for im in pods)
     for n,im in enumerate(pods):
         im=im.resize((round(im.width*scale),round(im.height*scale)),Image.Resampling.NEAREST)
@@ -144,7 +146,7 @@ def main():
         nxt=off+16+len(payload) if i+1<len(samples) else 0;parts.append(struct.pack('<IIII',nxt,len(payload),g,n)+payload);off=nxt;(A/'sound'/f'{g}_{n}.wav').write_bytes(payload)
     (CHAR/'JuraShinju.snd').write_bytes(bytes(header)+b''.join(parts))
     (A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,original_body_redrawn=False,original_body_ai_generated=False,supplemental_body_entries=5,supplemental_art='AI-generated seated pose, four book poses, root throne and four cocoon phases; see supplemental.json and source_material/Jura_generated',eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
+    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,original_body_redrawn=False,original_body_ai_generated=False,supplemental_body_entries=1,supplemental_art='AI-generated seated pose, four book-only props, root throne and four cocoon phases; victory body uses original group-0 poses only',victory_body_redrawn=False,victory_original_poses=[24,19,20],eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
     board=Image.new('RGB',(1200,720),(28,31,40));d=ImageDraw.Draw(board)
     for i,m in enumerate(manifest):
         im=Image.open(CHAR/m['file']);im=im.resize((im.width*2,im.height*2),Image.Resampling.NEAREST);im.thumbnail((190,150),Image.Resampling.NEAREST);x=i%6*200;y=i//6*120;im.thumbnail((190,96),Image.Resampling.NEAREST);board.paste(im,(x+(200-im.width)//2,y),im);d.text((x+3,y+100),f"{m['number']}: {m['role']}",fill='white')

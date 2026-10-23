@@ -1,0 +1,32 @@
+{
+  "previous_commit": "7bdf90b35e744483b8c7b6c784036a126ad45d98",
+  "previous_runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
+  "runtime_sha256": "409fd7b744f67c9118e4d965607519055964e88f6fe1f66970a7065e45700a5b",
+  "only_victory_presentation_changed": true,
+  "combat_states_and_animations_unchanged": true,
+  "commands_sounds_identity_common_unchanged": true,
+  "non_book_sprites_pixel_identical": 189,
+  "original_body_sprites_pixel_identical": 36,
+  "victory_body_poses": [
+    [
+      0,
+      19
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      0,
+      24
+    ]
+  ],
+  "victory_body_redrawn": false,
+  "book_only_sprite_group": 3,
+  "book_prop_sprite_count": 4,
+  "book_helper_is_visual_only": true,
+  "victory_facings_tested": [
+    1,
+    -1
+  ]
+}

@@ -3932,6 +3932,18 @@ type = Null
 trigger1 = 1
 
 
+[State 180, Book prop held by original sprite hands]
+type = Helper
+trigger1 = Time=8
+helpertype=Normal
+name="Libro de Jura"
+ID=9570
+stateno=9570
+postype=P1
+pos=23,-48
+ownpal=1
+keyctrl=0
+
 [State 180, Draw and open the book]
 type = PlaySnd
 trigger1=Time=20
@@ -3970,6 +3982,40 @@ type = ChangeState
 trigger1 = Time>=24
 value = 0
 ctrl = 1
+
+[Statedef 9570]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+anim = 8960
+velset = 0,0
+
+[State 9570, Book follows original palm]
+type = BindToRoot
+trigger1 = 1
+time=1
+pos=23,-48
+
+[State 9570, Book is a visual prop]
+type = PlayerPush
+trigger1 = 1
+value=0
+
+[State 9570, Book has no shadow]
+type = AssertSpecial
+trigger1 = 1
+flag=NoShadow
+
+[State 9570, Book in front of the palm]
+type = SprPriority
+trigger1 = 1
+value=3
+
+[State 9570, Remove book when victory ends]
+type = DestroySelf
+trigger1 = Root,StateNo!=180
+
 
 [Statedef 500]
 type = S

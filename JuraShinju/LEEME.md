@@ -24,4 +24,4 @@ Formato MUGEN 1.1, SFF 2.0.1, estados comunes incluidos. Se comprueban entradas 
 
 No sustituye los personajes anteriores. Los videos de demostración muestran este personaje ejecutándose en el motor, con el sonido capturado del juego.
 
-En esta revisión RB y las bijūdamas apuntan al cuerpo de objetivos pequeños y agachados; abajo + RB usa una postura erguida y tres disparos. La victoria tiene cuatro poses nuevas de sacar, abrir y leer un libro.
+En esta revisión RB y las bijūdamas apuntan al cuerpo de objetivos pequeños y agachados; abajo + RB usa una postura erguida y tres disparos. La victoria conserva las poses originales de Jura: el libro se anima por separado sobre su mano. No se redibuja la cara ni el cuerpo para esa escena.

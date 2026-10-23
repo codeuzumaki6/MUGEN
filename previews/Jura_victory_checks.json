@@ -1,15 +1,26 @@
 {
-  "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-  "case": "actual KO, then book victory",
+  "runtime_sha256": "409fd7b744f67c9118e4d965607519055964e88f6fe1f66970a7065e45700a5b",
+  "case": "actual KO, original-body book victory",
+  "facing": 1,
   "cases": 1,
   "real_ko": true,
   "round_state": 4,
   "victory_state": 180,
-  "book_poses": [
+  "original_body_poses": [
+    [
+      0,
+      19
+    ],
+    [
+      0,
+      20
+    ],
     [
       0,
       24
-    ],
+    ]
+  ],
+  "book_poses": [
     [
       3,
       0
@@ -27,11 +38,12 @@
       3
     ]
   ],
+  "book_helpers": 1,
   "reading_loop_ticks": 257.0,
-  "video_sha256": "696310e93ec7bc2276cd5b4ad9c2ae57754eb7ebf7f27073ddc33a6619747317",
+  "video_sha256": "f8520631c51b30bdc603e08b9a440cbc13829171de8e495b20bc6cd28c8549a4",
   "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-  "book_sound_correlation": 0.951886800127393,
-  "duration": 4.316666666666666,
-  "frames": 58,
+  "book_sound_correlation": 0.9518868001273929,
+  "duration": 4.383333333333334,
+  "frames": 62,
   "failures": []
 }

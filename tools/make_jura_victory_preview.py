@@ -7,6 +7,7 @@ from scipy.signal import correlate,find_peaks,resample_poly
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews'
 ENGINE=Path(sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly').resolve()
+FACE=int(os.environ.get('JURA_VICTORY_FACING','1'));assert FACE in [-1,1]
 names=['JuraShinju.def','JuraShinju.sff','JuraShinju.snd','JuraShinju.air','JuraShinju.cns','JuraShinju.cmd','JuraShinju_common.cns']
 runtime=hashlib.sha256(b''.join((ROOT/'JuraShinju'/n).read_bytes() for n in names)).hexdigest()
 char=ENGINE/'chars/JuraVictory';dummy=ENGINE/'chars/JuraVictoryDummy'
@@ -19,7 +20,9 @@ def ctl(kind,when,params):
 p1=ctl('VarAdd','1','v=58\nvalue=1')
 p2=ctl('VarSet','NumEnemy>0','v=58\nvalue=EnemyNear,Var(58)')
 for side in [1,2]:
-    block=ctl('PosSet','Var(58)=1',f'x={-18 if side==1 else 18}\ny=0')
+    block=ctl('PosSet','Var(58)=1',f'x={(-18 if side==1 else 18)*FACE}\ny=0')
+    direction=FACE if side==1 else -FACE
+    block+=ctl('Turn',f'Var(58)=1 && Facing!={direction}','')
     block+=ctl('VelSet','Var(58)=1','x=0\ny=0')
     block+=ctl('LifeSet','Var(58)=1',f'value={1300 if side==1 else 24}')
     block+=ctl('ChangeState','Var(58)=1','value=0\nctrl=1')
@@ -43,7 +46,9 @@ hook.add('loop','jura_victory',function()
  seen=var(58);clock=clock+1
  local st=stateNo();local tm=time()-1;local rs=roundState();local g=spriteVar('group');local n=spriteVar('image')
  player(2);local hp=life();player(1)
- trace:write(clock..'\\t'..rs..'\\t'..st..'\\t'..tm..'\\t'..g..'\\t'..n..'\\t'..hp..'\\t'..screenPosX()..'\\n');trace:flush()
+ local book=numHelper(9570);local bg=-1;local bn=-1
+ if book>0 and helper(9570) then bg=spriteVar('group');bn=spriteVar('image');player(1) end
+ trace:write(clock..'\\t'..rs..'\\t'..st..'\\t'..tm..'\\t'..g..'\\t'..n..'\\t'..hp..'\\t'..screenPosX()..'\\t'..book..'\\t'..bg..'\\t'..bn..'\\n');trace:flush()
  if st==180 and tm==20 and tm~=lasttm then cues:write(clock..'\\n');cues:flush() end
  lasttm=tm
  if cap.pending~=nil then local png=io.open(FOLDER..string.format('Ikemen_GO%03d.png',cap.index),'rb');if png then png:close();images:write(cap.index..'\\t'..cap.pending..'\\n');images:flush();cap.index=cap.index+1;cap.pending=nil end end
@@ -63,8 +68,11 @@ end)
     rows=[list(map(float,line.split())) for line in (folder/'trace.tsv').read_text().splitlines()]
     wins=[r for r in rows if r[1]==4 and r[2]==180]
     poses={(int(r[4]),int(r[5])) for r in wins}
+    bookposes={(int(r[9]),int(r[10])) for r in wins if r[8]>0}
     assert wins and min(r[6] for r in rows)==0,'No real knockout and victory'
-    assert {(3,n) for n in range(4)}<=poses,('Book poses missing',poses)
+    assert poses=={(0,24),(0,19),(0,20)},('Victory substituted the original character body',poses)
+    assert {(3,n) for n in range(4)}<=bookposes,('Book prop phases missing',bookposes)
+    assert max(r[8] for r in rows)==1,'Book helper duplicated'
     assert max(r[3] for r in wins)>120,'Reading loop ended early'
     assert all(42<=r[7]<=278 for r in wins),'Winner outside viewport'
     frames=[tuple(map(int,line.split())) for line in (folder/'frames.tsv').read_text().splitlines()]
@@ -94,11 +102,11 @@ end)
         delta=frames[i+1][1]-tick if i+1<len(frames) else 4
         lines += [f"file '{png}'",'option framerate 60',f'duration {delta/60:.9f}']
     lines += [f"file '{png}'",'option framerate 60'];concat=folder/'frames.txt';concat.write_text('\n'.join(lines)+'\n')
-    caption=folder/'caption.txt';caption.write_text('VICTORIA | Jura saca el libro, lo abre y se queda leyendo tras ganar la ronda')
-    video=OUT/'Jura_victoria_motor.mp4'
+    caption=folder/'caption.txt';caption.write_text('VICTORIA | Cuerpo y cara de los sprites originales; libro animado en la mano')
+    video=OUT/('Jura_victoria_motor.mp4' if FACE==1 else 'Jura_victoria_izquierda_motor.mp4')
     subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat),'-i',str(actual),'-vf',f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={caption}:x=(w-tw)/2:y=690:fontsize=17:fontcolor=white','-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-t',str(duration),'-movflags','+faststart',str(video)],check=True)
     target=next(r[0] for r in wins if r[3]>50)
     frame=min(frames,key=lambda p:abs(p[1]-target));shutil.copy2(folder/f'Ikemen_GO{frame[0]:03d}.png',video.with_suffix('.png'))
-    report=dict(runtime_sha256=runtime,case='actual KO, then book victory',cases=1,real_ko=True,round_state=4,victory_state=180,book_poses=sorted([list(p) for p in poses]),reading_loop_ticks=max(r[3] for r in wins),video_sha256=hashlib.sha256(video.read_bytes()).hexdigest(),audio='Actual SDL stereo 44100Hz; no offline sound mix',book_sound_correlation=confidence,duration=duration,frames=len(frames),failures=[])
-    (OUT/'Jura_victory_checks.json').write_text(json.dumps(report,indent=2)+'\n')
-    print('PASS real KO, four book poses and reading loop;',round(duration,2),'seconds; actual paper sound correlation',round(confidence,3))
+    report=dict(runtime_sha256=runtime,case='actual KO, original-body book victory',facing=FACE,cases=1,real_ko=True,round_state=4,victory_state=180,original_body_poses=sorted([list(p) for p in poses]),book_poses=sorted([list(p) for p in bookposes]),book_helpers=1,reading_loop_ticks=max(r[3] for r in wins),video_sha256=hashlib.sha256(video.read_bytes()).hexdigest(),audio='Actual SDL stereo 44100Hz; no offline sound mix',book_sound_correlation=confidence,duration=duration,frames=len(frames),failures=[])
+    (OUT/('Jura_victory_checks.json' if FACE==1 else 'Jura_victory_left_checks.json')).write_text(json.dumps(report,indent=2)+'\n')
+    print('PASS real KO, original character body, four book prop phases, facing',FACE,';',round(duration,2),'seconds; actual paper sound correlation',round(confidence,3))

@@ -26,10 +26,10 @@
     "number": 0,
     "file": "assets/sprites/3_0.png",
     "axis": [
-      48,
-      94
+      16,
+      18
     ],
-    "role": "Reach into cloak",
+    "role": "Closed book prop",
     "ai_generated": true
   },
   {
@@ -37,10 +37,10 @@
     "number": 1,
     "file": "assets/sprites/3_1.png",
     "axis": [
-      48,
-      94
+      16,
+      18
     ],
-    "role": "Draw turquoise book",
+    "role": "Book rotating open",
     "ai_generated": true
   },
   {
@@ -48,10 +48,10 @@
     "number": 2,
     "file": "assets/sprites/3_2.png",
     "axis": [
-      48,
-      94
+      16,
+      18
     ],
-    "role": "Read open book",
+    "role": "Open book prop",
     "ai_generated": true
   },
   {
@@ -59,10 +59,10 @@
     "number": 3,
     "file": "assets/sprites/3_3.png",
     "axis": [
-      48,
-      94
+      16,
+      18
     ],
-    "role": "Turn a page",
+    "role": "Turning page prop",
     "ai_generated": true
   },
   {

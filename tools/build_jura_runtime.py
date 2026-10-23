@@ -133,7 +133,10 @@ def animations():
     for n in range(41,48):animation(n,[(34 if n<44 else 35,6)])
     animation(52,[(34,4),(33,3),(0,3)])
     for n in [170,190]:animation(n,[(0,8),(1,8),(2,8)],loop=n!=190)
-    posed_action(180,[(0,24,0,0,8),(3,0,0,0,12),(3,1,0,0,12),(3,2,0,0,10),(3,2,0,0,20),(3,3,0,0,20)],loop_at=4)
+    posed_action(180,[(0,24,0,0,8),(0,19,0,0,12),(0,20,0,0,12),(0,19,0,0,10),(0,19,0,0,20),(0,20,0,0,20)],loop_at=4)
+    # Move the prop up from the cloak while the original hands rise; then
+    # hold it at the palm. The character drawing is never replaced.
+    air.append('\n[Begin Action 8960]\n3,0,-7,20,3\n3,0,-5,14,3\n3,0,-2,7,3\n3,0,0,0,3\n3,1,0,0,12\n3,2,0,0,10\nLoopstart\n3,2,0,0,20\n3,3,0,0,20\n')
     animation(500,[(19,8),(20,8)],loop=True);animation(520,[(24,12),(0,60),(24,12),(0,12)])
     for n in [5000,5001,5002,5005,5006,5007,5010,5011,5012,5015,5016,5017,5020,5021,5022,5025,5026,5027,5030,5035,5040,5050,5051,5052,5060,5061,5062,5070,5080,5090,5200,5210]:animation(n,[(3,5),(4,5),(5,5)])
     for n in [5100,5110,5140,5150,5160,5170]:animation(n,[(8,6)])
@@ -243,9 +246,13 @@ def utility():
         s=state(n,n,physics='S')+c(n,'Round pose','Null','1')
         if n==190:s+=c(n,'Intro','AssertSpecial','Time<22','flag=Intro')+recover(n,'Time>=24')
         if n==180:
+            s+=c(180,'Book prop held by original sprite hands','Helper','Time=8','helpertype=Normal\nname="Libro de Jura"\nID=9570\nstateno=9570\npostype=P1\npos=23,-48\nownpal=1\nkeyctrl=0')
             s+=ctl(180,'Draw and open the book','PlaySnd','trigger1=Time=20\ntrigger2=Time=32','value=S1,44\nchannel=6\nvolumescale=75')
             s+=c(180,'Turn a page while reading','PlaySnd','Time>=64 && Time%80=64','value=S1,44\nchannel=6\nvolumescale=45')
         states.append(s)
+    s=state(9570,8960,physics='N')+c(9570,'Book follows original palm','BindToRoot','1','time=1\npos=23,-48')
+    s+=c(9570,'Book is a visual prop','PlayerPush','1','value=0')+c(9570,'Book has no shadow','AssertSpecial','1','flag=NoShadow')+c(9570,'Book in front of the palm','SprPriority','1','value=3')
+    s+=c(9570,'Remove book when victory ends','DestroySelf','Root,StateNo!=180','');states.append(s)
     s=state(500,500,physics='S')+c(500,'Charge real energy','PowerAdd','1','value=22')+c(500,'Charge hum','PlaySnd','Time=0','value=S1,4\nchannel=3\nloop=1')
     s+=c(500,'Animated green chakra','Helper','Time=0','helpertype=Normal\nname="Chakra del Juubi"\nID=9550\nstateno=9550\npostype=P1\npos=0,-44\nownpal=1\nkeyctrl=0')
     s+=c(500,'Pressure ring','Explod','Time%12=2','anim=8910\nID=9551\npostype=P1\npos=0,-1\nscale=.34,.25\nremovetime=-2\nsprpriority=-1\nownpal=1\nremoveongethit=1')

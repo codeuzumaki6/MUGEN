@@ -16,14 +16,22 @@ runtime=hashlib.sha256(b''.join((CHAR/n).read_bytes() for n in names)).hexdigest
 checkpoint=json.loads((OUT/'Jura_capture_checkpoint.json').read_text())
 exact_preview=checkpoint['runtime_sha256']==runtime
 recording_runtime=runtime
+book_only=False
+book_path=OUT/'Jura_book_fix_checks.json'
+if not exact_preview and book_path.exists():
+    book=json.loads(book_path.read_text())
+    if book['runtime_sha256']==runtime:
+        subprocess.run([sys.executable,str(ROOT/'tools/verify_jura_book_revision.py')],check=True)
+        assert book['previous_runtime_sha256']==checkpoint['runtime_sha256']
+        recording_runtime=checkpoint['runtime_sha256'];book_only=True
 namespace_path=OUT/'Jura_namespace_checks.json'
-if not exact_preview and namespace_path.exists():
+if not exact_preview and not book_only and namespace_path.exists():
     namespace=json.loads(namespace_path.read_text())
     assert namespace['runtime_sha256']==runtime,'Namespace verification is stale'
     assert namespace['only_def_identity_and_file_references_changed'] and namespace['gameplay_sprites_eye_color_and_sounds_unchanged']
     for n,entry in namespace['files'].items():assert entry['sha256']==sha(CHAR/n),n
     recording_runtime=namespace['previous_runtime_sha256']
-if not exact_preview:
+if not exact_preview and not book_only:
     # The recorded attacks remain applicable after a strictly checked iris-only
     # palette correction; keep the older recording hash visible and honest.
     color=json.loads((OUT/'Jura_eye_color_checks.json').read_text())
@@ -33,12 +41,15 @@ if not exact_preview:
 for job,entry in checkpoint['jobs'].items():
     assert sha(OUT/f'Jura_{job}_motor.mp4')==entry['video_sha256'],job
 assert len(checkpoint['jobs'])==10
-assert {entry['report']['runtime_sha256'] for entry in checkpoint['jobs'].values()}=={runtime}
+assert {entry['report']['runtime_sha256'] for entry in checkpoint['jobs'].values()}=={recording_runtime}
 victory=json.loads((OUT/'Jura_victory_checks.json').read_text())
 assert victory['runtime_sha256']==runtime and not victory['failures']
 assert victory['real_ko'] and victory['victory_state']==180
 assert {(3,n) for n in range(4)}<={tuple(p) for p in victory['book_poses']}
 assert victory['video_sha256']==sha(OUT/'Jura_victoria_motor.mp4')
+left=json.loads((OUT/'Jura_victory_left_checks.json').read_text())
+assert left['runtime_sha256']==runtime and not left['failures']
+assert left['video_sha256']==sha(OUT/'Jura_victoria_izquierda_motor.mp4')
 for repeat in range(2):
     for script in ['build_jura_assets.py','build_jura_runtime.py']:
         subprocess.run([sys.executable,str(ROOT/'tools'/script)],check=True,capture_output=True,text=True)
@@ -79,6 +90,7 @@ reports=[]
 for name,count in [('Jura_engine_checks.json',124),('Jura_guard_checks.json',12),('Jura_low_life_checks.json',2),('Jura_CPU_checks.json',2),('Jura_regen_checks.json',8)]+[(f'Jura_aim_scale_{scale}_{crouch}_checks.json',56) for scale in [.25,.5] for crouch in [0,1]]:
     rows=json.loads((OUT/name).read_text());assert len(rows)==count and not any(r['failures'] for r in rows),name;reports.append(dict(report=name,cases=count))
 reports.append(dict(report='Jura_victory_checks.json',cases=1))
+reports.append(dict(report='Jura_victory_left_checks.json',cases=1))
 combat=json.loads((OUT/'Jura_engine_checks.json').read_text())
 for row in combat:
     if row['case']['name']=='Marca':
@@ -91,6 +103,6 @@ for row in combat:
         assert row['charge_aura']==1 and row['aura_after_charge']==0
 delivery=json.loads((OUT/'Jura_delivery_manifest.json').read_text());assert delivery['sha256']==sha(ROOT/delivery['archive'])
 for n,checksum in delivery['files'].items():assert sha(CHAR/n)==checksum,n
-proof=dict(existing_character_files_unchanged=len(baseline),protected_sha256=baseline,source_sha256=source,engine_reports=reports,engine_cases=sum(r['cases'] for r in reports),static_regressions=7,deterministic_rebuilds=2,runtime_files_sha256=before,runtime_sha256=runtime,preview_matches_delivered_runtime=exact_preview,preview_matches_delivered_gameplay=True,preview_eye_color='current' if exact_preview else 'older red iris; see Jura_eye_color_checks.json',original_body_poses=36,supplemental_body_poses=5,book_victory_tested=True,short_and_crouching_target_cases=224,tree_regeneration_and_interruption_cases=8,code_mark_pixels_preserved=True,code_crossed_bands_pixels_preserved=True,code_effect_frames_preserved=40,claw_entrance_exit_and_travel_tested=True,double_tap_dash_cases=8,charge_and_interruption_cases=8,exact_mugen_v14_executable_tested=False)
+proof=dict(existing_character_files_unchanged=len(baseline),protected_sha256=baseline,source_sha256=source,engine_reports=reports,engine_cases=sum(r['cases'] for r in reports),static_regressions=7,deterministic_rebuilds=2,runtime_files_sha256=before,runtime_sha256=runtime,preview_matches_delivered_runtime=exact_preview,preview_matches_delivered_gameplay=True,preview_eye_color='current' if exact_preview or book_only else 'older red iris; see Jura_eye_color_checks.json',combat_preview_runtime_sha256=recording_runtime,combat_preview_has_previous_victory_art=book_only,victory_preview_matches_delivered_runtime=True,victory_body_original_pixels=True,original_body_poses=36,supplemental_body_poses=1,book_victory_tested=True,short_and_crouching_target_cases=224,tree_regeneration_and_interruption_cases=8,code_mark_pixels_preserved=True,code_crossed_bands_pixels_preserved=True,code_effect_frames_preserved=40,claw_entrance_exit_and_travel_tested=True,double_tap_dash_cases=8,charge_and_interruption_cases=8,exact_mugen_v14_executable_tested=False)
 reportpath.write_text(json.dumps(proof,indent=2)+'\n')
-print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged;', 'exact recorded runtime' if exact_preview else 'only iris colors and verified namespace differ from recorded runtime')
+print('PASS verified',proof['engine_cases'],'engine cases, 7 file regressions, 2 identical builds,',len(baseline),'older files unchanged;', 'exact recorded runtime' if exact_preview else 'original-body victory recorded now; unchanged combat verified against existing recordings' if book_only else 'only iris colors and verified namespace differ from recorded runtime')
