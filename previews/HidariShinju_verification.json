@@ -1,0 +1,57 @@
+{
+  "runtime_sha256": "49d320a5010c3feefc1d59b15c1b9c629700066f61ffd22d35d661e7b3f5d461",
+  "original_body_poses_verified": 63,
+  "body_shape_and_pixels_preserved_except_blue_iris": true,
+  "body_rescaled": false,
+  "blue_iris_pixels": 84,
+  "eye_palette": [
+    {
+      "original": [
+        185,
+        45,
+        45
+      ],
+      "blue": [
+        145,
+        185,
+        248
+      ]
+    },
+    {
+      "original": [
+        128,
+        33,
+        33
+      ],
+      "blue": [
+        68,
+        100,
+        180
+      ]
+    }
+  ],
+  "yellow_susanoo_poses": 8,
+  "guardian_is_separate": true,
+  "guardian_checked_frames": 4260,
+  "nonverbal_samples": 19,
+  "previous_files_unchanged": 2297,
+  "native_cases": {
+    "engine": 132,
+    "expiry": 8,
+    "low_life": 4,
+    "range": 120,
+    "short_target": 100,
+    "guardian": 24,
+    "visual": 6,
+    "capture": 29
+  },
+  "current_runtime_engine_cases": 423,
+  "standalone_archive": true,
+  "deterministic_rebuild": true,
+  "actual_engine_video": true,
+  "all_specials_shown": true,
+  "ultimate_both_forms_shown": true,
+  "awakening_shown": true,
+  "low_life_ultimate_not_one_shot": true,
+  "failures": []
+}

@@ -1,0 +1,320 @@
+{
+  "runtime_sha256": "49d320a5010c3feefc1d59b15c1b9c629700066f61ffd22d35d661e7b3f5d461",
+  "video": "previews/HidariShinju_gameplay_motor.mp4",
+  "video_sha256": "36728cc935a3e2f501852cfb0e51ee5531042305ff9ce553ff0060ef5caa754d",
+  "ultimate_clip": "previews/HidariShinju_ulti_motor.mp4",
+  "ultimate_clip_sha256": "5091a635abb56cc64236fed05eff97f6741ab9a199567c3c9290f6a43be68fc5",
+  "audio": "Actual SDL stereo 44100Hz, trimmed per special; no offline voices or effects",
+  "audio_correlation": 0.9147669780550562,
+  "audio_global_clock_drift_seconds": [
+    0.0,
+    0.15256235827664266,
+    0.02648526077097557,
+    -0.006712018140587972,
+    -0.039909297052156845,
+    -0.11954648526076816,
+    -0.1991836734693866,
+    0.04625850340135962,
+    -0.07981859410431191,
+    -0.20589569160997634,
+    -0.23909297052154166,
+    -0.3591836734693903,
+    -0.2066213151927503,
+    -0.28625850340135806,
+    -0.3194557823129305,
+    -0.30621315192742493,
+    -0.3858503401360469,
+    -0.4654875283446689,
+    -0.5451247165532909,
+    -0.6247619047619128,
+    -0.7972789115646339,
+    -0.8304761904761921,
+    -0.5385941043084035,
+    -0.6646712018140608,
+    -0.7443083900226686,
+    -0.864399092970503,
+    -1.0369160997732383,
+    -0.7450340136054496,
+    -0.8246712018140574
+  ],
+  "audio_per_scene_offsets": [
+    4.346417233560091,
+    4.498979591836734,
+    4.372902494331067,
+    4.339705215419503,
+    4.306507936507934,
+    4.226870748299323,
+    4.147233560090704,
+    4.392675736961451,
+    4.266598639455779,
+    4.140521541950115,
+    4.107324263038549,
+    3.9872335600907007,
+    4.139795918367341,
+    4.060158730158733,
+    4.0269614512471605,
+    4.040204081632666,
+    3.960566893424044,
+    3.880929705215422,
+    3.8012925170068,
+    3.721655328798178,
+    3.549138321995457,
+    3.515941043083899,
+    3.8078231292516875,
+    3.68174603174603,
+    3.6021088435374224,
+    3.482018140589588,
+    3.3095011337868527,
+    3.6013832199546414,
+    3.5217460317460336
+  ],
+  "audio_per_scene_confidence": [
+    0.9147669780550562,
+    0.9416076120044123,
+    0.964578919454917,
+    0.9645789426654952,
+    0.9645794561082481,
+    0.9005292318873896,
+    0.7289909762668787,
+    0.9645788501903664,
+    0.9416070602476068,
+    0.9645794054490026,
+    0.964488413007858,
+    0.9645783929963163,
+    0.9738777219100686,
+    0.7563855189230895,
+    0.9060402181658889,
+    0.9683191407930926,
+    0.9683189925176036,
+    0.9645789426654952,
+    0.9416066031106516,
+    0.9416070464157615,
+    0.79194064772353,
+    0.9645788501903665,
+    0.9645794054490026,
+    0.9645794054490023,
+    0.9645794054490026,
+    0.9645783929963163,
+    0.9416073356123196,
+    0.7602130564859608,
+    0.9683189284638045
+  ],
+  "native_activation_cues_matched": 31,
+  "audio_sync": "Each scene aligned to its actual recorded activation; matches include second RT; simulation-frame render stalls compressed",
+  "duration": 87.23333333333335,
+  "frames": 744,
+  "minimum_scene_frames": 21,
+  "maximum_native_frame_gap": 16,
+  "scenes": [
+    "BASE | abajo, adelante + X | Chidori",
+    "BASE | abajo, atras + X | Garra de madera / Corte dorado",
+    "BASE | abajo, adelante + Y | Corriente / Rafaga de flechas",
+    "BASE | abajo, atras + Y | Prision de raices",
+    "BASE | abajo, adelante + B | Garra ascendente",
+    "BASE | abajo, atras + B | Madera / Doble espadazo",
+    "BASE | abajo + X | Barrido bajo",
+    "BASE | abajo + Y | Palma proyectada",
+    "BASE | abajo + B | Ramas / Lluvia de espadas",
+    "BASE | RB | Senbon / Flecha rapida",
+    "BASE | RT | Marca y viaje con RT",
+    "BASE | abajo + RB | Tormenta / Tajos del Susanoo",
+    "BASE | abajo + RT | Salida desde la marca",
+    "BASE | A | Chidori y raices: ulti",
+    "SUSANOO | abajo, adelante + X | Chidori",
+    "SUSANOO | abajo, atras + X | Garra de madera / Corte dorado",
+    "SUSANOO | abajo, adelante + Y | Corriente / Rafaga de flechas",
+    "SUSANOO | abajo, atras + Y | Prision de raices",
+    "SUSANOO | abajo, adelante + B | Garra ascendente",
+    "SUSANOO | abajo, atras + B | Madera / Doble espadazo",
+    "SUSANOO | abajo + X | Barrido bajo",
+    "SUSANOO | abajo + Y | Palma proyectada",
+    "SUSANOO | abajo + B | Ramas / Lluvia de espadas",
+    "SUSANOO | RB | Senbon / Flecha rapida",
+    "SUSANOO | RT | Marca y viaje con RT",
+    "SUSANOO | abajo + RB | Tormenta / Tajos del Susanoo",
+    "SUSANOO | abajo + RT | Salida desde la marca",
+    "SUSANOO | A | Sentencia del Susanoo: ulti",
+    "BASE | abajo + Pausa | Susanoo amarillo"
+  ],
+  "scene_ranges": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 2.9,
+      "label": "BASE | abajo, adelante + X | Chidori"
+    },
+    {
+      "index": 1,
+      "start": 2.9,
+      "end": 5.866666666666667,
+      "label": "BASE | abajo, atras + X | Garra de madera / Corte dorado"
+    },
+    {
+      "index": 2,
+      "start": 5.866666666666667,
+      "end": 8.733333333333334,
+      "label": "BASE | abajo, adelante + Y | Corriente / Rafaga de flechas"
+    },
+    {
+      "index": 3,
+      "start": 8.733333333333334,
+      "end": 11.566666666666668,
+      "label": "BASE | abajo, atras + Y | Prision de raices"
+    },
+    {
+      "index": 4,
+      "start": 11.566666666666668,
+      "end": 14.366666666666667,
+      "label": "BASE | abajo, adelante + B | Garra ascendente"
+    },
+    {
+      "index": 5,
+      "start": 14.366666666666667,
+      "end": 17.283333333333335,
+      "label": "BASE | abajo, atras + B | Madera / Doble espadazo"
+    },
+    {
+      "index": 6,
+      "start": 17.283333333333335,
+      "end": 20.1,
+      "label": "BASE | abajo + X | Barrido bajo"
+    },
+    {
+      "index": 7,
+      "start": 20.1,
+      "end": 23.01666666666667,
+      "label": "BASE | abajo + Y | Palma proyectada"
+    },
+    {
+      "index": 8,
+      "start": 23.01666666666667,
+      "end": 25.86666666666667,
+      "label": "BASE | abajo + B | Ramas / Lluvia de espadas"
+    },
+    {
+      "index": 9,
+      "start": 25.86666666666667,
+      "end": 28.733333333333338,
+      "label": "BASE | RB | Senbon / Flecha rapida"
+    },
+    {
+      "index": 10,
+      "start": 28.733333333333338,
+      "end": 31.750000000000004,
+      "label": "BASE | RT | Marca y viaje con RT"
+    },
+    {
+      "index": 11,
+      "start": 31.750000000000004,
+      "end": 34.56666666666667,
+      "label": "BASE | abajo + RB | Tormenta / Tajos del Susanoo"
+    },
+    {
+      "index": 12,
+      "start": 34.56666666666667,
+      "end": 37.53333333333334,
+      "label": "BASE | abajo + RT | Salida desde la marca"
+    },
+    {
+      "index": 13,
+      "start": 37.53333333333334,
+      "end": 42.366666666666674,
+      "label": "BASE | A | Chidori y raices: ulti"
+    },
+    {
+      "index": 14,
+      "start": 42.366666666666674,
+      "end": 45.10000000000001,
+      "label": "SUSANOO | abajo, adelante + X | Chidori"
+    },
+    {
+      "index": 15,
+      "start": 45.10000000000001,
+      "end": 47.91666666666668,
+      "label": "SUSANOO | abajo, atras + X | Garra de madera / Corte dorado"
+    },
+    {
+      "index": 16,
+      "start": 47.91666666666668,
+      "end": 50.80000000000001,
+      "label": "SUSANOO | abajo, adelante + Y | Corriente / Rafaga de flechas"
+    },
+    {
+      "index": 17,
+      "start": 50.80000000000001,
+      "end": 53.783333333333346,
+      "label": "SUSANOO | abajo, atras + Y | Prision de raices"
+    },
+    {
+      "index": 18,
+      "start": 53.783333333333346,
+      "end": 56.58333333333334,
+      "label": "SUSANOO | abajo, adelante + B | Garra ascendente"
+    },
+    {
+      "index": 19,
+      "start": 56.58333333333334,
+      "end": 59.38333333333334,
+      "label": "SUSANOO | abajo, atras + B | Madera / Doble espadazo"
+    },
+    {
+      "index": 20,
+      "start": 59.38333333333334,
+      "end": 62.300000000000004,
+      "label": "SUSANOO | abajo + X | Barrido bajo"
+    },
+    {
+      "index": 21,
+      "start": 62.300000000000004,
+      "end": 65.18333333333334,
+      "label": "SUSANOO | abajo + Y | Palma proyectada"
+    },
+    {
+      "index": 22,
+      "start": 65.18333333333334,
+      "end": 67.9,
+      "label": "SUSANOO | abajo + B | Ramas / Lluvia de espadas"
+    },
+    {
+      "index": 23,
+      "start": 67.9,
+      "end": 70.66666666666667,
+      "label": "SUSANOO | RB | Senbon / Flecha rapida"
+    },
+    {
+      "index": 24,
+      "start": 70.66666666666667,
+      "end": 73.60000000000001,
+      "label": "SUSANOO | RT | Marca y viaje con RT"
+    },
+    {
+      "index": 25,
+      "start": 73.60000000000001,
+      "end": 76.48333333333335,
+      "label": "SUSANOO | abajo + RB | Tormenta / Tajos del Susanoo"
+    },
+    {
+      "index": 26,
+      "start": 76.48333333333335,
+      "end": 79.43333333333335,
+      "label": "SUSANOO | abajo + RT | Salida desde la marca"
+    },
+    {
+      "index": 27,
+      "start": 79.43333333333335,
+      "end": 84.28333333333335,
+      "label": "SUSANOO | A | Sentencia del Susanoo: ulti"
+    },
+    {
+      "index": 28,
+      "start": 84.28333333333335,
+      "end": 87.23333333333335,
+      "label": "BASE | abajo + Pausa | Susanoo amarillo"
+    }
+  ],
+  "specials_per_form": 13,
+  "all_specials_shown": true,
+  "ultimate_both_forms_shown": true,
+  "awakening_shown": true,
+  "failures": []
+}

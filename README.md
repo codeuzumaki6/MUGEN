@@ -1,3 +1,15 @@
+# Hidari Shinju — Chidori y Susanoo amarillo
+
+[**Descargar Hidari Shinju**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HidariShinju.zip) · [Demostración](previews/HidariShinju_gameplay_motor.mp4) · [Ulti del Susanoo](previews/HidariShinju_ulti_motor.mp4) · [Controles Xbox](HidariShinju/CONTROLES_XBOX.md) · [Créditos](HidariShinju/CREDITOS_Y_FUENTES.md)
+
+Conserva 63 poses nativas de Vaydra y cambia únicamente el iris rojo a azul. **↓↘→ + X es Chidori**, con electricidad azul en la mano y avance físico. Incluye madera extensible, prisión de raíces, marcas utilizables, tres cadenas terrestres y aéreas, dash doble y carga con aura. Los especiales tienen pausa y sonido de activación.
+
+**↓ + Pausa/LB activa veinte segundos de Susanoo amarillo**, con espadas, presa, palma y arco animados como guardián separado; Hidari conserva su tamaño. Requiere 3000, consume 1500 y reduce un 20 % el coste de especiales. La ulti consume 3000, exige conectar y tiene daño limitado a min(420, 42 % de vida máxima rival), o min(450, 45 %) con Susanoo.
+
+Instala `HidariShinju` en `chars` y añade `HidariShinju/HidariShinju.def` a `[Characters]` de `data/select.def`. ZIP autónomo. [Verificación](previews/HidariShinju_verification.json). Probado en Ikemen GO y validado para MUGEN 1.1; la instalación concreta de Jump Force MUGEN V14 requiere prueba local.
+
+---
+
 # Ryū Shinju — arena de hierro
 
 [**Descargar Ryū Shinju**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/RyuShinju.zip) · [Demostración de los especiales](previews/RyuShinju_gameplay_motor.mp4) · [Ulti alada](previews/RyuShinju_ulti_motor.mp4) · [Controles Xbox](RyuShinju/CONTROLES_XBOX.md) · [Créditos](RyuShinju/CREDITOS_Y_FUENTES.md)

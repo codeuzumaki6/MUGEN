@@ -1,0 +1,105 @@
+{
+  "moves": [
+    [
+      "Chidori",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Garra",
+      "a",
+      "B",
+      1010,
+      450
+    ],
+    [
+      "Corriente",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "Prision",
+      "b",
+      "B",
+      1030,
+      650
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      450
+    ],
+    [
+      "Madera",
+      "c",
+      "B",
+      1050,
+      550
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Palma",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Ramas",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Senbon",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Marca",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Tormenta",
+      "y",
+      "D",
+      1430,
+      650
+    ],
+    [
+      "SalidaGarra",
+      "z",
+      "D",
+      1440,
+      400
+    ]
+  ],
+  "form_offset": 10000,
+  "awakening": "Yellow Susanoo; requested fan adaptation",
+  "awakening_ticks": 1200,
+  "awakening_cost": 1500,
+  "activation_requires": 3000,
+  "ultimate_cost": 3000,
+  "ultimate_budget": "min(420,42% opponent max life)",
+  "awakened_ultimate_budget": "min(450,45% opponent max life)",
+  "rinnegan": "blue iris, source body otherwise preserved",
+  "voices": false
+}
