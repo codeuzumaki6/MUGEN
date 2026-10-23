@@ -866,7 +866,10 @@
     "source_material/Jura_original/sha256.json": "74b6bff6a8612cf606e5e4ecf13559ef41f0ce011920b666fb73ec66be19efbf",
     "source_material/Jura_original/Jura_sheet.png": "ba763257d89940e5ab90428085d2f7d0036abb94837bf935168ca3170a6bb808",
     "source_material/Jura_original/README.md": "d78f288636fdd841f473f58794a3ec2e39d12c6a7df6971ee8c95e23802785c4",
-    "source_material/Jura_original/Jura_tree_reference.jpg": "a8c3adefd111dd2b5cee36e488253938c7aa1eea8dacbd870d8e49b40bb19dac"
+    "source_material/Jura_original/Jura_tree_reference.jpg": "a8c3adefd111dd2b5cee36e488253938c7aa1eea8dacbd870d8e49b40bb19dac",
+    "source_material/Jura_generated/README.md": "1f177390574877d34f9f8b8d031cb0f25e4cee175ec4d24246a4cb5f9bc5ef6f",
+    "source_material/Jura_generated/throne_and_seated.png": "e5bd8066a48b222875b6463f8d03548ff2e3f13e70e79cfb177496a0235a6ebf",
+    "source_material/Jura_generated/book_and_regeneration.png": "cfeefe0b1f66da684e6381bbb1bf5b26ffaa60c0a77b5d662827e95389f578fb"
   },
   "engine_reports": [
     {
@@ -887,26 +890,50 @@
     },
     {
       "report": "Jura_regen_checks.json",
-      "cases": 4
+      "cases": 8
+    },
+    {
+      "report": "Jura_aim_scale_0.25_0_checks.json",
+      "cases": 56
+    },
+    {
+      "report": "Jura_aim_scale_0.25_1_checks.json",
+      "cases": 56
+    },
+    {
+      "report": "Jura_aim_scale_0.5_0_checks.json",
+      "cases": 56
+    },
+    {
+      "report": "Jura_aim_scale_0.5_1_checks.json",
+      "cases": 56
+    },
+    {
+      "report": "Jura_victory_checks.json",
+      "cases": 1
     }
   ],
-  "engine_cases": 144,
+  "engine_cases": 373,
   "static_regressions": 7,
   "deterministic_rebuilds": 2,
   "runtime_files_sha256": {
     "JuraShinju.def": "ac50ab9088a0abc1f16584ffb6ab3c5b647c06fbd300d8dd0671e1abd88f7a90",
-    "JuraShinju.sff": "2028170f001cfe88b7046c96f0a66244f599ddab7d931de4b00cb5f28eb18d93",
-    "JuraShinju.snd": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5",
-    "JuraShinju.air": "76e83975f7576e6b6668bd5a95c464081726b84c364677bb11b3174240c9a426",
-    "JuraShinju.cns": "57a38f9d83e4fe658ed0a66b96c822906aac5e3f13a7d6c221056533ec4e6e0b",
-    "JuraShinju.cmd": "b157621ac9bbd9249f21e470122203b37908ac195c56413817376c5f286d2b87",
+    "JuraShinju.sff": "003f7083ba2e8edb38f41d3eef342124fcce8ec0baa76156dc4bca1ce007ecca",
+    "JuraShinju.snd": "48f0314c537c7841d9c660f2972c6f30ac3c52eab86c8e7b1083c14907ad74ff",
+    "JuraShinju.air": "f63129a984096eb7a43cf9f5f61bf66dfbbf48c8aae8b085a5eb0892037d38f6",
+    "JuraShinju.cns": "f53b10b8c09097ca9919c822248c3b212b89b5152dcfd27c1d5fea5b10d7d2be",
+    "JuraShinju.cmd": "a8277bfe25a4d17087f29b846d4bf80e9fa99a494a9c442619abb6a8731ffac9",
     "JuraShinju_common.cns": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013"
   },
-  "runtime_sha256": "f67e5e1fe1ba18fdf3ced719b26bb56f1e69dabd210a461ee87c762023839d0f",
-  "preview_matches_delivered_runtime": false,
+  "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
+  "preview_matches_delivered_runtime": true,
   "preview_matches_delivered_gameplay": true,
-  "preview_eye_color": "older red iris; see Jura_eye_color_checks.json",
+  "preview_eye_color": "current",
   "original_body_poses": 36,
+  "supplemental_body_poses": 5,
+  "book_victory_tested": true,
+  "short_and_crouching_target_cases": 224,
+  "tree_regeneration_and_interruption_cases": 8,
   "code_mark_pixels_preserved": true,
   "code_crossed_bands_pixels_preserved": true,
   "code_effect_frames_preserved": 40,

@@ -7,6 +7,7 @@ from build_jura_runtime import MOVES
 ROOT=Path(__file__).resolve().parents[1];ENGINE=Path(sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly').resolve()
 CAP=os.environ.get('JURA_CAPTURE');AUDIO=os.environ.get('JURA_AUDIO');TICKS=int(os.environ.get('JURA_TICKS','850'));LOW=os.environ.get('JURA_LOW_LIFE')=='1';CPU=os.environ.get('JURA_CPU')=='1';GUARD=os.environ.get('JURA_GUARD')=='1'
 DUMMYLIFE=500 if LOW else 1000 if CAP else 10000
+TARGET_SCALE=float(os.environ.get('JURA_TARGET_SCALE','1'));TARGET_CROUCH=os.environ.get('JURA_TARGET_CROUCH')=='1';AIM=os.environ.get('JURA_AIM')=='1'
 cases=[]
 for form in [0,1]:
  for face in [1,-1]:
@@ -27,7 +28,15 @@ if LOW:cases=[dict(name='low_life',kind='ultimate',form=form,face=1,distance=120
 if CPU:cases=[dict(name='CPU',kind='cpu',form=form,face=1,distance=220) for form in [0,1]]
 if GUARD:cases=[dict(name=kind,kind=kind,form=form,face=face,distance=60) for form in [0,1] for face in [1,-1] for kind in ['guard','crouchguard','airguard']]
 REGEN=os.environ.get('JURA_REGEN')=='1'
-if REGEN:cases=[dict(name=kind,kind=kind,form=0,face=face,distance=220) for face in [1,-1] for kind in ['regen','regen_cap']]
+if REGEN:cases=[dict(name=kind,kind=kind,form=0,face=face,distance=60 if kind=='regen_hit' else 220) for face in [1,-1] for kind in ['regen','regen_cap','regen_hit','regen_empty']]
+if AIM:
+ cases=[]
+ for face in [1,-1]:
+  for distance in [38,120,220]:
+   for name,button,d,n,cost in MOVES:
+    if name in ['Bijudama','BijudamaCargada','Francotirador','RafagaOcular','AsedioOcular']:cases.append(dict(name=name,kind='move',form=0,face=face,button=button,d=d,state=n,cost=cost,distance=distance))
+   for kind in ['ultimate','ultiblock','ultijump','empty']:cases.append(dict(name=kind,kind=kind,form=0,face=face,distance=distance))
+  cases.append(dict(name='ultifar',kind='ultifar',form=0,face=face,distance=370))
 if os.environ.get('JURA_CASES'):
  wanted=json.loads(os.environ['JURA_CASES']);cases=[c for c in cases if c['name'] in wanted and (not CAP or c['face']==1)]
 if os.environ.get('JURA_FORM'):cases=[c for c in cases if c['form']==int(os.environ['JURA_FORM'])]
@@ -36,13 +45,14 @@ char=ENGINE/'chars/JuraCheck';dummy=ENGINE/'chars/JuraDummy'
 shutil.copytree(ROOT/'JuraShinju',char,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True)
 shutil.copy2(char/'JuraShinju.def',char/'JuraCheck.def');shutil.copy2(dummy/'kfm.def',dummy/'JuraDummy.def')
 def fctl(kind,when,params):return f'\n[State -2, Test fixture]\ntype={kind}\ntriggerall=!IsHelper\ntriggerall=RoundState=2\ntrigger1={when}\nignorehitpause=1\n{params}\n'
-p1=fctl('VarAdd','1','v=58\nvalue=1');p2=fctl('VarSet','NumEnemy>0','v=58\nvalue=EnemyNear,Var(58)')
+p1=fctl('VarAdd','1','v=58\nvalue=1')+fctl('VarSet','StateNo=3000 && ProjGuardedTime(3000)>=0 && ProjGuardedTime(3000)<=2','v=49\nvalue=1');p2=fctl('VarSet','NumEnemy>0','v=58\nvalue=EnemyNear,Var(58)')
+if TARGET_CROUCH:p2+=fctl('AssertInput','1','flag=D')
 for index,case in enumerate(cases):
  base=index*TICKS;face=case['face'];kind=case['kind'];distance=case['distance'];at=lambda t:f'Var(58)={base+t}';window=lambda a,b:f'Var(58)>={base+a} && Var(58)<={base+b}'
  for side in [1,2]:
   block=fctl('PosSet',at(1),f'x={(-1 if side==1 else 1)*face*distance/2}\ny=0')+fctl('VelSet',at(1),'x=0\ny=0')+fctl('Turn',at(1)+f' && Facing!={face if side==1 else -face}','')
-  block+=fctl('LifeSet',at(1),f'value={(800 if kind=="regen" else 1295 if kind=="regen_cap" else 1300) if side==1 else DUMMYLIFE}')+fctl('PowerSet',at(1),f'value={0 if kind in ["charge","chargehit","empty"] else 3000}')
-  for v in [12,20,22,40,41]:block+=fctl('VarSet',at(1),f'v={v}\nvalue={800 if v==40 and case["form"] else 0}')
+  block+=fctl('LifeSet',at(1),f'value={(800 if kind in ["regen","regen_hit","regen_empty","awakening"] else 1295 if kind=="regen_cap" else 1300) if side==1 else DUMMYLIFE}')+fctl('PowerSet',at(1),f'value={0 if kind in ["charge","chargehit","empty","regen_empty"] else 3000}')
+  for v in [12,20,22,40,41,49]:block+=fctl('VarSet',at(1),f'v={v}\nvalue={800 if v==40 and case["form"] else 0}')
   block+=fctl('ChangeState',at(1),'value=0\nctrl=1')
   if side==1:p1+=block
   else:p2+=block
@@ -68,7 +78,9 @@ for index,case in enumerate(cases):
   p1+=press(23,'U')
  elif kind=='charge':p1+=fctl('AssertInput',window(20,80),'flag=s')
  elif kind=='chargehit':p1+=fctl('AssertInput',window(20,60),'flag=s');p2+=fctl('ChangeState',at(43),'value=9700\nctrl=0')
- elif kind in ['awakening','regen','regen_cap']:p1+=motion('s','D')
+ elif kind in ['awakening','regen','regen_cap','regen_hit','regen_empty']:
+  p1+=motion('s','D')
+  if kind=='regen_hit':p2+=fctl('ChangeState',at(70),'value=9700\nctrl=0')
  elif kind=='recovery':p2+=fctl('PosSet',window(19,35),f'x={(-distance/2+32)*face}\ny=0')+fctl('ChangeState',at(22),'value=9701\nctrl=0')
  elif kind in ['guard','crouchguard','airguard']:
   height=-55 if kind=='airguard' else 0
@@ -83,7 +95,9 @@ for index,case in enumerate(cases):
 for path,fixture in [(char/'JuraShinju.cns',p1),(dummy/'kfm.cns',p2)]:
  text=path.read_text(encoding='latin-1')
  text=text.replace('[Statedef -2]','[Statedef -2]\n'+fixture,1) if '[Statedef -2]' in text else text+'\n[Statedef -2]\n'+fixture
- if path==dummy/'kfm.cns':text=re.sub(r'(?im)^life\s*=.*$',f'life={DUMMYLIFE}',text,count=1)
+ if path==dummy/'kfm.cns':
+  text=re.sub(r'(?im)^life\s*=.*$',f'life={DUMMYLIFE}',text,count=1)
+  for dim in ['xscale','yscale']:text=re.sub(rf'(?im)^{dim}\s*=.*$',f'{dim}={TARGET_SCALE}',text,count=1)
  path.write_text(text,encoding='latin-1')
 with (dummy/'kfm.cns').open('a') as f:
  for n,fall in [(9700,0),(9701,1),(9703,0)]:
@@ -99,10 +113,14 @@ hook.add('loop','jura_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,move=0,apex=0,minPower=3000,maxPower=0,awake=0,blue=0,marks=0,portals=0,markY=0,travel=0,dash=0,aura=0,auraAfter=0,chargeStopped=false} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,move=0,apex=0,minPower=3000,maxPower=0,awake=0,blue=0,marks=0,portals=0,markY=0,travel=0,dash=0,aura=0,auraAfter=0,chargeStopped=false,healInside=0,healOutside=0,lostLife=0,cocoon=0,throne=0} end
  local r=rows[case];local st=stateNo()
  if tick>4 then
   r.states[st]=true;r.received=math.max(r.received,1300-life());r.minPower=math.min(r.minPower,power());r.maxPower=math.max(r.maxPower,power());r.apex=math.min(r.apex,posY());r.awake=math.max(r.awake,var(40))
+  -- This hook sees the next state before the previous tick's LifeAdd delta.
+  -- Attribute that delta to the sampled state which actually ran the controller.
+  if r.lastLife~=nil then local delta=life()-r.lastLife;if delta>0 then if r.lastState==520 then r.healInside=r.healInside+delta else r.healOutside=r.healOutside+delta end elseif delta<0 then r.lostLife=r.lostLife-delta end end;r.lastLife=life();r.lastState=st
+  r.cocoon=math.max(r.cocoon,numHelper(9560));r.throne=math.max(r.throne,numHelper(9540))
   if anim()>=10000 then r.blue=r.blue+1 end
   if tick==8 then r.startX=posX();r.startScreenX=screenPosX() end
   if tick>8 and tick<100 then r.move=math.max(r.move,math.abs(posX()-(r.startX or posX()))) end
@@ -116,7 +134,7 @@ hook.add('loop','jura_checks',function()
  end
  if tick==TICKS-1 then
   local ss={};for n,_ in pairs(r.states) do table.insert(ss,n) end;table.sort(ss);for i,v in ipairs(ss) do ss[i]=tostring(v) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.awake..'\\t'..r.blue..'\\t'..var(40)..'\\t'..anim()..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..tostring(ctrl())..'\\t'..r.marks..'\\t'..r.portals..'\\t'..r.markY..'\\t'..r.travel..'\\t'..numHelper(9600)..'\\t'..r.dash..'\\t'..r.aura..'\\t'..r.auraAfter..'\\t'..tostring(r.chargeStopped)..'\\t'..life()..'\\t'..numHelper()..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.awake..'\\t'..r.blue..'\\t'..var(40)..'\\t'..anim()..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..tostring(ctrl())..'\\t'..r.marks..'\\t'..r.portals..'\\t'..r.markY..'\\t'..r.travel..'\\t'..numHelper(9600)..'\\t'..r.dash..'\\t'..r.aura..'\\t'..r.auraAfter..'\\t'..tostring(r.chargeStopped)..'\\t'..life()..'\\t'..numHelper()..'\\t'..var(49)..'\\t'..r.healInside..'\\t'..r.healOutside..'\\t'..r.lostLife..'\\t'..r.cocoon..'\\t'..r.throne..'\\n');f:flush()
  end
  CAPTURE
 end)
@@ -157,8 +175,8 @@ for i,case in enumerate(cases):
  if kind!='cpu' and int(row[25])!=0:bad.append('finite helper remained after recovery')
  if kind=='move':
   if case['state'] not in ss:bad.append('requested raw input did not enter technique')
-  if damage<=0 and case['name']!='Levitar':bad.append('no actual collision damage')
-  if case['name']=='Levitar' and (apex>=-45 or endstate!=0):bad.append('finite flight or landing failed')
+  if damage<=0:bad.append('no actual collision damage')
+  if case['name']=='AsedioOcular' and (apex!=0 or endstate!=0):bad.append('ocular siege must stay upright and recover')
   if case['name'] in ['Reflejo','Senrigan'] and 1202 not in ss:bad.append('incoming strike did not trigger counter')
   if case['name']=='Marca' and (1211 not in ss or int(row[15])!=1 or int(row[16])<2 or float(row[17])!=0 or float(row[18])<100 or int(row[19])!=0):bad.append('claw placement, crossed-band entry/exit, travel or consumed mark failed')
   if case['name']=='SalidaGarra' and int(row[16])<2:bad.append('claw retreat did not display both portals')
@@ -172,12 +190,16 @@ for i,case in enumerate(cases):
  if kind=='chargehit' and (500 not in ss or received<=0 or int(row[21])!=1 or int(row[22])!=0 or endstate!=0):bad.append('charge was not hittable or aura survived interruption')
  if kind=='awakening' and (520 not in ss or awake<700 or endawake!=0 or endanim>=10000):bad.append('awakening did not activate and expire')
  if kind in ['regen','regen_cap'] and (520 not in ss or awake<700 or endawake!=0 or (not 965<=int(row[24])<=980 if kind=='regen' else int(row[24])!=1300)):bad.append('regeneration amount, cap or expiry failed')
+ if kind in ['regen','regen_cap'] and (int(row[27])!=(5 if kind=='regen_cap' else 180) or int(row[28])!=0 or int(row[30])!=1):bad.append('healing did not happen entirely inside the visible cocoon')
+ if kind=='regen_hit' and (520 not in ss or not any(n>=5000 for n in ss) or not 0<int(row[27])<180 or int(row[28])!=0 or int(row[29])<=0 or endstate!=0):bad.append('tree regeneration failed to stop on interruption')
+ if kind=='regen_empty' and (520 in ss or int(row[24])!=800 or int(row[27]) or int(row[28])):bad.append('tree regeneration activated without energy')
  if kind=='recovery' and (5120 not in ss or endstate!=0):bad.append('knockdown/getup failed')
  if kind in ['guard','crouchguard','airguard'] and (received!=0 or {'guard':150,'crouchguard':152,'airguard':154}[kind] not in ss):bad.append('manual guard failed against real physical contact')
  if kind=='ultimate' and (3001 not in ss or damage!=(225 if LOW else 450) or victim in [3010,3011]):bad.append('ultimate confirmation / bounded damage / safe release failed')
+ if kind=='ultiblock' and int(row[26])!=1:bad.append('ultimate was not physically guarded')
  if kind in ['ultiblock','ultijump','ultifar','empty'] and (damage>0 or 3001 in ss):bad.append('ultimate hit when it should fail')
 
- result=dict(case=case,states=sorted(ss),damage=damage,received=received,movement=movement,jump_apex=apex,min_power=lowpower,max_power=highpower,max_awakening=awake,blue_frames=blue,end_awakening=endawake,end_animation=endanim,end_state=endstate,victim_end=victim,claw_marks=int(row[15]),claw_portals=int(row[16]),claw_mark_y=float(row[17]),claw_travel=float(row[18]),claw_marks_remaining=int(row[19]),dash_signed_distance=float(row[20]),charge_aura=int(row[21]),aura_after_charge=int(row[22]),end_life=int(row[24]),end_helpers=int(row[25]),failures=bad);report.append(result)
+ result=dict(case=case,states=sorted(ss),damage=damage,received=received,movement=movement,jump_apex=apex,min_power=lowpower,max_power=highpower,max_awakening=awake,blue_frames=blue,end_awakening=endawake,end_animation=endanim,end_state=endstate,victim_end=victim,claw_marks=int(row[15]),claw_portals=int(row[16]),claw_mark_y=float(row[17]),claw_travel=float(row[18]),claw_marks_remaining=int(row[19]),dash_signed_distance=float(row[20]),target_scale=TARGET_SCALE,target_crouching=TARGET_CROUCH,ultimate_guarded=bool(int(row[26])),healing_inside_cocoon=int(row[27]),healing_outside_cocoon=int(row[28]),actual_life_lost=int(row[29]),regeneration_cocoon=int(row[30]),ultimate_throne=int(row[31]),charge_aura=int(row[21]),aura_after_charge=int(row[22]),end_life=int(row[24]),end_helpers=int(row[25]),failures=bad);report.append(result)
  print('FAIL' if bad else 'PASS',case['name'],case['form'],case['face'],bad,damage)
 base_rows={(r['case']['name'],r['case']['face']):r for r in report if not r['case']['form']}
 comparisons=0
@@ -187,7 +209,7 @@ for result in report:
   comparisons+=1
   if result['damage']<base['damage']*1.23:result['failures'].append('awakening did not increase real damage by at least 23 percent')
   if result['damage']>=950:result['failures'].append('one technique exceeds intended versus damage budget')
-out=ROOT/'previews'/('Jura_regen_checks.json' if REGEN else 'Jura_guard_checks.json' if GUARD else 'Jura_CPU_checks.json' if CPU else 'Jura_low_life_checks.json' if LOW else 'Jura_capture_checks.json' if CAP else 'Jura_engine_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
+out=ROOT/'previews'/('Jura_capture_checks.json' if CAP else f'Jura_aim_scale_{TARGET_SCALE}_{int(TARGET_CROUCH)}_checks.json' if AIM else 'Jura_regen_checks.json' if REGEN else 'Jura_guard_checks.json' if GUARD else 'Jura_CPU_checks.json' if CPU else 'Jura_low_life_checks.json' if LOW else 'Jura_capture_checks.json' if CAP else 'Jura_engine_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not any(r['failures'] for r in report),str(out)
 if comparisons:print('PASS',comparisons,'awakened techniques and chains: greater collision damage, below full-life knockout')
 print('PASSED',len(report),'Jura raw-input and collision cases')

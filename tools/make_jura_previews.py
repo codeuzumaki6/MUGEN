@@ -13,9 +13,13 @@ JOBS=[('combos',['Combo a','Combo b','Combo c'],210,False,'JURA | X X X / Y Y Y 
       ('ocular',['Bijudama','BijudamaCargada','Francotirador','RafagaOcular'],230,True,'JURA | Bijudamas desde el ojo y disparo francotirador',0),
       ('despertar',['awakening'],850,True,'ABAJO + PAUSA | Amplificacion del Juubi durante 12 segundos',0),
       ('garras',['Marca','SalidaGarra'],230,True,'GARRAS | Colocar, viajar y salir atacando; retroceso con abajo + RT',0),
-      ('ultimate',['ultimate'],420,True,'A: BIJUDAMA DEL DIEZ COLAS | Inicio esquivable y dano limitado',0),
+      ('ultimate',['ultimate'],420,True,'A | Jura sentado sobre raices; bijudama descendente y dano limitado',0),
+      ('asedio',['AsedioOcular'],230,True,'ABAJO + RB | Jura erguido: tres bijudamas dirigidas al cuerpo',0),
+      ('chaparros',['Francotirador','AsedioOcular','ultimate'],420,True,'RIVAL PEQUENO | RB, abajo + RB y ultimate contra un objetivo al 25 por ciento',0),
       ('carga',['charge'],210,True,'CARGA | Chakra verde animado, ondas de presion y sonido del motor',0)]
-JOBS.sort(key=lambda j:0 if j[0]=='ultimate' else 1)
+JOBS.sort(key=lambda j:{'ultimate':0,'asedio':1,'despertar':2,'chaparros':3}.get(j[0],4))
+if os.environ.get('JURA_PREVIEW_JOBS'):
+    wanted=set(json.loads(os.environ['JURA_PREVIEW_JOBS']));JOBS=[j for j in JOBS if j[0] in wanted]
 runtime=hashlib.sha256(b''.join((ROOT/'JuraShinju'/n).read_bytes() for n in ['JuraShinju.def','JuraShinju.sff','JuraShinju.snd','JuraShinju.air','JuraShinju.cns','JuraShinju.cmd','JuraShinju_common.cns'])).hexdigest()
 cachepath=OUT/'Jura_capture_checkpoint.json';cache=json.loads(cachepath.read_text()) if cachepath.exists() else {};cache=cache if cache.get('runtime_sha256')==runtime else dict(runtime_sha256=runtime,jobs={})
 reports=[]
@@ -25,8 +29,9 @@ with tempfile.TemporaryDirectory(prefix='jura-video-') as temp:
         if cached and video.exists() and hashlib.sha256(video.read_bytes()).hexdigest()==cached['video_sha256']:
             reports.append(cached['report']);print('REUSE',name,flush=True);continue
         folder=Path(temp)/name;folder.mkdir();raw=folder/'audio.raw';env=os.environ.copy()
-        for key in ['JURA_LOW_LIFE','JURA_CPU','JURA_DEBUG']:env.pop(key,None)
+        for key in ['JURA_LOW_LIFE','JURA_CPU','JURA_DEBUG','JURA_REGEN','JURA_GUARD','JURA_AIM','JURA_TARGET_SCALE','JURA_TARGET_CROUCH']:env.pop(key,None)
         env.update(JURA_CAPTURE=str(folder),JURA_CASES=json.dumps(cases),JURA_TICKS=str(ticks),JURA_FORM=str(form))
+        if name=='chaparros':env['JURA_TARGET_SCALE']='.25'
         if record:env['JURA_AUDIO']=str(raw)
         else:env.pop('JURA_AUDIO',None)
         result=subprocess.run([sys.executable,str(ROOT/'tools/check_jura_in_engine.py'),ENGINE],env=env,capture_output=True,text=True)

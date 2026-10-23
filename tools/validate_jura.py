@@ -72,6 +72,6 @@ if (CHAR/'assets/sprites.json').exists():
     for p in poses:
         im=Image.open(CHAR/p['file']);check(im.getchannel('A').getextrema()==(0,255),f'Incorrect body transparency {p["number"]}')
 if shared.errors:print('\n'.join(shared.errors));raise SystemExit(1)
-print(f'PASS Jura: {len(sprites)} sprites, {len(sounds)} sounds, {len(actions)} actions, {len(states)} states; native artwork and MUGEN 1.1 contracts')
+print(f'PASS Jura: {len(sprites)} sprites, {len(sounds)} sounds, {len(actions)} actions, {len(states)} states; packed artwork and MUGEN 1.1 contracts')
 
 if __name__=='__main__':pass

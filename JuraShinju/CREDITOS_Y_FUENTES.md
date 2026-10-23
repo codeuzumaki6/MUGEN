@@ -10,7 +10,9 @@
 
 Por petición del usuario, únicamente los tres tonos rojos de los iris pasan a violeta claro de Rinnegan normal, también en los retratos. Se conservan posiciones, contornos y todos los demás píxeles.
 
-Las poses corporales se recortan de la hoja sin redibujarlas ni cambiar su escala. Se elimina el fondo verde y se indexan las paletas a un máximo de 255 colores opacos por sprite para el SFF. Los ejes se anclan al cuerpo y al suelo para que puños extendidos y patadas no desplacen toda la figura.
+Las 36 poses corporales originales se recortan de la hoja sin redibujarlas ni cambiar su escala. Se elimina el fondo verde y se indexan las paletas a un máximo de 255 colores opacos por sprite para el SFF. Los ejes se anclan al cuerpo y al suelo para que puños extendidos y patadas no desplacen toda la figura.
 
-La implementación se centra en bijūdama ocular, Mokuton, levitación y marcas de garra. La ultimate y la amplificación son adaptaciones de jugabilidad. No utiliza el Kokugan de Kawaki ni sus cubos negros. La esfera gris de la referencia fan no se usa como bijūdama.
+La implementación se centra en bijūdama ocular, Mokuton y marcas de garra. La ultimate y la amplificación son adaptaciones de jugabilidad. No utiliza el Kokugan de Kawaki ni sus cubos negros. La esfera gris de la referencia fan no se usa como bijūdama.
 
+
+Esta revisión añade una pose sentada, cuatro poses de libro, un trono de raíces y cuatro fases de capullo de regeneración. Son recursos suplementarios generados con IA a partir del diseño aportado y normalizados para MUGEN; no se atribuyen como sprites originales de Vaydra. Las 36 poses originales y su corrección de ojos se conservan. Fuentes y parámetros en `source_material/Jura_generated`, `assets/supplemental.json` y `tools/build_jura_assets.py`. Se añade un sonido no verbal de papel sintetizado para el libro.

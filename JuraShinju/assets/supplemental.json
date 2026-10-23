@@ -1,0 +1,112 @@
+[
+  {
+    "group": 8940,
+    "number": 0,
+    "file": "assets/effects/8940_0.png",
+    "axis": [
+      128,
+      167
+    ],
+    "role": "Root throne, separate from caster",
+    "ai_generated": true
+  },
+  {
+    "group": 2,
+    "number": 0,
+    "file": "assets/sprites/2_0.png",
+    "axis": [
+      36,
+      70
+    ],
+    "role": "Seated Jura, crossed arms",
+    "ai_generated": true
+  },
+  {
+    "group": 3,
+    "number": 0,
+    "file": "assets/sprites/3_0.png",
+    "axis": [
+      48,
+      94
+    ],
+    "role": "Reach into cloak",
+    "ai_generated": true
+  },
+  {
+    "group": 3,
+    "number": 1,
+    "file": "assets/sprites/3_1.png",
+    "axis": [
+      48,
+      94
+    ],
+    "role": "Draw turquoise book",
+    "ai_generated": true
+  },
+  {
+    "group": 3,
+    "number": 2,
+    "file": "assets/sprites/3_2.png",
+    "axis": [
+      48,
+      94
+    ],
+    "role": "Read open book",
+    "ai_generated": true
+  },
+  {
+    "group": 3,
+    "number": 3,
+    "file": "assets/sprites/3_3.png",
+    "axis": [
+      48,
+      94
+    ],
+    "role": "Turn a page",
+    "ai_generated": true
+  },
+  {
+    "group": 8950,
+    "number": 0,
+    "file": "assets/effects/8950_0.png",
+    "axis": [
+      64,
+      118
+    ],
+    "role": "Roots rise",
+    "ai_generated": true
+  },
+  {
+    "group": 8950,
+    "number": 1,
+    "file": "assets/effects/8950_1.png",
+    "axis": [
+      64,
+      118
+    ],
+    "role": "Closed regenerative cocoon",
+    "ai_generated": true
+  },
+  {
+    "group": 8950,
+    "number": 2,
+    "file": "assets/effects/8950_2.png",
+    "axis": [
+      64,
+      118
+    ],
+    "role": "Cocoon opens",
+    "ai_generated": true
+  },
+  {
+    "group": 8950,
+    "number": 3,
+    "file": "assets/effects/8950_3.png",
+    "axis": [
+      64,
+      118
+    ],
+    "role": "Roots withdraw",
+    "ai_generated": true
+  }
+]

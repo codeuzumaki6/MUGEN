@@ -10,7 +10,7 @@ MOVES=[('Espinas','a','F',1000,350),('Raiz','a','B',1010,450),
  ('Garras','c','F',1040,400),('Arbol','c','B',1050,650),
  ('Barrido','a','D',1400,250),('Lanzador','b','D',1410,400),
  ('RafagaOcular','c','D',1420,400),('Francotirador','y','N',1200,250),
- ('Marca','z','N',1210,300),('Levitar','y','D',1430,350),('SalidaGarra','z','D',1440,500)]
+ ('Marca','z','N',1210,300),('AsedioOcular','y','D',1430,350),('SalidaGarra','z','D',1440,500)]
 air=[];states=[];body_actions={};meta={m['number']:m for m in json.loads((CHAR/'assets/sprites.json').read_text())}
 def ctl(n,label,kind,triggers,params='',extra=''):return f'\n[State {n}, {label}]\ntype = {kind}\n{triggers}\n{params}\n{extra}'
 def c(n,label,kind,when,params='',extra=''):return ctl(n,label,kind,'trigger1 = '+when,params,extra)
@@ -28,6 +28,12 @@ def fxaction(n,g,count,ticks=3,box=None,loop=False,add=True):
     if n==8800:s+='Clsn2Default: 1\n Clsn2[0] = -30,-30,30,30\n'
     if loop:s+='Loopstart\n'
     for i in range(count):s+=f'{g},{i},0,0,{ticks}'+(',,A' if add else '')+'\n'
+    air.append(s)
+def posed_action(n,frames,loop_at=None):
+    s=f'\n[Begin Action {n}]\nClsn2Default: 1\n Clsn2[0] = -16,-84,16,-1\n'
+    for i,(g,no,x,y,ticks) in enumerate(frames):
+        if i==loop_at:s+='Loopstart\n'
+        s+=f'{g},{no},{x},{y},{ticks}\n'
     air.append(s)
 def effect(n,when,anim,x=0,y=0,scale=1,seconds=-2,priority=3):
     return c(n,'Visible technique effect','Explod',when,f'anim = {anim}\npostype = P1\npos = {x},{y}\nscale = {scale},{scale}\nremovetime = {seconds}\nownpal = 1\nsprpriority = {priority}\npausemovetime = 999\nsupermovetime = 999\nremoveongethit = 0')
@@ -96,10 +102,23 @@ getpower = {30 if n<1000 else 0},0
 givepower = 12,8
 envshake.time = {8 if fin else 2}
 envshake.ampl = {-4 if fin else -1}''')
-def ball(n,tick,damage,size=.6,speed=8,fin=True):
-    s=c(n,'Orb damage','VarSet',f'Time = {tick}',f'v = 30\nvalue = {damage}')
-    s+=c(n,'Orb velocity','VarSet',f'Time = {tick}',f'v = 31\nvalue = {speed}')
+def eye_aim(n,tick,speed):
+    when=f'Time = {tick}'
+    s=c(n,'Safe ground target height','VarSet',when,'v=24\nvalue=60')
+    s+=c(n,'Read opponent body height','VarSet',when+' && NumEnemy>0','v=24\nvalue=Floor(EnemyNear,Const(size.height))')
+    s+=c(n,'Clamp minimum target height','VarSet',when+' && Var(24)<12','v=24\nvalue=12')
+    s+=c(n,'Clamp maximum ground aim height','VarSet',when+' && Var(24)>64','v=24\nvalue=64')
+    s+=c(n,'Grounded body aim point','VarSet',when,'fv=14\nvalue=Var(24)*.35')
+    s+=c(n,'Lower aim against crouching opponents','VarSet',when+' && NumEnemy>0 && EnemyNear,StateType=C','fv=14\nvalue=Var(24)*.15')
+    s+=c(n,'Avoid skipping close small bodies','VarSet',when,f'fv=11\nvalue=IfElse(P2Dist X<70,5,{speed})')
+    s+=c(n,'Aim once from eye toward ground body','VarSet',when,'fv=12\nvalue=(65-FVar(14))*FVar(11)/IfElse(P2Dist X>26,P2Dist X-18,8)')
+    return s
+
+def ball(n,tick,damage,size=.6,speed=8,fin=True,lifetime=70):
+    s=eye_aim(n,tick,speed)+c(n,'Orb damage','VarSet',f'Time = {tick}',f'v = 30\nvalue = {damage}')
+    s+=c(n,'Orb velocity','VarSet',f'Time = {tick}','v = 31\nvalue = Floor(FVar(11))')
     s+=c(n,'Orb knockback','VarSet',f'Time = {tick}',f'v = 32\nvalue = {int(fin)}')
+    s+=c(n,'Orb lifetime','VarSet',f'Time = {tick}',f'v = 33\nvalue = {lifetime}')
     s+=c(n,'Orb scale','VarSet',f'Time = {tick}',f'fv = 10\nvalue = {size}')
     s+=c(n,'Eye actually emits the Bijudama','Helper',f'Time = {tick} && NumHelper(9300)<3','helpertype = Normal\nname = "Bijudama ocular"\nID = 9300\nstateno = 9300\npostype = P1\npos = 18,-65\nfacing = 1\nkeyctrl = 0\nownpal = 1')
     s+=c(n,'Bijudama release','PlaySnd',f'Time = {tick}','value = S1,40\nchannel = 1')
@@ -113,8 +132,9 @@ def animations():
     animation(40,[(33,4)])
     for n in range(41,48):animation(n,[(34 if n<44 else 35,6)])
     animation(52,[(34,4),(33,3),(0,3)])
-    for n in [170,180,190]:animation(n,[(0,8),(1,8),(2,8)],loop=n!=190)
-    animation(500,[(19,8),(20,8)],loop=True);animation(520,[(24,8),(23,8),(0,12)])
+    for n in [170,190]:animation(n,[(0,8),(1,8),(2,8)],loop=n!=190)
+    posed_action(180,[(0,24,0,0,8),(3,0,0,0,12),(3,1,0,0,12),(3,2,0,0,10),(3,2,0,0,20),(3,3,0,0,20)],loop_at=4)
+    animation(500,[(19,8),(20,8)],loop=True);animation(520,[(24,12),(0,60),(24,12),(0,12)])
     for n in [5000,5001,5002,5005,5006,5007,5010,5011,5012,5015,5016,5017,5020,5021,5022,5025,5026,5027,5030,5035,5040,5050,5051,5052,5060,5061,5062,5070,5080,5090,5200,5210]:animation(n,[(3,5),(4,5),(5,5)])
     for n in [5100,5110,5140,5150,5160,5170]:animation(n,[(8,6)])
     animation(5120,[(8,4),(9,6),(33,5),(0,3)]);animation(5300,[(3,6),(0,6)]);animation(5500,[(0,1)])
@@ -123,7 +143,10 @@ def animations():
         if g==8830:fxaction(8830,8840,22,2,None,False,True)
         else:fxaction(g,g,count,ticks,box,loop,add)
     # An opaque dark core with a separate luminous ring; no giant stone sphere.
-    fxaction(8841,8800,10,3,'-30,-30,30,30',True,False)
+    fxaction(8841,8800,1,3,'-30,-30,30,30',True,False)
+    fxaction(8842,8800,1,3,'-12,-12,12,12',True,False)
+    fxaction(8940,8940,1,8,None,True,False)
+    air.append('\n[Begin Action 8950]\n8950,0,0,0,12\n8950,1,0,0,30\n8950,2,0,0,18\n8950,3,0,0,16\n')
 
 def normals():
     for family,base in enumerate([200,210,220]):
@@ -164,17 +187,17 @@ def techniques():
         animation(n,[(27,8),(27,max(times)+10),(0,10)])
         s=state(n,n,move='A',physics='S',cost=cost)+startup(n)+effect(n,'Time = 4',8605,13,-65,.38,10)
         for i,t in enumerate(times):
-            s+=projectile(n,t,8606,115 if n==1200 else 55,x=18,y=-65,vx=18 if n==1200 else 15,fin=i==len(times)-1,pid=n+i,lifetime=24,scale=1)
+            s+=ball(n,t,115 if n==1200 else 55,.38 if n==1200 else .32,18 if n==1200 else 15,i==len(times)-1,30)
             s+=c(n,'Ocular shot crack','PlaySnd',f'Time = {t}','value = S1,42\nchannel = 1')
-            s+=effect(n,f'Time = {t}',8810,38,-65,.15,9)
+            s+=effect(n,f'Time = {t}',8605,18,-65,.35,8)
         s+=recover(n);states.append(s)
     animation(1400,[(9,4),(16,7),(9,7),(0,8)],hitbox='5,-30,68,-2')
     states.append(state(1400,1400,move='A',cost=250,physics='S',velocity='4,0')+startup(1400)+hit(1400,4,115,True,True)+recover(1400))
-    animation(1430,[(34,8),(35,8)],loop=True)
-    s=state(1430,1430,'A',physics='N',cost=350,control=1)+startup(1430)
-    s+=c(1430,'Leave the floor','PosAdd','Time = 0','y = -35')
-    s+=c(1430,'Finite flight steering','VelSet','1','x = IfElse(command="holdfwd",3,IfElse(command="holdback",-3,0))\ny = IfElse(Time<10,-2,IfElse(Time>12 && command="holdup",-2,IfElse(Time>12 && command="holddown",2,0)))')
-    s+=c(1430,'Land from flight','ChangeState','Time>12 && Pos Y>=0','value = 52\nctrl = 1')+recover(1430,'Time >= 90',True);states.append(s)
+    animation(1430,[(24,10),(23,48),(24,10),(0,8)])
+    s=state(1430,1430,move='A',physics='S',cost=350)+startup(1430)
+    s+=effect(1430,'Time=5',8605,13,-65,.5,12)
+    for i,t in enumerate([12,26,40]):s+=ball(1430,t,70 if i==2 else 50,.42,10,i==2,35)
+    s+=recover(1430);states.append(s)
 
 def claw_helper(n,when,x=0):return c(n,'Original crossed claw bands','Helper',when,f'helpertype = Normal\nname = "Bandas de garra"\nID = 9601\nstateno = 9601\npostype = P1\npos = {x},0\nfacing = 1\nownpal = 1\nkeyctrl = 0')
 def claws():
@@ -204,53 +227,76 @@ def claws():
 def orbs():
     s=state(9300,8841,'A','A','N')
     s+=c(9300,'Read damage','VarSet','Time=0','v=0\nvalue=Parent,Var(30)')+c(9300,'Read knockback','VarSet','Time=0','v=1\nvalue=Parent,Var(32)')+c(9300,'Read velocity','VarSet','Time=0','v=2\nvalue=Parent,Var(31)')+c(9300,'Read size','VarSet','Time=0','fv=0\nvalue=Parent,FVar(10)')
+    s+=c(9300,'Read downward aim','VarSet','Time=0','fv=1\nvalue=Parent,FVar(12)')+c(9300,'Read finite lifetime','VarSet','Time=0','v=3\nvalue=Parent,Var(33)')
+    s+=c(9300,'Collision follows visible orb size','ChangeAnim','Time=0','value=IfElse(FVar(0)<=.5,8842,8841)')
     s+=c(9300,'Stable orb scale','AngleDraw','1','value=0\nscale=FVar(0),FVar(0)')+c(9300,'Purple-black ocular chakra','PalFX','1','time=1\ncolor=0\nmul=22,4,36')
     s+=c(9300,'Violet chakra rim','Explod','Time=0','anim=8840\nID=9309\npostype=P1\npos=0,0\nbindtime=-1\nscale=FVar(0)*.36,FVar(0)*.36\nremovetime=70\nsprpriority=3\nownpal=1\nremoveongethit=1')
-    s+=c(9300,'Actual orb velocity','VelSet','1','x=Var(2)\ny=0')+c(9300,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9300,'No push','PlayerPush','1','value=0')
+    s+=c(9300,'Actual orb velocity','VelSet','1','x=Var(2)\ny=FVar(1)')+c(9300,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9300,'No push','PlayerPush','1','value=0')
     s+=c(9300,'Root power applies to the projectile','AttackMulSet','1','value=IfElse(Root,Var(40)>0,1.5,1.15)')
     s+=c(9300,'Visible orb contact','HitDef','Time=0','attr=A,SP\ndamage=Var(0),7\nguardflag=MA\nhitflag=MAF\npriority=5,Hit\npausetime=0,10\nsparkno=S8820\nguard.sparkno=-1\nhitsound=S1,41\nguardsound=S1,9\nground.type=High\nground.hittime=30\nground.slidetime=20\nground.velocity=-6,IfElse(Var(1),-7,0)\nair.velocity=-5,-5\nfall=Var(1)\nfall.recover=1\nfall.recovertime=45\ngetpower=0,0\ngivepower=15,10\nenvshake.time=9\nenvshake.ampl=-4')
     s+=c(9300,'Projectile trade','HitOverride','1','attr=SCA,NP,SP,HP\nstateno=9301\ntime=1')
-    s+=c(9300,'Remove rim after contact','RemoveExplod','MoveContact || Time>=70','ID=9309')+c(9300,'Burst after contact','ChangeState','MoveContact || Time>=70','value=9301');states.append(s)
+    s+=c(9300,'Remove rim after contact','RemoveExplod','MoveContact || Time>=Var(3)','ID=9309')+c(9300,'Burst after contact','ChangeState','MoveContact || Time>=Var(3)','value=9301');states.append(s)
     s=state(9301,8820,'A',physics='N')+c(9301,'Orb burst sound','PlaySnd','Time=0','value=S1,41\nchannel=1')+c(9301,'Safe final effect','DestroySelf','Time>=15');states.append(s)
 
 def utility():
     for n in [170,180,190]:
         s=state(n,n,physics='S')+c(n,'Round pose','Null','1')
         if n==190:s+=c(n,'Intro','AssertSpecial','Time<22','flag=Intro')+recover(n,'Time>=24')
+        if n==180:
+            s+=ctl(180,'Draw and open the book','PlaySnd','trigger1=Time=20\ntrigger2=Time=32','value=S1,44\nchannel=6\nvolumescale=75')
+            s+=c(180,'Turn a page while reading','PlaySnd','Time>=64 && Time%80=64','value=S1,44\nchannel=6\nvolumescale=45')
         states.append(s)
     s=state(500,500,physics='S')+c(500,'Charge real energy','PowerAdd','1','value=22')+c(500,'Charge hum','PlaySnd','Time=0','value=S1,4\nchannel=3\nloop=1')
     s+=c(500,'Animated green chakra','Helper','Time=0','helpertype=Normal\nname="Chakra del Juubi"\nID=9550\nstateno=9550\npostype=P1\npos=0,-44\nownpal=1\nkeyctrl=0')
     s+=c(500,'Pressure ring','Explod','Time%12=2','anim=8910\nID=9551\npostype=P1\npos=0,-1\nscale=.34,.25\nremovetime=-2\nsprpriority=-1\nownpal=1\nremoveongethit=1')
     s+=ctl(500,'Release charge','ChangeState','trigger1=AILevel=0 && command!="hold_s"\ntrigger2=Power>=3000\ntrigger3=AILevel>0 && Time>=65','value=0\nctrl=1');states.append(s)
     s=state(9550,8900,physics='N')+c(9550,'Follow charge','BindToRoot','1','time=1\npos=0,-44')+c(9550,'Energy envelope','AngleDraw','1','value=90\nscale=.34,.4')+c(9550,'Green Juubi chakra','PalFX','1','time=1\ncolor=0\nmul=60,256,90')+c(9550,'Additive energy','Trans','1','trans=AddAlpha\nalpha=180,256')+c(9550,'Behind body','SprPriority','1','value=-2')+c(9550,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9550,'No push','PlayerPush','1','value=0')+ctl(9550,'Charge aura cleanup','DestroySelf','trigger1=Root,StateNo!=500\ntrigger2=Root,Life<=0\ntrigger3=RoundState!=2');states.append(s)
-    s=state(520,520,physics='S')+startup(520,35)+c(520,'Awakening price','PowerAdd','Time=0','value=-1500')+c(520,'Temporary chakra amplification','VarSet','Time=8','v=40\nvalue=720')+c(520,'Awakening cooldown','VarSet','Time=8','v=41\nvalue=1200')+effect(520,'Time=8',8830,0,-40,.42,25)+recover(520);states.append(s)
+    s=state(520,520,physics='S')+startup(520,35)+c(520,'Awakening price','PowerAdd','Time=0','value=-1500')
+    s+=c(520,'Living wood encloses the body','Helper','Time=8','helpertype=Normal\nname="Regeneracion Shinju"\nID=9560\nstateno=9560\npostype=P1\npos=0,0\nownpal=1\nkeyctrl=0')
+    s+=c(520,'Temporary chakra amplification','VarSet','Time=24','v=40\nvalue=720')+c(520,'Awakening cooldown','VarSet','Time=24','v=41\nvalue=1200')
+    s+=c(520,'Regenerate inside the living tree','LifeAdd','Time>=24 && Time<84 && Time%3=0 && Alive && Life<LifeMax','value=9')
+    s+=ctl(520,'Growing and opening wood','PlaySnd','trigger1=Time=12\ntrigger2=Time=52','value=S1,41\nchannel=5\nvolumescale=50')+recover(520);states.append(s)
+    s=state(9560,8950,physics='N')+c(9560,'Cocoon follows the body','BindToRoot','1','time=1\npos=0,0')
+    s+=c(9560,'Regenerative roots in front','SprPriority','1','value=3')+c(9560,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9560,'No push','PlayerPush','1','value=0')
+    s+=ctl(9560,'Cocoon finishes or breaks on interruption','DestroySelf','trigger1=AnimTime=0\ntrigger2=Root,StateNo!=520\ntrigger3=RoundState!=2');states.append(s)
 
 def ultimate():
     animation(3000,[(23,8),(27,12),(0,22)])
     s=state(3000,3000,move='A',physics='S')+c(3000,'Three bars even on miss','PowerAdd','Time=0','value=-3000')+startup(3000)+effect(3000,'Time=4',8605,13,-65,.6,12)
-    s+=c(3000,'Ocular opening must physically hit','Projectile','Time=10','projID=3000\npausemovetime=180\nprojanim=8606\nprojhitanim=8700\nprojremanim=8700\nprojremovetime=22\nprojhits=1\nprojremove=1\nprojscale=1.5,1.5\noffset=18,-65\nvelocity=11,0\nattr=S,HP\ndamage=0,0\nguardflag=MA\nhitflag=M\npausetime=0,0\nsparkno=S8700\nhitsound=S1,42\nguardsound=S1,9\nground.hittime=220\nground.velocity=0,0\np2stateno=3010\nID=3000\ngetpower=0,0\ngivepower=0,0')
+    s+=eye_aim(3000,10,11)
+    s+=c(3000,'Ocular opening must physically hit','Projectile','Time=10','projID=3000\npausemovetime=180\nprojanim=8606\nprojhitanim=8700\nprojremanim=8700\nprojremovetime=22\nprojhits=1\nprojremove=1\nprojscale=1.5,1.5\noffset=18,-65\nvelocity=FVar(11),FVar(12)\nattr=S,HP\ndamage=0,0\nguardflag=MA\nhitflag=M\npausetime=0,0\nsparkno=S8700\nhitsound=S1,42\nguardsound=S1,9\nground.hittime=260\nground.velocity=0,0\np2stateno=3010\nID=3000\ngetpower=0,0\ngivepower=0,0')
     s+=c(3000,'Only fresh contact confirms','ChangeState','Time>=10 && NumTarget(3000)>0 && ProjHitTime(3000)>=0 && ProjHitTime(3000)<=2','value=3001')+recover(3000,'Time>=58');states.append(s)
-    animation(3001,[(21,15),(22,20),(24,35),(23,45),(0,35)])
-    s=state(3001,3001,physics='N')+c(3001,'Bounded confirmed sequence','Pause','Time=0','time=140\nmovetime=140\npausebg=1')+c(3001,'Protect only the confirmed animation','NotHitBy','1','value=SCA\ntime=1')
-    s+=c(3001,'Dim background','BGPalFX','Time=0','time=140\nmul=75,95,80')+c(3001,'Bind only hit target','TargetBind','Time<136 && NumTarget(3000)>0','ID=3000\ntime=1\npos=115,0')
+    frames=[(0,19,0,0,6),(0,20,0,0,6)]
+    frames += [(2,0,0,-round((i+1)*96/10),2) for i in range(10)]
+    frames += [(2,0,0,-96,108)]
+    frames += [(2,0,0,-round(i*96/10),2) for i in range(9,-1,-1)]
+    frames += [(0,0,0,0,6)]
+    posed_action(3001,frames)
+    s=state(3001,3001,physics='N')+c(3001,'Bounded confirmed sequence','Pause','Time=0','time=152\nmovetime=152\npausebg=1')+c(3001,'Protect only the confirmed animation','NotHitBy','1','value=SCA\ntime=1')
+    s+=c(3001,'Dim background','BGPalFX','Time=0','time=152\nmul=75,95,80')+c(3001,'Bind only hit target','TargetBind','Time<150 && NumTarget(3000)>0','ID=3000\ntime=1\npos=145,0')
     s+=c(3001,'Life-relative damage budget','VarSet','Time=0 && NumTarget(3000)>0','v=20\nvalue=IfElse((Target(3000),LifeMax)>=1000,450,Floor((Target(3000),LifeMax)*.45))')
-    s+=effect(3001,'Time=4',8602,0,0,.65,135,-2)
-    s+=c(3001,'Charge the ocular sphere','Helper','Time=8','helpertype=Normal\nname="Bijudama del Diez Colas"\nID=9530\nstateno=9530\npostype=P1\npos=18,-65\nkeyctrl=0\nownpal=1\npausemovetime=140\nsupermovetime=140')
-    s+=c(3001,'Ocular chakra roar','PlaySnd','Time=10','value=S1,43\nchannel=5')
-    for i,t in enumerate([50,70,90,110,130]):
-        s+=effect(3001,f'Time={t}',8820,115,-40,1.3 if i==4 else .8,20,6)
-        s+=effect(3001,f'Time={t}',8830,115,-40,.65 if i==4 else .38,20,5)
+    s+=c(3001,'Grow a throne under the seated body','Helper','Time=4','helpertype=Normal\nname="Trono de raices"\nID=9540\nstateno=9540\npostype=P1\npos=0,0\nkeyctrl=0\nownpal=1\npausemovetime=170\nsupermovetime=170')
+    s+=c(3001,'Charge the ocular sphere from the raised seat','Helper','Time=32','helpertype=Normal\nname="Bijudama del Diez Colas"\nID=9530\nstateno=9530\npostype=P1\npos=32,-146\nkeyctrl=0\nownpal=1\npausemovetime=170\nsupermovetime=170')
+    s+=c(3001,'Growing wood sound','PlaySnd','Time=4','value=S1,41\nchannel=5\nvolumescale=65')
+    s+=c(3001,'Ocular chakra roar','PlaySnd','Time=32','value=S1,43\nchannel=5')+effect(3001,'Time=32',8605,13,-146,.45,18)
+    for i,t in enumerate([80,94,108,122,136]):
+        s+=effect(3001,f'Time={t}',8820,145,'-FVar(14)',1.1 if i==4 else .6,16,6)
+        s+=effect(3001,f'Time={t}',8830,145,'-FVar(14)',.6 if i==4 else .32,16,5)
         amount='-(Var(20)-Floor(Var(20)/5)*4)' if i==4 else '-Floor(Var(20)/5)'
         s+=c(3001,'Confirmed bounded damage','TargetLifeAdd',f'Time={t} && NumTarget(3000)>0',f'ID=3000\nvalue={amount}\nabsolute=1\nkill=1')+c(3001,'Impact sound','PlaySnd',f'Time={t}','value=S1,41\nchannel=1')+c(3001,'Impact feedback','EnvShake',f'Time={t}','time=7\nfreq=65\nampl=-5')
-    s+=c(3001,'Safe release','TargetState','Time=138 && NumTarget(3000)>0','ID=3000\nvalue=3011')+recover(3001,'Time>=150');states.append(s)
-    s=state(3010,move='H',physics='N')+c(3010,'Victim keeps own graphics','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+ctl(3010,'Safety release','SelfState','trigger1=Time>220\ntrigger2=NumEnemy=0\ntrigger3=Time>12 && EnemyNear,StateNo!=3001','value=5050\nctrl=0');states.append(s)
+    s+=c(3001,'Safe release','TargetState','Time=150 && NumTarget(3000)>0','ID=3000\nvalue=3011')+recover(3001,'Time>=166');states.append(s)
+    s=state(3010,move='H',physics='N')+c(3010,'Victim keeps own graphics','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+ctl(3010,'Safety release','SelfState','trigger1=Time>260\ntrigger2=NumEnemy=0\ntrigger3=Time>12 && EnemyNear,StateNo!=3001','value=5050\nctrl=0');states.append(s)
     states.append(state(3011,typ='A',move='H',physics='N',velocity='-7,-6')+c(3011,'Victim own fall state','SelfState','1','value=5050\nctrl=0'))
     s=state(9530,8841,'A',physics='N')+c(9530,'Dark ocular core','PalFX','1','time=1\ncolor=0\nmul=22,4,36')
-    s+=c(9530,'Sphere growth from the eye','AngleDraw','1','value=0\nscale=.2+IfElse(Time<24,Time,24)*.045,.2+IfElse(Time<24,Time,24)*.045')
-    s+=c(9530,'Charge at the eye','BindToRoot','Time<24','time=1\npos=18,-65')
-    s+=c(9530,'Visible flight toward confirmed target','VelSet','Time>=24','x=5\ny=1.5')
-    s+=c(9530,'Living violet rim','Explod','Time%4=0','anim=8840\npostype=P1\npos=0,0\nbindtime=-1\nscale=(.2+IfElse(Time<24,Time,24)*.045)*.36,(.2+IfElse(Time<24,Time,24)*.045)*.36\nremovetime=5\nsprpriority=4\nownpal=1\npausemovetime=140')
-    s+=c(9530,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9530,'No push','PlayerPush','1','value=0')+ctl(9530,'Finite cinematic sphere','DestroySelf','trigger1=Time>=43\ntrigger2=Root,StateNo!=3001\ntrigger3=RoundState!=2');states.append(s)
+    s+=c(9530,'Sphere growth from the eye','AngleDraw','1','value=0\nscale=.15+IfElse(Time<24,Time,24)*.04,.15+IfElse(Time<24,Time,24)*.04')
+    s+=c(9530,'Charge at the elevated eye','BindToRoot','Time<24','time=1\npos=32,-146')
+    s+=c(9530,'Diagonal shot toward the confirmed body','VelSet','Time>=24','x=113.0/24\ny=(146-(Root,FVar(14)))/24')
+    s+=c(9530,'Living violet rim','Explod','Time%4=0','anim=8840\npostype=P1\npos=0,0\nbindtime=-1\nscale=(.15+IfElse(Time<24,Time,24)*.04)*.36,(.15+IfElse(Time<24,Time,24)*.04)*.36\nremovetime=5\nsprpriority=4\nownpal=1\npausemovetime=170')
+    s+=c(9530,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9530,'No push','PlayerPush','1','value=0')+ctl(9530,'Finite cinematic sphere','DestroySelf','trigger1=Time>=48\ntrigger2=Root,StateNo!=3001');states.append(s)
+    s=state(9540,8940,physics='N')+c(9540,'Throne stays grounded','BindToRoot','1','time=1\npos=0,0')
+    s+=c(9540,'Roots grow then withdraw','AngleDraw','1','value=0\nscale=IfElse(Time<28,.1+Time*.9/28,IfElse(Time<136,1,IfElse(Time<160,(160-Time)/24.0,.01))),IfElse(Time<28,.1+Time*.9/28,IfElse(Time<136,1,IfElse(Time<160,(160-Time)/24.0,.01)))')
+    s+=c(9540,'Throne behind the seated caster','SprPriority','1','value=-2')+c(9540,'No shadow','AssertSpecial','1','flag=NoShadow')+c(9540,'No push','PlayerPush','1','value=0')
+    s+=ctl(9540,'Finite throne lifetime','DestroySelf','trigger1=Time>=160\ntrigger2=Root,StateNo!=3001');states.append(s)
 
 def common():
     common=[]
@@ -368,7 +414,6 @@ def system():
     s='\n[Statedef -2]\n'
     for v in [40,41]:s+=c(-2,'Finite amplification timer','VarAdd',f'!IsHelper && Var({v})>0',f'v={v}\nvalue=-1')
     s+=c(-2,'Bounded power','AttackMulSet','!IsHelper','value=IfElse(Var(40)>0,1.5,1.15)')+c(-2,'Awakened durability','DefenceMulSet','!IsHelper','value=IfElse(Var(40)>0,1.1,1)')
-    s+=c(-2,'Limited regeneration during amplification','LifeAdd','!IsHelper && Var(40)>0 && GameTime%12=0 && Life<LifeMax && MoveType!=H && Alive','value=3')
     s+=c(-2,'Air-chain reset','VarSet','!IsHelper && StateType!=A','v=12\nvalue=0')+c(-2,'Stop charge hum','StopSnd','StateNo!=500','channel=3')+c(-2,'Charge wave cleanup','RemoveExplod','!IsHelper && StateNo!=500','ID=9551')
     s+=effect(-2,'!IsHelper && Var(40)>0 && RoundState=2 && GameTime%24=0',8605,10,-65,.4,12,-1)
     s+=c(-2,'Round effect cleanup','RemoveExplod','RoundState!=2')
@@ -468,7 +513,7 @@ x2=1
 y2=1
 z2=1
 ''')
-    (CHAR/'assets/moves.json').write_text(json.dumps(dict(techniques=MOVES,body_poses=36,awakening=dict(ticks=720,full_meter_required=True,cost=1500,technique_cost_multiplier=.75,attack_multiplier_base=1.15,attack_multiplier_awake=1.5,regen='3 life / 12 ticks; while alive and not being hit'),ultimate=dict(cost=3000,must_hit=True,budget='min(450,floor(enemy_lifemax*.45))'),source_video='Vaydra Senki.mp4; visual reference only, own MUGEN states',canon_note='Ocular Bijudama, wood and claw marks are the core. The ultimate is an original ocular Bijudama adaptation. No Kokugan or black cubes; fan Chibaku rock is not used by attacks.'),indent=2)+'\n')
+    (CHAR/'assets/moves.json').write_text(json.dumps(dict(techniques=MOVES,body_poses=36,awakening=dict(ticks=720,full_meter_required=True,cost=1500,technique_cost_multiplier=.75,attack_multiplier_base=1.15,attack_multiplier_awake=1.5,regen='9 life / 3 ticks during tree-cocoon state 520, ticks 24..81; max 180 life; interrupts on hit'),ultimate=dict(cost=3000,must_hit=True,budget='min(450,floor(enemy_lifemax*.45))'),source_video='Vaydra Senki.mp4; visual reference only, own MUGEN states',canon_note='Ocular Bijudama, wood and claw marks are the core. The ultimate is an original ocular Bijudama adaptation. No Kokugan or black cubes; fan Chibaku rock is not used by attacks.'),indent=2)+'\n')
     print('Authored Jura:',len(air),'actions,',len(MOVES),'techniques and finite common recovery')
 
 if __name__=='__main__':main()

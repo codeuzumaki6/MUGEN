@@ -149,7 +149,7 @@ time=20
 buffer.time=1
 
 [Command]
-name="Levitar"
+name="AsedioOcular"
 command=/D,y
 time=20
 buffer.time=4
@@ -389,10 +389,10 @@ triggerall=command!="holddown"
 trigger1=ctrl
 value=IfElse(NumHelper(9600)>0,1211,1210)
 
-[State -1, Levitar]
+[State -1, AsedioOcular]
 type = ChangeState
 triggerall=AILevel=0
-triggerall=command="Levitar"
+triggerall=command="AsedioOcular"
 triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,262,350)
 trigger1=ctrl

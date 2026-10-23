@@ -53,6 +53,47 @@ def cut(sheet,box):
     bb=im.getbbox();assert bb,box
     return im.crop(bb),(box[0]+bb[0],box[1]+bb[1])
 
+def clean_cut(im,box):
+    tile=im.crop(box).convert('RGBA');a=np.array(tile)
+    a[:,:,3]=np.where(a[:,:,3]>=128,255,0);tile=Image.fromarray(a)
+    bounds=tile.getbbox();assert bounds,box
+    return tile.crop(bounds)
+
+def supplemental(records):
+    generated=ROOT/'source_material/Jura_generated'
+    sheet=Image.open(generated/'throne_and_seated.png').convert('RGBA')
+    throne=clean_cut(sheet,(0,0,1400,sheet.height));throne=throne.resize((256,round(throne.height*256/throne.width)),Image.Resampling.NEAREST)
+    seat=clean_cut(sheet,(1400,0,sheet.width,sheet.height));seat=seat.resize((round(seat.width*62/seat.height),62),Image.Resampling.NEAREST)
+    canvas=Image.new('RGBA',(72,72));a=np.array(seat);yy,xx=np.where(a[:16,:,3]>0);anchor=round(float(np.median(xx)))
+    canvas.alpha_composite(seat,(36-anchor,70-seat.height))
+    extra=[]
+    def put(g,n,im,axis,role):
+        path=A/('sprites' if g in [2,3] else 'effects')/f'{g}_{n}.png';im.save(path)
+        records.append((g,n,path,axis));extra.append(dict(group=g,number=n,file=str(path.relative_to(CHAR)),axis=axis,role=role,ai_generated=True))
+    put(8940,0,throne,(throne.width//2,throne.height-1),'Root throne, separate from caster')
+    put(2,0,canvas,(36,70),'Seated Jura, crossed arms')
+    sheet=Image.open(generated/'book_and_regeneration.png').convert('RGBA');books=[];pods=[]
+    for col in range(4):
+        books.append(clean_cut(sheet,(col*sheet.width//4,0,(col+1)*sheet.width//4,sheet.height//2)))
+        pods.append(clean_cut(sheet,(col*sheet.width//4,sheet.height//2,(col+1)*sheet.width//4,sheet.height)))
+    scale=84/max(im.height for im in books)
+    for n,im in enumerate(books):
+        im=im.resize((round(im.width*scale),round(im.height*scale)),Image.Resampling.NEAREST)
+        a=np.array(im);yy,xx=np.where(a[-7:,:,3]>0);anchor=round(float(np.mean(xx)))
+        canvas=Image.new('RGBA',(96,96));canvas.alpha_composite(im,(48-anchor,94-im.height))
+        put(3,n,canvas,(48,94),['Reach into cloak','Draw turquoise book','Read open book','Turn a page'][n])
+    scale=110/max(im.height for im in pods)
+    for n,im in enumerate(pods):
+        im=im.resize((round(im.width*scale),round(im.height*scale)),Image.Resampling.NEAREST)
+        canvas=Image.new('RGBA',(128,120));canvas.alpha_composite(im,((128-im.width)//2,118-im.height))
+        put(8950,n,canvas,(64,118),['Roots rise','Closed regenerative cocoon','Cocoon opens','Roots withdraw'][n])
+    (A/'supplemental.json').write_text(json.dumps(extra,indent=2)+'\n')
+    board=Image.new('RGB',(1200,640),(28,31,40));draw=ImageDraw.Draw(board)
+    for i,row in enumerate(extra):
+        im=Image.open(CHAR/row['file']);im=im.resize((im.width*3,im.height*3),Image.Resampling.NEAREST);im.thumbnail((230,280),Image.Resampling.NEAREST)
+        x=i%5*240;y=i//5*320;board.paste(im,(x+(240-im.width)//2,y),im);draw.text((x+3,y+285),row['role'],fill='white')
+    board.save(ROOT/'previews/Jura_new_poses.png')
+
 def main():
     for sub in ['sprites','effects','sound']:(A/sub).mkdir(parents=True,exist_ok=True)
     source=SOURCE/'Jura_sheet.png';sheet=Image.open(source).convert('RGBA');assert sheet.size==(500,1300)
@@ -74,6 +115,7 @@ def main():
         if any((src,sn) not in code.sprites for sn in numbers):numbers=sorted(k[1] for k in code.sprites if k[0]==src)
         for n,sn in enumerate(numbers):
             im,axis=code.image(src,sn);p=A/'effects'/f'{dest}_{n}.png';im.save(p);records.append((dest,n,p,axis))
+    supplemental(records)
     head=Image.open(A/'sprites/0_0.png').crop((8,0,30,27))
     for n,size in [(0,(25,25)),(1,(120,140))]:
         p=head.copy();p.thumbnail(size,Image.Resampling.NEAREST);factor=min(size[0]/head.width,size[1]/head.height);p=head.resize((round(head.width*factor),round(head.height*factor)),Image.Resampling.NEAREST)
@@ -92,12 +134,17 @@ def main():
         out=io.BytesIO()
         with wave.open(out,'wb') as f:f.setparams((1,2,rate,0,'NONE','not compressed'));f.writeframes(np.clip(v*32767,-32768,32767).astype('<i2').tobytes())
         samples[1,n]=out.getvalue()
+    t=np.arange(round(rate*.5))/rate;noise=rng.normal(0,1,len(t));paper=noise-np.convolve(noise,np.ones(13)/13,mode='same')
+    paper*=.07*(np.exp(-((t-.1)/.045)**2)+.7*np.exp(-((t-.27)/.075)**2))
+    out=io.BytesIO()
+    with wave.open(out,'wb') as f:f.setparams((1,2,rate,0,'NONE','not compressed'));f.writeframes(np.clip(paper*32767,-32768,32767).astype('<i2').tobytes())
+    samples[1,44]=out.getvalue()
     header=bytearray(512);header[:12]=b'ElecbyteSnd\0';header[12:16]=bytes((1,0,1,0));struct.pack_into('<II',header,16,len(samples),512);parts=[];off=512
     for i,((g,n),payload) in enumerate(sorted(samples.items())):
         nxt=off+16+len(payload) if i+1<len(samples) else 0;parts.append(struct.pack('<IIII',nxt,len(payload),g,n)+payload);off=nxt;(A/'sound'/f'{g}_{n}.wav').write_bytes(payload)
     (CHAR/'JuraShinju.snd').write_bytes(bytes(header)+b''.join(parts))
     (A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,redrawn=False,ai_generated=False,eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
+    (A/'source.json').write_text(json.dumps(dict(sheet='Vahidras / Vaydra, Juura Shinju',page='https://www.deviantart.com/vahidras/art/Juura-Shinju-1127927142',sha256=hashlib.sha256(source.read_bytes()).hexdigest(),body_entries=36,original_body_redrawn=False,original_body_ai_generated=False,supplemental_body_entries=5,supplemental_art='AI-generated seated pose, four book poses, root throne and four cocoon phases; see supplemental.json and source_material/Jura_generated',eye_color='Normal Rinnegan: pale violet, only original red iris pixels replaced',eye_palette=[dict(original=old,corrected=new) for old,new in RINNEGAN_PALETTE.items()],green_mask='G>R+45 and G>B+45, R/B<65',packed_palette_limit=255,tree_reference_only='Jura_tree_reference.jpg',voices=False),indent=2)+'\n')
     board=Image.new('RGB',(1200,720),(28,31,40));d=ImageDraw.Draw(board)
     for i,m in enumerate(manifest):
         im=Image.open(CHAR/m['file']);im=im.resize((im.width*2,im.height*2),Image.Resampling.NEAREST);im.thumbnail((190,150),Image.Resampling.NEAREST);x=i%6*200;y=i//6*120;im.thumbnail((190,96),Image.Resampling.NEAREST);board.paste(im,(x+(200-im.width)//2,y),im);d.text((x+3,y+100),f"{m['number']}: {m['role']}",fill='white')

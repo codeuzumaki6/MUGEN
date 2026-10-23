@@ -78,7 +78,7 @@
       300
     ],
     [
-      "Levitar",
+      "AsedioOcular",
       "y",
       "D",
       1430,
@@ -100,7 +100,7 @@
     "technique_cost_multiplier": 0.75,
     "attack_multiplier_base": 1.15,
     "attack_multiplier_awake": 1.5,
-    "regen": "3 life / 12 ticks; while alive and not being hit"
+    "regen": "9 life / 3 ticks during tree-cocoon state 520, ticks 24..81; max 180 life; interrupts on hit"
   },
   "ultimate": {
     "cost": 3000,
