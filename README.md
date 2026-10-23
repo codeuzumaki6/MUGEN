@@ -1,3 +1,15 @@
+# Ryū Shinju — arena de hierro
+
+[**Descargar Ryū Shinju**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/RyuShinju.zip) · [Demostración de los especiales](previews/RyuShinju_gameplay_motor.mp4) · [Ulti alada](previews/RyuShinju_ulti_motor.mp4) · [Controles Xbox](RyuShinju/CONTROLES_XBOX.md) · [Créditos](RyuShinju/CREDITOS_Y_FUENTES.md)
+
+81 poses originales de Vaydra, con su escala y colores conservados. Incluye tres cadenas terrestres y aéreas, dash doble, 13 especiales, marcas de garra utilizables, carga con aura y amplificación magnética temporal con abajo + Pausa. Las ráfagas de agujas, el puño magnético, la prisión, el torbellino y la ulti alada siguen la referencia de Vaydra Senki que aportó el usuario. La programación de combate es propia de esta adaptación a MUGEN.
+
+La ulti consume tres barras y debe conectar la estocada inicial. Después Ryū despliega las alas de hierro, lanza las plumas y desciende sobre el objetivo. Daño limitado a min(420, 42 % de la vida máxima rival), o min(450, 45 %) durante la amplificación.
+
+Extrae `RyuShinju` dentro de `chars` y añade `RyuShinju/RyuShinju.def` a `[Characters]` de `data/select.def`. El ZIP incluye todos sus recursos y estados comunes. [Pruebas, reconstrucción y conservación del arte](previews/RyuShinju_verification.json). Verificación de entradas y colisiones en Ikemen GO, con contratos de MUGEN 1.1; la instalación concreta de Jump Force MUGEN V14 requiere prueba local.
+
+---
+
 # Jura Shinju — bijūdama ocular y Mokuton
 
 [**Descargar Jura Shinju**](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/JuraShinju.zip) · [Controles Xbox](JuraShinju/CONTROLES_XBOX.md) · [Instalación](JuraShinju/LEEME.md) · [Créditos](JuraShinju/CREDITOS_Y_FUENTES.md)

@@ -1,0 +1,2706 @@
+[
+  {
+    "group": 0,
+    "number": 0,
+    "file": "assets/sprites/0_0.png",
+    "axis": [
+      14,
+      80
+    ],
+    "rgba_sha256": "06af89503064e672ef02badd0117883c1c43e6bf5bbbf8a68f229dedc406685c",
+    "role": "idle0",
+    "source_rectangle": [
+      41,
+      138,
+      70,
+      219
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 1,
+    "file": "assets/sprites/0_1.png",
+    "axis": [
+      14,
+      80
+    ],
+    "rgba_sha256": "d26c964404991159d53180acfcedfb68a4d8cf04020fbdebee0689789c5f4af3",
+    "role": "idle1",
+    "source_rectangle": [
+      79,
+      138,
+      108,
+      219
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 2,
+    "file": "assets/sprites/0_2.png",
+    "axis": [
+      14,
+      80
+    ],
+    "rgba_sha256": "3f57b1ac476ba4213931eaaed330a4d2bd000ea3359eafc0636f9ff85e45fb5d",
+    "role": "idle2",
+    "source_rectangle": [
+      117,
+      138,
+      146,
+      219
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 3,
+    "file": "assets/sprites/0_3.png",
+    "axis": [
+      21,
+      80
+    ],
+    "rgba_sha256": "222aaf185435aef41b79822a386f1e1e68c56babc23034ba3370e9d6a42d1429",
+    "role": "walk0",
+    "source_rectangle": [
+      33,
+      227,
+      70,
+      310
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 4,
+    "file": "assets/sprites/0_4.png",
+    "axis": [
+      24,
+      80
+    ],
+    "rgba_sha256": "3cf27862f05b95e2c77308fd85fc8f5dac5bc297bddb94d3b4c972149247e14b",
+    "role": "walk1",
+    "source_rectangle": [
+      75,
+      227,
+      124,
+      309
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 5,
+    "file": "assets/sprites/0_5.png",
+    "axis": [
+      22,
+      80
+    ],
+    "rgba_sha256": "14ffe15ecff5750184407acfd09933cadee00de58bc0a70bbc417e89976b3088",
+    "role": "walk2",
+    "source_rectangle": [
+      134,
+      227,
+      177,
+      309
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 6,
+    "file": "assets/sprites/0_6.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "e503f55eb70e6c24543387b574edd48bddc9dc8f8a8e7572b1ed2f8a49b1bbc5",
+    "role": "walk3",
+    "source_rectangle": [
+      186,
+      227,
+      219,
+      309
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 7,
+    "file": "assets/sprites/0_7.png",
+    "axis": [
+      23,
+      80
+    ],
+    "rgba_sha256": "c9958fef1985f315c7c80119fdfa145c6cd003501438097db53e5edaa0cd525f",
+    "role": "walk4",
+    "source_rectangle": [
+      224,
+      227,
+      270,
+      309
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 8,
+    "file": "assets/sprites/0_8.png",
+    "axis": [
+      20,
+      80
+    ],
+    "rgba_sha256": "ed0628cbf540eadc117bebfb263af6771dd5d08dd7234fa726758cddf2d6b8e9",
+    "role": "walk5",
+    "source_rectangle": [
+      274,
+      227,
+      313,
+      309
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 9,
+    "file": "assets/sprites/0_9.png",
+    "axis": [
+      23,
+      73
+    ],
+    "rgba_sha256": "fd893f4d4b37682e8a81e4382a22c3d147b00fb276ca499b4425cd46bde1e4d8",
+    "role": "hurt0",
+    "source_rectangle": [
+      31,
+      322,
+      80,
+      396
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 10,
+    "file": "assets/sprites/0_10.png",
+    "axis": [
+      20,
+      70
+    ],
+    "rgba_sha256": "b7be0dbdf7d892d2f422cfe9f8578a5f0a7c8ff2c80087d9a412df8bf04ca23b",
+    "role": "hurt1",
+    "source_rectangle": [
+      86,
+      324,
+      134,
+      395
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 11,
+    "file": "assets/sprites/0_11.png",
+    "axis": [
+      35,
+      47
+    ],
+    "rgba_sha256": "138814ad4522398c7c21923f9feb024d1c3d1946d43f8426787fad3c6964ab41",
+    "role": "hurt2",
+    "source_rectangle": [
+      143,
+      328,
+      214,
+      376
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 12,
+    "file": "assets/sprites/0_12.png",
+    "axis": [
+      33,
+      39
+    ],
+    "rgba_sha256": "2e6c07fa7cca2cf72dabeed3eb30a6c90ff3812f686e21b21060a9e685f6188f",
+    "role": "hurt3",
+    "source_rectangle": [
+      234,
+      320,
+      305,
+      360
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 13,
+    "file": "assets/sprites/0_13.png",
+    "axis": [
+      37,
+      25
+    ],
+    "rgba_sha256": "8673efc095b596a20581a82d77a6b14d44fcf06d895b8b018c4da52f89d26864",
+    "role": "hurt4",
+    "source_rectangle": [
+      230,
+      366,
+      310,
+      392
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 14,
+    "file": "assets/sprites/0_14.png",
+    "axis": [
+      25,
+      43
+    ],
+    "rgba_sha256": "284440668ac72d2899f34d81e4b5a5ae26b86fea8ae7337da0c34ba059f84da1",
+    "role": "hurt5",
+    "source_rectangle": [
+      325,
+      341,
+      391,
+      385
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 15,
+    "file": "assets/sprites/0_15.png",
+    "axis": [
+      24,
+      54
+    ],
+    "rgba_sha256": "550aefbdfa6fda429407d0ba5811cbb68342c2c5e8a200f1e818b849c2c18d17",
+    "role": "hurt6",
+    "source_rectangle": [
+      402,
+      336,
+      444,
+      391
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 16,
+    "file": "assets/sprites/0_16.png",
+    "axis": [
+      17,
+      80
+    ],
+    "rgba_sha256": "fab219c3e7bbebeee1ff651dd0d42142eabe1c35ae64fdafd3bda7faab9e18c7",
+    "role": "cast0",
+    "source_rectangle": [
+      41,
+      410,
+      78,
+      491
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 17,
+    "file": "assets/sprites/0_17.png",
+    "axis": [
+      14,
+      80
+    ],
+    "rgba_sha256": "3b0fc17701d179702600ce39a0f52876a70dadd5a84bbf3ad4a5f723d9c15357",
+    "role": "cast1",
+    "source_rectangle": [
+      85,
+      410,
+      115,
+      491
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 18,
+    "file": "assets/sprites/0_18.png",
+    "axis": [
+      14,
+      80
+    ],
+    "rgba_sha256": "aa240a3fc4a15a59d6882fd3bec0abe95ffaed41c904f5c2ee7d8c68a80df412",
+    "role": "cast2",
+    "source_rectangle": [
+      126,
+      412,
+      155,
+      493
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 19,
+    "file": "assets/sprites/0_19.png",
+    "axis": [
+      15,
+      80
+    ],
+    "rgba_sha256": "c0306fec4059ee35277431d34b2c71a6ac7abbb99a2a8aec366b8bb4bd9df1e5",
+    "role": "cast3",
+    "source_rectangle": [
+      162,
+      411,
+      217,
+      492
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 20,
+    "file": "assets/sprites/0_20.png",
+    "axis": [
+      15,
+      80
+    ],
+    "rgba_sha256": "1122514773c1d48cd5be4760cead7a3b466e8e52547f6cfffb77bc7a9d423255",
+    "role": "cast4",
+    "source_rectangle": [
+      223,
+      411,
+      278,
+      492
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 21,
+    "file": "assets/sprites/0_21.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "357c8b6d0eca6381f9be6c1359f5078a8f722b90cd5f018f1aecbdce7437d94f",
+    "role": "cast5",
+    "source_rectangle": [
+      290,
+      410,
+      334,
+      491
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 22,
+    "file": "assets/sprites/0_22.png",
+    "axis": [
+      17,
+      80
+    ],
+    "rgba_sha256": "24057004986a14448efbe46a2d5412096809a5edeb1cff534c1331816f748e36",
+    "role": "cast6",
+    "source_rectangle": [
+      340,
+      410,
+      378,
+      491
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 23,
+    "file": "assets/sprites/0_23.png",
+    "axis": [
+      19,
+      79
+    ],
+    "rgba_sha256": "33b77cf0e1eb84d4f6f2b544250668f0f22f766147a433097f31690f6f37489c",
+    "role": "needles0",
+    "source_rectangle": [
+      33,
+      501,
+      100,
+      581
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 24,
+    "file": "assets/sprites/0_24.png",
+    "axis": [
+      19,
+      81
+    ],
+    "rgba_sha256": "e767fe1b8c959450c26f6d212dc37ab1ebbc9741a51fb1c3b62cc8ad5b951343",
+    "role": "needles1",
+    "source_rectangle": [
+      103,
+      501,
+      172,
+      583
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 25,
+    "file": "assets/sprites/0_25.png",
+    "axis": [
+      18,
+      79
+    ],
+    "rgba_sha256": "951ebe4e2e151c8a53d27f5db749fa6961aeb5bbf557d295eb2965bd62b176c4",
+    "role": "needles2",
+    "source_rectangle": [
+      184,
+      501,
+      243,
+      581
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 26,
+    "file": "assets/sprites/0_26.png",
+    "axis": [
+      18,
+      79
+    ],
+    "rgba_sha256": "3966436b43d221f4377bbbf5262ac66e49495dccd9c5bf424fba49f7ab66b857",
+    "role": "needles3",
+    "source_rectangle": [
+      252,
+      502,
+      311,
+      582
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 27,
+    "file": "assets/sprites/0_27.png",
+    "axis": [
+      19,
+      75
+    ],
+    "rgba_sha256": "de20f010d768f4e231be8037f4a558ab53d8609bd6ba3765ada89a229c27a333",
+    "role": "punch0",
+    "source_rectangle": [
+      32,
+      590,
+      67,
+      666
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 28,
+    "file": "assets/sprites/0_28.png",
+    "axis": [
+      25,
+      66
+    ],
+    "rgba_sha256": "678edc37799d712cd99fa898878cde1000777544efe0c7379c4106a16202fc57",
+    "role": "punch1",
+    "source_rectangle": [
+      72,
+      598,
+      149,
+      665
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 29,
+    "file": "assets/sprites/0_29.png",
+    "axis": [
+      27,
+      66
+    ],
+    "rgba_sha256": "e363b5cb82cba92c1841a2b85aa9d64aae9248ce2a8922b0fad4d7f96662bf01",
+    "role": "punch2",
+    "source_rectangle": [
+      149,
+      601,
+      228,
+      668
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 30,
+    "file": "assets/sprites/0_30.png",
+    "axis": [
+      26,
+      66
+    ],
+    "rgba_sha256": "6290f1af8ff4478467636887934133ab9e9f2cebcad5f4b0060f3caa9af11065",
+    "role": "punch3",
+    "source_rectangle": [
+      229,
+      599,
+      295,
+      666
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 31,
+    "file": "assets/sprites/0_31.png",
+    "axis": [
+      22,
+      75
+    ],
+    "rgba_sha256": "8b894c6832e58b5aabaf8f1f6642995ffed39c93cfbfd2fae8c107e342818e12",
+    "role": "punch4",
+    "source_rectangle": [
+      316,
+      595,
+      358,
+      671
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 32,
+    "file": "assets/sprites/0_32.png",
+    "axis": [
+      25,
+      67
+    ],
+    "rgba_sha256": "1a6587460fdf2e7704e9d885c4ac8cb021bcd5edba00c928caaf188cc4144cfc",
+    "role": "punch5",
+    "source_rectangle": [
+      358,
+      603,
+      427,
+      671
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 33,
+    "file": "assets/sprites/0_33.png",
+    "axis": [
+      25,
+      67
+    ],
+    "rgba_sha256": "1723ce01ef73b2884054943697e201abe1b69e9248393f3580bfa3be269787cb",
+    "role": "punch6",
+    "source_rectangle": [
+      428,
+      602,
+      491,
+      670
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 34,
+    "file": "assets/sprites/0_34.png",
+    "axis": [
+      25,
+      67
+    ],
+    "rgba_sha256": "6698a8a95268ada2f0d8d25fc38465982fe6d62c65e604e7dd20e5badc558c87",
+    "role": "punch7",
+    "source_rectangle": [
+      493,
+      603,
+      556,
+      671
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 35,
+    "file": "assets/sprites/0_35.png",
+    "axis": [
+      26,
+      76
+    ],
+    "rgba_sha256": "92d2242c5a6c1be316dbfaa752e04808af27b9e27cb8e237983090aeb043e838",
+    "role": "punch8",
+    "source_rectangle": [
+      568,
+      594,
+      618,
+      671
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 36,
+    "file": "assets/sprites/0_36.png",
+    "axis": [
+      25,
+      76
+    ],
+    "rgba_sha256": "3939a61a6c6d1ecf41991dcc27b179d1552c62cc9ccfc1dd25e5a3df4480b75c",
+    "role": "punch9",
+    "source_rectangle": [
+      623,
+      595,
+      667,
+      672
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 37,
+    "file": "assets/sprites/0_37.png",
+    "axis": [
+      18,
+      92
+    ],
+    "rgba_sha256": "48be9817fc3f718ca8e41aa21f0c2adfc2df4e7187f2104303198f752b4da954",
+    "role": "sweep0",
+    "source_rectangle": [
+      34,
+      682,
+      83,
+      775
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 38,
+    "file": "assets/sprites/0_38.png",
+    "axis": [
+      17,
+      92
+    ],
+    "rgba_sha256": "4e78495fec059ddc568ac2998f1394c04f72a580eb6de7b9260eeb1d28eec3ab",
+    "role": "sweep1",
+    "source_rectangle": [
+      91,
+      680,
+      123,
+      773
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 39,
+    "file": "assets/sprites/0_39.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "b4f3f23502d9f644e7ed93abccdf6cf3db5336b45c0906bb558289327752f176",
+    "role": "sweep2",
+    "source_rectangle": [
+      135,
+      691,
+      191,
+      772
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 40,
+    "file": "assets/sprites/0_40.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "1122514773c1d48cd5be4760cead7a3b466e8e52547f6cfffb77bc7a9d423255",
+    "role": "sweep3",
+    "source_rectangle": [
+      196,
+      689,
+      252,
+      771
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 41,
+    "file": "assets/sprites/0_41.png",
+    "axis": [
+      17,
+      75
+    ],
+    "rgba_sha256": "ac5aac095fa93bca864fd5430ad1fad873e71d79def288de25d6443e1cab7bfe",
+    "role": "push0",
+    "source_rectangle": [
+      35,
+      783,
+      85,
+      860
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 42,
+    "file": "assets/sprites/0_42.png",
+    "axis": [
+      18,
+      75
+    ],
+    "rgba_sha256": "08271bf6be76e11af6dcfd1d892a6499e95404913ff473cdbfc39ce9bb9a78ff",
+    "role": "push1",
+    "source_rectangle": [
+      90,
+      784,
+      140,
+      861
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 43,
+    "file": "assets/sprites/0_43.png",
+    "axis": [
+      18,
+      78
+    ],
+    "rgba_sha256": "2a053e981bb0a7afe5dbd8a42833b8fe18265a25cbbd108b7aa74474305583c1",
+    "role": "claw_cast0",
+    "source_rectangle": [
+      37,
+      865,
+      87,
+      945
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 44,
+    "file": "assets/sprites/0_44.png",
+    "axis": [
+      18,
+      78
+    ],
+    "rgba_sha256": "ee11efb9e215fba2e2112727cacb1ac30e4cee74ec89640afb4b1f63e7a9a9d7",
+    "role": "claw_cast1",
+    "source_rectangle": [
+      91,
+      866,
+      141,
+      946
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 45,
+    "file": "assets/sprites/0_45.png",
+    "axis": [
+      19,
+      103
+    ],
+    "rgba_sha256": "92484ccccfc6d2964457904d5b70d04367a699fe1096c28c024cabe9ffb13f1d",
+    "role": "iron_sweep0",
+    "source_rectangle": [
+      35,
+      939,
+      93,
+      1044
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 46,
+    "file": "assets/sprites/0_46.png",
+    "axis": [
+      20,
+      101
+    ],
+    "rgba_sha256": "d110903b1e5991ca644469c67cfcaff781612bae214f1168ecbf13c26db5e9c8",
+    "role": "iron_sweep1",
+    "source_rectangle": [
+      93,
+      939,
+      187,
+      1043
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 47,
+    "file": "assets/sprites/0_47.png",
+    "axis": [
+      19,
+      96
+    ],
+    "rgba_sha256": "91875321f061a3ab9f1690e4d6161a13400072c941618a61cc2f6610d6dddffc",
+    "role": "iron_sweep2",
+    "source_rectangle": [
+      189,
+      941,
+      290,
+      1043
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 48,
+    "file": "assets/sprites/0_48.png",
+    "axis": [
+      18,
+      97
+    ],
+    "rgba_sha256": "1c9f27d85a52fcba0c5da5d152b5c748c3fd8039e78e94fbe28d83ed78fe924e",
+    "role": "iron_sweep3",
+    "source_rectangle": [
+      297,
+      944,
+      399,
+      1045
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 49,
+    "file": "assets/sprites/0_49.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "304cbac58d7666ad818f01c4b5c6e10925e04a98a2992888ae3c9bf2ac5766b3",
+    "role": "iron_sweep4",
+    "source_rectangle": [
+      405,
+      958,
+      499,
+      1045
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 50,
+    "file": "assets/sprites/0_50.png",
+    "axis": [
+      34,
+      86
+    ],
+    "rgba_sha256": "34e28c1c98e41032b6bd0020669d4fb2fc0a57d78654858ee6496757bd0b412d",
+    "role": "iron_arc0",
+    "source_rectangle": [
+      30,
+      1046,
+      104,
+      1153
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 51,
+    "file": "assets/sprites/0_51.png",
+    "axis": [
+      19,
+      105
+    ],
+    "rgba_sha256": "3afc5e0352dfa9e9c150d973843fd3249a0546d714d63b7e43ebb51cf416091c",
+    "role": "iron_arc1",
+    "source_rectangle": [
+      107,
+      1045,
+      181,
+      1155
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 52,
+    "file": "assets/sprites/0_52.png",
+    "axis": [
+      24,
+      99
+    ],
+    "rgba_sha256": "b93ba635d7f27103224ee13feaac4898f227e65159a3e3ca74bce7b1a8e2c764",
+    "role": "iron_arc2",
+    "source_rectangle": [
+      183,
+      1052,
+      282,
+      1158
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 53,
+    "file": "assets/sprites/0_53.png",
+    "axis": [
+      24,
+      101
+    ],
+    "rgba_sha256": "7c49ebd049b6e774097f7da9ab1089719baf702e457261a90d8317a93c436137",
+    "role": "iron_arc3",
+    "source_rectangle": [
+      286,
+      1050,
+      390,
+      1158
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 54,
+    "file": "assets/sprites/0_54.png",
+    "axis": [
+      22,
+      99
+    ],
+    "rgba_sha256": "b7c0397f1cc4d19e3d844298820d16b1311560068ebb32f1a70c0e15bcb7eeef",
+    "role": "iron_arc4",
+    "source_rectangle": [
+      392,
+      1053,
+      482,
+      1158
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 55,
+    "file": "assets/sprites/0_55.png",
+    "axis": [
+      19,
+      84
+    ],
+    "rgba_sha256": "fcc972075ff6988e468df4a27463570c897c2a62366d5281418d25465c32abed",
+    "role": "iron_control0",
+    "source_rectangle": [
+      43,
+      1162,
+      131,
+      1250
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 56,
+    "file": "assets/sprites/0_56.png",
+    "axis": [
+      18,
+      80
+    ],
+    "rgba_sha256": "afc473390e6ddb606bc0f97d40ee696d35b00adccc6cd3288e88a516a6c31d82",
+    "role": "iron_control1",
+    "source_rectangle": [
+      134,
+      1165,
+      210,
+      1251
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 57,
+    "file": "assets/sprites/0_57.png",
+    "axis": [
+      29,
+      80
+    ],
+    "rgba_sha256": "64b1a3c0e4f7dfcc0569a7e837b75df999596442d17f1f0bf3bbd20b14ae9199",
+    "role": "iron_control2",
+    "source_rectangle": [
+      212,
+      1164,
+      278,
+      1250
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 58,
+    "file": "assets/sprites/0_58.png",
+    "axis": [
+      27,
+      80
+    ],
+    "rgba_sha256": "aa319e8b6fe0f1478645778a93e188f59d31c43d0efe6bdce1f0c95a987cf033",
+    "role": "iron_control3",
+    "source_rectangle": [
+      281,
+      1164,
+      347,
+      1249
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 59,
+    "file": "assets/sprites/0_59.png",
+    "axis": [
+      24,
+      80
+    ],
+    "rgba_sha256": "6380af22fbc131f1902c1744bf5bc8661ddb9387a60d8b7666eb99af55c6eef8",
+    "role": "iron_control4",
+    "source_rectangle": [
+      349,
+      1162,
+      408,
+      1249
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 60,
+    "file": "assets/sprites/0_60.png",
+    "axis": [
+      24,
+      80
+    ],
+    "rgba_sha256": "014483fa63ef15db2010a3aaef14a573e5db167a48fabf1dc50dc318375efad0",
+    "role": "iron_control5",
+    "source_rectangle": [
+      418,
+      1162,
+      504,
+      1249
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 61,
+    "file": "assets/sprites/0_61.png",
+    "axis": [
+      26,
+      80
+    ],
+    "rgba_sha256": "b739a57bfdca2b664ae821d501081fbed4b340ad75712a4df22f3f43be256bf8",
+    "role": "iron_control6",
+    "source_rectangle": [
+      518,
+      1166,
+      599,
+      1253
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 62,
+    "file": "assets/sprites/0_62.png",
+    "axis": [
+      21,
+      80
+    ],
+    "rgba_sha256": "30e61e1ec0a2c26cc1feda4c5e9bd33dae6f42e8a23342e562f96d8dd61b4af8",
+    "role": "iron_control7",
+    "source_rectangle": [
+      605,
+      1165,
+      681,
+      1251
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": false
+  },
+  {
+    "group": 0,
+    "number": 63,
+    "file": "assets/sprites/0_63.png",
+    "axis": [
+      26,
+      80
+    ],
+    "rgba_sha256": "0dfae3524e60d28a79107fca5551d1e58dec83721e629c2f3f07d39c6a3c4083",
+    "role": "air0",
+    "source_rectangle": [
+      36,
+      1253,
+      94,
+      1341
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 64,
+    "file": "assets/sprites/0_64.png",
+    "axis": [
+      25,
+      85
+    ],
+    "rgba_sha256": "e28cbb268963e6b78e5af514d0ef4e5ecb25d3c318929e9e75663bf83726b272",
+    "role": "air1",
+    "source_rectangle": [
+      105,
+      1250,
+      154,
+      1341
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 65,
+    "file": "assets/sprites/0_65.png",
+    "axis": [
+      21,
+      80
+    ],
+    "rgba_sha256": "c168170e9ff12b2fd1649490f1f1b567bd98b4103fb188bdd00998b51bcb6bcc",
+    "role": "air2",
+    "source_rectangle": [
+      39,
+      1352,
+      105,
+      1439
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 66,
+    "file": "assets/sprites/0_66.png",
+    "axis": [
+      24,
+      80
+    ],
+    "rgba_sha256": "17a5aa4790c7eb2099aede2bd2e95f4e768daf92c21d5f61c124840762ff9cea",
+    "role": "air3",
+    "source_rectangle": [
+      98,
+      1351,
+      168,
+      1437
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 67,
+    "file": "assets/sprites/0_67.png",
+    "axis": [
+      39,
+      84
+    ],
+    "rgba_sha256": "c691ede891ac3cfb509ba27b4c7ad6d9ba990c87cf572fa204e9403b5b3c53cd",
+    "role": "sword0",
+    "source_rectangle": [
+      25,
+      1441,
+      88,
+      1527
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 68,
+    "file": "assets/sprites/0_68.png",
+    "axis": [
+      37,
+      84
+    ],
+    "rgba_sha256": "c8d8d57626d99f1eb7198cee8b7d58806c74a86196ba6f389fae14c7c1c73e5c",
+    "role": "sword1",
+    "source_rectangle": [
+      93,
+      1443,
+      154,
+      1529
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 69,
+    "file": "assets/sprites/0_69.png",
+    "axis": [
+      41,
+      82
+    ],
+    "rgba_sha256": "0f373d9f02f4d27f47f289ff6cee583ccf3f8fac168cc0bf6e401ac6d9f10d2e",
+    "role": "sword2",
+    "source_rectangle": [
+      157,
+      1444,
+      236,
+      1528
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 70,
+    "file": "assets/sprites/0_70.png",
+    "axis": [
+      43,
+      82
+    ],
+    "rgba_sha256": "69b163d7a14e1a806fcd40dca8545b5d250bbf119455078a2efd457c34eed2d6",
+    "role": "sword3",
+    "source_rectangle": [
+      241,
+      1442,
+      320,
+      1526
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 71,
+    "file": "assets/sprites/0_71.png",
+    "axis": [
+      52,
+      80
+    ],
+    "rgba_sha256": "8b6895069ca26ce095e28614fc33b8b01d7bee1921ec2444bbc00a356f6bbe50",
+    "role": "sword4",
+    "source_rectangle": [
+      315,
+      1438,
+      409,
+      1520
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 72,
+    "file": "assets/sprites/0_72.png",
+    "axis": [
+      36,
+      78
+    ],
+    "rgba_sha256": "2742535a355a9347e7686a9e3c77fdcf0f69a412ecda37091f122ffb7cb7c242",
+    "role": "sword5",
+    "source_rectangle": [
+      414,
+      1440,
+      487,
+      1520
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 73,
+    "file": "assets/sprites/0_73.png",
+    "axis": [
+      53,
+      75
+    ],
+    "rgba_sha256": "21152fd311e8bab1787ffab9654ea97f6ac370846d9d115856d60c4f8412f275",
+    "role": "thrust0",
+    "source_rectangle": [
+      33,
+      1530,
+      160,
+      1607
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 74,
+    "file": "assets/sprites/0_74.png",
+    "axis": [
+      53,
+      75
+    ],
+    "rgba_sha256": "2f3e58f564277581b202e0b038ef19d0ceec79be3a2878316393dda209952d26",
+    "role": "thrust1",
+    "source_rectangle": [
+      149,
+      1531,
+      274,
+      1608
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 75,
+    "file": "assets/sprites/0_75.png",
+    "axis": [
+      37,
+      83
+    ],
+    "rgba_sha256": "0065a9f38b08da69fc7c47e9167d3706a3e477f53d7b24f633de528848642483",
+    "role": "flight0",
+    "source_rectangle": [
+      27,
+      1616,
+      97,
+      1701
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 76,
+    "file": "assets/sprites/0_76.png",
+    "axis": [
+      34,
+      83
+    ],
+    "rgba_sha256": "7c1d79e9d350f03616d08ecd7a97ae79707158e293d52d82a261377907cd3954",
+    "role": "flight1",
+    "source_rectangle": [
+      109,
+      1617,
+      176,
+      1702
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 77,
+    "file": "assets/sprites/0_77.png",
+    "axis": [
+      44,
+      61
+    ],
+    "rgba_sha256": "65cefbe068d25b2fbc9ecc62507547bcccf41aa832f0379df59f644fd898ccd0",
+    "role": "flight2",
+    "source_rectangle": [
+      178,
+      1634,
+      260,
+      1697
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 78,
+    "file": "assets/sprites/0_78.png",
+    "axis": [
+      44,
+      58
+    ],
+    "rgba_sha256": "fc8ae49bfb12ccce7982e5f3e2a4e9dfc5f243f7b91615fff753b57f5e8601d9",
+    "role": "flight3",
+    "source_rectangle": [
+      271,
+      1634,
+      355,
+      1694
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 79,
+    "file": "assets/sprites/0_79.png",
+    "axis": [
+      36,
+      58
+    ],
+    "rgba_sha256": "c994ef02d6ac867b2f3c53d79d95538cc23e1e4809eb6c075f3a8a072bb0eda5",
+    "role": "flight4",
+    "source_rectangle": [
+      374,
+      1634,
+      440,
+      1694
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 0,
+    "number": 80,
+    "file": "assets/sprites/0_80.png",
+    "axis": [
+      35,
+      58
+    ],
+    "rgba_sha256": "8215b942c2627a8875b0d8e9f4f3ed5e912057cd166c25bfcc40000555f9af0d",
+    "role": "flight5",
+    "source_rectangle": [
+      447,
+      1632,
+      512,
+      1692
+    ],
+    "redrawn": false,
+    "scale": 1,
+    "neighbor_fragments_removed": true
+  },
+  {
+    "group": 8600,
+    "number": 0,
+    "file": "assets/effects/8600_0.png",
+    "axis": [
+      14,
+      46
+    ],
+    "rgba_sha256": "ebac050c9458893be6600a8519c590fe709f0ea2730a49ce7e9307aee6793cb1",
+    "source_rectangle": [
+      385,
+      485,
+      415,
+      579
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8601,
+    "number": 0,
+    "file": "assets/effects/8601_0.png",
+    "axis": [
+      39,
+      81
+    ],
+    "rgba_sha256": "d34d62988d907a38688474a55ee7d5d8aae14decb679204b3e638d5125e059d2",
+    "source_rectangle": [
+      270,
+      684,
+      349,
+      767
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8602,
+    "number": 0,
+    "file": "assets/effects/8602_0.png",
+    "axis": [
+      31,
+      19
+    ],
+    "rgba_sha256": "b47fa31dd92ea7a5e38bfd44e8acb7920b8017035e56c9572a97a1fdb00a134c",
+    "source_rectangle": [
+      167,
+      803,
+      231,
+      843
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8603,
+    "number": 0,
+    "file": "assets/effects/8603_0.png",
+    "axis": [
+      87,
+      17
+    ],
+    "rgba_sha256": "fbdc9b4aee91f105ba42690ef6193942f66fc6a1724b7d4962abf962df6e94bc",
+    "source_rectangle": [
+      154,
+      893,
+      330,
+      928
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8604,
+    "number": 0,
+    "file": "assets/effects/8604_0.png",
+    "axis": [
+      59,
+      37
+    ],
+    "rgba_sha256": "a57cba758eeaee7a1c9ffb10b5b6db9e1b760bd58b2aa53599a017ed9982326c",
+    "source_rectangle": [
+      171,
+      1267,
+      290,
+      1343
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8605,
+    "number": 0,
+    "file": "assets/effects/8605_0.png",
+    "axis": [
+      46,
+      39
+    ],
+    "rgba_sha256": "eefffcb19de31017ae8c8d5898b94a622f425c6ccb8fc3ffaaad94ac7fca27df",
+    "source_rectangle": [
+      308,
+      1261,
+      401,
+      1341
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8606,
+    "number": 0,
+    "file": "assets/effects/8606_0.png",
+    "axis": [
+      59,
+      26
+    ],
+    "rgba_sha256": "e5599d806e20f7bbb191bb95f7a7896d3fd380c89c78ccbef91b757d12fd5ae5",
+    "source_rectangle": [
+      415,
+      1274,
+      534,
+      1327
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8607,
+    "number": 0,
+    "file": "assets/effects/8607_0.png",
+    "axis": [
+      11,
+      12
+    ],
+    "rgba_sha256": "417a2b5fdf7a27c202d88cad3118e2a85c24b33320aae4ea7b14d7aa58cee002",
+    "source_rectangle": [
+      197,
+      1374,
+      220,
+      1399
+    ],
+    "redrawn": false
+  },
+  {
+    "group": 8610,
+    "number": 0,
+    "file": "assets/effects/8610_0.png",
+    "axis": [
+      47,
+      9
+    ],
+    "rgba_sha256": "7552a6be0b8840f6e67825bfc7c486fbdb347dfd41e68ccb748a08867cc4b2e7",
+    "derived_from": "Original iron needle, rotation only"
+  },
+  {
+    "group": 8615,
+    "number": 0,
+    "file": "assets/effects/8615_0.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "de6d24516d3c04a9d8d0538162ced647de4c89b2a476056a59103381f8632d16",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8615,
+    "number": 1,
+    "file": "assets/effects/8615_1.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "7cabc28f86bb3e109ce6ffb9b5f67e7bd2c920a7863cb04cf0bbaa6f087057a6",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8615,
+    "number": 2,
+    "file": "assets/effects/8615_2.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "52aa92e30c3c8ec7ea7294d5e09ed2f4cdd83325d92f48ba340c9faf6b6f69cb",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8615,
+    "number": 3,
+    "file": "assets/effects/8615_3.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "7cabc28f86bb3e109ce6ffb9b5f67e7bd2c920a7863cb04cf0bbaa6f087057a6",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8615,
+    "number": 4,
+    "file": "assets/effects/8615_4.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "de6d24516d3c04a9d8d0538162ced647de4c89b2a476056a59103381f8632d16",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8615,
+    "number": 5,
+    "file": "assets/effects/8615_5.png",
+    "axis": [
+      128,
+      5
+    ],
+    "rgba_sha256": "52aa92e30c3c8ec7ea7294d5e09ed2f4cdd83325d92f48ba340c9faf6b6f69cb",
+    "derived_from": "Vaydra original separate iron wings, paired"
+  },
+  {
+    "group": 8620,
+    "number": 0,
+    "file": "assets/effects/8620_0.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "243396f361b9098548ddc7ba082f66528811a13a7e9574ba6c78ab1b01a31e48",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 1,
+    "file": "assets/effects/8620_1.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "7593171da59c96fdd4692ad0301a4d7aacf06434278f75d12c737d8de23c2d1b",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 2,
+    "file": "assets/effects/8620_2.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "38a5620e727358beda9e238350d416dfe1d9f9d95611fc7e337444446d97ad8a",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 3,
+    "file": "assets/effects/8620_3.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "72ed95d10b33b4e9072f893a4b287844ed1aac932ae805784fff82bc8c1fa9e3",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 4,
+    "file": "assets/effects/8620_4.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "ec64bdbd18865b505118f15082949a02aad1836e750f88a5835fa3f1cb8b1a02",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 5,
+    "file": "assets/effects/8620_5.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "dff105f3450ca4dca0d80720461a9943f6bf2a3e9a6187fb75b2e869e8b133c5",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 6,
+    "file": "assets/effects/8620_6.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "c6f3f20b109f386d94935b46ff3319b92357dbc31999d17b22847363e4d13267",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8620,
+    "number": 7,
+    "file": "assets/effects/8620_7.png",
+    "axis": [
+      67,
+      150
+    ],
+    "rgba_sha256": "61dd85dcba50df7ff7ccbec02e49c6a8b135f8b4ad4e8994fe97d2c03e766a8e",
+    "derived_from": "Supplemental AI-generated black iron-sand cyclone effect atlas",
+    "body_art": false,
+    "ai_generated_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 0,
+    "file": "assets/effects/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 1,
+    "file": "assets/effects/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 2,
+    "file": "assets/effects/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8700,
+    "number": 3,
+    "file": "assets/effects/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 0,
+    "file": "assets/effects/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 1,
+    "file": "assets/effects/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 2,
+    "file": "assets/effects/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8710,
+    "number": 3,
+    "file": "assets/effects/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 0,
+    "file": "assets/effects/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 1,
+    "file": "assets/effects/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 2,
+    "file": "assets/effects/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 3,
+    "file": "assets/effects/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 4,
+    "file": "assets/effects/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8720,
+    "number": 5,
+    "file": "assets/effects/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 0,
+    "file": "assets/effects/8670_0.png",
+    "axis": [
+      132,
+      -133
+    ],
+    "rgba_sha256": "20ed4375d607374813eb47401074ef538487085f64e0130a22a019d613aa68e2",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 1,
+    "file": "assets/effects/8670_1.png",
+    "axis": [
+      170,
+      -121
+    ],
+    "rgba_sha256": "15cb1fe525b23bdf08c2888a062db73435f13348da0dfd799e120539ea20fe7c",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 2,
+    "file": "assets/effects/8670_2.png",
+    "axis": [
+      205,
+      -110
+    ],
+    "rgba_sha256": "76529b9c57fc0edf25cb364a7565092120e2be1448ebe002163ccaa2d733e10f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 3,
+    "file": "assets/effects/8670_3.png",
+    "axis": [
+      239,
+      -103
+    ],
+    "rgba_sha256": "b266ed0beb1bacc7489c501124d1f5ab34b1a6718427bdd50e1e04c125e0c649",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 4,
+    "file": "assets/effects/8670_4.png",
+    "axis": [
+      249,
+      -100
+    ],
+    "rgba_sha256": "45db90f17fb29b38ea611e059882b2bbd3d1c3975c0feeba2ce04b9de4eea57b",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 5,
+    "file": "assets/effects/8670_5.png",
+    "axis": [
+      257,
+      -99
+    ],
+    "rgba_sha256": "14ac963ecee7ebe93fe47b0e2469c7494d8abf5d5ff071256e02282bc4d74b7a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 6,
+    "file": "assets/effects/8670_6.png",
+    "axis": [
+      268,
+      -97
+    ],
+    "rgba_sha256": "710cdbcb62ea6995f93693b17f4fee4ade185314854eee3aa1e522cda73885fc",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 7,
+    "file": "assets/effects/8670_7.png",
+    "axis": [
+      277,
+      -95
+    ],
+    "rgba_sha256": "1b5f9642752f3a3ca043c2d65c6fd50990946de467b37aaaa14d90f31763a16f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 8,
+    "file": "assets/effects/8670_8.png",
+    "axis": [
+      286,
+      -94
+    ],
+    "rgba_sha256": "d29c334ded46ff85195881b3c5c9d849aec77cf9e717a2ba7e508d2bf28da4c4",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 9,
+    "file": "assets/effects/8670_9.png",
+    "axis": [
+      291,
+      -92
+    ],
+    "rgba_sha256": "2c63ad291615a259938f4aff569ef9a4612db52f8513b8a40cdc37d6d892128e",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8670,
+    "number": 10,
+    "file": "assets/effects/8670_10.png",
+    "axis": [
+      294,
+      -92
+    ],
+    "rgba_sha256": "53ea13c1b4f44c9e09dd970bdef06ab97df3d409a5cd2cffe5e307cfac3c1cdc",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 0,
+    "file": "assets/effects/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 1,
+    "file": "assets/effects/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 2,
+    "file": "assets/effects/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 3,
+    "file": "assets/effects/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 4,
+    "file": "assets/effects/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 5,
+    "file": "assets/effects/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 6,
+    "file": "assets/effects/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 7,
+    "file": "assets/effects/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 8,
+    "file": "assets/effects/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 9,
+    "file": "assets/effects/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 10,
+    "file": "assets/effects/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 11,
+    "file": "assets/effects/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 12,
+    "file": "assets/effects/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 13,
+    "file": "assets/effects/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 14,
+    "file": "assets/effects/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 15,
+    "file": "assets/effects/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 16,
+    "file": "assets/effects/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 17,
+    "file": "assets/effects/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 18,
+    "file": "assets/effects/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 19,
+    "file": "assets/effects/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 20,
+    "file": "assets/effects/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 21,
+    "file": "assets/effects/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 22,
+    "file": "assets/effects/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8900,
+    "number": 23,
+    "file": "assets/effects/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 0,
+    "file": "assets/effects/8910_0.png",
+    "axis": [
+      117,
+      17
+    ],
+    "rgba_sha256": "f7c0cbc33ae085abd1aefe6fcbc2484b1146cde28f50c44ba48cdc6f5e7330b3",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 1,
+    "file": "assets/effects/8910_1.png",
+    "axis": [
+      165,
+      24
+    ],
+    "rgba_sha256": "72e6a61e5f9fe501f4eeb4e45bac32771fdf87bae2d9912117a9547f80bdaf06",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 2,
+    "file": "assets/effects/8910_2.png",
+    "axis": [
+      172,
+      23
+    ],
+    "rgba_sha256": "e94160a1090849e929c4b3a749089394995ca60aecf9571c0e43ea164b37fdce",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 3,
+    "file": "assets/effects/8910_3.png",
+    "axis": [
+      185,
+      25
+    ],
+    "rgba_sha256": "db7b0a5381d01bcb86fabc83c6d37dd9c38502d19d8939ef6a608309bcad9a37",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8910,
+    "number": 4,
+    "file": "assets/effects/8910_4.png",
+    "axis": [
+      185,
+      25
+    ],
+    "rgba_sha256": "0358ce4d539f7d30aeb1255cb7bf06dfbcfc7e6c72497dc681e0705bd087b8a9",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 0,
+    "file": "assets/effects/8820_0.png",
+    "axis": [
+      72,
+      81
+    ],
+    "rgba_sha256": "f8bae3102beda2da5aa002bf5444a110df356dc0896cb6bf4308e5906342ae6e",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 1,
+    "file": "assets/effects/8820_1.png",
+    "axis": [
+      88,
+      98
+    ],
+    "rgba_sha256": "56ea9442e99ffa71c689f7b7d36c2db76340550eedadfd69c71185042a2ee6e5",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 2,
+    "file": "assets/effects/8820_2.png",
+    "axis": [
+      104,
+      107
+    ],
+    "rgba_sha256": "78d325c141ef77924c46cbaabc5763055088e8a67931a0ce558bab5fe74e85cc",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 3,
+    "file": "assets/effects/8820_3.png",
+    "axis": [
+      108,
+      114
+    ],
+    "rgba_sha256": "549dcd81dd39c4ab09dbfa4981a5baa601370241318e385081b704b3dfcdc8ff",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8820,
+    "number": 4,
+    "file": "assets/effects/8820_4.png",
+    "axis": [
+      95,
+      118
+    ],
+    "rgba_sha256": "aeca10cd6ff7ef576027166c368debb88fc1bd119f4b1d678cd9143f0ee38be4",
+    "shared_project_effect": true
+  },
+  {
+    "group": 8625,
+    "number": 0,
+    "file": "assets/effects/8625_0.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "3748c46f697e6793844741bc08686a51ee3de98baeb9e5d66a2330a69f132598",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 1,
+    "file": "assets/effects/8625_1.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "a81bdde6df86cb45fc6cabd0f86daf0188e1ba3db4cb0ec15d9f3532e4b9ef95",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 2,
+    "file": "assets/effects/8625_2.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "1efce1042a0f26922491c9a2f6d1b3eb8ddcd75a27512f27734d5dc3b3cfd258",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 3,
+    "file": "assets/effects/8625_3.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "f45028a1ee798dfd880e247336676d3c2e8550690ac3692aa514c701c46c5c26",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 4,
+    "file": "assets/effects/8625_4.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "44bd591be1c401959f8208a67f18c6274e96ab0843e9d0305c611fbdba8a410c",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 5,
+    "file": "assets/effects/8625_5.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "5e5f9bb4623bcb716d90fc6d339d6bcd1c678ec770c1102c01f27bfbf808c486",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 6,
+    "file": "assets/effects/8625_6.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "4b4be43cb77c62f986d44c4a9b46f5167f300575f88442166ce361c0ce72a1b9",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 8625,
+    "number": 7,
+    "file": "assets/effects/8625_7.png",
+    "axis": [
+      20,
+      34
+    ],
+    "rgba_sha256": "75030048ec4bfdcddf1cc2f1ab2c64c01f811e219614994858c31a0f147595eb",
+    "derived_from": "Original iron fist with a separate blue electrical rim",
+    "body_art": false
+  },
+  {
+    "group": 9000,
+    "number": 0,
+    "file": "assets/effects/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "9a1090daf445bff8854d8ccf2fa5a0fc0585ab654e1775135f0c9e4b415baf5d",
+    "portrait_from_original": true
+  },
+  {
+    "group": 9000,
+    "number": 1,
+    "file": "assets/effects/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "b0f1a83e3a634c3706e966f0ec215fda21a41da4f6afb0fe6467ca4c602521d3",
+    "portrait_from_original": true
+  }
+]

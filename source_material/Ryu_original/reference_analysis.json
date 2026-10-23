@@ -1,0 +1,15 @@
+{
+  "reference": "User supplied Vaydra Senki Ryu gameplay; two encodings of the same demonstration",
+  "observations": [
+    {"seconds": [4, 10], "creator_label": "N.Attack", "observed": "Iron sand and crossed claw bands near the training target", "adaptation": "Own taijutsu and iron-sword chains from the provided sheet; separate usable claw marks"},
+    {"seconds": [13, 29], "creator_label": "Skill01 / Press N.Atk", "observed": "Successive horizontal iron needles with casting and pointing poses", "adaptation": "Travelling iron needle barrage; amplification adds two shots"},
+    {"seconds": [29, 36], "creator_label": "Skill02", "observed": "Dark iron fist with blue electrical magnetic effects", "adaptation": "Visible travelling fist and a longer recoverable hit stun"},
+    {"seconds": [37, 53], "creator_label": "Skill03", "observed": "Iron grows beneath the target and encloses it before dispersing", "adaptation": "Grounded growing iron prison with finite placement range and two physical impacts"},
+    {"seconds": [53, 64], "creator_label": "Skill04", "observed": "Dark tornado, iron prism and ground impact", "adaptation": "Separate four-hit iron-sand tornado and rotating iron prism"},
+    {"seconds": [65, 75], "creator_label": "Skill05 ulti", "observed": "Iron wings, lift, diagonal feather rain, sword descent and final impact", "adaptation": "Confirmed-hit ultimate using unchanged flight and sword poses, separate original wings, moving feather effects and capped damage"}
+  ],
+  "all_body_art": "Original Vaydra sheet, native size, no generated bodies",
+  "supplemental_art": "Effect-only eight-frame iron-sand tornado atlas",
+  "audio": "Nonverbal project effects; no character voice impersonation or mixed soundtrack extracted from the reference",
+  "implementation": "Own MUGEN 1.1 states, collision, controls and balancing"
+}

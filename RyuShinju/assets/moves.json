@@ -1,0 +1,104 @@
+{
+  "moves": [
+    [
+      "Lluvia",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Prisma",
+      "a",
+      "B",
+      1010,
+      500
+    ],
+    [
+      "Magnetismo",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "Prision",
+      "b",
+      "B",
+      1030,
+      650
+    ],
+    [
+      "Espada",
+      "c",
+      "F",
+      1040,
+      450
+    ],
+    [
+      "Ola",
+      "c",
+      "B",
+      1050,
+      600
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Lanzador",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Enjambre",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Aguja",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Marca",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Torbellino",
+      "y",
+      "D",
+      1430,
+      650
+    ],
+    [
+      "SalidaGarra",
+      "z",
+      "D",
+      1440,
+      400
+    ]
+  ],
+  "amplification_offset": 10000,
+  "amplification_ticks": 1200,
+  "amplification_cost": 1500,
+  "activation_requires": 3000,
+  "ultimate_cost": 3000,
+  "ultimate_budget": "min(420,42% opponent max life)",
+  "amplified_ultimate_budget": "min(450,45% opponent max life)",
+  "voices": false,
+  "video": "User supplied Vaydra Senki gameplay; original sheet for all body poses"
+}

@@ -1,0 +1,318 @@
+{
+  "runtime_sha256": "e76533fcc75941edfec3f84514dc3dc6caaec346e5cd2f022c5fead78852e09c",
+  "video": "previews/RyuShinju_gameplay_motor.mp4",
+  "video_sha256": "2f80bd0d1ac47c4daab105e32e91f3697beec3d245177c6c11de1b4e985dbd31",
+  "ultimate_clip": "previews/RyuShinju_ulti_motor.mp4",
+  "ultimate_clip_sha256": "8c9db71e349bef852b7833f6734afe9c3139feb89ba369e4141a79ae5c65811d",
+  "audio": "Actual SDL stereo 44100Hz, trimmed per special; no offline voices or effects",
+  "audio_correlation": 0.9284223871771892,
+  "audio_global_clock_drift_seconds": [
+    0.0,
+    0.10612244897959133,
+    0.0729251700680269,
+    0.1790476190476209,
+    0.14585034013605203,
+    0.1126530612244867,
+    0.1258956916099816,
+    0.04625850340135962,
+    0.05950113378684385,
+    0.026303854875285637,
+    -0.006893424036279683,
+    -0.0341043083900292,
+    -0.16018140589570073,
+    -0.1469387755102094,
+    -0.2730158730158809,
+    -0.2597732426303754,
+    -0.2929705215419478,
+    -0.3726077097505698,
+    -0.405804988662128,
+    -0.39256235827665087,
+    -0.47219954648525864,
+    -0.5053968253968311,
+    -0.4921541950113397,
+    0.31056689342403665,
+    0.37024943310657754,
+    0.3894784580498918,
+    0.309841269841284,
+    0.32308390022677536,
+    0.2898866213151887
+  ],
+  "audio_per_scene_offsets": [
+    4.346417233560091,
+    4.452539682539682,
+    4.419342403628118,
+    4.525464852607712,
+    4.492267573696143,
+    4.459070294784578,
+    4.472312925170073,
+    4.392675736961451,
+    4.405918367346935,
+    4.372721088435377,
+    4.339523809523811,
+    4.312312925170062,
+    4.18623582766439,
+    4.199478458049882,
+    4.07340136054421,
+    4.086643990929716,
+    4.053446712018143,
+    3.9738095238095212,
+    3.940612244897963,
+    3.95385487528344,
+    3.8742176870748324,
+    3.84102040816326,
+    3.8542630385487513,
+    4.656984126984128,
+    4.716666666666669,
+    4.735895691609983,
+    4.656258503401375,
+    4.669501133786866,
+    4.63630385487528
+  ],
+  "audio_per_scene_confidence": [
+    0.9284223871771892,
+    0.964579109744965,
+    0.9645789194549172,
+    0.9645789426654954,
+    0.9005292075980611,
+    0.9645789426654954,
+    0.74020011978185,
+    0.7795525384025708,
+    0.9683189284638045,
+    0.9645794054490026,
+    0.9645794054490023,
+    0.9645783929963163,
+    0.9416073356123196,
+    0.9005286583315618,
+    0.941606415898948,
+    0.9645791097449647,
+    0.964578919454917,
+    0.9683190581469177,
+    0.9645794561082481,
+    0.9683190581469179,
+    0.7381496119057881,
+    0.79194064772353,
+    0.9645794054490026,
+    0.9645794054490026,
+    0.9416070602476068,
+    0.9645783929963163,
+    0.9645788501903667,
+    0.9005286583315618,
+    0.9645794054490026
+  ],
+  "native_activation_cues_matched": 31,
+  "audio_sync": "Each scene aligned to its actual recorded activation; matches include second RT; simulation-frame render stalls compressed",
+  "duration": 89.18333333333332,
+  "frames": 877,
+  "scenes": [
+    "NORMAL | abajo, adelante + X | Lluvia de hierro",
+    "NORMAL | abajo, atras + X | Prisma giratorio",
+    "NORMAL | abajo, adelante + Y | Puno magnetico",
+    "NORMAL | abajo, atras + Y | Prision de hierro",
+    "NORMAL | abajo, adelante + B | Espada ascendente",
+    "NORMAL | abajo, atras + B | Oleada de hierro",
+    "NORMAL | abajo + X | Barrido bajo",
+    "NORMAL | abajo + Y | Lanzador",
+    "NORMAL | abajo + B | Esferas de hierro",
+    "NORMAL | RB | Aguja rapida",
+    "NORMAL | RT | Marca y viaje con RT",
+    "NORMAL | abajo + RB | Torbellino de hierro",
+    "NORMAL | abajo + RT | Estocada desde la marca",
+    "NORMAL | A | Alas de hierro: ulti",
+    "AMPLIFICADO | abajo, adelante + X | Lluvia de hierro",
+    "AMPLIFICADO | abajo, atras + X | Prisma giratorio",
+    "AMPLIFICADO | abajo, adelante + Y | Puno magnetico",
+    "AMPLIFICADO | abajo, atras + Y | Prision de hierro",
+    "AMPLIFICADO | abajo, adelante + B | Espada ascendente",
+    "AMPLIFICADO | abajo, atras + B | Oleada de hierro",
+    "AMPLIFICADO | abajo + X | Barrido bajo",
+    "AMPLIFICADO | abajo + Y | Lanzador",
+    "AMPLIFICADO | abajo + B | Esferas de hierro",
+    "AMPLIFICADO | RB | Aguja rapida",
+    "AMPLIFICADO | RT | Marca y viaje con RT",
+    "AMPLIFICADO | abajo + RB | Torbellino de hierro",
+    "AMPLIFICADO | abajo + RT | Estocada desde la marca",
+    "AMPLIFICADO | A | Alas de hierro: ulti",
+    "NORMAL | abajo + Pausa | Amplificacion magnetica"
+  ],
+  "scene_ranges": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 2.9166666666666665,
+      "label": "NORMAL | abajo, adelante + X | Lluvia de hierro"
+    },
+    {
+      "index": 1,
+      "start": 2.9166666666666665,
+      "end": 5.85,
+      "label": "NORMAL | abajo, atras + X | Prisma giratorio"
+    },
+    {
+      "index": 2,
+      "start": 5.85,
+      "end": 8.783333333333333,
+      "label": "NORMAL | abajo, adelante + Y | Puno magnetico"
+    },
+    {
+      "index": 3,
+      "start": 8.783333333333333,
+      "end": 11.716666666666667,
+      "label": "NORMAL | abajo, atras + Y | Prision de hierro"
+    },
+    {
+      "index": 4,
+      "start": 11.716666666666667,
+      "end": 14.683333333333334,
+      "label": "NORMAL | abajo, adelante + B | Espada ascendente"
+    },
+    {
+      "index": 5,
+      "start": 14.683333333333334,
+      "end": 17.616666666666667,
+      "label": "NORMAL | abajo, atras + B | Oleada de hierro"
+    },
+    {
+      "index": 6,
+      "start": 17.616666666666667,
+      "end": 20.55,
+      "label": "NORMAL | abajo + X | Barrido bajo"
+    },
+    {
+      "index": 7,
+      "start": 20.55,
+      "end": 23.483333333333334,
+      "label": "NORMAL | abajo + Y | Lanzador"
+    },
+    {
+      "index": 8,
+      "start": 23.483333333333334,
+      "end": 26.416666666666668,
+      "label": "NORMAL | abajo + B | Esferas de hierro"
+    },
+    {
+      "index": 9,
+      "start": 26.416666666666668,
+      "end": 29.35,
+      "label": "NORMAL | RB | Aguja rapida"
+    },
+    {
+      "index": 10,
+      "start": 29.35,
+      "end": 32.41666666666667,
+      "label": "NORMAL | RT | Marca y viaje con RT"
+    },
+    {
+      "index": 11,
+      "start": 32.41666666666667,
+      "end": 35.25000000000001,
+      "label": "NORMAL | abajo + RB | Torbellino de hierro"
+    },
+    {
+      "index": 12,
+      "start": 35.25000000000001,
+      "end": 38.18333333333334,
+      "label": "NORMAL | abajo + RT | Estocada desde la marca"
+    },
+    {
+      "index": 13,
+      "start": 38.18333333333334,
+      "end": 43.150000000000006,
+      "label": "NORMAL | A | Alas de hierro: ulti"
+    },
+    {
+      "index": 14,
+      "start": 43.150000000000006,
+      "end": 46.083333333333336,
+      "label": "AMPLIFICADO | abajo, adelante + X | Lluvia de hierro"
+    },
+    {
+      "index": 15,
+      "start": 46.083333333333336,
+      "end": 49.016666666666666,
+      "label": "AMPLIFICADO | abajo, atras + X | Prisma giratorio"
+    },
+    {
+      "index": 16,
+      "start": 49.016666666666666,
+      "end": 51.93333333333333,
+      "label": "AMPLIFICADO | abajo, adelante + Y | Puno magnetico"
+    },
+    {
+      "index": 17,
+      "start": 51.93333333333333,
+      "end": 54.86666666666666,
+      "label": "AMPLIFICADO | abajo, atras + Y | Prision de hierro"
+    },
+    {
+      "index": 18,
+      "start": 54.86666666666666,
+      "end": 57.79999999999999,
+      "label": "AMPLIFICADO | abajo, adelante + B | Espada ascendente"
+    },
+    {
+      "index": 19,
+      "start": 57.79999999999999,
+      "end": 60.73333333333332,
+      "label": "AMPLIFICADO | abajo, atras + B | Oleada de hierro"
+    },
+    {
+      "index": 20,
+      "start": 60.73333333333332,
+      "end": 63.66666666666665,
+      "label": "AMPLIFICADO | abajo + X | Barrido bajo"
+    },
+    {
+      "index": 21,
+      "start": 63.66666666666665,
+      "end": 66.59999999999998,
+      "label": "AMPLIFICADO | abajo + Y | Lanzador"
+    },
+    {
+      "index": 22,
+      "start": 66.59999999999998,
+      "end": 69.46666666666664,
+      "label": "AMPLIFICADO | abajo + B | Esferas de hierro"
+    },
+    {
+      "index": 23,
+      "start": 69.46666666666664,
+      "end": 72.38333333333331,
+      "label": "AMPLIFICADO | RB | Aguja rapida"
+    },
+    {
+      "index": 24,
+      "start": 72.38333333333331,
+      "end": 75.44999999999997,
+      "label": "AMPLIFICADO | RT | Marca y viaje con RT"
+    },
+    {
+      "index": 25,
+      "start": 75.44999999999997,
+      "end": 78.38333333333331,
+      "label": "AMPLIFICADO | abajo + RB | Torbellino de hierro"
+    },
+    {
+      "index": 26,
+      "start": 78.38333333333331,
+      "end": 81.31666666666665,
+      "label": "AMPLIFICADO | abajo + RT | Estocada desde la marca"
+    },
+    {
+      "index": 27,
+      "start": 81.31666666666665,
+      "end": 86.24999999999999,
+      "label": "AMPLIFICADO | A | Alas de hierro: ulti"
+    },
+    {
+      "index": 28,
+      "start": 86.24999999999999,
+      "end": 89.18333333333332,
+      "label": "NORMAL | abajo + Pausa | Amplificacion magnetica"
+    }
+  ],
+  "specials_per_form": 13,
+  "all_specials_shown": true,
+  "ultimate_both_forms_shown": true,
+  "awakening_shown": true,
+  "failures": []
+}
