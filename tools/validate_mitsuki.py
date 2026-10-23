@@ -76,6 +76,13 @@ if (CHAR/'assets/sprites.json').exists():
     for p in poses:
         if p['group'] not in [0,1]:continue
         im=Image.open(CHAR/p['file']);check(im.getchannel('A').getextrema()==(0,255),f'Incorrect body transparency {p["number"]}')
+check(not any(g==8680 and n>=4 for g,n in sprites),'Donor body remains in substitution effects')
+check(actions.get(8680)==[(8680,n,2) for n in range(4)],'Substitution includes non-effect donor frames')
+for g,length in [(8930,230),(8931,280),(8932,108)]:
+    check(all((g,n) in sprites for n in range(8)),f'Missing continuous Raiton bank {g}')
+for form in [0,1]:
+    motions=[tuple(actions[n+form*10000]) for n in [1040,1400,1410]]
+    check(len(set(motions))==3,'Kick, slide and uppercut share a body sequence')
 if shared.errors:print('\n'.join(shared.errors));raise SystemExit(1)
 print(f'PASS Mitsuki TBV: {len(sprites)} sprites, {len(sounds)} sounds, {len(actions)} actions, {len(states)} states; packed artwork and MUGEN 1.1 contracts')
 

@@ -15,3 +15,5 @@ Lee `CONTROLES_XBOX.md` para las dos listas de ataques. La forma normal y el mod
 Incluye voces originales del Mitsuki de CobraG6 que suministraste, activación sonora de especiales, aura de carga, dashes, guardia, recuperación tras derribo y ataques aéreos. No necesita tener instalados otros personajes de este repositorio.
 
 Validación: archivos y referencias para MUGEN 1.1, y pruebas de entradas, colisiones y animación en Ikemen GO. No se ha ejecutado en tu instalación concreta de Jump Force MUGEN V14; las asignaciones físicas del mando dependen de ella.
+
+Actualización de especiales: patada creciente, deslizamiento bajo y golpe ascendente tienen secuencias y movimientos diferentes. Se corrigió el efecto de sustitución que mostraba al Mitsuki antiguo pequeño. Raiton dispone ahora de una lanza eléctrica viajera y un rayo sostenido con alcance real. Sustituye la carpeta completa al actualizar; se conservan los controles.

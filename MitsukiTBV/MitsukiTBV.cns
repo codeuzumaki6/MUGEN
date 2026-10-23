@@ -2773,21 +2773,6 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 1000, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8660
-postype=P1
-pos=48,0
-scale=0.5,0.5
-removetime=18
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
 [State 1000, Return control]
 type=ChangeState
 trigger1=Time>=66
@@ -2856,7 +2841,7 @@ name="Serpiente"
 ID=9400
 stateno=9400
 postype=P1
-pos=60,-24
+pos=30,-19
 facing=1
 keyctrl=0
 ownpal=1
@@ -2867,9 +2852,9 @@ type=Explod
 trigger1=Time=18
 anim=8670
 postype=P1
-pos=60,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -2879,13 +2864,13 @@ supermovetime=180
 
 [State 1010, Visible autonomous serpent]
 type=Helper
-trigger1=Time=32 && NumHelper(9400)<5
+trigger1=Time=31 && NumHelper(9400)<5
 helpertype=Normal
 name="Serpiente"
 ID=9400
 stateno=9400
 postype=P1
-pos=98,-24
+pos=43,-34
 facing=1
 keyctrl=0
 ownpal=1
@@ -2893,12 +2878,12 @@ ownpal=1
 
 [State 1010, Technique drawing]
 type=Explod
-trigger1=Time=32
+trigger1=Time=31
 anim=8670
 postype=P1
-pos=98,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -2908,13 +2893,13 @@ supermovetime=180
 
 [State 1010, Visible autonomous serpent]
 type=Helper
-trigger1=Time=46 && NumHelper(9400)<5
+trigger1=Time=44 && NumHelper(9400)<5
 helpertype=Normal
 name="Serpiente"
 ID=9400
 stateno=9400
 postype=P1
-pos=136,-24
+pos=56,-48
 facing=1
 keyctrl=0
 ownpal=1
@@ -2922,12 +2907,12 @@ ownpal=1
 
 [State 1010, Technique drawing]
 type=Explod
-trigger1=Time=46
+trigger1=Time=44
 anim=8670
 postype=P1
-pos=136,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -2945,7 +2930,7 @@ ctrl=1
 [Statedef 1020]
 type=S
 movetype=A
-physics=N
+physics=S
 ctrl=0
 anim=1020
 velset=0,0
@@ -2995,161 +2980,27 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 1020, Forward assault]
-type=VelSet
-trigger1=Time>=8 && Time<38
-x=3.5
-
-
-[State 1020, Stop rush]
-type=VelSet
-trigger1=Time>=38
-x=0
-
-
-[State 1020, Physical contact]
-type=HitDef
-trigger1=Time=8
-attr=S,SA
-damage=45,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-0.3,0
-air.hittime=32
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=2
-envshake.ampl=-1
-
-
-[State 1020, Physical contact]
-type=HitDef
-trigger1=Time=21
-attr=S,SA
-damage=50,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-0.3,0
-air.hittime=32
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=2
-envshake.ampl=-1
-
-
-[State 1020, Physical contact]
-type=HitDef
-trigger1=Time=34
-attr=S,SA
-damage=80,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-5,-8
-air.hittime=32
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=8
-envshake.ampl=-4
+[State 1020, Launch Raiton lance]
+type=Helper
+trigger1=Time=16
+helpertype=Normal
+name="Raiton Hebi Mikazuchi"
+ID=9432
+stateno=9432
+postype=P1
+pos=27,-34
+ownpal=1
+keyctrl=0
 
 
 [State 1020, Technique drawing]
 type=Explod
-trigger1=Time=8
+trigger1=Time=16
 anim=8650
 postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1020, Technique drawing]
-type=Explod
-trigger1=Time=21
-anim=8650
-postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1020, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8650
-postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1020, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8640
-postype=P1
-pos=58,-40
-scale=0.65,0.65
-removetime=18
+pos=29,-36
+scale=0.8,0.8
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -3159,30 +3010,15 @@ supermovetime=180
 
 [State 1020, Technique sound]
 type=PlaySnd
-trigger1=Time=34
-value=S1,41
+trigger1=Time=16
+value=S1,42
 channel=1
 volumescale=80
 
 
-[State 1020, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8660
-postype=P1
-pos=48,0
-scale=0.5,0.5
-removetime=18
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
 [State 1020, Return control]
 type=ChangeState
-trigger1=Time>=66
+trigger1=Time>=60
 value=0
 ctrl=1
 
@@ -3271,10 +3107,10 @@ ctrl=1
 [Statedef 1040]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=1040
-velset=2.5,0
+velset=0,0
 poweradd=-450
 
 [State 1040, Technique sound]
@@ -3321,11 +3157,61 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 1040, Rising crescent]
+type=VelSet
+trigger1=Time=8
+x=3
+y=-6
+
+
+[State 1040, Become airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1040, Finite rise and fall]
+type=VelAdd
+trigger1=Time>8
+y=.42
+
+
 [State 1040, Physical contact]
 type=HitDef
-trigger1=Time=7
-attr=S,SA
-damage=140,0
+trigger1=Time=8
+attr=A,SA
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1040, Physical contact]
+type=HitDef
+trigger1=Time=17
+attr=A,SA
+damage=85,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -3351,20 +3237,14 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 1040, End step]
-type=VelSet
-trigger1=Time>14
-x=0
-
-
 [State 1040, Technique drawing]
 type=Explod
-trigger1=Time=7
+trigger1=Time=8
 anim=8660
 postype=P1
-pos=30,-15
-scale=0.5,0.5
-removetime=20
+pos=25,-6
+scale=0.65,0.65
+removetime=22
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -3372,10 +3252,17 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 1040, Land with control]
+type=ChangeState
+trigger1=Time>16 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
 [State 1040, Return control]
 type=ChangeState
-trigger1=Time>=51
-value=0
+trigger1=Time>=70
+value=50
 ctrl=1
 
 
@@ -3432,86 +3319,34 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 1050, Visible autonomous serpent]
+[State 1050, Bounded visible trap position]
+type=VarSet
+trigger1=Time=16
+v=23
+value=Floor(IfElse(P2Dist X<45,45,IfElse(P2Dist X>180,180,P2Dist X)))
+
+
+[State 1050, Rooted serpent coils]
 type=Helper
-trigger1=Time=18 && NumHelper(9410)<5
+trigger1=Time=20
 helpertype=Normal
-name="Serpiente"
-ID=9410
-stateno=9410
+name="Cerco de serpientes"
+ID=9440
+stateno=9440
 postype=P1
-pos=60,-24
-facing=1
-keyctrl=0
+pos=Var(23),0
 ownpal=1
+keyctrl=0
 
 
 [State 1050, Technique drawing]
 type=Explod
-trigger1=Time=18
+trigger1=Time=20
 anim=8670
 postype=P1
-pos=60,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1050, Visible autonomous serpent]
-type=Helper
-trigger1=Time=32 && NumHelper(9410)<5
-helpertype=Normal
-name="Serpiente"
-ID=9410
-stateno=9410
-postype=P1
-pos=98,-24
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 1050, Technique drawing]
-type=Explod
-trigger1=Time=32
-anim=8670
-postype=P1
-pos=98,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1050, Visible autonomous serpent]
-type=Helper
-trigger1=Time=46 && NumHelper(9410)<5
-helpertype=Normal
-name="Serpiente"
-ID=9410
-stateno=9410
-postype=P1
-pos=136,-24
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 1050, Technique drawing]
-type=Explod
-trigger1=Time=46
-anim=8670
-postype=P1
-pos=136,0
-scale=0.35,0.35
-removetime=14
+pos=Var(23),0
+scale=0.55,0.55
+removetime=18
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -3521,7 +3356,7 @@ supermovetime=180
 
 [State 1050, Return control]
 type=ChangeState
-trigger1=Time>=70
+trigger1=Time>=72
 value=0
 ctrl=1
 
@@ -3529,10 +3364,10 @@ ctrl=1
 [Statedef 1400]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=1400
-velset=2.5,0
+velset=0,0
 poweradd=-200
 
 [State 1400, Technique sound]
@@ -3579,11 +3414,25 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 1400, Low forward slide]
+type=VelSet
+trigger1=Time>=7 && Time<23
+x=6
+y=0
+
+
+[State 1400, Slide brakes]
+type=VelSet
+trigger1=Time>=23
+x=0
+y=0
+
+
 [State 1400, Physical contact]
 type=HitDef
 trigger1=Time=7
 attr=C,SA
-damage=140,0
+damage=105,0
 animtype=Up
 guardflag=L
 hitflag=MAF
@@ -3609,19 +3458,13 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 1400, End step]
-type=VelSet
-trigger1=Time>14
-x=0
-
-
 [State 1400, Technique drawing]
 type=Explod
 trigger1=Time=7
-anim=8660
+anim=8670
 postype=P1
-pos=30,-15
-scale=0.5,0.5
+pos=0,0
+scale=0.45,0.45
 removetime=20
 sprpriority=3
 ownpal=1
@@ -3632,7 +3475,7 @@ supermovetime=180
 
 [State 1400, Return control]
 type=ChangeState
-trigger1=Time>=51
+trigger1=Time>=43
 value=0
 ctrl=1
 
@@ -3640,10 +3483,10 @@ ctrl=1
 [Statedef 1410]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=1410
-velset=2.5,0
+velset=0,0
 poweradd=-300
 
 [State 1410, Technique sound]
@@ -3690,11 +3533,31 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 1410, Upward palm]
+type=VelSet
+trigger1=Time=7
+x=1.4
+y=-4
+
+
+[State 1410, Become airborne]
+type=StateTypeSet
+trigger1=Time=7
+statetype=A
+physics=N
+
+
+[State 1410, Finite rise and fall]
+type=VelAdd
+trigger1=Time>7
+y=.42
+
+
 [State 1410, Physical contact]
 type=HitDef
 trigger1=Time=7
-attr=S,SA
-damage=140,0
+attr=A,SA
+damage=120,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -3720,20 +3583,14 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 1410, End step]
-type=VelSet
-trigger1=Time>14
-x=0
-
-
 [State 1410, Technique drawing]
 type=Explod
 trigger1=Time=7
-anim=8660
+anim=8710
 postype=P1
-pos=30,-15
-scale=0.5,0.5
-removetime=20
+pos=20,-62
+scale=0.8,0.8
+removetime=14
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -3741,10 +3598,17 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 1410, Land with control]
+type=ChangeState
+trigger1=Time>15 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
 [State 1410, Return control]
 type=ChangeState
-trigger1=Time>=51
-value=0
+trigger1=Time>=70
+value=50
 ctrl=1
 
 
@@ -3809,59 +3673,15 @@ name="Serpiente"
 ID=9410
 stateno=9410
 postype=P1
-pos=30,-35
+pos=35,-28
 facing=1
 keyctrl=0
 ownpal=1
-
-
-[State 1420, Technique drawing]
-type=Explod
-trigger1=Time=18
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1420, Visible autonomous serpent]
-type=Helper
-trigger1=Time=34 && NumHelper(9410)<5
-helpertype=Normal
-name="Serpiente"
-ID=9410
-stateno=9410
-postype=P1
-pos=30,-35
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 1420, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
 
 
 [State 1420, Return control]
 type=ChangeState
-trigger1=Time>=70
+trigger1=Time>=64
 value=0
 ctrl=1
 
@@ -3921,36 +3741,21 @@ supermovetime=180
 
 [State 1200, Visible autonomous serpent]
 type=Helper
-trigger1=Time=18 && NumHelper(9400)<5
+trigger1=Time=9 && NumHelper(9400)<5
 helpertype=Normal
 name="Serpiente"
 ID=9400
 stateno=9400
 postype=P1
-pos=30,-35
+pos=28,-28
 facing=1
 keyctrl=0
 ownpal=1
 
 
-[State 1200, Technique drawing]
-type=Explod
-trigger1=Time=18
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
 [State 1200, Return control]
 type=ChangeState
-trigger1=Time>=70
+trigger1=Time>=38
 value=0
 ctrl=1
 
@@ -4112,21 +3917,6 @@ envshake.ampl=-4
 
 [State 1210, Technique drawing]
 type=Explod
-trigger1=Time=34
-anim=8660
-postype=P1
-pos=48,0
-scale=0.5,0.5
-removetime=18
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 1210, Technique drawing]
-type=Explod
 trigger1=Time=8
 anim=8660
 postype=P1
@@ -4182,7 +3972,7 @@ type=S
 movetype=A
 physics=S
 ctrl=0
-anim=1431
+anim=1430
 velset=0,0
 poweradd=-550
 
@@ -4230,49 +4020,25 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 1430, Physical contact]
-type=HitDef
+[State 1430, Emit continuous Raiton beam]
+type=Helper
 trigger1=Time=18
-attr=S,SA
-damage=180,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-5,-8
-air.hittime=32
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=8
-envshake.ampl=-4
-
-
-[State 1430, Technique drawing]
-type=Explod
-trigger1=Time=18
-anim=8640
+helpertype=Normal
+name="Rayo Raiton"
+ID=9430
+stateno=9430
 postype=P1
-pos=60,-40
-scale=0.65,0.65
-removetime=24
-sprpriority=3
+pos=27,-34
 ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
+keyctrl=0
+
+
+[State 1430, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,43
+channel=1
+volumescale=80
 
 
 [State 1430, Technique drawing]
@@ -4280,9 +4046,9 @@ type=Explod
 trigger1=Time=18
 anim=8650
 postype=P1
-pos=35,-47
-scale=0.7,0.7
-removetime=24
+pos=29,-36
+scale=0.85,0.85
+removetime=26
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4355,9 +4121,9 @@ type=Explod
 trigger1=Time=8
 anim=8680
 postype=P1
-pos=0,-20
+pos=0,-5
 scale=0.8,0.8
-removetime=32
+removetime=24
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4395,9 +4161,9 @@ type=Explod
 trigger1=Time=0
 anim=8680
 postype=P1
-pos=0,-25
+pos=0,-5
 scale=1,1
-removetime=20
+removetime=16
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4450,7 +4216,7 @@ name="Serpiente"
 ID=9400
 stateno=9400
 postype=P1
-pos=30,-35
+pos=30,-28
 facing=1
 keyctrl=0
 ownpal=1
@@ -4626,7 +4392,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=45,-35
+pos=45,-30
 facing=1
 keyctrl=0
 ownpal=1
@@ -4640,7 +4406,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=55,-38
+pos=55,-32
 facing=1
 keyctrl=0
 ownpal=1
@@ -4714,7 +4480,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=60,-24
+pos=30,-19
 facing=1
 keyctrl=0
 ownpal=1
@@ -4725,9 +4491,9 @@ type=Explod
 trigger1=Time=14
 anim=8670
 postype=P1
-pos=60,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4743,7 +4509,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=98,-24
+pos=43,-34
 facing=1
 keyctrl=0
 ownpal=1
@@ -4754,9 +4520,9 @@ type=Explod
 trigger1=Time=25
 anim=8670
 postype=P1
-pos=98,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4772,7 +4538,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=136,-24
+pos=56,-48
 facing=1
 keyctrl=0
 ownpal=1
@@ -4783,9 +4549,9 @@ type=Explod
 trigger1=Time=36
 anim=8670
 postype=P1
-pos=136,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4801,7 +4567,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=174,-24
+pos=69,-28
 facing=1
 keyctrl=0
 ownpal=1
@@ -4812,9 +4578,9 @@ type=Explod
 trigger1=Time=47
 anim=8670
 postype=P1
-pos=174,0
-scale=0.35,0.35
-removetime=14
+pos=30,0
+scale=0.3,0.3
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -4832,7 +4598,7 @@ ctrl=1
 [Statedef 11020]
 type=S
 movetype=A
-physics=N
+physics=S
 ctrl=0
 anim=11020
 velset=0,0
@@ -4882,161 +4648,27 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 11020, Forward assault]
-type=VelSet
-trigger1=Time>=8 && Time<38
-x=4.5
-
-
-[State 11020, Stop rush]
-type=VelSet
-trigger1=Time>=38
-x=0
-
-
-[State 11020, Physical contact]
-type=HitDef
-trigger1=Time=8
-attr=S,SA
-damage=48,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-0.3,0
-air.hittime=32
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=2
-envshake.ampl=-1
-
-
-[State 11020, Physical contact]
-type=HitDef
-trigger1=Time=21
-attr=S,SA
-damage=58,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-0.3,0
-air.hittime=32
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=2
-envshake.ampl=-1
-
-
-[State 11020, Physical contact]
-type=HitDef
-trigger1=Time=34
-attr=S,SA
-damage=92,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-5,-8
-air.hittime=32
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=8
-envshake.ampl=-4
+[State 11020, Launch Raiton lance]
+type=Helper
+trigger1=Time=16
+helpertype=Normal
+name="Raiton Hebi Mikazuchi"
+ID=9433
+stateno=9433
+postype=P1
+pos=27,-34
+ownpal=1
+keyctrl=0
 
 
 [State 11020, Technique drawing]
 type=Explod
-trigger1=Time=8
+trigger1=Time=16
 anim=8650
 postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11020, Technique drawing]
-type=Explod
-trigger1=Time=21
-anim=8650
-postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11020, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8650
-postype=P1
-pos=35,-48
-scale=0.65,0.65
-removetime=16
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11020, Technique drawing]
-type=Explod
-trigger1=Time=34
-anim=8640
-postype=P1
-pos=58,-40
-scale=0.65,0.65
-removetime=18
+pos=29,-36
+scale=0.8,0.8
+removetime=12
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -5046,43 +4678,15 @@ supermovetime=180
 
 [State 11020, Technique sound]
 type=PlaySnd
-trigger1=Time=34
-value=S1,41
+trigger1=Time=16
+value=S1,42
 channel=1
 volumescale=80
 
 
-[State 11020, Visible autonomous serpent]
-type=Helper
-trigger1=Time=17 && NumHelper(9401)<5
-helpertype=Normal
-name="Serpiente"
-ID=9401
-stateno=9401
-postype=P1
-pos=45,-35
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11020, Visible autonomous serpent]
-type=Helper
-trigger1=Time=36 && NumHelper(9401)<5
-helpertype=Normal
-name="Serpiente"
-ID=9401
-stateno=9401
-postype=P1
-pos=55,-38
-facing=1
-keyctrl=0
-ownpal=1
-
-
 [State 11020, Return control]
 type=ChangeState
-trigger1=Time>=66
+trigger1=Time>=60
 value=0
 ctrl=1
 
@@ -5197,10 +4801,10 @@ ctrl=1
 [Statedef 11040]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=11040
-velset=2.5,0
+velset=0,0
 poweradd=-360
 
 [State 11040, Technique sound]
@@ -5247,11 +4851,61 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 11040, Rising crescent]
+type=VelSet
+trigger1=Time=8
+x=3
+y=-6
+
+
+[State 11040, Become airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 11040, Finite rise and fall]
+type=VelAdd
+trigger1=Time>8
+y=.42
+
+
 [State 11040, Physical contact]
 type=HitDef
-trigger1=Time=7
-attr=S,SA
-damage=175,0
+trigger1=Time=8
+attr=A,SA
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11040, Physical contact]
+type=HitDef
+trigger1=Time=17
+attr=A,SA
+damage=105,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5277,34 +4931,14 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 11040, End step]
-type=VelSet
-trigger1=Time>14
-x=0
-
-
-[State 11040, Visible autonomous serpent]
-type=Helper
-trigger1=Time=7 && NumHelper(9401)<5
-helpertype=Normal
-name="Serpiente"
-ID=9401
-stateno=9401
-postype=P1
-pos=40,-55
-facing=1
-keyctrl=0
-ownpal=1
-
-
 [State 11040, Technique drawing]
 type=Explod
-trigger1=Time=7
+trigger1=Time=8
 anim=8660
 postype=P1
-pos=30,-15
-scale=0.5,0.5
-removetime=20
+pos=25,-6
+scale=0.65,0.65
+removetime=22
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -5312,10 +4946,31 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 11040, Visible autonomous serpent]
+type=Helper
+trigger1=Time=8 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=30,-58
+facing=1
+keyctrl=0
+ownpal=1
+
+
+[State 11040, Land with control]
+type=ChangeState
+trigger1=Time>16 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
 [State 11040, Return control]
 type=ChangeState
-trigger1=Time>=51
-value=0
+trigger1=Time>=70
+value=50
 ctrl=1
 
 
@@ -5372,115 +5027,34 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 11050, Visible autonomous serpent]
+[State 11050, Bounded visible trap position]
+type=VarSet
+trigger1=Time=16
+v=23
+value=Floor(IfElse(P2Dist X<45,45,IfElse(P2Dist X>180,180,P2Dist X)))
+
+
+[State 11050, Rooted serpent coils]
 type=Helper
-trigger1=Time=14 && NumHelper(9411)<5
+trigger1=Time=20
 helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
+name="Cerco de serpientes"
+ID=9441
+stateno=9441
 postype=P1
-pos=60,-24
-facing=1
-keyctrl=0
+pos=Var(23),0
 ownpal=1
+keyctrl=0
 
 
 [State 11050, Technique drawing]
 type=Explod
-trigger1=Time=14
+trigger1=Time=20
 anim=8670
 postype=P1
-pos=60,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11050, Visible autonomous serpent]
-type=Helper
-trigger1=Time=25 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=98,-24
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11050, Technique drawing]
-type=Explod
-trigger1=Time=25
-anim=8670
-postype=P1
-pos=98,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11050, Visible autonomous serpent]
-type=Helper
-trigger1=Time=36 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=136,-24
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11050, Technique drawing]
-type=Explod
-trigger1=Time=36
-anim=8670
-postype=P1
-pos=136,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11050, Visible autonomous serpent]
-type=Helper
-trigger1=Time=47 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=174,-24
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11050, Technique drawing]
-type=Explod
-trigger1=Time=47
-anim=8670
-postype=P1
-pos=174,0
-scale=0.35,0.35
-removetime=14
+pos=Var(23),0
+scale=0.55,0.55
+removetime=18
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -5490,7 +5064,7 @@ supermovetime=180
 
 [State 11050, Return control]
 type=ChangeState
-trigger1=Time>=76
+trigger1=Time>=72
 value=0
 ctrl=1
 
@@ -5498,10 +5072,10 @@ ctrl=1
 [Statedef 11400]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=11400
-velset=2.5,0
+velset=0,0
 poweradd=-160
 
 [State 11400, Technique sound]
@@ -5548,11 +5122,25 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 11400, Low forward slide]
+type=VelSet
+trigger1=Time>=7 && Time<23
+x=7
+y=0
+
+
+[State 11400, Slide brakes]
+type=VelSet
+trigger1=Time>=23
+x=0
+y=0
+
+
 [State 11400, Physical contact]
 type=HitDef
 trigger1=Time=7
 attr=C,SA
-damage=175,0
+damage=125,0
 animtype=Up
 guardflag=L
 hitflag=MAF
@@ -5578,33 +5166,13 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 11400, End step]
-type=VelSet
-trigger1=Time>14
-x=0
-
-
-[State 11400, Visible autonomous serpent]
-type=Helper
-trigger1=Time=7 && NumHelper(9401)<5
-helpertype=Normal
-name="Serpiente"
-ID=9401
-stateno=9401
-postype=P1
-pos=40,-22
-facing=1
-keyctrl=0
-ownpal=1
-
-
 [State 11400, Technique drawing]
 type=Explod
 trigger1=Time=7
-anim=8660
+anim=8670
 postype=P1
-pos=30,-15
-scale=0.5,0.5
+pos=0,0
+scale=0.45,0.45
 removetime=20
 sprpriority=3
 ownpal=1
@@ -5613,9 +5181,23 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 11400, Visible autonomous serpent]
+type=Helper
+trigger1=Time=12 && NumHelper(9401)<5
+helpertype=Normal
+name="Serpiente"
+ID=9401
+stateno=9401
+postype=P1
+pos=35,-13
+facing=1
+keyctrl=0
+ownpal=1
+
+
 [State 11400, Return control]
 type=ChangeState
-trigger1=Time>=51
+trigger1=Time>=43
 value=0
 ctrl=1
 
@@ -5623,10 +5205,10 @@ ctrl=1
 [Statedef 11410]
 type=S
 movetype=A
-physics=S
+physics=N
 ctrl=0
 anim=11410
-velset=2.5,0
+velset=0,0
 poweradd=-240
 
 [State 11410, Technique sound]
@@ -5673,11 +5255,31 @@ pausemovetime=180
 supermovetime=180
 
 
+[State 11410, Upward palm]
+type=VelSet
+trigger1=Time=7
+x=1.4
+y=-4
+
+
+[State 11410, Become airborne]
+type=StateTypeSet
+trigger1=Time=7
+statetype=A
+physics=N
+
+
+[State 11410, Finite rise and fall]
+type=VelAdd
+trigger1=Time>7
+y=.42
+
+
 [State 11410, Physical contact]
 type=HitDef
 trigger1=Time=7
-attr=S,SA
-damage=175,0
+attr=A,SA
+damage=145,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5703,10 +5305,19 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 11410, End step]
-type=VelSet
-trigger1=Time>14
-x=0
+[State 11410, Technique drawing]
+type=Explod
+trigger1=Time=7
+anim=8710
+postype=P1
+pos=20,-62
+scale=0.8,0.8
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
 
 
 [State 11410, Visible autonomous serpent]
@@ -5717,31 +5328,23 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=40,-55
+pos=30,-58
 facing=1
 keyctrl=0
 ownpal=1
 
 
-[State 11410, Technique drawing]
-type=Explod
-trigger1=Time=7
-anim=8660
-postype=P1
-pos=30,-15
-scale=0.5,0.5
-removetime=20
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
+[State 11410, Land with control]
+type=ChangeState
+trigger1=Time>15 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
 
 
 [State 11410, Return control]
 type=ChangeState
-trigger1=Time>=51
-value=0
+trigger1=Time>=70
+value=50
 ctrl=1
 
 
@@ -5800,123 +5403,35 @@ supermovetime=180
 
 [State 11420, Visible autonomous serpent]
 type=Helper
-trigger1=Time=14 && NumHelper(9411)<5
+trigger1=Time=18 && NumHelper(9411)<5
 helpertype=Normal
 name="Serpiente"
 ID=9411
 stateno=9411
 postype=P1
-pos=30,-35
+pos=35,-28
 facing=1
 keyctrl=0
 ownpal=1
-
-
-[State 11420, Technique drawing]
-type=Explod
-trigger1=Time=14
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
 
 
 [State 11420, Visible autonomous serpent]
 type=Helper
-trigger1=Time=25 && NumHelper(9411)<5
+trigger1=Time=30 && NumHelper(9411)<5
 helpertype=Normal
 name="Serpiente"
 ID=9411
 stateno=9411
 postype=P1
-pos=30,-35
+pos=35,-20
 facing=1
 keyctrl=0
 ownpal=1
-
-
-[State 11420, Technique drawing]
-type=Explod
-trigger1=Time=25
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11420, Visible autonomous serpent]
-type=Helper
-trigger1=Time=36 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=30,-35
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11420, Technique drawing]
-type=Explod
-trigger1=Time=36
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
-[State 11420, Visible autonomous serpent]
-type=Helper
-trigger1=Time=47 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=30,-35
-facing=1
-keyctrl=0
-ownpal=1
-
-
-[State 11420, Technique drawing]
-type=Explod
-trigger1=Time=47
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
 
 
 [State 11420, Return control]
 type=ChangeState
-trigger1=Time>=76
+trigger1=Time>=64
 value=0
 ctrl=1
 
@@ -5976,65 +5491,35 @@ supermovetime=180
 
 [State 11200, Visible autonomous serpent]
 type=Helper
-trigger1=Time=14 && NumHelper(9401)<5
+trigger1=Time=9 && NumHelper(9401)<5
 helpertype=Normal
 name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=30,-35
+pos=28,-28
 facing=1
 keyctrl=0
 ownpal=1
-
-
-[State 11200, Technique drawing]
-type=Explod
-trigger1=Time=14
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
 
 
 [State 11200, Visible autonomous serpent]
 type=Helper
-trigger1=Time=26 && NumHelper(9401)<5
+trigger1=Time=20 && NumHelper(9401)<5
 helpertype=Normal
 name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=30,-35
+pos=28,-25
 facing=1
 keyctrl=0
 ownpal=1
 
 
-[State 11200, Technique drawing]
-type=Explod
-trigger1=Time=26
-anim=8670
-postype=P1
-pos=30,0
-scale=0.35,0.35
-removetime=14
-sprpriority=3
-ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
-
-
 [State 11200, Return control]
 type=ChangeState
-trigger1=Time>=76
+trigger1=Time>=38
 value=0
 ctrl=1
 
@@ -6202,7 +5687,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=45,-35
+pos=45,-30
 facing=1
 keyctrl=0
 ownpal=1
@@ -6216,7 +5701,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=55,-38
+pos=55,-32
 facing=1
 keyctrl=0
 ownpal=1
@@ -6279,7 +5764,7 @@ type=S
 movetype=A
 physics=S
 ctrl=0
-anim=11431
+anim=11430
 velset=0,0
 poweradd=-440
 
@@ -6327,49 +5812,25 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 11430, Physical contact]
-type=HitDef
+[State 11430, Emit continuous Raiton beam]
+type=Helper
 trigger1=Time=18
-attr=S,SA
-damage=210,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-43
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=20
-ground.velocity=-5,-8
-air.hittime=32
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-envshake.time=8
-envshake.ampl=-4
-
-
-[State 11430, Technique drawing]
-type=Explod
-trigger1=Time=18
-anim=8640
+helpertype=Normal
+name="Rayo Raiton"
+ID=9431
+stateno=9431
 postype=P1
-pos=60,-40
-scale=0.9,0.9
-removetime=24
-sprpriority=3
+pos=27,-34
 ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
+keyctrl=0
+
+
+[State 11430, Technique sound]
+type=PlaySnd
+trigger1=Time=18
+value=S1,43
+channel=1
+volumescale=80
 
 
 [State 11430, Technique drawing]
@@ -6377,9 +5838,9 @@ type=Explod
 trigger1=Time=18
 anim=8650
 postype=P1
-pos=35,-47
-scale=0.7,0.7
-removetime=24
+pos=29,-36
+scale=0.85,0.85
+removetime=26
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -6387,23 +5848,9 @@ pausemovetime=180
 supermovetime=180
 
 
-[State 11430, Visible autonomous serpent]
-type=Helper
-trigger1=Time=20 && NumHelper(9411)<5
-helpertype=Normal
-name="Serpiente"
-ID=9411
-stateno=9411
-postype=P1
-pos=42,-30
-facing=1
-keyctrl=0
-ownpal=1
-
-
 [State 11430, Return control]
 type=ChangeState
-trigger1=Time>=76
+trigger1=Time>=70
 value=0
 ctrl=1
 
@@ -6466,9 +5913,9 @@ type=Explod
 trigger1=Time=8
 anim=8680
 postype=P1
-pos=0,-20
+pos=0,-5
 scale=0.8,0.8
-removetime=32
+removetime=24
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -6506,9 +5953,9 @@ type=Explod
 trigger1=Time=0
 anim=8680
 postype=P1
-pos=0,-25
+pos=0,-5
 scale=1,1
-removetime=20
+removetime=16
 sprpriority=3
 ownpal=1
 removeongethit=1
@@ -6561,7 +6008,7 @@ name="Serpiente"
 ID=9401
 stateno=9401
 postype=P1
-pos=30,-35
+pos=30,-28
 facing=1
 keyctrl=0
 ownpal=1
@@ -6572,6 +6019,600 @@ type=ChangeState
 trigger1=Time>=38
 value=0
 ctrl=1
+
+
+[Statedef 9430]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8930
+velset=0,0
+
+[State 9430, Beam stays attached to casting hand]
+type=BindToRoot
+trigger1=1
+time=1
+pos=27,-34
+
+
+[State 9430, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9430, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9430, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9430, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SP
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9430, Physical contact]
+type=HitDef
+trigger1=Time=16
+attr=A,SP
+damage=85,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9430, Beam ends on recovery or interruption]
+type=DestroySelf
+trigger1=Time>=25
+trigger2=Root,StateNo%10000!=1430
+trigger3=RoundState!=2
+
+
+
+[Statedef 9432]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8932
+velset=11,0
+
+[State 9432, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9432, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9432, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=170,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9432, Moving Raiton cleanup]
+type=DestroySelf
+trigger1=MoveContact || Time>=32 || FrontEdgeBodyDist<-120 || RoundState!=2
+
+
+
+[Statedef 9440]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8940
+velset=0,0
+
+[State 9440, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9440, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9440, Physical contact]
+type=HitDef
+trigger1=Time=4
+attr=A,SP
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9440, Physical contact]
+type=HitDef
+trigger1=Time=14
+attr=A,SP
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9440, Physical contact]
+type=HitDef
+trigger1=Time=24
+attr=A,SP
+damage=75,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9440, Trap has a fixed short duration]
+type=DestroySelf
+trigger1=Time>=34 || RoundState!=2
+
+
+
+[Statedef 9431]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8931
+velset=0,0
+
+[State 9431, Beam stays attached to casting hand]
+type=BindToRoot
+trigger1=1
+time=1
+pos=27,-34
+
+
+[State 9431, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9431, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9431, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9431, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SP
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9431, Physical contact]
+type=HitDef
+trigger1=Time=16
+attr=A,SP
+damage=100,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9431, Beam ends on recovery or interruption]
+type=DestroySelf
+trigger1=Time>=25
+trigger2=Root,StateNo%10000!=1430
+trigger3=RoundState!=2
+
+
+
+[Statedef 9433]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8932
+velset=14,0
+
+[State 9433, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9433, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9433, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=210,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9433, Moving Raiton cleanup]
+type=DestroySelf
+trigger1=MoveContact || Time>=32 || FrontEdgeBodyDist<-120 || RoundState!=2
+
+
+
+[Statedef 9441]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8941
+velset=0,0
+
+[State 9441, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9441, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9441, Physical contact]
+type=HitDef
+trigger1=Time=4
+attr=A,SP
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9441, Physical contact]
+type=HitDef
+trigger1=Time=14
+attr=A,SP
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9441, Physical contact]
+type=HitDef
+trigger1=Time=24
+attr=A,SP
+damage=95,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=26
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9441, Trap has a fixed short duration]
+type=DestroySelf
+trigger1=Time>=34 || RoundState!=2
+
 
 
 [Statedef 9400]
@@ -6657,16 +6698,31 @@ sparkno=S8700
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=46
+ground.hittime=55
 ground.slidetime=20
-ground.velocity=-4,-5
+ground.velocity=-0.1,0
 air.velocity=-2,-2
-fall=1
+fall=0
 fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=8,5
 
+
+[State 9410, Visible binding coils on the struck opponent]
+type=Explod
+trigger1=MoveHit
+anim=8940
+ID=9490
+postype=P2
+pos=0,0
+scale=.6,.6
+removetime=38
+bindtime=38
+ownpal=1
+sprpriority=4
+removeongethit=0
+persistent=0
 
 [State 9410, Serpents disperse on real contact]
 type=DestroySelf
@@ -6757,16 +6813,31 @@ sparkno=S8700
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=46
+ground.hittime=55
 ground.slidetime=20
-ground.velocity=-4,-5
+ground.velocity=-0.1,0
 air.velocity=-2,-2
-fall=1
+fall=0
 fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=8,5
 
+
+[State 9411, Visible binding coils on the struck opponent]
+type=Explod
+trigger1=MoveHit
+anim=8941
+ID=9490
+postype=P2
+pos=0,0
+scale=.6,.6
+removetime=38
+bindtime=38
+ownpal=1
+sprpriority=4
+removeongethit=0
+persistent=0
 
 [State 9411, Serpents disperse on real contact]
 type=DestroySelf

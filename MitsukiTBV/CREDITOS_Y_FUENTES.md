@@ -7,3 +7,5 @@
 - Adaptación de combate, controles, empaquetado y pruebas: Codex, por encargo del usuario. Personajes y franquicia pertenecen a sus titulares. Proyecto de aficionados; se conservan los créditos de los autores del material.
 
 Las técnicas, costes, duración del despertar y cifras de daño son decisiones de esta adaptación jugable. No se presentan como cifras oficiales del manga. No se han generado voces, cuerpos ni imágenes para sustituir los sprites aportados.
+
+Revisión de especiales: los arcos largos de Raiton escalan el efecto eléctrico original 2007,11..15; los cercos ensamblan únicamente fragmentos de serpiente de la hoja de Vaydra. Los cuadros 1550,4..6 del donante contienen su cuerpo y se excluyen del efecto de sustitución y del SFF final.

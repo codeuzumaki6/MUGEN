@@ -1,0 +1,17 @@
+{
+  "user_video": "mugen-2026-10-23-14-59-08_1qnmG8z8.mp4",
+  "sha256": "1751565c0ab1ac497f8733bb444a18d681355062e8e9d1637f76620350e022eb",
+  "feedback": [
+    "Repeated kick specials",
+    "Small donor Mitsuki in Down+RB/RT effect",
+    "Yellow Raiton lacks range and a visible lightning bolt"
+  ],
+  "changes": [
+    "Removed donor 1550,4..6 from playable SFF and substitution AIR",
+    "Separate rising kick, grounded slide and uppercut with distinct native trajectories",
+    "Travelling electrical lance on quarter-forward+Y",
+    "Continuous 230/280-unit beam on Down+RB",
+    "Rooted snake trap distinct from projectile volleys",
+    "Visible coils on binding hit"
+  ]
+}

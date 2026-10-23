@@ -74,7 +74,11 @@ def animations():
  fxaction(8611,8610,[12,13,12,13],3,box='-68,-16,68,16',loop=True)
  fxaction(8602,8600,[5,8,6,5],4)
  fxaction(8612,8610,[12,13,10,11],4)
- for n,g,count in [(8630,8630,21),(8640,8640,9),(8650,8650,28),(8660,8660,9),(8670,8670,11),(8680,8680,7),(8820,8820,5),(8900,8900,24),(8910,8910,5)]:fxaction(n,g,range(count),2 if n!=8900 else 3,loop=n==8900,add=n not in [8680])
+ fxaction(8930,8930,range(8),2,box='0,-20,230,20',loop=True,add=True)
+ fxaction(8931,8931,range(8),2,box='0,-20,280,20',loop=True,add=True)
+ fxaction(8932,8932,range(8),2,box='0,-14,108,14',loop=True,add=True)
+ for n in [8940,8941]:fxaction(n,n,range(4),3,box='-40,-88,40,-3',loop=True)
+ for n,g,count in [(8630,8630,21),(8640,8640,9),(8650,8650,28),(8660,8660,9),(8670,8670,11),(8680,8680,4),(8820,8820,5),(8900,8900,24),(8910,8910,5)]:fxaction(n,g,range(count),2 if n!=8900 else 3,loop=n==8900,add=n not in [8680])
  # Wind has its own contact area, rather than an invisible full-screen hit.
  fxaction(8631,8630,range(21),2,box='-38,-48,38,8',loop=True,add=True)
 
@@ -102,53 +106,96 @@ def techniques():
   off=form*10000
   for name,button,d,base,cost in MOVES:
    n=off+base;price=round(cost*.8) if form else cost
+   start,cast,ready=(54,57,17) if not form else (15,17,8)
    if base==1440:continue
-   start=54 if not form else 15;cast=57 if not form else 17;ready=17 if not form else 8
-   # Each form owns poses, release times, number of serpents and travel behavior.
-   if base in [1000,1020,1210]:
-    poses=([(17,8),(18,10),(19,10),(20,10),(23,10),(17,12)] if not form else [(8,8),(9,10),(10,10),(11,10),(17,16),(8,12)])
-    if base==1210:
+   if base in [1000,1210]:
+    if base==1000:
+     poses=[(17,8),(64,8),(65,10),(66,8),(20,10),(17,12)] if not form else [(8,8),(9,10),(10,10),(11,10),(14,12),(8,12)]
+    else:
      poses=[(35,8),(36,6),(37,6),(38,6),(39,6),(40,6),(41,6),(42,6),(43,6),(17,10)] if not form else [(8,8),(3,10),(4,10),(12,10),(14,10),(8,18)]
-    action(n,poses,form,box='2,-66,76,-5');s=state(n,n,move='A',cost=price,physics='N')+startup(n,18 if base==1020 else 5)
+    action(n,poses,form,box='2,-66,76,-5');s=state(n,n,move='A',cost=price,physics='N')+startup(n,5)
     s+=c(n,'Forward assault','VelSet','Time>=8 && Time<38',f'x={4.5 if form else 3.5}')+c(n,'Stop rush','VelSet','Time>=38','x=0')
     for i,t in enumerate([8,21,34]):s+=hit(n,t,([45,50,80] if not form else [48,58,92])[i],i==2)
-    if base==1020:
-     for t in [8,21,34]:s+=effect(n,f'Time={t}',8650,35,-48,.65,16)
-     s+=effect(n,'Time=34',8640,58,-40,.65,18)+snd(n,'Time=34',1,41,1)
-    if form:
-     s+=snake(n,17,1,45,-35)+snake(n,36,1,55,-38)
-    else:s+=effect(n,'Time=34',8660,48,0,.5,18)
+    if form:s+=snake(n,17,1,45,-30)+snake(n,36,1,55,-32)
     if base==1210:
      for t in [8,21,34]:s+=effect(n,f'Time={t}',8660,30,0,.7,18)
     s+=recover(n,66);states.append(s);continue
-   if base in [1400,1410,1040]:
-    poses=[(24,7),(25,10),(28,10),(29,10),(24,14)] if not form else [(8,7),(12,10),(13,10),(14,10),(8,14)]
-    action(n,poses,form,box='0,-65,75,-2');s=state(n,n,move='A',cost=price,vel='2.5,0')+startup(n,9)
-    s+=hit(n,7,140 if not form else 175,True,low=base==1400)+c(n,'End step','VelSet','Time>14','x=0')
-    if form:s+=snake(n,7,1,40,-22 if base==1400 else -55)
-    s+=effect(n,'Time=7',8660,30,-15,.5,20)+recover(n,51);states.append(s);continue
-   action(n,[(start,8),(55 if not form else 16,10),(cast,42 if form else 34),(ready,12)],form)
-   s=state(n,n,move='A',cost=price)+startup(n,21 if base==1030 else 18 if base==1430 else 6 if base in [1010,1050] else 7)
+   if base==1020:
+    # A moving lightning lance, rather than another punching rush.
+    action(n,[(44,8),(45,8),(47,20),(44,14),(0,10)] if not form else [(8,8),(12,8),(14,22),(13,12),(8,10)],form)
+    s=state(n,n,move='A',cost=price)+startup(n,18)
+    s+=c(n,'Launch Raiton lance','Helper','Time=16',f'helpertype=Normal\nname="Raiton Hebi Mikazuchi"\nID={9432+form}\nstateno={9432+form}\npostype=P1\npos=27,-34\nownpal=1\nkeyctrl=0')
+    s+=effect(n,'Time=16',8650,29,-36,.8,12)+snd(n,'Time=16',1,42,1)+recover(n,60);states.append(s);continue
+   if base in [1040,1400,1410]:
+    if base==1400:
+     poses=[(16,7),(53,10),(43,8),(16,8),(0,10)] if not form else [(8,7),(5,10),(7,8),(12,8),(8,10)]
+     action(n,poses,form,box='0,-29,66,-2')
+     s=state(n,n,move='A',cost=price,physics='N')+startup(n,9)
+     s+=c(n,'Low forward slide','VelSet','Time>=7 && Time<23',f'x={7 if form else 6}\ny=0')+c(n,'Slide brakes','VelSet','Time>=23','x=0\ny=0')
+     s+=hit(n,7,125 if form else 105,True,low=True)+effect(n,'Time=7',8670,0,0,.45,20)
+     if form:s+=snake(n,12,1,35,-13)
+     s+=recover(n,43);states.append(s);continue
+    poses=([(24,8),(25,7),(28,7),(29,7),(30,10),(53,10)] if base==1040 else [(31,7),(35,6),(37,10),(36,8),(17,12)]) if not form else ([(8,8),(3,7),(4,7),(12,7),(14,10),(8,12)] if base==1040 else [(15,7),(12,6),(13,10),(14,8),(8,12)])
+    action(n,poses,form,box='-4,-78,73,-2');s=state(n,n,move='A',cost=price,physics='N')+startup(n,9)
+    launch=8 if base==1040 else 7
+    s+=c(n,'Rising crescent' if base==1040 else 'Upward palm','VelSet',f'Time={launch}',f'x={3 if base==1040 else 1.4}\ny={-6 if base==1040 else -4}')
+    s+=c(n,'Become airborne','StateTypeSet',f'Time={launch}','statetype=A\nphysics=N')+c(n,'Finite rise and fall','VelAdd',f'Time>{launch}','y=.42')
+    s+=hit(n,launch,65 if base==1040 else 145 if form else 120,base!=1040,airborne=True)
+    if base==1040:s+=hit(n,17,105 if form else 85,True,airborne=True)+effect(n,'Time=8',8660,25,-6,.65,22)
+    else:s+=effect(n,'Time=7',8710,20,-62,.8,14)
+    if form:s+=snake(n,launch,1,30,-58)
+    s+=c(n,'Land with control','ChangeState',f'Time>{launch+8} && Pos Y>=0 && Vel Y>0','value=52\nctrl=1')+recover(n,70,True);states.append(s);continue
    if base==1430:
-    # Palm's lightning occupies a visible finite cone in front of the hand.
-    action(n+1,[(ready,7),(cast,32),(ready,14)],form,box='2,-62,82,-5')
-    s=s.replace(f'anim={n}\n',f'anim={n+1}\n')+hit(n,18,180 if not form else 210,True)+effect(n,'Time=18',8640,60,-40,.9 if form else .65,24)+effect(n,'Time=18',8650,35,-47,.7,24)
-    if form:s+=snake(n,20,1,42,-30,True)
-   elif base==1030:
+    # Down+RB is a sustained ranged beam, not a melee palm hitbox.
+    action(n,[(54,8),(55,10),(47,32),(44,10),(0,10)] if not form else [(15,8),(16,10),(14,32),(13,10),(8,10)],form)
+    s=state(n,n,move='A',cost=price)+startup(n,18)
+    s+=c(n,'Emit continuous Raiton beam','Helper','Time=18',f'helpertype=Normal\nname="Rayo Raiton"\nID={9430+form}\nstateno={9430+form}\npostype=P1\npos=27,-34\nownpal=1\nkeyctrl=0')
+    s+=snd(n,'Time=18',1,43,1)+effect(n,'Time=18',8650,29,-36,.85,26)+recover(n,70);states.append(s);continue
+   if base==1050:
+    # A rooted trap around a nearby target; it does not shoot the same volley.
+    action(n,[(54,10),(55,10),(56,12),(53,28),(54,12)] if not form else [(15,10),(16,10),(3,12),(4,28),(8,12)],form)
+    s=state(n,n,move='A',cost=price)+startup(n,6)
+    s+=c(n,'Bounded visible trap position','VarSet','Time=16','v=23\nvalue=Floor(IfElse(P2Dist X<45,45,IfElse(P2Dist X>180,180,P2Dist X)))')
+    s+=c(n,'Rooted serpent coils','Helper','Time=20',f'helpertype=Normal\nname="Cerco de serpientes"\nID={9440+form}\nstateno={9440+form}\npostype=P1\npos=Var(23),0\nownpal=1\nkeyctrl=0')+effect(n,'Time=20',8670,'Var(23)',0,.55,18)+recover(n,72);states.append(s);continue
+   if base==1420:
+    action(n,[(64,8),(65,10),(57,20),(66,14),(17,12)] if not form else [(15,8),(12,10),(14,20),(17,14),(8,12)],form)
+    s=state(n,n,move='A',cost=price)+startup(n,7)+snake(n,18,form,35,-28,strong=True)
+    if form:s+=snake(n,30,1,35,-20,strong=True)
+    s+=recover(n,64);states.append(s);continue
+   if base==1200:
+    action(n,[(31,5),(34,8),(57,12),(17,10)] if not form else [(8,5),(12,8),(14,12),(8,10)],form)
+    s=state(n,n,move='A',cost=price)+startup(n,7)+snake(n,9,form,28,-28)
+    if form:s+=snake(n,20,1,28,-25)
+    s+=recover(n,38);states.append(s);continue
+   action(n,[(start,8),(55 if not form else 16,10),(cast,42 if form else 34),(ready,12)],form)
+   s=state(n,n,move='A',cost=price)+startup(n,21 if base==1030 else 6)
+   if base==1030:
     for t in ([18] if not form else [18,32,46]):s+=c(n,'Fuuton current','Helper',f'Time={t} && NumHelper(9420)<3','helpertype=Normal\nname="Fuuton Toppa"\nID=9420\nstateno=9420\npostype=P1\npos=42,-15\nownpal=1\nkeyctrl=0')
     s+=snd(n,'Time=18',1,30,1)
    else:
-    times=([18] if base==1200 else [18,32,46] if base in [1010,1050] else [18,34]) if not form else ([14,26] if base==1200 else [14,25,36,47])
-    for i,t in enumerate(times):
-     x=(60+i*38 if base in [1010,1050] else 30)
-     s+=snake(n,t,form,x,-24 if base in [1010,1050] else -35,strong=base in [1420,1050])
-     s+=effect(n,f'Time={t}',8670,x,0,.35,14)
+    for i,t in enumerate([18,31,44] if not form else [14,25,36,47]):
+     s+=snake(n,t,form,30+i*13,[-19,-34,-48,-28][i])+effect(n,f'Time={t}',8670,30,0,.3,12)
    s+=recover(n,76 if form else 70);states.append(s)
   n=off+1440;action(n,[(54 if not form else 15,8),(55 if not form else 16,24),(17 if not form else 8,12)],form,box='-22,-76,22,-1')
-  s=state(n,n,cost=320 if form else 400)+startup(n,15)+effect(n,'Time=8',8680,0,-20,.8,32)
+  s=state(n,n,cost=320 if form else 400)+startup(n,15)+effect(n,'Time=8',8680,0,-5,.8,24)
   s+=c(n,'Finite substitution counter','ReversalDef','Time>=8 && Time<=28',f'reversal.attr=SCA,NA,SA,HA\npausetime=0,10\nsparkno=S8700\nhitsound=S1,32\np1stateno={off+1441}')+recover(n,44);states.append(s)
   n=off+1441;action(n,[(31 if not form else 16,6),(34 if not form else 17,20),(17 if not form else 8,12)],form,box='-8,-65,80,-4')
-  states.append(state(n,n,move='A',physics='N',vel='5,0')+effect(n,'Time=0',8680,0,-25,1,20)+c(n,'Brief escape','NotHitBy','Time<10','value=SCA\ntime=1')+hit(n,6,165 if not form else 215,True)+snake(n,8,form,30,-35)+recover(n,38))
+  states.append(state(n,n,move='A',physics='N',vel='5,0')+effect(n,'Time=0',8680,0,-5,1,16)+c(n,'Brief escape','NotHitBy','Time<10','value=SCA\ntime=1')+hit(n,6,165 if not form else 215,True)+snake(n,8,form,30,-28)+recover(n,38))
+
+def lightning_helpers():
+ for form in [0,1]:
+  n=9430+form
+  s=state(n,8930+form,'A','A','N')+c(n,'Beam stays attached to casting hand','BindToRoot','1','time=1\npos=27,-34')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
+  for i,t in enumerate([0,8,16]):
+   s+=hit(n,t,[65,70,85][i]+(15 if form else 0),i==2,airborne=True,stun=28).replace('attr=A,SA','attr=A,SP')
+  s+=ctl(n,'Beam ends on recovery or interruption','DestroySelf','trigger1=Time>=25\ntrigger2=Root,StateNo%10000!=1430\ntrigger3=RoundState!=2');states.append(s)
+  n=9432+form
+  s=state(n,8932,'A','A','N',vel=f'{14 if form else 11},0')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
+  s+=hit(n,0,210 if form else 170,True,airborne=True).replace('attr=A,SA','attr=A,SP')+c(n,'Moving Raiton cleanup','DestroySelf','MoveContact || Time>=32 || FrontEdgeBodyDist<-120 || RoundState!=2');states.append(s)
+  n=9440+form
+  s=state(n,8940+form,'A','A','N')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
+  for i,t in enumerate([4,14,24]):s+=hit(n,t,95 if form else 75,i==2,airborne=True,stun=26).replace('attr=A,SA','attr=A,SP')
+  s+=c(n,'Trap has a fixed short duration','DestroySelf','Time>=34 || RoundState!=2');states.append(s)
 
 def helpers():
  for form in [0,1]:
@@ -156,7 +203,9 @@ def helpers():
    n=(9410 if strong else 9400)+form
    s=state(n,8611 if form else 8601,'A','A','N',vel=f'{7 if form else 6},0')
    s+=c(n,'Serpent has no push or shadow','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
-   s+=c(n,'Visible snake contact','HitDef','Time=0',f'attr=A,SP\ndamage={95 if strong and form else 80 if strong else 48 if form else 62},3\nguardflag=MA\nhitflag=MAF\npriority=5,Hit\npausetime=0,9\nsparkno=S8700\nhitsound=S1,7\nguardsound=S1,9\nground.type=High\nground.hittime={46 if strong else 30}\nground.slidetime=20\nground.velocity={-4 if strong else -.7},{-5 if strong else 0}\nair.velocity=-2,-2\nfall={int(strong)}\nfall.recover=1\nfall.recovertime=45\ngetpower=0,0\ngivepower=8,5')
+   s+=c(n,'Visible snake contact','HitDef','Time=0',f'attr=A,SP\ndamage={95 if strong and form else 80 if strong else 48 if form else 62},3\nguardflag=MA\nhitflag=MAF\npriority=5,Hit\npausetime=0,9\nsparkno=S8700\nhitsound=S1,7\nguardsound=S1,9\nground.type=High\nground.hittime={55 if strong else 30}\nground.slidetime=20\nground.velocity={-.1 if strong else -.7},0\nair.velocity=-2,-2\nfall=0\nfall.recover=1\nfall.recovertime=45\ngetpower=0,0\ngivepower=8,5')
+   if strong:
+    s+=c(n,'Visible binding coils on the struck opponent','Explod','MoveHit','anim='+str(8940+form)+'\nID=9490\npostype=P2\npos=0,0\nscale=.6,.6\nremovetime=38\nbindtime=38\nownpal=1\nsprpriority=4\nremoveongethit=0','persistent=0')
    s+=c(n,'Serpents disperse on real contact','DestroySelf','MoveContact || Time>=42 || FrontEdgeBodyDist<-60 || RoundState!=2')
    states.append(s)
  n=9420;s=state(n,8631,'A','A','N',vel='8,0')+c(n,'Scale wind','AngleDraw','1','value=0\nscale=.55,.55')+c(n,'No push','PlayerPush','1','value=0')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
@@ -255,7 +304,7 @@ def system():
  return s
 
 def main():
- animations();normals();techniques();helpers();utility();ultimate();common();commands()
+ animations();normals();techniques();lightning_helpers();helpers();utility();ultimate();common();commands()
  constants=(ROOT/'JuraShinju/JuraShinju.cns').read_text().split('[Statedef',1)[0];constants=constants[constants.index('[Data]'):].replace('life=1300','life=1200').replace('defence=115','defence=105').replace('height=84','height=80').replace('head.pos=0,-72','head.pos=0,-68')
  (CHAR/'MitsukiTBV.cns').write_text('; Mitsuki TBV, original Vaydra sprites, CobraG6 dialogue.\n'+constants+''.join(states)+system())
  (CHAR/'MitsukiTBV.air').write_text('; Original TBV body banks 0 and 1.\n'+''.join(air))

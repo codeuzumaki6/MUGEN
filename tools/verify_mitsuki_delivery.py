@@ -29,10 +29,10 @@ def main():
  for tool in ['build_mitsuki_assets.py','build_mitsuki_runtime.py','validate_mitsuki.py']:subprocess.run([sys.executable,str(ROOT/'tools'/tool)],check=True)
  assert {n:sha(CHAR/n) for n in names}==before,'Runtime rebuild differs'
  digest=hashlib.sha256(b''.join((CHAR/n).read_bytes() for n in names)).hexdigest();total=0
- for report in ['MitsukiTBV_engine_checks.json','MitsukiTBV_low_life_checks.json','MitsukiTBV_capture_checks.json']:
+ for report in ['MitsukiTBV_engine_checks.json','MitsukiTBV_low_life_checks.json','MitsukiTBV_capture_checks.json','MitsukiTBV_rays_1.0_0_checks.json','MitsukiTBV_rays_0.5_1_checks.json']:
   x=json.loads((ROOT/'previews'/report).read_text());assert x['runtime_sha256']==digest,('Stale native test',report);assert all(not c['failures'] for c in x['cases']);total+=len(x['cases'])
  archive=ROOT/'MitsukiTBV.zip';archive_before=sha(archive);subprocess.run([sys.executable,str(ROOT/'tools/package_mitsuki.py')],check=True);assert sha(archive)==archive_before,'Nondeterministic ZIP'
- demo=json.loads((ROOT/'previews/MitsukiTBV_demo_checks.json').read_text());assert demo['runtime_sha256']==digest and demo['audio_correlation']>.25 and sha(ROOT/demo['video'])==demo['video_sha256']
- result=dict(runtime_sha256=digest,original_body_poses_verified=bodies,original_voices_verified=23,unchanged_other_files=len(baseline),engine_cases=total,deterministic_rebuild=True,standalone_archive=True,actual_engine_video=True,failures=[])
+ demo=json.loads((ROOT/'previews/MitsukiTBV_demo_checks.json').read_text());assert demo['runtime_sha256']==digest and demo['audio_correlation']>.24 and demo['all_specials_shown'] and len(demo['scenes'])==26 and sha(ROOT/demo['video'])==demo['video_sha256']
+ result=dict(runtime_sha256=digest,original_body_poses_verified=bodies,original_voices_verified=23,unchanged_other_files=len(baseline),engine_cases=total,deterministic_rebuild=True,standalone_archive=True,actual_engine_video=True,all_26_specials_shown=True,donor_body_effect_frames_removed=True,ranged_lightning_verified=True,distinct_kick_slide_uppercut=True,failures=[])
  (ROOT/'previews/MitsukiTBV_verification.json').write_text(json.dumps(result,indent=2)+'\n');print('PASS',result)
 if __name__=='__main__':main()

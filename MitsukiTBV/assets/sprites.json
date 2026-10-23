@@ -3179,40 +3179,420 @@
     "donor_number": 3
   },
   {
-    "group": 8680,
+    "group": 8930,
+    "number": 0,
+    "file": "assets/effects/8930_0.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "294b77dae1c5869b41debfd862bcbab9223eaca2c8d0b4ab871d39bd6b34ec93",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8930,
+    "number": 1,
+    "file": "assets/effects/8930_1.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "b0550b2ba21a1e4a18222e95465952a9fc6131761746db58c42096a5783da19f",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8930,
+    "number": 2,
+    "file": "assets/effects/8930_2.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "26c24a41d14077a04c7e2de909964429cda41c8250e7dd1dd85fde0110060866",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8930,
+    "number": 3,
+    "file": "assets/effects/8930_3.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "521dc1db82aed4643d69dd29d1092ffc1f86f4f8d034d06e409f26deaf2a0a8a",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8930,
     "number": 4,
-    "file": "assets/effects/8680_4.png",
+    "file": "assets/effects/8930_4.png",
     "axis": [
-      28,
-      59
+      0,
+      24
     ],
-    "rgba_sha256": "ac056b2de8fd54abcbb86bd102cc6576abfbf8d5ccac606b5e399f2de3a97701",
-    "donor_group": 1550,
-    "donor_number": 4
+    "rgba_sha256": "49c29a8d0db66a5712a525f23b0b9a7e2cafea97cd7e3347490a4b6ddd36fd68",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
   },
   {
-    "group": 8680,
+    "group": 8930,
     "number": 5,
-    "file": "assets/effects/8680_5.png",
+    "file": "assets/effects/8930_5.png",
     "axis": [
-      24,
-      63
+      0,
+      24
     ],
-    "rgba_sha256": "13de8fb96fc223a0c4b45ef4bffb4229d5a65fb7da06e94bdf7ab9ffffd25830",
-    "donor_group": 1550,
-    "donor_number": 5
+    "rgba_sha256": "29427d274c8818380246018f7ae4607417745ec14fb6d21d6773a7fc3d828022",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
   },
   {
-    "group": 8680,
+    "group": 8930,
     "number": 6,
-    "file": "assets/effects/8680_6.png",
+    "file": "assets/effects/8930_6.png",
     "axis": [
-      25,
-      63
+      0,
+      24
     ],
-    "rgba_sha256": "e425387da42073c06fc8b692adcc2b2dbdb3005fde708afb290c34fea69e19d7",
-    "donor_group": 1550,
-    "donor_number": 6
+    "rgba_sha256": "a22e7d26cece4eba2aa843dd9c98cbac0ef9b312ee10c133806a28adab8b997c",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8930,
+    "number": 7,
+    "file": "assets/effects/8930_7.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "95496bce871c15101a67f1cbdeb2e4e7469029b7c93542d19cb8735a42661f1b",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 0,
+    "file": "assets/effects/8931_0.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "413ac257ea8c1a66f030ef7fedf817c57d0c3ee0f3dc3374a49c5334dbe656e8",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 1,
+    "file": "assets/effects/8931_1.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "6ae5464f44634693c79ad5c6ad116b6ec3521a1ba510a8eb1fe6da75d84eefef",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 2,
+    "file": "assets/effects/8931_2.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "68ae3cc39b62b49406d2fd081a29c165a1da5839a8529349307840898dfb43db",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 3,
+    "file": "assets/effects/8931_3.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "a0b0af950ae715ee19d22cfa5c8467f6e7a720542ee23d90024852fd4e4343c1",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 4,
+    "file": "assets/effects/8931_4.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "40a9005a7d42b57c62c726a1779e1141167b419ad7dfecb67a4908f5cc02483f",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 5,
+    "file": "assets/effects/8931_5.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "f4d35784b2dfb8f1347fae4b143d22b17b6381bea2c501c3eb05e52a87e2c14d",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 6,
+    "file": "assets/effects/8931_6.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "8a2d4aa4602646afc00fcfba3d9a2d5d724262534ef299394bfcab33dd24d1f2",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8931,
+    "number": 7,
+    "file": "assets/effects/8931_7.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "642863d59aa03214aaa721e0604e36eab840e4e9c424e55eb3890141323502de",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 0,
+    "file": "assets/effects/8932_0.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "4445287997fd19653a295e2d3a7acf320ad6750496afa40806af8f7d310351ea",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 1,
+    "file": "assets/effects/8932_1.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "dd11db67208df5b2c3d8a1fec7c0a9d87010a1fd0bb5d96d5ceb1c1299b41bf9",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 2,
+    "file": "assets/effects/8932_2.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "20cbfed64915a74a57b745b55ce9e3f085be2990a7413641bcaf483e61e3d09b",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 3,
+    "file": "assets/effects/8932_3.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "b4b43af8a0817b5249cc7ea8328dab86066d1e01eb0baf7ab7775a0aecca1e5e",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 4,
+    "file": "assets/effects/8932_4.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "c9ec42065c87ad54dd4a7148b28d60d29ce105efdef9f093ce4a963955a5bd0b",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 5,
+    "file": "assets/effects/8932_5.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "f3abbb406087ea2671837dcdab9549ac3c0230cab94ce099c89bba65ceab08e7",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 6,
+    "file": "assets/effects/8932_6.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "7bcaa4b028622b47b40858446c220b7b7f5d45f721953941a5c74e2675e574d2",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8932,
+    "number": 7,
+    "file": "assets/effects/8932_7.png",
+    "axis": [
+      0,
+      24
+    ],
+    "rgba_sha256": "119cb772807b103b6d67b7223bebb5a5c63b34ebb79e4a94ab420c7c170b5edc",
+    "role": "Continuous Raiton arc",
+    "assembled_from": "CobraG6 effect 2007,11..15",
+    "body_art": false
+  },
+  {
+    "group": 8940,
+    "number": 0,
+    "file": "assets/effects/8940_0.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "51ebefa82094bb8c5dde1e34ef78cc33aa1abebd7d6fdf675a4bbbe1317fe861",
+    "role": "Rooted serpent coil",
+    "source_group": 8600,
+    "body_art": false
+  },
+  {
+    "group": 8940,
+    "number": 1,
+    "file": "assets/effects/8940_1.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "f914ae45fa3c1ce33a8eadae58f55c0dc5c02865c1cd7f9429f2a21d2dd88520",
+    "role": "Rooted serpent coil",
+    "source_group": 8600,
+    "body_art": false
+  },
+  {
+    "group": 8940,
+    "number": 2,
+    "file": "assets/effects/8940_2.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "d159aba7a07fa79cb6941e4c38b8d5ceddfba711f5d367368bbb54f549468f74",
+    "role": "Rooted serpent coil",
+    "source_group": 8600,
+    "body_art": false
+  },
+  {
+    "group": 8940,
+    "number": 3,
+    "file": "assets/effects/8940_3.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "c2ca165c1cc4a51444bd18ee5a0060d9e08098a0eed38c27292319bdccd819bf",
+    "role": "Rooted serpent coil",
+    "source_group": 8600,
+    "body_art": false
+  },
+  {
+    "group": 8941,
+    "number": 0,
+    "file": "assets/effects/8941_0.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "748f153cc72f425a5c0ac297381d567710c62a77cbea7df4a6123b39e8894feb",
+    "role": "Rooted serpent coil",
+    "source_group": 8610,
+    "body_art": false
+  },
+  {
+    "group": 8941,
+    "number": 1,
+    "file": "assets/effects/8941_1.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "68e7783c09dcd8c1c4c340068a3ff52c266b2487450cc54ed91c09f326ea4509",
+    "role": "Rooted serpent coil",
+    "source_group": 8610,
+    "body_art": false
+  },
+  {
+    "group": 8941,
+    "number": 2,
+    "file": "assets/effects/8941_2.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "b31dee5ae3a4393cc88acbb9bdc219d137070b1558ef4727f678abcb743c75ef",
+    "role": "Rooted serpent coil",
+    "source_group": 8610,
+    "body_art": false
+  },
+  {
+    "group": 8941,
+    "number": 3,
+    "file": "assets/effects/8941_3.png",
+    "axis": [
+      50,
+      96
+    ],
+    "rgba_sha256": "6f6c455b9b1eaff5f91616d8f1fa8998670919561f227464f9c3b37870a46ab9",
+    "role": "Rooted serpent coil",
+    "source_group": 8610,
+    "body_art": false
   },
   {
     "group": 8700,

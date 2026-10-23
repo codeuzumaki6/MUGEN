@@ -1,11 +1,15 @@
 {
-  "runtime_sha256": "a025bde64100773d1cbb63cfe1359af6f79fd68654fd1b26562933db36f8c6c4",
+  "runtime_sha256": "d93ba018989980ce59b8ab292d2d697c1b4c14120177e46acb48ef039f70b951",
   "original_body_poses_verified": 86,
   "original_voices_verified": 23,
   "unchanged_other_files": 1130,
-  "engine_cases": 144,
+  "engine_cases": 250,
   "deterministic_rebuild": true,
   "standalone_archive": true,
   "actual_engine_video": true,
+  "all_26_specials_shown": true,
+  "donor_body_effect_frames_removed": true,
+  "ranged_lightning_verified": true,
+  "distinct_kick_slide_uppercut": true,
   "failures": []
 }

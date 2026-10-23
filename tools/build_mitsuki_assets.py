@@ -65,9 +65,33 @@ def main():
   for n,box in enumerate(boxes):
    im,origin=cut(sheet,box);put(g,n,im,(im.width//2,im.height//2),source_rectangle=box,redrawn=False)
  donor=read_v1(DONOR/'Mitsuki.sff')
- for dest,src,nums in [(8630,1050,range(21)),(8640,1063,range(9)),(8650,2007,range(28)),(8660,9012,range(9)),(8670,9010,range(11)),(8680,1550,range(7))]:
+ # 1550,4..6 contain the donor's small body, not a standalone effect.
+ # Never include those frames in the replacement character or archive.
+ for old in range(4,7):
+  path=A/'effects'/f'8680_{old}.png'
+  if path.exists():path.unlink()
+ for dest,src,nums in [(8630,1050,range(21)),(8640,1063,range(9)),(8650,2007,range(28)),(8660,9012,range(9)),(8670,9010,range(11)),(8680,1550,range(4))]:
   for n,sn in enumerate(nums):
    im,axis=donor[src,sn];put(dest,n,im,axis,donor_group=src,donor_number=sn)
+ # Fit continuous electrical arcs from the supplied horizontal Raiton FX.
+ # The body art is untouched; only the electrical effect is stretched to its actual hit range.
+ for group,length in [(8930,230),(8931,280),(8932,108)]:
+  for frame in range(8):
+   canvas=Image.new('RGBA',(length,48))
+   tile=donor[2007,11+frame%5][0].copy();v=np.array(tile);bright=np.max(v[:,:,:3],axis=2)>60
+   yy,xx=np.where(bright);tile=tile.crop((int(xx.min()),int(yy.min()),int(xx.max())+1,int(yy.max())+1))
+   tile=tile.resize((length,30+(frame%3)*3),Image.Resampling.NEAREST)
+   canvas.alpha_composite(tile,(0,(48-tile.height)//2))
+   put(group,frame,canvas,(0,24),role='Continuous Raiton arc',assembled_from='CobraG6 effect 2007,11..15',body_art=False)
+ # Rooted coils have a distinct silhouette from travelling snake shots.
+ for group,sourcegroup,numbers in [(8940,8600,[4,5,6,8]),(8941,8610,[6,7,10,11])]:
+  for frame in range(4):
+   canvas=Image.new('RGBA',(100,100))
+   for j in range(3):
+    part=Image.open(A/'effects'/f'{sourcegroup}_{numbers[(frame+j)%4]}.png')
+    part=part.resize((70,48),Image.Resampling.NEAREST).rotate(j*120,resample=Image.Resampling.NEAREST,expand=True)
+    canvas.alpha_composite(part,((100-part.width)//2,(100-part.height)//2))
+   put(group,frame,canvas,(50,96),role='Rooted serpent coil',source_group=sourcegroup,body_art=False)
  shared=Sff2(ROOT/'JuraShinju/JuraShinju.sff')
  for g,count in [(8700,4),(8710,4),(8720,6),(8820,5),(8900,24),(8910,5)]:
   for n in range(count):

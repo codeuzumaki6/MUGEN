@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "a025bde64100773d1cbb63cfe1359af6f79fd68654fd1b26562933db36f8c6c4",
+  "runtime_sha256": "d93ba018989980ce59b8ab292d2d697c1b4c14120177e46acb48ef039f70b951",
   "cases": [
     {
       "case": {
@@ -33,6 +33,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -67,6 +72,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -88,7 +98,7 @@
         20,
         1020
       ],
-      "damage": 175,
+      "damage": 170,
       "received": 0,
       "min_power": 2500,
       "max_power": 3000,
@@ -101,6 +111,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -135,6 +150,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -154,9 +174,10 @@
         11,
         12,
         20,
+        52,
         1040
       ],
-      "damage": 140,
+      "damage": 150,
       "received": 0,
       "min_power": 2550,
       "max_power": 3000,
@@ -169,6 +190,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -45.89999771118164,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -190,7 +216,7 @@
         20,
         1050
       ],
-      "damage": 240,
+      "damage": 225,
       "received": 0,
       "min_power": 2400,
       "max_power": 3000,
@@ -203,6 +229,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -222,7 +253,7 @@
         11,
         1400
       ],
-      "damage": 140,
+      "damage": 105,
       "received": 0,
       "min_power": 2800,
       "max_power": 3000,
@@ -235,6 +266,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -252,9 +288,10 @@
       "states": [
         0,
         11,
+        52,
         1410
       ],
-      "damage": 140,
+      "damage": 120,
       "received": 0,
       "min_power": 2700,
       "max_power": 3000,
@@ -267,6 +304,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -21.09999656677246,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -286,7 +328,7 @@
         11,
         1420
       ],
-      "damage": 160,
+      "damage": 80,
       "received": 0,
       "min_power": 2650,
       "max_power": 3000,
@@ -299,6 +341,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -330,6 +377,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -361,6 +413,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -380,7 +437,7 @@
         11,
         1430
       ],
-      "damage": 180,
+      "damage": 220,
       "received": 0,
       "min_power": 2450,
       "max_power": 3000,
@@ -393,6 +450,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -426,6 +488,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -457,6 +524,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -491,6 +563,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -522,6 +599,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -556,6 +638,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -587,6 +674,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -621,6 +713,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -649,6 +746,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -676,6 +778,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 1,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -703,6 +810,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -730,6 +842,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 290.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -756,6 +873,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -787,6 +909,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -817,6 +944,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -847,6 +979,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -874,6 +1011,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -903,6 +1045,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -933,6 +1080,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -963,6 +1115,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -997,6 +1154,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1031,6 +1193,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1052,7 +1219,7 @@
         20,
         1020
       ],
-      "damage": 175,
+      "damage": 170,
       "received": 0,
       "min_power": 2500,
       "max_power": 3000,
@@ -1065,6 +1232,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1099,6 +1271,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1118,9 +1295,10 @@
         11,
         12,
         20,
+        52,
         1040
       ],
-      "damage": 140,
+      "damage": 150,
       "received": 0,
       "min_power": 2550,
       "max_power": 3000,
@@ -1133,6 +1311,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -45.89999771118164,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1154,7 +1337,7 @@
         20,
         1050
       ],
-      "damage": 240,
+      "damage": 225,
       "received": 0,
       "min_power": 2400,
       "max_power": 3000,
@@ -1167,6 +1350,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1186,7 +1374,7 @@
         11,
         1400
       ],
-      "damage": 140,
+      "damage": 105,
       "received": 0,
       "min_power": 2800,
       "max_power": 3000,
@@ -1199,6 +1387,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1216,9 +1409,10 @@
       "states": [
         0,
         11,
+        52,
         1410
       ],
-      "damage": 140,
+      "damage": 120,
       "received": 0,
       "min_power": 2700,
       "max_power": 3000,
@@ -1231,6 +1425,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -21.09999656677246,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1250,7 +1449,7 @@
         11,
         1420
       ],
-      "damage": 160,
+      "damage": 80,
       "received": 0,
       "min_power": 2650,
       "max_power": 3000,
@@ -1263,6 +1462,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1294,6 +1498,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1325,6 +1534,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1344,7 +1558,7 @@
         11,
         1430
       ],
-      "damage": 180,
+      "damage": 220,
       "received": 0,
       "min_power": 2450,
       "max_power": 3000,
@@ -1357,6 +1571,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1390,6 +1609,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1421,6 +1645,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1455,6 +1684,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1486,6 +1720,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1520,6 +1759,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1551,6 +1795,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1585,6 +1834,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1613,6 +1867,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1640,6 +1899,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 1,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1667,6 +1931,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1694,6 +1963,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 290.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1720,6 +1994,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1751,6 +2030,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1781,6 +2065,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1811,6 +2100,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1838,6 +2132,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1867,6 +2166,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1897,6 +2201,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1927,6 +2236,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1961,6 +2275,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -1995,6 +2314,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2016,7 +2340,7 @@
         20,
         11020
       ],
-      "damage": 294,
+      "damage": 210,
       "received": 0,
       "min_power": 2600,
       "max_power": 3000,
@@ -2029,6 +2353,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2063,6 +2392,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2082,9 +2416,10 @@
         11,
         12,
         20,
+        52,
         11040
       ],
-      "damage": 223,
+      "damage": 218,
       "received": 0,
       "min_power": 2640,
       "max_power": 3000,
@@ -2097,6 +2432,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -45.89999771118164,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2131,6 +2471,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2150,7 +2495,7 @@
         11,
         11400
       ],
-      "damage": 223,
+      "damage": 125,
       "received": 0,
       "min_power": 2840,
       "max_power": 3000,
@@ -2163,6 +2508,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2180,9 +2530,10 @@
       "states": [
         0,
         11,
+        52,
         11410
       ],
-      "damage": 223,
+      "damage": 193,
       "received": 0,
       "min_power": 2760,
       "max_power": 3000,
@@ -2195,6 +2546,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -21.09999656677246,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2214,7 +2570,7 @@
         11,
         11420
       ],
-      "damage": 380,
+      "damage": 190,
       "received": 0,
       "min_power": 2720,
       "max_power": 3000,
@@ -2227,6 +2583,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2258,6 +2619,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2289,6 +2655,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2308,7 +2679,7 @@
         11,
         11430
       ],
-      "damage": 305,
+      "damage": 265,
       "received": 0,
       "min_power": 2560,
       "max_power": 3000,
@@ -2321,6 +2692,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2354,6 +2730,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2385,6 +2766,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2419,6 +2805,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2450,6 +2841,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2484,6 +2880,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2515,6 +2916,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2549,6 +2955,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2577,6 +2988,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2604,6 +3020,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 1,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2631,6 +3052,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2658,6 +3084,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 290.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2684,6 +3115,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2715,6 +3151,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2745,6 +3186,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2775,6 +3221,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2802,6 +3253,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2831,6 +3287,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2861,6 +3322,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2891,6 +3357,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2925,6 +3396,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2959,6 +3435,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -2980,7 +3461,7 @@
         20,
         11020
       ],
-      "damage": 294,
+      "damage": 210,
       "received": 0,
       "min_power": 2600,
       "max_power": 3000,
@@ -2993,6 +3474,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3027,6 +3513,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3046,9 +3537,10 @@
         11,
         12,
         20,
+        52,
         11040
       ],
-      "damage": 223,
+      "damage": 218,
       "received": 0,
       "min_power": 2640,
       "max_power": 3000,
@@ -3061,6 +3553,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -45.89999771118164,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3095,6 +3592,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3114,7 +3616,7 @@
         11,
         11400
       ],
-      "damage": 223,
+      "damage": 125,
       "received": 0,
       "min_power": 2840,
       "max_power": 3000,
@@ -3127,6 +3629,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3144,9 +3651,10 @@
       "states": [
         0,
         11,
+        52,
         11410
       ],
-      "damage": 223,
+      "damage": 193,
       "received": 0,
       "min_power": 2760,
       "max_power": 3000,
@@ -3159,6 +3667,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -21.09999656677246,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3178,7 +3691,7 @@
         11,
         11420
       ],
-      "damage": 380,
+      "damage": 190,
       "received": 0,
       "min_power": 2720,
       "max_power": 3000,
@@ -3191,6 +3704,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3222,6 +3740,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3253,6 +3776,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 109.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3272,7 +3800,7 @@
         11,
         11430
       ],
-      "damage": 305,
+      "damage": 265,
       "received": 0,
       "min_power": 2560,
       "max_power": 3000,
@@ -3285,6 +3813,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3318,6 +3851,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3349,6 +3887,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3383,6 +3926,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3414,6 +3962,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3448,6 +4001,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3479,6 +4037,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3513,6 +4076,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 37.0,
+      "actual_guard": 0,
+      "jump_apex": -101.87999725341797,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3541,6 +4109,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3568,6 +4141,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 1,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3595,6 +4173,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3622,6 +4205,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 290.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3648,6 +4236,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3679,6 +4272,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3709,6 +4307,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3739,6 +4342,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3766,6 +4374,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 89.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3795,6 +4408,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3825,6 +4443,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3855,6 +4478,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 119.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3883,6 +4511,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3913,6 +4546,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3944,6 +4582,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -3972,6 +4615,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -4000,6 +4648,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -4030,6 +4683,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -4061,6 +4719,11 @@
       "aura": 1,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 44.0,
+      "actual_guard": 0,
+      "jump_apex": -34.560001373291016,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     },
     {
@@ -4089,6 +4752,11 @@
       "aura": 0,
       "end_helpers": 0,
       "wrong_sage_body_frames": 0,
+      "actual_start_distance": 110.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "target_scale": 1.0,
+      "target_crouching": false,
       "failures": []
     }
   ]
