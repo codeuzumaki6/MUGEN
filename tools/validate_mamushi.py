@@ -17,7 +17,7 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
     match=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'Mamushi.def').read_text())
     check(bool(match) and (CHAR/match[1].strip()).is_file(),f'DEF invalid {key}')
 sprites=shared.parse_sff(CHAR/'Mamushi.sff');sounds=shared.parse_snd(CHAR/'Mamushi.snd')
-check(len(sprites)==97,'Missing source sprites/effect records');check((1,21) in sounds,'Missing audible jutsu startup')
+check(len(sprites)==139,'Missing source sprites/effect records');check((1,21) in sounds,'Missing audible jutsu startup')
 actions={};current=None
 for line in (CHAR/'Mamushi.air').read_text().splitlines():
     match=re.match(r'(?i)\[Begin Action (\d+)\]',line)
@@ -27,6 +27,9 @@ for line in (CHAR/'Mamushi.air').read_text().splitlines():
     if match:
         g,n,x,y,t=map(int,match.groups());check((g,n) in sprites,f'Action {current}: missing {g},{n}');actions[current].append((g,n,t))
         check(not (g==0 and n in [14,15,28,40,64]),f'Action {current}: detached head / debug rectangle / sheet strip used as a fighter')
+    box=re.match(r'\s*Clsn[12]\[\d+\]\s*=\s*(-?\d+),\s*(-?\d+),\s*(-?\d+),\s*(-?\d+)',line)
+    if box:
+        x1,y1,x2,y2=map(int,box.groups());check(x1<=x2 and y1<=y2,f'Action {current}: inverted collision rectangle')
 check(actions.get(0)==[(0,4,10),(0,5,10),(0,6,10)],'Idle contains non-idle poses')
 for n in [52,5100,5110,5120,5170]:check(n in actions and all(row[2]>=0 for row in actions[n]),f'Infinite recovery action {n}')
 states=set();sections=[];command_names=set();counts={}

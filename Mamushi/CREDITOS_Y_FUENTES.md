@@ -26,6 +26,15 @@
   derivada del `DENJI_COMMON.cns` proporcionado, con recuperación y movimiento
   corregidos. Esa copia se conserva en `source_material/Mamushi_support/`.
 
+Referencia de animaciones de esta revisión: video `VaydraSenki.mp4` aportado
+por el usuario. Se adaptan sus fases de preparación, transformación e impacto
+a los cuadros originales; se documentan los intervalos en
+`source_material/Mamushi_reference/reference_analysis.json`. Los nuevos
+efectos de viento, tierra, explosión y esfera violeta proceden del Code de
+MUGEN STARS aportado previamente: grupos 556 (11–15), 7005 (0–4),
+7015 (0–8), 1235 (0–21) y 10030 (0). Se empaquetan como capas adicionales;
+no sustituyen el cuerpo de Mamushi.
+
 Los nombres de movimientos y las reglas de daño, consumo, duración, límite
 de copias y retraso de decisiones son adaptaciones para un juego de pelea.
 La división toma como referencia la descripción y el panel suministrados por

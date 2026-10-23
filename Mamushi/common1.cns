@@ -1843,36 +1843,3 @@ type = VelSet
 trigger1 = 1
 x = 0
 y = 0
-
-[Statedef 100]
-type = S
-movetype = I
-physics = N
-anim = 100
-velset = 6.8,0
-ctrl = 0
-[State 100, Jump]
-type = ChangeState
-trigger1 = command = "holdup"
-value = 40
-[State 100, Stop]
-type = ChangeState
-trigger1 = Time > 5
-trigger1 = command != "holdfwd"
-trigger2 = Time >= 40
-value = 106
-ctrl = 1
-
-[Statedef 105]
-type = A
-movetype = I
-physics = A
-anim = 105
-velset = -4.2,-3.5
-ctrl = 0
-[State 105, Land]
-type = ChangeState
-trigger1 = Pos Y >= 0
-trigger1 = Vel Y > 0
-value = 52
-ctrl = 1

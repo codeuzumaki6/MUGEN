@@ -31,7 +31,7 @@ draw.offset = 0,0
 walk.fwd = 2.4
 walk.back = -2.2
 run.fwd = 6.2,0
-run.back = -4.2,-3.5
+run.back = -8.5,0
 jump.neu = 0,-8.4
 jump.back = -2.8
 jump.fwd = 3
@@ -48,6 +48,122 @@ stand.friction = .85
 crouch.friction = .82
 stand.friction.threshold = 2
 crouch.friction.threshold = .05
+
+[Statedef 100]
+type = S
+movetype = I
+physics = N
+anim = 100
+ctrl = 0
+velset = 8.5,0
+
+[State 100, Ground dash direction stays fixed]
+type = AssertSpecial
+trigger1 = 1
+flag=NoAutoTurn
+
+[State 100, Dash braking]
+type = VelMul
+trigger1 = Time>=10
+x=.65
+
+[State 100, Dash dust]
+type = Explod
+trigger1 = Time=0 || Time=6
+anim=8720
+postype=P1
+pos=0,0
+scale=.6,.6
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1
+
+[State 100, Dash trail]
+type = AfterImage
+trigger1 = Time=0
+time=10
+length=3
+timegap=2
+framegap=2
+palcontrast=140,155,165
+trans=Add
+
+[State 100, Dash step sound]
+type = PlaySnd
+trigger1 = Time=0
+value=S1,0
+channel=1
+volumescale=45
+
+[State 100, Allow grounded attack cancel]
+type = CtrlSet
+trigger1 = Time=4
+value=1
+
+[State 100, Finite dash recovery]
+type = ChangeState
+trigger1 = Time>=16
+value=0
+ctrl=1
+
+[Statedef 105]
+type = S
+movetype = I
+physics = N
+anim = 105
+ctrl = 0
+velset = -8.5,0
+
+[State 105, Ground dash direction stays fixed]
+type = AssertSpecial
+trigger1 = 1
+flag=NoAutoTurn
+
+[State 105, Dash braking]
+type = VelMul
+trigger1 = Time>=10
+x=.65
+
+[State 105, Dash dust]
+type = Explod
+trigger1 = Time=0 || Time=6
+anim=8720
+postype=P1
+pos=0,0
+scale=.6,.6
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1
+
+[State 105, Dash trail]
+type = AfterImage
+trigger1 = Time=0
+time=10
+length=3
+timegap=2
+framegap=2
+palcontrast=140,155,165
+trans=Add
+
+[State 105, Dash step sound]
+type = PlaySnd
+trigger1 = Time=0
+value=S1,0
+channel=1
+volumescale=45
+
+[State 105, Allow grounded attack cancel]
+type = CtrlSet
+trigger1 = Time=4
+value=1
+
+[State 105, Finite dash recovery]
+type = ChangeState
+trigger1 = Time>=16
+value=0
+ctrl=1
 
 [Statedef 200]
 type = S
@@ -1265,41 +1381,6 @@ type = VelSet
 trigger1 = Time >= 22
 x = 0
 
-[State 1000, Swing 2]
-type = PlaySnd
-trigger1 = AnimElem = 2
-value = S1,30
-channel = 1
-
-[State 1000, Contact 2]
-type = HitDef
-trigger1 = AnimElem = 2
-attr = S, SA
-damage = 32,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
 [State 1000, Swing 4]
 type = PlaySnd
 trigger1 = AnimElem = 4
@@ -1310,7 +1391,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, SA
-damage = 36,1
+damage = 32,1
 animtype = Medium
 guardflag = MA
 hitflag = MAF
@@ -1345,6 +1426,41 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 7
 attr = S, SA
+damage = 36,1
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 5,8
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-36
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 21
+ground.slidetime = 14
+ground.velocity = -0.7,0
+air.hittime = 26
+air.velocity = -0.6,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 40
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1000, Swing 10]
+type = PlaySnd
+trigger1 = AnimElem = 10
+value = S1,30
+channel = 1
+
+[State 1000, Contact 10]
+type = HitDef
+trigger1 = AnimElem = 10
+attr = S, SA
 damage = 64,3
 animtype = Up
 guardflag = MA
@@ -1372,7 +1488,7 @@ envshake.ampl = -3
 
 [State 1000, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 7
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
 value = S1,19
 channel = 5
 persistent = 0
@@ -1380,7 +1496,7 @@ ignorehitpause = 1
 
 [State 1000, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 7
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
 anim = 8720
 postype = P1
 pos = 35,0
@@ -1395,6 +1511,20 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 1000, Timed presentation accent]
+type = Explod
+trigger1 = AnimElem=4 || AnimElem=7 || AnimElem=10
+anim=8730
+ID=8730
+postype=P1
+pos=66,-36
+bindtime=0
+scale=0.28,0.28
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
 [Statedef 1020]
 type = S
@@ -1448,41 +1578,6 @@ type = VelSet
 trigger1 = Time >= 22
 x = 0
 
-[State 1020, Swing 3]
-type = PlaySnd
-trigger1 = AnimElem = 3
-value = S1,31
-channel = 1
-
-[State 1020, Contact 3]
-type = HitDef
-trigger1 = AnimElem = 3
-attr = S, SA
-damage = 38,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,31
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
 [State 1020, Swing 4]
 type = PlaySnd
 trigger1 = AnimElem = 4
@@ -1493,7 +1588,7 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 4
 attr = S, SA
-damage = 40,2
+damage = 38,1
 animtype = Medium
 guardflag = MA
 hitflag = MAF
@@ -1528,6 +1623,41 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 7
 attr = S, SA
+damage = 40,2
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 5,8
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-36
+hitsound = S1,31
+guardsound = S1,9
+ground.type = High
+ground.hittime = 21
+ground.slidetime = 14
+ground.velocity = -0.7,0
+air.hittime = 26
+air.velocity = -0.6,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 40
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1020, Swing 10]
+type = PlaySnd
+trigger1 = AnimElem = 10
+value = S1,31
+channel = 1
+
+[State 1020, Contact 10]
+type = HitDef
+trigger1 = AnimElem = 10
+attr = S, SA
 damage = 80,4
 animtype = Up
 guardflag = MA
@@ -1555,7 +1685,7 @@ envshake.ampl = -3
 
 [State 1020, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 7
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
 value = S1,19
 channel = 5
 persistent = 0
@@ -1563,7 +1693,7 @@ ignorehitpause = 1
 
 [State 1020, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 7
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
 anim = 8720
 postype = P1
 pos = 35,0
@@ -1578,6 +1708,34 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 1020, Timed presentation accent]
+type = Explod
+trigger1 = Time>=7 && Time<37 && Time%9=7
+anim=8730
+ID=8730
+postype=P1
+pos=68,-32
+bindtime=0
+scale=0.3,0.3
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
+[State 1020, Timed presentation accent]
+type = Explod
+trigger1 = Time>=7 && Time<22 && Time%6=1
+anim=8720
+ID=8720
+postype=P1
+pos=-12,0
+bindtime=0
+scale=0.5,0.5
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1
 
 [Statedef 1030]
 type = S
@@ -1666,41 +1824,6 @@ givepower = 12,8
 envshake.time = 3
 envshake.ampl = -1
 
-[State 1030, Swing 3]
-type = PlaySnd
-trigger1 = AnimElem = 3
-value = S1,32
-channel = 1
-
-[State 1030, Contact 3]
-type = HitDef
-trigger1 = AnimElem = 3
-attr = S, SA
-damage = 24,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
 [State 1030, Swing 4]
 type = PlaySnd
 trigger1 = AnimElem = 4
@@ -1710,41 +1833,6 @@ channel = 1
 [State 1030, Contact 4]
 type = HitDef
 trigger1 = AnimElem = 4
-attr = S, SA
-damage = 24,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1030, Swing 5]
-type = PlaySnd
-trigger1 = AnimElem = 5
-value = S1,32
-channel = 1
-
-[State 1030, Contact 5]
-type = HitDef
-trigger1 = AnimElem = 5
 attr = S, SA
 damage = 24,1
 animtype = Medium
@@ -1781,6 +1869,76 @@ channel = 1
 type = HitDef
 trigger1 = AnimElem = 6
 attr = S, SA
+damage = 24,1
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 5,8
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-36
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 21
+ground.slidetime = 14
+ground.velocity = -0.7,0
+air.hittime = 26
+air.velocity = -0.6,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 40
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1030, Swing 8]
+type = PlaySnd
+trigger1 = AnimElem = 8
+value = S1,32
+channel = 1
+
+[State 1030, Contact 8]
+type = HitDef
+trigger1 = AnimElem = 8
+attr = S, SA
+damage = 24,1
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 5,8
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-36
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 21
+ground.slidetime = 14
+ground.velocity = -0.7,0
+air.hittime = 26
+air.velocity = -0.6,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 40
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1030, Swing 9]
+type = PlaySnd
+trigger1 = AnimElem = 9
+value = S1,32
+channel = 1
+
+[State 1030, Contact 9]
+type = HitDef
+trigger1 = AnimElem = 9
+attr = S, SA
 damage = 70,3
 animtype = Up
 guardflag = MA
@@ -1808,7 +1966,7 @@ envshake.ampl = -3
 
 [State 1030, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 6
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
 value = S1,19
 channel = 5
 persistent = 0
@@ -1816,7 +1974,7 @@ ignorehitpause = 1
 
 [State 1030, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 6
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
 anim = 8720
 postype = P1
 pos = 35,0
@@ -1831,6 +1989,34 @@ type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[State 1030, Timed presentation accent]
+type = Explod
+trigger1 = Time>=7 && Time<37 && Time%8=7
+anim=8730
+ID=8730
+postype=P1
+pos=88,-35
+bindtime=0
+scale=0.4,0.4
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
+[State 1030, Timed presentation accent]
+type = Explod
+trigger1 = Time>=7 && Time<28 && Time%6=1
+anim=8720
+ID=8720
+postype=P1
+pos=-15,0
+bindtime=0
+scale=0.55,0.55
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1
 
 [Statedef 1040]
 type = S
@@ -1919,15 +2105,15 @@ givepower = 12,8
 envshake.time = 3
 envshake.ampl = -1
 
-[State 1040, Swing 7]
+[State 1040, Swing 8]
 type = PlaySnd
-trigger1 = AnimElem = 7
+trigger1 = AnimElem = 8
 value = S1,33
 channel = 1
 
-[State 1040, Contact 7]
+[State 1040, Contact 8]
 type = HitDef
-trigger1 = AnimElem = 7
+trigger1 = AnimElem = 8
 attr = S, SA
 damage = 42,2
 animtype = Medium
@@ -1954,15 +2140,15 @@ givepower = 12,8
 envshake.time = 3
 envshake.ampl = -1
 
-[State 1040, Swing 8]
+[State 1040, Swing 9]
 type = PlaySnd
-trigger1 = AnimElem = 8
+trigger1 = AnimElem = 9
 value = S1,33
 channel = 1
 
-[State 1040, Contact 8]
+[State 1040, Contact 9]
 type = HitDef
-trigger1 = AnimElem = 8
+trigger1 = AnimElem = 9
 attr = S, SA
 damage = 96,4
 animtype = Up
@@ -1991,7 +2177,7 @@ envshake.ampl = -3
 
 [State 1040, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 8
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
 value = S1,19
 channel = 5
 persistent = 0
@@ -1999,7 +2185,7 @@ ignorehitpause = 1
 
 [State 1040, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 8
+trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
 anim = 8720
 postype = P1
 pos = 35,0
@@ -2015,328 +2201,47 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
-[Statedef 1210]
-type = S
-movetype = A
-physics = N
-anim = 1210
-ctrl = 0
-velset = 2.7,0
-poweradd = -1000
-
-[State 1210, Audible special activation]
-type = PlaySnd
-trigger1 = Time = 0
-value = S1,21
-channel = 4
-volumescale = 100
-persistent = 0
-ignorehitpause = 1
-
-[State 1210, Brief focus]
-type = SuperPause
-trigger1 = Time = 0
-time = 10
-movetime = 0
-anim = -1
-sound = -1
-darken = 1
-unhittable = 0
-p2defmul = 1
-poweradd = 0
-persistent = 0
-ignorehitpause = 1
-
-[State 1210, Small chakra flash]
+[State 1040, Timed presentation accent]
 type = Explod
-trigger1 = Time = 0
-anim = 8710
-ID = 8710
-postype = P1
-pos = 12,-32
-scale = .8,.8
-removetime = 10
-ownpal = 1
-sprpriority = 4
-supermovetime = 10
-pausemovetime = 10
-removeongethit = 1
+trigger1 = AnimElem=8
+anim=8730
+ID=8730
+postype=P1
+pos=48,-64
+bindtime=0
+scale=0.38,0.38
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
-[State 1210, Finite advance]
-type = VelSet
-trigger1 = Time >= 22
-x = 0
-
-[State 1210, Swing 2]
-type = PlaySnd
-trigger1 = AnimElem = 2
-value = S1,30
-channel = 1
-
-[State 1210, Contact 2]
-type = HitDef
-trigger1 = AnimElem = 2
-attr = S, SA
-damage = 20,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 3]
-type = PlaySnd
-trigger1 = AnimElem = 3
-value = S1,30
-channel = 1
-
-[State 1210, Contact 3]
-type = HitDef
-trigger1 = AnimElem = 3
-attr = S, SA
-damage = 20,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 5]
-type = PlaySnd
-trigger1 = AnimElem = 5
-value = S1,30
-channel = 1
-
-[State 1210, Contact 5]
-type = HitDef
-trigger1 = AnimElem = 5
-attr = S, SA
-damage = 26,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 6]
-type = PlaySnd
-trigger1 = AnimElem = 6
-value = S1,30
-channel = 1
-
-[State 1210, Contact 6]
-type = HitDef
-trigger1 = AnimElem = 6
-attr = S, SA
-damage = 26,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 7]
-type = PlaySnd
-trigger1 = AnimElem = 7
-value = S1,30
-channel = 1
-
-[State 1210, Contact 7]
-type = HitDef
-trigger1 = AnimElem = 7
-attr = S, SA
-damage = 28,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 8]
-type = PlaySnd
-trigger1 = AnimElem = 8
-value = S1,30
-channel = 1
-
-[State 1210, Contact 8]
-type = HitDef
-trigger1 = AnimElem = 8
-attr = S, SA
-damage = 28,1
-animtype = Medium
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 5,8
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,5
-guardsound = S1,9
-ground.type = High
-ground.hittime = 21
-ground.slidetime = 14
-ground.velocity = -0.7,0
-air.hittime = 26
-air.velocity = -0.6,-1.5
-fall = 0
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 3
-envshake.ampl = -1
-
-[State 1210, Swing 10]
-type = PlaySnd
-trigger1 = AnimElem = 10
-value = S1,30
-channel = 1
-
-[State 1210, Contact 10]
-type = HitDef
-trigger1 = AnimElem = 10
-attr = S, SA
-damage = 70,3
-animtype = Up
-guardflag = MA
-hitflag = MAF
-priority = 4,Hit
-pausetime = 8,11
-sparkno = S8700
-guard.sparkno = -1
-sparkxy = 0,-36
-hitsound = S1,7
-guardsound = S1,9
-ground.type = High
-ground.hittime = 24
-ground.slidetime = 14
-ground.velocity = -7,-6
-air.hittime = 26
-air.velocity = -6,-6
-fall = 1
-fall.recover = 1
-fall.recovertime = 40
-getpower = 0,0
-givepower = 12,8
-envshake.time = 8
-envshake.ampl = -3
-
-[State 1210, Finisher sound on contact]
-type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
-value = S1,19
-channel = 5
-persistent = 0
-ignorehitpause = 1
-
-[State 1210, Finisher dust]
+[State 1040, Timed presentation accent]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
-anim = 8720
-postype = P1
-pos = 35,0
-removetime = -2
-ownpal = 1
-sprpriority = 3
-persistent = 0
-ignorehitpause = 1
+trigger1 = AnimElem=9
+anim=8750
+ID=8750
+postype=P1
+pos=48,0
+bindtime=0
+scale=0.55,0.55
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
-[State 1210, Recovery]
-type = ChangeState
-trigger1 = AnimTime = 0
-value = 0
-ctrl = 1
+[State 1040, Timed presentation accent]
+type = Explod
+trigger1 = AnimElem=9
+anim=8720
+ID=8720
+postype=P1
+pos=48,0
+bindtime=0
+scale=1,1
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
 [Statedef 1400]
 type = C
@@ -2606,18 +2511,38 @@ supermovetime = 10
 pausemovetime = 10
 removeongethit = 1
 
-[State 1010, Visible arm emerges beside Mamushi]
+[State 1010, Choose a grounded root position once]
+type = VarSet
+trigger1 = Time=0
+fv=10
+value=IfElse(P2Dist X<80,24,IfElse(P2Dist X>260,215,P2Dist X-45))
+
+[State 1010, Root grows under the selected ground position]
 type = Helper
-trigger1 = Time = 6
+trigger1 = Time = 8
 helpertype = Normal
-name = "Brazo latigo"
+name = "Raiz cazadora"
 ID = 9100
 stateno = 9100
 postype = P1
-pos = 18,0
+pos = FVar(10),0
 facing = 1
 ownpal = 1
 keyctrl = 0
+
+[State 1010, Timed presentation accent]
+type = Explod
+trigger1 = Time=8
+anim=8720
+ID=8720
+postype=P1
+pos=FVar(10),0
+bindtime=0
+scale=0.65,0.65
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1
 
 [State 1010, Recover]
 type = ChangeState
@@ -2633,21 +2558,15 @@ anim = 9100
 ctrl = 0
 velset = 0,0
 
-[State 9100, Bind to living arm]
-type = BindToRoot
-trigger1 = 1
-pos = 18,0
-time = 1
-
-[State 9100, Swing 2]
+[State 9100, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 2
+trigger1 = AnimElem = 4
 value = S1,30
 channel = 1
 
-[State 9100, Contact 2]
+[State 9100, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 2
+trigger1 = AnimElem = 4
 attr = S, SA
 damage = 115,5
 animtype = Up
@@ -2673,6 +2592,20 @@ getpower = 0,0
 givepower = 12,8
 envshake.time = 8
 envshake.ampl = -3
+
+[State 9100, Timed presentation accent]
+type = Explod
+trigger1 = MoveHit=1
+anim=8730
+ID=8730
+postype=P1
+pos=75,-30
+bindtime=0
+scale=0.4,0.4
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
 [State 9100, Finite physical extension]
 type = DestroySelf
@@ -2732,7 +2665,7 @@ removeongethit = 1
 
 [State 1050, Physical projectile 1]
 type = Projectile
-trigger1 = Time = 9
+trigger1 = Time = 10
 projID = 1050
 projanim = 9200
 projhitanim = 8700
@@ -2742,11 +2675,11 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 35,-36
-velocity = 6.5,0
+offset = 38,-25
+velocity = 8,0
 projpriority = 1
 attr = S, SP
-damage = 38,3
+damage = 14,3
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
@@ -2763,13 +2696,27 @@ getpower = 0,0
 
 [State 1050, Launch sound 0]
 type = PlaySnd
-trigger1 = Time = 9
+trigger1 = Time = 10
 value = S1,30
 channel = 1
 
+[State 1050, Timed presentation accent]
+type = Explod
+trigger1 = Time=10
+anim=8730
+ID=8730
+postype=P1
+pos=35,-34
+bindtime=0
+scale=0.24,0.24
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
 [State 1050, Physical projectile 2]
 type = Projectile
-trigger1 = Time = 17
+trigger1 = Time = 13
 projID = 1050
 projanim = 9200
 projhitanim = 8700
@@ -2779,11 +2726,11 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 35,-44
-velocity = 6.5,0
+offset = 38,-38
+velocity = 8,0
 projpriority = 1
 attr = S, SP
-damage = 38,3
+damage = 14,3
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
@@ -2800,13 +2747,13 @@ getpower = 0,0
 
 [State 1050, Launch sound 1]
 type = PlaySnd
-trigger1 = Time = 17
+trigger1 = Time = 13
 value = S1,30
 channel = 1
 
 [State 1050, Physical projectile 3]
 type = Projectile
-trigger1 = Time = 25
+trigger1 = Time = 16
 projID = 1050
 projanim = 9200
 projhitanim = 8700
@@ -2816,11 +2763,11 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 35,-52
-velocity = 6.5,0
+offset = 38,-51
+velocity = 8,0
 projpriority = 1
 attr = S, SP
-damage = 38,3
+damage = 14,3
 guardflag = MA
 hitflag = MAF
 priority = 4,Hit
@@ -2837,7 +2784,257 @@ getpower = 0,0
 
 [State 1050, Launch sound 2]
 type = PlaySnd
+trigger1 = Time = 16
+value = S1,30
+channel = 1
+
+[State 1050, Physical projectile 4]
+type = Projectile
+trigger1 = Time = 22
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-25
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 3]
+type = PlaySnd
+trigger1 = Time = 22
+value = S1,30
+channel = 1
+
+[State 1050, Timed presentation accent]
+type = Explod
+trigger1 = Time=22
+anim=8730
+ID=8730
+postype=P1
+pos=35,-34
+bindtime=0
+scale=0.24,0.24
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
+[State 1050, Physical projectile 5]
+type = Projectile
 trigger1 = Time = 25
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-38
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 4]
+type = PlaySnd
+trigger1 = Time = 25
+value = S1,30
+channel = 1
+
+[State 1050, Physical projectile 6]
+type = Projectile
+trigger1 = Time = 28
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-51
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 5]
+type = PlaySnd
+trigger1 = Time = 28
+value = S1,30
+channel = 1
+
+[State 1050, Physical projectile 7]
+type = Projectile
+trigger1 = Time = 34
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-25
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 6]
+type = PlaySnd
+trigger1 = Time = 34
+value = S1,30
+channel = 1
+
+[State 1050, Timed presentation accent]
+type = Explod
+trigger1 = Time=34
+anim=8730
+ID=8730
+postype=P1
+pos=35,-34
+bindtime=0
+scale=0.24,0.24
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
+[State 1050, Physical projectile 8]
+type = Projectile
+trigger1 = Time = 37
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-38
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 7]
+type = PlaySnd
+trigger1 = Time = 37
+value = S1,30
+channel = 1
+
+[State 1050, Physical projectile 9]
+type = Projectile
+trigger1 = Time = 40
+projID = 1050
+projanim = 9200
+projhitanim = 8700
+projremanim = 8720
+projremove = 1
+projremovetime = 50
+projmisstime = 1
+projhits = 1
+projedgebound = 20
+offset = 38,-51
+velocity = 8,0
+projpriority = 1
+attr = S, SP
+damage = 14,3
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 0,8
+sparkno = S8700
+hitsound = S1,5
+guardsound = S1,9
+ground.type = High
+ground.hittime = 20
+ground.velocity = -3,0
+air.velocity = -3,-4
+fall = 0
+getpower = 0,0
+
+[State 1050, Launch sound 8]
+type = PlaySnd
+trigger1 = Time = 40
 value = S1,30
 channel = 1
 
@@ -2896,7 +3093,7 @@ removeongethit = 1
 
 [State 1410, Physical projectile 1]
 type = Projectile
-trigger1 = Time = 9
+trigger1 = Time = 10
 projID = 1410
 projanim = 9200
 projhitanim = 8700
@@ -2906,8 +3103,8 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 35,-36
-velocity = 6.5,0
+offset = 38,-32
+velocity = 8,0
 projpriority = 1
 attr = S, SP
 damage = 44,3
@@ -2927,13 +3124,27 @@ getpower = 0,0
 
 [State 1410, Launch sound 0]
 type = PlaySnd
-trigger1 = Time = 9
+trigger1 = Time = 10
 value = S1,30
 channel = 1
 
+[State 1410, Timed presentation accent]
+type = Explod
+trigger1 = Time=10
+anim=8730
+ID=8730
+postype=P1
+pos=35,-34
+bindtime=0
+scale=0.24,0.24
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
 [State 1410, Physical projectile 2]
 type = Projectile
-trigger1 = Time = 15
+trigger1 = Time = 16
 projID = 1410
 projanim = 9200
 projhitanim = 8700
@@ -2943,8 +3154,8 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 35,-44
-velocity = 6.5,0
+offset = 38,-42
+velocity = 8,0
 projpriority = 1
 attr = S, SP
 damage = 44,3
@@ -2964,7 +3175,7 @@ getpower = 0,0
 
 [State 1410, Launch sound 1]
 type = PlaySnd
-trigger1 = Time = 15
+trigger1 = Time = 16
 value = S1,30
 channel = 1
 
@@ -3023,7 +3234,7 @@ removeongethit = 1
 
 [State 1420, Physical projectile 1]
 type = Projectile
-trigger1 = Time = 13
+trigger1 = Time = 14
 projID = 1420
 projanim = 9201
 projhitanim = 8700
@@ -3033,8 +3244,8 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = 46,0
-velocity = 4,0
+offset = 58,0
+velocity = 5,0
 projpriority = 1
 attr = S, SP
 damage = 85,3
@@ -3054,15 +3265,301 @@ getpower = 0,0
 
 [State 1420, Launch sound 0]
 type = PlaySnd
-trigger1 = Time = 13
+trigger1 = Time = 14
 value = S1,30
 channel = 1
+
+[State 1420, Timed presentation accent]
+type = Explod
+trigger1 = Time=14
+anim=8730
+ID=8730
+postype=P1
+pos=35,-34
+bindtime=0
+scale=0.24,0.24
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
+
+[State 1420, Timed presentation accent]
+type = Explod
+trigger1 = Time=14
+anim=8750
+ID=8750
+postype=P1
+pos=58,0
+bindtime=0
+scale=0.35,0.35
+removetime=-2
+ownpal=1
+sprpriority=3
+removeongethit=1
 
 [State 1420, Recover]
 type = ChangeState
 trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
+
+[Statedef 1210]
+type = S
+movetype = A
+physics = S
+anim = 1210
+ctrl = 0
+velset = 0,0
+poweradd = -1000
+
+[State 1210, Audible special activation]
+type = PlaySnd
+trigger1 = Time = 0
+value = S1,21
+channel = 4
+volumescale = 100
+persistent = 0
+ignorehitpause = 1
+
+[State 1210, Brief focus]
+type = SuperPause
+trigger1 = Time = 0
+time = 10
+movetime = 0
+anim = -1
+sound = -1
+darken = 1
+unhittable = 0
+p2defmul = 1
+poweradd = 0
+persistent = 0
+ignorehitpause = 1
+
+[State 1210, Small chakra flash]
+type = Explod
+trigger1 = Time = 0
+anim = 8710
+ID = 8710
+postype = P1
+pos = 12,-32
+scale = .8,.8
+removetime = 10
+ownpal = 1
+sprpriority = 4
+supermovetime = 10
+pausemovetime = 10
+removeongethit = 1
+
+[State 1210, Swing 3]
+type = PlaySnd
+trigger1 = AnimElem = 3
+value = S1,31
+channel = 1
+
+[State 1210, Contact 3]
+type = HitDef
+trigger1 = AnimElem = 3
+attr = S, SA
+damage = 90,4
+animtype = Medium
+guardflag = MA
+hitflag = MAF
+priority = 4,Hit
+pausetime = 5,8
+sparkno = S8700
+guard.sparkno = -1
+sparkxy = 0,-36
+hitsound = S1,31
+guardsound = S1,9
+ground.type = High
+ground.hittime = 21
+ground.slidetime = 14
+ground.velocity = -0.7,0
+air.hittime = 26
+air.velocity = -0.6,-1.5
+fall = 0
+fall.recover = 1
+fall.recovertime = 40
+getpower = 0,0
+givepower = 12,8
+envshake.time = 3
+envshake.ampl = -1
+
+[State 1210, Timed presentation accent]
+type = Explod
+trigger1 = Time=12 || Time=20
+anim=8760
+ID=8760
+postype=P1
+pos=125,-32
+bindtime=0
+scale=0.18,0.18
+removetime=-2
+ownpal=1
+sprpriority=4
+removeongethit=1
+
+[State 1210, Mouth charge sound]
+type = PlaySnd
+trigger1 = Time=12
+value=S1,32
+channel=1
+
+[State 1210, Emit the sphere from the open jaw]
+type = Helper
+trigger1 = Time=28
+helpertype=Normal
+name="Bramido Shinju"
+ID=9400
+stateno=9400
+postype=P1
+pos=125,-32
+ownpal=1
+keyctrl=0
+
+[State 1210, Release roar]
+type = PlaySnd
+trigger1 = Time=28
+value=S1,33
+channel=1
+
+[State 1210, Timed presentation accent]
+type = Explod
+trigger1 = Time=28
+anim=8740
+ID=8740
+postype=P1
+pos=125,-32
+bindtime=0
+scale=0.55,0.55
+removetime=-2
+ownpal=1
+sprpriority=5
+removeongethit=1
+
+[State 1210, Recover the jaw]
+type = ChangeState
+trigger1 = AnimTime=0
+value=0
+ctrl=1
+
+[Statedef 9400]
+type = A
+movetype = A
+physics = N
+anim = 9400
+ctrl = 0
+velset = 7.5,0
+
+[State 9400, Visible dark core]
+type = AngleDraw
+trigger1 = 1
+value=0
+scale=.42,.42
+
+[State 9400, Purple-black core]
+type = PalFX
+trigger1 = 1
+time=1
+color=0
+mul=28,5,45
+
+[State 9400, Living violet rim]
+type = Explod
+trigger1 = Time=0
+anim=8760
+ID=9409
+postype=P1
+pos=0,0
+bindtime=-1
+scale=.15,.15
+removetime=45
+ownpal=1
+sprpriority=4
+
+[State 9400, Current root power]
+type = AttackMulSet
+trigger1 = 1
+value=IfElse(Root,Var(40)>0,1.15,1)
+
+[State 9400, No push]
+type = PlayerPush
+trigger1 = 1
+value=0
+
+[State 9400, No shadow]
+type = AssertSpecial
+trigger1 = 1
+flag=NoShadow
+
+[State 9400, Physical energy sphere]
+type = HitDef
+trigger1 = Time=0
+attr=A,SP
+damage=120,8
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=0,10
+sparkno=S8740
+guard.sparkno=-1
+hitsound=S1,33
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.velocity=-6,-5
+air.velocity=-5,-4
+fall=1
+fall.recover=1
+getpower=0,0
+givepower=15,10
+envshake.time=9
+envshake.ampl=-4
+
+[State 9400, Resolve contact or timeout]
+type = ChangeState
+trigger1=MoveContact
+trigger2=Time>=40
+trigger3=RoundState!=2
+value=9401
+
+[Statedef 9401]
+type = A
+movetype = I
+physics = N
+anim = 8740
+ctrl = 0
+velset = 0,0
+
+[State 9401, Clear travel ring]
+type = RemoveExplod
+trigger1 = Time=0
+ID=9409
+
+[State 9401, Timed presentation accent]
+type = Explod
+trigger1 = Time=0
+anim=8750
+ID=8750
+postype=P1
+pos=0,20
+bindtime=0
+scale=0.45,0.45
+removetime=-2
+ownpal=1
+sprpriority=5
+removeongethit=1
+
+[State 9401, Final pulse sound]
+type = PlaySnd
+trigger1 = Time=0
+value=S1,33
+channel=1
+
+[State 9401, Finite burst]
+type = DestroySelf
+trigger1 = Time>=18
+
 
 [Statedef 1440]
 type = S

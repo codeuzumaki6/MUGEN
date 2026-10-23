@@ -18,6 +18,7 @@ if LOW:cases=[dict(name='low life ultimate',kind='ultimate',face=1,distance=120)
 HEALTH=os.environ.get('MAMUSHI_CLONE_HEALTH_CHECK')=='1'
 if HEALTH:cases=[dict(name='clone_damage',kind='clone_damage',face=face,distance=120) for face in [1,-1]]
 EXTRA=os.environ.get('MAMUSHI_EXTRA_CHECKS')=='1';CPU=os.environ.get('MAMUSHI_CPU_CHECK')=='1'
+DASH=os.environ.get('MAMUSHI_DASH_CHECK')=='1'
 if EXTRA:
     cases=[]
     for face in [1,-1]:
@@ -25,6 +26,8 @@ if EXTRA:
             if d in ['F','B']:cases.append(dict(name=name+' shortcut',kind='move',face=face,button=button,d=d,state=state,cost=cost,distance=120,shortcut=True))
         for route,final,damage in [('abc',222,164),('bca',202,170),('cab',212,166)]:cases.append(dict(name='Mixed '+route,kind='mixed',face=face,route=route,button=route[0],state=final,distance=44,expected=damage))
 if CPU:cases=[dict(name='CPU',kind='cpu',face=1,distance=200)]
+if DASH:
+    cases=[dict(name=mode+' '+button,kind=mode,face=face,button=button,state=100 if (button=='R')==(face==1) else 105,distance=120) for face in [1,-1] for button in ['L','R'] for mode in ['dash','dash_single','dash_cancel','dash_hit']]
 if os.environ.get('MAMUSHI_CASES'):
     wanted=json.loads(os.environ['MAMUSHI_CASES']);cases=[c for c in cases if c['name'] in wanted and (not CAP or c['face']==1)]
 assert cases
@@ -73,6 +76,11 @@ for idx,case in enumerate(cases):
         p1+=fctl('AssertInput',window(20,55),'flag = '+('R' if face==1 else 'L'))
         if kind=='diagonal':p1+=press(23,'U')
     elif kind=='jump':p1+=press(23,'U')
+    elif kind.startswith('dash'):
+        if kind!='dash_single':p1+=press(20,case['button'])
+        p1+=press(27,case['button'])
+        if kind=='dash_cancel':p1+=press(36,'a')
+        if kind=='dash_hit':p2+=fctl('PosSet',at(36),f'x=(EnemyNear,Pos X)+{face*30}\ny=0')+fctl('ChangeState',at(38),'value=9700\nctrl=0')
     elif kind=='charge':p1+=fctl('AssertInput',window(20,80),'flag = s')
     elif kind=='focus':p1+=motion('s','D')
     elif kind in ['clone_auto','clone_independent','clone_damage']:
@@ -132,7 +140,7 @@ ctrl = 1
 module=ENGINE/'external/mods/mamushi_checks.lua';module.parent.mkdir(exist_ok=True)
 trace=ENGINE/'mamushi_trace.jsonl';trace.write_text('')
 lua="""modifyGameOption('Debug.RetryLoadOnError',false)
-local f=assert(io.open('mamushi_trace.jsonl','w'));local last=-1;local rows={};local frames=0
+local f=assert(io.open('mamushi_trace.jsonl','w'));local last=-1;local rows={};local frames=0;local directions=FACES
 CAPSETUP
 hook.add('loop','mamushi_checks',function()
  if not player(1) or roundState()~=2 then return end
@@ -141,12 +149,15 @@ hook.add('loop','mamushi_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,clones=0,afterhit=0,cloneHits=0,control=false,move=0,apex=0,minPower=3000,health=0} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,clones=0,afterhit=0,cloneHits=0,control=false,move=0,apex=0,minPower=3000,health=0,dash=0,helpers=0} end
  local r=rows[case];local st=stateNo()
  if tick>4 then
   r.states[st]=true;r.received=math.max(r.received,1000-life());r.minPower=math.min(r.minPower,power());r.maxPower=math.max(r.maxPower or 0,power());r.apex=math.min(r.apex,posY());r.clones=math.max(r.clones,numHelper(9500))
-  if tick==8 then r.startX=posX() end
+  if tick==8 then r.startX=posX();r.startDist=p2DistX() end
   if tick>8 and tick<100 then r.move=math.max(r.move,math.abs(posX()-(r.startX or posX()))) end
+  -- The distance to a stationary target cancels camera pan and zoom.
+  if st==100 or st==105 then r.dash=((r.startDist or p2DistX())-p2DistX())*directions[case+1] end
+  r.helpers=math.max(r.helpers,numHelper())
   if tick>90 and numHelper(9500)>0 and ctrl() then r.control=true end
   if r.received>0 and tick>115 then r.afterhit=math.max(r.afterhit,numHelper(9500)) end
   if helper(9500) then if moveHit()>0 then r.cloneHits=r.cloneHits+1 end;r.health=var(3);if stateNo()==9590 then r.hurtSamples=(r.hurtSamples or 0)+1;r.minHP=math.min(r.minHP or 180,var(3)) end;player(1) end
@@ -155,11 +166,11 @@ hook.add('loop','mamushi_checks',function()
  if tick==TICKS-1 then
   local states={};for n,_ in pairs(r.states) do table.insert(states,n) end;table.sort(states)
   local ss={};for _,n in ipairs(states) do table.insert(ss,tostring(n)) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.clones..'\\t'..r.afterhit..'\\t'..r.cloneHits..'\\t'..tostring(r.control)..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..numHelper(9500)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.maxPower..'\\t'..(r.hurtSamples or 0)..'\\t'..(r.minHP or 180)..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.clones..'\\t'..r.afterhit..'\\t'..r.cloneHits..'\\t'..tostring(r.control)..'\\t'..r.move..'\\t'..r.apex..'\\t'..r.minPower..'\\t'..numHelper(9500)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.maxPower..'\\t'..(r.hurtSamples or 0)..'\\t'..(r.minHP or 180)..'\\t'..r.dash..'\\t'..numHelper()..'\\t'..r.helpers..'\\n');f:flush()
  end
  CAPTURE
 end)
-""".replace('TICKS',str(TICKS)).replace('CASECOUNT',str(len(cases))).replace('DUMMYLIFE',str(500 if LOW else 10000))
+""".replace('TICKS',str(TICKS)).replace('CASECOUNT',str(len(cases))).replace('DUMMYLIFE',str(500 if LOW else 10000)).replace('FACES','{'+','.join(str(c['face']) for c in cases)+'}')
 if CAP:
     folder=Path(CAP).resolve();folder.mkdir(parents=True,exist_ok=True)
     lua=lua.replace('CAPSETUP',"modifyGameOption('Config.ScreenshotFolder',"+json.dumps(str(folder)+'/')+")\nlocal images=assert(io.open("+json.dumps(str(folder/'frames.tsv'))+",'w'));local cap={index=0,last=-1000,pending=nil};local cues=assert(io.open("+json.dumps(str(folder/'audio.tsv'))+",'w'));local seen={};local observed=assert(io.open("+json.dumps(str(folder/'observed.tsv'))+",'w'))")
@@ -172,8 +183,8 @@ if CAP:
   local sounds={[1000]=true,[1010]=true,[1020]=true,[1030]=true,[1040]=true,[1050]=true,[1200]=true,[1210]=true,[1400]=true,[1410]=true,[1420]=true,[1430]=true,[1440]=true,[3000]=true,[520]=true}
   if cap.prevState~=st and sounds[st] then cues:write(frames..'\\t'..case..'\\n');cues:flush() end
   cap.prevState=st
-  if frames-cap.last>=4 and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
-""".replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND','450' if any(c['kind']=='clone_limit' for c in cases) else '310' if any(c['kind']=='ultimate' for c in cases) else '240'))
+  if frames-cap.last>=CAPSTEP and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
+""".replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPSTEP','2' if DASH else '4').replace('CAPEND','160' if DASH else '450' if any(c['kind']=='clone_limit' for c in cases) else '310' if any(c['kind']=='ultimate' for c in cases) else '240'))
 else:lua=lua.replace('CAPSETUP','').replace('CAPTURE','')
 if os.environ.get('MAMUSHI_DEBUG'):
     lua=lua.replace("local f=assert(io.open('mamushi_trace.jsonl','w'));","local hf=assert(io.open('mamushi_helper_debug.tsv','w'));local f=assert(io.open('mamushi_trace.jsonl','w'));")
@@ -184,6 +195,7 @@ if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIO
 try:
     run=subprocess.run([str(ENGINE/'Ikemen_GO_Linux'),'-p1','MamushiCheck','-p1.ai','8' if CPU else '0','-p2','MamushiDummy','-p2.ai','0','-rounds','1','-time','300' if CAP else '9999']+(['-speed','0'] if CAP else ['-speedtest'])+([] if AUDIO else ['-nosound'])+['-log','mamushi_engine.log'],cwd=ENGINE,env=env,capture_output=True,text=True,timeout=180 if CAP else 90)
     print(run.stdout);print(run.stderr);assert run.returncode==0,f'Engine returned {run.returncode}'
+    assert not re.search(r"WARNING: Mamushi(?: Shinju)?'s[^\n]*Unknown state controller parameter",run.stdout+run.stderr),'Mamushi parameter ignored by engine'
 finally:
     debug.write_text(saved)
     if module.exists():module.rename(module.with_name('-mamushi_checks.lua'))
@@ -193,6 +205,7 @@ assert sorted(rows)==list(range(len(cases))),('missing cases',sorted(rows))
 report=[]
 for i,case in enumerate(cases):
     row=rows[i];stateset=set(map(int,row[1].split(',')));damage=int(row[2]);received=int(row[3]);peak=int(row[4]);afterhit=int(row[5]);clonehits=int(row[6]);control=row[7]=='true';movement=float(row[8]);apex=float(row[9]);power=int(row[10]);endclones=int(row[11]);endstate=int(row[12]);victim=int(row[13]);bad=[];kind=case['kind']
+    if kind!='cpu' and int(row[18])!=0:bad.append('temporary helper remained after recovery')
     if kind=='move':
         if case['state'] not in stateset:bad.append('input did not execute requested technique')
         if case['name']=='Division':
@@ -205,6 +218,15 @@ for i,case in enumerate(cases):
     if kind=='mixed' and (case['state'] not in stateset or damage!=case['expected']):bad.append('mixed chain did not complete all three contacts')
     if kind=='cpu' and damage<=0:bad.append('CPU did not approach and damage the opponent')
     if kind=='walk' and movement<35:bad.append('walking input failed')
+    if kind.startswith('dash'):
+        if apex!=0 or power!=3000 or endstate!=0:bad.append('dash left the floor, consumed power or did not recover')
+        if kind=='dash_single':
+            if stateset & {100,105} or movement>20:bad.append('one tap incorrectly triggered a dash')
+        else:
+            if case['state'] not in stateset:bad.append('double tap did not enter the correct dash')
+            if kind=='dash' and (abs(float(row[17]))<55 or (float(row[17])>0)!=(case['button']=='R')):bad.append('dash physical direction or travel failed')
+            if kind=='dash_cancel' and 200 not in stateset:bad.append('dash could not cancel into a normal attack')
+            if kind=='dash_hit' and (received<=0 or not stateset & {5000,5001,5010}):bad.append('dash was not vulnerable to a real strike')
     if kind in ['jump','diagonal'] and not -110<apex<-45:bad.append('jump height outside intended range')
     if kind=='charge' and (500 not in stateset or int(row[14])<700):bad.append('LB charge state / actual energy gain failed')
     if kind=='focus' and 520 not in stateset:bad.append('down LB focus failed')
@@ -219,8 +241,8 @@ for i,case in enumerate(cases):
     if kind=='recovery' and (5120 not in stateset or endstate!=0):bad.append('knockdown failed to recover automatically')
     if kind=='ultimate' and (3001 not in stateset or damage!=(175 if LOW else 350) or victim in [3010,3011]):bad.append('confirmed ultimate damage/release failed')
     if kind in ['ultiblock','ultimiss','ultifar','empty'] and (3001 in stateset or damage>0):bad.append('ultimate confirmed without a valid hit')
-    result=dict(case=case,states=sorted(stateset),damage=damage,received=received,max_clones=peak,clones_after_root_hit=afterhit,clone_contact_samples=clonehits,clone_hurt_samples=int(row[15]),clone_min_health=int(row[16]),root_control_while_clone_alive=control,movement=movement,jump_apex=apex,min_power=power,max_power=int(row[14]),end_clones=endclones,end_state=endstate,victim_end=victim,failures=bad);report.append(result)
+    result=dict(case=case,states=sorted(stateset),damage=damage,received=received,max_clones=peak,clones_after_root_hit=afterhit,clone_contact_samples=clonehits,clone_hurt_samples=int(row[15]),clone_min_health=int(row[16]),root_control_while_clone_alive=control,movement=movement,jump_apex=apex,dash_signed_distance=float(row[17]),end_helpers=int(row[18]),max_helpers=int(row[19]),min_power=power,max_power=int(row[14]),end_clones=endclones,end_state=endstate,victim_end=victim,failures=bad);report.append(result)
     print('FAIL' if bad else 'PASS',case['name'],case['face'],result)
-out=ROOT/'previews'/('Mamushi_CPU_checks.json' if CPU else 'Mamushi_extra_checks.json' if EXTRA else 'Mamushi_clone_health_checks.json' if HEALTH else 'Mamushi_low_life_checks.json' if LOW else 'Mamushi_capture_checks.json' if CAP else 'Mamushi_engine_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
+out=ROOT/'previews'/('Mamushi_capture_checks.json' if CAP else 'Mamushi_dash_checks.json' if DASH else 'Mamushi_CPU_checks.json' if CPU else 'Mamushi_extra_checks.json' if EXTRA else 'Mamushi_clone_health_checks.json' if HEALTH else 'Mamushi_low_life_checks.json' if LOW else 'Mamushi_engine_checks.json');out.write_text(json.dumps(report,indent=2)+'\n')
 assert not any(c['failures'] for c in report),str(out)
 print('PASSED',len(report),'Mamushi raw-input / collision scenarios')

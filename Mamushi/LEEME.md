@@ -15,13 +15,16 @@ Consulta `CONTROLES_XBOX.md`. A física es la ulti; LB/Pausa carga chakra;
 
 ## Lo que incluye
 
-- Movimiento, carrera, salto vertical/diagonal, agachado, guardia, daño, caída,
+- Movimiento, dash por el suelo con ←← / →→, salto vertical/diagonal, agachado, guardia, daño, caída,
   levantada automática, presentación y victoria.
 - Tres cadenas terrestres de tres etapas y sus continuaciones mezcladas.
   Tres familias aéreas, hasta tres golpes por salto. Remates que lanzan o
   derriban, con sonido, pausa de impacto, polvo y vibración breve.
 - Seis especiales direccionales usando las extensiones, mandíbulas, mazas,
-  taladros y espinas de la hoja. Técnicas con abajo + X/Y/B, RB/RT y abajo
+  taladros y espinas de la hoja. Ahora las transformaciones tienen preparación,
+  extensión y recogida, con ráfagas en tres alturas, raíz cazadora e impactos
+  de maza contra el suelo, basados en el video de Vaydra. RT usa la mandíbula
+  gigante que carga y lanza un orbe violeta. Técnicas con abajo + X/Y/B, RB/RT y abajo
   + RB/RT. Sus activaciones tienen un sonido propio, aunque el golpe falle.
 - División de ↓RT: hasta seis copias que persiguen y atacan sin controlar al
   jugador. Tienen salud propia, se pueden derrotar y siguen presentes al
@@ -32,13 +35,13 @@ Consulta `CONTROLES_XBOX.md`. A física es la ulti; LB/Pausa carga chakra;
 
 ## Arte y archivos
 
-Se mantiene el dibujo original de la hoja. El SFF contiene 97 entradas: las
+Se mantiene el dibujo original de la hoja. El SFF contiene 139 entradas: las
 80 originales de cuerpo/partes, una referencia segura de reposo, dos retratos
-recortados y 14 efectos. No se generaron cuerpos con IA ni se agrandaron las
+recortados y 56 efectos. No se generaron cuerpos con IA ni se agrandaron las
 poses de combate. El reposo solo usa 0,4–6. Los fragmentos de cabeza, el
 rectángulo auxiliar y la tira con varias figuras no se reproducen como cuerpo.
 
-SFF v2.0.1.0, SND con 13 muestras no verbales, 127 acciones AIR y 99 estados
+SFF v2.0.1.0, SND con 13 muestras no verbales, 132 acciones AIR y 101 estados
 incluidos los comunes. La hoja conserva su resolución y sus límites de
 animación; mejorar el combate no convierte los cuadros existentes en nuevos
 dibujos ni garantiza el acabado de otro autor.

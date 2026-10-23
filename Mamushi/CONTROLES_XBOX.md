@@ -11,19 +11,20 @@ adelante apunta al rival y atrás se aleja. Mirando a la derecha, adelante es �
 | B, B, B | Cadena de maza y golpe descendente | 0 |
 | X/Y/B en el aire | Cadena aérea de hasta tres golpes; se pueden mezclar | 0 |
 | ↓ → X | Avance con brazo extensible, hasta tres contactos | 350 |
-| ↓ ← X | Látigo físico del brazo | 500 |
+| ↓ ← X | Raíz cazadora: emerge del suelo, golpea y se retrae | 500 |
 | ↓ → Y | Mordidas de la mandíbula transformada | 500 |
 | ↓ ← Y | Embestida con brazo taladro | 650 |
 | ↓ → B | Maza espinada con avance y remate | 650 |
-| ↓ ← B | Tres espinas lanzadas desde la transformación | 500 |
+| ↓ ← B | Tres ráfagas de tres espinas, a distintas alturas | 500 |
 | ↓ X | Golpe bajo de maza que derriba | 250 |
 | ↓ Y | Dos espinas a media distancia | 400 |
 | ↓ B | Taladro ascendente que avanza por el suelo | 500 |
 | RB | Guardia mutante: ventana breve de contraataque al contacto | 500 |
-| RT | Asalto que enlaza brazo, mandíbula, taladro y maza | 1000 |
+| RT | Bramido Shinju: mandíbula gigante y orbe violeta | 1000 |
 | ↓ RB | Retirada con mordida; debe estar cerca para acertar | 350 |
 | **↓ RT** | **División: una copia autónoma** | **750** |
 | **A** | **Enjambre Shinju: ultimate que debe acertar** | **3000** |
+| ←← / →→ | Dash corto hacia ese lado, por el suelo | 0 |
 | Mantener LB/Pausa | Cargar chakra; soltar termina la carga | 0 |
 | ↓ LB/Pausa con la barra llena | Concentración temporal, mismo cuerpo y tamaño | 1000 |
 
@@ -32,7 +33,14 @@ mantener la diagonal correspondiente antes de pulsar X/Y/B. Los normales
 terrestres se pueden mezclar: por ejemplo X → Y → B. Pulsa la continuación
 cuando el golpe conecte. Bloquear o fallar corta la continuación. Los finales
 lanzan o derriban; no son cadenas infinitas. Arriba salta, arriba diagonal
-salta avanzando, abajo agacha y dos toques adelante permiten correr.
+salta avanzando y abajo agacha. Dos toques seguidos a izquierda o derecha
+hacen un dash corto hacia ese lado; puedes enlazarlo con un ataque. Un solo
+toque camina. El dash no consume chakra ni concede invulnerabilidad.
+
+La raíz elige un punto del suelo al iniciar el ataque; no sigue al rival
+después. RT prepara la mandíbula, carga la esfera y la dispara desde su boca.
+A corta distancia también puede conectar la mordida; el orbe está pensado
+para media distancia. Ambos se pueden bloquear o esquivar.
 
 ## División
 

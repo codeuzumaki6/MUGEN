@@ -1,0 +1,57 @@
+{
+  "file_name": "VaydraSenki.mp4",
+  "sha256": "922bd36429f84e03ac1de7f55585a5ba2f47d4fe0858fdec4ffdf982d411e835",
+  "duration_seconds": 73.710249,
+  "source": "User-provided Vaydra Senki gameplay; visual reference, not a MUGEN implementation",
+  "sequences": [
+    {
+      "seconds": [
+        2,
+        10
+      ],
+      "detail": "Basic extension: prepare, extend arm, retract"
+    },
+    {
+      "seconds": [
+        11,
+        19
+      ],
+      "detail": "Skill 01: rapid three-height volleys of transformed spikes"
+    },
+    {
+      "seconds": [
+        19,
+        30
+      ],
+      "detail": "Skill 02: forward pressing rush with white wind rings and trailing dust"
+    },
+    {
+      "seconds": [
+        31.7,
+        39
+      ],
+      "detail": "Skill 03: kneel, root rises at selected ground point, curves and retracts"
+    },
+    {
+      "seconds": [
+        39.5,
+        54.5
+      ],
+      "detail": "Skill 04: transforming rush, heavy mace and ground burst"
+    },
+    {
+      "seconds": [
+        56,
+        62
+      ],
+      "detail": "Skill 05: giant jaw emits compact violet-black energy sphere"
+    },
+    {
+      "seconds": [
+        64,
+        69
+      ],
+      "detail": "Larger finishing variant; kept distinct from the existing clone ultimate"
+    }
+  ]
+}

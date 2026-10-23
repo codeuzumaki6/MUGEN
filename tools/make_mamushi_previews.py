@@ -7,10 +7,14 @@ import numpy as np
 from scipy.signal import correlate,find_peaks,resample_poly
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews';ENGINE=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
-JOBS=[('combos',['Combo a','Combo b','Combo c'],210,False,'X X X / Y Y Y / B B B | Cadenas y remates con los sprites originales'),
-      ('especiales',['Brazo','Latigo','Mandibula','Taladro','Maza','Espinas'],210,True,'SEIS ESPECIALES | Abajo adelante / atras + X, Y, B'),
+JOBS=[('especiales',['Brazo','Latigo','Mandibula','Taladro','Maza','Espinas'],230,True,'ESPECIALES | Extension, raiz cazadora, embestida, taladro, maza y rafaga de espinas'),
+      ('dash',['dash L','dash R'],180,False,'DOBLE TOQUE | Izquierda izquierda / derecha derecha: dash corto por el suelo'),
+      ('bramido',['Asalto'],240,True,'RT | La mandibula gigante carga y dispara un orbe Shinju'),
+      ('combos',['Combo a','Combo b','Combo c'],210,False,'X X X / Y Y Y / B B B | Cadenas y remates con los sprites originales'),
       ('division',['clone_limit'],1040,True,'DIVISION: ABAJO + RT | Seis copias autonomas; prueba con energia repuesta'),
       ('ultimate',['ultimate'],420,True,'A: ENJAMBRE SHINJU | Apertura por colision y ataque de las copias')]
+if os.environ.get('MAMUSHI_PREVIEW_JOBS'):
+    wanted=set(json.loads(os.environ['MAMUSHI_PREVIEW_JOBS']));JOBS=[j for j in JOBS if j[0] in wanted]
 runtime=hashlib.sha256(b''.join((ROOT/'Mamushi'/n).read_bytes() for n in ['Mamushi.def','Mamushi.sff','Mamushi.snd','Mamushi.air','Mamushi.cns','Mamushi.cmd','common1.cns'])).hexdigest()
 cachepath=OUT/'Mamushi_capture_checkpoint.json';cache=json.loads(cachepath.read_text()) if cachepath.exists() else {};cache=cache if cache.get('runtime_sha256')==runtime else dict(runtime_sha256=runtime,jobs={})
 reports=[]
@@ -20,8 +24,9 @@ with tempfile.TemporaryDirectory(prefix='mamushi-video-') as temp:
         if cached and video.exists() and hashlib.sha256(video.read_bytes()).hexdigest()==cached['video_sha256']:
             reports.append(cached['report']);print('REUSE',name,flush=True);continue
         folder=Path(temp)/name;folder.mkdir();raw=folder/'audio.raw';env=os.environ.copy()
-        for key in ['MAMUSHI_LOW_LIFE','MAMUSHI_CLONE_HEALTH_CHECK','MAMUSHI_DEBUG']:env.pop(key,None)
+        for key in ['MAMUSHI_LOW_LIFE','MAMUSHI_CLONE_HEALTH_CHECK','MAMUSHI_DEBUG','MAMUSHI_DASH_CHECK','MAMUSHI_EXTRA_CHECKS','MAMUSHI_CPU_CHECK']:env.pop(key,None)
         env.update(MAMUSHI_CAPTURE=str(folder),MAMUSHI_CASES=json.dumps(cases),MAMUSHI_TICKS=str(ticks))
+        if name=='dash':env['MAMUSHI_DASH_CHECK']='1'
         if record:env['MAMUSHI_AUDIO']=str(raw)
         else:env.pop('MAMUSHI_AUDIO',None)
         result=subprocess.run([sys.executable,str(ROOT/'tools/check_mamushi_in_engine.py'),ENGINE],env=env,capture_output=True,text=True)
@@ -55,7 +60,8 @@ with tempfile.TemporaryDirectory(prefix='mamushi-video-') as temp:
             matches=[dict(frame=c[0],case=c[1],sample_seconds=float(sample/44100),normalized_correlation=float(score[sample])) for c,sample in zip(cues,chosen)]
         else:
             def at(frame):return frame/60
-        start=at(frames[0][1]);end=at(frames[-1][1]+4);duration=end-start
+        step=2 if name=='dash' else 4
+        start=at(frames[0][1]);end=at(frames[-1][1]+step);duration=end-start
         if record:
             assert start>=0 and end*44100<=len(stereo),(name,start,end,len(stereo)/44100)
             sound=folder/'actual.wav';samples=stereo[round(start*44100):round(end*44100)]
@@ -64,14 +70,15 @@ with tempfile.TemporaryDirectory(prefix='mamushi-video-') as temp:
         concat=folder/'frames.txt';lines=['ffconcat version 1.0']
         for i,(index,frame,case,tick) in enumerate(frames):
             png=folder/f'Ikemen_GO{index:03d}.png';assert png.exists()
-            nxt=frames[i+1][1] if i+1<len(frames) else frame+4
+            nxt=frames[i+1][1] if i+1<len(frames) else frame+step
             lines += [f"file '{png}'",'option framerate 60',f'duration {at(nxt)-at(frame):.9f}']
         lines += [f"file '{png}'",'option framerate 60'];concat.write_text('\n'.join(lines)+'\n')
         title=folder/'caption.txt';title.write_text(caption)
         vf=f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={title}:x=(w-tw)/2:y=690:fontsize=17:fontcolor=white'
-        subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat)]+audio_args+['-vf',vf,'-c:v','libx264','-crf','18','-pix_fmt','yuv420p']+(['-c:a','aac','-b:a','160k'] if record else [])+['-t',str(duration),'-movflags','+faststart',str(video)],check=True)
-        subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(video),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(gif)],check=True)
-        wanted=350 if name=='division' else 130 if name=='ultimate' else 70
+        subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(concat)]+audio_args+['-vf',vf,'-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p']+(['-c:a','aac','-b:a','160k'] if record else [])+['-t',str(duration),'-movflags','+faststart',str(video)],check=True)
+        if os.environ.get('MAMUSHI_GIFS')=='1':
+            subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(video),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(gif)],check=True)
+        wanted=350 if name=='division' else 130 if name=='ultimate' else 37 if name=='dash' else 62 if name=='bramido' else 70
         selected=min(frames,key=lambda r:abs(r[3]-wanted));shutil.copy2(folder/f'Ikemen_GO{selected[0]:03d}.png',video.with_suffix('.png'))
         report=dict(name=name,runtime_sha256=runtime,duration=duration,frames=len(frames),audio='Actual SDL stereo 44100Hz; no offline sound mix' if record else 'Silent sprite-combo recording',activations=matches,combat_checks=checks)
         cache['jobs'][name]=dict(video_sha256=hashlib.sha256(video.read_bytes()).hexdigest(),report=report);cachepath.write_text(json.dumps(cache,indent=2)+'\n');reports.append(report)

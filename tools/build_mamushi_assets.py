@@ -6,6 +6,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 from build_archives import png_to_indexed
 from make_combo_preview import Sff2
+from read_reference_sff import ReferenceSff
 
 ROOT=Path(__file__).resolve().parents[1]
 CHAR=ROOT/'Mamushi';ASSETS=CHAR/'assets';SOURCE=ROOT/'source_material/Mamushi_original'
@@ -55,9 +56,15 @@ def main():
             im,axis=reference.image(original,n);size=(max(1,round(im.width*factor)),max(1,round(im.height*factor)))
             im=im.resize(size,Image.Resampling.NEAREST);path=ASSETS/'effects'/f'{group}_{n}.png';im.save(path)
             records.append((group,n,path,tuple(round(v*factor) for v in axis)))
+    # Presentation layers only. All original body/weapon pixels stay intact.
+    code=ReferenceSff(ROOT/'source_material/Shibai_Code_reference/Code.sff')
+    for group,original,numbers in [(8730,556,range(11,16)),(8740,7005,range(5)),(8750,7015,range(9)),(8760,1235,range(22)),(8770,10030,[0])]:
+        for n,source_n in enumerate(numbers):
+            im,axis=code.image(original,source_n);path=ASSETS/'effects'/f'{group}_{n}.png';im.save(path)
+            records.append((group,n,path,axis))
     pack_sff(records,CHAR/'Mamushi.sff')
     (ASSETS/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    (ASSETS/'source.json').write_text(json.dumps(dict(source='source_material/Mamushi_original/AC_Mamushi.sff',sha256=hashlib.sha256(b).hexdigest(),sprite_author='Vahidras / Vaydra as credited on supplied sheet',original_author='misterioso924',original_body_entries=len(manifest),uniform_scale=1,body_rgba_preserved=True,ai_redrawn=False,fx_source='Existing project Eida SFF groups 8400,8510,8420; see credits'),indent=2)+'\n')
+    (ASSETS/'source.json').write_text(json.dumps(dict(source='source_material/Mamushi_original/AC_Mamushi.sff',sha256=hashlib.sha256(b).hexdigest(),sprite_author='Vahidras / Vaydra as credited on supplied sheet',original_author='misterioso924',original_body_entries=len(manifest),uniform_scale=1,body_rgba_preserved=True,ai_redrawn=False,fx_source='Existing Eida groups 8400,8510,8420; Code by MUGEN STARS groups 556,7005,7015,1235,10030 for wind, debris and violet blast only; see credits'),indent=2)+'\n')
     sound=(ROOT/'Eida/Eida.snd').read_bytes();number,off=struct.unpack_from('<II',sound,16);samples={}
     for i in range(number):
         nxt,size,g,n=struct.unpack_from('<IIII',sound,off)

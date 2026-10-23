@@ -98,5 +98,16 @@
   "clone_generation_decision_delay": "10+6*min(generation,5)",
   "ultimate_damage": "min(350, floor(enemy_lifemax*.35))",
   "ultimate_cost": 3000,
-  "original_art_changed": false
+  "original_art_changed": false,
+  "dash_inputs": [
+    "L,L",
+    "R,R"
+  ],
+  "dash_duration_ticks": 16,
+  "dash_grounded": true,
+  "reference_analysis": "source_material/Mamushi_reference/reference_analysis.json",
+  "display_names": {
+    "Asalto": "Bramido Shinju",
+    "Latigo": "Raiz cazadora"
+  }
 }

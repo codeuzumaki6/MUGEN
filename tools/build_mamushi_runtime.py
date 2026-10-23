@@ -26,7 +26,7 @@ def state(n,anim,typ='S',move='I',physics='S',cost=0,velocity=None):
     if cost:text+=f'poweradd = -{cost}\n'
     return text
 
-def animation(n,poses,hits=None,kind='body',hurt=True,loop=False):
+def animation(n,poses,hits=None,kind='body',hurt=True,loop=False,box=None,additive=True):
     hits=hits or {};text=f'\n[Begin Action {n}]\n'
     if hurt:text+='Clsn2Default: 1\n Clsn2[0] = -15,-64,15,-1\n'
     if loop:text+='Loopstart\n'
@@ -34,18 +34,37 @@ def animation(n,poses,hits=None,kind='body',hurt=True,loop=False):
         if element in hits:
             if isinstance(sprite,tuple):g,no=sprite
             else:g,no=0,sprite
-            if g==0:
+            if box is not None:x0,y0,right,y1=box
+            elif g==0 and kind=='part':
+                p=meta[no];w,h=Image.open(CHAR/p['file']).size;x,y=p['axis']
+                x0,y0,right,y1=1-x,1-y,w-x-1,h-y
+            elif g==0:
                 p=meta[no];w,h=Image.open(CHAR/p['file']).size;x,y=p['axis'];right=max(5,w-x-1)
                 y0,y1=(-min(y,110),-3) if kind=='maza' else (-min(y,55),-17) if kind!='low' else (-27,-2)
                 x0=min(18,right-4)
             else:x0,y0,right,y1=-13,-12,13,1
             text+=f'Clsn1: 1\n Clsn1[0] = {x0},{y0},{right},{y1}\n'
         g,no=sprite if isinstance(sprite,tuple) else (0,sprite)
-        text+=f'{g},{no},0,0,{duration}'+(',,A' if g>=8700 else '')+'\n'
+        text+=f'{g},{no},0,0,{duration}'+(',,A' if g>=8700 and additive else '')+'\n'
     air.append(text)
 
 def startup(n):
     return c(n,'Audible special activation','PlaySnd','Time = 0','value = S1,21\nchannel = 4\nvolumescale = 100', 'persistent = 0\nignorehitpause = 1\n')+c(n,'Brief focus','SuperPause','Time = 0','time = 10\nmovetime = 0\nanim = -1\nsound = -1\ndarken = 1\nunhittable = 0\np2defmul = 1\npoweradd = 0','persistent = 0\nignorehitpause = 1\n')+c(n,'Small chakra flash','Explod','Time = 0','anim = 8710\nID = 8710\npostype = P1\npos = 12,-32\nscale = .8,.8\nremovetime = 10\nownpal = 1\nsprpriority = 4\nsupermovetime = 10\npausemovetime = 10\nremoveongethit = 1')
+
+def accent(n,when,anim,x=0,y=0,scale=.4,priority=3,bind=0):
+    return c(n,'Timed presentation accent','Explod',when,f'anim={anim}\nID={anim}\npostype=P1\npos={x},{y}\nbindtime={bind}\nscale={scale},{scale}\nremovetime=-2\nownpal=1\nsprpriority={priority}\nremoveongethit=1')
+
+def dash_states():
+    for n,sign in [(100,1),(105,-1)]:
+        s=state(n,n,physics='N',velocity=f'{sign*8.5},0')
+        s+=c(n,'Ground dash direction stays fixed','AssertSpecial','1','flag=NoAutoTurn')
+        s+=c(n,'Dash braking','VelMul','Time>=10','x=.65')
+        s+=c(n,'Dash dust','Explod','Time=0 || Time=6','anim=8720\npostype=P1\npos=0,0\nscale=.6,.6\nremovetime=-2\nownpal=1\nsprpriority=-1\nremoveongethit=1')
+        s+=c(n,'Dash trail','AfterImage','Time=0','time=10\nlength=3\ntimegap=2\nframegap=2\npalcontrast=140,155,165\ntrans=Add')
+        s+=c(n,'Dash step sound','PlaySnd','Time=0','value=S1,0\nchannel=1\nvolumescale=45')
+        s+=c(n,'Allow grounded attack cancel','CtrlSet','Time=4','value=1')
+        s+=c(n,'Finite dash recovery','ChangeState','Time>=16','value=0\nctrl=1')
+        states.append(s)
 
 def hit(n,element,damage,fin=False,kind='body',airborne=False,attr='NA',special_sound=None):
     return c(n,f'Swing {element}','PlaySnd',f'AnimElem = {element}',f'value = S1,{special_sound or 0}\nchannel = 1')+c(n,f'Contact {element}','HitDef',f'AnimElem = {element}',f'''attr = {'A' if airborne else 'C' if kind=='low' else 'S'}, {attr}
@@ -102,8 +121,9 @@ def common_animations():
     for n in [10,11,12]:animation(n,[(18,5)])
     animation(20,[(i,5) for i in [8,9,10,11,12,13]],loop=True)
     animation(21,[(i,6) for i in [13,12,11,10,9,8]],loop=True)
-    animation(100,[(i,3) for i in [8,9,10,11,12,13]],loop=True)
-    for n in [40,41,42,43,44,45,46,47,52,105,106,170]:animation(n,[(76 if n in [40,41,42,43,44,45,46,105] else 18,4)])
+    animation(100,[(i,2) for i in [8,9,10,11,12,13,12,11]])
+    animation(105,[(i,2) for i in [13,12,11,10,9,8,9,10]])
+    for n in [40,41,42,43,44,45,46,47,52,106,170]:animation(n,[(76 if n in [40,41,42,43,44,45,46] else 18,4)])
     animation(180,[(4,12),(5,12),(41,10),(4,25)])
     animation(190,[(18,8),(46,8),(4,10)])
     animation(500,[(70,6),(71,6),(72,6)],loop=True)
@@ -112,6 +132,7 @@ def common_animations():
     animation(5500,[(4,1)])
     animation(5300,[(4,8),(5,8)])
     for g,count in [(8700,4),(8710,4),(8720,6)]:animation(g,[((g,i),2) for i in range(count)],hurt=False)
+    for g,count in [(8730,5),(8740,5),(8750,9),(8760,22)]:animation(g,[((g,i),2) for i in range(count)],hurt=False)
 
 def main_attacks():
     sequences=[
@@ -129,29 +150,37 @@ def main_attacks():
         for stage in range(3):
             sprites=([74,75,77,78,76] if family==0 else [74,79,80,78,76] if family==1 else [65,66,67,68,76])
             attack(base+stage,[(s,4) for s in sprites],{3:36+stage*14},'maza' if family==2 else 'body',airborne=True,fin=stage==2)
-    attack(1000,[(22,5),(23,5),(24,4),(25,5),(22,4),(23,5),(25,6),(4,7)],{2:32,4:36,7:64},cost=350,speed=2.6,fin=True,sound=30)
-    attack(1020,[(29,6),(30,5),(31,5),(32,6),(30,5),(31,5),(32,6),(29,8)],{3:38,4:40,7:80},cost=500,speed=2.2,fin=True,sound=31)
-    attack(1030,[(29,6),(42,5),(43,5),(42,5),(43,6),(42,6),(29,8)],{2:24,3:24,4:24,5:24,6:70},cost=650,speed=5,fin=True,sound=32)
-    attack(1040,[(59,4),(60,4),(61,4),(62,5),(63,4),(65,5),(66,5),(67,5),(68,5),(69,8)],{4:42,7:42,8:96},'maza',650,speed=2.8,fin=True,sound=33)
-    attack(1210,[(22,4),(23,4),(25,4),(29,3),(30,4),(32,4),(42,4),(43,4),(60,4),(62,6),(63,8)],{2:20,3:20,5:26,6:26,7:28,8:28,10:70},cost=1000,speed=2.7,fin=True,sound=30)
+    attack(1000,[(22,6),(23,3),(24,3),(25,5),(24,2),(23,3),(25,5),(24,2),(23,3),(25,6),(24,3),(23,3),(22,4),(4,6)],{4:32,7:36,10:64},cost=350,speed=2.6,fin=True,sound=30)
+    states[-1]+=accent(1000,'AnimElem=4 || AnimElem=7 || AnimElem=10',8730,66,-36,.28)
+    attack(1020,[(29,7),(30,4),(31,4),(32,6),(31,3),(30,4),(32,6),(31,3),(30,4),(32,7),(30,4),(29,7)],{4:38,7:40,10:80},cost=500,speed=2.2,fin=True,sound=31)
+    states[-1]+=accent(1020,'Time>=7 && Time<37 && Time%9=7',8730,68,-32,.3)+accent(1020,'Time>=7 && Time<22 && Time%6=1',8720,-12,0,.5,-1)
+    attack(1030,[(29,7),(42,4),(43,4),(42,4),(43,4),(42,4),(43,4),(42,4),(43,6),(42,4),(29,8)],{2:24,4:24,6:24,8:24,9:70},cost=650,speed=5,fin=True,sound=32)
+    states[-1]+=accent(1030,'Time>=7 && Time<37 && Time%8=7',8730,88,-35,.4)+accent(1030,'Time>=7 && Time<28 && Time%6=1',8720,-15,0,.55,-1)
+    attack(1040,[(59,5),(60,4),(61,5),(62,5),(63,4),(65,4),(66,4),(67,5),(68,7),(69,7),(60,4),(59,4),(4,6)],{4:42,8:42,9:96},'maza',650,speed=2.8,fin=True,sound=33)
+    states[-1]+=accent(1040,'AnimElem=8',8730,48,-64,.38)+accent(1040,'AnimElem=9',8750,48,0,.55)+accent(1040,'AnimElem=9',8720,48,0,1)
     attack(1400,[(47,4),(60,4),(62,5),(63,5),(47,6)],{3:65},'low',250,fin=True,sound=33)
     attack(1430,[(76,4),(74,4),(75,5),(78,5),(76,7)],{3:75},cost=350,speed=-3.5,fin=True,sound=31)
 
 def projectiles_and_whip():
-    animation(1010,[(46,6),(41,8),(41,10),(46,12),(4,8)])
-    animation(9100,[(50,4),(51,5),(53,5),(54,5),(55,4),(56,4),(57,3)],{2:1,3:1,4:1},hurt=False)
+    animation(1010,[(46,5),(47,7),(47,20),(46,7),(4,7)])
+    animation(9100,[(57,2),(56,2),(50,4),(51,6),(53,4),(54,3),(55,3),(56,2),(57,2)],{4:1,5:1},kind='part',hurt=False)
     s=state(1010,1010,cost=500,velocity='0,0')+startup(1010)
-    s+=c(1010,'Visible arm emerges beside Mamushi','Helper','Time = 6','helpertype = Normal\nname = "Brazo latigo"\nID = 9100\nstateno = 9100\npostype = P1\npos = 18,0\nfacing = 1\nownpal = 1\nkeyctrl = 0')
+    s+=c(1010,'Choose a grounded root position once','VarSet','Time=0','fv=10\nvalue=IfElse(P2Dist X<80,24,IfElse(P2Dist X>260,215,P2Dist X-45))')
+    s+=c(1010,'Root grows under the selected ground position','Helper','Time = 8','helpertype = Normal\nname = "Raiz cazadora"\nID = 9100\nstateno = 9100\npostype = P1\npos = FVar(10),0\nfacing = 1\nownpal = 1\nkeyctrl = 0')
+    s+=accent(1010,'Time=8',8720,'FVar(10)',0,.65,-1)
     s+=c(1010,'Recover','ChangeState','AnimTime = 0','value = 0\nctrl = 1');states.append(s)
-    s=state(9100,9100,physics='N',move='A',velocity='0,0')+c(9100,'Bind to living arm','BindToRoot','1','pos = 18,0\ntime = 1')
-    s+=hit(9100,2,115,True,attr='SA',special_sound=30)
+    s=state(9100,9100,physics='N',move='A',velocity='0,0')
+    s+=hit(9100,4,115,True,attr='SA',special_sound=30)+accent(9100,'MoveHit=1',8730,75,-30,.4)
     s+=ctl(9100,'Finite physical extension','DestroySelf','trigger1 = AnimTime = 0\ntrigger2 = Root,StateNo != 1010\ntrigger3 = Root,MoveType = H\ntrigger4 = RoundState != 2','', 'ignorehitpause = 1\n');states.append(s)
-    animation(9200,[(34,3),(35,3),(36,3),(37,3),(38,3),(39,3)],{i:1 for i in range(1,7)},hurt=False,loop=True)
-    animation(9201,[(44,4),(45,4)],{1:1,2:1},hurt=False,loop=True)
-    for n,number,cost,ticks,damage,anim in [(1050,33,500,[9,17,25],38,9200),(1410,33,400,[9,15],44,9200),(1420,47,500,[13],85,9201)]:
-        animation(n,[(number,6),(number,6),(number,6),(number,6),(number,6),(4,8)])
+    animation(9200,[(34,2),(35,2),(36,2),(37,2),(38,2),(39,2)],{i:1 for i in range(1,7)},kind='part',hurt=False,loop=True)
+    animation(9201,[(44,3),(45,3)],{1:1,2:1},kind='part',hurt=False,loop=True)
+    for n,cost,ticks,damage,anim in [(1050,500,[10,13,16,22,25,28,34,37,40],14,9200),(1410,400,[10,16],44,9200),(1420,500,[14],85,9201)]:
+        if n==1050:animation(n,[(29,6),(33,4),(33,10),(33,12),(33,12),(29,5),(4,7)])
+        elif n==1410:animation(n,[(29,6),(33,4),(33,8),(33,6),(29,5),(4,7)])
+        else:animation(n,[(46,5),(47,9),(47,12),(46,8),(4,8)])
         s=state(n,n,cost=cost,velocity='0,0')+startup(n)
         for j,tick in enumerate(ticks):
+            muzzle_y=[-25,-38,-51][j%3] if n==1050 else -32-j*10 if anim==9200 else 0
             s+=c(n,f'Physical projectile {j+1}','Projectile',f'Time = {tick}',f'''projID = {n}
 projanim = {anim}
 projhitanim = 8700
@@ -161,8 +190,8 @@ projremovetime = 50
 projmisstime = 1
 projhits = 1
 projedgebound = 20
-offset = {35 if anim==9200 else 46},{-36-j*8 if anim==9200 else 0}
-velocity = {6.5 if anim==9200 else 4},0
+offset = {38 if anim==9200 else 58},{muzzle_y}
+velocity = {8 if anim==9200 else 5},0
 projpriority = 1
 attr = S, SP
 damage = {damage},3
@@ -180,7 +209,34 @@ air.velocity = -3,-4
 fall = {int(anim==9201)}
 getpower = 0,0''')
             s+=c(n,f'Launch sound {j}','PlaySnd',f'Time = {tick}','value = S1,30\nchannel = 1')
+            if j%3==0:s+=accent(n,f'Time={tick}',8730,35,-34,.24)
+        if n==1420:s+=accent(n,'Time=14',8750,58,0,.35)
         s+=c(n,'Recover','ChangeState','AnimTime = 0','value = 0\nctrl = 1');states.append(s)
+
+def mouth_blast():
+    # The reference's large jaw is already present in the user's SFF.
+    animation(1210,[(29,6),(30,5),(81,7),(81,14),(81,8),(82,5),(29,6),(4,7)],{3:1})
+    s=state(1210,1210,move='A',cost=1000,velocity='0,0')+startup(1210)
+    s+=hit(1210,3,90,attr='SA',special_sound=31)
+    s+=accent(1210,'Time=12 || Time=20',8760,125,-32,.18,4)
+    s+=c(1210,'Mouth charge sound','PlaySnd','Time=12','value=S1,32\nchannel=1')
+    s+=c(1210,'Emit the sphere from the open jaw','Helper','Time=28','helpertype=Normal\nname="Bramido Shinju"\nID=9400\nstateno=9400\npostype=P1\npos=125,-32\nownpal=1\nkeyctrl=0')
+    s+=c(1210,'Release roar','PlaySnd','Time=28','value=S1,33\nchannel=1')+accent(1210,'Time=28',8740,125,-32,.55,5)
+    s+=c(1210,'Recover the jaw','ChangeState','AnimTime=0','value=0\nctrl=1');states.append(s)
+    animation(9400,[((8770,0),4)],{1:1},hurt=False,loop=True,box=(-22,-22,22,22),additive=False)
+    s=state(9400,9400,typ='A',move='A',physics='N',velocity='7.5,0')
+    s+=c(9400,'Visible dark core','AngleDraw','1','value=0\nscale=.42,.42')
+    s+=c(9400,'Purple-black core','PalFX','1','time=1\ncolor=0\nmul=28,5,45')
+    s+=c(9400,'Living violet rim','Explod','Time=0','anim=8760\nID=9409\npostype=P1\npos=0,0\nbindtime=-1\nscale=.15,.15\nremovetime=45\nownpal=1\nsprpriority=4')
+    s+=c(9400,'Current root power','AttackMulSet','1','value=IfElse(Root,Var(40)>0,1.15,1)')
+    s+=c(9400,'No push','PlayerPush','1','value=0')+c(9400,'No shadow','AssertSpecial','1','flag=NoShadow')
+    s+=c(9400,'Physical energy sphere','HitDef','Time=0','attr=A,SP\ndamage=120,8\nguardflag=MA\nhitflag=MAF\npriority=5,Hit\npausetime=0,10\nsparkno=S8740\nguard.sparkno=-1\nhitsound=S1,33\nguardsound=S1,9\nground.type=High\nground.hittime=25\nground.velocity=-6,-5\nair.velocity=-5,-4\nfall=1\nfall.recover=1\ngetpower=0,0\ngivepower=15,10\nenvshake.time=9\nenvshake.ampl=-4')
+    s+=ctl(9400,'Resolve contact or timeout','ChangeState','trigger1=MoveContact\ntrigger2=Time>=40\ntrigger3=RoundState!=2','value=9401');states.append(s)
+    s=state(9401,8740,typ='A',physics='N',velocity='0,0')
+    s+=c(9401,'Clear travel ring','RemoveExplod','Time=0','ID=9409')
+    s+=accent(9401,'Time=0',8750,0,20,.45,5)
+    s+=c(9401,'Final pulse sound','PlaySnd','Time=0','value=S1,33\nchannel=1')
+    s+=c(9401,'Finite burst','DestroySelf','Time>=18','');states.append(s)
 
 def clones():
     animation(1440,[(46,5),(41,7),(4,8),(5,8),(4,8)])
@@ -311,7 +367,7 @@ def system():
     return text
 
 def main():
-    air.clear();states.clear();common_animations();main_attacks();projectiles_and_whip();clones();cinematic();utility();commands()
+    air.clear();states.clear();common_animations();dash_states();main_attacks();projectiles_and_whip();mouth_blast();clones();cinematic();utility();commands()
     # Helpers do not execute the root's -2 in MUGEN. Their health, orientation
     # and cleanup must run in each actual helper state, not only in -2.
     for index,text in enumerate(states):
@@ -355,7 +411,7 @@ draw.offset = 0,0
 walk.fwd = 2.4
 walk.back = -2.2
 run.fwd = 6.2,0
-run.back = -4.2,-3.5
+run.back = -8.5,0
 jump.neu = 0,-8.4
 jump.back = -2.8
 jump.fwd = 3
@@ -375,7 +431,9 @@ crouch.friction.threshold = .05
 '''
     (CHAR/'Mamushi.cns').write_text('; Built from the supplied sprite moves. MUGEN 1.1 controllers only.\n'+constants+''.join(states)+system())
     (CHAR/'Mamushi.air').write_text('; Original sprites retained at scale 1. Authored timing and collisions.\n'+''.join(air))
-    shutil.copy2(ROOT/'source_material/Mamushi_support/common1.cns',CHAR/'common1.cns')
+    common=(ROOT/'source_material/Mamushi_support/common1.cns').read_text()
+    common=re.sub(r'(?ims)^\[Statedef (?:100|105)\].*?(?=^\[Statedef|\Z)','',common)
+    (CHAR/'common1.cns').write_text(common.rstrip()+'\n')
     (CHAR/'Mamushi.def').write_text('''[Info]
 name = "Mamushi"
 displayname = "Mamushi Shinju"
@@ -393,7 +451,7 @@ st = Mamushi.cns
 stcommon = common1.cns
 ''')
     shutil.copy2(CHAR/'Mamushi.def',CHAR/'AC_Mamushi.def')
-    (CHAR/'assets/moves.json').write_text(json.dumps(dict(techniques=MOVES,clone_limit=CLONE_LIMIT,clone_life=CLONE_LIFE,clone_ticks=CLONE_TICKS,clone_generation_decision_delay='10+6*min(generation,5)',ultimate_damage='min(350, floor(enemy_lifemax*.35))',ultimate_cost=3000,original_art_changed=False),indent=2)+'\n')
+    (CHAR/'assets/moves.json').write_text(json.dumps(dict(techniques=MOVES,clone_limit=CLONE_LIMIT,clone_life=CLONE_LIFE,clone_ticks=CLONE_TICKS,clone_generation_decision_delay='10+6*min(generation,5)',ultimate_damage='min(350, floor(enemy_lifemax*.35))',ultimate_cost=3000,original_art_changed=False,dash_inputs=['L,L','R,R'],dash_duration_ticks=16,dash_grounded=True,reference_analysis='source_material/Mamushi_reference/reference_analysis.json',display_names=dict(Asalto='Bramido Shinju',Latigo='Raiz cazadora')),indent=2)+'\n')
     print(f'Mamushi combat authored: 9 ground normals, 9 aerial stages, {len(MOVES)} techniques, independent clones and collision-confirmed ultimate')
 
 if __name__=='__main__':main()

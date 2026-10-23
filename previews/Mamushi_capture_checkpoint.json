@@ -1,159 +1,50 @@
 {
-  "runtime_sha256": "84a63b131a1ea7a5e1de8f07f219b6310fdacbb886482942c1309fe4d1895860",
+  "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
   "jobs": {
-    "combos": {
-      "video_sha256": "b3d3737aa4706f215805f093b5049415b4a5ff44b9518bd0934941ffc8374bce",
-      "report": {
-        "name": "combos",
-        "runtime_sha256": "84a63b131a1ea7a5e1de8f07f219b6310fdacbb886482942c1309fe4d1895860",
-        "duration": 10.233333333333334,
-        "frames": 141,
-        "audio": "Silent sprite-combo recording",
-        "activations": [],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "Combo a",
-              "kind": "combo",
-              "face": 1,
-              "button": "a",
-              "state": 202,
-              "distance": 44
-            },
-            "states": [
-              0,
-              200,
-              201,
-              202
-            ],
-            "damage": 152,
-            "received": 0,
-            "max_clones": 0,
-            "clones_after_root_hit": 0,
-            "clone_contact_samples": 0,
-            "clone_hurt_samples": 0,
-            "clone_min_health": 180,
-            "root_control_while_clone_alive": false,
-            "movement": 131.5,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "end_clones": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Combo b",
-              "kind": "combo",
-              "face": 1,
-              "button": "b",
-              "state": 212,
-              "distance": 44
-            },
-            "states": [
-              0,
-              210,
-              211,
-              212
-            ],
-            "damage": 172,
-            "received": 0,
-            "max_clones": 0,
-            "clones_after_root_hit": 0,
-            "clone_contact_samples": 0,
-            "clone_hurt_samples": 0,
-            "clone_min_health": 180,
-            "root_control_while_clone_alive": false,
-            "movement": 3.0,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "end_clones": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Combo c",
-              "kind": "combo",
-              "face": 1,
-              "button": "c",
-              "state": 222,
-              "distance": 44
-            },
-            "states": [
-              0,
-              220,
-              221,
-              222
-            ],
-            "damage": 176,
-            "received": 0,
-            "max_clones": 0,
-            "clones_after_root_hit": 0,
-            "clone_contact_samples": 0,
-            "clone_hurt_samples": 0,
-            "clone_min_health": 180,
-            "root_control_while_clone_alive": false,
-            "movement": 0.0,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "end_clones": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "failures": []
-          }
-        ]
-      }
-    },
     "especiales": {
-      "video_sha256": "bef2c46a705d6453c036b13703785c05772e1e456d9634d15259d8eaec67fa08",
+      "video_sha256": "ef12e5cef7a437103da316472a251a9fd48f3cf5119938380b49007b71278c03",
       "report": {
         "name": "especiales",
-        "runtime_sha256": "84a63b131a1ea7a5e1de8f07f219b6310fdacbb886482942c1309fe4d1895860",
-        "duration": 22.00367130979376,
-        "frames": 294,
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
+        "duration": 23.99311856452726,
+        "frames": 314,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.73687074829932,
-            "normalized_correlation": 0.6513207389114879
+            "sample_seconds": 4.829750566893424,
+            "normalized_correlation": 0.6871049374551546
           },
           {
-            "frame": 239,
+            "frame": 259,
             "case": 1,
-            "sample_seconds": 8.591383219954649,
-            "normalized_correlation": 0.697319535498144
+            "sample_seconds": 9.102222222222222,
+            "normalized_correlation": 0.6990260647202587
           },
           {
-            "frame": 449,
+            "frame": 489,
             "case": 2,
-            "sample_seconds": 12.26013605442177,
-            "normalized_correlation": 0.7093668087781935
+            "sample_seconds": 13.096054421768708,
+            "normalized_correlation": 0.7410426931198648
           },
           {
-            "frame": 659,
+            "frame": 719,
             "case": 3,
-            "sample_seconds": 15.882448979591837,
-            "normalized_correlation": 0.5242028314051684
+            "sample_seconds": 17.04344671201814,
+            "normalized_correlation": 0.56637444158461
           },
           {
-            "frame": 869,
+            "frame": 949,
             "case": 4,
-            "sample_seconds": 19.551201814058956,
-            "normalized_correlation": 0.6723016294410089
+            "sample_seconds": 20.990839002267574,
+            "normalized_correlation": 0.6289559080027739
           },
           {
-            "frame": 1079,
+            "frame": 1179,
             "case": 5,
-            "sample_seconds": 23.219954648526077,
-            "normalized_correlation": 0.5913363187816916
+            "sample_seconds": 24.98467120181406,
+            "normalized_correlation": 0.39356750629647713
           }
         ],
         "combat_checks": [
@@ -176,7 +67,7 @@
               20,
               1000
             ],
-            "damage": 100,
+            "damage": 132,
             "received": 0,
             "max_clones": 0,
             "clones_after_root_hit": 0,
@@ -184,13 +75,16 @@
             "clone_hurt_samples": 0,
             "clone_min_health": 180,
             "root_control_while_clone_alive": false,
-            "movement": 101.90000915527344,
+            "movement": 59.59999132156372,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 2650,
             "max_power": 3000,
             "end_clones": 0,
             "end_state": 0,
-            "victim_end": 5120,
+            "victim_end": 0,
             "failures": []
           },
           {
@@ -222,6 +116,9 @@
             "root_control_while_clone_alive": false,
             "movement": 2.2000045776367188,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 1,
             "min_power": 2500,
             "max_power": 3000,
             "end_clones": 0,
@@ -258,11 +155,14 @@
             "root_control_while_clone_alive": false,
             "movement": 50.79993438720703,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 2500,
             "max_power": 3000,
             "end_clones": 0,
             "end_state": 0,
-            "victim_end": 5120,
+            "victim_end": 0,
             "failures": []
           },
           {
@@ -292,13 +192,16 @@
             "clone_hurt_samples": 0,
             "clone_min_health": 180,
             "root_control_while_clone_alive": false,
-            "movement": 102.94998931884766,
+            "movement": 102.59998321533203,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 2350,
             "max_power": 3000,
             "end_clones": 0,
             "end_state": 0,
-            "victim_end": 5110,
+            "victim_end": 5120,
             "failures": []
           },
           {
@@ -320,7 +223,7 @@
               20,
               1040
             ],
-            "damage": 138,
+            "damage": 180,
             "received": 0,
             "max_clones": 0,
             "clones_after_root_hit": 0,
@@ -330,11 +233,14 @@
             "root_control_while_clone_alive": false,
             "movement": 64.00006866455078,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 2350,
             "max_power": 3000,
             "end_clones": 0,
             "end_state": 0,
-            "victim_end": 5120,
+            "victim_end": 0,
             "failures": []
           },
           {
@@ -356,7 +262,7 @@
               20,
               1050
             ],
-            "damage": 114,
+            "damage": 126,
             "received": 0,
             "max_clones": 0,
             "clones_after_root_hit": 0,
@@ -366,6 +272,9 @@
             "root_control_while_clone_alive": false,
             "movement": 2.2000045776367188,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 2500,
             "max_power": 3000,
             "end_clones": 0,
@@ -376,50 +285,304 @@
         ]
       }
     },
+    "dash": {
+      "video_sha256": "53801a871bdf84f7cc401ad1c9590ed1590a94592602fac46078c1332479fadd",
+      "report": {
+        "name": "dash",
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
+        "duration": 5.466666666666667,
+        "frames": 82,
+        "audio": "Silent sprite-combo recording",
+        "activations": [],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "dash L",
+              "kind": "dash",
+              "face": 1,
+              "button": "L",
+              "state": 105,
+              "distance": 120
+            },
+            "states": [
+              0,
+              20,
+              105
+            ],
+            "damage": 0,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 48.94999694824219,
+            "jump_apex": 0.0,
+            "dash_signed_distance": -102.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "dash R",
+              "kind": "dash",
+              "face": 1,
+              "button": "R",
+              "state": 100,
+              "distance": 120
+            },
+            "states": [
+              0,
+              20,
+              100
+            ],
+            "damage": 0,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 98.99758529663086,
+            "jump_apex": 0.0,
+            "dash_signed_distance": 95.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "failures": []
+          }
+        ]
+      }
+    },
+    "bramido": {
+      "video_sha256": "45de94f405ff1e3259b9827ebb18cb92c49c8f7d2a1663348bd7299728723254",
+      "report": {
+        "name": "bramido",
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
+        "duration": 3.7666666666666657,
+        "frames": 52,
+        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
+        "activations": [
+          {
+            "frame": 29,
+            "case": 0,
+            "sample_seconds": 4.783310657596372,
+            "normalized_correlation": 0.7304487916975273
+          }
+        ],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "Asalto",
+              "kind": "move",
+              "face": 1,
+              "button": "z",
+              "d": "N",
+              "state": 1210,
+              "cost": 1000,
+              "distance": 110
+            },
+            "states": [
+              0,
+              1210
+            ],
+            "damage": 210,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 108.5,
+            "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 1,
+            "min_power": 2000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "failures": []
+          }
+        ]
+      }
+    },
+    "combos": {
+      "video_sha256": "d5b77b3ba724a11adfda912b6f5b45af78aa6701ee864964df99f3a9198b273b",
+      "report": {
+        "name": "combos",
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
+        "duration": 10.283333333333333,
+        "frames": 137,
+        "audio": "Silent sprite-combo recording",
+        "activations": [],
+        "combat_checks": [
+          {
+            "case": {
+              "name": "Combo a",
+              "kind": "combo",
+              "face": 1,
+              "button": "a",
+              "state": 202,
+              "distance": 44
+            },
+            "states": [
+              0,
+              200,
+              201,
+              202
+            ],
+            "damage": 152,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 131.5,
+            "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 0,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "Combo b",
+              "kind": "combo",
+              "face": 1,
+              "button": "b",
+              "state": 212,
+              "distance": 44
+            },
+            "states": [
+              0,
+              210,
+              211,
+              212
+            ],
+            "damage": 172,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 3.0,
+            "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 5120,
+            "failures": []
+          },
+          {
+            "case": {
+              "name": "Combo c",
+              "kind": "combo",
+              "face": 1,
+              "button": "c",
+              "state": 222,
+              "distance": 44
+            },
+            "states": [
+              0,
+              220,
+              221,
+              222
+            ],
+            "damage": 176,
+            "received": 0,
+            "max_clones": 0,
+            "clones_after_root_hit": 0,
+            "clone_contact_samples": 0,
+            "clone_hurt_samples": 0,
+            "clone_min_health": 180,
+            "root_control_while_clone_alive": false,
+            "movement": 0.0,
+            "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
+            "min_power": 3000,
+            "max_power": 3000,
+            "end_clones": 0,
+            "end_state": 0,
+            "victim_end": 5120,
+            "failures": []
+          }
+        ]
+      }
+    },
     "division": {
-      "video_sha256": "f581e3e87d67d0a75047cfedf76314d5760559b484df05c265805c821a35d75e",
+      "video_sha256": "ad44a29fe36858e7536d4dff7a774da0e4ea664d59284b27ff36abaa1524f371",
       "report": {
         "name": "division",
-        "runtime_sha256": "84a63b131a1ea7a5e1de8f07f219b6310fdacbb886482942c1309fe4d1895860",
-        "duration": 8.8142947845805,
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
+        "duration": 8.874666666666666,
         "frames": 104,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.73687074829932,
+            "sample_seconds": 4.690430839002268,
             "normalized_correlation": 0.9451874641267175
           },
           {
             "frame": 83,
             "case": 0,
-            "sample_seconds": 5.944308390022676,
-            "normalized_correlation": 0.7212672779433543
+            "sample_seconds": 5.990748299319728,
+            "normalized_correlation": 0.5292114128071224
           },
           {
             "frame": 137,
             "case": 0,
-            "sample_seconds": 7.012426303854875,
-            "normalized_correlation": 0.6163009853149057
+            "sample_seconds": 6.965986394557823,
+            "normalized_correlation": 0.7150088848975565
           },
           {
             "frame": 191,
             "case": 0,
             "sample_seconds": 8.034104308390022,
-            "normalized_correlation": 0.5791311740974605
+            "normalized_correlation": 0.5667347751524764
           },
           {
             "frame": 245,
             "case": 0,
-            "sample_seconds": 9.102222222222222,
-            "normalized_correlation": 0.605034860924418
+            "sample_seconds": 9.05578231292517,
+            "normalized_correlation": 0.5451443224485136
           },
           {
             "frame": 299,
             "case": 0,
-            "sample_seconds": 10.170340136054422,
-            "normalized_correlation": 0.4881468321368969
+            "sample_seconds": 10.12390022675737,
+            "normalized_correlation": 0.5175040281869381
           }
         ],
         "combat_checks": [
@@ -437,16 +600,19 @@
               12,
               1440
             ],
-            "damage": 1776,
+            "damage": 1738,
             "received": 0,
             "max_clones": 6,
             "clones_after_root_hit": 0,
-            "clone_contact_samples": 233,
+            "clone_contact_samples": 248,
             "clone_hurt_samples": 0,
             "clone_min_health": 180,
             "root_control_while_clone_alive": true,
             "movement": 0.5,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 6,
             "min_power": 2250,
             "max_power": 3000,
             "end_clones": 0,
@@ -458,19 +624,19 @@
       }
     },
     "ultimate": {
-      "video_sha256": "c5a7c7eba8fafe2cf4f0d5ea7202f77c12656f68abab5f7b275c68010b9dd830",
+      "video_sha256": "4d65139f1b5e564bcbeaf9423e33c286990764397673e50e937548b02af77283",
       "report": {
         "name": "ultimate",
-        "runtime_sha256": "84a63b131a1ea7a5e1de8f07f219b6310fdacbb886482942c1309fe4d1895860",
+        "runtime_sha256": "f941ce1240ae32e3da59855455417ff881b6a65f20fda1e2e7e7d1077b4045ef",
         "duration": 5.033333333333333,
-        "frames": 69,
+        "frames": 66,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.876190476190477,
-            "normalized_correlation": 0.9224073937816714
+            "sample_seconds": 4.783310657596372,
+            "normalized_correlation": 0.9086583284030094
           }
         ],
         "combat_checks": [
@@ -496,6 +662,9 @@
             "root_control_while_clone_alive": false,
             "movement": 30.0,
             "jump_apex": 0.0,
+            "dash_signed_distance": 0.0,
+            "end_helpers": 0,
+            "max_helpers": 0,
             "min_power": 0,
             "max_power": 3000,
             "end_clones": 0,
