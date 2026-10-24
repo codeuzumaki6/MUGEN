@@ -1,88 +1,88 @@
 {
-  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
   "source": "Sasuke BTM original Susanoo; palette recolored yellow",
   "nine_source_attacks_shown": true,
   "hold_activation_shown": true,
   "video": "HidariShinju_susanoo_sasuke_motor.mp4",
-  "video_sha256": "7f268f9c32de67580b5eef42b37194992af293c08ceb0912775a9bca84f61b01",
+  "video_sha256": "626a25e87a99bed813a2436c9e1e4211abdcce5fafb8d4ccd9b4643498bcdd3b",
   "indra_clip": "HidariShinju_indra_motor.mp4",
-  "indra_sha256": "1022ce151380abdc5135a338639af4439c33d8d5a50532333efe7ce41e050042",
-  "duration": 30.45,
+  "indra_sha256": "95e56ae459114081387e94b6b6671e017a08aec92226646fe07595cd61450ad7",
+  "duration": 29.800000000000004,
   "scenes": [
     {
       "state": 14200,
       "start": 0,
-      "end": 2.1,
+      "end": 1.9833333333333334,
       "label": "X | Puno"
     },
     {
       "state": 14300,
-      "start": 2.1,
-      "end": 4.216666666666667,
+      "start": 1.9833333333333334,
+      "end": 3.966666666666667,
       "label": "Y | Patada"
     },
     {
       "state": 14400,
-      "start": 4.216666666666667,
-      "end": 6.316666666666666,
+      "start": 3.966666666666667,
+      "end": 5.966666666666667,
       "label": "B | Espada ascendente"
     },
     {
       "state": 14600,
-      "start": 6.316666666666666,
-      "end": 9.416666666666666,
+      "start": 5.966666666666667,
+      "end": 8.983333333333334,
       "label": "abajo, adelante + X | Chidori"
     },
     {
       "state": 14500,
-      "start": 9.416666666666666,
-      "end": 12.416666666666666,
+      "start": 8.983333333333334,
+      "end": 11.916666666666668,
       "label": "abajo, atras + X | Corte de montana"
     },
     {
       "state": 14700,
-      "start": 12.416666666666666,
-      "end": 14.783333333333333,
+      "start": 11.916666666666668,
+      "end": 14.150000000000002,
       "label": "abajo, adelante + Y | Shinra Tensei"
     },
     {
       "state": 14800,
-      "start": 14.783333333333333,
-      "end": 19.116666666666667,
+      "start": 14.150000000000002,
+      "end": 18.450000000000003,
       "label": "abajo, atras + Y | Chibaku Tensei"
     },
     {
       "state": 14850,
-      "start": 19.116666666666667,
-      "end": 21.983333333333334,
+      "start": 18.450000000000003,
+      "end": 21.333333333333336,
       "label": "abajo, adelante + B | Kagetsuchi"
     },
     {
       "state": 14900,
-      "start": 21.983333333333334,
-      "end": 27.0,
+      "start": 21.333333333333336,
+      "end": 26.333333333333336,
       "label": "abajo, atras + B | Flecha de Indra"
     },
     {
       "state": 520,
-      "start": 27.0,
-      "end": 30.45,
+      "start": 26.333333333333336,
+      "end": 29.800000000000004,
       "label": "abajo + mantener Pausa | Despertar"
     }
   ],
   "audio": "Actual SDL audio, native activation matched per scene; render stalls compressed",
   "native_audio_cues_matched": 10,
   "audio_confidences": {
-    "14600": 0.9161072809418345,
-    "14500": 0.9683190581469179,
-    "14700": 0.9645788301263796,
-    "14800": 0.9645789426654952,
-    "14850": 0.9645788301263793,
-    "14900": 0.9645790910661953,
-    "520": 0.9645794054490023,
-    "14200": 0.6262148043549068,
-    "14300": 0.9826084005597089,
-    "14400": 0.7436722865739116
+    "14600": 0.9161072809418341,
+    "14500": 0.9416070464157612,
+    "14700": 0.9683188465761849,
+    "14800": 0.9645789426654947,
+    "14850": 0.9645788301263791,
+    "14900": 0.9645790910661951,
+    "520": 0.9645794054490019,
+    "14200": 0.647436938533203,
+    "14300": 0.6387834787460914,
+    "14400": 0.7436722865739112
   },
   "failures": []
 }

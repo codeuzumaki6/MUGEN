@@ -259,6 +259,7 @@ def system():
  for v in [40,41]:s+=c(-2,'Finite Susanoo timer','VarAdd',f'!IsHelper && RoundState=2 && Var({v})>0',f'v={v}\nvalue=-1','ignorehitpause=1')
  s+=c(-2,'Safe awakening expiry','VarSet','!IsHelper && Var(42)>0 && Var(40)=0 && Ctrl && MoveType!=H && StateNo!=500','v=42\nvalue=0')+c(-2,'Refresh form after expiry','ChangeAnim','!IsHelper && Var(42)=0 && Anim>=10000 && StateNo<200','value=Anim-10000')+c(-2,'Keep original body animation through turn','ChangeAnim','!IsHelper && Var(42)=1 && Anim<10000 && SelfAnimExist(Anim+10000)','value=Anim+10000')+c(-2,'Aerial chain reset','VarSet','!IsHelper && StateType!=A','v=12\nvalue=0')+c(-2,'Stop charge hum','StopSnd','!IsHelper && StateNo!=500','channel=3')
  s+=c(-2,'Create exactly one yellow Susanoo','Helper','!IsHelper && RoundState=2 && Var(42)=1 && NumHelper(9500)=0','helpertype=Normal\nname="Susanoo amarillo"\nID=9500\nstateno=9500\npostype=P1\npos=0,0\nownpal=1\nkeyctrl=0\npausemovetime=240\nsupermovetime=240')+c(-2,'Round form cleanup','VarSet','!IsHelper && RoundState!=2 && StateNo!=190','v=42\nvalue=0')+c(-2,'Round drawing cleanup','RemoveExplod','!IsHelper && RoundState!=2')
+ s+=c(-2,'Only Susanoo is visible during awakening','AssertSpecial','!IsHelper && Var(42)=1','flag=Invisible\nflag2=NoShadow','ignorehitpause=1')
  return s
 
 def main():

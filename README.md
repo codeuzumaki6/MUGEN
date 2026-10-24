@@ -4,7 +4,7 @@
 
 Reemplaza el Susanoo anterior por el de **Sasuke BTM de Shingeki No Mugen, con sprites acreditados a Vovan99**, aportado por el usuario. Conserva sus tres golpes, seis especiales y cuadros originales, recoloreando el espíritu a amarillo. Hidari mantiene sus 63 poses originales de Vaydra, su escala, el Rinnegan azul y el Chidori en ↓↘→ + X.
 
-El despertar se activa con **↓ + mantener Pausa/LB aproximadamente 1,7 segundos**. Requiere 3000, consume 1500 al manifestarse y dura veinte segundos. Incluye Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Kagetsuchi e Indora no Ya. Indra cuesta 3000 y debe alcanzar al rival: daño limitado a min(450, 45 % de su vida máxima). La explosión no añade daño.
+El despertar se activa con **↓ + mantener Pausa/LB aproximadamente 1,7 segundos**. Durante el despertar sólo se ve el Susanoo amarillo; Hidari reaparece al terminar. Requiere 3000, consume 1500 al manifestarse y dura veinte segundos. Incluye Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Kagetsuchi e Indora no Ya. Indra cuesta 3000 y debe alcanzar al rival: daño limitado a min(450, 45 % de su vida máxima). La explosión no añade daño.
 
 Instala `HidariShinju` en `chars` y añade `HidariShinju/HidariShinju.def` a `[Characters]` de `data/select.def`. ZIP autónomo. [Verificación de esta revisión](previews/HidariShinju_sasuke_verification.json). Pruebas nativas en Ikemen GO y contratos de MUGEN 1.1; el binario concreto de Jump Force MUGEN V14 requiere prueba local.
 

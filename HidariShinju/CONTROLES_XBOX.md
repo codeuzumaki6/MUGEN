@@ -25,7 +25,7 @@
 
 Inicia con **↓ + Pausa/LB y mantén Pausa aproximadamente 1,7 segundos**. Requiere 3000 de energía y consume 1500 cuando se manifiesta. Soltar Pausa antes cancela la carga sin consumir energía. Dura 20 segundos; el enfriamiento empieza al activarse y dura 25 segundos. Puede recibir golpes y su carga se puede interrumpir.
 
-Se usan el dibujo y los cuadros originales de Sasuke BTM, recoloreando la paleta del Susanoo a amarillo. Sus tres golpes y seis especiales son los del personaje aportado. Hidari conserva su cuerpo y su Rinnegan azul.
+Se usan el dibujo y los cuadros originales de Sasuke BTM, recoloreando la paleta del Susanoo a amarillo. Sus tres golpes y seis especiales son los del personaje aportado. Durante el despertar se ve únicamente el Susanoo. Al terminar reaparece Hidari con su cuerpo original y su Rinnegan azul.
 
 | Entrada | Ataque original del Susanoo | Energía |
 |---|---|---:|

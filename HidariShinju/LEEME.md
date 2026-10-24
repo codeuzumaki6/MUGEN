@@ -6,7 +6,7 @@ Extrae **HidariShinju** en `chars` y agrega a `[Characters]` de `data/select.def
 HidariShinju/HidariShinju.def
 ```
 
-Esta revisión reemplaza el Susanoo anterior por los sprites y animaciones del Sasuke BTM aportado por el usuario. Conserva sus tres golpes y seis especiales: Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Amaterasu/Kagetsuchi e Indora no Ya. Sólo se recolorea la paleta del espíritu a amarillo; el cuerpo original de Hidari y sus ojos azules se conservan.
+Esta revisión reemplaza el Susanoo anterior por los sprites y animaciones del Sasuke BTM aportado por el usuario. Conserva sus tres golpes y seis especiales: Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Amaterasu/Kagetsuchi e Indora no Ya. Sólo se recolorea la paleta del espíritu a amarillo. Durante el despertar se ve únicamente el Susanoo; Hidari reaparece con su cuerpo original y sus ojos azules al terminar.
 
 **↓ + mantener Pausa/LB durante aproximadamente 1,7 segundos** activa veinte segundos de Susanoo. Necesita 3000 y gasta 1500 al manifestarse. Cancelar la carga antes no gasta energía. Consulta CONTROLES_XBOX.md para los controles de cada forma y sus costes.
 

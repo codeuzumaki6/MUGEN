@@ -1,7 +1,11 @@
 {
-  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
   "cases": [
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Puno",
         "kind": "move",
@@ -44,6 +48,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Patada",
         "kind": "move",
@@ -86,6 +94,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Espada ascendente",
         "kind": "move",
@@ -128,6 +140,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chidori",
         "kind": "move",
@@ -173,6 +189,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Corte de montana",
         "kind": "move",
@@ -218,6 +238,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Shinra Tensei",
         "kind": "move",
@@ -263,6 +287,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chibaku Tensei",
         "kind": "move",
@@ -308,6 +336,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Kagetsuchi",
         "kind": "move",
@@ -353,6 +385,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Flecha de Indra",
         "kind": "move",
@@ -398,6 +434,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 230,
+      "visible_base_body_frames": 124,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "awakening",
         "kind": "awakening",

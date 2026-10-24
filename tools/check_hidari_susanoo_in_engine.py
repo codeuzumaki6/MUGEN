@@ -102,7 +102,7 @@ hook.add('loop','hidari_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0,marks=0,wings=0,guardianWrong=0,guardianFrames=0} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0,marks=0,wings=0,guardianWrong=0,guardianFrames=0,hiddenForm=0,visibleBase=0,visibilityErrors=0,hiddenGuardian=0} end
  local r=rows[case];local st=stateNo()
  if tick==8 then r.startDist=p2DistX();r.distance=p2DistX() end
  if tick>4 then
@@ -110,10 +110,12 @@ hook.add('loop','hidari_checks',function()
   if st==100 or st==105 then r.dash=(r.startDist-p2DistX())*FACES[case+1] end
   if var(42)==1 and spriteVar('group')~=0 and st~=520 then r.wrong=r.wrong+1 end
   if moveType()=='H' and numHelper(9430)+numHelper(9431)>0 then r.beamHurt=r.beamHurt+1 end
+  if var(42)==1 and numHelper(9500)>0 then r.hiddenForm=r.hiddenForm+1;if not isAsserted('invisible') then r.visibilityErrors=r.visibilityErrors+1 end elseif var(42)==0 then r.visibleBase=r.visibleBase+1;if isAsserted('invisible') then r.visibilityErrors=r.visibilityErrors+1 end end
   r.marks=math.max(r.marks,numHelper(9600));r.wings=math.max(r.wings,numHelper(9500))
   if numHelper(9500)>0 then
    local dy=(st==14600 and 12 or ((st==14500 or st==14200 or st==14300) and 9 or (st==14400 and time()>=10 and 12 or 0)));local rx,ry,rf=posX(),posY()+dy,facing()
    if helper(9500) then
+    if isAsserted('invisible') then r.hiddenGuardian=r.hiddenGuardian+1 end
     if time()>1 then r.guardianFrames=r.guardianFrames+1;if spriteVar('group')~=14090 and spriteVar('group')~=14091 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
     player(1)
    end
@@ -123,7 +125,7 @@ hook.add('loop','hidari_checks',function()
  if tick==TICKS-1 then
   local hh={};for _,id in ipairs({9500,9510,9550,9560,9570,9571,9575,9578,9580,9595,9596,9600}) do if numHelper(id)>0 and helper(id) then table.insert(hh,id..':'..stateNo()..':'..time());player(1) end end
   local ss={};for n,_ in pairs(r.states) do table.insert(ss,n) end;table.sort(ss);for i,v in ipairs(ss) do ss[i]=tostring(v) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..(numHelper(9550)+numHelper(9500))..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\t'..r.marks..'\\t'..r.wings..'\\t'..r.guardianWrong..'\\t'..r.guardianFrames..'\\t'..table.concat(hh,';')..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..(numHelper(9550)+numHelper(9500))..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\t'..r.marks..'\\t'..r.wings..'\\t'..r.guardianWrong..'\\t'..r.guardianFrames..'\\t'..table.concat(hh,';')..'\\t'..r.hiddenForm..'\\t'..r.visibleBase..'\\t'..r.visibilityErrors..'\\t'..r.hiddenGuardian..'\\n');f:flush()
  end
  CAPTURE
 end)
@@ -180,6 +182,9 @@ for i,case in enumerate(cases):
  if form==1 and int(row[24])<=0:bad.append('Susanoo was never drawn in awakening')
  if int(row[15])>1:bad.append('A body from outside the original Hidari bank was shown')
  if int(row[13])!=int(row[14]):bad.append('combat helper remained after recovery')
- result=dict(case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),visible_claw_marks=int(row[21]),visible_susanoo=int(row[22]),guardian_bad_frames=int(row[23]),guardian_observed_frames=int(row[24]),helper_details=row[25].strip(),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
+ if int(row[28]) or int(row[29]):bad.append('awakening body visibility or guardian visibility failed')
+ if form==1 and int(row[26])<=0:bad.append('hidden body was never observed during awakening')
+ if kind in ['awakening','cancel_awake','no_awake'] and int(row[27])<=0:bad.append('base body was never observed outside awakening')
+ result=dict(hidden_awakened_body_frames=int(row[26]),visible_base_body_frames=int(row[27]),visibility_error_frames=int(row[28]),hidden_guardian_frames=int(row[29]),case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),visible_claw_marks=int(row[21]),visible_susanoo=int(row[22]),guardian_bad_frames=int(row[23]),guardian_observed_frames=int(row[24]),helper_details=row[25].strip(),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
 files=[f'HidariShinju.{s}' for s in ['def','cns','cmd','air','sff','snd']]+['HidariShinju_common.cns'];runtime=hashlib.sha256(b''.join((ROOT/'HidariShinju'/n).read_bytes() for n in files)).hexdigest()
 out=ROOT/'previews'/os.environ.get('HIDARI_REPORT',('HidariShinju_sasuke_capture_checks.json' if CAP else f'HidariShinju_rays_{SCALE}_{int(CROUCH)}_checks.json' if RANGE else 'HidariShinju_sasuke_low_life_checks.json' if LOW else 'HidariShinju_sasuke_engine_checks.json'));out.write_text(json.dumps(dict(runtime_sha256=runtime,cases=report),indent=2)+'\n');assert not any(r['failures'] for r in report),str(out);print('PASS',len(report),'Hidari actual-input engine cases')

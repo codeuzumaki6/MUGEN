@@ -17,6 +17,14 @@ def main():
   subprocess.run(['python',str(ROOT/'tools/check_hidari_susanoo_in_engine.py')],env=env,check=True);shutil.copy2(OUT/'HidariShinju_sasuke_capture_checks.json',folder/'checks.json')
  checks=json.loads((folder/'checks.json').read_text());cases=[c['case'] for c in checks['cases']];assert len(cases)==10 and all(not c['failures'] for c in checks['cases'])
  rows=[tuple(map(int,l.split())) for l in (folder/'frames.tsv').read_text().splitlines()];cues=[tuple(map(int,l.split())) for l in (folder/'cues.tsv').read_text().splitlines()];stereo=np.frombuffer(raw.read_bytes(),dtype='<i2').reshape(-1,2).astype(float)/32768;mono=stereo.mean(1)
+ # Watch the two source poses that previously enlarged during impact pauses.
+ areas=[]
+ for idx,clock,scene,tick in rows:
+  if cases[scene]['state'] not in [14300,14600]:continue
+  rgb=np.array(Image.open(folder/f'Ikemen_GO{idx:03d}.png').convert('RGB'),dtype=np.int16)[160:]
+  r,g,b=rgb[:,:,0],rgb[:,:,1],rgb[:,:,2];areas.append(int(((r>120)&(g>95)&(np.abs(r-g)<65)&(b<r*.8)).sum()))
+ assert areas and max(areas)<250000,('Source guardian enlarged during impact',max(areas))
+ (OUT/'HidariShinju_sasuke_scale_checks.json').write_text(json.dumps(dict(runtime_sha256=checks['runtime_sha256'],frames_checked=len(areas),max_yellow_area=max(areas),limit=250000,failures=[]),indent=2)+'\n')
  def match(sample,prefix=.3):
   with wave.open(str(ROOT/f'HidariShinju/assets/sound/1_{sample}.wav')) as f:
    rate=f.getframerate();x=np.frombuffer(f.readframes(f.getnframes()),dtype='<i2').astype(float)/32768

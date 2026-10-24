@@ -1,7 +1,11 @@
 {
-  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
   "cases": [
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Puno",
         "kind": "move",
@@ -44,6 +48,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Patada",
         "kind": "move",
@@ -86,6 +94,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Espada ascendente",
         "kind": "move",
@@ -128,6 +140,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chidori",
         "kind": "move",
@@ -173,6 +189,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Corte de montana",
         "kind": "move",
@@ -218,6 +238,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Shinra Tensei",
         "kind": "move",
@@ -263,6 +287,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chibaku Tensei",
         "kind": "move",
@@ -308,6 +336,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Kagetsuchi",
         "kind": "move",
@@ -353,6 +385,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Flecha de Indra",
         "kind": "move",
@@ -398,6 +434,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultimate",
         "kind": "ultimate",
@@ -436,6 +476,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultiblock",
         "kind": "ultiblock",
@@ -474,6 +518,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultijump",
         "kind": "ultijump",
@@ -512,6 +560,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "empty",
         "kind": "empty",
@@ -549,6 +601,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "recovery",
         "kind": "recovery",
@@ -591,6 +647,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "guard",
         "kind": "guard",
@@ -632,6 +692,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "crouchguard",
         "kind": "crouchguard",
@@ -673,6 +737,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "charge",
         "kind": "charge",
@@ -711,6 +779,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "chargehit",
         "kind": "chargehit",
@@ -751,6 +823,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 137,
+      "visible_base_body_frames": 218,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_attack",
         "kind": "expire_attack",
@@ -792,6 +868,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 133,
+      "visible_base_body_frames": 222,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_hurt",
         "kind": "expire_hurt",
@@ -834,6 +914,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "dash L",
         "kind": "dash",
@@ -875,6 +959,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "dash R",
         "kind": "dash",
@@ -916,6 +1004,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 230,
+      "visible_base_body_frames": 124,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "awakening",
         "kind": "awakening",
@@ -955,6 +1047,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 0,
+      "visible_base_body_frames": 355,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "no_awake",
         "kind": "no_awake",
@@ -994,6 +1090,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 0,
+      "visible_base_body_frames": 355,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "cancel_awake",
         "kind": "cancel_awake",
@@ -1033,6 +1133,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Puno",
         "kind": "move",
@@ -1075,6 +1179,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Patada",
         "kind": "move",
@@ -1117,6 +1225,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Espada ascendente",
         "kind": "move",
@@ -1159,6 +1271,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chidori",
         "kind": "move",
@@ -1204,6 +1320,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Corte de montana",
         "kind": "move",
@@ -1249,6 +1369,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Shinra Tensei",
         "kind": "move",
@@ -1294,6 +1418,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Chibaku Tensei",
         "kind": "move",
@@ -1339,6 +1467,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Kagetsuchi",
         "kind": "move",
@@ -1384,6 +1516,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "Flecha de Indra",
         "kind": "move",
@@ -1429,6 +1565,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultimate",
         "kind": "ultimate",
@@ -1467,6 +1607,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultiblock",
         "kind": "ultiblock",
@@ -1505,6 +1649,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "ultijump",
         "kind": "ultijump",
@@ -1543,6 +1691,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "empty",
         "kind": "empty",
@@ -1580,6 +1732,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "recovery",
         "kind": "recovery",
@@ -1622,6 +1778,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "guard",
         "kind": "guard",
@@ -1663,6 +1823,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "crouchguard",
         "kind": "crouchguard",
@@ -1704,6 +1868,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "charge",
         "kind": "charge",
@@ -1742,6 +1910,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "chargehit",
         "kind": "chargehit",
@@ -1782,6 +1954,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 137,
+      "visible_base_body_frames": 218,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_attack",
         "kind": "expire_attack",
@@ -1823,6 +1999,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 133,
+      "visible_base_body_frames": 222,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_hurt",
         "kind": "expire_hurt",
@@ -1865,6 +2045,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "dash L",
         "kind": "dash",
@@ -1906,6 +2090,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 355,
+      "visible_base_body_frames": 0,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "dash R",
         "kind": "dash",
@@ -1947,6 +2135,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 230,
+      "visible_base_body_frames": 124,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "awakening",
         "kind": "awakening",
@@ -1986,6 +2178,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 0,
+      "visible_base_body_frames": 355,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "no_awake",
         "kind": "no_awake",
@@ -2025,6 +2221,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 0,
+      "visible_base_body_frames": 355,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "cancel_awake",
         "kind": "cancel_awake",

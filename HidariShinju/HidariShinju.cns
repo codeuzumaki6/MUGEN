@@ -6715,3 +6715,12 @@ value=0
 [State -2, Round drawing cleanup]
 type=RemoveExplod
 trigger1=!IsHelper && RoundState!=2
+
+
+
+[State -2, Only Susanoo is visible during awakening]
+type=AssertSpecial
+trigger1=!IsHelper && Var(42)=1
+flag=Invisible
+flag2=NoShadow
+ignorehitpause=1

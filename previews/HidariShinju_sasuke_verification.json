@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
   "source_sprite_frames_verified": 272,
   "source_action_sequences_verified": 23,
   "source_author": "Shingeki No Mugen; sprites credited to Vovan99",
@@ -11,18 +11,28 @@
   "common_states_and_sounds_unchanged": true,
   "unrelated_files_preserved": 2306,
   "native_cases": {
-    "base": 66,
-    "base_range": 60,
-    "base_short": 50,
     "sasuke_engine": 50,
-    "sasuke_range": 72,
-    "sasuke_short": 60,
-    "sasuke_low_life": 2,
     "sasuke_expiry": 6,
-    "sasuke_capture": 10,
-    "sasuke_hitpause": 2
+    "sasuke_capture": 10
   },
-  "total_native_cases": 378,
+  "total_native_cases": 66,
+  "prior_combat_evidence": {
+    "commit": "4087959b4a2a25281205430a7a3c87c94b9d9081",
+    "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+    "cases": {
+      "base": 66,
+      "base_range": 60,
+      "base_short": 50,
+      "sasuke_range": 72,
+      "sasuke_short": 60,
+      "sasuke_low_life": 2,
+      "sasuke_hitpause": 2
+    },
+    "total": 312,
+    "applicability": "All seven runtime files byte-identical except the single root-only Invisible/NoShadow rendering controller"
+  },
+  "awakening_only_susanoo_visible": true,
+  "base_body_restoration_tested": true,
   "hold_to_awaken_tested": true,
   "cancellation_and_expiry_tested": true,
   "one_shot_prevented": true,

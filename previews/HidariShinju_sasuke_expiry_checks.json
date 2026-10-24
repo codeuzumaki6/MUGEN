@@ -1,7 +1,11 @@
 {
-  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
   "cases": [
     {
+      "hidden_awakened_body_frames": 137,
+      "visible_base_body_frames": 1308,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_attack",
         "kind": "expire_attack",
@@ -43,6 +47,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 133,
+      "visible_base_body_frames": 1312,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_hurt",
         "kind": "expire_hurt",
@@ -85,6 +93,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 1199,
+      "visible_base_body_frames": 245,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "awakening",
         "kind": "awakening",
@@ -124,6 +136,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 137,
+      "visible_base_body_frames": 1308,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_attack",
         "kind": "expire_attack",
@@ -165,6 +181,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 133,
+      "visible_base_body_frames": 1312,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "expire_hurt",
         "kind": "expire_hurt",
@@ -207,6 +227,10 @@
       "failures": []
     },
     {
+      "hidden_awakened_body_frames": 1199,
+      "visible_base_body_frames": 245,
+      "visibility_error_frames": 0,
+      "hidden_guardian_frames": 0,
       "case": {
         "name": "awakening",
         "kind": "awakening",
