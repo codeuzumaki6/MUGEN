@@ -1951,60 +1951,248 @@ supermovetime=180
 
 [State 1000, Technique sound]
 type=PlaySnd
-trigger1=Time=8
+trigger1=Time=4
 value=S1,42
 channel=2
 volumescale=80
 
 
-[State 1000, Technique drawing]
-type=Explod
-trigger1=Time>=8 && Time<=42 && Time%8=0
-anim=8625
+[State 1000, Physical manifestation]
+type=Helper
+trigger1=Time=1
+helpertype=Normal
+name="Shinjutsu de Hidari"
+ID=9460
+stateno=9460
 postype=P1
-pos=61,-48
-scale=0.27,0.27
-removetime=12
-sprpriority=3
+pos=7,-50
 ownpal=1
-removeongethit=1
-pausemovetime=180
-supermovetime=180
+keyctrl=0
 
 
-[State 1000, Chidori hand glow follows the rush]
-type=Explod
-trigger1=Time=10
-anim=8710
-postype=P1
-pos=64,-48
-bindtime=34
-removetime=34
-scale=.45,.45
-sprpriority=3
-ownpal=1
-removeongethit=1
-
-
-[State 1000, Real forward Chidori dash]
+[State 1000, Physical Chidori rush]
 type=VelSet
-trigger1=Time>=14 && Time<43
-x=8.5
+trigger1=Time>=20 && Time<44 && !MoveContact
+x=9.5
 y=0
 
 
-[State 1000, Stop on contact or dash end]
+[State 1000, Brake on contact or finite rush end]
 type=VelSet
-trigger1=MoveContact || Time>=43
+trigger1=MoveContact || Time>=44
 x=0
 y=0
 
 
 [State 1000, Physical contact]
 type=HitDef
+trigger1=Time=20
+attr=S,SA
+damage=30,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=7,10
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=45
+ground.slidetime=20
+ground.velocity=0,0
+air.hittime=32
+air.velocity=0,-.1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Technique sound]
+type=PlaySnd
+trigger1=Time=20
+value=S1,42
+channel=2
+volumescale=80
+
+
+[State 1000, Blue rush afterimage]
+type=AfterImage
+trigger1=Time=20
+time=22
+length=5
+timegap=2
+framegap=2
+palcolor=0
+paladd=0,18,35
+palmul=.65,.8,1
+
+
+[State 1000, Only real contact starts the Chidori impact]
+type=ChangeState
+trigger1=MoveHit
+value=1001
+
+
+[State 1000, Guard or miss ends the rush]
+type=ChangeState
+trigger1=MoveGuarded || Time>=46
+value=1002
+
+
+[Statedef 1001]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1001
+velset=0,0
+
+[State 1001, Close the real gap after fingertip contact]
+type=VelSet
+trigger1=Time<8 && P2BodyDist X>18
+x=3.5
+y=0
+
+
+[State 1001, Stop at close contact without crossing the opponent]
+type=VelSet
+trigger1=Time>=8 || P2BodyDist X<=18
+x=0
+y=0
+
+
+[State 1001, Physical contact]
+type=HitDef
+trigger1=Time=4
+attr=S,SA
+damage=25,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=2,3
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=32
+ground.slidetime=20
+ground.velocity=0,0
+air.hittime=32
+air.velocity=0,-.1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1001, Physical contact]
+type=HitDef
+trigger1=Time=9
+attr=S,SA
+damage=25,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=2,3
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=32
+ground.slidetime=20
+ground.velocity=0,0
+air.hittime=32
+air.velocity=0,-.1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1001, Physical contact]
+type=HitDef
 trigger1=Time=14
 attr=S,SA
-damage=185,0
+damage=25,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=2,3
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=32
+ground.slidetime=20
+ground.velocity=0,0
+air.hittime=32
+air.velocity=0,-.1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1001, Physical contact]
+type=HitDef
+trigger1=Time=19
+attr=S,SA
+damage=25,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=2,3
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=32
+ground.slidetime=20
+ground.velocity=0,0
+air.hittime=32
+air.velocity=0,-.1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1001, Physical contact]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=55,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -2030,24 +2218,102 @@ envshake.time=8
 envshake.ampl=-4
 
 
-[State 1000, Chidori afterimage]
-type=AfterImage
-trigger1=Time=14
-time=24
-length=8
-timegap=2
-framegap=3
-palcolor=0
-paladd=0,25,55
-palmul=.7,.8,1
+[State 1001, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,42
+channel=2
+volumescale=80
 
 
-[State 1000, Return control]
+[State 1001, Finish the physical Chidori]
 type=ChangeState
-trigger1=Time>=78
+trigger1=Time>=36
+value=1002
+
+
+[Statedef 1002]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=1002
+velset=0,0
+
+[State 1002, End rush trail]
+type=AfterImageTime
+trigger1=Time=0
+time=0
+
+
+[State 1002, Return control]
+type=ChangeState
+trigger1=Time>=19
 value=0
 ctrl=1
 
+
+[Statedef 9460]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=21030
+velset=0,0
+
+[State 9460, Sasuke lightning follows Hidari hand]
+type=BindToRoot
+trigger1=1
+time=-1
+pos=IfElse(Root,StateNo=1000 && Root,Time<20,7,44),IfElse(Root,StateNo=1000 && Root,Time<20,-50,-54)
+ignorehitpause=1
+
+[State 9460, Lightning faces with Hidari]
+type=Turn
+trigger1=Facing!=Root,Facing
+
+
+
+[State 9460, Original electrical nucleus fits Hidari]
+type=AngleDraw
+trigger1=1
+value=0
+scale=IfElse(Root,StateNo=1000,IfElse(Root,Time<20,.10+(Root,Time)*.005,.24),.29),IfElse(Root,StateNo=1000,IfElse(Root,Time<20,.10+(Root,Time)*.005,.24),.29)
+ignorehitpause=1
+
+[State 9460, Original Sasuke additive lightning]
+type=Trans
+trigger1=1
+trans=Add
+ignorehitpause=1
+
+[State 9460, Hand lightning in front]
+type=SprPriority
+trigger1=1
+value=3
+ignorehitpause=1
+
+[State 9460, No separate body or shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9460, Electricity has no independent push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9460, Clear electricity on release or interruption]
+type=DestroySelf
+trigger1=Root,StateNo!=1000 && Root,StateNo!=1001 && Root,StateNo!=1002
+trigger2=Root,StateNo=1002 && Root,Time>=5
+trigger3=Root,MoveType=H
+trigger4=RoundState!=2
+trigger5=Root,Life<=0
+
+ignorehitpause=1
 
 [Statedef 1010]
 type=S

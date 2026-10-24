@@ -12,4 +12,6 @@ Esta revisión reemplaza el Susanoo anterior por los sprites y animaciones del S
 
 El ZIP es autónomo: no requiere instalar a Sasuke ni otros personajes. Incluye todos sus estados, sprites, animaciones, efectos y sonidos no verbales. Sustituye completa la carpeta de la revisión anterior.
 
+El Chidori de base (↓↘→ + X) utiliza ahora el núcleo eléctrico y las ramificaciones originales del Chidori de Sasuke BTM. La electricidad sigue la mano de Hidari al cargar, avanzar y golpear. Al conectar hace seis impactos y lanza al rival al final; conserva 350 de coste y 185 de daño total. Puede bloquearse, fallar por distancia o interrumpirse durante la carga.
+
 Pruebas de entradas y colisiones en Ikemen GO; contratos de MUGEN 1.1 validados. No se ejecutó el binario concreto de Jump Force MUGEN V14 ni un mando físico.

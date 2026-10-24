@@ -76,6 +76,30 @@ def animations():
 
 def cast(n,t,sn,x=28,y=-30):return c(n,'Physical manifestation','Helper',f'Time={t}',f'helpertype=Normal\nname="Shinjutsu de Hidari"\nID={sn}\nstateno={sn}\npostype=P1\npos={x},{y}\nownpal=1\nkeyctrl=0')
 def blue(n,when,x=42,y=-38,scale=.22,ticks=20):return effect(n,when,8625,x,y,scale,ticks)
+def base_chidori():
+ # The supplied Sasuke's original AIR 1030 is already packed as 21030.
+ # Keep Hidari's three source poses; electricity follows his actual hand.
+ n=1000
+ action(n,[(28,20),(29,4),(30,4),(29,4),(30,4),(29,4),(30,4),(29,4)],box='12,-73,66,-14')
+ s=state(n,n,move='A',cost=350,physics='N')+startup(n)+snd(n,'Time=4',1,42,2)+cast(n,1,9460,7,-50)
+ s+=c(n,'Physical Chidori rush','VelSet','Time>=20 && Time<44 && !MoveContact','x=9.5\ny=0')+c(n,'Brake on contact or finite rush end','VelSet','MoveContact || Time>=44','x=0\ny=0')
+ s+=hit(n,20,30,False,stun=45).replace('pausetime=4,8','pausetime=7,10').replace('ground.velocity=-0.3,0','ground.velocity=0,0').replace('ground.velocity=-.3,0','ground.velocity=0,0').replace('air.velocity=-0.5,-1','air.velocity=0,-.1').replace('air.velocity=-.5,-1','air.velocity=0,-.1')
+ s+=snd(n,'Time=20',1,42,2)+c(n,'Blue rush afterimage','AfterImage','Time=20','time=22\nlength=5\ntimegap=2\nframegap=2\npalcolor=0\npaladd=0,18,35\npalmul=.65,.8,1')
+ s+=c(n,'Only real contact starts the Chidori impact','ChangeState','MoveHit','value=1001')+c(n,'Guard or miss ends the rush','ChangeState','MoveGuarded || Time>=46','value=1002');states.append(s)
+ n=1001;action(n,[(30,4),(29,5),(30,5),(29,5),(30,8),(29,5),(30,4)],box='10,-73,68,-14')
+ s=state(n,n,move='A',physics='N')
+ s+=c(n,'Close the real gap after fingertip contact','VelSet','Time<8 && P2BodyDist X>18','x=3.5\ny=0')+c(n,'Stop at close contact without crossing the opponent','VelSet','Time>=8 || P2BodyDist X<=18','x=0\ny=0')
+ for t in [4,9,14,19]:
+  s+=hit(n,t,25,False,stun=32).replace('pausetime=4,8','pausetime=2,3').replace('ground.velocity=-0.3,0','ground.velocity=0,0').replace('air.velocity=-0.5,-1','air.velocity=0,-.1')
+ s+=hit(n,27,55,True,stun=38)+snd(n,'Time=0',1,42,2)+c(n,'Finish the physical Chidori','ChangeState','Time>=36','value=1002');states.append(s)
+ n=1002;action(n,[(30,5),(28,8),(0,6)])
+ states.append(state(n,n,physics='N')+c(n,'End rush trail','AfterImageTime','Time=0','time=0')+recover(n,19))
+ n=9460;s=state(n,21030,'A',physics='N')
+ s+=c(n,'Sasuke lightning follows Hidari hand','BindToRoot','1','time=-1\npos=IfElse(Root,StateNo=1000 && Root,Time<20,7,44),IfElse(Root,StateNo=1000 && Root,Time<20,-50,-54)','ignorehitpause=1')
+ s+=c(n,'Lightning faces with Hidari','Turn','Facing!=Root,Facing','')
+ s+=c(n,'Original electrical nucleus fits Hidari','AngleDraw','1','value=0\nscale=IfElse(Root,StateNo=1000,IfElse(Root,Time<20,.10+(Root,Time)*.005,.24),.29),IfElse(Root,StateNo=1000,IfElse(Root,Time<20,.10+(Root,Time)*.005,.24),.29)','ignorehitpause=1')
+ s+=c(n,'Original Sasuke additive lightning','Trans','1','trans=Add','ignorehitpause=1')+c(n,'Hand lightning in front','SprPriority','1','value=3','ignorehitpause=1')+c(n,'No separate body or shadow','AssertSpecial','1','flag=NoShadow','ignorehitpause=1')+c(n,'Electricity has no independent push box','PlayerPush','1','value=0','ignorehitpause=1')
+ s+=ctl(n,'Clear electricity on release or interruption','DestroySelf','trigger1=Root,StateNo!=1000 && Root,StateNo!=1001 && Root,StateNo!=1002\ntrigger2=Root,StateNo=1002 && Root,Time>=5\ntrigger3=Root,MoveType=H\ntrigger4=RoundState!=2\ntrigger5=Root,Life<=0','','ignorehitpause=1');states.append(s)
 def normals():
  for form in [0,1]:
   off=form*10000
@@ -98,6 +122,7 @@ def techniques():
    if base in [1210,1440]:continue
    n=base+form*10000;price=round(cost*.8) if form else cost
    if base==1000: # Both forms keep the user's requested Chidori input.
+    if not form:base_chidori();continue
     action(n,[(28,14),(29,18),(30,20),(28,16),(0,10)],box='16,-55,82,-14')
     s=state(n,n,move='A',cost=price,physics='N')+startup(n)+snd(n,'Time=8',1,42,2)
     s+=blue(n,'Time>=8 && Time<=42 && Time%8=0',61,-48,.27,12)+c(n,'Chidori hand glow follows the rush','Explod','Time=10','anim=8710\npostype=P1\npos=64,-48\nbindtime=34\nremovetime=34\nscale=.45,.45\nsprpriority=3\nownpal=1\nremoveongethit=1')

@@ -8,7 +8,7 @@
 |---|---|---:|
 | X/X/X, Y/Y/Y, B/B/B | Cadenas de tres golpes, con remate | 0 |
 | X/Y/B en el aire | Cadena aérea de hasta tres golpes | 0 |
-| ↓↘→ + X | Chidori con avance y electricidad en la mano | 350 |
+| ↓↘→ + X | Chidori de Sasuke adaptado: carga en la mano, embestida y seis impactos | 350 |
 | ↓↙← + X | Garra de madera | 450 |
 | ↓↘→ + Y | Corriente de Chidori | 500 |
 | ↓↙← + Y | Prisión de raíces | 650 |

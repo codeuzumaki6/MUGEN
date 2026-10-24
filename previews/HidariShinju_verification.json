@@ -1,41 +1,34 @@
 {
-  "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
+  "runtime_sha256": "9df7c43e5b60780461c6830dbf178357896c75263212c2e432b98e0f59158817",
   "source_sprite_frames_verified": 272,
   "source_action_sequences_verified": 23,
   "source_author": "Shingeki No Mugen; sprites credited to Vovan99",
+  "base_chidori_source_action": 1030,
+  "base_chidori_native_inputs_and_collision_tested": true,
+  "base_chidori_damage": 185,
+  "base_chidori_cost": 350,
+  "base_chidori_hits": 6,
   "same_three_normals_and_six_specials": true,
   "palette_only_yellow": true,
   "no_ai_susanoo_art": true,
   "original_hidari_body_and_blue_iris_preserved": 63,
-  "base_states_preserved": 49,
+  "original_base_states_preserved_except_chidori": 48,
   "common_states_and_sounds_unchanged": true,
   "unrelated_files_preserved": 2306,
   "native_cases": {
-    "sasuke_engine": 50,
-    "sasuke_expiry": 6,
-    "sasuke_capture": 10
+    "chidori_input": 2,
+    "chidori_range": 12,
+    "chidori_short": 10,
+    "chidori_capture": 5
   },
-  "total_native_cases": 66,
-  "prior_combat_evidence": {
-    "commit": "4087959b4a2a25281205430a7a3c87c94b9d9081",
-    "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
-    "cases": {
-      "base": 66,
-      "base_range": 60,
-      "base_short": 50,
-      "sasuke_range": 72,
-      "sasuke_short": 60,
-      "sasuke_low_life": 2,
-      "sasuke_hitpause": 2
-    },
-    "total": 312,
-    "applicability": "All seven runtime files byte-identical except the single root-only Invisible/NoShadow rendering controller"
+  "total_native_cases": 29,
+  "unchanged_susanoo_evidence": {
+    "commit": "ebf75215e6845d6436ae5618b0ae944663cb2b82",
+    "runtime_sha256": "9cba582f35c2d7dde251ad3e273a839c10f920accba95b57ad6b6f395e6aaff5",
+    "verification": "HidariShinju_sasuke_verification.json",
+    "applicability": "All prior states except base Chidori 1000 and all prior AIR actions except 1000 remain exact; only states 1001,1002,9460 and AIR 1001,1002 added. Sprite, sound, commands, DEF, common states and global controllers remain byte-identical."
   },
   "awakening_only_susanoo_visible": true,
-  "base_body_restoration_tested": true,
-  "hold_to_awaken_tested": true,
-  "cancellation_and_expiry_tested": true,
-  "one_shot_prevented": true,
   "real_engine_video_and_audio": true,
   "standalone_archive": true,
   "failures": []

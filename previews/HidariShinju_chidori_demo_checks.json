@@ -1,0 +1,104 @@
+{
+  "runtime_sha256": "9df7c43e5b60780461c6830dbf178357896c75263212c2e432b98e0f59158817",
+  "source": "Original Sasuke BTM Chidori AIR 1030 / sprites 1053,10-49, reused without redrawing; hand-bound to original Hidari poses",
+  "video": "HidariShinju_chidori_base_motor.mp4",
+  "video_sha256": "2fe576ac812ed5d69cb556654deb614e9d625781dc77b0daf2a72a1002d01ff3",
+  "duration": 14.733333333333334,
+  "scenes": [
+    {
+      "label": "HIDARI BASE | abajo, adelante + X | Impacto cercano",
+      "start": 0,
+      "end": 2.966666666666667,
+      "case": {
+        "name": "Chidori",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 60,
+        "outcome": "hit"
+      }
+    },
+    {
+      "label": "HIDARI BASE | abajo, adelante + X | Embestida a distancia",
+      "start": 2.966666666666667,
+      "end": 5.916666666666667,
+      "case": {
+        "name": "Chidori",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 210,
+        "outcome": "hit"
+      }
+    },
+    {
+      "label": "HIDARI BASE | abajo, adelante + X | Fuera de alcance",
+      "start": 5.916666666666667,
+      "end": 8.85,
+      "case": {
+        "name": "Chidori",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 400,
+        "outcome": "miss"
+      }
+    },
+    {
+      "label": "HIDARI BASE | abajo, adelante + X | El rival bloquea",
+      "start": 8.85,
+      "end": 11.783333333333333,
+      "case": {
+        "name": "Chidori",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 210,
+        "outcome": "guard"
+      }
+    },
+    {
+      "label": "HIDARI BASE | abajo, adelante + X | Carga interrumpida",
+      "start": 11.783333333333333,
+      "end": 14.733333333333334,
+      "case": {
+        "name": "Chidori",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 45,
+        "outcome": "interrupt"
+      }
+    }
+  ],
+  "native_audio_cues_matched": 5,
+  "audio_confidences": [
+    0.9147661637970306,
+    0.9017306664117438,
+    0.9060412807541055,
+    0.9193277945034135,
+    0.9193289191189522
+  ],
+  "audio": "Actual native SDL audio, matched to each activation; rendering stalls compressed",
+  "failures": []
+}
