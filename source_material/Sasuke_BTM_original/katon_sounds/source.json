@@ -1,0 +1,22 @@
+{
+  "source": "Sasuke_BTM.snd supplied by the user",
+  "source_sha256": "2b7942e96463403c1eacb74978f86257a5eaa88e77222bd94397bd5c66c536b7",
+  "samples": [
+    {
+      "source": [
+        4,
+        8
+      ],
+      "file": "4_8.wav",
+      "sha256": "3f2cafcce42ba58aeae505ca292d35c91e0a474e82708dd5b75310b6d9a8cf47"
+    },
+    {
+      "source": [
+        4,
+        10
+      ],
+      "file": "4_10.wav",
+      "sha256": "49e1b4a6f2bb1a57db7cd1ba7905d8d9ae5a0ed1b70b4575d26f14a300bfad90"
+    }
+  ]
+}

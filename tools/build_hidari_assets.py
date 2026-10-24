@@ -57,6 +57,8 @@ def main():
    put(g,n,im,axis,source_rectangle=box,redrawn=False)
  from hidari_susanoo_source import export_assets
  export_assets(put)
+ from hidari_katon_source import export_assets as export_katon,append_sounds
+ export_katon(put)
  shared=Sff2(ROOT/'MitsukiTBV/MitsukiTBV.sff')
  for g,count in [(8700,4),(8710,4),(8720,6),(8670,11),(8900,24),(8910,5),(8820,5)]:
   for n in range(count):
@@ -68,7 +70,7 @@ def main():
  for n,size in [(0,(25,25)),(1,(120,140))]:
   head=Image.open(A/'sprites/0_0.png').crop((9,1,31,32));f=min(size[0]/head.width,size[1]/head.height);head=head.resize((round(head.width*f),round(head.height*f)),Image.Resampling.NEAREST);canvas=Image.new('RGBA',size);canvas.alpha_composite(head,((size[0]-head.width)//2,(size[1]-head.height)//2));put(9000,n,canvas,(0,0),portrait_from_original=True)
  pack_sff(records,CHAR/'HidariShinju.sff');(A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')
- data=(ROOT/'RyuShinju/RyuShinju.snd').read_bytes();(CHAR/'HidariShinju.snd').write_bytes(data);count,off=struct.unpack_from('<II',data,16)
+ data=append_sounds((ROOT/'RyuShinju/RyuShinju.snd').read_bytes());(CHAR/'HidariShinju.snd').write_bytes(data);count,off=struct.unpack_from('<II',data,16)
  for _ in range(count):
   nxt,size,g,n=struct.unpack_from('<IIII',data,off);(A/'sound'/f'{g}_{n}.wav').write_bytes(data[off+16:off+16+size]);off=nxt
  board=Image.new('RGB',(1200,((len(BODIES)+9)//10)*125),(28,31,40));draw=ImageDraw.Draw(board)

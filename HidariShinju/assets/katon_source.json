@@ -1,0 +1,480 @@
+{
+  "source": "Sasuke BTM supplied by the user; Shingeki No Mugen / Vovan99",
+  "actions": [
+    1150,
+    1160
+  ],
+  "original_colors": true,
+  "ai_generated": false,
+  "sprites": [
+    {
+      "source": [
+        1052,
+        0
+      ],
+      "packed": [
+        11052,
+        0
+      ],
+      "axis": [
+        131,
+        130
+      ],
+      "rgba_sha256": "0718d4aff2f859189b0b15923e5470e57ba7d85bac2b7c118515888954bd254e"
+    },
+    {
+      "source": [
+        1052,
+        1
+      ],
+      "packed": [
+        11052,
+        1
+      ],
+      "axis": [
+        138,
+        126
+      ],
+      "rgba_sha256": "1e996c95b92efa7968ac7cbd99a3426b52546ee8a6d4672708bfb38ff854729e"
+    },
+    {
+      "source": [
+        1052,
+        2
+      ],
+      "packed": [
+        11052,
+        2
+      ],
+      "axis": [
+        134,
+        129
+      ],
+      "rgba_sha256": "d23b6e405a3cc885e9534a5f0dbe010acef5073d31a8847e5eafec670f8b4497"
+    },
+    {
+      "source": [
+        1052,
+        3
+      ],
+      "packed": [
+        11052,
+        3
+      ],
+      "axis": [
+        131,
+        132
+      ],
+      "rgba_sha256": "1f150123e3a2db6aa29eff83b04e7339e65764c617f03dbb35c9d1761d2e2200"
+    },
+    {
+      "source": [
+        1052,
+        4
+      ],
+      "packed": [
+        11052,
+        4
+      ],
+      "axis": [
+        128,
+        131
+      ],
+      "rgba_sha256": "9f53bc57556d3e35dff457e2ee101f9dcf97b3f62e142d7431debc43b25b6dd1"
+    },
+    {
+      "source": [
+        1052,
+        5
+      ],
+      "packed": [
+        11052,
+        5
+      ],
+      "axis": [
+        129,
+        133
+      ],
+      "rgba_sha256": "07cbabff7484809baf2f9c5aaeca2e8394aec3cfa57604bccc8b8fd1c99bfd55"
+    },
+    {
+      "source": [
+        1052,
+        6
+      ],
+      "packed": [
+        11052,
+        6
+      ],
+      "axis": [
+        132,
+        130
+      ],
+      "rgba_sha256": "6645b395108a324d879981e38ec50866decddeac190e1a21dac4ba50d53dc294"
+    },
+    {
+      "source": [
+        1052,
+        7
+      ],
+      "packed": [
+        11052,
+        7
+      ],
+      "axis": [
+        134,
+        127
+      ],
+      "rgba_sha256": "a6aa4d85da17b817c022c1f710f93256ae078f887a61fdf62e50a8fce242c5fe"
+    },
+    {
+      "source": [
+        1052,
+        8
+      ],
+      "packed": [
+        11052,
+        8
+      ],
+      "axis": [
+        138,
+        128
+      ],
+      "rgba_sha256": "a8b5238e7289413ab95bae927d5a2a4a47e1e69ec766c5209585ac1b984cfebf"
+    },
+    {
+      "source": [
+        1052,
+        9
+      ],
+      "packed": [
+        11052,
+        9
+      ],
+      "axis": [
+        127,
+        132
+      ],
+      "rgba_sha256": "6059f2af8ff3cad9e32e0dcdbcfd3893b7ff5b7001a728d231585cd617d8574e"
+    },
+    {
+      "source": [
+        1052,
+        10
+      ],
+      "packed": [
+        11052,
+        10
+      ],
+      "axis": [
+        138,
+        131
+      ],
+      "rgba_sha256": "42c43b2a5096f8dbeb55cba554092489528a3286cea48f85bed7a27508042ba6"
+    },
+    {
+      "source": [
+        1052,
+        11
+      ],
+      "packed": [
+        11052,
+        11
+      ],
+      "axis": [
+        134,
+        133
+      ],
+      "rgba_sha256": "6b2f45700781d8bea89bf862edd39801ea5e801fb86ab8a1abef5586966bad02"
+    },
+    {
+      "source": [
+        1054,
+        2
+      ],
+      "packed": [
+        11054,
+        2
+      ],
+      "axis": [
+        173,
+        173
+      ],
+      "rgba_sha256": "b0f5851ea8e975cf078823015ad25940f8d2f7f2359dbded4d250717107d5e41"
+    },
+    {
+      "source": [
+        1054,
+        3
+      ],
+      "packed": [
+        11054,
+        3
+      ],
+      "axis": [
+        237,
+        241
+      ],
+      "rgba_sha256": "5fba85147586872be07cc8a9023202630d4aafba58052d8f26494a85cfd6794d"
+    },
+    {
+      "source": [
+        1054,
+        4
+      ],
+      "packed": [
+        11054,
+        4
+      ],
+      "axis": [
+        276,
+        249
+      ],
+      "rgba_sha256": "c162c8ed49a4b9627273546d6f00cd930eef8ee75a61e88383c297d6d03000a4"
+    },
+    {
+      "source": [
+        1054,
+        5
+      ],
+      "packed": [
+        11054,
+        5
+      ],
+      "axis": [
+        296,
+        249
+      ],
+      "rgba_sha256": "d6170bd83973b95671858d51e915ebecc3c52e1fc1cf1ca28b68ac7f00eaa5f5"
+    },
+    {
+      "source": [
+        1054,
+        6
+      ],
+      "packed": [
+        11054,
+        6
+      ],
+      "axis": [
+        305,
+        249
+      ],
+      "rgba_sha256": "a56855671be93582091950e5a9f36bf39d56aec26a1fca2d32274e54588c90c9"
+    },
+    {
+      "source": [
+        1054,
+        7
+      ],
+      "packed": [
+        11054,
+        7
+      ],
+      "axis": [
+        336,
+        249
+      ],
+      "rgba_sha256": "41fafbbf17bd0fab56b9e988b28d4735d79cf9a31e96345de2ff0d116bb4155d"
+    },
+    {
+      "source": [
+        1054,
+        8
+      ],
+      "packed": [
+        11054,
+        8
+      ],
+      "axis": [
+        336,
+        249
+      ],
+      "rgba_sha256": "10f26aded3eda68a6111be70880f841730aa507f624081f0add8d6ddab65e74d"
+    },
+    {
+      "source": [
+        1054,
+        9
+      ],
+      "packed": [
+        11054,
+        9
+      ],
+      "axis": [
+        340,
+        249
+      ],
+      "rgba_sha256": "c89bb2e3d50f32dd223f157dc5e3cc2a5ec0b954dc27785b7d82f47ee2242abc"
+    },
+    {
+      "source": [
+        1054,
+        10
+      ],
+      "packed": [
+        11054,
+        10
+      ],
+      "axis": [
+        255,
+        249
+      ],
+      "rgba_sha256": "8a6dd3a075a08ce73f494b84e5559fbfbc52ebcde16c635941ee3d786582d05f"
+    },
+    {
+      "source": [
+        1054,
+        11
+      ],
+      "packed": [
+        11054,
+        11
+      ],
+      "axis": [
+        280,
+        249
+      ],
+      "rgba_sha256": "5e8d14406acdf9b27ba94175b5acaaa016377d6414f828e1cd06e52f81777d39"
+    },
+    {
+      "source": [
+        1054,
+        12
+      ],
+      "packed": [
+        11054,
+        12
+      ],
+      "axis": [
+        309,
+        249
+      ],
+      "rgba_sha256": "b9f5f613944c9630aae835abe506dfc22d09fac87e1c8ef3d2f80b03cb6e2387"
+    },
+    {
+      "source": [
+        1054,
+        13
+      ],
+      "packed": [
+        11054,
+        13
+      ],
+      "axis": [
+        340,
+        249
+      ],
+      "rgba_sha256": "1c8f5ad5f1bc3881d64de01327397a12432c953dcbcf912e5f7e7f7ebe2b9cc9"
+    },
+    {
+      "source": [
+        1054,
+        14
+      ],
+      "packed": [
+        11054,
+        14
+      ],
+      "axis": [
+        372,
+        249
+      ],
+      "rgba_sha256": "bd17d57edc7c77f1e47eac43ec4a968e694154623501abc65d864afaf29bca43"
+    },
+    {
+      "source": [
+        1054,
+        15
+      ],
+      "packed": [
+        11054,
+        15
+      ],
+      "axis": [
+        406,
+        249
+      ],
+      "rgba_sha256": "98faaff89730f1c072ad37734a6692ab952c20eb6906e338cacbe24e99813224"
+    },
+    {
+      "source": [
+        1054,
+        16
+      ],
+      "packed": [
+        11054,
+        16
+      ],
+      "axis": [
+        441,
+        249
+      ],
+      "rgba_sha256": "d5865b2f81d14837f25469cbebe9768b7278901e49d22a097c6aba0c65fb9272"
+    },
+    {
+      "source": [
+        1054,
+        17
+      ],
+      "packed": [
+        11054,
+        17
+      ],
+      "axis": [
+        438,
+        249
+      ],
+      "rgba_sha256": "22e9b15f30fd4c23ed6184d615c8b0b7f6ce34793fb81d77b8519359a8f54e9b"
+    },
+    {
+      "source": [
+        1054,
+        18
+      ],
+      "packed": [
+        11054,
+        18
+      ],
+      "axis": [
+        443,
+        249
+      ],
+      "rgba_sha256": "f1cba60eddb6dfdf719b3457ec23cd55e976ee141c1a1c0303da0db78aa3c60b"
+    },
+    {
+      "source": [
+        1054,
+        19
+      ],
+      "packed": [
+        11054,
+        19
+      ],
+      "axis": [
+        443,
+        249
+      ],
+      "rgba_sha256": "326df8000437a6d8c643ada8d3eb2773be291224490753b2911b78a7d199d4e3"
+    },
+    {
+      "source": [
+        1054,
+        21
+      ],
+      "packed": [
+        11054,
+        21
+      ],
+      "axis": [
+        444,
+        250
+      ],
+      "rgba_sha256": "80d89aa3dfaf0e8c3dbf38772d4c6d0a4d52b97d373fdaa285af819037861256"
+    }
+  ],
+  "sounds": {
+    "20,0": "Sasuke 4,10",
+    "20,1": "Sasuke 4,8"
+  }
+}

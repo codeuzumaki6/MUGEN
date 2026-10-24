@@ -15,7 +15,7 @@
 | ↓↘→ + B | Garra ascendente | 450 |
 | ↓↙← + B | Cadena de madera | 550 |
 | ↓ + X / Y / B | Barrido / palma / ramas | 200 / 300 / 400 |
-| RB | Senbon eléctrico | 200 |
+| RB | Katon: Gōkakyū no Jutsu, bola de fuego de Sasuke | 200 |
 | RT, luego RT | Coloca una marca y sale por ella atacando | 250 + 200 |
 | ↓ + RB | Pilar eléctrico | 650 |
 | ↓ + RT | Salida por marca de garra | 400 |

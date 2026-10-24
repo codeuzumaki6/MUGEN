@@ -24,8 +24,10 @@ if RANGE:
  cases=[]
  for form in [0,1]:
   for face in [1,-1]:
-   for name,b,d,n,cost in [m for m in MOVES if m[3] in [1000,1010,1020,1030,1430]]:
-    for distance,outcome in [(60,'hit'),(210,'hit'),(400,'miss' if n in [1000,1030,1430] else 'hit'),(210,'guard'),(210,'jump'),(45,'interrupt')]:
+   for name,b,d,n,cost in [m for m in MOVES if m[3] in [1000,1010,1020,1030,1200,1430]]:
+    positions=[(60,'hit'),(210,'hit'),(400,'miss' if n in [1000,1030,1430] else 'hit'),(210,'guard'),(210,'jump'),(45,'interrupt')]
+    if n==1200:positions.insert(3,(700,'miss'))
+    for distance,outcome in positions:
      if outcome=='interrupt' and SCALE<1:continue
      cases.append(dict(name=name,kind='ray',form=form,face=face,b=b,d=d,state=n+form*10000,cost=round(cost*.8) if form else cost,distance=distance,outcome=outcome))
 if LOW:cases=[dict(name='ultimate',kind='ultimate',form=form,face=face,distance=90) for form in [0,1] for face in [1,-1]]
@@ -33,8 +35,8 @@ if os.environ.get('HIDARI_CASES'):cases=[c for c in cases if c['name'] in json.l
 if not os.environ.get('HIDARI_FORM'):os.environ['HIDARI_FORM']='0'
 if os.environ.get('HIDARI_FORM'):cases=[c for c in cases if c['form']==int(os.environ['HIDARI_FORM'])]
 if os.environ.get('HIDARI_FACE'):cases=[c for c in cases if c['face']==int(os.environ['HIDARI_FACE'])]
-if os.environ.get('HIDARI_FACE'):cases=[c for c in cases if c['face']==int(os.environ['HIDARI_FACE'])]
 if os.environ.get('HIDARI_OUTCOMES'):cases=[c for c in cases if c.get('outcome') in json.loads(os.environ['HIDARI_OUTCOMES'])]
+if os.environ.get('HIDARI_DISTANCES'):cases=[c for c in cases if c['distance'] in json.loads(os.environ['HIDARI_DISTANCES'])]
 if os.environ.get('HIDARI_ALL_SPECIALS'):
  cases=[c for c in cases if c['face']==1 and (c['kind'] in ['move','ultimate'] or c['kind']=='awakening')]
  for case in cases:
@@ -115,7 +117,7 @@ hook.add('loop','hidari_checks',function()
  last=clock;frames=frames+1
  local case=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
  if case>=CASECOUNT then player(2);setLife(1);player(1);setTime(0);return end
- if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0,marks=0,wings=0,guardianWrong=0,guardianFrames=0,handFrames=0,handWrong=0,handDuplicates=0,hiddenBody=0,firstContact=0} end
+ if rows[case]==nil then rows[case]={states={},damage=0,received=0,apex=0,minPower=3000,maxPower=0,sage=0,aura=0,dash=0,wrong=0,distance=0,guard=0,beamHurt=0,marks=0,wings=0,guardianWrong=0,guardianFrames=0,handFrames=0,handWrong=0,handDuplicates=0,hiddenBody=0,firstContact=0,fireFrames=0,explosionFrames=0,fireWrong=0} end
  local r=rows[case];local st=stateNo()
  if tick==8 then r.startDist=p2DistX();r.distance=p2DistX() end
  if tick>4 then
@@ -131,6 +133,9 @@ hook.add('loop','hidari_checks',function()
     if time()>1 then r.handFrames=r.handFrames+1;if spriteVar('group')~=11053 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf or isAsserted('invisible') then r.handWrong=r.handWrong+1 end end;player(1)
    end
   end
+  if numHelper(9401)>0 and helper(9401) then
+   if stateNo()==9401 then r.fireFrames=r.fireFrames+1;if spriteVar('group')~=11052 then r.fireWrong=r.fireWrong+1 end elseif stateNo()==9402 then r.explosionFrames=r.explosionFrames+1;if spriteVar('group')~=11054 then r.fireWrong=r.fireWrong+1 end else r.fireWrong=r.fireWrong+1 end;player(1)
+  end
   r.marks=math.max(r.marks,numHelper(9600));r.wings=math.max(r.wings,numHelper(9500))
   if numHelper(9500)>0 then
    local rx,ry,rf=posX(),posY(),facing()
@@ -143,7 +148,7 @@ hook.add('loop','hidari_checks',function()
  end
  if tick==TICKS-1 then
   local ss={};for n,_ in pairs(r.states) do table.insert(ss,n) end;table.sort(ss);for i,v in ipairs(ss) do ss[i]=tostring(v) end
-  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..(numHelper(9550)+numHelper(9500))..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\t'..r.marks..'\\t'..r.wings..'\\t'..r.guardianWrong..'\\t'..r.guardianFrames..'\\t'..r.handFrames..'\\t'..r.handWrong..'\\t'..r.handDuplicates..'\\t'..r.hiddenBody..'\\t'..r.firstContact..'\\n');f:flush()
+  f:write(case..'\\t'..table.concat(ss,',')..'\\t'..r.damage..'\\t'..r.received..'\\t'..r.minPower..'\\t'..r.maxPower..'\\t'..r.sage..'\\t'..var(40)..'\\t'..var(42)..'\\t'..stateNo()..'\\t'..r.victim..'\\t'..r.dash..'\\t'..r.aura..'\\t'..numHelper()..'\\t'..(numHelper(9550)+numHelper(9500))..'\\t'..r.wrong..'\\t'..tostring(ctrl())..'\\t'..r.distance..'\\t'..r.guard..'\\t'..r.apex..'\\t'..r.beamHurt..'\\t'..r.marks..'\\t'..r.wings..'\\t'..r.guardianWrong..'\\t'..r.guardianFrames..'\\t'..r.handFrames..'\\t'..r.handWrong..'\\t'..r.handDuplicates..'\\t'..r.hiddenBody..'\\t'..r.firstContact..'\\t'..r.fireFrames..'\\t'..r.explosionFrames..'\\t'..r.fireWrong..'\\n');f:flush()
  end
  CAPTURE
 end)
@@ -207,6 +212,12 @@ for i,case in enumerate(cases):
   if kind=='move' or case.get('outcome')=='hit':
    if 1001 not in ss or damage!=185:bad.append('six-contact Chidori damage or impact sequence failed')
   elif 1001 in ss:bad.append('Chidori impact sequence started without a hit')
- result=dict(chidori_hand_frames=int(row[25]),chidori_hand_bad_frames=int(row[26]),max_chidori_hand_helpers=int(row[27]),hidden_base_frames=int(row[28]),first_contact_tick=int(row[29]),case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),visible_claw_marks=int(row[21]),visible_susanoo=int(row[22]),guardian_bad_frames=int(row[23]),guardian_observed_frames=int(row[24]),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
+ if case.get('state')==1200:
+  if int(row[32]):bad.append('Katon did not use the original Sasuke flame and explosion sprites')
+  if kind=='move' or case.get('outcome')=='hit':
+   if damage!=160 or int(row[30])<1 or int(row[31])<1:bad.append('Katon contact, damage or original explosion failed')
+  if case.get('outcome')=='guard' and int(row[31])<1:bad.append('Katon did not explode on actual guard')
+  if case.get('outcome')=='interrupt' and int(row[30]):bad.append('Interrupted Katon still released a fireball')
+ result=dict(katon_fire_frames=int(row[30]),katon_explosion_frames=int(row[31]),katon_wrong_sprite_frames=int(row[32]),chidori_hand_frames=int(row[25]),chidori_hand_bad_frames=int(row[26]),max_chidori_hand_helpers=int(row[27]),hidden_base_frames=int(row[28]),first_contact_tick=int(row[29]),case=case,states=sorted(ss),damage=damage,received=received,min_power=power,max_power=int(row[5]),max_sage_timer=int(row[6]),end_timer=int(row[7]),end_form=int(row[8]),end_state=endstate,victim_end=int(row[10]),dash_distance=float(row[11]),aura=int(row[12]),end_helpers=int(row[13]),wrong_sage_body_frames=int(row[15]),actual_start_distance=float(row[17]),actual_guard=int(row[18]),jump_apex=float(row[19]),beam_during_hurt=int(row[20]),visible_claw_marks=int(row[21]),visible_susanoo=int(row[22]),guardian_bad_frames=int(row[23]),guardian_observed_frames=int(row[24]),target_scale=SCALE,target_crouching=CROUCH,failures=bad);report.append(result);print('FAIL' if bad else 'PASS',case['name'],form,case['face'],damage,bad)
 files=[f'HidariShinju.{s}' for s in ['def','cns','cmd','air','sff','snd']]+['HidariShinju_common.cns'];runtime=hashlib.sha256(b''.join((ROOT/'HidariShinju'/n).read_bytes() for n in files)).hexdigest()
 out=ROOT/'previews'/os.environ.get('HIDARI_REPORT',('HidariShinju_capture_checks.json' if CAP else f'HidariShinju_rays_{SCALE}_{int(CROUCH)}_checks.json' if RANGE else 'HidariShinju_low_life_checks.json' if LOW else 'HidariShinju_engine_checks.json'));out.write_text(json.dumps(dict(runtime_sha256=runtime,cases=report),indent=2)+'\n');assert not any(r['failures'] for r in report),str(out);print('PASS',len(report),'Hidari actual-input engine cases')

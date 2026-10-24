@@ -1,10 +1,12 @@
 # Hidari Shinju — Susanoo original de Sasuke BTM amarillo
 
-[**Descargar Hidari actualizado**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HidariShinju.zip) · [Chidori de base corregido](previews/HidariShinju_chidori_base_motor.mp4) · [Los nueve ataques del Susanoo](previews/HidariShinju_susanoo_sasuke_motor.mp4) · [Flecha de Indra](previews/HidariShinju_indra_motor.mp4) · [Controles](HidariShinju/CONTROLES_XBOX.md) · [Créditos](HidariShinju/CREDITOS_Y_FUENTES.md)
+[**Descargar Hidari actualizado**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HidariShinju.zip) · [Katon con RB](previews/HidariShinju_katon_base_motor.mp4) · [Chidori de base corregido](previews/HidariShinju_chidori_base_motor.mp4) · [Los nueve ataques del Susanoo](previews/HidariShinju_susanoo_sasuke_motor.mp4) · [Flecha de Indra](previews/HidariShinju_indra_motor.mp4) · [Controles](HidariShinju/CONTROLES_XBOX.md) · [Créditos](HidariShinju/CREDITOS_Y_FUENTES.md)
 
 Reemplaza el Susanoo anterior por el de **Sasuke BTM de Shingeki No Mugen, con sprites acreditados a Vovan99**, aportado por el usuario. Conserva sus tres golpes, seis especiales y cuadros originales, recoloreando el espíritu a amarillo. Hidari mantiene sus 63 poses originales de Vaydra, su escala, el Rinnegan azul y el Chidori en ↓↘→ + X.
 
 El Chidori de base reutiliza la animación eléctrica original de ese Sasuke: un núcleo con rayos ramificados que sigue la mano al cargar y avanzar. Sólo al conectar continúa con seis impactos y el remate. Mantiene 350 de coste y 185 de daño; se puede bloquear, esquivar e interrumpir.
+
+RB en base lanza ahora **Katon: Gōkakyū no Jutsu**, con la esfera naranja, la explosión y los sonidos del Sasuke aportado. Sale de la boca de Hidari y desciende hasta la altura del cuerpo para alcanzar también a rivales pequeños. Cuesta 200 y causa 160 de daño una sola vez; se puede bloquear o saltar, y la preparación puede interrumpirse.
 
 El despertar se activa con **↓ + mantener Pausa/LB aproximadamente 1,7 segundos**. Durante el despertar sólo se ve el Susanoo amarillo; Hidari reaparece al terminar. Requiere 3000, consume 1500 al manifestarse y dura veinte segundos. Incluye Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Kagetsuchi e Indora no Ya. Indra cuesta 3000 y debe alcanzar al rival: daño limitado a min(450, 45 % de su vida máxima). La explosión no añade daño.
 

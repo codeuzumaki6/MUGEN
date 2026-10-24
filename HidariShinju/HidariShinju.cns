@@ -3233,28 +3233,20 @@ supermovetime=180
 
 [State 1200, Physical manifestation]
 type=Helper
-trigger1=Time=16
+trigger1=Time=24
 helpertype=Normal
 name="Shinjutsu de Hidari"
-ID=9400
-stateno=9400
+ID=9401
+stateno=9401
 postype=P1
-pos=40,-27
+pos=22,-61
 ownpal=1
 keyctrl=0
 
 
-[State 1200, Technique sound]
-type=PlaySnd
-trigger1=Time=16
-value=S1,42
-channel=2
-volumescale=80
-
-
 [State 1200, Return control]
 type=ChangeState
-trigger1=Time>=64
+trigger1=Time>=56
 value=0
 ctrl=1
 
@@ -6907,6 +6899,151 @@ type=Trans
 trigger1=1
 trans=Add
 ignorehitpause=1
+
+[Statedef 9401]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=21150
+velset=9,3.5
+
+[State 9401, Fireball descends from mouth to body height]
+type=VelSet
+trigger1=Time>=9
+y=0
+
+
+[State 9401, Original Gokakyu dimensions]
+type=AngleDraw
+trigger1=1
+value=0
+scale=IfElse(Time<6,.17+Time*.025,.32),IfElse(Time<6,.17+Time*.025,.32)
+ignorehitpause=1
+
+[State 9401, Original additive flame]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=256,96
+ignorehitpause=1
+
+[State 9401, Fire draws in front]
+type=SprPriority
+trigger1=1
+value=3
+ignorehitpause=1
+
+[State 9401, Flame has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9401, Flame has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9401, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=160,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=-1
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=-1
+guardsound=S1,9
+ground.type=High
+ground.hittime=35
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+hitonce=1
+
+[State 9401, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S20,0
+channel=2
+volumescale=85
+
+
+[State 9401, Explode once on real contact]
+type=ChangeState
+trigger1=MoveContact
+value=9402
+
+
+[State 9401, Finite fireball flight]
+type=DestroySelf
+trigger1=Time>=64 || RoundState!=2
+
+
+
+[Statedef 9402]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=21160
+velset=0,0
+
+[State 9402, Original explosion size]
+type=AngleDraw
+trigger1=1
+value=0
+scale=.24,.24
+ignorehitpause=1
+
+[State 9402, Explosion glow]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=256,96
+ignorehitpause=1
+
+[State 9402, Explosion has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9402, Explosion is visual only]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9402, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S20,1
+channel=2
+volumescale=85
+
+
+[State 9402, Clear original fire explosion]
+type=DestroySelf
+trigger1=AnimTime=0 || Time>=48 || RoundState!=2
+
+
 
 [Statedef -2]
 

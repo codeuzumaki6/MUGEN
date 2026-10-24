@@ -168,6 +168,9 @@ def techniques():
     for t in [18,34,50]:s+=cast(n,t,9441,45,-28)+snd(n,f'Time={t}',1,31,2,65)
     s+=recover(n,86);states.append(s);continue
    if base==1200:
+    if not form:
+     action(n,[(28,8),(33,16),(33,14),(32,10),(0,8)])
+     s=state(n,n,move='A',cost=price)+startup(n)+cast(n,24,9401,22,-61)+recover(n,56);states.append(s);continue
     action(n,[(32,10),(33,12),(49,18),(32,14),(0,10)]);s=state(n,n,move='A',cost=price)+startup(n)+cast(n,16,9400,40,-27)+snd(n,'Time=16',1,42,2)+recover(n,64);states.append(s);continue
    if base==1430:
     action(n,[(45,12),(46,16),(47,16),(48,30),(45,18),(0,12)]);s=state(n,n,move='A',cost=price)+startup(n)+cast(n,24,9450,'IfElse(P2Dist X<170,P2Dist X,170)',0)+snd(n,'Time=24',1,42,2)+recover(n,108);states.append(s);continue
@@ -292,6 +295,8 @@ def main():
  import sys
  import build_hidari_susanoo
  build_hidari_susanoo.install(sys.modules[__name__])
+ import hidari_katon_source
+ hidari_katon_source.install(sys.modules[__name__])
  constants=(ROOT/'JuraShinju/JuraShinju.cns').read_text().split('[Statedef',1)[0];constants=constants[constants.index('[Data]'):].replace('life=1300','life=1250').replace('defence=115','defence=110').replace('height=84','height=83')
  (CHAR/'HidariShinju.cns').write_text(('; Hidari: original Vaydra sprites, blue Rinnegan, Chidori and golden Susanoo.\n'+constants+''.join(states)+system()).rstrip()+'\n')
  (CHAR/'HidariShinju.air').write_text(('; Original body group 0; supplemental yellow Susanoo is a separate guardian.\n'+''.join(air)).rstrip()+'\n')

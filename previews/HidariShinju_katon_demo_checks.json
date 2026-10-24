@@ -1,0 +1,104 @@
+{
+  "runtime_sha256": "ad955fee21b4c9b23fa8c5a4e4b2487c54d142828814cc7b801e4cb2198efbff",
+  "source": "Original Sasuke BTM Gokakyu AIR 1150/1160, sprites 1052/1054 and sounds 4,10 / 4,8; adapted to the mouth and body height of Hidari",
+  "video": "HidariShinju_katon_base_motor.mp4",
+  "video_sha256": "cc8f2518b546ec3cc93260142ca1c75d46f1cd01d60cc32360b64dafb6adcc1c",
+  "duration": 14.700000000000001,
+  "scenes": [
+    {
+      "label": "HIDARI BASE | RB | Katon: Gokakyu | Impacto cercano",
+      "start": 0,
+      "end": 2.95,
+      "case": {
+        "name": "Senbon",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 60,
+        "outcome": "hit"
+      }
+    },
+    {
+      "label": "HIDARI BASE | RB | Katon: Gokakyu | Bola de fuego a distancia",
+      "start": 2.95,
+      "end": 5.9,
+      "case": {
+        "name": "Senbon",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 210,
+        "outcome": "hit"
+      }
+    },
+    {
+      "label": "HIDARI BASE | RB | Katon: Gokakyu | El rival bloquea",
+      "start": 5.9,
+      "end": 8.833333333333334,
+      "case": {
+        "name": "Senbon",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 210,
+        "outcome": "guard"
+      }
+    },
+    {
+      "label": "HIDARI BASE | RB | Katon: Gokakyu | El rival salta por encima",
+      "start": 8.833333333333334,
+      "end": 11.766666666666667,
+      "case": {
+        "name": "Senbon",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 210,
+        "outcome": "jump"
+      }
+    },
+    {
+      "label": "HIDARI BASE | RB | Katon: Gokakyu | Carga interrumpida",
+      "start": 11.766666666666667,
+      "end": 14.700000000000001,
+      "case": {
+        "name": "Senbon",
+        "kind": "ray",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 45,
+        "outcome": "interrupt"
+      }
+    }
+  ],
+  "native_audio_cues_matched": 5,
+  "audio_confidences": [
+    0.9147660920764524,
+    0.9645783929963165,
+    0.9645783929963165,
+    0.9645783929963165,
+    0.9645787349478783
+  ],
+  "audio": "Actual native SDL audio, matched to each activation; rendering stalls compressed",
+  "failures": []
+}
