@@ -1,57 +1,32 @@
 {
-  "runtime_sha256": "49d320a5010c3feefc1d59b15c1b9c629700066f61ffd22d35d661e7b3f5d461",
-  "original_body_poses_verified": 63,
-  "body_shape_and_pixels_preserved_except_blue_iris": true,
-  "body_rescaled": false,
-  "blue_iris_pixels": 84,
-  "eye_palette": [
-    {
-      "original": [
-        185,
-        45,
-        45
-      ],
-      "blue": [
-        145,
-        185,
-        248
-      ]
-    },
-    {
-      "original": [
-        128,
-        33,
-        33
-      ],
-      "blue": [
-        68,
-        100,
-        180
-      ]
-    }
-  ],
-  "yellow_susanoo_poses": 8,
-  "guardian_is_separate": true,
-  "guardian_checked_frames": 4260,
-  "nonverbal_samples": 19,
-  "previous_files_unchanged": 2297,
+  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "source_sprite_frames_verified": 272,
+  "source_action_sequences_verified": 23,
+  "source_author": "Shingeki No Mugen; sprites credited to Vovan99",
+  "same_three_normals_and_six_specials": true,
+  "palette_only_yellow": true,
+  "no_ai_susanoo_art": true,
+  "original_hidari_body_and_blue_iris_preserved": 63,
+  "base_states_preserved": 49,
+  "common_states_and_sounds_unchanged": true,
+  "unrelated_files_preserved": 2306,
   "native_cases": {
-    "engine": 132,
-    "expiry": 8,
-    "low_life": 4,
-    "range": 120,
-    "short_target": 100,
-    "guardian": 24,
-    "visual": 6,
-    "capture": 29
+    "base": 66,
+    "base_range": 60,
+    "base_short": 50,
+    "sasuke_engine": 50,
+    "sasuke_range": 72,
+    "sasuke_short": 60,
+    "sasuke_low_life": 2,
+    "sasuke_expiry": 6,
+    "sasuke_capture": 10,
+    "sasuke_hitpause": 2
   },
-  "current_runtime_engine_cases": 423,
+  "total_native_cases": 378,
+  "hold_to_awaken_tested": true,
+  "cancellation_and_expiry_tested": true,
+  "one_shot_prevented": true,
+  "real_engine_video_and_audio": true,
   "standalone_archive": true,
-  "deterministic_rebuild": true,
-  "actual_engine_video": true,
-  "all_specials_shown": true,
-  "ultimate_both_forms_shown": true,
-  "awakening_shown": true,
-  "low_life_ultimate_not_one_shot": true,
   "failures": []
 }

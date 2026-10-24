@@ -251,9 +251,204 @@ time=20
 buffer.time=3
 
 [Statedef -1]
+[State -1, Supplied Susanoo Chidori]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Chidori"
+triggerall=Power>=500
+trigger1=ctrl
+value=14600
+
+
+[State -1, Supplied Susanoo Corte de montana]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Garra"
+triggerall=Power>=700
+trigger1=ctrl
+value=14500
+
+
+[State -1, Supplied Susanoo Shinra Tensei]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Corriente"
+triggerall=Power>=600
+trigger1=ctrl
+value=14700
+
+
+[State -1, Supplied Susanoo Chibaku Tensei]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Prision"
+triggerall=Power>=800
+trigger1=ctrl
+value=14800
+
+
+[State -1, Supplied Susanoo Kagetsuchi]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Ascendente"
+triggerall=Power>=650
+trigger1=ctrl
+value=14850
+
+
+[State -1, Supplied Susanoo Flecha de Indra]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Madera"
+triggerall=Power>=3000
+trigger1=ctrl
+value=14900
+
+
+[State -1, Supplied Susanoo Puno]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="a"
+triggerall=Power>=0
+trigger1=ctrl
+value=14200
+
+
+[State -1, Supplied Susanoo Patada]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="b"
+triggerall=Power>=0
+trigger1=ctrl
+value=14300
+
+
+[State -1, Supplied Susanoo Espada ascendente]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="c"
+triggerall=Power>=0
+trigger1=ctrl
+value=14400
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="x"
+triggerall=Power>=3000
+trigger1=ctrl
+value=14900
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Senbon"
+triggerall=Power>=700
+triggerall=command!="holddown"
+trigger1=ctrl
+value=14500
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Marca"
+triggerall=Power>=600
+triggerall=command!="holddown"
+trigger1=ctrl
+value=14700
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Barrido"
+triggerall=Power>=0
+triggerall=command="holddown"
+trigger1=ctrl
+value=14200
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Palma"
+triggerall=Power>=0
+triggerall=command="holddown"
+trigger1=ctrl
+value=14300
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Ramas"
+triggerall=Power>=0
+triggerall=command="holddown"
+trigger1=ctrl
+value=14400
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="Tormenta"
+triggerall=Power>=800
+triggerall=command="holddown"
+trigger1=ctrl
+value=14800
+
+
+[State -1, Original Susanoo shortcut]
+type=ChangeState
+triggerall=AILevel=0
+triggerall=Var(42)=1
+triggerall=StateType!=A
+triggerall=command="SalidaGarra"
+triggerall=Power>=650
+triggerall=command="holddown"
+trigger1=ctrl
+value=14850
+
+
 
 [State -1, Chidori]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Chidori"
 triggerall=StateType!=A
@@ -264,6 +459,7 @@ value=1000+10000*Var(42)
 
 [State -1, Garra]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Garra"
 triggerall=StateType!=A
@@ -274,6 +470,7 @@ value=1010+10000*Var(42)
 
 [State -1, Corriente]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Corriente"
 triggerall=StateType!=A
@@ -284,6 +481,7 @@ value=1020+10000*Var(42)
 
 [State -1, Prision]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Prision"
 triggerall=StateType!=A
@@ -294,6 +492,7 @@ value=1030+10000*Var(42)
 
 [State -1, Ascendente]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Ascendente"
 triggerall=StateType!=A
@@ -304,6 +503,7 @@ value=1040+10000*Var(42)
 
 [State -1, Madera]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Madera"
 triggerall=StateType!=A
@@ -314,6 +514,7 @@ value=1050+10000*Var(42)
 
 [State -1, Barrido]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Barrido"
 triggerall=StateType!=A
@@ -324,6 +525,7 @@ value=1400+10000*Var(42)
 
 [State -1, Palma]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Palma"
 triggerall=StateType!=A
@@ -334,6 +536,7 @@ value=1410+10000*Var(42)
 
 [State -1, Ramas]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Ramas"
 triggerall=StateType!=A
@@ -344,6 +547,7 @@ value=1420+10000*Var(42)
 
 [State -1, Senbon]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Senbon"
 triggerall=StateType!=A
@@ -355,6 +559,7 @@ value=1200+10000*Var(42)
 
 [State -1, Marca]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Marca"
 triggerall=StateType!=A
@@ -366,6 +571,7 @@ value=IfElse(NumHelper(9600)>0,1211,1210)+10000*Var(42)
 
 [State -1, Tormenta]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="Tormenta"
 triggerall=StateType!=A
@@ -376,6 +582,7 @@ value=1430+10000*Var(42)
 
 [State -1, SalidaGarra]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="SalidaGarra"
 triggerall=StateType!=A
@@ -399,6 +606,7 @@ value=520
 
 [State -1, Ultimate Xbox A]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="x"
 triggerall=Power>=3000
@@ -420,6 +628,7 @@ value=500
 
 [State -1, Ground chain]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="a"
 triggerall=command!="holddown"
@@ -449,6 +658,7 @@ ignorehitpause=1
 
 [State -1, Ground chain]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="b"
 triggerall=command!="holddown"
@@ -478,6 +688,7 @@ ignorehitpause=1
 
 [State -1, Ground chain]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel=0
 triggerall=command="c"
 triggerall=command!="holddown"
@@ -578,6 +789,7 @@ ctrl=1
 
 [State -1, CPU legal attack]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl
@@ -590,6 +802,7 @@ value=3000+10000*Var(42)
 
 [State -1, CPU legal attack]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl
@@ -602,6 +815,7 @@ value=1030+10000*Var(42)
 
 [State -1, CPU legal attack]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl
@@ -614,6 +828,7 @@ value=1200+10000*Var(42)
 
 [State -1, CPU legal attack]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl
@@ -626,6 +841,7 @@ value=1020+10000*Var(42)
 
 [State -1, CPU legal attack]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl
@@ -638,6 +854,7 @@ value=1010+10000*Var(42)
 
 [State -1, CPU close chain]
 type=ChangeState
+triggerall=Var(42)=0
 triggerall=AILevel>0
 triggerall=RoundState=2
 triggerall=ctrl

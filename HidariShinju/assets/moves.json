@@ -101,5 +101,75 @@
   "ultimate_budget": "min(420,42% opponent max life)",
   "awakened_ultimate_budget": "min(450,45% opponent max life)",
   "rinnegan": "blue iris, source body otherwise preserved",
-  "voices": false
+  "voices": false,
+  "susanoo_source": "Sasuke BTM by Shingeki No Mugen; sprites Vovan99",
+  "susanoo_original_moves": [
+    [
+      "Chidori",
+      "a",
+      "F",
+      14600,
+      500
+    ],
+    [
+      "Corte de montana",
+      "a",
+      "B",
+      14500,
+      700
+    ],
+    [
+      "Shinra Tensei",
+      "b",
+      "F",
+      14700,
+      600
+    ],
+    [
+      "Chibaku Tensei",
+      "b",
+      "B",
+      14800,
+      800
+    ],
+    [
+      "Kagetsuchi",
+      "c",
+      "F",
+      14850,
+      650
+    ],
+    [
+      "Flecha de Indra",
+      "c",
+      "B",
+      14900,
+      3000
+    ]
+  ],
+  "susanoo_original_normals": [
+    [
+      "Puno",
+      "a",
+      "N",
+      14200,
+      0
+    ],
+    [
+      "Patada",
+      "b",
+      "N",
+      14300,
+      0
+    ],
+    [
+      "Espada ascendente",
+      "c",
+      "N",
+      14400,
+      0
+    ]
+  ],
+  "awakening_hold_ticks": 100,
+  "ai_generated_susanoo": false
 }

@@ -1,0 +1,30 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Sasuke BTM"
+displayname = "Sasuke (BTM)"
+versiondate = 28/07/2019
+mugenversion = 1.0
+author = "Shingeki No Mugen, Sprites by Vovan99"
+pal.defaults = 1,2
+
+[Files]
+sprite = Sasuke_BTM.sff
+anim = Sasuke_BTM.air
+sound = Sasuke_BTM.snd
+cmd = Sasuke_BTM.cmd
+cns = Sasuke_BTM.cns
+stcommon = common1.cns
+st = Sasuke_BTM.cns
+st1 = IA.cns
+st2 = Specials.cns
+st3 = Supers.cns
+st4 = Susano.cns
+pal1 = 1.act
+pal2 = 2.act
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

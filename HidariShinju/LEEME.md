@@ -1,15 +1,15 @@
-# Hidari Shinju
+# Hidari Shinju — Susanoo de Sasuke BTM amarillo
 
-Extrae la carpeta **HidariShinju** dentro de `chars`. Añade en `[Characters]` de `data/select.def`:
+Extrae **HidariShinju** en `chars` y agrega a `[Characters]` de `data/select.def`:
 
 ```ini
 HidariShinju/HidariShinju.def
 ```
 
-El nombre interno y visible es **Hidari Shinju**, para convivir con otros personajes llamados Hidari. El ZIP contiene todos los archivos necesarios; no necesita instalar a Jura, Mitsuki ni Ryū.
+Esta revisión reemplaza el Susanoo anterior por los sprites y animaciones del Sasuke BTM aportado por el usuario. Conserva sus tres golpes y seis especiales: Mountains Cutter, Chidori, Shinra Tensei, Chibaku Tensei, Amaterasu/Kagetsuchi e Indora no Ya. Sólo se recolorea la paleta del espíritu a amarillo; el cuerpo original de Hidari y sus ojos azules se conservan.
 
-Incluye el cuerpo original de Vaydra a escala nativa, ojos azules, Chidori en abajo adelante + X, madera, marcas de garra, combos aéreos, dash doble, activación sonora de especiales y carga con aura. Abajo + Pausa/LB activa veinte segundos de Susanoo amarillo, como pidió el usuario. El guardián es un dibujo suplementario independiente: Hidari conserva su cuerpo y tamaño originales.
+**↓ + mantener Pausa/LB durante aproximadamente 1,7 segundos** activa veinte segundos de Susanoo. Necesita 3000 y gasta 1500 al manifestarse. Cancelar la carga antes no gasta energía. Consulta CONTROLES_XBOX.md para los controles de cada forma y sus costes.
 
-Los controles y costes están en CONTROLES_XBOX.md. Las voces no se han inventado: el sonido incluye efectos no verbales de activación, electricidad e impacto.
+El ZIP es autónomo: no requiere instalar a Sasuke ni otros personajes. Incluye todos sus estados, sprites, animaciones, efectos y sonidos no verbales. Sustituye completa la carpeta de la revisión anterior.
 
-Validado con contratos de MUGEN 1.1 y probado con entradas y colisiones reales en Ikemen GO. No se ejecutó el binario concreto de Jump Force MUGEN V14 ni un mando físico. Las grabaciones corresponden a Ikemen GO.
+Pruebas de entradas y colisiones en Ikemen GO; contratos de MUGEN 1.1 validados. No se ejecutó el binario concreto de Jump Force MUGEN V14 ni un mando físico.

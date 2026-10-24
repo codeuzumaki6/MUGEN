@@ -1,0 +1,32 @@
+{
+  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "source_sprite_frames_verified": 272,
+  "source_action_sequences_verified": 23,
+  "source_author": "Shingeki No Mugen; sprites credited to Vovan99",
+  "same_three_normals_and_six_specials": true,
+  "palette_only_yellow": true,
+  "no_ai_susanoo_art": true,
+  "original_hidari_body_and_blue_iris_preserved": 63,
+  "base_states_preserved": 49,
+  "common_states_and_sounds_unchanged": true,
+  "unrelated_files_preserved": 2306,
+  "native_cases": {
+    "base": 66,
+    "base_range": 60,
+    "base_short": 50,
+    "sasuke_engine": 50,
+    "sasuke_range": 72,
+    "sasuke_short": 60,
+    "sasuke_low_life": 2,
+    "sasuke_expiry": 6,
+    "sasuke_capture": 10,
+    "sasuke_hitpause": 2
+  },
+  "total_native_cases": 378,
+  "hold_to_awaken_tested": true,
+  "cancellation_and_expiry_tested": true,
+  "one_shot_prevented": true,
+  "real_engine_video_and_audio": true,
+  "standalone_archive": true,
+  "failures": []
+}

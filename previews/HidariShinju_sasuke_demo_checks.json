@@ -1,0 +1,88 @@
+{
+  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "source": "Sasuke BTM original Susanoo; palette recolored yellow",
+  "nine_source_attacks_shown": true,
+  "hold_activation_shown": true,
+  "video": "HidariShinju_susanoo_sasuke_motor.mp4",
+  "video_sha256": "7f268f9c32de67580b5eef42b37194992af293c08ceb0912775a9bca84f61b01",
+  "indra_clip": "HidariShinju_indra_motor.mp4",
+  "indra_sha256": "1022ce151380abdc5135a338639af4439c33d8d5a50532333efe7ce41e050042",
+  "duration": 30.45,
+  "scenes": [
+    {
+      "state": 14200,
+      "start": 0,
+      "end": 2.1,
+      "label": "X | Puno"
+    },
+    {
+      "state": 14300,
+      "start": 2.1,
+      "end": 4.216666666666667,
+      "label": "Y | Patada"
+    },
+    {
+      "state": 14400,
+      "start": 4.216666666666667,
+      "end": 6.316666666666666,
+      "label": "B | Espada ascendente"
+    },
+    {
+      "state": 14600,
+      "start": 6.316666666666666,
+      "end": 9.416666666666666,
+      "label": "abajo, adelante + X | Chidori"
+    },
+    {
+      "state": 14500,
+      "start": 9.416666666666666,
+      "end": 12.416666666666666,
+      "label": "abajo, atras + X | Corte de montana"
+    },
+    {
+      "state": 14700,
+      "start": 12.416666666666666,
+      "end": 14.783333333333333,
+      "label": "abajo, adelante + Y | Shinra Tensei"
+    },
+    {
+      "state": 14800,
+      "start": 14.783333333333333,
+      "end": 19.116666666666667,
+      "label": "abajo, atras + Y | Chibaku Tensei"
+    },
+    {
+      "state": 14850,
+      "start": 19.116666666666667,
+      "end": 21.983333333333334,
+      "label": "abajo, adelante + B | Kagetsuchi"
+    },
+    {
+      "state": 14900,
+      "start": 21.983333333333334,
+      "end": 27.0,
+      "label": "abajo, atras + B | Flecha de Indra"
+    },
+    {
+      "state": 520,
+      "start": 27.0,
+      "end": 30.45,
+      "label": "abajo + mantener Pausa | Despertar"
+    }
+  ],
+  "audio": "Actual SDL audio, native activation matched per scene; render stalls compressed",
+  "native_audio_cues_matched": 10,
+  "audio_confidences": {
+    "14600": 0.9161072809418345,
+    "14500": 0.9683190581469179,
+    "14700": 0.9645788301263796,
+    "14800": 0.9645789426654952,
+    "14850": 0.9645788301263793,
+    "14900": 0.9645790910661953,
+    "520": 0.9645794054490023,
+    "14200": 0.6262148043549068,
+    "14300": 0.9826084005597089,
+    "14400": 0.7436722865739116
+  },
+  "failures": []
+}

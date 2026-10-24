@@ -30,6 +30,7 @@ if RANGE:
      cases.append(dict(name=name,kind='ray',form=form,face=face,b=b,d=d,state=n+form*10000,cost=round(cost*.8) if form else cost,distance=distance,outcome=outcome))
 if LOW:cases=[dict(name='ultimate',kind='ultimate',form=form,face=face,distance=90) for form in [0,1] for face in [1,-1]]
 if os.environ.get('HIDARI_CASES'):cases=[c for c in cases if c['name'] in json.loads(os.environ['HIDARI_CASES'])]
+if not os.environ.get('HIDARI_FORM'):os.environ['HIDARI_FORM']='0'
 if os.environ.get('HIDARI_FORM'):cases=[c for c in cases if c['form']==int(os.environ['HIDARI_FORM'])]
 if os.environ.get('HIDARI_FACE'):cases=[c for c in cases if c['face']==int(os.environ['HIDARI_FACE'])]
 if os.environ.get('HIDARI_ALL_SPECIALS'):
@@ -77,7 +78,9 @@ for i,case in enumerate(cases):
  elif kind in ['charge','chargehit']:
   p1+=fctl('AssertInput',window(20,80),'flag=s')
   if kind=='chargehit':p2+=fctl('ChangeState',at(43),'value=9700\nctrl=0')
- elif kind in ['awakening','no_awake']:p1+=motion('s','D')
+ elif kind in ['awakening','no_awake']:
+  p1+=motion('s','D')
+  if kind=='awakening':p1+=fctl('AssertInput',window(28,140),'flag=s')
  elif kind=='expire_attack':p1+=fctl('VarSet',at(22),'v=40\nvalue=30')+motion('a','B')
  elif kind=='expire_hurt':p1+=fctl('VarSet',at(22),'v=40\nvalue=30');p2+=fctl('ChangeState',at(43),'value=9701\nctrl=0')
  elif kind=='recovery':p2+=fctl('ChangeState',at(24),'value=9701\nctrl=0')
@@ -122,7 +125,7 @@ hook.add('loop','hidari_checks',function()
   if numHelper(9500)>0 then
    local rx,ry,rf=posX(),posY(),facing()
    if helper(9500) then
-    if time()>1 then r.guardianFrames=r.guardianFrames+1;if spriteVar('group')~=8630 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
+    if time()>1 then r.guardianFrames=r.guardianFrames+1;if spriteVar('group')~=14090 and spriteVar('group')~=14091 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
     player(1)
    end
   end

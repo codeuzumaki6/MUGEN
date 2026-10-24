@@ -1,0 +1,6 @@
+# Preserve uploaded reference bytes, including original Windows line endings.
+*.cns -text -diff
+*.cmd -text -diff
+*.air -text -diff
+*.def -text -diff
+*.act -text -diff

@@ -1,37 +1,49 @@
 # Hidari Shinju — controles
 
-**X=a · Y=b · B=c · A=x · RB=y · RT=z · Pausa/LB=s.** Adelante y atrás dependen de hacia dónde mire Hidari. Usa el botón equivalente de MUGEN si tu mando tiene otro mapa.
+**X=a · Y=b · B=c · A=x · RB=y · RT=z · Pausa/LB=s.** Adelante y atrás dependen de hacia dónde mire el personaje.
 
-| Entrada | Base | Despertar: Susanoo amarillo | Energía base |
-|---|---|---|---:|
-| X, X, X | Puños y derribo | Cadena con apoyo de la espada | 0 |
-| Y, Y, Y | Patadas y lanzamiento | Cadena reforzada | 0 |
-| B, B, B | Brazos de madera | Madera y espada | 0 |
-| X/Y/B en el aire | Cadena de hasta tres golpes | Cadena reforzada | 0 |
-| ↓↘→ + X | **Chidori: carga eléctrica en la mano y avance** | **Chidori con apoyo del Susanoo** | 350 |
-| ↓↙← + X | Garra de madera extensible | Corte de chakra dorado | 450 |
-| ↓↘→ + Y | Chidori: corriente horizontal | Ráfaga de tres flechas | 500 |
-| ↓↙← + Y | Prisión de raíces y ruptura | Presa reforzada del Susanoo | 650 |
-| ↓↘→ + B | Garra ascendente | Corte ascendente | 450 |
-| ↓↙← + B | Cadena de brazos de madera | Doble espadazo | 550 |
-| ↓ + X | Barrido bajo con avance | Barrido reforzado | 200 |
-| ↓ + Y | Palma de madera proyectada | Palma dorada que aturde | 300 |
-| ↓ + B | Tres ramas proyectadas | Lluvia vertical de espadas | 400 |
-| RB | Senbon de Chidori | Flecha rápida | 200 |
-| RT | Coloca una marca de garra; pulsa otra vez para salir por ella y golpear | Marca y salida con espada | 250 + 200 |
-| ↓ + RB | Pilar de tormenta eléctrica | Tres tajos del Susanoo | 650 |
-| ↓ + RT | Abre una marca y sale atacando | Salida con espada | 400 |
-| A | Ulti: Chidori, tránsito por marcas y presa de madera | Ulti: sentencia del Susanoo | 3000 |
-| Mantener Pausa/LB | Carga con aura eléctrica | Carga con aura dorada | 0 |
-| **↓ + Pausa/LB** | **Activa el Susanoo amarillo** | — | **1500** |
-| →→ / ←← | Dash doble hacia ambos lados | Dash con Susanoo | 0 |
+## Forma base
 
-El despertar requiere tener **3000**, consume **1500**, dura **20 segundos** y permite otra activación 25 segundos después de la primera. Los especiales cuestan un 20 % menos; la ulti mantiene su coste de 3000. No concede invulnerabilidad permanente ni bloquea por sí solo los ataques. El Susanoo amarillo es la adaptación solicitada para este personaje.
+| Entrada | Ataque | Energía |
+|---|---|---:|
+| X/X/X, Y/Y/Y, B/B/B | Cadenas de tres golpes, con remate | 0 |
+| X/Y/B en el aire | Cadena aérea de hasta tres golpes | 0 |
+| ↓↘→ + X | Chidori con avance y electricidad en la mano | 350 |
+| ↓↙← + X | Garra de madera | 450 |
+| ↓↘→ + Y | Corriente de Chidori | 500 |
+| ↓↙← + Y | Prisión de raíces | 650 |
+| ↓↘→ + B | Garra ascendente | 450 |
+| ↓↙← + B | Cadena de madera | 550 |
+| ↓ + X / Y / B | Barrido / palma / ramas | 200 / 300 / 400 |
+| RB | Senbon eléctrico | 200 |
+| RT, luego RT | Coloca una marca y sale por ella atacando | 250 + 200 |
+| ↓ + RB | Pilar eléctrico | 650 |
+| ↓ + RT | Salida por marca de garra | 400 |
+| A | Ulti de Chidori, marcas y presa de madera | 3000 |
 
-La ulti debe conectar la apertura física: se puede bloquear y esquivar. Consume las tres barras incluso si falla. Su daño máximo es **min(420, 42 % de la vida máxima del rival)** en base y **min(450, 45 %)** con Susanoo. Puede rematar a un rival herido, pero no derrotar desde vida completa.
+## Despertar: Susanoo amarillo de Sasuke BTM
 
-La lluvia de espadas aparece hasta 220 unidades y cae físicamente desde arriba.
+Inicia con **↓ + Pausa/LB y mantén Pausa aproximadamente 1,7 segundos**. Requiere 3000 de energía y consume 1500 cuando se manifiesta. Soltar Pausa antes cancela la carga sin consumir energía. Dura 20 segundos; el enfriamiento empieza al activarse y dura 25 segundos. Puede recibir golpes y su carga se puede interrumpir.
 
-La marca permanece hasta diez segundos, se coloca a un máximo de 180 unidades y se consume al atravesarla. La prisión y el pilar se colocan hasta 190 y 170 unidades respectivamente; no sujetan automáticamente a un rival fuera de su alcance.
+Se usan el dibujo y los cuadros originales de Sasuke BTM, recoloreando la paleta del Susanoo a amarillo. Sus tres golpes y seis especiales son los del personaje aportado. Hidari conserva su cuerpo y su Rinnegan azul.
 
-Bloquea manteniendo atrás; atrás + abajo cubre los ataques bajos. Las cadenas requieren nuevas pulsaciones después de conectar. En el aire se permiten tres golpes por salto.
+| Entrada | Ataque original del Susanoo | Energía |
+|---|---|---:|
+| X | Puño del Susanoo | 0 |
+| Y | Patada del Susanoo | 0 |
+| B | Espada ascendente | 0 |
+| ↓↘→ + X | Chidori del Susanoo, nueve impactos | 500 |
+| ↓↙← + X | Mountains Cutter: corte de montaña y onda | 700 |
+| ↓↘→ + Y | Shinra Tensei: repulsión con anillo expansivo | 600 |
+| ↓↙← + Y | Chibaku Tensei: lluvia de meteoritos del original | 800 |
+| ↓↘→ + B | Amaterasu / Kagetsuchi no Tsurugi: hoja de llamas negras | 650 |
+| ↓↙← + B o A | Indora no Ya: arco y flecha de Indra | 3000 |
+| ↓ + X / Y / B | Acceso a los mismos tres golpes del Susanoo | 0 |
+| RB / RT | Acceso a corte de montaña / Shinra Tensei | 700 / 600 |
+| ↓ + RB / RT | Acceso a meteoritos / Kagetsuchi | 800 / 650 |
+
+Chidori queda en abajo adelante + X en ambas formas, como pidió el usuario; por eso se intercambian las dos entradas de X respecto al Sasuke original. Se conserva el conjunto de ataques. La programación adapta alcance, colisiones, costes y daño a Hidari.
+
+Indra es una flecha que debe alcanzar físicamente al rival: puede bloquearse y esquivarse. Consume 3000 incluso si falla. Al acertar, su daño máximo es **min(450, 45 % de la vida máxima del rival)**; la explosión no suma daño adicional. Puede rematar a un rival herido, pero no derrotarlo desde vida completa. La ulti de base mantiene su límite de min(420, 42 %).
+
+En ambas formas: **→→ / ←←** hacen dash sin gasto, mantener **Pausa/LB** carga energía y mantener atrás permite bloquear. Las cadenas aéreas de Hidari siguen disponibles durante el despertar. El Susanoo amarillo y sus poderes son una adaptación fan solicitada.

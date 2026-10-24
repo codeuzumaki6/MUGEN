@@ -263,9 +263,12 @@ def system():
 
 def main():
  animations();normals();techniques();claws();helpers();guardian();utility();ultimate();common();commands()
+ import sys
+ import build_hidari_susanoo
+ build_hidari_susanoo.install(sys.modules[__name__])
  constants=(ROOT/'JuraShinju/JuraShinju.cns').read_text().split('[Statedef',1)[0];constants=constants[constants.index('[Data]'):].replace('life=1300','life=1250').replace('defence=115','defence=110').replace('height=84','height=83')
  (CHAR/'HidariShinju.cns').write_text(('; Hidari: original Vaydra sprites, blue Rinnegan, Chidori and golden Susanoo.\n'+constants+''.join(states)+system()).rstrip()+'\n')
  (CHAR/'HidariShinju.air').write_text(('; Original body group 0; supplemental yellow Susanoo is a separate guardian.\n'+''.join(air)).rstrip()+'\n')
- d=(ROOT/'JuraShinju/JuraShinju.def').read_text().replace('JuraShinju','HidariShinju').replace('Jura Shinju','Hidari Shinju').replace('versiondate=10,22,2026','versiondate=10,23,2026');(CHAR/'HidariShinju.def').write_text(d)
- (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,form_offset=10000,awakening='Yellow Susanoo; requested fan adaptation',awakening_ticks=1200,awakening_cost=1500,activation_requires=3000,ultimate_cost=3000,ultimate_budget='min(420,42% opponent max life)',awakened_ultimate_budget='min(450,45% opponent max life)',rinnegan='blue iris, source body otherwise preserved',voices=False),indent=2)+'\n');print(len(states),'combat states,',len(air),'actions')
+ d=(ROOT/'JuraShinju/JuraShinju.def').read_text().replace('JuraShinju','HidariShinju').replace('Jura Shinju','Hidari Shinju').replace('versiondate=10,22,2026','versiondate=10,23,2026').replace('Vahidras / Vaydra (sprites), Codex (fan adaptation)','Vaydra (Hidari), Vovan99 / Shingeki No Mugen (Susanoo), Codex (adaptation)');(CHAR/'HidariShinju.def').write_text(d)
+ (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,form_offset=10000,awakening='Yellow Susanoo; requested fan adaptation',awakening_ticks=1200,awakening_cost=1500,activation_requires=3000,ultimate_cost=3000,ultimate_budget='min(420,42% opponent max life)',awakened_ultimate_budget='min(450,45% opponent max life)',rinnegan='blue iris, source body otherwise preserved',voices=False),indent=2)+'\n');build_hidari_susanoo.patch_commands();print(len(states),'combat states,',len(air),'actions')
 if __name__=='__main__':main()

@@ -1,0 +1,92 @@
+{
+  "runtime_sha256": "8dfe2caa42d627c358ca13147fb0f193f78874a5d922eda8202b6f458b619c66",
+  "cases": [
+    {
+      "case": {
+        "name": "Patada",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "N",
+        "state": 14300,
+        "cost": 0,
+        "distance": 40
+      },
+      "states": [
+        0,
+        14300
+      ],
+      "damage": 95,
+      "received": 0,
+      "min_power": 3000,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 632,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 5110,
+      "dash_distance": 0.0,
+      "aura": 0,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "visible_claw_marks": 0,
+      "visible_susanoo": 1,
+      "guardian_bad_frames": 0,
+      "guardian_observed_frames": 163,
+      "helper_details": "9500:9500:103",
+      "target_scale": 1.0,
+      "target_crouching": false,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Chidori",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 14600,
+        "cost": 500,
+        "distance": 80
+      },
+      "states": [
+        0,
+        11,
+        12,
+        20,
+        14600
+      ],
+      "damage": 243,
+      "received": 0,
+      "min_power": 2500,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 632,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 5050,
+      "dash_distance": 0.0,
+      "aura": 0,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "actual_start_distance": 79.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "visible_claw_marks": 0,
+      "visible_susanoo": 1,
+      "guardian_bad_frames": 0,
+      "guardian_observed_frames": 163,
+      "helper_details": "9500:9500:23",
+      "target_scale": 1.0,
+      "target_crouching": false,
+      "failures": []
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import hashlib,json,struct
 import numpy as np
 from PIL import Image,ImageDraw
 from scipy.ndimage import label,binary_dilation
-from build_mamushi_assets import pack_sff
+from pack_hidari_sff import pack_sff
 from make_combo_preview import Sff2
 ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'HidariShinju';A=CHAR/'assets';SOURCE=ROOT/'source_material/Hidari_original'
 # Rectangles in the native 512x1300 public original; axes follow the body,
@@ -55,15 +55,8 @@ def main():
     v=np.array(im);rgb=v[:,:,:3].astype(int);keep=(rgb[:,:,0]>105)&(rgb[:,:,1]>95)&(rgb[:,:,2]>75)&(rgb[:,:,2]<205)&(rgb[:,:,0]-rgb[:,:,2]>15)&(rgb[:,:,1]-rgb[:,:,2]<90)&(v[:,:,3]>0);lab,_=label(keep,np.ones((3,3)));sizes=np.bincount(lab.ravel());sizes[0]=0;keep=binary_dilation(lab==sizes.argmax(),iterations=1)&(v[:,:,3]>0);v[:,:,3]=np.where(keep,255,0);im=Image.fromarray(v);im=im.crop(im.getbbox())
    axis=(im.width//2,im.height-1) if g==8600 else (0,im.height//2) if g==8602 else (im.width//2,im.height//2)
    put(g,n,im,axis,source_rectangle=box,redrawn=False)
- # The guardian is supplemental art; no generated Hidari body is packed.
- atlas=Image.open(ROOT/'source_material/Hidari_generated/susanoo_atlas.png').convert('RGBA');frames=[]
- for n in range(8):
-  col=n%4;row=n//4;im=atlas.crop((col*atlas.width//4+8,row*atlas.height//2+8,(col+1)*atlas.width//4-8,(row+1)*atlas.height//2-8));v=np.array(im);lab,_=label(v[:,:,3]>=128,np.ones((3,3)));sizes=np.bincount(lab.ravel());sizes[0]=0;v[:,:,3]=np.where(lab==sizes.argmax(),255,0);im=Image.fromarray(v);frames.append(im.crop(im.getbbox()))
- # Equal scale throughout the atlas. Each frame's feet center is annotated in
- # atlas_axes.json instead of centering different weapon silhouettes.
- axes=json.loads((ROOT/'source_material/Hidari_generated/atlas_axes.json').read_text());factor=axes['scale'];
- for n,im in enumerate(frames):
-  im=im.resize((round(im.width*factor),round(im.height*factor)),Image.Resampling.NEAREST);put(8630,n,im,(round(axes['feet_x'][n]*factor),im.height-1),supplemental_susanoo=True,ai_generated=True,body_art=False)
+ from hidari_susanoo_source import export_assets
+ export_assets(put)
  shared=Sff2(ROOT/'MitsukiTBV/MitsukiTBV.sff')
  for g,count in [(8700,4),(8710,4),(8720,6),(8670,11),(8900,24),(8910,5),(8820,5)]:
   for n in range(count):
@@ -72,9 +65,6 @@ def main():
  for n in range(8):
   im,axis=shared.image(8932,n);v=np.array(im);bright=np.max(v[:,:,:3],axis=2).astype(float);v[:,:,0]=(bright*.38).astype('uint8');v[:,:,1]=(bright*.73).astype('uint8');v[:,:,2]=bright.astype('uint8');im=Image.fromarray(v)
   put(8640,n,im,(0,im.height//2),shared_project_effect=True,lightning_blue=True)
- # Source-only arrows, emitted in front of the guardian's visible bow.
- for n in range(4):
-  im=Image.new('RGBA',(92,18));d=ImageDraw.Draw(im);d.polygon([(0,8),(68,5),(75,1),(91,8),(75,16),(68,11),(0,10)],fill=(255,226,55,255),outline=(155,103,4,255));d.line([(8,9),(77,9)],fill=(255,255,195,255),width=2);put(8645,n,im,(6,9),supplemental_geometric_arrow=True)
  for n,size in [(0,(25,25)),(1,(120,140))]:
   head=Image.open(A/'sprites/0_0.png').crop((9,1,31,32));f=min(size[0]/head.width,size[1]/head.height);head=head.resize((round(head.width*f),round(head.height*f)),Image.Resampling.NEAREST);canvas=Image.new('RGBA',size);canvas.alpha_composite(head,((size[0]-head.width)//2,(size[1]-head.height)//2));put(9000,n,canvas,(0,0),portrait_from_original=True)
  pack_sff(records,CHAR/'HidariShinju.sff');(A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n')

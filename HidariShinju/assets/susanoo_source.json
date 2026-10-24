@@ -1,0 +1,4386 @@
+{
+  "author": "Shingeki No Mugen; Susanoo sprites credited to Vovan99",
+  "source_sff_sha256": "e48643eb9e5a7ac44b7598569368c636c0a6f0d1c856ab0d4a30ec9ec7fe6054",
+  "palette_hue_degrees": 54,
+  "shape_and_animation_preserved": true,
+  "ai_generated": false,
+  "actions": [
+    4005,
+    4050,
+    4055,
+    4056,
+    4200,
+    4300,
+    4400,
+    4500,
+    4550,
+    4600,
+    4700,
+    4750,
+    4800,
+    4850,
+    4860,
+    4900,
+    4950,
+    4990,
+    1030,
+    1450,
+    1470,
+    1480,
+    1485
+  ],
+  "sprites": [
+    {
+      "source": [
+        1053,
+        10
+      ],
+      "packed": [
+        11053,
+        10
+      ],
+      "axis": [
+        163,
+        105
+      ],
+      "source_rgba_sha256": "07bf74611ef925c7e2bb6aa45bebe0c0dac238cc98c9e66bde35e1c2f6f08e45",
+      "yellow_rgba_sha256": "07bf74611ef925c7e2bb6aa45bebe0c0dac238cc98c9e66bde35e1c2f6f08e45"
+    },
+    {
+      "source": [
+        1053,
+        11
+      ],
+      "packed": [
+        11053,
+        11
+      ],
+      "axis": [
+        195,
+        90
+      ],
+      "source_rgba_sha256": "cff200d64c137f70fc918571a2b0dc44730726eb3c71097cdbbaed832e3a61e2",
+      "yellow_rgba_sha256": "cff200d64c137f70fc918571a2b0dc44730726eb3c71097cdbbaed832e3a61e2"
+    },
+    {
+      "source": [
+        1053,
+        12
+      ],
+      "packed": [
+        11053,
+        12
+      ],
+      "axis": [
+        188,
+        95
+      ],
+      "source_rgba_sha256": "8f04d5466d7223be8026035a4a7f98a3a98979e5ee6e968119e14dffc2f0408c",
+      "yellow_rgba_sha256": "8f04d5466d7223be8026035a4a7f98a3a98979e5ee6e968119e14dffc2f0408c"
+    },
+    {
+      "source": [
+        1053,
+        13
+      ],
+      "packed": [
+        11053,
+        13
+      ],
+      "axis": [
+        173,
+        104
+      ],
+      "source_rgba_sha256": "8a62885ce53fa0f6cf590d12e9671b485184b83e936577110b1b95e2f99b6904",
+      "yellow_rgba_sha256": "8a62885ce53fa0f6cf590d12e9671b485184b83e936577110b1b95e2f99b6904"
+    },
+    {
+      "source": [
+        1053,
+        14
+      ],
+      "packed": [
+        11053,
+        14
+      ],
+      "axis": [
+        173,
+        104
+      ],
+      "source_rgba_sha256": "56175200cc8667693925f38dbab0ae84d737a29050f377e0ec2dd85d4cf56f2b",
+      "yellow_rgba_sha256": "56175200cc8667693925f38dbab0ae84d737a29050f377e0ec2dd85d4cf56f2b"
+    },
+    {
+      "source": [
+        1053,
+        15
+      ],
+      "packed": [
+        11053,
+        15
+      ],
+      "axis": [
+        176,
+        114
+      ],
+      "source_rgba_sha256": "1ec9d5f841d02acd65ae034359de1cd538bbd0e02b62367d87d876e2ccf19d54",
+      "yellow_rgba_sha256": "1ec9d5f841d02acd65ae034359de1cd538bbd0e02b62367d87d876e2ccf19d54"
+    },
+    {
+      "source": [
+        1053,
+        16
+      ],
+      "packed": [
+        11053,
+        16
+      ],
+      "axis": [
+        175,
+        140
+      ],
+      "source_rgba_sha256": "a2ccaa56122995344dca7964632e9bec2b52142353c452c20cff2010c0071d29",
+      "yellow_rgba_sha256": "a2ccaa56122995344dca7964632e9bec2b52142353c452c20cff2010c0071d29"
+    },
+    {
+      "source": [
+        1053,
+        17
+      ],
+      "packed": [
+        11053,
+        17
+      ],
+      "axis": [
+        176,
+        137
+      ],
+      "source_rgba_sha256": "d4043b289dd96f37cd37b949707255c95a08ec0ea1d8f3f8c11b06c0b595b399",
+      "yellow_rgba_sha256": "d4043b289dd96f37cd37b949707255c95a08ec0ea1d8f3f8c11b06c0b595b399"
+    },
+    {
+      "source": [
+        1053,
+        18
+      ],
+      "packed": [
+        11053,
+        18
+      ],
+      "axis": [
+        163,
+        149
+      ],
+      "source_rgba_sha256": "8a2caf87038bbc722c753f07cadd83ec2b8b67233722de09074d818c4c9a7a63",
+      "yellow_rgba_sha256": "8a2caf87038bbc722c753f07cadd83ec2b8b67233722de09074d818c4c9a7a63"
+    },
+    {
+      "source": [
+        1053,
+        19
+      ],
+      "packed": [
+        11053,
+        19
+      ],
+      "axis": [
+        166,
+        155
+      ],
+      "source_rgba_sha256": "4596463b4d12a637e1f141f696e1e23c28bfce6cb2844f28044c205a85ced304",
+      "yellow_rgba_sha256": "4596463b4d12a637e1f141f696e1e23c28bfce6cb2844f28044c205a85ced304"
+    },
+    {
+      "source": [
+        1053,
+        20
+      ],
+      "packed": [
+        11053,
+        20
+      ],
+      "axis": [
+        175,
+        163
+      ],
+      "source_rgba_sha256": "c08a5d1043f887fcf23f0d6d2f0541296e0e4689a9ecc2c83233ef8aff836a26",
+      "yellow_rgba_sha256": "c08a5d1043f887fcf23f0d6d2f0541296e0e4689a9ecc2c83233ef8aff836a26"
+    },
+    {
+      "source": [
+        1053,
+        21
+      ],
+      "packed": [
+        11053,
+        21
+      ],
+      "axis": [
+        184,
+        167
+      ],
+      "source_rgba_sha256": "7622178fa2754a572b50b9616a68f7d608e95ec9baa5cbaa3d99e5e904fcf0e3",
+      "yellow_rgba_sha256": "7622178fa2754a572b50b9616a68f7d608e95ec9baa5cbaa3d99e5e904fcf0e3"
+    },
+    {
+      "source": [
+        1053,
+        22
+      ],
+      "packed": [
+        11053,
+        22
+      ],
+      "axis": [
+        186,
+        166
+      ],
+      "source_rgba_sha256": "4af291ba9d5d904159aad460e38186142c38861a763bedcd47c83d14af89c586",
+      "yellow_rgba_sha256": "4af291ba9d5d904159aad460e38186142c38861a763bedcd47c83d14af89c586"
+    },
+    {
+      "source": [
+        1053,
+        23
+      ],
+      "packed": [
+        11053,
+        23
+      ],
+      "axis": [
+        188,
+        169
+      ],
+      "source_rgba_sha256": "a8b6d103a69ac382116399a5296444d4a006fbe91ba49c0ca0106fb1515693bc",
+      "yellow_rgba_sha256": "a8b6d103a69ac382116399a5296444d4a006fbe91ba49c0ca0106fb1515693bc"
+    },
+    {
+      "source": [
+        1053,
+        24
+      ],
+      "packed": [
+        11053,
+        24
+      ],
+      "axis": [
+        195,
+        170
+      ],
+      "source_rgba_sha256": "99e1096d0a317ca30475921915cc268233383a7c7ad5d2f3a68154cad38185c1",
+      "yellow_rgba_sha256": "99e1096d0a317ca30475921915cc268233383a7c7ad5d2f3a68154cad38185c1"
+    },
+    {
+      "source": [
+        1053,
+        25
+      ],
+      "packed": [
+        11053,
+        25
+      ],
+      "axis": [
+        201,
+        174
+      ],
+      "source_rgba_sha256": "88428687d0c6139e09893c75922c5ec8c1a5c0f3191e851b6797186f5213cbe6",
+      "yellow_rgba_sha256": "88428687d0c6139e09893c75922c5ec8c1a5c0f3191e851b6797186f5213cbe6"
+    },
+    {
+      "source": [
+        1053,
+        26
+      ],
+      "packed": [
+        11053,
+        26
+      ],
+      "axis": [
+        190,
+        179
+      ],
+      "source_rgba_sha256": "f5679e7782cc1fcc2cf1280121607f46630ef3c00125ca64e4d7a9ff8559c0f0",
+      "yellow_rgba_sha256": "f5679e7782cc1fcc2cf1280121607f46630ef3c00125ca64e4d7a9ff8559c0f0"
+    },
+    {
+      "source": [
+        1053,
+        27
+      ],
+      "packed": [
+        11053,
+        27
+      ],
+      "axis": [
+        190,
+        156
+      ],
+      "source_rgba_sha256": "f36610f3d58b20d1633a44a6593ea0c6bba6bb45f9c1a95da0eaf40e146bcb4c",
+      "yellow_rgba_sha256": "f36610f3d58b20d1633a44a6593ea0c6bba6bb45f9c1a95da0eaf40e146bcb4c"
+    },
+    {
+      "source": [
+        1053,
+        28
+      ],
+      "packed": [
+        11053,
+        28
+      ],
+      "axis": [
+        186,
+        138
+      ],
+      "source_rgba_sha256": "2b9d30c40a02f83ba5570931d3d752865cc4348f9416cd8749c11a9e13151f03",
+      "yellow_rgba_sha256": "2b9d30c40a02f83ba5570931d3d752865cc4348f9416cd8749c11a9e13151f03"
+    },
+    {
+      "source": [
+        1053,
+        29
+      ],
+      "packed": [
+        11053,
+        29
+      ],
+      "axis": [
+        185,
+        174
+      ],
+      "source_rgba_sha256": "dec0da800c28332ad2de98b422c851f059f198814043772169d7abd20b7fc0f6",
+      "yellow_rgba_sha256": "dec0da800c28332ad2de98b422c851f059f198814043772169d7abd20b7fc0f6"
+    },
+    {
+      "source": [
+        1053,
+        30
+      ],
+      "packed": [
+        11053,
+        30
+      ],
+      "axis": [
+        189,
+        181
+      ],
+      "source_rgba_sha256": "c0cdb1d9539b8c5c41612e755209aac22581720ccca9259dd06ce4f95817ddd5",
+      "yellow_rgba_sha256": "c0cdb1d9539b8c5c41612e755209aac22581720ccca9259dd06ce4f95817ddd5"
+    },
+    {
+      "source": [
+        1053,
+        31
+      ],
+      "packed": [
+        11053,
+        31
+      ],
+      "axis": [
+        189,
+        184
+      ],
+      "source_rgba_sha256": "372d5eb8f88a3a5bc19dc75eba9c4fe15e03d12aada31b530b65edc7fa4c892a",
+      "yellow_rgba_sha256": "372d5eb8f88a3a5bc19dc75eba9c4fe15e03d12aada31b530b65edc7fa4c892a"
+    },
+    {
+      "source": [
+        1053,
+        32
+      ],
+      "packed": [
+        11053,
+        32
+      ],
+      "axis": [
+        190,
+        199
+      ],
+      "source_rgba_sha256": "b67407f97814ef41bada10a20ba225a6fabb14ff0de5af3271eb136e19d6302b",
+      "yellow_rgba_sha256": "b67407f97814ef41bada10a20ba225a6fabb14ff0de5af3271eb136e19d6302b"
+    },
+    {
+      "source": [
+        1053,
+        33
+      ],
+      "packed": [
+        11053,
+        33
+      ],
+      "axis": [
+        191,
+        196
+      ],
+      "source_rgba_sha256": "86ee307bbe8b4ad73d97707a3d0a62a306791a11ec6c30530a82b8433d56a6a1",
+      "yellow_rgba_sha256": "86ee307bbe8b4ad73d97707a3d0a62a306791a11ec6c30530a82b8433d56a6a1"
+    },
+    {
+      "source": [
+        1053,
+        34
+      ],
+      "packed": [
+        11053,
+        34
+      ],
+      "axis": [
+        189,
+        187
+      ],
+      "source_rgba_sha256": "46ba822ba7ffde24c83f4aede602d7ab198b6982bb9e5018b53b8550d76aa04b",
+      "yellow_rgba_sha256": "46ba822ba7ffde24c83f4aede602d7ab198b6982bb9e5018b53b8550d76aa04b"
+    },
+    {
+      "source": [
+        1053,
+        35
+      ],
+      "packed": [
+        11053,
+        35
+      ],
+      "axis": [
+        189,
+        187
+      ],
+      "source_rgba_sha256": "6ecd344cb7a5ad6871968c98809613b47c85a3fecb91503cbebb4a7a6bebe50c",
+      "yellow_rgba_sha256": "6ecd344cb7a5ad6871968c98809613b47c85a3fecb91503cbebb4a7a6bebe50c"
+    },
+    {
+      "source": [
+        1053,
+        36
+      ],
+      "packed": [
+        11053,
+        36
+      ],
+      "axis": [
+        188,
+        187
+      ],
+      "source_rgba_sha256": "996bec4d0b55697e437e39c9f4a3dbc7cbe2a95b0f47f5f11bc1dd5424a09c73",
+      "yellow_rgba_sha256": "996bec4d0b55697e437e39c9f4a3dbc7cbe2a95b0f47f5f11bc1dd5424a09c73"
+    },
+    {
+      "source": [
+        1053,
+        37
+      ],
+      "packed": [
+        11053,
+        37
+      ],
+      "axis": [
+        182,
+        183
+      ],
+      "source_rgba_sha256": "8a9068e70ca4a21fac09908a89ddec68ffee183c811cb3c80b934e77ed04e4c1",
+      "yellow_rgba_sha256": "8a9068e70ca4a21fac09908a89ddec68ffee183c811cb3c80b934e77ed04e4c1"
+    },
+    {
+      "source": [
+        1053,
+        38
+      ],
+      "packed": [
+        11053,
+        38
+      ],
+      "axis": [
+        175,
+        178
+      ],
+      "source_rgba_sha256": "7cf93c1cee5ea1f9caabdc2ee886449a0ed2f2e26de6ef264b3682745602b2bb",
+      "yellow_rgba_sha256": "7cf93c1cee5ea1f9caabdc2ee886449a0ed2f2e26de6ef264b3682745602b2bb"
+    },
+    {
+      "source": [
+        1053,
+        39
+      ],
+      "packed": [
+        11053,
+        39
+      ],
+      "axis": [
+        167,
+        165
+      ],
+      "source_rgba_sha256": "8d98a8ff9a87e0feed8e2bec95533e13db582974add468992205efc473201768",
+      "yellow_rgba_sha256": "8d98a8ff9a87e0feed8e2bec95533e13db582974add468992205efc473201768"
+    },
+    {
+      "source": [
+        1053,
+        40
+      ],
+      "packed": [
+        11053,
+        40
+      ],
+      "axis": [
+        165,
+        159
+      ],
+      "source_rgba_sha256": "90f7b5ba4928fe0dcf8e796f72f076940fcd52a8b76aa064957e0bec6378205c",
+      "yellow_rgba_sha256": "90f7b5ba4928fe0dcf8e796f72f076940fcd52a8b76aa064957e0bec6378205c"
+    },
+    {
+      "source": [
+        1053,
+        41
+      ],
+      "packed": [
+        11053,
+        41
+      ],
+      "axis": [
+        165,
+        152
+      ],
+      "source_rgba_sha256": "ef313c4614865e51ed5a05f9920f1147ec7c3be15b31529e1c3167fbb12990e6",
+      "yellow_rgba_sha256": "ef313c4614865e51ed5a05f9920f1147ec7c3be15b31529e1c3167fbb12990e6"
+    },
+    {
+      "source": [
+        1053,
+        42
+      ],
+      "packed": [
+        11053,
+        42
+      ],
+      "axis": [
+        165,
+        154
+      ],
+      "source_rgba_sha256": "42164218dc5fc814a902dec1505a6a1eb24470d07f2e64ebe7560f6fd957f8b1",
+      "yellow_rgba_sha256": "42164218dc5fc814a902dec1505a6a1eb24470d07f2e64ebe7560f6fd957f8b1"
+    },
+    {
+      "source": [
+        1053,
+        43
+      ],
+      "packed": [
+        11053,
+        43
+      ],
+      "axis": [
+        169,
+        167
+      ],
+      "source_rgba_sha256": "1d684c5fe212c1b8958b21f364cbfbcfa15d71ab5051e18852a91addaf77fc6d",
+      "yellow_rgba_sha256": "1d684c5fe212c1b8958b21f364cbfbcfa15d71ab5051e18852a91addaf77fc6d"
+    },
+    {
+      "source": [
+        1053,
+        44
+      ],
+      "packed": [
+        11053,
+        44
+      ],
+      "axis": [
+        179,
+        156
+      ],
+      "source_rgba_sha256": "175ed8a9e32d1760562454ae30dcee16239015461710b1a2664de02489413287",
+      "yellow_rgba_sha256": "175ed8a9e32d1760562454ae30dcee16239015461710b1a2664de02489413287"
+    },
+    {
+      "source": [
+        1053,
+        45
+      ],
+      "packed": [
+        11053,
+        45
+      ],
+      "axis": [
+        177,
+        160
+      ],
+      "source_rgba_sha256": "7aa930a3044f18e3be55dcfe41165f551f976574a45a33adef4b76961ee87d37",
+      "yellow_rgba_sha256": "7aa930a3044f18e3be55dcfe41165f551f976574a45a33adef4b76961ee87d37"
+    },
+    {
+      "source": [
+        1053,
+        46
+      ],
+      "packed": [
+        11053,
+        46
+      ],
+      "axis": [
+        179,
+        156
+      ],
+      "source_rgba_sha256": "9dcff84932458b27ded959fbba3b0e9516ea379c2ed80294067ffb84286606d4",
+      "yellow_rgba_sha256": "9dcff84932458b27ded959fbba3b0e9516ea379c2ed80294067ffb84286606d4"
+    },
+    {
+      "source": [
+        1053,
+        47
+      ],
+      "packed": [
+        11053,
+        47
+      ],
+      "axis": [
+        187,
+        158
+      ],
+      "source_rgba_sha256": "b0d055a211092145eb68fd8ef7a725232d66427977b460a87fbb8cde76dd535d",
+      "yellow_rgba_sha256": "b0d055a211092145eb68fd8ef7a725232d66427977b460a87fbb8cde76dd535d"
+    },
+    {
+      "source": [
+        1053,
+        48
+      ],
+      "packed": [
+        11053,
+        48
+      ],
+      "axis": [
+        187,
+        159
+      ],
+      "source_rgba_sha256": "76e4a0f159bb5397b4ea824eb90a827a8987638b1b03a2e1b3f14283a3bbe1e4",
+      "yellow_rgba_sha256": "76e4a0f159bb5397b4ea824eb90a827a8987638b1b03a2e1b3f14283a3bbe1e4"
+    },
+    {
+      "source": [
+        1053,
+        49
+      ],
+      "packed": [
+        11053,
+        49
+      ],
+      "axis": [
+        185,
+        162
+      ],
+      "source_rgba_sha256": "f900334804111bf9e78ee28b82f6c75daff6a61ac6007120a40e5859c96813e7",
+      "yellow_rgba_sha256": "f900334804111bf9e78ee28b82f6c75daff6a61ac6007120a40e5859c96813e7"
+    },
+    {
+      "source": [
+        1060,
+        0
+      ],
+      "packed": [
+        11060,
+        0
+      ],
+      "axis": [
+        66,
+        67
+      ],
+      "source_rgba_sha256": "72e58351bec1dbe7856b784562c1d8d0ac4aff22c7a6de3cee1f8ebd916ba5c5",
+      "yellow_rgba_sha256": "72e58351bec1dbe7856b784562c1d8d0ac4aff22c7a6de3cee1f8ebd916ba5c5"
+    },
+    {
+      "source": [
+        1060,
+        1
+      ],
+      "packed": [
+        11060,
+        1
+      ],
+      "axis": [
+        68,
+        69
+      ],
+      "source_rgba_sha256": "ee4d15fb1ea057b6cbb43b9e6d0cddcab38c24788eecdf303fc938e9c4473e83",
+      "yellow_rgba_sha256": "ee4d15fb1ea057b6cbb43b9e6d0cddcab38c24788eecdf303fc938e9c4473e83"
+    },
+    {
+      "source": [
+        1060,
+        2
+      ],
+      "packed": [
+        11060,
+        2
+      ],
+      "axis": [
+        76,
+        76
+      ],
+      "source_rgba_sha256": "9b846b3a89e7336b0ce66b679c706d7d8a11b8dc477e2e3aa5d0ea30c3f9043b",
+      "yellow_rgba_sha256": "9b846b3a89e7336b0ce66b679c706d7d8a11b8dc477e2e3aa5d0ea30c3f9043b"
+    },
+    {
+      "source": [
+        1060,
+        3
+      ],
+      "packed": [
+        11060,
+        3
+      ],
+      "axis": [
+        79,
+        79
+      ],
+      "source_rgba_sha256": "e584e4ac011ef6b3f56476076f864bc3ed6f6f0f6d0f6ff71b057f123a182493",
+      "yellow_rgba_sha256": "e584e4ac011ef6b3f56476076f864bc3ed6f6f0f6d0f6ff71b057f123a182493"
+    },
+    {
+      "source": [
+        1060,
+        4
+      ],
+      "packed": [
+        11060,
+        4
+      ],
+      "axis": [
+        83,
+        83
+      ],
+      "source_rgba_sha256": "65fa5d8af2eb744a1c4a80479cfac3dc726f81142037f6116751750c5d9f4e1b",
+      "yellow_rgba_sha256": "65fa5d8af2eb744a1c4a80479cfac3dc726f81142037f6116751750c5d9f4e1b"
+    },
+    {
+      "source": [
+        1060,
+        5
+      ],
+      "packed": [
+        11060,
+        5
+      ],
+      "axis": [
+        84,
+        84
+      ],
+      "source_rgba_sha256": "7fbf5faa6ffff54c539dc35f1813f79553e1db0d177a2472487a4de12ac80f03",
+      "yellow_rgba_sha256": "7fbf5faa6ffff54c539dc35f1813f79553e1db0d177a2472487a4de12ac80f03"
+    },
+    {
+      "source": [
+        1060,
+        6
+      ],
+      "packed": [
+        11060,
+        6
+      ],
+      "axis": [
+        85,
+        85
+      ],
+      "source_rgba_sha256": "83855471479614739c3aa50d640088d90d3c16e90f4d04a3e28c7eb64ec08cf0",
+      "yellow_rgba_sha256": "83855471479614739c3aa50d640088d90d3c16e90f4d04a3e28c7eb64ec08cf0"
+    },
+    {
+      "source": [
+        1060,
+        7
+      ],
+      "packed": [
+        11060,
+        7
+      ],
+      "axis": [
+        85,
+        85
+      ],
+      "source_rgba_sha256": "c0d3860169f8bb731ec84f46561efa3ae22abeaddca5d5e5c000703e05698cb5",
+      "yellow_rgba_sha256": "c0d3860169f8bb731ec84f46561efa3ae22abeaddca5d5e5c000703e05698cb5"
+    },
+    {
+      "source": [
+        1060,
+        8
+      ],
+      "packed": [
+        11060,
+        8
+      ],
+      "axis": [
+        85,
+        85
+      ],
+      "source_rgba_sha256": "1e67d187ddfd599bf262f602663c55224f61b405112eb90ec21a4ffd3bb6f27a",
+      "yellow_rgba_sha256": "1e67d187ddfd599bf262f602663c55224f61b405112eb90ec21a4ffd3bb6f27a"
+    },
+    {
+      "source": [
+        1060,
+        9
+      ],
+      "packed": [
+        11060,
+        9
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "57a81d65432dc45027d82f2e6acacbe1d3a8f6b87ddf08b83818222adf782564",
+      "yellow_rgba_sha256": "57a81d65432dc45027d82f2e6acacbe1d3a8f6b87ddf08b83818222adf782564"
+    },
+    {
+      "source": [
+        1060,
+        10
+      ],
+      "packed": [
+        11060,
+        10
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "dda7f6c69fd2cad42409470cbffd9745772112940000abf223e40b07cfa456cb",
+      "yellow_rgba_sha256": "dda7f6c69fd2cad42409470cbffd9745772112940000abf223e40b07cfa456cb"
+    },
+    {
+      "source": [
+        1060,
+        11
+      ],
+      "packed": [
+        11060,
+        11
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "149b2af829aba6267ae0b950dbfd818ee53527be88bf4f51fc0ed571e3d6fb61",
+      "yellow_rgba_sha256": "149b2af829aba6267ae0b950dbfd818ee53527be88bf4f51fc0ed571e3d6fb61"
+    },
+    {
+      "source": [
+        1060,
+        12
+      ],
+      "packed": [
+        11060,
+        12
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "6546b4ade5af39c141942f797f0f2b51d0eb174642f793a844bb5888d45cb535",
+      "yellow_rgba_sha256": "6546b4ade5af39c141942f797f0f2b51d0eb174642f793a844bb5888d45cb535"
+    },
+    {
+      "source": [
+        1060,
+        13
+      ],
+      "packed": [
+        11060,
+        13
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "c21cd0afaaf1595b42ebd37250546c40686a305fdae7249cde525c398ac105c7",
+      "yellow_rgba_sha256": "c21cd0afaaf1595b42ebd37250546c40686a305fdae7249cde525c398ac105c7"
+    },
+    {
+      "source": [
+        1060,
+        14
+      ],
+      "packed": [
+        11060,
+        14
+      ],
+      "axis": [
+        84,
+        85
+      ],
+      "source_rgba_sha256": "bcfae3bdf9b5e2a11bc172b500f990da1b8fd51ffdd7eee2082523d80bf2f8a6",
+      "yellow_rgba_sha256": "bcfae3bdf9b5e2a11bc172b500f990da1b8fd51ffdd7eee2082523d80bf2f8a6"
+    },
+    {
+      "source": [
+        1060,
+        15
+      ],
+      "packed": [
+        11060,
+        15
+      ],
+      "axis": [
+        83,
+        85
+      ],
+      "source_rgba_sha256": "d2e81958f580f19146e72ca41b7dbb587ff0c56bb2301135bd9b00caddd422b6",
+      "yellow_rgba_sha256": "d2e81958f580f19146e72ca41b7dbb587ff0c56bb2301135bd9b00caddd422b6"
+    },
+    {
+      "source": [
+        1060,
+        16
+      ],
+      "packed": [
+        11060,
+        16
+      ],
+      "axis": [
+        83,
+        85
+      ],
+      "source_rgba_sha256": "3d94ed5bc802b02af5cb70c23a7c54707d9ce38a5443f90cb737372b3839c688",
+      "yellow_rgba_sha256": "3d94ed5bc802b02af5cb70c23a7c54707d9ce38a5443f90cb737372b3839c688"
+    },
+    {
+      "source": [
+        1060,
+        17
+      ],
+      "packed": [
+        11060,
+        17
+      ],
+      "axis": [
+        82,
+        84
+      ],
+      "source_rgba_sha256": "37e4f7919847b2eeb918a1a3012867a28f5bd5ed911dd5f944c244f459b937ef",
+      "yellow_rgba_sha256": "37e4f7919847b2eeb918a1a3012867a28f5bd5ed911dd5f944c244f459b937ef"
+    },
+    {
+      "source": [
+        1060,
+        18
+      ],
+      "packed": [
+        11060,
+        18
+      ],
+      "axis": [
+        83,
+        85
+      ],
+      "source_rgba_sha256": "ec835d114b7d10c270f0362220e729f3c4578da4fe432b4f6e30aa6125f430b8",
+      "yellow_rgba_sha256": "ec835d114b7d10c270f0362220e729f3c4578da4fe432b4f6e30aa6125f430b8"
+    },
+    {
+      "source": [
+        1060,
+        19
+      ],
+      "packed": [
+        11060,
+        19
+      ],
+      "axis": [
+        82,
+        83
+      ],
+      "source_rgba_sha256": "f4af95c2e53d225501f898c910d5b685593835b8846b989f990b57b82256a47e",
+      "yellow_rgba_sha256": "f4af95c2e53d225501f898c910d5b685593835b8846b989f990b57b82256a47e"
+    },
+    {
+      "source": [
+        1060,
+        20
+      ],
+      "packed": [
+        11060,
+        20
+      ],
+      "axis": [
+        81,
+        82
+      ],
+      "source_rgba_sha256": "34517b5c957135d8e519dffd5ab4a02b6c38e7e720dac9d8e5c08fb1f1794f8d",
+      "yellow_rgba_sha256": "34517b5c957135d8e519dffd5ab4a02b6c38e7e720dac9d8e5c08fb1f1794f8d"
+    },
+    {
+      "source": [
+        1060,
+        21
+      ],
+      "packed": [
+        11060,
+        21
+      ],
+      "axis": [
+        42,
+        70
+      ],
+      "source_rgba_sha256": "a1bb9f0584ea8bb81bd68603dfc228bb5e88da16e569fa9975eed22e5f994d54",
+      "yellow_rgba_sha256": "a1bb9f0584ea8bb81bd68603dfc228bb5e88da16e569fa9975eed22e5f994d54"
+    },
+    {
+      "source": [
+        1350,
+        13
+      ],
+      "packed": [
+        11350,
+        13
+      ],
+      "axis": [
+        159,
+        233
+      ],
+      "source_rgba_sha256": "de14d9e75a8f509527cdabfda18dc552d0ead3b4e8939f36566203e134366abb",
+      "yellow_rgba_sha256": "247719eff4a82222c1c096a181c507ce79ace790b3f7d7bbbc8e7a014841039d"
+    },
+    {
+      "source": [
+        1350,
+        14
+      ],
+      "packed": [
+        11350,
+        14
+      ],
+      "axis": [
+        161,
+        293
+      ],
+      "source_rgba_sha256": "5d4169bfbb92e1c462ef0127dbdf282470d267ae847720e4ab295a0ea9008fce",
+      "yellow_rgba_sha256": "9ec288d0700461df72b5e0c48f5dd541268049c272a998caecbd2def68ea0d3b"
+    },
+    {
+      "source": [
+        1350,
+        15
+      ],
+      "packed": [
+        11350,
+        15
+      ],
+      "axis": [
+        162,
+        446
+      ],
+      "source_rgba_sha256": "0cae4e6240dbfdf2bbf31647b17926da128d7960537a0c213e34c5c5b6d2171d",
+      "yellow_rgba_sha256": "ec74bcbf20940977aac86108a371d9a42fe87a1b57a1f606fdd77e9ab7532603"
+    },
+    {
+      "source": [
+        1350,
+        16
+      ],
+      "packed": [
+        11350,
+        16
+      ],
+      "axis": [
+        160,
+        446
+      ],
+      "source_rgba_sha256": "3015532e2a50e3456497a776e462d45d96dbf885a5cdf549528b15440ccb4629",
+      "yellow_rgba_sha256": "da134a378af03ce8039cf2158e774dedca941e0c771cd0966cd0e049a420a331"
+    },
+    {
+      "source": [
+        1350,
+        17
+      ],
+      "packed": [
+        11350,
+        17
+      ],
+      "axis": [
+        188,
+        446
+      ],
+      "source_rgba_sha256": "9de90628e113e8cab4b84bfe13f1ecd1923020dcc6af0ad56a72523d18764e1e",
+      "yellow_rgba_sha256": "d00d5d5682e313c14f092b7d1d0dad6fc08f7f44de4eec43d5b1516a25a65912"
+    },
+    {
+      "source": [
+        1350,
+        18
+      ],
+      "packed": [
+        11350,
+        18
+      ],
+      "axis": [
+        180,
+        446
+      ],
+      "source_rgba_sha256": "f4547f7b37ac9785012ce30e788800a07fc233d7cfa2cef6c80524d128816cf0",
+      "yellow_rgba_sha256": "c0d653728ad76956f4d70a4a3e6fe586fac3fca8e383c1319bcb01dc726d131f"
+    },
+    {
+      "source": [
+        1350,
+        19
+      ],
+      "packed": [
+        11350,
+        19
+      ],
+      "axis": [
+        246,
+        246
+      ],
+      "source_rgba_sha256": "1dcc8e785c8df7f1bf98099194be7e23407e5a1a93de0334f84193f7d93c3803",
+      "yellow_rgba_sha256": "cffbeac750510e498ce731fe29539898b516f57c6681dd9b23782c2bfbf2f6a8"
+    },
+    {
+      "source": [
+        1350,
+        20
+      ],
+      "packed": [
+        11350,
+        20
+      ],
+      "axis": [
+        160,
+        446
+      ],
+      "source_rgba_sha256": "9c0712a8f109a8f832d03b3b91ed7b2587e48e81664787c151443e989c1c0f15",
+      "yellow_rgba_sha256": "a9f1de634847afb9087a0e9f8ac2f49ca2d36382822058a7f7b3972625d7366d"
+    },
+    {
+      "source": [
+        1350,
+        21
+      ],
+      "packed": [
+        11350,
+        21
+      ],
+      "axis": [
+        163,
+        446
+      ],
+      "source_rgba_sha256": "fbfe701cfb9e3e08e19db9b7876dbd4b611697b0d7b2c8416f7f4c1cc6ee7e44",
+      "yellow_rgba_sha256": "c644314b59ce9d63e504d1386924b40c6945fc8d929e6abe36dbfb9de6bf64cd"
+    },
+    {
+      "source": [
+        1350,
+        22
+      ],
+      "packed": [
+        11350,
+        22
+      ],
+      "axis": [
+        165,
+        446
+      ],
+      "source_rgba_sha256": "fe76406604d49f3a6962d99d8287078e1af9b2559eeb093f62719f0ddc385b28",
+      "yellow_rgba_sha256": "4848615f629372966c25d4c889897f3098f57a04b1797f4fbca99ba7d063e7da"
+    },
+    {
+      "source": [
+        1350,
+        23
+      ],
+      "packed": [
+        11350,
+        23
+      ],
+      "axis": [
+        167,
+        446
+      ],
+      "source_rgba_sha256": "da1647dfe4e2a98179857fbd6a6c157ca5899f4e22b43980254e34a5504b15a7",
+      "yellow_rgba_sha256": "5492954da43cb2bff67cbb7d30d0ced12ff026b1077a085e4e9bf215d59d091c"
+    },
+    {
+      "source": [
+        1350,
+        24
+      ],
+      "packed": [
+        11350,
+        24
+      ],
+      "axis": [
+        169,
+        446
+      ],
+      "source_rgba_sha256": "f47c3bad33875092379712a81657ef03bdf27b2d14b8daad26840f57ac65e298",
+      "yellow_rgba_sha256": "994fdfca9510b28bd6ad4a78044e788c5e38964d73ded50eeec12d4e488befbc"
+    },
+    {
+      "source": [
+        1350,
+        25
+      ],
+      "packed": [
+        11350,
+        25
+      ],
+      "axis": [
+        173,
+        446
+      ],
+      "source_rgba_sha256": "06cd360e44c9d1629f0ac7fca4c7d6bd164ee92b31feafc52386cda5ddf45585",
+      "yellow_rgba_sha256": "5f3a5a5de79c7799c609f2ef800ca9ac52dc6e3f08969046967a0fc1668ed737"
+    },
+    {
+      "source": [
+        1350,
+        26
+      ],
+      "packed": [
+        11350,
+        26
+      ],
+      "axis": [
+        173,
+        446
+      ],
+      "source_rgba_sha256": "6f7ae598a88527c73ca2e1660be6035db217d00aa5a34a32bd7633d64168f317",
+      "yellow_rgba_sha256": "1f768f07ca51aafc16bc22261866b664ec1f2d0d6b8b4fb57b242cdbac7d68db"
+    },
+    {
+      "source": [
+        1350,
+        27
+      ],
+      "packed": [
+        11350,
+        27
+      ],
+      "axis": [
+        175,
+        446
+      ],
+      "source_rgba_sha256": "1de97cc54044245ad165f7db3aeff709b45394bcc93b2cae6e15ecc00916d713",
+      "yellow_rgba_sha256": "2f02b12038c53acbb9cf190927b4a6934406c01cd1f1784c521d1d80d10aba34"
+    },
+    {
+      "source": [
+        1350,
+        28
+      ],
+      "packed": [
+        11350,
+        28
+      ],
+      "axis": [
+        175,
+        446
+      ],
+      "source_rgba_sha256": "73d52e6d012fc9b4338c34efce5297519477e9df7b97a41e78757f49f068e3c2",
+      "yellow_rgba_sha256": "b3d928acd3c43c006456e69bc27836ccfbd7ea0c939f6bab18b316e911792a28"
+    },
+    {
+      "source": [
+        1350,
+        29
+      ],
+      "packed": [
+        11350,
+        29
+      ],
+      "axis": [
+        175,
+        446
+      ],
+      "source_rgba_sha256": "acc8cc8aaf1f19572e4585d968ac016a75b34eef435b9fb81d1595b7a6ed0539",
+      "yellow_rgba_sha256": "fa70958c3a8782c5eb5fe1757378ac06234404e73cd5bb27736d3558a9ec97e3"
+    },
+    {
+      "source": [
+        3251,
+        0
+      ],
+      "packed": [
+        13251,
+        0
+      ],
+      "axis": [
+        192,
+        159
+      ],
+      "source_rgba_sha256": "ec37faa910965c1794ea0140e373986e2121acd2550eac6324add2ca095f1aee",
+      "yellow_rgba_sha256": "ec37faa910965c1794ea0140e373986e2121acd2550eac6324add2ca095f1aee"
+    },
+    {
+      "source": [
+        3251,
+        1
+      ],
+      "packed": [
+        13251,
+        1
+      ],
+      "axis": [
+        209,
+        166
+      ],
+      "source_rgba_sha256": "f4a0b69d5051890783549a119cd7152395802a551cd604eea5563d5e9049fc9f",
+      "yellow_rgba_sha256": "f4a0b69d5051890783549a119cd7152395802a551cd604eea5563d5e9049fc9f"
+    },
+    {
+      "source": [
+        3251,
+        2
+      ],
+      "packed": [
+        13251,
+        2
+      ],
+      "axis": [
+        209,
+        164
+      ],
+      "source_rgba_sha256": "34edf6ba6b2da4c8bceb769b992a5ce585355f238338d2122837eff9471c76e4",
+      "yellow_rgba_sha256": "34edf6ba6b2da4c8bceb769b992a5ce585355f238338d2122837eff9471c76e4"
+    },
+    {
+      "source": [
+        3251,
+        3
+      ],
+      "packed": [
+        13251,
+        3
+      ],
+      "axis": [
+        213,
+        167
+      ],
+      "source_rgba_sha256": "b97944f7fba62f96ea808ae70cc28e55fcc66636a868679833ef28353547accb",
+      "yellow_rgba_sha256": "b97944f7fba62f96ea808ae70cc28e55fcc66636a868679833ef28353547accb"
+    },
+    {
+      "source": [
+        3251,
+        4
+      ],
+      "packed": [
+        13251,
+        4
+      ],
+      "axis": [
+        213,
+        166
+      ],
+      "source_rgba_sha256": "a5c0a80fcb9682db0f02ec21e3e84a99cfe6cc81525fa14efd2023fe4130e916",
+      "yellow_rgba_sha256": "a5c0a80fcb9682db0f02ec21e3e84a99cfe6cc81525fa14efd2023fe4130e916"
+    },
+    {
+      "source": [
+        3251,
+        5
+      ],
+      "packed": [
+        13251,
+        5
+      ],
+      "axis": [
+        214,
+        168
+      ],
+      "source_rgba_sha256": "e26e60eb5753c7a0223f300bf5fad867b1617e24d48061e36363cb3608b37f4b",
+      "yellow_rgba_sha256": "e26e60eb5753c7a0223f300bf5fad867b1617e24d48061e36363cb3608b37f4b"
+    },
+    {
+      "source": [
+        3251,
+        6
+      ],
+      "packed": [
+        13251,
+        6
+      ],
+      "axis": [
+        215,
+        169
+      ],
+      "source_rgba_sha256": "af42176c8bebbf2b5696ebe0ab9730714ed863fc6663c9d89acbf8ee36bfaf3c",
+      "yellow_rgba_sha256": "af42176c8bebbf2b5696ebe0ab9730714ed863fc6663c9d89acbf8ee36bfaf3c"
+    },
+    {
+      "source": [
+        3251,
+        7
+      ],
+      "packed": [
+        13251,
+        7
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "abefe4c9d7424b9697945fb13ffabd51c7d1dcc5b2bd3b9465176774b5479b23",
+      "yellow_rgba_sha256": "abefe4c9d7424b9697945fb13ffabd51c7d1dcc5b2bd3b9465176774b5479b23"
+    },
+    {
+      "source": [
+        3251,
+        8
+      ],
+      "packed": [
+        13251,
+        8
+      ],
+      "axis": [
+        214,
+        168
+      ],
+      "source_rgba_sha256": "e5b761ec7f43e1dcc2f20abc9959ef975739b40e410e7fdc39810a3196ef6757",
+      "yellow_rgba_sha256": "e5b761ec7f43e1dcc2f20abc9959ef975739b40e410e7fdc39810a3196ef6757"
+    },
+    {
+      "source": [
+        3251,
+        9
+      ],
+      "packed": [
+        13251,
+        9
+      ],
+      "axis": [
+        216,
+        167
+      ],
+      "source_rgba_sha256": "efd35988d42ca8830dcadef9cda88f7cb6b8df8657fec696a86010c56d3be1d3",
+      "yellow_rgba_sha256": "efd35988d42ca8830dcadef9cda88f7cb6b8df8657fec696a86010c56d3be1d3"
+    },
+    {
+      "source": [
+        3251,
+        10
+      ],
+      "packed": [
+        13251,
+        10
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "8ef6932c216e273f91e15bc37551a38c20ef9c1070556eb642140f5a25f8d79d",
+      "yellow_rgba_sha256": "8ef6932c216e273f91e15bc37551a38c20ef9c1070556eb642140f5a25f8d79d"
+    },
+    {
+      "source": [
+        3251,
+        11
+      ],
+      "packed": [
+        13251,
+        11
+      ],
+      "axis": [
+        215,
+        169
+      ],
+      "source_rgba_sha256": "6f18e80d01602e9521e709519f8d09768d8175e28a268ac8fdc4425aafee1a27",
+      "yellow_rgba_sha256": "6f18e80d01602e9521e709519f8d09768d8175e28a268ac8fdc4425aafee1a27"
+    },
+    {
+      "source": [
+        3251,
+        12
+      ],
+      "packed": [
+        13251,
+        12
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "6c44a002dc69937988349f3acea66b1bd4559f2c25244b33320dece54b62b518",
+      "yellow_rgba_sha256": "6c44a002dc69937988349f3acea66b1bd4559f2c25244b33320dece54b62b518"
+    },
+    {
+      "source": [
+        3251,
+        13
+      ],
+      "packed": [
+        13251,
+        13
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "41ffd0ff23f118bffd9d3afc1b55c9934d3b3f49574dcda6cb3c363fd48e778e",
+      "yellow_rgba_sha256": "41ffd0ff23f118bffd9d3afc1b55c9934d3b3f49574dcda6cb3c363fd48e778e"
+    },
+    {
+      "source": [
+        3251,
+        14
+      ],
+      "packed": [
+        13251,
+        14
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "4e44c7752825545d0da73974ee9e2b9d0e9178700478f4d4dd96cad52d04e85d",
+      "yellow_rgba_sha256": "4e44c7752825545d0da73974ee9e2b9d0e9178700478f4d4dd96cad52d04e85d"
+    },
+    {
+      "source": [
+        3251,
+        15
+      ],
+      "packed": [
+        13251,
+        15
+      ],
+      "axis": [
+        216,
+        169
+      ],
+      "source_rgba_sha256": "9cde73ce8e61de85f77f3d0c3ad37990d39acc072aa6ec7e96a710a54afbc6ef",
+      "yellow_rgba_sha256": "9cde73ce8e61de85f77f3d0c3ad37990d39acc072aa6ec7e96a710a54afbc6ef"
+    },
+    {
+      "source": [
+        3251,
+        16
+      ],
+      "packed": [
+        13251,
+        16
+      ],
+      "axis": [
+        216,
+        169
+      ],
+      "source_rgba_sha256": "6808995d6a42420b2bce5f9af1ec96bb37d595fa1dc924df1e5ec0f5d4c149c9",
+      "yellow_rgba_sha256": "6808995d6a42420b2bce5f9af1ec96bb37d595fa1dc924df1e5ec0f5d4c149c9"
+    },
+    {
+      "source": [
+        3251,
+        17
+      ],
+      "packed": [
+        13251,
+        17
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "a2405890c27d3cd43eda615dabb62a8d9fb563e8868f7214330bdecf90e98fe1",
+      "yellow_rgba_sha256": "a2405890c27d3cd43eda615dabb62a8d9fb563e8868f7214330bdecf90e98fe1"
+    },
+    {
+      "source": [
+        3251,
+        18
+      ],
+      "packed": [
+        13251,
+        18
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "37bee2a610834d45863ee06fd0868ce8245268b159582fde6b5836af75f6f5ad",
+      "yellow_rgba_sha256": "37bee2a610834d45863ee06fd0868ce8245268b159582fde6b5836af75f6f5ad"
+    },
+    {
+      "source": [
+        3251,
+        19
+      ],
+      "packed": [
+        13251,
+        19
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "5963ecabcea165ac4ea7483d7327e66cfcd8d80965f36279cc050bf53bdbe4f0",
+      "yellow_rgba_sha256": "5963ecabcea165ac4ea7483d7327e66cfcd8d80965f36279cc050bf53bdbe4f0"
+    },
+    {
+      "source": [
+        3251,
+        20
+      ],
+      "packed": [
+        13251,
+        20
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "1c077b107838535990cceb5a2e10e47b3a3d8498f87891365d7b35d57739920f",
+      "yellow_rgba_sha256": "1c077b107838535990cceb5a2e10e47b3a3d8498f87891365d7b35d57739920f"
+    },
+    {
+      "source": [
+        3251,
+        21
+      ],
+      "packed": [
+        13251,
+        21
+      ],
+      "axis": [
+        214,
+        168
+      ],
+      "source_rgba_sha256": "0e7e150103361b408f735e98e3c8c66a93a6adde1b9801ecdc1dd79817c32ccd",
+      "yellow_rgba_sha256": "0e7e150103361b408f735e98e3c8c66a93a6adde1b9801ecdc1dd79817c32ccd"
+    },
+    {
+      "source": [
+        3251,
+        22
+      ],
+      "packed": [
+        13251,
+        22
+      ],
+      "axis": [
+        215,
+        167
+      ],
+      "source_rgba_sha256": "ef0c1568281d097ba95a2635544f2a30ce9fe73b707b458db0c710807eecc13d",
+      "yellow_rgba_sha256": "ef0c1568281d097ba95a2635544f2a30ce9fe73b707b458db0c710807eecc13d"
+    },
+    {
+      "source": [
+        3251,
+        23
+      ],
+      "packed": [
+        13251,
+        23
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "612a20a6ca090d17f47d061777ab8d4f11a7e28b3254ed40130db3f004d2a240",
+      "yellow_rgba_sha256": "612a20a6ca090d17f47d061777ab8d4f11a7e28b3254ed40130db3f004d2a240"
+    },
+    {
+      "source": [
+        3251,
+        24
+      ],
+      "packed": [
+        13251,
+        24
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "49bd7b5089df95352bbf373f419dcf27583350729ea853cbc9046c8af0777a0c",
+      "yellow_rgba_sha256": "49bd7b5089df95352bbf373f419dcf27583350729ea853cbc9046c8af0777a0c"
+    },
+    {
+      "source": [
+        3251,
+        25
+      ],
+      "packed": [
+        13251,
+        25
+      ],
+      "axis": [
+        215,
+        169
+      ],
+      "source_rgba_sha256": "6dc4e199ca8eefdbaaedaf3ffa919b9ea9316b63bf3eb1af8f3e826a4be4679d",
+      "yellow_rgba_sha256": "6dc4e199ca8eefdbaaedaf3ffa919b9ea9316b63bf3eb1af8f3e826a4be4679d"
+    },
+    {
+      "source": [
+        3251,
+        26
+      ],
+      "packed": [
+        13251,
+        26
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "36444db804a2b7884bbe7c53ad640ff240f95a5508375828cd141a92d514a970",
+      "yellow_rgba_sha256": "36444db804a2b7884bbe7c53ad640ff240f95a5508375828cd141a92d514a970"
+    },
+    {
+      "source": [
+        3251,
+        27
+      ],
+      "packed": [
+        13251,
+        27
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "35bde1322df01ffe4ece84cd1d375618cc4727832f8bcb50dac84b912d06ddbc",
+      "yellow_rgba_sha256": "35bde1322df01ffe4ece84cd1d375618cc4727832f8bcb50dac84b912d06ddbc"
+    },
+    {
+      "source": [
+        3251,
+        28
+      ],
+      "packed": [
+        13251,
+        28
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "02f3b9804dde51e5a84fdd4a4b71f3671285429ec7ff130f0fa807ac40cfd4cb",
+      "yellow_rgba_sha256": "02f3b9804dde51e5a84fdd4a4b71f3671285429ec7ff130f0fa807ac40cfd4cb"
+    },
+    {
+      "source": [
+        3251,
+        29
+      ],
+      "packed": [
+        13251,
+        29
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "028eb63cfa8b92be1da42cebe12d84f649322ddb5b6232a8ac2221c78b99967c",
+      "yellow_rgba_sha256": "028eb63cfa8b92be1da42cebe12d84f649322ddb5b6232a8ac2221c78b99967c"
+    },
+    {
+      "source": [
+        3251,
+        30
+      ],
+      "packed": [
+        13251,
+        30
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "61ed75f7cf2b0599d2b4cd597e6e70f9c274a2f5b75365a8f581b4580ad76c7f",
+      "yellow_rgba_sha256": "61ed75f7cf2b0599d2b4cd597e6e70f9c274a2f5b75365a8f581b4580ad76c7f"
+    },
+    {
+      "source": [
+        3251,
+        31
+      ],
+      "packed": [
+        13251,
+        31
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "a185aef2de09425c6c8f1e423a248083fe8355fcbd5ff5a4be64371a05a1572f",
+      "yellow_rgba_sha256": "a185aef2de09425c6c8f1e423a248083fe8355fcbd5ff5a4be64371a05a1572f"
+    },
+    {
+      "source": [
+        3251,
+        32
+      ],
+      "packed": [
+        13251,
+        32
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "e2a9a2c83225814a5db5860dc457f838ace6268d9855d88f3e080733733b62e6",
+      "yellow_rgba_sha256": "e2a9a2c83225814a5db5860dc457f838ace6268d9855d88f3e080733733b62e6"
+    },
+    {
+      "source": [
+        3251,
+        33
+      ],
+      "packed": [
+        13251,
+        33
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "700fd8502aea009d6a87d163abc7853d1e0eb15309f65c5fbfad93ebc337a3a5",
+      "yellow_rgba_sha256": "700fd8502aea009d6a87d163abc7853d1e0eb15309f65c5fbfad93ebc337a3a5"
+    },
+    {
+      "source": [
+        3251,
+        34
+      ],
+      "packed": [
+        13251,
+        34
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "cbcff9ce76c124ed3781a56f61f4825e9b89b554228247d9bcb556ab7737e048",
+      "yellow_rgba_sha256": "cbcff9ce76c124ed3781a56f61f4825e9b89b554228247d9bcb556ab7737e048"
+    },
+    {
+      "source": [
+        3251,
+        35
+      ],
+      "packed": [
+        13251,
+        35
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "927654e192635f33b0ecde3f35e8f089e818ab6f2116373cd9bc51627d14802f",
+      "yellow_rgba_sha256": "927654e192635f33b0ecde3f35e8f089e818ab6f2116373cd9bc51627d14802f"
+    },
+    {
+      "source": [
+        3251,
+        36
+      ],
+      "packed": [
+        13251,
+        36
+      ],
+      "axis": [
+        215,
+        167
+      ],
+      "source_rgba_sha256": "8e1a88cf8bc18b827a5f29c0e71bea529409950b53fe196b04a58dea43d52b5e",
+      "yellow_rgba_sha256": "8e1a88cf8bc18b827a5f29c0e71bea529409950b53fe196b04a58dea43d52b5e"
+    },
+    {
+      "source": [
+        3251,
+        37
+      ],
+      "packed": [
+        13251,
+        37
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "780c6a107f04dc15213224e4576b76f0234216daafaa3e623315c5140cf85524",
+      "yellow_rgba_sha256": "780c6a107f04dc15213224e4576b76f0234216daafaa3e623315c5140cf85524"
+    },
+    {
+      "source": [
+        3251,
+        38
+      ],
+      "packed": [
+        13251,
+        38
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "34c71f0eb070b12ba3d0eae1eddafd91066e44bf25689b0a87d49282253b82bf",
+      "yellow_rgba_sha256": "34c71f0eb070b12ba3d0eae1eddafd91066e44bf25689b0a87d49282253b82bf"
+    },
+    {
+      "source": [
+        3251,
+        39
+      ],
+      "packed": [
+        13251,
+        39
+      ],
+      "axis": [
+        216,
+        167
+      ],
+      "source_rgba_sha256": "bb04b320ea9cba21bc7326691d2e1208d06f20e56903616cad9a74a67ecb4b7f",
+      "yellow_rgba_sha256": "bb04b320ea9cba21bc7326691d2e1208d06f20e56903616cad9a74a67ecb4b7f"
+    },
+    {
+      "source": [
+        3251,
+        40
+      ],
+      "packed": [
+        13251,
+        40
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "776f3c4d5232ef99fa15ab442cc36461a0f74a78dc3c040cc82a0a5fcd82454a",
+      "yellow_rgba_sha256": "776f3c4d5232ef99fa15ab442cc36461a0f74a78dc3c040cc82a0a5fcd82454a"
+    },
+    {
+      "source": [
+        3251,
+        41
+      ],
+      "packed": [
+        13251,
+        41
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "e870442edfd0e33ff16e8e2a260726e817b6ea496c36c96f8075365bda9faea1",
+      "yellow_rgba_sha256": "e870442edfd0e33ff16e8e2a260726e817b6ea496c36c96f8075365bda9faea1"
+    },
+    {
+      "source": [
+        3251,
+        42
+      ],
+      "packed": [
+        13251,
+        42
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "7ff0fe94a97a9563235ac089124a629d22b451fad618f7857226df36dcac5670",
+      "yellow_rgba_sha256": "7ff0fe94a97a9563235ac089124a629d22b451fad618f7857226df36dcac5670"
+    },
+    {
+      "source": [
+        3251,
+        43
+      ],
+      "packed": [
+        13251,
+        43
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "20fa777b0d3ace3ecedc6d49b572b4335589d4db9eba26040d02edbfe5a182b5",
+      "yellow_rgba_sha256": "20fa777b0d3ace3ecedc6d49b572b4335589d4db9eba26040d02edbfe5a182b5"
+    },
+    {
+      "source": [
+        3251,
+        44
+      ],
+      "packed": [
+        13251,
+        44
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "7ed7fa86a540268ac82171206b86c33e2db304d4e295ad2401985c5bca6f7414",
+      "yellow_rgba_sha256": "7ed7fa86a540268ac82171206b86c33e2db304d4e295ad2401985c5bca6f7414"
+    },
+    {
+      "source": [
+        3251,
+        45
+      ],
+      "packed": [
+        13251,
+        45
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "30c66e2d9a76fb2ce8dd4ebffaae193af4a2930870caab233f27652551ae852c",
+      "yellow_rgba_sha256": "30c66e2d9a76fb2ce8dd4ebffaae193af4a2930870caab233f27652551ae852c"
+    },
+    {
+      "source": [
+        3251,
+        46
+      ],
+      "packed": [
+        13251,
+        46
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "0fd2b936c977280619497c7df48294b44b6f0daf838574962d4415c9a62ec40f",
+      "yellow_rgba_sha256": "0fd2b936c977280619497c7df48294b44b6f0daf838574962d4415c9a62ec40f"
+    },
+    {
+      "source": [
+        3251,
+        47
+      ],
+      "packed": [
+        13251,
+        47
+      ],
+      "axis": [
+        215,
+        169
+      ],
+      "source_rgba_sha256": "6d414d70290b8bfc8f2efad0f298a5b5c0fcf3c119c244f92bd3b081e84aab9c",
+      "yellow_rgba_sha256": "6d414d70290b8bfc8f2efad0f298a5b5c0fcf3c119c244f92bd3b081e84aab9c"
+    },
+    {
+      "source": [
+        3251,
+        48
+      ],
+      "packed": [
+        13251,
+        48
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "e3235960a7f6d47d6c805fc8f3bf28fec7f8e0d7cc1170e1bacc01cffc6f5590",
+      "yellow_rgba_sha256": "e3235960a7f6d47d6c805fc8f3bf28fec7f8e0d7cc1170e1bacc01cffc6f5590"
+    },
+    {
+      "source": [
+        3251,
+        49
+      ],
+      "packed": [
+        13251,
+        49
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "e70758b0df9dd4cc25c6d63c99c2cc3b18b3c582031ec57b7e6bf573c13cb1f6",
+      "yellow_rgba_sha256": "e70758b0df9dd4cc25c6d63c99c2cc3b18b3c582031ec57b7e6bf573c13cb1f6"
+    },
+    {
+      "source": [
+        3251,
+        50
+      ],
+      "packed": [
+        13251,
+        50
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "40ec268d920985c16116ff1fe8ed4c1c48f20268a069109d087ec79745cc4879",
+      "yellow_rgba_sha256": "40ec268d920985c16116ff1fe8ed4c1c48f20268a069109d087ec79745cc4879"
+    },
+    {
+      "source": [
+        3251,
+        51
+      ],
+      "packed": [
+        13251,
+        51
+      ],
+      "axis": [
+        216,
+        169
+      ],
+      "source_rgba_sha256": "f8fe7795203f5e93985979c48e7b1eebdc43013d634c8d826b4339f65798ed69",
+      "yellow_rgba_sha256": "f8fe7795203f5e93985979c48e7b1eebdc43013d634c8d826b4339f65798ed69"
+    },
+    {
+      "source": [
+        3251,
+        52
+      ],
+      "packed": [
+        13251,
+        52
+      ],
+      "axis": [
+        216,
+        168
+      ],
+      "source_rgba_sha256": "c17ecb9afe7eef2fc158e1a8994cdd1a467d12683bc702fa95810438bbfa2784",
+      "yellow_rgba_sha256": "c17ecb9afe7eef2fc158e1a8994cdd1a467d12683bc702fa95810438bbfa2784"
+    },
+    {
+      "source": [
+        3251,
+        53
+      ],
+      "packed": [
+        13251,
+        53
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "62ccd28984f25299d2049bb765f9cc74617d98e479e4b26a8c290e31c9507f35",
+      "yellow_rgba_sha256": "62ccd28984f25299d2049bb765f9cc74617d98e479e4b26a8c290e31c9507f35"
+    },
+    {
+      "source": [
+        3251,
+        54
+      ],
+      "packed": [
+        13251,
+        54
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "d4b36adeef568190eaec082972a15b33bf5e07b11e35de2da660c311d0b40fa3",
+      "yellow_rgba_sha256": "d4b36adeef568190eaec082972a15b33bf5e07b11e35de2da660c311d0b40fa3"
+    },
+    {
+      "source": [
+        3251,
+        55
+      ],
+      "packed": [
+        13251,
+        55
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "cdf96db157a196f5dd1cd6d90ce608e7885b43398eb9929ce60d31cb1da60483",
+      "yellow_rgba_sha256": "cdf96db157a196f5dd1cd6d90ce608e7885b43398eb9929ce60d31cb1da60483"
+    },
+    {
+      "source": [
+        3251,
+        56
+      ],
+      "packed": [
+        13251,
+        56
+      ],
+      "axis": [
+        216,
+        169
+      ],
+      "source_rgba_sha256": "c91f84894fa97cfb9c6ab04634b20062a19f9c5c01544e645c63e9c79723642d",
+      "yellow_rgba_sha256": "c91f84894fa97cfb9c6ab04634b20062a19f9c5c01544e645c63e9c79723642d"
+    },
+    {
+      "source": [
+        3251,
+        57
+      ],
+      "packed": [
+        13251,
+        57
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "901150c23147107837f248f7e111216febab595091dec871f48a927cf2159f68",
+      "yellow_rgba_sha256": "901150c23147107837f248f7e111216febab595091dec871f48a927cf2159f68"
+    },
+    {
+      "source": [
+        3251,
+        58
+      ],
+      "packed": [
+        13251,
+        58
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "ce380f81aa4c73035ad0a59935ad8625f26391c97c9bd5b9b62cc25d57b3863e",
+      "yellow_rgba_sha256": "ce380f81aa4c73035ad0a59935ad8625f26391c97c9bd5b9b62cc25d57b3863e"
+    },
+    {
+      "source": [
+        3251,
+        59
+      ],
+      "packed": [
+        13251,
+        59
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "28aa5fa95bee41fbfa468c757609a08d2b98d7e00fd58685f22efa358d67cdd1",
+      "yellow_rgba_sha256": "28aa5fa95bee41fbfa468c757609a08d2b98d7e00fd58685f22efa358d67cdd1"
+    },
+    {
+      "source": [
+        3251,
+        60
+      ],
+      "packed": [
+        13251,
+        60
+      ],
+      "axis": [
+        215,
+        167
+      ],
+      "source_rgba_sha256": "382e7760bd45c6698e0d789a3884572d98e218dbbcd83e616aea1b715c557e4b",
+      "yellow_rgba_sha256": "382e7760bd45c6698e0d789a3884572d98e218dbbcd83e616aea1b715c557e4b"
+    },
+    {
+      "source": [
+        3251,
+        61
+      ],
+      "packed": [
+        13251,
+        61
+      ],
+      "axis": [
+        215,
+        168
+      ],
+      "source_rgba_sha256": "fe07a84dd588ef417551d63a1072068c62ac832a78ecf4fe6670a6dcd1e48aca",
+      "yellow_rgba_sha256": "fe07a84dd588ef417551d63a1072068c62ac832a78ecf4fe6670a6dcd1e48aca"
+    },
+    {
+      "source": [
+        3251,
+        62
+      ],
+      "packed": [
+        13251,
+        62
+      ],
+      "axis": [
+        214,
+        167
+      ],
+      "source_rgba_sha256": "fdfbf02c244cbd8a236166ee6fe86e42fa39002a1a148fc180b2bedb276b292e",
+      "yellow_rgba_sha256": "fdfbf02c244cbd8a236166ee6fe86e42fa39002a1a148fc180b2bedb276b292e"
+    },
+    {
+      "source": [
+        3251,
+        63
+      ],
+      "packed": [
+        13251,
+        63
+      ],
+      "axis": [
+        212,
+        167
+      ],
+      "source_rgba_sha256": "2a571e3d0e9adabb55cde0607394279c73f46eebe92c7d45f300d2ef94175c2c",
+      "yellow_rgba_sha256": "2a571e3d0e9adabb55cde0607394279c73f46eebe92c7d45f300d2ef94175c2c"
+    },
+    {
+      "source": [
+        3251,
+        64
+      ],
+      "packed": [
+        13251,
+        64
+      ],
+      "axis": [
+        211,
+        167
+      ],
+      "source_rgba_sha256": "a4e6d4929629702e763dff64e6eba583e47e9c88060654a38afe9f6e6b3c699e",
+      "yellow_rgba_sha256": "a4e6d4929629702e763dff64e6eba583e47e9c88060654a38afe9f6e6b3c699e"
+    },
+    {
+      "source": [
+        3251,
+        65
+      ],
+      "packed": [
+        13251,
+        65
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "72ce0bf91d8ff793ee79985872c4f7b049dcc75ca3b55340d022f8747b1fb95c",
+      "yellow_rgba_sha256": "72ce0bf91d8ff793ee79985872c4f7b049dcc75ca3b55340d022f8747b1fb95c"
+    },
+    {
+      "source": [
+        3251,
+        66
+      ],
+      "packed": [
+        13251,
+        66
+      ],
+      "axis": [
+        199,
+        165
+      ],
+      "source_rgba_sha256": "9188495c71036fc0947855b547381d9f2ad8e2db9643e21843487e551111e99b",
+      "yellow_rgba_sha256": "9188495c71036fc0947855b547381d9f2ad8e2db9643e21843487e551111e99b"
+    },
+    {
+      "source": [
+        3252,
+        0
+      ],
+      "packed": [
+        13252,
+        0
+      ],
+      "axis": [
+        191,
+        157
+      ],
+      "source_rgba_sha256": "55066fd8b10f48c760f193bcc17d1d2ff4df521eb0668bcab7200f98b5e2aa10",
+      "yellow_rgba_sha256": "55066fd8b10f48c760f193bcc17d1d2ff4df521eb0668bcab7200f98b5e2aa10"
+    },
+    {
+      "source": [
+        3252,
+        1
+      ],
+      "packed": [
+        13252,
+        1
+      ],
+      "axis": [
+        203,
+        159
+      ],
+      "source_rgba_sha256": "030cb7269f09a5d01e7e318db5a0ff4bc49b596df4ce5479c9e956bb812ff7e1",
+      "yellow_rgba_sha256": "030cb7269f09a5d01e7e318db5a0ff4bc49b596df4ce5479c9e956bb812ff7e1"
+    },
+    {
+      "source": [
+        3252,
+        2
+      ],
+      "packed": [
+        13252,
+        2
+      ],
+      "axis": [
+        204,
+        157
+      ],
+      "source_rgba_sha256": "3ad8cb150d8bf45948c89d0da817800361cdf8e0eae69477c680287643d7a9e1",
+      "yellow_rgba_sha256": "3ad8cb150d8bf45948c89d0da817800361cdf8e0eae69477c680287643d7a9e1"
+    },
+    {
+      "source": [
+        3252,
+        3
+      ],
+      "packed": [
+        13252,
+        3
+      ],
+      "axis": [
+        209,
+        162
+      ],
+      "source_rgba_sha256": "2331268bdbb65635489854c13d21a7c31d470d4d03334cfdd7525a8e1464eb73",
+      "yellow_rgba_sha256": "2331268bdbb65635489854c13d21a7c31d470d4d03334cfdd7525a8e1464eb73"
+    },
+    {
+      "source": [
+        3252,
+        4
+      ],
+      "packed": [
+        13252,
+        4
+      ],
+      "axis": [
+        210,
+        161
+      ],
+      "source_rgba_sha256": "811557007bb205ce87048a994232f707282777f92630ea31613d9defa31501d1",
+      "yellow_rgba_sha256": "811557007bb205ce87048a994232f707282777f92630ea31613d9defa31501d1"
+    },
+    {
+      "source": [
+        3252,
+        5
+      ],
+      "packed": [
+        13252,
+        5
+      ],
+      "axis": [
+        210,
+        164
+      ],
+      "source_rgba_sha256": "92b4ea3939df471aa8bd5a1f2b0d818d3b5b1a637aa422f15e93e0fb4522e09a",
+      "yellow_rgba_sha256": "92b4ea3939df471aa8bd5a1f2b0d818d3b5b1a637aa422f15e93e0fb4522e09a"
+    },
+    {
+      "source": [
+        3252,
+        6
+      ],
+      "packed": [
+        13252,
+        6
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "7af43d7ac38e76002c4262db3fe268750d842180afdf7f2ee7d11e17b3317037",
+      "yellow_rgba_sha256": "7af43d7ac38e76002c4262db3fe268750d842180afdf7f2ee7d11e17b3317037"
+    },
+    {
+      "source": [
+        3252,
+        7
+      ],
+      "packed": [
+        13252,
+        7
+      ],
+      "axis": [
+        213,
+        165
+      ],
+      "source_rgba_sha256": "5e7747450ad0fad30abeb2f30267f61acd317d738c42be05c7ecbf8de95a9f6d",
+      "yellow_rgba_sha256": "5e7747450ad0fad30abeb2f30267f61acd317d738c42be05c7ecbf8de95a9f6d"
+    },
+    {
+      "source": [
+        3252,
+        8
+      ],
+      "packed": [
+        13252,
+        8
+      ],
+      "axis": [
+        211,
+        164
+      ],
+      "source_rgba_sha256": "c0527b66055102fc187365e1b00288ff5ac7ebef7f4d63012cc1a123e52e1794",
+      "yellow_rgba_sha256": "c0527b66055102fc187365e1b00288ff5ac7ebef7f4d63012cc1a123e52e1794"
+    },
+    {
+      "source": [
+        3252,
+        9
+      ],
+      "packed": [
+        13252,
+        9
+      ],
+      "axis": [
+        213,
+        164
+      ],
+      "source_rgba_sha256": "7d2d47430905f9893abfae21671b4efb8f5a24d49ec8ee232060b9fc38043bd4",
+      "yellow_rgba_sha256": "7d2d47430905f9893abfae21671b4efb8f5a24d49ec8ee232060b9fc38043bd4"
+    },
+    {
+      "source": [
+        3252,
+        10
+      ],
+      "packed": [
+        13252,
+        10
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "4b47b4ea96771ed709544f55259ba99c28439320b339a06aa7a4cb010da8ad43",
+      "yellow_rgba_sha256": "4b47b4ea96771ed709544f55259ba99c28439320b339a06aa7a4cb010da8ad43"
+    },
+    {
+      "source": [
+        3252,
+        11
+      ],
+      "packed": [
+        13252,
+        11
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "c5401201247131216758cbdfa403a6ccc47ecbbb1b90749dfc7134d775cf8cfa",
+      "yellow_rgba_sha256": "c5401201247131216758cbdfa403a6ccc47ecbbb1b90749dfc7134d775cf8cfa"
+    },
+    {
+      "source": [
+        3252,
+        12
+      ],
+      "packed": [
+        13252,
+        12
+      ],
+      "axis": [
+        213,
+        165
+      ],
+      "source_rgba_sha256": "0165bcf0f486b3626f5eb99262c4a598548b74301b4dde582255300713d28c29",
+      "yellow_rgba_sha256": "0165bcf0f486b3626f5eb99262c4a598548b74301b4dde582255300713d28c29"
+    },
+    {
+      "source": [
+        3252,
+        13
+      ],
+      "packed": [
+        13252,
+        13
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "dd941bdd3f7914e795030b9c390ea0aa17ec18628d85f1a2649165d145bd6c0b",
+      "yellow_rgba_sha256": "dd941bdd3f7914e795030b9c390ea0aa17ec18628d85f1a2649165d145bd6c0b"
+    },
+    {
+      "source": [
+        3252,
+        14
+      ],
+      "packed": [
+        13252,
+        14
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "b86ed790bc4a68c71df988082617e085f3f09ba7d569c93b71566a0380e26fb2",
+      "yellow_rgba_sha256": "b86ed790bc4a68c71df988082617e085f3f09ba7d569c93b71566a0380e26fb2"
+    },
+    {
+      "source": [
+        3252,
+        15
+      ],
+      "packed": [
+        13252,
+        15
+      ],
+      "axis": [
+        213,
+        165
+      ],
+      "source_rgba_sha256": "5e91f1dbea349a2b768678feecdf8b98517450f0eab726e1c066b07f6c2cbf36",
+      "yellow_rgba_sha256": "5e91f1dbea349a2b768678feecdf8b98517450f0eab726e1c066b07f6c2cbf36"
+    },
+    {
+      "source": [
+        3252,
+        16
+      ],
+      "packed": [
+        13252,
+        16
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "928dae492f49b45a0abc8b9d1f789e9d24f97b80fd9bb4625645808c4607d7c0",
+      "yellow_rgba_sha256": "928dae492f49b45a0abc8b9d1f789e9d24f97b80fd9bb4625645808c4607d7c0"
+    },
+    {
+      "source": [
+        3252,
+        17
+      ],
+      "packed": [
+        13252,
+        17
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "3550ba332efda3737f65eab8809462c9b940ea266abc6a01c2f8ec2293a8457b",
+      "yellow_rgba_sha256": "3550ba332efda3737f65eab8809462c9b940ea266abc6a01c2f8ec2293a8457b"
+    },
+    {
+      "source": [
+        3252,
+        18
+      ],
+      "packed": [
+        13252,
+        18
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "7391dffdae3a94d3989976c1572b79549a009d0ba46fb06530e5dadec97b45cd",
+      "yellow_rgba_sha256": "7391dffdae3a94d3989976c1572b79549a009d0ba46fb06530e5dadec97b45cd"
+    },
+    {
+      "source": [
+        3252,
+        19
+      ],
+      "packed": [
+        13252,
+        19
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "16251df746fc361c188ddfce43a41393f714954c17996d53e01596190c77628f",
+      "yellow_rgba_sha256": "16251df746fc361c188ddfce43a41393f714954c17996d53e01596190c77628f"
+    },
+    {
+      "source": [
+        3252,
+        20
+      ],
+      "packed": [
+        13252,
+        20
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "a0138b2c15f4da8cd98adb8cedd754673c5685da74589f07aabf66544e1ecf45",
+      "yellow_rgba_sha256": "a0138b2c15f4da8cd98adb8cedd754673c5685da74589f07aabf66544e1ecf45"
+    },
+    {
+      "source": [
+        3252,
+        21
+      ],
+      "packed": [
+        13252,
+        21
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "9dff6aee2ba3400c807dc614dd7d821d09f98873856caf6d990a03bd6154b751",
+      "yellow_rgba_sha256": "9dff6aee2ba3400c807dc614dd7d821d09f98873856caf6d990a03bd6154b751"
+    },
+    {
+      "source": [
+        3252,
+        22
+      ],
+      "packed": [
+        13252,
+        22
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "679594959a717b9d44a87b58627e1ee39aa959d105d19d404cdb317dbe68fbba",
+      "yellow_rgba_sha256": "679594959a717b9d44a87b58627e1ee39aa959d105d19d404cdb317dbe68fbba"
+    },
+    {
+      "source": [
+        3252,
+        23
+      ],
+      "packed": [
+        13252,
+        23
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "f12ea87f905b1a72ffaca9a40af9febce6b216f63bce164717e03afa65e1280c",
+      "yellow_rgba_sha256": "f12ea87f905b1a72ffaca9a40af9febce6b216f63bce164717e03afa65e1280c"
+    },
+    {
+      "source": [
+        3252,
+        24
+      ],
+      "packed": [
+        13252,
+        24
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "98fedb965853eddf62a66b33a8beb37286567278444d9f8ebba50aa9306e6a68",
+      "yellow_rgba_sha256": "98fedb965853eddf62a66b33a8beb37286567278444d9f8ebba50aa9306e6a68"
+    },
+    {
+      "source": [
+        3252,
+        25
+      ],
+      "packed": [
+        13252,
+        25
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "9f3eeaca6717b3f40b80cf65d462dfbe2ac3388962b04c95c9afa675c40d2ebc",
+      "yellow_rgba_sha256": "9f3eeaca6717b3f40b80cf65d462dfbe2ac3388962b04c95c9afa675c40d2ebc"
+    },
+    {
+      "source": [
+        3252,
+        26
+      ],
+      "packed": [
+        13252,
+        26
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "f777e9e973336a5c08914eec7bf4f06b36c5075356dc2d00b0cd16c996a1d16e",
+      "yellow_rgba_sha256": "f777e9e973336a5c08914eec7bf4f06b36c5075356dc2d00b0cd16c996a1d16e"
+    },
+    {
+      "source": [
+        3252,
+        27
+      ],
+      "packed": [
+        13252,
+        27
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "9d982c433e93976b38a2e1d7533775b1fc06d0f749284e38220b433fbcaa5289",
+      "yellow_rgba_sha256": "9d982c433e93976b38a2e1d7533775b1fc06d0f749284e38220b433fbcaa5289"
+    },
+    {
+      "source": [
+        3252,
+        28
+      ],
+      "packed": [
+        13252,
+        28
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "1b9192a2aa7a470f76d5fe670274b2226541a9384829c5e1eb6833c1c0cc4c42",
+      "yellow_rgba_sha256": "1b9192a2aa7a470f76d5fe670274b2226541a9384829c5e1eb6833c1c0cc4c42"
+    },
+    {
+      "source": [
+        3252,
+        29
+      ],
+      "packed": [
+        13252,
+        29
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "f8a807cdf976d3ec4a76a3503a9e9b28c8471a08646f0c22ce26c5ae3898ecdb",
+      "yellow_rgba_sha256": "f8a807cdf976d3ec4a76a3503a9e9b28c8471a08646f0c22ce26c5ae3898ecdb"
+    },
+    {
+      "source": [
+        3252,
+        30
+      ],
+      "packed": [
+        13252,
+        30
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "b8407cb549ba00d7e8f9e396921490d08bcbd2e757e8780df3698f1b7d914b45",
+      "yellow_rgba_sha256": "b8407cb549ba00d7e8f9e396921490d08bcbd2e757e8780df3698f1b7d914b45"
+    },
+    {
+      "source": [
+        3252,
+        31
+      ],
+      "packed": [
+        13252,
+        31
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "b57f0f3a6d7517b2e51794ba8e53e67b9fff81d96662c040711586f169e98960",
+      "yellow_rgba_sha256": "b57f0f3a6d7517b2e51794ba8e53e67b9fff81d96662c040711586f169e98960"
+    },
+    {
+      "source": [
+        3252,
+        32
+      ],
+      "packed": [
+        13252,
+        32
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "633541ce2198e721f9d01d20207971717e4d335e0781c202454cb27cfc951eb6",
+      "yellow_rgba_sha256": "633541ce2198e721f9d01d20207971717e4d335e0781c202454cb27cfc951eb6"
+    },
+    {
+      "source": [
+        3252,
+        33
+      ],
+      "packed": [
+        13252,
+        33
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "ab4833de21b6adec8fa6662c60d238f0ecef6c969edd62564e01e341afe51c66",
+      "yellow_rgba_sha256": "ab4833de21b6adec8fa6662c60d238f0ecef6c969edd62564e01e341afe51c66"
+    },
+    {
+      "source": [
+        3252,
+        34
+      ],
+      "packed": [
+        13252,
+        34
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "f15064f8707122fbecb3e695c626a95af707ec49048352261d0d7ca08d08ed17",
+      "yellow_rgba_sha256": "f15064f8707122fbecb3e695c626a95af707ec49048352261d0d7ca08d08ed17"
+    },
+    {
+      "source": [
+        3252,
+        35
+      ],
+      "packed": [
+        13252,
+        35
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "774e8665ee8b6a863067b9ff43a77b3903b8b8bd5d920e1b587b908117a0a13e",
+      "yellow_rgba_sha256": "774e8665ee8b6a863067b9ff43a77b3903b8b8bd5d920e1b587b908117a0a13e"
+    },
+    {
+      "source": [
+        3252,
+        36
+      ],
+      "packed": [
+        13252,
+        36
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "2a0a61993034ce0d70c5c03b43d69a2b512c7030a1f834c6710679540e580a94",
+      "yellow_rgba_sha256": "2a0a61993034ce0d70c5c03b43d69a2b512c7030a1f834c6710679540e580a94"
+    },
+    {
+      "source": [
+        3252,
+        37
+      ],
+      "packed": [
+        13252,
+        37
+      ],
+      "axis": [
+        212,
+        163
+      ],
+      "source_rgba_sha256": "da284e8c5333ed9cdb4a4f92a93997a01bd762d5e63b745bf538394517ae220e",
+      "yellow_rgba_sha256": "da284e8c5333ed9cdb4a4f92a93997a01bd762d5e63b745bf538394517ae220e"
+    },
+    {
+      "source": [
+        3252,
+        38
+      ],
+      "packed": [
+        13252,
+        38
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "e87c17ff872f019235271a8412c3310b7dee62263ca20c08fa45eeda9e564b7f",
+      "yellow_rgba_sha256": "e87c17ff872f019235271a8412c3310b7dee62263ca20c08fa45eeda9e564b7f"
+    },
+    {
+      "source": [
+        3252,
+        39
+      ],
+      "packed": [
+        13252,
+        39
+      ],
+      "axis": [
+        212,
+        163
+      ],
+      "source_rgba_sha256": "64c5d8fd01bf24bed8bc6f7f4437a13375d8d2450f2113fa0a504ec315b690ba",
+      "yellow_rgba_sha256": "64c5d8fd01bf24bed8bc6f7f4437a13375d8d2450f2113fa0a504ec315b690ba"
+    },
+    {
+      "source": [
+        3252,
+        40
+      ],
+      "packed": [
+        13252,
+        40
+      ],
+      "axis": [
+        213,
+        165
+      ],
+      "source_rgba_sha256": "34694c430aa4e37fc66849f34c59c724a09153c2614739e779e43a3279749676",
+      "yellow_rgba_sha256": "34694c430aa4e37fc66849f34c59c724a09153c2614739e779e43a3279749676"
+    },
+    {
+      "source": [
+        3252,
+        41
+      ],
+      "packed": [
+        13252,
+        41
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "7cfe7bbf58ffb2e633ec73781ea7b75174967b538ad74a02515ee50a4c811765",
+      "yellow_rgba_sha256": "7cfe7bbf58ffb2e633ec73781ea7b75174967b538ad74a02515ee50a4c811765"
+    },
+    {
+      "source": [
+        3252,
+        42
+      ],
+      "packed": [
+        13252,
+        42
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "ebda7fd002d01dbe35f925242c51017ec3ddcdb4ba11a06486b5b2642578b8fc",
+      "yellow_rgba_sha256": "ebda7fd002d01dbe35f925242c51017ec3ddcdb4ba11a06486b5b2642578b8fc"
+    },
+    {
+      "source": [
+        3252,
+        43
+      ],
+      "packed": [
+        13252,
+        43
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "7c57fa340219269f69b1b4a710601afe3338f673baf45cc6c4e9b1c98e085eca",
+      "yellow_rgba_sha256": "7c57fa340219269f69b1b4a710601afe3338f673baf45cc6c4e9b1c98e085eca"
+    },
+    {
+      "source": [
+        3252,
+        44
+      ],
+      "packed": [
+        13252,
+        44
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "a1e20805ccbd2bdc02c79dd3299ddc807339964f5adf0f1afe5ad90f15f1de57",
+      "yellow_rgba_sha256": "a1e20805ccbd2bdc02c79dd3299ddc807339964f5adf0f1afe5ad90f15f1de57"
+    },
+    {
+      "source": [
+        3252,
+        45
+      ],
+      "packed": [
+        13252,
+        45
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "793c358eb650c52288fc477d7ff79fe567e3502b77e716d0ae866ef91162f1ed",
+      "yellow_rgba_sha256": "793c358eb650c52288fc477d7ff79fe567e3502b77e716d0ae866ef91162f1ed"
+    },
+    {
+      "source": [
+        3252,
+        46
+      ],
+      "packed": [
+        13252,
+        46
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "fc1eecc487b9ad821d8d6fd45a27ba3e61a378fc76baf8599a58a7de924984ac",
+      "yellow_rgba_sha256": "fc1eecc487b9ad821d8d6fd45a27ba3e61a378fc76baf8599a58a7de924984ac"
+    },
+    {
+      "source": [
+        3252,
+        47
+      ],
+      "packed": [
+        13252,
+        47
+      ],
+      "axis": [
+        212,
+        166
+      ],
+      "source_rgba_sha256": "c97ce8fcd2d75b67864664f701d1128cdbe19c7cdad400bbc5bde80ecbc950ce",
+      "yellow_rgba_sha256": "c97ce8fcd2d75b67864664f701d1128cdbe19c7cdad400bbc5bde80ecbc950ce"
+    },
+    {
+      "source": [
+        3252,
+        48
+      ],
+      "packed": [
+        13252,
+        48
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "b5f9ad8821cfe5cf1abf3d4af16b97a1c7a91d820447518b07c61ce1733b47b8",
+      "yellow_rgba_sha256": "b5f9ad8821cfe5cf1abf3d4af16b97a1c7a91d820447518b07c61ce1733b47b8"
+    },
+    {
+      "source": [
+        3252,
+        49
+      ],
+      "packed": [
+        13252,
+        49
+      ],
+      "axis": [
+        210,
+        165
+      ],
+      "source_rgba_sha256": "01ecc6f260f92d462fe7412bb0174ac3389f02d7676750fc9f965a92d4c4b6be",
+      "yellow_rgba_sha256": "01ecc6f260f92d462fe7412bb0174ac3389f02d7676750fc9f965a92d4c4b6be"
+    },
+    {
+      "source": [
+        3252,
+        50
+      ],
+      "packed": [
+        13252,
+        50
+      ],
+      "axis": [
+        213,
+        165
+      ],
+      "source_rgba_sha256": "f5418cf081ade36f81dc57a5ed1a68fb602ec07a441d6777329526faf3c99900",
+      "yellow_rgba_sha256": "f5418cf081ade36f81dc57a5ed1a68fb602ec07a441d6777329526faf3c99900"
+    },
+    {
+      "source": [
+        3252,
+        51
+      ],
+      "packed": [
+        13252,
+        51
+      ],
+      "axis": [
+        213,
+        166
+      ],
+      "source_rgba_sha256": "0f74b36a5eccb371e8f0c157863bd3cee41d2eeb9047b79f0c2eefc939a2efa6",
+      "yellow_rgba_sha256": "0f74b36a5eccb371e8f0c157863bd3cee41d2eeb9047b79f0c2eefc939a2efa6"
+    },
+    {
+      "source": [
+        3252,
+        52
+      ],
+      "packed": [
+        13252,
+        52
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "ce1d427a8fa28bb8ba16ec97c5ef6f7d32fe736456b8b4441b1cdbc3734628eb",
+      "yellow_rgba_sha256": "ce1d427a8fa28bb8ba16ec97c5ef6f7d32fe736456b8b4441b1cdbc3734628eb"
+    },
+    {
+      "source": [
+        3252,
+        53
+      ],
+      "packed": [
+        13252,
+        53
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "6ac5a407b946e34672530b5de60d905f7cc3cc54142eca6acd7c57831df7095a",
+      "yellow_rgba_sha256": "6ac5a407b946e34672530b5de60d905f7cc3cc54142eca6acd7c57831df7095a"
+    },
+    {
+      "source": [
+        3252,
+        54
+      ],
+      "packed": [
+        13252,
+        54
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "b694464c6058fefbce96f566648bf0832b6f67c7a6c1af700cdfc620b560b5de",
+      "yellow_rgba_sha256": "b694464c6058fefbce96f566648bf0832b6f67c7a6c1af700cdfc620b560b5de"
+    },
+    {
+      "source": [
+        3252,
+        55
+      ],
+      "packed": [
+        13252,
+        55
+      ],
+      "axis": [
+        212,
+        164
+      ],
+      "source_rgba_sha256": "c929a147ec89c330e4c01dbaf9cc1ce11e2f18164aef801e6c5fd8d0c33f4c11",
+      "yellow_rgba_sha256": "c929a147ec89c330e4c01dbaf9cc1ce11e2f18164aef801e6c5fd8d0c33f4c11"
+    },
+    {
+      "source": [
+        3252,
+        56
+      ],
+      "packed": [
+        13252,
+        56
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "cd21e7c3822312d0b96edc80bb62e3fc31bcf0dc4941f7be07b9aade254351c8",
+      "yellow_rgba_sha256": "cd21e7c3822312d0b96edc80bb62e3fc31bcf0dc4941f7be07b9aade254351c8"
+    },
+    {
+      "source": [
+        3252,
+        57
+      ],
+      "packed": [
+        13252,
+        57
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "bf4497dc01a8c4995bf3f6550c46cb296875c4e38fd1db55bc954c4362895a2c",
+      "yellow_rgba_sha256": "bf4497dc01a8c4995bf3f6550c46cb296875c4e38fd1db55bc954c4362895a2c"
+    },
+    {
+      "source": [
+        3252,
+        58
+      ],
+      "packed": [
+        13252,
+        58
+      ],
+      "axis": [
+        212,
+        165
+      ],
+      "source_rgba_sha256": "92e6fe1457a7846c097b6f972c8c263d46c77d0ddf15a2dcb6dbcf1ea63a1b71",
+      "yellow_rgba_sha256": "92e6fe1457a7846c097b6f972c8c263d46c77d0ddf15a2dcb6dbcf1ea63a1b71"
+    },
+    {
+      "source": [
+        3252,
+        59
+      ],
+      "packed": [
+        13252,
+        59
+      ],
+      "axis": [
+        211,
+        165
+      ],
+      "source_rgba_sha256": "2da7474f4f97d5ab81a53599d4a366031b6c5dc7866f9c72b77a7659419d21e1",
+      "yellow_rgba_sha256": "2da7474f4f97d5ab81a53599d4a366031b6c5dc7866f9c72b77a7659419d21e1"
+    },
+    {
+      "source": [
+        3252,
+        60
+      ],
+      "packed": [
+        13252,
+        60
+      ],
+      "axis": [
+        211,
+        164
+      ],
+      "source_rgba_sha256": "d5f80e1c5e1519c7e516e3330c11be195f1ca107fe7bd67ed49d43ed6a4535fa",
+      "yellow_rgba_sha256": "d5f80e1c5e1519c7e516e3330c11be195f1ca107fe7bd67ed49d43ed6a4535fa"
+    },
+    {
+      "source": [
+        3252,
+        61
+      ],
+      "packed": [
+        13252,
+        61
+      ],
+      "axis": [
+        210,
+        164
+      ],
+      "source_rgba_sha256": "eb12bebfc2e665449ac6421d31d5cff68a4e90af7e6ccf7a46f3b6783b293ca5",
+      "yellow_rgba_sha256": "eb12bebfc2e665449ac6421d31d5cff68a4e90af7e6ccf7a46f3b6783b293ca5"
+    },
+    {
+      "source": [
+        3252,
+        62
+      ],
+      "packed": [
+        13252,
+        62
+      ],
+      "axis": [
+        210,
+        163
+      ],
+      "source_rgba_sha256": "598d4725f9da43dbc68bf39c308415742a4f826284f32930d68f71d4f51d48c8",
+      "yellow_rgba_sha256": "598d4725f9da43dbc68bf39c308415742a4f826284f32930d68f71d4f51d48c8"
+    },
+    {
+      "source": [
+        3252,
+        63
+      ],
+      "packed": [
+        13252,
+        63
+      ],
+      "axis": [
+        207,
+        162
+      ],
+      "source_rgba_sha256": "6872e3eb567aa9517f7e9f335ce880a73ee993b719e8cdbe356d22be8561f0ca",
+      "yellow_rgba_sha256": "6872e3eb567aa9517f7e9f335ce880a73ee993b719e8cdbe356d22be8561f0ca"
+    },
+    {
+      "source": [
+        3252,
+        64
+      ],
+      "packed": [
+        13252,
+        64
+      ],
+      "axis": [
+        206,
+        162
+      ],
+      "source_rgba_sha256": "5de9f7b3176aa3d4aed6ec33c10d73c1f8242243e3e34a076052d1de17f40048",
+      "yellow_rgba_sha256": "5de9f7b3176aa3d4aed6ec33c10d73c1f8242243e3e34a076052d1de17f40048"
+    },
+    {
+      "source": [
+        3252,
+        65
+      ],
+      "packed": [
+        13252,
+        65
+      ],
+      "axis": [
+        205,
+        158
+      ],
+      "source_rgba_sha256": "54d6493929d816f520128811bb661749ba7ad6a43cf4d15879d9057922557276",
+      "yellow_rgba_sha256": "54d6493929d816f520128811bb661749ba7ad6a43cf4d15879d9057922557276"
+    },
+    {
+      "source": [
+        3252,
+        66
+      ],
+      "packed": [
+        13252,
+        66
+      ],
+      "axis": [
+        187,
+        160
+      ],
+      "source_rgba_sha256": "837a4cfcfb60cd29091fb81a01ebfa7144f73e186f7645a930b5030c952bf316",
+      "yellow_rgba_sha256": "837a4cfcfb60cd29091fb81a01ebfa7144f73e186f7645a930b5030c952bf316"
+    },
+    {
+      "source": [
+        3252,
+        67
+      ],
+      "packed": [
+        13252,
+        67
+      ],
+      "axis": [
+        120,
+        159
+      ],
+      "source_rgba_sha256": "cdb1816ab61a8b171b566be86530857879bf2e52dc491d17e535fb96b559bfdd",
+      "yellow_rgba_sha256": "cdb1816ab61a8b171b566be86530857879bf2e52dc491d17e535fb96b559bfdd"
+    },
+    {
+      "source": [
+        4005,
+        0
+      ],
+      "packed": [
+        14005,
+        0
+      ],
+      "axis": [
+        67,
+        121
+      ],
+      "source_rgba_sha256": "2c0401be698faddd2c1140577f404d967bf848849662af94c53caf8e792ae333",
+      "yellow_rgba_sha256": "45da4c710932b715a424b97b05e6ca8b51278c2bad744859a83dffe5e61ab3d8"
+    },
+    {
+      "source": [
+        4005,
+        1
+      ],
+      "packed": [
+        14005,
+        1
+      ],
+      "axis": [
+        96,
+        218
+      ],
+      "source_rgba_sha256": "1e7cdaa3f02ed0ccc83f944cbad0ceb5d0bbceacfd24c75822497db3601b873e",
+      "yellow_rgba_sha256": "b3ed6b3ca2bb6dea20470c67443e41550b3ebf479b3bafbb10d323b04b8eeca6"
+    },
+    {
+      "source": [
+        4005,
+        2
+      ],
+      "packed": [
+        14005,
+        2
+      ],
+      "axis": [
+        96,
+        238
+      ],
+      "source_rgba_sha256": "8cd0b4f7c666ecbe52c7b9a6a60c9119b4cbd90c64135732b504f65fe9cd8c10",
+      "yellow_rgba_sha256": "8cd0b4f7c666ecbe52c7b9a6a60c9119b4cbd90c64135732b504f65fe9cd8c10"
+    },
+    {
+      "source": [
+        4005,
+        3
+      ],
+      "packed": [
+        14005,
+        3
+      ],
+      "axis": [
+        96,
+        254
+      ],
+      "source_rgba_sha256": "1af31b1df8e80174f064e8152596270f231e92937038afefe7e1bd7b425f88eb",
+      "yellow_rgba_sha256": "1af31b1df8e80174f064e8152596270f231e92937038afefe7e1bd7b425f88eb"
+    },
+    {
+      "source": [
+        4005,
+        4
+      ],
+      "packed": [
+        14005,
+        4
+      ],
+      "axis": [
+        95,
+        263
+      ],
+      "source_rgba_sha256": "9ee936b3d6cee85acb1f2988c8fcbcc2421a2948f153980a18d415986047678b",
+      "yellow_rgba_sha256": "659ada3c6fbeeff1b635ed1ed94123317688ea4458c41afe243e458af4ea9d16"
+    },
+    {
+      "source": [
+        4005,
+        5
+      ],
+      "packed": [
+        14005,
+        5
+      ],
+      "axis": [
+        95,
+        266
+      ],
+      "source_rgba_sha256": "f31b83a99e569e7f54dd3404c67066eb935c5b2c8b455fc20775c87aceded475",
+      "yellow_rgba_sha256": "7ca919a443c42ab0abb4079e9ec221de57a8fba3ffa7a8d1c62c7ef6379484d9"
+    },
+    {
+      "source": [
+        4005,
+        6
+      ],
+      "packed": [
+        14005,
+        6
+      ],
+      "axis": [
+        94,
+        270
+      ],
+      "source_rgba_sha256": "a55ee2db9ce93650f95a5e39baab6fab0388c9786dbb672ef4ea62f721f42f9e",
+      "yellow_rgba_sha256": "a55ee2db9ce93650f95a5e39baab6fab0388c9786dbb672ef4ea62f721f42f9e"
+    },
+    {
+      "source": [
+        4005,
+        7
+      ],
+      "packed": [
+        14005,
+        7
+      ],
+      "axis": [
+        93,
+        271
+      ],
+      "source_rgba_sha256": "951fb45c4c155ddc9c9acb0909057e46e6beec413c5221e60ab4e646a1cbb09c",
+      "yellow_rgba_sha256": "951fb45c4c155ddc9c9acb0909057e46e6beec413c5221e60ab4e646a1cbb09c"
+    },
+    {
+      "source": [
+        4005,
+        8
+      ],
+      "packed": [
+        14005,
+        8
+      ],
+      "axis": [
+        92,
+        270
+      ],
+      "source_rgba_sha256": "8c0620424d53b83eb04ecca4c717ef7cc840479d87982f0f78be8efff7eba7b1",
+      "yellow_rgba_sha256": "5f675b0786e336dc4b9f8837a6b36f7b8fb0ec866d9c56f00716079704d77be1"
+    },
+    {
+      "source": [
+        4005,
+        9
+      ],
+      "packed": [
+        14005,
+        9
+      ],
+      "axis": [
+        89,
+        269
+      ],
+      "source_rgba_sha256": "6f9dd31d4ccf8ea69ccbc72f1e5c7c13ac50d9878c485495b6bd19ec5983f8fc",
+      "yellow_rgba_sha256": "6f9dd31d4ccf8ea69ccbc72f1e5c7c13ac50d9878c485495b6bd19ec5983f8fc"
+    },
+    {
+      "source": [
+        4005,
+        10
+      ],
+      "packed": [
+        14005,
+        10
+      ],
+      "axis": [
+        88,
+        265
+      ],
+      "source_rgba_sha256": "81617a72f8704313228b243a1fd761f5309a875f95692e2fecbba04c3a3ad3a3",
+      "yellow_rgba_sha256": "6ea369af4f79a919b3474c269ef406783b0961356fee9bcc940e420f88bb8c1c"
+    },
+    {
+      "source": [
+        4005,
+        11
+      ],
+      "packed": [
+        14005,
+        11
+      ],
+      "axis": [
+        80,
+        254
+      ],
+      "source_rgba_sha256": "798e36541e467f3725bfea21df363815c51c5316413bf89d522ae972614cf5ba",
+      "yellow_rgba_sha256": "798e36541e467f3725bfea21df363815c51c5316413bf89d522ae972614cf5ba"
+    },
+    {
+      "source": [
+        4005,
+        12
+      ],
+      "packed": [
+        14005,
+        12
+      ],
+      "axis": [
+        80,
+        244
+      ],
+      "source_rgba_sha256": "5249ea6147a6722e431a756619935ad98b7c1559088d6739c634f2c12a41d1a3",
+      "yellow_rgba_sha256": "5249ea6147a6722e431a756619935ad98b7c1559088d6739c634f2c12a41d1a3"
+    },
+    {
+      "source": [
+        4005,
+        13
+      ],
+      "packed": [
+        14005,
+        13
+      ],
+      "axis": [
+        80,
+        226
+      ],
+      "source_rgba_sha256": "d9ca8c466116ad3c6ffa546aa92dc195c367ef05bc0c0e1912909105e67b5ca6",
+      "yellow_rgba_sha256": "d9ca8c466116ad3c6ffa546aa92dc195c367ef05bc0c0e1912909105e67b5ca6"
+    },
+    {
+      "source": [
+        4090,
+        0
+      ],
+      "packed": [
+        14090,
+        0
+      ],
+      "axis": [
+        118,
+        464
+      ],
+      "source_rgba_sha256": "0ab4891f99d9b7d8cdd88ebeb3eaa10cd1304624cd065a2eec74813ad9f13547",
+      "yellow_rgba_sha256": "71eeef7a45d7f9c1b7b937adb920acc70423858165375d206622234960aba625"
+    },
+    {
+      "source": [
+        4090,
+        1
+      ],
+      "packed": [
+        14090,
+        1
+      ],
+      "axis": [
+        101,
+        473
+      ],
+      "source_rgba_sha256": "69428a702b8f7a8be8e31a6b82ad81e5a2b06cc112011ef02604ae8174e6f843",
+      "yellow_rgba_sha256": "f72032df2db246822c2ee45e6a52dcccf4145d2e2c09b012cecde62cfb626e6a"
+    },
+    {
+      "source": [
+        4090,
+        2
+      ],
+      "packed": [
+        14090,
+        2
+      ],
+      "axis": [
+        111,
+        459
+      ],
+      "source_rgba_sha256": "9e664aba1574329f602616c2d30331d601bb15774f64081a7af86e50ea1c48fa",
+      "yellow_rgba_sha256": "aac4c8d39e12ebb6971cbdcb46886ca06ce7d465565e7eeeea23c5bea4597b1c"
+    },
+    {
+      "source": [
+        4090,
+        3
+      ],
+      "packed": [
+        14090,
+        3
+      ],
+      "axis": [
+        107,
+        467
+      ],
+      "source_rgba_sha256": "766e412ebc343834ca5720da873e42db7bc58ea0fae15b076cd5d56db418ce62",
+      "yellow_rgba_sha256": "b08b85dd9ec0657ca91a70ecf5600c0569ad309e4558e4c7c7435e7a72c4b6c3"
+    },
+    {
+      "source": [
+        4090,
+        4
+      ],
+      "packed": [
+        14090,
+        4
+      ],
+      "axis": [
+        96,
+        458
+      ],
+      "source_rgba_sha256": "2e2b9ff4fbc9015ce6476f31e6aa0cd569111a176522561f8eff03d280e90cf9",
+      "yellow_rgba_sha256": "9539ed88175f1a41c742b97fe76297b287644b419b57b37abf41a394e983d951"
+    },
+    {
+      "source": [
+        4090,
+        5
+      ],
+      "packed": [
+        14090,
+        5
+      ],
+      "axis": [
+        102,
+        459
+      ],
+      "source_rgba_sha256": "89d1c829a7d107ce5e92a992fc011f91f44648af1236ddfa0ac1a6048f7b7afe",
+      "yellow_rgba_sha256": "f78c77ce9b9b4e1e42133c55a0ae826ea4125bdade87f7808202fdb345688672"
+    },
+    {
+      "source": [
+        4090,
+        6
+      ],
+      "packed": [
+        14090,
+        6
+      ],
+      "axis": [
+        98,
+        460
+      ],
+      "source_rgba_sha256": "ba1061cc32398e91b0f8a031487b3820d11f5b278f0b8421cc5f8bcd57c60cde",
+      "yellow_rgba_sha256": "2c60276d7eab9c4c8017b3c99b3b0cd8e84f2582dccc2fe544da4a29642c22c5"
+    },
+    {
+      "source": [
+        4090,
+        7
+      ],
+      "packed": [
+        14090,
+        7
+      ],
+      "axis": [
+        105,
+        457
+      ],
+      "source_rgba_sha256": "5eb7541d67d7992876bcc06197ad2bfc18a9359ab04fbe74b3d68aba527fe66f",
+      "yellow_rgba_sha256": "964018c94b9c842878eaee3ed34bd9c16728ea07033ecfcec1d9f4bd59ebafeb"
+    },
+    {
+      "source": [
+        4090,
+        8
+      ],
+      "packed": [
+        14090,
+        8
+      ],
+      "axis": [
+        100,
+        464
+      ],
+      "source_rgba_sha256": "55358976b01e44495cb415bb956d579ae4c66c6816ce08587d3f2b4bfeee3a5c",
+      "yellow_rgba_sha256": "dc6aa34b258addc5997663e774b083f9676e78214f8b0116f80f43b5f5ea98d9"
+    },
+    {
+      "source": [
+        4090,
+        11
+      ],
+      "packed": [
+        14090,
+        11
+      ],
+      "axis": [
+        289,
+        500
+      ],
+      "source_rgba_sha256": "a4ec7a4a393d9dc619f3563a5e81c3efb3c25a223ad4c87d0592e20432b15f6c",
+      "yellow_rgba_sha256": "2a74d8aada786657abba56dec54d2427d0cc3a0f13b41f53a110ff04e16e403f"
+    },
+    {
+      "source": [
+        4090,
+        12
+      ],
+      "packed": [
+        14090,
+        12
+      ],
+      "axis": [
+        286,
+        497
+      ],
+      "source_rgba_sha256": "b8f0bb484f7a91453804cd6b1fd9986168ecbac05f8241616ed0648cdfa92e14",
+      "yellow_rgba_sha256": "e668c66187b64f189a2a977b040036275e5866bf4fb86c10aa57c23752598b49"
+    },
+    {
+      "source": [
+        4090,
+        13
+      ],
+      "packed": [
+        14090,
+        13
+      ],
+      "axis": [
+        267,
+        439
+      ],
+      "source_rgba_sha256": "b4c94ba470193988e3603b71379a39a05f0c3c13aeb3f2ca11a35acddcd9e0c0",
+      "yellow_rgba_sha256": "fc6534695fd75ad2dad112aaa34a8bd97e450085d1239a4f2622c020fa3af381"
+    },
+    {
+      "source": [
+        4090,
+        14
+      ],
+      "packed": [
+        14090,
+        14
+      ],
+      "axis": [
+        244,
+        439
+      ],
+      "source_rgba_sha256": "578040db8c357053210360e42ffc2f22f4754d5d0bf48fd4335ff1a6b509e9ed",
+      "yellow_rgba_sha256": "9846e3488e02c114b8bc3705de658a6ac81645ea94612b93d2c802afaade0fa9"
+    },
+    {
+      "source": [
+        4090,
+        15
+      ],
+      "packed": [
+        14090,
+        15
+      ],
+      "axis": [
+        282,
+        439
+      ],
+      "source_rgba_sha256": "079b40d2ca2e907752fcfca6479c75b0cbcb64faa38a1855e6641b0d36a80032",
+      "yellow_rgba_sha256": "54fe62b40203af07dfae0cd212f9de3b28690aaa7a14b042eefe8a6944fc5ada"
+    },
+    {
+      "source": [
+        4090,
+        16
+      ],
+      "packed": [
+        14090,
+        16
+      ],
+      "axis": [
+        277,
+        590
+      ],
+      "source_rgba_sha256": "a6d0f2e14484568f4454d123d41558fa8844d4b7df0f8d6b9c73539e4b2b8f30",
+      "yellow_rgba_sha256": "d35a5cf64c4f05ff03edeb9f02f9e7c0e51cc93262da8f7c5d2c989f91a949e4"
+    },
+    {
+      "source": [
+        4090,
+        17
+      ],
+      "packed": [
+        14090,
+        17
+      ],
+      "axis": [
+        277,
+        591
+      ],
+      "source_rgba_sha256": "4ce53a8e8abc86c23ad99ef69da008cd1f1d874c847128770744edc062a5ef0f",
+      "yellow_rgba_sha256": "bb26a6737ac3999d500440b211582bd6261292ecc98ea379a2a1359b05d9120c"
+    },
+    {
+      "source": [
+        4090,
+        18
+      ],
+      "packed": [
+        14090,
+        18
+      ],
+      "axis": [
+        281,
+        496
+      ],
+      "source_rgba_sha256": "1c75c62445dbfbec86d5835d63e30227f1a41e3ca7ffb610e900ba0db04e0e33",
+      "yellow_rgba_sha256": "6309ce84d38cfce15a0ec4474bfaf2f70a4714a162c7c12407169a790159f68c"
+    },
+    {
+      "source": [
+        4090,
+        19
+      ],
+      "packed": [
+        14090,
+        19
+      ],
+      "axis": [
+        281,
+        496
+      ],
+      "source_rgba_sha256": "260f16c6a213b9e48f05ee971516eec4955a80c623596129bb13ece7fe61e2ea",
+      "yellow_rgba_sha256": "bab9fb4ae7a7af43208bd3dcb6171e7b58637357cc652c31e1e365024c5d79b1"
+    },
+    {
+      "source": [
+        4090,
+        24
+      ],
+      "packed": [
+        14090,
+        24
+      ],
+      "axis": [
+        183,
+        453
+      ],
+      "source_rgba_sha256": "06350a1a52ba33438432adc49744d6aa340b353fbf351cb319a17a660f401965",
+      "yellow_rgba_sha256": "82047cc041b8405fee73345be7f296bc450d17cb5b9eabe2e27161b5fe8fc22d"
+    },
+    {
+      "source": [
+        4090,
+        25
+      ],
+      "packed": [
+        14090,
+        25
+      ],
+      "axis": [
+        278,
+        488
+      ],
+      "source_rgba_sha256": "876dfe3a1de17cbd1556e7c736b3653a5f8b5b688c53bf546f1859da35e5ba7d",
+      "yellow_rgba_sha256": "fcf8ccfff4bb0f0b3ecd6da5c45fefa3d818692882d6f540ec91f2a6d74d4489"
+    },
+    {
+      "source": [
+        4091,
+        0
+      ],
+      "packed": [
+        14091,
+        0
+      ],
+      "axis": [
+        103,
+        285
+      ],
+      "source_rgba_sha256": "b806659d66ccecd7889ada2407e0d9b617c746eb4d6162bf3d3dc2851b2c58f3",
+      "yellow_rgba_sha256": "772fa081303c4f237e2d118cf3afa9af68db5e51735babf10805958c0591f4d5"
+    },
+    {
+      "source": [
+        4091,
+        1
+      ],
+      "packed": [
+        14091,
+        1
+      ],
+      "axis": [
+        75,
+        267
+      ],
+      "source_rgba_sha256": "af23063c97b218a1e3836da6d93710daf6c2174b2c22aea81ea8c368f77aec65",
+      "yellow_rgba_sha256": "f618b7a6b0b209f84f3bb98745bb121acc51bc61377c59b275430d4075f3a246"
+    },
+    {
+      "source": [
+        4091,
+        2
+      ],
+      "packed": [
+        14091,
+        2
+      ],
+      "axis": [
+        121,
+        358
+      ],
+      "source_rgba_sha256": "5cdb20fb1b9180cccfe65593985fbfe682d7adcc82e607139aeb77ce6f9327bb",
+      "yellow_rgba_sha256": "aa0e8b1311c2fa9eb2b6a0e2f80b5c8fb63a2f3bbabe67feb0154b7f872ae8b8"
+    },
+    {
+      "source": [
+        4091,
+        3
+      ],
+      "packed": [
+        14091,
+        3
+      ],
+      "axis": [
+        100,
+        345
+      ],
+      "source_rgba_sha256": "18508756dd9c4242bf401ff01a5553a9fa6e8336c60600e9f58759798e7e8ee2",
+      "yellow_rgba_sha256": "a3f753efc33641e6557861c8368f3b81a4b9aba10be2375755917fbe13d81acd"
+    },
+    {
+      "source": [
+        4091,
+        4
+      ],
+      "packed": [
+        14091,
+        4
+      ],
+      "axis": [
+        156,
+        306
+      ],
+      "source_rgba_sha256": "1db37acaa8cbea3f6e059a876b12d9a0b754344aa433b56788d99fabb8f4f342",
+      "yellow_rgba_sha256": "59dd0a1d9703a6d580a7e26cc2cb5b629dfc5ad4bf6b84b389ce4b5751323cbc"
+    },
+    {
+      "source": [
+        4091,
+        5
+      ],
+      "packed": [
+        14091,
+        5
+      ],
+      "axis": [
+        135,
+        280
+      ],
+      "source_rgba_sha256": "dfedba6abf604c2150208d504a60cf11b2d8f3274fe9f347842b20cd986656ef",
+      "yellow_rgba_sha256": "ce11bca1a8a02b4f486ad15ec65ab4f3fb5b7037e99a63372e505144844344d2"
+    },
+    {
+      "source": [
+        4091,
+        6
+      ],
+      "packed": [
+        14091,
+        6
+      ],
+      "axis": [
+        141,
+        270
+      ],
+      "source_rgba_sha256": "f7495f140fdc1a5fa878698f44cc4d32c565a2c2aabdde8180594d69442741a6",
+      "yellow_rgba_sha256": "b9bb35555f49ed2e8a3f31b1eb10f02b56d7a5d670451af9baa3b7c876665dab"
+    },
+    {
+      "source": [
+        4091,
+        7
+      ],
+      "packed": [
+        14091,
+        7
+      ],
+      "axis": [
+        141,
+        270
+      ],
+      "source_rgba_sha256": "472c80e524aaa71dd8dc0323d8825d233187abb41cad5892ac89474d21a8df3d",
+      "yellow_rgba_sha256": "6274c01e81be17e99f02d2f4419a085ede76df518befe6998db9e27735e1acfa"
+    },
+    {
+      "source": [
+        4091,
+        8
+      ],
+      "packed": [
+        14091,
+        8
+      ],
+      "axis": [
+        82,
+        60
+      ],
+      "source_rgba_sha256": "625d6db650c43ab22149ecee883f3f1373830d421c019c922b5a1308c4036b2f",
+      "yellow_rgba_sha256": "df45fab61a4f6c859f3c269b2edc0c42be4243ce17672e58be67551720f6aff3"
+    },
+    {
+      "source": [
+        9057,
+        4
+      ],
+      "packed": [
+        19057,
+        4
+      ],
+      "axis": [
+        83,
+        72
+      ],
+      "source_rgba_sha256": "478e4091e301008c0804de0c63737a2c7122f046257de240eaff1310b34e5284",
+      "yellow_rgba_sha256": "478e4091e301008c0804de0c63737a2c7122f046257de240eaff1310b34e5284"
+    },
+    {
+      "source": [
+        9057,
+        7
+      ],
+      "packed": [
+        19057,
+        7
+      ],
+      "axis": [
+        162,
+        170
+      ],
+      "source_rgba_sha256": "abe0aa37c1ad6b41f9b58c9f909158ff0053d25919f6cec70a7cfacc432373f0",
+      "yellow_rgba_sha256": "abe0aa37c1ad6b41f9b58c9f909158ff0053d25919f6cec70a7cfacc432373f0"
+    },
+    {
+      "source": [
+        9067,
+        0
+      ],
+      "packed": [
+        19067,
+        0
+      ],
+      "axis": [
+        84,
+        244
+      ],
+      "source_rgba_sha256": "02e1666bcdd4c3edcb9a8f51c0ed33f81d12004f4f6e68ab2a1c7bfbe4d01596",
+      "yellow_rgba_sha256": "d0257a2f6f85434a5416a27c02afe83acea777fb81239584a1623f1d8097b536"
+    },
+    {
+      "source": [
+        9067,
+        1
+      ],
+      "packed": [
+        19067,
+        1
+      ],
+      "axis": [
+        87,
+        264
+      ],
+      "source_rgba_sha256": "b4d832aaaf08c07bd61170cf3c63f588287d7203e7044ffe2108785fe996921a",
+      "yellow_rgba_sha256": "dc5595ecb0033485aeffef8bd7745b12a3c48cc5ad0acaad64fb1e7b39687a36"
+    },
+    {
+      "source": [
+        9067,
+        2
+      ],
+      "packed": [
+        19067,
+        2
+      ],
+      "axis": [
+        88,
+        258
+      ],
+      "source_rgba_sha256": "68341e05172632f35cefc52da74ef7b952a31509f4a3bdd4604798c51e8bfc71",
+      "yellow_rgba_sha256": "85387e186081f84c35499f2d1ac9943a7c88606d837a67ba3569d8ed247c0aa1"
+    },
+    {
+      "source": [
+        9067,
+        3
+      ],
+      "packed": [
+        19067,
+        3
+      ],
+      "axis": [
+        82,
+        253
+      ],
+      "source_rgba_sha256": "09847d6ac06c4d7d095bb72e2a41f9f66b71f969276681f3b424bb53b10f913b",
+      "yellow_rgba_sha256": "10bb74d6553e65a50699bf0d0c2103a15a88fc65e10baaedb8e0067ec5dc2926"
+    },
+    {
+      "source": [
+        9067,
+        4
+      ],
+      "packed": [
+        19067,
+        4
+      ],
+      "axis": [
+        88,
+        247
+      ],
+      "source_rgba_sha256": "1d6aa99a59306fae450c4abef02f9c685c59c8258fa3740702d21b2ab978c28f",
+      "yellow_rgba_sha256": "727754b865622e3d7fca58a77e31d818340249755e2f96af35cd9f4d64e3bec6"
+    },
+    {
+      "source": [
+        9067,
+        5
+      ],
+      "packed": [
+        19067,
+        5
+      ],
+      "axis": [
+        84,
+        244
+      ],
+      "source_rgba_sha256": "02e1666bcdd4c3edcb9a8f51c0ed33f81d12004f4f6e68ab2a1c7bfbe4d01596",
+      "yellow_rgba_sha256": "d0257a2f6f85434a5416a27c02afe83acea777fb81239584a1623f1d8097b536"
+    },
+    {
+      "source": [
+        10008,
+        0
+      ],
+      "packed": [
+        20008,
+        0
+      ],
+      "axis": [
+        112,
+        195
+      ],
+      "source_rgba_sha256": "938390327e05f8ab0a1f3c0fc20cb94d79bc383ef656c48f23c14d518219c4e8",
+      "yellow_rgba_sha256": "deeebde171b5f91748f743b4db003b6fbc65792f0a8256a635e00f9b51193e99"
+    },
+    {
+      "source": [
+        10008,
+        1
+      ],
+      "packed": [
+        20008,
+        1
+      ],
+      "axis": [
+        114,
+        194
+      ],
+      "source_rgba_sha256": "d3a27e0ddc0eaf41501b058e3a7e724c7a14a33ded6fd46dfc64c14758a3025c",
+      "yellow_rgba_sha256": "0f726b2f33370b2ae3665e184de2a9c49ae5b64b062ce9f3db5d62542c70f543"
+    },
+    {
+      "source": [
+        10008,
+        2
+      ],
+      "packed": [
+        20008,
+        2
+      ],
+      "axis": [
+        108,
+        192
+      ],
+      "source_rgba_sha256": "a162a5ff35856ae63da9522160ba8c9c72c9f3424eaccb78a6f58203b947ae93",
+      "yellow_rgba_sha256": "569c5c6d26fd06fedfd69c282fa0a9d42c63dd312afbe0ee52278b78bb535058"
+    },
+    {
+      "source": [
+        10008,
+        3
+      ],
+      "packed": [
+        20008,
+        3
+      ],
+      "axis": [
+        104,
+        120
+      ],
+      "source_rgba_sha256": "1197940fd951d60a8ba59b2ef366a89a089e687f95ad0d73e923d2aa26e70cc9",
+      "yellow_rgba_sha256": "20fb8b96be79ca7c54eb1d1ac7d97c0bb693fd5dfbd650e9fbb337e6dc335c53"
+    },
+    {
+      "source": [
+        10008,
+        4
+      ],
+      "packed": [
+        20008,
+        4
+      ],
+      "axis": [
+        110,
+        121
+      ],
+      "source_rgba_sha256": "6e17c653cbaa8e47c610d643263e4958e85f66b155df6070f9ed8105a22efdfd",
+      "yellow_rgba_sha256": "49e742b402f4c50251627f7a1d7a59d323e96a193aca101d37acc3883a3ab7f9"
+    },
+    {
+      "source": [
+        10008,
+        5
+      ],
+      "packed": [
+        20008,
+        5
+      ],
+      "axis": [
+        109,
+        134
+      ],
+      "source_rgba_sha256": "f1268b2559fc57193c8d800fb64df47dc5a91277d10664e96ee498a91bbb4278",
+      "yellow_rgba_sha256": "e86389b3f53ea8b1603c3905221f6330af65482270c4a000646e595336524a14"
+    },
+    {
+      "source": [
+        10008,
+        6
+      ],
+      "packed": [
+        20008,
+        6
+      ],
+      "axis": [
+        110,
+        128
+      ],
+      "source_rgba_sha256": "c2f5e8dba47ab01b61a1854e897e604c9760fe83a93c19f60c4df922d70564aa",
+      "yellow_rgba_sha256": "d8f9da72fee799a8ad7f4a196e0d787f41b488ea1ba874a7590033e34da6bcfe"
+    }
+  ]
+}

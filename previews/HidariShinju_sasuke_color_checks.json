@@ -1,0 +1,47 @@
+{
+  "runtime_sha256": "b5993adc595e29e4bbf51df2edf49c4991a43892a37f5ae06f8c836c2c01fcab",
+  "cases": [
+    {
+      "case": {
+        "name": "Puno",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "N",
+        "state": 14200,
+        "cost": 0,
+        "distance": 40
+      },
+      "states": [
+        0,
+        14200
+      ],
+      "damage": 85,
+      "received": 0,
+      "min_power": 3000,
+      "max_power": 3000,
+      "max_sage_timer": 796,
+      "end_timer": 622,
+      "end_form": 1,
+      "end_state": 0,
+      "victim_end": 5110,
+      "dash_distance": 0.0,
+      "aura": 0,
+      "end_helpers": 1,
+      "wrong_sage_body_frames": 0,
+      "actual_start_distance": 40.0,
+      "actual_guard": 0,
+      "jump_apex": 0.0,
+      "beam_during_hurt": 0,
+      "visible_claw_marks": 0,
+      "visible_susanoo": 1,
+      "guardian_bad_frames": 0,
+      "guardian_observed_frames": 173,
+      "helper_details": "9500:9500:113",
+      "target_scale": 1.0,
+      "target_crouching": false,
+      "failures": []
+    }
+  ]
+}
