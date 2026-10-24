@@ -1,0 +1,1190 @@
+{
+  "base_commit": "c6d04d94934c2e83efa869744587f13eda270b59",
+  "frames": [
+    {
+      "group": 27000,
+      "number": 0,
+      "key": "SageGaara_Snakes_01",
+      "role": "center",
+      "file": "assets/full_pack/27000_0.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{967,2631},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "3f913acdd157cf745f8903e157009e8a9d7f70b27ea662f21ab823e186cfb415",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 1,
+      "key": "SageGaara_Snakes_02",
+      "role": "center",
+      "file": "assets/full_pack/27000_1.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1289,2550},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "240af31de405e0b539de518c03ae8a06fe9f9c2977dc10cf68a772d988602689",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 2,
+      "key": "SageGaara_Snakes_03",
+      "role": "center",
+      "file": "assets/full_pack/27000_2.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1611,2550},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "046e20b2a1d3f50cf88b63c7e1897c674f8defe0b5c55815d6839a46d6be2fae",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 3,
+      "key": "SageGaara_Snakes_04",
+      "role": "center",
+      "file": "assets/full_pack/27000_3.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1933,2550},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "df01f9ee4bc45bf94a6b2c0ccd7bad908ac64b3cec9bf4155ea4ec1632e93f27",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 4,
+      "key": "SageGaara_Snakes_05",
+      "role": "center",
+      "file": "assets/full_pack/27000_4.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2255,2550},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2d5b8e854212dfd66ad8648d78d0531da73efc06131508d0604e950729fc9b45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 5,
+      "key": "SageGaara_Snakes_06",
+      "role": "center",
+      "file": "assets/full_pack/27000_5.png",
+      "axis": [
+        160,
+        104
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2753,1},{320,209}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "feedda7481dfb70c029319e611d5328023f9dd82c2aae092062053aace1d6200",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 6,
+      "key": "SageGaara_Chg_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_6.png",
+      "axis": [
+        135,
+        132
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{967,2454},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.02092108316719532,
+        "original_sprite": [
+          1,
+          13
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2c63ec18201c2f1d03d4f60a577aba86bf4875d533af1ea891ad10692ca35ead",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 7,
+      "key": "SageGaara_Chg_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_7.png",
+      "axis": [
+        135,
+        132
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1289,2373},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.022949745878577232,
+        "original_sprite": [
+          1,
+          13
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "7190b214d383ff04a9f7e971f0fc96d5add02bac0760978b579bb4bfe58772ed",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 8,
+      "key": "SageGaara_Chg_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_8.png",
+      "axis": [
+        139,
+        128
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1611,2373},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.06421977281570435,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "197b150c834ff6975d7b9c3de9cf901e5d7750d5b1cc89e5a28a70da3d1a14d4",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 9,
+      "key": "SageGaara_Chg_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_9.png",
+      "axis": [
+        132,
+        134
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1933,2373},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.08988750725984573,
+        "original_sprite": [
+          1,
+          4
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "95249f1a7e1b5392be8be0e7a852514f57aecfccf47e025b999c69d835cd318c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 10,
+      "key": "SageGaara_Chg_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_10.png",
+      "axis": [
+        140,
+        120
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2255,2373},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0861036404967308,
+        "original_sprite": [
+          1,
+          4
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "838c1ed4edff6cc563b9b1611ee07ab9c748b819d97fdb648be8044615c1dd15",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 11,
+      "key": "SageGaara_Chg_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_11.png",
+      "axis": [
+        139,
+        128
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1,2672},{320,175}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.039738189429044724,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "f07302fe8bd1a5b86b35488d703823eb7be0671a9fa55096b835dec5c48b10d7",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 12,
+      "key": "Gaara_HebiMikazuchi_01",
+      "role": "center",
+      "file": "assets/full_pack/27000_12.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1,1},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "917ca235ad164014d8b9024d2f6e5442f02878aba72a697cf1dfd08893b4b6ae",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 13,
+      "key": "Gaara_HebiMikazuchi_02",
+      "role": "center",
+      "file": "assets/full_pack/27000_13.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1,452},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "cba41c766dfe47bc48ca72ffe00cf55ba743ec63faf7a8ca36e4aff29485ec4d",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 14,
+      "key": "Gaara_HebiMikazuchi_03",
+      "role": "center",
+      "file": "assets/full_pack/27000_14.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{533,1},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "aa6e7c2b2fbca279c27b7dc21980f4d40d56ecac2a2e457f3e22aa1b877177ba",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 15,
+      "key": "Gaara_HebiMikazuchi_04",
+      "role": "center",
+      "file": "assets/full_pack/27000_15.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{533,452},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "dbf54ce551e07c3fbbb6df6d97485ab58e7f39dec0b1d5430fa516d686b97372",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 16,
+      "key": "Gaara_HebiMikazuchi_05",
+      "role": "center",
+      "file": "assets/full_pack/27000_16.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1,903},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "efb837e169dbc6e841601bdcd9e53cc1c28dd1a4f9cc06bd20be7adcbd0982f2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 17,
+      "key": "Gaara_HebiMikazuchi_06",
+      "role": "center",
+      "file": "assets/full_pack/27000_17.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{533,903},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "3f258480afef1e79ffaacbbba421f54d4dc51e0c8d0b760c70d567e066e4298f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 18,
+      "key": "Gaara_HebiMikazuchi_07",
+      "role": "center",
+      "file": "assets/full_pack/27000_18.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1065,1},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "1ed00614e9024612990ed5f5ee49a924f18ee7a10a35cbf7853a1bd34e0ca9ee",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 19,
+      "key": "Gaara_HebiMikazuchi_08",
+      "role": "center",
+      "file": "assets/full_pack/27000_19.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1065,452},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a4f955bfa68d9a0384361637c93b402025a74ff10a3bac57f44d014b72d6b614",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 20,
+      "key": "Gaara_HebiMikazuchi_09",
+      "role": "center",
+      "file": "assets/full_pack/27000_20.png",
+      "axis": [
+        265,
+        224
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1065,903},{530,449}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "dfcb3b4d19afefc769bd5357a3a6b77f81ee60fb26112853e3de13442fa64eb8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 21,
+      "key": "Gaara_HebiMikazuchi_10",
+      "role": "center",
+      "file": "assets/full_pack/27000_21.png",
+      "axis": [
+        35,
+        41
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1209,2368},{70,83}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ae0aaacdaef2d938934c492062ccb09635e160ab5a41baae75fe04983ade1a09",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 22,
+      "key": "Gaara_NAttack_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_22.png",
+      "axis": [
+        26,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3075,1},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          17
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2bb0d0b3d6a45a8a2aedaa4af257e6d2e07c1ad29ce6ee9d7b0be303eadd8819",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 23,
+      "key": "Gaara_NAttack_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_23.png",
+      "axis": [
+        31,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3075,147},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.04505004361271858,
+        "original_sprite": [
+          0,
+          18
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d7e78fa0a0f8c950abdc1a5d389ef3994f6799bdbd8574beaf137c0d74881dd7",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 24,
+      "key": "Gaara_NAttack_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_24.png",
+      "axis": [
+        29,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,293},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.019003281369805336,
+        "original_sprite": [
+          0,
+          19
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "fe98aeb11cc3a86718a52922c58d819934643f373000ac3b0f73d6d8c4330f91",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 25,
+      "key": "Gaara_NAttack_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_25.png",
+      "axis": [
+        29,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,439},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.002094784751534462,
+        "original_sprite": [
+          0,
+          19
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ac2feedab3818c6d0dcdf76e055fdc8bc10fbc99c62e875bd9403245dcf7b4f7",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 26,
+      "key": "Gaara_NAttack_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_26.png",
+      "axis": [
+        31,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,585},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0008449825108982623,
+        "original_sprite": [
+          0,
+          20
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "40b76fad27628b8965a16985e617e86ac397fe7f423115c8694306ec6d08e90f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 27,
+      "key": "Gaara_NAttack_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_27.png",
+      "axis": [
+        33,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,731},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.02153797633945942,
+        "original_sprite": [
+          0,
+          21
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a415c36f1caae14880c0a36886135c4f2e8ee635646c46459c9b7f92f5039058",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 28,
+      "key": "Gaara_NAttack_07",
+      "role": "body",
+      "file": "assets/full_pack/27000_28.png",
+      "axis": [
+        35,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,877},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.015917686745524406,
+        "original_sprite": [
+          0,
+          22
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d8eed665cfcb980fd4b2c5ff9287da090935edbec894f5675f101e44bee112f2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 29,
+      "key": "Gaara_NAttack_08",
+      "role": "body",
+      "file": "assets/full_pack/27000_29.png",
+      "axis": [
+        35,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,1023},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.005674419924616814,
+        "original_sprite": [
+          0,
+          22
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "347f06da68fcb22059f4e544eae3a98da134f329b2f146a23ab5662e1d7e3716",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 30,
+      "key": "Gaara_NAttack_09",
+      "role": "body",
+      "file": "assets/full_pack/27000_30.png",
+      "axis": [
+        34,
+        114
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3055,1169},{140,144}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0012922994792461395,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2ab0cb2dabdfc5366559f4b666f5fba26d468c67e18ee951d2b957f4216fbc04",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 31,
+      "key": "Gaara_NAttack_10",
+      "role": "body",
+      "file": "assets/full_pack/27000_31.png",
+      "axis": [
+        35,
+        128
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2425,2761},{150,135}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          41
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "4f61e7ae8409a16aaddf3101ffc2aca2a23807c89222b090785280970ff8183d",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 32,
+      "key": "Gaara_SegelTangan_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_32.png",
+      "axis": [
+        26,
+        84
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3147,2167},{50,88}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          54
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "9fc70c2c2315b66c27bbd2f1f279085778f1666fb70073be203395cb83125f03",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 33,
+      "key": "Gaara_SegelTangan_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_33.png",
+      "axis": [
+        28,
+        84
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3147,2257},{50,88}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          55
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "be9f140591b37a5f90471b2754eba03fba9ab92c3577718f17c4c2132636fb36",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 34,
+      "key": "Gaara_SegelTangan_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_34.png",
+      "axis": [
+        26,
+        84
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3147,2347},{50,88}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          56
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "6d7d64719c48dad12d58ed6be737c97db42faa1d1d2a571acae84d9bf90a4215",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 35,
+      "key": "Gaara_SegelTangan_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_35.png",
+      "axis": [
+        26,
+        84
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{3147,2437},{50,88}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.004458937328308821,
+        "original_sprite": [
+          0,
+          56
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "44de5d8a41784cf27828b218966fdcf896efde0e550eed825aef4298937bb9e9",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 36,
+      "key": "SageGaara_Ulti_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_36.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1415,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.05395416542887688,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a0f59d652ea320faaaa2e73f316c469f4d02732d7600d33bcaa089e0ad267b9d",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 37,
+      "key": "SageGaara_Ulti_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_37.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1587,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.04477737098932266,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "fadb715278c82739d97f5674941fff3371f3f2ab0bdce27ea7d53b21e4752d0e",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 38,
+      "key": "SageGaara_Ulti_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_38.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1759,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.03798007592558861,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "12c8a84a951a2b46f7f7e760b352e133c8288fe0f949a3cfc5f1e05b96d7c5b0",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 39,
+      "key": "SageGaara_Ulti_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_39.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1931,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.027238940820097923,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a1f568543f6d92a6c961f9a5844b6a0f181f252f4c9ffaddf3e55973486c4d57",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 40,
+      "key": "SageGaara_Ulti_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_40.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2103,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.02333824895322323,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "8ba264296d0feea499d5c346d5a88485926a9d335a77e446b54b4fbf73af8dfc",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 41,
+      "key": "SageGaara_Ulti_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_41.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{2275,2963},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0194490235298872,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "c235a30cda29e48fb6baffcde59a8c9d37047f42dfca2eda1cfd517c46675166",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 42,
+      "key": "SageGaara_Ulti_07",
+      "role": "body",
+      "file": "assets/full_pack/27000_42.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1861,1878},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.017891300842165947,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2176f31823cc0fc7171979c0455c0e0122ab2b521bc65acf616bb0d3f1435620",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 43,
+      "key": "SageGaara_Ulti_08",
+      "role": "body",
+      "file": "assets/full_pack/27000_43.png",
+      "axis": [
+        119,
+        116
+      ],
+      "source": "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist",
+      "source_rectangle": "{{1849,1253},{170,137}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.017032982781529427,
+        "original_sprite": [
+          1,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "87fc9e870a9db2cbcdbd081df44628954ee3fe02e278d4637fbb0cad7c0e0a0d",
+      "body_redrawn": false
+    }
+  ],
+  "actions": [
+    1000,
+    1200,
+    8932,
+    8950,
+    11020,
+    11050,
+    27120
+  ],
+  "sounds": [
+    {
+      "group": 5,
+      "number": 0,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Mitsuki/ToppaEfx.mp3",
+      "source_sha256": "49d4bc1fb7babafb38fd8e01b7d9b0913c3e79049072bd4294541833062b5b14",
+      "wav": "assets/full_pack/sound/5_0.wav",
+      "wav_sha256": "fd23390afeb293e66f2d8b3c7bf1b2ae66c85873567478dffa2b3acecb602f13"
+    },
+    {
+      "group": 5,
+      "number": 1,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Mitsuki/Raiton2.ogg",
+      "source_sha256": "85366fc549bd77bb7e24186775c2268d28e3d85008ca1c4d1ba83477b62cae33",
+      "wav": "assets/full_pack/sound/5_1.wav",
+      "wav_sha256": "2abfe8a9da0644c2704406264e47978c61ff9d6eb10b86108eb0a9c5308fc696"
+    },
+    {
+      "group": 5,
+      "number": 2,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Mitsuki/EfxorochiIkazuchi.mp3",
+      "source_sha256": "e91ed12c9f987f9d022219389f0ff638f6a96be16d50726bc252ab58bbada2dc",
+      "wav": "assets/full_pack/sound/5_2.wav",
+      "wav_sha256": "ac2f49eb30297dd602261a2915e37a82a2231d2d959da702d8016a736b3e5820"
+    },
+    {
+      "group": 5,
+      "number": 3,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Mitsuki/efxKamaitachi.mp3",
+      "source_sha256": "d681c4456e8528b9c26288a3503c161816743c401aadfe6acecb2d6c5669abe5",
+      "wav": "assets/full_pack/sound/5_3.wav",
+      "wav_sha256": "495339cdd3f506f45e0cb6c3f18d7e2a24f4f161c31f1c5a238705ff83e16331"
+    },
+    {
+      "group": 5,
+      "number": 4,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Mitsuki/MitsukiSageTransform.mp3",
+      "source_sha256": "c5699bf6c924efceb1528c78880a544491c642235a8b2c6203cc1ace3f76da50",
+      "wav": "assets/full_pack/sound/5_4.wav",
+      "wav_sha256": "e19b8e1a7e8004e9ae6cbe4f05869b43b751b531fecc6c343c3572ed6ad6489a"
+    },
+    {
+      "group": 5,
+      "number": 5,
+      "source_zip": "/workspace/attachments/16ab15e3-30ee-4983-bc12-b0d3be93c3eb/MitsukiTbv Ori by Vaydra (SFILE.MOBI).zip",
+      "member": "MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Audio/Effect/snake.wav",
+      "source_sha256": "6e0a3ed93e2891924e5a03b2a6128b5d7b817312183e2429310a6b94c5bba59a",
+      "wav": "assets/full_pack/sound/5_5.wav",
+      "wav_sha256": "79332641f058c46a65c07e806f855614b67e90e469bc9d9aee138822c5fb1043"
+    }
+  ]
+}

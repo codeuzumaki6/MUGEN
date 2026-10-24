@@ -4,7 +4,7 @@ Check C: Initializing GFX Font
 Check D: We are GOOD
 
 Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
-WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): y, x
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
 
 PASS Brazos 0 1 175 []
 PASS Serpientes 0 1 186 []

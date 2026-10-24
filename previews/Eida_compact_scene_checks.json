@@ -2,15 +2,48 @@
   "kind": "static file checks",
   "source_frame_references": [
     [
-      8600,
+      27000,
       0
     ],
     [
-      8600,
+      27000,
       1
+    ],
+    [
+      27000,
+      2
+    ],
+    [
+      27000,
+      3
+    ],
+    [
+      27000,
+      4
+    ],
+    [
+      27000,
+      5
+    ],
+    [
+      27000,
+      6
+    ],
+    [
+      27000,
+      7
+    ],
+    [
+      27000,
+      8
+    ],
+    [
+      27000,
+      9
     ]
   ],
-  "authored_rows": 9,
+  "full_pack_native_hug_frames": 10,
+  "authored_rows": 10,
   "authored_ticks": 98,
   "recovery_controller_tick": 160,
   "sprites": [

@@ -45,7 +45,25 @@ def inspect_compact_scene(character=None,trace=None):
     action=re.search(r'(?ims)^\[Begin Action 8600\].*?(?=^\[Begin Action|\Z)',air)
     assert action,'missing paired-sprite animation'
     rows=[tuple(map(int,m)) for m in re.findall(r'(?m)^\s*(\d+)\s*,\s*(\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)',action[0])]
-    assert rows and {(r[0],r[1]) for r in rows}=={(8600,0),(8600,1)},'embrace must use only the supplied two source frames'
+    full_manifest=char/'assets/full_pack/manifest.json'
+    full_hug=[]
+    if full_manifest.exists():
+        full_hug=[r for r in json.loads(full_manifest.read_text())['frames'] if r['key'].startswith('Chiyo_S5_PreUp_')]
+    expected_keys={(r['group'],r['number']) for r in full_hug} if full_hug else {(8600,0),(8600,1)}
+    assert rows and {(r[0],r[1]) for r in rows}==expected_keys,'embrace must use only the supplied original poses'
+    if full_hug:
+        assert len(full_hug)==10
+        import plistlib
+        for rec in full_hug:
+            atlas=ROOT/rec['source'];source_meta=plistlib.loads(atlas.read_bytes())['frames'];meta=source_meta.get(rec['key']+'.png',source_meta.get(rec['key']));assert meta
+            x,y,w,h=map(int,re.findall(r'-?\d+',meta['frame']))
+            source_frame=Image.open(atlas.with_suffix('.png')).convert('RGBA').crop((x,y,x+w,y+h))
+            if meta.get('rotated'):source_frame=source_frame.transpose(Image.Transpose.ROTATE_90)
+            assert (char/rec['file']).is_file()
+            actual=Image.open(char/rec['file']).convert('RGBA')
+            assert np.array_equal(np.array(actual),np.array(source_frame)),'full-pack hug must preserve source RGBA pixels'
+            assert actual.width<=100 and rec['axis'][1]<=110,'full-pack hug became oversized'
+            assert rec['body_redrawn'] is False and rec['crop'] is None and rec['size'] is None
     assert len(rows)<=20,'too many authored repeats for a compact two-pose scene'
     assert all(r[4]>0 for r in rows),'embrace must not hold an infinite source pose'
     assert sum(r[4] for r in rows)<=120,'paired animation is still excessively long'
@@ -76,7 +94,7 @@ def inspect_compact_scene(character=None,trace=None):
         asset=Image.open(char/record['file']).convert('RGBA')
         assert np.array_equal(np.array(asset),np.array(expected)),f"pose {record['number']} no longer matches source pixels/alpha at native size"
         provenance.append(dict(number=record['number'],source_box=list(box),trim_box=list(bounds),native_figure_size=list(figure.size),canvas=[96,88],feet_axis=[48,86],visible_pixels=int(np.count_nonzero(np.array(asset.getchannel('A')))),rgba_pixels_match_source=True))
-    report=dict(kind='static file checks',source_frame_references=[[8600,0],[8600,1]],authored_rows=len(rows),authored_ticks=sum(r[4] for r in rows),recovery_controller_tick=recovery_time,sprites=sprites,damage=350)
+    report=dict(kind='static file checks',source_frame_references=sorted(expected_keys),full_pack_native_hug_frames=len(full_hug),authored_rows=len(rows),authored_ticks=sum(r[4] for r in rows),recovery_controller_tick=recovery_time,sprites=sprites,damage=350)
     report['original_source']=dict(file=str(source.relative_to(ROOT)),sha256=source_sha256,poses=provenance,processing='Green alpha key and packing only; source RGBA comparison at native scale. SFF may quantize colors for its indexed palette.')
     if trace is not None:
         live=[list(map(float,row)) for row in trace]

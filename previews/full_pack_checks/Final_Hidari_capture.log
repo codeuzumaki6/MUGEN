@@ -1,0 +1,13 @@
+Check A: Selecting Renderer
+Check B: Initializing GFX
+Check C: Initializing GFX Font
+Check D: We are GOOD
+
+Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
+CRITICAL: You are using the SDL disk i/o audio driver!
+CRITICAL:  Writing to file [/tmp/full-pack-native/HidariShinju/take-ytm0ekw9/audio.raw].
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
+
+PASS Puno 1 1 85 []
+PASS awakening 0 1 0 []
+PASS 2 Hidari actual-input engine cases

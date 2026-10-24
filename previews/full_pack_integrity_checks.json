@@ -1,0 +1,115 @@
+{
+  "base_commit": "c6d04d94934c2e83efa869744587f13eda270b59",
+  "characters": [
+    {
+      "character": "Mamushi",
+      "old_sprites_unchanged": 210,
+      "old_sounds_byte_identical": 13,
+      "new_original_frames": 63,
+      "new_pack_sounds": 7,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": [
+        1210,
+        3002,
+        3003,
+        3004
+      ]
+    },
+    {
+      "character": "JuraShinju",
+      "old_sprites_unchanged": 216,
+      "old_sounds_byte_identical": 20,
+      "new_original_frames": 33,
+      "new_pack_sounds": 4,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": []
+    },
+    {
+      "character": "MitsukiTBV",
+      "old_sprites_unchanged": 346,
+      "old_sounds_byte_identical": 43,
+      "new_original_frames": 44,
+      "new_pack_sounds": 6,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": [
+        1000,
+        1200,
+        11020,
+        11050
+      ]
+    },
+    {
+      "character": "RyuShinju",
+      "old_sprites_unchanged": 261,
+      "old_sounds_byte_identical": 19,
+      "new_original_frames": 132,
+      "new_pack_sounds": 6,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": [
+        1000,
+        1010,
+        1020,
+        1030,
+        1200,
+        1430,
+        11000,
+        11010,
+        11020,
+        11030,
+        11200,
+        11430,
+        3000,
+        13000
+      ]
+    },
+    {
+      "character": "HidariShinju",
+      "old_sprites_unchanged": 501,
+      "old_sounds_byte_identical": 21,
+      "new_original_frames": 28,
+      "new_pack_sounds": 5,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": []
+    },
+    {
+      "character": "MatsuriShinju",
+      "old_sprites_unchanged": 280,
+      "old_sounds_byte_identical": 21,
+      "new_original_frames": 47,
+      "new_pack_sounds": 5,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": [
+        1010,
+        1040
+      ]
+    },
+    {
+      "character": "Eida",
+      "old_sprites_unchanged": 210,
+      "old_sounds_byte_identical": 31,
+      "new_original_frames": 36,
+      "new_pack_sounds": 2,
+      "controls_unchanged": true,
+      "damage_and_cost_unchanged": true,
+      "root_collision_windows_preserved": true,
+      "changed_root_animations": [
+        1000,
+        1010,
+        1300
+      ]
+    }
+  ],
+  "all_passed": true
+}

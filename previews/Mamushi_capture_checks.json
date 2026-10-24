@@ -1,17 +1,20 @@
 [
   {
     "case": {
-      "name": "ultimate",
-      "kind": "ultimate",
+      "name": "Asalto",
+      "kind": "move",
       "face": 1,
-      "distance": 120
+      "button": "z",
+      "d": "N",
+      "state": 1210,
+      "cost": 1000,
+      "distance": 110
     },
     "states": [
       0,
-      3000,
-      3001
+      1210
     ],
-    "damage": 350,
+    "damage": 210,
     "received": 0,
     "max_clones": 0,
     "clones_after_root_hit": 0,
@@ -19,12 +22,12 @@
     "clone_hurt_samples": 0,
     "clone_min_health": 180,
     "root_control_while_clone_alive": false,
-    "movement": 30.0,
+    "movement": 108.5,
     "jump_apex": 0.0,
     "dash_signed_distance": 0.0,
     "end_helpers": 0,
-    "max_helpers": 0,
-    "min_power": 0,
+    "max_helpers": 1,
+    "min_power": 2000,
     "max_power": 3000,
     "end_clones": 0,
     "end_state": 0,

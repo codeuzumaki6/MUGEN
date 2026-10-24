@@ -1,0 +1,218 @@
+[
+  {
+    "character": "Mamushi",
+    "new_frames": 63,
+    "source_families": [
+      "Orochimaru_Akar",
+      "Orochimaru_Blt",
+      "Orochimaru_Skill04",
+      "Orochimaru_Skill05"
+    ],
+    "actions": [
+      1210,
+      3002,
+      3003,
+      3004,
+      9100,
+      9200,
+      9400,
+      27100,
+      27101
+    ],
+    "sounds": 7,
+    "runtime_sha256": "a4d31519828e01f9d0417a62c2a37a5ffa4fe50682cc85732f5f7774aec233c2",
+    "runtime_files": [
+      "Mamushi.air",
+      "Mamushi.cmd",
+      "Mamushi.cns",
+      "common1.cns",
+      "Mamushi.sff",
+      "Mamushi.snd"
+    ]
+  },
+  {
+    "character": "JuraShinju",
+    "new_frames": 33,
+    "source_families": [
+      "JuraExShot",
+      "MokuShinju",
+      "juura_BijuDamaBom",
+      "juura_BijuDamaChg",
+      "juura_BijuDamaShot"
+    ],
+    "actions": [
+      8602,
+      27110,
+      27111,
+      27112,
+      27113
+    ],
+    "sounds": 4,
+    "runtime_sha256": "123a1685340f9439115f471987bf5df4c3e960fdb39fafa096324e4caeb43217",
+    "runtime_files": [
+      "JuraShinju.air",
+      "JuraShinju.cmd",
+      "JuraShinju.cns",
+      "JuraShinju_common.cns",
+      "JuraShinju.sff",
+      "JuraShinju.snd"
+    ]
+  },
+  {
+    "character": "MitsukiTBV",
+    "new_frames": 44,
+    "source_families": [
+      "Gaara_HebiMikazuchi",
+      "Gaara_NAttack",
+      "Gaara_SegelTangan",
+      "SageGaara_Chg",
+      "SageGaara_Snakes",
+      "SageGaara_Ulti"
+    ],
+    "actions": [
+      1000,
+      1200,
+      8932,
+      8950,
+      11020,
+      11050,
+      27120
+    ],
+    "sounds": 6,
+    "runtime_sha256": "ecb6004c8a6e40145cff9710fbb4af89c70cde682beb6c3145460d550cd2eba7",
+    "runtime_files": [
+      "MitsukiTBV.air",
+      "MitsukiTBV.cmd",
+      "MitsukiTBV.cns",
+      "MitsukiTBV_common.cns",
+      "MitsukiTBV.sff",
+      "MitsukiTBV.snd"
+    ]
+  },
+  {
+    "character": "RyuShinju",
+    "new_frames": 132,
+    "source_families": [
+      "Shino_Skill01_Blt",
+      "Shino_Skill02",
+      "Shino_Skill03",
+      "Shino_Skill03_2",
+      "Shino_Skill04",
+      "Shino_Skill05"
+    ],
+    "actions": [
+      1000,
+      1010,
+      1020,
+      1030,
+      1200,
+      1430,
+      3000,
+      8612,
+      8615,
+      8620,
+      11000,
+      11010,
+      11020,
+      11030,
+      11200,
+      11430,
+      13000,
+      27130,
+      27131
+    ],
+    "sounds": 6,
+    "runtime_sha256": "0b3a09f3d42db0fd59af5612bbfa100619470eb677e0488fcc1ba11300937ddd",
+    "runtime_files": [
+      "RyuShinju.air",
+      "RyuShinju.cmd",
+      "RyuShinju.cns",
+      "RyuShinju_common.cns",
+      "RyuShinju.sff",
+      "RyuShinju.snd"
+    ]
+  },
+  {
+    "character": "HidariShinju",
+    "new_frames": 28,
+    "source_families": [
+      "Zabuza_Skill05"
+    ],
+    "actions": [
+      24050,
+      24200,
+      24550,
+      27140
+    ],
+    "sounds": 5,
+    "runtime_sha256": "69b49561901374e89c653fbaa97287b5889bbe64cd3941f454c30fff673b0019",
+    "runtime_files": [
+      "HidariShinju.air",
+      "HidariShinju.cmd",
+      "HidariShinju.cns",
+      "HidariShinju_common.cns",
+      "HidariShinju.sff",
+      "HidariShinju.snd"
+    ]
+  },
+  {
+    "character": "MatsuriShinju",
+    "new_frames": 47,
+    "source_families": [
+      "Hashirama_Skill04",
+      "Hashirama_Skill04_Ex",
+      "Hashirama_Skill04_Kick",
+      "Hashirama_Stn01",
+      "Hashirama_Stn01A",
+      "Hashirama_Stn01B",
+      "Hashirama_Stn01C",
+      "Hashirama_Stn02"
+    ],
+    "actions": [
+      1010,
+      1040,
+      8630,
+      8631,
+      27150
+    ],
+    "sounds": 5,
+    "runtime_sha256": "9138297970e46fda89a93ec30d0507968304a98e773137400d7bc8dbf5be7c0f",
+    "runtime_files": [
+      "MatsuriShinju.air",
+      "MatsuriShinju.cmd",
+      "MatsuriShinju.cns",
+      "MatsuriShinju_common.cns",
+      "MatsuriShinju.sff",
+      "MatsuriShinju.snd"
+    ]
+  },
+  {
+    "character": "Eida",
+    "new_frames": 36,
+    "source_families": [
+      "Chiyo_S1",
+      "Chiyo_S5_PreUp",
+      "Omnipotence",
+      "Parents_Skill01"
+    ],
+    "actions": [
+      1000,
+      1010,
+      1300,
+      8600,
+      27160
+    ],
+    "sounds": 2,
+    "runtime_sha256": "30aac7e39c7da77798d9c0946953de199943e1289392c71705e36ab6b84d0863",
+    "runtime_files": [
+      "Eida.air",
+      "Eida.cmd",
+      "Eida.cns",
+      "Omnipotencia.cns",
+      "Specials.cns",
+      "common1.cns",
+      "Eida.sff",
+      "Eida.snd"
+    ]
+  }
+]

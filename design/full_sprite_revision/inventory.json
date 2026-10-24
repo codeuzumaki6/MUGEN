@@ -1,0 +1,211 @@
+{
+  "Eida": {
+    "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo.plist": {
+      "Chiyo_Idle": 2,
+      "Chiyo_Walk": 8,
+      "Chiyo_AirHurt": 2,
+      "Chiyo_Hurt": 2,
+      "Chiyo_Float": 1,
+      "Chiyo_KnockDown": 1,
+      "Chiyo_Die": 1,
+      "Chiyo_Wake": 2,
+      "Chiyo_NAttack": 10,
+      "Chiyo_S1": 4,
+      "Chiyo_S2": 12,
+      "Chiyo_S3": 7,
+      "Chiyo_S4": 12,
+      "Chiyo_S5": 14,
+      "Chiyo_S5_PreUp": 10,
+      "Omnipotence": 14
+    },
+    "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo_Skill.plist": {
+      "Sanbao_Move": 7
+    },
+    "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist": {
+      "Parents_Idle": 4,
+      "Parents_Hurt": 1,
+      "Parents_Move": 5,
+      "Parents_Skill01": 8,
+      "Parents_Skill02": 1,
+      "Parents_Skill03": 2,
+      "Parents_Skill10": 1,
+      "DmnFx": 5,
+      "Parents_Skill11": 4,
+      "Parents_Walk": 6
+    }
+  },
+  "Mamushi": {
+    "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist": {
+      "Orochimaru_Skill05": 27,
+      "Orochimaru_Skill04": 23,
+      "Orochimaru_Skill02": 12,
+      "Orochimaru_Akar": 10,
+      "Orochimaru_NAttack": 13,
+      "Orochimaru_Skill05_Jump": 4,
+      "Orochimaru_Skill05_Teleport": 6,
+      "Orochimaru_Skill01": 4,
+      "Orochimaru_Mark": 2,
+      "Orochimaru_Skill03": 7,
+      "Orochimaru_Blt": 4,
+      "Orochimaru_AirHurt": 2,
+      "Orochimaru_Hurt": 1,
+      "Orochimaru_Knock": 4,
+      "Orochimaru_Idle": 3,
+      "Orochimaru_Walk": 6
+    }
+  },
+  "Jura": {
+    "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist": {
+      "Orochimaru_AirHurt": 2,
+      "Orochimaru_Float": 3,
+      "Orochimaru_Hurt": 2,
+      "Orochimaru_Idle": 3,
+      "Orochimaru_KnockDown": 4,
+      "Orochimaru_NAttack": 14,
+      "JuraMark": 1,
+      "JuraTLP": 4,
+      "Orochimaru_Skill01": 18,
+      "Orochimaru_Skill02": 3,
+      "JuuraMokuton": 6,
+      "Orochimaru_Skill03": 2,
+      "MokuShinju": 7,
+      "Orochimaru_Skill04": 4,
+      "juuraCbk": 20,
+      "Orochimaru_Walk": 6,
+      "SuperBomMon1": 15,
+      "SuperBomMon2": 15,
+      "SuperBomMon": 15
+    },
+    "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist": {
+      "JuraExUp": 2,
+      "JuraExStan": 1,
+      "JuraExDown": 1,
+      "JuraExChg": 8,
+      "JuraExShot": 5,
+      "Orochimaru_Skill04": 1,
+      "juura_BijuDamaChg": 7,
+      "juura_BijuDamaShot": 5,
+      "juura_BijuDamaBom": 10
+    }
+  },
+  "Mitsuki": {
+    "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara.plist": {
+      "Gaara_HebiMikazuchi": 10,
+      "Gaara_Toppa": 11,
+      "Kamaitachi2": 8,
+      "Gaara_Summon": 15,
+      "SageGaara_Atk": 13,
+      "SageGaara_Chg": 6,
+      "SageGaara_Snakes": 6,
+      "Gaara_Slash2": 10,
+      "Gaara_Kick": 7,
+      "Gaara_Transform": 11,
+      "Gaara_Slash1": 6,
+      "SageGaara_Ulti": 8,
+      "Gaara_NAttack": 19,
+      "SageGaara_Idle": 3,
+      "SageGaara_Walk": 3,
+      "Gaara_AirHurt": 2,
+      "Gaara_Float": 1,
+      "Gaara_Hurt": 2,
+      "Gaara_Knock": 4,
+      "Gaara_Walk": 6,
+      "Gaara_Idle": 3,
+      "Gaara_SegelTangan": 4,
+      "Gaara_Kamaitachi": 6
+    },
+    "source_material/Mitsuki_full_original/MitsukiTbv/MitsukiTBV REP Gaara (By Vaydra)/Gaara/Gaara_Skill.plist": {
+      "Gaara_Aura": 6
+    }
+  },
+  "Ryu": {
+    "source_material/Ryu_full_original/Ryu/Shino/Shino.plist": {
+      "Shino_Skill05": 47,
+      "Shino_Skill03": 20,
+      "Shino_Skill04": 36,
+      "Shino_Skill02": 13,
+      "Shino_Skill03_2": 22,
+      "Shino_Skill01": 6,
+      "Shino_NAttack": 31,
+      "Shino_Skill03_2_03Ex": 1,
+      "Shino_Skill01_Blt": 4,
+      "Shino_Hurt": 3,
+      "Shino_AirHurt": 2,
+      "Shino_Float": 1,
+      "Shino_KnockDown": 4,
+      "Shino_Walk": 6,
+      "Shino_Idle": 3
+    },
+    "source_material/Ryu_full_original/Ryu/Shino/Shino_Skill.plist": {
+      "ShinoUnused_Idle": 8,
+      "ShinoUnused_KnockDown": 5,
+      "ShinoUnused_NAttack": 13,
+      "ShinoUnused_Skill01": 27,
+      "ShinoUnused_Skill02": 7,
+      "ShinoUnused_Skill03": 13,
+      "ShinoUnused_Skill04": 15,
+      "ShinoUnused_Skill05": 36,
+      "ShinoUnused_Skill10": 3,
+      "ShinoUnused_Skill11": 5
+    }
+  },
+  "Hidari": {
+    "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist": {
+      "Zabuza_Skill04": 19,
+      "Zabuza_Skill03": 32,
+      "Zabuza_Skill01": 15,
+      "Zabuza_Skill02": 23,
+      "Zabuza_NAttack": 10,
+      "Zabuza_AirHurt": 2,
+      "Zabuza_Float": 2,
+      "Zabuza_Hurt": 3,
+      "Zabuza_KnockDown": 4,
+      "Zabuza_Walk": 9,
+      "Zabuza_Idle": 1
+    },
+    "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza_Skill.plist": {
+      "Zabuza_Skill05": 28
+    }
+  },
+  "Matsuri": {
+    "source_material/Matsuri_full_original/Matsuri/Hashirama/Hashirama.plist": {
+      "Hashirama_Idle": 4,
+      "Hashirama_Walk": 6,
+      "Hashirama_Hurt": 2,
+      "Hashirama_AirHurt": 2,
+      "Hashirama_Knock": 4,
+      "Hashirama_Float": 1,
+      "Hashirama_Nattack": 19,
+      "Hashirama_Skill01": 6,
+      "Hashirama_Mktn01": 7,
+      "Hashirama_Skill02": 11,
+      "Hashirama_Stn01A": 2,
+      "Hashirama_Stn01B": 2,
+      "Hashirama_Stn01C": 2,
+      "Hashirama_Stn01": 2,
+      "Hashirama_Stn02": 8,
+      "Hashirama_Skill03": 2,
+      "Hashirama_Mktn02": 10,
+      "Hashirama_Skill04_Ex": 8,
+      "Hashirama_Skill04_Kick": 5,
+      "Hashirama_Skill04": 27,
+      "Hashirama_Skill05_Tran": 7,
+      "Hashirama_Skill05_Hit": 8,
+      "Hashirama_Skill05_Kick01": 6,
+      "Hashirama_Skill05_Kick02": 9,
+      "Hashirama_Skill05_Kick03": 6,
+      "Hashirama_Skill05_Pre": 6,
+      "Hashirama_Skill05": 12,
+      "sBuff_Effect": 10
+    },
+    "source_material/Matsuri_full_original/Matsuri/Hashirama/Hashirama_Skill.plist": {
+      "Jinpachi_Idlle": 4,
+      "Jinpachi_NAttack": 11,
+      "Jinpachi_Walk": 6,
+      "Mangetsu_Idlle": 4,
+      "Mangetsu_NAttack": 11,
+      "Mangetsu_Walk": 6,
+      "TamaBomb_Move": 12
+    }
+  }
+}

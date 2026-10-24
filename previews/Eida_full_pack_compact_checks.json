@@ -1,0 +1,137 @@
+{
+  "kind": "static file checks",
+  "source_frame_references": [
+    [
+      27000,
+      0
+    ],
+    [
+      27000,
+      1
+    ],
+    [
+      27000,
+      2
+    ],
+    [
+      27000,
+      3
+    ],
+    [
+      27000,
+      4
+    ],
+    [
+      27000,
+      5
+    ],
+    [
+      27000,
+      6
+    ],
+    [
+      27000,
+      7
+    ],
+    [
+      27000,
+      8
+    ],
+    [
+      27000,
+      9
+    ]
+  ],
+  "full_pack_native_hug_frames": 10,
+  "authored_rows": 10,
+  "authored_ticks": 98,
+  "recovery_controller_tick": 160,
+  "sprites": [
+    {
+      "group": 8600,
+      "number": 0,
+      "width": 96,
+      "height": 88,
+      "axis": [
+        48,
+        86
+      ]
+    },
+    {
+      "group": 8600,
+      "number": 1,
+      "width": 96,
+      "height": 88,
+      "axis": [
+        48,
+        86
+      ]
+    }
+  ],
+  "damage": 350,
+  "original_source": {
+    "file": "design/Eida_omnipotencia/original/Eida_sprites_en_captura.png",
+    "sha256": "a08cc811e7c2773a9105b55b628fea455c51090e9def8f4f21df28fee306a25e",
+    "poses": [
+      {
+        "number": 0,
+        "source_box": [
+          8,
+          624,
+          64,
+          709
+        ],
+        "trim_box": [
+          3,
+          3,
+          53,
+          82
+        ],
+        "native_figure_size": [
+          50,
+          79
+        ],
+        "canvas": [
+          96,
+          88
+        ],
+        "feet_axis": [
+          48,
+          86
+        ],
+        "visible_pixels": 2031,
+        "rgba_pixels_match_source": true
+      },
+      {
+        "number": 1,
+        "source_box": [
+          66,
+          622,
+          118,
+          707
+        ],
+        "trim_box": [
+          3,
+          3,
+          49,
+          82
+        ],
+        "native_figure_size": [
+          46,
+          79
+        ],
+        "canvas": [
+          96,
+          88
+        ],
+        "feet_axis": [
+          48,
+          86
+        ],
+        "visible_pixels": 1886,
+        "rgba_pixels_match_source": true
+      }
+    ],
+    "processing": "Green alpha key and packing only; source RGBA comparison at native scale. SFF may quantize colors for its indexed palette."
+  }
+}

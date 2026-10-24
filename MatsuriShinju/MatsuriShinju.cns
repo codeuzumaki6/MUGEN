@@ -2464,6 +2464,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1000, Supplied pack sound mokuBlade.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1010]
 type=S
 movetype=A
@@ -2817,6 +2827,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1020, Supplied pack sound MizuWater.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1030]
 type=S
 movetype=A
@@ -2897,6 +2917,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1030, Supplied pack sound mokutonMsv.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type=S
 movetype=A
@@ -3109,6 +3139,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1050, Supplied pack sound DotonFx.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1400]
 type=S
 movetype=A
@@ -3790,6 +3830,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11000, Supplied pack sound mokuBlade.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11010]
 type=S
 movetype=A
@@ -4177,6 +4227,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11020, Supplied pack sound MizuWater.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11030]
 type=S
 movetype=A
@@ -4257,6 +4317,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11030, Supplied pack sound mokutonMsv.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11040]
 type=S
 movetype=A
@@ -4469,6 +4539,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11050, Supplied pack sound DotonFx.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11400]
 type=S
 movetype=A
@@ -5790,6 +5870,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1211]
 type=S
 movetype=A
@@ -5927,6 +6017,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1440]
 type=S
 movetype=A
@@ -6150,6 +6250,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11211]
 type=S
 movetype=A
@@ -6287,6 +6397,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11440]
 type=S
 movetype=A
@@ -7050,6 +7170,33 @@ value=0
 ctrl=1
 
 
+
+
+[State 3001, Original pack animation 27150]
+type=Explod
+trigger1=Time=102
+anim=27150
+ID=27150
+postype=P1
+pos=60,0
+scale=.65,.65
+removetime=44
+bindtime=0
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Supplied pack sound DotonFx.mp3]
+type=PlaySnd
+trigger1=Time=102
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 13000]
 type=S
 movetype=A
@@ -7357,6 +7504,33 @@ value=0
 ctrl=1
 
 
+
+
+[State 13001, Original pack animation 27150]
+type=Explod
+trigger1=Time=102
+anim=27150
+ID=27150
+postype=P1
+pos=60,0
+scale=.65,.65
+removetime=44
+bindtime=0
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Supplied pack sound DotonFx.mp3]
+type=PlaySnd
+trigger1=Time=102
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 3010]
 type=A
 movetype=H

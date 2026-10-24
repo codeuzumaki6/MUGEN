@@ -8,7 +8,7 @@
     ],
     "environment": {},
     "log": "previews/roster_regressions/Eida.log",
-    "log_sha256": "99ec5f9193fe65665ab64be8229c16e3fe2f2908345612958457c7bba38a67f0"
+    "log_sha256": "9355a4858de527b764ddace21132b298e1bd6fccc8ef7266b4aea66278359198"
   },
   {
     "character": "PochitaTrueForm",
@@ -30,7 +30,7 @@
     ],
     "environment": {},
     "log": "previews/roster_regressions/Mamushi.log",
-    "log_sha256": "b2ff1298c362cf40503da7fb3f0d705348f2e1da125e1a1921ad56e61fe4a458"
+    "log_sha256": "645e9f477b23f3705ca554af8f3dc5f1584ac3c0a80c299833450153b5b8fabb"
   },
   {
     "character": "Shibai",
@@ -52,7 +52,7 @@
     ],
     "environment": {},
     "log": "previews/roster_regressions/JuraShinju.log",
-    "log_sha256": "bdb243eb91053712461c1fccb85a868bcf2b16de9219545b4a8de08995eb6908"
+    "log_sha256": "8ffaad571982b362fb056f267a3d7d36a898de47a539f77af2c4f28b3f0c6bca"
   },
   {
     "character": "MitsukiTBV",
@@ -62,7 +62,7 @@
     ],
     "environment": {},
     "log": "previews/roster_regressions/MitsukiTBV.log",
-    "log_sha256": "a94011bc50adca3fdfab27863296fd5e71d5cb5fc4e4fa86391bc612c6f9cbf7"
+    "log_sha256": "c329eaeadc1a73dbaa09f8de3976a5dab182814b08d516bdcb7caa3921ec23fe"
   },
   {
     "character": "RyuShinju",
@@ -115,6 +115,6 @@
       "MAMUSHI_CLONE_HEALTH_CHECK": "1"
     },
     "log": "previews/roster_regressions/MamushiCloneHealth.log",
-    "log_sha256": "daff788a9136fca25e7a6f7a0082f36b1e7f0fbe1f249833e1274778d263ad4a"
+    "log_sha256": "88978bc2efa36abbcb772d90e0ccb3553e8f3b03d0e0a9ba3addb11135d4887e"
   }
 ]

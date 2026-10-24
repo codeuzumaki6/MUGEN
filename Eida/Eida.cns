@@ -2117,6 +2117,16 @@ trigger1 = Time >= 40
 value = 0
 ctrl = 1
 
+
+
+[State 1300, Supplied pack sound Senrigan.mp3]
+type=PlaySnd
+trigger1=Time=0
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1301]
 type = S
 movetype = I
@@ -2311,6 +2321,16 @@ trigger1 = Time >= 120
 value = 0
 ctrl = 1
 
+
+
+[State 1350, Supplied pack sound Senrigan.mp3]
+type=PlaySnd
+trigger1=Time=0
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1351]
 type = S
 movetype = A

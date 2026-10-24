@@ -116,7 +116,7 @@ hook.add('loop','hidari_checks',function()
    local dy=(st==14600 and 12 or ((st==14500 or st==14200 or st==14300) and 9 or (st==14400 and time()>=10 and 12 or 0)));local rx,ry,rf=posX(),posY()+dy,facing()
    if helper(9500) then
     if isAsserted('invisible') then r.hiddenGuardian=r.hiddenGuardian+1 end
-    if time()>1 then r.guardianFrames=r.guardianFrames+1;if spriteVar('group')~=14090 and spriteVar('group')~=14091 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
+    if time()>1 then r.guardianFrames=r.guardianFrames+1;local supplied=SOURCEMAP[tostring(spriteVar('group'))..':'..tostring(spriteVar('image'))];if (spriteVar('group')~=14090 and spriteVar('group')~=14091 and not supplied) or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
     player(1)
    end
   end
@@ -130,6 +130,9 @@ hook.add('loop','hidari_checks',function()
  CAPTURE
 end)
 """.replace('TICKS',str(TICKS)).replace('CASECOUNT',str(len(cases))).replace('DUMMYLIFE',str(DUMMYLIFE)).replace('FACES','({'+','.join(str(c['face']) for c in cases)+'})')
+source_records=json.loads((ROOT/'HidariShinju/assets/full_pack/manifest.json').read_text())['frames']
+source_keys=','.join("['%s:%s']=true"%(r['group'],r['number']) for r in source_records if r['key'].startswith('Zabuza_Skill05_'))
+lua=lua.replace('SOURCEMAP','({'+source_keys+'})')
 if CAP:
  lua=lua.replace('local clock=var(58);','frames=frames+1;local clock=var(58);').replace('last=clock;frames=frames+1','last=clock')
  folder=Path(CAP).resolve();folder.mkdir(parents=True,exist_ok=True)

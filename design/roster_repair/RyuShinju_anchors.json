@@ -1226,5 +1226,439 @@
         25
       ]
     }
+  },
+  "3628730128df90ab95d6822d75354ae3153f67081102d4ea775a54c8df580dee:Shino_Skill05_01": {
+    "axis": [
+      98,
+      216
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.155440092086792,
+      "original_sprite": [
+        0,
+        14
+      ]
+    }
+  },
+  "a87767681f23ea1c53cdeb54db2e13b747521e24d0cdbcb52717bc829a6d7efb:Shino_Skill05_02": {
+    "axis": [
+      90,
+      214
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10640689730644226,
+      "original_sprite": [
+        0,
+        28
+      ]
+    }
+  },
+  "e5498a38fb81e6dbdaa1ad3cd5d5a44c658e29b0c291691f49538725ecfaedad:Shino_Skill05_03": {
+    "axis": [
+      90,
+      214
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01663314178586006,
+      "original_sprite": [
+        0,
+        28
+      ]
+    }
+  },
+  "eb7fba2db9f046663fcb5579d142a958d8b216e9071e476bd724dd74932198df:Shino_Skill05_04": {
+    "axis": [
+      90,
+      214
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.008660285733640194,
+      "original_sprite": [
+        0,
+        28
+      ]
+    }
+  },
+  "d0919a91e83456dc1654babf1919a16abbaf82efa2be3cf7b2b5ec01b77e2367:Shino_Skill05_05": {
+    "axis": [
+      103,
+      214
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        30
+      ]
+    }
+  },
+  "a72398e19999215a32be95d698ed524987fd371bb7f8ae3e288f4d0e807db5a9:Shino_Skill05_06": {
+    "axis": [
+      151,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "a93fd5a06d0b9a830168dfa22b3b26f0d34ffe85891e2e9f06cb7e386554fc13:Shino_Skill05_07": {
+    "axis": [
+      151,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "5370d8f85da7de3cc7cd95c42047a535dcda0373ac5be6386c4da10f39dcd202:Shino_Skill05_08": {
+    "axis": [
+      151,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "58b3db249c188f6d6fff95dd3277ab903cef58d696f4141559cf3b04482bb4b5:Shino_Skill05_09": {
+    "axis": [
+      151,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "eb6a9ed5a1ba15039f4967d159dae05ee2f34ef0e00a85cf51ff1e84e7633b78:Shino_Skill05_10": {
+    "axis": [
+      121,
+      160
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.021569078788161278,
+      "original_sprite": [
+        0,
+        58
+      ]
+    }
+  },
+  "b9de755071d5781ce933efe6acdce88a03796f1b06457258b1d594ce38836417:Shino_Skill05_11": {
+    "axis": [
+      121,
+      120
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.021569078788161278,
+      "original_sprite": [
+        0,
+        58
+      ]
+    }
+  },
+  "83361e665760d93dbd9c71d664af5adf28f8322e34eb1c247d060cdb36fab8bc:Shino_Skill05_12": {
+    "axis": [
+      141,
+      125
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "cc1f99bdfd690f8d27ee36324f45219536ba3a70c3a4e9787b4ba5d95095efe8:Shino_Skill05_13": {
+    "axis": [
+      141,
+      125
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "b915acb6b31db36d365f0daa498e7975a417ebdd3ca18ed76a8816d47c0c7ef1:Shino_Skill05_14": {
+    "axis": [
+      141,
+      125
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00031942303758114576,
+      "original_sprite": [
+        0,
+        64
+      ]
+    }
+  },
+  "70ce0e1694e4852f60d4fc522057e37e38e2f93b548bf2d1f43de3b084c89116:Shino_Skill05_15": {
+    "axis": [
+      121,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.019387725740671158,
+      "original_sprite": [
+        0,
+        66
+      ]
+    }
+  },
+  "5e546122939935ed006c718dbb3a95f45635c8622ec2f2d2df6d8af1b47f8f60:Shino_Skill05_16": {
+    "axis": [
+      121,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.011648861691355705,
+      "original_sprite": [
+        0,
+        66
+      ]
+    }
+  },
+  "41bef2288c4cd6619e8db39e3d84dbda61a44ed22e72c86cc70269e68fd77f04:Shino_Skill05_17": {
+    "axis": [
+      121,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.009349758736789227,
+      "original_sprite": [
+        0,
+        66
+      ]
+    }
+  },
+  "e435b79bad4b433fe2b9ba552b5721ccae80066e6438e8c3554019b52134110b:Shino_Skill05_18": {
+    "axis": [
+      125,
+      116
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002469837781973183,
+      "original_sprite": [
+        0,
+        67
+      ]
+    }
+  },
+  "5d2def0b6eeef2689074ebbb1517724f135186ef4b657b6b6afb448ea22437b4:Shino_Skill05_19": {
+    "axis": [
+      125,
+      116
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00025319959968328476,
+      "original_sprite": [
+        0,
+        68
+      ]
+    }
+  },
+  "57f8abc30a2c165c86d905d51b604dcfbeadec8498f1831b877f82cad79bcf10:Shino_Skill05_20": {
+    "axis": [
+      141,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03002658300101757,
+      "original_sprite": [
+        0,
+        69
+      ]
+    }
+  },
+  "11ca453dc18bbe8d329424c4c1913f266683c2f9fcf28b3cef67fc1d62e4bb25:Shino_Skill05_21": {
+    "axis": [
+      143,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.05552259832620621,
+      "original_sprite": [
+        0,
+        70
+      ]
+    }
+  },
+  "a8c08a3fa555a8aeea042d338f0590fafb071dc7886b1d645e59bf4f3f538f1c:Shino_Skill05_22": {
+    "axis": [
+      141,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.033636320382356644,
+      "original_sprite": [
+        0,
+        69
+      ]
+    }
+  },
+  "337ad9d1a20c1f9d44cd4c8e1854eb3942b8800c7d784841a3d01df5d3c9e3a6:Shino_Skill05_23": {
+    "axis": [
+      143,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0021401280537247658,
+      "original_sprite": [
+        0,
+        70
+      ]
+    }
+  },
+  "171b4511bdfd2c8a4d2f88b20f0fa6cf28e0f5b7b379dbcc98d4a6e4f908265a:Shino_Skill05_24": {
+    "axis": [
+      143,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00037470427923835814,
+      "original_sprite": [
+        0,
+        70
+      ]
+    }
+  },
+  "1bb9b94b894659d200991edea834aaa9674ddf13884e0ce7eb0fb17324d16745:Shino_Skill05_25": {
+    "axis": [
+      136,
+      174
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00023853906895965338,
+      "original_sprite": [
+        0,
+        72
+      ]
+    }
+  },
+  "10ab2868a19bff687d6377444d1f8f4ccce4791a97fca86445874ce1368cbe1e:Shino_Skill05_26": {
+    "axis": [
+      132,
+      181
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00019339575374033302,
+      "original_sprite": [
+        0,
+        71
+      ]
+    }
+  },
+  "415fb2496f477d247322590b06c9d4cc2d0f10b1bb4bd32b98a015c3e3ee8d8b:Shino_Skill05_27": {
+    "axis": [
+      207,
+      247
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04137803986668587,
+      "original_sprite": [
+        0,
+        28
+      ]
+    }
+  },
+  "546fa5845859f03d989567331ef1ffa28f5b20f36058bdc26d08f130d2b6fb66:Shino_Skill05_28": {
+    "axis": [
+      143,
+      302
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04832466319203377,
+      "original_sprite": [
+        0,
+        73
+      ]
+    }
+  },
+  "44060c117ff240e1072ef937020243c1ced19d9fe22f4eb6ab29b2a8fa78b0dd:Shino_Skill05_29": {
+    "axis": [
+      175,
+      155
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.02021241933107376,
+      "original_sprite": [
+        0,
+        67
+      ]
+    }
+  },
+  "947a9bb277443317a300688eba3c7ef677fb75b897dbc40e4ca3eb8c9672bf22:Shino_Skill05_30": {
+    "axis": [
+      175,
+      155
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.004195328336209059,
+      "original_sprite": [
+        0,
+        68
+      ]
+    }
+  },
+  "692f3e705dd0ae4c0cb045acc5347c11aadba586da062ef1f1d9a507373226d7:Shino_Skill05_31": {
+    "axis": [
+      175,
+      155
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002469837781973183,
+      "original_sprite": [
+        0,
+        67
+      ]
+    }
   }
 }

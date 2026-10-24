@@ -4,7 +4,7 @@ Check C: Initializing GFX Font
 Check D: We are GOOD
 
 Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
-WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): y, x
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
 
 PASS DaemonRapido 1 {'case': {'name': 'DaemonRapido', 'button': 'a', 'direction': 'F', 'state': 1000, 'cost': 500, 'mode': 0, 'facing': 1, 'distance': 120, 'kind': 'move'}, 'states': [0, 10, 12, 20, 1000], 'damage': 58, 'received_damage': 0, 'helpers_end': 0, 'active_assist_on_hit': False, 'assist_lingered_after_hit': False, 'latest_helper_tick': 93, 'spawn_distance': 20.0, 'travel_distance': 91.29999542236328, 'minimum_power': 2500, 'charm_marker': False, 'dash_travel': 0.0, 'jump_apex': 0.0, 'victim_end_state': 0, 'failures': []}
 PASS DaemonCombo 1 {'case': {'name': 'DaemonCombo', 'button': 'a', 'direction': 'B', 'state': 1010, 'cost': 750, 'mode': 1, 'facing': 1, 'distance': 120, 'kind': 'move'}, 'states': [0, 10, 12, 20, 1010], 'damage': 112, 'received_damage': 0, 'helpers_end': 0, 'active_assist_on_hit': False, 'assist_lingered_after_hit': False, 'latest_helper_tick': 123, 'spawn_distance': 20.0, 'travel_distance': 107.99998092651367, 'minimum_power': 2250, 'charm_marker': False, 'dash_travel': 0.0, 'jump_apex': 0.0, 'victim_end_state': 5110, 'failures': []}

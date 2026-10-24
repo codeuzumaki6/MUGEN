@@ -2018,6 +2018,16 @@ ownpal=1
 sprpriority=-1
 removeongethit=1
 
+
+
+[State 1030, Supplied pack sound Bor0.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type = S
 movetype = A
@@ -2243,6 +2253,16 @@ ownpal=1
 sprpriority=3
 removeongethit=1
 
+
+
+[State 1040, Supplied pack sound Cambuk.wav]
+type=PlaySnd
+trigger1=Time=8
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1400]
 type = C
 movetype = A
@@ -2550,6 +2570,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1010, Supplied pack sound Kayu.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 9100]
 type = S
 movetype = A
@@ -2560,13 +2590,13 @@ velset = 0,0
 
 [State 9100, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 4
+trigger1 = Time = 8
 value = S1,30
 channel = 1
 
 [State 9100, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = Time = 8
 attr = S, SA
 damage = 115,5
 animtype = Up
@@ -3385,26 +3415,6 @@ givepower = 12,8
 envshake.time = 3
 envshake.ampl = -1
 
-[State 1210, Timed presentation accent]
-type = Explod
-trigger1 = Time=12 || Time=20
-anim=8760
-ID=8760
-postype=P1
-pos=125,-32
-bindtime=0
-scale=0.18,0.18
-removetime=-2
-ownpal=1
-sprpriority=4
-removeongethit=1
-
-[State 1210, Mouth charge sound]
-type = PlaySnd
-trigger1 = Time=12
-value=S1,32
-channel=1
-
 [State 1210, Emit the sphere from the open jaw]
 type = Helper
 trigger1 = Time=28
@@ -3423,26 +3433,48 @@ trigger1 = Time=28
 value=S1,33
 channel=1
 
-[State 1210, Timed presentation accent]
-type = Explod
-trigger1 = Time=28
-anim=8740
-ID=8740
-postype=P1
-pos=125,-32
-bindtime=0
-scale=0.55,0.55
-removetime=-2
-ownpal=1
-sprpriority=5
-removeongethit=1
-
 [State 1210, Recover the jaw]
 type = ChangeState
 trigger1 = AnimTime=0
 value=0
 ctrl=1
 
+
+[State 1210, Original pack animation 27100]
+type=Explod
+trigger1=Time=10
+anim=27100
+ID=27100
+postype=P1
+pos=125,-32
+scale=.48,.48
+removetime=18
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Supplied pack sound charge2.ogg]
+type=PlaySnd
+trigger1=Time=10
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
+
+
+[State 1210, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=28
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 9400]
 type = A
 movetype = A
@@ -3450,32 +3482,6 @@ physics = N
 anim = 9400
 ctrl = 0
 velset = 7.5,0
-
-[State 9400, Visible dark core]
-type = AngleDraw
-trigger1 = 1
-value=0
-scale=.42,.42
-
-[State 9400, Purple-black core]
-type = PalFX
-trigger1 = 1
-time=1
-color=0
-mul=28,5,45
-
-[State 9400, Living violet rim]
-type = Explod
-trigger1 = Time=0
-anim=8760
-ID=9409
-postype=P1
-pos=0,0
-bindtime=-1
-scale=.15,.15
-removetime=45
-ownpal=1
-sprpriority=4
 
 [State 9400, Current root power]
 type = AttackMulSet
@@ -3523,11 +3529,16 @@ trigger2=Time>=40
 trigger3=RoundState!=2
 value=9401
 
+
+[State 9400, Preserve original sphere dimensions]
+type=AngleDraw
+trigger1=1
+scale=.42,.42
 [Statedef 9401]
 type = A
 movetype = I
 physics = N
-anim = 8740
+anim=27101
 ctrl = 0
 velset = 0,0
 
@@ -3535,20 +3546,6 @@ velset = 0,0
 type = RemoveExplod
 trigger1 = Time=0
 ID=9409
-
-[State 9401, Timed presentation accent]
-type = Explod
-trigger1 = Time=0
-anim=8750
-ID=8750
-postype=P1
-pos=0,20
-bindtime=0
-scale=0.45,0.45
-removetime=-2
-ownpal=1
-sprpriority=5
-removeongethit=1
 
 [State 9401, Final pulse sound]
 type = PlaySnd
@@ -3558,9 +3555,29 @@ channel=1
 
 [State 9401, Finite burst]
 type = DestroySelf
-trigger1 = Time>=18
+trigger1 = Time>=30
 
 
+
+[State 9401, Original impact dimensions]
+type=AngleDraw
+trigger1=1
+scale=.28,.28
+
+[State 9401, Ground the source impact]
+type=PosSet
+trigger1=Time=0
+y=0
+
+
+[State 9401, Supplied pack sound Duar.ogg]
+type=PlaySnd
+trigger1=Time=0
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1440]
 type = S
 movetype = I
@@ -3636,6 +3653,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1440, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,6
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 9500]
 type = S
 movetype = I

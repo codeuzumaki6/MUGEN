@@ -132,5 +132,19 @@
       "method": "visible lower bound",
       "error": 0.1851469725370407
     }
+  },
+  "b6a6cf3b4aadd1146f38bfad918e76836aa7d6fa77fd40f9740a89da198658f9:Parents_Skill01_008": {
+    "axis": [
+      174,
+      180
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.14501629769802094,
+      "original_sprite": [
+        1000,
+        16
+      ]
+    }
   }
 }

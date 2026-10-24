@@ -2598,6 +2598,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1000, Supplied pack sound CyborgTranshand.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1010]
 type=S
 movetype=A
@@ -2686,6 +2696,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1010, Supplied pack sound Blade00.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1020]
 type=S
 movetype=A
@@ -2759,6 +2779,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1020, Supplied pack sound elect2.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1030]
 type=S
 movetype=A
@@ -2832,6 +2862,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1030, Supplied pack sound break_sound3.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type=S
 movetype=A
@@ -3657,6 +3697,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1430, Supplied pack sound hao_chg2.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11000]
 type=S
 movetype=A
@@ -3919,6 +3969,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11000, Supplied pack sound CyborgTranshand.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11010]
 type=S
 movetype=A
@@ -4007,6 +4067,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11010, Supplied pack sound Blade00.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11020]
 type=S
 movetype=A
@@ -4080,6 +4150,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11020, Supplied pack sound elect2.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11030]
 type=S
 movetype=A
@@ -4153,6 +4233,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11030, Supplied pack sound break_sound3.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11040]
 type=S
 movetype=A
@@ -5020,6 +5110,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11430, Supplied pack sound hao_chg2.ogg]
+type=PlaySnd
+trigger1=Time=8
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1210]
 type=S
 movetype=A
@@ -5093,6 +5193,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1211]
 type=S
 movetype=A
@@ -5237,6 +5347,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1440]
 type=S
 movetype=A
@@ -5454,6 +5574,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11211]
 type=S
 movetype=A
@@ -5598,6 +5728,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11440]
 type=S
 movetype=A
@@ -5946,6 +6086,19 @@ value=Time*9
 scale=.9,.9
 
 
+
+
+[State 9430, Original iron impact]
+type=Explod
+trigger1=MoveContact
+anim=27130
+postype=P1
+pos=0,0
+scale=.6,.6
+removetime=-2
+ownpal=1
+sprpriority=4
+persistent=0
 [Statedef 9420]
 type=A
 movetype=A
@@ -7341,6 +7494,29 @@ value=0
 ctrl=1
 
 
+
+
+[State 3001, Single supplied winged figure]
+type=AssertSpecial
+trigger1=NumHelper(9500)>0
+flag=Invisible
+
+
+[State 3001, Original pack animation 27131]
+type=Explod
+trigger1=Time=160
+anim=27131
+ID=27131
+postype=P1
+pos=75,0
+scale=.65,.65
+removetime=32
+bindtime=0
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
 [Statedef 13000]
 type=S
 movetype=A
@@ -7977,6 +8153,29 @@ value=0
 ctrl=1
 
 
+
+
+[State 13001, Single supplied winged figure]
+type=AssertSpecial
+trigger1=NumHelper(9500)>0
+flag=Invisible
+
+
+[State 13001, Original pack animation 27131]
+type=Explod
+trigger1=Time=160
+anim=27131
+ID=27131
+postype=P1
+pos=75,0
+scale=.65,.65
+removetime=32
+bindtime=0
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
 [Statedef 3010]
 type=S
 movetype=H
@@ -8036,14 +8235,7 @@ velset=0,0
 type=BindToRoot
 trigger1=1
 time=1
-pos=0,-70
-
-
-[State 9500, Wings open and fold]
-type=AngleDraw
-trigger1=1
-value=0
-scale=IfElse(Time<20,.2+Time*.04,IfElse(Time<180,1,IfElse(Time<206,(206-Time)/26.0,.01))),IfElse(Time<20,.2+Time*.04,IfElse(Time<180,1,IfElse(Time<206,(206-Time)/26.0,.01)))
+pos=0,0
 
 
 [State 9500, Wings behind the caster]
@@ -8072,6 +8264,11 @@ trigger3=RoundState!=2
 
 
 
+
+[State 9500, Native supplied winged body]
+type=AngleDraw
+trigger1=1
+scale=1,1
 [Statedef -2]
 
 [State -2, Finite form timer]

@@ -1,0 +1,122 @@
+[
+  {
+    "character": "HidariShinju",
+    "frames": 113,
+    "cases": 2,
+    "duration": 8.5,
+    "video": "HidariShinju_paquete_completo_motor.mp4",
+    "sha256": "2a1a1129e932f3632c5af8254b62e40cf65c42c5e06f1c4e7272c252bf356784",
+    "audio": "Actual engine SDL stereo; no offline effect mix",
+    "activations": [
+      {
+        "case": 0,
+        "cue_frame": 29,
+        "correlation": 0.6314724085886306,
+        "actual_sample_seconds": 4.91907029478458
+      },
+      {
+        "case": 1,
+        "cue_frame": 349,
+        "correlation": 0.9807459301975766,
+        "actual_sample_seconds": 10.216780045351474
+      }
+    ],
+    "source_log_sha256": "c1f1a6470890567285b07c909a861c29497a02b2483f9891e737ecf8cbdfda91"
+  },
+  {
+    "character": "MatsuriShinju",
+    "frames": 211,
+    "cases": 6,
+    "duration": 21.716666666666665,
+    "video": "MatsuriShinju_paquete_completo_motor.mp4",
+    "sha256": "78980906a75d6777ad9ac85d20dd0dcf9e836b337232721a8602d474a0e049c7",
+    "audio": "Actual engine SDL stereo; no offline effect mix",
+    "activations": [
+      {
+        "case": 0,
+        "cue_frame": 29,
+        "correlation": 0.5641851196021077,
+        "actual_sample_seconds": 4.96907029478458
+      },
+      {
+        "case": 1,
+        "cue_frame": 357,
+        "correlation": 0.5677608750362796,
+        "actual_sample_seconds": 10.495419501133787
+      },
+      {
+        "case": 2,
+        "cue_frame": 685,
+        "correlation": 0.6096101268415929,
+        "actual_sample_seconds": 15.882448979591837
+      },
+      {
+        "case": 3,
+        "cue_frame": 1013,
+        "correlation": 0.5151779308623718,
+        "actual_sample_seconds": 21.223038548752836
+      },
+      {
+        "case": 4,
+        "cue_frame": 1341,
+        "correlation": 0.5714113833010454,
+        "actual_sample_seconds": 26.656507936507936
+      },
+      {
+        "case": 5,
+        "cue_frame": 1669,
+        "correlation": 0.6096102217183826,
+        "actual_sample_seconds": 31.997097505668933
+      }
+    ],
+    "source_log_sha256": "a7389cf0a78b720d28b04d21a53a90a9068ad76bc4b24f78feaee1195e378ed5"
+  },
+  {
+    "character": "RyuShinju",
+    "frames": 207,
+    "cases": 6,
+    "duration": 21.816666666666666,
+    "video": "RyuShinju_paquete_completo_motor.mp4",
+    "sha256": "812a63ef4e03d953f3d8dc4c3dcd63d347717b1e1061964699ad9c902ba47de5",
+    "audio": "Actual engine SDL stereo; no offline effect mix",
+    "activations": [
+      {
+        "case": 0,
+        "cue_frame": 29,
+        "correlation": 0.8832487163904829,
+        "actual_sample_seconds": 4.922630385487528
+      },
+      {
+        "case": 1,
+        "cue_frame": 357,
+        "correlation": 0.9534020769028391,
+        "actual_sample_seconds": 10.588299319727891
+      },
+      {
+        "case": 2,
+        "cue_frame": 685,
+        "correlation": 0.9534028742981111,
+        "actual_sample_seconds": 16.068208616780044
+      },
+      {
+        "case": 3,
+        "cue_frame": 1013,
+        "correlation": 0.9534030894706297,
+        "actual_sample_seconds": 21.36235827664399
+      },
+      {
+        "case": 4,
+        "cue_frame": 1341,
+        "correlation": 0.905556603703146,
+        "actual_sample_seconds": 26.842267573696144
+      },
+      {
+        "case": 5,
+        "cue_frame": 1669,
+        "correlation": 0.9055558250780111,
+        "actual_sample_seconds": 32.08997732426304
+      }
+    ],
+    "source_log_sha256": "c9bc8b7f1eb159cd9dc3ddd6354248b5b3c8e5ab82fa517c35f437407529668f"
+  }
+]

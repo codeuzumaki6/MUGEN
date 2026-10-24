@@ -213,6 +213,35 @@ trigger1 = Time >= 160
 value = 0
 ctrl = 1
 
+
+
+[State 3001, Original pack animation 27160]
+type=Explod
+trigger1=Time=66
+anim=27160
+ID=27160
+postype=P1
+pos=0,-40
+scale=.18,.18
+removetime=42
+bindtime=-1
+ownpal=1
+sprpriority=-2
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+trans=AddAlpha
+alpha=200,256
+
+
+[State 3001, Supplied pack sound OmnipotenceSFx.mp3]
+type=PlaySnd
+trigger1=Time=66
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 3010]
 type = A
 movetype = H

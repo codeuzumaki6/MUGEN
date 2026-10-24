@@ -1,20 +1,20 @@
 {
-  "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
+  "runtime_sha256": "d11bed9a4e9f59cf9b0dd46951b69351a3ce0316e65ace13fb1e0e897597eda6",
   "jobs": {
     "ultimate": {
-      "video_sha256": "52de3341e594f768c2cdf815e69d657fbd9f9c16899712aee7fc8d6d5142b93b",
+      "video_sha256": "9c7aa5a6644776cbef0f83dea43969091d635869e2417f9b4fdb9cf137fa7bcc",
       "report": {
         "name": "ultimate",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 4.816666666666666,
-        "frames": 59,
+        "runtime_sha256": "d11bed9a4e9f59cf9b0dd46951b69351a3ce0316e65ace13fb1e0e897597eda6",
+        "duration": 4.849999999999999,
+        "frames": 64,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 6.222947845804988,
-            "normalized_correlation": 0.8769942895940376
+            "sample_seconds": 4.6439909297052155,
+            "normalized_correlation": 0.8624733286499303
           }
         ],
         "combat_checks": [
@@ -66,166 +66,32 @@
         ]
       }
     },
-    "asedio": {
-      "video_sha256": "6706a558ad0f2c60bf5622579258ebbc5e934e19be837cba5b2ab9b402f24f99",
-      "report": {
-        "name": "asedio",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 3.616666666666667,
-        "frames": 49,
-        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-        "activations": [
-          {
-            "frame": 29,
-            "case": 0,
-            "sample_seconds": 4.690430839002268,
-            "normalized_correlation": 0.6100276322537617
-          }
-        ],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "AsedioOcular",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "y",
-              "d": "D",
-              "state": 1430,
-              "cost": 350,
-              "distance": 120
-            },
-            "states": [
-              0,
-              11,
-              1430
-            ],
-            "damage": 194,
-            "received": 0,
-            "movement": 66.75,
-            "jump_apex": 0.0,
-            "min_power": 2650,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
-    "despertar": {
-      "video_sha256": "262cd9fd99c5d264475e2a25c0d101559915b18e758fb22c8b6abf3b3373a748",
-      "report": {
-        "name": "despertar",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 13.016666666666664,
-        "frames": 147,
-        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-        "activations": [
-          {
-            "frame": 29,
-            "case": 0,
-            "sample_seconds": 4.876190476190477,
-            "normalized_correlation": 0.8906954014999973
-          }
-        ],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "awakening",
-              "kind": "awakening",
-              "form": 0,
-              "face": 1,
-              "distance": 220
-            },
-            "states": [
-              0,
-              11,
-              520
-            ],
-            "damage": 0,
-            "received": 500,
-            "movement": 0.0,
-            "jump_apex": 0.0,
-            "min_power": 1500,
-            "max_power": 3000,
-            "max_awakening": 720,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 180,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 1,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 980,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
     "chaparros": {
-      "video_sha256": "4e9c58288c616c7d151b7341d24680b3d167f4174a709ea9b477b2e2585bce9d",
+      "video_sha256": "1fbd632f1be285af73018578a0a3412f367eabab09315d022ffdcd1f30064d78",
       "report": {
         "name": "chaparros",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 19.269908649173953,
-        "frames": 170,
+        "runtime_sha256": "d11bed9a4e9f59cf9b0dd46951b69351a3ce0316e65ace13fb1e0e897597eda6",
+        "duration": 19.411826800561492,
+        "frames": 208,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.783310657596372,
-            "normalized_correlation": 0.6805747598669915
+            "sample_seconds": 4.73687074829932,
+            "normalized_correlation": 0.45605375133796644
           },
           {
             "frame": 449,
             "case": 1,
-            "sample_seconds": 12.07437641723356,
-            "normalized_correlation": 0.6377325538301002
+            "sample_seconds": 12.027936507936507,
+            "normalized_correlation": 0.404154451306832
           },
           {
             "frame": 869,
             "case": 2,
-            "sample_seconds": 19.13324263038549,
-            "normalized_correlation": 0.8838818252406414
+            "sample_seconds": 19.17968253968254,
+            "normalized_correlation": 0.8343552242077411
           }
         ],
         "combat_checks": [
@@ -374,546 +240,38 @@
         ]
       }
     },
-    "combos": {
-      "video_sha256": "0bed8614d41dc24e53c2ea60f408e9a5ee4599042dad4464ee6b8e84adbd676f",
-      "report": {
-        "name": "combos",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 10.266666666666667,
-        "frames": 141,
-        "audio": "Silent sprite-combo recording",
-        "activations": [],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "Combo a",
-              "kind": "combo",
-              "form": 0,
-              "face": 1,
-              "button": "a",
-              "state": 202,
-              "distance": 50
-            },
-            "states": [
-              0,
-              200,
-              201,
-              202
-            ],
-            "damage": 264,
-            "received": 0,
-            "movement": 40.55924320220947,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Combo b",
-              "kind": "combo",
-              "form": 0,
-              "face": 1,
-              "button": "b",
-              "state": 212,
-              "distance": 50
-            },
-            "states": [
-              0,
-              210,
-              211,
-              212
-            ],
-            "damage": 264,
-            "received": 0,
-            "movement": 40.559242248535156,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Combo c",
-              "kind": "combo",
-              "form": 0,
-              "face": 1,
-              "button": "c",
-              "state": 222,
-              "distance": 50
-            },
-            "states": [
-              0,
-              220,
-              221,
-              222
-            ],
-            "damage": 264,
-            "received": 0,
-            "movement": 30.17839813232422,
-            "jump_apex": 0.0,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
-    "aereos": {
-      "video_sha256": "a48627a43746776b30b2d17d9321aa062f537bf7a3ef1e4f32a171babd0d032e",
-      "report": {
-        "name": "aereos",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 10.25,
-        "frames": 143,
-        "audio": "Silent sprite-combo recording",
-        "activations": [],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "Aire a",
-              "kind": "air",
-              "form": 0,
-              "face": 1,
-              "button": "a",
-              "state": 602,
-              "distance": 60
-            },
-            "states": [
-              0,
-              40,
-              50,
-              52,
-              600,
-              601,
-              602
-            ],
-            "damage": 192,
-            "received": 0,
-            "movement": 58.75,
-            "jump_apex": -100.68000793457031,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Aire b",
-              "kind": "air",
-              "form": 0,
-              "face": 1,
-              "button": "b",
-              "state": 612,
-              "distance": 60
-            },
-            "states": [
-              0,
-              40,
-              50,
-              52,
-              610,
-              611,
-              612
-            ],
-            "damage": 192,
-            "received": 0,
-            "movement": 13.5,
-            "jump_apex": -100.68000793457031,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Aire c",
-              "kind": "air",
-              "form": 0,
-              "face": 1,
-              "button": "c",
-              "state": 622,
-              "distance": 60
-            },
-            "states": [
-              0,
-              40,
-              50,
-              52,
-              620,
-              621,
-              622
-            ],
-            "damage": 192,
-            "received": 0,
-            "movement": 0.0,
-            "jump_apex": -100.68000793457031,
-            "min_power": 3000,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5120,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
-    "madera": {
-      "video_sha256": "38ca1e280d3485a57cdaf42d51691a86e22e67b74dea267b66d824ba52d60436",
-      "report": {
-        "name": "madera",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 11.927585921325049,
-        "frames": 159,
-        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-        "activations": [
-          {
-            "frame": 29,
-            "case": 0,
-            "sample_seconds": 4.73687074829932,
-            "normalized_correlation": 0.6721148811394605
-          },
-          {
-            "frame": 259,
-            "case": 1,
-            "sample_seconds": 8.870022675736962,
-            "normalized_correlation": 0.6766653391468483
-          },
-          {
-            "frame": 489,
-            "case": 2,
-            "sample_seconds": 12.817414965986394,
-            "normalized_correlation": 0.6949476831004338
-          }
-        ],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "Espinas",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "a",
-              "d": "F",
-              "state": 1000,
-              "cost": 350,
-              "distance": 120
-            },
-            "states": [
-              0,
-              11,
-              12,
-              20,
-              1000
-            ],
-            "damage": 155,
-            "received": 0,
-            "movement": 95.44999694824219,
-            "jump_apex": 0.0,
-            "min_power": 2650,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Raiz",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "a",
-              "d": "B",
-              "state": 1010,
-              "cost": 450,
-              "distance": 120
-            },
-            "states": [
-              0,
-              11,
-              12,
-              20,
-              1010
-            ],
-            "damage": 178,
-            "received": 0,
-            "movement": 52.25000762939453,
-            "jump_apex": 0.0,
-            "min_power": 2550,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "Arbol",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "c",
-              "d": "B",
-              "state": 1050,
-              "cost": 650,
-              "distance": 120
-            },
-            "states": [
-              0,
-              11,
-              12,
-              20,
-              1050
-            ],
-            "damage": 213,
-            "received": 0,
-            "movement": 2.5,
-            "jump_apex": 0.0,
-            "min_power": 2350,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
     "ocular": {
-      "video_sha256": "c99434f26242b01520be52a721c634dc76c76367a8dcad59db2fb16cca3d89c0",
+      "video_sha256": "3800c52b194f51d7d96bba5b41b913f8c111c26c1863c0cdd17dab7023e179a6",
       "report": {
         "name": "ocular",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 15.906678497485952,
-        "frames": 214,
+        "runtime_sha256": "d11bed9a4e9f59cf9b0dd46951b69351a3ce0316e65ace13fb1e0e897597eda6",
+        "duration": 15.889179401229093,
+        "frames": 213,
         "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
         "activations": [
           {
             "frame": 29,
             "case": 0,
-            "sample_seconds": 4.783310657596372,
-            "normalized_correlation": 0.6666428855185598
+            "sample_seconds": 4.829750566893424,
+            "normalized_correlation": 0.4451760089709223
           },
           {
             "frame": 259,
             "case": 1,
-            "sample_seconds": 8.916462585034013,
-            "normalized_correlation": 0.7244946166962404
+            "sample_seconds": 8.962902494331066,
+            "normalized_correlation": 0.5086091411488566
           },
           {
             "frame": 489,
             "case": 2,
-            "sample_seconds": 12.910294784580499,
-            "normalized_correlation": 0.5488332578538696
+            "sample_seconds": 12.956734693877552,
+            "normalized_correlation": 0.5284591557686377
           },
           {
             "frame": 719,
             "case": 3,
-            "sample_seconds": 16.857687074829933,
-            "normalized_correlation": 0.7306083036207329
+            "sample_seconds": 16.904126984126986,
+            "normalized_correlation": 0.4144240330500676
           }
         ],
         "combat_checks": [
@@ -1111,200 +469,6 @@
             "regeneration_cocoon": 0,
             "ultimate_throne": 0,
             "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
-    "garras": {
-      "video_sha256": "ffaa8298c78063fce59bc16b3e199cad92af331b876b4d5ca84dc8db70214a6f",
-      "report": {
-        "name": "garras",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 8.337377107364684,
-        "frames": 104,
-        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-        "activations": [
-          {
-            "frame": 29,
-            "case": 0,
-            "sample_seconds": 4.783310657596372,
-            "normalized_correlation": 0.9451874325143931
-          },
-          {
-            "frame": 79,
-            "case": 0,
-            "sample_seconds": 5.944308390022676,
-            "normalized_correlation": 0.8577944233605459
-          },
-          {
-            "frame": 259,
-            "case": 1,
-            "sample_seconds": 9.102222222222222,
-            "normalized_correlation": 0.8558991212886506
-          }
-        ],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "Marca",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "z",
-              "d": "N",
-              "state": 1210,
-              "cost": 300,
-              "distance": 180
-            },
-            "states": [
-              0,
-              1210,
-              1211
-            ],
-            "damage": 172,
-            "received": 0,
-            "movement": 125.0,
-            "jump_apex": 0.0,
-            "min_power": 2400,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 5110,
-            "claw_marks": 1,
-            "claw_portals": 2,
-            "claw_mark_y": 0.0,
-            "claw_travel": 125.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          },
-          {
-            "case": {
-              "name": "SalidaGarra",
-              "kind": "move",
-              "form": 0,
-              "face": 1,
-              "button": "z",
-              "d": "D",
-              "state": 1440,
-              "cost": 500,
-              "distance": 90
-            },
-            "states": [
-              0,
-              11,
-              1440
-            ],
-            "damage": 172,
-            "received": 0,
-            "movement": 80.00000762939453,
-            "jump_apex": 0.0,
-            "min_power": 2500,
-            "max_power": 3000,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 3,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 0,
-            "aura_after_charge": 0,
-            "end_life": 1300,
-            "end_helpers": 0,
-            "failures": []
-          }
-        ]
-      }
-    },
-    "carga": {
-      "video_sha256": "a642ad1d05d68b53cf077083f4bb6fc71f654de20ad10a04cad90546d8a82f13",
-      "report": {
-        "name": "carga",
-        "runtime_sha256": "d1e88066ed07f4b6c61fbf10771cb14a91d1b089ced68b5643010afd4856bf52",
-        "duration": 3.2999999999999994,
-        "frames": 48,
-        "audio": "Actual SDL stereo 44100Hz; no offline sound mix",
-        "activations": [
-          {
-            "frame": 21,
-            "case": 0,
-            "sample_seconds": 3.971111111111111,
-            "normalized_correlation": 0.3147991908277641
-          }
-        ],
-        "combat_checks": [
-          {
-            "case": {
-              "name": "charge",
-              "kind": "charge",
-              "form": 0,
-              "face": 1,
-              "distance": 220
-            },
-            "states": [
-              0,
-              500
-            ],
-            "damage": 0,
-            "received": 0,
-            "movement": 0.0,
-            "jump_apex": 0.0,
-            "min_power": 0,
-            "max_power": 1364,
-            "max_awakening": 0,
-            "blue_frames": 0,
-            "end_awakening": 0,
-            "end_animation": 0,
-            "end_state": 0,
-            "victim_end": 0,
-            "claw_marks": 0,
-            "claw_portals": 0,
-            "claw_mark_y": 0.0,
-            "claw_travel": 0.0,
-            "claw_marks_remaining": 0,
-            "dash_signed_distance": 0.0,
-            "target_scale": 1.0,
-            "target_crouching": false,
-            "ultimate_guarded": false,
-            "healing_inside_cocoon": 0,
-            "healing_outside_cocoon": 0,
-            "actual_life_lost": 0,
-            "regeneration_cocoon": 0,
-            "ultimate_throne": 0,
-            "charge_aura": 1,
             "aura_after_charge": 0,
             "end_life": 1300,
             "end_helpers": 0,

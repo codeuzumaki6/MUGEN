@@ -2388,6 +2388,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1010, Supplied pack sound CyborgTranshand2.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1020]
 type=S
 movetype=A
@@ -2549,6 +2559,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1030, Supplied pack sound Katon.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type=S
 movetype=A
@@ -2887,6 +2907,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1050, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1400]
 type=S
 movetype=A
@@ -3324,6 +3354,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1430, Supplied pack sound Kirin.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1210]
 type=S
 movetype=A
@@ -3397,6 +3437,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1211]
 type=S
 movetype=A
@@ -3541,6 +3591,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1440]
 type=S
 movetype=A
@@ -5746,6 +5806,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 520, Supplied pack sound Transform.mp3]
+type=PlaySnd
+trigger1=Time=100
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 9560]
 type=A
 movetype=I
@@ -7127,3 +7197,17 @@ trigger1=!IsHelper && Var(42)=1
 flag=Invisible
 flag2=NoShadow
 ignorehitpause=1
+
+
+[State -2, Original yellow guardian dissolves at expiry]
+type=Explod
+trigger1=Var(42)=1 && Var(40)=1
+anim=27140
+ID=27140
+postype=P1
+pos=0,0
+scale=.3,.3
+removetime=-2
+ownpal=1
+sprpriority=-1
+removeongethit=1

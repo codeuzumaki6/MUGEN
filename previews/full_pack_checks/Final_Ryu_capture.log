@@ -1,0 +1,17 @@
+Check A: Selecting Renderer
+Check B: Initializing GFX
+Check C: Initializing GFX Font
+Check D: We are GOOD
+
+Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
+CRITICAL: You are using the SDL disk i/o audio driver!
+CRITICAL:  Writing to file [/tmp/full-pack-native/RyuShinju/take-93g9gft5/audio.raw].
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
+
+PASS Prision 0 1 210 []
+PASS Torbellino 0 1 215 []
+PASS ultimate 0 1 420 []
+PASS Prision 1 1 260 []
+PASS Torbellino 1 1 275 []
+PASS ultimate 1 1 450 []
+PASS 6 Ryu actual-input engine cases

@@ -768,5 +768,285 @@
         14
       ]
     }
+  },
+  "2c63ec18201c2f1d03d4f60a577aba86bf4875d533af1ea891ad10692ca35ead:SageGaara_Chg_01": {
+    "axis": [
+      135,
+      132
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.02092108316719532,
+      "original_sprite": [
+        1,
+        13
+      ]
+    }
+  },
+  "7190b214d383ff04a9f7e971f0fc96d5add02bac0760978b579bb4bfe58772ed:SageGaara_Chg_02": {
+    "axis": [
+      135,
+      132
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.022949745878577232,
+      "original_sprite": [
+        1,
+        13
+      ]
+    }
+  },
+  "197b150c834ff6975d7b9c3de9cf901e5d7750d5b1cc89e5a28a70da3d1a14d4:SageGaara_Chg_03": {
+    "axis": [
+      139,
+      128
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06421977281570435,
+      "original_sprite": [
+        1,
+        14
+      ]
+    }
+  },
+  "95249f1a7e1b5392be8be0e7a852514f57aecfccf47e025b999c69d835cd318c:SageGaara_Chg_04": {
+    "axis": [
+      132,
+      134
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08988750725984573,
+      "original_sprite": [
+        1,
+        4
+      ]
+    }
+  },
+  "838c1ed4edff6cc563b9b1611ee07ab9c748b819d97fdb648be8044615c1dd15:SageGaara_Chg_05": {
+    "axis": [
+      140,
+      120
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0861036404967308,
+      "original_sprite": [
+        1,
+        4
+      ]
+    }
+  },
+  "f07302fe8bd1a5b86b35488d703823eb7be0671a9fa55096b835dec5c48b10d7:SageGaara_Chg_06": {
+    "axis": [
+      139,
+      128
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.039738189429044724,
+      "original_sprite": [
+        1,
+        14
+      ]
+    }
+  },
+  "2bb0d0b3d6a45a8a2aedaa4af257e6d2e07c1ad29ce6ee9d7b0be303eadd8819:Gaara_NAttack_01": {
+    "axis": [
+      26,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        17
+      ]
+    }
+  },
+  "d7e78fa0a0f8c950abdc1a5d389ef3994f6799bdbd8574beaf137c0d74881dd7:Gaara_NAttack_02": {
+    "axis": [
+      31,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04505004361271858,
+      "original_sprite": [
+        0,
+        18
+      ]
+    }
+  },
+  "fe98aeb11cc3a86718a52922c58d819934643f373000ac3b0f73d6d8c4330f91:Gaara_NAttack_03": {
+    "axis": [
+      29,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.019003281369805336,
+      "original_sprite": [
+        0,
+        19
+      ]
+    }
+  },
+  "ac2feedab3818c6d0dcdf76e055fdc8bc10fbc99c62e875bd9403245dcf7b4f7:Gaara_NAttack_04": {
+    "axis": [
+      29,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.002094784751534462,
+      "original_sprite": [
+        0,
+        19
+      ]
+    }
+  },
+  "40b76fad27628b8965a16985e617e86ac397fe7f423115c8694306ec6d08e90f:Gaara_NAttack_05": {
+    "axis": [
+      31,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0008449825108982623,
+      "original_sprite": [
+        0,
+        20
+      ]
+    }
+  },
+  "a415c36f1caae14880c0a36886135c4f2e8ee635646c46459c9b7f92f5039058:Gaara_NAttack_06": {
+    "axis": [
+      33,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.02153797633945942,
+      "original_sprite": [
+        0,
+        21
+      ]
+    }
+  },
+  "d8eed665cfcb980fd4b2c5ff9287da090935edbec894f5675f101e44bee112f2:Gaara_NAttack_07": {
+    "axis": [
+      35,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015917686745524406,
+      "original_sprite": [
+        0,
+        22
+      ]
+    }
+  },
+  "347f06da68fcb22059f4e544eae3a98da134f329b2f146a23ab5662e1d7e3716:Gaara_NAttack_08": {
+    "axis": [
+      35,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.005674419924616814,
+      "original_sprite": [
+        0,
+        22
+      ]
+    }
+  },
+  "2ab0cb2dabdfc5366559f4b666f5fba26d468c67e18ee951d2b957f4216fbc04:Gaara_NAttack_09": {
+    "axis": [
+      34,
+      114
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0012922994792461395,
+      "original_sprite": [
+        0,
+        23
+      ]
+    }
+  },
+  "4f61e7ae8409a16aaddf3101ffc2aca2a23807c89222b090785280970ff8183d:Gaara_NAttack_10": {
+    "axis": [
+      35,
+      128
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        41
+      ]
+    }
+  },
+  "9fc70c2c2315b66c27bbd2f1f279085778f1666fb70073be203395cb83125f03:Gaara_SegelTangan_01": {
+    "axis": [
+      26,
+      84
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        54
+      ]
+    }
+  },
+  "be9f140591b37a5f90471b2754eba03fba9ab92c3577718f17c4c2132636fb36:Gaara_SegelTangan_02": {
+    "axis": [
+      28,
+      84
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        55
+      ]
+    }
+  },
+  "6d7d64719c48dad12d58ed6be737c97db42faa1d1d2a571acae84d9bf90a4215:Gaara_SegelTangan_03": {
+    "axis": [
+      26,
+      84
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "44de5d8a41784cf27828b218966fdcf896efde0e550eed825aef4298937bb9e9:Gaara_SegelTangan_04": {
+    "axis": [
+      26,
+      84
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.004458937328308821,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
   }
 }

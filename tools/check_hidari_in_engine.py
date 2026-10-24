@@ -140,7 +140,7 @@ hook.add('loop','hidari_checks',function()
   if numHelper(9500)>0 then
    local rx,ry,rf=posX(),posY(),facing()
    if helper(9500) then
-    if time()>1 then r.guardianFrames=r.guardianFrames+1;if spriteVar('group')~=14090 and spriteVar('group')~=14091 or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
+    if time()>1 then r.guardianFrames=r.guardianFrames+1;local supplied=GUARDIANSOURCE[string.format('%d:%d',spriteVar('group'),spriteVar('image'))];if (spriteVar('group')~=14090 and spriteVar('group')~=14091 and not supplied) or math.abs(posX()-rx)>1 or math.abs(posY()-ry)>1 or facing()~=rf then r.guardianWrong=r.guardianWrong+1 end end
     player(1)
    end
   end
@@ -163,6 +163,8 @@ if CAP:
  if frames-cap.last>=CAPSTEP and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
  """.replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND','({'+','.join('302' if c['kind']=='ultimate' else '180' for c in cases)+'})[case+1]' if os.environ.get('HIDARI_ALL_SPECIALS') else str(TICKS-12)).replace('CAPSTEP','(st==11020 and 2 or 6)' if os.environ.get('HIDARI_ALL_SPECIALS') else '4'))
 else:lua=lua.replace('CAPSETUP','').replace('CAPTURE','')
+from senki_test_contract import lua_full_sprite_keys
+lua=lua.replace('GUARDIANSOURCE',lua_full_sprite_keys('HidariShinju','Zabuza_Skill05_'))
 module.write_text(lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/hidari_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIODELAY='46')

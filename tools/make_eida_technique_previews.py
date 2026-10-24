@@ -10,6 +10,8 @@ from check_eida_compact_scene import inspect_compact_scene
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews'
 engine=sys.argv[1] if len(sys.argv)>1 else '/workspace/.eida-tools/ikemen-nightly'
 jobs=[('especiales',[m[0] for m in MOVES],False,False),('senrigan_sin_ataque',['Senrigan sin ataque'],False,True),('omnipotencia_abrazo',['ultimatehit'],True,False)]
+if os.environ.get('EIDA_PREVIEW_JOBS'):
+    wanted=set(json.loads(os.environ['EIDA_PREVIEW_JOBS']));jobs=[j for j in jobs if j[0] in wanted]
 daemon_review=os.environ.get('EIDA_DAEMON_MODEL_REVIEW')=='1'
 if daemon_review:
     jobs=[('daemon_modelo',['DaemonRapido','DaemonCombo','DaemonEleva','DaemonPatadas','DaemonBarrido','AsaltoDoble'],False,False)]
@@ -115,7 +117,7 @@ with tempfile.TemporaryDirectory(prefix='eida-technique-video-') as temp:
             lines += [f"file '{path}'",'option framerate 60',f'duration {audio_time(following)-audio_time(tick):.9f}']
         lines += [f"file '{path}'",'option framerate 60'];listing.write_text('\n'.join(lines)+'\n')
         caption=folder/'caption.txt'
-        caption.write_text('DAEMON | Modelo original, poses de apoyo y seis ataques en el motor' if daemon_review else 'A: OMNIPOTENCIA | Dos sprites originales, abrazo compacto y liberacion' if ultimate else 'ABAJO + ATRAS + Y: SENRIGAN | Espera un golpe; sin golpe no hay contraataque' if idle else '14 JUTSUS | Activacion, sonido y combate capturados del motor')
+        caption.write_text('DAEMON | Modelo original, poses de apoyo y seis ataques en el motor' if daemon_review else 'A: OMNIPOTENCIA | Secuencia original del ZIP, abrazo compacto y liberacion' if ultimate else 'ABAJO + ATRAS + Y: SENRIGAN | Espera un golpe; sin golpe no hay contraataque' if idle else '14 JUTSUS | Activacion, sonido y combate capturados del motor')
         subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(listing),'-i',str(wav),'-vf',f'fps=30,drawbox=x=0:y=680:w=1280:h=40:color=black@0.8:t=fill,drawtext=expansion=none:textfile={caption}:x=(w-tw)/2:y=689:fontsize=19:fontcolor=white','-c:v','libx264','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-t',str(duration),'-movflags','+faststart',str(clip)],check=True)
         if ultimate or idle or daemon_review:
             subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(clip),'-filter_complex','[0:v]fps=12,scale=640:-1:flags=neighbor,split[a][b];[a]palettegen[p];[b][p]paletteuse=dither=none','-loop','0',str(clip.with_suffix('.gif'))],check=True)

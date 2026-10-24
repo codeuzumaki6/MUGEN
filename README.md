@@ -1,3 +1,21 @@
+## Revisión de paquetes completos: sprites y audio
+
+[Ver el resumen con sonido del motor](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/previews/Personajes_SPRITES_Y_AUDIO_motor.mp4). Esta revisión añade 383 cuadros originales y 35 sonidos de los ZIP.
+
+[Descargar todos los personajes](https://github.com/codeuzumaki6/MUGEN/raw/refs/heads/main/Personajes_CORREGIDOS.zip). Sustituye las carpetas antiguas de `chars` por las de este ZIP. Incluye los nueve personajes y actualiza las animaciones y sonidos de Eida, Mamushi, Jura, Mitsuki, Ryū, Hidari y Matsuri.
+
+- Mamushi: bramido corregido, con carga, proyectil e impacto separados.
+- Jura: carga, disparo y explosión de Bijūdama del atlas completo; rayo ocular original.
+- Hidari: los 28 cuadros de su Susanoo amarillo original; se conservan sus nueve ataques.
+- Ryū: secuencia completa de las alas, prisión y torbellino separados del cuerpo.
+- Mitsuki: Orochi Ikazuchi verde y efectos originales de ambos modos.
+- Matsuri: capa y agua del paquete, con despertar sin capa.
+- Eida: abrazo original de diez cuadros, Omnipotencia y Senrigan con su audio.
+
+Se mantienen controles, costes, daño limitado de las ultis, dobles dashes y recepción de golpes. Las voces existentes se conservan sin modificar sus archivos de audio.
+
+Grabaciones del motor: [Mamushi](previews/Mamushi_bramido_motor.mp4), [Jura](previews/Jura_ultimate_motor.mp4), [Hidari](previews/HidariShinju_paquete_completo_motor.mp4), [Mitsuki](previews/MitsukiTBV_paquete_completo_motor.mp4), [Ryū](previews/RyuShinju_paquete_completo_motor.mp4), [Matsuri](previews/MatsuriShinju_paquete_completo_motor.mp4) y [Eida](previews/Eida_omnipotencia_abrazo_nuevo_motor.mp4). Las grabaciones incluyen el sonido real del motor.
+
 # Nueve personajes corregidos
 
 [**Descargar los nueve personajes**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Personajes_CORREGIDOS.zip) · [Prueba de recepción de golpes](previews/Personajes_recepcion_de_golpes.mp4) · [Especiales de Matsuri corregidos](previews/MatsuriShinju_gameplay_motor.mp4) · [Verificación](previews/roster_revision_verification.json)

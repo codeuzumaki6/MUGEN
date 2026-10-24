@@ -114,7 +114,7 @@ hook.add('loop','mitsuki_checks',function()
   if st==100 or st==105 then r.dash=(r.startDist-p2DistX())*FACES[case+1] end
   if var(42)==1 and spriteVar('group')~=1 and st~=520 and not SENKI_BODY[string.format('%d:%d',spriteVar('group'),spriteVar('image'))] then r.wrong=r.wrong+1 end
   if moveType()=='H' and numHelper(9430)+numHelper(9431)>0 then r.beamHurt=r.beamHurt+1 end
-  if numHelper(9433)>0 and helper(9433) then r.orochi=r.orochi+1;if spriteVar('group')~=8950 then r.wrongOrochi=r.wrongOrochi+1 end;player(1) end
+  if numHelper(9433)>0 and helper(9433) then r.orochi=r.orochi+1;if spriteVar('group')~=8950 and not OROCHISOURCE[string.format('%d:%d',spriteVar('group'),spriteVar('image'))] then r.wrongOrochi=r.wrongOrochi+1 end;player(1) end
   player(2);r.damage=math.max(r.damage,DUMMYLIFE-life());r.victim=stateNo();if stateNo()>=150 and stateNo()<=155 then r.guard=1 end;player(1)
  end
  if tick==TICKS-1 then
@@ -134,7 +134,8 @@ if CAP:
  if frames-cap.last>=CAPSTEP and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
  """.replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND',str(min(TICKS-12,230))).replace('CAPSTEP','(st==11020 and 2 or 6)' if os.environ.get('MITSUKI_ALL_SPECIALS') else '4'))
 else:lua=lua.replace('CAPSETUP','').replace('CAPTURE','')
-from senki_test_contract import lua_body_keys
+from senki_test_contract import lua_body_keys,lua_full_sprite_keys
+lua=lua.replace('OROCHISOURCE',lua_full_sprite_keys('MitsukiTBV','SageGaara_Snakes_'))
 module.write_text(lua_body_keys('MitsukiTBV')+lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/mitsuki_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIODELAY='46')

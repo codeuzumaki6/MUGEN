@@ -1,0 +1,4066 @@
+{
+  "base_commit": "c6d04d94934c2e83efa869744587f13eda270b59",
+  "frames": [
+    {
+      "group": 27000,
+      "number": 0,
+      "key": "Shino_Skill01_Blt_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_0.png",
+      "axis": [
+        17,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{875,1790},{150,123}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        37,
+        116,
+        122
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        20
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0004884714144282043,
+        "original_sprite": [
+          0,
+          20
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "c41ca6bbcb330b2f44ff9e855062fec441e13a821ba5d389af84ffb2d17e6240",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 1,
+      "key": "Shino_Skill01_Blt_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_1.png",
+      "axis": [
+        20,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{163,3821},{150,123}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        37,
+        116,
+        122
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        40
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00043111684499308467,
+        "original_sprite": [
+          0,
+          40
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "89b5c380735f19bbdb93bafacaed222a36191e8bc2cbf547ae2b3f29762f197c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 2,
+      "key": "Shino_Skill01_Blt_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_2.png",
+      "axis": [
+        20,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{315,3821},{150,123}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        37,
+        116,
+        122
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        40
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00035083232796750963,
+        "original_sprite": [
+          0,
+          40
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "39e5197ecdbeaee84849e5c5392b75b7c30f273d7fe2b4ead190f8b60eed26fe",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 3,
+      "key": "Shino_Skill01_Blt_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_3.png",
+      "axis": [
+        35,
+        100
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{467,3821},{150,123}}",
+      "source_rotation": false,
+      "crop": [
+        40,
+        10,
+        130,
+        112
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "visible lower bound",
+        "error": 0.22800593078136444
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ae3a8e8f78159902e1b23f16129764975081389786e5ae225c70e15ec0ac7802",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 4,
+      "key": "Shino_Skill04_16",
+      "role": "body",
+      "file": "assets/full_pack/27000_4.png",
+      "axis": [
+        20,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1987,3380},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        109,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        37
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.001026237034238875,
+        "original_sprite": [
+          0,
+          37
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "abc94ed15440426dd04ef3caee86f9c2c138bdeaf3b13f570cae9c1809966bfe",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 5,
+      "key": "Shino_Skill04_17",
+      "role": "body",
+      "file": "assets/full_pack/27000_5.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3597,3281},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003281475219409913,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "5095b1a776fc4e398de8e49a87bd59953bbead494459bbb6b2661abcd8fc3a72",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 6,
+      "key": "Shino_Skill04_18",
+      "role": "body",
+      "file": "assets/full_pack/27000_6.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,932},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003281475219409913,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "5095b1a776fc4e398de8e49a87bd59953bbead494459bbb6b2661abcd8fc3a72",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 7,
+      "key": "Shino_Skill04_19",
+      "role": "body",
+      "file": "assets/full_pack/27000_7.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,1138},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00035290431696921587,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "dd33d7cd8470032b90a82333f3aa0a5e8d945433926c0dfe0c38b73f8898466b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 8,
+      "key": "Shino_Skill04_20",
+      "role": "body",
+      "file": "assets/full_pack/27000_8.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,1344},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0015332753537222743,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "e5965c050169d9d93740d19cfe986ad2dd083afc0f991a469a211f0756121e31",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 9,
+      "key": "Shino_Skill04_21",
+      "role": "body",
+      "file": "assets/full_pack/27000_9.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,1550},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0020549509208649397,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "4bbaa20b9408d95d1f5bdddaab78796cd7088eaeb8fb672e8ed6d6c804bb6243",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 10,
+      "key": "Shino_Skill04_22",
+      "role": "body",
+      "file": "assets/full_pack/27000_10.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,1756},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0006233774474821985,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "40102236b252475450a895f46ec35c0b9a0c5d4f2c8c8995998542c65c4bf7fd",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 11,
+      "key": "Shino_Skill04_23",
+      "role": "body",
+      "file": "assets/full_pack/27000_11.png",
+      "axis": [
+        19,
+        94
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,1962},{150,204}}",
+      "source_rotation": false,
+      "crop": [
+        57,
+        106,
+        92,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        38
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003281475219409913,
+        "original_sprite": [
+          0,
+          38
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "5095b1a776fc4e398de8e49a87bd59953bbead494459bbb6b2661abcd8fc3a72",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 12,
+      "key": "Shino_Skill04_24",
+      "role": "body",
+      "file": "assets/full_pack/27000_12.png",
+      "axis": [
+        20,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,1},{380,245}}",
+      "source_rotation": false,
+      "crop": [
+        37,
+        103,
+        96,
+        188
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        40
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00035083232796750963,
+        "original_sprite": [
+          0,
+          40
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "d0aef344598c07a82a0fde9d7c7d1a3450761387377016641ce521259eb70d1c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 13,
+      "key": "Shino_Skill04_25",
+      "role": "body",
+      "file": "assets/full_pack/27000_13.png",
+      "axis": [
+        20,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,248},{380,245}}",
+      "source_rotation": false,
+      "crop": [
+        37,
+        103,
+        96,
+        188
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        40
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00035083232796750963,
+        "original_sprite": [
+          0,
+          40
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "5fac0906d414eef801072d17a565455332c7122c6ec1937f5db67b6ca2f5f8d6",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 14,
+      "key": "Shino_Skill02_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_14.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,3253},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        77,
+        86,
+        157
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "bb8dba1f6fdef315ed03fc5720edd678ef8092c4748004f99460019ffaa4d8ad",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 15,
+      "key": "Shino_Skill02_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_15.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3749,3416},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        77,
+        86,
+        157
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.01416520494967699,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cb7d10b6c67c8ed8850aca056b036aaa5431089a49c65015ae01b15f7fc494f1",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 16,
+      "key": "Shino_Skill02_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_16.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3551,2636},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        77,
+        86,
+        157
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0209080558270216,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 1,
+      "rgba_sha256": "4573077bdd4665f79be802c1ef774a779314c80877f9e3ded12028dbaca067d4",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 17,
+      "key": "Shino_Skill02_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_17.png",
+      "axis": [
+        35,
+        41
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3551,2799},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        19,
+        82,
+        94,
+        126
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        12
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0648401528596878,
+        "original_sprite": [
+          0,
+          12
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "06db0a8a378c834016832fef67005806e39e9f8549e651a7fd557b9f512dceaa",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 18,
+      "key": "Shino_Skill02_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_18.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3631,3579},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        77,
+        86,
+        157
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.055216945707798004,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "5a3de7ef284f9623182ff78b997706a99be79dfa18811bf6e882435e2af014c9",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 19,
+      "key": "Shino_Skill02_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_19.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,3821},{160,161}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        77,
+        86,
+        157
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.03444415330886841,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "cfd672dba842e559ee4c0f3cc7f4d1ab711d07679f3177525fdcab821461e591",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 20,
+      "key": "Shino_Skill02_07",
+      "role": "body",
+      "file": "assets/full_pack/27000_20.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,1381},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.04188387095928192,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "272655eebf79620c23f5d8db874238c98be87ffbd41ab088e4038a1274bccde2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 21,
+      "key": "Shino_Skill02_08",
+      "role": "body",
+      "file": "assets/full_pack/27000_21.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,1610},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00023408365086652339,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "c8fb5b087643a72ad1c1e9b10a4219146a1aa06a8cea422ca4ec63717149ec9c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 22,
+      "key": "Shino_Skill02_09",
+      "role": "body",
+      "file": "assets/full_pack/27000_22.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,1839},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "113d79e188470123938acdf5842599ad47f47e6057d97ba5c4b355914900aeb2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 23,
+      "key": "Shino_Skill02_10",
+      "role": "body",
+      "file": "assets/full_pack/27000_23.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1147,2494},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "113d79e188470123938acdf5842599ad47f47e6057d97ba5c4b355914900aeb2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 24,
+      "key": "Shino_Skill02_11",
+      "role": "body",
+      "file": "assets/full_pack/27000_24.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2643,2068},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "113d79e188470123938acdf5842599ad47f47e6057d97ba5c4b355914900aeb2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 25,
+      "key": "Shino_Skill02_12",
+      "role": "body",
+      "file": "assets/full_pack/27000_25.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2643,2297},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "113d79e188470123938acdf5842599ad47f47e6057d97ba5c4b355914900aeb2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 26,
+      "key": "Shino_Skill02_13",
+      "role": "body",
+      "file": "assets/full_pack/27000_26.png",
+      "axis": [
+        21,
+        77
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2191,2471},{370,227}}",
+      "source_rotation": false,
+      "crop": [
+        47,
+        105,
+        86,
+        185
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        27
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00020612629305105656,
+        "original_sprite": [
+          0,
+          27
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "113d79e188470123938acdf5842599ad47f47e6057d97ba5c4b355914900aeb2",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 27,
+      "key": "Shino_Skill03_13",
+      "role": "body",
+      "file": "assets/full_pack/27000_27.png",
+      "axis": [
+        28,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2563,2526},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        55,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        35
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003025162732228637,
+        "original_sprite": [
+          0,
+          35
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "6dcaf10b78e8ec6944dee8f99c38b461d02c4d376d4ac26ffaf5ba330bbbabff",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 28,
+      "key": "Shino_Skill03_14",
+      "role": "body",
+      "file": "assets/full_pack/27000_28.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,2741},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 29,
+      "key": "Shino_Skill03_15",
+      "role": "body",
+      "file": "assets/full_pack/27000_29.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{373,2741},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 30,
+      "key": "Shino_Skill03_16",
+      "role": "body",
+      "file": "assets/full_pack/27000_30.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{745,2741},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 31,
+      "key": "Shino_Skill03_17",
+      "role": "body",
+      "file": "assets/full_pack/27000_31.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1117,2741},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 32,
+      "key": "Shino_Skill03_18",
+      "role": "body",
+      "file": "assets/full_pack/27000_32.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1489,2723},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 33,
+      "key": "Shino_Skill03_19",
+      "role": "body",
+      "file": "assets/full_pack/27000_33.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1861,2700},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 34,
+      "key": "Shino_Skill03_20",
+      "role": "body",
+      "file": "assets/full_pack/27000_34.png",
+      "axis": [
+        27,
+        78
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2233,2700},{370,168}}",
+      "source_rotation": false,
+      "crop": [
+        1,
+        59,
+        49,
+        140
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        36
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0003036083944607526,
+        "original_sprite": [
+          0,
+          36
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "508b8dc7ebf51537f219f732c19a91e82b3bc63f990975044ff538442e743bf3",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 35,
+      "key": "Shino_Skill04_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_35.png",
+      "axis": [
+        21,
+        81
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{645,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        10,
+        117,
+        81,
+        201
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        23
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016203073028009385,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "abf962fb16fad4633bd8422d025ca01725daa306d536b3d67a79b50d7606bae8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 36,
+      "key": "Shino_Skill04_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_36.png",
+      "axis": [
+        21,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{957,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        8,
+        117,
+        81,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        24
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016781546582933515,
+        "original_sprite": [
+          0,
+          24
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cbda180bb165cc0f530b8684e4e114fc99bb268fae4f6e6092b4b927464fbd45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 37,
+      "key": "Shino_Skill04_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_37.png",
+      "axis": [
+        21,
+        81
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1269,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        10,
+        117,
+        81,
+        201
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        23
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016203073028009385,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "abf962fb16fad4633bd8422d025ca01725daa306d536b3d67a79b50d7606bae8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 38,
+      "key": "Shino_Skill04_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_38.png",
+      "axis": [
+        21,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1581,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        8,
+        117,
+        81,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        24
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016781546582933515,
+        "original_sprite": [
+          0,
+          24
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cbda180bb165cc0f530b8684e4e114fc99bb268fae4f6e6092b4b927464fbd45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 39,
+      "key": "Shino_Skill04_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_39.png",
+      "axis": [
+        21,
+        81
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1893,3154},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        10,
+        117,
+        81,
+        201
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        23
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016203073028009385,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "abf962fb16fad4633bd8422d025ca01725daa306d536b3d67a79b50d7606bae8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 40,
+      "key": "Shino_Skill04_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_40.png",
+      "axis": [
+        21,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2205,3131},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        8,
+        117,
+        81,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        24
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016781546582933515,
+        "original_sprite": [
+          0,
+          24
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cbda180bb165cc0f530b8684e4e114fc99bb268fae4f6e6092b4b927464fbd45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 41,
+      "key": "Shino_Skill04_07",
+      "role": "body",
+      "file": "assets/full_pack/27000_41.png",
+      "axis": [
+        21,
+        81
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2517,3033},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        10,
+        117,
+        81,
+        201
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        23
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016203073028009385,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "abf962fb16fad4633bd8422d025ca01725daa306d536b3d67a79b50d7606bae8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 42,
+      "key": "Shino_Skill04_08",
+      "role": "body",
+      "file": "assets/full_pack/27000_42.png",
+      "axis": [
+        21,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2829,3035},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        8,
+        117,
+        81,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        24
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016781546582933515,
+        "original_sprite": [
+          0,
+          24
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cbda180bb165cc0f530b8684e4e114fc99bb268fae4f6e6092b4b927464fbd45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 43,
+      "key": "Shino_Skill04_09",
+      "role": "body",
+      "file": "assets/full_pack/27000_43.png",
+      "axis": [
+        21,
+        81
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        10,
+        117,
+        81,
+        201
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        23
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016203073028009385,
+        "original_sprite": [
+          0,
+          23
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "abf962fb16fad4633bd8422d025ca01725daa306d536b3d67a79b50d7606bae8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 44,
+      "key": "Shino_Skill04_10",
+      "role": "body",
+      "file": "assets/full_pack/27000_44.png",
+      "axis": [
+        21,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,227},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        8,
+        117,
+        81,
+        203
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": [
+        0,
+        24
+      ],
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00016781546582933515,
+        "original_sprite": [
+          0,
+          24
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "cbda180bb165cc0f530b8684e4e114fc99bb268fae4f6e6092b4b927464fbd45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 45,
+      "key": "Shino_Skill05_01",
+      "role": "body",
+      "file": "assets/full_pack/27000_45.png",
+      "axis": [
+        98,
+        216
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3043,2023},{320,259}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.155440092086792,
+        "original_sprite": [
+          0,
+          14
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "3628730128df90ab95d6822d75354ae3153f67081102d4ea775a54c8df580dee",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 46,
+      "key": "Shino_Skill05_02",
+      "role": "body",
+      "file": "assets/full_pack/27000_46.png",
+      "axis": [
+        90,
+        214
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1811,2893},{320,259}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.10640689730644226,
+        "original_sprite": [
+          0,
+          28
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a87767681f23ea1c53cdeb54db2e13b747521e24d0cdbcb52717bc829a6d7efb",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 47,
+      "key": "Shino_Skill05_03",
+      "role": "body",
+      "file": "assets/full_pack/27000_47.png",
+      "axis": [
+        90,
+        214
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3015,2284},{320,259}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.01663314178586006,
+        "original_sprite": [
+          0,
+          28
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "e5498a38fb81e6dbdaa1ad3cd5d5a44c658e29b0c291691f49538725ecfaedad",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 48,
+      "key": "Shino_Skill05_04",
+      "role": "body",
+      "file": "assets/full_pack/27000_48.png",
+      "axis": [
+        90,
+        214
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2133,2870},{320,259}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.008660285733640194,
+        "original_sprite": [
+          0,
+          28
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "eb7fba2db9f046663fcb5579d142a958d8b216e9071e476bd724dd74932198df",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 49,
+      "key": "Shino_Skill05_05",
+      "role": "body",
+      "file": "assets/full_pack/27000_49.png",
+      "axis": [
+        103,
+        214
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2957,2545},{320,259}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0,
+        "original_sprite": [
+          0,
+          30
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d0919a91e83456dc1654babf1919a16abbaf82efa2be3cf7b2b5ec01b77e2367",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 50,
+      "key": "Shino_Skill05_06",
+      "role": "body",
+      "file": "assets/full_pack/27000_50.png",
+      "axis": [
+        151,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{583,1790},{290,120}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "1553ec130e3cea3d97a11f92a588918d39f1b70e93d12788b62c61ad0fdb2e9f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 51,
+      "key": "Shino_Skill05_07",
+      "role": "body",
+      "file": "assets/full_pack/27000_51.png",
+      "axis": [
+        151,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1153},{290,120}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "371fc50251fcc25cbda0470c17513f8db48e8157624600ca205efa7c71cfca41",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 52,
+      "key": "Shino_Skill05_08",
+      "role": "body",
+      "file": "assets/full_pack/27000_52.png",
+      "axis": [
+        151,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1275},{290,120}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "de1a5fc4beafbd5899fab432061527ec22e4e2bc44f673a4670736466e9331ba",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 53,
+      "key": "Shino_Skill05_09",
+      "role": "body",
+      "file": "assets/full_pack/27000_53.png",
+      "axis": [
+        151,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1397},{290,120}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "c6163886f92f372885bc14da49995f91c8071cab8273ca99d4deff1756e5fad0",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 54,
+      "key": "Shino_Skill05_10",
+      "role": "body",
+      "file": "assets/full_pack/27000_54.png",
+      "axis": [
+        121,
+        160
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1519,2428},{270,199}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.021569078788161278,
+        "original_sprite": [
+          0,
+          58
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "eb6a9ed5a1ba15039f4967d159dae05ee2f34ef0e00a85cf51ff1e84e7633b78",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 55,
+      "key": "Shino_Skill05_11",
+      "role": "body",
+      "file": "assets/full_pack/27000_55.png",
+      "axis": [
+        121,
+        120
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3365,2033},{270,199}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.021569078788161278,
+        "original_sprite": [
+          0,
+          58
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "b9de755071d5781ce933efe6acdce88a03796f1b06457258b1d594ce38836417",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 56,
+      "key": "Shino_Skill05_12",
+      "role": "body",
+      "file": "assets/full_pack/27000_56.png",
+      "axis": [
+        141,
+        125
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3365,2234},{270,199}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "df7acf412a985a896b9dd4d6fbc268f845fa53cc5c606bae12aa99c5b968c532",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 57,
+      "key": "Shino_Skill05_13",
+      "role": "body",
+      "file": "assets/full_pack/27000_57.png",
+      "axis": [
+        141,
+        125
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3337,2435},{270,199}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "7f8fd78c07dba23d24e3aa7b6fab83f8225d5c510596d75887a26108e0e223db",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 58,
+      "key": "Shino_Skill05_14",
+      "role": "body",
+      "file": "assets/full_pack/27000_58.png",
+      "axis": [
+        141,
+        125
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3279,2636},{270,199}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00031942303758114576,
+        "original_sprite": [
+          0,
+          64
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "69824f2137101bd19513c252bf3285f80525fc7cf78f649ffb79c9814ece7d05",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 59,
+      "key": "Shino_Skill05_15",
+      "role": "body",
+      "file": "assets/full_pack/27000_59.png",
+      "axis": [
+        121,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2957,2806},{320,227}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.019387725740671158,
+        "original_sprite": [
+          0,
+          66
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "9d33e3a7eb6214f300a709c96f7342be4ef2d2f2ac8cfd204409bcd13ce02422",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 60,
+      "key": "Shino_Skill05_16",
+      "role": "body",
+      "file": "assets/full_pack/27000_60.png",
+      "axis": [
+        121,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,3200},{320,227}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.011648861691355705,
+        "original_sprite": [
+          0,
+          66
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "40faee53af1a7adc61d0c8c270b582c322df6a363d355b85cc614eb5a7800134",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 61,
+      "key": "Shino_Skill05_17",
+      "role": "body",
+      "file": "assets/full_pack/27000_61.png",
+      "axis": [
+        121,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{323,3200},{320,227}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.009349758736789227,
+        "original_sprite": [
+          0,
+          66
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "f0966d9688d03b844250f428697162c1c69580f1bcf41f3cd309012fafec335b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 62,
+      "key": "Shino_Skill05_18",
+      "role": "body",
+      "file": "assets/full_pack/27000_62.png",
+      "axis": [
+        125,
+        116
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1765,3601},{250,194}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0002469837781973183,
+        "original_sprite": [
+          0,
+          67
+        ]
+      },
+      "eye_pixels_recolored": 3,
+      "rgba_sha256": "9e5fa58517616c7569cd4048a7b52b778e712a9b12ce2fcd6586dc676db4bad0",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 63,
+      "key": "Shino_Skill05_19",
+      "role": "body",
+      "file": "assets/full_pack/27000_63.png",
+      "axis": [
+        125,
+        116
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2017,3601},{250,194}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00025319959968328476,
+        "original_sprite": [
+          0,
+          68
+        ]
+      },
+      "eye_pixels_recolored": 3,
+      "rgba_sha256": "b762463f6b8becc8be80cb6c663f79e73feb8d125063abc84a59065ed213a584",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 64,
+      "key": "Shino_Skill05_20",
+      "role": "body",
+      "file": "assets/full_pack/27000_64.png",
+      "axis": [
+        141,
+        183
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1809,2312},{380,343}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.03002658300101757,
+        "original_sprite": [
+          0,
+          69
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "57f8abc30a2c165c86d905d51b604dcfbeadec8498f1831b877f82cad79bcf10",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 65,
+      "key": "Shino_Skill05_21",
+      "role": "body",
+      "file": "assets/full_pack/27000_65.png",
+      "axis": [
+        143,
+        183
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,1},{380,343}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.05552259832620621,
+        "original_sprite": [
+          0,
+          70
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "11ca453dc18bbe8d329424c4c1913f266683c2f9fcf28b3cef67fc1d62e4bb25",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 66,
+      "key": "Shino_Skill05_22",
+      "role": "body",
+      "file": "assets/full_pack/27000_66.png",
+      "axis": [
+        141,
+        183
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,346},{380,343}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.033636320382356644,
+        "original_sprite": [
+          0,
+          69
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a8c08a3fa555a8aeea042d338f0590fafb071dc7886b1d645e59bf4f3f538f1c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 67,
+      "key": "Shino_Skill05_23",
+      "role": "body",
+      "file": "assets/full_pack/27000_67.png",
+      "axis": [
+        143,
+        183
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,691},{380,343}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0021401280537247658,
+        "original_sprite": [
+          0,
+          70
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "115cd0d4da5fba55bf0b858331c9b68a5612c936e5615a7a3adb0d6d8b7f894a",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 68,
+      "key": "Shino_Skill05_24",
+      "role": "body",
+      "file": "assets/full_pack/27000_68.png",
+      "axis": [
+        143,
+        183
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2671,1036},{380,343}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00037470427923835814,
+        "original_sprite": [
+          0,
+          70
+        ]
+      },
+      "eye_pixels_recolored": 4,
+      "rgba_sha256": "06b65f8f719c77cc0c270ea1621dd2dc1cde8db1289c6221a1b5c7c9991ca41a",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 69,
+      "key": "Shino_Skill05_25",
+      "role": "body",
+      "file": "assets/full_pack/27000_69.png",
+      "axis": [
+        136,
+        174
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1519},{290,255}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00023853906895965338,
+        "original_sprite": [
+          0,
+          72
+        ]
+      },
+      "eye_pixels_recolored": 3,
+      "rgba_sha256": "8f16e7c8f85349151a9baf17c06340f3b0870dea41b120bc9f5b08e309328759",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 70,
+      "key": "Shino_Skill05_26",
+      "role": "body",
+      "file": "assets/full_pack/27000_70.png",
+      "axis": [
+        132,
+        181
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3395,1776},{290,255}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.00019339575374033302,
+        "original_sprite": [
+          0,
+          71
+        ]
+      },
+      "eye_pixels_recolored": 2,
+      "rgba_sha256": "b8a9164ac525ac38c6f201455f234e7fc98baa1d9f9ec85080fc68f254d67746",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 71,
+      "key": "Shino_Skill05_27",
+      "role": "body",
+      "file": "assets/full_pack/27000_71.png",
+      "axis": [
+        207,
+        247
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1085,1790},{450,317}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.04137803986668587,
+        "original_sprite": [
+          0,
+          28
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "415fb2496f477d247322590b06c9d4cc2d0f10b1bb4bd32b98a015c3e3ee8d8b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 72,
+      "key": "Shino_Skill05_28",
+      "role": "body",
+      "file": "assets/full_pack/27000_72.png",
+      "axis": [
+        143,
+        302
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,2175},{450,317}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.04832466319203377,
+        "original_sprite": [
+          0,
+          73
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "546fa5845859f03d989567331ef1ffa28f5b20f36058bdc26d08f130d2b6fb66",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 73,
+      "key": "Shino_Skill05_29",
+      "role": "body",
+      "file": "assets/full_pack/27000_73.png",
+      "axis": [
+        175,
+        155
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{453,2175},{450,317}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.02021241933107376,
+        "original_sprite": [
+          0,
+          67
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "44060c117ff240e1072ef937020243c1ced19d9fe22f4eb6ab29b2a8fa78b0dd",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 74,
+      "key": "Shino_Skill05_30",
+      "role": "body",
+      "file": "assets/full_pack/27000_74.png",
+      "axis": [
+        175,
+        155
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{905,2175},{450,317}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.004195328336209059,
+        "original_sprite": [
+          0,
+          68
+        ]
+      },
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "947a9bb277443317a300688eba3c7ef677fb75b897dbc40e4ca3eb8c9672bf22",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 75,
+      "key": "Shino_Skill05_31",
+      "role": "body",
+      "file": "assets/full_pack/27000_75.png",
+      "axis": [
+        175,
+        155
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1357,2109},{450,317}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": {
+        "method": "masked original body match",
+        "error": 0.0002469837781973183,
+        "original_sprite": [
+          0,
+          67
+        ]
+      },
+      "eye_pixels_recolored": 3,
+      "rgba_sha256": "c46fd367908bb3936c764444fca3a95c025b3ae5922bac87adb1fb64aa84e958",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 76,
+      "key": "Shino_Skill04_01",
+      "role": "ground",
+      "file": "assets/full_pack/27000_76.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{645,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "b90f71dcf9fae9099544b43996d9f0225531aa4d16b148d6b761607d7de26196",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 77,
+      "key": "Shino_Skill04_02",
+      "role": "ground",
+      "file": "assets/full_pack/27000_77.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{957,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "c14ef0a3fe3e91e1b9f5922ad56272420fa7b295243ed8dcbaefdac013910858",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 78,
+      "key": "Shino_Skill04_03",
+      "role": "ground",
+      "file": "assets/full_pack/27000_78.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1269,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d5a7f892ad664c3da3e0ce3480a83d4367bd08f3ad7b9fb424d6a443e484e19c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 79,
+      "key": "Shino_Skill04_04",
+      "role": "ground",
+      "file": "assets/full_pack/27000_79.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1581,3200},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ffb33f5796db7b9b707912ce9b96246baaf68845e26d8ea18bc057c9ee7a3801",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 80,
+      "key": "Shino_Skill04_05",
+      "role": "ground",
+      "file": "assets/full_pack/27000_80.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1893,3154},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "646f6f3503f37796ff32f026cf2c0bb4d11d4fef2d627bb47db8f49ea1537705",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 81,
+      "key": "Shino_Skill04_06",
+      "role": "ground",
+      "file": "assets/full_pack/27000_81.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2205,3131},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "e87dcde2501277ca34ec99f07576addf4347e1f811bba12f969a8e1b9f669cb4",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 82,
+      "key": "Shino_Skill04_07",
+      "role": "ground",
+      "file": "assets/full_pack/27000_82.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2517,3033},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d4f745c87a84d56f1af32fd7c20dcf78874e1fb23308203a0282f04632ff8add",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 83,
+      "key": "Shino_Skill04_08",
+      "role": "ground",
+      "file": "assets/full_pack/27000_83.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2829,3035},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "0ec850dfb8da08f8b0896e5d87a9fb8fcd3b055124c5bb0e09e198d96dd70886",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 84,
+      "key": "Shino_Skill04_09",
+      "role": "ground",
+      "file": "assets/full_pack/27000_84.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,1},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ee67b5ac8778fac2c044a36eca9a4e9659631309c9812ef507bbfe0c0a67c781",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 85,
+      "key": "Shino_Skill04_10",
+      "role": "ground",
+      "file": "assets/full_pack/27000_85.png",
+      "axis": [
+        75,
+        215
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3405,227},{310,224}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        310,
+        224
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "4117c587266c4cc0aed382dd446701ab8446bdb110e0c4b3d2e80459f6ff8a59",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 86,
+      "key": "Shino_Skill04_11",
+      "role": "ground",
+      "file": "assets/full_pack/27000_86.png",
+      "axis": [
+        100,
+        256
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,2911},{360,287}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        360,
+        287
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "03ba9578041d7b7ee4d98b66f1908372f89c1080c172423c593e35c1c656e146",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 87,
+      "key": "Shino_Skill04_12",
+      "role": "ground",
+      "file": "assets/full_pack/27000_87.png",
+      "axis": [
+        100,
+        261
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{363,2911},{360,287}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        360,
+        287
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "f4eb9dc9e6a8f036b7bb18591227680c3cdf2094aa8ab8e3a98cb57589bc7fd8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 88,
+      "key": "Shino_Skill04_13",
+      "role": "ground",
+      "file": "assets/full_pack/27000_88.png",
+      "axis": [
+        100,
+        252
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{725,2911},{360,287}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        360,
+        287
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d310f769101447e7ca1e2b03cfaad191a45a7de6c34af01c978d22a10c777bc0",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 89,
+      "key": "Shino_Skill04_14",
+      "role": "ground",
+      "file": "assets/full_pack/27000_89.png",
+      "axis": [
+        100,
+        239
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1087,2911},{360,287}}",
+      "source_rotation": false,
+      "crop": [
+        80,
+        0,
+        360,
+        287
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "c49525c3e09cc36e950cc3a775ab6826a57496d9265913d4a2d81e3ba54340e6",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 90,
+      "key": "Shino_Skill03_2_08",
+      "role": "ground",
+      "file": "assets/full_pack/27000_90.png",
+      "axis": [
+        48,
+        82
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "0d5c53be4240e1a96e53acdd041eff7788b1daf5c526175a390095ec9561e679",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 91,
+      "key": "Shino_Skill03_2_09",
+      "role": "ground",
+      "file": "assets/full_pack/27000_91.png",
+      "axis": [
+        48,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{253,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "75478cb900049caa5a8609fb3cc704756a26e51619b08f5594bd754d29ce479e",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 92,
+      "key": "Shino_Skill03_2_10",
+      "role": "ground",
+      "file": "assets/full_pack/27000_92.png",
+      "axis": [
+        48,
+        83
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{505,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "161a72f080662fd23ce23e98f74ed66594bbda1afbf716cdc6c1660a3836c51b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 93,
+      "key": "Shino_Skill03_2_11",
+      "role": "ground",
+      "file": "assets/full_pack/27000_93.png",
+      "axis": [
+        48,
+        84
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{757,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "be9dccf43a73cc8ff9c16694b0b1428d57f3af0f9762e7ac806f556d739b6d58",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 94,
+      "key": "Shino_Skill03_2_12",
+      "role": "ground",
+      "file": "assets/full_pack/27000_94.png",
+      "axis": [
+        48,
+        84
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1009,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "73e104c6cf8ea52d9e99777a4f021ede5252f170d19f789fa71712de333cd8ab",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 95,
+      "key": "Shino_Skill03_2_13",
+      "role": "ground",
+      "file": "assets/full_pack/27000_95.png",
+      "axis": [
+        48,
+        85
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1261,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "39280735d5cd874fd2804c7b8f2eb1374428341014dbc6032cde7e0e44a32eb6",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 96,
+      "key": "Shino_Skill03_2_14",
+      "role": "ground",
+      "file": "assets/full_pack/27000_96.png",
+      "axis": [
+        48,
+        84
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1513,3577},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a77c2661dbcf5bef6b983bdf47d290469c5725fbd1430fca9060a2a0bf3e1f45",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 97,
+      "key": "Shino_Skill03_2_15",
+      "role": "ground",
+      "file": "assets/full_pack/27000_97.png",
+      "axis": [
+        48,
+        84
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2205,3357},{250,242}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "dc1ef09fe7b50f989590f2927b69eb76adcc9b7aab3d335326a8bb0971d02c0b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 98,
+      "key": "Shino_Skill03_2_16",
+      "role": "ground",
+      "file": "assets/full_pack/27000_98.png",
+      "axis": [
+        66,
+        118
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2605,2696},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "b6a3ccafe805a981d656efb92e761863f361f3ed64eed9290cb4e36d33959c72",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 99,
+      "key": "Shino_Skill03_2_17",
+      "role": "ground",
+      "file": "assets/full_pack/27000_99.png",
+      "axis": [
+        66,
+        118
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3053,1},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "d474728f0aad273b2e2b112f7227f5608bde561c4d32d690bdd5e81019079126",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 100,
+      "key": "Shino_Skill03_2_18",
+      "role": "ground",
+      "file": "assets/full_pack/27000_100.png",
+      "axis": [
+        66,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3053,338},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "c6f78e8b8b23d9a1b3fc03a0170eb59b0900d67958882ea4d2d18cca1b21443a",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 101,
+      "key": "Shino_Skill03_2_19",
+      "role": "ground",
+      "file": "assets/full_pack/27000_101.png",
+      "axis": [
+        66,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3053,675},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "427f282f84e064f4bb380147155f63ac0d15aa58408203d04ca1763509bdebb8",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 102,
+      "key": "Shino_Skill03_2_20",
+      "role": "ground",
+      "file": "assets/full_pack/27000_102.png",
+      "axis": [
+        66,
+        119
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3053,1012},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "13bff4f9b9fcfd33a55f4e983dd7797af309650e6ed9e4bbedb751ca4b0ad07b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 103,
+      "key": "Shino_Skill03_2_21",
+      "role": "ground",
+      "file": "assets/full_pack/27000_103.png",
+      "axis": [
+        66,
+        120
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3053,1349},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "18e4206ef715de57290fc7bc312fd3d0f2dbbbb31d7e10c9cf174b7a35d2a61f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 104,
+      "key": "Shino_Skill03_2_22",
+      "role": "ground",
+      "file": "assets/full_pack/27000_104.png",
+      "axis": [
+        66,
+        121
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{3043,1686},{350,335}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": [
+        0.38,
+        0.38
+      ],
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ea20c5fda5bca0a101aa079abfa3025e13baad5cc7e28cb16f7cec1846f4fd4c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 105,
+      "key": "Shino_Skill04_26",
+      "role": "ground",
+      "file": "assets/full_pack/27000_105.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,495},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "6ee335ac738e21ee0f49979c9d07b1bdc5e2ffac715d1a44cfb6295ae829b640",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 106,
+      "key": "Shino_Skill04_27",
+      "role": "ground",
+      "file": "assets/full_pack/27000_106.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,742},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "413718d14d8029e3c876c8e31afe2d45400fc6736d0a9c678e0e6ca82015ff92",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 107,
+      "key": "Shino_Skill04_28",
+      "role": "ground",
+      "file": "assets/full_pack/27000_107.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,989},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "1e8a3ee8cb458aed63a3db1e4dcaf79faad27911973d869984ca06e7f6295b75",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 108,
+      "key": "Shino_Skill04_29",
+      "role": "ground",
+      "file": "assets/full_pack/27000_108.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,1236},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "04f6013b673a82d3e73c7e1d53dfe1da843021703370230a3bcf6313f9ef072d",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 109,
+      "key": "Shino_Skill04_30",
+      "role": "ground",
+      "file": "assets/full_pack/27000_109.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,1483},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "f1e1aecfc4f0a1234f07580bec13623570577e2dbd2cbded3c80e7c6ed63ee7d",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 110,
+      "key": "Shino_Skill04_31",
+      "role": "ground",
+      "file": "assets/full_pack/27000_110.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2289,1730},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ad0521435e0b34ccadf5a3dd04450270e2b370503452311a0d7ab318daf23d4f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 111,
+      "key": "Shino_Skill04_32",
+      "role": "ground",
+      "file": "assets/full_pack/27000_111.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2261,1977},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "dc7f40e5d5da643251785936029d6c2f996e6cf9088c5270ddb9aed0a580c4bc",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 112,
+      "key": "Shino_Skill04_33",
+      "role": "ground",
+      "file": "assets/full_pack/27000_112.png",
+      "axis": [
+        190,
+        224
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2261,2224},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "65d876767b8d73f8998665e84960c7b2d8029a0f58815865b46f9f094b3eee3f",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 113,
+      "key": "Shino_Skill04_34",
+      "role": "ground",
+      "file": "assets/full_pack/27000_113.png",
+      "axis": [
+        190,
+        223
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,2494},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "b41552f898e5dc36efcc11c3a1ba310f63314f7a11f2d510b8eab8e57af1d9e1",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 114,
+      "key": "Shino_Skill04_35",
+      "role": "ground",
+      "file": "assets/full_pack/27000_114.png",
+      "axis": [
+        190,
+        185
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{383,2494},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a4991905feb5e91c961d00c02e3577116e1eeb6b502193fdaaca2dc7ed8d8c5c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 115,
+      "key": "Shino_Skill04_36",
+      "role": "ground",
+      "file": "assets/full_pack/27000_115.png",
+      "axis": [
+        190,
+        185
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{765,2494},{380,245}}",
+      "source_rotation": false,
+      "crop": null,
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a4991905feb5e91c961d00c02e3577116e1eeb6b502193fdaaca2dc7ed8d8c5c",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 116,
+      "key": "Shino_Skill05_32",
+      "role": "ground",
+      "file": "assets/full_pack/27000_116.png",
+      "axis": [
+        5,
+        149
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1809,1993},{450,317}}",
+      "source_rotation": false,
+      "crop": [
+        220,
+        0,
+        450,
+        317
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ab4964f582311fb3dd223a00d3e28993388c4270487d1e4e786ba6e2404f1a82",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 117,
+      "key": "Shino_Skill05_33",
+      "role": "ground",
+      "file": "assets/full_pack/27000_117.png",
+      "axis": [
+        -45,
+        111
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2269,3601},{250,195}}",
+      "source_rotation": false,
+      "crop": [
+        170,
+        0,
+        250,
+        195
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "22cda653d078dd32e385876bc8a05529b4b444466e24481485407303e4fe5db6",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 118,
+      "key": "Shino_Skill05_34",
+      "role": "ground",
+      "file": "assets/full_pack/27000_118.png",
+      "axis": [
+        -45,
+        111
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{2457,3399},{250,195}}",
+      "source_rotation": false,
+      "crop": [
+        170,
+        0,
+        250,
+        195
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "6141e956f50ebeb7c732cfc8bec670bc4737169c112d3aeafa4932dd4564c016",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 119,
+      "key": "Shino_Skill05_35",
+      "role": "ground",
+      "file": "assets/full_pack/27000_119.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,1},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "11504b857452aedf52935e5687c9fbbf80b144a33eb90893d7983038ac87e36b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 120,
+      "key": "Shino_Skill05_36",
+      "role": "ground",
+      "file": "assets/full_pack/27000_120.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,386},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "32295b24fa280a193431d0a9df9ac595059fc8b984d2dc1e0b940373318c7d8a",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 121,
+      "key": "Shino_Skill05_37",
+      "role": "ground",
+      "file": "assets/full_pack/27000_121.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{583,1},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "55da6270500e11ce7041b0e951cab6b77b6844c26c2e155f0fc46c44527bc5aa",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 122,
+      "key": "Shino_Skill05_38",
+      "role": "ground",
+      "file": "assets/full_pack/27000_122.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{583,386},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "477bfef262ae461bd8637093d444d7c603d0bdbb87a808e116334001aca483c4",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 123,
+      "key": "Shino_Skill05_39",
+      "role": "ground",
+      "file": "assets/full_pack/27000_123.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,771},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "182ada81dc510f63a055dac1ebe9427ddbc0bb2f8c7c35eb229ef5e295ecc9bb",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 124,
+      "key": "Shino_Skill05_40",
+      "role": "ground",
+      "file": "assets/full_pack/27000_124.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{583,771},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "ccd60f495bd6a41428ad10d1631f73b1f327582d68e1db8ceaa92977342ff0be",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 125,
+      "key": "Shino_Skill05_41",
+      "role": "ground",
+      "file": "assets/full_pack/27000_125.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,1156},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "67527bca2c333069776d23101a114a4c5ca39d43389705abba9a7bdaa01c77ff",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 126,
+      "key": "Shino_Skill05_42",
+      "role": "ground",
+      "file": "assets/full_pack/27000_126.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{583,1156},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "066ffcfb7dc8059f253ce544da94e97d7aea06b1ab818878492695c2519b2e6e",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 127,
+      "key": "Shino_Skill05_43",
+      "role": "ground",
+      "file": "assets/full_pack/27000_127.png",
+      "axis": [
+        -40,
+        361
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1165,1},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "bc17cd90b153d7b71f0b1ace23371255b8c73dbb045675715388d52b04fddf79",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 128,
+      "key": "Shino_Skill05_44",
+      "role": "ground",
+      "file": "assets/full_pack/27000_128.png",
+      "axis": [
+        -40,
+        356
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1165,386},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "dab7db0b8f0fdbbcc16d90340d6461c1271644901f42e0355d450db82b7f8994",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 129,
+      "key": "Shino_Skill05_45",
+      "role": "ground",
+      "file": "assets/full_pack/27000_129.png",
+      "axis": [
+        -40,
+        354
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1165,771},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "174ff641ccf1ec743df3f950a0500b00dc2ec90844d201158dd2f255188386ff",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 130,
+      "key": "Shino_Skill05_46",
+      "role": "ground",
+      "file": "assets/full_pack/27000_130.png",
+      "axis": [
+        -40,
+        291
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1165,1156},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "2a0d0e3b4ba85be8a4587a77ef31f98f570beb510affebd3f76fd4a00fad830b",
+      "body_redrawn": false
+    },
+    {
+      "group": 27000,
+      "number": 131,
+      "key": "Shino_Skill05_47",
+      "role": "ground",
+      "file": "assets/full_pack/27000_131.png",
+      "axis": [
+        -40,
+        305
+      ],
+      "source": "source_material/Ryu_full_original/Ryu/Shino/Shino.plist",
+      "source_rectangle": "{{1,1541},{580,383}}",
+      "source_rotation": false,
+      "crop": [
+        330,
+        0,
+        580,
+        383
+      ],
+      "erase": null,
+      "size": null,
+      "body_mask_reference": null,
+      "alignment": null,
+      "eye_pixels_recolored": 0,
+      "rgba_sha256": "a4f61b4b341d73a442816eb862e112b27a26a38b0b0101044743e17eb3cada87",
+      "body_redrawn": false
+    }
+  ],
+  "actions": [
+    1000,
+    1010,
+    1020,
+    1030,
+    1200,
+    1430,
+    3000,
+    8612,
+    8615,
+    8620,
+    11000,
+    11010,
+    11020,
+    11030,
+    11200,
+    11430,
+    13000,
+    27130,
+    27131
+  ],
+  "sounds": [
+    {
+      "group": 5,
+      "number": 0,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/CyborgTranshand.mp3",
+      "source_sha256": "7127036fcdf3afd1b0783c8c09fa7aa46f6f24ed667339f4fdbea3c135c708dc",
+      "wav": "assets/full_pack/sound/5_0.wav",
+      "wav_sha256": "4eec761f3c354a25587c059a9c2f42dfe8cb7ed82504a7686b12a63ecc3ba165"
+    },
+    {
+      "group": 5,
+      "number": 1,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/Blade00.mp3",
+      "source_sha256": "e99c3d47b3f4b636f971efcec6cce8ae725bbbedda3b5e081fc705a70927be8e",
+      "wav": "assets/full_pack/sound/5_1.wav",
+      "wav_sha256": "283548df1c075694ba1777713dba2221f02e91bdf384772ce3315d5acb3db3bf"
+    },
+    {
+      "group": 5,
+      "number": 2,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/elect2.ogg",
+      "source_sha256": "c77494685e02ffbc56624b413dcd3f4e180c5f9ac3bd64c67932546ed46661ea",
+      "wav": "assets/full_pack/sound/5_2.wav",
+      "wav_sha256": "abe30511484d3cc66c7eefd8ceedc2d15ae2753069f4d350231bafbd90aa9fd7"
+    },
+    {
+      "group": 5,
+      "number": 3,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/break_sound3.ogg",
+      "source_sha256": "9bc1cdbc22bf1df2a14f95cacb899a041adbe8f2169ba68ba3b37bf043bc17de",
+      "wav": "assets/full_pack/sound/5_3.wav",
+      "wav_sha256": "ef78f8be0a11ceeebb53143d03ec76bdd55bcea058e61f84d62828e7999eabd8"
+    },
+    {
+      "group": 5,
+      "number": 4,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/hao_chg2.ogg",
+      "source_sha256": "47859d7b4287ff3ab0b6230b83e46511099f982539acfb496018b1395449f34c",
+      "wav": "assets/full_pack/sound/5_4.wav",
+      "wav_sha256": "18db6ed36ae918b0d685b960a0b4322b1385ac83a2992b8498e4f50e26993d5d"
+    },
+    {
+      "group": 5,
+      "number": 5,
+      "source_zip": "/workspace/attachments/8b75a63e-7730-4352-adf9-4450acb9df18/Shinju Ryu by Vaydra.zip",
+      "member": "Ryu/Audio/Effect/codeClawEfx.mp3",
+      "source_sha256": "de9eb62d7df331f1eed17222109c7cc1a971f39ead604adc03f46678cff1ddce",
+      "wav": "assets/full_pack/sound/5_5.wav",
+      "wav_sha256": "4d1609f9300ef2399b942d43936587036c7ee5d6218c489bb43e0062b817a43c"
+    }
+  ]
+}

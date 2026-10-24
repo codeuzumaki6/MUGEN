@@ -1441,6 +1441,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1000, Supplied pack sound mokutonMsv.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1010]
 type = S
 movetype = A
@@ -1633,6 +1643,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1050, Supplied pack sound mokutonMsv.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type = S
 movetype = A
@@ -2099,6 +2119,33 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1020, Original pack animation 27110]
+type=Explod
+trigger1=Time=1
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.30,.30
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=15
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1030]
 type = S
 movetype = A
@@ -2261,6 +2308,33 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1030, Original pack animation 27110]
+type=Explod
+trigger1=Time=4
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.48,.48
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1030, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=31
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1200]
 type = S
 movetype = A
@@ -2443,6 +2517,50 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1200, Original pack animation 27113]
+type=Explod
+trigger1=Time=10
+anim=27113
+ID=27113
+postype=P1
+pos=18,-65
+scale=.35,.35
+removetime=12
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1200, Original pack animation 27110]
+type=Explod
+trigger1=Time=1
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.16,.16
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1200, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=10
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1420]
 type = S
 movetype = A
@@ -2859,6 +2977,23 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1420, Original pack animation 27110]
+type=Explod
+trigger1=Time=1
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.2,.2
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
 [Statedef 1400]
 type = S
 movetype = A
@@ -3301,6 +3436,67 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1430, Original pack animation 27110]
+type=Explod
+trigger1=Time=4
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.32,.32
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Original pack animation 27110]
+type=Explod
+trigger1=Time=24
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.32,.32
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Original pack animation 27110]
+type=Explod
+trigger1=Time=44
+anim=27110
+ID=27110
+postype=P1
+pos=18,-65
+scale=.32,.32
+removetime=14
+bindtime=-1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=14
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1210]
 type = S
 movetype = I
@@ -3365,6 +3561,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1210, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1211]
 type = S
 movetype = A
@@ -3513,6 +3719,16 @@ trigger1 = AnimTime = 0
 value = 0
 ctrl = 1
 
+
+
+[State 1211, Supplied pack sound codeClawEfx.mp3]
+type=PlaySnd
+trigger1=Time=6
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1440]
 type = S
 movetype = A
@@ -3752,7 +3968,7 @@ type = A
 movetype = A
 physics = N
 ctrl = 0
-anim = 8841
+anim = 27111
 velset = 0,0
 
 [State 9300, Read damage]
@@ -3791,37 +4007,11 @@ trigger1 = Time=0
 v=3
 value=Parent,Var(33)
 
-[State 9300, Collision follows visible orb size]
-type = ChangeAnim
-trigger1 = Time=0
-value=IfElse(FVar(0)<=.5,8842,8841)
-
 [State 9300, Stable orb scale]
 type = AngleDraw
 trigger1 = 1
 value=0
 scale=FVar(0),FVar(0)
-
-[State 9300, Purple-black ocular chakra]
-type = PalFX
-trigger1 = 1
-time=1
-color=0
-mul=22,4,36
-
-[State 9300, Violet chakra rim]
-type = Explod
-trigger1 = Time=0
-anim=8840
-ID=9309
-postype=P1
-pos=0,0
-bindtime=-1
-scale=FVar(0)*.36,FVar(0)*.36
-removetime=70
-sprpriority=3
-ownpal=1
-removeongethit=1
 
 [State 9300, Actual orb velocity]
 type = VelSet
@@ -3892,7 +4082,7 @@ type = A
 movetype = I
 physics = N
 ctrl = 0
-anim = 8820
+anim = 27112
 velset = 0,0
 
 [State 9301, Orb burst sound]
@@ -3903,9 +4093,19 @@ channel=1
 
 [State 9301, Safe final effect]
 type = DestroySelf
-trigger1 = Time>=15
+trigger1 = Time>=40
 
 
+
+[State 9301, Ground the actual source explosion]
+type=PosSet
+trigger1=Time=0
+y=0
+
+[State 9301, Impact scale follows the fired orb]
+type=AngleDraw
+trigger1=1
+scale=.20+FVar(0)*.18,.20+FVar(0)*.18
 [Statedef 170]
 type = S
 movetype = I
@@ -4499,34 +4699,22 @@ pausemovetime = 999
 supermovetime = 999
 removeongethit = 0
 
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=80
-anim = 8820
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.6,0.6
-removetime = 16
-ownpal = 1
-sprpriority = 6
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=80
-anim = 8830
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.32,0.32
-removetime = 16
-ownpal = 1
-sprpriority = 5
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
+[State 3001, Original pack animation 27112]
+type=Explod
+trigger1=Time=80
+anim=27112
+ID=27112
+postype=P1
+pos=145,0
+scale=.56,.56
+removetime=60
+bindtime=0
+ownpal=1
+sprpriority=6
+removeongethit=1
+pausemovetime=180
+supermovetime=180
 [State 3001, Confirmed bounded damage]
 type = TargetLifeAdd
 trigger1 = Time=80 && NumTarget(3000)>0
@@ -4547,34 +4735,6 @@ trigger1 = Time=80
 time=7
 freq=65
 ampl=-5
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=94
-anim = 8820
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.6,0.6
-removetime = 16
-ownpal = 1
-sprpriority = 6
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=94
-anim = 8830
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.32,0.32
-removetime = 16
-ownpal = 1
-sprpriority = 5
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
 [State 3001, Confirmed bounded damage]
 type = TargetLifeAdd
@@ -4597,34 +4757,6 @@ time=7
 freq=65
 ampl=-5
 
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=108
-anim = 8820
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.6,0.6
-removetime = 16
-ownpal = 1
-sprpriority = 6
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=108
-anim = 8830
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.32,0.32
-removetime = 16
-ownpal = 1
-sprpriority = 5
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
 [State 3001, Confirmed bounded damage]
 type = TargetLifeAdd
 trigger1 = Time=108 && NumTarget(3000)>0
@@ -4646,34 +4778,6 @@ time=7
 freq=65
 ampl=-5
 
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=122
-anim = 8820
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.6,0.6
-removetime = 16
-ownpal = 1
-sprpriority = 6
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=122
-anim = 8830
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.32,0.32
-removetime = 16
-ownpal = 1
-sprpriority = 5
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
 [State 3001, Confirmed bounded damage]
 type = TargetLifeAdd
 trigger1 = Time=122 && NumTarget(3000)>0
@@ -4694,34 +4798,6 @@ trigger1 = Time=122
 time=7
 freq=65
 ampl=-5
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=136
-anim = 8820
-postype = P1
-pos = 145,-FVar(14)
-scale = 1.1,1.1
-removetime = 16
-ownpal = 1
-sprpriority = 6
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
-
-[State 3001, Visible technique effect]
-type = Explod
-trigger1 = Time=136
-anim = 8830
-postype = P1
-pos = 145,-FVar(14)
-scale = 0.6,0.6
-removetime = 16
-ownpal = 1
-sprpriority = 5
-pausemovetime = 999
-supermovetime = 999
-removeongethit = 0
 
 [State 3001, Confirmed bounded damage]
 type = TargetLifeAdd
@@ -4756,6 +4832,26 @@ trigger1 = Time>=166
 value = 0
 ctrl = 1
 
+
+
+[State 3001, Supplied pack sound charge2.ogg]
+type=PlaySnd
+trigger1=Time=32
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
+
+
+[State 3001, Supplied pack sound BijuDama.mp3]
+type=PlaySnd
+trigger1=Time=56
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 3010]
 type = S
 movetype = H
@@ -4794,15 +4890,8 @@ type = A
 movetype = I
 physics = N
 ctrl = 0
-anim = 8841
+anim = 27110
 velset = 0,0
-
-[State 9530, Dark ocular core]
-type = PalFX
-trigger1 = 1
-time=1
-color=0
-mul=22,4,36
 
 [State 9530, Sphere growth from the eye]
 type = AngleDraw
@@ -4822,19 +4911,6 @@ trigger1 = Time>=24
 x=113.0/24
 y=(146-(Root,FVar(14)))/24
 
-[State 9530, Living violet rim]
-type = Explod
-trigger1 = Time%4=0
-anim=8840
-postype=P1
-pos=0,0
-bindtime=-1
-scale=(.15+IfElse(Time<24,Time,24)*.04)*.36,(.15+IfElse(Time<24,Time,24)*.04)*.36
-removetime=5
-sprpriority=4
-ownpal=1
-pausemovetime=170
-
 [State 9530, No shadow]
 type = AssertSpecial
 trigger1 = 1
@@ -4851,6 +4927,11 @@ trigger1=Time>=48
 trigger2=Root,StateNo!=3001
 
 
+
+[State 9530, Launch original travelling bijudama]
+type=ChangeAnim
+trigger1=Time=24
+value=27111
 [Statedef 9540]
 type = S
 movetype = I

@@ -2,20 +2,21 @@
   "archives": {
     "Eida": {
       "archive": "Eida_DAEMON_ORIGINAL.zip",
-      "bytes": 4181809,
-      "sha256": "ed1a5d321865741abdd886a6fd2674eae82410a8b49e3ea00fcd170598b94d1a",
+      "bytes": 5866468,
+      "sha256": "b8542ea91fab650ad43144d154919f37b5e040177345b69496d45c81e3ba65b0",
       "files": {
         "CONTROLES_XBOX.md": "f815c63191f0a1febaaba782d2477014688aef14455421404c70e1642c3d79dc",
         "CREDITOS_Y_FUENTES.md": "ac70cadc3a1f1855e8ef028d1e6e4f035b11cab6bae1ce35e0589b0295c314ae",
-        "Eida.air": "b76637df7269caf4a55c1650b45d4ff9c6b7d703212fbd642e96862ccf7f6120",
+        "Eida.air": "2b9934f3fe17a9da60a2ac5f8df2d6dca95282fb26493fe7f648bd058e7940a0",
         "Eida.cmd": "c39cb04743b537c95e197b08a32cf0164bc65c0e032d37ebe0dbf0991cebe06f",
-        "Eida.cns": "4edf46c613cee69073dcfbdd39915853737ec816d9426d9e3ba6bbf5d1804b82",
+        "Eida.cns": "dbb3b7451b397ba283d122e29d8691d5d29b68627616ffcc4e163aa6a808167e",
         "Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
-        "Eida.sff": "20e8a9cb0499e23aab992c523a221b2753db994d0502ed89a9dcf4c41bd380e4",
-        "Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
+        "Eida.sff": "4b7d3be12f49d741139d0cbd0ddffb211960d648c97b5fb9be0d3a056b31064d",
+        "Eida.snd": "3f0d6bfa25fd386d114a171e72e80777a24737e86831587c102387c0759565eb",
         "LEEME.md": "15fcdb12de098528f5963da32bbc16aca08fcdff10bc76bc6fefb3820bb5b945",
-        "Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
+        "Omnipotencia.cns": "8a024ff8bbd002a89557be45eaea0d9cfb1029f39bd94141289c40d0b9223932",
         "REVISION_CONJUNTA.md": "d7983b83f0d4f1c86b791c0bdaad859109fc003ad2246707740a594df4635219",
+        "SPRITES_Y_AUDIO.md": "4445806d184c87df83862a0ff9ecf12c3f90d00b3f9b0725102c5b72c6955bb1",
         "Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
         "common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
       },
@@ -43,20 +44,21 @@
     },
     "Mamushi": {
       "archive": "Mamushi_SHINJU.zip",
-      "bytes": 1943041,
-      "sha256": "4ef816e81ae981fc80e62a3a0df70940813e2c7b931f7a65384bb9e597942b0c",
+      "bytes": 3379228,
+      "sha256": "107ad9b968bb6f97269477b35e68f55aae9f607704c7bbb20a05bee3adbb3922",
       "files": {
         "AC_Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
         "CONTROLES_XBOX.md": "236e1ea0a6f8582f6d5b0867c38c4e60f6b3c906212cda90e7631efb503f9d86",
         "CREDITOS_Y_FUENTES.md": "b294f03e0efde04aa75e601e9dd1e2b767822258c0448e425fd335e558d27e02",
         "LEEME.md": "216db37e1a8cd31d3e74232bb577bec4a3805edd5e765a11f3284469838f724a",
-        "Mamushi.air": "42d4fb137f9be6d2b89974d3c6c561e08b0379b546555b3245c94f76d0770fe2",
+        "Mamushi.air": "95c95beeb5cad3b97dc3f0f741204f56e2b9f00b97b6b5eb5bea4ce77296612f",
         "Mamushi.cmd": "212df3c0d8b579c28fe5ee70982eb85f87d0946df8774c2d2be4abca0a301510",
-        "Mamushi.cns": "2f78e8208026cb7d2f1741ab3aece8a33365c5189a292bd57f46d0e2657db0ae",
+        "Mamushi.cns": "bc1ef91569583ff8ae15124bd6b4e7fca4aac8e21275411e2f327e41c544f5e8",
         "Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
-        "Mamushi.sff": "9beaa2053166366b6d944b4d2f6d4a41e13d3aa454dde00d5bb07d8ce4b2ab73",
-        "Mamushi.snd": "c983d3687b4cc7ad0ddf37d162bc06476a7baf007393feff83bad86e7fea092f",
+        "Mamushi.sff": "d650559caede4818844dbb638a7278bdcc0c18c404724ccacafcdae9e7364d1d",
+        "Mamushi.snd": "6877be6ec93629b4d1131260e3f8fcff620d63dae036f743bfcbe9039c9f510e",
         "REVISION_CONJUNTA.md": "9a635c3d74e708b57a686180ec93b521a2e4a53c5e5a6504d8ada4a6cd4b226d",
+        "SPRITES_Y_AUDIO.md": "7038c856dbb34454e1e3f47b37806a85abec20eb829a842441dc0568c47395fa",
         "common1.cns": "79feadb169ae365a363594134ceed4735b44be34235c4feb3bfebce5ba9f5265"
       },
       "extracted_validation": true
@@ -82,104 +84,109 @@
     },
     "JuraShinju": {
       "archive": "JuraShinju.zip",
-      "bytes": 1902581,
-      "sha256": "39ab6860ad81769f6bb03a9a24564b1b74e6ea7aa4926e3e78a7da6a495599f0",
+      "bytes": 2918533,
+      "sha256": "5f1a9e6773fd25bde8890504ce29044bddac23ecf7fe4aa0084926c5e4049a24",
       "files": {
         "CONTROLES_XBOX.md": "c53a3d858c67472f1d43217616ee1aefb9ba54666abdbe9bfb62631a693eb56d",
         "CREDITOS_Y_FUENTES.md": "7651eb6a339451acf93003a663c2d53f155a12475d6f569e7acaa9c853e00c06",
-        "JuraShinju.air": "0ce11d04f0bca9a56b741cb25866464e10c6ea00534c5c9893e48b0f009bb30e",
+        "JuraShinju.air": "63e6c28aa4795a2d24585e020499d92ce70e87cf56597c16fb69af53aac12eb7",
         "JuraShinju.cmd": "919e4dabf9bbc43d71fe3c0be47d1d609b4ebed7cc569ae9167d4d5840ae8180",
-        "JuraShinju.cns": "36f7b7ab214a6c05d76ea0ce3ebeb160037de6763624ca1f73723c465ff4a4cf",
+        "JuraShinju.cns": "eda0ce8fb776f8a65b004992ada5c626b446ae56f462657a9cefb5d6ace1fd3e",
         "JuraShinju.def": "ac50ab9088a0abc1f16584ffb6ab3c5b647c06fbd300d8dd0671e1abd88f7a90",
-        "JuraShinju.sff": "fc9f08aa4dcedf9a2a861de6178ec5e11998446bb413fe141d46872d72f93d20",
-        "JuraShinju.snd": "48f0314c537c7841d9c660f2972c6f30ac3c52eab86c8e7b1083c14907ad74ff",
+        "JuraShinju.sff": "f78cbf493e5e01045f23916abb5bc69ec8a063f51a7c5b1b2f24a4d722d83cf5",
+        "JuraShinju.snd": "a39c24bcf0480d025c36b76a0f31873fad4e59c6c83440afc89567270dd06174",
         "JuraShinju_common.cns": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013",
         "LEEME.md": "dea2bd6480a8eb0e35c77cfacf6b1f72e41ae6da3158e8b12beff63212b75098",
-        "REVISION_CONJUNTA.md": "cfda61d128b45ecb9b1e2d35042e9d7786cd593d79783a3dc84f20f83da5a444"
+        "REVISION_CONJUNTA.md": "cfda61d128b45ecb9b1e2d35042e9d7786cd593d79783a3dc84f20f83da5a444",
+        "SPRITES_Y_AUDIO.md": "4f8cd49423b03b1844602031ac6330381884f4fc0d23fcbef370ccf6aa1e2546"
       },
       "extracted_validation": true
     },
     "MitsukiTBV": {
       "archive": "MitsukiTBV.zip",
-      "bytes": 6983912,
-      "sha256": "e32d532e0a5ef8de59f37872e78eefcabbce9d56eaf9a0757d07a6f4992c0ea5",
+      "bytes": 7797113,
+      "sha256": "4e8c27b5d589137da52b6bcada1199e5522a4c9c71db3bb4bfecca5184b80fae",
       "files": {
         "CONTROLES_XBOX.md": "43e743d532789d54ca671499aafe9a7194e7300de1485ddbc112e3a3aea84b48",
         "CREDITOS_Y_FUENTES.md": "b4e6cf1f221b9d8e75287d99afb9858ad32cd13ea8e378d375c375c5c28eca9b",
         "LEEME.md": "a64b7a0be1dc0383ad428dda13ed1f9e5c33803d15cc46ac82a5ec7be12217b7",
-        "MitsukiTBV.air": "97e35a6e3cf57158fa04bb02b2c273d5ada2f8bef47876baeb38b3dee28abf20",
+        "MitsukiTBV.air": "4c72a70383fa79455326ad95da7de83871f9414dd5bb5b39bbf98f34a85aa067",
         "MitsukiTBV.cmd": "0b2dc40b3bd0bfb360ce9360bd86a92a78ef436b29d5f952bcf30c0a7c2a9f8c",
-        "MitsukiTBV.cns": "cee7bf8699e018f91761cd969b3be728d119ece1c765351944204d782aabeae1",
+        "MitsukiTBV.cns": "5f2d73c45520bea9c08f9bbfe255ca325541a474822b848957aef5062a14d97a",
         "MitsukiTBV.def": "b559ab80ad0eefd1c9dd930e540a63e289e719db1f6a1c1f4ffb3fd50be9a76b",
-        "MitsukiTBV.sff": "0f82f560629a23e412fe8991beedb6d180188d189c3e486df54266887b28c271",
-        "MitsukiTBV.snd": "e93d474a49f417885d4d2beaef685e543e410dc93e1b6c21b2f7d435277c9dd6",
+        "MitsukiTBV.sff": "206c705525c4c2e0db57135cfd269e7e5eff1f427ef4ba49bfe66d5602e8ff83",
+        "MitsukiTBV.snd": "57332238dbd39496f4c30131970943ac6c2882e7a3c1171fa5bfc68820a0e09a",
         "MitsukiTBV_common.cns": "9f91c8023278c01d71b41552d3c5b4c69933caebd414272921498c97bd19b424",
-        "REVISION_CONJUNTA.md": "e8f55aee3ba4dc8ef9760d8e286dc6608fb462549653b7bbe6f9ff36f152c4a2"
+        "REVISION_CONJUNTA.md": "e8f55aee3ba4dc8ef9760d8e286dc6608fb462549653b7bbe6f9ff36f152c4a2",
+        "SPRITES_Y_AUDIO.md": "7eabf305fab7d098dc7db475f48a3ef065b130b723cf8d1c735c9496316e9e2e"
       },
       "extracted_validation": true
     },
     "RyuShinju": {
       "archive": "RyuShinju.zip",
-      "bytes": 2036743,
-      "sha256": "872b06a4b8131e805937c49da71b52240dd8219d66411039c8dea407cd7bb3c9",
+      "bytes": 3151319,
+      "sha256": "39104f70cce5d4a45256698b0cba2675f72da7b68f72d35c39d873a20e08858d",
       "files": {
         "CONTROLES_XBOX.md": "b86da12f74784749f7351cf0dff6b1b77337baf7123a9619ac856f5aef9a6be4",
         "CREDITOS_Y_FUENTES.md": "bf7eb36c7dfb6ff7742b642a59b527b9765661dd795f1d608091c6da271d9bc0",
         "LEEME.md": "5912aaf508c355cd21661b08c8efa8b433f4a35e81190420aaed00e4d741024c",
         "REVISION_CONJUNTA.md": "5bf562cccf327e355656d987e7ad5a4edfb9be977a61859782b55ef87f9bfddc",
-        "RyuShinju.air": "8fd399825af68a0654f8bda8442729108e37329d86f2c6234a37defbb5fb1d2a",
+        "RyuShinju.air": "f69e369364c3ee8a1c82629537d141c509e7d60fc9a6e6927db635a78af6a183",
         "RyuShinju.cmd": "5e383e8f3a41fe4dd4ce5cfc66a69383846d576696c43ddb221328cbf010fec3",
-        "RyuShinju.cns": "263edeceeb684ea3c542efb00f99e88a830f00b4db4c8495d747930a68dab124",
+        "RyuShinju.cns": "cdcb65171423bf73c4e079f74fad7e6a19d5f6626d39a59eb4d49d7fb7cba5cc",
         "RyuShinju.def": "9bc7c978aee888d31b42ad057f16c638a21b4917f8e08e14ea368f1fe7742843",
-        "RyuShinju.sff": "e4bccdf06911f772019526684f2945cfc65d0ec37a56c541109ae3bbec6b4ea1",
-        "RyuShinju.snd": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5",
-        "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670"
+        "RyuShinju.sff": "4eef67d3005c974ed4e1eab05d40cf6f0997f470f8e4c7d7ebad5c784fa2e2ce",
+        "RyuShinju.snd": "5b3b8fd02fd4ce89c6f5ce98d82b537e2ebe2e710c65b99c88fe839e60128ffa",
+        "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670",
+        "SPRITES_Y_AUDIO.md": "aa3133e682e18d1c9382183f248b4335c3c73c3bdbea93b34f7e62c509b6151a"
       },
       "extracted_validation": true
     },
     "HidariShinju": {
       "archive": "HidariShinju.zip",
-      "bytes": 9797020,
-      "sha256": "0a795fddc6595628564c0b76dd94a8dca4b4ccd6f3cbf00dafcb0bc1e2bae3e5",
+      "bytes": 11300713,
+      "sha256": "c391e11daca602b83f46581ce475f346167e9e5569b8806701abe2ad0f58d05a",
       "files": {
         "CONTROLES_XBOX.md": "ac794e665b444f3e23f099a4d7bb5a59c917ef41435b9509f9516b1344279732",
         "CREDITOS_Y_FUENTES.md": "af0949970f9ae613e21461a2370160e742101d1c3ddc93bbeb465417bf42380d",
-        "HidariShinju.air": "78991cfe49415775f559d4a366d33d6378173d34778d1ac79c1afc3edc392452",
+        "HidariShinju.air": "5eb5ef82c81e778121bd9d01169a5d9c6b26ef8369d3d425492d73c059b7cac3",
         "HidariShinju.cmd": "927cbd65468dad551e0485c2b944a3f75cef7e0a1d95ea59487b0f4cf295c8c2",
-        "HidariShinju.cns": "e37570a0f2b007f0f63c789102a366c8b679ef6f4604694dd83aeba6bd7c6aac",
+        "HidariShinju.cns": "3def3576e4cec353a14755509baf999205f620634a657ccf18d8e909990cc2c7",
         "HidariShinju.def": "0dca801a6eb83754d2c08f17c0a1828003118d794b2c67684f0aeb429862f6da",
-        "HidariShinju.sff": "574a1d0a679594a4baed72bc3e9e7779643ca67e9788e618e138242a2713e3bb",
-        "HidariShinju.snd": "c5dcad956955bbdb56fb88171d848e1b73c30666c918e2d17a5e210512842260",
+        "HidariShinju.sff": "391ac1370072a5c7e5c21100c902445e2e5912bbc16d27241090bcbd8c9a3057",
+        "HidariShinju.snd": "d6e335735a72d74594afd5d855c5fae51c7b2469dedc1ede3c9574d22a3d9ce1",
         "HidariShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8",
         "LEEME.md": "095cb0ed6987df13a85e1c85289a3bfa312e739a5c7b4a50320a0dc44bf1fe63",
-        "REVISION_CONJUNTA.md": "265ef3ffdb8a15ac6cb1b17b6a61fccb4551d8dc1d78bb879eff39a45f0f231c"
+        "REVISION_CONJUNTA.md": "265ef3ffdb8a15ac6cb1b17b6a61fccb4551d8dc1d78bb879eff39a45f0f231c",
+        "SPRITES_Y_AUDIO.md": "d209e9dca7ebc31de8830f1262aa3ac620cbed83691e0643a9c996de2a677a53"
       },
       "extracted_validation": true
     },
     "MatsuriShinju": {
       "archive": "MatsuriShinju.zip",
-      "bytes": 2013038,
-      "sha256": "9b512062af848df3976f175dc5f1167983a78ddf867094003019a0559dbe2746",
+      "bytes": 2931770,
+      "sha256": "c25b664dc5f699f344bb2c186e9caf51114b261255abc4de91580c43d465d646",
       "files": {
         "CONTROLES_XBOX.md": "af8b84db6e30437d21fe29d1f8bd9595cba26f835e0b6ae5e9d79006817eb95d",
         "CREDITOS_Y_FUENTES.md": "4a0fd49f3128863d32ba4539fc41613038e7f92cc98abdfa01aeffbf25f3491a",
         "LEEME.md": "b9ad4241b6c965406e5b47821ffb31c313e1cebc0f3de158b7cc4f9de4f0ead8",
-        "MatsuriShinju.air": "00b5189b742627ea540e81394e0108459169a5e89ddf98c96653cce516d9ab09",
+        "MatsuriShinju.air": "a82b8190cf543160158b7ef70eb20ab3ce49ace4565ec9ce9c715833161f6394",
         "MatsuriShinju.cmd": "8ae6856a09b1c1c82cc7142ab498440fe23cb6b24da69a12eb3f013ec67dacc6",
-        "MatsuriShinju.cns": "47211ed670bb6df4ca67f6e02d2ab7cc0ae807b3c6ca41635adad7eab247d498",
+        "MatsuriShinju.cns": "187a4cfe7e452f43b82a0d1de4436eb0967b51701d746abbbc3da450f9aa3e7c",
         "MatsuriShinju.def": "bb43b96c0656583f4117e1599391826f3467bc4230ede84cec3cf03e1de89dad",
-        "MatsuriShinju.sff": "ac45e92d7c31b0951abb03321e21c81c9ae212b3823ee5c1c4bb3f06bf99ea9e",
-        "MatsuriShinju.snd": "bdebbc7bbe8d6c64348e07ebcde1b67adfcbb983d57b5e53243b599953694b48",
+        "MatsuriShinju.sff": "649d51f71cca4f31431fd2966b142fb0edb0f7f88f8206122652d108e6602aaa",
+        "MatsuriShinju.snd": "5472da755a1e07fb46122d71616133836b2f5751658143d295c4a66930dfc8b3",
         "MatsuriShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8",
-        "REVISION_CONJUNTA.md": "f4b9cad10af05ff86d4655bbad8419bce9e4b4c9aa2d7524aaea21c7c571ff5c"
+        "REVISION_CONJUNTA.md": "f4b9cad10af05ff86d4655bbad8419bce9e4b4c9aa2d7524aaea21c7c571ff5c",
+        "SPRITES_Y_AUDIO.md": "c3508b1fa81dcfc8ff676c6b81db02a57fef3e21a2d56ddf411a5c0c543089e7"
       },
       "extracted_validation": true
     }
   },
   "bundle": {
     "archive": "Personajes_CORREGIDOS.zip",
-    "bytes": 31440517,
-    "sha256": "6895927862860408cde3a2410c0d4346a788f4cbd419632cfb1f3432052d11fb",
+    "bytes": 39927517,
+    "sha256": "0b85833add26293976f6b2739be2b33b0dabd2e8c71ded200d7ce36c2a334bf8",
     "all_runtime_bytes_verified": true
   }
 }

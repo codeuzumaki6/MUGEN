@@ -2,6 +2,11 @@
 from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parents[1]
+def lua_full_sprite_keys(character,prefix):
+    records=json.loads((ROOT/character/'assets/full_pack/manifest.json').read_text())['frames']
+    keys=','.join("['%s:%s']=true"%(r['group'],r['number']) for r in records if r['key'].startswith(prefix))
+    assert keys,(character,prefix)
+    return '({'+keys+'})'
 def lua_body_keys(character):
     records=json.loads((ROOT/character/'assets/senki/manifest.json').read_text())
     if character=='MatsuriShinju':records=[r for r in records if r['key'].startswith(('Hashirama_Nattack_','Hashirama_Skill'))]

@@ -2927,6 +2927,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1010, Supplied pack sound ToppaEfx.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,0
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1020]
 type=S
 movetype=A
@@ -3023,6 +3033,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1020, Supplied pack sound Raiton2.ogg]
+type=PlaySnd
+trigger1=Time=16
+value=S5,1
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1030]
 type=S
 movetype=A
@@ -3104,6 +3124,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1030, Supplied pack sound efxKamaitachi.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1040]
 type=S
 movetype=A
@@ -3361,6 +3391,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 1050, Supplied pack sound snake.wav]
+type=PlaySnd
+trigger1=Time=8
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 1400]
 type=S
 movetype=A
@@ -4691,6 +4731,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11020, Supplied pack sound EfxorochiIkazuchi.mp3]
+type=PlaySnd
+trigger1=Time=16
+value=S5,2
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11030]
 type=S
 movetype=A
@@ -4798,6 +4848,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11030, Supplied pack sound efxKamaitachi.mp3]
+type=PlaySnd
+trigger1=Time=8
+value=S5,3
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11040]
 type=S
 movetype=A
@@ -5069,6 +5129,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 11050, Supplied pack sound snake.wav]
+type=PlaySnd
+trigger1=Time=8
+value=S5,5
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 11400]
 type=S
 movetype=A
@@ -6202,6 +6272,18 @@ trigger1=MoveContact || Time>=32 || FrontEdgeBodyDist<-120 || RoundState!=2
 
 
 
+
+
+[State 9432, Original lightning contact burst]
+type=Explod
+trigger1=MoveContact
+anim=27120
+postype=P1
+pos=0,0
+removetime=-2
+ownpal=1
+sprpriority=5
+persistent=0
 [Statedef 9440]
 type=A
 movetype=A
@@ -7244,6 +7326,16 @@ value=0
 ctrl=1
 
 
+
+
+[State 520, Supplied pack sound MitsukiSageTransform.mp3]
+type=PlaySnd
+trigger1=Time=0
+value=S5,4
+channel=7
+volumescale=70
+ignorehitpause=1
+persistent=0
 [Statedef 3000]
 type=S
 movetype=A
