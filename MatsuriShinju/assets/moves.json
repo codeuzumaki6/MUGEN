@@ -1,0 +1,105 @@
+{
+  "moves": [
+    [
+      "Lanza",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Latigo",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Suiton",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Jardin",
+      "b",
+      "B",
+      1030,
+      500
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      450
+    ],
+    [
+      "Atadura",
+      "c",
+      "B",
+      1050,
+      600
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Lanzador",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Manto",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Agua",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Marca",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Erupcion",
+      "y",
+      "D",
+      1430,
+      600
+    ],
+    [
+      "Emboscada",
+      "z",
+      "D",
+      1440,
+      600
+    ]
+  ],
+  "awakening": "Original uncloaked lower-sheet form",
+  "awakening_cost": 1500,
+  "activation_requires": 3000,
+  "awakening_ticks": 900,
+  "cooldown_ticks": 1500,
+  "garden_buff_ticks": 420,
+  "ultimate_cost": 3000,
+  "base_ultimate_budget": "min(420,42% opponent max life)",
+  "awakened_ultimate_budget": "min(450,45% opponent max life)",
+  "voices": false
+}

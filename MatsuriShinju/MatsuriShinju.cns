@@ -1,0 +1,7494 @@
+; Matsuri Shinju: original Vaydra base and uncloaked forms.
+[Data]
+life=1250
+power=3000
+attack=100
+defence=110
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=78
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-72
+mid.pos=0,-42
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+
+
+[Statedef 200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=200
+velset=2,0
+
+[State 200, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 200, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 200, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 200, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=201
+velset=2,0
+
+[State 201, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 201, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 201, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 201, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=202
+velset=2,0
+
+[State 202, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 202, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 202, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 202, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=210
+velset=2,0
+
+[State 210, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 210, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 210, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 210, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=211
+velset=2,0
+
+[State 211, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 211, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 211, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 211, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=212
+velset=2,0
+
+[State 212, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 212, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 212, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 212, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=220
+velset=2,0
+
+[State 220, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 220, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 220, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 220, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=221
+velset=2,0
+
+[State 221, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 221, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 221, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 221, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=222
+velset=2,0
+
+[State 222, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 222, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 222, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 222, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=600
+
+[State 600, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 600, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 600, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 600, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 600, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 600, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=601
+
+[State 601, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 601, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 601, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 601, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 601, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 601, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=602
+
+[State 602, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 602, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 602, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 602, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 602, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 602, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=610
+
+[State 610, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 610, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 610, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 610, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 610, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 610, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=611
+
+[State 611, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 611, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 611, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 611, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 611, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 611, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=612
+
+[State 612, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 612, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 612, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 612, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 612, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 612, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=620
+
+[State 620, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 620, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 620, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 620, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 620, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 620, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=621
+
+[State 621, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 621, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 621, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 621, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 621, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 621, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=622
+
+[State 622, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 622, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 622, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 622, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 622, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 622, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10200
+velset=2,0
+
+[State 10200, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10200, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10200, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10200, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10201
+velset=2,0
+
+[State 10201, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10201, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10201, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10201, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10202
+velset=2,0
+
+[State 10202, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10202, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10202, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10202, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10210
+velset=2,0
+
+[State 10210, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10210, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10210, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10210, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10211
+velset=2,0
+
+[State 10211, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10211, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10211, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10211, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10212
+velset=2,0
+
+[State 10212, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10212, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10212, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10212, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10220
+velset=2,0
+
+[State 10220, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10220, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(44*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10220, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10220, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10221
+velset=2,0
+
+[State 10221, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10221, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(56*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10221, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10221, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10222
+velset=2,0
+
+[State 10222, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=80
+
+
+[State 10222, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10222, Normal step ends]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10222, Return control]
+type=ChangeState
+trigger1=Time>=19
+value=0
+ctrl=1
+
+
+[Statedef 10600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10600
+
+[State 10600, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10600, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10600, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10600, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10600, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10600, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10601
+
+[State 10601, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10601, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10601, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10601, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10601, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10601, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10602
+
+[State 10602, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10602, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10602, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10602, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10602, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10602, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10610
+
+[State 10610, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10610, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10610, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10610, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10610, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10610, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10611
+
+[State 10611, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10611, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10611, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10611, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10611, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10611, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10612
+
+[State 10612, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10612, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10612, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10612, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10612, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10612, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10620
+
+[State 10620, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10620, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10620, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10620, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(42*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10620, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10620, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10621
+
+[State 10621, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10621, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10621, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10621, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(50*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10621, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10621, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 10622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10622
+
+[State 10622, Limited aerial chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10622, Brief aerial hover]
+type=VelSet
+trigger1=Time<6
+x=1.8
+y=-.5
+
+
+[State 10622, Return to gravity]
+type=VelAdd
+trigger1=Time>=6
+y=.48
+
+
+[State 10622, Physical contact]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=Floor(72*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 10622, Land from aerial attack]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10622, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=50
+ctrl=1
+
+
+[Statedef 1000]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1000
+velset=0,0
+poweradd=-350
+
+[State 1000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1000, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9410
+stateno=9410
+postype=P1
+pos=48,-36
+ownpal=1
+keyctrl=0
+
+
+[State 1000, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,30
+channel=2
+volumescale=80
+
+
+[State 1000, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1010
+velset=0,0
+poweradd=-400
+
+[State 1010, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1010, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Cloth combo moves with the body]
+type=VelSet
+trigger1=Time>=8 && Time<34
+x=2.3
+
+
+[State 1010, Cloth combo brakes]
+type=VelSet
+trigger1=Time>=34
+x=0
+
+
+[State 1010, Physical contact]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=Floor(45*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=10
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Physical contact]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=Floor(55*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=28
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Physical contact]
+type=HitDef
+trigger1=Time=46
+attr=S,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1010, Technique drawing]
+type=Explod
+trigger1=Time=46
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1010, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1020]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1020
+velset=0,0
+poweradd=-450
+
+[State 1020, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1020, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1020, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1020, Water damage snapshot]
+type=VarSet
+trigger1=Time=22
+v=30
+value=55
+
+
+[State 1020, Water size snapshot]
+type=VarSet
+trigger1=Time=22
+v=31
+value=90
+
+
+[State 1020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=22
+v=32
+value=0
+
+
+[State 1020, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 1020, Water damage snapshot]
+type=VarSet
+trigger1=Time=34
+v=30
+value=55
+
+
+[State 1020, Water size snapshot]
+type=VarSet
+trigger1=Time=34
+v=31
+value=90
+
+
+[State 1020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=34
+v=32
+value=0
+
+
+[State 1020, Physical Shinju technique]
+type=Helper
+trigger1=Time=34
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 1020, Water damage snapshot]
+type=VarSet
+trigger1=Time=46
+v=30
+value=55
+
+
+[State 1020, Water size snapshot]
+type=VarSet
+trigger1=Time=46
+v=31
+value=90
+
+
+[State 1020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=46
+v=32
+value=1
+
+
+[State 1020, Physical Shinju technique]
+type=Helper
+trigger1=Time=46
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 1020, Return control]
+type=ChangeState
+trigger1=Time>=84
+value=0
+ctrl=1
+
+
+[Statedef 1030]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1030
+velset=0,0
+poweradd=-500
+
+[State 1030, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1030, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1030, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1030, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9430
+stateno=9430
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 1030, Root garden grants finite damage aura]
+type=VarSet
+trigger1=Time=36
+v=43
+value=420
+
+
+[State 1030, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 1030, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 1040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1040
+velset=0,0
+poweradd=-450
+
+[State 1040, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1040, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1040, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1040, Rising Shinju strike]
+type=VelSet
+trigger1=Time=8
+x=3
+y=-6
+
+
+[State 1040, Rising attack becomes airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1040, Rising strike obeys gravity]
+type=VelAdd
+trigger1=Time>8
+y=.42
+
+
+[State 1040, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1040, Physical contact]
+type=HitDef
+trigger1=Time=20
+attr=A,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1040, Land the rising strike]
+type=ChangeState
+trigger1=Time>16 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 1040, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=50
+ctrl=1
+
+
+[Statedef 1050]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1050
+velset=0,0
+poweradd=-600
+
+[State 1050, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1050, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1050, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1050, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9420
+stateno=9420
+postype=P1
+pos=IfElse(P2Dist X<200,P2Dist X,200),-34
+ownpal=1
+keyctrl=0
+
+
+[State 1050, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,30
+channel=2
+volumescale=80
+
+
+[State 1050, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 1400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1400
+velset=0,0
+poweradd=-200
+
+[State 1400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1400, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1400, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1400, Low sliding sweep]
+type=VelSet
+trigger1=Time>=8 && Time<24
+x=6
+y=0
+
+
+[State 1400, Sweep stops]
+type=VelSet
+trigger1=Time>=24
+x=0
+y=0
+
+
+[State 1400, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=C,SA
+damage=Floor(110*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1400, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1410
+velset=0,0
+poweradd=-300
+
+[State 1410, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1410, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1410, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1410, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=Floor(75*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=35
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1410, Physical contact]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=40
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1410, Technique drawing]
+type=Explod
+trigger1=Time=27
+anim=8611
+postype=P1
+pos=30,-35
+scale=1.1,1.1
+removetime=15
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1410, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1420
+velset=0,0
+poweradd=-400
+
+[State 1420, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1420, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Physical contact]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=Floor(55*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=10
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Physical contact]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=Floor(65*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=27
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Physical contact]
+type=HitDef
+trigger1=Time=44
+attr=S,SA
+damage=Floor(95*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1420, Technique drawing]
+type=Explod
+trigger1=Time=44
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1420, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1200
+velset=0,0
+poweradd=-200
+
+[State 1200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1200, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1200, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1200, Water damage snapshot]
+type=VarSet
+trigger1=Time=20
+v=30
+value=115
+
+
+[State 1200, Water size snapshot]
+type=VarSet
+trigger1=Time=20
+v=31
+value=130
+
+
+[State 1200, Water finisher snapshot]
+type=VarSet
+trigger1=Time=20
+v=32
+value=1
+
+
+[State 1200, Physical Shinju technique]
+type=Helper
+trigger1=Time=20
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 1200, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 1430]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1430
+velset=0,0
+poweradd=-600
+
+[State 1430, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1430, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1430, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1430, Physical Shinju technique]
+type=Helper
+trigger1=Time=20
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=45,0
+ownpal=1
+keyctrl=0
+
+
+[State 1430, Physical Shinju technique]
+type=Helper
+trigger1=Time=28
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=93,0
+ownpal=1
+keyctrl=0
+
+
+[State 1430, Physical Shinju technique]
+type=Helper
+trigger1=Time=36
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=141,0
+ownpal=1
+keyctrl=0
+
+
+[State 1430, Physical Shinju technique]
+type=Helper
+trigger1=Time=44
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=189,0
+ownpal=1
+keyctrl=0
+
+
+[State 1430, Technique sound]
+type=PlaySnd
+trigger1=Time=20
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 1430, Return control]
+type=ChangeState
+trigger1=Time>=84
+value=0
+ctrl=1
+
+
+[Statedef 11000]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11000
+velset=0,0
+poweradd=-280
+
+[State 11000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11000, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9410
+stateno=9410
+postype=P1
+pos=48,-36
+ownpal=1
+keyctrl=0
+
+
+[State 11000, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,30
+channel=2
+volumescale=80
+
+
+[State 11000, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11010
+velset=0,0
+poweradd=-320
+
+[State 11010, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11010, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Cloth combo moves with the body]
+type=VelSet
+trigger1=Time>=8 && Time<34
+x=2.3
+
+
+[State 11010, Cloth combo brakes]
+type=VelSet
+trigger1=Time>=34
+x=0
+
+
+[State 11010, Physical contact]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=Floor(45*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=10
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Physical contact]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=Floor(55*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=28
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Physical contact]
+type=HitDef
+trigger1=Time=46
+attr=S,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11010, Technique drawing]
+type=Explod
+trigger1=Time=46
+anim=8611
+postype=P1
+pos=48,-36
+scale=1.05,1.05
+removetime=12
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11010, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11020]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11020
+velset=0,0
+poweradd=-360
+
+[State 11020, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11020, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11020, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11020, Water damage snapshot]
+type=VarSet
+trigger1=Time=22
+v=30
+value=55
+
+
+[State 11020, Water size snapshot]
+type=VarSet
+trigger1=Time=22
+v=31
+value=90
+
+
+[State 11020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=22
+v=32
+value=0
+
+
+[State 11020, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 11020, Water damage snapshot]
+type=VarSet
+trigger1=Time=34
+v=30
+value=55
+
+
+[State 11020, Water size snapshot]
+type=VarSet
+trigger1=Time=34
+v=31
+value=90
+
+
+[State 11020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=34
+v=32
+value=0
+
+
+[State 11020, Physical Shinju technique]
+type=Helper
+trigger1=Time=34
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 11020, Water damage snapshot]
+type=VarSet
+trigger1=Time=46
+v=30
+value=55
+
+
+[State 11020, Water size snapshot]
+type=VarSet
+trigger1=Time=46
+v=31
+value=90
+
+
+[State 11020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=46
+v=32
+value=0
+
+
+[State 11020, Physical Shinju technique]
+type=Helper
+trigger1=Time=46
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 11020, Water damage snapshot]
+type=VarSet
+trigger1=Time=58
+v=30
+value=55
+
+
+[State 11020, Water size snapshot]
+type=VarSet
+trigger1=Time=58
+v=31
+value=90
+
+
+[State 11020, Water finisher snapshot]
+type=VarSet
+trigger1=Time=58
+v=32
+value=1
+
+
+[State 11020, Physical Shinju technique]
+type=Helper
+trigger1=Time=58
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 11020, Return control]
+type=ChangeState
+trigger1=Time>=84
+value=0
+ctrl=1
+
+
+[Statedef 11030]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11030
+velset=0,0
+poweradd=-400
+
+[State 11030, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11030, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11030, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11030, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9430
+stateno=9430
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 11030, Root garden grants finite damage aura]
+type=VarSet
+trigger1=Time=36
+v=43
+value=420
+
+
+[State 11030, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 11030, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11040
+velset=0,0
+poweradd=-360
+
+[State 11040, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11040, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11040, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11040, Rising Shinju strike]
+type=VelSet
+trigger1=Time=8
+x=3
+y=-6
+
+
+[State 11040, Rising attack becomes airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 11040, Rising strike obeys gravity]
+type=VelAdd
+trigger1=Time>8
+y=.42
+
+
+[State 11040, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SA
+damage=Floor(80*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11040, Physical contact]
+type=HitDef
+trigger1=Time=20
+attr=A,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11040, Land the rising strike]
+type=ChangeState
+trigger1=Time>16 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 11040, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=50
+ctrl=1
+
+
+[Statedef 11050]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11050
+velset=0,0
+poweradd=-480
+
+[State 11050, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11050, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11050, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11050, Physical Shinju technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9420
+stateno=9420
+postype=P1
+pos=IfElse(P2Dist X<200,P2Dist X,200),-34
+ownpal=1
+keyctrl=0
+
+
+[State 11050, Technique sound]
+type=PlaySnd
+trigger1=Time=22
+value=S1,30
+channel=2
+volumescale=80
+
+
+[State 11050, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11400
+velset=0,0
+poweradd=-160
+
+[State 11400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11400, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11400, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11400, Low sliding sweep]
+type=VelSet
+trigger1=Time>=8 && Time<24
+x=6
+y=0
+
+
+[State 11400, Sweep stops]
+type=VelSet
+trigger1=Time>=24
+x=0
+y=0
+
+
+[State 11400, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=C,SA
+damage=Floor(110*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11400, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11410
+velset=0,0
+poweradd=-240
+
+[State 11410, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11410, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11410, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11410, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=Floor(75*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=35
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11410, Physical contact]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=Floor(100*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=40
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11410, Technique drawing]
+type=Explod
+trigger1=Time=27
+anim=8611
+postype=P1
+pos=30,-35
+scale=1.1,1.1
+removetime=15
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11410, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11420
+velset=0,0
+poweradd=-320
+
+[State 11420, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11420, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Physical contact]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=Floor(55*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=10
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Physical contact]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=Floor(65*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=27
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Physical contact]
+type=HitDef
+trigger1=Time=44
+attr=S,SA
+damage=Floor(95*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=38
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11420, Technique drawing]
+type=Explod
+trigger1=Time=44
+anim=8611
+postype=P1
+pos=25,-36
+scale=1.5,1.5
+removetime=14
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11420, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11200
+velset=0,0
+poweradd=-160
+
+[State 11200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11200, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11200, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11200, Water damage snapshot]
+type=VarSet
+trigger1=Time=20
+v=30
+value=115
+
+
+[State 11200, Water size snapshot]
+type=VarSet
+trigger1=Time=20
+v=31
+value=130
+
+
+[State 11200, Water finisher snapshot]
+type=VarSet
+trigger1=Time=20
+v=32
+value=1
+
+
+[State 11200, Physical Shinju technique]
+type=Helper
+trigger1=Time=20
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9400
+stateno=9400
+postype=P1
+pos=36,-33
+ownpal=1
+keyctrl=0
+
+
+[State 11200, Return control]
+type=ChangeState
+trigger1=Time>=68
+value=0
+ctrl=1
+
+
+[Statedef 11430]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11430
+velset=0,0
+poweradd=-480
+
+[State 11430, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11430, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11430, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11430, Physical Shinju technique]
+type=Helper
+trigger1=Time=20
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=45,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Physical Shinju technique]
+type=Helper
+trigger1=Time=28
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=93,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Physical Shinju technique]
+type=Helper
+trigger1=Time=36
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=141,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Physical Shinju technique]
+type=Helper
+trigger1=Time=44
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=189,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Physical Shinju technique]
+type=Helper
+trigger1=Time=52
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9440
+stateno=9440
+postype=P1
+pos=237,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Technique sound]
+type=PlaySnd
+trigger1=Time=20
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 11430, Return control]
+type=ChangeState
+trigger1=Time>=84
+value=0
+ctrl=1
+
+
+[Statedef 9400]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8630
+velset=12,0
+
+[State 9400, Remember water damage]
+type=VarSet
+trigger1=Time=0
+v=0
+value=Floor(Root,Var(30)*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1))
+
+
+[State 9400, Remember water size]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Root,Var(31)
+
+
+[State 9400, Remember water finisher]
+type=VarSet
+trigger1=Time=0
+v=2
+value=Root,Var(32)
+
+
+[State 9400, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=Var(1)/100.0,Var(1)/100.0
+ignorehitpause=1
+
+[State 9400, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9400, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9400, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=Var(0),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S2,1
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=IfElse(Var(2),-5,0),IfElse(Var(2),-8,0)
+air.hittime=32
+air.velocity=IfElse(Var(2),-4,0),IfElse(Var(2),-5,-.1)
+fall=Var(2)
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+hitonce=1
+
+[State 9400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S2,0
+channel=2
+volumescale=85
+
+
+[State 9400, Splash after physical contact]
+type=ChangeState
+trigger1=MoveContact
+value=9401
+
+
+[State 9400, Water has finite range]
+type=DestroySelf
+trigger1=Time>=44 || RoundState!=2
+
+
+
+[Statedef 9401]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8631
+velset=0,0
+
+[State 9401, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1,1
+ignorehitpause=1
+
+[State 9401, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9401, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9401, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S2,1
+channel=2
+volumescale=75
+
+
+[State 9401, Water splash ends]
+type=DestroySelf
+trigger1=AnimTime=0 || Time>=16 || RoundState!=2
+
+
+
+[Statedef 9410]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8610
+velset=9,0
+
+[State 9410, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1.4,1.4
+ignorehitpause=1
+
+[State 9410, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9410, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9410, Physical contact]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=Floor(180*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9410, Cloth lance ends at contact]
+type=DestroySelf
+trigger1=MoveContact || Time>=27 || RoundState!=2
+
+
+
+[Statedef 9420]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8611
+velset=0,0
+
+[State 9420, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1.4,1.4
+ignorehitpause=1
+
+[State 9420, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9420, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9420, Visible cloth coils turn around the victim]
+type=AngleDraw
+trigger1=1
+value=Time*15
+scale=1.4,1.4
+ignorehitpause=1
+
+[State 9420, Physical contact]
+type=HitDef
+trigger1=Time=6
+attr=A,SP
+damage=Floor(60*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9420, Physical contact]
+type=HitDef
+trigger1=Time=20
+attr=A,SP
+damage=Floor(70*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9420, Physical contact]
+type=HitDef
+trigger1=Time=34
+attr=A,SP
+damage=Floor(90*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9420, Cloth binding is finite]
+type=DestroySelf
+trigger1=Time>=48 || Root,MoveType=H || RoundState!=2
+
+
+
+[Statedef 9430]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8612
+velset=0,0
+
+[State 9430, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1,1
+ignorehitpause=1
+
+[State 9430, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9430, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9430, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SP
+damage=Floor(145*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9430, Garden roots withdraw]
+type=DestroySelf
+trigger1=Time>=40 || Root,MoveType=H || RoundState!=2
+
+
+
+[Statedef 9440]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8614
+velset=0,0
+
+[State 9440, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1,1
+ignorehitpause=1
+
+[State 9440, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9440, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9440, Physical contact]
+type=HitDef
+trigger1=Time=8
+attr=A,SP
+damage=Floor(55*IfElse(Root,Var(42),1.30,1)*IfElse(Root,Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 9440, Ground spike withdraws]
+type=DestroySelf
+trigger1=Time>=26 || RoundState!=2
+
+
+
+[Statedef 9450]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8620
+velset=0,0
+
+[State 9450, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=1,1
+ignorehitpause=1
+
+[State 9450, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9450, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9450, Ultimate tree ends with its capture]
+type=DestroySelf
+trigger1=Root,StateNo%10000!=3001 || Time>=170 || RoundState!=2
+
+
+
+[Statedef 9550]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9550, Charge aura follows Matsuri]
+type=BindToRoot
+trigger1=1
+time=-1
+pos=0,-38
+ignorehitpause=1
+
+[State 9550, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=.22,.22
+ignorehitpause=1
+
+[State 9550, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9550, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9550, Effect light retains its color]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=160,256
+ignorehitpause=1
+
+[State 9550, Vertical charge envelope]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.22,.22
+ignorehitpause=1
+
+[State 9550, Purple Shinju aura]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=180,80,240
+add=35,0,40
+ignorehitpause=1
+
+[State 9550, Aura stays behind original body]
+type=SprPriority
+trigger1=1
+value=-2
+ignorehitpause=1
+
+[State 9550, Charge aura cleanup]
+type=DestroySelf
+trigger1=Root,StateNo!=500 && Root,StateNo!=520 || Root,Life<=0 || RoundState!=2
+
+
+
+[Statedef 9551]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9551, Buff glow follows Matsuri]
+type=BindToRoot
+trigger1=1
+time=-1
+pos=0,-36
+ignorehitpause=1
+
+[State 9551, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=.18,.18
+ignorehitpause=1
+
+[State 9551, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9551, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9551, Effect light retains its color]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=160,256
+ignorehitpause=1
+
+[State 9551, Vertical garden envelope]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.18,.18
+ignorehitpause=1
+
+[State 9551, Garden aura behind original body]
+type=SprPriority
+trigger1=1
+value=-2
+ignorehitpause=1
+
+[State 9551, Purple garden buff]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=180,60,240
+ignorehitpause=1
+
+[State 9551, Buff glow expires]
+type=DestroySelf
+trigger1=Root,Var(43)=0 || Root,Life<=0 || RoundState!=2
+
+
+
+[Statedef 1210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1210
+velset=0,0
+poweradd=-250
+
+[State 1210, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1210, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1210, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1210, Physical Shinju technique]
+type=Helper
+trigger1=Time=12
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<180,P2Dist X,180),0
+ownpal=1
+keyctrl=0
+
+
+[State 1210, Technique sound]
+type=PlaySnd
+trigger1=Time=12
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 1210, Return control]
+type=ChangeState
+trigger1=Time>=54
+value=0
+ctrl=1
+
+
+[Statedef 1211]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1211
+velset=0,0
+poweradd=-200
+
+[State 1211, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1211, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1211, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1211, Physical Shinju technique]
+type=Helper
+trigger1=Time=5 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 1211, Travel through the visible placed mark]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0
+x=(Helper(9600),Pos X)-Facing*35
+y=0
+
+
+[State 1211, Face the target after portal exit]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 1211, Pass through claw opening]
+type=PlayerPush
+trigger1=Time>=11 && Time<=21
+value=0
+
+
+[State 1211, Technique sound]
+type=PlaySnd
+trigger1=Time=16
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 1211, Physical contact]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=Floor(150*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1211, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8611
+postype=P1
+pos=45,-32
+scale=1.2,1.2
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1211, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 1440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1440
+velset=0,0
+poweradd=-600
+
+[State 1440, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1440, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1440, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1440, Physical Shinju technique]
+type=Helper
+trigger1=Time=5 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 1440, Travel through the visible placed mark]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0
+x=(Helper(9600),Pos X)-Facing*35
+y=0
+
+
+[State 1440, Face the target after portal exit]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 1440, Pass through claw opening]
+type=PlayerPush
+trigger1=Time>=11 && Time<=21
+value=0
+
+
+[State 1440, Technique sound]
+type=PlaySnd
+trigger1=Time=16
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 1440, Physical contact]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=Floor(180*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 1440, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8611
+postype=P1
+pos=45,-32
+scale=1.2,1.2
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 1440, Physical Shinju technique]
+type=Helper
+trigger1=Time=28
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9430
+stateno=9430
+postype=P1
+pos=45,0
+ownpal=1
+keyctrl=0
+
+
+[State 1440, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 11210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=11210
+velset=0,0
+poweradd=-200
+
+[State 11210, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11210, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11210, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11210, Physical Shinju technique]
+type=Helper
+trigger1=Time=12
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<180,P2Dist X,180),0
+ownpal=1
+keyctrl=0
+
+
+[State 11210, Technique sound]
+type=PlaySnd
+trigger1=Time=12
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 11210, Return control]
+type=ChangeState
+trigger1=Time>=54
+value=0
+ctrl=1
+
+
+[Statedef 11211]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11211
+velset=0,0
+poweradd=-160
+
+[State 11211, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11211, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11211, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11211, Physical Shinju technique]
+type=Helper
+trigger1=Time=5 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 11211, Travel through the visible placed mark]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0
+x=(Helper(9600),Pos X)-Facing*35
+y=0
+
+
+[State 11211, Face the target after portal exit]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 11211, Pass through claw opening]
+type=PlayerPush
+trigger1=Time>=11 && Time<=21
+value=0
+
+
+[State 11211, Technique sound]
+type=PlaySnd
+trigger1=Time=16
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 11211, Physical contact]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=Floor(150*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11211, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8611
+postype=P1
+pos=45,-32
+scale=1.2,1.2
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11211, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 11440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11440
+velset=0,0
+poweradd=-480
+
+[State 11440, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11440, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11440, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11440, Physical Shinju technique]
+type=Helper
+trigger1=Time=5 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 11440, Travel through the visible placed mark]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0
+x=(Helper(9600),Pos X)-Facing*35
+y=0
+
+
+[State 11440, Face the target after portal exit]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 11440, Pass through claw opening]
+type=PlayerPush
+trigger1=Time>=11 && Time<=21
+value=0
+
+
+[State 11440, Technique sound]
+type=PlaySnd
+trigger1=Time=16
+value=S1,32
+channel=2
+volumescale=80
+
+
+[State 11440, Physical contact]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=Floor(180*IfElse(Var(42),1.30,1)*IfElse(Var(43)>0,1.15,1)),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-5,-8
+air.hittime=32
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=8
+envshake.ampl=-4
+
+
+[State 11440, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8611
+postype=P1
+pos=45,-32
+scale=1.2,1.2
+removetime=16
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 11440, Physical Shinju technique]
+type=Helper
+trigger1=Time=28
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9430
+stateno=9430
+postype=P1
+pos=45,0
+ownpal=1
+keyctrl=0
+
+
+[State 11440, Return control]
+type=ChangeState
+trigger1=Time>=70
+value=0
+ctrl=1
+
+
+[Statedef 9600]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8613
+velset=0,0
+
+[State 9600, Stable effect scale during impacts]
+type=AngleDraw
+trigger1=1
+value=0
+scale=.7,.7
+ignorehitpause=1
+
+[State 9600, Effect has no push box]
+type=PlayerPush
+trigger1=1
+value=0
+ignorehitpause=1
+
+[State 9600, Effect has no shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+ignorehitpause=1
+
+[State 9600, Claw mark stays on the floor]
+type=SprPriority
+trigger1=1
+value=-2
+ignorehitpause=1
+
+[State 9600, Consume claw mark after transit]
+type=DestroySelf
+trigger1=Time>=600
+trigger2=RoundState!=2
+trigger3=Root,StateNo%10000=1211 || Root,StateNo%10000=1440 || Root,StateNo%10000=3000
+trigger3=Root,Time>=17
+
+
+
+[Statedef 170]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=170+10000*Var(42)
+velset=0,0
+
+[State 170, Original round pose]
+type=Null
+trigger1=1
+
+
+
+[Statedef 180]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=180+10000*Var(42)
+velset=0,0
+
+[State 180, Original round pose]
+type=Null
+trigger1=1
+
+
+
+[Statedef 190]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=190+10000*Var(42)
+velset=0,0
+
+[State 190, Original round pose]
+type=Null
+trigger1=1
+
+
+
+[State 190, Intro waits for round]
+type=AssertSpecial
+trigger1=Time<36
+flag=Intro
+
+
+[State 190, Return control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 500]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=500+10000*Var(42)
+velset=0,0
+
+[State 500, Hold chakra charge]
+type=PowerAdd
+trigger1=1
+value=22
+
+
+[State 500, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,4
+channel=3
+volumescale=60
+
+
+[State 500, Physical Shinju technique]
+type=Helper
+trigger1=Time=0 && NumHelper(9550)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-38
+ownpal=1
+keyctrl=0
+
+
+[State 500, Release energy charge]
+type=ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=65
+value=0
+ctrl=1
+
+
+[Statedef 520]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=520
+velset=0,0
+
+[State 520, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 520, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Physical Shinju technique]
+type=Helper
+trigger1=Time=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,-38
+ownpal=1
+keyctrl=0
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=8
+anim=8611
+postype=P1
+pos=0,-36
+scale=0.8,0.8
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=14
+anim=8611
+postype=P1
+pos=0,-36
+scale=0.9500000000000001,0.9500000000000001
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=20
+anim=8611
+postype=P1
+pos=0,-36
+scale=1.1,1.1
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Technique drawing]
+type=Explod
+trigger1=Time=26
+anim=8611
+postype=P1
+pos=0,-36
+scale=1.25,1.25
+removetime=18
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 520, Awakening energy payment]
+type=PowerAdd
+trigger1=Time=24
+value=-1500
+
+
+[State 520, Uncloaked awakening]
+type=VarSet
+trigger1=Time=24
+v=42
+value=1
+
+
+[State 520, Fifteen seconds of awakening]
+type=VarSet
+trigger1=Time=24
+v=40
+value=900
+
+
+[State 520, Awakening cooldown]
+type=VarSet
+trigger1=Time=24
+v=41
+value=1500
+
+
+[State 520, Use original uncloaked poses at native scale]
+type=ChangeAnim
+trigger1=Time=24
+value=10520
+
+
+[State 520, Technique sound]
+type=PlaySnd
+trigger1=Time=24
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 520, Return control]
+type=ChangeState
+trigger1=Time>=58
+value=0
+ctrl=1
+
+
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3000
+velset=0,0
+poweradd=-3000
+
+[State 3000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 3000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 3000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3000, Physical Shinju technique]
+type=Helper
+trigger1=Time=4 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 3000, Ultimate travels a finite visible distance]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0 && Abs(P2Dist X)<=240
+x=(Helper(9600),Pos X)-Facing*44
+y=0
+
+
+[State 3000, Face target after ultimate approach]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 3000, Physical contact]
+type=HitDef
+trigger1=Time=22
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=M
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+p2stateno=3010
+ID=3000
+
+
+[State 3000, Only a real hit confirms the ultimate]
+type=ChangeState
+trigger1=MoveHit && NumTarget(3000)>0
+value=3001
+
+
+[State 3000, Return control]
+type=ChangeState
+trigger1=Time>=60
+value=0
+ctrl=1
+
+
+[Statedef 3001]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3001
+velset=0,0
+
+[State 3001, Finite protection during confirmed cinematic]
+type=NotHitBy
+trigger1=Time<150
+value=SCA
+time=1
+
+
+[State 3001, Bounded ultimate damage]
+type=VarSet
+trigger1=Time=0 && NumTarget(3000)>0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,420,Floor((Target(3000),LifeMax)*0.42))
+
+
+[State 3001, Keep captured target in the original roots]
+type=TargetBind
+trigger1=Time<148 && NumTarget(3000)>0
+ID=3000
+time=1
+pos=60,-12
+
+
+[State 3001, Physical Shinju technique]
+type=Helper
+trigger1=Time=2
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9450
+stateno=9450
+postype=P1
+pos=62,0
+ownpal=1
+keyctrl=0
+
+
+[State 3001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=38 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=38
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 3001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=70 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=70
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=70
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 3001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=102 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=102
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=102
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 3001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=134 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-3*Floor(Var(20)/4))
+absolute=1
+kill=1
+
+
+[State 3001, Technique drawing]
+type=Explod
+trigger1=Time=134
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 3001, Technique sound]
+type=PlaySnd
+trigger1=Time=134
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 3001, Release target after the final blow]
+type=TargetState
+trigger1=Time=148 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 3001, Clear cinematic target]
+type=TargetDrop
+trigger1=Time=149
+excludeID=-1
+
+
+[State 3001, Return control]
+type=ChangeState
+trigger1=Time>=172
+value=0
+ctrl=1
+
+
+[Statedef 13000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=13000
+velset=0,0
+poweradd=-3000
+
+[State 13000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 13000, Technique activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 13000, Technique drawing]
+type=Explod
+trigger1=Time=0
+anim=8710
+postype=P1
+pos=6,-45
+scale=0.65,0.65
+removetime=8
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13000, Physical Shinju technique]
+type=Helper
+trigger1=Time=4 && NumHelper(9600)=0
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9600
+stateno=9600
+postype=P1
+pos=IfElse(P2Dist X<230,P2Dist X,230),0
+ownpal=1
+keyctrl=0
+
+
+[State 13000, Ultimate travels a finite visible distance]
+type=PosSet
+trigger1=Time=16 && NumHelper(9600)>0 && Abs(P2Dist X)<=240
+x=(Helper(9600),Pos X)-Facing*44
+y=0
+
+
+[State 13000, Face target after ultimate approach]
+type=Turn
+trigger1=Time=17 && P2Dist X<0
+
+
+
+[State 13000, Physical contact]
+type=HitDef
+trigger1=Time=22
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=M
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-43
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=20
+ground.velocity=-0.3,0
+air.hittime=32
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+envshake.time=2
+envshake.ampl=-1
+p2stateno=3010
+ID=3000
+
+
+[State 13000, Only a real hit confirms the ultimate]
+type=ChangeState
+trigger1=MoveHit && NumTarget(3000)>0
+value=13001
+
+
+[State 13000, Return control]
+type=ChangeState
+trigger1=Time>=60
+value=0
+ctrl=1
+
+
+[Statedef 13001]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=13001
+velset=0,0
+
+[State 13001, Finite protection during confirmed cinematic]
+type=NotHitBy
+trigger1=Time<150
+value=SCA
+time=1
+
+
+[State 13001, Bounded ultimate damage]
+type=VarSet
+trigger1=Time=0 && NumTarget(3000)>0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,450,Floor((Target(3000),LifeMax)*0.45))
+
+
+[State 13001, Keep captured target in the original roots]
+type=TargetBind
+trigger1=Time<148 && NumTarget(3000)>0
+ID=3000
+time=1
+pos=60,-12
+
+
+[State 13001, Physical Shinju technique]
+type=Helper
+trigger1=Time=2
+helpertype=Normal
+name="Tecnica de Matsuri"
+ID=9450
+stateno=9450
+postype=P1
+pos=62,0
+ownpal=1
+keyctrl=0
+
+
+[State 13001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=38 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=38
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=38
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 13001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=70 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=70
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=70
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 13001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=102 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/4))
+absolute=1
+kill=0
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=102
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=102
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 13001, Absolute life-relative damage slice]
+type=TargetLifeAdd
+trigger1=Time=134 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-3*Floor(Var(20)/4))
+absolute=1
+kill=1
+
+
+[State 13001, Technique drawing]
+type=Explod
+trigger1=Time=134
+anim=8611
+postype=P1
+pos=60,-42
+scale=1.5,1.5
+removetime=22
+sprpriority=3
+ownpal=1
+removeongethit=1
+pausemovetime=180
+supermovetime=180
+
+
+[State 13001, Technique sound]
+type=PlaySnd
+trigger1=Time=134
+value=S1,41
+channel=2
+volumescale=80
+
+
+[State 13001, Release target after the final blow]
+type=TargetState
+trigger1=Time=148 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 13001, Clear cinematic target]
+type=TargetDrop
+trigger1=Time=149
+excludeID=-1
+
+
+[State 13001, Return control]
+type=ChangeState
+trigger1=Time>=172
+value=0
+ctrl=1
+
+
+[Statedef 3010]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3010, Opponent hurt pose]
+type=ChangeAnim
+trigger1=Time=0
+value=5030
+
+
+[State 3010, Held target has no push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 3010, Captured opponent has a fallback]
+type=SelfState
+trigger1=Time>=190
+trigger2=NumEnemy=0
+trigger3=EnemyNear,StateNo%10000!=3001
+value=IfElse(Life>0,5050,5150)
+
+
+[Statedef 3011]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=-5,-7
+
+[State 3011, Released victim pose]
+type=ChangeAnim
+trigger1=Time=0
+value=5030
+
+
+[State 3011, Released victim falls]
+type=VelAdd
+trigger1=1
+y=.5
+
+
+[State 3011, Victim returns to own recovery]
+type=SelfState
+trigger1=Time>3 && Pos Y>=0 && Vel Y>0
+value=IfElse(Life>0,5100,5150)
+
+
+[Statedef -2]
+
+[State -2, Finite form and garden timers]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(40)>0
+v=40
+value=-1
+ignorehitpause=1
+
+[State -2, Finite form and garden timers]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(41)>0
+v=41
+value=-1
+ignorehitpause=1
+
+[State -2, Finite form and garden timers]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(43)>0
+v=43
+value=-1
+ignorehitpause=1
+
+[State -2, Safe awakening expiry]
+type=VarSet
+trigger1=!IsHelper && Var(42)>0 && Var(40)=0 && Ctrl && MoveType!=H
+v=42
+value=0
+
+
+[State -2, Restore original base idle after expiry]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=0 && Anim>=10000 && StateNo<200
+value=Anim-10000
+
+
+[State -2, Preserve original awakened bank through common states]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=1 && Anim<10000 && StateNo!=520 && SelfAnimExist(Anim+10000)
+value=Anim+10000
+
+
+[State -2, Aerial chain resets on landing]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=12
+value=0
+
+
+[State -2, Stop charge hum]
+type=StopSnd
+trigger1=!IsHelper && StateNo!=500
+channel=3
+
+
+[State -2, Garden aura is a single finite helper]
+type=Helper
+trigger1=!IsHelper && Var(43)>0 && NumHelper(9551)=0 && RoundState=2
+helpertype=Normal
+name="Aura del jardin"
+ID=9551
+stateno=9551
+postype=P1
+pos=0,-5
+ownpal=1
+keyctrl=0
+
+
+[State -2, Round form cleanup]
+type=VarSet
+trigger1=!IsHelper && RoundState!=2 && StateNo!=190
+v=42
+value=0
+
+
+[State -2, Round form cleanup]
+type=VarSet
+trigger1=!IsHelper && RoundState!=2 && StateNo!=190
+v=43
+value=0
+

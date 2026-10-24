@@ -1,0 +1,29 @@
+[Info]
+name="Matsuri Shinju"
+displayname="Matsuri Shinju"
+versiondate=10,23,2026
+mugenversion=1.1
+author="Vaydra / Vahidras (sprites), Codex (fan adaptation)"
+localcoord=320,240
+pal.defaults=1
+[Files]
+sprite=MatsuriShinju.sff
+sound=MatsuriShinju.snd
+anim=MatsuriShinju.air
+cmd=MatsuriShinju.cmd
+cns=MatsuriShinju.cns
+st=MatsuriShinju.cns
+stcommon=MatsuriShinju_common.cns
+[Palette Keymap]
+a=1
+b=1
+c=1
+x=1
+y=1
+z=1
+a2=1
+b2=1
+c2=1
+x2=1
+y2=1
+z2=1

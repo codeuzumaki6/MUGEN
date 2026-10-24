@@ -1,0 +1,43 @@
+{
+  "runtime_sha256": "bd62aade8c7d08eab523a7c093bed0c2090d52202eb0e159883fb50b0267aec6",
+  "original_body_frames_verified": {
+    "0": 78,
+    "1": 37
+  },
+  "total_original_body_frames": 115,
+  "original_body_redrawn": false,
+  "original_body_native_scale": true,
+  "base_and_uncloaked_awakening": true,
+  "source_artwork_and_packed_assets_exact": true,
+  "ai_generated_water_effect_frames": 8,
+  "no_ai_character_sprites": true,
+  "specials_per_form": 13,
+  "ground_and_aerial_chains": true,
+  "double_tap_dash_both_directions": true,
+  "real_claw_mark_teleport": true,
+  "actual_garden_damage_buff_and_expiry": true,
+  "awakening_requires": 3000,
+  "awakening_cost": 1500,
+  "awakening_seconds": 15,
+  "ultimate_cost": 3000,
+  "ultimate_budget_base": "min(420,42% max life)",
+  "ultimate_budget_awakened": "min(450,45% max life)",
+  "ultimate_guard_miss_and_low_life_tested": true,
+  "activation_audio_and_aura_verified": true,
+  "native_cases": {
+    "engine": 136,
+    "range": 144,
+    "short": 120,
+    "low_life": 4,
+    "expiry": 6,
+    "garden": 4,
+    "capture": 29
+  },
+  "total_native_cases": 443,
+  "all_specials_and_both_ultimates_shown": true,
+  "real_engine_video_and_audio": true,
+  "existing_files_preserved": 2903,
+  "standalone_archive": true,
+  "rebuild_verified": true,
+  "failures": []
+}

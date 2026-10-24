@@ -1,3 +1,15 @@
+# Matsuri Shinju — manto, agua y raíces
+
+[**Descargar Matsuri Shinju**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/MatsuriShinju.zip) · [Todos los especiales y ambas ultis](previews/MatsuriShinju_gameplay_motor.mp4) · [Ultimate](previews/MatsuriShinju_ulti_motor.mp4) · [Controles Xbox](MatsuriShinju/CONTROLES_XBOX.md) · [Créditos](MatsuriShinju/CREDITOS_Y_FUENTES.md)
+
+115 poses originales de Vaydra, a escala nativa y con sus colores conservados: Matsuri con capa y el despertar sin capa elegido por el usuario. Incluye tres cadenas en tierra y en el aire, dash con doble toque, trece especiales por forma, carga con aura, balas de agua, ataques del manto, raíces del suelo y marcas de garra utilizables. Se toman como referencia los ataques de agua, jardín con aura, erupción y emboscada del video aportado.
+
+**Abajo + Pausa/LB** requiere tres barras, consume 1500 y activa quince segundos de la forma sin capa: más daño, costes menores, cuatro disparos en Suiton y una quinta erupción de madera. El jardín concede siete segundos de daño adicional con aura visible. La ulti cuesta 3000 y debe conectar su apertura; su daño total se limita a min(420, 42 % de la vida máxima rival), o min(450, 45 %) durante el despertar.
+
+Instala `MatsuriShinju` en `chars` y añade `MatsuriShinju/MatsuriShinju.def` a `[Characters]` de `data/select.def`. ZIP autónomo. [Verificación de sprites originales, combate y reconstrucción](previews/MatsuriShinju_verification.json). Probado en Ikemen GO, con contratos de MUGEN 1.1. El agua añade ocho cuadros de efectos generados con IA; el cuerpo conserva los dibujos originales. La instalación concreta de Jump Force MUGEN V14 requiere prueba local.
+
+---
+
 # Hidari Shinju — Susanoo original de Sasuke BTM amarillo
 
 [**Descargar Hidari actualizado**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HidariShinju.zip) · [Katon con RB](previews/HidariShinju_katon_base_motor.mp4) · [Chidori de base corregido](previews/HidariShinju_chidori_base_motor.mp4) · [Los nueve ataques del Susanoo](previews/HidariShinju_susanoo_sasuke_motor.mp4) · [Flecha de Indra](previews/HidariShinju_indra_motor.mp4) · [Controles](HidariShinju/CONTROLES_XBOX.md) · [Créditos](HidariShinju/CREDITOS_Y_FUENTES.md)
