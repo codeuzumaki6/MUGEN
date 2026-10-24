@@ -1,3 +1,29 @@
+# Nueve personajes corregidos
+
+[**Descargar los nueve personajes**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Personajes_CORREGIDOS.zip) · [Prueba de recepción de golpes](previews/Personajes_recepcion_de_golpes.mp4) · [Especiales de Matsuri corregidos](previews/MatsuriShinju_gameplay_motor.mp4) · [Verificación](previews/roster_revision_verification.json)
+
+Corrección conjunta de Eida, Pochita, Mamushi, Shibai, Jura Shinju, Mitsuki TBV, Ryū Shinju, Hidari Shinju y Matsuri Shinju. Incluye animaciones de los paquetes completos aportados por el usuario, Rinnegan claro azul violáceo para los Shinju y recepción de golpes durante el combate. Se conserva el conjunto de movimientos.
+
+Se corrigen las cajas ausentes al recibir daño de Mamushi, la recepción del Susanoo visible de Hidari y el reinicio continuo del primer golpe por parte de la CPU. Matsuri usa las secuencias completas y efectos de agua y raíces; los recortes sueltos de ropa dejan de usarse como proyectiles. Pochita tiene doble dash terrestre en ambos sentidos; Eida también puede desplazarse hacia atrás con doble toque.
+
+El ZIP conjunto contiene una carpeta por personaje, listas para copiar dentro de `chars`, y `INSTALACION.txt` con las nueve entradas para `select.def`. Sustituye las carpetas existentes de estos personajes; no borra ni modifica otros personajes de tu juego.
+
+| Personaje | Descarga individual |
+|---|---|
+| Eida | [Eida_DAEMON_ORIGINAL.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Eida_DAEMON_ORIGINAL.zip) |
+| Pochita | [PochitaTrueForm_ACABADO.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/PochitaTrueForm_ACABADO.zip) |
+| Mamushi | [Mamushi_SHINJU.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Mamushi_SHINJU.zip) |
+| Shibai | [Shibai_OTSUTSUKI.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/Shibai_OTSUTSUKI.zip) |
+| Jura | [JuraShinju.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/JuraShinju.zip) |
+| Mitsuki | [MitsukiTBV.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/MitsukiTBV.zip) |
+| Ryū | [RyuShinju.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/RyuShinju.zip) |
+| Hidari | [HidariShinju.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HidariShinju.zip) |
+| Matsuri | [MatsuriShinju.zip](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/MatsuriShinju.zip) |
+
+Las secciones y videos anteriores de abajo documentan revisiones previas. La verificación de esta entrega está en el enlace de arriba. Las pruebas nativas usan Ikemen GO; el ejecutable concreto de Jump Force MUGEN V14 requiere comprobación local.
+
+---
+
 # Matsuri Shinju — manto, agua y raíces
 
 [**Descargar Matsuri Shinju**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/MatsuriShinju.zip) · [Todos los especiales y ambas ultis](previews/MatsuriShinju_gameplay_motor.mp4) · [Ultimate](previews/MatsuriShinju_ulti_motor.mp4) · [Controles Xbox](MatsuriShinju/CONTROLES_XBOX.md) · [Créditos](MatsuriShinju/CREDITOS_Y_FUENTES.md)

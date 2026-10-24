@@ -70,3 +70,6 @@ daño por colisión durante seis segundos y tiene 15 segundos de espera entre
 activaciones. Conserva los sprites y la escala; solo aplica un tinte leve de
 chakra. No regenera vida ni concede invulnerabilidad. El daño de la ulti
 mantiene su límite durante ese efecto.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

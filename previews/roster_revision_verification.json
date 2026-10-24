@@ -1,0 +1,926 @@
+{
+  "characters": {
+    "Eida": {
+      "original_sprites": 199,
+      "additional_source_sprites": 11,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "none",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "Eida.air": "b76637df7269caf4a55c1650b45d4ff9c6b7d703212fbd642e96862ccf7f6120",
+        "Eida.cmd": "c39cb04743b537c95e197b08a32cf0164bc65c0e032d37ebe0dbf0991cebe06f",
+        "Eida.cns": "4edf46c613cee69073dcfbdd39915853737ec816d9426d9e3ba6bbf5d1804b82",
+        "Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
+        "Eida.sff": "20e8a9cb0499e23aab992c523a221b2753db994d0502ed89a9dcf4c41bd380e4",
+        "Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
+        "Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
+        "Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
+        "common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
+      }
+    },
+    "PochitaTrueForm": {
+      "original_sprites": 249,
+      "additional_source_sprites": 0,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "none",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "PochitaTrueForm.air": "80a95c1e0b73d4ebe092ac0aa0516b3994c97c3b213be31a6d6db9d5ed1c7bfa",
+        "PochitaTrueForm.cmd": "b4dd0b23d37ef8181a3cbc829266e2f9dabbff39e92b6e33087687bd7089eafb",
+        "PochitaTrueForm.cns": "5983f4d29f02e75a2c021f859cb2bc10db6fa73b41c8cda68e753c2f27bf06d2",
+        "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
+        "PochitaTrueForm.sff": "c14665d75287b975da6b722c28c08a0e131aed4165ea6019f4be18b6c97962c6",
+        "PochitaTrueForm.snd": "e399fd1b068dab6d068a13e47980494863c8655ea6cf81d6dd886f858be73767",
+        "common1.cns": "5ec0fd69c9440c249d8aa0c1e5e419c699ce1543deaf532598d622c50dbcdca2"
+      }
+    },
+    "Mamushi": {
+      "original_sprites": 139,
+      "additional_source_sprites": 71,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "requested iris palette only",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 56,
+      "runtime_files": {
+        "AC_Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
+        "Mamushi.air": "42d4fb137f9be6d2b89974d3c6c561e08b0379b546555b3245c94f76d0770fe2",
+        "Mamushi.cmd": "212df3c0d8b579c28fe5ee70982eb85f87d0946df8774c2d2be4abca0a301510",
+        "Mamushi.cns": "2f78e8208026cb7d2f1741ab3aece8a33365c5189a292bd57f46d0e2657db0ae",
+        "Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
+        "Mamushi.sff": "9beaa2053166366b6d944b4d2f6d4a41e13d3aa454dde00d5bb07d8ce4b2ab73",
+        "Mamushi.snd": "c983d3687b4cc7ad0ddf37d162bc06476a7baf007393feff83bad86e7fea092f",
+        "common1.cns": "79feadb169ae365a363594134ceed4735b44be34235c4feb3bfebce5ba9f5265"
+      }
+    },
+    "Shibai": {
+      "original_sprites": 140,
+      "additional_source_sprites": 0,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "none",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "Shibai.air": "9b035b1a7ab6e232773024a57007df7202cd26b16b42a30caa9362a931d2fb67",
+        "Shibai.cmd": "42167a9226b23610f15199ba835bc6b5590be50032cb0b1ba14fe3f633fc548b",
+        "Shibai.cns": "6a8965bf850a3baadb2aac4ddb07e5840c6cf7526997a7ce81161fbd53dc675e",
+        "Shibai.def": "fee9ccfd27b34de6d8dd592a7f5487eba8229c10f11b9ba852a05367c2ec8273",
+        "Shibai.sff": "e9e6727b66510f52e1c9576eac30e8721229f64c81712205b6f1ca2401e14bb2",
+        "Shibai.snd": "20859420ccaff05dbc6ac57fe8dc738f0e0aa883d6ac5a1bd39396f540a018f8",
+        "common1.cns": "964af4c5057c85ae83f67c90182c0e90914a1d05f993903e0cae3cf5b0511164"
+      }
+    },
+    "JuraShinju": {
+      "original_sprites": 193,
+      "additional_source_sprites": 23,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "requested iris palette only",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "JuraShinju.air": "0ce11d04f0bca9a56b741cb25866464e10c6ea00534c5c9893e48b0f009bb30e",
+        "JuraShinju.cmd": "919e4dabf9bbc43d71fe3c0be47d1d609b4ebed7cc569ae9167d4d5840ae8180",
+        "JuraShinju.cns": "36f7b7ab214a6c05d76ea0ce3ebeb160037de6763624ca1f73723c465ff4a4cf",
+        "JuraShinju.def": "ac50ab9088a0abc1f16584ffb6ab3c5b647c06fbd300d8dd0671e1abd88f7a90",
+        "JuraShinju.sff": "fc9f08aa4dcedf9a2a861de6178ec5e11998446bb413fe141d46872d72f93d20",
+        "JuraShinju.snd": "48f0314c537c7841d9c660f2972c6f30ac3c52eab86c8e7b1083c14907ad74ff",
+        "JuraShinju_common.cns": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013"
+      }
+    },
+    "MitsukiTBV": {
+      "original_sprites": 291,
+      "additional_source_sprites": 55,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "none",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "MitsukiTBV.air": "97e35a6e3cf57158fa04bb02b2c273d5ada2f8bef47876baeb38b3dee28abf20",
+        "MitsukiTBV.cmd": "0b2dc40b3bd0bfb360ce9360bd86a92a78ef436b29d5f952bcf30c0a7c2a9f8c",
+        "MitsukiTBV.cns": "cee7bf8699e018f91761cd969b3be728d119ece1c765351944204d782aabeae1",
+        "MitsukiTBV.def": "b559ab80ad0eefd1c9dd930e540a63e289e719db1f6a1c1f4ffb3fd50be9a76b",
+        "MitsukiTBV.sff": "0f82f560629a23e412fe8991beedb6d180188d189c3e486df54266887b28c271",
+        "MitsukiTBV.snd": "e93d474a49f417885d4d2beaef685e543e410dc93e1b6c21b2f7d435277c9dd6",
+        "MitsukiTBV_common.cns": "9f91c8023278c01d71b41552d3c5b4c69933caebd414272921498c97bd19b424"
+      }
+    },
+    "RyuShinju": {
+      "original_sprites": 173,
+      "additional_source_sprites": 88,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "requested iris palette only",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "RyuShinju.air": "8fd399825af68a0654f8bda8442729108e37329d86f2c6234a37defbb5fb1d2a",
+        "RyuShinju.cmd": "5e383e8f3a41fe4dd4ce5cfc66a69383846d576696c43ddb221328cbf010fec3",
+        "RyuShinju.cns": "263edeceeb684ea3c542efb00f99e88a830f00b4db4c8495d747930a68dab124",
+        "RyuShinju.def": "9bc7c978aee888d31b42ad057f16c638a21b4917f8e08e14ea368f1fe7742843",
+        "RyuShinju.sff": "e4bccdf06911f772019526684f2945cfc65d0ec37a56c541109ae3bbec6b4ea1",
+        "RyuShinju.snd": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5",
+        "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670"
+      }
+    },
+    "HidariShinju": {
+      "original_sprites": 448,
+      "additional_source_sprites": 53,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "requested iris palette only",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 114,
+      "runtime_files": {
+        "HidariShinju.air": "78991cfe49415775f559d4a366d33d6378173d34778d1ac79c1afc3edc392452",
+        "HidariShinju.cmd": "927cbd65468dad551e0485c2b944a3f75cef7e0a1d95ea59487b0f4cf295c8c2",
+        "HidariShinju.cns": "e37570a0f2b007f0f63c789102a366c8b679ef6f4604694dd83aeba6bd7c6aac",
+        "HidariShinju.def": "0dca801a6eb83754d2c08f17c0a1828003118d794b2c67684f0aeb429862f6da",
+        "HidariShinju.sff": "574a1d0a679594a4baed72bc3e9e7779643ca67e9788e618e138242a2713e3bb",
+        "HidariShinju.snd": "c5dcad956955bbdb56fb88171d848e1b73c30666c918e2d17a5e210512842260",
+        "HidariShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8"
+      }
+    },
+    "MatsuriShinju": {
+      "original_sprites": 202,
+      "additional_source_sprites": 78,
+      "source_body_geometry_preserved": true,
+      "old_body_changes": "requested iris palette only",
+      "original_attack_windows_preserved": true,
+      "damage_and_ultimate_contracts_preserved": true,
+      "receiving_cases": 112,
+      "runtime_files": {
+        "MatsuriShinju.air": "00b5189b742627ea540e81394e0108459169a5e89ddf98c96653cce516d9ab09",
+        "MatsuriShinju.cmd": "8ae6856a09b1c1c82cc7142ab498440fe23cb6b24da69a12eb3f013ec67dacc6",
+        "MatsuriShinju.cns": "47211ed670bb6df4ca67f6e02d2ab7cc0ae807b3c6ca41635adad7eab247d498",
+        "MatsuriShinju.def": "bb43b96c0656583f4117e1599391826f3467bc4230ede84cec3cf03e1de89dad",
+        "MatsuriShinju.sff": "ac45e92d7c31b0951abb03321e21c81c9ae212b3823ee5c1c4bb3f06bf99ea9e",
+        "MatsuriShinju.snd": "bdebbc7bbe8d6c64348e07ebcde1b67adfcbb983d57b5e53243b599953694b48",
+        "MatsuriShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8"
+      }
+    }
+  },
+  "receiving_cases": 954,
+  "double_tap_cases": 72,
+  "cpu_cases": 6,
+  "matsuri_range_cases": 144,
+  "general_regressions": [
+    {
+      "character": "Eida",
+      "passed": true,
+      "command": [
+        "check_moves_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/Eida.log",
+      "log_sha256": "99ec5f9193fe65665ab64be8229c16e3fe2f2908345612958457c7bba38a67f0"
+    },
+    {
+      "character": "PochitaTrueForm",
+      "passed": true,
+      "command": [
+        "check_pochita_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/PochitaTrueForm.log",
+      "log_sha256": "1a433d53e81dbdfd18a41efed0103ad2b282697310e71f47c4b80662c3a96b75"
+    },
+    {
+      "character": "Mamushi",
+      "passed": true,
+      "command": [
+        "check_mamushi_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/Mamushi.log",
+      "log_sha256": "b2ff1298c362cf40503da7fb3f0d705348f2e1da125e1a1921ad56e61fe4a458"
+    },
+    {
+      "character": "Shibai",
+      "passed": true,
+      "command": [
+        "check_shibai_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/Shibai.log",
+      "log_sha256": "e3b8aa536132b9f8f14a2f27c1cce22dfa70ad9d5aa761c5d1c408cf70c03be9"
+    },
+    {
+      "character": "JuraShinju",
+      "passed": true,
+      "command": [
+        "check_jura_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/JuraShinju.log",
+      "log_sha256": "bdb243eb91053712461c1fccb85a868bcf2b16de9219545b4a8de08995eb6908"
+    },
+    {
+      "character": "MitsukiTBV",
+      "passed": true,
+      "command": [
+        "check_mitsuki_in_engine.py"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/MitsukiTBV.log",
+      "log_sha256": "a94011bc50adca3fdfab27863296fd5e71d5cb5fc4e4fa86391bc612c6f9cbf7"
+    },
+    {
+      "character": "RyuShinju",
+      "passed": true,
+      "command": [
+        "check_ryu_in_engine.py"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/RyuShinju.log",
+      "log_sha256": "434cd64af16850615c8fb4ca9bcd592e745a6fc219a57a7712e6276d390b858e"
+    },
+    {
+      "character": "HidariShinju",
+      "passed": true,
+      "command": [
+        "check_hidari_in_engine.py"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/HidariShinju.log",
+      "log_sha256": "4ff5962476d172b70315644f78d4edd4cc4ead67638e994c0d667545eb1cab5d"
+    },
+    {
+      "character": "HidariSusanoo",
+      "passed": true,
+      "command": [
+        "check_hidari_susanoo_in_engine.py"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/HidariSusanoo.log",
+      "log_sha256": "5215153f6bb11ae8a89b9a8435314f27053622ef86ceea81c3c068f23baca310"
+    },
+    {
+      "character": "MatsuriShinju",
+      "passed": true,
+      "command": [
+        "check_matsuri_in_engine.py"
+      ],
+      "environment": {},
+      "log": "previews/roster_regressions/MatsuriShinju.log",
+      "log_sha256": "f7e73c4a606ecebd03293788aa8ad719d0e7f0b4ada262d18e67320ddd6e457d"
+    },
+    {
+      "character": "MamushiCloneHealth",
+      "passed": true,
+      "command": [
+        "check_mamushi_in_engine.py",
+        "/workspace/.eida-tools/ikemen-nightly"
+      ],
+      "environment": {
+        "MAMUSHI_CLONE_HEALTH_CHECK": "1"
+      },
+      "log": "previews/roster_regressions/MamushiCloneHealth.log",
+      "log_sha256": "daff788a9136fca25e7a6f7a0082f36b1e7f0fbe1f249833e1274778d263ad4a"
+    }
+  ],
+  "bundle": {
+    "archive": "Personajes_CORREGIDOS.zip",
+    "bytes": 31440517,
+    "sha256": "6895927862860408cde3a2410c0d4346a788f4cbd419632cfb1f3432052d11fb",
+    "all_runtime_bytes_verified": true
+  },
+  "proof_video": {
+    "video": "previews/Personajes_recepcion_de_golpes.mp4",
+    "sha256": "dc8221362c1e8f15db35ddc3b076caa3d21d80ab64c5ee428ce55cdff8255533",
+    "scenes": [
+      {
+        "character": "Eida",
+        "form": 0,
+        "start": 0,
+        "end": 2.1,
+        "damage": 180,
+        "hits": 3
+      },
+      {
+        "character": "PochitaTrueForm",
+        "form": 0,
+        "start": 2.1,
+        "end": 4.15,
+        "damage": 165,
+        "hits": 3
+      },
+      {
+        "character": "Mamushi",
+        "form": 0,
+        "start": 4.15,
+        "end": 6.216666666666661,
+        "damage": 171,
+        "hits": 3
+      },
+      {
+        "character": "Shibai",
+        "form": 0,
+        "start": 6.216666666666661,
+        "end": 8.299999999999992,
+        "damage": 144,
+        "hits": 3
+      },
+      {
+        "character": "JuraShinju",
+        "form": 0,
+        "start": 8.299999999999992,
+        "end": 10.400000000000006,
+        "damage": 156,
+        "hits": 3
+      },
+      {
+        "character": "MitsukiTBV",
+        "form": 0,
+        "start": 10.400000000000006,
+        "end": 12.48333333333335,
+        "damage": 171,
+        "hits": 3
+      },
+      {
+        "character": "RyuShinju",
+        "form": 0,
+        "start": 12.48333333333335,
+        "end": 14.58333333333336,
+        "damage": 165,
+        "hits": 3
+      },
+      {
+        "character": "HidariShinju",
+        "form": 0,
+        "start": 14.58333333333336,
+        "end": 16.666666666666693,
+        "damage": 165,
+        "hits": 3
+      },
+      {
+        "character": "HidariShinju",
+        "form": 1,
+        "start": 16.666666666666693,
+        "end": 18.73333333333336,
+        "damage": 165,
+        "hits": 3
+      },
+      {
+        "character": "MatsuriShinju",
+        "form": 0,
+        "start": 18.73333333333336,
+        "end": 20.83333333333337,
+        "damage": 165,
+        "hits": 3
+      }
+    ],
+    "duration": 20.83333333333337,
+    "engine": "Ikemen GO",
+    "fixture": "Controlled native collision probe; P2 receives three real HitDef contacts. No test controller is shipped."
+  },
+  "matsuri_video": {
+    "runtime_sha256": "b5dbb71764847bc51949b80f8af444fb73242a303910f5d7ee6493af9a316862",
+    "video": "previews/MatsuriShinju_gameplay_motor.mp4",
+    "video_sha256": "1705f37a6e85065509055b74b1ff03e659058884e25dad8b9b9ca0aced9fc97c",
+    "ultimate_clip": "previews/MatsuriShinju_ulti_motor.mp4",
+    "ultimate_clip_sha256": "e4f6a8935d082763984b08a20a84287a105332f02a213f2f138959dcd3a79a5b",
+    "duration": 89.11666666666666,
+    "scenes": [
+      "BASE | abajo, adelante + X | Lanza de Shinju",
+      "BASE | abajo, atras + X | Latigo del manto",
+      "BASE | abajo, adelante + Y | Suiton: rafaga de agua",
+      "BASE | abajo, atras + Y | Jardin de raices y aura",
+      "BASE | abajo, adelante + B | Ataque ascendente",
+      "BASE | abajo, atras + B | Atadura del manto",
+      "BASE | abajo + X | Barrido deslizante",
+      "BASE | abajo + Y | Lanzador",
+      "BASE | abajo + B | Floracion del manto",
+      "BASE | RB | Bala de agua grande",
+      "BASE | RT | Marca de garra y viaje",
+      "BASE | abajo + RB | Erupcion de madera",
+      "BASE | abajo + RT | Emboscada del arbol",
+      "BASE | A | Caceria del Arbol Divino",
+      "BASE | abajo + Pausa | Despertar sin capa",
+      "DESPERTAR | abajo, adelante + X | Lanza de Shinju",
+      "DESPERTAR | abajo, atras + X | Latigo del manto",
+      "DESPERTAR | abajo, adelante + Y | Suiton: rafaga de agua",
+      "DESPERTAR | abajo, atras + Y | Jardin de raices y aura",
+      "DESPERTAR | abajo, adelante + B | Ataque ascendente",
+      "DESPERTAR | abajo, atras + B | Atadura del manto",
+      "DESPERTAR | abajo + X | Barrido deslizante",
+      "DESPERTAR | abajo + Y | Lanzador",
+      "DESPERTAR | abajo + B | Floracion del manto",
+      "DESPERTAR | RB | Bala de agua grande",
+      "DESPERTAR | RT | Marca de garra y viaje",
+      "DESPERTAR | abajo + RB | Erupcion de madera",
+      "DESPERTAR | abajo + RT | Emboscada del arbol",
+      "DESPERTAR | A | Caceria del Arbol Divino"
+    ],
+    "scene_ranges": [
+      {
+        "start": 0,
+        "end": 2.933333333333333,
+        "label": "BASE | abajo, adelante + X | Lanza de Shinju",
+        "case": {
+          "name": "Lanza",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "a",
+          "d": "F",
+          "state": 1000,
+          "cost": 350,
+          "distance": 160
+        }
+      },
+      {
+        "start": 2.933333333333333,
+        "end": 5.883333333333333,
+        "label": "BASE | abajo, atras + X | Latigo del manto",
+        "case": {
+          "name": "Latigo",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "a",
+          "d": "B",
+          "state": 1010,
+          "cost": 400,
+          "distance": 110
+        }
+      },
+      {
+        "start": 5.883333333333333,
+        "end": 8.799999999999999,
+        "label": "BASE | abajo, adelante + Y | Suiton: rafaga de agua",
+        "case": {
+          "name": "Suiton",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "b",
+          "d": "F",
+          "state": 1020,
+          "cost": 450,
+          "distance": 160
+        }
+      },
+      {
+        "start": 8.799999999999999,
+        "end": 11.733333333333333,
+        "label": "BASE | abajo, atras + Y | Jardin de raices y aura",
+        "case": {
+          "name": "Jardin",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "b",
+          "d": "B",
+          "state": 1030,
+          "cost": 500,
+          "distance": 160
+        }
+      },
+      {
+        "start": 11.733333333333333,
+        "end": 14.649999999999999,
+        "label": "BASE | abajo, adelante + B | Ataque ascendente",
+        "case": {
+          "name": "Ascendente",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "c",
+          "d": "F",
+          "state": 1040,
+          "cost": 450,
+          "distance": 45
+        }
+      },
+      {
+        "start": 14.649999999999999,
+        "end": 17.566666666666666,
+        "label": "BASE | abajo, atras + B | Atadura del manto",
+        "case": {
+          "name": "Atadura",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "c",
+          "d": "B",
+          "state": 1050,
+          "cost": 600,
+          "distance": 160
+        }
+      },
+      {
+        "start": 17.566666666666666,
+        "end": 20.466666666666665,
+        "label": "BASE | abajo + X | Barrido deslizante",
+        "case": {
+          "name": "Barrido",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "a",
+          "d": "D",
+          "state": 1400,
+          "cost": 200,
+          "distance": 45
+        }
+      },
+      {
+        "start": 20.466666666666665,
+        "end": 23.416666666666664,
+        "label": "BASE | abajo + Y | Lanzador",
+        "case": {
+          "name": "Lanzador",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "b",
+          "d": "D",
+          "state": 1410,
+          "cost": 300,
+          "distance": 45
+        }
+      },
+      {
+        "start": 23.416666666666664,
+        "end": 26.316666666666663,
+        "label": "BASE | abajo + B | Floracion del manto",
+        "case": {
+          "name": "Manto",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "c",
+          "d": "D",
+          "state": 1420,
+          "cost": 400,
+          "distance": 45
+        }
+      },
+      {
+        "start": 26.316666666666663,
+        "end": 29.23333333333333,
+        "label": "BASE | RB | Bala de agua grande",
+        "case": {
+          "name": "Agua",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "y",
+          "d": "N",
+          "state": 1200,
+          "cost": 200,
+          "distance": 160
+        }
+      },
+      {
+        "start": 29.23333333333333,
+        "end": 32.3,
+        "label": "BASE | RT | Marca de garra y viaje",
+        "case": {
+          "name": "Marca",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "z",
+          "d": "N",
+          "state": 1210,
+          "cost": 250,
+          "distance": 110
+        }
+      },
+      {
+        "start": 32.3,
+        "end": 35.23333333333333,
+        "label": "BASE | abajo + RB | Erupcion de madera",
+        "case": {
+          "name": "Erupcion",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "y",
+          "d": "D",
+          "state": 1430,
+          "cost": 600,
+          "distance": 160
+        }
+      },
+      {
+        "start": 35.23333333333333,
+        "end": 38.133333333333326,
+        "label": "BASE | abajo + RT | Emboscada del arbol",
+        "case": {
+          "name": "Emboscada",
+          "kind": "move",
+          "form": 0,
+          "face": 1,
+          "b": "z",
+          "d": "D",
+          "state": 1440,
+          "cost": 600,
+          "distance": 45
+        }
+      },
+      {
+        "start": 38.133333333333326,
+        "end": 43.08333333333333,
+        "label": "BASE | A | Caceria del Arbol Divino",
+        "case": {
+          "name": "ultimate",
+          "kind": "ultimate",
+          "form": 0,
+          "face": 1,
+          "distance": 90,
+          "state": 3000
+        }
+      },
+      {
+        "start": 43.08333333333333,
+        "end": 46.01666666666666,
+        "label": "BASE | abajo + Pausa | Despertar sin capa",
+        "case": {
+          "name": "awakening",
+          "kind": "awakening",
+          "form": 0,
+          "face": 1,
+          "distance": 110,
+          "state": 520
+        }
+      },
+      {
+        "start": 46.01666666666666,
+        "end": 48.94999999999999,
+        "label": "DESPERTAR | abajo, adelante + X | Lanza de Shinju",
+        "case": {
+          "name": "Lanza",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "a",
+          "d": "F",
+          "state": 11000,
+          "cost": 280,
+          "distance": 160
+        }
+      },
+      {
+        "start": 48.94999999999999,
+        "end": 51.86666666666665,
+        "label": "DESPERTAR | abajo, atras + X | Latigo del manto",
+        "case": {
+          "name": "Latigo",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "a",
+          "d": "B",
+          "state": 11010,
+          "cost": 320,
+          "distance": 110
+        }
+      },
+      {
+        "start": 51.86666666666665,
+        "end": 54.79999999999998,
+        "label": "DESPERTAR | abajo, adelante + Y | Suiton: rafaga de agua",
+        "case": {
+          "name": "Suiton",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "b",
+          "d": "F",
+          "state": 11020,
+          "cost": 360,
+          "distance": 160
+        }
+      },
+      {
+        "start": 54.79999999999998,
+        "end": 57.71666666666665,
+        "label": "DESPERTAR | abajo, atras + Y | Jardin de raices y aura",
+        "case": {
+          "name": "Jardin",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "b",
+          "d": "B",
+          "state": 11030,
+          "cost": 400,
+          "distance": 160
+        }
+      },
+      {
+        "start": 57.71666666666665,
+        "end": 60.64999999999998,
+        "label": "DESPERTAR | abajo, adelante + B | Ataque ascendente",
+        "case": {
+          "name": "Ascendente",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "c",
+          "d": "F",
+          "state": 11040,
+          "cost": 360,
+          "distance": 45
+        }
+      },
+      {
+        "start": 60.64999999999998,
+        "end": 63.59999999999998,
+        "label": "DESPERTAR | abajo, atras + B | Atadura del manto",
+        "case": {
+          "name": "Atadura",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "c",
+          "d": "B",
+          "state": 11050,
+          "cost": 480,
+          "distance": 160
+        }
+      },
+      {
+        "start": 63.59999999999998,
+        "end": 66.53333333333332,
+        "label": "DESPERTAR | abajo + X | Barrido deslizante",
+        "case": {
+          "name": "Barrido",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "a",
+          "d": "D",
+          "state": 11400,
+          "cost": 160,
+          "distance": 45
+        }
+      },
+      {
+        "start": 66.53333333333332,
+        "end": 69.46666666666665,
+        "label": "DESPERTAR | abajo + Y | Lanzador",
+        "case": {
+          "name": "Lanzador",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "b",
+          "d": "D",
+          "state": 11410,
+          "cost": 240,
+          "distance": 45
+        }
+      },
+      {
+        "start": 69.46666666666665,
+        "end": 72.33333333333331,
+        "label": "DESPERTAR | abajo + B | Floracion del manto",
+        "case": {
+          "name": "Manto",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "c",
+          "d": "D",
+          "state": 11420,
+          "cost": 320,
+          "distance": 45
+        }
+      },
+      {
+        "start": 72.33333333333331,
+        "end": 75.28333333333332,
+        "label": "DESPERTAR | RB | Bala de agua grande",
+        "case": {
+          "name": "Agua",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "y",
+          "d": "N",
+          "state": 11200,
+          "cost": 160,
+          "distance": 160
+        }
+      },
+      {
+        "start": 75.28333333333332,
+        "end": 78.31666666666665,
+        "label": "DESPERTAR | RT | Marca de garra y viaje",
+        "case": {
+          "name": "Marca",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "z",
+          "d": "N",
+          "state": 11210,
+          "cost": 200,
+          "distance": 110
+        }
+      },
+      {
+        "start": 78.31666666666665,
+        "end": 81.24999999999999,
+        "label": "DESPERTAR | abajo + RB | Erupcion de madera",
+        "case": {
+          "name": "Erupcion",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "y",
+          "d": "D",
+          "state": 11430,
+          "cost": 480,
+          "distance": 160
+        }
+      },
+      {
+        "start": 81.24999999999999,
+        "end": 84.18333333333332,
+        "label": "DESPERTAR | abajo + RT | Emboscada del arbol",
+        "case": {
+          "name": "Emboscada",
+          "kind": "move",
+          "form": 1,
+          "face": 1,
+          "b": "z",
+          "d": "D",
+          "state": 11440,
+          "cost": 480,
+          "distance": 45
+        }
+      },
+      {
+        "start": 84.18333333333332,
+        "end": 89.11666666666666,
+        "label": "DESPERTAR | A | Caceria del Arbol Divino",
+        "case": {
+          "name": "ultimate",
+          "kind": "ultimate",
+          "form": 1,
+          "face": 1,
+          "distance": 90,
+          "state": 13000
+        }
+      }
+    ],
+    "audio": "Actual SDL stereo 44100Hz, aligned per native activation; rendering stalls compressed",
+    "audio_per_scene_confidence": [
+      0.9147657054030194,
+      0.964578792424145,
+      0.9645786672968139,
+      0.9645796990628581,
+      0.760212526245448,
+      0.9645796990628583,
+      0.7919406477235302,
+      0.9005285185840767,
+      0.9645788501903665,
+      0.9645789814786803,
+      0.9683189284638045,
+      0.9683188105897127,
+      0.9645788501903665,
+      0.9645786321499293,
+      0.9645794054490026,
+      0.9284222688082074,
+      0.9645789426654954,
+      0.9645786672968141,
+      0.9645796990628583,
+      0.9005292075980611,
+      0.9645796990628583,
+      0.79194064772353,
+      0.9005285185840767,
+      0.9028166168418188,
+      0.9645789814786805,
+      0.9645794054490026,
+      0.9645789814786803,
+      0.9645788501903665,
+      0.9645786321499293
+    ],
+    "native_activation_cues_matched": 31,
+    "specials_per_form": 13,
+    "all_specials_shown": true,
+    "ultimate_both_forms_shown": true,
+    "awakening_shown": true,
+    "native_capture_sessions": 2,
+    "failures": []
+  },
+  "engine": "Ikemen GO",
+  "compatibility": "MUGEN 1.1 static contracts and native engine loading; exact Jump Force MUGEN V14 binary/controller not run",
+  "failures": []
+}

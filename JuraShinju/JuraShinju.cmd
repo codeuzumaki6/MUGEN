@@ -288,6 +288,17 @@ buffer.time=4
 
 [Statedef -1]
 
+[State -1, Finite CPU confirmed three-hit chain]
+type=ChangeState
+triggerall=AILevel>0
+triggerall=RoundState=2
+triggerall=MoveHit
+triggerall=Time>=6
+trigger1=StateNo%10000=200 || StateNo%10000=201
+value=StateNo+1
+ignorehitpause=1
+
+
 [State -1, Espinas]
 type = ChangeState
 triggerall=AILevel=0
@@ -601,6 +612,7 @@ triggerall=NumHelper(9600)>0
 triggerall=P2BodyDist X>90
 trigger1=P2BodyDist X<999
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1211
 
 [State -1, CPU legal technique]
@@ -614,6 +626,7 @@ triggerall=NumHelper(9600)=0
 triggerall=P2BodyDist X>170
 trigger1=P2BodyDist X<999
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1210
 
 [State -1, CPU legal technique]
@@ -625,6 +638,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,2250,3000)
 trigger1=P2BodyDist X<190
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=3000
 
 [State -1, CPU legal technique]
@@ -636,6 +650,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,188,250)
 trigger1=P2BodyDist X<310
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1200
 
 [State -1, CPU legal technique]
@@ -647,6 +662,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,375,500)
 trigger1=P2BodyDist X<230
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1020
 
 [State -1, CPU legal technique]
@@ -658,6 +674,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,262,350)
 trigger1=P2BodyDist X<170
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1000
 
 [State -1, CPU taijutsu]
@@ -667,6 +684,7 @@ triggerall=RoundState=2
 triggerall=ctrl
 triggerall=StateType!=A
 trigger1=P2BodyDist X<70
+triggerall=P2MoveType!=H
 value=200
 
 [State -1, CPU approach]

@@ -1,17 +1,22 @@
 {
   "archive": "MitsukiTBV.zip",
-  "bytes": 6470112,
-  "sha256": "4ff1e89794c3bd9ae84e653481278aea10aba9cb5f518f437d7f12c992a32d63",
+  "bytes": 6983912,
+  "sha256": "e32d532e0a5ef8de59f37872e78eefcabbce9d56eaf9a0757d07a6f4992c0ea5",
   "files": {
+    "CONTROLES_XBOX.md": "43e743d532789d54ca671499aafe9a7194e7300de1485ddbc112e3a3aea84b48",
+    "CREDITOS_Y_FUENTES.md": "b4e6cf1f221b9d8e75287d99afb9858ad32cd13ea8e378d375c375c5c28eca9b",
+    "LEEME.md": "a64b7a0be1dc0383ad428dda13ed1f9e5c33803d15cc46ac82a5ec7be12217b7",
+    "MitsukiTBV.air": "97e35a6e3cf57158fa04bb02b2c273d5ada2f8bef47876baeb38b3dee28abf20",
+    "MitsukiTBV.cmd": "0b2dc40b3bd0bfb360ce9360bd86a92a78ef436b29d5f952bcf30c0a7c2a9f8c",
+    "MitsukiTBV.cns": "cee7bf8699e018f91761cd969b3be728d119ece1c765351944204d782aabeae1",
     "MitsukiTBV.def": "b559ab80ad0eefd1c9dd930e540a63e289e719db1f6a1c1f4ffb3fd50be9a76b",
-    "MitsukiTBV.cns": "1a7c525a51cac7a309372ebf0d5815744503d0416503b819cd91468637636823",
-    "MitsukiTBV.cmd": "4a07f19811867a648125f7f30833a1bcd4421f59c6f427bc3471ae6dbdd0b2a8",
-    "MitsukiTBV.air": "f197f63693bd8f276d2e33a9abf02db735e3e787437df2dd6f17ecb353da1a4a",
-    "MitsukiTBV.sff": "b7799c163fa8eb235ae06a5d1d7946190fc804f16744bd0dd43f989049de9c6f",
+    "MitsukiTBV.sff": "0f82f560629a23e412fe8991beedb6d180188d189c3e486df54266887b28c271",
     "MitsukiTBV.snd": "e93d474a49f417885d4d2beaef685e543e410dc93e1b6c21b2f7d435277c9dd6",
     "MitsukiTBV_common.cns": "9f91c8023278c01d71b41552d3c5b4c69933caebd414272921498c97bd19b424",
-    "LEEME.md": "a64b7a0be1dc0383ad428dda13ed1f9e5c33803d15cc46ac82a5ec7be12217b7",
-    "CONTROLES_XBOX.md": "747485e098d07f62817dda662566fc4235f45a30563c1d40a87294b9cfe35490",
-    "CREDITOS_Y_FUENTES.md": "903472504aa57d8524768bf8612b8e12cc91c772947f498a53a450545175303e"
-  }
+    "REVISION_CONJUNTA.md": "e8f55aee3ba4dc8ef9760d8e286dc6608fb462549653b7bbe6f9ff36f152c4a2"
+  },
+  "extracted_validation": true,
+  "character": "MitsukiTBV",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

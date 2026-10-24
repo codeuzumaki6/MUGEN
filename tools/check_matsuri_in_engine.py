@@ -118,7 +118,7 @@ hook.add('loop','matsuri_checks',function()
  if tick>4 then
   r.states[st]=true;r.received=math.max(r.received,1250-life());r.minPower=math.min(r.minPower,power());r.maxPower=math.max(r.maxPower,power());r.apex=math.min(r.apex,posY());r.sage=math.max(r.sage,var(40));r.aura=math.max(r.aura,numHelper(9550))
   if st==100 or st==105 then r.dash=(r.startDist-p2DistX())*FACES[case+1] end
-  if spriteVar('group')~=var(42) and st~=520 then r.wrong=r.wrong+1 end
+  if spriteVar('group')~=var(42) and st~=520 and not (var(42)==0 and SENKI_BODY[string.format('%d:%d',spriteVar('group'),spriteVar('image'))]) then r.wrong=r.wrong+1 end
   if moveType()=='H' and numHelper(9430)+numHelper(9431)>0 then r.beamHurt=r.beamHurt+1 end
   r.buff=math.max(r.buff,var(43));r.buffAura=math.max(r.buffAura,numHelper(9551))
   r.marks=math.max(r.marks,numHelper(9600));r.wings=math.max(r.wings,numHelper(9450))
@@ -141,7 +141,8 @@ if CAP:
  if frames-cap.last>=CAPSTEP and cap.pending==nil and tick>=12 and tick<=CAPEND then screenshot();cap.pending=frames;cap.last=frames end
  """.replace('FOLDER',json.dumps(str(folder)+'/')).replace('CAPEND','({'+','.join('302' if c['kind']=='ultimate' else '180' for c in cases)+'})[case+1]' if os.environ.get('MATSURI_ALL_SPECIALS') else str(TICKS-12)).replace('CAPSTEP','3' if os.environ.get('MATSURI_ALL_SPECIALS') else '4'))
 else:lua=lua.replace('CAPSETUP','').replace('CAPTURE','')
-module.write_text(lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/matsuri_checks.lua')\n")
+from senki_test_contract import lua_body_keys
+module.write_text(lua_body_keys('MatsuriShinju')+lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/matsuri_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIODELAY='46')
 try:

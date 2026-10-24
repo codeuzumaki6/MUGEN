@@ -1,17 +1,22 @@
 {
   "archive": "HidariShinju.zip",
-  "bytes": 8812456,
-  "sha256": "6c73375abc7a2c699e6d33ad6e438e430500337e24cea643ebc39917aba6b34c",
+  "bytes": 9797020,
+  "sha256": "0a795fddc6595628564c0b76dd94a8dca4b4ccd6f3cbf00dafcb0bc1e2bae3e5",
   "files": {
+    "CONTROLES_XBOX.md": "ac794e665b444f3e23f099a4d7bb5a59c917ef41435b9509f9516b1344279732",
+    "CREDITOS_Y_FUENTES.md": "af0949970f9ae613e21461a2370160e742101d1c3ddc93bbeb465417bf42380d",
+    "HidariShinju.air": "78991cfe49415775f559d4a366d33d6378173d34778d1ac79c1afc3edc392452",
+    "HidariShinju.cmd": "927cbd65468dad551e0485c2b944a3f75cef7e0a1d95ea59487b0f4cf295c8c2",
+    "HidariShinju.cns": "e37570a0f2b007f0f63c789102a366c8b679ef6f4604694dd83aeba6bd7c6aac",
     "HidariShinju.def": "0dca801a6eb83754d2c08f17c0a1828003118d794b2c67684f0aeb429862f6da",
-    "HidariShinju.cns": "c4ea5743c1bd1f8b4de8d41ecb725f33896d7ff89c89ed96e51e9a7bff7ee5d1",
-    "HidariShinju.cmd": "a4f06524a28bcec5ecb79f29bac3ef1e54f389296232c14d50968488e1d1849e",
-    "HidariShinju.air": "331091fd10885ec24b150972e81d3a70798e225b4951d51e2e34de15dd9687e7",
-    "HidariShinju.sff": "b326ff7821974e0eb5a4b62e3c02196cb564be60828f423a700d70fab48a92f1",
+    "HidariShinju.sff": "574a1d0a679594a4baed72bc3e9e7779643ca67e9788e618e138242a2713e3bb",
     "HidariShinju.snd": "c5dcad956955bbdb56fb88171d848e1b73c30666c918e2d17a5e210512842260",
     "HidariShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8",
     "LEEME.md": "095cb0ed6987df13a85e1c85289a3bfa312e739a5c7b4a50320a0dc44bf1fe63",
-    "CONTROLES_XBOX.md": "3f9cbb119c5d51099b4db1c74b90bfa567264282848bb4773fe734d3ad82d260",
-    "CREDITOS_Y_FUENTES.md": "e41a98517b079840dd0edea96371b0eacfa61cfe5c09922c605512938a65770c"
-  }
+    "REVISION_CONJUNTA.md": "265ef3ffdb8a15ac6cb1b17b6a61fccb4551d8dc1d78bb879eff39a45f0f231c"
+  },
+  "extracted_validation": true,
+  "character": "HidariShinju",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

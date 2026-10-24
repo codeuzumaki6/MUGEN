@@ -1,10 +1,10 @@
 {
-  "runtime_sha256": "bd62aade8c7d08eab523a7c093bed0c2090d52202eb0e159883fb50b0267aec6",
+  "runtime_sha256": "b5dbb71764847bc51949b80f8af444fb73242a303910f5d7ee6493af9a316862",
   "video": "previews/MatsuriShinju_gameplay_motor.mp4",
-  "video_sha256": "c36b926fe38d2b24051d76d17cbddd6738314ced37a4539f6622c1503ccf1fc0",
+  "video_sha256": "1705f37a6e85065509055b74b1ff03e659058884e25dad8b9b9ca0aced9fc97c",
   "ultimate_clip": "previews/MatsuriShinju_ulti_motor.mp4",
-  "ultimate_clip_sha256": "9a2307c16734ce254ce968f6e2c35388b13e6c9921665c3ad92e0e8eb5e83588",
-  "duration": 89.16666666666669,
+  "ultimate_clip_sha256": "e4f6a8935d082763984b08a20a84287a105332f02a213f2f138959dcd3a79a5b",
+  "duration": 89.11666666666666,
   "scenes": [
     "BASE | abajo, adelante + X | Lanza de Shinju",
     "BASE | abajo, atras + X | Latigo del manto",
@@ -55,7 +55,7 @@
     },
     {
       "start": 2.933333333333333,
-      "end": 5.85,
+      "end": 5.883333333333333,
       "label": "BASE | abajo, atras + X | Latigo del manto",
       "case": {
         "name": "Latigo",
@@ -70,8 +70,8 @@
       }
     },
     {
-      "start": 5.85,
-      "end": 8.783333333333333,
+      "start": 5.883333333333333,
+      "end": 8.799999999999999,
       "label": "BASE | abajo, adelante + Y | Suiton: rafaga de agua",
       "case": {
         "name": "Suiton",
@@ -86,8 +86,8 @@
       }
     },
     {
-      "start": 8.783333333333333,
-      "end": 11.7,
+      "start": 8.799999999999999,
+      "end": 11.733333333333333,
       "label": "BASE | abajo, atras + Y | Jardin de raices y aura",
       "case": {
         "name": "Jardin",
@@ -102,8 +102,8 @@
       }
     },
     {
-      "start": 11.7,
-      "end": 14.616666666666665,
+      "start": 11.733333333333333,
+      "end": 14.649999999999999,
       "label": "BASE | abajo, adelante + B | Ataque ascendente",
       "case": {
         "name": "Ascendente",
@@ -118,8 +118,8 @@
       }
     },
     {
-      "start": 14.616666666666665,
-      "end": 17.53333333333333,
+      "start": 14.649999999999999,
+      "end": 17.566666666666666,
       "label": "BASE | abajo, atras + B | Atadura del manto",
       "case": {
         "name": "Atadura",
@@ -134,8 +134,8 @@
       }
     },
     {
-      "start": 17.53333333333333,
-      "end": 20.45,
+      "start": 17.566666666666666,
+      "end": 20.466666666666665,
       "label": "BASE | abajo + X | Barrido deslizante",
       "case": {
         "name": "Barrido",
@@ -150,8 +150,8 @@
       }
     },
     {
-      "start": 20.45,
-      "end": 23.383333333333333,
+      "start": 20.466666666666665,
+      "end": 23.416666666666664,
       "label": "BASE | abajo + Y | Lanzador",
       "case": {
         "name": "Lanzador",
@@ -166,8 +166,8 @@
       }
     },
     {
-      "start": 23.383333333333333,
-      "end": 26.316666666666666,
+      "start": 23.416666666666664,
+      "end": 26.316666666666663,
       "label": "BASE | abajo + B | Floracion del manto",
       "case": {
         "name": "Manto",
@@ -182,8 +182,8 @@
       }
     },
     {
-      "start": 26.316666666666666,
-      "end": 29.266666666666666,
+      "start": 26.316666666666663,
+      "end": 29.23333333333333,
       "label": "BASE | RB | Bala de agua grande",
       "case": {
         "name": "Agua",
@@ -198,8 +198,8 @@
       }
     },
     {
-      "start": 29.266666666666666,
-      "end": 32.333333333333336,
+      "start": 29.23333333333333,
+      "end": 32.3,
       "label": "BASE | RT | Marca de garra y viaje",
       "case": {
         "name": "Marca",
@@ -214,8 +214,8 @@
       }
     },
     {
-      "start": 32.333333333333336,
-      "end": 35.25,
+      "start": 32.3,
+      "end": 35.23333333333333,
       "label": "BASE | abajo + RB | Erupcion de madera",
       "case": {
         "name": "Erupcion",
@@ -230,8 +230,8 @@
       }
     },
     {
-      "start": 35.25,
-      "end": 38.2,
+      "start": 35.23333333333333,
+      "end": 38.133333333333326,
       "label": "BASE | abajo + RT | Emboscada del arbol",
       "case": {
         "name": "Emboscada",
@@ -246,8 +246,8 @@
       }
     },
     {
-      "start": 38.2,
-      "end": 43.13333333333334,
+      "start": 38.133333333333326,
+      "end": 43.08333333333333,
       "label": "BASE | A | Caceria del Arbol Divino",
       "case": {
         "name": "ultimate",
@@ -259,8 +259,8 @@
       }
     },
     {
-      "start": 43.13333333333334,
-      "end": 46.03333333333334,
+      "start": 43.08333333333333,
+      "end": 46.01666666666666,
       "label": "BASE | abajo + Pausa | Despertar sin capa",
       "case": {
         "name": "awakening",
@@ -272,8 +272,8 @@
       }
     },
     {
-      "start": 46.03333333333334,
-      "end": 48.93333333333334,
+      "start": 46.01666666666666,
+      "end": 48.94999999999999,
       "label": "DESPERTAR | abajo, adelante + X | Lanza de Shinju",
       "case": {
         "name": "Lanza",
@@ -288,8 +288,8 @@
       }
     },
     {
-      "start": 48.93333333333334,
-      "end": 51.86666666666667,
+      "start": 48.94999999999999,
+      "end": 51.86666666666665,
       "label": "DESPERTAR | abajo, atras + X | Latigo del manto",
       "case": {
         "name": "Latigo",
@@ -304,8 +304,8 @@
       }
     },
     {
-      "start": 51.86666666666667,
-      "end": 54.81666666666667,
+      "start": 51.86666666666665,
+      "end": 54.79999999999998,
       "label": "DESPERTAR | abajo, adelante + Y | Suiton: rafaga de agua",
       "case": {
         "name": "Suiton",
@@ -320,8 +320,8 @@
       }
     },
     {
-      "start": 54.81666666666667,
-      "end": 57.75,
+      "start": 54.79999999999998,
+      "end": 57.71666666666665,
       "label": "DESPERTAR | abajo, atras + Y | Jardin de raices y aura",
       "case": {
         "name": "Jardin",
@@ -336,8 +336,8 @@
       }
     },
     {
-      "start": 57.75,
-      "end": 60.68333333333333,
+      "start": 57.71666666666665,
+      "end": 60.64999999999998,
       "label": "DESPERTAR | abajo, adelante + B | Ataque ascendente",
       "case": {
         "name": "Ascendente",
@@ -352,8 +352,8 @@
       }
     },
     {
-      "start": 60.68333333333333,
-      "end": 63.61666666666666,
+      "start": 60.64999999999998,
+      "end": 63.59999999999998,
       "label": "DESPERTAR | abajo, atras + B | Atadura del manto",
       "case": {
         "name": "Atadura",
@@ -368,8 +368,8 @@
       }
     },
     {
-      "start": 63.61666666666666,
-      "end": 66.56666666666666,
+      "start": 63.59999999999998,
+      "end": 66.53333333333332,
       "label": "DESPERTAR | abajo + X | Barrido deslizante",
       "case": {
         "name": "Barrido",
@@ -384,8 +384,8 @@
       }
     },
     {
-      "start": 66.56666666666666,
-      "end": 69.48333333333333,
+      "start": 66.53333333333332,
+      "end": 69.46666666666665,
       "label": "DESPERTAR | abajo + Y | Lanzador",
       "case": {
         "name": "Lanzador",
@@ -400,8 +400,8 @@
       }
     },
     {
-      "start": 69.48333333333333,
-      "end": 72.38333333333334,
+      "start": 69.46666666666665,
+      "end": 72.33333333333331,
       "label": "DESPERTAR | abajo + B | Floracion del manto",
       "case": {
         "name": "Manto",
@@ -416,8 +416,8 @@
       }
     },
     {
-      "start": 72.38333333333334,
-      "end": 75.31666666666668,
+      "start": 72.33333333333331,
+      "end": 75.28333333333332,
       "label": "DESPERTAR | RB | Bala de agua grande",
       "case": {
         "name": "Agua",
@@ -432,8 +432,8 @@
       }
     },
     {
-      "start": 75.31666666666668,
-      "end": 78.36666666666667,
+      "start": 75.28333333333332,
+      "end": 78.31666666666665,
       "label": "DESPERTAR | RT | Marca de garra y viaje",
       "case": {
         "name": "Marca",
@@ -448,8 +448,8 @@
       }
     },
     {
-      "start": 78.36666666666667,
-      "end": 81.31666666666668,
+      "start": 78.31666666666665,
+      "end": 81.24999999999999,
       "label": "DESPERTAR | abajo + RB | Erupcion de madera",
       "case": {
         "name": "Erupcion",
@@ -464,8 +464,8 @@
       }
     },
     {
-      "start": 81.31666666666668,
-      "end": 84.21666666666668,
+      "start": 81.24999999999999,
+      "end": 84.18333333333332,
       "label": "DESPERTAR | abajo + RT | Emboscada del arbol",
       "case": {
         "name": "Emboscada",
@@ -480,8 +480,8 @@
       }
     },
     {
-      "start": 84.21666666666668,
-      "end": 89.16666666666669,
+      "start": 84.18333333333332,
+      "end": 89.11666666666666,
       "label": "DESPERTAR | A | Caceria del Arbol Divino",
       "case": {
         "name": "ultimate",
@@ -495,35 +495,35 @@
   ],
   "audio": "Actual SDL stereo 44100Hz, aligned per native activation; rendering stalls compressed",
   "audio_per_scene_confidence": [
-    0.9147657054030195,
-    0.9645789426654954,
-    0.9683189929707293,
-    0.9645796990628583,
+    0.9147657054030194,
+    0.964578792424145,
+    0.9645786672968139,
+    0.9645796990628581,
     0.760212526245448,
-    0.9645796990628586,
-    0.79194064772353,
+    0.9645796990628583,
+    0.7919406477235302,
     0.9005285185840767,
     0.9645788501903665,
     0.9645789814786803,
-    0.9645794054490026,
-    0.9645789814786803,
-    0.94160733561232,
+    0.9683189284638045,
+    0.9683188105897127,
+    0.9645788501903665,
     0.9645786321499293,
     0.9645794054490026,
-    0.9147657054030194,
+    0.9284222688082074,
     0.9645789426654954,
-    0.9645786672968139,
-    0.9645796990628581,
+    0.9645786672968141,
+    0.9645796990628583,
     0.9005292075980611,
-    0.9683192430592014,
-    0.7381495299667317,
+    0.9645796990628583,
+    0.79194064772353,
     0.9005285185840767,
-    0.9005285185840765,
+    0.9028166168418188,
     0.9645789814786805,
-    0.9645794054490027,
-    0.9645789814786805,
-    0.9683188863388651,
-    0.9645786321499296
+    0.9645794054490026,
+    0.9645789814786803,
+    0.9645788501903665,
+    0.9645786321499293
   ],
   "native_activation_cues_matched": 31,
   "specials_per_form": 13,

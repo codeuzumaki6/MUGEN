@@ -704,3 +704,11 @@ triggerall = command = "FF"
 triggerall = StateType = S
 triggerall = command != "holddown"
 trigger1 = ctrl
+
+[State -1, Backward ground dash]
+type=ChangeState
+value=105
+triggerall=command="BB"
+triggerall=StateType=S
+triggerall=command!="holddown"
+trigger1=ctrl

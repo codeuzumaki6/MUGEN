@@ -1,18 +1,23 @@
 {
   "archive": "Mamushi_SHINJU.zip",
-  "bytes": 860047,
-  "sha256": "4b38cef89804524fa79f075beb77c107ae179d97d4099b46faa0710119aeefee",
+  "bytes": 1943041,
+  "sha256": "4ef816e81ae981fc80e62a3a0df70940813e2c7b931f7a65384bb9e597942b0c",
   "files": {
-    "Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
-    "Mamushi.cns": "831f8593b797e1ead1379483063a4675a37e2c9ace9fdd1859836941d3dbd0c9",
-    "Mamushi.cmd": "212df3c0d8b579c28fe5ee70982eb85f87d0946df8774c2d2be4abca0a301510",
-    "Mamushi.air": "9ffe178687023cd7007a26607b7bac8dad8c3c7456670886baa2d1969c75bdb6",
-    "Mamushi.sff": "98e468ffadd85b64b459c45281cd80e847b21dd3fa05034ed42b1bf5c98d901d",
-    "Mamushi.snd": "c983d3687b4cc7ad0ddf37d162bc06476a7baf007393feff83bad86e7fea092f",
     "AC_Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
-    "common1.cns": "79feadb169ae365a363594134ceed4735b44be34235c4feb3bfebce5ba9f5265",
+    "CONTROLES_XBOX.md": "236e1ea0a6f8582f6d5b0867c38c4e60f6b3c906212cda90e7631efb503f9d86",
+    "CREDITOS_Y_FUENTES.md": "b294f03e0efde04aa75e601e9dd1e2b767822258c0448e425fd335e558d27e02",
     "LEEME.md": "216db37e1a8cd31d3e74232bb577bec4a3805edd5e765a11f3284469838f724a",
-    "CONTROLES_XBOX.md": "24fc1c64d6aca43bc8e2a995f49c241a32019a79b3b01dc687d64afb8f9a0d52",
-    "CREDITOS_Y_FUENTES.md": "d8993c7187de60b659822115ef489379d8f5586b46e7581b5793b6fd549cc13f"
-  }
+    "Mamushi.air": "42d4fb137f9be6d2b89974d3c6c561e08b0379b546555b3245c94f76d0770fe2",
+    "Mamushi.cmd": "212df3c0d8b579c28fe5ee70982eb85f87d0946df8774c2d2be4abca0a301510",
+    "Mamushi.cns": "2f78e8208026cb7d2f1741ab3aece8a33365c5189a292bd57f46d0e2657db0ae",
+    "Mamushi.def": "95dfeb2f8d059b648f82b1e94369a3678f866b6360cbedb15962cf4ab3f9fb0d",
+    "Mamushi.sff": "9beaa2053166366b6d944b4d2f6d4a41e13d3aa454dde00d5bb07d8ce4b2ab73",
+    "Mamushi.snd": "c983d3687b4cc7ad0ddf37d162bc06476a7baf007393feff83bad86e7fea092f",
+    "REVISION_CONJUNTA.md": "9a635c3d74e708b57a686180ec93b521a2e4a53c5e5a6504d8ada4a6cd4b226d",
+    "common1.cns": "79feadb169ae365a363594134ceed4735b44be34235c4feb3bfebce5ba9f5265"
+  },
+  "extracted_validation": true,
+  "character": "Mamushi",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

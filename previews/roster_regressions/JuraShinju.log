@@ -1,0 +1,134 @@
+Check A: Selecting Renderer
+Check B: Initializing GFX
+Check C: Initializing GFX Font
+Check D: We are GOOD
+
+Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
+
+PASS Espinas 0 1 [] 155
+PASS Raiz 0 1 [] 178
+PASS Bijudama 0 1 [] 167
+PASS BijudamaCargada 0 1 [] 259
+PASS Garras 0 1 [] 155
+PASS Arbol 0 1 [] 213
+PASS Barrido 0 1 [] 132
+PASS Lanzador 0 1 [] 155
+PASS RafagaOcular 0 1 [] 189
+PASS Francotirador 0 1 [] 132
+PASS Marca 0 1 [] 172
+PASS AsedioOcular 0 1 [] 194
+PASS SalidaGarra 0 1 [] 172
+PASS Combo a 0 1 [] 264
+PASS Aire a 0 1 [] 192
+PASS Combo b 0 1 [] 264
+PASS Aire b 0 1 [] 192
+PASS Combo c 0 1 [] 264
+PASS Aire c 0 1 [] 192
+PASS ultimate 0 1 [] 450
+PASS ultiblock 0 1 [] 0
+PASS ultijump 0 1 [] 0
+PASS ultifar 0 1 [] 0
+PASS empty 0 1 [] 0
+PASS recovery 0 1 [] 0
+PASS Dash izquierda 0 1 [] 0
+PASS Dash derecha 0 1 [] 0
+PASS chargehit 0 1 [] 0
+PASS Espinas 0 -1 [] 155
+PASS Raiz 0 -1 [] 178
+PASS Bijudama 0 -1 [] 167
+PASS BijudamaCargada 0 -1 [] 259
+PASS Garras 0 -1 [] 155
+PASS Arbol 0 -1 [] 213
+PASS Barrido 0 -1 [] 132
+PASS Lanzador 0 -1 [] 155
+PASS RafagaOcular 0 -1 [] 189
+PASS Francotirador 0 -1 [] 132
+PASS Marca 0 -1 [] 172
+PASS AsedioOcular 0 -1 [] 194
+PASS SalidaGarra 0 -1 [] 172
+PASS Combo a 0 -1 [] 264
+PASS Aire a 0 -1 [] 192
+PASS Combo b 0 -1 [] 264
+PASS Aire b 0 -1 [] 192
+PASS Combo c 0 -1 [] 264
+PASS Aire c 0 -1 [] 192
+PASS ultimate 0 -1 [] 450
+PASS ultiblock 0 -1 [] 0
+PASS ultijump 0 -1 [] 0
+PASS ultifar 0 -1 [] 0
+PASS empty 0 -1 [] 0
+PASS recovery 0 -1 [] 0
+PASS Dash izquierda 0 -1 [] 0
+PASS Dash derecha 0 -1 [] 0
+PASS chargehit 0 -1 [] 0
+PASS Espinas 1 1 [] 203
+PASS Raiz 1 1 [] 233
+PASS Bijudama 1 1 [] 218
+PASS BijudamaCargada 1 1 [] 338
+PASS Garras 1 1 [] 203
+PASS Arbol 1 1 [] 278
+PASS Barrido 1 1 [] 173
+PASS Lanzador 1 1 [] 203
+PASS RafagaOcular 1 1 [] 249
+PASS Francotirador 1 1 [] 173
+PASS Marca 1 1 [] 225
+PASS AsedioOcular 1 1 [] 255
+PASS SalidaGarra 1 1 [] 225
+PASS Combo a 1 1 [] 346
+PASS Aire a 1 1 [] 252
+PASS Combo b 1 1 [] 346
+PASS Aire b 1 1 [] 252
+PASS Combo c 1 1 [] 346
+PASS Aire c 1 1 [] 252
+PASS ultimate 1 1 [] 450
+PASS ultiblock 1 1 [] 0
+PASS ultijump 1 1 [] 0
+PASS ultifar 1 1 [] 0
+PASS empty 1 1 [] 0
+PASS recovery 1 1 [] 0
+PASS Dash izquierda 1 1 [] 0
+PASS Dash derecha 1 1 [] 0
+PASS chargehit 1 1 [] 0
+PASS Espinas 1 -1 [] 203
+PASS Raiz 1 -1 [] 233
+PASS Bijudama 1 -1 [] 218
+PASS BijudamaCargada 1 -1 [] 338
+PASS Garras 1 -1 [] 203
+PASS Arbol 1 -1 [] 278
+PASS Barrido 1 -1 [] 173
+PASS Lanzador 1 -1 [] 203
+PASS RafagaOcular 1 -1 [] 249
+PASS Francotirador 1 -1 [] 173
+PASS Marca 1 -1 [] 225
+PASS AsedioOcular 1 -1 [] 255
+PASS SalidaGarra 1 -1 [] 225
+PASS Combo a 1 -1 [] 346
+PASS Aire a 1 -1 [] 252
+PASS Combo b 1 -1 [] 346
+PASS Aire b 1 -1 [] 252
+PASS Combo c 1 -1 [] 346
+PASS Aire c 1 -1 [] 252
+PASS ultimate 1 -1 [] 450
+PASS ultiblock 1 -1 [] 0
+PASS ultijump 1 -1 [] 0
+PASS ultifar 1 -1 [] 0
+PASS empty 1 -1 [] 0
+PASS recovery 1 -1 [] 0
+PASS Dash izquierda 1 -1 [] 0
+PASS Dash derecha 1 -1 [] 0
+PASS chargehit 1 -1 [] 0
+PASS walk 0 1 [] 0
+PASS jump 0 1 [] 0
+PASS diagonal 0 1 [] 0
+PASS charge 0 1 [] 0
+PASS awakening 0 1 [] 0
+PASS charge 1 1 [] 0
+PASS walk 0 -1 [] 0
+PASS jump 0 -1 [] 0
+PASS diagonal 0 -1 [] 0
+PASS charge 0 -1 [] 0
+PASS awakening 0 -1 [] 0
+PASS charge 1 -1 [] 0
+PASS 38 awakened techniques and chains: greater collision damage, below full-life knockout
+PASSED 124 Jura raw-input and collision cases

@@ -37,3 +37,6 @@ La ultimate debe acertar al objetivo en el suelo. Se puede bloquear, saltar o de
 RB, abajo + RB, las otras bijūdamas y la apertura de la ultimate toman la altura y la postura del oponente al disparar. La trayectoria desciende desde el ojo para alcanzar a los rivales pequeños; puede bloquearse o esquivarse.
 
 Al ganar, Jura saca un libro turquesa, lo abre y se queda leyendo. El cuerpo usa los cuadros originales de su hoja; el libro se dibuja como una pieza aparte sobre su mano.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

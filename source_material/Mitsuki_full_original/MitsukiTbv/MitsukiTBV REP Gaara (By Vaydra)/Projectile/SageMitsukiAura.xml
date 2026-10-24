@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">TentenSRK</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">72</p>
+        <p type="attackRangeY">108</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Gaara_Aura_01</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">0</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+          <e type="setMove">-10</e>      	
+          <f>Gaara_Aura_01</f>
+          <e type="setMove">-10</e>  
+          <f>Gaara_Aura_02</f>
+          <e type="setMove">-10</e>  
+          <f>Gaara_Aura_03</f>
+          <e type="setMove">-10</e>  
+          <f>Gaara_Aura_04</f>
+          <e type="setMove">-10</e>  
+          <f>Gaara_Aura_05</f>
+          <e type="setMove">-10</e>  
+          <f>Gaara_Aura_06</f>
+
+          <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

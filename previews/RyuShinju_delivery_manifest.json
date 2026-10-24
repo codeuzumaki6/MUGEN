@@ -1,17 +1,22 @@
 {
   "archive": "RyuShinju.zip",
-  "bytes": 1453321,
-  "sha256": "b1e00bc1fb993bae1a2387085acd6ff2e1f62f4afec32226804e8df09eccdd6b",
+  "bytes": 2036743,
+  "sha256": "872b06a4b8131e805937c49da71b52240dd8219d66411039c8dea407cd7bb3c9",
   "files": {
-    "RyuShinju.def": "9bc7c978aee888d31b42ad057f16c638a21b4917f8e08e14ea368f1fe7742843",
-    "RyuShinju.cns": "6b9e094f2c5bb0dad6b8d33321922d991b9506b8c671eae7e24272f21ed70e63",
-    "RyuShinju.cmd": "5450964e64e2ef921faaa54e38deb8f3c29d6f05554633ee121aa289286b6d39",
-    "RyuShinju.air": "9b37abb4fce0fed29acd2957707a2ad08cc4096a95ebeb50ddb85a1c939bcaea",
-    "RyuShinju.sff": "8df531f381825ffc3b158d83888785dc4d06d9959b5ee84443bca22c1a5d5379",
-    "RyuShinju.snd": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5",
-    "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670",
+    "CONTROLES_XBOX.md": "b86da12f74784749f7351cf0dff6b1b77337baf7123a9619ac856f5aef9a6be4",
+    "CREDITOS_Y_FUENTES.md": "bf7eb36c7dfb6ff7742b642a59b527b9765661dd795f1d608091c6da271d9bc0",
     "LEEME.md": "5912aaf508c355cd21661b08c8efa8b433f4a35e81190420aaed00e4d741024c",
-    "CONTROLES_XBOX.md": "7e1e07b76c0126846af88bd685247397edccc298ca6c4b7874ec30744d111b1e",
-    "CREDITOS_Y_FUENTES.md": "dd1fe36ca5295e0950ce0a2493b1b64b4bb70dba8f1ba5e887c99e6a5b836625"
-  }
+    "REVISION_CONJUNTA.md": "5bf562cccf327e355656d987e7ad5a4edfb9be977a61859782b55ef87f9bfddc",
+    "RyuShinju.air": "8fd399825af68a0654f8bda8442729108e37329d86f2c6234a37defbb5fb1d2a",
+    "RyuShinju.cmd": "5e383e8f3a41fe4dd4ce5cfc66a69383846d576696c43ddb221328cbf010fec3",
+    "RyuShinju.cns": "263edeceeb684ea3c542efb00f99e88a830f00b4db4c8495d747930a68dab124",
+    "RyuShinju.def": "9bc7c978aee888d31b42ad057f16c638a21b4917f8e08e14ea368f1fe7742843",
+    "RyuShinju.sff": "e4bccdf06911f772019526684f2945cfc65d0ec37a56c541109ae3bbec6b4ea1",
+    "RyuShinju.snd": "cce264cc1a69a250ce508e26a2295b9996922d7c5ccdac35db13f60a781388a5",
+    "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670"
+  },
+  "extracted_validation": true,
+  "character": "RyuShinju",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

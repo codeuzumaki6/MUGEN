@@ -16,3 +16,6 @@ La implementación se centra en bijūdama ocular, Mokuton y marcas de garra. La 
 
 
 La victoria usa las poses originales 0,24, 0,19 y 0,20, conservando sus píxeles, cara, capa, proporciones y escala. El libro es una pieza separada con cuatro cuadros de cerrado, apertura y página; se ancla a la mano sin sustituir el cuerpo. Sólo ese objeto se genera con IA para la victoria. Las 36 poses originales y su corrección de ojos se conservan. La pose sentada de la ultimate, el trono y las cuatro fases del capullo son los recursos suplementarios anteriores. Fuentes y parámetros en `source_material/Jura_generated`, `assets/supplemental.json` y `tools/build_jura_assets.py`. El sonido de papel se conserva.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

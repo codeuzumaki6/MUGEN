@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Sanbao</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Omnipotence_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Omnipotence_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Omnipotence_14</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">320</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">320</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	    <e type="setCommand">reTransport</e>
+			<f>Omnipotence_01</f>
+			<f>Omnipotence_02</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Omnipotence_03</f>
+			<f>Omnipotence_04</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Omnipotence_05</f>
+			<f>Omnipotence_06</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>Omnipotence_07</f>
+			<f>Omnipotence_08</f>
+			<e type="setAttackBox">ac_hit</e>
+			
+			<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>
+	  	<f>Omnipotence_09</f>
+	  	
+			<e type="setAttackBox">ac_hit</e>	
+	  	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>	
+    	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>	
+     	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>					
+    	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>					
+    	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>				
+     	<f>Omnipotence_09</f>
+  	  <e type="setAttackBox">ac_hit</e>			
+	  	<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>	
+    	<f>Omnipotence_09</f>		
+  	  <e type="setAttackBox">ac_hit</e>				
+			<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>	
+    	<f>Omnipotence_09</f>		
+  	  <e type="setAttackBox">ac_hit</e>				
+												
+	  	<f>Omnipotence_09</f>		
+  	  <e type="setAttackBox">ac_hit</e>				
+			<f>Omnipotence_09</f>
+			<e type="setAttackBox">ac_hit</e>	
+    	<f>Omnipotence_09</f>		
+  	  <e type="setAttackBox">ac_hit</e>															
+			<f>Omnipotence_10</f>
+		<e type="setSound">Audio/Effect/BEAM.ogg</e>
+	<e type="setAttackBox">f_hit</e>
+  <e type="setAttackBox">c_hit</e>
+  <e type="setAttackBox">c_hit</e>				
+  <e type="setAttackBox">c_hit</e>				
+  <e type="setAttackBox">c_hit</e>
+  <e type="setAttackBox">c_hit</e>				
+  <e type="setAttackBox">c_hit</e>
+  <e type="setAttackBox">c_hit</e>				
+  <e type="setAttackBox">c_hit</e>		
+			<f>Omnipotence_11</f>
+			<f>Omnipotence_12</f>
+		  <e type="setAttackBox">ac_hit</e>	
+			<f>Omnipotence_13</f>
+			<f>Omnipotence_14</f>
+	    <e type="setAttackBox">ac_hit</e>				
+			<f>Omnipotence_14</f>
+			<f>Omnipotence_14</f>	
+			<f>Omnipotence_14</f>
+			<f>Omnipotence_14</f>	
+			<f>Omnipotence_14</f>
+			<f>Omnipotence_14</f>	
+			<f>Omnipotence_14</f>
+			<f>Omnipotence_14</f>	
+			
+			
+			
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>
+				

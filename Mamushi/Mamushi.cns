@@ -1383,13 +1383,13 @@ x = 0
 
 [State 1000, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 4
+trigger1 = Time = 12
 value = S1,30
 channel = 1
 
 [State 1000, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = Time = 12
 attr = S, SA
 damage = 32,1
 animtype = Medium
@@ -1418,13 +1418,13 @@ envshake.ampl = -1
 
 [State 1000, Swing 7]
 type = PlaySnd
-trigger1 = AnimElem = 7
+trigger1 = Time = 22
 value = S1,30
 channel = 1
 
 [State 1000, Contact 7]
 type = HitDef
-trigger1 = AnimElem = 7
+trigger1 = Time = 22
 attr = S, SA
 damage = 36,1
 animtype = Medium
@@ -1453,13 +1453,13 @@ envshake.ampl = -1
 
 [State 1000, Swing 10]
 type = PlaySnd
-trigger1 = AnimElem = 10
+trigger1 = Time = 32
 value = S1,30
 channel = 1
 
 [State 1000, Contact 10]
 type = HitDef
-trigger1 = AnimElem = 10
+trigger1 = Time = 32
 attr = S, SA
 damage = 64,3
 animtype = Up
@@ -1488,7 +1488,7 @@ envshake.ampl = -3
 
 [State 1000, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
+trigger1 = MoveHit = 1 && Time >= 32
 value = S1,19
 channel = 5
 persistent = 0
@@ -1496,7 +1496,7 @@ ignorehitpause = 1
 
 [State 1000, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
+trigger1 = MoveHit = 1 && Time >= 32
 anim = 8720
 postype = P1
 pos = 35,0
@@ -1514,7 +1514,7 @@ ctrl = 1
 
 [State 1000, Timed presentation accent]
 type = Explod
-trigger1 = AnimElem=4 || AnimElem=7 || AnimElem=10
+trigger1 = Time = 12 || Time = 22 || Time = 32
 anim=8730
 ID=8730
 postype=P1
@@ -1580,13 +1580,13 @@ x = 0
 
 [State 1020, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 4
+trigger1 = Time = 15
 value = S1,31
 channel = 1
 
 [State 1020, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = Time = 15
 attr = S, SA
 damage = 38,1
 animtype = Medium
@@ -1615,13 +1615,13 @@ envshake.ampl = -1
 
 [State 1020, Swing 7]
 type = PlaySnd
-trigger1 = AnimElem = 7
+trigger1 = Time = 28
 value = S1,31
 channel = 1
 
 [State 1020, Contact 7]
 type = HitDef
-trigger1 = AnimElem = 7
+trigger1 = Time = 28
 attr = S, SA
 damage = 40,2
 animtype = Medium
@@ -1650,13 +1650,13 @@ envshake.ampl = -1
 
 [State 1020, Swing 10]
 type = PlaySnd
-trigger1 = AnimElem = 10
+trigger1 = Time = 41
 value = S1,31
 channel = 1
 
 [State 1020, Contact 10]
 type = HitDef
-trigger1 = AnimElem = 10
+trigger1 = Time = 41
 attr = S, SA
 damage = 80,4
 animtype = Up
@@ -1685,7 +1685,7 @@ envshake.ampl = -3
 
 [State 1020, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
+trigger1 = MoveHit = 1 && Time >= 41
 value = S1,19
 channel = 5
 persistent = 0
@@ -1693,7 +1693,7 @@ ignorehitpause = 1
 
 [State 1020, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 10
+trigger1 = MoveHit = 1 && Time >= 41
 anim = 8720
 postype = P1
 pos = 35,0
@@ -1791,13 +1791,13 @@ x = 0
 
 [State 1030, Swing 2]
 type = PlaySnd
-trigger1 = AnimElem = 2
+trigger1 = Time = 7
 value = S1,32
 channel = 1
 
 [State 1030, Contact 2]
 type = HitDef
-trigger1 = AnimElem = 2
+trigger1 = Time = 7
 attr = S, SA
 damage = 24,1
 animtype = Medium
@@ -1826,13 +1826,13 @@ envshake.ampl = -1
 
 [State 1030, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 4
+trigger1 = Time = 15
 value = S1,32
 channel = 1
 
 [State 1030, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = Time = 15
 attr = S, SA
 damage = 24,1
 animtype = Medium
@@ -1861,13 +1861,13 @@ envshake.ampl = -1
 
 [State 1030, Swing 6]
 type = PlaySnd
-trigger1 = AnimElem = 6
+trigger1 = Time = 23
 value = S1,32
 channel = 1
 
 [State 1030, Contact 6]
 type = HitDef
-trigger1 = AnimElem = 6
+trigger1 = Time = 23
 attr = S, SA
 damage = 24,1
 animtype = Medium
@@ -1896,13 +1896,13 @@ envshake.ampl = -1
 
 [State 1030, Swing 8]
 type = PlaySnd
-trigger1 = AnimElem = 8
+trigger1 = Time = 31
 value = S1,32
 channel = 1
 
 [State 1030, Contact 8]
 type = HitDef
-trigger1 = AnimElem = 8
+trigger1 = Time = 31
 attr = S, SA
 damage = 24,1
 animtype = Medium
@@ -1931,13 +1931,13 @@ envshake.ampl = -1
 
 [State 1030, Swing 9]
 type = PlaySnd
-trigger1 = AnimElem = 9
+trigger1 = Time = 35
 value = S1,32
 channel = 1
 
 [State 1030, Contact 9]
 type = HitDef
-trigger1 = AnimElem = 9
+trigger1 = Time = 35
 attr = S, SA
 damage = 70,3
 animtype = Up
@@ -1966,7 +1966,7 @@ envshake.ampl = -3
 
 [State 1030, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
+trigger1 = MoveHit = 1 && Time >= 35
 value = S1,19
 channel = 5
 persistent = 0
@@ -1974,7 +1974,7 @@ ignorehitpause = 1
 
 [State 1030, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
+trigger1 = MoveHit = 1 && Time >= 35
 anim = 8720
 postype = P1
 pos = 35,0
@@ -2072,13 +2072,13 @@ x = 0
 
 [State 1040, Swing 4]
 type = PlaySnd
-trigger1 = AnimElem = 4
+trigger1 = Time = 14
 value = S1,33
 channel = 1
 
 [State 1040, Contact 4]
 type = HitDef
-trigger1 = AnimElem = 4
+trigger1 = Time = 14
 attr = S, SA
 damage = 42,2
 animtype = Medium
@@ -2107,13 +2107,13 @@ envshake.ampl = -1
 
 [State 1040, Swing 8]
 type = PlaySnd
-trigger1 = AnimElem = 8
+trigger1 = Time = 31
 value = S1,33
 channel = 1
 
 [State 1040, Contact 8]
 type = HitDef
-trigger1 = AnimElem = 8
+trigger1 = Time = 31
 attr = S, SA
 damage = 42,2
 animtype = Medium
@@ -2142,13 +2142,13 @@ envshake.ampl = -1
 
 [State 1040, Swing 9]
 type = PlaySnd
-trigger1 = AnimElem = 9
+trigger1 = Time = 36
 value = S1,33
 channel = 1
 
 [State 1040, Contact 9]
 type = HitDef
-trigger1 = AnimElem = 9
+trigger1 = Time = 36
 attr = S, SA
 damage = 96,4
 animtype = Up
@@ -2177,7 +2177,7 @@ envshake.ampl = -3
 
 [State 1040, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
+trigger1 = MoveHit = 1 && Time >= 36
 value = S1,19
 channel = 5
 persistent = 0
@@ -2185,7 +2185,7 @@ ignorehitpause = 1
 
 [State 1040, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 9
+trigger1 = MoveHit = 1 && Time >= 36
 anim = 8720
 postype = P1
 pos = 35,0
@@ -2203,7 +2203,7 @@ ctrl = 1
 
 [State 1040, Timed presentation accent]
 type = Explod
-trigger1 = AnimElem=8
+trigger1 = Time = 31
 anim=8730
 ID=8730
 postype=P1
@@ -2217,7 +2217,7 @@ removeongethit=1
 
 [State 1040, Timed presentation accent]
 type = Explod
-trigger1 = AnimElem=9
+trigger1 = Time = 36
 anim=8750
 ID=8750
 postype=P1
@@ -2231,7 +2231,7 @@ removeongethit=1
 
 [State 1040, Timed presentation accent]
 type = Explod
-trigger1 = AnimElem=9
+trigger1 = Time = 36
 anim=8720
 ID=8720
 postype=P1
@@ -2405,13 +2405,13 @@ x = 0
 
 [State 1430, Swing 3]
 type = PlaySnd
-trigger1 = AnimElem = 3
+trigger1 = Time = 8
 value = S1,31
 channel = 1
 
 [State 1430, Contact 3]
 type = HitDef
-trigger1 = AnimElem = 3
+trigger1 = Time = 8
 attr = S, SA
 damage = 75,3
 animtype = Up
@@ -2440,7 +2440,7 @@ envshake.ampl = -3
 
 [State 1430, Finisher sound on contact]
 type = PlaySnd
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 3
+trigger1 = MoveHit = 1 && Time >= 8
 value = S1,19
 channel = 5
 persistent = 0
@@ -2448,7 +2448,7 @@ ignorehitpause = 1
 
 [State 1430, Finisher dust]
 type = Explod
-trigger1 = MoveHit = 1 && AnimElemNo(0) >= 3
+trigger1 = MoveHit = 1 && Time >= 8
 anim = 8720
 postype = P1
 pos = 35,0
@@ -3352,13 +3352,13 @@ removeongethit = 1
 
 [State 1210, Swing 3]
 type = PlaySnd
-trigger1 = AnimElem = 3
+trigger1 = Time = 11
 value = S1,31
 channel = 1
 
 [State 1210, Contact 3]
 type = HitDef
-trigger1 = AnimElem = 3
+trigger1 = Time = 11
 attr = S, SA
 damage = 90,4
 animtype = Medium

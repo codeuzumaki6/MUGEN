@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>MamushiNol</f>
+        <!-- <e type="setDelay">20</e> --> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Orochimaru_Akar_01</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Orochimaru_Akar_02</f>
+
+        <f>Orochimaru_Akar_03</f>
+        <f>Orochimaru_Akar_04</f>
+        <f>Orochimaru_Akar_05</f>
+        
+        
+        
+        
+        <f>Orochimaru_Akar_06</f>
+
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Orochimaru_Akar_07</f>
+
+        <f>Orochimaru_Akar_08</f>
+        <f>Orochimaru_Akar_09</f>
+
+        <f>Orochimaru_Akar_10</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	      <p type="attackType">cAttack</p>
+        <p type="attackValue">650</p>
+        <p type="attackRangeX">20</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Orochimaru_Akar_01</f>
+        <e type="setSound">Audio/Effect/mokuBlade.mp3</e>
+        <f>Orochimaru_Akar_02</f>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/Effect/Cambuk.wav</e>
+        <f>Orochimaru_Akar_03</f>
+        <f>Orochimaru_Akar_04</f>
+        <f>Orochimaru_Akar_05</f>
+        
+        
+        
+        <e type="setSound">Audio/Effect/Cambuk.wav</e>
+        <f>Orochimaru_Akar_06</f>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setSound">Audio/Effect/Punch.ogg</e>
+        <f>Orochimaru_Akar_07</f>
+        <e type="setAttackBox">f_hit</e>
+        <f>Orochimaru_Akar_08</f>
+        <f>Orochimaru_Akar_09</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Orochimaru_Akar_10</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

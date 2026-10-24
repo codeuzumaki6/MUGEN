@@ -28,7 +28,7 @@ Una barra equivale a 1000 de energía. Las técnicas tienen recuperación y pued
 
 ## Combos normales
 
-- **Dos toques hacia delante:** dash; suelta la dirección para parar. Puedes atacar, saltar o usar una técnica durante el desplazamiento. Por ahora utiliza los cuadros de caminata existentes a mayor velocidad.
+- **Dos toques a izquierda o derecha:** dash corto por el suelo, sin mantener la dirección. Puedes atacar, saltar o usar una técnica durante el desplazamiento. Por ahora utiliza los cuadros de caminata existentes a mayor velocidad.
 - **X, X, X, X:** dos puñetazos, patada y ayuda de Daemon con launcher. Sigue pulsando para avanzar; si el primer golpe falla, no avanza automáticamente la cadena. Después del launcher confirmado puedes pulsar arriba para perseguir.
 - **Y, X:** patada de Eida y ráfaga de cinco golpes de Daemon, sin gastar energía.
 - **B, Y:** ataque bajo de Eida y launcher de Daemon, sin gastar energía.
@@ -70,3 +70,6 @@ Los 14 jutsus tienen un sonido de activación independiente del golpe, destello 
 **A: Omnipotencia.** La apertura debe acertar antes de mostrar el abrazo animado a Kawaki y liberar la onda de alteración de recuerdos. Kawaki aparece en esa escena canónica, sin sustituir permanentemente al rival. Conserva el coste de 3000 y daño de 350.
 
 **Daemon actualizado:** usa el modelo de la hoja que aportaste, con poses propias de carrera, puños, patadas, barrido y defensa. Sigue apareciendo junto a Eida y entrando al alcance del rival. Los botones, tiempos, costes y daños se conservan.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

@@ -1,0 +1,1321 @@
+[
+  {
+    "group": 26000,
+    "number": 0,
+    "key": "Zabuza_Skill01_09",
+    "file": "assets/senki/26000_0.png",
+    "axis": [
+      111,
+      217
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03822801262140274,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{483,2491},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "6958f97409a4dfa579338c2d6aa465491563333ea18a035b3531798d25b64873",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 1,
+    "key": "Zabuza_Skill01_10",
+    "file": "assets/senki/26000_1.png",
+    "axis": [
+      111,
+      217
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03822796046733856,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{820,2491},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "274fe9d0f1aa57367ead440b51dbb294c5366f99b56052156dd33381bdd9a4a5",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 2,
+    "key": "Zabuza_Skill01_11",
+    "file": "assets/senki/26000_2.png",
+    "axis": [
+      106,
+      225
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07415162026882172,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1157,2491},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "8a5b26c1fb1ab8b3637e6ca8c8a83fca6af0e01cad077145954e50071ed7029b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 3,
+    "key": "Zabuza_Skill01_12",
+    "file": "assets/senki/26000_3.png",
+    "axis": [
+      106,
+      226
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0939842015504837,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{2893,2689},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "edb687964669196d7d1ebac64c7c1e517065230b8f909b4130219c55c7b716c5",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 4,
+    "key": "Zabuza_Skill01_13",
+    "file": "assets/senki/26000_4.png",
+    "axis": [
+      106,
+      227
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10458977520465851,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{2893,3014},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "544a937f57c406ea29bf477642989af8a170f90ec2d503660fd0b4a874acf295",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 5,
+    "key": "Zabuza_Skill01_14",
+    "file": "assets/senki/26000_5.png",
+    "axis": [
+      106,
+      225
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08319593220949173,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "24f83cb1f4091ef2f5415e84dbf59e3e6fc6e6b993a097c4ed88ab57732b2c11",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 6,
+    "key": "Zabuza_Skill01_15",
+    "file": "assets/senki/26000_6.png",
+    "axis": [
+      110,
+      221
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.05986344441771507,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,326},{335,323}}",
+    "source_offset": "{62.5,-110}",
+    "source_rotated": false,
+    "rgba_sha256": "081df34a6b0bdae0ec43cba5d690755daacbeb054bd1361112417ba43236ac90",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 7,
+    "key": "Zabuza_Skill02_001",
+    "file": "assets/senki/26000_7.png",
+    "axis": [
+      64,
+      129
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0643574595451355,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,857},{160,182}}",
+    "source_offset": "{25,-47}",
+    "source_rotated": false,
+    "rgba_sha256": "d96b1853e174d77835296fb63553d57d2fae1bcbfbce7335e0dc9aec749595b9",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 8,
+    "key": "Zabuza_Skill02_01",
+    "file": "assets/senki/26000_8.png",
+    "axis": [
+      116,
+      139
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00015976645227055997,
+      "original_sprite": [
+        0,
+        51
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1061},{220,223}}",
+    "source_offset": "{-5,-84}",
+    "source_rotated": false,
+    "rgba_sha256": "7e6d9b2674689c4b82d8e3efe408143806f5cf38cec0f0319f8072f869b6332c",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 9,
+    "key": "Zabuza_Skill02_002",
+    "file": "assets/senki/26000_9.png",
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.09143869578838348,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3452,1473},{160,182}}",
+    "source_offset": "{25,-47}",
+    "source_rotated": false,
+    "rgba_sha256": "0b344e1787190989f330d367239cdb02c15181ae8b869876767f9ceb508d3fb4",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 10,
+    "key": "Zabuza_Skill02_02",
+    "file": "assets/senki/26000_10.png",
+    "axis": [
+      116,
+      139
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00016354698163922876,
+      "original_sprite": [
+        0,
+        52
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1286},{220,223}}",
+    "source_offset": "{-5,-84}",
+    "source_rotated": false,
+    "rgba_sha256": "d52d69c9d454c93d351bd7fa0ac0cf7f8467117f5f5adfac6711866afb18ec33",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 11,
+    "key": "Zabuza_Skill02_003",
+    "file": "assets/senki/26000_11.png",
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08345453441143036,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,1473},{160,182}}",
+    "source_offset": "{25,-47}",
+    "source_rotated": false,
+    "rgba_sha256": "243bf9fa23df908576bf9214a912bb69b1842b0dffb3acbcd0a34f6a165c53b4",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 12,
+    "key": "Zabuza_Skill02_03",
+    "file": "assets/senki/26000_12.png",
+    "axis": [
+      122,
+      149
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08290155977010727,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1511},{220,223}}",
+    "source_offset": "{-5,-84}",
+    "source_rotated": false,
+    "rgba_sha256": "c0e053b31a00f67b504d4ce07ec48c56b4139f4e29ff67645f736671bbe41387",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 13,
+    "key": "Zabuza_Skill02_004",
+    "file": "assets/senki/26000_13.png",
+    "axis": [
+      66,
+      132
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08812633156776428,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,1657},{160,182}}",
+    "source_offset": "{25,-47}",
+    "source_rotated": false,
+    "rgba_sha256": "fe058faf831b8990e0f806bea2d33077c3fe6b9026b40f4a61d6ce646b333a15",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 14,
+    "key": "Zabuza_Skill02_04",
+    "file": "assets/senki/26000_14.png",
+    "axis": [
+      92,
+      153
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.1076539009809494,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1736},{220,223}}",
+    "source_offset": "{-5,-84}",
+    "source_rotated": false,
+    "rgba_sha256": "241bf707829f07445036db71385558a90d3b2b8e4d3bcc7bb72faadce2cb76f3",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 15,
+    "key": "Zabuza_Skill02_005",
+    "file": "assets/senki/26000_15.png",
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06815076619386673,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3397,1657},{160,182}}",
+    "source_offset": "{25,-47}",
+    "source_rotated": false,
+    "rgba_sha256": "f93d73e5f1cb69dfc0cdbbe73c8307d8fcabf4b9423cb48ac057c70350f3362a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 16,
+    "key": "Zabuza_Skill02_05",
+    "file": "assets/senki/26000_16.png",
+    "axis": [
+      85,
+      154
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.1571940928697586,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3013,1961},{220,223}}",
+    "source_offset": "{-5,-84}",
+    "source_rotated": false,
+    "rgba_sha256": "6d8f398321b41b13e2ef24a7347603c1df1661c9b4290f8ab2c4aee0c9ada584",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 17,
+    "key": "Zabuza_Skill03_01",
+    "file": "assets/senki/26000_17.png",
+    "axis": [
+      76,
+      98
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001542692625662312,
+      "original_sprite": [
+        0,
+        34
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3377,2093},{150,104}}",
+    "source_offset": "{0,-6}",
+    "source_rotated": false,
+    "rgba_sha256": "433f69fb5d904503f023829d1887c73dffc844b7e66c4912451ec4fd9489f838",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 18,
+    "key": "Zabuza_Skill03_02",
+    "file": "assets/senki/26000_18.png",
+    "axis": [
+      61,
+      98
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001840328477555886,
+      "original_sprite": [
+        0,
+        35
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3519,1851},{150,104}}",
+    "source_offset": "{0,-6}",
+    "source_rotated": false,
+    "rgba_sha256": "54a8b7406dfd399c88281ed236229de8cd8282b8548bbd2b7d3cc1050eff4391",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 19,
+    "key": "Zabuza_Skill03_03",
+    "file": "assets/senki/26000_19.png",
+    "axis": [
+      72,
+      97
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        36
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3519,1957},{150,104}}",
+    "source_offset": "{0,-6}",
+    "source_rotated": false,
+    "rgba_sha256": "4b732438493524d31c1f15c0aa3d9c56a6591323820d8179b80841aecc613132",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 20,
+    "key": "Zabuza_Skill03_04",
+    "file": "assets/senki/26000_20.png",
+    "axis": [
+      265,
+      183
+    ],
+    "alignment": {
+      "method": "adjacent matching source sequence",
+      "reference": "Zabuza_Skill03_07",
+      "error": null
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{905,2863},{480,279}}",
+    "source_offset": "{-25,-99}",
+    "source_rotated": false,
+    "rgba_sha256": "2902e2f72fa2a35f09865061770cbba015d4296f3c575faf224ec28485263be7",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 21,
+    "key": "Zabuza_Skill03_05",
+    "file": "assets/senki/26000_21.png",
+    "axis": [
+      265,
+      183
+    ],
+    "alignment": {
+      "method": "adjacent matching source sequence",
+      "reference": "Zabuza_Skill03_07",
+      "error": null
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1387,2863},{480,279}}",
+    "source_offset": "{-25,-99}",
+    "source_rotated": false,
+    "rgba_sha256": "b1328c07cb6a2ff1e9635ec037b93a6e5be31be3807b79d2987c20805a812459",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 22,
+    "key": "Zabuza_Skill03_06",
+    "file": "assets/senki/26000_22.png",
+    "axis": [
+      268,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.15433265268802643,
+      "original_sprite": [
+        0,
+        37
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1869,2981},{480,279}}",
+    "source_offset": "{-25,-99}",
+    "source_rotated": false,
+    "rgba_sha256": "50d20af63c4a09ce769b20dd32199ce75c9d2edfdda15ae6160ae7bc13c2177d",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 23,
+    "key": "Zabuza_Skill03_07",
+    "file": "assets/senki/26000_23.png",
+    "axis": [
+      265,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.020583434030413628,
+      "original_sprite": [
+        0,
+        38
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,2491},{480,279}}",
+    "source_offset": "{-25,-99}",
+    "source_rotated": false,
+    "rgba_sha256": "87dc9ca8eeb5a06fbde7188c9611dc822b269255f8a7fa189abab2c1115c0d7a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 24,
+    "key": "Zabuza_Skill03_08",
+    "file": "assets/senki/26000_24.png",
+    "axis": [
+      75,
+      101
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": -3.7716002765364465e-08,
+      "original_sprite": [
+        0,
+        38
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3377,2199},{150,104}}",
+    "source_offset": "{0,-6}",
+    "source_rotated": false,
+    "rgba_sha256": "818355a10b5f6cafa6243d719174d039531f77fad273246104f7c7e8bc45e306",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 25,
+    "key": "Zabuza_Skill03_09",
+    "file": "assets/senki/26000_25.png",
+    "axis": [
+      67,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00025569822173565626,
+      "original_sprite": [
+        0,
+        39
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,2305},{150,104}}",
+    "source_offset": "{0,-6}",
+    "source_rotated": false,
+    "rgba_sha256": "414311656989852c723741499d45a77cf8801a9e01ed42bdec82b8c04a2add23",
+    "eye_pixels_recolored": 3,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 26,
+    "key": "Zabuza_Skill01_01",
+    "file": "assets/senki/26000_26.png",
+    "axis": [
+      78,
+      96
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00011195464321644977,
+      "original_sprite": [
+        0,
+        53
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3614,1473},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "42411289b422c9ab8d3e2345b638392a2dc110dbf47180ae7782d9c62e29e2b9",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 27,
+    "key": "Zabuza_Skill01_02",
+    "file": "assets/senki/26000_27.png",
+    "axis": [
+      79,
+      74
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00020753264834638685,
+      "original_sprite": [
+        0,
+        55
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3614,1599},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "b3814b66c8fc608f4eb12dec577b89ab51048247bf595360c388f1f8f658071f",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 28,
+    "key": "Zabuza_Skill01_03",
+    "file": "assets/senki/26000_28.png",
+    "axis": [
+      81,
+      71
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00042542285518720746,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3559,1725},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "89b7a3c6b4a94a047436b8266e2890ed73c1c4547b9e1ab413671d9d20c2ba7c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 29,
+    "key": "Zabuza_Skill01_04",
+    "file": "assets/senki/26000_29.png",
+    "axis": [
+      81,
+      93
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.001715270453132689,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,1841},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "b5f1d8c56977c52eaefc763525514e8331bb244939f1b5d95d806d50383e79ef",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 30,
+    "key": "Zabuza_Skill01_05",
+    "file": "assets/senki/26000_30.png",
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08068740367889404,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3377,1841},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "73ce41384945722ad5bae8bf6f1b360056d402434aec6498a33ca744dec6ac78",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 31,
+    "key": "Zabuza_Skill01_06",
+    "file": "assets/senki/26000_31.png",
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07699821144342422,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,1967},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "d4f28cb44ff2a2881ce5f795c17dcda21d9e6477e045e76bf8d3ed00b0aa23dc",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 32,
+    "key": "Zabuza_Skill01_07",
+    "file": "assets/senki/26000_32.png",
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04820480942726135,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3377,1967},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "bf3c87760e8977ac57bf8cacffc6c96993caa2123e01407e45a1a168aef9b4f6",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 33,
+    "key": "Zabuza_Skill01_08",
+    "file": "assets/senki/26000_33.png",
+    "axis": [
+      87,
+      101
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08138103038072586,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{3235,2093},{140,124}}",
+    "source_offset": "{-5,-29}",
+    "source_rotated": false,
+    "rgba_sha256": "5e34e98619c59b7be72bc5ec8b19e4132b83c73fb0bc0b996fac189b5705db1b",
+    "eye_pixels_recolored": 2,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 34,
+    "key": "Zabuza_Skill04_01",
+    "file": "assets/senki/26000_34.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 9.745161514729261e-05,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,1},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "6d6d68dc615748135793e0fb5b2fbc5818d1c03dac60b28f1cd8f2e78c62de41",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 35,
+    "key": "Zabuza_Skill04_02",
+    "file": "assets/senki/26000_35.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 9.004073945106938e-05,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,499},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "22afd88fccc6d1f7fdcf1b299ca697715f52e99553a580617daf870dcbae44ee",
+    "eye_pixels_recolored": 1,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 36,
+    "key": "Zabuza_Skill04_03",
+    "file": "assets/senki/26000_36.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013214586302638054,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{513,1},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "944c5ddc683edb1b80408a557ea56eeb37f78539df9e4861843f8cf3f63ef92c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 37,
+    "key": "Zabuza_Skill04_04",
+    "file": "assets/senki/26000_37.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013797581195831299,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{513,499},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "51185b38800b3d80926b41960ae268d30452e4c627095f75423dc64cc63c0c89",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 38,
+    "key": "Zabuza_Skill04_05",
+    "file": "assets/senki/26000_38.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013220428489148617,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,997},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "ed05717b062c170a8a83d614ca2df446534481dd4fca0036bb9ef513b6d7dba9",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 39,
+    "key": "Zabuza_Skill04_06",
+    "file": "assets/senki/26000_39.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013242430053651333,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{513,997},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "a197ff66173fad43e7937bd8f9ef8c15d18ebaccec8211c3b442cdc66b5485dd",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 40,
+    "key": "Zabuza_Skill04_07",
+    "file": "assets/senki/26000_40.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013023905456066132,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1025,1},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "f82d8bfc53c3d78b5b6e89cc43b471438b054b353cc36c6d659992358e3f80f9",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 41,
+    "key": "Zabuza_Skill04_08",
+    "file": "assets/senki/26000_41.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015054240822792053,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1025,499},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "650e8b6a0bf77b89427c29f1bdae613448c3490dcfaba1ae9268b927a7c62303",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 42,
+    "key": "Zabuza_Skill04_09",
+    "file": "assets/senki/26000_42.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013392552733421326,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1025,997},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "3fed273ed868c0b873ed9a2a8b28f639399977e7d2af4a6a52d4da33200850dc",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 43,
+    "key": "Zabuza_Skill04_10",
+    "file": "assets/senki/26000_43.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.007563882041722536,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,1495},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "995f474810d9ed380f57634303c0c839f0a2af5372c865b99fb1e53d934439a5",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 44,
+    "key": "Zabuza_Skill04_11",
+    "file": "assets/senki/26000_44.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0066694216802716255,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{513,1495},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "b16f94a794069946e7ae43e6abc03fcffeac2a8030ba77ebbed5d4fbf06fb20b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 45,
+    "key": "Zabuza_Skill04_12",
+    "file": "assets/senki/26000_45.png",
+    "axis": [
+      123,
+      355
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.024473892524838448,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1025,1495},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "cc7b85b1967da11635604ad0b3a1557a89b46ba27d187132d3eaa72c77b19b0f",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 46,
+    "key": "Zabuza_Skill04_13",
+    "file": "assets/senki/26000_46.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.016444727778434753,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1537,1},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "74a6ff940deea29481468f3a2198f650ca7cf46a71909d5f0d8b808847382fb0",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 47,
+    "key": "Zabuza_Skill04_14",
+    "file": "assets/senki/26000_47.png",
+    "axis": [
+      126,
+      380
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.040246330201625824,
+      "original_sprite": [
+        0,
+        56
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1537,499},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "555772fe3102226534760b395b1311ee1dad7fbc9a55a6c5671902b2ecf8cfae",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 48,
+    "key": "Zabuza_Skill04_15",
+    "file": "assets/senki/26000_48.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03131873905658722,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1537,997},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "1531bb57519e8f2f4086c0a272475b8b0e0f338fbbf3178e3f6bcf461992aa19",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 49,
+    "key": "Zabuza_Skill04_16",
+    "file": "assets/senki/26000_49.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.023631898686289787,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1537,1495},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "12251971906ed0aa9ae07b6710942edebb92c7e2b0b7ae15ac3fd44e37848cd7",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 50,
+    "key": "Zabuza_Skill04_17",
+    "file": "assets/senki/26000_50.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.006709973327815533,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1,1993},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "bbf445792e1e1edf72e1290443cefd9a4c76bdea080c25413a995689dc388153",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 51,
+    "key": "Zabuza_Skill04_18",
+    "file": "assets/senki/26000_51.png",
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.007642236538231373,
+      "original_sprite": [
+        0,
+        50
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{513,1993},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "00db8787240f28fc2b5082a5df4547d0c48ef9f63b8c9d9b45a86f9a026bcd48",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 52,
+    "key": "Zabuza_Skill04_19",
+    "file": "assets/senki/26000_52.png",
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0066694216802716255,
+      "original_sprite": [
+        0,
+        49
+      ]
+    },
+    "plist": "source_material/Hidari_full_original/Hidari/Hidari Rep Zabuza By Vaydra/Sprite/Zabuza/Zabuza.plist",
+    "rectangle": "{{1025,1993},{510,496}}",
+    "source_offset": "{140,-107}",
+    "source_rotated": false,
+    "rgba_sha256": "a048223ff9d604fb9eb9c992dc4a1463b49af883c716e5962a1961f64699142b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  }
+]

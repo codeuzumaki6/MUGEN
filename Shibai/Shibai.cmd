@@ -599,6 +599,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,180,300)
 triggerall=NumHelper(9600)>0
 trigger1=P2BodyDist X>90
+triggerall=P2MoveType!=H
 value=1211
 
 [State -1, CPU claw approach from a distance]
@@ -610,6 +611,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,360,600)
 triggerall=NumHelper(9600)=0
 trigger1=P2BodyDist X>150
+triggerall=P2MoveType!=H
 value=1210
 
 [State -1, CPU legal technique]
@@ -621,6 +623,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,1800,3000)
 trigger1=P2BodyDist X<200
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=3000
 
 [State -1, CPU legal technique]
@@ -632,6 +635,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,330,550)
 trigger1=P2BodyDist X<240
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1040
 
 [State -1, CPU legal technique]
@@ -643,6 +647,7 @@ triggerall=StateType!=A
 triggerall=Power>=IfElse(Var(40)>0,180,300)
 trigger1=P2BodyDist X<180
 trigger1=Random<8+AILevel*2
+triggerall=P2MoveType!=H
 value=1000
 
 [State -1, CPU wind normal]
@@ -652,6 +657,7 @@ triggerall=RoundState=2
 triggerall=ctrl
 triggerall=StateType!=A
 trigger1=P2BodyDist X<150
+triggerall=P2MoveType!=H
 value=200
 
 [State -1, CPU approach]

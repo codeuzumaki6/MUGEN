@@ -1,0 +1,736 @@
+{
+  "37858ce599659ded40144ebdc31701f5992a8e86bea0ee4eec10daf706839444:Zabuza_Skill01_09": {
+    "axis": [
+      111,
+      217
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03822801262140274,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "642aa2ccf8b818b951d6dcf430b970aeea38e5b3dd2112237b2356b3cb988192:Zabuza_Skill01_10": {
+    "axis": [
+      111,
+      217
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03822796046733856,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "8a5b26c1fb1ab8b3637e6ca8c8a83fca6af0e01cad077145954e50071ed7029b:Zabuza_Skill01_11": {
+    "axis": [
+      106,
+      225
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07415162026882172,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "edb687964669196d7d1ebac64c7c1e517065230b8f909b4130219c55c7b716c5:Zabuza_Skill01_12": {
+    "axis": [
+      106,
+      226
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0939842015504837,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "544a937f57c406ea29bf477642989af8a170f90ec2d503660fd0b4a874acf295:Zabuza_Skill01_13": {
+    "axis": [
+      106,
+      227
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10458977520465851,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "24f83cb1f4091ef2f5415e84dbf59e3e6fc6e6b993a097c4ed88ab57732b2c11:Zabuza_Skill01_14": {
+    "axis": [
+      106,
+      225
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08319593220949173,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "081df34a6b0bdae0ec43cba5d690755daacbeb054bd1361112417ba43236ac90:Zabuza_Skill01_15": {
+    "axis": [
+      110,
+      221
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.05986344441771507,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "d96b1853e174d77835296fb63553d57d2fae1bcbfbce7335e0dc9aec749595b9:Zabuza_Skill02_001": {
+    "axis": [
+      64,
+      129
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0643574595451355,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "66aade82ea10090c38b0651a3aeca58c446418bdc0c2828a2f4101d1f848d005:Zabuza_Skill02_01": {
+    "axis": [
+      116,
+      139
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00015976645227055997,
+      "original_sprite": [
+        0,
+        51
+      ]
+    }
+  },
+  "0b344e1787190989f330d367239cdb02c15181ae8b869876767f9ceb508d3fb4:Zabuza_Skill02_002": {
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.09143869578838348,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "47318a256a67fda961161c3cbafb04f5bfc43107d32cb280be121878315fec9a:Zabuza_Skill02_02": {
+    "axis": [
+      116,
+      139
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00016354698163922876,
+      "original_sprite": [
+        0,
+        52
+      ]
+    }
+  },
+  "243bf9fa23df908576bf9214a912bb69b1842b0dffb3acbcd0a34f6a165c53b4:Zabuza_Skill02_003": {
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08345453441143036,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "c0e053b31a00f67b504d4ce07ec48c56b4139f4e29ff67645f736671bbe41387:Zabuza_Skill02_03": {
+    "axis": [
+      122,
+      149
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08290155977010727,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "fe058faf831b8990e0f806bea2d33077c3fe6b9026b40f4a61d6ce646b333a15:Zabuza_Skill02_004": {
+    "axis": [
+      66,
+      132
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08812633156776428,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "241bf707829f07445036db71385558a90d3b2b8e4d3bcc7bb72faadce2cb76f3:Zabuza_Skill02_04": {
+    "axis": [
+      92,
+      153
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.1076539009809494,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "f93d73e5f1cb69dfc0cdbbe73c8307d8fcabf4b9423cb48ac057c70350f3362a:Zabuza_Skill02_005": {
+    "axis": [
+      64,
+      131
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06815076619386673,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "6d8f398321b41b13e2ef24a7347603c1df1661c9b4290f8ab2c4aee0c9ada584:Zabuza_Skill02_05": {
+    "axis": [
+      85,
+      154
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.1571940928697586,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "19f3ca2b0b2e180235e6bc73d7774b325e771b60a0de9f72d944e47dd1918675:Zabuza_Skill03_01": {
+    "axis": [
+      76,
+      98
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001542692625662312,
+      "original_sprite": [
+        0,
+        34
+      ]
+    }
+  },
+  "0c7892a53ab0e42fe1df6f174fbeb043246e0935773ad9639f6ef214b0dc0e52:Zabuza_Skill03_02": {
+    "axis": [
+      61,
+      98
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001840328477555886,
+      "original_sprite": [
+        0,
+        35
+      ]
+    }
+  },
+  "948a1caad96ec17dd6bbbc596582228993e582eb511a79e239da4bd50f75bfe9:Zabuza_Skill03_03": {
+    "axis": [
+      72,
+      97
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        36
+      ]
+    }
+  },
+  "2902e2f72fa2a35f09865061770cbba015d4296f3c575faf224ec28485263be7:Zabuza_Skill03_04": {
+    "axis": [
+      265,
+      263
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.19562362134456635
+    }
+  },
+  "b1328c07cb6a2ff1e9635ec037b93a6e5be31be3807b79d2987c20805a812459:Zabuza_Skill03_05": {
+    "axis": [
+      265,
+      266
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.2306501418352127
+    }
+  },
+  "50d20af63c4a09ce769b20dd32199ce75c9d2edfdda15ae6160ae7bc13c2177d:Zabuza_Skill03_06": {
+    "axis": [
+      268,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.15433265268802643,
+      "original_sprite": [
+        0,
+        37
+      ]
+    }
+  },
+  "87dc9ca8eeb5a06fbde7188c9611dc822b269255f8a7fa189abab2c1115c0d7a:Zabuza_Skill03_07": {
+    "axis": [
+      265,
+      183
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.020583434030413628,
+      "original_sprite": [
+        0,
+        38
+      ]
+    }
+  },
+  "66776349f925c0da10b727690e91439936ced561f054812142e402784db62a36:Zabuza_Skill03_08": {
+    "axis": [
+      75,
+      101
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": -3.7716002765364465e-08,
+      "original_sprite": [
+        0,
+        38
+      ]
+    }
+  },
+  "6c8457c4e9bb3d240a5e89761e6e3bc60d44357e3e90dbb92efdd7a460814928:Zabuza_Skill03_09": {
+    "axis": [
+      67,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00025569822173565626,
+      "original_sprite": [
+        0,
+        39
+      ]
+    }
+  },
+  "c397e8041bbe067dc11b87024d1a10ed38e87397e116e771963c6316b0b38b37:Zabuza_Skill01_01": {
+    "axis": [
+      78,
+      96
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00011195464321644977,
+      "original_sprite": [
+        0,
+        53
+      ]
+    }
+  },
+  "f1a8910c6931247d7ab7116761f203fea11c9436b1ca4d8f43ad3ec5a145bc63:Zabuza_Skill01_02": {
+    "axis": [
+      79,
+      74
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00020753264834638685,
+      "original_sprite": [
+        0,
+        55
+      ]
+    }
+  },
+  "89b7a3c6b4a94a047436b8266e2890ed73c1c4547b9e1ab413671d9d20c2ba7c:Zabuza_Skill01_03": {
+    "axis": [
+      81,
+      71
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00042542285518720746,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "b5f1d8c56977c52eaefc763525514e8331bb244939f1b5d95d806d50383e79ef:Zabuza_Skill01_04": {
+    "axis": [
+      81,
+      93
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.001715270453132689,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "73ce41384945722ad5bae8bf6f1b360056d402434aec6498a33ca744dec6ac78:Zabuza_Skill01_05": {
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08068740367889404,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "d4f28cb44ff2a2881ce5f795c17dcda21d9e6477e045e76bf8d3ed00b0aa23dc:Zabuza_Skill01_06": {
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07699821144342422,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "10d049f62061953fda525b32f15ad46e13199d626f3fa1e6692305536cac422b:Zabuza_Skill01_07": {
+    "axis": [
+      82,
+      103
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04820480942726135,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "199c0bb30fdaee12003a780003fe2f2bdfe73addd6571b50090a9daac9c152dd:Zabuza_Skill01_08": {
+    "axis": [
+      87,
+      101
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08138103038072586,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "6d6d68dc615748135793e0fb5b2fbc5818d1c03dac60b28f1cd8f2e78c62de41:Zabuza_Skill04_01": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 9.745161514729261e-05,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "89987dac3186a1aed7d700772bb3306f2c3dd20084b6ca69fe5067e35c8cf7c8:Zabuza_Skill04_02": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 9.004073945106938e-05,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "944c5ddc683edb1b80408a557ea56eeb37f78539df9e4861843f8cf3f63ef92c:Zabuza_Skill04_03": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013214586302638054,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "51185b38800b3d80926b41960ae268d30452e4c627095f75423dc64cc63c0c89:Zabuza_Skill04_04": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013797581195831299,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "ed05717b062c170a8a83d614ca2df446534481dd4fca0036bb9ef513b6d7dba9:Zabuza_Skill04_05": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013220428489148617,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "a197ff66173fad43e7937bd8f9ef8c15d18ebaccec8211c3b442cdc66b5485dd:Zabuza_Skill04_06": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013242430053651333,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "f82d8bfc53c3d78b5b6e89cc43b471438b054b353cc36c6d659992358e3f80f9:Zabuza_Skill04_07": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013023905456066132,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "650e8b6a0bf77b89427c29f1bdae613448c3490dcfaba1ae9268b927a7c62303:Zabuza_Skill04_08": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015054240822792053,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "3fed273ed868c0b873ed9a2a8b28f639399977e7d2af4a6a52d4da33200850dc:Zabuza_Skill04_09": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013392552733421326,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "995f474810d9ed380f57634303c0c839f0a2af5372c865b99fb1e53d934439a5:Zabuza_Skill04_10": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.007563882041722536,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "b16f94a794069946e7ae43e6abc03fcffeac2a8030ba77ebbed5d4fbf06fb20b:Zabuza_Skill04_11": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0066694216802716255,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "cc7b85b1967da11635604ad0b3a1557a89b46ba27d187132d3eaa72c77b19b0f:Zabuza_Skill04_12": {
+    "axis": [
+      123,
+      355
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.024473892524838448,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "74a6ff940deea29481468f3a2198f650ca7cf46a71909d5f0d8b808847382fb0:Zabuza_Skill04_13": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.016444727778434753,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "555772fe3102226534760b395b1311ee1dad7fbc9a55a6c5671902b2ecf8cfae:Zabuza_Skill04_14": {
+    "axis": [
+      126,
+      380
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.040246330201625824,
+      "original_sprite": [
+        0,
+        56
+      ]
+    }
+  },
+  "1531bb57519e8f2f4086c0a272475b8b0e0f338fbbf3178e3f6bcf461992aa19:Zabuza_Skill04_15": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03131873905658722,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "12251971906ed0aa9ae07b6710942edebb92c7e2b0b7ae15ac3fd44e37848cd7:Zabuza_Skill04_16": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.023631898686289787,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "bbf445792e1e1edf72e1290443cefd9a4c76bdea080c25413a995689dc388153:Zabuza_Skill04_17": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.006709973327815533,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  },
+  "00db8787240f28fc2b5082a5df4547d0c48ef9f63b8c9d9b45a86f9a026bcd48:Zabuza_Skill04_18": {
+    "axis": [
+      121,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.007642236538231373,
+      "original_sprite": [
+        0,
+        50
+      ]
+    }
+  },
+  "a048223ff9d604fb9eb9c992dc4a1463b49af883c716e5962a1961f64699142b:Zabuza_Skill04_19": {
+    "axis": [
+      119,
+      389
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0066694216802716255,
+      "original_sprite": [
+        0,
+        49
+      ]
+    }
+  }
+}

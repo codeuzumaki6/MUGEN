@@ -85,3 +85,6 @@ Salta y pulsa de nuevo X, Y o B al acertar: puedes repetir o mezclar los botones
 ## Acabado visual y sonoro
 
 LB carga con poses y motores propios; al soltar, el motor desacelera. La carrera mueve la bufanda, y frenar o aterrizar muestra apoyo de los pies y polvo. Los cortes añaden estelas y chispas propias; los remates confirmados tienen sonido y una pausa más marcada. La victoria recoge y sacude las sierras antes de bajar los motores. Se conservan los comandos de esta tabla, incluidos los combos aéreos, abajo+RB/RT, despertar y A.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Shino</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">70</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>Shino_Idle_01</f>
+        <f>Shino_Idle_02</f>
+        <f>Shino_Idle_03</f>
+        <f>Shino_Idle_02</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>Shino_Walk_01</f>
+      <e type="setDelay">4</e>
+        <f>Shino_Walk_02</f>
+      <e type="setDelay">4</e>
+        <f>Shino_Walk_03</f>
+        <e type="setSound">Audio/Effect/Fx_Walk.ogg</e>
+      <e type="setDelay">4</e>
+        <f>Shino_Walk_04</f>
+      <e type="setDelay">4</e>
+        <f>Shino_Walk_05</f>
+      <e type="setDelay">4</e>
+        <f>Shino_Walk_06</f>
+        <e type="setSound">Audio/Effect/Fx_Walk.ogg</e>
+      <e type="setDelay">4</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>Shino_Hurt_03</f>
+        <f>Shino_Hurt_01</f>
+        <f>Shino_Hurt_02</f>
+      <e type="setCommand">setInvincible</e>
+        <f>Shino_Hurt_02</f>
+        <f>Shino_Hurt_02</f>
+        <e type="setSound">Audio/RyuShinju/hurt.ogg</e>
+      <e type="setCommand">reInvincible</e>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+         <f>Shino_AirHurt_01</f>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+          <f>Shino_KnockDown_01</f>
+          <e type="setDelay">10</e>
+          <f>Shino_KnockDown_02</f>
+          <e type="setDelay">50</e>
+          <f>Shino_KnockDown_03</f>
+          <e type="setDelay">10</e>
+          <f>Shino_KnockDown_04</f>
+          <e type="setDelay">20</e>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+          <f>Shino_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Shino_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Shino_Float_01</f>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+     <!--   <e type="setSkillEffect">kazi</e> -->
+          <f>Shino_KnockDown_01</f>
+          <f>Shino_KnockDown_02</f>
+          <e type="setSound">Audio/RyuShinju/dead.ogg</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Shino_NAttack_01</f>
+        <f>Shino_NAttack_02</f>
+        <f>Shino_NAttack_03</f>
+        <f>Shino_NAttack_04</f>
+        <e type="setSound">Audio/Effect/HitDMG.mp3</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Shino_NAttack_05</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_06</f>
+        <f>Shino_NAttack_07</f>
+        
+        
+        <f>Shino_NAttack_08</f>
+        <f>Shino_NAttack_09</f>
+        <f>Shino_NAttack_10</f>
+        <f>Shino_NAttack_11</f>
+        <e type="setSound">Audio/Effect/HitDMG2.mp3</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Shino_NAttack_12</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_13</f>
+        <f>Shino_NAttack_14</f>
+        
+        
+        
+ --ex       
+        <f>Shino_NAttack_15</f>
+        <f>Shino_NAttack_16</f>
+        <f>Shino_NAttack_17</f>
+        <f>Shino_NAttack_18</f>
+        <e type="setSound">Audio/Effect/BladeDamageMD02.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_19</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_20</f>
+        <f>Shino_NAttack_21</f>
+        <e type="setSound">Audio/Effect/BladeDamageMD02.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_22</f>
+        <f>Shino_NAttack_23</f>
+        <f>Shino_NAttack_24</f>
+        <e type="setSound">Audio/Effect/BladeDamageMD02.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_25</f>
+        <f>Shino_NAttack_26</f>
+        <f>Shino_NAttack_27</f>
+        <e type="setSound">Audio/Effect/BladeDamageMD02.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_NAttack_28</f>
+        <f>Shino_NAttack_29</f>
+        <f>Shino_NAttack_30</f>
+        <f>Shino_NAttack_31</f>
+      </frame>
+    </action>
+
+   <action name="skill01">
+     <data>
+	    <p type="attackType">cBuff</p>
+      <p type="attackValue">0</p>
+      <p type="attackRangeX">0</p>
+      <p type="attackRangeY">6</p>
+      <p type="cd">15</p>
+     </data>
+     <frame>
+       <e type="setSound">Audio/RyuShinju/S01_1.ogg</e>
+        <f>Shino_Skill01_01</f>
+       <e type="setSound">Audio/Effect/explosion (1).mp3</e>
+        <f>Shino_Skill01_02</f>
+        <f>Shino_Skill01_03</f>
+        <f>Shino_Skill01_04</f>
+        <f>Shino_Skill01_05</f>
+        <f>Shino_Skill01_06</f>
+          <e type="setBuff">17</e>
+     </frame>
+   </action>
+
+    <action name="skill02">
+        <data>
+		  <p type="attackType">oAttack</p>
+       <p type="attackValue">420</p>
+       <p type="attackRangeX">16</p>
+       <p type="attackRangeY">42</p>
+       <p type="cd">15</p>
+        </data>
+        <frame>
+       <e type="setSound">Audio/RyuShinju/S02.mp3</e>
+        <f>Shino_Skill02_01</f>
+        <f>Shino_Skill02_02</f>
+        <f>Shino_Skill02_03</f>
+        <e type="setSound">Audio/Effect/elect2.ogg</e>
+        <f>Shino_Skill02_04</f>
+        <e type="setSound">Audio/Effect/elect2.ogg</e>
+        <f>Shino_Skill02_05</f>
+        <f>Shino_Skill02_06</f>
+        <f>Shino_Skill02_07</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_Skill02_08</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_Skill02_08</f>
+        <f>Shino_Skill02_09</f>
+        <e type="setSound">Audio/Effect/raitonsfx.mp3</e>
+        <e type="setAttackBox">b_hit</e>
+        <f>Shino_Skill02_10</f>
+        <e type="setSound">Audio/Effect/raitonsfx.mp3</e>
+        <f>Shino_Skill02_11</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>Shino_Skill02_12</f>
+        <f>Shino_Skill02_13</f>
+        
+        
+        
+        
+       
+        </frame>
+    </action>
+
+    <action name="skill03">
+        <data>
+			<p type="attackType">cAttack</p>
+            <p type="attackValue">150</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">30</p>
+            <p type="cd">20</p>
+        </data>
+        <frame>
+       <e type="setSound">Audio/RyuShinju/S03.mp3</e>
+        <f>Shino_Skill03_01</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Shino_Skill03_02</f>
+        <f>Shino_Skill03_03</f>
+        <f>Shino_Skill03_04</f>
+        <f>Shino_Skill03_05</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_Skill03_06</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Shino_Skill03_07</f>
+        <e type="setSound">Audio/Effect/water.ogg</e>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <f>Shino_Skill03_08</f>
+        <f>Shino_Skill03_09</f>
+        <f>Shino_Skill03_10</f>
+        <f>Shino_Skill03_11</f>
+        <f>Shino_Skill03_12</f>
+        <f>Shino_Skill03_13</f>
+        <e type="setSound">Audio/Effect/BladeB.ogg</e>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setAttackBox">c_hit</e>
+        <f>Shino_Skill03_14</f>
+        <f>Shino_Skill03_15</f>
+        <f>Shino_Skill03_16</f>
+        <f>Shino_Skill03_17</f>
+        <f>Shino_Skill03_18</f>
+        <f>Shino_Skill03_19</f>
+        <f>Shino_Skill03_20</f>
+        
+        
+        
+        <f>Shino_Skill03_2_01</f>
+        <e type="setSound">Audio/Shino/listrk.ogg</e>
+        <f>Shino_Skill03_2_02</f>
+       <e type="setSound">Audio/RyuShinju/S03_1.mp3</e>
+        <f>Shino_Skill03_2_03</f>
+      <!--  <f>Shino_Skill03_2_03Ex</f>  -->
+        <e type="setMon">Bebegig</e>
+        <e type="setSound">Audio/Shino/listrk.ogg</e>        
+      <e type="setDelay">20</e>
+
+        
+        </frame>
+    </action>
+
+   <action name="skill04">
+     <data>
+       <p type="attackType">cAttack</p>
+       <p type="attackValue">300</p>
+       <p type="attackRangeX">40</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+     </data>
+     <frame>
+       <e type="setSound">Audio/RyuShinju/S04.mp3</e>
+        <f>Shino_Skill04_01</f>
+        <e type="setSound">Audio/Effect/winding.ogg</e>
+        <f>Shino_Skill04_02</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_03</f>
+        <f>Shino_Skill04_04</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_05</f>
+        <e type="setSound">Audio/Effect/winding.ogg</e>
+        <f>Shino_Skill04_06</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_07</f>
+        <f>Shino_Skill04_08</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_09</f>
+        <e type="setSound">Audio/Effect/winding.ogg</e>
+        <f>Shino_Skill04_10</f>
+        
+        
+        
+        <f>Shino_Skill04_11</f>
+        <e type="setSound">Audio/Effect/BladeC.ogg</e>
+        <e type="setAttackBox">b_hit</e>
+        <f>Shino_Skill04_12</f>
+        <f>Shino_Skill04_13</f>
+        <e type="setSound">Audio/Effect/BladeC.ogg</e>
+        <e type="setAttackBox">b_hit</e>
+        <f>Shino_Skill04_14</f>
+        <f>Shino_Skill04_15</f>
+        <e type="setAttackBox">b_hit</e>
+        
+        
+        
+        
+      <e type="setCommand">setInvincible</e>
+        <f>Shino_Skill04_16</f>
+        <e type="setSound">Audio/Effect/CyborgTranshand.mp3</e>
+        <f>Shino_Skill04_17</f>
+       <e type="setSound">Audio/RyuShinju/S04_1.mp3</e>
+        <f>Shino_Skill04_18</f>
+        <f>Shino_Skill04_19</f>
+        <f>Shino_Skill04_20</f>
+        <f>Shino_Skill04_21</f>
+        <f>Shino_Skill04_22</f>
+      <e type="setCommand">reInvincible</e>
+        <f>Shino_Skill04_23</f>
+        <f>Shino_Skill04_24</f>
+        <e type="setSound">Audio/Effect/hao_chg2.ogg</e>
+        <f>Shino_Skill04_25</f>
+        <f>Shino_Skill04_26</f>
+        <e type="setSound">Audio/Effect/break_sound3.ogg</e>
+        <e type="setAttackBox">f_hit</e>
+        <f>Shino_Skill04_27</f>
+        <f>Shino_Skill04_28</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Shino_Skill04_29</f>
+        <f>Shino_Skill04_30</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_31</f>
+        <f>Shino_Skill04_32</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_33</f>
+        <f>Shino_Skill04_34</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Shino_Skill04_35</f>
+        <f>Shino_Skill04_36</f>
+     </frame>
+   </action>
+
+    <action name="skill05">
+
+        <data>
+        <p type="attackType">aAttack</p>
+        <p type="attackValue">240</p>
+        <p type="attackRangeX">20</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">1</p>
+        </data>
+         <frame>
+
+--punch
+      <e type="setCharge">180</e>
+      <f>Shino_Skill05_01</f>
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+      <e type="setAttackBox">f_hit</e>
+      <f>Shino_Skill05_02</f>
+      <f>Shino_Skill05_03</f>
+      <f>Shino_Skill05_04</f>
+      <f>Shino_Skill05_05</f>
+      
+      
+      <e type="setCommand">setInvincible</e>
+--fly
+
+      <e type="setSound">Audio/Effect/jump.ogg</e>
+      <f>Shino_Skill05_06</f>
+      <f>Shino_Skill05_07</f>
+      <e type="setAttackBox">b_hit</e>
+      <f>Shino_Skill05_08</f>
+      <f>Shino_Skill05_09</f>
+      <f>Shino_Skill05_10</f>
+      <f>Shino_Skill05_11</f>
+      
+      
+ --flyup     
+ 
+      <f>Shino_Skill05_12</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_13</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_14</f>
+      <e type="setAttackBox">b_hit</e>
+      <e type="setSound">Audio/Effect/01.ogg</e>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_12</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_13</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_14</f>
+      <e type="setSound">Audio/Effect/01.ogg</e>
+      <e type="setDelay">5</e>
+ 
+      <e type="setOugis">10</e>
+      
+      
+      
+      <f>Shino_Skill05_12</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_13</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_14</f>
+      <e type="setSound">Audio/Effect/01.ogg</e>
+      <e type="setAttackBox">b_hit</e>
+      <e type="setDelay">5</e>
+       <e type="setSound">Audio/RyuShinju/S05_1.mp3</e>
+      <f>Shino_Skill05_12</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_13</f>
+      <e type="setDelay">5</e>
+      <f>Shino_Skill05_14</f>
+      <e type="setSound">Audio/Effect/01.ogg</e>
+      <e type="setDelay">5</e>
+
+      <f>Shino_Skill05_12</f>
+ --bulu
+ --9x
+
+       <e type="setCharge">390</e>
+      <f>Shino_Skill05_15</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_16</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_17</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      
+      <f>Shino_Skill05_15</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_16</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_17</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      
+      <f>Shino_Skill05_15</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_16</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Shino_Skill05_17</f>
+      <e type="setSound">Audio/Effect/BladeC.ogg</e>
+      <e type="setAttackBox">b_hit</e>
+      
+      
+      
+      
+      
+      
+ 
+ 
+--Slash
+--4x
+      <f>Shino_Skill05_18</f>
+      <f>Shino_Skill05_19</f>
+      <e type="setDelay">20</e>
+      <e type="setChargeB">180</e>
+                
+      <f>Shino_Skill05_20</f>
+      <e type="setAttackBox">b_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">1</e>
+      <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+      <f>Shino_Skill05_21</f>  
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_22</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_23</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_24</f>
+      <e type="setDelay">1</e>
+      
+      
+      
+--slash2      
+--4x
+      <f>Shino_Skill05_25</f>
+      <e type="setDelay">20</e>
+      <f>Shino_Skill05_26</f>
+      <e type="setChargeB">180</e>
+                
+      <f>Shino_Skill05_27</f>
+      <e type="setAttackBox">b_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">1</e>
+      <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+      <f>Shino_Skill05_28</f>        
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_29</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_30</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_31</f>
+      <e type="setDelay">1</e>
+
+      
+      <f>Shino_Skill05_32</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_33</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_34</f>
+      <e type="setDelay">1</e>
+      
+      
+ --=20     
+      
+      
+      
+--blast
+
+      <f>Shino_Skill05_35</f>
+        <e type="setSound">Audio/Effect/m_exp.ogg</e>
+      <e type="setAttackBox">f_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setAttackBox">c_hit</e>
+      
+      
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      <e type="setAttackBox">bl_hit</e>
+      
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_36</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_37</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_38</f>
+      <e type="setAttackBox">ac_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_39</f>
+      <e type="setAttackBox">ac_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_40</f>
+      <e type="setAttackBox">ac_hit</e>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_41</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_42</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_43</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_44</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_45</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_46</f>
+      <e type="setDelay">1</e>
+      <f>Shino_Skill05_47</f>
+      <e type="setDelay">1</e>
+ --20x
+ --T=40
+      
+      <e type="setCommand">reInvincible</e>
+
+      </frame>
+
+    </action>
+
+    <action name="skill06">
+        <frame></frame>
+    </action>
+    <action name="skill07">
+        <frame></frame>
+    </action>
+    <action name="skill08">
+        <frame></frame>
+    </action>
+    <action name="skill09">
+        <frame></frame>
+    </action>
+    <action name="skill10">
+        <data>
+            <p type="attackType">Summon</p>
+            <p type="attackValue">200</p>
+            <p type="attackRangeX">16</p>
+            <p type="attackRangeY">32</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+
+        <f>Shino_Skill01_Blt_01</f>
+        <f>Shino_Skill01_Blt_02</f>
+<e type="setSound">Audio/Effect/Blade00.mp3</e>
+        <f>Shino_Skill01_Blt_03</f>
+        <f>Shino_Skill01_Blt_03</f>
+      <e type="setSound">Audio/Effect/shuriken.mp3</e>
+        <e type="setBullet">PakuBesi</e>
+        
+        
+        
+        </frame>
+    </action>
+    <action name="skill11">
+        <data>
+            <p type="attackType">aAttack</p>
+            <p type="attackValue">70</p>
+            <p type="attackRangeX">32</p>
+            <p type="attackRangeY">32</p>
+            <p type="cd">15</p>
+        </data>
+        <frame>
+            <f>Shino_Skill11_001</f>
+            <e type="setAttackBox">s_hit</e>
+            <f>Shino_Skill11_002</f>
+            <e type="setAttackBox">s_hit</e>
+            <f>Shino_Skill11_003</f>
+            <e type="setAttackBox">s_hit</e>
+            <f>Shino_Skill11_004</f>
+            <e type="setAttackBox">s_hit</e>
+            <f>Shino_Skill11_005</f>
+            <e type="setAttackBox">s_hit</e>
+        </frame>
+
+    </action>
+    <action name="skill12">
+        <data>
+            <p type="attackType">nAttack</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">0</p>
+        </data>
+        <frame>
+          
+        </frame>
+    </action>
+</unit>

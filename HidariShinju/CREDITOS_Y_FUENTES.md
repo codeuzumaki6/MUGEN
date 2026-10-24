@@ -11,3 +11,6 @@
 El Susanoo generado de la primera versión deja de utilizarse en el SFF y las animaciones. Los sprites del Susanoo de esta revisión proceden exclusivamente del archivo aportado; no se redibujan ni se generan con IA.
 
 El repositorio conserva el ZIP fuente comprimido, hashes, cuadro de procedencia de cada sprite y las correspondencias de animaciones. El archivo SFF fuente de 51 MB se puede reconstruir automáticamente desde ese ZIP para desarrollar el personaje. El ZIP jugable no necesita esos materiales de desarrollo.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

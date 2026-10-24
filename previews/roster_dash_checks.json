@@ -1,0 +1,996 @@
+{
+  "Eida": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        106,
+        20
+      ],
+      "travel": 78.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 5.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        106,
+        20
+      ],
+      "travel": -78.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -5.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "PochitaTrueForm": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        106,
+        20
+      ],
+      "travel": 109.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        106,
+        20
+      ],
+      "travel": -109.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "Mamushi": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 102.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -102.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "Shibai": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "JuraShinju": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "MitsukiTBV": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "RyuShinju": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "HidariShinju": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ],
+  "MatsuriShinju": [
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": -85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": 110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": 1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "double",
+      "states": [
+        0,
+        100,
+        20
+      ],
+      "travel": -110.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "L",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": -3.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "double",
+      "states": [
+        0,
+        105,
+        20
+      ],
+      "travel": 85.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    },
+    {
+      "face": -1,
+      "direction": "R",
+      "kind": "single",
+      "states": [
+        0,
+        20
+      ],
+      "travel": 2.0,
+      "max_air_height": 0.0,
+      "minimum_power": 3000,
+      "passed": true
+    }
+  ]
+}

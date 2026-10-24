@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation>
+	<action value="Idle">
+		<date>
+			<dateName type="attackType">Kaiten</dateName>
+			<dateName type="attackValue">0</dateName>
+			<dateName type="attackRangeX">51</dateName>
+			<dateName type="attackRangeY">11</dateName>
+			<coldName type="coldDown">224</coldName>
+		</date>
+		<frame>     
+        <frameName>juraNol.png</frameName>
+		</frame>
+	</action>
+	<action value="Walk">
+		<frame>
+        <frameName>juraNol.png</frameName>
+		</frame>
+	</action>
+	<action value="Hurt">
+		<frame>
+		</frame>
+	</action>
+	<action value="AirHurt">
+		<frame>
+		</frame>
+	</action>
+	<action value="KnockDown">
+		<frame>
+		</frame>
+	</action>
+	<action value="Float">
+		<frame>
+		</frame>
+	</action>
+	<action value="Dead">
+		<frame>    
+        <frameName>juraNol.png</frameName>
+		</frame>
+	</action>
+	<action value="nAttack">
+		<date>
+			<dateName type="attackType">aAttack</dateName>
+			<dateName type="attackValue">1</dateName>
+			<dateName type="attackRangeX">0</dateName>
+			<dateName type="attackRangeY">350</dateName>
+			<coldName type="coldDown">0</coldName>
+		</date>
+		<frame>
+        <eventName type="setCommand">reTransport</eventName>
+        <frameName>SuperBomMon1_01.png</frameName>
+        
+        <frameName>SuperBomMon1_02.png</frameName>
+        <eventName type="setSound">Audio/Effect/BOOM.ogg</eventName>
+        
+        <frameName>SuperBomMon1_03.png</frameName>
+        
+        <frameName>SuperBomMon1_04.png</frameName>
+        
+        <frameName>SuperBomMon1_05.png</frameName>
+        
+        <frameName>SuperBomMon1_06.png</frameName>  
+        
+        <frameName>SuperBomMon1_07.png</frameName>
+        
+        <frameName>SuperBomMon1_08.png</frameName>
+        
+        <frameName>SuperBomMon1_09.png</frameName>
+        
+        <frameName>SuperBomMon1_10.png</frameName>
+        
+        <frameName>SuperBomMon1_11.png</frameName>
+        
+        <frameName>SuperBomMon1_12.png</frameName>
+        <eventName type="setSound">Audio/Effect/explosion1.mp3</eventName>
+        
+        <frameName>SuperBomMon1_13.png</frameName>
+        
+        <frameName>SuperBomMon1_14.png</frameName>
+        
+        <frameName>SuperBomMon1_15.png</frameName>
+        
+        <frameName>SuperBomMon1_11.png</frameName>  
+        
+        <frameName>SuperBomMon1_12.png</frameName>
+        
+        <frameName>SuperBomMon1_13.png</frameName>
+        
+        <frameName>SuperBomMon1_14.png</frameName>
+        
+        <frameName>SuperBomMon1_15.png</frameName>
+        
+			<eventName type="setDetonation">0</eventName>
+		</frame>
+	</action>
+</animation>

@@ -1,0 +1,527 @@
+[
+  {
+    "group": 26000,
+    "number": 0,
+    "key": "Orochimaru_Skill02_01",
+    "file": "assets/senki/26000_0.png",
+    "axis": [
+      29,
+      88
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.003912434447556734,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{75,1524},{50,98}}",
+    "source_offset": "{0,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "a9ae45f6dbd49c9ac39cb3abca2ef25de4d1d716b5ae51952da4a210cc9f8fb4",
+    "eye_pixels_recolored": 7,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 1,
+    "key": "Orochimaru_Skill02_02",
+    "file": "assets/senki/26000_1.png",
+    "axis": [
+      29,
+      88
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.003912434447556734,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{126,1524},{50,98}}",
+    "source_offset": "{0,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "e428665ab00822e7a42fc5daa8e401ba85083dbae9885f1406bc35e4520cbbe8",
+    "eye_pixels_recolored": 7,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 2,
+    "key": "Orochimaru_Skill02_03",
+    "file": "assets/senki/26000_2.png",
+    "axis": [
+      26,
+      88
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00030268263071775436,
+      "original_sprite": [
+        0,
+        22
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{228,1524},{50,98}}",
+    "source_offset": "{0,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "d839d040729fae0f9f2e909ab482e4ecb3c52c2667c17796207fd77d15159c03",
+    "eye_pixels_recolored": 7,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 3,
+    "key": "Orochimaru_NAttack_10",
+    "file": "assets/senki/26000_3.png",
+    "axis": [
+      30,
+      87
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00022740433632861823,
+      "original_sprite": [
+        0,
+        15
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1736,1449},{50,98}}",
+    "source_offset": "{0,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "cae175332e0d0f907434f35369b5f579beb4d91c8b749896460de683a8253231",
+    "eye_pixels_recolored": 4,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 4,
+    "key": "Orochimaru_NAttack_11",
+    "file": "assets/senki/26000_4.png",
+    "axis": [
+      28,
+      87
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.013538321480154991,
+      "original_sprite": [
+        0,
+        16
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1379,1548},{130,98}}",
+    "source_offset": "{30,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "acbb35fbe44c3c3a5936ed0c4bd07a6a98aeea7fcc9104e0f0acf15ed9844896",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 5,
+    "key": "Orochimaru_NAttack_12",
+    "file": "assets/senki/26000_5.png",
+    "axis": [
+      28,
+      87
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015082775615155697,
+      "original_sprite": [
+        0,
+        16
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1510,1548},{130,98}}",
+    "source_offset": "{30,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "83c429466acc31af6adf781b9757284f0aed421fbcf4ebf19c470a005a128767",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 6,
+    "key": "Orochimaru_NAttack_13",
+    "file": "assets/senki/26000_6.png",
+    "axis": [
+      28,
+      87
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.010447309352457523,
+      "original_sprite": [
+        0,
+        16
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1641,1548},{130,98}}",
+    "source_offset": "{30,-10}",
+    "source_rotated": false,
+    "rgba_sha256": "7aa84582c592ba5899e05114fc563523e9caafbcc80a9b5fa92dc7621288bb0b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 7,
+    "key": "Orochimaru_NAttack_14",
+    "file": "assets/senki/26000_7.png",
+    "axis": [
+      28,
+      73
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0,
+      "original_sprite": [
+        0,
+        16
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{0,1610},{84,74}}",
+    "source_offset": "{7,0}",
+    "source_rotated": false,
+    "rgba_sha256": "f6fc01858adccddfd22adf74efd5811163db2734b134181eb0c2a9b4e96b82c8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 0,
+    "key": "JuraExShot_05",
+    "file": "assets/senki/26001_0.png",
+    "axis": [
+      66,
+      89
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00022322274162434042,
+      "original_sprite": [
+        0,
+        33
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1857,1275},{130,130}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "42d61d90c80bfc5525f9b170298f3a256f974434db89d79eef5b1d8611c6a793",
+    "eye_pixels_recolored": 4,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 1,
+    "key": "JuraExChg_01",
+    "file": "assets/senki/26001_1.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.026271449401974678,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1576,1545},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "1ec24ea94cc673c63a5b57df1af6edf79ee745cc3fdeea5662122b6d285b187f",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 2,
+    "key": "JuraExChg_02",
+    "file": "assets/senki/26001_2.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.060279976576566696,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1727,1545},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "72d6abd3cc14b0129f899ec6d25eaec2b88851be9c694ad8ff6a8113bec1bcf2",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 3,
+    "key": "JuraExChg_03",
+    "file": "assets/senki/26001_3.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07490351051092148,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1562,1732},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "3871f89f81f2131aad55b503bf0386c8b7ecb9f4b3c12e4efe5154dac69d3898",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 4,
+    "key": "JuraExChg_04",
+    "file": "assets/senki/26001_4.png",
+    "axis": [
+      65,
+      145
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.1739683449268341
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1713,1732},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "2338aa0de534506088a999303283e756af90b56ba86fa2252aa6bcca0064365f",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 5,
+    "key": "JuraExChg_05",
+    "file": "assets/senki/26001_5.png",
+    "axis": [
+      65,
+      145
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.16996176540851593
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1562,1919},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "058c4035507382c563e691a57b5c4dd5eb784954fa8dc106b8e32ccfbf9bcadf",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 6,
+    "key": "JuraExChg_06",
+    "file": "assets/senki/26001_6.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.09345320612192154,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1713,1919},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "e4e6f86db428a72af7001fcd77fc2b6f38b452c6e8d1fcad6b03545d22f9771c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 7,
+    "key": "JuraExChg_07",
+    "file": "assets/senki/26001_7.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06667045503854752,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1562,2106},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "eb19cb28404a213ffecd817aef38a2396f97cc1e1578b99ea4d4d26dca92afe2",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26001,
+    "number": 8,
+    "key": "JuraExChg_08",
+    "file": "assets/senki/26001_8.png",
+    "axis": [
+      68,
+      145
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.022042082622647285,
+      "original_sprite": [
+        0,
+        0
+      ]
+    },
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Skill/Orochimaru_Skill.plist",
+    "rectangle": "{{1713,2106},{150,186}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false,
+    "rgba_sha256": "46d6d6efbdde519d749fe015f037eced8359ee12dd46009291a7d12bfa1acab4",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 8,
+    "key": "JuuraMokuton_01",
+    "file": "assets/senki/26000_8.png",
+    "axis": [
+      115,
+      146
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1322,855},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "5bf7b36ccaceb3c2e95705aae293a9986dfb94e5e0493fafaeb206d08a8c7a28",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 9,
+    "key": "JuuraMokuton_02",
+    "file": "assets/senki/26000_9.png",
+    "axis": [
+      115,
+      147
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1553,855},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "479e435cbf5db54e6c89192b5665fe29ff298a6155de4c5a74757b9c69a6c5e9",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 10,
+    "key": "JuuraMokuton_03",
+    "file": "assets/senki/26000_10.png",
+    "axis": [
+      115,
+      151
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{851,1140},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "fdb3905f1464533bb9a95d379d65e074287cb3a53bb955a7e3087c501d1fc1e8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 11,
+    "key": "JuuraMokuton_04",
+    "file": "assets/senki/26000_11.png",
+    "axis": [
+      115,
+      148
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1082,1140},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "807d8fa0e03d9380f14b469e8b98509010ebd65cb93c772c31a5f0f8a4ef72e7",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 12,
+    "key": "JuuraMokuton_05",
+    "file": "assets/senki/26000_12.png",
+    "axis": [
+      115,
+      146
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1322,1028},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "a5f15dc685201b6dd31e8cc9b0fb630f57f727839c2e7104b056a6979a845d2d",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 13,
+    "key": "JuuraMokuton_06",
+    "file": "assets/senki/26000_13.png",
+    "axis": [
+      115,
+      146
+    ],
+    "alignment": null,
+    "plist": "source_material/Jura_full_original/Sprite jura Shinju by Vaydra/Sprite jura Shinju by Vaydra/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1553,1028},{230,172}}",
+    "source_offset": "{20,-46}",
+    "source_rotated": false,
+    "rgba_sha256": "fb9a9d26a9e1428b646c30e26d3b8dfb9d3345a8ca4a9b4615a03adf138f0b38",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  }
+]

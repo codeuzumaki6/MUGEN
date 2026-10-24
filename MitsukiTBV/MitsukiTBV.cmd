@@ -252,6 +252,17 @@ buffer.time=3
 
 [Statedef -1]
 
+[State -1, Finite CPU confirmed three-hit chain]
+type=ChangeState
+triggerall=AILevel>0
+triggerall=RoundState=2
+triggerall=MoveHit
+triggerall=Time>=6
+trigger1=StateNo%10000=200 || StateNo%10000=201
+value=StateNo+1
+ignorehitpause=1
+
+
 [State -1, Brazos]
 type=ChangeState
 triggerall=AILevel=0
@@ -585,6 +596,7 @@ triggerall=StateType!=A
 triggerall=Power>=3000
 trigger1=P2BodyDist X<140
 trigger1=Random<AILevel*3
+triggerall=P2MoveType!=H
 value=3000+10000*Var(42)
 
 
@@ -597,6 +609,7 @@ triggerall=StateType!=A
 triggerall=Power>=450
 trigger1=P2BodyDist X<260
 trigger1=Random<AILevel*3
+triggerall=P2MoveType!=H
 value=1030+10000*Var(42)
 
 
@@ -609,6 +622,7 @@ triggerall=StateType!=A
 triggerall=Power>=200
 trigger1=P2BodyDist X<300
 trigger1=Random<AILevel*3
+triggerall=P2MoveType!=H
 value=1200+10000*Var(42)
 
 
@@ -621,6 +635,7 @@ triggerall=StateType!=A
 triggerall=Power>=500
 trigger1=P2BodyDist X<100
 trigger1=Random<AILevel*3
+triggerall=P2MoveType!=H
 value=1020+10000*Var(42)
 
 
@@ -633,6 +648,7 @@ triggerall=StateType!=A
 triggerall=Power>=400
 trigger1=P2BodyDist X<200
 trigger1=Random<AILevel*3
+triggerall=P2MoveType!=H
 value=1010+10000*Var(42)
 
 
@@ -643,6 +659,7 @@ triggerall=RoundState=2
 triggerall=ctrl
 triggerall=StateType!=A
 trigger1=P2BodyDist X<65
+triggerall=P2MoveType!=H
 value=200+10000*Var(42)
 
 

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>MatsuriNol</f>
+        <e type="setDelay">20</e> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">650</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Hashirama_Mktn02_01</f>
+        <e type="setSound">Audio/Effect/mokuBlade.mp3</e>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_02</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_03</f>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_04</f>
+        <e type="setDelay">5</e>   
+        <f>Hashirama_Mktn02_05</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setAttackBox">s_hit</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_06</f>
+        <e type="setDelay">600</e>
+  
+       
+                 
+        <f>Hashirama_Mktn02_07</f>
+        <e type="setSound">Audio/Effect/mokuBlade.mp3</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_08</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_09</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_10</f>
+        <e type="setDelay">5</e>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">650</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Hashirama_Mktn02_01</f>
+        <e type="setSound">Audio/Effect/mokuBlade.mp3</e>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_02</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_03</f>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_04</f>
+        <e type="setDelay">5</e>   
+        <f>Hashirama_Mktn02_05</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setAttackBox">s_hit</e>
+<e type="setCommand">setGainCKR</e>
+<e type="setCommand">setGainCKR</e>
+<e type="setCommand">setGainCKR</e>
+<e type="setCommand">setGainCKR</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_06</f>
+        <e type="setDelay">600</e>
+  
+       
+                 
+        <f>Hashirama_Mktn02_07</f>
+        <e type="setSound">Audio/Effect/mokuBlade.mp3</e>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_08</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_09</f>
+        <e type="setDelay">5</e>
+        <f>Hashirama_Mktn02_10</f>
+        <e type="setDelay">5</e>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

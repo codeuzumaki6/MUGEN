@@ -32,3 +32,6 @@
 Usa el cuerpo sin capa de la parte inferior de la hoja original, con su tamaño nativo. Los normales y especiales por colisión hacen un 30 % más de daño, los especiales cuestan el 80 %, Suiton añade una cuarta bala y Erupción añade una quinta estaca. La ulti conserva su coste de 3000 y su límite propio de daño. El jardín añade un 15 % durante siete segundos y su aura indica cuándo está activo.
 
 Mantener atrás bloquea ataques medios y altos; abajo + atrás permite bloquear los bajos. Las balas de agua, la lanza, las raíces y el manto tienen alcance y duración finitos. La ulti requiere contacto real: bloquearla o alejarse de la apertura evita la captura.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

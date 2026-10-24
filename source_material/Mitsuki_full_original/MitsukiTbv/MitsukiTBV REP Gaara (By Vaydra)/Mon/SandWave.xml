@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">SandWave</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+          <f>Gaara_nol</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>Gaara_nol</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">145</p>
+        <p type="attackRangeX">20</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+          <f>Gaara_nol</f>
+          <f>Gaara_nol</f>
+          <f>Gaara_nol</f>
+          <f>Gaara_nol</f>        
+          <f>Gaara_nol</f>
+          
+          
+  <f>Kamaitachi2_01</f>
+          <f>Kamaitachi2_02</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_03</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_04</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_05</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_06</f> 
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_07</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_08</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          
+      	  <f>Kamaitachi2_01</f>
+          <f>Kamaitachi2_02</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_03</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_04</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_05</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_06</f> 
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_07</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Kamaitachi2_08</f>
+          <e type="setSound">Audio/Mitsuki/efxKamaitachi.mp3</e>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

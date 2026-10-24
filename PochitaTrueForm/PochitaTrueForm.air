@@ -125,10 +125,12 @@ Loopstart
 
 [Begin Action 105]
 Clsn2Default: 1
- Clsn2[0] = -17,-72,17,0
-100,3,0,0,4
-100,4,0,0,4
-100,5,0,0,4
+ Clsn2[0]=-17,-72,17,0
+Loopstart
+3501,3,0,0,3
+3501,2,0,0,3
+3501,1,0,0,3
+3501,0,0,0,3
 
 [Begin Action 120]
 Clsn2Default: 1

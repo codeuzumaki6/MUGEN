@@ -1,125 +1,24 @@
 {
   "archive": "Eida_DAEMON_ORIGINAL.zip",
-  "bytes": 4104201,
-  "sha256": "45e00e0023cef0e57f3eb6d04e5dd5e23915bd34cb30a36d3e4f1730f4b86911",
+  "bytes": 4181809,
+  "sha256": "ed1a5d321865741abdd886a6fd2674eae82410a8b49e3ea00fcd170598b94d1a",
   "files": {
-    "Eida/CONTROLES_XBOX.md": "190c4dc391bf5205b2819615a4a871fabd012eac92ed5fec04a66ffa53e9688d",
-    "Eida/CREDITOS_Y_FUENTES.md": "ca439796367a871f4f9c9a3fd9d6a8c05adc6e8910d5f197aec3c9dd59ab7869",
-    "Eida/Eida.air": "a06348e703a457549198148b2f0ebe28a43bfd8f91e641259578a426dfbd5b71",
-    "Eida/Eida.cmd": "2df864408a96c03fb0eb2b116ab4dd3effd1218b55efc49f0fd20ede2b20b161",
-    "Eida/Eida.cns": "a5f3ca21431aa63f2775c70aa5187cd30e7e94184750e8828ecdd7e8471d8580",
-    "Eida/Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
-    "Eida/Eida.sff": "d7553253e421b357b31b3174798a53e9d95d544081fffea5c47060abe1179a82",
-    "Eida/Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
-    "Eida/LEEME.md": "15fcdb12de098528f5963da32bbc16aca08fcdff10bc76bc6fefb3820bb5b945",
-    "Eida/Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
-    "Eida/Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
-    "Eida/common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
+    "CONTROLES_XBOX.md": "f815c63191f0a1febaaba782d2477014688aef14455421404c70e1642c3d79dc",
+    "CREDITOS_Y_FUENTES.md": "ac70cadc3a1f1855e8ef028d1e6e4f035b11cab6bae1ce35e0589b0295c314ae",
+    "Eida.air": "b76637df7269caf4a55c1650b45d4ff9c6b7d703212fbd642e96862ccf7f6120",
+    "Eida.cmd": "c39cb04743b537c95e197b08a32cf0164bc65c0e032d37ebe0dbf0991cebe06f",
+    "Eida.cns": "4edf46c613cee69073dcfbdd39915853737ec816d9426d9e3ba6bbf5d1804b82",
+    "Eida.def": "78d3ab15ca0d858dcb88866f7376c4839613620e23ac3d27ce61c84ab3df0859",
+    "Eida.sff": "20e8a9cb0499e23aab992c523a221b2753db994d0502ed89a9dcf4c41bd380e4",
+    "Eida.snd": "1bdd934a6bd578d643fddc57c2a47c0888e3403720f9018befbed4302bc9d2c4",
+    "LEEME.md": "15fcdb12de098528f5963da32bbc16aca08fcdff10bc76bc6fefb3820bb5b945",
+    "Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
+    "REVISION_CONJUNTA.md": "d7983b83f0d4f1c86b791c0bdaad859109fc003ad2246707740a594df4635219",
+    "Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
+    "common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
   },
-  "engine_cases": 121,
-  "activation_audio_cases": 6,
-  "videos": {
-    "Eida_especiales_nuevo_motor.mp4": {
-      "bytes": 6022181,
-      "sha256": "fb6db9bce7faf15c20f887de8ebd832e7580b310ac4eff9219e9ed14b6af483d",
-      "media": {
-        "programs": [],
-        "stream_groups": [],
-        "streams": [
-          {
-            "codec_type": "video",
-            "width": 1280,
-            "height": 720
-          },
-          {
-            "codec_type": "audio",
-            "sample_rate": "44100",
-            "channels": 2
-          }
-        ],
-        "format": {
-          "duration": "44.269002"
-        }
-      },
-      "scope": "Historical prior Daemon appearance; activation sound unchanged."
-    },
-    "Eida_senrigan_sin_ataque_nuevo_motor.mp4": {
-      "bytes": 317105,
-      "sha256": "f1ba262e8a73fae6269cf8b1c94dd7eb23b30c9064018d74c2f3b511f958af0f",
-      "media": {
-        "programs": [],
-        "stream_groups": [],
-        "streams": [
-          {
-            "codec_type": "video",
-            "width": 1280,
-            "height": 720
-          },
-          {
-            "codec_type": "audio",
-            "sample_rate": "44100",
-            "channels": 2
-          }
-        ],
-        "format": {
-          "duration": "2.966667"
-        }
-      },
-      "scope": "Historical prior Daemon appearance; activation sound unchanged."
-    },
-    "Eida_omnipotencia_abrazo_nuevo_motor.mp4": {
-      "bytes": 503206,
-      "sha256": "a251103adedc9ba4c17f42e2266cad3eebe922df473b861db712a1b539b4f00c",
-      "media": {
-        "programs": [],
-        "stream_groups": [],
-        "streams": [
-          {
-            "codec_type": "video",
-            "width": 1280,
-            "height": 720
-          },
-          {
-            "codec_type": "audio",
-            "sample_rate": "44100",
-            "channels": 2
-          }
-        ],
-        "format": {
-          "duration": "3.682993"
-        }
-      },
-      "scope": "Omnipotencia unchanged; non-Daemon SFF records and CNS identical to prior capture."
-    },
-    "Eida_daemon_modelo_nuevo_motor.mp4": {
-      "bytes": 2943549,
-      "sha256": "1f77f2f8f0c54f322069da59ce83265a099532cd20a4eba5de4416438e556a4a",
-      "media": {
-        "programs": [],
-        "stream_groups": [],
-        "streams": [
-          {
-            "codec_type": "video",
-            "width": 1280,
-            "height": 720
-          },
-          {
-            "codec_type": "audio",
-            "sample_rate": "44100",
-            "channels": 2
-          }
-        ],
-        "format": {
-          "duration": "19.133333"
-        }
-      },
-      "scope": "Current Daemon model; six actual captured attacks."
-    }
-  },
-  "revision": "Supplied Vahidras model used for Daemon: 2 original poses plus 16 AI supplemental poses, 19 entries / 18 distinct PNGs. 80 gameplay cases rerun. Other 41 historical engine cases retained; unchanged CNS/CMD/SND and 180 non-Daemon SFF records verified.",
-  "native_source_proof": "previews/Eida_compact_scene_checks.json",
-  "engine_cases_rerun_this_revision": 80,
-  "historical_activation_audio_cases": 16,
-  "daemon_source_proof": "previews/Eida_Daemon_source_checks.json",
-  "daemon_preservation_proof": "previews/Eida_Daemon_preservation_checks.json"
+  "extracted_validation": true,
+  "character": "Eida",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

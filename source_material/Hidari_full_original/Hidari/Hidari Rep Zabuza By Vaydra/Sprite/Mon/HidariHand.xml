@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <f>Zabuza_Nol</f>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <e type="setDelay">30</e> 
+        <e type="setCommand">setDead</e>       
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <f>Zabuza_Skill02_03</f>
+        <f>Zabuza_Skill02_04</f>
+        <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+        <f>Zabuza_Skill02_05</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill02_06</f>
+        <f>Zabuza_Skill02_07</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill02_08</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>Zabuza_Skill02_09</f>
+        <f>Zabuza_Skill02_10</f>
+        <f>Zabuza_Skill02_03</f>
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">cAttack</p>
+        <p type="attackValue">100</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <e type="setSound">Audio/hidari/codeClawEfx.mp3</e>
+        <f>Zabuza_Skill02_03</f>
+        <f>Zabuza_Skill02_04</f>
+        <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+        <f>Zabuza_Skill02_05</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill02_06</f>
+        <f>Zabuza_Skill02_07</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill02_08</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>Zabuza_Skill02_09</f>
+        <f>Zabuza_Skill02_10</f>
+        <f>Zabuza_Skill02_03</f>
+        
+
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

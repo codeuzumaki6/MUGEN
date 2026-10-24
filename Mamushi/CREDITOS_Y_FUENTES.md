@@ -40,3 +40,6 @@ de copias y retraso de decisiones son adaptaciones para un juego de pelea.
 La división toma como referencia la descripción y el panel suministrados por
 el usuario; no se presenta esta implementación como una simulación literal
 sin límite de su poder en el manga.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

@@ -1,0 +1,195 @@
+{
+  "Eida": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 11,
+    "updated_actions": [
+      1000,
+      1010,
+      1040,
+      1100,
+      1300,
+      1350
+    ],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "Eida.air": "b76637df7269caf4a55c1650b45d4ff9c6b7d703212fbd642e96862ccf7f6120",
+      "Eida.cmd": "c39cb04743b537c95e197b08a32cf0164bc65c0e032d37ebe0dbf0991cebe06f",
+      "Eida.cns": "4edf46c613cee69073dcfbdd39915853737ec816d9426d9e3ba6bbf5d1804b82",
+      "Omnipotencia.cns": "722a4e3dc1c127c76fd749f648baf8d11de6867ce1f2ec5f296ec94b25025049",
+      "Specials.cns": "55ba9e21a6c7f893d96fb3d2b004f3620e2eef05c620e4066792959b0757004c",
+      "common1.cns": "d9d3cbcb69e0c0dc370db0ffb299c906fc379f3a2ce02749df7df0ab91794cec"
+    }
+  },
+  "PochitaTrueForm": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 0,
+    "updated_actions": [],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "PochitaTrueForm.air": "80a95c1e0b73d4ebe092ac0aa0516b3994c97c3b213be31a6d6db9d5ed1c7bfa",
+      "PochitaTrueForm.cmd": "b4dd0b23d37ef8181a3cbc829266e2f9dabbff39e92b6e33087687bd7089eafb",
+      "PochitaTrueForm.cns": "5983f4d29f02e75a2c021f859cb2bc10db6fa73b41c8cda68e753c2f27bf06d2",
+      "common1.cns": "5ec0fd69c9440c249d8aa0c1e5e419c699ce1543deaf532598d622c50dbcdca2"
+    }
+  },
+  "Mamushi": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 71,
+    "updated_actions": [
+      1000,
+      1010,
+      1020,
+      1030,
+      1040,
+      1050,
+      1210,
+      1410,
+      1420,
+      1430,
+      1440
+    ],
+    "old_iris_pixels_recolored": 374,
+    "files": {
+      "Mamushi.air": "42d4fb137f9be6d2b89974d3c6c561e08b0379b546555b3245c94f76d0770fe2",
+      "Mamushi.cmd": "212df3c0d8b579c28fe5ee70982eb85f87d0946df8774c2d2be4abca0a301510",
+      "Mamushi.cns": "2f78e8208026cb7d2f1741ab3aece8a33365c5189a292bd57f46d0e2657db0ae",
+      "common1.cns": "79feadb169ae365a363594134ceed4735b44be34235c4feb3bfebce5ba9f5265"
+    }
+  },
+  "Shibai": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 0,
+    "updated_actions": [],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "Shibai.air": "9b035b1a7ab6e232773024a57007df7202cd26b16b42a30caa9362a931d2fb67",
+      "Shibai.cns": "6a8965bf850a3baadb2aac4ddb07e5840c6cf7526997a7ce81161fbd53dc675e",
+      "common1.cns": "964af4c5057c85ae83f67c90182c0e90914a1d05f993903e0cae3cf5b0511164",
+      "Shibai.cmd": "42167a9226b23610f15199ba835bc6b5590be50032cb0b1ba14fe3f633fc548b"
+    }
+  },
+  "JuraShinju": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 23,
+    "updated_actions": [
+      1010,
+      1020,
+      1030,
+      1040,
+      1050,
+      1200,
+      1400,
+      1410,
+      8600
+    ],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "JuraShinju_common.cns": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013",
+      "JuraShinju.cns": "36f7b7ab214a6c05d76ea0ce3ebeb160037de6763624ca1f73723c465ff4a4cf",
+      "JuraShinju.cmd": "919e4dabf9bbc43d71fe3c0be47d1d609b4ebed7cc569ae9167d4d5840ae8180",
+      "JuraShinju.air": "0ce11d04f0bca9a56b741cb25866464e10c6ea00534c5c9893e48b0f009bb30e"
+    }
+  },
+  "MitsukiTBV": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 55,
+    "updated_actions": [
+      1010,
+      1030,
+      1040,
+      1050,
+      10200,
+      10201,
+      10202,
+      11000
+    ],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "MitsukiTBV.cns": "cee7bf8699e018f91761cd969b3be728d119ece1c765351944204d782aabeae1",
+      "MitsukiTBV_common.cns": "9f91c8023278c01d71b41552d3c5b4c69933caebd414272921498c97bd19b424",
+      "MitsukiTBV.cmd": "0b2dc40b3bd0bfb360ce9360bd86a92a78ef436b29d5f952bcf30c0a7c2a9f8c",
+      "MitsukiTBV.air": "97e35a6e3cf57158fa04bb02b2c273d5ada2f8bef47876baeb38b3dee28abf20"
+    }
+  },
+  "RyuShinju": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 88,
+    "updated_actions": [
+      1000,
+      1010,
+      1020,
+      1030,
+      1040,
+      1050,
+      1200,
+      1420,
+      1430,
+      1440,
+      11000,
+      11010,
+      11020,
+      11030,
+      11040,
+      11050,
+      11200,
+      11420,
+      11430,
+      11440
+    ],
+    "old_iris_pixels_recolored": 327,
+    "files": {
+      "RyuShinju.cns": "263edeceeb684ea3c542efb00f99e88a830f00b4db4c8495d747930a68dab124",
+      "RyuShinju_common.cns": "7ecd03d1cfff9e765bf618e64fd44b7f68c98ba41d342dc2ad35018011146670",
+      "RyuShinju.air": "8fd399825af68a0654f8bda8442729108e37329d86f2c6234a37defbb5fb1d2a",
+      "RyuShinju.cmd": "5e383e8f3a41fe4dd4ce5cfc66a69383846d576696c43ddb221328cbf010fec3"
+    }
+  },
+  "HidariShinju": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 53,
+    "updated_actions": [
+      1010,
+      1020,
+      1030,
+      1040,
+      1050,
+      1430
+    ],
+    "old_iris_pixels_recolored": 0,
+    "files": {
+      "HidariShinju.cns": "e37570a0f2b007f0f63c789102a366c8b679ef6f4604694dd83aeba6bd7c6aac",
+      "HidariShinju.cmd": "927cbd65468dad551e0485c2b944a3f75cef7e0a1d95ea59487b0f4cf295c8c2",
+      "HidariShinju.air": "78991cfe49415775f559d4a366d33d6378173d34778d1ac79c1afc3edc392452",
+      "HidariShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8"
+    }
+  },
+  "MatsuriShinju": {
+    "base_commit": "38dd5362fe76610a7c7d5a1c033868deb37519ec",
+    "source_frames": 78,
+    "updated_actions": [
+      1000,
+      1010,
+      1020,
+      1030,
+      1040,
+      1050,
+      1400,
+      1410,
+      1420,
+      1430,
+      8610,
+      8611,
+      8612,
+      8620,
+      8630,
+      8631
+    ],
+    "old_iris_pixels_recolored": 350,
+    "files": {
+      "MatsuriShinju_common.cns": "19e20ec3434c66d9780d6aa1b41d1911f7fcacf6ec86a0b218c55160fc8f2dd8",
+      "MatsuriShinju.cmd": "8ae6856a09b1c1c82cc7142ab498440fe23cb6b24da69a12eb3f013ec67dacc6",
+      "MatsuriShinju.cns": "47211ed670bb6df4ca67f6e02d2ab7cc0ae807b3c6ca41635adad7eab247d498",
+      "MatsuriShinju.air": "00b5189b742627ea540e81394e0108459169a5e89ddf98c96653cce516d9ab09"
+    }
+  }
+}

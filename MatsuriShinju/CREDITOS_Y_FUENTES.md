@@ -9,3 +9,6 @@
 - **Universo:** Boruto / Naruto y sus autores y titulares correspondientes. Proyecto fan sin afiliación oficial.
 
 El repositorio conserva la hoja fuente, sus hashes, el análisis del video, el atlas suplementario y la correspondencia de cada sprite con su recorte original. El ZIP jugable incluye todo lo necesario para utilizar a Matsuri.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

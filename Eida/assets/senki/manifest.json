@@ -1,0 +1,257 @@
+[
+  {
+    "group": 26000,
+    "number": 0,
+    "key": "Chiyo_S1_01",
+    "file": "assets/senki/26000_0.png",
+    "axis": [
+      22,
+      74
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10036762058734894,
+      "original_sprite": [
+        0,
+        2
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo.plist",
+    "rectangle": "{{1785,2570},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "1f2a29eb33059e8c22623aab7ccbf52b399b3e88afb2938f1861adfea2ff0938",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 1,
+    "key": "Chiyo_S1_02",
+    "file": "assets/senki/26000_1.png",
+    "axis": [
+      20,
+      73
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10403893887996674,
+      "original_sprite": [
+        0,
+        3
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo.plist",
+    "rectangle": "{{1557,2960},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "28ce2c7fb34732e79c87a4c52e05b139cc8319fb7d5487145b1b7f7be23f52c7",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 2,
+    "key": "Chiyo_S1_03",
+    "file": "assets/senki/26000_2.png",
+    "axis": [
+      20,
+      73
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.10151252895593643,
+      "original_sprite": [
+        0,
+        3
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo.plist",
+    "rectangle": "{{1837,2570},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "7de5bdd2688758a5f613b621b832da2094bccf92a2a590583bb63b246b982a3e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 3,
+    "key": "Chiyo_S1_04",
+    "file": "assets/senki/26000_3.png",
+    "axis": [
+      21,
+      73
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.09875795990228653,
+      "original_sprite": [
+        0,
+        4
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Chiyo/Chiyo.plist",
+    "rectangle": "{{1609,2960},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "68437343a215bd2e3d0977fc24d055117d4ac7c49f3c1d468a2bc1436a761505",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 0,
+    "key": "Parents_Skill01_001",
+    "file": "assets/senki/26002_0.png",
+    "axis": [
+      25,
+      40
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": null
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{844,72},{56,41}}",
+    "source_offset": "{3,0}",
+    "source_rotated": false,
+    "rgba_sha256": "f4c92f72317c52ce07e342b95b0d9df836ad790e43eab5786b8a791e01073af5",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 1,
+    "key": "Parents_Skill01_002",
+    "file": "assets/senki/26002_1.png",
+    "axis": [
+      41,
+      58
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.15105289220809937,
+      "original_sprite": [
+        1000,
+        0
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{813,205},{70,70}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "a1740625544a5d085a45516dd6ef95d85381a0c18edbd9118851e9368e110c6e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 2,
+    "key": "Parents_Skill01_003",
+    "file": "assets/senki/26002_2.png",
+    "axis": [
+      24,
+      59
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.14580975472927094,
+      "original_sprite": [
+        1000,
+        16
+      ]
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{813,123},{70,81}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "83c4d38e663e7560c1e3a74394cb2760304ba5a1181a71693000c1f54c72204e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 3,
+    "key": "Parents_Skill01_004",
+    "file": "assets/senki/26002_3.png",
+    "axis": [
+      185,
+      243
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.19250836968421936
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{0,0},{430,260}}",
+    "source_offset": "{30,-58}",
+    "source_rotated": false,
+    "rgba_sha256": "9e19e6b11f7a571dd15cbb428f18b09b012c96c3026849606cd5877defde8052",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 4,
+    "key": "Parents_Skill01_005",
+    "file": "assets/senki/26002_4.png",
+    "axis": [
+      185,
+      243
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.24784110486507416
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{0,261},{430,260}}",
+    "source_offset": "{30,-58}",
+    "source_rotated": false,
+    "rgba_sha256": "762b2daec49d0e4b31c3e942dc01fbc1f001d3df5027760031619cc763381d96",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 5,
+    "key": "Parents_Skill01_006",
+    "file": "assets/senki/26002_5.png",
+    "axis": [
+      185,
+      243
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.2142745852470398
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{0,522},{430,260}}",
+    "source_offset": "{30,-58}",
+    "source_rotated": false,
+    "rgba_sha256": "434bc5e84482cb637e407e9e3b4c9d9baaeb7856049d4bd91e0e19b48b39a02e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26002,
+    "number": 6,
+    "key": "Parents_Skill01_007",
+    "file": "assets/senki/26002_6.png",
+    "axis": [
+      185,
+      243
+    ],
+    "alignment": {
+      "method": "visible lower bound",
+      "error": 0.1851469725370407
+    },
+    "plist": "source_material/Eida_full_original/Sprite Eida by Vaydra/Parents/Parents.plist",
+    "rectangle": "{{0,783},{430,260}}",
+    "source_offset": "{30,-58}",
+    "source_rotated": false,
+    "rgba_sha256": "e0ccb748c19885f22335277a607bf13e7109d8297a7528de8ef075ab4fa23a51",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  }
+]

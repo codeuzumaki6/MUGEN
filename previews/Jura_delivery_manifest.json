@@ -1,17 +1,22 @@
 {
   "archive": "JuraShinju.zip",
-  "bytes": 1819958,
-  "sha256": "47e52da2b16d0d78baeec7214629c908db166110f2f278b66be336819ceaad80",
+  "bytes": 1902581,
+  "sha256": "39ab6860ad81769f6bb03a9a24564b1b74e6ea7aa4926e3e78a7da6a495599f0",
   "files": {
+    "CONTROLES_XBOX.md": "c53a3d858c67472f1d43217616ee1aefb9ba54666abdbe9bfb62631a693eb56d",
+    "CREDITOS_Y_FUENTES.md": "7651eb6a339451acf93003a663c2d53f155a12475d6f569e7acaa9c853e00c06",
+    "JuraShinju.air": "0ce11d04f0bca9a56b741cb25866464e10c6ea00534c5c9893e48b0f009bb30e",
+    "JuraShinju.cmd": "919e4dabf9bbc43d71fe3c0be47d1d609b4ebed7cc569ae9167d4d5840ae8180",
+    "JuraShinju.cns": "36f7b7ab214a6c05d76ea0ce3ebeb160037de6763624ca1f73723c465ff4a4cf",
     "JuraShinju.def": "ac50ab9088a0abc1f16584ffb6ab3c5b647c06fbd300d8dd0671e1abd88f7a90",
-    "JuraShinju.cns": "82ffd49c817d0e85ad2881f1b24db1c5a2b2e3dea92179fe664d6e8655701aa7",
-    "JuraShinju.cmd": "a8277bfe25a4d17087f29b846d4bf80e9fa99a494a9c442619abb6a8731ffac9",
-    "JuraShinju.air": "ae44b27c9ea837351c5c451846aac4347cd31c4fa5ba64184505bfb80970ec29",
-    "JuraShinju.sff": "942305bc9def5a165850c9a698230f3425813358f2198e5cfd83e2f8f9304c09",
+    "JuraShinju.sff": "fc9f08aa4dcedf9a2a861de6178ec5e11998446bb413fe141d46872d72f93d20",
     "JuraShinju.snd": "48f0314c537c7841d9c660f2972c6f30ac3c52eab86c8e7b1083c14907ad74ff",
     "JuraShinju_common.cns": "3d2c49d07c12ecba85086c6c37d79704fa6fb47f31d0712d2b4d42abcd76f013",
     "LEEME.md": "dea2bd6480a8eb0e35c77cfacf6b1f72e41ae6da3158e8b12beff63212b75098",
-    "CONTROLES_XBOX.md": "ec7af5048859b07aa9538c0589941a2486e2471f0554e88c9adfe8ad7133e1e6",
-    "CREDITOS_Y_FUENTES.md": "2643f4a817fe6d5133cedc5cd2e70bcddea513ee155d8e8bc13325e9dbdc3d77"
-  }
+    "REVISION_CONJUNTA.md": "cfda61d128b45ecb9b1e2d35042e9d7786cd593d79783a3dc84f20f83da5a444"
+  },
+  "extracted_validation": true,
+  "character": "JuraShinju",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

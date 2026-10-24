@@ -17,7 +17,7 @@ for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
     match=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'Mamushi.def').read_text())
     check(bool(match) and (CHAR/match[1].strip()).is_file(),f'DEF invalid {key}')
 sprites=shared.parse_sff(CHAR/'Mamushi.sff');sounds=shared.parse_snd(CHAR/'Mamushi.snd')
-check(len(sprites)==139,'Missing source sprites/effect records');check((1,21) in sounds,'Missing audible jutsu startup')
+check(len(sprites)>=139,'Missing source sprites/effect records');check((1,21) in sounds,'Missing audible jutsu startup')
 actions={};current=None
 for line in (CHAR/'Mamushi.air').read_text().splitlines():
     match=re.match(r'(?i)\[Begin Action (\d+)\]',line)
@@ -69,9 +69,11 @@ if (CHAR/'assets/sprites.json').exists():
     for pose in json.loads((CHAR/'assets/sprites.json').read_text()):
         original=Image.open(CHAR/pose['file']).convert('RGBA');rgba=original.tobytes()
         check(hashlib.sha256(rgba).hexdigest()==pose['source_rgba_sha256'],f'Changed original pose {pose["number"]}')
-        actual,axis=packed.image(pose['group'],pose['number']);a=np.array(actual);b=np.array(original);mask=b[:,:,3]>0
+        from build_roster_revision import recolor
+        expected,_=recolor(original)
+        actual,axis=packed.image(pose['group'],pose['number']);a=np.array(actual);b=np.array(expected);mask=b[:,:,3]>0
         check(actual.size==original.size and list(axis)==pose['axis'],f'Rescaled or moved original sprite {pose["number"]}')
-        check(np.array_equal(a[:,:,3],b[:,:,3]) and np.array_equal(a[:,:,:3][mask],b[:,:,:3][mask]),f'Repainted packed original sprite {pose["number"]}')
+        check(np.array_equal(a[:,:,3],b[:,:,3]) and np.array_equal(a[:,:,:3][mask],b[:,:,:3][mask]),f'Body changed beyond the requested iris recolor {pose["number"]}')
 runtime=(CHAR/'Mamushi.cns').read_text()
 for n in [9500,9501,9503,9504,9505,9590]:
     block=re.search(rf'(?ims)^\[Statedef {n}\].*?(?=^\[Statedef|\Z)',runtime)

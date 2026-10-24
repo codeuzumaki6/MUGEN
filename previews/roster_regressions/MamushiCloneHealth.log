@@ -1,0 +1,11 @@
+Check A: Selecting Renderer
+Check B: Initializing GFX
+Check C: Initializing GFX Font
+Check D: We are GOOD
+
+Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
+
+PASS clone_damage 1 {'case': {'name': 'clone_damage', 'kind': 'clone_damage', 'face': 1, 'distance': 120}, 'states': [0, 10, 1440, 5000, 5001], 'damage': 124, 'received': 228, 'max_clones': 1, 'clones_after_root_hit': 1, 'clone_contact_samples': 25, 'clone_hurt_samples': 47, 'clone_min_health': -48, 'root_control_while_clone_alive': True, 'movement': 0.0, 'jump_apex': 0.0, 'dash_signed_distance': 0.0, 'end_helpers': 0, 'max_helpers': 1, 'min_power': 2250, 'max_power': 3000, 'end_clones': 0, 'end_state': 0, 'victim_end': 0, 'failures': []}
+PASS clone_damage -1 {'case': {'name': 'clone_damage', 'kind': 'clone_damage', 'face': -1, 'distance': 120}, 'states': [0, 10, 1440, 5000, 5001], 'damage': 164, 'received': 228, 'max_clones': 1, 'clones_after_root_hit': 1, 'clone_contact_samples': 21, 'clone_hurt_samples': 47, 'clone_min_health': -48, 'root_control_while_clone_alive': True, 'movement': 0.0, 'jump_apex': 0.0, 'dash_signed_distance': 0.0, 'end_helpers': 0, 'max_helpers': 1, 'min_power': 2250, 'max_power': 3000, 'end_clones': 0, 'end_state': 0, 'victim_end': 0, 'failures': []}
+PASSED 2 Mamushi raw-input / collision scenarios

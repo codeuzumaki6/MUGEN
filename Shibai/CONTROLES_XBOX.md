@@ -79,3 +79,6 @@ puntos blancos; el tránsito incluye apertura, desaparición y reaparición.
 La CPU también coloca y cruza garras para acercarse
 desde lejos. Los rayos y remolinos se crean en posiciones
 anunciadas y no persiguen al enemigo. No hay estacas, cubos ni Kokugan.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

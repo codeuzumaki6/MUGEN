@@ -33,3 +33,6 @@ La ulti necesita acertar la estocada inicial. Se puede bloquear, esquivar saltan
 La marca dura hasta **10 segundos**, aparece como máximo a **180 unidades** y desaparece al usarla. La prisión y el torbellino tienen un alcance de colocación limitado; no atrapan automáticamente a un rival en cualquier parte del escenario.
 
 Bloquea manteniendo atrás, o atrás + abajo para cubrir ataques bajos. Los combos requieren volver a pulsar el botón después de conectar; en el aire hay un máximo de tres golpes antes de aterrizar.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

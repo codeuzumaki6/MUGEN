@@ -35,3 +35,6 @@ Bloquea manteniendo atrás; atrás + abajo cubre los ataques bajos. Los combos s
 El Raiton de ↓↘→ + Y viaja como proyectil; el de ↓ + RB se mantiene conectado a la mano durante la descarga. Los dos se pueden bloquear y esquivar. El rayo sostenido alcanza 230 unidades en base y 280 en sabio, más el desplazamiento desde la mano; fuera de ese alcance no golpea. El cerco tiene un límite de colocación de 180 unidades y no aparece directamente sobre un rival lejano.
 
 En modo sabio, **↓↘→ + Y es Senpō: Orochi Ikazuchi**: una serpiente eléctrica verde con cabeza y colmillos visibles. Su cuerpo ondula mientras avanza.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

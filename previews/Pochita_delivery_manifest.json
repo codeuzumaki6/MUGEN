@@ -1,19 +1,23 @@
 {
   "archive": "PochitaTrueForm_ACABADO.zip",
-  "alias": "PochitaTrueForm.zip",
-  "bytes": 1368992,
-  "sha256": "8e242003032e767f8ef3e35607dbe8714f33422066164d2c524f849a0df33b7b",
+  "bytes": 1360521,
+  "sha256": "77d546b1ef6d232a90796e95281a56b315e19fed59ac59d60482784f0cff6bd4",
   "files": {
+    "CONTROLES_XBOX.md": "672e48b97a04e433ef1ed1498886f5b083232029f2c2c6006012604fccc1cb27",
+    "CREDITOS_Y_FUENTES.md": "764e69237e8e6cfb9fdf242471f825f90548f8d596782d2280610b96f91adacc",
+    "LEEME.md": "7656e197c3ff9507083afc473f86ef0c019005b9730bffe2db5eef784433b8d6",
+    "PLAN_DE_TRABAJO.md": "2a0762f70c06afa9907637c93ca097024d0dacba25397ee2c7679b7ef1b52aa7",
+    "PochitaTrueForm.air": "80a95c1e0b73d4ebe092ac0aa0516b3994c97c3b213be31a6d6db9d5ed1c7bfa",
+    "PochitaTrueForm.cmd": "b4dd0b23d37ef8181a3cbc829266e2f9dabbff39e92b6e33087687bd7089eafb",
+    "PochitaTrueForm.cns": "5983f4d29f02e75a2c021f859cb2bc10db6fa73b41c8cda68e753c2f27bf06d2",
     "PochitaTrueForm.def": "5210781a5e2cdd00756cee44ef67bb49565a4e9a8cc82d0562657f71e35c609d",
     "PochitaTrueForm.sff": "c14665d75287b975da6b722c28c08a0e131aed4165ea6019f4be18b6c97962c6",
     "PochitaTrueForm.snd": "e399fd1b068dab6d068a13e47980494863c8655ea6cf81d6dd886f858be73767",
-    "PochitaTrueForm.air": "63e54e15e77fa42c2dfcae0592d60ddb329c5ac09c4e505be177a31ac24749b6",
-    "PochitaTrueForm.cmd": "b4dd0b23d37ef8181a3cbc829266e2f9dabbff39e92b6e33087687bd7089eafb",
-    "PochitaTrueForm.cns": "5983f4d29f02e75a2c021f859cb2bc10db6fa73b41c8cda68e753c2f27bf06d2",
-    "common1.cns": "d0c13c5d0ef3b4fcd7b6b8bb3bbaade4bf04dcc86fd19181fc3205b85682b599",
-    "LEEME.md": "7656e197c3ff9507083afc473f86ef0c019005b9730bffe2db5eef784433b8d6",
-    "CONTROLES_XBOX.md": "df1b126a4696b8d503cde5507012318a83c152357249f783710b3568f7804e8e",
-    "CREDITOS_Y_FUENTES.md": "764e69237e8e6cfb9fdf242471f825f90548f8d596782d2280610b96f91adacc"
+    "REVISION_CONJUNTA.md": "2d3c6c9ad3cf7c8c029d9ba707fa8a4289ca37e785ec757cc7ce7ae839d38b1f",
+    "common1.cns": "5ec0fd69c9440c249d8aa0c1e5e419c699ce1543deaf532598d622c50dbcdca2"
   },
-  "validation": "221 general Ikemen input/collision scenarios, 96 aerial/scarf scenarios, 46 awakening/range/relocated-special scenarios, 16 presentation/control scenarios, two actual round victories, CPU, four low-LifeMax cinematic scenarios, KO/no-revive check, seven MUGEN structure regressions, deterministic rebuild, six actual SDL polish audio/video captures. Exact Jump Force MUGEN V14 and physical Xbox controller not executed."
+  "extracted_validation": true,
+  "character": "PochitaTrueForm",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

@@ -11,3 +11,6 @@ Las técnicas, costes, duración del despertar y cifras de daño son decisiones 
 Revisión de especiales: los arcos largos de Raiton escalan el efecto eléctrico original 2007,11..15; los cercos ensamblan únicamente fragmentos de serpiente de la hoja de Vaydra. Los cuadros 1550,4..6 del donante contienen su cuerpo y se excluyen del efecto de sustitución y del SFF final.
 
 Senpō: Orochi Ikazuchi: cuerpo de la serpiente de chakra tomado de las piezas verdes de Vaydra (8610,12..13), con un atlas nuevo de cabezas de efecto generado por IA para mostrar ojo, boca y colmillos al tamaño del juego. Solo se añade arte de efecto; los 86 cuerpos del personaje y las voces originales se conservan.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

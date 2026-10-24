@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Orochimaru</dateName>
+        <dateName type="attackValue">7000</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">100</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+      </frame>
+    </action>
+    <action value="Walk">
+      <frame>
+        <frameName>Orochimaru_Walk_01.png</frameName>
+	      <eventName type="setMove">3</eventName>
+        <frameName>Orochimaru_Walk_02.png</frameName>
+        <eventName type="setMove">3</eventName>
+        <frameName>Orochimaru_Walk_03.png</frameName>
+        <eventName type="setMove">3</eventName>
+        <frameName>Orochimaru_Walk_04.png</frameName>
+        <eventName type="setMove">3</eventName>
+        <frameName>Orochimaru_Walk_05.png</frameName>
+        <eventName type="setMove">3</eventName>
+        <frameName>Orochimaru_Walk_06.png</frameName>
+        <eventName type="setMove">3</eventName>
+      </frame>
+    </action>
+    <action value="Hurt">
+      <frame>
+        <eventName type="setMove">32</eventName>
+        <frameName>Orochimaru_Hurt_01.png</frameName>
+        <frameName>Orochimaru_Hurt_01.png</frameName>
+        <frameName>Orochimaru_Hurt_02.png</frameName>
+        <eventName type="setSound">Audio/Jura/hurt.mp3</eventName>
+      </frame>
+    </action>
+   <action value="AirHurt">
+     <frame>
+         <frameName>Orochimaru_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   <action value="KnockDown">
+      <frame>
+        <frameName>Orochimaru_KnockDown_01.png</frameName>
+        <frameName>Orochimaru_KnockDown_02.png</frameName>
+        <eventName type="setDelay">60</eventName>
+        <frameName>Orochimaru_KnockDown_03.png</frameName>
+        <frameName>Orochimaru_KnockDown_03.png</frameName>
+        <frameName>Orochimaru_KnockDown_03.png</frameName>
+      </frame>
+    </action>
+    <action value="Float">
+      <frame>
+          <frameName>Orochimaru_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Orochimaru_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Orochimaru_Float_01.png</frameName>
+      </frame>
+    </action>
+    <action value="Dead">
+      <frame>
+          <frameName>Orochimaru_KnockDown_01.png</frameName>
+          <frameName>Orochimaru_KnockDown_02.png</frameName>
+          <eventName type="setSound">Audio/Jura/die.mp3</eventName>
+      </frame>
+    </action>
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">90</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Orochimaru_NAttack_01.png</frameName>
+        <frameName>Orochimaru_NAttack_02.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo1.ogg</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Orochimaru_NAttack_03.png</frameName>
+        <frameName>Orochimaru_NAttack_04.png</frameName>
+        <frameName>Orochimaru_NAttack_05.png</frameName>
+        <eventName type="setMove">8</eventName>
+        <frameName>Orochimaru_NAttack_06.png</frameName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <eventName type="setSound">Audio/Effect/combo2.ogg</eventName>
+        <frameName>Orochimaru_NAttack_07.png</frameName>
+        <frameName>Orochimaru_NAttack_08.png</frameName>
+        <frameName>Orochimaru_NAttack_09.png</frameName>
+        <frameName>Orochimaru_NAttack_10.png</frameName>
+        <eventName type="setMove">16</eventName>
+        <eventName type="setSound">Audio/Jura/N.mp3</eventName>
+        <frameName>Orochimaru_NAttack_11.png</frameName>
+        <eventName type="setSound">Audio/Effect/combo3.ogg</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Orochimaru_NAttack_12.png</frameName>
+        <frameName>Orochimaru_NAttack_13.png</frameName>
+        <frameName>Orochimaru_NAttack_14.png</frameName>
+      </frame>
+    </action>
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cAttack</dateName>
+       <dateName type="attackValue">150</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">10</coldName>
+     </date>
+     <frame>
+            <eventName type="setSound">Audio/Jura/02.mp3</eventName>
+            <frameName>Orochimaru_Skill02_02.png</frameName>
+            <eventName type="setMon">JuuraMktn</eventName>
+            <frameName>Orochimaru_Skill02_01.png</frameName>
+            <frameName>Orochimaru_Skill02_01.png</frameName>
+          <eventName type="setDelay">40</eventName>                   
+     </frame>
+   </action>
+    <action value="skill02">
+        <date>
+		    <dateName type="attackType">cAttack</dateName>
+        <dateName type="attackValue">900</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">15</coldName>
+        </date>
+        <frame>
+         <eventName type="setSound">Audio/Effect/ougis.ogg</eventName>
+        <eventName type="setSound">Audio/Jura/03.mp3</eventName>
+        <eventName type="setMon">MokuShinju</eventName>
+        <frameName>Orochimaru_Skill03_01.png</frameName>
+       <frameName>Orochimaru_Skill03_02.png</frameName>
+       <frameName>Orochimaru_Skill03_02.png</frameName>
+        <eventName type="setDelay">30</eventName>
+        </frame>
+    </action>
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">cAttack</dateName>
+            <dateName type="attackValue">2800</dateName>
+            <dateName type="attackRangeX">40</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">25</coldName>
+        </date>
+        <frame>
+            <frameName>JuraExUp_01.png</frameName>
+            <eventName type="setSound">Audio/Effect/EfxJump2.mp3</eventName>
+            <frameName>JuraExUp_02.png</frameName>
+            <frameName>JuraExStan_01.png</frameName>
+      <frameName>JuraExChg_01.png</frameName>      
+      <eventName type="setSound">Audio/Effect/charge2.ogg</eventName>
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_02.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_03.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_04.png</frameName>              
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_05.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_06.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_07.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+      <frameName>JuraExChg_08.png</frameName>      
+      <eventName type="setDelay">-3</eventName>
+    <frameName>JuraExShot_01.png</frameName>
+    <eventName type="setAttackBox">f_hit</eventName>
+    <eventName type="setSound">Audio/Effect/BEAM.ogg</eventName>
+    <frameName>JuraExShot_02.png</frameName>
+    <frameName>JuraExShot_01.png</frameName>
+    <frameName>JuraExShot_02.png</frameName>
+    <frameName>JuraExShot_03.png</frameName>
+    <frameName>JuraExShot_04.png</frameName>
+    <frameName>JuraExShot_05.png</frameName>
+    <eventName type="setDelay">20</eventName>
+       <frameName>JuraExStan_01.png</frameName>
+       <frameName>JuraExDown_01.png</frameName>
+        </frame>
+    </action>
+   <action value="skill04">
+     <date>
+       <dateName type="attackType">cAttack</dateName>
+       <dateName type="attackValue">193</dateName>
+       <dateName type="attackRangeX">100</dateName>
+       <dateName type="attackRangeY">48</dateName>
+       <coldName type="coldDown">1</coldName>
+     </date>
+     <frame>
+         <eventName type="setSound">Audio/Jura/nigasan.mp3</eventName>
+        <frameName>juura_BijuDamaChg_01.png</frameName>
+        <eventName type="setSound">Audio/Effect/charge2.ogg</eventName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_02.png</frameName>
+        <eventName type="setAttackBox">b_hit</eventName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_03.png</frameName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_04.png</frameName>
+        <eventName type="setAttackBox">b_hit</eventName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_05.png</frameName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_06.png</frameName>
+        <eventName type="setAttackBox">b_hit</eventName>
+        <eventName type="setDelay">5</eventName>
+        <frameName>juura_BijuDamaChg_07.png</frameName>
+        <frameName>juura_BijuDamaChg_07.png</frameName>
+        <frameName>juura_BijuDamaShot_01.png</frameName>
+      <eventName type="setDelay">-5</eventName>
+        <eventName type="setSound">Audio/Effect/BijuDama.mp3</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <frameName>juura_BijuDamaShot_02.png</frameName>
+      <eventName type="setDelay">-5</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <frameName>juura_BijuDamaShot_03.png</frameName>
+      <eventName type="setDelay">-5</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <frameName>juura_BijuDamaShot_04.png</frameName>
+      <eventName type="setDelay">-5</eventName>
+        <eventName type="setAttackBox">bl_hit</eventName>
+        <frameName>juura_BijuDamaShot_05.png</frameName>
+        <frameName>juura_BijuDamaBom_01.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setSound">Audio/Effect/bombs.ogg</eventName>
+        <eventName type="setAttackBox">f_hit</eventName>
+        <frameName>juura_BijuDamaBom_02.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_03.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>juura_BijuDamaBom_04.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_05.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>juura_BijuDamaBom_06.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setSound">Audio/Effect/explosion1.mp3</eventName>
+        <frameName>juura_BijuDamaBom_02.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_03.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>juura_BijuDamaBom_04.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_05.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>juura_BijuDamaBom_06.png</frameName>
+        <eventName type="setSound">Audio/Effect/explosion1.mp3</eventName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_07.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>juura_BijuDamaBom_08.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <frameName>juura_BijuDamaBom_09.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>juura_BijuDamaBom_10.png</frameName>
+        <eventName type="setDelay">-1</eventName>
+     </frame>
+   </action>
+    <action value="skill05">
+         <date>
+        <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">20</dateName>
+        <dateName type="attackRangeX">10</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        </date>
+        <frame>
+        <eventName type="setSound">Audio/Effect/ougis.ogg</eventName>
+        <eventName type="setCommand">setInvincible</eventName>
+          <eventName type="setMon">JuraMark</eventName>       
+            <frameName>Orochimaru_Skill02_02.png</frameName>
+            <frameName>Orochimaru_Skill02_02.png</frameName>
+            <frameName>Orochimaru_Skill02_03.png</frameName>
+      <frameName>JuraTLP_01.png</frameName>      
+      <eventName type="setSound">Audio/Effect/dash.wav</eventName>
+      <eventName type="setSound">Audio/Code/Vo0.mp3</eventName>
+      <frameName>JuraTLP_02.png</frameName>      
+      <eventName type="setDelay">-5</eventName>
+      <frameName>JuraTLP_03.png</frameName>      
+      <eventName type="setDelay">-5</eventName>
+      <frameName>JuraTLP_04.png</frameName>              
+      <eventName type="setDelay">-5</eventName>
+      <eventName type="setCommand">findTarget</eventName> 
+      <eventName type="setCommand">setTransport</eventName>
+      <eventName type="setSound">Audio/Effect/codeClawEfx.mp3</eventName>
+      <frameName>JuraTLP_04.png</frameName>      
+      <eventName type="setDelay">-5</eventName>
+      <frameName>JuraTLP_03.png</frameName>      
+      <eventName type="setDelay">-5</eventName>
+      <frameName>JuraTLP_02.png</frameName>      
+      <eventName type="setDelay">-5</eventName>
+      <frameName>JuraTLP_01.png</frameName>              
+      <eventName type="setDelay">-5</eventName>
+        <frameName>Orochimaru_Skill01_00.png</frameName>
+        <eventName type="setChargeB">100</eventName>
+        <frameName>Orochimaru_Skill01_01.png</frameName>
+        <eventName type="setSound">Audio/Jura/01.mp3</eventName>
+        <eventName type="setAttackBox">o_hit</eventName>
+         <eventName type="setSound">Audio/Effect/rock_hit2.ogg</eventName>
+       <frameName>Orochimaru_Skill01_02.png</frameName>
+       <frameName>Orochimaru_Skill01_03.png</frameName>
+        <eventName type="setAttackBox">o2_hit</eventName>
+       <frameName>Orochimaru_Skill01_04.png</frameName>
+       <frameName>Orochimaru_Skill01_05.png</frameName> 
+         <frameName>Orochimaru_Skill01_007.png</frameName>
+        <frameName>Orochimaru_Skill01_12.png</frameName>
+        <eventName type="setSound">Audio/Jura/001.mp3</eventName>
+        <eventName type="setAttackBox">b_hit</eventName>
+         <eventName type="setSound">Audio/Effect/rock_hit2.ogg</eventName>
+       <frameName>Orochimaru_Skill01_13.png</frameName>
+       <frameName>Orochimaru_Skill01_14.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+       <frameName>Orochimaru_Skill01_15.png</frameName>
+       <frameName>Orochimaru_Skill01_16.png</frameName>
+        <frameName>Orochimaru_Skill01_007.png</frameName>
+        <frameName>Orochimaru_Skill01_07.png</frameName>
+        <eventName type="setSound">Audio/Jura/001.mp3</eventName>
+        <eventName type="setAttackBox">f_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+         <eventName type="setSound">Audio/Effect/rock_hit2.ogg</eventName>
+       <frameName>Orochimaru_Skill01_08.png</frameName>
+       <frameName>Orochimaru_Skill01_09.png</frameName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+       <frameName>Orochimaru_Skill01_10.png</frameName>
+       <frameName>Orochimaru_Skill01_11.png</frameName>
+      <frameName>Orochimaru_Skill04_05.png</frameName>
+      <eventName type="setOugis">20</eventName>
+      <frameName>Orochimaru_Skill04_05.png</frameName>
+         <eventName type="setSound">Audio/Effect/ougis.ogg</eventName>
+       <frameName>Orochimaru_Skill04_01.png</frameName>
+         <eventName type="setSound">Audio/Effect/3.wav</eventName>
+       <frameName>Orochimaru_Skill04_02.png</frameName>
+       <frameName>Orochimaru_Skill04_03.png</frameName>
+       <frameName>Orochimaru_Skill04_04.png</frameName>
+      <frameName>Orochimaru_Skill04_05.png</frameName>
+        <eventName type="setMon">Hasan</eventName>
+        <eventName type="setDelay">190</eventName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <eventName type="setMon">Tuji</eventName>
+        <eventName type="setMon">Tuji2</eventName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+        <frameName>Orochimaru_Idle_03.png</frameName>
+        <frameName>Orochimaru_Idle_01.png</frameName>
+        <frameName>Orochimaru_Idle_02.png</frameName>
+         <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+   
+</animation>

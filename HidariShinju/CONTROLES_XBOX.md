@@ -47,3 +47,6 @@ Chidori queda en abajo adelante + X en ambas formas, como pidió el usuario; por
 Indra es una flecha que debe alcanzar físicamente al rival: puede bloquearse y esquivarse. Consume 3000 incluso si falla. Al acertar, su daño máximo es **min(450, 45 % de la vida máxima del rival)**; la explosión no suma daño adicional. Puede rematar a un rival herido, pero no derrotarlo desde vida completa. La ulti de base mantiene su límite de min(420, 42 %).
 
 En ambas formas: **→→ / ←←** hacen dash sin gasto, mantener **Pausa/LB** carga energía y mantener atrás permite bloquear. Las cadenas aéreas de Hidari siguen disponibles durante el despertar. El Susanoo amarillo y sus poderes son una adaptación fan solicitada.
+
+
+Consulta [la revisión conjunta](REVISION_CONJUNTA.md) para los cambios de recepción, animación y CPU.

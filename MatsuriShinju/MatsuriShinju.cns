@@ -83,7 +83,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -142,7 +142,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -260,7 +260,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -319,7 +319,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -437,7 +437,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -496,7 +496,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1253,7 +1253,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1312,7 +1312,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1430,7 +1430,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1489,7 +1489,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1607,7 +1607,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -1666,7 +1666,7 @@ sparkxy=0,-43
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=12
 ground.slidetime=20
 ground.velocity=-0.3,0
 air.hittime=32
@@ -2554,7 +2554,7 @@ envshake.ampl=-1
 [State 1010, Technique drawing]
 type=Explod
 trigger1=Time=10
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -2599,7 +2599,7 @@ envshake.ampl=-1
 [State 1010, Technique drawing]
 type=Explod
 trigger1=Time=28
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -2644,7 +2644,7 @@ envshake.ampl=-4
 [State 1010, Technique drawing]
 type=Explod
 trigger1=Time=46
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -3089,7 +3089,7 @@ name="Tecnica de Matsuri"
 ID=9420
 stateno=9420
 postype=P1
-pos=IfElse(P2Dist X<200,P2Dist X,200),-34
+pos=IfElse(P2Dist X<200,P2Dist X,200),0
 ownpal=1
 keyctrl=0
 
@@ -3313,7 +3313,7 @@ envshake.ampl=-4
 [State 1410, Technique drawing]
 type=Explod
 trigger1=Time=27
-anim=8611
+anim=8700
 postype=P1
 pos=30,-35
 scale=1.1,1.1
@@ -3410,7 +3410,7 @@ envshake.ampl=-1
 [State 1420, Technique drawing]
 type=Explod
 trigger1=Time=10
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -3455,7 +3455,7 @@ envshake.ampl=-1
 [State 1420, Technique drawing]
 type=Explod
 trigger1=Time=27
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -3500,7 +3500,7 @@ envshake.ampl=-4
 [State 1420, Technique drawing]
 type=Explod
 trigger1=Time=44
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -3880,7 +3880,7 @@ envshake.ampl=-1
 [State 11010, Technique drawing]
 type=Explod
 trigger1=Time=10
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -3925,7 +3925,7 @@ envshake.ampl=-1
 [State 11010, Technique drawing]
 type=Explod
 trigger1=Time=28
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -3970,7 +3970,7 @@ envshake.ampl=-4
 [State 11010, Technique drawing]
 type=Explod
 trigger1=Time=46
-anim=8611
+anim=8700
 postype=P1
 pos=48,-36
 scale=1.05,1.05
@@ -4449,7 +4449,7 @@ name="Tecnica de Matsuri"
 ID=9420
 stateno=9420
 postype=P1
-pos=IfElse(P2Dist X<200,P2Dist X,200),-34
+pos=IfElse(P2Dist X<200,P2Dist X,200),0
 ownpal=1
 keyctrl=0
 
@@ -4673,7 +4673,7 @@ envshake.ampl=-4
 [State 11410, Technique drawing]
 type=Explod
 trigger1=Time=27
-anim=8611
+anim=8700
 postype=P1
 pos=30,-35
 scale=1.1,1.1
@@ -4770,7 +4770,7 @@ envshake.ampl=-1
 [State 11420, Technique drawing]
 type=Explod
 trigger1=Time=10
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -4815,7 +4815,7 @@ envshake.ampl=-1
 [State 11420, Technique drawing]
 type=Explod
 trigger1=Time=27
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -4860,7 +4860,7 @@ envshake.ampl=-4
 [State 11420, Technique drawing]
 type=Explod
 trigger1=Time=44
-anim=8611
+anim=8700
 postype=P1
 pos=25,-36
 scale=1.5,1.5
@@ -5238,6 +5238,11 @@ ctrl=0
 anim=8610
 velset=9,0
 
+[State 9410, Roots stay on the floor]
+type=PosSet
+trigger1=1
+y=0
+
 [State 9410, Stable effect scale during impacts]
 type=AngleDraw
 trigger1=1
@@ -5318,13 +5323,6 @@ ignorehitpause=1
 type=AssertSpecial
 trigger1=1
 flag=NoShadow
-ignorehitpause=1
-
-[State 9420, Visible cloth coils turn around the victim]
-type=AngleDraw
-trigger1=1
-value=Time*15
-scale=1.4,1.4
 ignorehitpause=1
 
 [State 9420, Physical contact]
@@ -5435,7 +5433,7 @@ velset=0,0
 type=AngleDraw
 trigger1=1
 value=0
-scale=1,1
+scale=.55,.55
 ignorehitpause=1
 
 [State 9430, Effect has no push box]
@@ -5561,7 +5559,7 @@ velset=0,0
 type=AngleDraw
 trigger1=1
 value=0
-scale=1,1
+scale=.7,.7
 ignorehitpause=1
 
 [State 9450, Effect has no push box]
@@ -5910,7 +5908,7 @@ envshake.ampl=-4
 [State 1211, Technique drawing]
 type=Explod
 trigger1=Time=26
-anim=8611
+anim=8700
 postype=P1
 pos=45,-32
 scale=1.2,1.2
@@ -6047,7 +6045,7 @@ envshake.ampl=-4
 [State 1440, Technique drawing]
 type=Explod
 trigger1=Time=26
-anim=8611
+anim=8700
 postype=P1
 pos=45,-32
 scale=1.2,1.2
@@ -6270,7 +6268,7 @@ envshake.ampl=-4
 [State 11211, Technique drawing]
 type=Explod
 trigger1=Time=26
-anim=8611
+anim=8700
 postype=P1
 pos=45,-32
 scale=1.2,1.2
@@ -6407,7 +6405,7 @@ envshake.ampl=-4
 [State 11440, Technique drawing]
 type=Explod
 trigger1=Time=26
-anim=8611
+anim=8700
 postype=P1
 pos=45,-32
 scale=1.2,1.2
@@ -6640,7 +6638,7 @@ keyctrl=0
 [State 520, Technique drawing]
 type=Explod
 trigger1=Time=8
-anim=8611
+anim=8700
 postype=P1
 pos=0,-36
 scale=0.8,0.8
@@ -6655,7 +6653,7 @@ supermovetime=180
 [State 520, Technique drawing]
 type=Explod
 trigger1=Time=14
-anim=8611
+anim=8700
 postype=P1
 pos=0,-36
 scale=0.9500000000000001,0.9500000000000001
@@ -6670,7 +6668,7 @@ supermovetime=180
 [State 520, Technique drawing]
 type=Explod
 trigger1=Time=20
-anim=8611
+anim=8700
 postype=P1
 pos=0,-36
 scale=1.1,1.1
@@ -6685,7 +6683,7 @@ supermovetime=180
 [State 520, Technique drawing]
 type=Explod
 trigger1=Time=26
-anim=8611
+anim=8700
 postype=P1
 pos=0,-36
 scale=1.25,1.25
@@ -6916,7 +6914,7 @@ kill=0
 [State 3001, Technique drawing]
 type=Explod
 trigger1=Time=38
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -6948,7 +6946,7 @@ kill=0
 [State 3001, Technique drawing]
 type=Explod
 trigger1=Time=70
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -6980,7 +6978,7 @@ kill=0
 [State 3001, Technique drawing]
 type=Explod
 trigger1=Time=102
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -7012,7 +7010,7 @@ kill=1
 [State 3001, Technique drawing]
 type=Explod
 trigger1=Time=134
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -7223,7 +7221,7 @@ kill=0
 [State 13001, Technique drawing]
 type=Explod
 trigger1=Time=38
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -7255,7 +7253,7 @@ kill=0
 [State 13001, Technique drawing]
 type=Explod
 trigger1=Time=70
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -7287,7 +7285,7 @@ kill=0
 [State 13001, Technique drawing]
 type=Explod
 trigger1=Time=102
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5
@@ -7319,7 +7317,7 @@ kill=1
 [State 13001, Technique drawing]
 type=Explod
 trigger1=Time=134
-anim=8611
+anim=8700
 postype=P1
 pos=60,-42
 scale=1.5,1.5

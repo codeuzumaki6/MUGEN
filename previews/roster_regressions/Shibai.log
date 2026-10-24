@@ -1,0 +1,134 @@
+Check A: Selecting Renderer
+Check B: Initializing GFX
+Check C: Initializing GFX Font
+Check D: We are GOOD
+
+Using OpenGL 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 (llvmpipe (LLVM 19.1.7, 256 bits))
+WARNING: Kung Fu Man's state 1027 in kfm.cns, line 1476: Unknown state controller parameter(s): x, y
+
+PASS Vendaval 0 1 [] 168
+PASS Ciclon 0 1 [] 220
+PASS RafagaCortante 0 1 [] 206
+PASS TruenoDoble 0 1 [] 108
+PASS Tormenta 0 1 [] 168
+PASS Repulsion 0 1 [] 174
+PASS RafagaBaja 0 1 [] 108
+PASS RemolinoBajo 0 1 [] 152
+PASS Descarga 0 1 [] 132
+PASS Reflejo 0 1 [] 156
+PASS Garra 0 1 [] 162
+PASS Senrigan 0 1 [] 156
+PASS SalidaGarra 0 1 [] 162
+PASS Combo a 0 1 [] 245
+PASS Aire a 0 1 [] 201
+PASS Combo b 0 1 [] 245
+PASS Aire b 0 1 [] 201
+PASS Combo c 0 1 [] 245
+PASS Aire c 0 1 [] 201
+PASS ultimate 0 1 [] 420
+PASS ultiblock 0 1 [] 0
+PASS ultijump 0 1 [] 0
+PASS ultifar 0 1 [] 0
+PASS empty 0 1 [] 0
+PASS recovery 0 1 [] 0
+PASS Dash izquierda 0 1 [] 0
+PASS Dash derecha 0 1 [] 0
+PASS chargehit 0 1 [] 0
+PASS Vendaval 0 -1 [] 168
+PASS Ciclon 0 -1 [] 220
+PASS RafagaCortante 0 -1 [] 206
+PASS TruenoDoble 0 -1 [] 108
+PASS Tormenta 0 -1 [] 168
+PASS Repulsion 0 -1 [] 174
+PASS RafagaBaja 0 -1 [] 108
+PASS RemolinoBajo 0 -1 [] 152
+PASS Descarga 0 -1 [] 132
+PASS Reflejo 0 -1 [] 156
+PASS Garra 0 -1 [] 162
+PASS Senrigan 0 -1 [] 156
+PASS SalidaGarra 0 -1 [] 162
+PASS Combo a 0 -1 [] 245
+PASS Aire a 0 -1 [] 201
+PASS Combo b 0 -1 [] 245
+PASS Aire b 0 -1 [] 201
+PASS Combo c 0 -1 [] 245
+PASS Aire c 0 -1 [] 201
+PASS ultimate 0 -1 [] 420
+PASS ultiblock 0 -1 [] 0
+PASS ultijump 0 -1 [] 0
+PASS ultifar 0 -1 [] 0
+PASS empty 0 -1 [] 0
+PASS recovery 0 -1 [] 0
+PASS Dash izquierda 0 -1 [] 0
+PASS Dash derecha 0 -1 [] 0
+PASS chargehit 0 -1 [] 0
+PASS Vendaval 1 1 [] 419
+PASS Ciclon 1 1 [] 514
+PASS RafagaCortante 1 1 [] 597
+PASS TruenoDoble 1 1 [] 176
+PASS Tormenta 1 1 [] 274
+PASS Repulsion 1 1 [] 400
+PASS RafagaBaja 1 1 [] 176
+PASS RemolinoBajo 1 1 [] 247
+PASS Descarga 1 1 [] 352
+PASS Reflejo 1 1 [] 254
+PASS Garra 1 1 [] 400
+PASS Senrigan 1 1 [] 254
+PASS SalidaGarra 1 1 [] 263
+PASS Combo a 1 1 [] 398
+PASS Aire a 1 1 [] 328
+PASS Combo b 1 1 [] 398
+PASS Aire b 1 1 [] 328
+PASS Combo c 1 1 [] 398
+PASS Aire c 1 1 [] 328
+PASS ultimate 1 1 [] 420
+PASS ultiblock 1 1 [] 0
+PASS ultijump 1 1 [] 0
+PASS ultifar 1 1 [] 0
+PASS empty 1 1 [] 0
+PASS recovery 1 1 [] 0
+PASS Dash izquierda 1 1 [] 0
+PASS Dash derecha 1 1 [] 0
+PASS chargehit 1 1 [] 0
+PASS Vendaval 1 -1 [] 419
+PASS Ciclon 1 -1 [] 514
+PASS RafagaCortante 1 -1 [] 597
+PASS TruenoDoble 1 -1 [] 176
+PASS Tormenta 1 -1 [] 274
+PASS Repulsion 1 -1 [] 400
+PASS RafagaBaja 1 -1 [] 176
+PASS RemolinoBajo 1 -1 [] 247
+PASS Descarga 1 -1 [] 352
+PASS Reflejo 1 -1 [] 254
+PASS Garra 1 -1 [] 400
+PASS Senrigan 1 -1 [] 254
+PASS SalidaGarra 1 -1 [] 263
+PASS Combo a 1 -1 [] 398
+PASS Aire a 1 -1 [] 328
+PASS Combo b 1 -1 [] 398
+PASS Aire b 1 -1 [] 328
+PASS Combo c 1 -1 [] 398
+PASS Aire c 1 -1 [] 328
+PASS ultimate 1 -1 [] 420
+PASS ultiblock 1 -1 [] 0
+PASS ultijump 1 -1 [] 0
+PASS ultifar 1 -1 [] 0
+PASS empty 1 -1 [] 0
+PASS recovery 1 -1 [] 0
+PASS Dash izquierda 1 -1 [] 0
+PASS Dash derecha 1 -1 [] 0
+PASS chargehit 1 -1 [] 0
+PASS walk 0 1 [] 0
+PASS jump 0 1 [] 0
+PASS diagonal 0 1 [] 0
+PASS charge 0 1 [] 0
+PASS awakening 0 1 [] 0
+PASS charge 1 1 [] 0
+PASS walk 0 -1 [] 0
+PASS jump 0 -1 [] 0
+PASS diagonal 0 -1 [] 0
+PASS charge 0 -1 [] 0
+PASS awakening 0 -1 [] 0
+PASS charge 1 -1 [] 0
+PASS 38 awakened techniques and chains: greater collision damage, below full-life knockout
+PASSED 124 Shibai raw-input and collision cases

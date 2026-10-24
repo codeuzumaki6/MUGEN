@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>MatsuriNol</f>
+        <e type="setDelay">20</e> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">500</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Hashirama_Mktn01_01</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Hashirama_Mktn01_02</f>
+        <f>Hashirama_Mktn01_03</f>
+        <f>Hashirama_Mktn01_04</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hashirama_Mktn01_05</f>
+        <f>Hashirama_Mktn01_06</f>
+        <f>Hashirama_Mktn01_07</f>
+        <e type="setAttackBox">o2_hit</e>
+        
+        <e type="setDelay">500</e>
+          
+          
+        <f>Hashirama_Mktn01_06</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Hashirama_Mktn01_05</f>
+        <f>Hashirama_Mktn01_04</f>
+        <f>Hashirama_Mktn01_03</f>
+        <f>Hashirama_Mktn01_02</f>
+        <f>Hashirama_Mktn01_01</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">500</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Hashirama_Mktn01_01</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Hashirama_Mktn01_02</f>
+        <f>Hashirama_Mktn01_03</f>
+        <f>Hashirama_Mktn01_04</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hashirama_Mktn01_05</f>
+        <f>Hashirama_Mktn01_06</f>
+        <f>Hashirama_Mktn01_07</f>
+        <e type="setAttackBox">o2_hit</e>
+        
+        <e type="setDelay">500</e>
+          
+          
+        <f>Hashirama_Mktn01_06</f>
+        <e type="setSound">Audio/Effect/Kayu.ogg</e>
+        <f>Hashirama_Mktn01_05</f>
+        <f>Hashirama_Mktn01_04</f>
+        <f>Hashirama_Mktn01_03</f>
+        <f>Hashirama_Mktn01_02</f>
+        <f>Hashirama_Mktn01_01</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

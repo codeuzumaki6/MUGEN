@@ -7,3 +7,6 @@
 - Torbellino: atlas suplementario de ocho cuadros generado por IA, únicamente de efecto de arena de hierro. No sustituye cuerpos ni alas de la hoja original.
 
 Los nombres descriptivos de movimientos, costes, duración de la amplificación y cifras de daño son decisiones de esta adaptación jugable. El sonido utiliza efectos no verbales.
+
+
+Revisión conjunta: secuencias adicionales de los paquetes completos de Vaydra/Vahidras aportados por el usuario. Los atlas, metadatos y hashes de procedencia se conservan en `source_material/*_full_original` y `assets/senki/manifest.json` del proyecto. Se adaptan los pivotes y la programación de MUGEN; los cuerpos no se redibujan.

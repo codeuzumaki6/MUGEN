@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Chiyo</p>
+			<p type="attackValue">4000</p>
+			<p type="attackRangeX">45</p>
+			<p type="attackRangeY">100</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Chiyo_Idle_001</f>
+	
+
+	
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Chiyo_Walk_01</f>
+			<e type="setDelay">4</e>	
+			<f>Chiyo_Walk_02</f>
+	  	<e type="setSound">Audio/Effect/Step.mp3</e>	
+			<e type="setDelay">4</e>	
+			<f>Chiyo_Walk_03</f>
+			<e type="setDelay">4</e>		
+			<f>Chiyo_Walk_003</f>	
+			<e type="setDelay">4</e>		
+			<f>Chiyo_Walk_04</f>
+			<e type="setDelay">4</e>		
+			<f>Chiyo_Walk_05</f>
+			<e type="setSound">Audio/Effect/Step.mp3</e>
+			<e type="setDelay">4</e>		
+			<f>Chiyo_Walk_06</f>
+			<e type="setDelay">4</e>		
+			<f>Chiyo_Walk_006</f>	
+			<e type="setDelay">4</e>		
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Chiyo_Hurt_01</f>
+			<f>Chiyo_Hurt_02</f>
+			<!-- <e type="setSound">Audio/Chiyo/Chiyo_hurt.ogg</e> -->
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Chiyo_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Chiyo_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Die_01</f>
+			<e type="setDelay">60</e>
+			<f>Chiyo_Wake_01</f>
+			<e type="setDelay">40</e>
+			<f>Chiyo_Wake_02</f>
+			<e type="setDelay">20</e>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Chiyo_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Chiyo_Float_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Chiyo_KnockDown_01</f>
+			<f>Chiyo_Die_01</f>
+		
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">60</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Chiyo_NAttack_01</f>
+			<f>Chiyo_NAttack_02</f>
+			<e type="setDelay">10</e>
+			<e type="setMove">16</e>	
+			
+		  <f>Chiyo_NAttack_03</f>	
+			<e type="setSound">Audio/Effect/combo1.ogg</e>
+			<e type="setAttackBox">n_hit</e>		
+			<e type="setDelay">4</e>
+			<f>Chiyo_NAttack_04</f>
+	  	<e type="setDelay">4</e>
+			<f>Chiyo_NAttack_05</f>
+			<e type="setDelay">4</e>
+			<f>Chiyo_NAttack_06</f>
+	  	<e type="setDelay">4</e>	
+	  	
+	  	
+			<f>Chiyo_NAttack_07</f>
+    	<e type="setDelay">10</e>
+			<f>Chiyo_NAttack_08</f>
+			<e type="setSound">Audio/Effect/combo3.ogg</e>
+			<e type="setAttackBox">l_hit</e>
+			<e type="setDelay">4</e>
+			<f>Chiyo_NAttack_09</f>	
+	  	<e type="setDelay">4</e>
+			<f>Chiyo_NAttack_10</f>	
+	  	<e type="setDelay">4</e>			
+			
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+	
+			<e type="setSound">Audio/Eida/daemon.mp3</e>
+			<f>Chiyo_S1_02</f>
+			<f>Chiyo_S1_03</f>
+			<f>Chiyo_S1_04</f>	
+			<e type="setClone">0</e>
+			<e type="setBuff">17</e>
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+	<e type="setSound">Audio/Eida/do it.mp3</e>	
+	<f>Chiyo_Idle_002</f>
+	<e type="setMonAttack">1</e>	
+	<e type="setDelay">20</e>			
+		
+
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2460</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Eida/perfect timing.mp3</e>			
+		<f>Chiyo_S1_01</f>
+			<e type="setMonAttack">2</e>
+		<e type="setDelay">20</e>			
+		
+			
+						
+	
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+			<p type="attackType">GroupBuff</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">20</p>
+			<p type="cd">5</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Eida/lets see.mp3</e>
+			<f>Chiyo_S4_01</f>
+	  	<e type="setSound">Audio/Effect/fire.ogg</e>	
+	    <e type="setAttackBox">c_hit</e>		
+			<f>Chiyo_S4_02</f>
+			<f>Chiyo_S4_03</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_04</f>
+			<f>Chiyo_S4_05</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_06</f>
+			
+	
+			<f>Chiyo_S4_01</f>
+	  	<e type="setSound">Audio/Effect/fire.ogg</e>		
+	    <e type="setAttackBox">c_hit</e>		
+			<f>Chiyo_S4_02</f>
+			<f>Chiyo_S4_03</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_04</f>
+			<f>Chiyo_S4_05</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_06</f>		
+			
+
+			<f>Chiyo_S4_01</f>
+			<e type="setSound">Audio/Effect/fire.ogg</e>	
+	    <e type="setAttackBox">c_hit</e>		
+			<f>Chiyo_S4_02</f>
+			<f>Chiyo_S4_03</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_04</f>
+			<f>Chiyo_S4_05</f>
+	    <e type="setAttackBox">c_hit</e>			
+			<f>Chiyo_S4_06</f>	
+			
+			<e type="setBuff">50</e>
+		<e type="setSound">Audio/Effect/Ledakan.ogg</e>	
+			<f>Chiyo_S4_07</f>
+	    <e type="setAttackBox">f_hit</e>		
+			<f>Chiyo_S4_08</f>
+			<f>Chiyo_S4_10</f>	
+	    <e type="setAttackBox">c_hit</e>				
+			<f>Chiyo_S4_09</f>
+	  	<f>Chiyo_S4_12</f>
+	    <e type="setAttackBox">c_hit</e>				
+			<f>Chiyo_S4_11</f>
+	
+	
+	
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">100</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+      <e type="setJump">true</e>	
+	<e type="setAttackBox">f_hit</e>	
+			<f>Chiyo_S3_01</f>
+			<e type="setSound">Audio/Effect/EfxJump2.mp3</e>
+			<f>Chiyo_S3_02</f>
+		  <f>Chiyo_S3_01</f>
+			<f>Chiyo_S3_02</f>
+		  <f>Chiyo_S3_01</f>				
+			<f>Chiyo_S3_03</f>
+			<f>Chiyo_S3_03</f>
+		
+			
+			<f>Chiyo_S3_04</f>
+			<e type="setSound">Audio/Effect/rock_hit.ogg</e>  
+	  	<f>Chiyo_S3_05</f>
+			<f>Chiyo_S3_06</f>
+	   	<e type="setAttackBox">b_hit</e>		
+			<f>Chiyo_S3_07</f>	
+			<f>Chiyo_Wake_02</f>
+			<e type="setDelay">10</e>		
+		
+		
+		
+			
+    	<e type="setCharge">16</e>					
+			<f>Chiyo_S2_01</f>
+			<f>Chiyo_S2_02</f>
+			<e type="setSound">Audio/Effect/EfxJump2.mp3</e>	
+			<f>Chiyo_S2_03</f>
+			<f>Chiyo_S2_04</f>
+			<f>Chiyo_S2_05</f>
+			
+	    <e type="setMove">30</e>			
+  		<f>Chiyo_S2_06</f>
+  		<e type="setSound">Audio/Effect/rock_hit2.ogg</e>
+     	<e type="setAttackBox">f_hit</e>	
+			<f>Chiyo_S2_07</f>
+			<f>Chiyo_S2_08</f>
+			<f>Chiyo_S2_09</f>
+			<f>Chiyo_S2_10</f>		
+	  	<f>Chiyo_S2_11</f>				
+			<f>Chiyo_S2_12</f>			
+			
+			
+			
+		
+		
+			<e type="setCommand">setInvincible</e>
+	  	<e type="setSound">Audio/Effect/AuraGates.ogg</e>
+	    <e type="setAttackBox">f_hit</e>			
+			<f>Chiyo_S5_PreUp_001</f>
+			<f>Chiyo_S5_PreUp_002</f>
+			<f>Chiyo_S5_PreUp_003</f>
+			<f>Chiyo_S5_PreUp_004</f>
+	  	<f>Chiyo_S5_PreUp_005</f>
+	
+			<f>Chiyo_S5_PreUp_006</f>
+			<f>Chiyo_S5_PreUp_007</f>
+			<f>Chiyo_S5_PreUp_008</f>
+			<f>Chiyo_S5_PreUp_009</f>
+			<f>Chiyo_S5_PreUp_010</f>
+			
+  	  <e type="setSound">Audio/Effect/AuraGates.ogg</e>		
+			<f>Chiyo_S5_001</f>
+	  	<e type="setSound">Audio/Effect/ZeldaElf.mp3</e>		
+			<f>Chiyo_S5_002</f>
+			<f>Chiyo_S5_001</f>
+			<f>Chiyo_S5_002</f>	
+			
+		
+			
+			
+			<e type="setOugis">10</e>
+    	<f>Chiyo_S5_002</f>			
+			
+			
+	
+			<f>Chiyo_S5_01</f>
+	    	<e type="setSound">Audio/Effect/OmnipotenceSFx.mp3</e>	
+     	<e type="setAttackBox">f_hit</e>	
+			<f>Chiyo_S5_02</f>
+			<f>Chiyo_S5_03</f>
+			<f>Chiyo_S5_04</f>
+			<f>Chiyo_S5_05</f>
+			<f>Chiyo_S5_06</f>
+			<f>Chiyo_S5_07</f>
+			<f>Chiyo_S5_08</f>
+			<f>Chiyo_S5_09</f>
+			<f>Chiyo_S5_10</f>
+			
+						
+	
+	  	<e type="setMon">Sanbao</e>	
+			<f>Chiyo_S5_01</f>
+			<f>Chiyo_S5_03</f>
+			<f>Chiyo_S5_04</f>
+			<f>Chiyo_S5_05</f>
+			<e type="setSound">Audio/Effect/Senrigan.mp3</e>		
+			<f>Chiyo_S5_06</f>
+			<f>Chiyo_S5_07</f>
+			<f>Chiyo_S5_08</f>
+			<f>Chiyo_S5_09</f>
+			<f>Chiyo_S5_10</f>
+			
+			
+			
+	  	<f>Chiyo_S5_01</f> 
+			<f>Chiyo_S5_02</f>
+			<f>Chiyo_S5_03</f>
+			<f>Chiyo_S5_04</f>
+			<f>Chiyo_S5_05</f>
+			<f>Chiyo_S5_06</f>
+			<f>Chiyo_S5_07</f>
+			<f>Chiyo_S5_08</f>
+			<f>Chiyo_S5_09</f>
+			<f>Chiyo_S5_10</f>
+			
+			
+		 	<f>Chiyo_S5_01</f>
+	  	<e type="setSound">Audio/Effect/AuraGates.ogg</e>
+			<f>Chiyo_S5_02</f>
+			<f>Chiyo_S5_03</f>
+			<f>Chiyo_S5_04</f>
+			<f>Chiyo_S5_05</f>
+			<f>Chiyo_S5_06</f>
+			<f>Chiyo_S5_07</f>
+			<f>Chiyo_S5_08</f>
+			<f>Chiyo_S5_09</f>
+			<f>Chiyo_S5_10</f>
+			
+			
+			
+	
+			<e type="setCommand">reInvincible</e>
+		</frame>
+
+	</action>
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<frame></frame>
+	</action>
+
+</unit>

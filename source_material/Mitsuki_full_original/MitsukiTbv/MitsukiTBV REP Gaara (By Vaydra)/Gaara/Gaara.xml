@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+   
+   <action value="Idle">
+	 <data>
+	      <p type="attackType">Gaara</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">63</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+   </data>
+   <frame>
+        <f>Gaara_Idle_01</f>        
+        <f>Gaara_Idle_02</f>
+        <f>Gaara_Idle_03</f>
+        <f>Gaara_Idle_02</f>
+        <f>Gaara_Idle_01</f>
+        <f>Gaara_Idle_01</f>
+   </frame>
+   </action>
+   
+   <action value="Walk">
+   <frame>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_01</f>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_02</f>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_03</f>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_04</f>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_05</f>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <e type="setMove">2</e>
+        <f>Gaara_Walk_06</f>
+   </frame>
+   </action>
+   
+   <action value="Hurt">
+   <frame>
+        <e type="setMove">32</e>
+        <f>Gaara_Hurt_01</f>
+        <f>Gaara_Hurt_02</f>
+        <e type="setSound">Audio/Mitsuki/MitsukiHurt.mp3</e>
+   </frame>
+   </action>
+   
+   <action value="AirHurt">
+   <frame>
+         <f>Gaara_AirHurt_01</f>
+   </frame>
+   </action>
+   
+   <action value="KnockDown">
+   <frame>
+          <f>Gaara_Knock_01</f>
+          <f>Gaara_Knock_02</f>
+          <e type="setDelay">60</e>
+          <f>Gaara_Knock_03</f>          
+          <f>Gaara_Knock_03</f>
+          <f>Gaara_Knock_04</f>
+          <f>Gaara_Knock_04</f>
+   </frame>
+   </action>
+   
+   <action value="Float">
+   <frame>
+          <f>Gaara_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Gaara_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Gaara_Float_01</f>
+   </frame>
+   </action>
+   
+   <action value="Dead">
+   <frame>
+          <f>Gaara_Knock_01</f>
+          <f>Gaara_Knock_02</f>          
+          <e type="setSound">Audio/Mitsuki/die.ogg</e>
+   </frame>
+   </action>
+   
+   <action value="nAttack">
+   <data>
+	      <p type="attackType">nAttack</p>
+        <p type="attackValue">60</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+   </data>
+   <frame>
+        <f>Gaara_NAttack_01</f>
+        <e type="setDelay">10</e>
+        
+        <f>Gaara_NAttack_02</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Gaara_NAttack_03</f>
+        <f>Gaara_NAttack_04</f>
+        <f>Gaara_NAttack_05</f>
+        
+        <f>Gaara_NAttack_06</f>
+        <e type="setSound">Audio/Effect/combo2.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Gaara_NAttack_07</f>     
+        <f>Gaara_NAttack_08</f>
+        <f>Gaara_NAttack_09</f>
+        
+        
+        <f>Gaara_NAttack_10</f>
+        <e type="setDelay">10</e>        
+        <f>Gaara_NAttack_11</f>
+        <e type="setSound">Audio/Mitsuki/MitsukiSnake.mp3</e>	
+        <e type="setAttackBox">s_hit</e>
+        <f>Gaara_NAttack_12</f>
+        <f>Gaara_NAttack_13</f>
+        <e type="setAttackBox">s_hit</e>
+        <f>Gaara_NAttack_12</f>
+        <f>Gaara_NAttack_11</f>
+        <e type="setAttackBox">s_hit</e>
+        
+        
+        
+        <f>Gaara_NAttack_14</f>
+        <e type="setDelay">10</e>
+        <e type="setMove">8</e>
+        
+        
+        <f>Gaara_NAttack_15</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_NAttack_16</f>
+        <f>Gaara_NAttack_17</f>
+        <f>Gaara_NAttack_18</f>
+        <f>Gaara_NAttack_19</f>
+
+
+   </frame>
+   </action>
+
+   <action value="skill01">
+   <data>
+	     <p type="attackType">cAttack</p>
+       <p type="attackValue">210</p>
+       <p type="attackRangeX">32</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">10</p>
+   </data>
+   <frame>
+        <e type="setSound">Audio/Effect/SegelTangan.mp3</e>   
+        <f>Gaara_SegelTangan_01</f>
+        <e type="setSound">Audio/Mitsuki/MitsukiToppa.mp3</e>   
+        <f>Gaara_SegelTangan_02</f>
+        <f>Gaara_SegelTangan_03</f>
+        <f>Gaara_SegelTangan_02</f>
+        <f>Gaara_SegelTangan_04</f>
+        
+        
+        
+        <e type="setSound">Audio/Mitsuki/ToppaEfx.mp3</e>   
+        <f>Gaara_Toppa_01</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_Toppa_02</f>
+        <f>Gaara_Toppa_03</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_Toppa_04</f>
+        <f>Gaara_Toppa_05</f>
+        <e type="setAttackBox">l_hit</e>
+        
+        <e type="setSound">Audio/Mitsuki/ToppaEfx.mp3</e>   
+        <f>Gaara_Toppa_06</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_Toppa_07</f>
+        <f>Gaara_Toppa_08</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_Toppa_09</f>
+        <f>Gaara_Toppa_10</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Gaara_Toppa_11</f>  
+        
+        <f>Gaara_Toppa_11</f>
+
+   </frame>
+   </action>
+   
+   
+
+   <action value="skill02">
+   <data>
+		    <p type="attackType">cAttack</p>
+        <p type="attackValue">235</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">15</p>
+   </data>
+   <frame>
+
+        <e type="setSound">Audio/Effect/SegelTangan.mp3</e>   
+        <f>Gaara_SegelTangan_01</f>
+        <e type="setSound">Audio/Mitsuki/HebiMikazuchi.mp3</e>   
+        <f>Gaara_SegelTangan_02</f>
+        <f>Gaara_SegelTangan_03</f>
+        <f>Gaara_SegelTangan_02</f>
+        <f>Gaara_SegelTangan_04</f>
+        <f>Gaara_SegelTangan_04</f>
+        
+        
+        
+        <f>Gaara_HebiMikazuchi_10</f>	    
+                
+        <f>Gaara_HebiMikazuchi_01</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setSound">Audio/Effect/snake.wav</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_02</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_03</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_04</f>      
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_05</f>        
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_06</f>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_07</f>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_08</f>          
+        <e type="setAttackBox">b_hit</e>
+        <e type="setDelay">2</e>
+        <f>Gaara_HebiMikazuchi_09</f>       
+        <f>Gaara_HebiMikazuchi_10</f>	    
+        <e type="setDelay">20</e>
+        
+   </frame>
+   </action>
+
+
+
+   <action value="skill03">
+   <data>
+			<p type="attackType">oAttack</p>
+      <p type="attackValue">310</p>
+      <p type="attackRangeX">40</p>
+      <p type="attackRangeY">48</p>
+      <p type="cd">25</p>
+   </data>
+   <frame>
+                
+
+        <f>Gaara_Kick_01</f>
+        <e type="setDelay">10</e>
+        <e type="setCharge">280</e>
+
+        <f>Gaara_Kick_02</f>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setAttackBox">bl_hit</e>
+        <e type="setSound">Audio/Effect/rock_hit2.ogg</e>
+        <f>Gaara_Kick_03</f>
+        <f>Gaara_Kick_04</f>
+        <f>Gaara_Kick_05</f>
+        <f>Gaara_Kick_06</f>
+        <f>Gaara_Kick_07</f>
+             
+             
+--air
+  <e type="setMon">SandWave</e>
+        <e type="setJump">true</e>
+        <e type="setSound">Audio/Effect/EfxJump2.mp3</e>	
+        <f>Gaara_Kamaitachi_01</f>
+        <f>Gaara_Kamaitachi_02</f>
+        <f>Gaara_Kamaitachi_03</f>
+        <f>Gaara_Kamaitachi_04</f>
+        <e type="setSound">Audio/Mitsuki/MitsukiKamaitachi.mp3</e>	
+        <f>Gaara_Kamaitachi_05</f>
+      <!--  <e type="setMon">Steam</e>  -->
+        <e type="stopJump">120</e> 
+        <f>Gaara_Kamaitachi_05</f>
+        <f>Gaara_Kamaitachi_02</f>
+        <e type="setDelay">20</e>
+        <f>Gaara_Kamaitachi_06</f>     
+        <e type="setSound">Audio/Effect/landing2.mp3</e>	
+        <e type="setDelay">10</e>
+        
+   </frame>
+   </action>
+
+   <action value="skill04">
+   <data>
+        <p type="attackType">cAttack</p>
+        <p type="attackValue">370</p>
+        <p type="attackRangeX">25</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">1</p>
+   </data>
+   <frame>
+
+
+--hit1
+      <f>Gaara_Slash1_01</f>
+      <e type="setDelay">10</e>
+      <e type="setCharge">280</e>     
+
+      <f>Gaara_Slash1_02</f>
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+      <e type="setAttackBox">b_hit</e>
+      <e type="setDelay">1</e>
+      <f>Gaara_Slash1_03</f>
+      <e type="setDelay">1</e>
+      <f>Gaara_Slash1_04</f>
+      <e type="setDelay">1</e>
+      <f>Gaara_Slash1_05</f>
+      <e type="setDelay">1</e>
+      <f>Gaara_Slash1_06</f>
+      <e type="setDelay">1</e>
+   
+   
+--hit2
+  
+      <f>Gaara_Slash2_01</f>
+      <e type="setDelay">10</e>
+      <f>Gaara_Slash2_02</f>
+      <e type="setDelay">1</e>
+      <e type="setCharge">280</e>     
+
+      <f>Gaara_Slash2_03</f>
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+      <e type="setAttackBox">f_hit</e>
+      <e type="setDelay">0</e>
+      <e type="setChargeB">60</e>     
+      <f>Gaara_Slash2_04</f>
+      <e type="setDelay">0</e>
+      <f>Gaara_Slash2_05</f>
+      <e type="setDelay">0</e>
+      <f>Gaara_Slash2_06</f>
+      <e type="setDelay">0</e>
+      <e type="setChargeB">60</e>     
+      <f>Gaara_Slash2_07</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">0</e> 
+      <f>Gaara_Slash2_08</f>
+      <e type="setDelay">0</e> 
+      <f>Gaara_Slash2_09</f>
+      <e type="setDelay">0</e> 
+      <e type="setAttackBox">c_hit</e>
+      <f>Gaara_Slash2_10</f>
+      <e type="setDelay">0</e> 
+
+   
+   
+--summon   
+   
+        <f>Gaara_Summon_01</f>
+        <e type="setSound">Audio/Mitsuki/hits</e>
+        <e type="setDelay">20</e> 
+        
+        <f>Gaara_Summon_02</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_03</f>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setSound">Audio/Effect/BugPillar.ogg</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_04</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_05</f>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">1</e>             
+        <f>Gaara_Summon_06</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setSound">Audio/Effect/mon2.wav</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_07</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_08</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_09</f>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_10</f>
+        <e type="setSound">Audio/Effect/BugPillar2.ogg</e>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_11</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_12</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_13</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_14</f>
+        <e type="setDelay">1</e>
+        <f>Gaara_Summon_15</f>
+        <e type="setDelay">1</e>
+        
+        
+        
+
+           
+   </frame>
+   </action>
+   
+   <action value="skill05">
+   <data>
+        <p type="attackType">cBuff</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">12</p>
+        <p type="cd">1</p>
+   </data>
+   <frame>
+
+--Trans
+   
+        <f>Gaara_Transform_01</f>
+        <e type="setSound">Audio/Mitsuki/MitsukiTransBom.mp3</e>
+        <f>Gaara_Transform_02</f>
+        <e type="setAttackBox">f_hit</e>
+        <f>Gaara_Transform_03</f>
+        <f>Gaara_Transform_04</f>
+        <e type="setSound">Audio/Effect/AuraGate.ogg</e>
+        <f>Gaara_Transform_05</f>
+        <f>Gaara_Transform_06</f>
+        <f>Gaara_Transform_07</f>
+        <f>Gaara_Transform_08</f>
+        <f>Gaara_Transform_09</f>
+        <f>Gaara_Transform_10</f>
+        <f>Gaara_Transform_11</f>
+            
+        <e type="setOugis">10</e>          
+        
+        
+        <f>Gaara_Transform_11</f>
+   
+        <f>SageGaara_Chg_01</f>
+        <e type="setSound">Audio/Mitsuki/mitsukiFuton.mp3</e>
+        <e type="setAttackBox">b_hit</e>
+        <f>SageGaara_Chg_02</f>
+        <e type="setSound">Audio/Mitsuki/OrochiIkazuchi.mp3</e>
+        <f>SageGaara_Chg_03</f>
+        <f>SageGaara_Chg_04</f>
+        <f>SageGaara_Chg_05</f>
+        <f>SageGaara_Chg_06</f>
+        
+            
+      <f>SageGaara_Ulti_01</f>
+
+      <e type="setSound">Audio/Mitsuki/MitsukiGrapHand.mp3</e>
+      <e type="setDelay">3</e>
+      <e type="setMon">BugTomado</e>
+      <f>SageGaara_Ulti_02</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">3</e>
+      <f>SageGaara_Ulti_03</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">3</e>
+      <f>SageGaara_Ulti_04</f>
+      <e type="setSound">Audio/Mitsuki/mitsukiFuton.mp3</e>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setDelay">3</e>               
+      <f>SageGaara_Ulti_05</f>
+      <e type="setDelay">3</e>
+      <f>SageGaara_Ulti_06</f>
+      <e type="setDelay">3</e>
+      <f>SageGaara_Ulti_07</f>
+      <e type="setDelay">3</e>
+      <f>SageGaara_Ulti_08</f>
+      <e type="setDelay">3</e>
+
+        
+        <e type="setDelay">3</e>
+        <e type="setBuff">17</e>
+   
+   
+
+
+
+          
+
+        <e type="setCommand">reInvincible</e>
+   </frame>
+   </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <data>
+        <p type="attackType">Idle</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">0</p>
+        <p type="cd">10</p>
+        </data>
+        <frame>
+
+     <e type="setBullet">SageMitsukiAura</e>
+          <e type="setSound">Audio/Effect/AuraGate.ogg</e>
+          <f>SageGaara_Idle_01</f>
+          <f>SageGaara_Idle_02</f>
+          <f>SageGaara_Idle_03</f>
+          <f>SageGaara_Idle_01</f>
+          <f>SageGaara_Idle_02</f>
+          <f>SageGaara_Idle_03</f>
+        </frame>
+    </action>
+
+    <action value="skill10">
+        <data>
+            <p type="attackType">Walk</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+     <e type="setBullet">SageMitsukiAura</e>
+        <e type="setSound">Audio/Effect/AuraGate.ogg</e>
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_01</f> 
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_02</f>
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_03</f> 
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_01</f> 
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_02</f>
+        <e type="setMove">6</e>
+        <f>SageGaara_Walk_03</f> 
+
+        </frame>
+    </action>
+    <action value="skill10">
+        <data>
+            <p type="attackType">aAttack</p>
+            <p type="attackValue">300</p>
+            <p type="attackRangeX">10</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+     <e type="setBullet">SageMitsukiAura</e>
+        <f>SageGaara_Atk_01</f>
+        <e type="setSound">Audio/Effect/hit3.mp3</e>	
+        <f>SageGaara_Atk_02</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>SageGaara_Atk_03</f>
+        <f>SageGaara_Atk_04</f>       
+        <e type="setAttackBox">ac_hit</e>
+        <f>SageGaara_Atk_05</f>     
+        <f>SageGaara_Atk_06</f>     
+        
+     <e type="setBullet">SageMitsukiAura</e>
+        <f>SageGaara_Atk_07</f>
+        <e type="setMove">8</e>
+        <e type="setSound">Audio/Effect/hit01.ogg</e>	
+        <f>SageGaara_Atk_08</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>SageGaara_Atk_09</f>
+        <f>SageGaara_Atk_10</f>       
+        <e type="setAttackBox">ac_hit</e>
+        <f>SageGaara_Atk_11</f>     
+        <f>SageGaara_Atk_12</f>     
+        <f>SageGaara_Atk_13</f>     
+        </frame>
+    </action>
+   
+
+
+</unit>

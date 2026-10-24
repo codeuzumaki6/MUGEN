@@ -1,17 +1,22 @@
 {
   "archive": "Shibai_OTSUTSUKI.zip",
-  "bytes": 1220760,
-  "sha256": "171811e34d679b4bad381dbc3338e3af80ca148f655c7e605bfc840cff9d5cfc",
+  "bytes": 1221333,
+  "sha256": "5b1fe43c3ced59edc6015cad9f4e682c1b2952cd541053739fa1caf7eda18fb4",
   "files": {
-    "Shibai.def": "fee9ccfd27b34de6d8dd592a7f5487eba8229c10f11b9ba852a05367c2ec8273",
-    "Shibai.cns": "1f873bdd37ab49b7012742dd938f444c70d4ec4ddd550d070398d286d3170030",
-    "Shibai.cmd": "9533f2365068d6941ca9308649fab9102392104635e54ed36d1a477dfc763bb3",
+    "CONTROLES_XBOX.md": "d3af31c78b210884df554dbc0c92f28a145eeccb177018258f6846fbc5f6d538",
+    "CREDITOS_Y_FUENTES.md": "1c35c57123a2523b97ac4dce6f7e7922895815129e244daa07b0f75f93e1104f",
+    "LEEME.md": "c0a43e2245f7078ca36dbb59e71a8e096ee3db6e506e3fa9204e054160e3946c",
+    "REVISION_CONJUNTA.md": "5ce5fe639b0441735508aad74d6e4d8e1a4f292050b503a3a866d5f7020432b9",
     "Shibai.air": "9b035b1a7ab6e232773024a57007df7202cd26b16b42a30caa9362a931d2fb67",
+    "Shibai.cmd": "42167a9226b23610f15199ba835bc6b5590be50032cb0b1ba14fe3f633fc548b",
+    "Shibai.cns": "6a8965bf850a3baadb2aac4ddb07e5840c6cf7526997a7ce81161fbd53dc675e",
+    "Shibai.def": "fee9ccfd27b34de6d8dd592a7f5487eba8229c10f11b9ba852a05367c2ec8273",
     "Shibai.sff": "e9e6727b66510f52e1c9576eac30e8721229f64c81712205b6f1ca2401e14bb2",
     "Shibai.snd": "20859420ccaff05dbc6ac57fe8dc738f0e0aa883d6ac5a1bd39396f540a018f8",
-    "common1.cns": "964af4c5057c85ae83f67c90182c0e90914a1d05f993903e0cae3cf5b0511164",
-    "LEEME.md": "c0a43e2245f7078ca36dbb59e71a8e096ee3db6e506e3fa9204e054160e3946c",
-    "CONTROLES_XBOX.md": "522e83f8f5d7dcef3c222e101a0e6094ceabfeaa75befa300a54975a09cdcc5c",
-    "CREDITOS_Y_FUENTES.md": "1c35c57123a2523b97ac4dce6f7e7922895815129e244daa07b0f75f93e1104f"
-  }
+    "common1.cns": "964af4c5057c85ae83f67c90182c0e90914a1d05f993903e0cae3cf5b0511164"
+  },
+  "extracted_validation": true,
+  "character": "Shibai",
+  "revision": "2026-10-24 joint roster correction",
+  "verification": "previews/roster_revision_verification.json"
 }

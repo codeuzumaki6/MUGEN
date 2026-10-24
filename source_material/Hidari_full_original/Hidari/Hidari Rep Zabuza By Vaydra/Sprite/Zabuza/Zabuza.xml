@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Zabuza</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">63</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>Zabuza_Idle_01</f>
+      </frame>
+    </action>
+
+    <action name="Walk">
+      <frame>
+        <f>Zabuza_Walk_01</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_02</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_03</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_04</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_05</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_06</f>
+        <e type="setDelay">4</e>
+        
+        <f>Zabuza_Walk_01</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_02</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_03</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_04</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_05</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_06</f>
+        <e type="setDelay">4</e>       
+        
+        <f>Zabuza_Walk_01</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_02</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_03</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_04</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_05</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_06</f>
+        <e type="setDelay">4</e>
+               
+        <f>Zabuza_Walk_01</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_02</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_03</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_04</f>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_05</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <e type="setDelay">4</e>
+        <f>Zabuza_Walk_06</f>
+        <e type="setDelay">4</e>
+        
+        
+        
+        <e type="setSound">Audio/Effect/EfxJump2.mp3</e>
+        <f>Zabuza_Walk_07</f>      
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_07</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        
+        <f>Zabuza_Walk_07</f>      
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_07</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        
+        
+        <f>Zabuza_Walk_07</f>      
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_07</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        
+        <f>Zabuza_Walk_07</f>      
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_07</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_08</f>
+        <e type="setMove">3</e>
+        <f>Zabuza_Walk_09</f>
+        <e type="setMove">3</e>
+        
+                
+        
+
+      </frame>
+    </action>
+
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>Zabuza_Hurt_01</f>
+        <f>Zabuza_Hurt_02</f>
+        <e type="setSound">Audio/hidari/Saskehurt2.mp3</e>
+      </frame>
+    </action>
+
+   <action name="AirHurt">
+     <frame>
+         <f>Zabuza_AirHurt_01</f>
+     </frame>
+   </action>
+
+   <action name="KnockDown">
+      <frame>
+          <f>Zabuza_KnockDown_01</f>
+          <e type="setSound">Audio/hidari/SaskeHurt.mp3</e>
+          <f>Zabuza_KnockDown_02</f>
+          <e type="setDelay">60</e>
+          <f>Zabuza_KnockDown_04</f>
+          <e type="setDelay">20</e>
+          <f>Zabuza_KnockDown_03</f>
+          <e type="setDelay">20</e>
+
+      </frame>
+    </action>
+
+    <action name="Float">
+      <frame>
+          <f>Zabuza_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Zabuza_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Zabuza_Float_02</f>
+      </frame>
+    </action>
+
+    <action name="Dead">
+      <frame>
+        <e type="setSkillEffect">kazi</e>
+          <f>Zabuza_KnockDown_01</f>
+          <f>Zabuza_KnockDown_02</f>
+          <e type="setSound">Audio/hidari/SaskeDead.mp3</e>
+      </frame>
+    </action>
+
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Zabuza_NAttack_01</f>
+        <e type="setDelay">10</e>
+        <f>Zabuza_NAttack_02</f>
+        <e type="setSound">Audio/hidari/Hat.mp3</e>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Zabuza_NAttack_03</f>
+        
+
+        <f>Zabuza_NAttack_04</f>
+        <e type="setDelay">10</e>
+        <e type="setMove">5</e>
+        <f>Zabuza_NAttack_05</f>
+        <e type="setSound">Audio/Effect/combo2.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setSound">Audio/hidari/Hat.mp3</e>
+        <e type="setDelay">5</e>
+        <f>Zabuza_NAttack_06</f>
+        
+        
+        <f>Zabuza_NAttack_07</f>
+        <e type="setDelay">5</e>
+        <f>Zabuza_NAttack_08</f>
+        <f>Zabuza_NAttack_09</f>
+        <e type="setSound">Audio/hidari/Het.mp3</e>
+        <e type="setMove">8</e>      
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <f>Zabuza_NAttack_10</f>
+      </frame>
+    </action>
+
+   <action name="skill01">
+     <data>
+	   <p type="attackType">cAttack</p>
+       <p type="attackValue">300</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">10</p>
+     </data>
+     <frame>
+
+        <f>Zabuza_Skill01_01</f>
+        <e type="setSound">Audio/Effect/dash.wav</e>
+        <f>Zabuza_Skill01_02</f>
+        <e type="setSound">Audio/hidari/Hmmm.mp3</e>
+        <f>Zabuza_Skill01_03</f>
+        <f>Zabuza_Skill01_04</f>
+        <f>Zabuza_Nol</f>
+      <e type="setCommand">findTarget</e> 
+      <e type="setCommand">setTransport</e>
+        
+
+        <f>Zabuza_Skill01_05</f>
+      <e type="setSound">Audio/hidari/codeClawEfx.mp3</e>
+        <f>Zabuza_Skill01_06</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill01_07</f>
+        <f>Zabuza_Skill01_08</f>
+        
+        
+        <f>Zabuza_Skill01_09</f>
+      <e type="setSound">Audio/Effect/Blade-Damage.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill01_10</f>
+        <e type="setSound">Audio/hidari/Moratteoka.mp3</e>
+        <f>Zabuza_Skill01_11</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill01_12</f>
+        <f>Zabuza_Skill01_13</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill01_14</f>
+        <f>Zabuza_Skill01_15</f>
+        
+        <f>Zabuza_Skill01_04</f>
+        <f>Zabuza_Nol</f>
+      <e type="setCommand">setTransport</e>
+        <f>Zabuza_Skill01_05</f>
+      <e type="setSound">Audio/hidari/codeClawEfx.mp3</e>
+        <f>Zabuza_Skill01_06</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill01_07</f>
+     </frame>
+   </action>
+
+    <action name="skill02">
+        <data>
+		    <p type="attackType">aAttack</p>
+            <p type="attackValue">200</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">15</p>
+        </data>
+        <frame>
+      <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+      <e type="setMon">HidariHand</e>
+      <f>Zabuza_Skill02_01</f>
+      <e type="setSound">Audio/hidari/Nanio.mp3</e>
+      <f>Zabuza_Skill02_02</f>
+      <e type="setDelay">90</e>
+            
+            
+
+      <e type="setSound">Audio/Effect/chidori.ogg</e>
+      <f>Zabuza_Skill02_001</f>
+      <f>Zabuza_Skill02_002</f>
+      <f>Zabuza_Skill02_003</f>
+      <f>Zabuza_Skill02_004</f>
+      <f>Zabuza_Skill02_005</f>
+      
+      <e type="setSound">Audio/hidari/codeClawEfx.mp3</e>
+        <e type="setChargeB">290</e>
+
+      <f>Zabuza_Skill02_006</f>
+      <e type="setSound">Audio/Effect/Chidori_s.mp3</e>
+      <e type="setAttackBox">l_hit</e>
+      <e type="setSound">Audio/hidari/Cett.mp3</e>
+      <f>Zabuza_Skill02_007</f>
+      <e type="setAttackBox">l_hit</e>
+      <f>Zabuza_Skill02_008</f>
+      <e type="setAttackBox">l_hit</e>
+      <f>Zabuza_Skill02_009</f>
+      <e type="setAttackBox">l_hit</e>
+      <f>Zabuza_Skill02_010</f>
+      <e type="setAttackBox">f_hit</e>
+      <f>Zabuza_Skill02_011</f>
+      <f>Zabuza_Skill02_012</f>
+      <f>Zabuza_Skill02_013</f>
+        
+
+
+        </frame>
+    </action>
+
+    <action name="skill03">
+        <data>
+			<p type="attackType">aAttack</p>
+      <p type="attackValue">325</p>
+      <p type="attackRangeX">0</p>
+      <p type="attackRangeY">48</p>
+      <p type="cd">25</p>
+        </data>
+        <frame>
+        <e type="setSound">Audio/Effect/CyborgTranshand2.mp3</e>
+       <f>Zabuza_Skill03_01</f>
+       <f>Zabuza_Skill03_02</f>
+      <e type="setDelay">30</e>
+       <e type="setMove">15</e>
+       <f>Zabuza_Skill03_03</f>
+        
+        <e type="setChargeB">290</e>
+        <f>Zabuza_Skill03_04</f>
+        <e type="setSound">Audio/hidari/Cih.mp3</e>
+        <e type="setAttackBox">o_hit</e>
+        <e type="setSound">Audio/Effect/N2.wav</e>
+        <f>Zabuza_Skill03_05</f>
+        <f>Zabuza_Skill03_06</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>Zabuza_Skill03_07</f>
+        <f>Zabuza_Skill03_08</f>
+
+        <f>Zabuza_Skill03_09</f>
+        
+        <f>Zabuza_Skill03_10</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setSound">Audio/hidari/Ciyat.mp3</e>
+        <f>Zabuza_Skill03_11</f>
+        <f>Zabuza_Skill03_12</f>
+        <f>Zabuza_Skill03_13</f>
+        <f>Zabuza_Skill03_14</f>
+        <f>Zabuza_Skill03_15</f>
+        <f>Zabuza_Skill03_16</f>
+        
+        <f>Zabuza_Skill03_17</f>
+        <e type="setSound">Audio/Effect/Ciah.wav</e>
+        <f>Zabuza_Skill03_18</f>
+        <f>Zabuza_Skill03_19</f>
+        <f>Zabuza_Skill03_20</f>
+        <f>Zabuza_Skill03_21</f>
+        
+        
+       
+        <f>Zabuza_Skill03_22</f>
+        <e type="setSound">Audio/Effect/Katon.mp3</e>
+        <e type="setAttackBox">f_hit</e>
+        <f>Zabuza_Skill03_23</f>
+        <f>Zabuza_Skill03_24</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Zabuza_Skill03_25</f>
+        <f>Zabuza_Skill03_26</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill03_27</f>
+        <f>Zabuza_Skill03_28</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill03_29</f>
+        <f>Zabuza_Skill03_30</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill03_31</f>
+        <f>Zabuza_Skill03_32</f>
+        
+        
+      
+        </frame>
+    </action>
+
+   <action name="skill04">
+     <data>
+       <p type="attackType">cAttack</p>
+       <p type="attackValue">360</p>
+       <p type="attackRangeX">20</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+     </data>
+     <frame>
+         <e type="setSound">Audio/Effect/woos0.mp3</e>
+         <f>Zabuza_Skill04_01</f>
+         <e type="setSound">Audio/Effect/kilat.ogg</e>
+         <f>Zabuza_Skill04_02</f>
+         <e type="setAttackBox">f_hit</e>
+         <f>Zabuza_Skill04_03</f>
+         <e type="setSound">Audio/hidari/Kirin.mp3</e>
+         <f>Zabuza_Skill04_04</f>
+         <f>Zabuza_Skill04_05</f>
+         <f>Zabuza_Skill04_06</f>
+         <f>Zabuza_Skill04_07</f>
+         <f>Zabuza_Skill04_08</f>
+         <f>Zabuza_Skill04_09</f>
+         
+         
+         <f>Zabuza_Skill04_10</f>
+         
+         <f>Zabuza_Skill04_11</f>
+         <e type="setAttackBox">b_hit</e>
+         <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+         <f>Zabuza_Skill04_12</f>
+         <f>Zabuza_Skill04_13</f>
+         <f>Zabuza_Skill04_11</f>
+         <e type="setAttackBox">c_hit</e>
+         <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+         <f>Zabuza_Skill04_12</f>
+         <f>Zabuza_Skill04_13</f>
+         <e type="setAttackBox">c_hit</e>
+         <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+         <f>Zabuza_Skill04_12</f>
+         <f>Zabuza_Skill04_13</f>
+         <e type="setAttackBox">ac_hit</e>
+         <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+         <f>Zabuza_Skill04_12</f>
+         <f>Zabuza_Skill04_13</f>
+         <e type="setAttackBox">ac_hit</e>
+         <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+         <f>Zabuza_Skill04_12</f>
+         <f>Zabuza_Skill04_13</f>
+         
+         
+         <e type="setSound">Audio/Effect/L2.ogg</e>   
+         <e type="setAttackBox">ac_hit</e>
+         <e type="setSound">Audio/Effect/break_sound3.ogg</e>
+         <f>Zabuza_Skill04_14</f>
+         <f>Zabuza_Skill04_15</f>
+         <e type="setAttackBox">f_hit</e>      
+         <e type="setAttackBox">c_hit</e>
+          <f>Zabuza_Skill04_16</f>
+          <e type="setAttackBox">c_hit</e>
+          <f>Zabuza_Skill04_17</f>
+          <f>Zabuza_Skill04_18</f>
+          <f>Zabuza_Skill04_19</f>
+     </frame>
+   </action>
+
+
+   <action name="skill05">
+
+        <data>
+        <p type="attackType">cAttack</p>
+        <p type="attackValue">1200</p>
+        <p type="attackRangeX">20</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">1</p>
+        </data>
+        <frame>
+        	<e type="setCommand">setInvincible</e>
+         
+        <e type="setSound">Audio/Effect/chain.wav</e>
+        <f>Zabuza_Skill05_01</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_02</f>
+        <e type="setSound">Audio/Effect/Api.mp3</e>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_03</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_04</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_05</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_06</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_07</f>
+        <e type="setSound">Audio/Effect/Biju.mp3</e>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_08</f>
+        <e type="setDelay">3</e>
+        <f>Zabuza_Skill05_09</f>
+        <e type="setDelay">3</e>
+        
+        
+        <e type="setOugis">10</e>
+        <f>Zabuza_Skill05_09</f>
+        
+
+        <f>Zabuza_Skill05_10</f>
+        <f>Zabuza_Skill05_11</f>
+        <e type="setDelay">20</e>
+        
+        <e type="setMove">28</e>
+        <f>Zabuza_Skill05_12</f>
+        <e type="setSound">Audio/Effect/Slash.mp3</e>
+        <e type="setAttackBox">f_hit</e>
+        <f>Zabuza_Skill05_13</f>
+        <f>Zabuza_Skill05_14</f>
+        <f>Zabuza_Skill05_15</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_16</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_17</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_19</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_20</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Zabuza_Skill05_21</f>
+        <e type="setDelay">30</e>
+        <e type="setSound">Audio/Effect/kiplosion.ogg</e>
+        
+          <f>Zabuza_Skill05_22</f>
+          <e type="setSound">Audio/Effect/Transform.mp3</e>
+          <f>Zabuza_Skill05_23</f>
+          <f>Zabuza_Skill05_24</f>
+          <f>Zabuza_Skill05_25</f>
+          <f>Zabuza_Skill05_26</f>
+          <f>Zabuza_Skill05_27</f>
+          <f>Zabuza_Skill05_28</f>
+          
+          
+
+        <e type="setCommand">reInvincible</e>
+        </frame>
+
+    </action>
+
+</unit>

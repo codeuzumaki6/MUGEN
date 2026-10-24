@@ -1,0 +1,17 @@
+[
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "idle",
+    "attack": "combo",
+    "damage": 144,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  }
+]

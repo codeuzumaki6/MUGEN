@@ -1,0 +1,89 @@
+{
+  "video": "previews/Personajes_recepcion_de_golpes.mp4",
+  "sha256": "dc8221362c1e8f15db35ddc3b076caa3d21d80ab64c5ee428ce55cdff8255533",
+  "scenes": [
+    {
+      "character": "Eida",
+      "form": 0,
+      "start": 0,
+      "end": 2.1,
+      "damage": 180,
+      "hits": 3
+    },
+    {
+      "character": "PochitaTrueForm",
+      "form": 0,
+      "start": 2.1,
+      "end": 4.15,
+      "damage": 165,
+      "hits": 3
+    },
+    {
+      "character": "Mamushi",
+      "form": 0,
+      "start": 4.15,
+      "end": 6.216666666666661,
+      "damage": 171,
+      "hits": 3
+    },
+    {
+      "character": "Shibai",
+      "form": 0,
+      "start": 6.216666666666661,
+      "end": 8.299999999999992,
+      "damage": 144,
+      "hits": 3
+    },
+    {
+      "character": "JuraShinju",
+      "form": 0,
+      "start": 8.299999999999992,
+      "end": 10.400000000000006,
+      "damage": 156,
+      "hits": 3
+    },
+    {
+      "character": "MitsukiTBV",
+      "form": 0,
+      "start": 10.400000000000006,
+      "end": 12.48333333333335,
+      "damage": 171,
+      "hits": 3
+    },
+    {
+      "character": "RyuShinju",
+      "form": 0,
+      "start": 12.48333333333335,
+      "end": 14.58333333333336,
+      "damage": 165,
+      "hits": 3
+    },
+    {
+      "character": "HidariShinju",
+      "form": 0,
+      "start": 14.58333333333336,
+      "end": 16.666666666666693,
+      "damage": 165,
+      "hits": 3
+    },
+    {
+      "character": "HidariShinju",
+      "form": 1,
+      "start": 16.666666666666693,
+      "end": 18.73333333333336,
+      "damage": 165,
+      "hits": 3
+    },
+    {
+      "character": "MatsuriShinju",
+      "form": 0,
+      "start": 18.73333333333336,
+      "end": 20.83333333333337,
+      "damage": 165,
+      "hits": 3
+    }
+  ],
+  "duration": 20.83333333333337,
+  "engine": "Ikemen GO",
+  "fixture": "Controlled native collision probe; P2 receives three real HitDef contacts. No test controller is shipped."
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action value="Idle">
+	 <data>
+	    <p type="attackType">Shakujou</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">49</p>
+        <p type="attackRangeY">47</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Hashirama_Stn01B_01</f>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">110</p>
+        <p type="attackRangeX">5</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+      <e type="setChargeB">80</e>
+      <e type="setSound">Audio/Matsuri/MizuWater.mp3</e>
+      <f>Hashirama_Stn01B_01</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_02</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_01</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_02</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_01</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_02</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_01</f>
+      <e type="setChargeB">80</e>
+      <f>Hashirama_Stn01B_02</f>
+      <e type="setChargeB">80</e>
+		<e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

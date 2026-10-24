@@ -1,0 +1,1777 @@
+[
+  {
+    "group": 26000,
+    "number": 0,
+    "key": "Orochimaru_NAttack_01",
+    "file": "assets/senki/26000_0.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001662500435486436,
+      "original_sprite": [
+        0,
+        24
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{493,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "58e4fc051cbb251a7f2c4363d66d1384db8c3db7289d87045d5a97310fa53837",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 1,
+    "key": "Orochimaru_NAttack_02",
+    "file": "assets/senki/26000_1.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00020253386173862964,
+      "original_sprite": [
+        0,
+        24
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{675,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "b08401b7dce963a914b88024f21ec66c39383ba8d1b8dc4b13ac7d2a017166b7",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 2,
+    "key": "Orochimaru_NAttack_03",
+    "file": "assets/senki/26000_2.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0011076475493609905,
+      "original_sprite": [
+        0,
+        24
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{857,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "cc79b52549a174acaa2cb1efcbe3c5ab45a8aa68b255ec52da78e8560029bce4",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 3,
+    "key": "Orochimaru_NAttack_04",
+    "file": "assets/senki/26000_3.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.014269527979195118,
+      "original_sprite": [
+        0,
+        24
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1039,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "ca3d450d7a452faead47cd48b310eb197a562861f6b62d147156f10a3fc670a1",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 4,
+    "key": "Orochimaru_NAttack_05",
+    "file": "assets/senki/26000_4.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01680779457092285,
+      "original_sprite": [
+        0,
+        22
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1221,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "813c8e3dd6840df615b0c226f0cb96bbf9b4cb57ca418e01668908cfdad6d55b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 5,
+    "key": "Orochimaru_NAttack_06",
+    "file": "assets/senki/26000_5.png",
+    "axis": [
+      46,
+      138
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.004483796190470457,
+      "original_sprite": [
+        0,
+        22
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1403,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "2fd79eaabd31cc87111f3d5623a0ea86186744496d1600d93d90dbeb55aef560",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 6,
+    "key": "Orochimaru_NAttack_07",
+    "file": "assets/senki/26000_6.png",
+    "axis": [
+      47,
+      139
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002224644849775359,
+      "original_sprite": [
+        0,
+        29
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1585,2655},{180,171}}",
+    "source_offset": "{45,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "46b94ca501af019506e873b0f051f1d2237dd23f39364a5ce1a0827348225dce",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 7,
+    "key": "Orochimaru_Skill02_01",
+    "file": "assets/senki/26000_7.png",
+    "axis": [
+      83,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002234094135928899,
+      "original_sprite": [
+        0,
+        41
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2785,479},{120,102}}",
+    "source_offset": "{-25,-7}",
+    "source_rotated": false,
+    "rgba_sha256": "c15d68e3ad4ba14592af95bdfc56aec95702a2696ee0b82009517a6703b6be0f",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 8,
+    "key": "Orochimaru_Skill02_02",
+    "file": "assets/senki/26000_8.png",
+    "axis": [
+      83,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002234094135928899,
+      "original_sprite": [
+        0,
+        41
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2785,583},{120,102}}",
+    "source_offset": "{-25,-7}",
+    "source_rotated": false,
+    "rgba_sha256": "40bfdb89f6f6b687de5a90f95ebd7b70b72af3441beacba6cf0d0ae1ab2db3e1",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 9,
+    "key": "Orochimaru_Skill02_03",
+    "file": "assets/senki/26000_9.png",
+    "axis": [
+      83,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0002234094135928899,
+      "original_sprite": [
+        0,
+        41
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2785,687},{120,102}}",
+    "source_offset": "{-25,-7}",
+    "source_rotated": false,
+    "rgba_sha256": "07f74754053930bd18eed6b2ff31c0806e9ef471aa9235dddf4aff995302ae26",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 10,
+    "key": "Orochimaru_Skill02_04",
+    "file": "assets/senki/26000_10.png",
+    "axis": [
+      83,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0003728392766788602,
+      "original_sprite": [
+        0,
+        41
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2785,791},{120,102}}",
+    "source_offset": "{-25,-7}",
+    "source_rotated": false,
+    "rgba_sha256": "45d55837949548ba1ce996429a6b847c24336d3d4dab1c2bd8f24858be5289ff",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 11,
+    "key": "Orochimaru_Skill02_05",
+    "file": "assets/senki/26000_11.png",
+    "axis": [
+      83,
+      99
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0003728392766788602,
+      "original_sprite": [
+        0,
+        41
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2785,895},{120,102}}",
+    "source_offset": "{-25,-7}",
+    "source_rotated": false,
+    "rgba_sha256": "f4f426fbb22732a5741bea02290264d74addab8adfe6efeb6f447a279738c031",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 12,
+    "key": "Orochimaru_NAttack_08",
+    "file": "assets/senki/26000_12.png",
+    "axis": [
+      106,
+      136
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.023529432713985443,
+      "original_sprite": [
+        0,
+        30
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2557,2340},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "4f776b191bfbe1f857e72b0f51b635eb560111a6dae45c7e00e4f99c0dc64bf8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 13,
+    "key": "Orochimaru_NAttack_09",
+    "file": "assets/senki/26000_13.png",
+    "axis": [
+      104,
+      135
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01874573342502117,
+      "original_sprite": [
+        0,
+        42
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2293,1793},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "e74896dd385ae6cb6f3b237a5d0d07797efac875b7ad984e1d8a924bef5f7ffe",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 14,
+    "key": "Orochimaru_NAttack_10",
+    "file": "assets/senki/26000_14.png",
+    "axis": [
+      104,
+      135
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.02778993733227253,
+      "original_sprite": [
+        0,
+        43
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2539,1793},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "9d9e5fb04a5a3d4a3151c26a01e5e82441a22a9d05af22d3c9bb5342dd98d501",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 15,
+    "key": "Orochimaru_NAttack_11",
+    "file": "assets/senki/26000_15.png",
+    "axis": [
+      106,
+      136
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01836961694061756,
+      "original_sprite": [
+        0,
+        32
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2557,2513},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "c6509a64833c11b762026aabb63c6b3bd9823f360ec84339aeff8b62e63b53ee",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 16,
+    "key": "Orochimaru_NAttack_12",
+    "file": "assets/senki/26000_16.png",
+    "axis": [
+      106,
+      136
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0093576330691576,
+      "original_sprite": [
+        0,
+        32
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,2655},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "96448c807aeddf79f4822700d91f24c3b2952fb344f1623001e94fb1a51b3721",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 17,
+    "key": "Orochimaru_NAttack_13",
+    "file": "assets/senki/26000_17.png",
+    "axis": [
+      106,
+      136
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 1.459527766201063e-06,
+      "original_sprite": [
+        0,
+        32
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{247,2655},{244,171}}",
+    "source_offset": "{13,-37}",
+    "source_rotated": false,
+    "rgba_sha256": "8fc6acb50aaaba112302d8c2ba8217681e4089d6a8fb3da3fe2d6c374347421e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 18,
+    "key": "Orochimaru_Skill02_06",
+    "file": "assets/senki/26000_18.png",
+    "axis": [
+      160,
+      161
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01482785027474165,
+      "original_sprite": [
+        0,
+        43
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2079,1234},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "20eeddca77f1ca9750175bd5c491bf42ebd1a9753de2d9cb690c1c710510cb0a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 19,
+    "key": "Orochimaru_Skill02_07",
+    "file": "assets/senki/26000_19.png",
+    "axis": [
+      173,
+      158
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.05772807449102402,
+      "original_sprite": [
+        0,
+        52
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2079,1472},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "1a0b164d7235dbd139d9db233053255e97f66b2d07dfda9139ef19d2cdbeb466",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 20,
+    "key": "Orochimaru_Skill02_08",
+    "file": "assets/senki/26000_20.png",
+    "axis": [
+      169,
+      157
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.05236336216330528,
+      "original_sprite": [
+        0,
+        52
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,2178},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "da1ca3994cfa6c5838c4c82233ef95b12cfeaeabe123865f55c46c30058dc66e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 21,
+    "key": "Orochimaru_Skill02_09",
+    "file": "assets/senki/26000_21.png",
+    "axis": [
+      162,
+      160
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.056667279452085495,
+      "original_sprite": [
+        0,
+        52
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{323,2178},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "ac952a781bff49149e03b08c2c3f97b5b9e4264f3566eec0ee12fc27181aaa64",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 22,
+    "key": "Orochimaru_Skill02_10",
+    "file": "assets/senki/26000_22.png",
+    "axis": [
+      162,
+      162
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06336476653814316,
+      "original_sprite": [
+        0,
+        31
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{645,2178},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "ede7e36024c98aaa68b800621de911d62300956c495d8b888ecf956282363afc",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 23,
+    "key": "Orochimaru_Skill02_11",
+    "file": "assets/senki/26000_23.png",
+    "axis": [
+      162,
+      162
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.07113513350486755,
+      "original_sprite": [
+        0,
+        30
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{967,2178},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "6ebe903faf8b49b3878ab5871e28075cca4214c9b502f75bbe8d343332472527",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 24,
+    "key": "Orochimaru_Skill02_12",
+    "file": "assets/senki/26000_24.png",
+    "axis": [
+      162,
+      162
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.057666193693876266,
+      "original_sprite": [
+        0,
+        31
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1289,2178},{320,236}}",
+    "source_offset": "{-5,-76}",
+    "source_rotated": false,
+    "rgba_sha256": "b2f4aa7864b322d794ac288da8c4c70d2ca400ad8bceaa98ee601d99f96b43cb",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 25,
+    "key": "Orochimaru_Skill01_01",
+    "file": "assets/senki/26000_25.png",
+    "axis": [
+      26,
+      133
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 2.3329650957748527e-06,
+      "original_sprite": [
+        0,
+        33
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2293,1966},{140,147}}",
+    "source_offset": "{45,-18}",
+    "source_rotated": false,
+    "rgba_sha256": "2fede8a635b21836b337aa0ff927dafd1a971d59dc027e65a091776b56fbf33f",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 26,
+    "key": "Orochimaru_Skill01_02",
+    "file": "assets/senki/26000_26.png",
+    "axis": [
+      26,
+      133
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.022496508434414864,
+      "original_sprite": [
+        0,
+        33
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2435,1966},{140,147}}",
+    "source_offset": "{45,-18}",
+    "source_rotated": false,
+    "rgba_sha256": "b16211f091c8bcec767498911e83e5a03ba32a47ba83dcb5943dbc947c6f0ef2",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 27,
+    "key": "Orochimaru_Skill01_03",
+    "file": "assets/senki/26000_27.png",
+    "axis": [
+      26,
+      133
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.017414487898349762,
+      "original_sprite": [
+        0,
+        33
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2577,1966},{140,147}}",
+    "source_offset": "{45,-18}",
+    "source_rotated": false,
+    "rgba_sha256": "efd721c4a9d2d8230a31faed41fe39f4eda5de3079841a065982fd78a410480a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 28,
+    "key": "Orochimaru_Skill01_04",
+    "file": "assets/senki/26000_28.png",
+    "axis": [
+      26,
+      133
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.01743212155997753,
+      "original_sprite": [
+        0,
+        33
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2585,2115},{140,147}}",
+    "source_offset": "{45,-18}",
+    "source_rotated": false,
+    "rgba_sha256": "09e54789dfa1e33d0aac6bf25ade1fd290c52366c976ef96c20a3bdfb66ed166",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 29,
+    "key": "Orochimaru_Skill03_01",
+    "file": "assets/senki/26000_29.png",
+    "axis": [
+      64,
+      69
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00022306920436676592,
+      "original_sprite": [
+        0,
+        46
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1085},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "579941b2d7f211de53a4404ba87e768cee3d8070f5c6d814c9453b729335b251",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 30,
+    "key": "Orochimaru_Skill03_02",
+    "file": "assets/senki/26000_30.png",
+    "axis": [
+      67,
+      67
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.039159394800662994,
+      "original_sprite": [
+        0,
+        47
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1176},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "f111a925ce894be149b3ae496282a2b99a14fb3a0955fb3a2c891b45de57143e",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 31,
+    "key": "Orochimaru_Skill03_03",
+    "file": "assets/senki/26000_31.png",
+    "axis": [
+      67,
+      67
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03796665742993355,
+      "original_sprite": [
+        0,
+        47
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1267},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "625888e88e487c8cabad1bfc36c4abf2acc24ad93b1a71fdc04a771f3b51691a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 32,
+    "key": "Orochimaru_Skill03_04",
+    "file": "assets/senki/26000_32.png",
+    "axis": [
+      67,
+      67
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0329078733921051,
+      "original_sprite": [
+        0,
+        47
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1358},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "de5ec99594ea2f54678f9672a83115fff229c744ebf2d6c6bb8bde3751c9c171",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 33,
+    "key": "Orochimaru_Skill03_05",
+    "file": "assets/senki/26000_33.png",
+    "axis": [
+      67,
+      67
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.02914959192276001,
+      "original_sprite": [
+        0,
+        47
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1449},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "3bea1934e98f9f2e0b635518ffc044525d5ae7c1ab9ad5c5dc8792dc39bc5ca3",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 34,
+    "key": "Orochimaru_Skill03_06",
+    "file": "assets/senki/26000_34.png",
+    "axis": [
+      67,
+      67
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.027309149503707886,
+      "original_sprite": [
+        0,
+        47
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2803,1540},{100,89}}",
+    "source_offset": "{-15,-24}",
+    "source_rotated": false,
+    "rgba_sha256": "bf4be1aff4daade7979c3cc47db981e35bf5d61255f9315b3540ca1f7e0c41be",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 35,
+    "key": "Orochimaru_Skill05_01",
+    "file": "assets/senki/26000_35.png",
+    "axis": [
+      28,
+      91
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015303872525691986,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1611,2417},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "e58098251ea7a6455a75e9c9025a3653b96b171b27885f251631a479ec26d073",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 36,
+    "key": "Orochimaru_Skill05_02",
+    "file": "assets/senki/26000_36.png",
+    "axis": [
+      16,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.009216638281941414,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2255,2360},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "95327dfbe4997dfa1539da39019d9c02364584d5d74cc61e05f5e056241354b3",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 37,
+    "key": "Orochimaru_Skill05_03",
+    "file": "assets/senki/26000_37.png",
+    "axis": [
+      28,
+      91
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015303872525691986,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2283,2121},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "75fce507c6bcc792eebec5d127152e728b014c11f25ef14335fbb4c16603ddbf",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 38,
+    "key": "Orochimaru_Skill05_04",
+    "file": "assets/senki/26000_38.png",
+    "axis": [
+      16,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.009216638281941414,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2421,479},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "6364a4f877cae5e6bb1d2046cc149555a95b3b85a3b1810c7032b3f959a2d643",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 39,
+    "key": "Orochimaru_Skill05_05",
+    "file": "assets/senki/26000_39.png",
+    "axis": [
+      28,
+      91
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015303872525691986,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2411,698},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "d53625053d00307b379d5fb9679a5caaa974af39f2015e4f86e4af8f88ec7484",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 40,
+    "key": "Orochimaru_Skill05_06",
+    "file": "assets/senki/26000_40.png",
+    "axis": [
+      16,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.009216638281941414,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2411,917},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "637a546b9e40098e08361fb5b563fc642a4b62f41dbf18805071d22a37a92491",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 41,
+    "key": "Orochimaru_Skill05_07",
+    "file": "assets/senki/26000_41.png",
+    "axis": [
+      28,
+      91
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015303872525691986,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2411,1136},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "169457a0892f7d54213d9452a683796aae0a7c4f35adc0e49d3050186064b177",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 42,
+    "key": "Orochimaru_Skill05_08",
+    "file": "assets/senki/26000_42.png",
+    "axis": [
+      16,
+      119
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.009216638281941414,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2401,1355},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "5c416de579724a5a28fe36dc5631bcdf181e30ac8c7dbbaad3584f711d7f14f8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 43,
+    "key": "Orochimaru_Skill05_09",
+    "file": "assets/senki/26000_43.png",
+    "axis": [
+      28,
+      91
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.015303872525691986,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2401,1574},{300,217}}",
+    "source_offset": "{115,-38}",
+    "source_rotated": false,
+    "rgba_sha256": "22ed156f7ab9fad1e759147f46093df920528959dfe64104b5314538938f9f9b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 44,
+    "key": "Orochimaru_Skill05_10",
+    "file": "assets/senki/26000_44.png",
+    "axis": [
+      16,
+      123
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.034339793026447296,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1687,1},{400,246}}",
+    "source_offset": "{165,-63}",
+    "source_rotated": false,
+    "rgba_sha256": "3e9c9954d2ef806ceec9b47c8b91de33cacfe505a99d025ebd0449bcc32b9856",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 45,
+    "key": "Orochimaru_Skill05_11",
+    "file": "assets/senki/26000_45.png",
+    "axis": [
+      28,
+      95
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.018033182248473167,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1687,249},{400,246}}",
+    "source_offset": "{165,-63}",
+    "source_rotated": false,
+    "rgba_sha256": "a2da75fc617ba670a7deab0059587ac0b7065081c2501062a35ccef108734129",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 46,
+    "key": "Orochimaru_Skill05_12",
+    "file": "assets/senki/26000_46.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.030300088226795197,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,1},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "7d941d36d5460113bf6f2526f19a07c0f0536bf9380952747a6d3c9ba87ee1c8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 47,
+    "key": "Orochimaru_Skill05_13",
+    "file": "assets/senki/26000_47.png",
+    "axis": [
+      28,
+      182
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04668327793478966,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,381},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "2850fae6d26f0e0aded0f9a1ffca8e632f4914269b7d4931f58aee49d0e1240d",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 48,
+    "key": "Orochimaru_Skill05_14",
+    "file": "assets/senki/26000_48.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.040102168917655945,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{563,1},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "857ba859c67d1c90d5a7667cbb44dbd72e2fc63142717f577571d5e478cf0d98",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 49,
+    "key": "Orochimaru_Skill05_15",
+    "file": "assets/senki/26000_49.png",
+    "axis": [
+      28,
+      182
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.025286084040999413,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{563,381},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "8d3d3d8fbc59776c9db29f2d4fa97decf7ce2ceccdf2098df9af17022d23e2ba",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 50,
+    "key": "Orochimaru_Skill05_16",
+    "file": "assets/senki/26000_50.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.046611327677965164,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,761},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "0365eedc27baf5141886c937c8e0d4057a55bd2c078766f777c1753bd8c8983c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 51,
+    "key": "Orochimaru_Skill05_17",
+    "file": "assets/senki/26000_51.png",
+    "axis": [
+      28,
+      182
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04429895430803299,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{563,761},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "c96295bd0b6301305805cc4f5e7910e1b49ca9410da1bb3bada9d5cd15208479",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 52,
+    "key": "Orochimaru_Skill05_18",
+    "file": "assets/senki/26000_52.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.04120752215385437,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1125,1},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "be85684eba38404bc1f1c4020c24d5adf86844177f03b46e7446a3a70b49d9c8",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 53,
+    "key": "Orochimaru_Skill05_19",
+    "file": "assets/senki/26000_53.png",
+    "axis": [
+      67,
+      93
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.08484459668397903,
+      "original_sprite": [
+        0,
+        78
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1125,381},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "3666b5460cd057d45d1193e9aae944d0ca7dd77328636aa47f0eda970a7ce707",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 54,
+    "key": "Orochimaru_Skill05_20",
+    "file": "assets/senki/26000_54.png",
+    "axis": [
+      67,
+      261
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0748184397816658,
+      "original_sprite": [
+        0,
+        78
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1125,761},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "742240170e460d76a86705d6332ecddd44c6e3db03456200af4893b91f4e00a4",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 55,
+    "key": "Orochimaru_Skill05_21",
+    "file": "assets/senki/26000_55.png",
+    "axis": [
+      64,
+      215
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.06843601912260056,
+      "original_sprite": [
+        0,
+        78
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,1141},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "da67608939ab2a6a6f6315d55c7ee78a2a5e8366782c6162251a590cf8922b28",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 56,
+    "key": "Orochimaru_Skill05_22",
+    "file": "assets/senki/26000_56.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.029842393472790718,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{563,1141},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "6f3dbf6bb6d04795105d6f56b76c64ebba6f11263235835a016aa71b4ce1cbf1",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 57,
+    "key": "Orochimaru_Skill05_23",
+    "file": "assets/senki/26000_57.png",
+    "axis": [
+      28,
+      182
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.025119831785559654,
+      "original_sprite": [
+        0,
+        83
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1125,1141},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "597dc6bf77fed79b08749ab829a70432a5689963f25b0dbc76f339b822db1b1b",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 58,
+    "key": "Orochimaru_Skill05_24",
+    "file": "assets/senki/26000_58.png",
+    "axis": [
+      16,
+      210
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.029842393472790718,
+      "original_sprite": [
+        0,
+        81
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1,1521},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "d4a650398207cabe538a9304abc0580e4ebcd4c197dddf49c65c615bea1d42ff",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 59,
+    "key": "Orochimaru_Skill05_25",
+    "file": "assets/senki/26000_59.png",
+    "axis": [
+      30,
+      194
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.005951905157417059,
+      "original_sprite": [
+        0,
+        76
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{563,1521},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "012551dbc82703b5bd8f9c84f8db2a724d30efb871e6495a4b42fec2d856f945",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 60,
+    "key": "Orochimaru_Skill05_26",
+    "file": "assets/senki/26000_60.png",
+    "axis": [
+      23,
+      218
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.023996569216251373,
+      "original_sprite": [
+        0,
+        74
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1125,1521},{560,378}}",
+    "source_offset": "{245,-108}",
+    "source_rotated": false,
+    "rgba_sha256": "77e4fe64c461dcff87c20466366ce85bca644bc464edf94b4a6c47ed82803270",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 61,
+    "key": "Orochimaru_Skill05_Jump_01",
+    "file": "assets/senki/26000_61.png",
+    "axis": [
+      30,
+      86
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.03521694615483284,
+      "original_sprite": [
+        0,
+        76
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2713,809},{70,98}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "af4a813e7d05413654d06c4c9e640dd8a4db7232a87a7f2c95267a17deefd266",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 62,
+    "key": "Orochimaru_Skill05_Jump_02",
+    "file": "assets/senki/26000_62.png",
+    "axis": [
+      33,
+      88
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.035995617508888245,
+      "original_sprite": [
+        0,
+        84
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2527,2686},{70,128}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "8e4964adefe7c0f96476ca79ddc441f5f30dd5f5c8ecccadd556017acd67b7ff",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 63,
+    "key": "Orochimaru_Skill05_Jump_03",
+    "file": "assets/senki/26000_63.png",
+    "axis": [
+      33,
+      77
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00014009691949468106,
+      "original_sprite": [
+        0,
+        84
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2079,1710},{70,163}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "e62038fb8e56562bab2075448b79d30340d047e8da7d9bd88955fdb059137d48",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 64,
+    "key": "Orochimaru_Skill05_Jump_04",
+    "file": "assets/senki/26000_64.png",
+    "axis": [
+      31,
+      76
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00014395208563655615,
+      "original_sprite": [
+        0,
+        82
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2151,1710},{70,163}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false,
+    "rgba_sha256": "2e3045e7b924a0e601da5ded9067cd6cabbc40769208a71a04c600dfa47ce86c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 65,
+    "key": "Orochimaru_Skill05_Teleport_01",
+    "file": "assets/senki/26000_65.png",
+    "axis": [
+      66,
+      78
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00015950496890582144,
+      "original_sprite": [
+        0,
+        70
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1767,2686},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "55d773dc076abbc0a0cd0ca5137d3149ee000f57d847f15c6fb06ed1f5ed84ca",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 66,
+    "key": "Orochimaru_Skill05_Teleport_02",
+    "file": "assets/senki/26000_66.png",
+    "axis": [
+      66,
+      78
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0001622652489459142,
+      "original_sprite": [
+        0,
+        71
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{1919,2686},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "b73f9f112c81afe9e52030a6e1a369132099f50a174ae10e83cd64e3d598561c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 67,
+    "key": "Orochimaru_Skill05_Teleport_03",
+    "file": "assets/senki/26000_67.png",
+    "axis": [
+      66,
+      78
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.011321892030537128,
+      "original_sprite": [
+        0,
+        72
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2071,2686},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "328afdb8df0263e88aee305e60308c30dd80b1750c7442bdd981438093567768",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 68,
+    "key": "Orochimaru_Skill05_Teleport_04",
+    "file": "assets/senki/26000_68.png",
+    "axis": [
+      66,
+      93
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.0878775343298912,
+      "original_sprite": [
+        0,
+        72
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2223,2686},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "eb06bf34e7ed056dbbaa57c565f100a11f894b6c08e5e574ddee125f1e8fe40a",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 69,
+    "key": "Orochimaru_Skill05_Teleport_05",
+    "file": "assets/senki/26000_69.png",
+    "axis": [
+      83,
+      88
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.13772545754909515,
+      "original_sprite": [
+        0,
+        19
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2375,2579},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "685961b56e9877d6690a81c85d1525f689c4a734e26049e5de3e390a3c5d0c7c",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  },
+  {
+    "group": 26000,
+    "number": 70,
+    "key": "Orochimaru_Skill05_Teleport_06",
+    "file": "assets/senki/26000_70.png",
+    "axis": [
+      66,
+      78
+    ],
+    "alignment": {
+      "method": "masked original body match",
+      "error": 0.00016082104411907494,
+      "original_sprite": [
+        0,
+        72
+      ]
+    },
+    "plist": "source_material/Mamushi_full_original/Mamushi/Orochimaru/Orochimaru.plist",
+    "rectangle": "{{2375,2691},{150,110}}",
+    "source_offset": "{10,-36}",
+    "source_rotated": false,
+    "rgba_sha256": "3ac15683a42d3e591bbdb1c785c2a1777b6a04a2789774df4f013dbe72e1eebb",
+    "eye_pixels_recolored": 0,
+    "body_redrawn": false
+  }
+]

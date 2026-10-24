@@ -1,0 +1,62 @@
+{
+  "user_file": "Matsuri.zip",
+  "sha256": "2cdf95e1c2bace407ff6de8b782127b162ef36ec466fbb2cde6112ba4a8fcba7",
+  "archive_entries": 589,
+  "selected_extraction": "Graphics, plist atlases and XML behavior; sound effects extracted individually if used",
+  "filename": "Matsuri.zip",
+  "archive_sha256": "2cdf95e1c2bace407ff6de8b782127b162ef36ec466fbb2cde6112ba4a8fcba7",
+  "files": [
+    {
+      "file": "Matsuri/Blt/HugeStnMatsuri.xml",
+      "sha256": "d428656ed1f0d8944258da284529f30347efc1bd25566c391511b07274668e7b"
+    },
+    {
+      "file": "Matsuri/Blt/StnMatsuri01.xml",
+      "sha256": "4acf798281adeaf9b8f6fa7ef655bc93d04efb2be9b2fac7097cfcb247b8b8de"
+    },
+    {
+      "file": "Matsuri/Blt/StnMatsuri02.xml",
+      "sha256": "08d3a7e3cf58bc80e4108c301f454ebe5be26005fd04d18c9ae32678bcd7c5ef"
+    },
+    {
+      "file": "Matsuri/Blt/StnMatsuri03.xml",
+      "sha256": "101a2bee28133605508213b68c70dad0c5cb1f82f4ede61539a556509019daae"
+    },
+    {
+      "file": "Matsuri/Blt/StnMatsuri04.xml",
+      "sha256": "8e231f0629b31d4603e1a666b777bcf429a501e5870daeaf65b0d1d362be29b7"
+    },
+    {
+      "file": "Matsuri/Hashirama/Hashirama.plist",
+      "sha256": "fe808e20f488a1aaa4cb5c19eca921277fe4e462af7bdb01d0cabe0b31afc768"
+    },
+    {
+      "file": "Matsuri/Hashirama/Hashirama.png",
+      "sha256": "a4e9cc713a1a9c3c37d0842bc212984c2586d60b2aa2dad043087a8134ce597d"
+    },
+    {
+      "file": "Matsuri/Hashirama/Hashirama.xml",
+      "sha256": "fc4983bd86978080c5f88aa13cb4b4e779327e6948a1b65b17762163a1f022ef"
+    },
+    {
+      "file": "Matsuri/Hashirama/Hashirama_Skill.plist",
+      "sha256": "553e59a3909f5d4a274429d6dda5bfb69f09ffe1b691c44e8e42e33e3dd54c2d"
+    },
+    {
+      "file": "Matsuri/Hashirama/Hashirama_Skill.png",
+      "sha256": "18d840af2c50eff9a5241d4b50833a596e6b71af0cee87cf2b3435345f2f7aba"
+    },
+    {
+      "file": "Matsuri/Hashirama.png",
+      "sha256": "c1ebb3bd9c0cfb905b1d1f51978d7521bd43ea0b38e64767c386baab2ec98a15"
+    },
+    {
+      "file": "Matsuri/Mon/MatsuriAkar.xml",
+      "sha256": "e0edb5008f23d5799ec532e447c8e6cace19f0c081c3cbe641c4635a68e093dd"
+    },
+    {
+      "file": "Matsuri/Mon/MatsuriAkar2.xml",
+      "sha256": "9de8fe5de641bd0abd37045123b64f8a372bcd14849fc14c3a0f9d946f79a810"
+    }
+  ]
+}

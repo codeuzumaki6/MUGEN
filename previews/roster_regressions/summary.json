@@ -1,0 +1,120 @@
+[
+  {
+    "character": "Eida",
+    "passed": true,
+    "command": [
+      "check_moves_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/Eida.log",
+    "log_sha256": "99ec5f9193fe65665ab64be8229c16e3fe2f2908345612958457c7bba38a67f0"
+  },
+  {
+    "character": "PochitaTrueForm",
+    "passed": true,
+    "command": [
+      "check_pochita_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/PochitaTrueForm.log",
+    "log_sha256": "1a433d53e81dbdfd18a41efed0103ad2b282697310e71f47c4b80662c3a96b75"
+  },
+  {
+    "character": "Mamushi",
+    "passed": true,
+    "command": [
+      "check_mamushi_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/Mamushi.log",
+    "log_sha256": "b2ff1298c362cf40503da7fb3f0d705348f2e1da125e1a1921ad56e61fe4a458"
+  },
+  {
+    "character": "Shibai",
+    "passed": true,
+    "command": [
+      "check_shibai_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/Shibai.log",
+    "log_sha256": "e3b8aa536132b9f8f14a2f27c1cce22dfa70ad9d5aa761c5d1c408cf70c03be9"
+  },
+  {
+    "character": "JuraShinju",
+    "passed": true,
+    "command": [
+      "check_jura_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/JuraShinju.log",
+    "log_sha256": "bdb243eb91053712461c1fccb85a868bcf2b16de9219545b4a8de08995eb6908"
+  },
+  {
+    "character": "MitsukiTBV",
+    "passed": true,
+    "command": [
+      "check_mitsuki_in_engine.py"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/MitsukiTBV.log",
+    "log_sha256": "a94011bc50adca3fdfab27863296fd5e71d5cb5fc4e4fa86391bc612c6f9cbf7"
+  },
+  {
+    "character": "RyuShinju",
+    "passed": true,
+    "command": [
+      "check_ryu_in_engine.py"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/RyuShinju.log",
+    "log_sha256": "434cd64af16850615c8fb4ca9bcd592e745a6fc219a57a7712e6276d390b858e"
+  },
+  {
+    "character": "HidariShinju",
+    "passed": true,
+    "command": [
+      "check_hidari_in_engine.py"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/HidariShinju.log",
+    "log_sha256": "4ff5962476d172b70315644f78d4edd4cc4ead67638e994c0d667545eb1cab5d"
+  },
+  {
+    "character": "HidariSusanoo",
+    "passed": true,
+    "command": [
+      "check_hidari_susanoo_in_engine.py"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/HidariSusanoo.log",
+    "log_sha256": "5215153f6bb11ae8a89b9a8435314f27053622ef86ceea81c3c068f23baca310"
+  },
+  {
+    "character": "MatsuriShinju",
+    "passed": true,
+    "command": [
+      "check_matsuri_in_engine.py"
+    ],
+    "environment": {},
+    "log": "previews/roster_regressions/MatsuriShinju.log",
+    "log_sha256": "f7e73c4a606ecebd03293788aa8ad719d0e7f0b4ada262d18e67320ddd6e457d"
+  },
+  {
+    "character": "MamushiCloneHealth",
+    "passed": true,
+    "command": [
+      "check_mamushi_in_engine.py",
+      "/workspace/.eida-tools/ikemen-nightly"
+    ],
+    "environment": {
+      "MAMUSHI_CLONE_HEALTH_CHECK": "1"
+    },
+    "log": "previews/roster_regressions/MamushiCloneHealth.log",
+    "log_sha256": "daff788a9136fca25e7a6f7a0082f36b1e7f0fbe1f249833e1274778d263ad4a"
+  }
+]

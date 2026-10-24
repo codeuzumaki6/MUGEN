@@ -265,26 +265,35 @@ value = 40
 
 [State 100, Stop released dash]
 type = ChangeState
-trigger1 = command != "holdfwd"
-trigger2 = Time >= 40
+trigger1 = Time >= 14
 value = 106
 ctrl = 1
 
 ; Compatibility sink for the dash spark helper requested by Code's proven
 ; common movement states. Eida uses no borrowed visual effect here.
 [Statedef 105]
-type = A
-movetype = I
-physics = N
-anim = -1
-ctrl = 0
-
-[State 105, End]
-type = DestroySelf
-trigger1 = Time = 0
-
-; ---------------------------------------------------------------------------
-; Intro / victory
+type=S
+movetype=I
+physics=N
+anim=21
+ctrl=0
+velset=-6.5,0
+[State 105, Retire legacy effect helper]
+type=DestroySelf
+trigger1=IsHelper
+[State 105, Grounded backward dash]
+type=PosSet
+trigger1=!IsHelper
+y=0
+[State 105, Fixed facing]
+type=AssertSpecial
+trigger1=!IsHelper
+flag=NoAutoTurn
+[State 105, Return control]
+type=ChangeState
+trigger1=Time>=14
+value=0
+ctrl=1
 
 [Statedef 190]
 type = S
@@ -1975,7 +1984,7 @@ sprpriority = 4
 
 [State 1202, Counter]
 type = HitDef
-trigger1 = Animelem = 2
+trigger1 = Time = 4
 attr = S, HA
 damage = 90,12
 animtype = Heavy
