@@ -327,3 +327,26 @@ python tools/check_sarada_in_engine.py
 python tools/make_sarada_preview.py
 python tools/package_sarada.py
 ```
+
+
+# Deepa Kara — carbono y armadura original
+
+[Descargar Deepa Kara](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/DeepaKara.zip) · [Ver gameplay con voces y audio real](previews/DeepaKara_motor.mp4) · [Controles Xbox](DeepaKara/CONTROLES_XBOX.md).
+
+Extrae `DeepaKara` en `chars/` y añade `DeepaKara/DeepaKara.def` a `data/select.def`. Usa los sprites y audios del ZIP de VayDra: ráfagas de cubos, disco de carbono, abanico de agujas, puño propulsado y cañón. Se conservan los 134 cuadros válidos de Deepa y los 29 audios propios. No se generó arte del personaje con IA; los cuadros de otro personaje mezclados en el atlas quedan excluidos del SFF jugable.
+
+**Abajo + Pausa**, con tres barras, activa la **armadura de carbono**: consume 1500 y dura 20 segundos. Tiene otro moveset de puños, ondas y embestidas; conserva colisiones, guardia y recuperación. La resistencia reduce los golpes posteriores de una cadena recibida: la prueba de tres impactos causa 165 en base y 131 con armadura. El primer impacto conserva el comportamiento estándar de MUGEN.
+
+**A** ejecuta el cañón de carbono en base o una ráfaga de puños con armadura. Cuestan 3000 y no consumen vida propia. El daño máximo es 550 o el 55 % de la vida máxima rival en base, y 700 o el 70 % con armadura. Requieren acertar, permiten guardia y se interrumpen al recibir un golpe. Incluye trece especiales por forma, cadenas terrestres y aéreas, dash gratuito en ambos sentidos y carga con aura verde.
+
+Pruebas en Ikemen GO: [120 casos de entradas y combate](previews/DeepaKara_engine_checks.json), [112 pruebas de recibir golpes](previews/DeepaKara_receiving/DeepaKara.json), [dash en ambas direcciones](previews/DeepaKara_dash_checks.json), [conservación de fuentes y cuadros](previews/DeepaKara_source_checks.json) y [paquete extraído y validado](previews/DeepaKara_package_checks.json). Se verifican ambas formas y orientaciones, guardia, recuperación, caducidad, las ultis acertadas/bloqueadas/lejanas/sin barra, uso a 1 HP e interrupción real. Falta probar el ejecutable exacto de MUGEN de Windows y el mando físico. [Instalación](DeepaKara/LEEME.md) · [Créditos y fuentes](DeepaKara/CREDITOS_Y_FUENTES.md).
+
+```sh
+python tools/build_deepa_assets.py
+python tools/build_deepa_runtime.py
+python tools/validate_deepa.py
+python tools/check_deepa_in_engine.py
+python tools/check_roster_receiving.py --characters DeepaKara --out previews/DeepaKara_receiving
+python tools/make_deepa_preview.py
+python tools/package_deepa.py
+```

@@ -1,0 +1,3435 @@
+[
+  {
+    "key": "Kinkaku_AirHurt_01",
+    "group": 28000,
+    "number": 0,
+    "file": "assets/frames/28000_0.png",
+    "axis": [
+      25,
+      91
+    ],
+    "rgba_sha256": "1cd0784f79411ec72f2bcd4e99151721e14971f794e2ec7bed2cf763a6352b53",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1987,92},{50,92}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_AirHurt_02",
+    "group": 28000,
+    "number": 1,
+    "file": "assets/frames/28000_1.png",
+    "axis": [
+      25,
+      91
+    ],
+    "rgba_sha256": "1cd0784f79411ec72f2bcd4e99151721e14971f794e2ec7bed2cf763a6352b53",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1987,92},{50,92}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Float_01",
+    "group": 28000,
+    "number": 2,
+    "file": "assets/frames/28000_2.png",
+    "axis": [
+      25,
+      87
+    ],
+    "rgba_sha256": "c274f9c2ee8f564d09a802ebba508c4da71bd15133eb407544d1f8da9edac95b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1690,1489},{69,90}}",
+    "source_offset": "{9.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Float_02",
+    "group": 28000,
+    "number": 3,
+    "file": "assets/frames/28000_3.png",
+    "axis": [
+      32,
+      45
+    ],
+    "rgba_sha256": "ee4056079c39c9b37571011c7e297da63d70c4a03b601a3201201d650c999927",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{580,130},{64,91}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Float_03",
+    "group": 28000,
+    "number": 4,
+    "file": "assets/frames/28000_4.png",
+    "axis": [
+      45,
+      32
+    ],
+    "rgba_sha256": "fce7cd663124f524f053d9412bfb0ba8698e195a6dc045c9950b38bc63ed947f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{660,130},{91,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Hurt_01",
+    "group": 28000,
+    "number": 5,
+    "file": "assets/frames/28000_5.png",
+    "axis": [
+      32,
+      90
+    ],
+    "rgba_sha256": "9cd86301b418d7444eaa35ac290a598c3c642f8fc8dafe7ba90f200c2c660b56",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1987,0},{57,91}}",
+    "source_offset": "{-3.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Hurt_02",
+    "group": 28000,
+    "number": 6,
+    "file": "assets/frames/28000_6.png",
+    "axis": [
+      32,
+      90
+    ],
+    "rgba_sha256": "9cd86301b418d7444eaa35ac290a598c3c642f8fc8dafe7ba90f200c2c660b56",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1987,0},{57,91}}",
+    "source_offset": "{-3.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Idle_01",
+    "group": 28000,
+    "number": 7,
+    "file": "assets/frames/28000_7.png",
+    "axis": [
+      25,
+      91
+    ],
+    "rgba_sha256": "381f5025fedacf54d7d7937a25b7992f480cf7d677ec18d71017abfdc05f8287",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{129,93},{50,92}}",
+    "source_offset": "{0,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Idle_02",
+    "group": 28000,
+    "number": 8,
+    "file": "assets/frames/28000_8.png",
+    "axis": [
+      55,
+      111
+    ],
+    "rgba_sha256": "ec88d9954ae1e2c86da9a17b49668630a9c34402825f0beffa2bc2c59e1dadc1",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{861,1269},{80,112}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Idle_03",
+    "group": 28000,
+    "number": 9,
+    "file": "assets/frames/28000_9.png",
+    "axis": [
+      55,
+      111
+    ],
+    "rgba_sha256": "8487d14fb4a15367d3c784e7feb68f7f59d274ee35239cc372684d5a1a10f9b2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{942,1269},{80,112}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Idle_04",
+    "group": 28000,
+    "number": 10,
+    "file": "assets/frames/28000_10.png",
+    "axis": [
+      55,
+      111
+    ],
+    "rgba_sha256": "a8f159b78bbc21a93de1228464355fb02f39beee4b6fdea254cde6e3538c9f6f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{861,1382},{80,112}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Idle_05",
+    "group": 28000,
+    "number": 11,
+    "file": "assets/frames/28000_11.png",
+    "axis": [
+      55,
+      111
+    ],
+    "rgba_sha256": "248b693c810935805c3a8da85d0712bad2824fa1d5ab77818821f65386a90625",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{942,1382},{80,112}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_KnockDown_01",
+    "group": 28000,
+    "number": 12,
+    "file": "assets/frames/28000_12.png",
+    "axis": [
+      41,
+      74
+    ],
+    "rgba_sha256": "ec50627af3bcca74db79473146138d5dc955b77a49676d6d9610a4d6a2e79c55",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1760,1489},{77,75}}",
+    "source_offset": "{-2.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_KnockDown_02",
+    "group": 28000,
+    "number": 13,
+    "file": "assets/frames/28000_13.png",
+    "axis": [
+      55,
+      26
+    ],
+    "rgba_sha256": "7062cd450e7594b8d45deb1cc7d3c6aae2159b23a0b2e1444be800358498de14",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1838,1489},{110,27}}",
+    "source_offset": "{0,-7}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_KnockDown_03",
+    "group": 28000,
+    "number": 14,
+    "file": "assets/frames/28000_14.png",
+    "axis": [
+      25,
+      56
+    ],
+    "rgba_sha256": "dc667d21240daf7d60b1385493792a0d27c1264e6790d5b59ddeea42f91773c6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1112,1060},{52,57}}",
+    "source_offset": "{1,-5}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_KnockDown_04",
+    "group": 28000,
+    "number": 15,
+    "file": "assets/frames/28000_15.png",
+    "axis": [
+      16,
+      24
+    ],
+    "rgba_sha256": "4d2a326dad21cc56a29b007b63fba6dbfead0f0c686ebd64fe35b7b83f998999",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1180,130},{32,49}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_KnockDown_05",
+    "group": 28000,
+    "number": 16,
+    "file": "assets/frames/28000_16.png",
+    "axis": [
+      42,
+      39
+    ],
+    "rgba_sha256": "22de30183ef0107687699ea62758c74c76029a82def3168df4255a2cb76f968c",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1230,130},{85,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_01",
+    "group": 28000,
+    "number": 17,
+    "file": "assets/frames/28000_17.png",
+    "axis": [
+      25,
+      89
+    ],
+    "rgba_sha256": "92d784dddec1a8c07f44e2cd16de5e8813d85879b83168df5ddf4486fc19ee41",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{219,294},{50,90}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_02",
+    "group": 28000,
+    "number": 18,
+    "file": "assets/frames/28000_18.png",
+    "axis": [
+      35,
+      74
+    ],
+    "rgba_sha256": "384a210938a8c0e6d2fb595d1137708eeb5c22f5bc7a5154babae1c57e5d872e",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1345,0},{94,75}}",
+    "source_offset": "{12,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_03",
+    "group": 28000,
+    "number": 19,
+    "file": "assets/frames/28000_19.png",
+    "axis": [
+      35,
+      74
+    ],
+    "rgba_sha256": "468b163b0e1c64a2202617a18fc555211e132e780003ae169454220877b6911d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1441,0},{94,75}}",
+    "source_offset": "{12,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_04",
+    "group": 28000,
+    "number": 20,
+    "file": "assets/frames/28000_20.png",
+    "axis": [
+      35,
+      75
+    ],
+    "rgba_sha256": "721fd97ea115d403bf61487146dcb85ba9e057d6059c48ca9ed93b059c3daeed",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1345,76},{84,76}}",
+    "source_offset": "{7,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_05",
+    "group": 28000,
+    "number": 21,
+    "file": "assets/frames/28000_21.png",
+    "axis": [
+      35,
+      75
+    ],
+    "rgba_sha256": "68ac33ffe6a2293de65470ffa4614a3390afeceb134c4550ad0d1c1e6c2caeed",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1430,76},{84,76}}",
+    "source_offset": "{7,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_06",
+    "group": 28000,
+    "number": 22,
+    "file": "assets/frames/28000_22.png",
+    "axis": [
+      35,
+      84
+    ],
+    "rgba_sha256": "766bbea1ba5de408265bd207d5dbe6ddf6965aa64dad22abd6d45bf76a039113",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1537,0},{60,85}}",
+    "source_offset": "{-5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_07",
+    "group": 28000,
+    "number": 23,
+    "file": "assets/frames/28000_23.png",
+    "axis": [
+      35,
+      84
+    ],
+    "rgba_sha256": "1181a5bc9910e244c2ce4e468a15b9c046a8ad76f950469083505229527847f4",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1414,636},{90,85}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_NAttack_08",
+    "group": 28000,
+    "number": 24,
+    "file": "assets/frames/28000_24.png",
+    "axis": [
+      35,
+      84
+    ],
+    "rgba_sha256": "fcc4dd470461769d67cc0abe875c324fc1b51dfecbe451c5d00c18851894d2d4",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1505,636},{90,85}}",
+    "source_offset": "{10,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_01_Chg_01",
+    "group": 28000,
+    "number": 25,
+    "file": "assets/frames/28000_25.png",
+    "axis": [
+      33,
+      91
+    ],
+    "rgba_sha256": "32648435e3192dcaf1902b3566d2a1f7363319fa586d68b9dcd1a65eefefa546",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{103,0},{58,92}}",
+    "source_offset": "{-4,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_01_Chg_02",
+    "group": 28000,
+    "number": 26,
+    "file": "assets/frames/28000_26.png",
+    "axis": [
+      55,
+      121
+    ],
+    "rgba_sha256": "3fe643f144232832a8be36bc340e2b46aa570c73e7842c5b41148ab54aae3b87",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1767,1565},{80,122}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_01_Chg_03",
+    "group": 28000,
+    "number": 27,
+    "file": "assets/frames/28000_27.png",
+    "axis": [
+      55,
+      121
+    ],
+    "rgba_sha256": "915952a7dc3f7767b3bb6c8bb91271109e0988ffc2babc671ad2cf9ae2fff20c",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1848,1517},{80,122}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_01_Chg_04",
+    "group": 28000,
+    "number": 28,
+    "file": "assets/frames/28000_28.png",
+    "axis": [
+      51,
+      110
+    ],
+    "rgba_sha256": "3c5fa16aac8f1b83e1c7f98e988d50316deffcecabd61e57094c5511a4ab8420",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1690,1580},{76,111}}",
+    "source_offset": "{-13,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_01",
+    "group": 28000,
+    "number": 29,
+    "file": "assets/frames/28000_29.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "966f61049773f11ee494b637c3cb0cd8af1d2e575f04dfc1dd3eb3610a757e7d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,0},{102,100}}",
+    "source_offset": "{18,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_02",
+    "group": 28000,
+    "number": 30,
+    "file": "assets/frames/28000_30.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "f0bd66e55507a6068afa6783a16e3c26c8dc1bb4369963e5a2883154a4874413",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,101},{128,100}}",
+    "source_offset": "{31,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_03",
+    "group": 28000,
+    "number": 31,
+    "file": "assets/frames/28000_31.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "fa2e515196bcf4c9a03f792c93f4b3e7de10ecfb8e2bda6aedb003f4ed63000f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,202},{178,100}}",
+    "source_offset": "{56,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_04",
+    "group": 28000,
+    "number": 32,
+    "file": "assets/frames/28000_32.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "d84400a0ea00857c0c1cf468916ee5357080dd5170e56096d6538fa66202a79b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,303},{218,100}}",
+    "source_offset": "{76,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_05",
+    "group": 28000,
+    "number": 33,
+    "file": "assets/frames/28000_33.png",
+    "axis": [
+      32,
+      99
+    ],
+    "rgba_sha256": "f4350774bb843bcbeedc4a9dbb46c386f8657fdf01b36ec7959a4daf824501aa",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.013333099894225597,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,404},{268,100}}",
+    "source_offset": "{101,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_06",
+    "group": 28000,
+    "number": 34,
+    "file": "assets/frames/28000_34.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "5fa6050ae01a953a98ca7f4e139d3dc0eaa3617691db50f471d989efbc44b644",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,505},{318,100}}",
+    "source_offset": "{126,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_07",
+    "group": 28000,
+    "number": 35,
+    "file": "assets/frames/28000_35.png",
+    "axis": [
+      32,
+      99
+    ],
+    "rgba_sha256": "c38755e9bf66bf7eb081d560991c00ad786dde14f62cd5949b5faa14da11bc62",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.013333099894225597,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,606},{368,100}}",
+    "source_offset": "{151,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_08",
+    "group": 28000,
+    "number": 36,
+    "file": "assets/frames/28000_36.png",
+    "axis": [
+      33,
+      99
+    ],
+    "rgba_sha256": "a5ef4a2f2b122a0d92a340609974f43d5f0a32bec56da03b713ee6d32cd72e4a",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,707},{418,100}}",
+    "source_offset": "{176,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_09",
+    "group": 28000,
+    "number": 37,
+    "file": "assets/frames/28000_37.png",
+    "axis": [
+      32,
+      169
+    ],
+    "rgba_sha256": "f91e08b2b45c17acc2d608065e89bb3acb620e3bc776adaefb215f732a46326d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.013333099894225597,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,808},{584,211}}",
+    "source_offset": "{259,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_10",
+    "group": 28000,
+    "number": 38,
+    "file": "assets/frames/28000_38.png",
+    "axis": [
+      33,
+      169
+    ],
+    "rgba_sha256": "8d731b03cadfb23dd02447d92f844d639eb71cec48c9627951651ac30a5f4e87",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{179,0},{584,211}}",
+    "source_offset": "{259,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_11",
+    "group": 28000,
+    "number": 39,
+    "file": "assets/frames/28000_39.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "bd1722af83d69a86ae2057dfb57adc0c9188a865eabe093f905fa279e7f7dce5",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{269,212},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_12",
+    "group": 28000,
+    "number": 40,
+    "file": "assets/frames/28000_40.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "1c3eff7fb62536d0c4d7bc45cb1f97b22f957b62bb7db54cf8a790bb2692bdd2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{369,424},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_13",
+    "group": 28000,
+    "number": 41,
+    "file": "assets/frames/28000_41.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "3e5469119de70817d0ea0d89222683a2bcdc73a9521fd9eac87ad20481440df6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{764,0},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_14",
+    "group": 28000,
+    "number": 42,
+    "file": "assets/frames/28000_42.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "a187de545de3789f6ec4039beef2538b7bd000ab734f57a0c4ffe51270c5028b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{850,212},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_15",
+    "group": 28000,
+    "number": 43,
+    "file": "assets/frames/28000_43.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "e9da620c11888d2cbe1a5bd7f318457386c36e02091e5071266b5bfe970f5eed",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{950,424},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_16",
+    "group": 28000,
+    "number": 44,
+    "file": "assets/frames/28000_44.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "701de520e092004de45f960d895e351e6a96c18617beece5ab2e26541765f10c",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{585,636},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill01_17",
+    "group": 28000,
+    "number": 45,
+    "file": "assets/frames/28000_45.png",
+    "axis": [
+      28,
+      169
+    ],
+    "rgba_sha256": "bb37381327a0e008d96427fb2e15060f3a40076c32da20ad54e3d2370e2777b9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.01587275229394436,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{585,848},{580,211}}",
+    "source_offset": "{262,-42}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Chg_01",
+    "group": 28000,
+    "number": 46,
+    "file": "assets/frames/28000_46.png",
+    "axis": [
+      55,
+      125
+    ],
+    "rgba_sha256": "43e5377feb7486d5e962e548dce4bdf632d30131cf0bfcb6c0ff40c1493cef52",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1431,161},{80,126}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Chg_02",
+    "group": 28000,
+    "number": 47,
+    "file": "assets/frames/28000_47.png",
+    "axis": [
+      55,
+      125
+    ],
+    "rgba_sha256": "19ee0ec0fb2d81ef03732ff84b7dd46564376eb1a29dabe8aace4a7ab50b059d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1431,288},{80,126}}",
+    "source_offset": "{-15,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Chg_03",
+    "group": 28000,
+    "number": 48,
+    "file": "assets/frames/28000_48.png",
+    "axis": [
+      79,
+      126
+    ],
+    "rgba_sha256": "0b66cf18d842250962567e833a3e4325f4b39fbcf30a0f7db10eb5c2527b96f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1512,161},{123,127}}",
+    "source_offset": "{-17.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Chg_04",
+    "group": 28000,
+    "number": 49,
+    "file": "assets/frames/28000_49.png",
+    "axis": [
+      79,
+      126
+    ],
+    "rgba_sha256": "bc1c1c3c7af004b6246decf131e6bff4788d3364ba9c72d53f96749213bdc5e6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1166,636},{123,127}}",
+    "source_offset": "{-17.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Chg_05",
+    "group": 28000,
+    "number": 50,
+    "file": "assets/frames/28000_50.png",
+    "axis": [
+      79,
+      126
+    ],
+    "rgba_sha256": "526d7539ba7390f95ac83f44596a464822e247e3d01e99f0d57fcadafd5f3bac",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1290,636},{123,127}}",
+    "source_offset": "{-17.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_01",
+    "group": 28000,
+    "number": 51,
+    "file": "assets/frames/28000_51.png",
+    "axis": [
+      33,
+      69
+    ],
+    "rgba_sha256": "06b613d31a398ac5af040223cb69c1d3c6f238621cdc2c6c912fbc52b3e86acd",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,908},{91,70}}",
+    "source_offset": "{12.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_02",
+    "group": 28000,
+    "number": 52,
+    "file": "assets/frames/28000_52.png",
+    "axis": [
+      33,
+      69
+    ],
+    "rgba_sha256": "87a9cf5122342bffec29e4b701dd3dd8e7ca55299f4b76a1a20d4b61c678bb43",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,737},{91,70}}",
+    "source_offset": "{12.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_03",
+    "group": 28000,
+    "number": 53,
+    "file": "assets/frames/28000_53.png",
+    "axis": [
+      28,
+      68
+    ],
+    "rgba_sha256": "3bc081ea994c3faa9c19383136acb64ff17debbbcbda702323b3e4eedcf717b2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{369,525},{86,69}}",
+    "source_offset": "{15,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_MonWalk_01",
+    "group": 28000,
+    "number": 54,
+    "file": "assets/frames/28000_54.png",
+    "axis": [
+      118,
+      95
+    ],
+    "rgba_sha256": "905373fecc731c6d821c1219300c76dc80d2f435a7476fee3f1dad042baa7713",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1166,764},{237,191}}",
+    "source_offset": "{2.5,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_MonWalk_02",
+    "group": 28000,
+    "number": 55,
+    "file": "assets/frames/28000_55.png",
+    "axis": [
+      118,
+      95
+    ],
+    "rgba_sha256": "c488353caf2bf5e9a5b300a59a2803bed00113fee18554720c83d0d22c347dbc",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1404,764},{237,191}}",
+    "source_offset": "{2.5,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Mon_01",
+    "group": 28000,
+    "number": 56,
+    "file": "assets/frames/28000_56.png",
+    "axis": [
+      134,
+      132
+    ],
+    "rgba_sha256": "e795dfa23fe6df4718d2e81e2ed9e731f7943f1e0555445b463988b6c94525ca",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,1021},{268,265}}",
+    "source_offset": "{18,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Mon_02",
+    "group": 28000,
+    "number": 57,
+    "file": "assets/frames/28000_57.png",
+    "axis": [
+      134,
+      132
+    ],
+    "rgba_sha256": "a8a0c8014ecfc1c7e9c96adb9ec62da1ceee8decd6269c0b77ff9c9ef535a137",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{269,1020},{268,265}}",
+    "source_offset": "{18,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Mon_03",
+    "group": 28000,
+    "number": 58,
+    "file": "assets/frames/28000_58.png",
+    "axis": [
+      134,
+      132
+    ],
+    "rgba_sha256": "513bc438e2e8dd294bf3cf93a153cb5e74447eddacb7a8c68a50e2482beb25a2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1166,956},{268,265}}",
+    "source_offset": "{18,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill02_Mon_04",
+    "group": 28000,
+    "number": 59,
+    "file": "assets/frames/28000_59.png",
+    "axis": [
+      134,
+      132
+    ],
+    "rgba_sha256": "af708222f60e469e86450802da84bb83fa4053a0cf50182f72f555c6ef9e39e2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "effect",
+    "alignment": "standalone original effect centre",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1435,956},{268,265}}",
+    "source_offset": "{18,-77}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Chg_01",
+    "group": 28000,
+    "number": 60,
+    "file": "assets/frames/28000_60.png",
+    "axis": [
+      27,
+      78
+    ],
+    "rgba_sha256": "f496b44e76e5bf9bf5ced71e4aa34989031b3fea202edf274d50137c0b4b336e",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{179,214},{62,79}}",
+    "source_offset": "{4,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Chg_02",
+    "group": 28000,
+    "number": 61,
+    "file": "assets/frames/28000_61.png",
+    "axis": [
+      54,
+      105
+    ],
+    "rgba_sha256": "871a4ac4446b2af004aee1f70114b6b64ace7b88e5f91ad56b2dc6eaa4a47efe",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1629,0},{89,106}}",
+    "source_offset": "{-9.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Chg_03",
+    "group": 28000,
+    "number": 62,
+    "file": "assets/frames/28000_62.png",
+    "axis": [
+      54,
+      105
+    ],
+    "rgba_sha256": "b1771bf1ad76aafe405241d3d0108e8bcafa880a752e0187ac6ce316dc44adf8",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1636,107},{89,106}}",
+    "source_offset": "{-9.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Chg_04",
+    "group": 28000,
+    "number": 63,
+    "file": "assets/frames/28000_63.png",
+    "axis": [
+      54,
+      105
+    ],
+    "rgba_sha256": "5d4d7fcc390112e14e88e87de25d12a101c93d8350378dc18d2c2432d95c6050",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1636,214},{89,106}}",
+    "source_offset": "{-9.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_01",
+    "group": 28000,
+    "number": 64,
+    "file": "assets/frames/28000_64.png",
+    "axis": [
+      27,
+      78
+    ],
+    "rgba_sha256": "77b04a8b47106a25c4953952723c86e697b2e4283b76b1a3bba7d618500fbf08",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1512,289},{62,79}}",
+    "source_offset": "{4,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_02",
+    "group": 28000,
+    "number": 65,
+    "file": "assets/frames/28000_65.png",
+    "axis": [
+      27,
+      78
+    ],
+    "rgba_sha256": "70a504fef74a28af717ae6039df64197c6e65dc8369a9e089a15598facddc49d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1574,289},{62,79}}",
+    "source_offset": "{4,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_03",
+    "group": 28000,
+    "number": 66,
+    "file": "assets/frames/28000_66.png",
+    "axis": [
+      27,
+      78
+    ],
+    "rgba_sha256": "59005ae1975ba2a81d87ea54fe53c40ff0b8c680b2954751ed773bfcb5e28c6a",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1531,369},{117,79}}",
+    "source_offset": "{31.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_04",
+    "group": 28000,
+    "number": 67,
+    "file": "assets/frames/28000_67.png",
+    "axis": [
+      25,
+      192
+    ],
+    "rgba_sha256": "10ffd6d50cc751840f087c5ed7482d7eb3fb3bf9fcbd8abcf62d4ae9c7965be0",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.021425893530249596,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1727,0},{259,247}}",
+    "source_offset": "{102.5,-62}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_05",
+    "group": 28000,
+    "number": 68,
+    "file": "assets/frames/28000_68.png",
+    "axis": [
+      25,
+      192
+    ],
+    "rgba_sha256": "a2cbe125e84db7b20d3586b670dbe09c40e76ca2932a1c293cf7bd29b09aee91",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.021425893530249596,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1727,248},{259,247}}",
+    "source_offset": "{102.5,-62}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_06",
+    "group": 28000,
+    "number": 69,
+    "file": "assets/frames/28000_69.png",
+    "axis": [
+      25,
+      192
+    ],
+    "rgba_sha256": "efe11ccc151c4348060d19446808cedc1572a28e404cc5cc6517edab88ed7dcc",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.021425893530249596,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1727,497},{259,247}}",
+    "source_offset": "{102.5,-62}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_07",
+    "group": 28000,
+    "number": 70,
+    "file": "assets/frames/28000_70.png",
+    "axis": [
+      25,
+      192
+    ],
+    "rgba_sha256": "61b6f378951bad3c761ef78af275c150fd6f05ac12a42828896ca2fdf7d22759",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.021425893530249596,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1727,745},{259,247}}",
+    "source_offset": "{102.5,-62}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_08",
+    "group": 28000,
+    "number": 71,
+    "file": "assets/frames/28000_71.png",
+    "axis": [
+      25,
+      192
+    ],
+    "rgba_sha256": "5059d83ec46c5aabc82c51c9e3b15bfa755388db9dce392f979ef50593c21cf9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.021425893530249596,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1727,993},{259,247}}",
+    "source_offset": "{102.5,-62}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_09",
+    "group": 28000,
+    "number": 72,
+    "file": "assets/frames/28000_72.png",
+    "axis": [
+      27,
+      92
+    ],
+    "rgba_sha256": "53b8d7f34e35720e77cf3a0325a09021429b630bf3a3a98b137d54b4a441221f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "source horizontal offset and original foot baseline",
+    "match_error": 0.047065798193216324,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1531,449},{191,91}}",
+    "source_offset": "{68.5,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Punch_01",
+    "group": 28000,
+    "number": 73,
+    "file": "assets/frames/28000_73.png",
+    "axis": [
+      60,
+      165
+    ],
+    "rgba_sha256": "527d83c1af11e6448bda4b61873ec7a30ffa7fc98ac17ad48d37f930df380274",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "original rushing body feet, independent of fist flash",
+    "match_error": 0.03557008132338524,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{538,1060},{268,208}}",
+    "source_offset": "{74,-49}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Punch_02",
+    "group": 28000,
+    "number": 74,
+    "file": "assets/frames/28000_74.png",
+    "axis": [
+      60,
+      165
+    ],
+    "rgba_sha256": "9936cbaa8694acc3f7700d60f121c7006a1df575a4081f21839382fbb5f4b65c",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "original rushing body feet, independent of fist flash",
+    "match_error": 0.03812675178050995,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{825,1060},{268,208}}",
+    "source_offset": "{74,-49}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Punch_03",
+    "group": 28000,
+    "number": 75,
+    "file": "assets/frames/28000_75.png",
+    "axis": [
+      60,
+      165
+    ],
+    "rgba_sha256": "c28964f5d3a78ac8a7f440d60653fd8aba933f4dc7faa9af0bd32e9dce3d5add",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "original rushing body feet, independent of fist flash",
+    "match_error": 0.02078765444457531,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,1287},{268,208}}",
+    "source_offset": "{74,-49}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Punch_04",
+    "group": 28000,
+    "number": 76,
+    "file": "assets/frames/28000_76.png",
+    "axis": [
+      60,
+      165
+    ],
+    "rgba_sha256": "bd480cae78699c85bc206f270f43d0068e44ab7e7a208c28f38a2c7c97bfee5a",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "original rushing body feet, independent of fist flash",
+    "match_error": 0.017237970605492592,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{287,1287},{268,208}}",
+    "source_offset": "{74,-49}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill03_Punch_05",
+    "group": 28000,
+    "number": 77,
+    "file": "assets/frames/28000_77.png",
+    "axis": [
+      60,
+      165
+    ],
+    "rgba_sha256": "34327f961c9659825103a4ab5b338a6f28dda8a5155fb1253aabc8b50e8d2037",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "original rushing body feet, independent of fist flash",
+    "match_error": 0.015192500315606594,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{574,1287},{268,208}}",
+    "source_offset": "{74,-49}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_01",
+    "group": 28000,
+    "number": 78,
+    "file": "assets/frames/28000_78.png",
+    "axis": [
+      33,
+      152
+    ],
+    "rgba_sha256": "4d5b7c7b7d78015caeabddf7e7c7304b0c6c884034d07ceadf357b5281ace449",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1023,1269},{226,219}}",
+    "source_offset": "{80,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_02",
+    "group": 28000,
+    "number": 79,
+    "file": "assets/frames/28000_79.png",
+    "axis": [
+      28,
+      152
+    ],
+    "rgba_sha256": "9485367f226ed6d9887834a5219116324e6630a54153e7b26e371a2b43288b26",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1250,1269},{221,219}}",
+    "source_offset": "{82.5,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_03",
+    "group": 28000,
+    "number": 80,
+    "file": "assets/frames/28000_80.png",
+    "axis": [
+      33,
+      152
+    ],
+    "rgba_sha256": "ec45036e930dcb1f91c2591bd1b0df6507430553c87042eda32fd77a8cdfed48",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1472,1269},{226,219}}",
+    "source_offset": "{80,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_04",
+    "group": 28000,
+    "number": 81,
+    "file": "assets/frames/28000_81.png",
+    "axis": [
+      28,
+      152
+    ],
+    "rgba_sha256": "9215c9f48f0f65b9b4e5e58fe50e8da069323c4d46ec29856c5012792f0e03d8",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1699,1269},{221,219}}",
+    "source_offset": "{82.5,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_05",
+    "group": 28000,
+    "number": 82,
+    "file": "assets/frames/28000_82.png",
+    "axis": [
+      33,
+      152
+    ],
+    "rgba_sha256": "889c4c0bf62c1ec7924bfb95630244250777877e68000f2ab8d76978bc4dd7e2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{0,1496},{226,219}}",
+    "source_offset": "{80,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_06",
+    "group": 28000,
+    "number": 83,
+    "file": "assets/frames/28000_83.png",
+    "axis": [
+      28,
+      152
+    ],
+    "rgba_sha256": "a99b355c2ae49971c74a2b36a2fd3cb8a78db38a61ac201fc520591d74ecbb8d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{227,1496},{221,219}}",
+    "source_offset": "{82.5,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_CHG_07",
+    "group": 28000,
+    "number": 84,
+    "file": "assets/frames/28000_84.png",
+    "axis": [
+      33,
+      152
+    ],
+    "rgba_sha256": "0dcd9aeff1dafeb6a40b8ad4ea530d09c957e0b50694ff83a2d4f122ffc335c9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{449,1496},{226,219}}",
+    "source_offset": "{80,-67}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_01",
+    "group": 28000,
+    "number": 85,
+    "file": "assets/frames/28000_85.png",
+    "axis": [
+      28,
+      75
+    ],
+    "rgba_sha256": "ae7557dc59abde6b54ef8b9c300c1e65e583b500881351c50e9ce22abeaf6e4d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1531,541},{129,76}}",
+    "source_offset": "{36.5,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_02",
+    "group": 28000,
+    "number": 86,
+    "file": "assets/frames/28000_86.png",
+    "axis": [
+      207,
+      192
+    ],
+    "rgba_sha256": "ba078713bc08d887ed6fddd5ab1b258f9c541e7aae67226be1a4a3c8c3751846",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.018035531044006348,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{676,1496},{385,248}}",
+    "source_offset": "{-2.5,-73}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_03",
+    "group": 28000,
+    "number": 87,
+    "file": "assets/frames/28000_87.png",
+    "axis": [
+      313,
+      203
+    ],
+    "rgba_sha256": "d8dcfdfe91f121dfdfbd6f6954535dc8426983b90a2818099f17dd39bbd2d671",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.01997009664773941,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1062,1489},{517,263}}",
+    "source_offset": "{-49.5,-73}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_01",
+    "group": 28000,
+    "number": 88,
+    "file": "assets/frames/28000_88.png",
+    "axis": [
+      55,
+      77
+    ],
+    "rgba_sha256": "62c3741258f8039f2934f0c3739ace03a11e2ef934e87dd6c1a1c63ae341a40d",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1921,1241},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_02",
+    "group": 28000,
+    "number": 89,
+    "file": "assets/frames/28000_89.png",
+    "axis": [
+      55,
+      76
+    ],
+    "rgba_sha256": "30338c781e96e3c3619dc5a4555d02eadfdd7f78c964fe1995403f74fb280ae9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1921,1320},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_03",
+    "group": 28000,
+    "number": 90,
+    "file": "assets/frames/28000_90.png",
+    "axis": [
+      55,
+      77
+    ],
+    "rgba_sha256": "2958184fe0e432def449c8b6bedd7da00a637a05ebb6d384a58addcbc5582130",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1921,1399},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_04",
+    "group": 28000,
+    "number": 91,
+    "file": "assets/frames/28000_91.png",
+    "axis": [
+      55,
+      77
+    ],
+    "rgba_sha256": "24f6446025a6461e8acbf3199380067a547bd702855a578ea3b319140c9fbe56",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1579,1489},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_05",
+    "group": 28000,
+    "number": 92,
+    "file": "assets/frames/28000_92.png",
+    "axis": [
+      55,
+      76
+    ],
+    "rgba_sha256": "e27aa01f130616946d415d787e11285e51d39782094429b786bd74ce06d430ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1579,1568},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Walk_06",
+    "group": 28000,
+    "number": 93,
+    "file": "assets/frames/28000_93.png",
+    "axis": [
+      55,
+      77
+    ],
+    "rgba_sha256": "39615818d7da50a4f10632cd031ed8a212629d3ec2f2e0b91872ca8e53db4d5c",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku.plist",
+    "rectangle": "{{1579,1647},{110,78}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_04",
+    "group": 28000,
+    "number": 94,
+    "file": "assets/frames/28000_94.png",
+    "axis": [
+      261,
+      195
+    ],
+    "rgba_sha256": "29cf74476623cf2ebaa064993d0f6ccb2c873f7a31a0c932436da05f9ca4287f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.01618538796901703,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,0},{530,232}}",
+    "source_offset": "{10,-61}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_05",
+    "group": 28000,
+    "number": 95,
+    "file": "assets/frames/28000_95.png",
+    "axis": [
+      193,
+      178
+    ],
+    "rgba_sha256": "8f56e7a494395f26b3c2134fd5192e981d8bb1cdd9062bde51def523ed833b92",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_06",
+    "match_error": 0.018684694543480873,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{531,0},{549,243}}",
+    "source_offset": "{79.5,-80}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_06",
+    "group": 28000,
+    "number": 96,
+    "file": "assets/frames/28000_96.png",
+    "axis": [
+      115,
+      170
+    ],
+    "rgba_sha256": "77859c0b735197c2809458576f54834ea90462702ce791a819545024f093d7bc",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.0017318126047030091,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{1081,0},{530,240}}",
+    "source_offset": "{150,-70}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_07",
+    "group": 28000,
+    "number": 97,
+    "file": "assets/frames/28000_97.png",
+    "axis": [
+      104,
+      170
+    ],
+    "rgba_sha256": "e3b35e75ff4977fe79701bac6baccd97d091836d164870e0fab72fa8f4f3784e",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0001547313149785623,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,233},{598,241}}",
+    "source_offset": "{195,-71}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_08",
+    "group": 28000,
+    "number": 98,
+    "file": "assets/frames/28000_98.png",
+    "axis": [
+      45,
+      138
+    ],
+    "rgba_sha256": "522b5173dfc747a9c87c6365eeed0965b8445888d9bac5bdf96e497025389c41",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_02",
+    "match_error": 0.00010563147952780128,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{599,244},{610,159}}",
+    "source_offset": "{260,-21}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_09",
+    "group": 28000,
+    "number": 99,
+    "file": "assets/frames/28000_99.png",
+    "axis": [
+      45,
+      271
+    ],
+    "rgba_sha256": "ce665fa4a0c650fa497e822a705d01cdbb960458650e2569fb360feaf2c5dff8",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,475},{765,404}}",
+    "source_offset": "{337.5,-133}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_10",
+    "group": 28000,
+    "number": 100,
+    "file": "assets/frames/28000_100.png",
+    "axis": [
+      45,
+      271
+    ],
+    "rgba_sha256": "86d3f6c50bbd687f5fc2b60cdf1b461637011cecc21996a62815edabc1287788",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{766,475},{765,404}}",
+    "source_offset": "{337.5,-133}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_11",
+    "group": 28000,
+    "number": 101,
+    "file": "assets/frames/28000_101.png",
+    "axis": [
+      45,
+      271
+    ],
+    "rgba_sha256": "8e3f5f7892771bb2cb6f6d56cb1bc71a07efe594e686623fea8560c3b4eca2d0",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,880},{765,404}}",
+    "source_offset": "{337.5,-133}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_12",
+    "group": 28000,
+    "number": 102,
+    "file": "assets/frames/28000_102.png",
+    "axis": [
+      45,
+      271
+    ],
+    "rgba_sha256": "d1be780a52bfb79d010cfab942d802bd8ced11e4d0c1cb87b8af556554bae1fb",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{766,880},{765,404}}",
+    "source_offset": "{337.5,-133}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_13",
+    "group": 28000,
+    "number": 103,
+    "file": "assets/frames/28000_103.png",
+    "axis": [
+      45,
+      271
+    ],
+    "rgba_sha256": "df28fd2acc1c9633c4941c5af7ec0d5a907c10aba513c67f23f2ed6045133567",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,1285},{765,404}}",
+    "source_offset": "{337.5,-133}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_14",
+    "group": 28000,
+    "number": 104,
+    "file": "assets/frames/28000_104.png",
+    "axis": [
+      45,
+      308
+    ],
+    "rgba_sha256": "ddc2bbf8f11c577c8b9e9a3d13c2e366df7ed1424894ac59db5887564651da0b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{766,1285},{811,535}}",
+    "source_offset": "{360.5,-227}",
+    "source_rotated": false
+  },
+  {
+    "key": "Kinkaku_Skill04_15",
+    "group": 28000,
+    "number": 105,
+    "file": "assets/frames/28000_105.png",
+    "axis": [
+      45,
+      308
+    ],
+    "rgba_sha256": "f3f65049564362195194488b3812ed2a5a5f71418429619f38f5735bd4e572ad",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 0,
+    "kind": "body_with_effect",
+    "alignment": "masked original cloth match Kinkaku_NAttack_03",
+    "match_error": 0.0,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Kinkaku/Kinkaku_Skill.plist",
+    "rectangle": "{{0,1822},{811,535}}",
+    "source_offset": "{360.5,-227}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_01",
+    "group": 28001,
+    "number": 0,
+    "file": "assets/frames/28001_0.png",
+    "axis": [
+      135,
+      313
+    ],
+    "rgba_sha256": "8c42fc3fe919af6add789538c21edb0f443ba347f04118669192913b17cb0ca6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{0,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_02",
+    "group": 28001,
+    "number": 1,
+    "file": "assets/frames/28001_1.png",
+    "axis": [
+      135,
+      300
+    ],
+    "rgba_sha256": "4e8b1c048546baf478dbc54be5500c1e62fc94493b55bc88db0aec975204b5e9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{271,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_03",
+    "group": 28001,
+    "number": 2,
+    "file": "assets/frames/28001_2.png",
+    "axis": [
+      135,
+      298
+    ],
+    "rgba_sha256": "768a2ca1bc62f039d6cd435b83ec26ab289c0cbc1a2e3315f7555e2c61bf6ae9",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{542,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_04",
+    "group": 28001,
+    "number": 3,
+    "file": "assets/frames/28001_3.png",
+    "axis": [
+      135,
+      299
+    ],
+    "rgba_sha256": "2ffb2094d2647a46607f3399c30d3896aa88b1f53de1b18ee77c0cf5e59c0a9a",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{813,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_05",
+    "group": 28001,
+    "number": 4,
+    "file": "assets/frames/28001_4.png",
+    "axis": [
+      135,
+      298
+    ],
+    "rgba_sha256": "cfc4ee9e29630c7a7628fa5c6cb44ba4c8b68dad5be196236137782a24e5b146",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1084,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_06",
+    "group": 28001,
+    "number": 5,
+    "file": "assets/frames/28001_5.png",
+    "axis": [
+      135,
+      297
+    ],
+    "rgba_sha256": "8606b63407335c37953f8078f5a1394095685a416f87ca9061bece8c6b09ccea",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1355,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_07",
+    "group": 28001,
+    "number": 6,
+    "file": "assets/frames/28001_6.png",
+    "axis": [
+      135,
+      293
+    ],
+    "rgba_sha256": "c42beadec4f1734a1b09274f3be85cc3aa07fca7214b6ab5df587be7da7c63a2",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1626,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_08",
+    "group": 28001,
+    "number": 7,
+    "file": "assets/frames/28001_7.png",
+    "axis": [
+      135,
+      284
+    ],
+    "rgba_sha256": "789f9694ff71fcf7ec5eb31fda3631a03b7021e2c119551e8b52a7314052f056",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "transformation",
+    "alignment": "original transformation ground plane",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1897,0},{270,350}}",
+    "source_offset": "{0,-65}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Trans_09",
+    "group": 28001,
+    "number": 8,
+    "file": "assets/frames/28001_8.png",
+    "axis": [
+      25,
+      91
+    ],
+    "rgba_sha256": "668d7ee594d4ef329aed4763d573b4ed05ddf4830483e0de726df201a3e1f264",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{2116,351},{52,92}}",
+    "source_offset": "{1,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Idle",
+    "group": 28001,
+    "number": 9,
+    "file": "assets/frames/28001_9.png",
+    "axis": [
+      25,
+      82
+    ],
+    "rgba_sha256": "8cbf7eaa2e132466facd44cecdc784f4e2060c8c46558b407adea3605a54c59f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1948,429},{52,83}}",
+    "source_offset": "{1,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Walk_01",
+    "group": 28001,
+    "number": 10,
+    "file": "assets/frames/28001_10.png",
+    "axis": [
+      108,
+      77
+    ],
+    "rgba_sha256": "c8b1c9e3afd65169aaa98d8963dd7f3e2c9531ed2ef6ff8420ed8b58223725af",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{2001,444},{163,78}}",
+    "source_offset": "{-26.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Walk_02",
+    "group": 28001,
+    "number": 11,
+    "file": "assets/frames/28001_11.png",
+    "axis": [
+      108,
+      77
+    ],
+    "rgba_sha256": "5dc514feaaad03ff45f74a61d7ac4d1dfb2abfaf6eb51336d15a03d58da85838",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1948,523},{163,78}}",
+    "source_offset": "{-26.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Walk_03",
+    "group": 28001,
+    "number": 12,
+    "file": "assets/frames/28001_12.png",
+    "axis": [
+      108,
+      77
+    ],
+    "rgba_sha256": "30fba937df7c92507a672f80db63fe79f180ee26ef8fe96d04572bb7569501e8",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1974,602},{163,78}}",
+    "source_offset": "{-26.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_01",
+    "group": 28001,
+    "number": 13,
+    "file": "assets/frames/28001_13.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "50a2baa9404f58cd812aa43856124268cbbd07bf0672bbc7a481d06ed08643de",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.05662281811237335,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{0,351},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_02",
+    "group": 28001,
+    "number": 14,
+    "file": "assets/frames/28001_14.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "6787a215da67536124ca83f5f5f597c5c847aba7c621986f0422b76390995df0",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.1646437793970108,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{387,351},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_03",
+    "group": 28001,
+    "number": 15,
+    "file": "assets/frames/28001_15.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "c3e68489d3744d349bbf8f176007bb7b424f34a5a388dd2bfd1ec7af5178208b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.0658852756023407,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{774,351},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_04",
+    "group": 28001,
+    "number": 16,
+    "file": "assets/frames/28001_16.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "0c1de7902d3c27e8f71c27d5d240154bfd6d2d4940125ee3706d5ef147bf19df",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.0431935153901577,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1161,351},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_05",
+    "group": 28001,
+    "number": 17,
+    "file": "assets/frames/28001_17.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "79a87a655e1db8f9152afeda593b846cf9919e02545e3e067aee06cd79db0f4a",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.03638889268040657,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{0,629},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_06",
+    "group": 28001,
+    "number": 18,
+    "file": "assets/frames/28001_18.png",
+    "axis": [
+      180,
+      221
+    ],
+    "rgba_sha256": "307ef825ac9b06b6be394920f53c9a30b403e04d6e472fb137f932fd8063f2b6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored left punch body feet",
+    "match_error": 0.03593089058995247,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{387,629},{386,277}}",
+    "source_offset": "{13,-55}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit01_07",
+    "group": 28001,
+    "number": 19,
+    "file": "assets/frames/28001_19.png",
+    "axis": [
+      29,
+      76
+    ],
+    "rgba_sha256": "622575977a069804d8d28d1d9b2ef9b04bf82cb407dd265475bee168846a509e",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1949,351},{76,77}}",
+    "source_offset": "{9,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_01",
+    "group": 28001,
+    "number": 20,
+    "file": "assets/frames/28001_20.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "67336eb1f71f5fb0cb0f6ee6fbce2d8277f0d19ccb0b8a2ca0ab9064cab083ab",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.15786956250667572,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{774,629},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_02",
+    "group": 28001,
+    "number": 21,
+    "file": "assets/frames/28001_21.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "5b256a3efc6953d280d403f318d10a9de87a7606249d5a823de50145301c853f",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.16184252500534058,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1174,629},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_03",
+    "group": 28001,
+    "number": 22,
+    "file": "assets/frames/28001_22.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "6baef8118285620b8fd81192bae67c06ee44b032cb49c7502f5b1f0f3b27500b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.05744105204939842,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1548,351},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_04",
+    "group": 28001,
+    "number": 23,
+    "file": "assets/frames/28001_23.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "5721644d92f20d1ba4150d62942ef6115536d02bc01eb20d78a23bdb79871d2b",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.041545797139406204,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1574,636},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_05",
+    "group": 28001,
+    "number": 24,
+    "file": "assets/frames/28001_24.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "ddc0fac71d4005f7d8ca4f638cf05b465b00650b835133b7809135675f7cf0f7",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.03874887526035309,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{0,907},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_06",
+    "group": 28001,
+    "number": 25,
+    "file": "assets/frames/28001_25.png",
+    "axis": [
+      233,
+      210
+    ],
+    "rgba_sha256": "8c559bb825a9059bb348508febc67e1474b04973989d23377b6f885ed4734f00",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body_with_effect",
+    "alignment": "original armored right punch body feet",
+    "match_error": 0.032782718539237976,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{400,907},{399,284}}",
+    "source_offset": "{-33.5,-74}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_Hit02_07",
+    "group": 28001,
+    "number": 26,
+    "file": "assets/frames/28001_26.png",
+    "axis": [
+      33,
+      73
+    ],
+    "rgba_sha256": "823bd4da5b4626326d0e358cffb20cf0c65ac0abc6e8ee0e6778dc13badba5e6",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{2026,351},{89,74}}",
+    "source_offset": "{11.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Deepa_UnUse_01",
+    "group": 28001,
+    "number": 27,
+    "file": "assets/frames/28001_27.png",
+    "axis": [
+      25,
+      84
+    ],
+    "rgba_sha256": "0f8821a0a115d37449bd0368013b6ca45b8495cf8c9a0aaf366e6d248a809f81",
+    "redrawn": false,
+    "ai_generated": false,
+    "form": 1,
+    "kind": "body",
+    "alignment": "native body foot pivot",
+    "match_error": null,
+    "source_plist": "source_material/Deepa_original/DEEPA/Deepa Kara by VayDra/Flog/KakashiFlog.plist",
+    "rectangle": "{{1974,681},{65,85}}",
+    "source_offset": "{7.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Carbon_Cube",
+    "group": 28002,
+    "number": 0,
+    "file": "assets/frames/28002_0.png",
+    "axis": [
+      27,
+      26
+    ],
+    "rgba_sha256": "1fec2f4c94d4cf8a76893aaa4fabd838685d82c920436edd7d952452162365a2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Kinkaku_Skill04_01",
+    "source_rectangle": [
+      70,
+      0,
+      125,
+      52
+    ]
+  },
+  {
+    "key": "Common_8700_0",
+    "group": 8700,
+    "number": 0,
+    "file": "assets/frames/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_1",
+    "group": 8700,
+    "number": 1,
+    "file": "assets/frames/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_2",
+    "group": 8700,
+    "number": 2,
+    "file": "assets/frames/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_3",
+    "group": 8700,
+    "number": 3,
+    "file": "assets/frames/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_0",
+    "group": 8710,
+    "number": 0,
+    "file": "assets/frames/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_1",
+    "group": 8710,
+    "number": 1,
+    "file": "assets/frames/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_2",
+    "group": 8710,
+    "number": 2,
+    "file": "assets/frames/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_3",
+    "group": 8710,
+    "number": 3,
+    "file": "assets/frames/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_0",
+    "group": 8720,
+    "number": 0,
+    "file": "assets/frames/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_1",
+    "group": 8720,
+    "number": 1,
+    "file": "assets/frames/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_2",
+    "group": 8720,
+    "number": 2,
+    "file": "assets/frames/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_3",
+    "group": 8720,
+    "number": 3,
+    "file": "assets/frames/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_4",
+    "group": 8720,
+    "number": 4,
+    "file": "assets/frames/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_5",
+    "group": 8720,
+    "number": 5,
+    "file": "assets/frames/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_0",
+    "group": 8900,
+    "number": 0,
+    "file": "assets/frames/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_1",
+    "group": 8900,
+    "number": 1,
+    "file": "assets/frames/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_2",
+    "group": 8900,
+    "number": 2,
+    "file": "assets/frames/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_3",
+    "group": 8900,
+    "number": 3,
+    "file": "assets/frames/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_4",
+    "group": 8900,
+    "number": 4,
+    "file": "assets/frames/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_5",
+    "group": 8900,
+    "number": 5,
+    "file": "assets/frames/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_6",
+    "group": 8900,
+    "number": 6,
+    "file": "assets/frames/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_7",
+    "group": 8900,
+    "number": 7,
+    "file": "assets/frames/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_8",
+    "group": 8900,
+    "number": 8,
+    "file": "assets/frames/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_9",
+    "group": 8900,
+    "number": 9,
+    "file": "assets/frames/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_10",
+    "group": 8900,
+    "number": 10,
+    "file": "assets/frames/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_11",
+    "group": 8900,
+    "number": 11,
+    "file": "assets/frames/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_12",
+    "group": 8900,
+    "number": 12,
+    "file": "assets/frames/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_13",
+    "group": 8900,
+    "number": 13,
+    "file": "assets/frames/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_14",
+    "group": 8900,
+    "number": 14,
+    "file": "assets/frames/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_15",
+    "group": 8900,
+    "number": 15,
+    "file": "assets/frames/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_16",
+    "group": 8900,
+    "number": 16,
+    "file": "assets/frames/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_17",
+    "group": 8900,
+    "number": 17,
+    "file": "assets/frames/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_18",
+    "group": 8900,
+    "number": 18,
+    "file": "assets/frames/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_19",
+    "group": 8900,
+    "number": 19,
+    "file": "assets/frames/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_20",
+    "group": 8900,
+    "number": 20,
+    "file": "assets/frames/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_21",
+    "group": 8900,
+    "number": 21,
+    "file": "assets/frames/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_22",
+    "group": 8900,
+    "number": 22,
+    "file": "assets/frames/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_23",
+    "group": 8900,
+    "number": 23,
+    "file": "assets/frames/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Portrait_0",
+    "group": 9000,
+    "number": 0,
+    "file": "assets/frames/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "4c2ea5ea8eecec25b162c6a1f36509ae9c700134e354bccdf5ac97bf4239fe44",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  },
+  {
+    "key": "Portrait_1",
+    "group": 9000,
+    "number": 1,
+    "file": "assets/frames/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "cd81349c557437aeb8bcb73fe47969d276faab54f22960f320fddd34f6d0ae15",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  }
+]

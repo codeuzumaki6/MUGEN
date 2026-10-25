@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Kinkaku</p>
+        <p type="attackValue">5500</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>Kinkaku_Idle_01</f>
+        <f>Kinkaku_Idle_01</f>
+        
+        <f>Kinkaku_Idle_02</f>
+        <f>Kinkaku_Idle_03</f>
+        <f>Kinkaku_Idle_04</f>
+        <f>Kinkaku_Idle_05</f>
+        <f>Kinkaku_Idle_02</f>
+        <f>Kinkaku_Idle_03</f>
+        <f>Kinkaku_Idle_04</f>
+        <f>Kinkaku_Idle_05</f>
+        <f>Kinkaku_Idle_02</f>
+        <f>Kinkaku_Idle_03</f>
+        <f>Kinkaku_Idle_04</f>
+        <f>Kinkaku_Idle_05</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setMove">2</e>
+        <f>Kinkaku_Walk_01</f>
+        <e type="setMove">2</e>
+        <f>Kinkaku_Walk_02</f>
+        <e type="setMove">2</e>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <f>Kinkaku_Walk_03</f>
+        <e type="setMove">2</e>
+        <f>Kinkaku_Walk_04</f>
+        <e type="setMove">2</e>
+        <f>Kinkaku_Walk_05</f>
+        <e type="setMove">2</e>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <f>Kinkaku_Walk_06</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>Kinkaku_Hurt_01</f>
+        <f>Kinkaku_Hurt_02</f>
+        <e type="setSound">Audio/Deepa/hurt.mp3</e>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+         <f>Kinkaku_AirHurt_01</f>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+          <f>Kinkaku_KnockDown_01</f>
+          <e type="setDelay">10</e>
+          <f>Kinkaku_KnockDown_02</f>
+          <e type="setDelay">60</e>
+          <f>Kinkaku_KnockDown_03</f>
+          <f>Kinkaku_KnockDown_03</f>
+          <f>Kinkaku_KnockDown_03</f>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+          <f>Kinkaku_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Kinkaku_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Kinkaku_Float_01</f>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+          <f>Kinkaku_KnockDown_01</f>
+          <f>Kinkaku_KnockDown_02</f>
+        <e type="setSound">Audio/Deepa/die.mp3</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Kinkaku_NAttack_01</f>
+        <e type="setDelay">10</e>
+        <e type="setMove">8</e>
+        <f>Kinkaku_NAttack_02</f>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <f>Kinkaku_NAttack_03</f>
+        
+        
+        <f>Kinkaku_NAttack_01</f>
+        <e type="setDelay">10</e>
+        <f>Kinkaku_NAttack_04</f>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setSound">Audio/Effect/combo2.ogg</e>
+        <f>Kinkaku_NAttack_05</f>
+        
+        
+        <f>Kinkaku_NAttack_06</f>
+        <e type="setDelay">10</e>
+        <e type="setMove">8</e>
+        <f>Kinkaku_NAttack_07</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Kinkaku_NAttack_08</f>
+        <e type="setDelay">10</e>
+      </frame>
+    </action>
+
+   <action name="skill01">
+     <data>
+	   <p type="attackType">cAttack</p>
+       <p type="attackValue">100</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">10</p>
+     </data>
+     <frame>
+      <f>Kinkaku_01_Chg_01</f>
+      <f>Kinkaku_01_Chg_02</f>
+      <f>Kinkaku_01_Chg_03</f>
+      <e type="setSound">Audio/Effect/sfx00.mp3</e>
+      <e type="setDelay">10</e>
+      <f>Kinkaku_01_Chg_04</f>
+      <e type="setSound">Audio/Deepa/deepa tawa.mp3</e>
+      <e type="setDelay">10</e>
+      
+      
+      
+      <f>Kinkaku_Skill01_01</f>
+      <e type="setSound">Audio/Effect/Deepa Blt Sfx.mp3</e>
+      <f>Kinkaku_Skill01_02</f>
+      <f>Kinkaku_Skill01_03</f>
+      <e type="setAttackBox">l_hit</e>
+      <f>Kinkaku_Skill01_04</f>
+      <f>Kinkaku_Skill01_05</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setSound">Audio/Effect/Deepa Blt Sfx.mp3</e>
+      <f>Kinkaku_Skill01_06</f>
+      <f>Kinkaku_Skill01_07</f>
+      <e type="setAttackBox">l_hit</e>
+      <f>Kinkaku_Skill01_08</f>
+      
+      
+      <f>Kinkaku_Skill01_09</f>
+      <e type="setSound">Audio/Effect/Deepa Blt Sfx.mp3</e>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_10</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_11</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_12</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_13</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setSound">Audio/Effect/Deepa Blt Sfx.mp3</e>
+      <f>Kinkaku_Skill01_14</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_15</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_16</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Kinkaku_Skill01_17</f>
+      <e type="setAttackBox">c_hit</e>
+      
+      
+     </frame>
+   </action>
+
+    <action name="skill02">
+        <data>
+		    <p type="attackType">aAttack</p>
+        <p type="attackValue">220</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">0</p>
+        <p type="cd">15</p>
+        </data>
+        <frame>
+      <f>Kinkaku_01_Chg_01</f>
+      <f>Kinkaku_Skill02_Chg_01</f>
+      <e type="setSound">Audio/Effect/sfx00.mp3</e>
+      <f>Kinkaku_Skill02_Chg_02</f>
+      <f>Kinkaku_Skill02_Chg_03</f>
+      <e type="setSound">Audio/Deepa/takut ya.mp3</e>
+  
+      <e type="setSound">Audio/Effect/sabel_throw.ogg</e>
+      <f>Kinkaku_Skill02_Chg_04</f>
+      <f>Kinkaku_Skill02_Chg_05</f>
+      <f>Kinkaku_Skill02_Chg_04</f>
+      <f>Kinkaku_Skill02_Chg_05</f>
+
+           
+                 
+            <f>Kinkaku_Skill02_01</f>
+            <e type="setSound">Audio/Effect/Throw.mp3</e>
+            <e type="setMon">DeepaBlt</e>
+            <f>Kinkaku_Skill02_02</f>
+            <f>Kinkaku_Skill02_03</f>
+            
+            
+        </frame>
+    </action>
+
+    <action name="skill03">
+        <data>
+		      	<p type="attackType">cAttack</p>
+            <p type="attackValue">260</p>
+            <p type="attackRangeX">50</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">25</p>
+        </data>
+        <frame>
+            <f>Kinkaku_Skill03_Chg_01</f>
+             <e type="setDelay">-5</e>
+            <e type="setSound">Audio/Effect/beling1.mp3</e>
+            <f>Kinkaku_Skill03_Chg_02</f>
+             <e type="setDelay">-5</e>
+            <f>Kinkaku_Skill03_Chg_03</f>
+             <e type="setDelay">-5</e>
+            <e type="setSound">Audio/Deepa/haa.mp3</e>
+            <f>Kinkaku_Skill03_Chg_04</f>
+             <e type="setDelay">-5</e>
+            
+
+                        
+        <f>Kinkaku_Skill03_03</f>         
+            <f>Kinkaku_Skill03_04</f>
+            <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+            <e type="setAttackBox">o2_hit</e>
+            <f>Kinkaku_Skill03_05</f>
+            <e type="setSound">Audio/Effect/lempeng.mp3</e>
+            <f>Kinkaku_Skill03_06</f>           
+            <e type="setAttackBox">s_hit</e>
+            <f>Kinkaku_Skill03_07</f>
+            <f>Kinkaku_Skill03_08</f>
+            <e type="setAttackBox">o2_hit</e>           
+        <f>Kinkaku_Skill03_09</f>
+        <f>Kinkaku_Skill03_03</f>     
+        
+        
+            
+            <e type="setCharge">400</e>
+            <e type="setSound">Audio/Deepa/vo00.mp3</e>
+            <f>Kinkaku_Skill03_Punch_01</f>
+            <e type="setSound">Audio/Effect/sfx01.mp3</e>
+            <e type="setAttackBox">f_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setAttackBox">c_hit</e>
+            <f>Kinkaku_Skill03_Punch_02</f>
+            <f>Kinkaku_Skill03_Punch_03</f>
+            <f>Kinkaku_Skill03_Punch_04</f>
+            <f>Kinkaku_Skill03_Punch_05</f>
+        </frame>
+    </action>
+
+   <action name="skill04">
+     <data>
+       <p type="attackType">oAttack</p>
+       <p type="attackValue">360</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+     </data>
+     <frame>
+          <e type="setSound">Audio/Deepa/tose.mp3</e>
+          <f>Kinkaku_Skill04_CHG_01</f>
+          <e type="setAttackBox">f_hit</e>
+          <e type="setSound">Audio/Effect/ChgDeepa2.mp3</e>
+          <f>Kinkaku_Skill04_CHG_02</f>
+          <e type="setSound">Audio/Effect/Chg Deepa.mp3</e>
+          <f>Kinkaku_Skill04_CHG_02</f>
+          <f>Kinkaku_Skill04_CHG_03</f>
+          <f>Kinkaku_Skill04_CHG_04</f>
+          <f>Kinkaku_Skill04_CHG_05</f>
+          <f>Kinkaku_Skill04_CHG_06</f>
+          <f>Kinkaku_Skill04_CHG_07</f>
+          
+          <e type="setSound">Audio/Effect/Beam deepa.mp3</e>
+          <f>Kinkaku_Skill04_01</f>
+          <e type="setSound">Audio/Kinkaku/Kinkaku_skill4.ogg</e>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_02</f>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_03</f>
+          <e type="setAttackBox">o_hit</e>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_05</f>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_06</f>
+          <e type="setAttackBox">o_hit</e>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_07</f>
+          <e type="setDelay">0</e>
+          <f>Kinkaku_Skill04_08</f>
+          <e type="setAttackBox">o_hit</e>
+          <e type="setDelay">0</e>
+          
+          
+          <f>Kinkaku_Skill04_09</f>
+          <e type="setSound">Audio/Effect/bom.ogg</e>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_10</f>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_11</f>
+          <e type="setAttackBox">f_hit</e>
+          <e type="setAttackBox">ac_hit</e>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_12</f>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_13</f>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_14</f>
+          <e type="setDelay">5</e>
+          <f>Kinkaku_Skill04_15</f>
+          <e type="setDelay">5</e>
+     </frame>
+   </action>
+
+    <action name="skill05">
+      <data>
+       <p type="attackType">cBuff</p>
+       <p type="attackValue">420</p>
+       <p type="attackRangeX">96</p>
+       <p type="attackRangeY">12</p>
+       <p type="cd">1</p>
+     </data>
+     <frame>
+
+        <f>Deepa_Trans_01</f>
+        <e type="setSound">Audio/Deepa/Korewa.mp3</e>
+        <e type="setCommand">setInvincible</e> 
+        <e type="setSound">Audio/Effect/deepa trans.mp3</e>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_02</f>
+        <e type="setAttackBox">f_hit</e>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_03</f>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_04</f>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_05</f>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_06</f>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_07</f>
+          <e type="setDelay">5</e>
+        <f>Deepa_Trans_08</f>
+          <e type="setDelay">5</e>
+        <e type="setOugis">10</e>
+        <f>Deepa_Trans_09</f>
+        <e type="setCommand">reInvincible</e>
+        <e type="setBuff">18</e>
+     </frame>
+    </action>
+    <action name="skill06">
+        <frame></frame>
+    </action>
+    <action name="skill07">
+        <frame></frame>
+    </action>
+    <action name="skill08">
+        <frame></frame>
+    </action>
+    <action name="skill09">
+        <frame></frame>
+    </action>
+    <action name="skill10">
+        <data>
+            <p type="attackType">Idle</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">0</p>
+        </data>
+        <frame>
+        <f>Deepa_Idle</f>
+        <f>Deepa_Idle</f>
+        <f>Deepa_Idle</f>
+        </frame>
+    </action>
+
+    <action name="skill11">
+        <data>
+            <p type="attackType">Walk</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">15</p>
+        </data>
+        <frame>
+          <f>Deepa_Walk_01</f>
+          <e type="setShadow">10</e> 
+          <f>Deepa_Walk_02</f>
+          <e type="setShadow">10</e> 
+          <f>Deepa_Walk_03</f>
+          <e type="setShadow">10</e> 
+
+        </frame>
+
+    </action>
+    <action name="skill12">
+        <data>
+            <p type="attackType">cAttack</p>
+            <p type="attackValue">700</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">0</p>
+        </data>
+        <frame>
+        <f>Deepa_Hit01_01</f>
+        <e type="setSound">Audio/Effect/damage_rasen.ogg</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setSound">Audio/Effect/lempeng2.mp3</e>
+        <f>Deepa_Hit01_02</f>
+        <f>Deepa_Hit01_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Deepa_Hit01_04</f>
+        <f>Deepa_Hit01_05</f>
+        <f>Deepa_Hit01_06</f>
+        <f>Deepa_Hit01_07</f>
+        
+        
+        <f>Deepa_Hit02_01</f>
+        <e type="setSound">Audio/Deepa/geram.mp3</e>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setSound">Audio/Effect/Burst Deepa.mp3</e>
+        <f>Deepa_Hit02_02</f>
+        <f>Deepa_Hit02_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Deepa_Hit02_04</f>
+        <f>Deepa_Hit02_05</f>
+        <f>Deepa_Hit02_06</f>
+        <f>Deepa_Hit02_07</f>
+        
+        
+        
+        </frame>
+    </action>
+   
+</unit>

@@ -1,0 +1,117 @@
+{
+  "character": "DeepaKara",
+  "frames": 709,
+  "cases": 17,
+  "duration": 52.43333333333333,
+  "video": "DeepaKara_motor.mp4",
+  "sha256": "c047c6b3ff34793e14d4a010d089c0fca3d806acb2daa29d61ae010a467b67b1",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.4805387619729288,
+      "actual_sample_seconds": 4.829750566893424
+    },
+    {
+      "case": 1,
+      "cue_frame": 389,
+      "state": 1010,
+      "correlation": 0.9191449855178219,
+      "actual_sample_seconds": 11.099138321995465
+    },
+    {
+      "case": 2,
+      "cue_frame": 749,
+      "state": 1020,
+      "correlation": 0.6949635342003597,
+      "actual_sample_seconds": 17.08988662131519
+    },
+    {
+      "case": 3,
+      "cue_frame": 1109,
+      "state": 1030,
+      "correlation": 0.919144523406778,
+      "actual_sample_seconds": 23.312834467120183
+    },
+    {
+      "case": 4,
+      "cue_frame": 1469,
+      "state": 1200,
+      "correlation": 0.48214958537526886,
+      "actual_sample_seconds": 29.442902494331065
+    },
+    {
+      "case": 5,
+      "cue_frame": 1829,
+      "state": 1430,
+      "correlation": 0.9354670771845341,
+      "actual_sample_seconds": 36.17668934240363
+    },
+    {
+      "case": 6,
+      "cue_frame": 2189,
+      "state": 3000,
+      "correlation": 0.2441765127676192,
+      "actual_sample_seconds": 43.11589569160998
+    },
+    {
+      "case": 8,
+      "cue_frame": 2909,
+      "state": 11000,
+      "correlation": 0.861319301302476,
+      "actual_sample_seconds": 55.17061224489796
+    },
+    {
+      "case": 9,
+      "cue_frame": 3269,
+      "state": 11010,
+      "correlation": 0.839591738044032,
+      "actual_sample_seconds": 61.25424036281179
+    },
+    {
+      "case": 10,
+      "cue_frame": 3629,
+      "state": 11020,
+      "correlation": 0.8480161337841223,
+      "actual_sample_seconds": 67.38430839002268
+    },
+    {
+      "case": 11,
+      "cue_frame": 3989,
+      "state": 11030,
+      "correlation": 0.8611503748816888,
+      "actual_sample_seconds": 74.81469387755102
+    },
+    {
+      "case": 12,
+      "cue_frame": 4349,
+      "state": 11200,
+      "correlation": 0.8177972919882146,
+      "actual_sample_seconds": 80.75900226757369
+    },
+    {
+      "case": 13,
+      "cue_frame": 4709,
+      "state": 11430,
+      "correlation": 0.8480162870252829,
+      "actual_sample_seconds": 86.84263038548752
+    },
+    {
+      "case": 14,
+      "cue_frame": 5069,
+      "state": 13000,
+      "correlation": 0.8395914217718187,
+      "actual_sample_seconds": 92.83337868480726
+    },
+    {
+      "case": 16,
+      "cue_frame": 5789,
+      "state": 520,
+      "correlation": 0.4441888535829667,
+      "actual_sample_seconds": 104.5362358276644
+    }
+  ],
+  "runtime_sha256": "c082226be892c396919f2352f6d0e8df96752c8ff770bf51a360132873c97a97"
+}
