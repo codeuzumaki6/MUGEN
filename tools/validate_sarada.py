@@ -12,6 +12,7 @@ check((CHAR/'SaradaTBV_common.cns').is_file(),'Missing standalone common states'
 if shared.errors:raise SystemExit('\n'.join(shared.errors))
 for key in ['sprite','sound','anim','cmd','cns','st','stcommon']:
     m=re.search(rf'(?im)^{key}\s*=\s*([^;\r\n]+)',(CHAR/'SaradaTBV.def').read_text());check(m and (CHAR/m[1].strip()).is_file(),f'Broken DEF {key}')
+sprite_layout={}
 def parse_sff(path):
     data=path.read_bytes();check(data[:16]==b'ElecbyteSpr\0'+bytes((0,1,0,2)),'Invalid SFF v2 header')
     sh,count,ph,pc,lo,ls,to,ts=struct.unpack_from('<8I',data,36)
@@ -24,6 +25,7 @@ def parse_sff(path):
         g,n,w,h,x,y,link,fmt,depth,off,size,pal,flags=struct.unpack_from('<4H2hH2B2I2H',data,sh+i*28)
         check(w>0 and h>0 and fmt==0 and depth==8 and flags==0 and size==w*h and off+size<=ls and pal<pc,f'Invalid sprite {g},{n}')
         check((g,n) not in sprites,f'Duplicate sprite {g},{n}');sprites.add((g,n))
+        sprite_layout[g,n]=(w,h,x,y)
     return sprites
 sprites=parse_sff(CHAR/'SaradaTBV.sff');sounds=shared.parse_snd(CHAR/'SaradaTBV.snd')
 check((1,21) in sounds,'Missing audible startup')
@@ -74,6 +76,9 @@ check(not re.search(r'(?im)^type\s*=\s*(LifeAdd|LifeSet)',(CHAR/'SaradaTBV.cns')
 check(not re.search(r'(?im)^\[State[^\]\r\n]*;',(CHAR/'SaradaTBV.cns').read_text()),'Semicolon truncates controller header')
 keys=json.loads((ROOT/'SaradaTBV/assets/keys.json').read_text())
 check(len([k for k in keys if k.startswith(('Sarada2_','SaradaEye','FLOATEX'))])==221,'Missing supplied atlas frames')
+for n in ['15','19','23']:
+    w,h,x,y=sprite_layout[tuple(keys['Sarada2_Natk_'+n])]
+    check((w,h)==(80,90) and 0<=x<w and h-10<=y<h,f'Recovery {n}: body pivot lies outside its own feet')
 if shared.errors:print('\n'.join(shared.errors));raise SystemExit(1)
 print(f'PASS Sarada: {len(sprites)} sprites, {len(sounds)} sounds, {len(actions)} actions, {len(states)} states; packed artwork and MUGEN 1.1 contracts')
 

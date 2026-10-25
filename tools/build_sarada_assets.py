@@ -64,7 +64,13 @@ def main():
    if 17<=n<=22:axis=(225,147);alignment='consistent original Chidori dash feet'
   if key.startswith('Sarada2_skill04_') and int(key[-2:])>=14:axis=(415,295);alignment='original crater body feet, not crater bottom'
   if key.startswith('Sarada2_skill05_') and int(key[-2:])<=21:axis=(135,im.getbbox()[3]-1);alignment='original vortex floor with levitating body preserved'
-  if key.startswith('Sarada2_Natk_') and int(key[-2:])>=12:axis=(125,177);alignment='consistent original taijutsu effect body pivot'
+  if key.startswith('Sarada2_Natk_') and int(key[-2:])>=12:
+   if im.size==(260,216):axis=(125,177);alignment='consistent original taijutsu effect body pivot'
+   else:
+    # 15, 19 and 23 are small body-only recovery cells, not the large
+    # slash composites. Their own foot pivot prevents a distant second body.
+    assert im.size==(80,90),(key,im.size)
+    axis=(round(im.width/2-ox),im.getbbox()[3]-1);alignment='original body-only recovery foot pivot'
   if key.startswith('Sarada2_skill03_'):axis=(235,261);alignment='original crouching summoner hand on floor'
   if key.startswith('Sarada2_skill04_'):
    n=int(key[-2:])

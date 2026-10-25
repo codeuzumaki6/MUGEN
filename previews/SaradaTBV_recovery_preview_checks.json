@@ -1,0 +1,54 @@
+{
+  "character": "SaradaTBV",
+  "frames": 244,
+  "cases": 6,
+  "duration": 17.6,
+  "video": "SaradaTBV_recuperacion_motor.mp4",
+  "sha256": "2e2c93021a94432415ded564b1a4a78f655936bf413dc3c76f8b65ba6454a623",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1040,
+      "correlation": 0.8738206956492592,
+      "actual_sample_seconds": 4.876190476190477
+    },
+    {
+      "case": 1,
+      "cue_frame": 209,
+      "state": 1050,
+      "correlation": 0.9417746745416431,
+      "actual_sample_seconds": 8.126984126984127
+    },
+    {
+      "case": 2,
+      "cue_frame": 389,
+      "state": 1440,
+      "correlation": 0.9597575088259941,
+      "actual_sample_seconds": 11.331337868480725
+    },
+    {
+      "case": 3,
+      "cue_frame": 569,
+      "state": 1040,
+      "correlation": 0.9417747564129494,
+      "actual_sample_seconds": 14.489251700680272
+    },
+    {
+      "case": 4,
+      "cue_frame": 749,
+      "state": 1050,
+      "correlation": 0.9417839499687923,
+      "actual_sample_seconds": 17.600725623582765
+    },
+    {
+      "case": 5,
+      "cue_frame": 929,
+      "state": 1440,
+      "correlation": 0.9484167174249071,
+      "actual_sample_seconds": 20.712199546485262
+    }
+  ],
+  "runtime_sha256": "290f72c5175de4c8022c040fbbb22d6b38f5ba7faf766dc414bad5835f43b75e"
+}

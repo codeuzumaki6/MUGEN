@@ -1,0 +1,61 @@
+{
+  "baseline_commit": "1b49594d9eddf5caf29427413af4e905b0d51b12",
+  "packed_sprites": 510,
+  "all_source_pixels_unchanged": true,
+  "all_packed_pixels_unchanged": true,
+  "sounds_unchanged": true,
+  "states_commands_and_ultimate_unchanged": true,
+  "changed_axes": [
+    {
+      "key": "Sarada2_Natk_15",
+      "group": 26000,
+      "number": 160,
+      "before": [
+        125,
+        177
+      ],
+      "after": [
+        35,
+        84
+      ],
+      "dimensions": [
+        80,
+        90
+      ]
+    },
+    {
+      "key": "Sarada2_Natk_19",
+      "group": 26000,
+      "number": 161,
+      "before": [
+        125,
+        177
+      ],
+      "after": [
+        35,
+        85
+      ],
+      "dimensions": [
+        80,
+        90
+      ]
+    },
+    {
+      "key": "Sarada2_Natk_23",
+      "group": 26000,
+      "number": 162,
+      "before": [
+        125,
+        177
+      ],
+      "after": [
+        35,
+        85
+      ],
+      "dimensions": [
+        80,
+        90
+      ]
+    }
+  ]
+}

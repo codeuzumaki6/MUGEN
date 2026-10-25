@@ -3045,8 +3045,8 @@
     "number": 160,
     "file": "assets/frames/26000_160.png",
     "axis": [
-      125,
-      177
+      35,
+      84
     ],
     "rgba_sha256": "3b0832e814c5f0e9075212e4e86de64012aa41e5f2df75b6033213a24a0af2e8",
     "redrawn": false,
@@ -3055,7 +3055,7 @@
     "rectangle": "{{3329,3305},{80,90}}",
     "source_offset": "{5,-5}",
     "source_rotated": false,
-    "alignment": "consistent original taijutsu effect body pivot",
+    "alignment": "original body-only recovery foot pivot",
     "match_error": 0.131506085395813
   },
   {
@@ -3064,8 +3064,8 @@
     "number": 161,
     "file": "assets/frames/26000_161.png",
     "axis": [
-      125,
-      177
+      35,
+      85
     ],
     "rgba_sha256": "9a95915b68b2aaad6458e8d550d6cdd28b14fde221f5cc5feee9e13e566cf875",
     "redrawn": false,
@@ -3074,7 +3074,7 @@
     "rectangle": "{{3329,3397},{80,90}}",
     "source_offset": "{5,-5}",
     "source_rotated": false,
-    "alignment": "consistent original taijutsu effect body pivot",
+    "alignment": "original body-only recovery foot pivot",
     "match_error": 0.017075324431061745
   },
   {
@@ -3083,8 +3083,8 @@
     "number": 162,
     "file": "assets/frames/26000_162.png",
     "axis": [
-      125,
-      177
+      35,
+      85
     ],
     "rgba_sha256": "faad65b10b8445b94bf860658ec74109788b1076e9bd643bd96283205330b791",
     "redrawn": false,
@@ -3093,7 +3093,7 @@
     "rectangle": "{{3323,2100},{80,90}}",
     "source_offset": "{5,-5}",
     "source_rotated": false,
-    "alignment": "consistent original taijutsu effect body pivot",
+    "alignment": "original body-only recovery foot pivot",
     "match_error": 0.02938220277428627
   },
   {
