@@ -239,4 +239,3 @@ def main():
  d=(ROOT/'JuraShinju/JuraShinju.def').read_text().replace('JuraShinju','OugaYatsume').replace('Jura Shinju','Ouga Yatsume');d=re.sub(r'(?m)^author=.*$','author="VayDra original sprites and audio / Codex adaptation"',d);d=re.sub(r'(?m)^versiondate=.*$','versiondate=10,25,2026',d);(CHAR/'OugaYatsume.def').write_text(d)
  (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,form_offset=10000,base='Yatsume with black cloak',awakening='Yatsume without cloak and Raiton',activation_requires=3000,awakening_cost=1500,awakening_ticks=1200,puppet_id=9700,puppet_maximum=1,puppet_health=300,puppet_ticks=900,ultimate_cost=3000,own_life_cost=0,ultimate_damage='min(600,60% maximum enemy life) base; min(750,75%) Raiton',source_art_unchanged=True,ai_generated_art=False),indent=2)+'\n');print('Ouga runtime:',len(STATES),'states;',len(AIR),'animations')
 if __name__=='__main__':main()
-
