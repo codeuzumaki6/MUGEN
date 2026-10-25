@@ -303,3 +303,25 @@ python tools/check_delta_in_engine.py
 python tools/make_delta_preview.py
 python tools/package_delta.py
 ```
+
+
+# Sarada Uchiha TBV — sprites de Vaydra y Susanoo rosa
+
+[Descargar Sarada TBV](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/SaradaTBV.zip) · [Ver gameplay con voces y audio real](previews/SaradaTBV_motor.mp4) · [Controles Xbox](SaradaTBV/CONTROLES_XBOX.md).
+
+Extrae `SaradaTBV` en `chars/` y añade `SaradaTBV/SaradaTBV.def` a `data/select.def`. Usa los atlas completos y los audios originales del ZIP de Vaydra: Chidori, Katon, Raiton, Aoda, secuencias de taijutsu, Mangekyō y Ohirume. No se generó arte del personaje con IA.
+
+**Abajo + Pausa** con tres barras activa el **Susanoo rosa con Ohirume**: cuesta 1500, dura 20 segundos y conserva guardia, movimiento y cajas para recibir golpes. El Susanoo procede del Sasuke BTM aportado anteriormente y se recolorea a rosa. Las técnicas cambian al despertar; abajo-atrás + Y invoca Ohirume y A usa su versión definitiva. La ulti base es el Chidori con impacto en el suelo de los sprites. Las dos ultis necesitan acertar, se pueden bloquear, tienen daño limitado según la vida máxima del rival y no consumen vida propia.
+
+Incluye tres familias de cadenas terrestres y aéreas, trece especiales por forma, dash gratuito en ambos sentidos y carga con aura. Se conservaron los 221 cuadros válidos de los atlas y 107 archivos originales del ZIP. [Instalación y detalles](SaradaTBV/LEEME.md) · [Créditos](SaradaTBV/CREDITOS_Y_FUENTES.md).
+
+Validación en Ikemen GO: [116 casos de entradas, ataques, ambas formas, guardia y recuperación](previews/SaradaTBV_engine_checks.json), [112 pruebas de recibir golpes](previews/SaradaTBV_receiving/SaradaTBV.json), [dash con doble toque](previews/SaradaTBV_dash_checks.json) y [paquete extraído y validado](previews/SaradaTBV_package_checks.json). Se comprueban ambas direcciones, las ultis acertadas, bloqueadas, lejanas o sin energía, uso a 1 HP, fin del despertar durante un ataque o caída y sonido capturado del motor. Falta probar el ejecutable exacto de MUGEN de Windows y el mando físico.
+
+```sh
+python tools/build_sarada_assets.py
+python tools/build_sarada_runtime.py
+python tools/validate_sarada.py
+python tools/check_sarada_in_engine.py
+python tools/make_sarada_preview.py
+python tools/package_sarada.py
+```

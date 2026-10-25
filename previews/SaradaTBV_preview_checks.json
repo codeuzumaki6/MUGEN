@@ -1,0 +1,89 @@
+{
+  "character": "SaradaTBV",
+  "frames": 519,
+  "cases": 11,
+  "duration": 38.65,
+  "video": "SaradaTBV_motor.mp4",
+  "sha256": "4bd9024657c2da6e64a0b76a2360a03793e6e8d8055611133bdb4d89a247b209",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.9028517888350182,
+      "actual_sample_seconds": 4.73687074829932
+    },
+    {
+      "case": 1,
+      "cue_frame": 269,
+      "state": 1010,
+      "correlation": 0.5962939241372909,
+      "actual_sample_seconds": 8.962902494331066
+    },
+    {
+      "case": 2,
+      "cue_frame": 509,
+      "state": 1020,
+      "correlation": 0.7335860112434893,
+      "actual_sample_seconds": 13.096054421768708
+    },
+    {
+      "case": 3,
+      "cue_frame": 749,
+      "state": 1030,
+      "correlation": 0.9417733693063449,
+      "actual_sample_seconds": 17.136326530612244
+    },
+    {
+      "case": 4,
+      "cue_frame": 989,
+      "state": 3000,
+      "correlation": 0.5534552431350226,
+      "actual_sample_seconds": 21.223038548752836
+    },
+    {
+      "case": 5,
+      "cue_frame": 1229,
+      "state": 520,
+      "correlation": 0.948406463113602,
+      "actual_sample_seconds": 25.588390022675735
+    },
+    {
+      "case": 6,
+      "cue_frame": 1469,
+      "state": 11000,
+      "correlation": 0.9525754985586238,
+      "actual_sample_seconds": 29.675102040816327
+    },
+    {
+      "case": 7,
+      "cue_frame": 1709,
+      "state": 11010,
+      "correlation": 0.9534041525854263,
+      "actual_sample_seconds": 33.761814058956915
+    },
+    {
+      "case": 8,
+      "cue_frame": 1949,
+      "state": 11020,
+      "correlation": 0.9534039658564768,
+      "actual_sample_seconds": 37.89496598639456
+    },
+    {
+      "case": 9,
+      "cue_frame": 2189,
+      "state": 11030,
+      "correlation": 0.9592477180960945,
+      "actual_sample_seconds": 42.0281179138322
+    },
+    {
+      "case": 10,
+      "cue_frame": 2429,
+      "state": 13000,
+      "correlation": 0.9532037428419906,
+      "actual_sample_seconds": 46.11482993197279
+    }
+  ],
+  "runtime_sha256": "4435bc5d66c1dad1e61082093232c69c4bf538cc4beda59004b5dc4875183f35"
+}

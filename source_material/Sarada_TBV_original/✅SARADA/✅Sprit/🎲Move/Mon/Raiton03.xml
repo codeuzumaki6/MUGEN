@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Snake</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">900</p>
+      </data>
+      <frame>
+      <f>Ino_skill01Ex2_22</f>
+        <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>
+			<f>Ino_skill01Ex2_23</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_24</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_25</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+
+      <f>Ino_skill01Ex2_22</f>
+        <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>
+			<f>Ino_skill01Ex2_23</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_24</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_25</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+        
+      <f>Ino_skill01Ex2_22</f>
+        <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>
+			<f>Ino_skill01Ex2_23</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_24</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+			<f>Ino_skill01Ex2_25</f>
+	      <e type="setDelay">-8</e>    
+        <e type="setMove">30</e>	
+
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+      <f>Ino_skill01Ex2_22</f>
+			<f>Ino_skill01Ex2_23</f>
+			<f>Ino_skill01Ex2_24</f>
+			<f>Ino_skill01Ex2_25</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+	<f>Ino_skill01Ex2_26</f>
+	    <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+			<f>Ino_skill01Ex2_27</f>	
+			<f>Ino_skill01Ex2_28</f>
+			<f>Ino_skill01Ex2_29</f>
+			<f>Ino_skill01Ex2_30</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">100</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        
+			<f>Ino_skill01Ex2_26</f>
+	    <e type="setAttackBox">c_hit</e>	
+	    <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+			<f>Ino_skill01Ex2_27</f>	
+			<f>Ino_skill01Ex2_28</f>
+			<f>Ino_skill01Ex2_29</f>
+			<f>Ino_skill01Ex2_30</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

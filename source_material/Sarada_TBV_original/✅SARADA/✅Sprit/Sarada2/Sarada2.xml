@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Sarada2</p>
+			<p type="attackValue">5500</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">100</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Sarada2_Idle_01</f>
+			<f>Sarada2_Idle_01</f>
+			<f>Sarada2_Idle_02</f>
+			<f>Sarada2_Idle_02</f>
+		  <f>Sarada2_Idle_03</f>
+			<f>Sarada2_Idle_03</f>
+			<f>Sarada2_Idle_02</f>
+			<f>Sarada2_Idle_02</f>	
+			
+	
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Sarada2_Walk_01</f>
+	  		<e type="setMove">2</e>
+			<f>Sarada2_Walk_02</f>
+	    <e type="setSound">Audio/Effect/step3.mp3</e>  	  
+	  		<e type="setMove">2</e>
+			<f>Sarada2_Walk_03</f>
+		  	<e type="setMove">2</e>
+	  	<f>Sarada2_Walk_04</f>
+		  	<e type="setMove">2</e>
+			<f>Sarada2_Walk_05</f>
+	    <e type="setSound">Audio/Effect/step3.mp3</e>  	
+	  		<e type="setMove">2</e>	
+			<f>Sarada2_Walk_06</f>
+		  	<e type="setMove">2</e>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>	
+			<e type="setMove">32</e>
+			<f>Sarada2_Hurt_01</f>
+		  <e type="setSound">Audio/SaradaTBV2/Hurt.mp3</e>
+		<f>Sarada2_Hurt_01</f>
+		<f>Sarada2_Hurt_02</f>		  
+		  
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Sarada2_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Sarada2_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Sarada2_KnockDown_03</f>
+			<e type="setDelay">60</e>
+			<f>Sarada2_KnockDown_04</f>
+	    <!-- <e type="setSkillEffect">Hiraishin</e> -->		
+			<f>Sarada2_KnockDown_04</f>
+			<f>Sarada2_KnockDown_05</f>
+			<f>Sarada2_KnockDown_05</f>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Sarada2_KnockDown_01</f>
+	
+			<e type="setDelay">10</e>
+			<f>Sarada2_KnockDown_01</f>
+			<e type="setDelay">10</e>
+			<f>Sarada2_KnockDown_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>Sarada2_KnockDown_02</f>
+			<f>Sarada2_KnockDown_03</f>
+      <e type="setSound">Audio/SaradaTBV2/kineru.mp3</e>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	
+        <f>Sarada2_Natk_01</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_02</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_03</f>
+      	<e type="setDelay">10</e>  
+        
+        <f>Sarada2_Natk_04</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_05</f>
+      	<e type="setDelay">10</e>  
+      	
+        <f>Sarada2_Natk_06</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_07</f>       
+      	<e type="setDelay">5</e>  
+        <e type="setMove">16</e>
+        <f>Sarada2_Natk_08</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/hah.mp3</e>
+      	<e type="setDelay">5</e>        	
+        <f>Sarada2_Natk_09</f>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_10</f>
+      	<e type="setDelay">5</e>  
+        
+ 
+        
+        <f>Sarada2_Natk_01</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_02</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_03</f>
+      	<e type="setDelay">10</e>  
+        
+        <f>Sarada2_Natk_04</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_05</f>
+      	<e type="setDelay">10</e>  
+      	
+        <f>Sarada2_Natk_06</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_07</f>       
+      	<e type="setDelay">5</e>  
+        <e type="setMove">16</e>
+        <f>Sarada2_Natk_08</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/hah.mp3</e>
+      	<e type="setDelay">5</e>        	
+        <f>Sarada2_Natk_09</f>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_10</f>
+      	<e type="setDelay">5</e>  
+    
+                      
+                                                          
+                                    
+        <f>Sarada2_Natk_01</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_02</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_03</f>
+      	<e type="setDelay">10</e>  
+        
+        <f>Sarada2_Natk_04</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_05</f>
+      	<e type="setDelay">10</e>  
+      	
+        <f>Sarada2_Natk_06</f>
+      	<e type="setDelay">10</e>  
+        <f>Sarada2_Natk_07</f>       
+      	<e type="setDelay">5</e>  
+        <e type="setMove">16</e>
+        <f>Sarada2_Natk_08</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/hah.mp3</e>
+      	<e type="setDelay">5</e>        	
+        <f>Sarada2_Natk_09</f>
+      	<e type="setDelay">5</e>  
+        <f>Sarada2_Natk_10</f>
+      	<e type="setDelay">5</e>  
+        
+--Bonus BaseAtk after 3x set  Dmg x2
+--2xSet
+
+        <f>Sarada2_Natk_11</f>
+      	<e type="setDelay">20</e>  
+        
+        
+        <f>Sarada2_Natk_12</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_13</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_14</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_15</f>
+      	<e type="setDelay">-1</e>      
+    
+	<e type="setMove">16</e>     
+        <f>Sarada2_Natk_16</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_17</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_18</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_19</f>
+      	<e type="setDelay">-1</e>      
+            	
+        <f>Sarada2_Natk_20</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade0.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/nAtk.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_21</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_22</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_23</f>
+      	<e type="setDelay">-1</e>      
+
+
+
+
+        <f>Sarada2_Natk_12</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_13</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_14</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_15</f>
+      	<e type="setDelay">-1</e>      
+    
+	<e type="setMove">16</e>     
+        <f>Sarada2_Natk_16</f>
+      	<e type="setDelay">-2</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_17</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_18</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_19</f>
+      	<e type="setDelay">-1</e>      
+            	
+        <f>Sarada2_Natk_20</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade0.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/nAtk.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_21</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_22</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_23</f>
+      	<e type="setDelay">-1</e>     
+      	
+      
+        <f>Sarada2_Natk_12</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_13</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_14</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_15</f>
+      	<e type="setDelay">-1</e>      
+    
+	<e type="setMove">16</e>     
+        <f>Sarada2_Natk_16</f>
+      	<e type="setDelay">-2</e>  
+        <e type="setSound">Audio/Effect/blade.ogg</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_17</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_18</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_19</f>
+      	<e type="setDelay">-1</e>      
+            	
+        <f>Sarada2_Natk_20</f>
+      	<e type="setDelay">-1</e>  
+        <e type="setSound">Audio/Effect/blade0.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SaradaTBV2/nAtk.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Sarada2_Natk_21</f>
+      	<e type="setDelay">-1</e>  
+        <f>Sarada2_Natk_22</f>        
+      	<e type="setDelay">-1</e>          
+        <f>Sarada2_Natk_23</f>
+      	<e type="setDelay">-1</e>     
+
+
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">40</p>
+			<p type="attackRangeX">20</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1200</p>
+		</data>
+		<frame>    
+      <e type="setSound">Audio/Effect/Chidori0.ogg</e>	
+      <f>Sarada2_skill02_01</f>     
+         <e type="setSound">Audio/SaradaTBV2/Wakateru.mp3</e>
+      <f>Sarada2_skill02_02</f>          
+			<f>Sarada2_skill02_03</f>
+			
+			--chg
+			<f>Sarada2_skill02_04</f>
+			<f>Sarada2_skill02_05</f>
+		  <e type="setAttackBox">l_hit</e>  
+			<f>Sarada2_skill02_06</f>
+			<f>Sarada2_skill02_07</f>
+		  <e type="setAttackBox">l_hit</e>  
+			<f>Sarada2_skill02_08</f>
+			<f>Sarada2_skill02_09</f>
+			
+			--run
+		  <e type="setMove">30</e>     
+			<f>Sarada2_skill02_10</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     	  
+			<f>Sarada2_skill02_11</f>
+		  <e type="setAttackBox">o_hit</e>  
+		    <e type="setSound">Audio/Effect/Step.mp3</e>  	  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_12</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_13</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_14</f>
+		  <e type="setAttackBox">o_hit</e>  
+	    <e type="setSound">Audio/Effect/Step.mp3</e>  	    
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_15</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     
+ 
+	 
+			<f>Sarada2_skill02_10</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     	  
+			<f>Sarada2_skill02_11</f>
+		  <e type="setAttackBox">o_hit</e>  
+		    <e type="setSound">Audio/Effect/Step.mp3</e>  	  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_12</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_13</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_14</f>
+		  <e type="setAttackBox">o_hit</e>  
+		    <e type="setSound">Audio/Effect/Step.mp3</e>  	  
+      <e type="setMove">30</e>     
+			<f>Sarada2_skill02_15</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>    
+ --14
+         <e type="setSound">Audio/SaradaTBV2/chidori.mp3</e>
+	<f>Sarada2_skill02_16</f>
+		  <e type="setAttackBox">o_hit</e>  
+      <e type="setMove">30</e>    
+ 
+ 
+      
+    --raiton       
+		  <f>Sarada2_skill02_17</f>
+			    <e type="setSound">Audio/Effect/raitonsfx.mp3</e>  	  
+	    <e type="setAttackBox">f_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>    
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>    
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>    
+			<f>Sarada2_skill02_18</f>
+			<f>Sarada2_skill02_19</f>
+			<f>Sarada2_skill02_20</f>
+			<f>Sarada2_skill02_21</f>
+			<f>Sarada2_skill02_22</f>	
+	    <f>Sarada2_skill02_23</f>
+	    
+	
+		</frame>
+	</action>
+	
+	
+	<action name="skill02">
+		<data>		
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">120</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+      <e type="setSound">Audio/SaradaTBV2/gokakyu.mp3</e>	
+      <f>Sarada2_skill01_01</f>     
+      <f>Sarada2_skill01_02</f>          
+	<e type="setDelay">20</e>  
+
+	--fire
+			<f>Sarada2_skill01_03</f>
+	    <e type="setSound">Audio/Effect/Katon.mp3</e>  	  	
+		  <e type="setAttackBox">c_hit</e>  
+			<f>Sarada2_skill01_04</f>
+			<f>Sarada2_skill01_05</f>
+		  <e type="setAttackBox">c_hit</e>  
+			<f>Sarada2_skill01_06</f>
+			<f>Sarada2_skill01_07</f>
+		  <e type="setAttackBox">c_hit</e>  
+			<f>Sarada2_skill01_08</f>
+			
+		--bom	
+			<f>Sarada2_skill01_09</f>
+			<f>Sarada2_skill01_10</f>
+		  <e type="setAttackBox">b_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+		  <e type="setAttackBox">bl_hit</e>  
+			<f>Sarada2_skill01_11</f>
+			<f>Sarada2_skill01_12</f>
+			<f>Sarada2_skill01_13</f>
+			<f>Sarada2_skill01_14</f>
+			<f>Sarada2_skill01_15</f>
+			
+ 
+      
+    --raiton       
+		  <f>Sarada2_skill01_16</f>
+		    <e type="setSound">Audio/Effect/RaitonEfx.mp3</e>  	  	
+			<f>Sarada2_skill01_17</f>
+	<e type="setSound">Audio/SaradaTBV2/Raiton.ogg</e>		
+			<f>Sarada2_skill01_18</f>
+			<f>Sarada2_skill01_19</f>
+			<f>Sarada2_skill01_20</f>
+			<f>Sarada2_skill01_21</f>	
+	 	
+<e type="setMon">Raiton01</e> 
+    <e type="setSound">Audio/Effect/Listrik.wav</e>  	 
+	    <f>Sarada2_skill01_31</f>
+			<f>Sarada2_skill01_32</f>
+			<f>Sarada2_skill01_33</f>
+<e type="setMon">Raiton02</e> 		
+    <e type="setSound">Audio/Effect/Listrik.wav</e>  	 
+			<f>Sarada2_skill01_34</f>
+			<f>Sarada2_skill01_35</f>
+			<f>Sarada2_skill01_36</f>	
+<e type="setMon">Raiton03</e> 		
+    <e type="setSound">Audio/Effect/Listrik.wav</e>  	 
+			<f>Sarada2_skill01_37</f>
+			<f>Sarada2_skill01_38</f>
+			<f>Sarada2_skill01_39</f>
+<e type="setMon">Raiton04</e> 		
+    <e type="setSound">Audio/Effect/Listrik.wav</e>  	 
+			<f>Sarada2_skill01_40</f>	
+			<e type="setDelay">20</e>  
+
+		</frame>
+	</action>
+	
+	
+	<action name="skill03">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">325</p>
+			<p type="attackRangeX">20</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2604</p>
+		</data>
+		<frame>
+
+      <e type="setSound">Audio/SaradaTBV2/WatasinoSikara.mp3</e>	
+      
+      
+      
+      <f>Sarada2_skill03_01</f>
+    <e type="setDelay">5</e>  	
+      <f>Sarada2_skill03_02</f>
+    <e type="setAttackBox">b_hit</e>      
+	    <e type="setSound">Audio/Effect/batubatu.mp3</e>
+	    <e type="setDelay">5</e>  	
+      <f>Sarada2_skill03_03</f>
+    <e type="setDelay">5</e>  	
+      <f>Sarada2_skill03_04</f>
+    <e type="setDelay">5</e>  	
+      <f>Sarada2_skill03_05</f>
+    <e type="setAttackBox">b_hit</e>    
+    <e type="setSound">Audio/Effect/mon2.wav</e>
+    <e type="setDelay">5</e>  	
+      <f>Sarada2_skill03_06</f>
+    <e type="setDelay">30</e>  	
+      
+      <f>Sarada2_skill03_07</f>
+      <e type="setDelay">10</e>  	
+      
+      
+	
+      <f>Sarada2_skill03_08</f>
+      <f>Sarada2_skill03_09</f>
+    <e type="setAttackBox">b_hit</e>      
+	    <e type="setSound">Audio/Effect/BugPillar.ogg</e>
+      <f>Sarada2_skill03_10</f>
+      <f>Sarada2_skill03_11</f>
+    <e type="setAttackBox">f_hit</e>  
+    <e type="setAttackBox">bl_hit</e>    
+    <e type="setAttackBox">bl_hit</e>    
+    <e type="setAttackBox">bl_hit</e>    
+    <e type="setAttackBox">bl_hit</e>    
+      <f>Sarada2_skill03_12</f>
+      <f>Sarada2_skill03_13</f>
+      <f>Sarada2_skill03_14</f>
+      <f>Sarada2_skill03_15</f>
+		</frame>
+	</action>
+	<action name="skill04">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">370</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">3600</p>
+		</data>
+		<frame>
+	
+    	<f>Sarada2_skill04_01</f>
+      <e type="setSound">Audio/Effect/Power.mp3</e>	
+	  	<f>Sarada2_skill04_02</f>
+  	  <f>Sarada2_skill04_03</f>
+	  	<f>Sarada2_skill04_04</f>
+	  	<f>Sarada2_skill04_05</f>
+      <e type="setSkillEffect">Hiraishin2</e>
+      <e type="setChargeB">320</e> 
+
+  	  <f>Sarada2_skill04_06</f>
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+	    <e type="setAttackBox">o_hit</e>	  
+		  <e type="setSound">Audio/SaradaTBV2/shanaro.mp3</e>		
+    	<e type="setDelay">3</e>   
+	    <f>Sarada2_skill04_07</f>
+	    <e type="setAttackBox">b_hit</e>	  
+	  	<e type="setDelay">3</e>  	
+	    <f>Sarada2_skill04_08</f>
+	  	<e type="setDelay">3</e>  	
+	    <f>Sarada2_skill04_09</f>
+	  	<e type="setDelay">3</e>  	
+	    <f>Sarada2_skill04_10</f>
+	  	<e type="setDelay">3</e>  
+	  	
+	  	
+	  	<f>Sarada2_skill04_11</f>	  
+	  	<f>Sarada2_skill04_12</f>	  
+	  	<f>Sarada2_skill04_13</f>	  
+
+
+--boom
+	    <f>Sarada2_skill04_14</f>
+	    <e type="setAttackBox">f_hit</e>	
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setSound">Audio/Effect/Blast.ogg</e> 	
+    	<e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_15</f>
+	   	<e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_16</f>
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_17</f>
+	    <e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_18</f>
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setAttackBox">ac_hit</e>	
+	   	<e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_19</f>
+    	<e type="setDelay">3</e>      
+	    <f>Sarada2_skill04_20</f>
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setAttackBox">ac_hit</e>	
+	    <e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_21</f>	
+	   	<e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_22</f>	  		
+    	<e type="setDelay">3</e>        
+      <f>Sarada2_skill04_23</f>
+    	<e type="setDelay">3</e>  
+	    <f>Sarada2_skill04_24</f>
+    	<e type="setDelay">3</e>      
+      <f>Sarada2_skill04_25</f>
+    	<e type="setDelay">3</e>      	
+		</frame>
+	</action>
+	<action name="skill05">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">20</p>
+			<p type="attackRangeX">5</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">9500</p>
+		</data>
+		<frame>
+	
+<e type="setSound">Audio/SaradaTBV2/Skil5.mp3</e>		
+<f>Sarada2_skill05_01</f>
+<e type="setCommand">setInvincible</e>			
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_02</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_03</f>		    	
+<f>Sarada2_skill05_04</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e> 
+<e type="setAttackBox">s_hit</e>  			    		    	
+<f>Sarada2_skill05_05</f>		    	
+<f>Sarada2_skill05_06</f>		  
+<e type="setAttackBox">s_hit</e>  		
+	    	
+<f>Sarada2_skill05_01</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>     	
+<f>Sarada2_skill05_02</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_03</f>		    	
+<f>Sarada2_skill05_04</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e> 
+<e type="setAttackBox">s_hit</e>  			    		    	
+<f>Sarada2_skill05_05</f>		    	
+<f>Sarada2_skill05_06</f>		  
+<e type="setAttackBox">s_hit</e>  			  	 	
+	    	  	 	  	 	
+	--up
+<f>Sarada2_skill05_07</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_08</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_09</f>		    	    	  	 	  	 	  	 	  	 	
+	    	  	 	  	 	  	 	  	 	    	  	 	  	 	  	 	  	 	   
+	    	  	 	  	 	  	 	  	 	    	  	 	  	 	  	 	  	 
+	    	  	 	  	 	  	 	  	 	    	  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_13</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>   	
+<f>Sarada2_skill05_14</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_15</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_10</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_11</f>	
+<f>Sarada2_skill05_12</f>		  
+<e type="setAttackBox">s_hit</e>  	
+
+
+<f>Sarada2_skill05_13</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_14</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_15</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_10</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_11</f>	
+<f>Sarada2_skill05_12</f>		  
+<e type="setAttackBox">s_hit</e>  	
+
+<e type="setMon">SaradaScr</e> 
+<f>Sarada2_skill05_13</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_14</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_15</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_10</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_11</f>	
+<f>Sarada2_skill05_12</f>		  
+<e type="setAttackBox">s_hit</e>  	
+
+<f>Sarada2_skill05_13</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_14</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_15</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_10</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_11</f>	
+<f>Sarada2_skill05_12</f>		  
+<e type="setAttackBox">s_hit</e>  	
+
+<f>Sarada2_skill05_13</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_14</f>
+<e type="setAttackBox">b_hit</e>  	
+<f>Sarada2_skill05_15</f>		    	    
+
+
+
+		  
+	 	  	 	  	 	  	 	  	 	    	  	 	
+			<e type="setOugis">10</e>	
+			
+<e type="setDelay">30</e>   		
+			
+<e type="setMon">SandBall</e> 			 	 
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  	
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+    	
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+<e type="setSound">Audio/SaradaTBV2/koeteKineru.mp3</e>		
+<f>Sarada2_skill05_16</f>	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_17</f>
+<e type="setAttackBox">s_hit</e>  	
+<f>Sarada2_skill05_18</f>		    	    		  	 	  	 	  	 	  	 	
+<f>Sarada2_skill05_19</f>	
+<e type="setAttackBox">s_hit</e>  	
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>Sarada2_skill05_20</f>	
+<f>Sarada2_skill05_21</f>		  
+<e type="setAttackBox">s_hit</e>  
+
+
+
+<f>FLOATEX_01</f> 
+<e type="setSound">Audio/Effect/woos0.mp3</e>      	
+<f>FLOATEX_02</f>
+<f>FLOATEX_03</f>		    	    		  	 	  	 	  	 	  	 	
+<f>FLOATEX_04</f>	  	
+
+	    <f>Sarada2_KnockDown_02</f>
+			<e type="setDelay">10</e>
+			<f>Sarada2_KnockDown_03</f>
+			<e type="setDelay">100</e>
+			<f>Sarada2_KnockDown_04</f>
+			<f>Sarada2_KnockDown_04</f>
+			<f>Sarada2_KnockDown_05</f>
+			<f>Sarada2_KnockDown_05</f> 
+
+
+    	
+    	<e type="setCommand">reInvincible</e>
+    	
+    	
+    	
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<frame></frame>
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Summon</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">10</p>
+		</data>
+		<frame>
+		
+		</frame>
+	</action>
+	<action name="skill11">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">32</p>
+			<p type="attackRangeY">32</p>
+			<p type="cd">15</p>
+		</data>
+		<frame>
+
+		</frame>
+
+	</action>
+	<action name="skill12">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+
+		</frame>
+	</action>
+</unit>

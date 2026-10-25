@@ -1,0 +1,438 @@
+{
+  "author": "Vaydra, with the additional credits in the supplied Notes.txt",
+  "zip_sediment_id": "file_00000000d338820ca841a271f0127a7b",
+  "zip_sha256": "e7094718c305b18983cbece554cb33a6de717f693e0a6dba399e842c1de00f51",
+  "video_sediment_id": "file_0000000002bc820d9d49e8258c9ea786",
+  "video_sha256": "fa9379d8a00ae5a2a1e869e4ee89334768a58e2718846428a5530f3bcd072048",
+  "all_supplied_files_preserved": true,
+  "files": [
+    {
+      "file": "Notes.txt",
+      "sha256": "6685e405ea747ac202eb0cbb798e4e0d8da1d9a3024dd792c331ca5531ac6b39"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/1753835529099.png",
+      "sha256": "3ce42dbb008e2df2cfdc0375752965dbe43d9900ae277d489017f7acbc1f69b8"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/1753835535352.png",
+      "sha256": "3f06d57fd0975b136a8f082fc2a0078b81fde8f3602f68343437d99387ffbce3"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/Chidori0.ogg",
+      "sha256": "84ab0e481d643a892de707a2bdb73f737af1cd03f3c0459646585ba1acdeae21"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/Explo.ogg",
+      "sha256": "c9136e818e501af1235bc8eba1e570cf36dd081019bd473e15d8018cfcd24652"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/KamuiKKS.wav",
+      "sha256": "2dda7aebfe37e4f5cc599fd65d14fb503b708765e675dbd29f517d8f11e87772"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/Power.mp3",
+      "sha256": "87ece0e739e6e711258ebd2adabcc3e1f30eb064945f88c68ee5adc6d5e1d141"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/Sharingan.mp3",
+      "sha256": "48ec6e4e10e58ffd6f20181a5563a9d6d1b7dd9fe8bc00210962f5521979448a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Effect/SharinganEye.ogg",
+      "sha256": "d002bce1e96a45bac309edd922f52fa413759b95b58a3051adad27f68f01c383"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Sarada2.ogg",
+      "sha256": "2d4ea9259d8559d36e78745b2c2e134e1d3d8dadc03cd69406eb0c7ed21803c9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/Sarada2_ougis.ogg",
+      "sha256": "d002bce1e96a45bac309edd922f52fa413759b95b58a3051adad27f68f01c383"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Ciah.mp3",
+      "sha256": "dcb7556fe78b6d3057f09f78554c89007becc0bcdf47d15dd170db64b8bd0529"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Dead.ogg",
+      "sha256": "5e316e196cdef3a365a4db7cce51b2deced25cad13a678294d585f96f5cb0042"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Hasanayo.mp3",
+      "sha256": "5a3a546e452a8600d78c8752f5e8888f1d9a8e4b73d4b66b3374302971a3348a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Hua.mp3",
+      "sha256": "8c2fc254fdd418eccd4f80af25753b02243e852594ce3981098f4601059efa9a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Hurt.mp3",
+      "sha256": "962c1a54d179d3437fd83144b2aeb5c19b10aaf0dc18a58cebf4c1a3302fa604"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Intro.mp3",
+      "sha256": "eca1e1f2e12954fb996ee977b9b47d1fe2d453cdcb87530763a4426798f69b5d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/KokowaWatasino.mp3",
+      "sha256": "19035fb31f25d766fa90e058092026ac84e19538ec6438153faf4aa8191f6ae1"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Raiton.ogg",
+      "sha256": "a019ca011d7e7643b7c21091b66c0075ad304d05401679959764e4a9a57f2815"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Sarada2.ogg",
+      "sha256": "2d4ea9259d8559d36e78745b2c2e134e1d3d8dadc03cd69406eb0c7ed21803c9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Sarada2_ougis.ogg",
+      "sha256": "4a378c84cbd952c417c5f78893ec28543a09eb3fd8e552e040922188b0abd173"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Sarada_ougis.ogg",
+      "sha256": "0b1ffb5342991d115a35c59e01c3408a3fbf7d5ae9204028fe5532d686d4ec74"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Skil5.mp3",
+      "sha256": "723d8544a7bff1ab7fce0ca9a332dac266e30645655a2314190f320d2d0d6d32"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Talk3.mp3",
+      "sha256": "749b3fee21d6cebbe79a791da7a2a213dc8b4841313df49259ec2feb0ca390e9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Talk4.mp3",
+      "sha256": "59c16a45836510a0bc74b14ecc437661c66088a47c393b60eadaac07d1f21feb"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/UchihaSarada.mp3",
+      "sha256": "66e900fbb2496023505bad5d3274fc3f147bf0e687588fcaf8d4d1bb95cec364"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/Wakateru.mp3",
+      "sha256": "c352e7334d43ca5da9590915913f3036637d29d9b2c2ade138e1d4ad3fc3fa20"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/WatasinoSikara.mp3",
+      "sha256": "78246c636e95cbe97b6311df2fcf5e9d64f9ed3ed54987dd3aede3659aa6013a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/chidori.mp3",
+      "sha256": "21fc3054196d3784fb41c6674d5adb702d5187ecc1883aa51a85905a7fb4d2f2"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/gokakyu.mp3",
+      "sha256": "e48459d38f9f828d1ac3f59dcff96d32986e2df9a826f4ba87914cd1a758988d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/hah.mp3",
+      "sha256": "6b27507067c16bbe15602d696f96266351af0624e59d2e7d0108d594701bde2a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/jamaah.mp3",
+      "sha256": "dd5766fd82008952f90624a29ecfd46ee5556c19a6581621a6b2f49e60cd6874"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/jiah.mp3",
+      "sha256": "8dafabceaaa469e5808a3b90fb3aea13dc7724eb3adcb49b6f8c9c1f2579ff73"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/kineru.mp3",
+      "sha256": "345a9453eec0e97823983d94ed5f7ef03f3b93c4b4d373668fef6c497ac52664"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/koeteKineru.mp3",
+      "sha256": "8fd4c801894bb9ed9b62c2285344c6eea83f4b252d203d972f34b32d9a86783a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/miseteakeru.mp3",
+      "sha256": "ce54e0cda1761a5bee93572b625d711254483ebb638d4b9dc1a67b79e4e5d27e"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/nAtk.mp3",
+      "sha256": "7d13520a41716384bf2715f739432c3060a936f6ff305823021644e852eef7dc"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/pyh.mp3",
+      "sha256": "14edf956a3184a2ae1f297fb515292b178746875ea77b782121c47b4a6878fa4"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/shanaro.mp3",
+      "sha256": "5f1aacaed11c7867fcdf1d60f542b6b2c8d6c21913f2a2f84aa8304bcfe10fd7"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/shanaroga.mp3",
+      "sha256": "ad0e9190ca4e7eed81a46da0771b724a62e308fde67d8b5e3db7aec12cefa439"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/sharingan.mp3",
+      "sha256": "1a7e4ce51295849926c0279c78c6a774136a8b65137be5089c748a4e2e02fda2"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/talk0.mp3",
+      "sha256": "a4286f4ec808093c672067aa32963db7923d58b09670a82717f2d090f6b60737"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Audio/SaradaTBV2/talk1.mp3",
+      "sha256": "23596068582328a95988a75a44fd481821ee9c2458278e0ea4a046e9747c7e75"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/Raiton01.xml",
+      "sha256": "267423a6d8b69ca869f2180399e888c02376c0b4f0df021a8b53d72a0446b620"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/Raiton02.xml",
+      "sha256": "3638ffdcd7a1d13db6eb6d3003e7eb9549a5c807fed47a9669bda110b3554aeb"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/Raiton03.xml",
+      "sha256": "51866b13af60d365c3131e7452d23b31feca71fbcdb3bb52a2ae82e2f745609d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/Raiton04.xml",
+      "sha256": "9f48be7d309ec0e360b0f33e9d191d3c874701365d2e9f5ad5d563b29cde8356"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/SandBall.xml",
+      "sha256": "ee10dc3be313d927ecec626947a69ca97e701e7387914edeff4de14d3d9804eb"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Mon/SaradaScr.xml",
+      "sha256": "ed110debafc3cd1d6f58c29f864d939db81fbe91911d7a98320c4d3738fc63ee"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2.png",
+      "sha256": "a7ab32a757dec04f0583d3cef95259475f759568c24d0a1090f9e1d76c9aff94"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2/Sarada2.plist",
+      "sha256": "1a02b3b4984558c8bfe18346742a2371b41ca213662fe46e56c5e87f836cec5c"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2/Sarada2.png",
+      "sha256": "2929580be100da464c04c764db61e5756c6232d0c7acc144a86153c95a7e60b4"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2/Sarada2.xml",
+      "sha256": "fdbf181e3bc4dbfa3a24110464cce2e798581a86065d78ee8a273a87e3cee61d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2/Sarada2_Skill.plist",
+      "sha256": "222b6f5bc3b973f4bdced1652afc405b43d14b3c6a3a0190d8deb494cf1bb1ab"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2/Sarada2_Skill.png",
+      "sha256": "77354d07d955e761aab6e0790ca2fa448cd0409c1a0fd3a6c4c6b3789276ccfd"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/Sarada2_Skill.png",
+      "sha256": "3d3d2e97a9d66ea7eb2eb53d9a6e8a3be22ab60bcf40aad76c38bc0bd6ec7f22"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/Chidori0.ogg",
+      "sha256": "84ab0e481d643a892de707a2bdb73f737af1cd03f3c0459646585ba1acdeae21"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/Explo.ogg",
+      "sha256": "c9136e818e501af1235bc8eba1e570cf36dd081019bd473e15d8018cfcd24652"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/KamuiKKS.wav",
+      "sha256": "2dda7aebfe37e4f5cc599fd65d14fb503b708765e675dbd29f517d8f11e87772"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/Power.mp3",
+      "sha256": "87ece0e739e6e711258ebd2adabcc3e1f30eb064945f88c68ee5adc6d5e1d141"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/Sharingan.mp3",
+      "sha256": "48ec6e4e10e58ffd6f20181a5563a9d6d1b7dd9fe8bc00210962f5521979448a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Effect/SharinganEye.ogg",
+      "sha256": "d002bce1e96a45bac309edd922f52fa413759b95b58a3051adad27f68f01c383"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Ino.ogg",
+      "sha256": "2d4ea9259d8559d36e78745b2c2e134e1d3d8dadc03cd69406eb0c7ed21803c9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/Ino_ougis.ogg",
+      "sha256": "d002bce1e96a45bac309edd922f52fa413759b95b58a3051adad27f68f01c383"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Ciah.mp3",
+      "sha256": "dcb7556fe78b6d3057f09f78554c89007becc0bcdf47d15dd170db64b8bd0529"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Dead.ogg",
+      "sha256": "5e316e196cdef3a365a4db7cce51b2deced25cad13a678294d585f96f5cb0042"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Hasanayo.mp3",
+      "sha256": "5a3a546e452a8600d78c8752f5e8888f1d9a8e4b73d4b66b3374302971a3348a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Hua.mp3",
+      "sha256": "8c2fc254fdd418eccd4f80af25753b02243e852594ce3981098f4601059efa9a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Hurt.mp3",
+      "sha256": "962c1a54d179d3437fd83144b2aeb5c19b10aaf0dc18a58cebf4c1a3302fa604"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Intro.mp3",
+      "sha256": "eca1e1f2e12954fb996ee977b9b47d1fe2d453cdcb87530763a4426798f69b5d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/KokowaWatasino.mp3",
+      "sha256": "19035fb31f25d766fa90e058092026ac84e19538ec6438153faf4aa8191f6ae1"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Raiton.ogg",
+      "sha256": "a019ca011d7e7643b7c21091b66c0075ad304d05401679959764e4a9a57f2815"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Sarada2.ogg",
+      "sha256": "2d4ea9259d8559d36e78745b2c2e134e1d3d8dadc03cd69406eb0c7ed21803c9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Sarada2_ougis.ogg",
+      "sha256": "4a378c84cbd952c417c5f78893ec28543a09eb3fd8e552e040922188b0abd173"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Sarada_ougis.ogg",
+      "sha256": "0b1ffb5342991d115a35c59e01c3408a3fbf7d5ae9204028fe5532d686d4ec74"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Skil5.mp3",
+      "sha256": "723d8544a7bff1ab7fce0ca9a332dac266e30645655a2314190f320d2d0d6d32"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Talk3.mp3",
+      "sha256": "749b3fee21d6cebbe79a791da7a2a213dc8b4841313df49259ec2feb0ca390e9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Talk4.mp3",
+      "sha256": "59c16a45836510a0bc74b14ecc437661c66088a47c393b60eadaac07d1f21feb"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/UchihaSarada.mp3",
+      "sha256": "66e900fbb2496023505bad5d3274fc3f147bf0e687588fcaf8d4d1bb95cec364"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/Wakateru.mp3",
+      "sha256": "c352e7334d43ca5da9590915913f3036637d29d9b2c2ade138e1d4ad3fc3fa20"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/WatasinoSikara.mp3",
+      "sha256": "78246c636e95cbe97b6311df2fcf5e9d64f9ed3ed54987dd3aede3659aa6013a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/chidori.mp3",
+      "sha256": "21fc3054196d3784fb41c6674d5adb702d5187ecc1883aa51a85905a7fb4d2f2"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/gokakyu.mp3",
+      "sha256": "e48459d38f9f828d1ac3f59dcff96d32986e2df9a826f4ba87914cd1a758988d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/hah.mp3",
+      "sha256": "6b27507067c16bbe15602d696f96266351af0624e59d2e7d0108d594701bde2a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/jamaah.mp3",
+      "sha256": "dd5766fd82008952f90624a29ecfd46ee5556c19a6581621a6b2f49e60cd6874"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/jiah.mp3",
+      "sha256": "8dafabceaaa469e5808a3b90fb3aea13dc7724eb3adcb49b6f8c9c1f2579ff73"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/kineru.mp3",
+      "sha256": "345a9453eec0e97823983d94ed5f7ef03f3b93c4b4d373668fef6c497ac52664"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/koeteKineru.mp3",
+      "sha256": "8fd4c801894bb9ed9b62c2285344c6eea83f4b252d203d972f34b32d9a86783a"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/miseteakeru.mp3",
+      "sha256": "ce54e0cda1761a5bee93572b625d711254483ebb638d4b9dc1a67b79e4e5d27e"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/nAtk.mp3",
+      "sha256": "7d13520a41716384bf2715f739432c3060a936f6ff305823021644e852eef7dc"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/pyh.mp3",
+      "sha256": "14edf956a3184a2ae1f297fb515292b178746875ea77b782121c47b4a6878fa4"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/shanaro.mp3",
+      "sha256": "5f1aacaed11c7867fcdf1d60f542b6b2c8d6c21913f2a2f84aa8304bcfe10fd7"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/shanaroga.mp3",
+      "sha256": "ad0e9190ca4e7eed81a46da0771b724a62e308fde67d8b5e3db7aec12cefa439"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/sharingan.mp3",
+      "sha256": "1a7e4ce51295849926c0279c78c6a774136a8b65137be5089c748a4e2e02fda2"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/talk0.mp3",
+      "sha256": "a4286f4ec808093c672067aa32963db7923d58b09670a82717f2d090f6b60737"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Audio/SaradaTBV2/talk1.mp3",
+      "sha256": "23596068582328a95988a75a44fd481821ee9c2458278e0ea4a046e9747c7e75"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Ino/Ino.plist",
+      "sha256": "de738585f78b1e80c7dbd2db928f0b8674675ad3da8850e708fe1323bc990890"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Ino/Ino.png",
+      "sha256": "a7ab32a757dec04f0583d3cef95259475f759568c24d0a1090f9e1d76c9aff94"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Ino/Ino.xml",
+      "sha256": "ca2006e3e53c2e8f612616e41e7059910913e008fb89c5931f7783aba300e688"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Ino/Ino_Skill.plist",
+      "sha256": "5c6ca09ffc0132603a01a75b3992d7fc9ca06b42ce1fd460e596ee7adeb67577"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Ino/Ino_Skill.png",
+      "sha256": "3d3d2e97a9d66ea7eb2eb53d9a6e8a3be22ab60bcf40aad76c38bc0bd6ec7f22"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/Raiton01.xml",
+      "sha256": "e6c729bece0c4100b3aa1409de00807e7f283fe6ff6467f1319f875d104c33f0"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/Raiton02.xml",
+      "sha256": "4e9599d014110c6eda879180fffbeef9928d6b55f6af5787b2bb0a51127b98ef"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/Raiton03.xml",
+      "sha256": "1a76edc05c79fa9edded7323f002ff26cac7aa27608f60c3b07835fe8a0261f9"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/Raiton04.xml",
+      "sha256": "350cdef7ddd5a5120c084675802d5f7635055a3896d40b50808340671dff390d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/SandBall.xml",
+      "sha256": "39437d82cd0c0982e5196d02140530e9aab1f712b3f41dffb3164bd35672982d"
+    },
+    {
+      "file": "\u2705SARADA/\u2705Sprit/\ud83c\udfb2Move/Mon/SaradaScr.xml",
+      "sha256": "b7d63f53aa3c6bc09282e8d04f660f1486e2431c7b34e9d99ec5691686f554b3"
+    }
+  ]
+}

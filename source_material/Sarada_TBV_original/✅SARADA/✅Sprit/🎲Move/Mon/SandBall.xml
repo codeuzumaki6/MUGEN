@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<action name="Idle">
+		<data>
+			<p type="attackType">SandBall</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Ino_skill05_41</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Ino_skill05_41</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">310</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+<e type="setChargeB">-50</e>  	
+	<f>Ino_Nol</f>
+	
+			<f>Ino_skill05_43</f>
+			<f>Ino_skill05_42</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_41</f>	
+		
+	<e type="setSound">Audio/Effect/KamuiKKS.wav</e>  
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+			
+	
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+			
+		
+			<f>Ino_skill05_32</f>
+			<e type="setSound">Audio/Effect/kamui.mp3</e>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+	
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+	
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+	
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+	
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+			
+													
+			<f>Ino_skill05_32</f>
+			<e type="setSound">Audio/Effect/Explo.ogg</e>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_35</f>
+			<f>Ino_skill05_36</f>
+		  <e type="setAttackBox">s_hit</e>	
+			<f>Ino_skill05_37</f>
+
+
+			<f>Ino_skill05_32</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_33</f>
+			<f>Ino_skill05_34</f>
+			<e type="setAttackBox">s_hit</e>		
+	
+			<f>Ino_skill05_38</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_39</f>
+			<f>Ino_skill05_40</f>
+			<e type="setAttackBox">s_hit</e>
+			<f>Ino_skill05_41</f>
+			<f>Ino_skill05_42</f>
+		  <e type="setAttackBox">ct_hit</e>	
+			<f>Ino_skill05_43</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

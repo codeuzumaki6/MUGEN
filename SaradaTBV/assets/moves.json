@@ -1,0 +1,106 @@
+{
+  "moves": [
+    [
+      "Chidori",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Katon",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Raiton",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Aoda",
+      "b",
+      "B",
+      1030,
+      600
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Asalto",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Punetazo",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Descarga",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Gokakyu",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Orbe",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Tormenta",
+      "y",
+      "D",
+      1430,
+      600
+    ],
+    [
+      "Sharingan",
+      "z",
+      "D",
+      1440,
+      350
+    ]
+  ],
+  "awakening": "Pink Susanoo with Ohirume",
+  "awakening_cost": 1500,
+  "activation_requires": 3000,
+  "awakening_ticks": 1200,
+  "form_offset": 10000,
+  "ultimate_cost": 3000,
+  "own_life_cost": 0,
+  "ultimate_damage": "min(350,35% target maximum life) base; min(450,45%) awakened",
+  "original_body_art": true,
+  "original_voice_audio": true,
+  "ai_generated_art": false
+}

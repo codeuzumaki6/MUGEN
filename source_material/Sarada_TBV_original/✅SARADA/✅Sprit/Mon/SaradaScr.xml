@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <e type="setCommand">reTransport</e>
+<e type="setChargeB">-10</e>  	
+	<f>Sarada2_Nol</f>
+<e type="setSound">Audio/Effect/Sharingan.mp3</e>     
+        <f>Sarada2_skill05_22</f>
+        <f>Sarada2_skill05_23</f>
+        <f>Sarada2_skill05_24</f>
+        <f>Sarada2_skill05_25</f>
+        <f>Sarada2_skill05_26</f>
+        <f>Sarada2_skill05_27</f>
+        <f>Sarada2_skill05_28</f>
+        <f>Sarada2_skill05_29</f>
+        <f>Sarada2_skill05_30</f>
+        <f>Sarada2_skill05_31</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">300</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">28</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">reTransport</e>
+<e type="setSound">Audio/Effect/Sharingan.mp3</e> 
+        <f>Sarada2_skill05_22</f>
+        <f>Sarada2_skill05_23</f>
+        <f>Sarada2_skill05_24</f>
+        <f>Sarada2_skill05_25</f>
+        <f>Sarada2_skill05_26</f>
+        <f>Sarada2_skill05_27</f>
+        <f>Sarada2_skill05_28</f>
+        <f>Sarada2_skill05_29</f>
+        <f>Sarada2_skill05_30</f>
+        <f>Sarada2_skill05_31</f>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>
