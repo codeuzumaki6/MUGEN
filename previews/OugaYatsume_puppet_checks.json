@@ -1,0 +1,88 @@
+{
+  "runtime_sha256": "fb748adeb48cb93f980eb8ce84d4126fe7bbcfd745dc173c8bf507cf70b31558",
+  "maximum_puppets": 1,
+  "health": 300,
+  "lifetime_ticks": 900,
+  "cases": [
+    {
+      "kind": "autonomous_expiry",
+      "form": 0,
+      "face": 1,
+      "maximum_age": 899,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 435
+    },
+    {
+      "kind": "autonomous_expiry",
+      "form": 0,
+      "face": -1,
+      "maximum_age": 899,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 435
+    },
+    {
+      "kind": "autonomous_expiry",
+      "form": 1,
+      "face": 1,
+      "maximum_age": 899,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 555
+    },
+    {
+      "kind": "autonomous_expiry",
+      "form": 1,
+      "face": -1,
+      "maximum_age": 899,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 555
+    },
+    {
+      "kind": "destroyed_by_hits",
+      "form": 0,
+      "face": 1,
+      "maximum_age": 116,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 210,
+      "hurt_frames": 17,
+      "minimum_puppet_health": 0
+    },
+    {
+      "kind": "destroyed_by_hits",
+      "form": 0,
+      "face": -1,
+      "maximum_age": 116,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 210,
+      "hurt_frames": 17,
+      "minimum_puppet_health": 0
+    },
+    {
+      "kind": "destroyed_by_hits",
+      "form": 1,
+      "face": 1,
+      "maximum_age": 116,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 255,
+      "hurt_frames": 17,
+      "minimum_puppet_health": 0
+    },
+    {
+      "kind": "destroyed_by_hits",
+      "form": 1,
+      "face": -1,
+      "maximum_age": 116,
+      "helpers_after": 0,
+      "root_life": 1100,
+      "damage": 255,
+      "hurt_frames": 17,
+      "minimum_puppet_health": 0
+    }
+  ]
+}

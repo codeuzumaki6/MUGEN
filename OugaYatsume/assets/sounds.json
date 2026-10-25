@@ -1,0 +1,566 @@
+{
+  "keys": {
+    "Effect/Blade-Damage": [
+      2,
+      0
+    ],
+    "Effect/Chidori2": [
+      2,
+      1
+    ],
+    "Effect/Explosion2": [
+      2,
+      2
+    ],
+    "Effect/Jutsu": [
+      2,
+      3
+    ],
+    "Effect/Kuguts": [
+      2,
+      4
+    ],
+    "Effect/MonStep": [
+      2,
+      5
+    ],
+    "Effect/RaitonEfx": [
+      2,
+      6
+    ],
+    "Effect/RtnSfx": [
+      2,
+      7
+    ],
+    "Effect/Sign": [
+      2,
+      8
+    ],
+    "Effect/Step": [
+      2,
+      9
+    ],
+    "Effect/blade_dmg": [
+      2,
+      10
+    ],
+    "Effect/blade_dmg2": [
+      2,
+      11
+    ],
+    "Effect/break_sound3": [
+      2,
+      12
+    ],
+    "Effect/combo1": [
+      2,
+      13
+    ],
+    "Effect/combo2": [
+      2,
+      14
+    ],
+    "Effect/combo3": [
+      2,
+      15
+    ],
+    "Effect/dash": [
+      2,
+      16
+    ],
+    "Effect/landing": [
+      2,
+      17
+    ],
+    "Effect/m_exp": [
+      2,
+      18
+    ],
+    "Effect/raitonsfx": [
+      2,
+      19
+    ],
+    "Effect/raitonsfx1": [
+      2,
+      20
+    ],
+    "Effect/rantai": [
+      2,
+      21
+    ],
+    "Effect/rock_hit": [
+      2,
+      22
+    ],
+    "Effect/tinit": [
+      2,
+      23
+    ],
+    "Ouga/Oug3": [
+      3,
+      0
+    ],
+    "Ouga/Ouga": [
+      3,
+      1
+    ],
+    "Ouga/OugaLaug": [
+      3,
+      2
+    ],
+    "Ouga/oga4": [
+      3,
+      3
+    ],
+    "Ouga/oga5": [
+      3,
+      4
+    ],
+    "Ouga/ouga1": [
+      3,
+      5
+    ],
+    "Ouga/ouga2": [
+      3,
+      6
+    ],
+    "Yatsume/Hit": [
+      4,
+      0
+    ],
+    "Yatsume/Hurt": [
+      4,
+      1
+    ],
+    "Yatsume/IkazuchiInagi": [
+      4,
+      2
+    ],
+    "Yatsume/Kiba": [
+      4,
+      3
+    ],
+    "Yatsume/Kiba_ougis": [
+      4,
+      4
+    ],
+    "Yatsume/S1": [
+      4,
+      5
+    ],
+    "Yatsume/S2": [
+      4,
+      6
+    ],
+    "Yatsume/S3": [
+      4,
+      7
+    ],
+    "Yatsume/S5": [
+      4,
+      8
+    ],
+    "Yatsume/Y00": [
+      4,
+      9
+    ],
+    "Yatsume/YatsuDead": [
+      4,
+      10
+    ],
+    "Yatsume/Yhit": [
+      4,
+      11
+    ],
+    "Yatsume/rante": [
+      4,
+      12
+    ],
+    "Yatsume/y03": [
+      4,
+      13
+    ],
+    "Yatsume/yarsu deD": [
+      4,
+      14
+    ],
+    "Yatsume/yatsu4": [
+      4,
+      15
+    ],
+    "Yatsume/yatsuDie": [
+      4,
+      16
+    ],
+    "Yatsume/yatsuHurt": [
+      4,
+      17
+    ],
+    "Yatsume/yatsuIntr": [
+      4,
+      18
+    ],
+    "Yatsume/yatsuN": [
+      4,
+      19
+    ],
+    "Yatsume/yatsuRTN": [
+      4,
+      20
+    ],
+    "Yatsume/yatsuRTN2": [
+      4,
+      21
+    ],
+    "Yatsume/yhurt": [
+      4,
+      22
+    ],
+    "Yatsume/yhurt2": [
+      4,
+      23
+    ],
+    "Yatsume/yknock": [
+      4,
+      24
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Blade-Damage.mp3",
+      "source_sha256": "10383c81102cf1bf4869f08599ddd940ca81d9da57650c7be8e9543982c4f0a5",
+      "group": 2,
+      "number": 0
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Chidori2.ogg",
+      "source_sha256": "a0d308e1033296b8947c42aa15937be3c8e3fbea361b26d7948c39d31da9128f",
+      "group": 2,
+      "number": 1
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Explosion2.mp3",
+      "source_sha256": "07b406b2642d056c5153e2c5a9197681819f2d965fa6005a3bc731e9ad162105",
+      "group": 2,
+      "number": 2
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Jutsu.ogg",
+      "source_sha256": "51f8d51c98a36dd049e0f9aee983c6fcd362657d2732980e1b6af8f952abe5ac",
+      "group": 2,
+      "number": 3
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Kuguts.mp3",
+      "source_sha256": "2da2978d9042a394d723bdf35549671e9c32c3172be365779ff216e5e7bbc0e1",
+      "group": 2,
+      "number": 4
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/MonStep.mp3",
+      "source_sha256": "e84b7dddc7b8a5a0b00ef45fb69ad9dac86d7b2fa2f81f637aee6fe897902b64",
+      "group": 2,
+      "number": 5
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/RaitonEfx.mp3",
+      "source_sha256": "ef3c59d40123eae6096adfafc3730a4bece77aabb14b5842cf6bdd8ad62f17c3",
+      "group": 2,
+      "number": 6
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/RtnSfx.mp3",
+      "source_sha256": "4c7472024b2ae8ccd8991c9c02d5e039eb7d75365dde39ad4456ddf7840c8bd1",
+      "group": 2,
+      "number": 7
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Sign.mp3",
+      "source_sha256": "deec3590e3c190a09e6109e8f19a4ea13f8c840192fdf22d4f286592b6fa5087",
+      "group": 2,
+      "number": 8
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/Step.mp3",
+      "source_sha256": "574dd66d653d0df935943844d35fb53cc6f35478c843689b669703244fba9c03",
+      "group": 2,
+      "number": 9
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/blade_dmg.mp3",
+      "source_sha256": "aaef9e5a36cb3dab9bc89a51103235e03c8fd557ea5650bbf3cbb00b75f6805e",
+      "group": 2,
+      "number": 10
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/blade_dmg2.mp3",
+      "source_sha256": "c1c05ebdf97bfea55c3687c466f165da00462bc50dba3c1330c61387694fa15e",
+      "group": 2,
+      "number": 11
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/break_sound3.ogg",
+      "source_sha256": "9bc1cdbc22bf1df2a14f95cacb899a041adbe8f2169ba68ba3b37bf043bc17de",
+      "group": 2,
+      "number": 12
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/combo1.ogg",
+      "source_sha256": "51257497a545382bdc5b9472b62f41ef967ac845e1bf18ddf84973dcb86617aa",
+      "group": 2,
+      "number": 13
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/combo2.ogg",
+      "source_sha256": "0aa5f9d2ebe27b9854915013beeaaa05532663ba51842d3f1b16fa03fdfd13cc",
+      "group": 2,
+      "number": 14
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/combo3.ogg",
+      "source_sha256": "0cbb52d022304c1b5fb487d7a83fac619f6afa7f1e4f42f5e2d5b1c3d2e4e3e7",
+      "group": 2,
+      "number": 15
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/dash.wav",
+      "source_sha256": "4eabce872083bffc0eafb2041300ac6d49e916a799b4efb1475966f1e2c40cac",
+      "group": 2,
+      "number": 16
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/landing.mp3",
+      "source_sha256": "39862ba4fc20e6226be86389c1df4897dc7a8eae0c352a75122bc97ab91e7463",
+      "group": 2,
+      "number": 17
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/m_exp.ogg",
+      "source_sha256": "3e06d9d6915f6746cc40b96700c9a0a1c1337b08b6db1e7f6b4e578507282445",
+      "group": 2,
+      "number": 18
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/raitonsfx.mp3",
+      "source_sha256": "e97ca0d5da52adb3604978b8c367d7fe725117cccae1ea2aeebe4f04d01cc68e",
+      "group": 2,
+      "number": 19
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/raitonsfx1.mp3",
+      "source_sha256": "4e617955095ea462e42551ff79f1428a9e2ead9e67661f79d39f6b5a75744e4a",
+      "group": 2,
+      "number": 20
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/rantai.ogg",
+      "source_sha256": "d69d3d3642603591ea33704e7b720b65c1a98ef7c2c507b2aa020486fe3f1819",
+      "group": 2,
+      "number": 21
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/rock_hit.ogg",
+      "source_sha256": "c1cd9577332dec3d874d54f965118f6ef0f9e344c66a1a7ad2a4bf2c384419bf",
+      "group": 2,
+      "number": 22
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Effect/tinit.mp3",
+      "source_sha256": "6b51c339611b6cbcc47536ff359879a87eacd5f3de5f2890e436b03ff139ed04",
+      "group": 2,
+      "number": 23
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/Oug3.mp3",
+      "source_sha256": "fb0cfadae402170a51bedbf99beb190f596273c44ee1229b37b0ada9db739e00",
+      "group": 3,
+      "number": 0
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/Ouga.mp3",
+      "source_sha256": "c1db4b49d1f56ed4657675cd4b83a43ed1fa5a183d7d4239f99e365c7e979a35",
+      "group": 3,
+      "number": 1
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/OugaLaug.mp3",
+      "source_sha256": "e50704c5a6877c8c7ea73dcae5771d26c062bf48388c45e8a3048bdea6ff05f6",
+      "group": 3,
+      "number": 2
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/oga4.mp3",
+      "source_sha256": "703da7314f0c9df958f5122f7289ef11a7e985970fd59c953df4e4807a2e67d3",
+      "group": 3,
+      "number": 3
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/oga5.mp3",
+      "source_sha256": "92abd7c758c34b50fac68ce071d54c857de9f50460f0e73a8c92417dbed28d0c",
+      "group": 3,
+      "number": 4
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/ouga1.mp3",
+      "source_sha256": "d5b82feff9ed6089676e0a8b7c8fb18167b12d3fb3bef9917a425202d48c6a5a",
+      "group": 3,
+      "number": 5
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Ouga/ouga2.mp3",
+      "source_sha256": "ecb69fbe41d3671f587f6463b27b960ab0c7c595a178e6d3f0ae51be8d7ab0a1",
+      "group": 3,
+      "number": 6
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Hit.mp3",
+      "source_sha256": "51938152c2d731ceff3321bf8ec8eed6216ab627a60f1752479af0b4b596ab26",
+      "group": 4,
+      "number": 0
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Hurt.mp3",
+      "source_sha256": "007ac2f8a909e086c6438550bc1ea9499213cbca9c27466b8341146b295416c6",
+      "group": 4,
+      "number": 1
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/IkazuchiInagi.mp3",
+      "source_sha256": "3f5eba51975c4cebc8a577581f94768801353db7067334466f76c92bd1851822",
+      "group": 4,
+      "number": 2
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Kiba.ogg",
+      "source_sha256": "56484289b7cd3b9f379f54e466dd0ed91c877dacf6bd35dfd73b759e7dceeca0",
+      "group": 4,
+      "number": 3
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Kiba_ougis.ogg",
+      "source_sha256": "0475257840646f9468abdce51b48372a1ba0b0d8dc12ad2edff80ea567307fd7",
+      "group": 4,
+      "number": 4
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/S1.mp3",
+      "source_sha256": "a66928ce059bb9e7010fbe35313b35c610d4ce73d76a706634cddda248e00af8",
+      "group": 4,
+      "number": 5
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/S2.mp3",
+      "source_sha256": "49331c41130815611a0d9ba8bb745fc6be387ba876f82f099c877577436c279b",
+      "group": 4,
+      "number": 6
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/S3.mp3",
+      "source_sha256": "d98afb3378add5f4c107a746dbe22355b2991151cfd03dacb15032861a873a49",
+      "group": 4,
+      "number": 7
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/S5.mp3",
+      "source_sha256": "6361505b237c53928601599931f5e06606468e5d907872afcdeedb2896428e07",
+      "group": 4,
+      "number": 8
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Y00.mp3",
+      "source_sha256": "89acbf432fe530c3c8659da647c1931a7ce86432013e01b4c268d69907d3aeff",
+      "group": 4,
+      "number": 9
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/YatsuDead.mp3",
+      "source_sha256": "ebafbcb35e8e8d5c632ebc19b1a5825c2906062f87e88fe54ea369438492770e",
+      "group": 4,
+      "number": 10
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/Yhit.mp3",
+      "source_sha256": "c410004221e45d7a2e5dee6d600d2831d156bd90f522980b44b90b457dbc4447",
+      "group": 4,
+      "number": 11
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/rante.mp3",
+      "source_sha256": "e18afa8d9b6493c0bb79f8709527bf0c469563d9b299622ebec78a635ae09e79",
+      "group": 4,
+      "number": 12
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/y03.mp3",
+      "source_sha256": "9ea11b9be6ba5a0b926df9a812c610581dab521a5be1b7ef1d2b39ee1ec5dbc1",
+      "group": 4,
+      "number": 13
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yarsu deD.mp3",
+      "source_sha256": "51023e95b0bc2b1f9acc97027063e5d70f8980e18b8b06ce154167f3c956aec8",
+      "group": 4,
+      "number": 14
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsu4.mp3",
+      "source_sha256": "5628f66cdeb42e49953dec3374067ba6f1f40a37d488e6b1bb4b8069f014f2b3",
+      "group": 4,
+      "number": 15
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuDie.mp3",
+      "source_sha256": "549b8f145cd980a0908cc1657e992d95bd32cbc0d1b0e03ad93cc90c5e2c5c01",
+      "group": 4,
+      "number": 16
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuHurt.mp3",
+      "source_sha256": "bf35cd6bc494bd2fba2fa33528423fad8b353286d9506bcab3e91dec0115d800",
+      "group": 4,
+      "number": 17
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuIntr.mp3",
+      "source_sha256": "1e280db09c283709e411ce35abe532cbe2b7bca9732d38c1612ef7f51e77d54b",
+      "group": 4,
+      "number": 18
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuN.mp3",
+      "source_sha256": "c3694e95298c63b16c0c958483860d370b71ed1de59e03f2e5ab3d9ae1fa6f96",
+      "group": 4,
+      "number": 19
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuRTN.mp3",
+      "source_sha256": "333ea17baf44075c902de17213dc45b98c6cde6c599a425d94f18fc0ee574e77",
+      "group": 4,
+      "number": 20
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yatsuRTN2.mp3",
+      "source_sha256": "215087570abefe66ed6a5795b7ed8980c5f6f48532c4f9ba3f907cebf18c8e7f",
+      "group": 4,
+      "number": 21
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yhurt.mp3",
+      "source_sha256": "7ae83344d72dbfffe2009706bc4754dc87702f3dfeb75f9ecc1d7945f47e5aaf",
+      "group": 4,
+      "number": 22
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yhurt2.mp3",
+      "source_sha256": "6d6e1aa8abaec1f1fd955536b929be2bef5eb6e5bf190ccb44bb278fe900f3a3",
+      "group": 4,
+      "number": 23
+    },
+    {
+      "source": "source_material/Ouga_original/Ouga Yatsume By Vaydra/Audio/Yatsume/yknock.mp3",
+      "source_sha256": "3c24f34fcb87451c1d9b7327c43f88bddc7144314118d4b0cfde6097f0eb1dc4",
+      "group": 4,
+      "number": 24
+    }
+  ]
+}

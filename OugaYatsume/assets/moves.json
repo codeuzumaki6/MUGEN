@@ -1,0 +1,110 @@
+{
+  "moves": [
+    [
+      "Invocacion",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Vortice",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Lazo",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Bomba",
+      "b",
+      "B",
+      1030,
+      600
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Prision",
+      "c",
+      "B",
+      1050,
+      500
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Pesado",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Estallido",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Corte",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Orbe",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Derrumbe",
+      "y",
+      "D",
+      1430,
+      500
+    ],
+    [
+      "Paso",
+      "z",
+      "D",
+      1440,
+      350
+    ]
+  ],
+  "form_offset": 10000,
+  "base": "Yatsume with black cloak",
+  "awakening": "Yatsume without cloak and Raiton",
+  "activation_requires": 3000,
+  "awakening_cost": 1500,
+  "awakening_ticks": 1200,
+  "puppet_id": 9700,
+  "puppet_maximum": 1,
+  "puppet_health": 300,
+  "puppet_ticks": 900,
+  "ultimate_cost": 3000,
+  "own_life_cost": 0,
+  "ultimate_damage": "min(600,60% maximum enemy life) base; min(750,75%) Raiton",
+  "source_art_unchanged": true,
+  "ai_generated_art": false
+}

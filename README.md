@@ -350,3 +350,29 @@ python tools/check_roster_receiving.py --characters DeepaKara --out previews/Dee
 python tools/make_deepa_preview.py
 python tools/package_deepa.py
 ```
+
+
+# Ouga / Yatsume — dos formas y marioneta autónoma
+
+[Descargar Ouga / Yatsume](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/OugaYatsume.zip) · [Ver gameplay con voces y audio real](previews/OugaYatsume_motor.mp4) · [Controles Xbox](OugaYatsume/CONTROLES_XBOX.md).
+
+Extrae `OugaYatsume` en `chars/` y añade `OugaYatsume/OugaYatsume.def` a `data/select.def`. Usa los 231 cuadros válidos y los 56 audios de las carpetas originales del ZIP de Vaydra, incluyendo la marioneta, los vórtices, ruinas, pilares y escenarios dimensionales. No se generó arte ni voces con IA.
+
+La base es **Yatsume con capa negra**. **Abajo + Pausa**, con tres barras, cambia a **Yatsume sin capa con Raiton** durante 20 segundos: consume 1500 y cambia sus combos y especiales. Ambas apariencias tienen sus propias animaciones y conservan colisiones, guardia y recuperación. Incluye trece especiales por forma, cadenas terrestres y aéreas, dash gratuito en ambos sentidos y carga con aura.
+
+En base, **abajo-adelante + X** invoca a Ouga como marioneta de apoyo. Sigue al rival y ataca por sí sola mientras controlas a Yatsume. Las órdenes de vórtice, lazo, bomba y corte utilizan esa misma marioneta. Hay un máximo de una, con 300 de vida y una duración máxima de 15 segundos; recibe daño y puede ser destruida. La bomba la consume sin quitar vida a Yatsume. El despertar añade asaltos de chakra rosa, látigo azul, puños y pilares eléctricos del video.
+
+**A** ejecuta una ulti dimensional con los escenarios originales: pilar azul y derrumbe en base; látigo y tormenta de Raiton en despertar. Ocho pulsos, con un máximo de 600 o el 60 % de la vida máxima rival en base, y 750 o el 75 % en despertar. Cuestan 3000 y no consumen vida propia. Requieren acertar, admiten guardia y alcance finito, y liberan al rival si Yatsume es interrumpida. La marioneta espera durante la ulti.
+
+Pruebas en Ikemen GO: [120 casos de entradas y combate](previews/OugaYatsume_engine_checks.json), [112 pruebas de recibir golpes](previews/OugaYatsume_receiving/OugaYatsume.json), [dash en ambas direcciones](previews/OugaYatsume_dash_checks.json), [ocho pruebas de ataque autónomo, duración y derrota de la marioneta](previews/OugaYatsume_puppet_checks.json), [fuentes y píxeles originales](previews/OugaYatsume_source_checks.json) y [paquete extraído y validado](previews/OugaYatsume_package_checks.json). Se comprueban ambas formas y orientaciones, cadenas, guardia, recuperación, caducidad, las ultis acertadas/bloqueadas/lejanas/sin barra, uso a 1 HP e interrupción real. Falta probar el ejecutable exacto de MUGEN de Windows y el mando físico. [Instalación](OugaYatsume/LEEME.md) · [Créditos y fuentes](OugaYatsume/CREDITOS_Y_FUENTES.md).
+
+```sh
+python tools/build_ouga_assets.py
+python tools/build_ouga_runtime.py
+python tools/validate_ouga.py
+python tools/check_ouga_in_engine.py
+python tools/check_ouga_puppet.py
+python tools/check_roster_receiving.py --characters OugaYatsume --out previews/OugaYatsume_receiving
+python tools/make_ouga_preview.py
+python tools/package_ouga.py
+```

@@ -1,0 +1,1762 @@
+[
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "idle",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "idle",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "idle",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "idle",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "walk",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "walk",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "walk",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "walk",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "dash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "dash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "dash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "dash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "charge",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "charge",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "charge",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "charge",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "normal",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "normal",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "normal",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "normal",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "special",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "special",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "special",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "pose": "special",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "idle",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "idle",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "idle",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "idle",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "walk",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "walk",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "walk",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "walk",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "dash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "dash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "dash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "dash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "charge",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "charge",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "charge",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "charge",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "normal",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "normal",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "normal",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "normal",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      200,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "special",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "special",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "special",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "pose": "special",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      1000,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "idle",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "idle",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "idle",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "idle",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "walk",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "walk",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "walk",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "walk",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "dash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "dash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "dash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "dash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "backdash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "charge",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "charge",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "charge",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "charge",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "normal",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "normal",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "normal",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "normal",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "special",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "special",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "special",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "pose": "special",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "idle",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "idle",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "idle",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "idle",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "walk",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "walk",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "walk",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "walk",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      20,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "dash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "dash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "dash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "dash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      100,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "backdash",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      105,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "charge",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "charge",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "charge",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "charge",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "normal",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "normal",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "normal",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "normal",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      10200,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "special",
+    "attack": "low",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "special",
+    "attack": "mid",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "special",
+    "attack": "projectile",
+    "damage": 60,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 1
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "pose": "special",
+    "attack": "combo",
+    "damage": 180,
+    "hurt": true,
+    "recovered": true,
+    "states": [
+      0,
+      11000,
+      5000,
+      5001
+    ],
+    "hits_received": 3
+  }
+]

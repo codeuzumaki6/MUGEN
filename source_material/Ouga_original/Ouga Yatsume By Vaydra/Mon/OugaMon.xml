@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+
+      <frame>
+      <e type="setCommand">reTransport</e>
+        <f>OugaMon_01</f>
+        <f>OugaMon_03</f>     
+        <f>OugaMon_04</f>
+
+        
+        <f>OugaMon_05</f>
+        <f>OugaMon_06</f>
+
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">50</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+      <e type="setCommand">reTransport</e>
+        <f>OugaMon_01</f>
+        <f>OugaMon_03</f>     
+        <f>OugaMon_04</f>
+
+        
+        <f>OugaMon_05</f>
+        <f>OugaMon_06</f>
+        
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

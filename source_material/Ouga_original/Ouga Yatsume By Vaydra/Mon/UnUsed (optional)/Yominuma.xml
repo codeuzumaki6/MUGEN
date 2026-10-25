@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Yominuma</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">29</p>
+        <p type="attackRangeY">15</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>Kiba_Skill06_002</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>Kiba_Skill06_002</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">480</p>
+        <p type="attackRangeX">30</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+			<f>Kiba_Skill06_002</f>
+			<f>Kiba_Skill06_003</f>
+			<f>Kiba_Skill06_004</f>
+			<f>Kiba_Skill06_005</f>
+			<e type="setAttackBox">b_hit</e>		
+			<e type="setAttackBox">bl_hit</e>				
+					
+			
+			<f>Kiba_Skill06_006</f>
+			<f>Kiba_Skill06_007</f>
+			<f>Kiba_Skill06_008</f>
+			<e type="setAttackBox">ac_hit</e>	
+			<e type="setAttackBox">bl_hit</e>				
+					
+			
+			
+			<f>Kiba_Skill06_009</f>
+			<f>Kiba_Skill06_010</f>
+			<f>Kiba_Skill06_011</f>
+			<e type="setAttackBox">ac_hit</e>	
+			<e type="setAttackBox">bl_hit</e>				
+  	  	
+		
+			
+			<f>Kiba_Skill06_012</f>
+	  	<e type="setAttackBox">f_hit</e>				
+	  	<e type="setAttackBox">bl_hit</e>				
+	  			
+			
+	
+			<f>Kiba_Skill06_013</f>
+			<f>Kiba_Skill06_014</f>	
+	  	<e type="setAttackBox">f_hit</e>				
+	  	<e type="setAttackBox">bl_hit</e>				
+				
+		
+		
+			<f>Kiba_Skill06_015</f>	
+			<f>Kiba_Skill06_016</f>
+			<f>Kiba_Skill06_017</f>
+		  <e type="setAttackBox">f_hit</e>			
+			<e type="setAttackBox">bl_hit</e>				
+	  			
+			
+			
+			<f>Kiba_Skill06_018</f>
+			<f>Kiba_Skill06_019</f>
+	  	<e type="setAttackBox">ac_hit</e>				
+			<f>Kiba_Skill06_020</f>	
+	  	<e type="setAttackBox">ac_hit</e>				
+			<f>Kiba_Skill06_021</f>	
+	  	<e type="setAttackBox">ac_hit</e>				
+			<f>Kiba_Skill06_022</f>	
+	  	<e type="setAttackBox">ac_hit</e>				
+			<f>Kiba_Skill06_023</f>				
+			<f>Kiba_Skill06_024</f>	
+			<f>Kiba_Skill06_025</f>
+			<f>Kiba_Skill06_001</f>		
+           
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+</unit>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Qilin</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+		        <e type="setCommand">setDead</e> 
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+		        <e type="setCommand">setDead</e> 
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		      <e type="setCommand">reTransport</e>
+
+		  <f>OugaDm1_01</f>
+			<f>OugaDm1_02</f>
+			<f>OugaDm1_03</f>
+			
+			
+			
+	  <e type="setDelay">240</e>	
+			<f>OugaDm1_02</f>
+			<f>OugaDm1_01</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">180</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">320</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	      <e type="setCommand">reTransport</e>
+
+		  <f>OugaDm1_01</f>
+			<f>OugaDm1_02</f>
+			<f>OugaDm1_03</f>
+			
+			
+			
+	  <e type="setDelay">240</e>	
+			<f>OugaDm1_02</f>
+			<f>OugaDm1_01</f>
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

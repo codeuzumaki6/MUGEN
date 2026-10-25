@@ -1,0 +1,117 @@
+{
+  "character": "OugaYatsume",
+  "frames": 999,
+  "cases": 17,
+  "duration": 62.75,
+  "video": "OugaYatsume_motor.mp4",
+  "sha256": "35d7523a64c3d4b2a03d958963bfc7b9db8c7736d78907129e1fa66abedfa252",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.5594342133654915,
+      "actual_sample_seconds": 4.783310657596372
+    },
+    {
+      "case": 1,
+      "cue_frame": 469,
+      "state": 1010,
+      "correlation": 0.5798556348840721,
+      "actual_sample_seconds": 13.328253968253968
+    },
+    {
+      "case": 2,
+      "cue_frame": 909,
+      "state": 1020,
+      "correlation": 0.5798536395192777,
+      "actual_sample_seconds": 20.758639455782312
+    },
+    {
+      "case": 3,
+      "cue_frame": 1349,
+      "state": 1030,
+      "correlation": 0.5798550513650972,
+      "actual_sample_seconds": 28.189024943310656
+    },
+    {
+      "case": 4,
+      "cue_frame": 1789,
+      "state": 1050,
+      "correlation": 0.9294020610225381,
+      "actual_sample_seconds": 35.5265306122449
+    },
+    {
+      "case": 5,
+      "cue_frame": 2229,
+      "state": 1430,
+      "correlation": 0.9294021253124424,
+      "actual_sample_seconds": 42.956916099773245
+    },
+    {
+      "case": 6,
+      "cue_frame": 2669,
+      "state": 3000,
+      "correlation": 0.9012292514232741,
+      "actual_sample_seconds": 50.43374149659864
+    },
+    {
+      "case": 8,
+      "cue_frame": 3549,
+      "state": 520,
+      "correlation": 0.977191361592907,
+      "actual_sample_seconds": 65.06231292517006
+    },
+    {
+      "case": 9,
+      "cue_frame": 3989,
+      "state": 11000,
+      "correlation": 0.9412489128674949,
+      "actual_sample_seconds": 72.49269841269842
+    },
+    {
+      "case": 10,
+      "cue_frame": 4429,
+      "state": 11010,
+      "correlation": 0.5805339228244613,
+      "actual_sample_seconds": 79.9695238095238
+    },
+    {
+      "case": 11,
+      "cue_frame": 4869,
+      "state": 11020,
+      "correlation": 0.9477904842544249,
+      "actual_sample_seconds": 87.39990929705215
+    },
+    {
+      "case": 12,
+      "cue_frame": 5309,
+      "state": 11030,
+      "correlation": 0.5805339228244614,
+      "actual_sample_seconds": 94.8302947845805
+    },
+    {
+      "case": 13,
+      "cue_frame": 5749,
+      "state": 11050,
+      "correlation": 0.9412490524366334,
+      "actual_sample_seconds": 102.26068027210884
+    },
+    {
+      "case": 14,
+      "cue_frame": 6189,
+      "state": 11430,
+      "correlation": 0.9412478716395178,
+      "actual_sample_seconds": 109.69106575963718
+    },
+    {
+      "case": 15,
+      "cue_frame": 6629,
+      "state": 13000,
+      "correlation": 0.4542769880002409,
+      "actual_sample_seconds": 117.12145124716554
+    }
+  ],
+  "runtime_sha256": "fb748adeb48cb93f980eb8ce84d4126fe7bbcfd745dc173c8bf507cf70b31558"
+}
