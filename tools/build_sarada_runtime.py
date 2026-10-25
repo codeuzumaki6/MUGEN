@@ -4,18 +4,20 @@ from pathlib import Path
 import json,re
 from hidari_susanoo_source import actions,frames
 ROOT=Path(__file__).resolve().parents[1];CHAR=ROOT/'SaradaTBV';AIR=[];STATES=[];KEY={};SOUNDS={}
+OHIRUME_PULSES=list(range(30,571,30))+[600]
 MOVES=[('Chidori','a','F',1000,350),('Katon','a','B',1010,400),('Raiton','b','F',1020,450),('Aoda','b','B',1030,600),('Ascendente','c','F',1040,350),('Asalto','c','B',1050,450),('Barrido','a','D',1400,200),('Punetazo','b','D',1410,300),('Descarga','c','D',1420,400),('Gokakyu','y','N',1200,200),('Orbe','z','N',1210,250),('Tormenta','y','D',1430,600),('Sharingan','z','D',1440,350)]
 SUS={200:4200,210:4300,220:4400,600:4200,610:4300,620:4400,1000:4600,1010:4500,1020:4700,1030:4700,1040:4400,1050:4900,1400:4300,1410:4200,1420:4400,1200:4500,1210:4900,1430:4700,1440:4850,3000:4700}
 def ctl(n,label,typ,triggers,params='',extra=''):return f'\n[State {n}, {label}]\ntype={typ}\n{triggers}\n{params}\n{extra}\n'
 def c(n,label,typ,when,params='',extra=''):return ctl(n,label,typ,'trigger1='+when,params,extra)
 def state(n,anim=None,typ='S',move='I',physics='S',cost=0,ctrl=0,vel='0,0'):return f'\n[Statedef {n}]\ntype={typ}\nmovetype={move}\nphysics={physics}\nctrl={ctrl}\n'+(f'anim={anim}\n' if anim is not None else '')+(f'poweradd=-{cost}\n' if cost else '')+(f'velset={vel}\n' if vel else '')
-def action(n,seq,form=0,box=None,active=None,loop=False,hurt=True,add=False):
+def action(n,seq,form=0,box=None,active=None,loop=False,hurt=True,add=False,loop_start=None,offsets=None):
  s=f'\n[Begin Action {n}]\n'
  if hurt:s+='Clsn2Default: 1\n Clsn2[0]='+('-34,-175,34,0' if form else '-14,-80,14,0')+'\n'
  if loop:s+='Loopstart\n'
  for i,(key,t) in enumerate(seq):
+  if i==loop_start:s+='Loopstart\n'
   if box and (active is None or i in active):s+='Clsn1: 1\n Clsn1[0]='+box+'\n'
-  g,p=KEY[key];s+=f'{g},{p},0,0,{t}'+(',,A' if add else '')+'\n'
+  g,p=KEY[key];x,y=(offsets or {}).get(key,(0,0));s+=f'{g},{p},{x},{y},{t}'+(',,A' if add else '')+'\n'
  AIR.append(s)
 def seq(stem,start,end,t=3):return [(f'Sarada2_{stem}_{i:02}',t) for i in range(start,end+1)]
 def sus(n,source,box=None,hurt=True,loop=False):
@@ -69,6 +71,9 @@ def basics():
  action(8810,[(f'SaradaEye_{i:02}',4) for i in [1,2,3]],hurt=False)
  action(8811,seq('skill05',22,31,3),hurt=False)
  action(8820,seq('skill05',32,43,3),hurt=False,box='-100,-130,100,100')
+ action(8850,seq('skill05',32,40,3),hurt=False,box='-100,-130,100,100',loop=True)
+ action(8851,seq('skill05',41,43,4),hurt=False)
+ action(8852,seq('skill05',38,43,3),hurt=False)
  action(8830,[(f'Susanoo_1350_{n}',2) for n in range(13,30)],hurt=False,box='-20,-80,70,0')
  sus(8831,4950,box='-25,-25,25,25',hurt=False)
  sus(8832,4750,box='-190,-110,190,65',hurt=False)
@@ -145,13 +150,27 @@ def helpers():
   if n==9471:s+=c(n,'Arrow aims at the actual torso','VelSet','Time=0','y=(-30-Pos Y)/IfElse(P2Dist X>24,P2Dist X/12.0,2)')
   s+=hit(n,0,damage,True,air=True,projectile=n!=9472)+c(n,'Finite Susanoo attack','DestroySelf','MoveContact || Time>=42 || RoundState!=2');STATES.append(s)
  for n in [9800,9801]:
-  s=state(n,8820,'A','A','N')+c(n,'No push','PlayerPush','1','value=0')+c(n,'Original three Ohirume vortices','AngleDraw','1','scale=.65,.65')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
-  s+=hit(n,6,0 if n==9800 else 200,True,air=True,ident=n,stun=42,projectile=True)
+  s=state(n,8850 if n==9800 else 8820,'A','A','N')+c(n,'No push','PlayerPush','1','value=0')+c(n,'Original Ohirume vortices','AngleDraw','1','scale=IfElse(Time>=600 && Time<612,.85,.65),IfElse(Time>=600 && Time<612,.85,.65)' if n==9800 else 'scale=.65,.65')+c(n,'No shadow','AssertSpecial','1','flag=NoShadow')
   if n==9800:
-   s+=c(n,'Finite damage budget for a confirmed victim','VarSet','MoveHit && NumTarget(9800)>0 && Var(2)=0','v=0\nvalue=IfElse((Target(9800),LifeMax)>=1000,450,Floor((Target(9800),LifeMax)*.45))')
-   s+=c(n,'Ohirume only draws in the struck enemy','TargetBind','MoveHit && NumTarget(9800)>0 && Time<22','ID=9800\ntime=1\npos=0,-10')
-   s+=c(n,'Bounded Ohirume damage','TargetLifeAdd','Time>=22 && NumTarget(9800)>0 && Var(2)=0','ID=9800\nvalue=-Var(0)\nabsolute=1\nkill=1')+c(n,'Damage is applied once','VarSet','Time>=22 && NumTarget(9800)>0','v=2\nvalue=1')
-  s+=c(n,'Ohirume expires and releases the enemy','DestroySelf','Time>=42 || RoundState!=2');STATES.append(s)
+   s+=c(n,'Remember the casting form once','VarSet','Time=0','v=1\nvalue=Parent,Var(42)')
+   s+=hit(n,6,0,False,air=True,ident=n,stun=690,projectile=True)+'p2stateno=3010\np2getp1state=1\n'
+   s+=c(n,'Finite total budget for a confirmed victim','VarSet','MoveHit && NumTarget(9800)>0 && Var(4)=0','v=0\nvalue=IfElse(Var(1)>0,IfElse((Target(9800),LifeMax)>=1000,800,Floor((Target(9800),LifeMax)*.80)),IfElse((Target(9800),LifeMax)>=1000,650,Floor((Target(9800),LifeMax)*.65)))')
+   s+=c(n,'Lock the confirmed damage ceiling','VarSet','MoveHit && NumTarget(9800)>0','v=4\nvalue=1')
+   s+=c(n,'Hold only the actually struck enemy','TargetBind','NumTarget(9800)>0 && Time<612 && (Root,MoveType!=H)','ID=9800\ntime=1\npos=IfElse(Time<600,Sin(Time*.18)*12,0),-10+IfElse(Time<600,Sin(Time*.12)*6,0)')
+   for i,t in enumerate(OHIRUME_PULSES):
+    when=f'Time={t} && NumTarget(9800)>0 && (Root,MoveType!=H)'
+    amount='Var(0)-Floor(Var(0)*.70/19)*19' if i==19 else 'Floor(Var(0)*.70/19)'
+    s+=c(n,'Bounded Ohirume pulse','TargetLifeAdd',when,f'ID=9800\nvalue=-({amount})\nabsolute=1\nkill=1')+c(n,'Count the actual damage pulse','HitAdd',when,'value=1')+common_sound(n,when,7)
+    s+=effect(n,when,8700,0,-50,.8 if i==19 else .5,6)+c(n,'Pulse feedback','EnvShake',when,'time=3\nfreq=65\nampl=-2')
+   release='Time>=612 || (Root,MoveType=H) || (Root,Life<=0) || RoundState!=2'
+   s+=c(n,'Always release the captured enemy','TargetState',f'NumTarget(9800)>0 && Var(2)=0 && ({release})','ID=9800\nvalue=3011')+c(n,'Release happens once','VarSet',release,'v=2\nvalue=1')
+   s+=c(n,'Final gravitational implosion','ChangeAnim','Time=600','value=8852')+sound(n,'Time=600','Explo',2,95)+c(n,'Final implosion shock','EnvShake','Time=600 && NumTarget(9800)>0','time=18\nfreq=65\nampl=-8')+c(n,'Original closing spheres','ChangeAnim','Time=612','value=8851')+c(n,'Finite field and interruption cleanup','DestroySelf','Time>=640 || (Root,MoveType=H) || (Root,Life<=0) || RoundState!=2')
+  else:s+=hit(n,6,200,True,air=True,ident=n,stun=42,projectile=True)+c(n,'Finite special effect','DestroySelf','Time>=42 || RoundState!=2')
+  STATES.append(s)
+ # The victim retains its own artwork and always returns to its own states.
+ s=state(3010,None,'A','H','N')+c(3010,'Use the actual opponent hurt sprite','ChangeAnim','(Time=0 || (Time>=24 && (Time-24)%30=0)) && SelfAnimExist(5000)','value=5000')+c(3010,'Visible response to each pulse','PalFX','Time>=24 && (Time-24)%30=0','time=3\nadd=45,0,45')
+ s+=ctl(3010,'Independent escape failsafe','SelfState','trigger1=Time>=720\ntrigger2=NumEnemy=0\ntrigger3=EnemyNear,NumHelper(9800)=0\ntrigger4=RoundState!=2','value=5050\nctrl=0');STATES.append(s)
+ s=state(3011,None,'A','H','N')+c(3011,'Release into a real fall','VelSet','Time=0','x=-4\ny=-6')+c(3011,'Return ownership to the victim','SelfState','1','value=5050\nctrl=0');STATES.append(s)
 def utility():
  for n in [170,180,190]:
   s=state(n,n+10000*0)+c(n,'Round pose','Null','1')
@@ -164,12 +183,12 @@ def utility():
  s=state(520,520)+startup(520,'sharingan')+effect(520,'Time=8',8810,0,-70,.7,20)+c(520,'Original Mangekyou cut-in','Explod','Time=22','anim=8811\npostype=left\npos=160,75\nscale=.5,.5\nremovetime=30\nsprpriority=10\nownpal=1')
  s+=c(520,'Pay for the manifestation','PowerAdd','Time=55','value=-1500')+c(520,'Pink Susanoo mode','VarSet','Time=60','v=42\nvalue=1')+c(520,'Twenty second duration','VarSet','Time=60','v=40\nvalue=1200')+c(520,'Awakening cooldown','VarSet','Time=60','v=41\nvalue=1500')+sound(520,'Time=60','SharinganEye',2)+end(520,72);STATES.append(s)
 def ultimate():
- action(3000,seq('skill04',1,25,3),box='-30,-95,110,0')
- s=state(3000,3000,move='A',physics='N',cost=3000)+startup(3000,'chidori')+sound(3000,'Time=0','Chidori0',2)
- s+=c(3000,'Ultimate physically advances','VelSet','Time>=15 && Time<30 && !MoveContact','x=7')+c(3000,'Stop the rush','VelSet','MoveContact || Time>=30','x=0')+hit(3000,15,0,True,ident=3000,stun=40)
- s+=c(3000,'Budget belongs to an actual hit','VarSet','MoveHit && NumTarget(3000)>0 && Var(21)=0','v=20\nvalue=IfElse((Target(3000),LifeMax)>=1000,350,Floor((Target(3000),LifeMax)*.35))')+c(3000,'Bounded Chidori damage','TargetLifeAdd','MoveHit && NumTarget(3000)>0 && Var(21)=0','ID=3000\nvalue=-Var(20)\nabsolute=1\nkill=1')+c(3000,'Apply damage once','VarSet','MoveHit && NumTarget(3000)>0','v=21\nvalue=1')+c(3000,'Reset the scene flag','VarSet','Time=0','v=21\nvalue=0')+sound(3000,'Time=42','Explo',2)+end(3000,82);STATES.append(s)
+ # The later source cells have a deeper vortex canvas. Compensate its extra
+ # height so the human stays visible at the same levitation height.
+ action(3000,seq('skill05',1,15,3)+seq('skill05',16,21,4),loop_start=15,offsets={f'Sarada2_skill05_{i:02}':(0,45) for i in range(16,22)})
  sus(13000,4700)
- s=state(13000,13000,move='A',physics='N',cost=3000)+startup(13000,'Skil5')+c(13000,'Original Mangekyou eye','Explod','Time=3','anim=8811\npostype=left\npos=160,70\nscale=.5,.5\nremovetime=30\nsprpriority=10\nownpal=1')+cast(13000,'Time=30',9800,'IfElse(P2Dist X<210,P2Dist X,210)','-65')+sound(13000,'Time=30','KamuiKKS',2)+end(13000,90);STATES.append(s)
+ for n in [3000,13000]:
+  s=state(n,n,move='A',physics='N',cost=3000)+startup(n,'Skil5')+c(n,'Original Mangekyou eye','Explod','Time=3','anim=8811\npostype=left\npos=160,70\nscale=.5,.5\nremovetime=30\nsprpriority=10\nownpal=1')+cast(n,'Time=30',9800,'IfElse(P2Dist X<210,P2Dist X*.5,105)','-65')+sound(n,'Time=30','KamuiKKS',2)+end(n,684);STATES.append(s)
 def commands():
  s='[Remap]\na=a\nb=b\nc=c\nx=x\ny=y\nz=z\ns=s\n[Defaults]\ncommand.time=20\ncommand.buffer.time=3\n'
  def cmd(n,k,buf=3):return f'\n[Command]\nname="{n}"\ncommand={k}\ntime=20\nbuffer.time={buf}\n'
@@ -217,6 +236,6 @@ def main():
   blocks[i]=b
  (CHAR/'SaradaTBV_common.cns').write_text(''.join(blocks))
  d=(ROOT/'JuraShinju/JuraShinju.def').read_text().replace('JuraShinju','SaradaTBV').replace('Jura Shinju','Sarada Uchiha TBV');d=re.sub(r'(?m)^author=.*$', 'author="Vaydra sprites / Vovan99 and Shingeki No Mugen Susanoo / Codex adaptation"',d);d=re.sub(r'(?m)^versiondate=.*$','versiondate=10,24,2026',d);(CHAR/'SaradaTBV.def').write_text(d)
- (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,awakening='Pink Susanoo with Ohirume',awakening_cost=1500,activation_requires=3000,awakening_ticks=1200,form_offset=10000,ultimate_cost=3000,own_life_cost=0,ultimate_damage='min(350,35% target maximum life) base; min(450,45%) awakened',original_body_art=True,original_voice_audio=True,ai_generated_art=False),indent=2)+'\n')
+ (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,awakening='Pink Susanoo with Ohirume',awakening_cost=1500,activation_requires=3000,awakening_ticks=1200,form_offset=10000,ultimate='Ohirume in both forms, four persistent spheres, nineteen pulses and a final implosion',ultimate_field_ticks=640,ultimate_pulse_ticks=OHIRUME_PULSES,ultimate_cost=3000,own_life_cost=0,ultimate_damage='min(650,65% target maximum life) base; min(800,80%) awakened',original_body_art=True,original_voice_audio=True,ai_generated_art=False),indent=2)+'\n')
  print('Sarada runtime:',len(STATES),'states,',len(AIR),'animations, original art and voices')
 if __name__=='__main__':main()

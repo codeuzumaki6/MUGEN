@@ -22,6 +22,8 @@ Asignación MUGEN: X=a, Y=b, B=c, A=x, RB=y, RT=z y Pausa=s. Invierte los cuarto
 | ↓ + RT | Asalto del Sharingan | Estocada de chakra | 350 |
 | Mantener Pausa | Cargar energía | Cargar energía | 0 |
 | ↓ + Pausa con 3000 | Despertar: Susanoo rosa, 20 segundos | — | 1500 |
-| A | Chidori definitivo con impacto en el suelo | Ohirume: agujeros negros | 3000 |
+| A | Ōhirume: cuatro esferas, golpes gravitatorios e implosión | Ōhirume del Susanoo: más potente | 3000 |
 
 Las técnicas y las ultis se pueden bloquear o evitar por alcance. La carga, el desplazamiento y los ataques no dan invulnerabilidad permanente.
+
+Ōhirume mantiene sus cuatro esferas unos 10 segundos. Al acertar, retiene al rival y aplica 19 pulsos de daño más una implosión final. El daño total máximo es 650 o el 65 % de la vida máxima rival en base, y 800 o el 80 % en despertar. No cuesta vida propia. La guardia o el alcance evitan la captura; golpear a Sarada interrumpe el campo y libera al rival.

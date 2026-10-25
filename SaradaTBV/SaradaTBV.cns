@@ -5160,7 +5160,7 @@ type=A
 movetype=A
 physics=N
 ctrl=0
-anim=8820
+anim=8850
 velset=0,0
 
 [State 9800, No push]
@@ -5169,10 +5169,10 @@ trigger1=1
 value=0
 
 
-[State 9800, Original three Ohirume vortices]
+[State 9800, Original Ohirume vortices]
 type=AngleDraw
 trigger1=1
-scale=.65,.65
+scale=IfElse(Time>=600 && Time<612,.85,.65),IfElse(Time>=600 && Time<612,.85,.65)
 
 
 [State 9800, No shadow]
@@ -5181,12 +5181,19 @@ trigger1=1
 flag=NoShadow
 
 
+[State 9800, Remember the casting form once]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(42)
+
+
 [State 9800, Real attack collision]
 type=HitDef
 trigger1=Time=6
 attr=A,SP
 damage=0,0
-animtype=Up
+animtype=Medium
 guardflag=MA
 hitflag=MAF
 priority=5,Hit
@@ -5194,59 +5201,994 @@ pausetime=4,8
 sparkno=S8700
 guard.sparkno=-1
 sparkxy=0,-35
-hitsound=S1,19
+hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=42
+ground.hittime=690
 ground.slidetime=14
-ground.velocity=-5,-6
+ground.velocity=-0.3,0
 air.hittime=30
-air.velocity=-4,-5
-fall=1
+air.velocity=-0.5,-1
+fall=0
 fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=10,5
 ID=9800
 hitonce=1
-envshake.time=6
-envshake.ampl=-4
+envshake.time=2
+envshake.ampl=-1
 
+p2stateno=3010
+p2getp1state=1
 
-[State 9800, Finite damage budget for a confirmed victim]
+[State 9800, Finite total budget for a confirmed victim]
 type=VarSet
-trigger1=MoveHit && NumTarget(9800)>0 && Var(2)=0
+trigger1=MoveHit && NumTarget(9800)>0 && Var(4)=0
 v=0
-value=IfElse((Target(9800),LifeMax)>=1000,450,Floor((Target(9800),LifeMax)*.45))
+value=IfElse(Var(1)>0,IfElse((Target(9800),LifeMax)>=1000,800,Floor((Target(9800),LifeMax)*.80)),IfElse((Target(9800),LifeMax)>=1000,650,Floor((Target(9800),LifeMax)*.65)))
 
 
-[State 9800, Ohirume only draws in the struck enemy]
+[State 9800, Lock the confirmed damage ceiling]
+type=VarSet
+trigger1=MoveHit && NumTarget(9800)>0
+v=4
+value=1
+
+
+[State 9800, Hold only the actually struck enemy]
 type=TargetBind
-trigger1=MoveHit && NumTarget(9800)>0 && Time<22
+trigger1=NumTarget(9800)>0 && Time<612 && (Root,MoveType!=H)
 ID=9800
 time=1
-pos=0,-10
+pos=IfElse(Time<600,Sin(Time*.18)*12,0),-10+IfElse(Time<600,Sin(Time*.12)*6,0)
 
 
-[State 9800, Bounded Ohirume damage]
+[State 9800, Bounded Ohirume pulse]
 type=TargetLifeAdd
-trigger1=Time>=22 && NumTarget(9800)>0 && Var(2)=0
+trigger1=Time=30 && NumTarget(9800)>0 && (Root,MoveType!=H)
 ID=9800
-value=-Var(0)
+value=-(Floor(Var(0)*.70/19))
 absolute=1
 kill=1
 
 
-[State 9800, Damage is applied once]
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=30 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=30 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=30 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=30 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=60 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=60 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=60 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=60 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=60 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=90 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=90 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=90 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=90 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=90 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=120 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=120 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=120 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=120 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=120 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=150 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=150 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=150 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=150 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=150 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=180 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=180 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=180 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=180 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=180 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=210 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=210 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=210 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=210 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=210 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=240 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=240 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=240 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=240 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=240 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=270 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=270 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=270 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=270 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=270 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=300 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=300 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=300 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=300 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=300 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=330 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=330 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=330 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=330 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=330 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=360 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=360 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=360 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=360 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=360 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=390 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=390 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=390 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=390 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=390 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=420 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=420 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=420 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=420 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=420 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=450 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=450 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=450 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=450 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=450 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=480 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=480 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=480 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=480 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=480 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=510 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=510 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=510 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=510 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=510 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=540 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=540 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=540 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=540 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=540 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=570 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Floor(Var(0)*.70/19))
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=570 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=570 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=570 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.5,0.5
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=570 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Bounded Ohirume pulse]
+type=TargetLifeAdd
+trigger1=Time=600 && NumTarget(9800)>0 && (Root,MoveType!=H)
+ID=9800
+value=-(Var(0)-Floor(Var(0)*.70/19)*19)
+absolute=1
+kill=1
+
+
+[State 9800, Count the actual damage pulse]
+type=HitAdd
+trigger1=Time=600 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=1
+
+
+[State 9800, Technique effect]
+type=PlaySnd
+trigger1=Time=600 && NumTarget(9800)>0 && (Root,MoveType!=H)
+value=S1,7
+channel=4
+volumescale=75
+
+
+[State 9800, Original supplied effect]
+type=Explod
+trigger1=Time=600 && NumTarget(9800)>0 && (Root,MoveType!=H)
+anim=8700
+postype=P1
+pos=0,-50
+scale=0.8,0.8
+removetime=6
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 9800, Pulse feedback]
+type=EnvShake
+trigger1=Time=600 && NumTarget(9800)>0 && (Root,MoveType!=H)
+time=3
+freq=65
+ampl=-2
+
+
+[State 9800, Always release the captured enemy]
+type=TargetState
+trigger1=NumTarget(9800)>0 && Var(2)=0 && (Time>=612 || (Root,MoveType=H) || (Root,Life<=0) || RoundState!=2)
+ID=9800
+value=3011
+
+
+[State 9800, Release happens once]
 type=VarSet
-trigger1=Time>=22 && NumTarget(9800)>0
+trigger1=Time>=612 || (Root,MoveType=H) || (Root,Life<=0) || RoundState!=2
 v=2
 value=1
 
 
-[State 9800, Ohirume expires and releases the enemy]
+[State 9800, Final gravitational implosion]
+type=ChangeAnim
+trigger1=Time=600
+value=8852
+
+
+[State 9800, Supplied Sarada audio]
+type=PlaySnd
+trigger1=Time=600
+value=S2,1
+channel=2
+volumescale=95
+
+
+[State 9800, Final implosion shock]
+type=EnvShake
+trigger1=Time=600 && NumTarget(9800)>0
+time=18
+freq=65
+ampl=-8
+
+
+[State 9800, Original closing spheres]
+type=ChangeAnim
+trigger1=Time=612
+value=8851
+
+
+[State 9800, Finite field and interruption cleanup]
 type=DestroySelf
-trigger1=Time>=42 || RoundState!=2
+trigger1=Time>=640 || (Root,MoveType=H) || (Root,Life<=0) || RoundState!=2
 
 
 
@@ -5264,7 +6206,7 @@ trigger1=1
 value=0
 
 
-[State 9801, Original three Ohirume vortices]
+[State 9801, Original Ohirume vortices]
 type=AngleDraw
 trigger1=1
 scale=.65,.65
@@ -5308,10 +6250,61 @@ envshake.time=6
 envshake.ampl=-4
 
 
-[State 9801, Ohirume expires and releases the enemy]
+[State 9801, Finite special effect]
 type=DestroySelf
 trigger1=Time>=42 || RoundState!=2
 
+
+
+[Statedef 3010]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3010, Use the actual opponent hurt sprite]
+type=ChangeAnim
+trigger1=(Time=0 || (Time>=24 && (Time-24)%30=0)) && SelfAnimExist(5000)
+value=5000
+
+
+[State 3010, Visible response to each pulse]
+type=PalFX
+trigger1=Time>=24 && (Time-24)%30=0
+time=3
+add=45,0,45
+
+
+[State 3010, Independent escape failsafe]
+type=SelfState
+trigger1=Time>=720
+trigger2=NumEnemy=0
+trigger3=EnemyNear,NumHelper(9800)=0
+trigger4=RoundState!=2
+value=5050
+ctrl=0
+
+
+[Statedef 3011]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3011, Release into a real fall]
+type=VelSet
+trigger1=Time=0
+x=-4
+y=-6
+
+
+[State 3011, Return ownership to the victim]
+type=SelfState
+trigger1=1
+value=5050
+ctrl=0
 
 
 [Statedef 170]
@@ -5597,7 +6590,7 @@ volumescale=75
 [State 3000, Supplied Sarada audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,17
+value=S3,11
 channel=0
 volumescale=80
 
@@ -5615,99 +6608,42 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 3000, Supplied Sarada audio]
-type=PlaySnd
-trigger1=Time=0
-value=S2,0
-channel=2
-volumescale=80
+[State 3000, Original Mangekyou eye]
+type=Explod
+trigger1=Time=3
+anim=8811
+postype=left
+pos=160,70
+scale=.5,.5
+removetime=30
+sprpriority=10
+ownpal=1
 
 
-[State 3000, Ultimate physically advances]
-type=VelSet
-trigger1=Time>=15 && Time<30 && !MoveContact
-x=7
-
-
-[State 3000, Stop the rush]
-type=VelSet
-trigger1=MoveContact || Time>=30
-x=0
-
-
-[State 3000, Real attack collision]
-type=HitDef
-trigger1=Time=15
-attr=S,HP
-damage=0,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=40
-ground.slidetime=14
-ground.velocity=-5,-6
-air.hittime=30
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=3000
-hitonce=1
-envshake.time=6
-envshake.ampl=-4
-
-
-[State 3000, Budget belongs to an actual hit]
-type=VarSet
-trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
-v=20
-value=IfElse((Target(3000),LifeMax)>=1000,350,Floor((Target(3000),LifeMax)*.35))
-
-
-[State 3000, Bounded Chidori damage]
-type=TargetLifeAdd
-trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
-ID=3000
-value=-Var(20)
-absolute=1
-kill=1
-
-
-[State 3000, Apply damage once]
-type=VarSet
-trigger1=MoveHit && NumTarget(3000)>0
-v=21
-value=1
-
-
-[State 3000, Reset the scene flag]
-type=VarSet
-trigger1=Time=0
-v=21
-value=0
+[State 3000, Finite physical technique]
+type=Helper
+trigger1=Time=30
+helpertype=Normal
+name="Sarada technique"
+ID=9800
+stateno=9800
+postype=P1
+pos=IfElse(P2Dist X<210,P2Dist X*.5,105),-65
+ownpal=1
+keyctrl=0
 
 
 [State 3000, Supplied Sarada audio]
 type=PlaySnd
-trigger1=Time=42
-value=S2,1
+trigger1=Time=30
+value=S2,2
 channel=2
 volumescale=80
 
 
 [State 3000, Return control]
 type=ChangeState
-trigger1=Time>=82
+trigger1=Time>=684
 value=0
 ctrl=1
 
@@ -5770,7 +6706,7 @@ name="Sarada technique"
 ID=9800
 stateno=9800
 postype=P1
-pos=IfElse(P2Dist X<210,P2Dist X,210),-65
+pos=IfElse(P2Dist X<210,P2Dist X*.5,105),-65
 ownpal=1
 keyctrl=0
 
@@ -5785,7 +6721,7 @@ volumescale=80
 
 [State 13000, Return control]
 type=ChangeState
-trigger1=Time>=90
+trigger1=Time>=684
 value=0
 ctrl=1
 

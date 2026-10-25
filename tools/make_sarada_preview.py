@@ -7,22 +7,22 @@ from scipy.signal import correlate,find_peaks
 from PIL import Image
 from make_full_pack_previews import sound
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'previews'
-CASES=['Chidori','Katon','Raiton','Aoda','ultimate','awakening']
-ACTIVATIONS={1000,1010,1020,1030,3000,520,11000,11010,11020,11030,13000}
+CASES=['ultimate']
+ACTIVATIONS={3000,13000}
 def main():
  folder=Path(tempfile.mkdtemp(prefix='sarada-native-',dir='/tmp'));raw=folder/'audio.raw'
- env=os.environ.copy();env.update(SARADA_CAPTURE=str(folder),SARADA_AUDIO=str(raw),SARADA_CASES=json.dumps(CASES),SARADA_FACE='1',SARADA_TICKS='240',SARADA_DEMO='all')
+ env=os.environ.copy();env.update(SARADA_CAPTURE=str(folder),SARADA_AUDIO=str(raw),SARADA_CASES=json.dumps(CASES),SARADA_FACE='1',SARADA_TICKS='880',SARADA_DEMO='all',SARADA_LONG_CAPTURE='1')
  Path('/tmp/SaradaTBV_latest_capture.json').write_text(json.dumps(dict(folder=str(folder)))+'\n')
  with (folder/'engine.log').open('w') as f:r=subprocess.run([sys.executable,str(ROOT/'tools/check_sarada_in_engine.py')],cwd=ROOT,env=env,stdout=f,stderr=subprocess.STDOUT)
  assert r.returncode==0,(folder/'engine.log').read_text()[-5000:]
  frames=[list(map(int,l.split())) for l in (folder/'frames.tsv').read_text().splitlines()]
  cues=[list(map(int,l.split())) for l in (folder/'cues.tsv').read_text().splitlines()]
- ids=sorted({r[2] for r in frames});assert len(ids)==11 and len(frames)<1000
+ ids=sorted({r[2] for r in frames});assert len(ids)==2 and len(frames)<1000
  stereo=np.frombuffer(raw.read_bytes(),dtype='<i2').reshape(-1,2).astype(float)/32768;mono=stereo.mean(1);cue=sound('SaradaTBV')[:round(.12*44100)]
  cross=correlate(mono,cue,mode='valid',method='fft');energy=np.r_[0,np.cumsum(mono*mono)]
  den=np.sqrt(np.maximum(0,energy[len(cue):]-energy[:-len(cue)])*np.sum(cue*cue));scores=np.abs(cross)/np.maximum(den,1e-12)
- peaks,_=find_peaks(scores,height=.16,distance=round(.65*44100));assert len(peaks)>=11,(len(peaks),scores.max())
- selected=sorted(sorted(peaks,key=lambda p:scores[p],reverse=True)[:11]);listing=['ffconcat version 1.0'];samples=[];shots=[];proof=[]
+ peaks,_=find_peaks(scores,height=.16,distance=round(.65*44100));assert len(peaks)>=2,(len(peaks),scores.max())
+ selected=sorted(sorted(peaks,key=lambda p:scores[p],reverse=True)[:2]);listing=['ffconcat version 1.0'];samples=[];shots=[];proof=[]
  for case,p in zip(ids,selected):
   fs=[row for row in frames if row[2]==case];activation=[c for c in cues if c[1]==case and c[2] in ACTIVATIONS]
   assert len(activation)==1,(case,activation)
@@ -33,11 +33,11 @@ def main():
   for j,row in enumerate(fs):
    image=folder/f'Ikemen_GO{row[0]:03d}.png';assert image.exists();step=fs[j+1][1]-row[1] if j+1<len(fs) else 4
    listing.extend([f"file '{image}'",'option framerate 60',f'duration {step/60:.9f}'])
-  for tick in [50,76,108]:shots.append(min(fs,key=lambda r:abs(r[3]-tick)))
+  for tick in [65,200,400,640,735]:shots.append(min(fs,key=lambda r:abs(r[3]-tick)))
  listing.extend([f"file '{image}'",'option framerate 60']);(folder/'frames.txt').write_text('\n'.join(listing)+'\n')
  audio=np.concatenate(samples)
  with wave.open(str(folder/'actual.wav'),'wb') as w:w.setparams((2,2,44100,0,'NONE','not compressed'));w.writeframes(np.clip(audio*32768,-32768,32767).astype('<i2').tobytes())
- title=folder/'title.txt';title.write_text('Sarada TBV | Sprites y voces originales | Susanoo rosa + Ohirume')
+ title=folder/'title.txt';title.write_text('Sarada TBV | Ohirume en base y Susanoo rosa | 10 segundos + implosion')
  video=OUT/'SaradaTBV_motor.mp4';duration=len(audio)/44100
  subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-f','concat','-safe','0','-i',str(folder/'frames.txt'),'-i',str(folder/'actual.wav'),'-vf',f'fps=30,drawbox=x=0:y=ih-38:w=iw:h=38:color=black@0.8:t=fill,drawtext=expansion=none:textfile={title}:x=(w-tw)/2:y=h-28:fontsize=18:fontcolor=white','-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-t',str(duration),'-movflags','+faststart',str(video)],check=True)
  sheet=Image.new('RGB',(960,180*((len(shots)+2)//3)))

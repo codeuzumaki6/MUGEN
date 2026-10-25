@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "4435bc5d66c1dad1e61082093232c69c4bf538cc4beda59004b5dc4875183f35",
+  "runtime_sha256": "50d70a9be323ba6ea812b378b9091f85ad76f0ca7aeef66c5129a544b30e322b",
   "cases": [
     {
       "case": {
@@ -32,6 +32,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -65,6 +69,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -98,6 +106,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -131,6 +143,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 20,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -165,6 +181,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -198,6 +218,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 30,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -229,6 +253,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -260,6 +288,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 13,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -291,6 +323,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -321,6 +357,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -351,6 +391,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -382,6 +426,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 4,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -413,6 +461,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -443,6 +495,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -476,6 +532,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -506,6 +566,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -539,6 +603,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -569,6 +637,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -602,6 +674,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -616,7 +692,7 @@
         0,
         3000
       ],
-      "damage": 350,
+      "damage": 650,
       "minimum_life": 1150,
       "min_power": 0,
       "max_power": 3000,
@@ -628,6 +704,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -654,6 +734,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -680,6 +764,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -694,7 +782,7 @@
         0,
         3000
       ],
-      "damage": 350,
+      "damage": 650,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -706,6 +794,42 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        3000,
+        5000,
+        5001
+      ],
+      "damage": 69,
+      "minimum_life": 1093,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 60,
+      "trapped_frames": 116,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -731,6 +855,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -757,6 +885,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -785,6 +917,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "true",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -815,6 +951,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -848,6 +988,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -881,6 +1025,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -914,6 +1062,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -947,6 +1099,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 20,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -981,6 +1137,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1014,6 +1174,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 30,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1045,6 +1209,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1076,6 +1244,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 13,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1107,6 +1279,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1137,6 +1313,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1167,6 +1347,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1198,6 +1382,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 4,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1229,6 +1417,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1259,6 +1451,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1292,6 +1488,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1322,6 +1522,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1355,6 +1559,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1385,6 +1593,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1418,6 +1630,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1432,7 +1648,7 @@
         0,
         3000
       ],
-      "damage": 350,
+      "damage": 650,
       "minimum_life": 1150,
       "min_power": 0,
       "max_power": 3000,
@@ -1444,6 +1660,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -1470,6 +1690,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1496,6 +1720,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1510,7 +1738,7 @@
         0,
         3000
       ],
-      "damage": 350,
+      "damage": 650,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -1522,6 +1750,42 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        3000,
+        5000,
+        5001
+      ],
+      "damage": 69,
+      "minimum_life": 1093,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 60,
+      "trapped_frames": 116,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -1547,6 +1811,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1573,6 +1841,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1601,6 +1873,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "true",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1631,6 +1907,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1664,6 +1944,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1697,6 +1981,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1730,6 +2018,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1763,6 +2055,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1796,6 +2092,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1829,6 +2129,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1860,6 +2164,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1891,6 +2199,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1922,6 +2234,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1952,6 +2268,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -1982,6 +2302,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2013,6 +2337,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2044,6 +2372,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2074,6 +2406,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2107,6 +2443,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2137,6 +2477,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2170,6 +2514,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2200,6 +2548,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2233,6 +2585,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2247,7 +2603,7 @@
         0,
         13000
       ],
-      "damage": 450,
+      "damage": 800,
       "minimum_life": 1150,
       "min_power": 0,
       "max_power": 3000,
@@ -2259,6 +2615,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -2285,6 +2645,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2311,6 +2675,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2325,7 +2693,7 @@
         0,
         13000
       ],
-      "damage": 450,
+      "damage": 800,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -2337,6 +2705,42 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        5000,
+        5001,
+        13000
+      ],
+      "damage": 87,
+      "minimum_life": 1093,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 60,
+      "trapped_frames": 116,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -2362,6 +2766,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2388,6 +2796,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2416,6 +2828,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "true",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2446,6 +2862,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2475,6 +2895,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2505,6 +2929,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2538,6 +2966,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2571,6 +3003,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2604,6 +3040,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2637,6 +3077,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2670,6 +3114,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2703,6 +3151,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2734,6 +3186,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2765,6 +3221,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2796,6 +3256,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2826,6 +3290,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2856,6 +3324,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2887,6 +3359,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2918,6 +3394,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2948,6 +3428,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -2981,6 +3465,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3011,6 +3499,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 23,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3044,6 +3536,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3074,6 +3570,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 24,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3107,6 +3607,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 25,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3121,7 +3625,7 @@
         0,
         13000
       ],
-      "damage": 450,
+      "damage": 800,
       "minimum_life": 1150,
       "min_power": 0,
       "max_power": 3000,
@@ -3133,6 +3637,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -3159,6 +3667,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3185,6 +3697,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3199,7 +3715,7 @@
         0,
         13000
       ],
-      "damage": 450,
+      "damage": 800,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -3211,6 +3727,42 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 20,
+      "pulse_span_ticks": 570,
+      "trapped_frames": 610,
+      "victim_released": "true",
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        5000,
+        5001,
+        13000
+      ],
+      "damage": 87,
+      "minimum_life": 1093,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 3,
+      "pulse_span_ticks": 60,
+      "trapped_frames": 116,
+      "victim_released": "true",
       "failures": []
     },
     {
@@ -3236,6 +3788,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3262,6 +3818,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3290,6 +3850,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "true",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3320,6 +3884,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3349,6 +3917,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3379,6 +3951,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3406,6 +3982,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3433,6 +4013,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3460,6 +4044,10 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     },
     {
@@ -3487,6 +4075,10 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
       "failures": []
     }
   ]
