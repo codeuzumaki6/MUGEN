@@ -1,0 +1,250 @@
+{
+  "runtime_sha256": "e87cd33a13ef8dfc8cea7eb5723a038515ecd3e8202bfa1d5fc26b3eba2996a5",
+  "cases": [
+    {
+      "case": {
+        "name": "Piston",
+        "kind": "move",
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 300,
+        "distance": 105
+      },
+      "states": [
+        0,
+        11,
+        12,
+        20,
+        1000
+      ],
+      "damage": 180,
+      "minimum_life": 1200,
+      "min_power": 2700,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 0,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        820,
+        820,
+        820,
+        820
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Pierna",
+        "kind": "move",
+        "face": 1,
+        "b": "a",
+        "d": "B",
+        "state": 1010,
+        "cost": 350,
+        "distance": 105
+      },
+      "states": [
+        0,
+        11,
+        12,
+        20,
+        1010
+      ],
+      "damage": 190,
+      "minimum_life": 1200,
+      "min_power": 2650,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 0,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        810,
+        810,
+        810,
+        810
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "RayoDestructor",
+        "kind": "move",
+        "face": 1,
+        "b": "b",
+        "d": "F",
+        "state": 1020,
+        "cost": 500,
+        "distance": 180
+      },
+      "states": [
+        0,
+        11,
+        12,
+        20,
+        1020
+      ],
+      "damage": 230,
+      "minimum_life": 1200,
+      "min_power": 2500,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 300,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        770,
+        770,
+        770,
+        770
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Propulsion",
+        "kind": "move",
+        "face": 1,
+        "b": "z",
+        "d": "N",
+        "state": 1210,
+        "cost": 350,
+        "distance": 105
+      },
+      "states": [
+        0,
+        1210
+      ],
+      "damage": 170,
+      "minimum_life": 1200,
+      "min_power": 2650,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 0,
+      "jets": 1,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        830,
+        830,
+        830,
+        830
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ultimate_one_hp",
+        "kind": "ultimate_one_hp",
+        "face": 1,
+        "distance": 120
+      },
+      "states": [
+        0,
+        3000
+      ],
+      "damage": 450,
+      "minimum_life": 1,
+      "min_power": 0,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 0,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        550,
+        550,
+        550,
+        550
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "awakening",
+        "kind": "awakening",
+        "face": 1,
+        "distance": 120
+      },
+      "states": [
+        0,
+        11,
+        520
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 1500,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 0,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 720,
+      "healing_samples": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "absorb_projectile",
+        "kind": "absorb_projectile",
+        "face": 1,
+        "distance": 120
+      },
+      "states": [
+        0,
+        11,
+        1430,
+        1431
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 2850,
+      "max_power": 3000,
+      "absorbed": 1,
+      "mark_frames": 0,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    }
+  ]
+}

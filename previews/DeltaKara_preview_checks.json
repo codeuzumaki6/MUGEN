@@ -1,0 +1,61 @@
+{
+  "character": "DeltaKara",
+  "frames": 343,
+  "cases": 7,
+  "duration": 23.433333333333334,
+  "video": "DeltaKara_motor.mp4",
+  "sha256": "d80e2332cf54cf2f11b3e504004cce18268eca83e09961cd09b9687ef8f6e3d0",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.8832485334675062,
+      "actual_sample_seconds": 4.783310657596372
+    },
+    {
+      "case": 1,
+      "cue_frame": 469,
+      "state": 1010,
+      "correlation": 0.9534031757613528,
+      "actual_sample_seconds": 12.213696145124716
+    },
+    {
+      "case": 2,
+      "cue_frame": 909,
+      "state": 1020,
+      "correlation": 0.953402956485742,
+      "actual_sample_seconds": 19.551201814058956
+    },
+    {
+      "case": 3,
+      "cue_frame": 1349,
+      "state": 1210,
+      "correlation": 0.9534031879023469,
+      "actual_sample_seconds": 26.9815873015873
+    },
+    {
+      "case": 4,
+      "cue_frame": 1789,
+      "state": 3000,
+      "correlation": 0.9534036179250631,
+      "actual_sample_seconds": 34.4584126984127
+    },
+    {
+      "case": 5,
+      "cue_frame": 2229,
+      "state": 520,
+      "correlation": 0.9534036179250633,
+      "actual_sample_seconds": 41.88879818594104
+    },
+    {
+      "case": 6,
+      "cue_frame": 2669,
+      "state": 1430,
+      "correlation": 0.9534036179250633,
+      "actual_sample_seconds": 49.31918367346939
+    }
+  ],
+  "runtime_sha256": "e87cd33a13ef8dfc8cea7eb5723a038515ecd3e8202bfa1d5fc26b3eba2996a5"
+}

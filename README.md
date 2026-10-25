@@ -281,3 +281,25 @@ python3 tools/verify_shibai_delivery.py
 ```
 
 El constructor necesita Pillow, NumPy, SciPy y las referencias conservadas en `source_material`. Los informes están en `previews/Shibai_*checks.json`; la verificación final coteja dos reconstrucciones idénticas, los píxeles de la marca de Code, todas las poses empaquetadas y los archivos previos de Eida, Pochita y Mamushi. Ese informe conserva las versiones de esos tres personajes usadas al preparar la entrega de Shibai.
+
+
+# Delta Kara — rayos rosas, absorción y propulsores
+
+[Descargar Delta Kara](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/DeltaKara.zip) · [Ver grabación del motor con audio real](previews/DeltaKara_motor.mp4) · [Controles Xbox](DeltaKara/CONTROLES_XBOX.md).
+
+Extrae `DeltaKara` en `chars/` y añade `DeltaKara/DeltaKara.def` a `data/select.def`. Es un personaje independiente. La autodestrucción con A cuesta tres barras de energía y **no consume vida de Delta**: se probó también con un solo punto de vida. La explosión tiene alcance finito, se puede bloquear y no derrota de un golpe a un rival con vida completa.
+
+Incluye tres familias de cadenas terrestres y aéreas, trece técnicas, rayos oculares rosas dirigidos, interferencia temporal con la curación, absorción de proyectiles y devolución de chakra, piernas mecánicas, dash en ambas direcciones, vuelo con propulsores y sobrecarga. La absorción deja pasar golpes físicos. [Instalación y límites de compatibilidad](DeltaKara/LEEME.md).
+
+Sólo se recibió un video de Delta: las 48 poses y sus efectos dedicados se recrearon con IA a partir de esa referencia; **no son los sprites originales del autor**. Se incluyen efectos de sonido no verbales, sin diálogos atribuidos a Delta. [Créditos y fuentes](DeltaKara/CREDITOS_Y_FUENTES.md).
+
+Pruebas en Ikemen GO: [72 casos de ataques y controles](previews/DeltaKara_engine_checks.json), [112 pruebas de recibir golpes en base y sobrecarga](previews/DeltaKara_receiving/DeltaKara.json), [dash con doble toque a ambos lados](previews/DeltaKara_dash_checks.json) y [puntería contra un rival reducido](previews/DeltaKara_short_target_checks.json). Se verifican guardia, fallos, coste de energía, absorción de proyectiles clásicos y ayudantes frente a golpes físicos, bloqueo de curación y caducidad, y la ulti a 1 de vida. Falta probar el ejecutable exacto de MUGEN para Windows y el mando físico. Los nueve personajes anteriores se conservan.
+
+```sh
+python tools/build_delta_assets.py
+python tools/build_delta_runtime.py
+python tools/validate_delta.py
+python tools/check_delta_in_engine.py
+python tools/make_delta_preview.py
+python tools/package_delta.py
+```

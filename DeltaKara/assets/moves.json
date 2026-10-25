@@ -1,0 +1,122 @@
+{
+  "moves": [
+    [
+      "Piston",
+      "a",
+      "F",
+      1000,
+      300
+    ],
+    [
+      "Pierna",
+      "a",
+      "B",
+      1010,
+      350
+    ],
+    [
+      "RayoDestructor",
+      "b",
+      "F",
+      1020,
+      500
+    ],
+    [
+      "Picado",
+      "b",
+      "B",
+      1030,
+      450
+    ],
+    [
+      "Ascenso",
+      "c",
+      "F",
+      1040,
+      400
+    ],
+    [
+      "Impacto",
+      "c",
+      "B",
+      1050,
+      500
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Lanzador",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Onda",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Rayo",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Propulsion",
+      "z",
+      "N",
+      1210,
+      350
+    ],
+    [
+      "Absorcion",
+      "y",
+      "D",
+      1430,
+      150
+    ],
+    [
+      "Devolver",
+      "z",
+      "D",
+      1440,
+      250
+    ]
+  ],
+  "ultimate": {
+    "state": 3000,
+    "power_cost": 3000,
+    "own_life_cost": 0,
+    "damage_cap": "min(450,45% opponent max life)",
+    "radius": 155,
+    "startup": 48
+  },
+  "absorption": {
+    "window": [
+      8,
+      36
+    ],
+    "capacity": 3,
+    "refund": 220,
+    "physical_attacks_are_not_absorbed": true
+  },
+  "anti_healing": {
+    "light_ticks": 180,
+    "heavy_ticks": 300
+  },
+  "flight": "Airborne RB+RT, arrows to steer, consumes energy; toggle off with RB+RT",
+  "overdrive": {
+    "power": 1500,
+    "ticks": 720
+  },
+  "voices": "Nonverbal effects only; no impersonated dialogue"
+}

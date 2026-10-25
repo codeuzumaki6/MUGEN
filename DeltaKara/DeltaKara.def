@@ -1,0 +1,24 @@
+[Info]
+name="Delta Kara"
+displayname="Delta Kara"
+versiondate=10,24,2026
+mugenversion=1.1
+author="Codex adaptation / recreated art / VayDra reference"
+localcoord=320,240
+pal.defaults=1
+[Files]
+sprite=DeltaKara.sff
+sound=DeltaKara.snd
+anim=DeltaKara.air
+cmd=DeltaKara.cmd
+cns=DeltaKara.cns
+st=DeltaKara.cns
+stcommon=DeltaKara_common.cns
+[Palette Keymap]
+a=1
+b=1
+c=1
+x=1
+y=1
+z=1
+s=1

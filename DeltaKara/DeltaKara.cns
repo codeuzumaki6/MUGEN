@@ -1,0 +1,4546 @@
+; Delta Kara: scientific ninja tools. Ultimate consumes energy only.
+[Data]
+life=1200
+power=3000
+attack=100
+defence=105
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=82
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-72
+mid.pos=0,-42
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+
+[Statedef 200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=200
+velset=2,0
+
+[State 200, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 200, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 200, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 200, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=201
+velset=2,0
+
+[State 201, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 201, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 201, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 201, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=202
+velset=2,0
+
+[State 202, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 202, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 202, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 202, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=210
+velset=2,0
+
+[State 210, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 210, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 210, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 210, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=211
+velset=2,0
+
+[State 211, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 211, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 211, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 211, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=212
+velset=2,0
+
+[State 212, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 212, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 212, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 212, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=220
+velset=2,0
+
+[State 220, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 220, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 220, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 220, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=221
+velset=2,0
+
+[State 221, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 221, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 221, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 221, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=222
+velset=2,0
+
+[State 222, Technique sound]
+type=PlaySnd
+trigger1=Time=3
+value=S1,0
+channel=1
+volumescale=60
+
+
+[State 222, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=12
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 222, Short approach]
+type=VelSet
+trigger1=Time>=7
+x=0
+
+
+[State 222, Restore control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=600
+
+[State 600, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 600, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 600, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 600, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=38,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 600, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 600, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=601
+
+[State 601, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 601, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 601, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 601, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=46,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 601, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 601, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=602
+
+[State 602, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 602, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 602, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 602, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=64,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 602, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 602, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=610
+
+[State 610, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 610, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 610, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 610, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=38,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 610, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 610, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=611
+
+[State 611, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 611, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 611, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 611, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=46,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 611, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 611, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=612
+
+[State 612, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 612, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 612, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 612, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=64,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 612, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 612, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=620
+
+[State 620, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 620, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 620, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 620, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=38,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 620, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 620, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=621
+
+[State 621, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 621, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 621, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 621, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=46,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 621, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 621, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=622
+
+[State 622, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 622, Short juggle]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 622, Gravity resumes]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 622, Actual collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=64,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=16
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 622, Land safely]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 622, Restore control]
+type=ChangeState
+trigger1=Time>=18
+value=50
+ctrl=1
+
+
+[Statedef 1000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1000
+velset=0,0
+poweradd=-300
+
+[State 1000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1000, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1000, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1000, Powered approach]
+type=VelSet
+trigger1=Time>=8 && Time<29
+x=3.2
+
+
+[State 1000, Stop approach]
+type=VelSet
+trigger1=Time>=29
+x=0
+
+
+[State 1000, Actual collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Actual collision]
+type=HitDef
+trigger1=Time=20
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Actual collision]
+type=HitDef
+trigger1=Time=30
+attr=S,SA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1000, Restore control]
+type=ChangeState
+trigger1=Time>=52
+value=0
+ctrl=1
+
+
+[Statedef 1010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1010
+velset=0,0
+poweradd=-350
+
+[State 1010, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1010, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1010, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1010, Actual collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=190,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1010, Restore control]
+type=ChangeState
+trigger1=Time>=52
+value=0
+ctrl=1
+
+
+[Statedef 1040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1040
+velset=0,0
+poweradd=-400
+
+[State 1040, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1040, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1040, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1040, Jet-assisted rise]
+type=VelSet
+trigger1=Time=8
+x=2.8
+y=-6.5
+
+
+[State 1040, Airborne rise]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1040, Real gravity]
+type=VelAdd
+trigger1=Time>8
+y=.44
+
+
+[State 1040, Physical technique]
+type=Helper
+trigger1=Time=8
+helpertype=Normal
+name="Foot thrusters"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1040, Land rising strike]
+type=ChangeState
+trigger1=Time>18 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 1040, Actual collision]
+type=HitDef
+trigger1=Time=8
+attr=A,SA
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1040, Actual collision]
+type=HitDef
+trigger1=Time=20
+attr=A,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1040, Restore control]
+type=ChangeState
+trigger1=Time>=48
+value=50
+ctrl=1
+
+
+[Statedef 1210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1210
+velset=0,0
+poweradd=-350
+
+[State 1210, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1210, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1210, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1210, Powered approach]
+type=VelSet
+trigger1=Time>=8 && Time<29
+x=7
+
+
+[State 1210, Stop approach]
+type=VelSet
+trigger1=Time>=29
+x=0
+
+
+[State 1210, Physical technique]
+type=Helper
+trigger1=Time=0
+helpertype=Normal
+name="Dash thrusters"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1210, Actual collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1210, Actual collision]
+type=HitDef
+trigger1=Time=22
+attr=S,SA
+damage=100,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1210, Restore control]
+type=ChangeState
+trigger1=Time>=52
+value=0
+ctrl=1
+
+
+[Statedef 1400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1400
+velset=0,0
+poweradd=-200
+
+[State 1400, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1400, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1400, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1400, Powered approach]
+type=VelSet
+trigger1=Time>=8 && Time<29
+x=5
+
+
+[State 1400, Stop approach]
+type=VelSet
+trigger1=Time>=29
+x=0
+
+
+[State 1400, Actual collision]
+type=HitDef
+trigger1=Time=7
+attr=C,SA
+damage=105,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1400, Restore control]
+type=ChangeState
+trigger1=Time>=43
+value=0
+ctrl=1
+
+
+[Statedef 1410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1410
+velset=0,0
+poweradd=-300
+
+[State 1410, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1410, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1410, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1410, Jet-assisted rise]
+type=VelSet
+trigger1=Time=8
+x=2.8
+y=-6.5
+
+
+[State 1410, Airborne rise]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1410, Real gravity]
+type=VelAdd
+trigger1=Time>8
+y=.44
+
+
+[State 1410, Physical technique]
+type=Helper
+trigger1=Time=8
+helpertype=Normal
+name="Foot thrusters"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1410, Land rising strike]
+type=ChangeState
+trigger1=Time>18 && Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 1410, Actual collision]
+type=HitDef
+trigger1=Time=7
+attr=A,SA
+damage=135,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1410, Restore control]
+type=ChangeState
+trigger1=Time>=45
+value=50
+ctrl=1
+
+
+[Statedef 1200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1200
+velset=0,0
+poweradd=-200
+
+[State 1200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1200, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1200, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1200, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8800
+ID=8800
+postype=P1
+pos=35,-55
+scale=.3,.3
+removetime=10
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1200, Conservative opponent height]
+type=VarSet
+trigger1=Time=14
+v=24
+value=60
+
+
+[State 1200, Actual target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+v=24
+value=Floor(EnemyNear,Const(size.height))
+
+
+[State 1200, Keep short targets hittable]
+type=VarSet
+trigger1=Time=14
+v=24
+value=IfElse(Var(24)<12,12,IfElse(Var(24)>80,80,Var(24)))
+
+
+[State 1200, Aim inside target body]
+type=VarSet
+trigger1=Time=14
+fv=12
+value=Var(24)*.4
+
+
+[State 1200, Lower crouching aim]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0 && EnemyNear,StateType=C
+fv=12
+value=Var(24)*.18
+
+
+[State 1200, Projectile vertical speed]
+type=VarSet
+trigger1=Time=14
+fv=13
+value=(55-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1200, Track actual airborne target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+fv=13
+value=(55+(EnemyNear,Pos Y)-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1200, Ocular damage]
+type=VarSet
+trigger1=Time=14
+v=50
+value=115
+
+
+[State 1200, Regeneration interference duration]
+type=VarSet
+trigger1=Time=14
+v=51
+value=180
+
+
+[State 1200, New beam contact flag]
+type=VarSet
+trigger1=Time=14
+v=52
+value=0
+
+
+[State 1200, Shot kind]
+type=VarSet
+trigger1=Time=14
+v=53
+value=1
+
+
+[State 1200, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink ocular shot"
+ID=9200
+stateno=9200
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 1200, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink beam trail"
+ID=9202
+stateno=9202
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 1200, Technique sound]
+type=PlaySnd
+trigger1=Time=14
+value=S1,42
+channel=1
+volumescale=80
+
+
+[State 1200, Restore control]
+type=ChangeState
+trigger1=Time>=48
+value=0
+ctrl=1
+
+
+[Statedef 1020]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1020
+velset=0,0
+poweradd=-500
+
+[State 1020, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1020, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1020, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1020, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8800
+ID=8800
+postype=P1
+pos=35,-55
+scale=.3,.3
+removetime=10
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1020, Conservative opponent height]
+type=VarSet
+trigger1=Time=14
+v=24
+value=60
+
+
+[State 1020, Actual target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+v=24
+value=Floor(EnemyNear,Const(size.height))
+
+
+[State 1020, Keep short targets hittable]
+type=VarSet
+trigger1=Time=14
+v=24
+value=IfElse(Var(24)<12,12,IfElse(Var(24)>80,80,Var(24)))
+
+
+[State 1020, Aim inside target body]
+type=VarSet
+trigger1=Time=14
+fv=12
+value=Var(24)*.4
+
+
+[State 1020, Lower crouching aim]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0 && EnemyNear,StateType=C
+fv=12
+value=Var(24)*.18
+
+
+[State 1020, Projectile vertical speed]
+type=VarSet
+trigger1=Time=14
+fv=13
+value=(55-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1020, Track actual airborne target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+fv=13
+value=(55+(EnemyNear,Pos Y)-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1020, Ocular damage]
+type=VarSet
+trigger1=Time=14
+v=50
+value=230
+
+
+[State 1020, Regeneration interference duration]
+type=VarSet
+trigger1=Time=14
+v=51
+value=300
+
+
+[State 1020, New beam contact flag]
+type=VarSet
+trigger1=Time=14
+v=52
+value=0
+
+
+[State 1020, Shot kind]
+type=VarSet
+trigger1=Time=14
+v=53
+value=2
+
+
+[State 1020, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink ocular shot"
+ID=9200
+stateno=9200
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 1020, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink beam trail"
+ID=9202
+stateno=9202
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 1020, Technique sound]
+type=PlaySnd
+trigger1=Time=14
+value=S1,42
+channel=1
+volumescale=80
+
+
+[State 1020, Restore control]
+type=ChangeState
+trigger1=Time>=58
+value=0
+ctrl=1
+
+
+[Statedef 11200]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=11200
+velset=0,0
+poweradd=-200
+
+[State 11200, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11200, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11200, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 11200, Short stable firing hover]
+type=VelSet
+trigger1=Time<26
+x=0
+y=0
+
+
+[State 11200, Gravity after firing]
+type=VelAdd
+trigger1=Time>=26
+y=.44
+
+
+[State 11200, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8800
+ID=8800
+postype=P1
+pos=35,-55
+scale=.3,.3
+removetime=10
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 11200, Conservative opponent height]
+type=VarSet
+trigger1=Time=14
+v=24
+value=60
+
+
+[State 11200, Actual target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+v=24
+value=Floor(EnemyNear,Const(size.height))
+
+
+[State 11200, Keep short targets hittable]
+type=VarSet
+trigger1=Time=14
+v=24
+value=IfElse(Var(24)<12,12,IfElse(Var(24)>80,80,Var(24)))
+
+
+[State 11200, Aim inside target body]
+type=VarSet
+trigger1=Time=14
+fv=12
+value=Var(24)*.4
+
+
+[State 11200, Lower crouching aim]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0 && EnemyNear,StateType=C
+fv=12
+value=Var(24)*.18
+
+
+[State 11200, Projectile vertical speed]
+type=VarSet
+trigger1=Time=14
+fv=13
+value=(55-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 11200, Track actual airborne target height]
+type=VarSet
+trigger1=Time=14 && NumEnemy>0
+fv=13
+value=(55+(EnemyNear,Pos Y)-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 11200, Ocular damage]
+type=VarSet
+trigger1=Time=14
+v=50
+value=115
+
+
+[State 11200, Regeneration interference duration]
+type=VarSet
+trigger1=Time=14
+v=51
+value=180
+
+
+[State 11200, New beam contact flag]
+type=VarSet
+trigger1=Time=14
+v=52
+value=0
+
+
+[State 11200, Shot kind]
+type=VarSet
+trigger1=Time=14
+v=53
+value=1
+
+
+[State 11200, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink ocular shot"
+ID=9200
+stateno=9200
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 11200, Physical technique]
+type=Helper
+trigger1=Time=14
+helpertype=Normal
+name="Pink beam trail"
+ID=9202
+stateno=9202
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 11200, Technique sound]
+type=PlaySnd
+trigger1=Time=14
+value=S1,42
+channel=1
+volumescale=80
+
+
+[State 11200, Restore control]
+type=ChangeState
+trigger1=Time>=48
+value=50
+ctrl=1
+
+
+[Statedef 1030]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1030
+velset=0,0
+poweradd=-450
+
+[State 1030, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1030, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1030, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1030, Physical technique]
+type=Helper
+trigger1=Time=4
+helpertype=Normal
+name="Propulsion"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1030, Launch]
+type=VelSet
+trigger1=Time=8
+x=5
+y=-7
+
+
+[State 1030, Become airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1030, Dive]
+type=VelSet
+trigger1=Time=18
+x=5
+y=7
+
+
+[State 1030, Actual collision]
+type=HitDef
+trigger1=Time=18
+attr=A,SA
+damage=150,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1030, Land and resolve impact]
+type=ChangeState
+trigger1=Time>18 && Pos Y>=0 && Vel Y>0
+value=1031
+
+
+[State 1030, Restore control]
+type=ChangeState
+trigger1=Time>=80
+value=50
+ctrl=1
+
+
+[Statedef 1050]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1050
+velset=0,0
+poweradd=-500
+
+[State 1050, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1050, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1050, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1050, Physical technique]
+type=Helper
+trigger1=Time=4
+helpertype=Normal
+name="Propulsion"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1050, Launch]
+type=VelSet
+trigger1=Time=8
+x=1.4
+y=-7
+
+
+[State 1050, Become airborne]
+type=StateTypeSet
+trigger1=Time=8
+statetype=A
+physics=N
+
+
+[State 1050, Dive]
+type=VelSet
+trigger1=Time=18
+x=1.5
+y=7
+
+
+[State 1050, Actual collision]
+type=HitDef
+trigger1=Time=18
+attr=A,SA
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=16
+ground.velocity=-0.35,0
+air.hittime=28
+air.velocity=-0.6,-1
+fall=0
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1050, Land and resolve impact]
+type=ChangeState
+trigger1=Time>18 && Pos Y>=0 && Vel Y>0
+value=1051
+
+
+[State 1050, Restore control]
+type=ChangeState
+trigger1=Time>=80
+value=50
+ctrl=1
+
+
+[Statedef 1031]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1031
+velset=0,0
+
+[State 1031, Actual collision]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=24
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1031, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8720
+ID=8720
+postype=P1
+pos=0,-20
+scale=.9,.5
+removetime=-2
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1031, Technique sound]
+type=PlaySnd
+trigger1=Time=7
+value=S1,41
+channel=1
+volumescale=75
+
+
+[State 1031, Restore control]
+type=ChangeState
+trigger1=Time>=37
+value=0
+ctrl=1
+
+
+[Statedef 1051]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1051
+velset=0,0
+
+[State 1051, Actual collision]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=160,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=24
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1051, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8720
+ID=8720
+postype=P1
+pos=0,-20
+scale=.9,.5
+removetime=-2
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1051, Technique sound]
+type=PlaySnd
+trigger1=Time=7
+value=S1,41
+channel=1
+volumescale=75
+
+
+[State 1051, Restore control]
+type=ChangeState
+trigger1=Time>=37
+value=0
+ctrl=1
+
+
+[Statedef 1420]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1420
+velset=0,0
+poweradd=-400
+
+[State 1420, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1420, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1420, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1420, Actual collision]
+type=HitDef
+trigger1=Time=7
+attr=S,SA
+damage=130,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=24
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 1420, Visible technique]
+type=Explod
+trigger1=Time=7
+anim=8720
+ID=8720
+postype=P1
+pos=0,-20
+scale=.9,.5
+removetime=-2
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1420, Technique sound]
+type=PlaySnd
+trigger1=Time=7
+value=S1,41
+channel=1
+volumescale=75
+
+
+[State 1420, Restore control]
+type=ChangeState
+trigger1=Time>=37
+value=0
+ctrl=1
+
+
+[Statedef 1430]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=1430
+velset=0,0
+poweradd=-150
+
+[State 1430, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1430, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1430, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1430, Clear absorption event]
+type=VarSet
+trigger1=Time=0
+v=46
+value=0
+
+
+[State 1430, Brief projectile immunity, never melee immunity]
+type=HitBy
+trigger1=Time>=8 && Time<=36 && Var(44)<3
+value=SCA,NA,SA,HA,NT,ST,HT
+time=1
+
+
+[State 1430, Physical technique]
+type=Helper
+trigger1=Time=8 && Var(44)<3
+helpertype=Normal
+name="Ocular absorption"
+ID=9110
+stateno=9110
+postype=P1
+pos=20,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 1430, Actual absorbed projectile confirms]
+type=ChangeState
+trigger1=Var(46)>0
+value=1431
+
+
+[State 1430, Restore control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1431]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=1431
+velset=0,0
+
+[State 1431, Finish absorbing the projectile tail]
+type=HitBy
+trigger1=Time<=7
+value=SCA,NA,SA,HA,NT,ST,HT
+time=1
+
+
+[State 1431, Recover energy from absorbed chakra]
+type=PowerAdd
+trigger1=Time=0
+value=220
+
+
+[State 1431, Finite storage]
+type=VarSet
+trigger1=Time=0
+v=44
+value=IfElse(Var(44)<3,Var(44)+1,3)
+
+
+[State 1431, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,40
+channel=1
+volumescale=75
+
+
+[State 1431, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8803
+ID=8803
+postype=P1
+pos=13,-68
+scale=.35,.35
+removetime=18
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1431, Restore control]
+type=ChangeState
+trigger1=Time>=22
+value=0
+ctrl=1
+
+
+[Statedef 1440]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=1440
+velset=0,0
+poweradd=-250
+
+[State 1440, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1440, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1440, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 1440, Use one absorbed charge]
+type=VarAdd
+trigger1=Time=0
+v=44
+value=-1
+
+
+[State 1440, Conservative opponent height]
+type=VarSet
+trigger1=Time=10
+v=24
+value=60
+
+
+[State 1440, Actual target height]
+type=VarSet
+trigger1=Time=10 && NumEnemy>0
+v=24
+value=Floor(EnemyNear,Const(size.height))
+
+
+[State 1440, Keep short targets hittable]
+type=VarSet
+trigger1=Time=10
+v=24
+value=IfElse(Var(24)<12,12,IfElse(Var(24)>80,80,Var(24)))
+
+
+[State 1440, Aim inside target body]
+type=VarSet
+trigger1=Time=10
+fv=12
+value=Var(24)*.4
+
+
+[State 1440, Lower crouching aim]
+type=VarSet
+trigger1=Time=10 && NumEnemy>0 && EnemyNear,StateType=C
+fv=12
+value=Var(24)*.18
+
+
+[State 1440, Projectile vertical speed]
+type=VarSet
+trigger1=Time=10
+fv=13
+value=(55-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1440, Track actual airborne target height]
+type=VarSet
+trigger1=Time=10 && NumEnemy>0
+fv=13
+value=(55+(EnemyNear,Pos Y)-Pos Y-FVar(12))*11/IfElse(P2Dist X>57,P2Dist X-35,22)
+
+
+[State 1440, Ocular damage]
+type=VarSet
+trigger1=Time=10
+v=50
+value=180
+
+
+[State 1440, Regeneration interference duration]
+type=VarSet
+trigger1=Time=10
+v=51
+value=0
+
+
+[State 1440, New beam contact flag]
+type=VarSet
+trigger1=Time=10
+v=52
+value=0
+
+
+[State 1440, Shot kind]
+type=VarSet
+trigger1=Time=10
+v=53
+value=0
+
+
+[State 1440, Physical technique]
+type=Helper
+trigger1=Time=10
+helpertype=Normal
+name="Pink ocular shot"
+ID=9200
+stateno=9200
+postype=P1
+pos=35,-55
+keyctrl=0
+ownpal=1
+
+
+
+[State 1440, Technique sound]
+type=PlaySnd
+trigger1=Time=10
+value=S1,42
+channel=1
+volumescale=80
+
+
+[State 1440, Restore control]
+type=ChangeState
+trigger1=Time>=45
+value=0
+ctrl=1
+
+
+[Statedef 9110]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=9110
+velset=0,0
+
+[State 9110, Follow the absorbing eye]
+type=BindToRoot
+trigger1=1
+time=1
+pos=20,0
+
+
+[State 9110, No collision push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9110, Only projectile attributes enter the field]
+type=HitBy
+trigger1=1
+value=SCA,NP,SP,HP
+time=1
+
+
+[State 9110, Field cannot be killed by absorbed damage]
+type=DefenceMulSet
+trigger1=1
+value=0
+
+
+[State 9110, No field shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9110, Small eye vortex]
+type=Explod
+trigger1=Time%6=0
+anim=8803
+postype=P1
+pos=-7,-68
+scale=.35,.35
+removetime=8
+ownpal=1
+sprpriority=5
+
+
+[State 9110, Do not draw a body-sized vortex]
+type=AssertSpecial
+trigger1=1
+flag=Invisible
+
+
+[State 9110, Absorb real helper and engine projectiles]
+type=HitOverride
+trigger1=1
+attr=SCA,NP,SP,HP
+stateno=9111
+time=1
+forceair=0
+
+
+[State 9110, Finite field and interruption cleanup]
+type=DestroySelf
+trigger1=Time>=30
+trigger2=(Root,StateNo!=1430)
+trigger3=RoundState!=2
+
+
+
+[Statedef 9111]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=9110
+velset=0,0
+
+[State 9111, Follow the absorbing eye]
+type=BindToRoot
+trigger1=1
+time=1
+pos=20,0
+
+
+[State 9111, No collision push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9111, Only projectile attributes enter the field]
+type=HitBy
+trigger1=1
+value=SCA,NP,SP,HP
+time=1
+
+
+[State 9111, Field cannot be killed by absorbed damage]
+type=DefenceMulSet
+trigger1=1
+value=0
+
+
+[State 9111, No field shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9111, Small eye vortex]
+type=Explod
+trigger1=Time%6=0
+anim=8803
+postype=P1
+pos=-7,-68
+scale=.35,.35
+removetime=8
+ownpal=1
+sprpriority=5
+
+
+[State 9111, Do not draw a body-sized vortex]
+type=AssertSpecial
+trigger1=1
+flag=Invisible
+
+
+[State 9111, Signal actual absorption]
+type=ParentVarSet
+trigger1=Time=0
+v=46
+value=1
+
+
+[State 9111, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,40
+channel=1
+volumescale=75
+
+
+[State 9111, Retire successful field]
+type=DestroySelf
+trigger1=Time=0
+
+
+
+[State 9111, Finite field and interruption cleanup]
+type=DestroySelf
+trigger1=Time>=30
+trigger2=(Root,StateNo!=1430)
+trigger3=RoundState!=2
+
+
+
+[Statedef 9200]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=9200
+velset=0,0
+
+[State 9200, Read immutable shot data]
+type=VarSet
+trigger1=Time=0
+v=0
+value=Parent,Var(50)
+
+
+[State 9200, Read immutable shot data]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(51)
+
+
+[State 9200, Read immutable shot data]
+type=VarSet
+trigger1=Time=0
+v=2
+value=Parent,Var(53)
+
+
+[State 9200, Read downward aim]
+type=VarSet
+trigger1=Time=0
+fv=0
+value=Parent,FVar(13)
+
+
+[State 9200, Aim at real short and crouched targets]
+type=VelSet
+trigger1=Time=0
+x=11
+y=FVar(0)
+
+
+[State 9200, Head follows trajectory]
+type=AngleDraw
+trigger1=1
+scale=.35,.35
+
+
+[State 9200, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9200, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9200, Actual collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=Var(0),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=9200
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 9200, Stop beam on real contact]
+type=ParentVarSet
+trigger1=MoveContact
+v=52
+value=1
+
+
+[State 9200, Cell destruction requires a real player hit]
+type=ChangeState
+trigger1=MoveHit && NumTarget(9200)>0 && Var(1)>0
+value=9210
+
+
+[State 9200, Resolve shot]
+type=DestroySelf
+trigger1=MoveContact || Time>=28 || FrontEdgeBodyDist<-120 || RoundState!=2
+
+
+
+[Statedef 9202]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8801
+velset=0,0
+
+[State 9202, Read beam angle]
+type=VarSet
+trigger1=Time=0
+fv=0
+value=Parent,FVar(13)
+
+
+[State 9202, Attach emission to eye]
+type=BindToRoot
+trigger1=1
+time=1
+pos=35,-55
+
+
+[State 9202, Beam grows to the physical tip]
+type=AngleDraw
+trigger1=1
+value=-ATan(FVar(0)/11)*180/3.14159265
+scale=IfElse(Time<27,Time,27)*Exp(.5*Ln(121+FVar(0)*FVar(0)))/211.0,.48
+
+
+[State 9202, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9202, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9202, Clear on actual contact, miss or interruption]
+type=DestroySelf
+trigger1=Time>=28 || (Root,Var(52))>0 || (Root,MoveType=H) || RoundState!=2
+
+
+
+[Statedef 9210]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8800
+velset=0,0
+
+[State 9210, Keep only the already confirmed target after recovery]
+type=ReversalDef
+trigger1=Time=0
+reversal.attr=SCA,NP,SP,HP
+hitflag=MAF
+sparkno=-1
+pausetime=0,0
+
+
+[State 9210, Remember post-hit life]
+type=VarSet
+trigger1=Time=0 && NumTarget>0
+v=3
+value=Target,Life
+
+
+[State 9210, Observe only positive healing since the previous tick]
+type=VarSet
+trigger1=NumTarget>0
+v=4
+value=IfElse((Target,Life)>Var(3),(Target,Life)-Var(3),0)
+
+
+[State 9210, Prevent healing for a finite duration]
+type=TargetLifeAdd
+trigger1=NumTarget>0 && Var(4)>0
+ID=-1
+value=-Var(4)
+absolute=1
+kill=0
+
+
+[State 9210, Follow subsequent real damage without restoring it]
+type=VarSet
+trigger1=NumTarget>0
+v=3
+value=Target,Life
+
+
+[State 9210, Small persistent effect on actual target]
+type=PosSet
+trigger1=NumTarget>0
+x=Target,Pos X
+y=(Target,Pos Y)-40
+
+
+[State 9210, Subtle cellular interference marker]
+type=AngleDraw
+trigger1=1
+scale=.16,.16
+
+
+[State 9210, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9210, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9210, Finite debuff and target cleanup]
+type=DestroySelf
+trigger1=Time>=Var(1) || NumTarget=0 || RoundState!=2
+
+
+
+[Statedef 170]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=170
+velset=0,0
+
+[State 170, Round pose]
+type=Null
+trigger1=1
+
+
+
+[Statedef 180]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=180
+velset=0,0
+
+[State 180, Round pose]
+type=Null
+trigger1=1
+
+
+
+[Statedef 190]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=190
+velset=0,0
+
+[State 190, Round pose]
+type=Null
+trigger1=1
+
+
+
+[State 190, Brief intro]
+type=AssertSpecial
+trigger1=Time<40
+flag=Intro
+
+
+[State 190, Restore control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 500]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=500
+velset=0,0
+
+[State 500, Recharge energy]
+type=PowerAdd
+trigger1=1
+value=20
+
+
+[State 500, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,4
+channel=3
+volumescale=65
+
+
+[State 500, Physical technique]
+type=Helper
+trigger1=Time=0
+helpertype=Normal
+name="Delta energy aura"
+ID=9550
+stateno=9550
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 500, Release charge]
+type=ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=75
+value=0
+ctrl=1
+
+
+[Statedef 520]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=520
+velset=0,0
+poweradd=-1500
+
+[State 520, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 520, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 520, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 520, Activate overdrive]
+type=VarSet
+trigger1=Time=20
+v=40
+value=720
+
+
+[State 520, Overdrive cooldown]
+type=VarSet
+trigger1=Time=20
+v=41
+value=1500
+
+
+[State 520, Visible technique]
+type=Explod
+trigger1=Time=20
+anim=8720
+ID=8720
+postype=P1
+pos=0,-42
+scale=1,1
+removetime=-2
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 520, Restore control]
+type=ChangeState
+trigger1=Time>=42
+value=0
+ctrl=1
+
+
+[Statedef 550]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=550
+velset=0,0
+
+[State 550, Remember jet flight]
+type=VarSet
+trigger1=Time=0
+v=13
+value=1
+
+
+[State 550, Neutral jet velocity]
+type=VelSet
+trigger1=1
+x=0
+y=0
+
+
+[State 550, Steer flight]
+type=VelSet
+trigger1=command="holdfwd"
+x=6.5
+
+
+[State 550, Steer flight]
+type=VelSet
+trigger1=command="holdback"
+x=-6.5
+
+
+[State 550, Steer flight]
+type=VelSet
+trigger1=command="holdup"
+y=-4.5
+
+
+[State 550, Steer flight]
+type=VelSet
+trigger1=command="holddown"
+y=4.5
+
+
+[State 550, Flight consumes energy]
+type=PowerAdd
+trigger1=Time%15=0
+value=-25
+
+
+[State 550, Physical technique]
+type=Helper
+trigger1=Time=0 && NumHelper(9500)=0
+helpertype=Normal
+name="Flight thrusters"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 550, Debounce the flight chord after shutdown]
+type=VarSet
+trigger1=Time>12 && command="flight"
+v=14
+value=12
+
+
+[State 550, Flight can be toggled off]
+type=ChangeState
+trigger1=Time>12 && command="flight"
+value=50
+ctrl=1
+
+
+[State 550, Land or run out of flight fuel]
+type=ChangeState
+trigger1=Power<25 || Time>=480 || (Pos Y>=0 && Vel Y>=0)
+value=50
+ctrl=1
+
+
+[Statedef 9500]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8802
+velset=0,0
+
+[State 9500, Boot exhaust follows the actual fighter]
+type=BindToRoot
+trigger1=1
+time=1
+pos=-5,-3
+
+
+[State 9500, Exhaust direction]
+type=AngleDraw
+trigger1=1
+value=IfElse((Root,StateNo)=100 || (Root,StateNo)=1210,-90,IfElse((Root,StateNo)=105,90,0))
+scale=.4,.4
+
+
+[State 9500, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9500, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9500, Exhaust does not outlive movement or a hit]
+type=DestroySelf
+trigger1=(Root,MoveType=H) || RoundState!=2 || ((Root,StateNo)!=550 && (Root,StateNo)!=100 && (Root,StateNo)!=105 && (Root,StateNo)!=1210 && (Root,StateNo)!=1030 && (Root,StateNo)!=1050 && (Root,StateNo)!=1040 && (Root,StateNo)!=1410)
+
+
+
+[Statedef 9550]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9550, Follow energy source]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-40
+
+
+[State 9550, Vertical energy]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.3,.38
+
+
+[State 9550, Pink scientific energy]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=256,70,220
+
+
+[State 9550, Aura transparency]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=180,256
+
+
+[State 9550, Behind the fighter]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9550, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9550, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9550, Finite energy aura]
+type=DestroySelf
+trigger1=Time>=720
+trigger2=(Root,StateNo!=500)
+trigger3=(Root,Life<=0)
+trigger4=RoundState!=2
+
+
+
+[Statedef 9551]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9551, Follow energy source]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-40
+
+
+[State 9551, Vertical energy]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.3,.38
+
+
+[State 9551, Pink scientific energy]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=256,70,220
+
+
+[State 9551, Aura transparency]
+type=Trans
+trigger1=1
+trans=AddAlpha
+alpha=95,256
+
+
+[State 9551, Behind the fighter]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9551, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9551, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9551, Finite energy aura]
+type=DestroySelf
+trigger1=Time>=720
+trigger2=(Root,Var(40)=0)
+trigger3=(Root,Life<=0)
+trigger4=RoundState!=2
+
+
+
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3000
+velset=0,0
+poweradd=-3000
+
+[State 3000, Technique sound]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 3000, Brief activation]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 3000, Visible technique]
+type=Explod
+trigger1=Time=0
+anim=8710
+ID=8710
+postype=P1
+pos=8,-60
+scale=.5,.5
+removetime=8
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 3000, Technique sound]
+type=PlaySnd
+trigger1=Time=20
+value=S1,43
+channel=1
+volumescale=85
+
+
+[State 3000, Visible technique]
+type=Explod
+trigger1=Time=10
+anim=8800
+ID=8800
+postype=P1
+pos=0,-40
+scale=.8,.8
+removetime=38
+bindtime=1
+ownpal=1
+sprpriority=4
+removeongethit=1
+pausemovetime=100
+supermovetime=100
+
+
+[State 3000, Brief protection during the actual explosion]
+type=NotHitBy
+trigger1=Time>=46 && Time<=64
+value=SCA
+time=1
+
+
+[State 3000, Physical technique]
+type=Helper
+trigger1=Time=48
+helpertype=Normal
+name="Autodestruccion de Delta"
+ID=9300
+stateno=9300
+postype=P1
+pos=0,0
+keyctrl=0
+ownpal=1
+
+
+
+[State 3000, Bright detonation]
+type=EnvColor
+trigger1=Time=60
+value=255,240,250
+time=3
+under=0
+
+
+[State 3000, Technique sound]
+type=PlaySnd
+trigger1=Time=60
+value=S1,41
+channel=1
+volumescale=95
+
+
+[State 3000, Large area feedback]
+type=EnvShake
+trigger1=Time=60
+time=16
+freq=65
+ampl=-7
+
+
+[State 3000, Restore control]
+type=ChangeState
+trigger1=Time>=120
+value=0
+ctrl=1
+
+
+[Statedef 9300]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=9300
+velset=0,0
+
+[State 9300, No explosion push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9300, No shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9300, Actual collision]
+type=HitDef
+trigger1=Time=12
+attr=S,HP
+damage=0,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-42
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=16
+ground.velocity=-6,-7
+air.hittime=28
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=40
+getpower=0,0
+givepower=10,5
+ID=9300
+hitonce=1
+envshake.time=7
+envshake.ampl=-4
+
+
+[State 9300, Finite life-relative area budget]
+type=VarSet
+trigger1=MoveHit && NumTarget(9300)>0 && Var(2)=0
+v=0
+value=IfElse((Target(9300),LifeMax)>=1000,450,Floor((Target(9300),LifeMax)*.45))
+
+
+[State 9300, Damage only a target actually struck by the explosion]
+type=TargetLifeAdd
+trigger1=MoveHit && NumTarget(9300)>0 && Var(2)=0
+ID=9300
+value=-Var(0)
+absolute=1
+kill=1
+
+
+[State 9300, Single damage application]
+type=VarSet
+trigger1=MoveHit && NumTarget(9300)>0
+v=2
+value=1
+
+
+[State 9300, Explosion finishes]
+type=DestroySelf
+trigger1=Time>=36 || RoundState!=2
+
+
+
+[Statedef -2]
+
+[State -2, Finite overdrive timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(14)>0
+v=14
+value=-1
+ignorehitpause=1
+
+[State -2, Finite overdrive timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(40)>0
+v=40
+value=-1
+ignorehitpause=1
+
+[State -2, Finite overdrive timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(41)>0
+v=41
+value=-1
+ignorehitpause=1
+
+[State -2, Overdrive attack power]
+type=AttackMulSet
+trigger1=!IsHelper
+value=IfElse(Var(40)>0,1.2,1)
+
+
+[State -2, Projectile power follows the same mode once]
+type=AttackMulSet
+trigger1=IsHelper
+value=IfElse((Root,Var(40))>0,1.2,1)
+
+
+[State -2, Finite aerial chain reset]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=12
+value=0
+
+
+[State -2, Flight reset on ground]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=13
+value=0
+
+
+[State -2, Dash foot exhaust]
+type=Helper
+trigger1=!IsHelper && (StateNo=100 || StateNo=105) && NumHelper(9500)=0
+helpertype=Normal
+name="Propulsores"
+ID=9500
+stateno=9500
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State -2, Overdrive has a visible finite aura]
+type=Helper
+trigger1=!IsHelper && Var(40)>0 && NumHelper(9551)=0 && Life>0 && RoundState=2
+helpertype=Normal
+name="Sobrecarga de Delta"
+ID=9551
+stateno=9551
+postype=P1
+pos=0,-40
+ownpal=1
+keyctrl=0
+
+
+[State -2, Stop charge sound]
+type=StopSnd
+trigger1=!IsHelper && StateNo!=500
+channel=3
+
+
+[State -2, Clear effects at round end]
+type=RemoveExplod
+trigger1=!IsHelper && RoundState!=2
+
+

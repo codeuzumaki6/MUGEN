@@ -1,0 +1,2314 @@
+[
+  {
+    "group": 0,
+    "number": 0,
+    "file": "assets/sprites/0_0.png",
+    "axis": [
+      20,
+      84
+    ],
+    "role": "idle0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        73,
+        16,
+        145,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "b9c5922b7d28593b89145a5e87460a1ea153fd3f8afed938e0c952b8843a5c14"
+  },
+  {
+    "group": 0,
+    "number": 1,
+    "file": "assets/sprites/0_1.png",
+    "axis": [
+      20,
+      84
+    ],
+    "role": "idle1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        239,
+        16,
+        313,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "e561798ba2588ec49e1bec63113dfc700b813fb8dbc2434150dba5ff740211c0"
+  },
+  {
+    "group": 0,
+    "number": 2,
+    "file": "assets/sprites/0_2.png",
+    "axis": [
+      20,
+      84
+    ],
+    "role": "idle2",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        417,
+        16,
+        491,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "b87ac79b5aa946ba9c7094295280422957232e27bb36002fbf3c7fb3dc25e5b7"
+  },
+  {
+    "group": 0,
+    "number": 3,
+    "file": "assets/sprites/0_3.png",
+    "axis": [
+      24,
+      83
+    ],
+    "role": "walk0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        595,
+        17,
+        698,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "ed3196bb2757fe2835b6ec3c1b3e4b4c805cfe9b1bfd6dd2d4d5dbd3e7b96d9c"
+  },
+  {
+    "group": 0,
+    "number": 4,
+    "file": "assets/sprites/0_4.png",
+    "axis": [
+      26,
+      83
+    ],
+    "role": "walk1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        763,
+        17,
+        859,
+        186
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "ea528151f24f384b12ebc389c9dfb929dd0d6e4461ceb72454daada0eb656c1f"
+  },
+  {
+    "group": 0,
+    "number": 5,
+    "file": "assets/sprites/0_5.png",
+    "axis": [
+      24,
+      83
+    ],
+    "role": "walk2",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        937,
+        17,
+        1036,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "4e3e5e951572867f6bcaed7d7e1d86fbc8fa0a4a5fac4237ada90f3680541cae"
+  },
+  {
+    "group": 0,
+    "number": 6,
+    "file": "assets/sprites/0_6.png",
+    "axis": [
+      26,
+      84
+    ],
+    "role": "walk3",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1115,
+        16,
+        1220,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "90bf68654c8433c048dd8cb8abc815696f6f3a48dc78168626a5151330cf6665"
+  },
+  {
+    "group": 0,
+    "number": 7,
+    "file": "assets/sprites/0_7.png",
+    "axis": [
+      26,
+      83
+    ],
+    "role": "walk4",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1303,
+        17,
+        1399,
+        187
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "b2de5291c2528fca0bd79f34b1b28907dfda8314e6c686b15be3e00a1b2dc1ac"
+  },
+  {
+    "group": 0,
+    "number": 8,
+    "file": "assets/sprites/0_8.png",
+    "axis": [
+      38,
+      74
+    ],
+    "role": "run0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        33,
+        212,
+        180,
+        364
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "7367dbf588090e50a420d9e2c852b4dddfa6f99b157497525b009a2719b582dc"
+  },
+  {
+    "group": 0,
+    "number": 9,
+    "file": "assets/sprites/0_9.png",
+    "axis": [
+      40,
+      75
+    ],
+    "role": "run1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        209,
+        211,
+        368,
+        364
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "db62a937c72295f64055405c936ae1286d17cabbb8b12f386cac3afa937953d4"
+  },
+  {
+    "group": 0,
+    "number": 10,
+    "file": "assets/sprites/0_10.png",
+    "axis": [
+      44,
+      74
+    ],
+    "role": "run2",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        384,
+        212,
+        550,
+        364
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "a3aca1e7d6a795a3d8ba225f583d04e996fda0133726d2b1f636bc6c22b322c3"
+  },
+  {
+    "group": 0,
+    "number": 11,
+    "file": "assets/sprites/0_11.png",
+    "axis": [
+      38,
+      74
+    ],
+    "role": "run3",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        588,
+        214,
+        745,
+        366
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "2440d63ceea8e0f4eb95d743d956fb84356ba38e37da2f83bfb6e09c2f3bff51"
+  },
+  {
+    "group": 0,
+    "number": 12,
+    "file": "assets/sprites/0_12.png",
+    "axis": [
+      44,
+      75
+    ],
+    "role": "run4",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        741,
+        212,
+        905,
+        365
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "6b71015708d02b696f7555cbd2bf5e47f574d9791569799d0401762e2f1b6508"
+  },
+  {
+    "group": 0,
+    "number": 13,
+    "file": "assets/sprites/0_13.png",
+    "axis": [
+      38,
+      76
+    ],
+    "role": "run5",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        918,
+        212,
+        1073,
+        368
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "b5e3e2846658e00368df884095d3dca1b63d405d7641bdf3994efcd3ed133e71"
+  },
+  {
+    "group": 0,
+    "number": 14,
+    "file": "assets/sprites/0_14.png",
+    "axis": [
+      22,
+      54
+    ],
+    "role": "crouch",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1128,
+        259,
+        1238,
+        371
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "458529fb3992f51d861fc24f356b8d1e86bf590f0b6ef8623b5d7eb2e83e339c"
+  },
+  {
+    "group": 0,
+    "number": 15,
+    "file": "assets/sprites/0_15.png",
+    "axis": [
+      24,
+      84
+    ],
+    "role": "guard",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1298,
+        199,
+        1401,
+        369
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "861c7fa0e8c4ba2acf5a548f9972c03bfb03843779f85e21513eec7485813b1f"
+  },
+  {
+    "group": 0,
+    "number": 16,
+    "file": "assets/sprites/0_16.png",
+    "axis": [
+      30,
+      82
+    ],
+    "role": "jab_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        27,
+        384,
+        172,
+        552
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "721c26ac7d22cbd1bea406547190954d3a09f7381e268b59b749e44eaa74dade"
+  },
+  {
+    "group": 0,
+    "number": 17,
+    "file": "assets/sprites/0_17.png",
+    "axis": [
+      30,
+      82
+    ],
+    "role": "jab",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        200,
+        385,
+        350,
+        552
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "11508bd9b40fa1075402d2d6ed8b3c111dad7d8c48911b1bfd096ae078901425"
+  },
+  {
+    "group": 0,
+    "number": 18,
+    "file": "assets/sprites/0_18.png",
+    "axis": [
+      28,
+      82
+    ],
+    "role": "jab_recover",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        383,
+        384,
+        512,
+        552
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "655867dcf2e4fcb161680ecdd4f0b0a3b8549231565bbcbcedb00bad4341a89e"
+  },
+  {
+    "group": 0,
+    "number": 19,
+    "file": "assets/sprites/0_19.png",
+    "axis": [
+      28,
+      83
+    ],
+    "role": "palm_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        562,
+        384,
+        685,
+        553
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "55ab11896fc7125f6a0f910dbff59d160705424d5652da1a2c7de146ebdfd0dd"
+  },
+  {
+    "group": 0,
+    "number": 20,
+    "file": "assets/sprites/0_20.png",
+    "axis": [
+      24,
+      82
+    ],
+    "role": "palm",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        726,
+        385,
+        863,
+        553
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "8be3c5405fa55553e690bc5886e5000df35e6c6c14b409c67b4901f52a5ac5e1"
+  },
+  {
+    "group": 0,
+    "number": 21,
+    "file": "assets/sprites/0_21.png",
+    "axis": [
+      22,
+      86
+    ],
+    "role": "kick_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        933,
+        379,
+        1039,
+        553
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "ad0ab0ceb5917e808f0c34afe18f60b2bda8aa052ff97aeef27b22d1a11ce1c0"
+  },
+  {
+    "group": 0,
+    "number": 22,
+    "file": "assets/sprites/0_22.png",
+    "axis": [
+      36,
+      84
+    ],
+    "role": "kick",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1086,
+        384,
+        1261,
+        553
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "0336a1d4eb3438db13e547f4923cc14b60574ca2034f759b5ae6b0f6ea89e368"
+  },
+  {
+    "group": 0,
+    "number": 23,
+    "file": "assets/sprites/0_23.png",
+    "axis": [
+      30,
+      83
+    ],
+    "role": "kick_recover",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1280,
+        386,
+        1400,
+        555
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "7c4c7eb2eef0aac832f50ccfe7471c288d9ca4125ea4072ff56f04dec7af60a2"
+  },
+  {
+    "group": 0,
+    "number": 24,
+    "file": "assets/sprites/0_24.png",
+    "axis": [
+      24,
+      78
+    ],
+    "role": "lance_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        31,
+        573,
+        139,
+        732
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "0fb144a4d6ac6f798e72ca784582e484ad88f4c21eb556cc624455b880be5404"
+  },
+  {
+    "group": 0,
+    "number": 25,
+    "file": "assets/sprites/0_25.png",
+    "axis": [
+      35,
+      74
+    ],
+    "role": "lance",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        158,
+        576,
+        357,
+        728
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "716d77ec77e7f14051fb44f0b4d4174f80f082df2715fd711c1afdeeaee07666"
+  },
+  {
+    "group": 0,
+    "number": 26,
+    "file": "assets/sprites/0_26.png",
+    "axis": [
+      24,
+      80
+    ],
+    "role": "lance_recover",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        399,
+        574,
+        501,
+        737
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "e5038b5aae7439fb82ee0c6b08798d9303238432ced874860ba3b6a1dc22fa85"
+  },
+  {
+    "group": 0,
+    "number": 27,
+    "file": "assets/sprites/0_27.png",
+    "axis": [
+      36,
+      67
+    ],
+    "role": "sweep_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        571,
+        596,
+        712,
+        733
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "874a915677410270d255166dad8fbe87aaa361476e90f86732b488258f1724d8"
+  },
+  {
+    "group": 0,
+    "number": 28,
+    "file": "assets/sprites/0_28.png",
+    "axis": [
+      50,
+      47
+    ],
+    "role": "sweep",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        715,
+        623,
+        919,
+        720
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "ffaf533eaa0c4b2aa4b46fe73e668b5c75f70e17b9ba5fe762cee91841aa9c14"
+  },
+  {
+    "group": 0,
+    "number": 29,
+    "file": "assets/sprites/0_29.png",
+    "axis": [
+      30,
+      75
+    ],
+    "role": "upper_ready",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        951,
+        587,
+        1067,
+        741
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "f79e6bcc717ae005015b26851f6f0a787bbd652fe1c02ffce264a89eca12b648"
+  },
+  {
+    "group": 0,
+    "number": 30,
+    "file": "assets/sprites/0_30.png",
+    "axis": [
+      32,
+      94
+    ],
+    "role": "upper",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1110,
+        548,
+        1216,
+        740
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "38174825b5ed01298fec7f87f16da46a862ceb1f241bee62fe52baf7fbb01fe3"
+  },
+  {
+    "group": 0,
+    "number": 31,
+    "file": "assets/sprites/0_31.png",
+    "axis": [
+      28,
+      78
+    ],
+    "role": "absorb",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1286,
+        587,
+        1414,
+        745
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "b60181047e6fa8e23090867ea45df031d01f1dce662b7e6d5f429aa471e42df2"
+  },
+  {
+    "group": 0,
+    "number": 32,
+    "file": "assets/sprites/0_32.png",
+    "axis": [
+      16,
+      64
+    ],
+    "role": "jump0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        59,
+        755,
+        165,
+        886
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "9da8062a4d65e48201ffcbc564d298c229dc6bc520a25f825332e4a24217a928"
+  },
+  {
+    "group": 0,
+    "number": 33,
+    "file": "assets/sprites/0_33.png",
+    "axis": [
+      27,
+      80
+    ],
+    "role": "jump1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        231,
+        746,
+        334,
+        910
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "be370c4c865d8b11ed33637bd576f27dcbd9e6eddb958b84e8803206a320e1d4"
+  },
+  {
+    "group": 0,
+    "number": 34,
+    "file": "assets/sprites/0_34.png",
+    "axis": [
+      32,
+      82
+    ],
+    "role": "hover0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        394,
+        747,
+        518,
+        914
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "10dd15206490756b594fd4e1e0d8efe2cd6c178a61afdb36aa4e5810ba4d4153"
+  },
+  {
+    "group": 0,
+    "number": 35,
+    "file": "assets/sprites/0_35.png",
+    "axis": [
+      36,
+      84
+    ],
+    "role": "hover1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        558,
+        746,
+        686,
+        917
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "e0e53c94af650709abfe17cc2a3bf54f1f44b2523bdc74cbdeac4a84b6b7d641"
+  },
+  {
+    "group": 0,
+    "number": 36,
+    "file": "assets/sprites/0_36.png",
+    "axis": [
+      46,
+      56
+    ],
+    "role": "air_kick",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        719,
+        761,
+        915,
+        876
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "d96b8a8451e567672b2f720d1a3e1f9db91cf5c5af040429033772017f682070"
+  },
+  {
+    "group": 0,
+    "number": 37,
+    "file": "assets/sprites/0_37.png",
+    "axis": [
+      34,
+      74
+    ],
+    "role": "dive",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        942,
+        776,
+        1063,
+        926
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "990cf56c4c23a837c4d4a877a52e1c87acb9a194929c0266d8af3bd4cc57ada2"
+  },
+  {
+    "group": 0,
+    "number": 38,
+    "file": "assets/sprites/0_38.png",
+    "axis": [
+      28,
+      52
+    ],
+    "role": "land",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1099,
+        803,
+        1211,
+        909
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "4d607f4c2aa0485483eadbd9274a407d8df1e4da017dd3fc74f0e7a74c45d253"
+  },
+  {
+    "group": 0,
+    "number": 39,
+    "file": "assets/sprites/0_39.png",
+    "axis": [
+      31,
+      71
+    ],
+    "role": "laser",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1259,
+        766,
+        1416,
+        911
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "6af90ed2c3b45a64e2e54a318676d830cb472482e96c5f3e5b6203f4cee6fc1c"
+  },
+  {
+    "group": 0,
+    "number": 40,
+    "file": "assets/sprites/0_40.png",
+    "axis": [
+      40,
+      68
+    ],
+    "role": "hurt0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        45,
+        934,
+        186,
+        1074
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "c0254c9328b97487362230372b7cde822b1ede6f5c6d3def820ce8b0587ae5bb"
+  },
+  {
+    "group": 0,
+    "number": 41,
+    "file": "assets/sprites/0_41.png",
+    "axis": [
+      38,
+      67
+    ],
+    "role": "hurt1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        212,
+        937,
+        331,
+        1074
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "c56da92f525104fd96bcb74bf0163c585013834a588c1ebb5780468b65e728c3"
+  },
+  {
+    "group": 0,
+    "number": 42,
+    "file": "assets/sprites/0_42.png",
+    "axis": [
+      38,
+      60
+    ],
+    "role": "air_hurt",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        366,
+        935,
+        533,
+        1059
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "a0a8132b28b038104897cb3ece7def1b6c863954ad1b94cfb91b90880316920b"
+  },
+  {
+    "group": 0,
+    "number": 43,
+    "file": "assets/sprites/0_43.png",
+    "axis": [
+      48,
+      28
+    ],
+    "role": "prone",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        555,
+        1005,
+        746,
+        1064
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "cb69bc95901981bfac4c8e7fab562db712a78d33bae8296cb041aaa019441bcd"
+  },
+  {
+    "group": 0,
+    "number": 44,
+    "file": "assets/sprites/0_44.png",
+    "axis": [
+      35,
+      50
+    ],
+    "role": "sit",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        767,
+        961,
+        906,
+        1063
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "e82ad0ad44af7a73210641bdad77246a1b4db8b9552c7e60427128c3052d0995"
+  },
+  {
+    "group": 0,
+    "number": 45,
+    "file": "assets/sprites/0_45.png",
+    "axis": [
+      20,
+      58
+    ],
+    "role": "kneel",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        935,
+        949,
+        1028,
+        1067
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "e0c23d671c4b9c21161a2d7890901a3081f9a051814ed2fba0b69d5c19fae0b1"
+  },
+  {
+    "group": 0,
+    "number": 46,
+    "file": "assets/sprites/0_46.png",
+    "axis": [
+      21,
+      76
+    ],
+    "role": "win0",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1127,
+        921,
+        1205,
+        1077
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "397414d897dfdc8526ff1d226cce14248adda800e6aed9cf25cb7d8dfd42cbf8"
+  },
+  {
+    "group": 0,
+    "number": 47,
+    "file": "assets/sprites/0_47.png",
+    "axis": [
+      18,
+      76
+    ],
+    "role": "win1",
+    "source": {
+      "sheet": "delta_poses.png",
+      "rectangle": [
+        1309,
+        921,
+        1381,
+        1078
+      ],
+      "uniform_scale": 0.5,
+      "recreated": true
+    },
+    "rgba_sha256": "9e485f89d50dca0c422df10845af673c5e65076bc14ae4a26b4893d1f6ce7c0b"
+  },
+  {
+    "group": 8800,
+    "number": 0,
+    "file": "assets/effects/8800_0.png",
+    "axis": [
+      48,
+      38
+    ],
+    "role": "Eye charge",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        0,
+        0,
+        384,
+        256
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "d4aa2e3e0ff9298ffb4567aa88b7a7931c59c21ddde0e32ee1cc3837e49e5e18"
+  },
+  {
+    "group": 8800,
+    "number": 1,
+    "file": "assets/effects/8800_1.png",
+    "axis": [
+      48,
+      38
+    ],
+    "role": "Eye charge",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        384,
+        0,
+        768,
+        256
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "0b7c5b33a76a0a72205735f3e01a74908b131cbf79bdf2046a723a2c00de22e5"
+  },
+  {
+    "group": 8800,
+    "number": 2,
+    "file": "assets/effects/8800_2.png",
+    "axis": [
+      48,
+      38
+    ],
+    "role": "Eye charge",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        768,
+        0,
+        1152,
+        256
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "930d6514b9841b30efb51e36395a541fe7aa76526a07a140900143ff7924f6d4"
+  },
+  {
+    "group": 8800,
+    "number": 3,
+    "file": "assets/effects/8800_3.png",
+    "axis": [
+      48,
+      38
+    ],
+    "role": "Eye charge",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        1152,
+        0,
+        1536,
+        256
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "a32a7e1b44781be29c9d5025c98b9db19c06c6bbdc463562368b0d9de5f1f713"
+  },
+  {
+    "group": 8801,
+    "number": 0,
+    "file": "assets/effects/8801_0.png",
+    "axis": [
+      19,
+      84
+    ],
+    "role": "Pink ocular beam",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        0,
+        256,
+        384,
+        512
+      ],
+      "scale": 0.6,
+      "recreated": true
+    },
+    "rgba_sha256": "a4d7fa9844e967fe0785828f0b0efd0992b4a3c0fe4495e163bf3d3075dbafe7"
+  },
+  {
+    "group": 8801,
+    "number": 1,
+    "file": "assets/effects/8801_1.png",
+    "axis": [
+      19,
+      84
+    ],
+    "role": "Pink ocular beam",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        384,
+        256,
+        768,
+        512
+      ],
+      "scale": 0.6,
+      "recreated": true
+    },
+    "rgba_sha256": "09b2596956c5bbcdb1d52df590afa6a0223d272368f8aa93ef853d2181826d6c"
+  },
+  {
+    "group": 8801,
+    "number": 2,
+    "file": "assets/effects/8801_2.png",
+    "axis": [
+      19,
+      84
+    ],
+    "role": "Pink ocular beam",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        768,
+        256,
+        1152,
+        512
+      ],
+      "scale": 0.6,
+      "recreated": true
+    },
+    "rgba_sha256": "5b1736a1fbf8eca70f261b5c5695d90faf1b9de9d31da496aa0cb947a711049c"
+  },
+  {
+    "group": 8801,
+    "number": 3,
+    "file": "assets/effects/8801_3.png",
+    "axis": [
+      19,
+      84
+    ],
+    "role": "Pink ocular beam",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        1152,
+        256,
+        1536,
+        512
+      ],
+      "scale": 0.6,
+      "recreated": true
+    },
+    "rgba_sha256": "107fe15a69aa68a02b0a11f8f3612fd331127c32b5a71c5e630429567d4cc83c"
+  },
+  {
+    "group": 8802,
+    "number": 0,
+    "file": "assets/effects/8802_0.png",
+    "axis": [
+      48,
+      6
+    ],
+    "role": "Foot thruster",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        0,
+        512,
+        384,
+        768
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "109e036a13c30658925eaa2cd5aa648b5e3e7706052a77ecfba209ac6bff4cab"
+  },
+  {
+    "group": 8802,
+    "number": 1,
+    "file": "assets/effects/8802_1.png",
+    "axis": [
+      48,
+      6
+    ],
+    "role": "Foot thruster",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        384,
+        512,
+        768,
+        768
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "374aa7d8918c46bda573eda324bdf79616b72fc80adf291271b72094eef088d6"
+  },
+  {
+    "group": 8802,
+    "number": 2,
+    "file": "assets/effects/8802_2.png",
+    "axis": [
+      48,
+      6
+    ],
+    "role": "Foot thruster",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        768,
+        512,
+        1152,
+        768
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "cd86edf0496f0beb38a77d4d605fa72a83a040b2580276df3333bcfa7cad8ff2"
+  },
+  {
+    "group": 8802,
+    "number": 3,
+    "file": "assets/effects/8802_3.png",
+    "axis": [
+      48,
+      6
+    ],
+    "role": "Foot thruster",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        1152,
+        512,
+        1536,
+        768
+      ],
+      "scale": 0.25,
+      "recreated": true
+    },
+    "rgba_sha256": "74371c0646ed2eee02bf3653d0b8b2880f0aa92a24f3c712bd26e5714bae36a0"
+  },
+  {
+    "group": 8803,
+    "number": 0,
+    "file": "assets/effects/8803_0.png",
+    "axis": [
+      38,
+      39
+    ],
+    "role": "Ocular absorption",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        0,
+        768,
+        384,
+        1024
+      ],
+      "scale": 0.3,
+      "recreated": true
+    },
+    "rgba_sha256": "1e64948c4e313f1b1ac697e4bab835d838f11751433e404dc6a6f7426b3d1c6b"
+  },
+  {
+    "group": 8803,
+    "number": 1,
+    "file": "assets/effects/8803_1.png",
+    "axis": [
+      38,
+      39
+    ],
+    "role": "Ocular absorption",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        384,
+        768,
+        768,
+        1024
+      ],
+      "scale": 0.3,
+      "recreated": true
+    },
+    "rgba_sha256": "40614c26d5a267791d42a749f32b222897f5d97d195788467c4f2367ea75f7ae"
+  },
+  {
+    "group": 8803,
+    "number": 2,
+    "file": "assets/effects/8803_2.png",
+    "axis": [
+      38,
+      39
+    ],
+    "role": "Ocular absorption",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        768,
+        768,
+        1152,
+        1024
+      ],
+      "scale": 0.3,
+      "recreated": true
+    },
+    "rgba_sha256": "0472150f94d1033a262cfbf4f399300f498980ff5e4ca845cd206f9d9559f6f4"
+  },
+  {
+    "group": 8803,
+    "number": 3,
+    "file": "assets/effects/8803_3.png",
+    "axis": [
+      38,
+      39
+    ],
+    "role": "Ocular absorption",
+    "source": {
+      "sheet": "delta_fx.png",
+      "rectangle": [
+        1152,
+        768,
+        1536,
+        1024
+      ],
+      "scale": 0.3,
+      "recreated": true
+    },
+    "rgba_sha256": "ae4775b74eddaa2582ee43c5b0670f67bd2df2b5907d34fb9f3d7e38de5720b8"
+  },
+  {
+    "group": 8840,
+    "number": 0,
+    "file": "assets/effects/8840_0.png",
+    "axis": [
+      155,
+      293
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 0,
+      "recreated": true
+    },
+    "rgba_sha256": "f1597f53ac15e6f4a412be58deaa945fa6322321176507888f2c69566fe29fa6"
+  },
+  {
+    "group": 8840,
+    "number": 1,
+    "file": "assets/effects/8840_1.png",
+    "axis": [
+      155,
+      293
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 1,
+      "recreated": true
+    },
+    "rgba_sha256": "f92dcf7191d27b2796f1e59254fb09a47be7b00edcb26d03bca5b20dc62831ed"
+  },
+  {
+    "group": 8840,
+    "number": 2,
+    "file": "assets/effects/8840_2.png",
+    "axis": [
+      155,
+      293
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 2,
+      "recreated": true
+    },
+    "rgba_sha256": "9b250b1461763388c46830bb37e4c2f5b310658f063308796da880a2735c63e5"
+  },
+  {
+    "group": 8840,
+    "number": 3,
+    "file": "assets/effects/8840_3.png",
+    "axis": [
+      155,
+      293
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 3,
+      "recreated": true
+    },
+    "rgba_sha256": "ccbc73bbbfb4a320e9c6d3f9c382bd69c14d8d5611a7960c680d3df312773e87"
+  },
+  {
+    "group": 8840,
+    "number": 4,
+    "file": "assets/effects/8840_4.png",
+    "axis": [
+      155,
+      248
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 4,
+      "recreated": true
+    },
+    "rgba_sha256": "c15ae65748eba3ae17289d908001ba0e68aac5bb6faf0019455e734cf2895da9"
+  },
+  {
+    "group": 8840,
+    "number": 5,
+    "file": "assets/effects/8840_5.png",
+    "axis": [
+      155,
+      249
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 5,
+      "recreated": true
+    },
+    "rgba_sha256": "4302feb55781bdeac14e0cfe0daed709187635e7cda06cfab4dc3f12a740c015"
+  },
+  {
+    "group": 8840,
+    "number": 6,
+    "file": "assets/effects/8840_6.png",
+    "axis": [
+      155,
+      250
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 6,
+      "recreated": true
+    },
+    "rgba_sha256": "b70c589e6fad9cfad5419294b9044561a86b510025e9bc14da2d14da83c6a4cb"
+  },
+  {
+    "group": 8840,
+    "number": 7,
+    "file": "assets/effects/8840_7.png",
+    "axis": [
+      155,
+      250
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 7,
+      "recreated": true
+    },
+    "rgba_sha256": "4c5a48949a24c54429c6e29d8d50053b8f2294437b4b6a2a2ff883efc852bf1c"
+  },
+  {
+    "group": 8840,
+    "number": 8,
+    "file": "assets/effects/8840_8.png",
+    "axis": [
+      155,
+      237
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 8,
+      "recreated": true
+    },
+    "rgba_sha256": "4ed7c1f6b097f13b351d8772b80650c8d042cc18811de6245fbf4748f5999247"
+  },
+  {
+    "group": 8840,
+    "number": 9,
+    "file": "assets/effects/8840_9.png",
+    "axis": [
+      155,
+      251
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 9,
+      "recreated": true
+    },
+    "rgba_sha256": "2d78dd24060620c074cd039343eff8993d62da922d83ad79902065ad04a3d341"
+  },
+  {
+    "group": 8840,
+    "number": 10,
+    "file": "assets/effects/8840_10.png",
+    "axis": [
+      155,
+      253
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 10,
+      "recreated": true
+    },
+    "rgba_sha256": "a9e994e5b068a0e556a7e5e7c8fd716e73e8c2ce94e7cacc97f82878b7d5b1aa"
+  },
+  {
+    "group": 8840,
+    "number": 11,
+    "file": "assets/effects/8840_11.png",
+    "axis": [
+      155,
+      265
+    ],
+    "role": "Controlled self-destruction phase",
+    "source": {
+      "sheet": "delta_blast.png",
+      "cell": 11,
+      "recreated": true
+    },
+    "rgba_sha256": "80671e7f1f4dbb6504f8dae55d645f220c78fdb07368f78218d1fe1de3dda61e"
+  },
+  {
+    "group": 8700,
+    "number": 0,
+    "file": "assets/effects/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8700,
+      "number": 0
+    },
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3"
+  },
+  {
+    "group": 8700,
+    "number": 1,
+    "file": "assets/effects/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8700,
+      "number": 1
+    },
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c"
+  },
+  {
+    "group": 8700,
+    "number": 2,
+    "file": "assets/effects/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8700,
+      "number": 2
+    },
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db"
+  },
+  {
+    "group": 8700,
+    "number": 3,
+    "file": "assets/effects/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8700,
+      "number": 3
+    },
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054"
+  },
+  {
+    "group": 8710,
+    "number": 0,
+    "file": "assets/effects/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8710,
+      "number": 0
+    },
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd"
+  },
+  {
+    "group": 8710,
+    "number": 1,
+    "file": "assets/effects/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8710,
+      "number": 1
+    },
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba"
+  },
+  {
+    "group": 8710,
+    "number": 2,
+    "file": "assets/effects/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8710,
+      "number": 2
+    },
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24"
+  },
+  {
+    "group": 8710,
+    "number": 3,
+    "file": "assets/effects/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8710,
+      "number": 3
+    },
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f"
+  },
+  {
+    "group": 8720,
+    "number": 0,
+    "file": "assets/effects/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 0
+    },
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e"
+  },
+  {
+    "group": 8720,
+    "number": 1,
+    "file": "assets/effects/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 1
+    },
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a"
+  },
+  {
+    "group": 8720,
+    "number": 2,
+    "file": "assets/effects/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 2
+    },
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481"
+  },
+  {
+    "group": 8720,
+    "number": 3,
+    "file": "assets/effects/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 3
+    },
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339"
+  },
+  {
+    "group": 8720,
+    "number": 4,
+    "file": "assets/effects/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 4
+    },
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0"
+  },
+  {
+    "group": 8720,
+    "number": 5,
+    "file": "assets/effects/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8720,
+      "number": 5
+    },
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8"
+  },
+  {
+    "group": 8820,
+    "number": 0,
+    "file": "assets/effects/8820_0.png",
+    "axis": [
+      72,
+      81
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8820,
+      "number": 0
+    },
+    "rgba_sha256": "f8bae3102beda2da5aa002bf5444a110df356dc0896cb6bf4308e5906342ae6e"
+  },
+  {
+    "group": 8820,
+    "number": 1,
+    "file": "assets/effects/8820_1.png",
+    "axis": [
+      88,
+      98
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8820,
+      "number": 1
+    },
+    "rgba_sha256": "56ea9442e99ffa71c689f7b7d36c2db76340550eedadfd69c71185042a2ee6e5"
+  },
+  {
+    "group": 8820,
+    "number": 2,
+    "file": "assets/effects/8820_2.png",
+    "axis": [
+      104,
+      107
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8820,
+      "number": 2
+    },
+    "rgba_sha256": "78d325c141ef77924c46cbaabc5763055088e8a67931a0ce558bab5fe74e85cc"
+  },
+  {
+    "group": 8820,
+    "number": 3,
+    "file": "assets/effects/8820_3.png",
+    "axis": [
+      108,
+      114
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8820,
+      "number": 3
+    },
+    "rgba_sha256": "549dcd81dd39c4ab09dbfa4981a5baa601370241318e385081b704b3dfcdc8ff"
+  },
+  {
+    "group": 8820,
+    "number": 4,
+    "file": "assets/effects/8820_4.png",
+    "axis": [
+      95,
+      118
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8820,
+      "number": 4
+    },
+    "rgba_sha256": "aeca10cd6ff7ef576027166c368debb88fc1bd119f4b1d678cd9143f0ee38be4"
+  },
+  {
+    "group": 8900,
+    "number": 0,
+    "file": "assets/effects/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 0
+    },
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776"
+  },
+  {
+    "group": 8900,
+    "number": 1,
+    "file": "assets/effects/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 1
+    },
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b"
+  },
+  {
+    "group": 8900,
+    "number": 2,
+    "file": "assets/effects/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 2
+    },
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af"
+  },
+  {
+    "group": 8900,
+    "number": 3,
+    "file": "assets/effects/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 3
+    },
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a"
+  },
+  {
+    "group": 8900,
+    "number": 4,
+    "file": "assets/effects/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 4
+    },
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f"
+  },
+  {
+    "group": 8900,
+    "number": 5,
+    "file": "assets/effects/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 5
+    },
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a"
+  },
+  {
+    "group": 8900,
+    "number": 6,
+    "file": "assets/effects/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 6
+    },
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b"
+  },
+  {
+    "group": 8900,
+    "number": 7,
+    "file": "assets/effects/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 7
+    },
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce"
+  },
+  {
+    "group": 8900,
+    "number": 8,
+    "file": "assets/effects/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 8
+    },
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18"
+  },
+  {
+    "group": 8900,
+    "number": 9,
+    "file": "assets/effects/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 9
+    },
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c"
+  },
+  {
+    "group": 8900,
+    "number": 10,
+    "file": "assets/effects/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 10
+    },
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54"
+  },
+  {
+    "group": 8900,
+    "number": 11,
+    "file": "assets/effects/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 11
+    },
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a"
+  },
+  {
+    "group": 8900,
+    "number": 12,
+    "file": "assets/effects/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 12
+    },
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd"
+  },
+  {
+    "group": 8900,
+    "number": 13,
+    "file": "assets/effects/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 13
+    },
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54"
+  },
+  {
+    "group": 8900,
+    "number": 14,
+    "file": "assets/effects/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 14
+    },
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a"
+  },
+  {
+    "group": 8900,
+    "number": 15,
+    "file": "assets/effects/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 15
+    },
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1"
+  },
+  {
+    "group": 8900,
+    "number": 16,
+    "file": "assets/effects/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 16
+    },
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331"
+  },
+  {
+    "group": 8900,
+    "number": 17,
+    "file": "assets/effects/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 17
+    },
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb"
+  },
+  {
+    "group": 8900,
+    "number": 18,
+    "file": "assets/effects/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 18
+    },
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2"
+  },
+  {
+    "group": 8900,
+    "number": 19,
+    "file": "assets/effects/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 19
+    },
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe"
+  },
+  {
+    "group": 8900,
+    "number": 20,
+    "file": "assets/effects/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 20
+    },
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d"
+  },
+  {
+    "group": 8900,
+    "number": 21,
+    "file": "assets/effects/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 21
+    },
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5"
+  },
+  {
+    "group": 8900,
+    "number": 22,
+    "file": "assets/effects/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 22
+    },
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4"
+  },
+  {
+    "group": 8900,
+    "number": 23,
+    "file": "assets/effects/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "role": "Shared credited combat effect",
+    "source": {
+      "character": "JuraShinju",
+      "group": 8900,
+      "number": 23
+    },
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7"
+  },
+  {
+    "group": 9000,
+    "number": 0,
+    "file": "assets/effects/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "role": "Delta portrait",
+    "source": null,
+    "rgba_sha256": "51594819dfc28962093f251737669415c6f7b8458a495eef61a85c601ded407a"
+  },
+  {
+    "group": 9000,
+    "number": 1,
+    "file": "assets/effects/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "role": "Delta portrait",
+    "source": null,
+    "rgba_sha256": "504dd9448cb8599b6812b4b162a2f02ea3d75967df585ebcd17b11270415d47f"
+  }
+]

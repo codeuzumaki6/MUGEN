@@ -1,0 +1,67 @@
+{
+  "runtime_sha256": "e87cd33a13ef8dfc8cea7eb5723a038515ecd3e8202bfa1d5fc26b3eba2996a5",
+  "cases": [
+    {
+      "case": {
+        "name": "ray_short",
+        "kind": "ray_short",
+        "face": 1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 115,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 180,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        885,
+        885,
+        885,
+        885
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ray_short",
+        "kind": "ray_short",
+        "face": -1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 115,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "absorbed": 0,
+      "mark_frames": 180,
+      "jets": 0,
+      "flight_frames": 0,
+      "overdrive": 0,
+      "healing_samples": [
+        885,
+        885,
+        885,
+        885
+      ],
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "failures": []
+    }
+  ]
+}
