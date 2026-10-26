@@ -1,0 +1,450 @@
+{
+  "keys": {
+    "Effect/AuraGates": [
+      2,
+      0
+    ],
+    "Effect/BOOM2": [
+      2,
+      1
+    ],
+    "Effect/BesiIn": [
+      2,
+      2
+    ],
+    "Effect/BesiJatoh": [
+      2,
+      3
+    ],
+    "Effect/BesiNancep": [
+      2,
+      4
+    ],
+    "Effect/Biju": [
+      2,
+      5
+    ],
+    "Effect/Blade-Damage": [
+      2,
+      6
+    ],
+    "Effect/DashFx": [
+      2,
+      7
+    ],
+    "Effect/Efx chg": [
+      2,
+      8
+    ],
+    "Effect/Iron": [
+      2,
+      9
+    ],
+    "Effect/Karma2": [
+      2,
+      10
+    ],
+    "Effect/Kokugan": [
+      2,
+      11
+    ],
+    "Effect/Kubus": [
+      2,
+      12
+    ],
+    "Effect/absorb efx": [
+      2,
+      13
+    ],
+    "Effect/besi5": [
+      2,
+      14
+    ],
+    "Effect/blade_damage": [
+      2,
+      15
+    ],
+    "Effect/charge2": [
+      2,
+      16
+    ],
+    "Effect/combo1": [
+      2,
+      17
+    ],
+    "Effect/combo2": [
+      2,
+      18
+    ],
+    "Effect/combo3": [
+      2,
+      19
+    ],
+    "Effect/desis": [
+      2,
+      20
+    ],
+    "Effect/hyper_punch0": [
+      2,
+      21
+    ],
+    "Effect/karma": [
+      2,
+      22
+    ],
+    "Effect/kubus jatuh": [
+      2,
+      23
+    ],
+    "Effect/kubus2": [
+      2,
+      24
+    ],
+    "Effect/lander": [
+      2,
+      25
+    ],
+    "Effect/rock_hit2": [
+      2,
+      26
+    ],
+    "Effect/stick_damage": [
+      2,
+      27
+    ],
+    "Effect/sukonaMini": [
+      2,
+      28
+    ],
+    "Effect/tengs": [
+      2,
+      29
+    ],
+    "Effect/throw": [
+      2,
+      30
+    ],
+    "Effect/wooss": [
+      2,
+      31
+    ],
+    "Jigen/Isshiki_Vo01": [
+      3,
+      0
+    ],
+    "Jigen/Isshiki_Vo02": [
+      3,
+      1
+    ],
+    "Jigen/Jigen4": [
+      3,
+      2
+    ],
+    "Jigen/Mei": [
+      3,
+      3
+    ],
+    "Jigen/Mei2_ougis": [
+      3,
+      4
+    ],
+    "Jigen/die": [
+      3,
+      5
+    ],
+    "Jigen/jigen0": [
+      3,
+      6
+    ],
+    "Jigen/jigen1": [
+      3,
+      7
+    ],
+    "Jigen/jigen2": [
+      3,
+      8
+    ],
+    "Jigen/jigen3": [
+      3,
+      9
+    ],
+    "Jigen/jigenlaugh": [
+      3,
+      10
+    ],
+    "Jigen/jigenvo": [
+      3,
+      11
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/AuraGates.ogg",
+      "source_sha256": "451d8223a3fbe0b9e482abb8950b5a3c0c5d6610a46fb047722c3368d272b9b7",
+      "group": 2,
+      "number": 0
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/BOOM2.ogg",
+      "source_sha256": "a70f77748e67f4d8cff56b3475f20c7ea63bb12b93fd300ad460aeceb7d2cb8a",
+      "group": 2,
+      "number": 1
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/BesiIn.mp3",
+      "source_sha256": "cc51c794bdea7b0b6eb01e95ba11f087ecd6f80cc6d82aa87611e0d29a9d8028",
+      "group": 2,
+      "number": 2
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/BesiJatoh.mp3",
+      "source_sha256": "d41b6af9e4420ea8b2793253843ff4c35a70ced83f9959166c90b4c3f0041d67",
+      "group": 2,
+      "number": 3
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/BesiNancep.mp3",
+      "source_sha256": "b667fd3b053347c74be8fa7cadd9c4ba3efd9b081dd1cd139605ea43103c707a",
+      "group": 2,
+      "number": 4
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Biju.mp3",
+      "source_sha256": "4add69dd1c04e7772e81df5e5b60b91d3271646e98b6b360b7face56c8352cd6",
+      "group": 2,
+      "number": 5
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Blade-Damage.mp3",
+      "source_sha256": "10383c81102cf1bf4869f08599ddd940ca81d9da57650c7be8e9543982c4f0a5",
+      "group": 2,
+      "number": 6
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/DashFx.mp3",
+      "source_sha256": "971d39624ab484ac0b230393477601412b1094790602f77e8ccadb6df947be77",
+      "group": 2,
+      "number": 7
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Efx chg.mp3",
+      "source_sha256": "208c0bf73fe0aa72091365d0c56ed3045ec0dbae190b37b87112639891add982",
+      "group": 2,
+      "number": 8
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Iron.mp3",
+      "source_sha256": "a03a5319c3c046a57a52062c80fb6ce184c9e48286ad1a5bab4f655ab2840869",
+      "group": 2,
+      "number": 9
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Karma2.mp3",
+      "source_sha256": "651f45f3215c4f04a02ae4119020cbfabcb6824c8e501aa619e316d55e318441",
+      "group": 2,
+      "number": 10
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Kokugan.ogg",
+      "source_sha256": "b5b56d31df94ee8f7b01851b2cf6154ce0e89f96ce7e3923cf056854f5fbdcce",
+      "group": 2,
+      "number": 11
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/Kubus.ogg",
+      "source_sha256": "e2ab0bd2b0d950c2a837a3c1b054038bf3f6bed2a2e5e036a0292ce02861fbc8",
+      "group": 2,
+      "number": 12
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/absorb efx.mp3",
+      "source_sha256": "1e3825f5a8c3e103ad7d1246018244085058b0265b7314c4d767a08526e9f1ae",
+      "group": 2,
+      "number": 13
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/besi5.ogg",
+      "source_sha256": "40ddc616997e80378955f7535f1a816394cc1d0d80642ab07cbba673636ad02d",
+      "group": 2,
+      "number": 14
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/blade_damage.ogg",
+      "source_sha256": "4262d7d5559ac7453d25d36f1e7c380453ec475c0ed27545d046b9aa35e1f3b3",
+      "group": 2,
+      "number": 15
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/charge2.ogg",
+      "source_sha256": "c957db064ced75921e4c2958fca53c8eb1ce8c2c6c9ea99a70c8609b71d1a8bc",
+      "group": 2,
+      "number": 16
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/combo1.ogg",
+      "source_sha256": "51257497a545382bdc5b9472b62f41ef967ac845e1bf18ddf84973dcb86617aa",
+      "group": 2,
+      "number": 17
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/combo2.ogg",
+      "source_sha256": "0aa5f9d2ebe27b9854915013beeaaa05532663ba51842d3f1b16fa03fdfd13cc",
+      "group": 2,
+      "number": 18
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/combo3.ogg",
+      "source_sha256": "0cbb52d022304c1b5fb487d7a83fac619f6afa7f1e4f42f5e2d5b1c3d2e4e3e7",
+      "group": 2,
+      "number": 19
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/desis.ogg",
+      "source_sha256": "49711f8036e2dd3165510a0073dc66c36d1eb35cfd692592cadb1d3aa5f2aa45",
+      "group": 2,
+      "number": 20
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/hyper_punch0.ogg",
+      "source_sha256": "02709e4917acef671d62ab3b834b6dbbaaf12c080d3ec8ad5a1e8bf7821ecc90",
+      "group": 2,
+      "number": 21
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/karma.mp3",
+      "source_sha256": "78f078879071d433ef55972244cff7fdb86031dbe86752cd4b5760f709eb64bd",
+      "group": 2,
+      "number": 22
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/kubus jatuh.mp3",
+      "source_sha256": "d1f644d9570e3ea3193699a59a1ea2a8c02e1bdc8bb45c50a9df9b1027570f05",
+      "group": 2,
+      "number": 23
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/kubus2.mp3",
+      "source_sha256": "a4682d628f3d5e5826ede07ad191692fd935b448b61abafa86f1cab1ea326165",
+      "group": 2,
+      "number": 24
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/lander.ogg",
+      "source_sha256": "afa8765a7505245fdd2dfd0fbb7c1feb039faf772120c5e17b0a5351bfff1870",
+      "group": 2,
+      "number": 25
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/rock_hit2.ogg",
+      "source_sha256": "829c5784a3e58706f2a59a8b36b103db9c7ec625a2483581dc1067138625d194",
+      "group": 2,
+      "number": 26
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/stick_damage.mp3",
+      "source_sha256": "79798b3d05cd86d8aa9d6045da820db5f96d003d0684c0c8674a60c81addb822",
+      "group": 2,
+      "number": 27
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/sukonaMini.mp3",
+      "source_sha256": "2eb56f17005bd3fd8689cfaf45b2518b9958a5c724587a8c3f84f7b062088194",
+      "group": 2,
+      "number": 28
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/tengs.mp3",
+      "source_sha256": "a7328112de73880a06c4853ec4b78228b94636acb7ec0217be3000092b66f2b2",
+      "group": 2,
+      "number": 29
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/throw.ogg",
+      "source_sha256": "b87047ea4f6d6d6ea004e37aef3f0460d0cd5c1885f9965add8159df1e0619d7",
+      "group": 2,
+      "number": 30
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Effect/wooss.mp3",
+      "source_sha256": "c79cacf4f8f625e47247464081de6d3ccd4e1b05890936feff826869a3bb1114",
+      "group": 2,
+      "number": 31
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/Isshiki_Vo01.ogg",
+      "source_sha256": "a7ac0e7fe73eb31c694c6cbb2991c9ef6d743efffdad606d08e15398ebb0d965",
+      "group": 3,
+      "number": 0
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/Isshiki_Vo02.ogg",
+      "source_sha256": "8d227001cfbc90d73f97f70d2e01ce29c2c98dfd276b8a905decab41b7c015ba",
+      "group": 3,
+      "number": 1
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/Jigen4.mp3",
+      "source_sha256": "571e9c6587afd9db7ce93956659df6e77cfbbb96b3a7ea06bc57abf68f09af80",
+      "group": 3,
+      "number": 2
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/Mei.ogg",
+      "source_sha256": "bcc915b30af76367249b38c4d1b07f2d99870f214e217a57e51136adcc0c4402",
+      "group": 3,
+      "number": 3
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/Mei2_ougis.ogg",
+      "source_sha256": "437999eefb1cbeeab629d38dce97a55088f74252f570185e15df67f9e9f91483",
+      "group": 3,
+      "number": 4
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/die.mp3",
+      "source_sha256": "f5c48e72ee0c6f6f8a6a40ecfb58b0ae518674c62448bd566e4fed37f60c5413",
+      "group": 3,
+      "number": 5
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigen0.mp3",
+      "source_sha256": "f1c4644f9c50d07d654259dce5475a10eb39e204a3d937b3e5d6f5eaa9b31917",
+      "group": 3,
+      "number": 6
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigen1.mp3",
+      "source_sha256": "08f33f0970b21c48dddec548483a59702729b4012e8a499b9a53e41fbd91c6c6",
+      "group": 3,
+      "number": 7
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigen2.mp3",
+      "source_sha256": "33f68cc41ac7b0762d3f9ba4a48fdc32507c09335b591ed90c824d6ed116145b",
+      "group": 3,
+      "number": 8
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigen3.mp3",
+      "source_sha256": "6b689cd944b1b5bad42925ed9a7228ad7c8921bec673d2e4e299768f3ad63ec7",
+      "group": 3,
+      "number": 9
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigenlaugh.mp3",
+      "source_sha256": "693773e7b3e01e3357e38e574f31756086893c676a856c9ed21931d6f2b263f4",
+      "group": 3,
+      "number": 10
+    },
+    {
+      "source": "source_material/Jigen_original/Jigen rep Jiraiya/Audio/Jigen/jigenvo.mp3",
+      "source_sha256": "1b2f50adacd977ee422f846e969d59899da6cf7f771106e2a75c6e1af43fa124",
+      "group": 3,
+      "number": 11
+    }
+  ],
+  "missing_source_references": [
+    "Audio/Jigen/JigenNatk.mp3",
+    "Audio/Jigen/Jigen_hurt.ogg"
+  ]
+}

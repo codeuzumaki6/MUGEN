@@ -1,0 +1,4152 @@
+[
+  {
+    "key": "Jiraiya_AirHurt_01",
+    "group": 30000,
+    "number": 0,
+    "file": "assets/frames/30000_0.png",
+    "axis": [
+      25,
+      73
+    ],
+    "rgba_sha256": "fbafc10576442eba8d35202200785ef883cd74290613325978019d1156b8e747",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1377,1746},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_AirHurt_02",
+    "group": 30000,
+    "number": 1,
+    "file": "assets/frames/30000_1.png",
+    "axis": [
+      25,
+      73
+    ],
+    "rgba_sha256": "fbafc10576442eba8d35202200785ef883cd74290613325978019d1156b8e747",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1377,1746},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Float_01",
+    "group": 30000,
+    "number": 2,
+    "file": "assets/frames/30000_2.png",
+    "axis": [
+      25,
+      66
+    ],
+    "rgba_sha256": "b7f8fd89b2f8fac66072ebedaa3f5d6f1cf925231d24eaac0f7d45217a80b54e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{795,2006},{56,79}}",
+    "source_offset": "{3,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Float_02",
+    "group": 30000,
+    "number": 3,
+    "file": "assets/frames/30000_3.png",
+    "axis": [
+      45,
+      21
+    ],
+    "rgba_sha256": "ed0ac71d60354011ca49c95d28d01cfcb51338d67185207c497b5119e0680401",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1881,1498},{90,46}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Hurt_01",
+    "group": 30000,
+    "number": 4,
+    "file": "assets/frames/30000_4.png",
+    "axis": [
+      25,
+      78
+    ],
+    "rgba_sha256": "ed90680fdb7ef952d297918ab7b3bdb7242528c5b1f9fd553cc99ca44f17200f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1326,1746},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Hurt_02",
+    "group": 30000,
+    "number": 5,
+    "file": "assets/frames/30000_5.png",
+    "axis": [
+      25,
+      78
+    ],
+    "rgba_sha256": "ed90680fdb7ef952d297918ab7b3bdb7242528c5b1f9fd553cc99ca44f17200f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1326,1746},{50,79}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Idle_01",
+    "group": 30000,
+    "number": 6,
+    "file": "assets/frames/30000_6.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "62b623de37338214a03b89efcfdd2f6bb1f9d2f54ae1b814d4faa3bf0cc40f7a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1550,1827},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Idle_02",
+    "group": 30000,
+    "number": 7,
+    "file": "assets/frames/30000_7.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "22a9e04eed6b4307a6737f0effa8ee790fce4c59e5f7b33744b9b2986d4fffed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1601,1827},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Idle_03",
+    "group": 30000,
+    "number": 8,
+    "file": "assets/frames/30000_8.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "9021a7c9e092daae2c684762b553fc5e845fec39a1340e918c6f6f2e1a95426d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1652,1827},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Idle_04",
+    "group": 30000,
+    "number": 9,
+    "file": "assets/frames/30000_9.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "baa5cb4585972a6032e40e6361bdba2ba4bd7c4c47a675629dad24596e7f835c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1703,1827},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_KnockDown_01",
+    "group": 30000,
+    "number": 10,
+    "file": "assets/frames/30000_10.png",
+    "axis": [
+      35,
+      46
+    ],
+    "rgba_sha256": "1b6bccbcad6417a22584faba2d961ef27aa85c273eeb2cb8cc0be8e3728778cd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,2090},{70,47}}",
+    "source_offset": "{0,-7}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_KnockDown_02",
+    "group": 30000,
+    "number": 11,
+    "file": "assets/frames/30000_11.png",
+    "axis": [
+      45,
+      35
+    ],
+    "rgba_sha256": "02a870f4f815ef2a826b2b63936e1e387c9737a92aedc70b236076e62a78879c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{582,2090},{90,36}}",
+    "source_offset": "{0,-10}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_wake_01",
+    "group": 30000,
+    "number": 12,
+    "file": "assets/frames/30000_12.png",
+    "axis": [
+      25,
+      55
+    ],
+    "rgba_sha256": "232e81bb9c4fa4f91d4d08eea3c96056822fbbb2e07500b8f5939ac3bd39bf05",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{673,2090},{50,56}}",
+    "source_offset": "{0,-2}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_wake_02",
+    "group": 30000,
+    "number": 13,
+    "file": "assets/frames/30000_13.png",
+    "axis": [
+      15,
+      9
+    ],
+    "rgba_sha256": "861fd028dd7670810548eff83958d32a94d931602eaa041de3a2c1b711dab7cc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1529,1887},{30,10}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_wake_03",
+    "group": 30000,
+    "number": 14,
+    "file": "assets/frames/30000_14.png",
+    "axis": [
+      15,
+      9
+    ],
+    "rgba_sha256": "9d0e7e5fe22d23cd972044d7cdec7aac2c1561ccfef509ce987554ca88bfb5fe",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1529,1874},{30,12}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_wake_04",
+    "group": 30000,
+    "number": 15,
+    "file": "assets/frames/30000_15.png",
+    "axis": [
+      15,
+      22
+    ],
+    "rgba_sha256": "acf9d63116bfb1c4d6b8ae1c34f08407aaeb442c0d3616ddb8a3ad661f5b5fc5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1954,1428},{30,23}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_wake_05",
+    "group": 30000,
+    "number": 16,
+    "file": "assets/frames/30000_16.png",
+    "axis": [
+      26,
+      43
+    ],
+    "rgba_sha256": "81cd1317bb182dc2ed81b5055db15aeba623de21b3e747dab9e6c8e1f73cfa35",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1650,1977},{53,48}}",
+    "source_offset": "{1.5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_01",
+    "group": 30000,
+    "number": 17,
+    "file": "assets/frames/30000_17.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "9acdce9c9b233e914643b424c9c1b8f5b5efeb334d60cb726a2e2538dd2a11e3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{853,2006},{70,71}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_02",
+    "group": 30000,
+    "number": 18,
+    "file": "assets/frames/30000_18.png",
+    "axis": [
+      35,
+      71
+    ],
+    "rgba_sha256": "0a4247a516f96778c789699b9ca1c85d4dac990794084e48818b5a490449d87f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{924,2006},{74,72}}",
+    "source_offset": "{2,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_03",
+    "group": 30000,
+    "number": 19,
+    "file": "assets/frames/30000_19.png",
+    "axis": [
+      35,
+      71
+    ],
+    "rgba_sha256": "dcdbd3a7c613dba4d9c983466bf0582ea8433863098febb58caae5bf55010fd2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1000,2006},{74,72}}",
+    "source_offset": "{2,-1}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_04",
+    "group": 30000,
+    "number": 20,
+    "file": "assets/frames/30000_20.png",
+    "axis": [
+      35,
+      71
+    ],
+    "rgba_sha256": "3a0d8a7e30fb2a463dfefbfd82ee2587bd6995322396d751ba177fc64f4e432f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1100,1932},{70,72}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_05",
+    "group": 30000,
+    "number": 21,
+    "file": "assets/frames/30000_21.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "2b9921f37429b7905ffc4ad270a18c790df3ae3a78750e38fb6cf43b34d718c8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1171,1933},{78,71}}",
+    "source_offset": "{4,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_06",
+    "group": 30000,
+    "number": 22,
+    "file": "assets/frames/30000_22.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "92d86bdb1ae519cb71d7e2c843f06010ec2c78d7ff67991d60bcf52cfc56e5a7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1251,1933},{78,71}}",
+    "source_offset": "{4,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_07",
+    "group": 30000,
+    "number": 23,
+    "file": "assets/frames/30000_23.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "dbcd709a963c00e9e39112671026b49bfa8d2a8f7d459ce9c6dc0fbabd6c05f5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1076,2006},{70,71}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_08",
+    "group": 30000,
+    "number": 24,
+    "file": "assets/frames/30000_24.png",
+    "axis": [
+      35,
+      74
+    ],
+    "rgba_sha256": "462bb6a50442832257908e62e7ee25ebe1aab8f323dad7f10125e95f8b35fef2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1147,2005},{70,75}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_09",
+    "group": 30000,
+    "number": 25,
+    "file": "assets/frames/30000_25.png",
+    "axis": [
+      42,
+      70
+    ],
+    "rgba_sha256": "2db1aecc1839aa2152f390e07c63b055fb3199e4405ea76920335cebb661704b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1217,2009},{90,71}}",
+    "source_offset": "{3,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_10",
+    "group": 30000,
+    "number": 26,
+    "file": "assets/frames/30000_26.png",
+    "axis": [
+      35,
+      69
+    ],
+    "rgba_sha256": "03713b5e6a1a2821bf8b15a6f52e1cc180e0e800f94f3ccc3337c096038ce0e7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1309,2009},{82,70}}",
+    "source_offset": "{6,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_11",
+    "group": 30000,
+    "number": 27,
+    "file": "assets/frames/30000_27.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "37a3c9df190434d4641200c21cdda120a7dc08a4e82ce8a084aad4ab94f9d873",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1331,1934},{86,71}}",
+    "source_offset": "{8,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_NAttack_12",
+    "group": 30000,
+    "number": 28,
+    "file": "assets/frames/30000_28.png",
+    "axis": [
+      35,
+      77
+    ],
+    "rgba_sha256": "b30a6494267ae5ec377e239fc7f71f716ae33def6c96454e8e14151958a84444",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1419,1934},{74,78}}",
+    "source_offset": "{2,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill01_01",
+    "group": 30000,
+    "number": 29,
+    "file": "assets/frames/30000_29.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "485712dbcae1221744e5a54fcdacd68e19f0e9f9fbb4e519bf2feb74c0fdf6d1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1326,1658},{60,87}}",
+    "source_offset": "{5,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "BesiJigen_01",
+    "group": 30000,
+    "number": 30,
+    "file": "assets/frames/30000_30.png",
+    "axis": [
+      29,
+      43
+    ],
+    "rgba_sha256": "e22875c9441bfe27bab5485bce4b164b1499c60abca3b81599fafbaf654e91ad",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original flying rods centre",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1386,1658},{58,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02_01",
+    "group": 30000,
+    "number": 31,
+    "file": "assets/frames/30000_31.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "e9160cfbc0280e7444507dd5266e32cad060516925e0d96ee10202bad89dce73",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{736,1934},{70,71}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02_02",
+    "group": 30000,
+    "number": 32,
+    "file": "assets/frames/30000_32.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "808727cda6432430e25c1631638a972696117b80f1e13dc01a49622cc9070c73",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{807,1934},{78,71}}",
+    "source_offset": "{4,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_01",
+    "group": 30000,
+    "number": 33,
+    "file": "assets/frames/30000_33.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "0e8f2bb1eea75f5db2409b7c2a919aceb33a00d11665c2c45cae2fb082985796",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,507},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_02",
+    "group": 30000,
+    "number": 34,
+    "file": "assets/frames/30000_34.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "a480d74895f9b7cedd3aa4647e48dc5e21930eb92ed897405ff11eab454b2191",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,727},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_03",
+    "group": 30000,
+    "number": 35,
+    "file": "assets/frames/30000_35.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "e254d7536165685b30c32898516d02d23b74bca50d70ee088bbe3a1081325009",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,947},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_04",
+    "group": 30000,
+    "number": 36,
+    "file": "assets/frames/30000_36.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "652b8990e0df2a7848d9aaebe5a77bd8aa153b8d87c8fbb2dce3b2a32c631f55",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,1167},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_05",
+    "group": 30000,
+    "number": 37,
+    "file": "assets/frames/30000_37.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "df17cb995218b466ea634cf15790b8059f816b34e61c5ee2844d5d4e72c4a787",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,1387},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill02Iron02_06",
+    "group": 30000,
+    "number": 38,
+    "file": "assets/frames/30000_38.png",
+    "axis": [
+      137,
+      180
+    ],
+    "rgba_sha256": "3dc674471bb4f4a0599eaa35d8d0b7bec7ba9dcf9f198f646f0a13434f78c181",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original rod and ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1446,1607},{274,219}}",
+    "source_offset": "{12,-36}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_01",
+    "group": 30000,
+    "number": 39,
+    "file": "assets/frames/30000_39.png",
+    "axis": [
+      35,
+      71
+    ],
+    "rgba_sha256": "fda21ef0583f4f6e9e65295f8ee9e21cc7c37d91e67d54fe5210c0cf0e2ca777",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1118,1849},{70,72}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_02",
+    "group": 30000,
+    "number": 40,
+    "file": "assets/frames/30000_40.png",
+    "axis": [
+      35,
+      71
+    ],
+    "rgba_sha256": "ee933ab0d6c19d8f23fcd30478d33b4c609ee3caa94346de390b54fe69945b5e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1189,1849},{70,72}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_03",
+    "group": 30000,
+    "number": 41,
+    "file": "assets/frames/30000_41.png",
+    "axis": [
+      41,
+      71
+    ],
+    "rgba_sha256": "2eff695d9e4820425242653a3e19cbdb545b1510c323552e6e96a9287422bbce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1260,1849},{76,72}}",
+    "source_offset": "{-3,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Move_01",
+    "group": 30000,
+    "number": 42,
+    "file": "assets/frames/30000_42.png",
+    "axis": [
+      35,
+      88
+    ],
+    "rgba_sha256": "8f2a31cb523cfb4290c0f41e91c134bcd4275dcec17636e88c2e75ee4541a726",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1913},{70,92}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_01",
+    "group": 30000,
+    "number": 43,
+    "file": "assets/frames/30000_43.png",
+    "axis": [
+      142,
+      130
+    ],
+    "rgba_sha256": "cd29fff520f2074f89a534efa57a9c55fa50683a8d795d8ddd4e29e0a7f83504",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original flying body plane independent of blue streak",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{805,1473},{260,187}}",
+    "source_offset": "{-12,-45}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_02",
+    "group": 30000,
+    "number": 44,
+    "file": "assets/frames/30000_44.png",
+    "axis": [
+      142,
+      130
+    ],
+    "rgba_sha256": "09ea4d4a7129945b1ab3e7bcb36a14cb26eae688cc98f6b238e1bf23c94a667c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original flying body plane independent of blue streak",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1066,1473},{260,187}}",
+    "source_offset": "{-12,-45}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_03",
+    "group": 30000,
+    "number": 45,
+    "file": "assets/frames/30000_45.png",
+    "axis": [
+      142,
+      130
+    ],
+    "rgba_sha256": "368635f79beaf95991a2021a16a27c37406a6e81deed3a0b04c7042559ee555d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original flying body plane independent of blue streak",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{805,1661},{260,187}}",
+    "source_offset": "{-12,-45}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_04",
+    "group": 30000,
+    "number": 46,
+    "file": "assets/frames/30000_46.png",
+    "axis": [
+      142,
+      130
+    ],
+    "rgba_sha256": "ba9f22effd1d8b9ca032ff0120676bb6e6b2439b64369fd28ece45722f1b9d05",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original flying body plane independent of blue streak",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1066,1661},{260,187}}",
+    "source_offset": "{-12,-45}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_05",
+    "group": 30000,
+    "number": 47,
+    "file": "assets/frames/30000_47.png",
+    "axis": [
+      95,
+      66
+    ],
+    "rgba_sha256": "194f09550cd8e0a65b85583bfa52f3bed05d8639c7888abb3fb81c869b673640",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original flying body plane independent of blue streak",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{805,1849},{170,76}}",
+    "source_offset": "{-10,-10}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg2_01",
+    "group": 30000,
+    "number": 48,
+    "file": "assets/frames/30000_48.png",
+    "axis": [
+      35,
+      83
+    ],
+    "rgba_sha256": "8b3b3a0c003657cbd428241fda4e41236d506116f781dae19feca3e329e665aa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1337,1849},{70,84}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg2_02",
+    "group": 30000,
+    "number": 49,
+    "file": "assets/frames/30000_49.png",
+    "axis": [
+      35,
+      83
+    ],
+    "rgba_sha256": "35c8c77a467746f60817ec4e539b2e84ca03a60b2bcf55e1013c7fa8d00c7a66",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1408,1849},{70,84}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_01",
+    "group": 30000,
+    "number": 50,
+    "file": "assets/frames/30000_50.png",
+    "axis": [
+      127,
+      186
+    ],
+    "rgba_sha256": "6a2d5cb6d4adcf59ab863971dff36452cf98859b798802c806fee907f76d5322",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original slash body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{780,831},{332,320}}",
+    "source_offset": "{39,-127}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_02",
+    "group": 30000,
+    "number": 51,
+    "file": "assets/frames/30000_51.png",
+    "axis": [
+      127,
+      186
+    ],
+    "rgba_sha256": "6fae6c06bc9e81510634996a5330e638f1dc03c14b6c9880f43a7b00ef5fa14b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original slash body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1113,831},{332,320}}",
+    "source_offset": "{39,-127}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_03",
+    "group": 30000,
+    "number": 52,
+    "file": "assets/frames/30000_52.png",
+    "axis": [
+      127,
+      186
+    ],
+    "rgba_sha256": "bb1a7ae1070f9f251757a9041c5cd0c9cb9e5af1685710833f534c426772b15b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original slash body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{780,1152},{332,320}}",
+    "source_offset": "{39,-127}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_04",
+    "group": 30000,
+    "number": 53,
+    "file": "assets/frames/30000_53.png",
+    "axis": [
+      127,
+      186
+    ],
+    "rgba_sha256": "03e6e35a5a2eab77894bc9ea72b56877ae8e17bd81bc789344d5e10674408142",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original slash body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1113,1152},{332,320}}",
+    "source_offset": "{39,-127}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_05",
+    "group": 30000,
+    "number": 54,
+    "file": "assets/frames/30000_54.png",
+    "axis": [
+      35,
+      83
+    ],
+    "rgba_sha256": "b598a961344cddaf93f58076f787838d1094cc4b4d76865d38f8474c46401e1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original slash body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1479,1849},{70,84}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Cube_01",
+    "group": 30000,
+    "number": 55,
+    "file": "assets/frames/30000_55.png",
+    "axis": [
+      25,
+      93
+    ],
+    "rgba_sha256": "9c1fd7a9d65ccef64a9a9f1650a75e883d2dab75ac4930add2d7adf556eabb29",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1326,1561},{50,96}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill03_Cube_02",
+    "group": 30000,
+    "number": 56,
+    "file": "assets/frames/30000_56.png",
+    "axis": [
+      25,
+      93
+    ],
+    "rgba_sha256": "540b538098870ca34b20d6000991d3ced5c523518c46229a2b32f361e0c4247c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1377,1561},{50,96}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_Chg_01",
+    "group": 30000,
+    "number": 57,
+    "file": "assets/frames/30000_57.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "cd404d4635c4be583242bbb954e173c380a57148b34066e7475455eac8d031d3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1326,1473},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_Chg_02",
+    "group": 30000,
+    "number": 58,
+    "file": "assets/frames/30000_58.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "bacf918add51665f59ac09fe65d11e556f187580556d679ba4aca38d5c8166e6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1377,1473},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_01",
+    "group": 30000,
+    "number": 59,
+    "file": "assets/frames/30000_59.png",
+    "axis": [
+      56,
+      117
+    ],
+    "rgba_sha256": "224948b243f65f1d1500a9fab15bc849a49413c27dc05abdaa89d47585d81c00",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original knee body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1643},{146,134}}",
+    "source_offset": "{17,-17}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_02",
+    "group": 30000,
+    "number": 60,
+    "file": "assets/frames/30000_60.png",
+    "axis": [
+      56,
+      117
+    ],
+    "rgba_sha256": "6a52ad06cddf203c2d51ed3cd5be90024e82dcf7cf66d46c6cee4f2d811bcef0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original knee body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1778},{146,134}}",
+    "source_offset": "{17,-17}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_03",
+    "group": 30000,
+    "number": 61,
+    "file": "assets/frames/30000_61.png",
+    "axis": [
+      56,
+      117
+    ],
+    "rgba_sha256": "26c63de424e441dc2da4f378ab284cd7dab76b88254641dfe081b8a53db2b544",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original knee body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{658,1643},{146,134}}",
+    "source_offset": "{17,-17}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_04",
+    "group": 30000,
+    "number": 62,
+    "file": "assets/frames/30000_62.png",
+    "axis": [
+      56,
+      117
+    ],
+    "rgba_sha256": "8b97cba3d7419fee8314bc3abcff40f7eb10045c2c48c6991ef6b460a0b19845",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original knee body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{658,1778},{146,134}}",
+    "source_offset": "{17,-17}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_05",
+    "group": 30000,
+    "number": 63,
+    "file": "assets/frames/30000_63.png",
+    "axis": [
+      35,
+      85
+    ],
+    "rgba_sha256": "c3238935c0503e82a58a7c0c22be27d8301fe7fa60e80f3dc2a5399492c41e57",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original knee body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{582,1913},{70,86}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_01",
+    "group": 30000,
+    "number": 64,
+    "file": "assets/frames/30000_64.png",
+    "axis": [
+      35,
+      79
+    ],
+    "rgba_sha256": "23546fa8ba2dd2dc9bcbbe1f8b5e872b66b44f49eb0952ee5b77372766c8ef4d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,2006},{70,83}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_02",
+    "group": 30000,
+    "number": 65,
+    "file": "assets/frames/30000_65.png",
+    "axis": [
+      35,
+      78
+    ],
+    "rgba_sha256": "90376c45867c1a369e72dd0c1206883cf938fcad360c62dacd425f80a3ccafaa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{582,2006},{70,83}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_03",
+    "group": 30000,
+    "number": 66,
+    "file": "assets/frames/30000_66.png",
+    "axis": [
+      35,
+      69
+    ],
+    "rgba_sha256": "da7913a14c5274e6a3b9f6968c11364c8f54b0fb53c7cbd9a0119794983a78b3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{653,2006},{70,83}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_01",
+    "group": 30000,
+    "number": 67,
+    "file": "assets/frames/30000_67.png",
+    "axis": [
+      115,
+      142
+    ],
+    "rgba_sha256": "f5bef5052d3c7d9ee944977c499835f46187e69c3737451d9040676d3a4269d6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,831},{268,202}}",
+    "source_offset": "{19,-51}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_02",
+    "group": 30000,
+    "number": 68,
+    "file": "assets/frames/30000_68.png",
+    "axis": [
+      115,
+      142
+    ],
+    "rgba_sha256": "147c05513687c75bf00b80d7a58f0ac690ad5672b50485920da743a08ed73392",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1034},{268,202}}",
+    "source_offset": "{19,-51}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_03",
+    "group": 30000,
+    "number": 69,
+    "file": "assets/frames/30000_69.png",
+    "axis": [
+      115,
+      142
+    ],
+    "rgba_sha256": "d6471867405fb6bfb06b592ce51fd707634fa5a63aebb8c0dfc1c4c563138727",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1237},{268,202}}",
+    "source_offset": "{19,-51}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_04",
+    "group": 30000,
+    "number": 70,
+    "file": "assets/frames/30000_70.png",
+    "axis": [
+      115,
+      142
+    ],
+    "rgba_sha256": "3ceb78de70538227d3d26b4201c4bcec5ec8f7330905e052adaef3b5a4f178ee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,1440},{268,202}}",
+    "source_offset": "{19,-51}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_05",
+    "group": 30000,
+    "number": 71,
+    "file": "assets/frames/30000_71.png",
+    "axis": [
+      35,
+      65
+    ],
+    "rgba_sha256": "b4327656d33dcd574ed57689d3b946f7270abaa653f5b8b4564909cce001c33a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{653,1913},{82,83}}",
+    "source_offset": "{6,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_06",
+    "group": 30000,
+    "number": 72,
+    "file": "assets/frames/30000_72.png",
+    "axis": [
+      35,
+      72
+    ],
+    "rgba_sha256": "158d11b441b329acfb07110b8e4dfbac93baabd64254177a0f6ba521ce43b4c9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original kicking body plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{724,2006},{70,83}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_CupMove_01",
+    "group": 30000,
+    "number": 73,
+    "file": "assets/frames/30000_73.png",
+    "axis": [
+      35,
+      81
+    ],
+    "rgba_sha256": "8ac8d74576a8bec769b77eeb4d3ff8243baffffdfa1d9ca65d2046459929be9b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{976,1849},{70,82}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_CupMove_02",
+    "group": 30000,
+    "number": 74,
+    "file": "assets/frames/30000_74.png",
+    "axis": [
+      35,
+      81
+    ],
+    "rgba_sha256": "b5cf509f24b178f60d8b35b10b69ea8fe22d82cda043b342646c9f6dec1cf38e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1047,1849},{70,82}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Smn_01",
+    "group": 30000,
+    "number": 75,
+    "file": "assets/frames/30000_75.png",
+    "axis": [
+      155,
+      474
+    ],
+    "rgba_sha256": "69dd95c278c82245aa5bfc4270f6f7ce77060569ed65012b1953870a1972727c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Smn_02",
+    "group": 30000,
+    "number": 76,
+    "file": "assets/frames/30000_76.png",
+    "axis": [
+      155,
+      474
+    ],
+    "rgba_sha256": "b31d9b1115d84141cbf94f2dc282fd27df896a739798d29f507590d21ec9e810",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{311,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Idle_01",
+    "group": 30000,
+    "number": 77,
+    "file": "assets/frames/30000_77.png",
+    "axis": [
+      155,
+      474
+    ],
+    "rgba_sha256": "bcd409a3899440732da240b798ca1adb6b7edc46f70856e4b551f88a8aa0756d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{622,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Cls_01",
+    "group": 30000,
+    "number": 78,
+    "file": "assets/frames/30000_78.png",
+    "axis": [
+      155,
+      454
+    ],
+    "rgba_sha256": "cedfdb12774f88ded252594af942e02e13d6383e74397a66312ffed6860cad0b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{933,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Cls_02",
+    "group": 30000,
+    "number": 79,
+    "file": "assets/frames/30000_79.png",
+    "axis": [
+      155,
+      434
+    ],
+    "rgba_sha256": "3de289aaa7ba7a6d2d56a56ba3eb7ae695df9966a64a958bb7dff333bfe8ab16",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1244,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Cls_03",
+    "group": 30000,
+    "number": 80,
+    "file": "assets/frames/30000_80.png",
+    "axis": [
+      155,
+      414
+    ],
+    "rgba_sha256": "6e2a180c82b9b34efb3028f47e87952c00ecb4fd86ea0c0fb17dd7e0725025e5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1555,0},{310,506}}",
+    "source_offset": "{0,-206}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Atk_01",
+    "group": 30000,
+    "number": 81,
+    "file": "assets/frames/30000_81.png",
+    "axis": [
+      255,
+      319
+    ],
+    "rgba_sha256": "bea0d64e06c93db78c703ecde1891563e9104edb63e0cba9eb53ab7afba1507e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,507},{510,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Atk_02",
+    "group": 30000,
+    "number": 82,
+    "file": "assets/frames/30000_82.png",
+    "axis": [
+      255,
+      319
+    ],
+    "rgba_sha256": "f852d4ed249bfd7a7debb8055346ad66206c6d03408e73d69843c271cd323e3f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,831},{510,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Atk_03",
+    "group": 30000,
+    "number": 83,
+    "file": "assets/frames/30000_83.png",
+    "axis": [
+      255,
+      319
+    ],
+    "rgba_sha256": "70bfcfc76b69c6bd2f6c79828ee3bb4188affb394af95d6b4391993f4ed3a5f5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,1155},{510,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Atk_04",
+    "group": 30000,
+    "number": 84,
+    "file": "assets/frames/30000_84.png",
+    "axis": [
+      255,
+      319
+    ],
+    "rgba_sha256": "170b92a8bc6b4cadd499a915fbcf026a4785b6f6482da483a01cae5147315b71",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,1479},{510,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_Atk_05",
+    "group": 30000,
+    "number": 85,
+    "file": "assets/frames/30000_85.png",
+    "axis": [
+      255,
+      319
+    ],
+    "rgba_sha256": "fcfc7ad0ee4d5ee29c2cea70008307b131201f972c8c987f7ee6f70dd7c81b4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{0,1803},{510,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_IdleCls_01",
+    "group": 30000,
+    "number": 86,
+    "file": "assets/frames/30000_86.png",
+    "axis": [
+      155,
+      319
+    ],
+    "rgba_sha256": "3cda2dc1cb41d922ee52e77230525245155f55a21d75d7f50ca668be4932f07f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{511,507},{310,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_out_01",
+    "group": 30000,
+    "number": 87,
+    "file": "assets/frames/30000_87.png",
+    "axis": [
+      155,
+      319
+    ],
+    "rgba_sha256": "3fc78ef1e3a3a4758604ebe09cf73db91c9a2bd29943aa2521e57dce9f08ac57",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{822,507},{310,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "JigenCup_out_02",
+    "group": 30000,
+    "number": 88,
+    "file": "assets/frames/30000_88.png",
+    "axis": [
+      155,
+      319
+    ],
+    "rgba_sha256": "a783ec81c0825bb91069e3644e398b35446eada05c9065fc083aef29c3b9ce10",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1133,507},{310,323}}",
+    "source_offset": "{0,-100}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill05_Trans_01",
+    "group": 30000,
+    "number": 89,
+    "file": "assets/frames/30000_89.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "9ef062ab9e397f5f8b0a2907841c8621b3d35335e52c1f7e500fbe73dfdf9ebc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 1,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1495,1934},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill05_Trans_02",
+    "group": 30000,
+    "number": 90,
+    "file": "assets/frames/30000_90.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "e61eaa110b2eeac579e53d57e1b4caf7ca271af4c56cd346ceb7c1c130f37871",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 1,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1546,1934},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill05_Trans_03",
+    "group": 30000,
+    "number": 91,
+    "file": "assets/frames/30000_91.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "81b288ab22dbda1899a2ae5777345275cee5ad80039627baeec19e0dd03c7ff4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 1,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1597,1934},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill05_Trans_04",
+    "group": 30000,
+    "number": 92,
+    "file": "assets/frames/30000_92.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "5af3065482065df7bb76de9c68091ca3d05c18bacf424f873b3ae035710cdfcf",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 1,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1648,1934},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Skill05_01",
+    "group": 30000,
+    "number": 93,
+    "file": "assets/frames/30000_93.png",
+    "axis": [
+      25,
+      86
+    ],
+    "rgba_sha256": "3755568dd5158dfec25ecc873b4e7b1a5330e412f227bbb48ed3430d873112bb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 1,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1699,1934},{50,87}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_01",
+    "group": 30000,
+    "number": 94,
+    "file": "assets/frames/30000_94.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "79b19b06677bf0828a715fe6f3a5b9d5fbfcd99b2012f71f5d73a35f1882ad01",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{887,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_02",
+    "group": 30000,
+    "number": 95,
+    "file": "assets/frames/30000_95.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "58658caa2bd3760e623158aed86d091d0343793c22b8e75880945cd4f8c44c3a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{958,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_03",
+    "group": 30000,
+    "number": 96,
+    "file": "assets/frames/30000_96.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "f09f3fba1b63bbef701e093defa5d5c2b4cfff29fbf20c34598a07a517b30433",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1029,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_04",
+    "group": 30000,
+    "number": 97,
+    "file": "assets/frames/30000_97.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "79b19b06677bf0828a715fe6f3a5b9d5fbfcd99b2012f71f5d73a35f1882ad01",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{887,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_05",
+    "group": 30000,
+    "number": 98,
+    "file": "assets/frames/30000_98.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "58658caa2bd3760e623158aed86d091d0343793c22b8e75880945cd4f8c44c3a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{958,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Walk_06",
+    "group": 30000,
+    "number": 99,
+    "file": "assets/frames/30000_99.png",
+    "axis": [
+      35,
+      60
+    ],
+    "rgba_sha256": "f09f3fba1b63bbef701e093defa5d5c2b4cfff29fbf20c34598a07a517b30433",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "form": 0,
+    "alignment": "original body foot",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1029,1934},{70,64}}",
+    "source_offset": "{0,0}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_01",
+    "group": 30000,
+    "number": 100,
+    "file": "assets/frames/30000_100.png",
+    "axis": [
+      196,
+      246
+    ],
+    "rgba_sha256": "f9c34729feb7695c9a5dd111e70a8717093eb184b5107ebe54131bce32f1135c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,1},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_02",
+    "group": 30000,
+    "number": 101,
+    "file": "assets/frames/30000_101.png",
+    "axis": [
+      196,
+      269
+    ],
+    "rgba_sha256": "cc58e55447a531eb062e871814721617bec518576eec0e697ca1dee7bcfaa241",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,311},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_03",
+    "group": 30000,
+    "number": 102,
+    "file": "assets/frames/30000_102.png",
+    "axis": [
+      196,
+      282
+    ],
+    "rgba_sha256": "a6f710727b72a06c3a796a0580ecd2ce728dae5098bdc91a376c2ab1ff0f16f0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,621},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_04",
+    "group": 30000,
+    "number": 103,
+    "file": "assets/frames/30000_103.png",
+    "axis": [
+      196,
+      288
+    ],
+    "rgba_sha256": "900194188f8805c8941da887abfeb37658919db05dc532be3c1a5cfd5d034dd5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,931},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_05",
+    "group": 30000,
+    "number": 104,
+    "file": "assets/frames/30000_104.png",
+    "axis": [
+      196,
+      297
+    ],
+    "rgba_sha256": "810081b11c63e567dd88a68e9ac628f01cf7a731c9ed9aaa6cf57b1df3c70b31",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,1241},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_06",
+    "group": 30000,
+    "number": 105,
+    "file": "assets/frames/30000_105.png",
+    "axis": [
+      196,
+      298
+    ],
+    "rgba_sha256": "9c7590e87d92a55431acd939f9604f1b901bb64b3b28e96ec7d46f75d74dbcc3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,1551},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_07",
+    "group": 30000,
+    "number": 106,
+    "file": "assets/frames/30000_106.png",
+    "axis": [
+      196,
+      292
+    ],
+    "rgba_sha256": "5a578ec996b7c7a3dddb3f9f6caa157355d0941e631b9b07851155cdcbdcedc3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1888,1861},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_08",
+    "group": 30000,
+    "number": 107,
+    "file": "assets/frames/30000_107.png",
+    "axis": [
+      196,
+      298
+    ],
+    "rgba_sha256": "8481f51c4bc01f411394472febb3c579c16696b18598636c63afd6852b102c77",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1,2149},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_09",
+    "group": 30000,
+    "number": 108,
+    "file": "assets/frames/30000_108.png",
+    "axis": [
+      196,
+      299
+    ],
+    "rgba_sha256": "2a02d39045067788e062961d14d56e0a8eac2dd5bc5c7c47321be8b6c9d65cd2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{395,2149},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_10",
+    "group": 30000,
+    "number": 109,
+    "file": "assets/frames/30000_109.png",
+    "axis": [
+      196,
+      305
+    ],
+    "rgba_sha256": "7ca226d320f0edfa4adc412e9d8405b747fd12ba76ce0d049d4422847dedc580",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{789,2149},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_11",
+    "group": 30000,
+    "number": 110,
+    "file": "assets/frames/30000_110.png",
+    "axis": [
+      196,
+      302
+    ],
+    "rgba_sha256": "6354c89976c330ecf4a69dd340d9551e58d6b0535c5de70fb30e4eb1c74e2d05",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1183,2149},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_12",
+    "group": 30000,
+    "number": 111,
+    "file": "assets/frames/30000_111.png",
+    "axis": [
+      196,
+      295
+    ],
+    "rgba_sha256": "59e076ef85c688c132f0e57a1c0e0f0cbb5f30bff94ef2bef53a0e88c9b39811",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,1},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "Asap_Ngubek_13",
+    "group": 30000,
+    "number": 112,
+    "file": "assets/frames/30000_112.png",
+    "axis": [
+      196,
+      218
+    ],
+    "rgba_sha256": "3c725de4326330441b9e9204ca3496d174ba6c5ede05fe342f2fa2c547977041",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,311},{392,308}}",
+    "source_offset": "{-35,1-40}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_01",
+    "group": 30000,
+    "number": 113,
+    "file": "assets/frames/30000_113.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "b0b32b0140a7475f3b75ae75376383192606b31d06c3c5569f0272c7a4ec226a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,621},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_02",
+    "group": 30000,
+    "number": 114,
+    "file": "assets/frames/30000_114.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "945e2447278b1c1b68c6c9c8d7a14ca13c093e4622424360766b7a1497fd5bad",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,853},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_03",
+    "group": 30000,
+    "number": 115,
+    "file": "assets/frames/30000_115.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "e619fee58c659f4bf2bfad3cf0c43e1aaaec3e83eeaf9c4f534c6d19c176c8e2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,1085},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_04",
+    "group": 30000,
+    "number": 116,
+    "file": "assets/frames/30000_116.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "33ed352106d4c851b43a8056488e78e98e5d0fdee397efa1f2ea390a7e86abb9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,1317},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_05",
+    "group": 30000,
+    "number": 117,
+    "file": "assets/frames/30000_117.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "eb8919fd79d95197253833194567c8813dbdc555bed5c27defa0c78540f384a1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,1549},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_06",
+    "group": 30000,
+    "number": 118,
+    "file": "assets/frames/30000_118.png",
+    "axis": [
+      185,
+      217
+    ],
+    "rgba_sha256": "6d038edb16b6d28ce4310a34f9d7d3d28cbe6c3adde1ce5ad6efbf28c2f18b7d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,1781},{370,230}}",
+    "source_offset": "{10,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusIdle_01",
+    "group": 30000,
+    "number": 119,
+    "file": "assets/frames/30000_119.png",
+    "axis": [
+      135,
+      125
+    ],
+    "rgba_sha256": "ace420159a021bdb432f2d21fce5c066511e534f00d3a132e756ca4c60bc7542",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original solid cube base",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1577,2149},{270,164}}",
+    "source_offset": "{0,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusIdle_02",
+    "group": 30000,
+    "number": 120,
+    "file": "assets/frames/30000_120.png",
+    "axis": [
+      135,
+      125
+    ],
+    "rgba_sha256": "b2234eb95d9334bc28a2ef724645f251286e96c20beee1b74044cad51dc1d285",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original solid cube base",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2282,2013},{270,164}}",
+    "source_offset": "{0,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusIdle_03",
+    "group": 30000,
+    "number": 121,
+    "file": "assets/frames/30000_121.png",
+    "axis": [
+      135,
+      125
+    ],
+    "rgba_sha256": "365499244fdab2245c008036dab6c1362e426a3f651776ca1010f218c92a4019",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original solid cube base",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1849,2179},{270,164}}",
+    "source_offset": "{0,-50}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusJatuh_01",
+    "group": 30000,
+    "number": 122,
+    "file": "assets/frames/30000_122.png",
+    "axis": [
+      85,
+      167
+    ],
+    "rgba_sha256": "e34676f235c5409f778e8a90cea91654eb2498eee0099fe8dc44b434b9d04ac6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2121,2179},{170,193}}",
+    "source_offset": "{0,46}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusJatuh_02",
+    "group": 30000,
+    "number": 123,
+    "file": "assets/frames/30000_123.png",
+    "axis": [
+      85,
+      165
+    ],
+    "rgba_sha256": "b95f3105b8b5586cede6e3dae163e837f45baa34e37e4199a1b99bf3a5d52a8b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{2293,2179},{170,186}}",
+    "source_offset": "{0,46}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_04",
+    "group": 30000,
+    "number": 124,
+    "file": "assets/frames/30000_124.png",
+    "axis": [
+      85,
+      136
+    ],
+    "rgba_sha256": "51df7b0ae000547f3a3c3dacbd6853c2f4174bf7c4a0e047d9ba15804e9bcb08",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1577,2315},{170,140}}",
+    "source_offset": "{0,120}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_03",
+    "group": 30000,
+    "number": 125,
+    "file": "assets/frames/30000_125.png",
+    "axis": [
+      65,
+      101
+    ],
+    "rgba_sha256": "0754c95959546200db99ea8791d8aa64789ea2f51752d5f83d5a553b03dc2a66",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1749,2345},{130,104}}",
+    "source_offset": "{0,140}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_02",
+    "group": 30000,
+    "number": 126,
+    "file": "assets/frames/30000_126.png",
+    "axis": [
+      45,
+      61
+    ],
+    "rgba_sha256": "2dfe09b0aebb5cf5ed5bdc807b932a8f6f952accf08d55d530bff2072e334300",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1881,2374},{90,73}}",
+    "source_offset": "{0,150}",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_01",
+    "group": 30000,
+    "number": 127,
+    "file": "assets/frames/30000_127.png",
+    "axis": [
+      25,
+      23
+    ],
+    "rgba_sha256": "bd2f8d2a8975c3a4679be8c86954eb88bbcf2afa2bfbaf08b682f28e681677b3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "form": 0,
+    "alignment": "original standalone prop ground plane",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya.plist",
+    "rectangle": "{{1973,2374},{50,33}}",
+    "source_offset": "{0,170}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_01",
+    "group": 30001,
+    "number": 0,
+    "file": "assets/frames/30001_0.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "c6fd430e42b12ef1b7271beb0c7eabe7fa5b651d9b0ecded23d83acb5a646b64",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{1774,0},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_02",
+    "group": 30001,
+    "number": 1,
+    "file": "assets/frames/30001_1.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "8aca17469a9ee9e1228801b7f83b02ab0a8ab6dce3a64a070c1ad48b8e2b5f42",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2249,0},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_03",
+    "group": 30001,
+    "number": 2,
+    "file": "assets/frames/30001_2.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "e77b409b4009d1dc442729204d1a31ab9867894a1644d777f1577751353b088d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2724,0},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_04",
+    "group": 30001,
+    "number": 3,
+    "file": "assets/frames/30001_3.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "49af89364947b687c50ca92b8c476e7b91f8bc9e6f38fd3d83094aa64ded2bd8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{1774,502},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_05",
+    "group": 30001,
+    "number": 4,
+    "file": "assets/frames/30001_4.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "13913bc1cc4739c3a406f238ac546004312d3146236e95d26ae9097e83e7c594",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2249,502},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_06",
+    "group": 30001,
+    "number": 5,
+    "file": "assets/frames/30001_5.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "d1dee45f6003c7345e66a19f9fd66904a5d491891dbec443f11edcdb237ba3ee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2724,502},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Smn_07",
+    "group": 30001,
+    "number": 6,
+    "file": "assets/frames/30001_6.png",
+    "axis": [
+      215,
+      359
+    ],
+    "rgba_sha256": "c289c69c69f3c7b43849d1c7f2ad7c959d2599cc5654f243892509caa13d5163",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{1774,1004},{474,501}}",
+    "source_offset": "{22,-141}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_juubi_01",
+    "group": 30001,
+    "number": 7,
+    "file": "assets/frames/30001_7.png",
+    "axis": [
+      215,
+      239
+    ],
+    "rgba_sha256": "d1a493d5f18c8ad7e829caa4ae6d53bef3ac7bc2ba7a773f66292386a75db9a7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{1774,1506},{430,245}}",
+    "source_offset": "{0,-5}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Chg_01",
+    "group": 30001,
+    "number": 8,
+    "file": "assets/frames/30001_8.png",
+    "axis": [
+      215,
+      239
+    ],
+    "rgba_sha256": "5b85a5156a2517676847db13ce073f05b5e2132ef159532417a61038255ae88c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2249,1004},{456,308}}",
+    "source_offset": "{13,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Chg_02",
+    "group": 30001,
+    "number": 9,
+    "file": "assets/frames/30001_9.png",
+    "axis": [
+      215,
+      239
+    ],
+    "rgba_sha256": "ba1306f2d92990ae73ca4f41190b9fd451ab0298bc15e0008ae5677b09b776c7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2706,1004},{456,308}}",
+    "source_offset": "{13,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Chg_03",
+    "group": 30001,
+    "number": 10,
+    "file": "assets/frames/30001_10.png",
+    "axis": [
+      215,
+      239
+    ],
+    "rgba_sha256": "9c8e4a9d652245c18fb849d653dc1a4066e9070c96fba23a865b60629cc6f6dd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2249,1313},{456,308}}",
+    "source_offset": "{13,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Chg_04",
+    "group": 30001,
+    "number": 11,
+    "file": "assets/frames/30001_11.png",
+    "axis": [
+      215,
+      239
+    ],
+    "rgba_sha256": "885e9489d4380723ab674da630b53e799c55d7cd937e05294bb5bebb47badfee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2706,1313},{456,308}}",
+    "source_offset": "{13,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_shoot_01",
+    "group": 30001,
+    "number": 12,
+    "file": "assets/frames/30001_12.png",
+    "axis": [
+      215,
+      290
+    ],
+    "rgba_sha256": "f77536c25c1677538b6b0a8e7c29c9f942abc0cab23fa81f19b7f891c3573cee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2205,1622},{556,359}}",
+    "source_offset": "{63,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_shoot_02",
+    "group": 30001,
+    "number": 13,
+    "file": "assets/frames/30001_13.png",
+    "axis": [
+      215,
+      290
+    ],
+    "rgba_sha256": "8fe801c6156241d913fd53182c0291cbf86d755c619088365a1d4cea6d0677b0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2761,1622},{556,359}}",
+    "source_offset": "{63,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_shoot_03",
+    "group": 30001,
+    "number": 14,
+    "file": "assets/frames/30001_14.png",
+    "axis": [
+      215,
+      290
+    ],
+    "rgba_sha256": "9dadbbe0ae480df27fd29afedddfe24d74866ce3a8fc2f3e05a818a2f9daea47",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{2205,1982},{556,359}}",
+    "source_offset": "{63,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_01",
+    "group": 30001,
+    "number": 15,
+    "file": "assets/frames/30001_15.png",
+    "axis": [
+      215,
+      290
+    ],
+    "rgba_sha256": "551a579f9b340d94df71a0f9f8cca74887c2d2f0a7348fc178efe83fa929dabd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{0,0},{886,359}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_02",
+    "group": 30001,
+    "number": 16,
+    "file": "assets/frames/30001_16.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "d002d9eb5d7e5fd71a97bdd0e70714fdd024c6f0932421a2c8132667902c78ea",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{0,360},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_03",
+    "group": 30001,
+    "number": 17,
+    "file": "assets/frames/30001_17.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "1cc0502a3f1e476ebd4d6e7630bb3f9453357fb0eec04d089577cdeb6dd32d34",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{0,778},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_04",
+    "group": 30001,
+    "number": 18,
+    "file": "assets/frames/30001_18.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "8603f70cdc78e792a5a0f64ebf17dd575aa8a5751abb2006616ccff732f89de0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{0,1196},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_05",
+    "group": 30001,
+    "number": 19,
+    "file": "assets/frames/30001_19.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "cda7f0ec0e531d7af8f9693017a64240cab8ea4cce27ef6c69296225a3fe446a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{887,0},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_06",
+    "group": 30001,
+    "number": 20,
+    "file": "assets/frames/30001_20.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "4ffde5dd9090d79266f67b83c4279ff4c833a21c542573cd9d8fea2ac258ad3c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{887,418},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_07",
+    "group": 30001,
+    "number": 21,
+    "file": "assets/frames/30001_21.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "9b72e93a74dee410fc22f364c40f70f4024f73c61262172c70df2d8c8896fdc7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{887,836},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_08",
+    "group": 30001,
+    "number": 22,
+    "file": "assets/frames/30001_22.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "ebecd45d865aa4eb2582b51453a0712ddeaab166420c6a63fade3c2c8d968550",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{887,1254},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_09",
+    "group": 30001,
+    "number": 23,
+    "file": "assets/frames/30001_23.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "620ecd78db4123a5cb0692363231fd03661b7d23b9dfc07bdde220d90698fb8e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{0,1614},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_Boom_10",
+    "group": 30001,
+    "number": 24,
+    "file": "assets/frames/30001_24.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "1ea48f08c7dcb9b9e62264f2071068eac463726fb3c4d35dbe2d8ecea8791aef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{887,1672},{886,417}}",
+    "source_offset": "{228,-68}",
+    "source_rotated": false
+  },
+  {
+    "key": "Jiraiya_Ulti_out_01",
+    "group": 30001,
+    "number": 25,
+    "file": "assets/frames/30001_25.png",
+    "axis": [
+      215,
+      247
+    ],
+    "rgba_sha256": "e0f02bb5a77569992484071a4aa68e6d473b5dcb8a4b6ef3a48ed04cc936dec5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "form": 1,
+    "alignment": "original Jigen body ground plane inside Ten Tails sequence",
+    "source_plist": "source_material/Jigen_original/Jigen rep Jiraiya/jiraiya/Jiraiya_Skill.plist",
+    "rectangle": "{{1774,1753},{430,253}}",
+    "source_offset": "{0,-5}",
+    "source_rotated": false
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_01",
+    "group": 30002,
+    "number": 1,
+    "file": "assets/frames/30002_1.png",
+    "axis": [
+      215,
+      290
+    ],
+    "rgba_sha256": "7a3847433f2b8763bb8de933c5d3cae1efab8eac30fce8a8761d9136be233c99",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_01",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      359
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_01",
+    "group": 30003,
+    "number": 1,
+    "file": "assets/frames/30003_1.png",
+    "axis": [
+      248,
+      349
+    ],
+    "rgba_sha256": "9fa8d28f5a84f07a4ce1c84652eee676cbfe937248385a34d560418b245d8125",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_01",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      359
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_02",
+    "group": 30002,
+    "number": 2,
+    "file": "assets/frames/30002_2.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "16780da15f647d8b7220357cd98c0b4d9f4779da27e4d27704a1c30cf8cfe2df",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_02",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_02",
+    "group": 30003,
+    "number": 2,
+    "file": "assets/frames/30003_2.png",
+    "axis": [
+      248,
+      406
+    ],
+    "rgba_sha256": "0089a8b60929a209d02ee59a537f4594b289d264d4de384abdf33b6d70c25866",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_02",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_03",
+    "group": 30002,
+    "number": 3,
+    "file": "assets/frames/30002_3.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "aaa8dd4cdca62b5e478e8852ada6b1c0e56189bf50f86e078a75b2f6f1acd772",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_03",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_03",
+    "group": 30003,
+    "number": 3,
+    "file": "assets/frames/30003_3.png",
+    "axis": [
+      248,
+      406
+    ],
+    "rgba_sha256": "a3f1d45d91db95a5a6b5edb4057ea76dcfb75bba4b8eedf963dda18da7d32dac",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_03",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_04",
+    "group": 30002,
+    "number": 4,
+    "file": "assets/frames/30002_4.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "7d3019447eb023c0375d21f10c4996e6b2ed4fdb66077e46a1fd5e353fa55d22",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_04",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_04",
+    "group": 30003,
+    "number": 4,
+    "file": "assets/frames/30003_4.png",
+    "axis": [
+      248,
+      405
+    ],
+    "rgba_sha256": "611fe6fb0cf2959456e2211c4d410bab441456454b343bf71353d8450479aaf5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_04",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_05",
+    "group": 30002,
+    "number": 5,
+    "file": "assets/frames/30002_5.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "d6972bded40bd0f611003b23f688f164d7cd20f1747f3c83b162c4bc32a5d83e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_05",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_05",
+    "group": 30003,
+    "number": 5,
+    "file": "assets/frames/30003_5.png",
+    "axis": [
+      248,
+      405
+    ],
+    "rgba_sha256": "9a7a8b4f9ad59581260e092602bbb6536900745188748ca2e7935c6f6937057f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_05",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_06",
+    "group": 30002,
+    "number": 6,
+    "file": "assets/frames/30002_6.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "114eea19e9399808ff1a2a219f11c799aec0cdd7a0aaf7f8c2e206b90334a62d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_06",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_06",
+    "group": 30003,
+    "number": 6,
+    "file": "assets/frames/30003_6.png",
+    "axis": [
+      248,
+      405
+    ],
+    "rgba_sha256": "c8bde9c309b1eb82fa2b95fbba9bd0e8d1a6e786a6f4e123d8f654f73397974e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_06",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_07",
+    "group": 30002,
+    "number": 7,
+    "file": "assets/frames/30002_7.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "fcce9d79a4cedcffa15754bae4bae404818a7605b5ed8221e3e7a71fa7fc3128",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_07",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_07",
+    "group": 30003,
+    "number": 7,
+    "file": "assets/frames/30003_7.png",
+    "axis": [
+      248,
+      401
+    ],
+    "rgba_sha256": "bac98cbf8e82840b9ba787a54cb1edaad8fefb772b53b49fc9b45214639624ad",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_07",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_08",
+    "group": 30002,
+    "number": 8,
+    "file": "assets/frames/30002_8.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "97f8e9ccda46b581c60c5b9b5993bd0f8eff5c2633565fd6b2809d7c0bf82d54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_08",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_08",
+    "group": 30003,
+    "number": 8,
+    "file": "assets/frames/30003_8.png",
+    "axis": [
+      248,
+      401
+    ],
+    "rgba_sha256": "858e97aa84bfaa4948e9283d3bdd11a0f1324262dce21bae27c7ad75cc5538c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_08",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_09",
+    "group": 30002,
+    "number": 9,
+    "file": "assets/frames/30002_9.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "7a7894084bfe530bc1e5b843ab999f2c6290e12c201c0df7c59b5230adff8899",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_09",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_09",
+    "group": 30003,
+    "number": 9,
+    "file": "assets/frames/30003_9.png",
+    "axis": [
+      248,
+      399
+    ],
+    "rgba_sha256": "9b313ab87b3161cfe4a166756d79484b9c4595437bd56f757cfac104fdf1632b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_09",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Caster_Jiraiya_Ulti_Boom_10",
+    "group": 30002,
+    "number": 10,
+    "file": "assets/frames/30002_10.png",
+    "axis": [
+      215,
+      348
+    ],
+    "rgba_sha256": "6853670fbe0a1b8ef932b32eb5413c3d11bd3af34e3b158d094e5a673ff57466",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "source_key": "Jiraiya_Ulti_Boom_10",
+    "source_rectangle": [
+      0,
+      0,
+      390,
+      417
+    ],
+    "form": 1,
+    "alignment": "original caster plane, explosion separated"
+  },
+  {
+    "key": "Blast_Jiraiya_Ulti_Boom_10",
+    "group": 30003,
+    "number": 10,
+    "file": "assets/frames/30003_10.png",
+    "axis": [
+      248,
+      395
+    ],
+    "rgba_sha256": "b4324fb0dc8892d54e2945396d0a918af7ab8dd630a191907ffc50959fb20f48",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Ulti_Boom_10",
+    "source_rectangle": [
+      390,
+      0,
+      886,
+      417
+    ],
+    "alignment": "original explosion grounded at the struck enemy"
+  },
+  {
+    "key": "Horn_layer",
+    "group": 30004,
+    "number": 0,
+    "file": "assets/frames/30004_0.png",
+    "axis": [
+      9,
+      8
+    ],
+    "rgba_sha256": "02d4dd3dd181d6df9e8369bfec063499cefa1913b3e8d0f1028dbaa55f25d060",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_key": "Jiraiya_Skill05_Trans_04",
+    "source_rectangle": [
+      17,
+      0,
+      36,
+      10
+    ],
+    "alignment": "original horn attached to the current body head"
+  },
+  {
+    "key": "Common_8700_0",
+    "group": 8700,
+    "number": 0,
+    "file": "assets/frames/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_1",
+    "group": 8700,
+    "number": 1,
+    "file": "assets/frames/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_2",
+    "group": 8700,
+    "number": 2,
+    "file": "assets/frames/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_3",
+    "group": 8700,
+    "number": 3,
+    "file": "assets/frames/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_0",
+    "group": 8710,
+    "number": 0,
+    "file": "assets/frames/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_1",
+    "group": 8710,
+    "number": 1,
+    "file": "assets/frames/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_2",
+    "group": 8710,
+    "number": 2,
+    "file": "assets/frames/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_3",
+    "group": 8710,
+    "number": 3,
+    "file": "assets/frames/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_0",
+    "group": 8720,
+    "number": 0,
+    "file": "assets/frames/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_1",
+    "group": 8720,
+    "number": 1,
+    "file": "assets/frames/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_2",
+    "group": 8720,
+    "number": 2,
+    "file": "assets/frames/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_3",
+    "group": 8720,
+    "number": 3,
+    "file": "assets/frames/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_4",
+    "group": 8720,
+    "number": 4,
+    "file": "assets/frames/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_5",
+    "group": 8720,
+    "number": 5,
+    "file": "assets/frames/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_0",
+    "group": 8900,
+    "number": 0,
+    "file": "assets/frames/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_1",
+    "group": 8900,
+    "number": 1,
+    "file": "assets/frames/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_2",
+    "group": 8900,
+    "number": 2,
+    "file": "assets/frames/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_3",
+    "group": 8900,
+    "number": 3,
+    "file": "assets/frames/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_4",
+    "group": 8900,
+    "number": 4,
+    "file": "assets/frames/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_5",
+    "group": 8900,
+    "number": 5,
+    "file": "assets/frames/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_6",
+    "group": 8900,
+    "number": 6,
+    "file": "assets/frames/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_7",
+    "group": 8900,
+    "number": 7,
+    "file": "assets/frames/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_8",
+    "group": 8900,
+    "number": 8,
+    "file": "assets/frames/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_9",
+    "group": 8900,
+    "number": 9,
+    "file": "assets/frames/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_10",
+    "group": 8900,
+    "number": 10,
+    "file": "assets/frames/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_11",
+    "group": 8900,
+    "number": 11,
+    "file": "assets/frames/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_12",
+    "group": 8900,
+    "number": 12,
+    "file": "assets/frames/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_13",
+    "group": 8900,
+    "number": 13,
+    "file": "assets/frames/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_14",
+    "group": 8900,
+    "number": 14,
+    "file": "assets/frames/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_15",
+    "group": 8900,
+    "number": 15,
+    "file": "assets/frames/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_16",
+    "group": 8900,
+    "number": 16,
+    "file": "assets/frames/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_17",
+    "group": 8900,
+    "number": 17,
+    "file": "assets/frames/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_18",
+    "group": 8900,
+    "number": 18,
+    "file": "assets/frames/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_19",
+    "group": 8900,
+    "number": 19,
+    "file": "assets/frames/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_20",
+    "group": 8900,
+    "number": 20,
+    "file": "assets/frames/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_21",
+    "group": 8900,
+    "number": 21,
+    "file": "assets/frames/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_22",
+    "group": 8900,
+    "number": 22,
+    "file": "assets/frames/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_23",
+    "group": 8900,
+    "number": 23,
+    "file": "assets/frames/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Portrait_0",
+    "group": 9000,
+    "number": 0,
+    "file": "assets/frames/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "68c434936d6690d4c1749971ba87973e3c7ae34dfa7589318d8b7822a172cd85",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  },
+  {
+    "key": "Portrait_1",
+    "group": 9000,
+    "number": 1,
+    "file": "assets/frames/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "5800e096cee1a5572018680bd3127b4a99894415f05f3e18257d6706d2230a5e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "character": "JigenKara",
+  "runtime_sha256": "82aaf538a11422ccebc1c9ffab5c651a988348cd587d534a51ebaa775163bf98",
+  "actual_inputs": 120,
+  "feature_checks": 36,
+  "receiving_probes": 112,
+  "small_target_checks": 20,
+  "horn_input_checks": 16,
+  "dash_checks": 8,
+  "original_frames": 154,
+  "derived_crops": 21,
+  "original_audio": 44,
+  "awakening": "Horn transformation and stronger attacks, 20 seconds",
+  "previous_characters_unchanged_from": "8300bbbaca54d0e91d19fd199bb85f0bbf5f03c0",
+  "archive_sha256": "1f6acb2cbb02e1b23f1010474d5f6672e49e6b8313b05efed486207da663e26b",
+  "video_sha256": "c2b82456a843620d0eddcdd78fcf2ef70aab622df1380b48dc3730386d58c7ed"
+}

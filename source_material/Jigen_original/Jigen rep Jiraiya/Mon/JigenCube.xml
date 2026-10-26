@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Jigenol</f>
+        <e type="setDelay">20</e> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+
+          <f>KubusAppear_01</f>         
+          <e type="setSound">Audio/Effect/Kubus.ogg</e>
+          <f>KubusAppear_02</f>
+          <f>KubusAppear_03</f>
+          <f>KubusAppear_04</f>
+          <e type="setDelay">20</e>
+          
+          
+          <f>KubusJatuh_01</f>
+          <f>KubusJatuh_02</f>
+          
+          
+          <f>KubusBom_01</f>        
+          <e type="setSound">Audio/Effect/lander.ogg</e>
+          <!-- <e type="setAttackBox">b_hit</e> -->
+          <f>KubusBom_02</f>
+          <f>KubusBom_03</f>          
+          <f>KubusBom_04</f>
+          <f>KubusBom_05</f>
+          <f>KubusBom_06</f>
+          <f>KubusIdle_01</f>            
+          <e type="setDelay">500</e>
+          <f>KubusIdle_02</f>       
+          <f>KubusIdle_03</f>       
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">1000</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+          <f>KubusAppear_01</f>         
+          <e type="setSound">Audio/Effect/Kubus.ogg</e>
+          <f>KubusAppear_02</f>
+          <f>KubusAppear_03</f>
+          <f>KubusAppear_04</f>
+          <e type="setDelay">20</e>
+          
+          
+          <f>KubusJatuh_01</f>
+          <f>KubusJatuh_02</f>
+          
+          
+          <f>KubusBom_01</f>        
+          <e type="setSound">Audio/Effect/lander.ogg</e>
+          <e type="setAttackBox">b_hit</e>
+          <f>KubusBom_02</f>
+          <f>KubusBom_03</f>          
+          <f>KubusBom_04</f>
+          <f>KubusBom_05</f>
+          <f>KubusBom_06</f>
+          <f>KubusIdle_01</f>            
+          <e type="setDelay">500</e>
+          <f>KubusIdle_02</f>       
+          <f>KubusIdle_03</f>       
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">CodeClaw</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">800</p>
+		</data>
+		<frame>
+			<f>Asap_Ngubek_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Asap_Ngubek_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">288</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	
+			<f>Asap_Ngubek_01</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_02</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_02</f>	
+			<e type="setMove">-10</e>	
+			<f>Asap_Ngubek_03</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_04</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_05</f>	
+			<e type="setMove">-10</e>	
+			<f>Asap_Ngubek_06</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_07</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_08</f>	
+			<e type="setMove">-10</e>	
+			<f>Asap_Ngubek_09</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_10</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_11</f>	
+			<e type="setMove">-10</e>	
+			<f>Asap_Ngubek_12</f>
+			<e type="setMove">-10</e>
+			<f>Asap_Ngubek_13</f>
+			<e type="setMove">-10</e>
+
+			
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

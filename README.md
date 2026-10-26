@@ -376,3 +376,19 @@ python tools/check_roster_receiving.py --characters OugaYatsume --out previews/O
 python tools/make_ouga_preview.py
 python tools/package_ouga.py
 ```
+
+---
+
+# Jigen — Karma, estacas, cubos y Diez Colas
+
+[**Descargar Jigen**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/JigenKara.zip) · [Gameplay con audio del motor](previews/JigenKara_motor.mp4) · [Controles Xbox](JigenKara/CONTROLES_XBOX.md) · [Instalación](JigenKara/LEEME.md) · [Créditos](JigenKara/CREDITOS_Y_FUENTES.md)
+
+Los sprites originales de Vaydra, hoja de Alex, y las secuencias del video aportado: taijutsu, ráfagas de varillas, estacas desde el suelo, cubos de Daikokuten, reducción con Sukunahikona, absorción de Karma y sellado con el cuenco negro. Incluye tres cadenas terrestres y aéreas, trece especiales, doble dash gratuito y carga con aura.
+
+**Abajo + Pausa** con 3000 activa el despertar con cuerno durante veinte segundos; consume 1500. El cuerno original acompaña cada pose de combate, las ráfagas aumentan de tres a cinco y los ataques y cubos se refuerzan. RB absorbe proyectiles reales durante una ventana breve y recupera energía al confirmar contacto; los golpes físicos siguen interrumpiéndolo. Abajo + RT cierra el cuenco sólo al conectar y libera al rival tras tres impactos o si golpean a Jigen.
+
+**A** invoca al Diez Colas y dispara la Bijūdama con las animaciones originales. La explosión se centra sobre el rival, a ras del suelo. Ocho impactos, máximo 650 de daño en base y 800 en despertar, o el 65 % / 80 % de la vida máxima rival si tiene menos de 1000. Cuesta 3000, puede bloquearse y no consume vida propia. Una interrupción detiene el daño y libera al enemigo.
+
+Paquete independiente: extrae `JigenKara` en `chars` y añade `JigenKara/JigenKara.def` a `data/select.def`. Se conservan 154 cuadros originales, 21 recortes para separar cuerno y explosión, y 44 audios originales seleccionados; no se generan dibujos ni voces. La biblioteca completa del ZIP permanece entre las fuentes.
+
+Verificación nativa en Ikemen GO: [120 pruebas de entradas y combate](previews/JigenKara_engine_checks.json), [36 de absorción, sellado y reducción](previews/JigenKara_feature_checks.json), [112 de recepción de golpes](previews/JigenKara_receiving/JigenKara.json), [20 contra un rival a media escala](previews/JigenKara_short_target_checks.json), [ocho de dash](previews/JigenKara_dash_checks.json) y [seguimiento del cuerno](previews/JigenKara_horn_checks.json). [Conservación de fuentes](previews/JigenKara_source_checks.json) · [Comprobación del ZIP](previews/JigenKara_package_checks.json) · [Entrega](previews/JigenKara_delivery_checks.json). Contratos estáticos de MUGEN 1.1; el ejecutable concreto de Windows y el mando físico requieren comprobación local. Los personajes anteriores se conservan sin cambios.

@@ -1,0 +1,113 @@
+{
+  "moves": [
+    [
+      "Rafaga",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Estacas",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Embestida",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "CorteCubo",
+      "b",
+      "B",
+      1030,
+      600
+    ],
+    [
+      "Rodilla",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Patada",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Pesado",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Sukunahikona",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Absorcion",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Varillas",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Daikokuten",
+      "y",
+      "D",
+      1430,
+      500
+    ],
+    [
+      "Sellado",
+      "z",
+      "D",
+      1440,
+      350
+    ]
+  ],
+  "form_offset": 10000,
+  "awakening": "Horn awakening with stronger Karma; original horn layer follows every combat pose",
+  "activation_requires": 3000,
+  "awakening_cost": 1500,
+  "awakening_ticks": 1200,
+  "ultimate_cost": 3000,
+  "own_life_cost": 0,
+  "ultimate_damage": "min(650,65% max enemy life) base; min(800,80%) reinforced",
+  "absorption": {
+    "window": [
+      8,
+      36
+    ],
+    "refund": 220,
+    "physical_attacks_remain_legal": true
+  },
+  "source_art_unchanged": true,
+  "ai_generated_art": false
+}

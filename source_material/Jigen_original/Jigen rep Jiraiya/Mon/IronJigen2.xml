@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Jigenol</f>
+        <e type="setDelay">20</e> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <f>Jiraiya_Skill02Iron02_01</f>
+        <e type="setDelay">-8</e>
+        <f>Jiraiya_Skill02Iron02_02</f>
+        <e type="setDelay">-8</e>
+        <e type="setSound">Audio/Effect/BesiNancep.mp3</e>
+        <f>Jiraiya_Skill02Iron02_03</f>
+        <e type="setDelay">-8</e>
+        <f>Jiraiya_Skill02Iron02_04</f>
+        <!-- <e type="setAttackBox">o2_hit</e> -->
+        <f>Jiraiya_Skill02Iron02_05</f>
+        <f>Jiraiya_Skill02Iron02_06</f>
+        <e type="setDelay">280</e>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">1600</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">findTarget</e> 
+        <e type="setCommand">setTransport</e>
+        <f>Jiraiya_Skill02Iron02_01</f>
+        <e type="setDelay">-8</e>
+        <f>Jiraiya_Skill02Iron02_02</f>
+        <e type="setDelay">-8</e>
+        <e type="setSound">Audio/Effect/BesiNancep.mp3</e>
+        <f>Jiraiya_Skill02Iron02_03</f>
+        <e type="setDelay">-8</e>
+        <f>Jiraiya_Skill02Iron02_04</f>
+        <e type="setAttackBox">o2_hit</e>
+        <f>Jiraiya_Skill02Iron02_05</f>
+        <f>Jiraiya_Skill02Iron02_06</f>
+        <e type="setDelay">280</e>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

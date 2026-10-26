@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Sabaku</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>JigenCup_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>JigenCup_Idle_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>JigenCup_out_02</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">325</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setCommand">findTarget</e>
+			<e type="setCommand">setTransport</e>
+		     <e type="setSound">Audio/Effect/kubus2.mp3</e>
+		    <f>JigenCup_Smn_01</f>
+	    	<e type="setDelay">3</e>
+        <f>JigenCup_Smn_02</f>
+      	<e type="setDelay">3</e>
+        <f>JigenCup_Idle_01</f>
+        <e type="setDelay">30</e>
+			
+			
+			
+		    <f>JigenCup_Cls_01</f>
+	      <e type="setSound">Audio/Effect/desis.ogg</e>    
+				<e type="setAttackBox">s_hit</e>
+		    <e type="setDelay">3</e>	
+        <f>JigenCup_Cls_02</f>
+		  	<e type="setAttackBox">s_hit</e>
+		   	<e type="setDelay">3</e>
+        <f>JigenCup_Cls_03</f>
+	    	<e type="setAttackBox">s_hit</e>
+	    	
+	    	
+	    	
+			<f>JigenCup_Atk_01</f>	
+	    <e type="setSound">Audio/Effect/lander.ogg</e>	
+	    <e type="setAttackBox">s_hit</e>	
+		  <e type="setAttackBox">s_hit</e>	
+			<f>JigenCup_Atk_02</f>
+		  <e type="setAttackBox">s_hit</e>		
+			<f>JigenCup_Atk_03</f>
+	    <e type="setAttackBox">s_hit</e>		
+			<f>JigenCup_Atk_04</f>
+		  <e type="setAttackBox">ct_hit</e>		
+			<f>JigenCup_Atk_05</f>
+			
+			
+	
+			<f>JigenCup_IdleCls_01</f>
+			<e type="setDelay">260</e>
+			
+			<f>JigenCup_out_01</f>
+			<f>JigenCup_out_02</f>
+			<e type="setDetonation">0</e>	
+			
+			
+
+		</frame>
+	</action>
+
+</unit>

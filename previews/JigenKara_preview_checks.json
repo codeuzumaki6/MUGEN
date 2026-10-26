@@ -1,0 +1,124 @@
+{
+  "character": "JigenKara",
+  "frames": 907,
+  "cases": 16,
+  "duration": 77.55,
+  "video": "JigenKara_motor.mp4",
+  "sha256": "c2b82456a843620d0eddcdd78fcf2ef70aab622df1380b48dc3730386d58c7ed",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.6344497781229889,
+      "actual_sample_seconds": 4.922630385487528
+    },
+    {
+      "case": 1,
+      "cue_frame": 509,
+      "state": 1010,
+      "correlation": 0.35932514456835213,
+      "actual_sample_seconds": 12.956734693877552
+    },
+    {
+      "case": 2,
+      "cue_frame": 989,
+      "state": 1020,
+      "correlation": 0.3942228987509651,
+      "actual_sample_seconds": 21.037278911564627
+    },
+    {
+      "case": 3,
+      "cue_frame": 1469,
+      "state": 1030,
+      "correlation": 0.6481614442726754,
+      "actual_sample_seconds": 29.164263038548754
+    },
+    {
+      "case": 4,
+      "cue_frame": 1949,
+      "state": 1420,
+      "correlation": 0.6070816913078182,
+      "actual_sample_seconds": 37.24480725623583
+    },
+    {
+      "case": 5,
+      "cue_frame": 2429,
+      "state": 1440,
+      "correlation": 0.6476307176701834,
+      "actual_sample_seconds": 45.3253514739229
+    },
+    {
+      "case": 6,
+      "cue_frame": 2909,
+      "state": 3000,
+      "correlation": 0.2489033140333187,
+      "actual_sample_seconds": 53.819433106575964
+    },
+    {
+      "case": 7,
+      "cue_frame": 3389,
+      "state": 520,
+      "correlation": 0.27780147465432714,
+      "actual_sample_seconds": 61.532879818594104
+    },
+    {
+      "case": 8,
+      "cue_frame": 3869,
+      "state": 11000,
+      "correlation": 0.6400614784590444,
+      "actual_sample_seconds": 69.42766439909298
+    },
+    {
+      "case": 9,
+      "cue_frame": 4349,
+      "state": 11030,
+      "correlation": 0.6476299302296946,
+      "actual_sample_seconds": 77.13668934240363
+    },
+    {
+      "case": 10,
+      "cue_frame": 4829,
+      "state": 11050,
+      "correlation": 0.6481607417109188,
+      "actual_sample_seconds": 85.26367346938775
+    },
+    {
+      "case": 11,
+      "cue_frame": 5309,
+      "state": 11420,
+      "correlation": 0.6080625314811234,
+      "actual_sample_seconds": 93.48353741496598
+    },
+    {
+      "case": 12,
+      "cue_frame": 5789,
+      "state": 11440,
+      "correlation": 0.6476307176701833,
+      "actual_sample_seconds": 101.56408163265306
+    },
+    {
+      "case": 13,
+      "cue_frame": 6269,
+      "state": 13000,
+      "correlation": 0.2489033140333187,
+      "actual_sample_seconds": 110.01172335600907
+    },
+    {
+      "case": 14,
+      "cue_frame": 6749,
+      "state": 1200,
+      "correlation": 0.6424290904890412,
+      "actual_sample_seconds": 117.63229024943311
+    },
+    {
+      "case": 15,
+      "cue_frame": 7229,
+      "state": 1200,
+      "correlation": 0.6403644416379694,
+      "actual_sample_seconds": 126.50231292517007
+    }
+  ],
+  "runtime_sha256": "82aaf538a11422ccebc1c9ffab5c651a988348cd587d534a51ebaa775163bf98"
+}

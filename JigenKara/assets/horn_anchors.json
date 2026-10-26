@@ -1,0 +1,1582 @@
+[
+  {
+    "key": "Jiraiya_wake_01",
+    "head": [
+      27,
+      6
+    ],
+    "angle": 0,
+    "relative": [
+      2,
+      -49
+    ],
+    "animation_frames": [
+      [
+        10006,
+        1
+      ],
+      [
+        10010,
+        1
+      ],
+      [
+        10011,
+        1
+      ],
+      [
+        10052,
+        1
+      ],
+      [
+        15010,
+        1
+      ],
+      [
+        15120,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_01",
+    "head": [
+      60,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -57
+    ],
+    "animation_frames": [
+      [
+        10020,
+        1
+      ],
+      [
+        10021,
+        6
+      ],
+      [
+        10100,
+        1
+      ],
+      [
+        10105,
+        6
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_02",
+    "head": [
+      60,
+      4
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -56
+    ],
+    "animation_frames": [
+      [
+        10020,
+        2
+      ],
+      [
+        10021,
+        5
+      ],
+      [
+        10100,
+        2
+      ],
+      [
+        10105,
+        5
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_03",
+    "head": [
+      60,
+      4
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -56
+    ],
+    "animation_frames": [
+      [
+        10020,
+        3
+      ],
+      [
+        10021,
+        4
+      ],
+      [
+        10100,
+        3
+      ],
+      [
+        10105,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_04",
+    "head": [
+      60,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -55
+    ],
+    "animation_frames": [
+      [
+        10020,
+        4
+      ],
+      [
+        10021,
+        3
+      ],
+      [
+        10100,
+        4
+      ],
+      [
+        10105,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_05",
+    "head": [
+      60,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -55
+    ],
+    "animation_frames": [
+      [
+        10020,
+        5
+      ],
+      [
+        10021,
+        2
+      ],
+      [
+        10100,
+        5
+      ],
+      [
+        10105,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Walk_06",
+    "head": [
+      60,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -57
+    ],
+    "animation_frames": [
+      [
+        10020,
+        6
+      ],
+      [
+        10021,
+        1
+      ],
+      [
+        10100,
+        6
+      ],
+      [
+        10105,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_08",
+    "head": [
+      44,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      9,
+      -71
+    ],
+    "animation_frames": [
+      [
+        10040,
+        1
+      ],
+      [
+        10202,
+        2
+      ],
+      [
+        10211,
+        3
+      ],
+      [
+        10212,
+        1
+      ],
+      [
+        10220,
+        1
+      ],
+      [
+        10600,
+        1
+      ],
+      [
+        10610,
+        1
+      ],
+      [
+        10620,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Float_01",
+    "head": [
+      25,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -61
+    ],
+    "animation_frames": [
+      [
+        10041,
+        1
+      ],
+      [
+        15030,
+        1
+      ],
+      [
+        15210,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_AirHurt_01",
+    "head": [
+      29,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      4,
+      -70
+    ],
+    "animation_frames": [
+      [
+        10044,
+        1
+      ],
+      [
+        15020,
+        1
+      ],
+      [
+        15200,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_KnockDown_02",
+    "head": [
+      6,
+      20
+    ],
+    "angle": 90,
+    "relative": [
+      -39,
+      -15
+    ],
+    "animation_frames": [
+      [
+        10170,
+        1
+      ],
+      [
+        15100,
+        2
+      ],
+      [
+        15110,
+        1
+      ],
+      [
+        15150,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_01",
+    "head": [
+      25,
+      9
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -62
+    ],
+    "animation_frames": [
+      [
+        10500,
+        1
+      ],
+      [
+        11020,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_02",
+    "head": [
+      25,
+      9
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -62
+    ],
+    "animation_frames": [
+      [
+        10500,
+        2
+      ],
+      [
+        11020,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg_03",
+    "head": [
+      25,
+      9
+    ],
+    "angle": 0,
+    "relative": [
+      -16,
+      -62
+    ],
+    "animation_frames": [
+      [
+        10500,
+        3
+      ],
+      [
+        11020,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Hurt_01",
+    "head": [
+      12,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      -13,
+      -70
+    ],
+    "animation_frames": [
+      [
+        15000,
+        1
+      ],
+      [
+        15300,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Hurt_02",
+    "head": [
+      12,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      -13,
+      -70
+    ],
+    "animation_frames": [
+      [
+        15000,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_KnockDown_01",
+    "head": [
+      13,
+      44
+    ],
+    "angle": 180,
+    "relative": [
+      -22,
+      -2
+    ],
+    "animation_frames": [
+      [
+        15100,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill01_01",
+    "head": [
+      25,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -78
+    ],
+    "animation_frames": [
+      [
+        10120,
+        1
+      ],
+      [
+        10130,
+        1
+      ],
+      [
+        10140,
+        1
+      ],
+      [
+        10150,
+        1
+      ],
+      [
+        10121,
+        1
+      ],
+      [
+        10131,
+        1
+      ],
+      [
+        10141,
+        1
+      ],
+      [
+        10151,
+        1
+      ],
+      [
+        10122,
+        1
+      ],
+      [
+        10132,
+        1
+      ],
+      [
+        10142,
+        1
+      ],
+      [
+        10152,
+        1
+      ],
+      [
+        11000,
+        1
+      ],
+      [
+        11200,
+        1
+      ],
+      [
+        11210,
+        1
+      ],
+      [
+        11201,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_01",
+    "head": [
+      42,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      7,
+      -65
+    ],
+    "animation_frames": [
+      [
+        10200,
+        1
+      ],
+      [
+        11410,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_02",
+    "head": [
+      45,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -66
+    ],
+    "animation_frames": [
+      [
+        10200,
+        2
+      ],
+      [
+        11410,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_03",
+    "head": [
+      45,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -66
+    ],
+    "animation_frames": [
+      [
+        10200,
+        3
+      ],
+      [
+        11410,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_04",
+    "head": [
+      25,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -68
+    ],
+    "animation_frames": [
+      [
+        10201,
+        1
+      ],
+      [
+        10210,
+        1
+      ],
+      [
+        11410,
+        4
+      ],
+      [
+        11420,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_05",
+    "head": [
+      45,
+      10
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -60
+    ],
+    "animation_frames": [
+      [
+        10201,
+        2
+      ],
+      [
+        10210,
+        2
+      ],
+      [
+        11410,
+        5
+      ],
+      [
+        11420,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_06",
+    "head": [
+      45,
+      10
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -60
+    ],
+    "animation_frames": [
+      [
+        10201,
+        3
+      ],
+      [
+        10210,
+        3
+      ],
+      [
+        10211,
+        1
+      ],
+      [
+        11410,
+        6
+      ],
+      [
+        11420,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_07",
+    "head": [
+      45,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -65
+    ],
+    "animation_frames": [
+      [
+        10202,
+        1
+      ],
+      [
+        10211,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_09",
+    "head": [
+      25,
+      5
+    ],
+    "angle": 0,
+    "relative": [
+      -17,
+      -65
+    ],
+    "animation_frames": [
+      [
+        10202,
+        3
+      ],
+      [
+        10212,
+        2
+      ],
+      [
+        10220,
+        2
+      ],
+      [
+        10221,
+        1
+      ],
+      [
+        10600,
+        2
+      ],
+      [
+        10601,
+        1
+      ],
+      [
+        10610,
+        2
+      ],
+      [
+        10611,
+        1
+      ],
+      [
+        10620,
+        2
+      ],
+      [
+        10621,
+        1
+      ],
+      [
+        11400,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_10",
+    "head": [
+      22,
+      4
+    ],
+    "angle": 0,
+    "relative": [
+      -13,
+      -65
+    ],
+    "animation_frames": [
+      [
+        10212,
+        3
+      ],
+      [
+        10220,
+        3
+      ],
+      [
+        10221,
+        2
+      ],
+      [
+        10222,
+        1
+      ],
+      [
+        10600,
+        3
+      ],
+      [
+        10601,
+        2
+      ],
+      [
+        10602,
+        1
+      ],
+      [
+        10610,
+        3
+      ],
+      [
+        10611,
+        2
+      ],
+      [
+        10612,
+        1
+      ],
+      [
+        10620,
+        3
+      ],
+      [
+        10621,
+        2
+      ],
+      [
+        10622,
+        1
+      ],
+      [
+        11400,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_11",
+    "head": [
+      19,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      -16,
+      -67
+    ],
+    "animation_frames": [
+      [
+        10221,
+        3
+      ],
+      [
+        10222,
+        2
+      ],
+      [
+        10601,
+        3
+      ],
+      [
+        10602,
+        2
+      ],
+      [
+        10611,
+        3
+      ],
+      [
+        10612,
+        2
+      ],
+      [
+        10621,
+        3
+      ],
+      [
+        10622,
+        2
+      ],
+      [
+        11400,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_NAttack_12",
+    "head": [
+      46,
+      3
+    ],
+    "angle": 0,
+    "relative": [
+      11,
+      -74
+    ],
+    "animation_frames": [
+      [
+        10222,
+        3
+      ],
+      [
+        10602,
+        3
+      ],
+      [
+        10612,
+        3
+      ],
+      [
+        10622,
+        3
+      ],
+      [
+        11400,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill02_01",
+    "head": [
+      40,
+      7
+    ],
+    "angle": 0,
+    "relative": [
+      5,
+      -63
+    ],
+    "animation_frames": [
+      [
+        11010,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill02_02",
+    "head": [
+      42,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      7,
+      -62
+    ],
+    "animation_frames": [
+      [
+        11010,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Move_01",
+    "head": [
+      60,
+      31
+    ],
+    "angle": 0,
+    "relative": [
+      25,
+      -57
+    ],
+    "animation_frames": [
+      [
+        11020,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_01",
+    "head": [
+      162,
+      83
+    ],
+    "angle": 0,
+    "relative": [
+      20,
+      -47
+    ],
+    "animation_frames": [
+      [
+        11020,
+        5
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_02",
+    "head": [
+      162,
+      83
+    ],
+    "angle": 0,
+    "relative": [
+      20,
+      -47
+    ],
+    "animation_frames": [
+      [
+        11020,
+        6
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_03",
+    "head": [
+      162,
+      83
+    ],
+    "angle": 0,
+    "relative": [
+      20,
+      -47
+    ],
+    "animation_frames": [
+      [
+        11020,
+        7
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_04",
+    "head": [
+      162,
+      83
+    ],
+    "angle": 0,
+    "relative": [
+      20,
+      -47
+    ],
+    "animation_frames": [
+      [
+        11020,
+        8
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_cross_05",
+    "head": [
+      99,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      4,
+      -58
+    ],
+    "animation_frames": [
+      [
+        11020,
+        9
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg2_01",
+    "head": [
+      30,
+      9
+    ],
+    "angle": 0,
+    "relative": [
+      -5,
+      -74
+    ],
+    "animation_frames": [
+      [
+        11030,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Chg2_02",
+    "head": [
+      42,
+      12
+    ],
+    "angle": 0,
+    "relative": [
+      7,
+      -71
+    ],
+    "animation_frames": [
+      [
+        11030,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_01",
+    "head": [
+      146,
+      120
+    ],
+    "angle": 0,
+    "relative": [
+      19,
+      -66
+    ],
+    "animation_frames": [
+      [
+        11030,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_02",
+    "head": [
+      146,
+      120
+    ],
+    "angle": 0,
+    "relative": [
+      19,
+      -66
+    ],
+    "animation_frames": [
+      [
+        11030,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_03",
+    "head": [
+      146,
+      120
+    ],
+    "angle": 0,
+    "relative": [
+      19,
+      -66
+    ],
+    "animation_frames": [
+      [
+        11030,
+        5
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_04",
+    "head": [
+      146,
+      120
+    ],
+    "angle": 0,
+    "relative": [
+      19,
+      -66
+    ],
+    "animation_frames": [
+      [
+        11030,
+        6
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_slash_05",
+    "head": [
+      44,
+      13
+    ],
+    "angle": 0,
+    "relative": [
+      9,
+      -70
+    ],
+    "animation_frames": [
+      [
+        11030,
+        7
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Cube_01",
+    "head": [
+      24,
+      13
+    ],
+    "angle": 0,
+    "relative": [
+      -1,
+      -80
+    ],
+    "animation_frames": [
+      [
+        11030,
+        8
+      ],
+      [
+        11430,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill03_Cube_02",
+    "head": [
+      25,
+      13
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -80
+    ],
+    "animation_frames": [
+      [
+        11030,
+        9
+      ],
+      [
+        11430,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_Chg_01",
+    "head": [
+      36,
+      19
+    ],
+    "angle": 0,
+    "relative": [
+      11,
+      -67
+    ],
+    "animation_frames": [
+      [
+        11040,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_Chg_02",
+    "head": [
+      31,
+      18
+    ],
+    "angle": 0,
+    "relative": [
+      6,
+      -68
+    ],
+    "animation_frames": [
+      [
+        11040,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_01",
+    "head": [
+      56,
+      40
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -77
+    ],
+    "animation_frames": [
+      [
+        11040,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_02",
+    "head": [
+      56,
+      40
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -77
+    ],
+    "animation_frames": [
+      [
+        11040,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_03",
+    "head": [
+      56,
+      40
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -77
+    ],
+    "animation_frames": [
+      [
+        11040,
+        5
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_04",
+    "head": [
+      56,
+      40
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -77
+    ],
+    "animation_frames": [
+      [
+        11040,
+        6
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_lutut_05",
+    "head": [
+      41,
+      10
+    ],
+    "angle": 0,
+    "relative": [
+      6,
+      -75
+    ],
+    "animation_frames": [
+      [
+        11040,
+        7
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_01",
+    "head": [
+      25,
+      7
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -72
+    ],
+    "animation_frames": [
+      [
+        11050,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_02",
+    "head": [
+      25,
+      7
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -71
+    ],
+    "animation_frames": [
+      [
+        11050,
+        2
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_Chg_03",
+    "head": [
+      25,
+      7
+    ],
+    "angle": 0,
+    "relative": [
+      -10,
+      -62
+    ],
+    "animation_frames": [
+      [
+        11050,
+        3
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_01",
+    "head": [
+      115,
+      89
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -53
+    ],
+    "animation_frames": [
+      [
+        11050,
+        4
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_02",
+    "head": [
+      115,
+      89
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -53
+    ],
+    "animation_frames": [
+      [
+        11050,
+        5
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_03",
+    "head": [
+      115,
+      89
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -53
+    ],
+    "animation_frames": [
+      [
+        11050,
+        6
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_04",
+    "head": [
+      115,
+      89
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -53
+    ],
+    "animation_frames": [
+      [
+        11050,
+        7
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_05",
+    "head": [
+      34,
+      16
+    ],
+    "angle": 0,
+    "relative": [
+      -1,
+      -49
+    ],
+    "animation_frames": [
+      [
+        11050,
+        8
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_Skill4_Kick_06",
+    "head": [
+      30,
+      8
+    ],
+    "angle": 0,
+    "relative": [
+      -5,
+      -64
+    ],
+    "animation_frames": [
+      [
+        11050,
+        9
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_CupMove_01",
+    "head": [
+      35,
+      7
+    ],
+    "angle": 0,
+    "relative": [
+      0,
+      -74
+    ],
+    "animation_frames": [
+      [
+        11440,
+        1
+      ]
+    ]
+  },
+  {
+    "key": "Jiraiya_CupMove_02",
+    "head": [
+      45,
+      9
+    ],
+    "angle": 0,
+    "relative": [
+      10,
+      -72
+    ],
+    "animation_frames": [
+      [
+        11440,
+        2
+      ]
+    ]
+  }
+]
