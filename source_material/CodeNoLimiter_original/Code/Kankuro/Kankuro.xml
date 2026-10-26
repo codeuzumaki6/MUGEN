@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Kankuro</dateName>
+        <dateName type="attackValue">6000</dateName>
+        <dateName type="attackRangeX">63</dateName>
+        <dateName type="attackRangeY">80</dateName>
+        <coldName type="coldDown">224</coldName>
+      </date>
+      <frame>
+      <frameName>Kankuro_Idle_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <frameName>Kankuro_Walk_01.png</frameName>
+        <eventName type="setMove">2</eventName>
+        <frameName>Kankuro_Walk_02.png</frameName>
+      <eventName type="setSound">Audio/Effect/step1.mp3</eventName>
+        <eventName type="setMove">2</eventName>
+        <frameName>Kankuro_Walk_03.png</frameName>
+        <eventName type="setMove">2</eventName>
+        <frameName>Kankuro_Walk_04.png</frameName>
+        <eventName type="setMove">2</eventName>
+        <frameName>Kankuro_Walk_05.png</frameName>
+      <eventName type="setSound">Audio/Effect/step1.mp3</eventName>
+        <eventName type="setMove">2</eventName> 
+        <frameName>Kankuro_Walk_06.png</frameName>
+        <eventName type="setMove">2</eventName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+       <eventName type="setMove">32</eventName>
+        <frameName>Kankuro_Hurt_01.png</frameName>
+        <frameName>Kankuro_Hurt_02.png</frameName>
+      <eventName type="setSound">Audio/Code/codehurt0.mp3</eventName>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+        <frameName>Kankuro_AirHurt_01.png</frameName>
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+         <frameName>Kankuro_KnockDown_01.png</frameName>
+          <frameName>Kankuro_KnockDown_02.png</frameName>
+          <frameName>Kankuro_KnockDown_03.png</frameName>
+          <eventName type="setDelay">60</eventName>
+          <frameName>Kankuro_KnockDown_04.png</frameName>
+          <frameName>Kankuro_KnockDown_05.png</frameName>
+          <frameName>Kankuro_KnockDown_06.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+          <frameName>Kankuro_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Kankuro_Float_01.png</frameName>
+          <eventName type="setDelay">10</eventName>
+          <frameName>Kankuro_Float_01.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+          <frameName>Kankuro_KnockDown_01.png</frameName>
+          <frameName>Kankuro_KnockDown_02.png</frameName>
+          <frameName>Kankuro_KnockDown_03.png</frameName>
+      <eventName type="setSound">Audio/Code/codeDie.mp3</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">nAttack</dateName>
+        <dateName type="attackValue">60</dateName>
+        <dateName type="attackRangeX">16</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+       <frameName>Kankuro_NAttack_01.png</frameName>
+        <eventName type="setDelay">5</eventName>
+        <eventName type="setMove">8</eventName>
+        
+        <frameName>Kankuro_NAttack_02.png</frameName>
+      <eventName type="setSound">Audio/Effect/combo1.ogg</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Kankuro_NAttack_03.png</frameName>
+        <frameName>Kankuro_NAttack_04.png</frameName>
+
+
+        <frameName>Kankuro_NAttack_05.png</frameName>
+      <eventName type="setSound">Audio/Effect/combo2.ogg</eventName>
+        <eventName type="setAttackBox">n_hit</eventName>
+        <frameName>Kankuro_NAttack_06.png</frameName>
+        <frameName>Kankuro_NAttack_07.png</frameName>
+        
+        
+        <frameName>Kankuro_NAttack_08.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_NAttack_09.png</frameName>
+      <eventName type="setSound">Audio/Effect/combo3.ogg</eventName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Kankuro_NAttack_10.png</frameName>
+        <frameName>Kankuro_NAttack_11.png</frameName>
+        <eventName type="setAttackBox">l_hit</eventName>
+        <frameName>Kankuro_NAttack_12.png</frameName>
+        <frameName>Kankuro_NAttack_13.png</frameName>
+        <frameName>Kankuro_NAttack_14.png</frameName>
+      </frame>
+    </action>
+
+   <action value="skill01">
+     <date>
+	   <dateName type="attackType">cBuff</dateName>
+       <dateName type="attackValue">0</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">10</dateName>
+       <coldName type="coldDown">12</coldName>
+     </date>
+     <frame>
+        <eventName type="setClone">0</eventName>
+        <eventName type="setBuff">17</eventName>
+        <eventName type="setDelay">20</eventName>       
+    <frameName>Kankuro_Skill01_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_Skill01_03.png</frameName>
+        <eventName type="setMon">Tsumeato</eventName>
+        <eventName type="setSound">Audio/Kankuro/Kankuro_skill1.mp3</eventName>
+        <eventName type="setDelay">2</eventName>
+        <frameName>Kankuro_Skill01_01.png</frameName>
+        <eventName type="setDelay">30</eventName>
+        <eventName type="setMon">Tsumeaka1</eventName>
+            <eventName type="setCommand">reInvincible</eventName>
+     </frame>
+   </action>
+    <action value="skill02">
+        <date>
+          <dateName type="attackType">aAttack</dateName>
+          <dateName type="attackValue">1060</dateName>
+          <dateName type="attackRangeX">0</dateName>
+          <dateName type="attackRangeY">48</dateName>
+          <coldName type="coldDown">15</coldName>
+          <dateName type="combatPoint">1840</dateName>
+        </date>
+        <frame>
+            <eventName type="setMonAttack">2</eventName>
+         <eventName type="setCommand">setInvincible</eventName>
+        <eventName type="setSound">Audio/Kankuro/Kankuro_skill2.mp3</eventName>
+            <frameName>Kankuro_Skill01_04.png</frameName>
+            <frameName>Kankuro_Skill01_05.png</frameName>
+            <frameName>Kankuro_Skill01_06.png</frameName>
+            <frameName>Kankuro_Skill01_07.png</frameName>
+            
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setCommand">setTransport</eventName>
+        <eventName type="setMonAttack">1</eventName>
+            
+            <frameName>Kankuro_Skill01_07.png</frameName>
+
+      <eventName type="setSound">Audio/Code/codeClawEfx.mp3</eventName>
+            <eventName type="setAttackBox">b_hit</eventName>
+            <frameName>Kankuro_Skill01_06.png</frameName>
+            <frameName>Kankuro_Skill01_05.png</frameName>
+            <frameName>Kankuro_Skill01_04.png</frameName>
+   --Atk                     
+            <frameName>Kankuro_Skill01_08.png</frameName>
+            <eventName type="setSound">Audio/Code/Slash.ogg</eventName>
+            <frameName>Kankuro_Skill01_09.png</frameName>
+            <frameName>Kankuro_Skill01_10.png</frameName>
+            <frameName>Kankuro_Skill01_11.png</frameName>
+            
+            
+            <frameName>Kankuro_Skill01_12.png</frameName>
+            <eventName type="setSound">Audio/Effect/bleed.mp3</eventName>
+            <eventName type="setAttackBox">f_hit</eventName>
+            <eventName type="setSound">Audio/Code/Vo09.mp3</eventName>
+            <eventName type="setDelay">1</eventName>
+            <frameName>Kankuro_Skill01_13.png</frameName>
+            <eventName type="setDelay">1</eventName>
+            <frameName>Kankuro_Skill01_14.png</frameName>
+            <eventName type="setAttackBox">l_hit</eventName>
+            <eventName type="setDelay">1</eventName>
+            <frameName>Kankuro_Skill01_15.png</frameName>
+            <eventName type="setAttackBox">l_hit</eventName>
+            <eventName type="setDelay">1</eventName>
+            <frameName>Kankuro_Skill01_16.png</frameName>
+            <eventName type="setDelay">1</eventName>
+            <frameName>Kankuro_Skill01_17.png</frameName>
+            <eventName type="setDelay">1</eventName>
+            <eventName type="setCommand">reInvincible</eventName>
+        </frame>
+    </action>
+    <action value="skill03">
+        <date>
+			<dateName type="attackType">aAttack</dateName>
+            <dateName type="attackValue">1860</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">48</dateName>
+            <coldName type="coldDown">25</coldName>
+             <dateName type="combatPoint">2060</dateName>
+        </date>
+        <frame>
+         <eventName type="setCommand">setInvincible</eventName>
+        <frameName>Kankuro_Skill01_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_Skill01_03.png</frameName>
+      <eventName type="setSound">Audio/Effect/hit01.ogg</eventName>
+        <eventName type="setMon">Tsumeato</eventName>
+        <eventName type="setSound">Audio/Code/Vo0001.mp3</eventName>
+        <eventName type="setDelay">2</eventName>
+        <frameName>Kankuro_Skill01_01.png</frameName>
+        <eventName type="setDelay">30</eventName>
+        <eventName type="setMon">Tsumeaka2</eventName>
+        <eventName type="setDelay">30</eventName>
+        <eventName type="setMon">Prime</eventName>
+        <eventName type="setDelay">30</eventName>    
+            <eventName type="setCommand">reInvincible</eventName>
+
+       </frame>
+    </action>
+   <action value="skill04">
+     <date>
+    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">460</dateName>
+        <dateName type="attackRangeX">0</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">3360</dateName>
+     </date>
+     <frame>
+       <eventName type="setSound">Audio/Code/Vo03.mp3</eventName>
+            <frameName>Kankuro_Skill01_04.png</frameName>
+         <eventName type="setCommand">setInvincible</eventName>
+         <eventName type="setMon">GrimeAdd</eventName>
+            <frameName>Kankuro_Skill01_05.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+            <frameName>Kankuro_Skill01_06.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+            <frameName>Kankuro_Skill01_07.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         
+            
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setCommand">setTransport</eventName>
+            
+         
+         <frameName>CodeNLTelep_01.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_02.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+      <eventName type="setSound">Audio/Code/codeClawEfx.mp3</eventName>
+         <frameName>CodeNLTelep_03.png</frameName>         
+         <eventName type="setDelay">-5</eventName>
+         
+         <frameName>CodeNLTelep_04.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <eventName type="setSound">Audio/Effect/01.ogg</eventName>
+         <frameName>CodeNLTelep_05.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_06.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_07.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_08.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+
+--Atk
+
+        <frameName>Kankuro_Skill04_01.png</frameName>
+        <eventName type="setSound">Audio/Effect/rock_hit3.ogg</eventName>
+        <eventName type="setAttackBox">o2_hit</eventName>
+        <frameName>Kankuro_Skill04_02.png</frameName>
+        <frameName>Kankuro_Skill04_03.png</frameName>
+        <frameName>Kankuro_Skill04_04.png</frameName>
+
+
+        <frameName>Kankuro_Skill04_05.png</frameName>
+        <eventName type="setSound">Audio/Effect/rock_hit3.ogg</eventName>
+        <eventName type="setAttackBox">c_hit</eventName>
+        <frameName>Kankuro_Skill04_06.png</frameName>
+        <frameName>Kankuro_Skill04_07.png</frameName>
+        <frameName>Kankuro_Skill04_08.png</frameName>
+        
+        
+        <frameName>Kankuro_Skill04_09.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_Skill04_10.png</frameName>
+        <eventName type="setSound">Audio/Effect/rock_hit2.ogg</eventName>
+        <eventName type="setAttackBox">f_hit</eventName>
+      <eventName type="setSound">Audio/Code/Hit.mp3</eventName>
+        <eventName type="setAttackBox">ac_hit</eventName>
+        <frameName>Kankuro_Skill04_11.png</frameName>
+        <frameName>Kankuro_Skill04_12.png</frameName>
+        <frameName>Kankuro_Skill04_13.png</frameName>
+        <frameName>Kankuro_Skill04_14.png</frameName>
+        <frameName>Kankuro_Skill04_15.png</frameName>            
+  --telep      
+            <frameName>Kankuro_Skill01_04.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+            <frameName>Kankuro_Skill01_05.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+            <frameName>Kankuro_Skill01_06.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+            <frameName>Kankuro_Skill01_07.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         
+            
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setCommand">setTransport</eventName>
+            
+         
+         <frameName>CodeNLTelep_01.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_02.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+      <eventName type="setSound">Audio/Code/codeClawEfx.mp3</eventName>
+         <frameName>CodeNLTelep_03.png</frameName>         
+         <eventName type="setDelay">-5</eventName>
+         
+         <frameName>CodeNLTelep_04.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <eventName type="setSound">Audio/Effect/01.ogg</eventName>
+         <frameName>CodeNLTelep_05.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_06.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_07.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>CodeNLTelep_08.png</frameName>
+         <eventName type="setDelay">-5</eventName>
+         <frameName>Kankuro_Skill04_16.png</frameName>
+         <eventName type="setAttackBox">f_hit</eventName>
+         <eventName type="setAttackBox">c_hit</eventName>
+         <eventName type="setSound">Audio/Effect/S4.mp3</eventName>
+         <eventName type="setJump">True</eventName>
+         <frameName>Kankuro_Skill04_17.png</frameName>
+         <eventName type="setSound">Audio/Code/Vo12.mp3</eventName>
+         <eventName type="setAttackBox">c_hit</eventName>
+         <frameName>Kankuro_Skill04_18.png</frameName>
+         <eventName type="setAttackBox">c_hit</eventName>
+         <frameName>Kankuro_Skill04_19.png</frameName>
+         <frameName>Kankuro_Skill04_20.png</frameName>
+         <frameName>Kankuro_Skill04_21.png</frameName>
+         <frameName>Kankuro_Skill04_22.png</frameName>
+         <frameName>Kankuro_Skill04_23.png</frameName>
+         <frameName>Kankuro_Skill04_24.png</frameName>
+         <frameName>Kankuro_Skill04_25.png</frameName><eventName type="setCommand">reInvincible</eventName>     
+     </frame>
+   </action>
+    <action value="skill05">
+     <date>
+       <dateName type="attackType">aAttack</dateName>
+       <dateName type="attackValue">160</dateName>
+       <dateName type="attackRangeX">0</dateName>
+       <dateName type="attackRangeY">64</dateName>
+       <coldName type="coldDown">1</coldName>
+        <dateName type="combatPoint">0</dateName>
+     </date>
+     <frame>
+      <eventName type="setCommand">setInvincible</eventName>
+  --slsh  
+         <frameName>Kankuro_Skill05_01.png</frameName>
+        <eventName type="setDelay">20</eventName>
+         
+         <frameName>Kankuro_Skill05_07.png</frameName>
+         <eventName type="setAttackBox">ob_hit</eventName>
+         <eventName type="setSound">Audio/Code/code_1100-11.wav</eventName>
+         <frameName>Kankuro_Skill05_06.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_05.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_04.png</frameName>
+         <frameName>Kankuro_Skill05_03.png</frameName>
+         <frameName>Kankuro_Skill05_02.png</frameName>
+ --3        
+         
+ --Smn        
+        <eventName type="setBullet">PreJiku</eventName>
+        <frameName>Kankuro_Skill01_02.png</frameName>
+        <eventName type="setDelay">90</eventName>        
+       <!-- <eventName type="setBullet">PreTroops</eventName>  -->
+        <frameName>Kankuro_Skill01_03.png</frameName>
+        <eventName type="setSound">Audio/Effect/Hit.mp3</eventName>
+        <eventName type="setDelay">2</eventName>
+        <frameName>Kankuro_Skill01_01.png</frameName>
+        <eventName type="setDelay">70</eventName>
+
+         
+         
+         
+         
+         <frameName>CodeNLAura_01.png</frameName>
+        <eventName type="setSound">Audio/Code/Code/hahhhhh.ogg</eventName>
+        <eventName type="setSound">Audio/Effect/AuraGates.ogg</eventName>
+         <frameName>CodeNLAura_02.png</frameName>
+         <frameName>CodeNLAura_03.png</frameName>
+         <frameName>CodeNLAura_04.png</frameName>
+         <frameName>CodeNLAura_05.png</frameName>
+         <frameName>CodeNLAura_06.png</frameName>
+         <frameName>CodeNLAura_07.png</frameName>
+         <frameName>CodeNLAura_08.png</frameName>
+         <frameName>CodeNLAura_09.png</frameName>
+         <frameName>CodeNLAura_10.png</frameName>
+ --3   
+ 
+        <eventName type="setMon">SakuraBom</eventName>
+         <frameName>CodeNLAura_01.png</frameName>
+        <eventName type="setSound">Audio/Effect/AuraGates.ogg</eventName>
+         <frameName>CodeNLAura_02.png</frameName>
+         <frameName>CodeNLAura_03.png</frameName>
+         <frameName>CodeNLAura_04.png</frameName>
+         <frameName>CodeNLAura_05.png</frameName>
+         <frameName>CodeNLAura_06.png</frameName>
+         <frameName>CodeNLAura_07.png</frameName>
+         <frameName>CodeNLAura_08.png</frameName>
+         <frameName>CodeNLAura_09.png</frameName>
+         <frameName>CodeNLAura_10.png</frameName>
+         
+ 
+        <eventName type="setMon">SakuraBom</eventName>
+         <frameName>CodeNLAura_01.png</frameName>
+        <eventName type="setSound">Audio/Effect/AuraGates.ogg</eventName>
+         <frameName>CodeNLAura_02.png</frameName>
+         <frameName>CodeNLAura_03.png</frameName>
+         <frameName>CodeNLAura_04.png</frameName>
+         <frameName>CodeNLAura_05.png</frameName>
+         <frameName>CodeNLAura_06.png</frameName>
+         <frameName>CodeNLAura_07.png</frameName>
+         <frameName>CodeNLAura_08.png</frameName>
+         <frameName>CodeNLAura_09.png</frameName>
+         <frameName>CodeNLAura_10.png</frameName>        
+    <eventName type="setOugis">10</eventName>
+    --3000     
+
+    
+    
+  --trans  
+        <eventName type="setCommand">findTarget</eventName> 
+        <eventName type="setCommand">setTransport</eventName>
+            
+
+        <frameName>Kankuro_Skill05_08.png</frameName>
+        <eventName type="setSound">Audio/Effect/ping2.mp3</eventName>
+        <frameName>Kankuro_Skill05_09.png</frameName>
+        <frameName>Kankuro_Skill05_10.png</frameName>
+        <frameName>Kankuro_Skill05_10.png</frameName>
+    
+        
+--Claw
+        <frameName>Kankuro_Skill05_11.png</frameName>
+        <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>
+         <eventName type="setAttackBox">o2_hit</eventName>
+         <frameName>Kankuro_Skill05_12.png</frameName>
+         <frameName>Kankuro_Skill05_13.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_14.png</frameName>
+         <frameName>Kankuro_Skill05_15.png</frameName>
+        
+        <frameName>Kankuro_Skill05_16.png</frameName>
+        <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>
+         <eventName type="setAttackBox">o2_hit</eventName>
+         <frameName>Kankuro_Skill05_17.png</frameName>
+         <frameName>Kankuro_Skill05_18.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_19.png</frameName>
+         <frameName>Kankuro_Skill05_20.png</frameName>
+         
+
+        <frameName>Kankuro_Skill05_11.png</frameName>
+        <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>
+         <eventName type="setAttackBox">o2_hit</eventName>
+         <frameName>Kankuro_Skill05_12.png</frameName>
+         <frameName>Kankuro_Skill05_13.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_14.png</frameName>
+         <frameName>Kankuro_Skill05_15.png</frameName>
+        
+        <frameName>Kankuro_Skill05_16.png</frameName>
+        <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>
+         <eventName type="setAttackBox">o2_hit</eventName>
+         <frameName>Kankuro_Skill05_17.png</frameName>
+         <frameName>Kankuro_Skill05_18.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_19.png</frameName>
+         <frameName>Kankuro_Skill05_20.png</frameName>
+ --8        
+        
+ --chg  
+         <frameName>EndChg_01.png</frameName>
+        <eventName type="setSound">Audio/Effect/tokusyu.ogg</eventName>
+         <frameName>EndChg_02.png</frameName>
+         <frameName>EndChg_03.png</frameName>
+         <frameName>EndChg_04.png</frameName>
+                  
+ 
+        
+               
+                      
+                             
+   --Blast                                 
+        <frameName>Kankuro_Skill05_21.png</frameName>
+        <eventName type="setSound">Audio/Code/code07.mp3</eventName>
+         <eventName type="setAttackBox">f_hit</eventName>
+        <eventName type="setSound">Audio/Effect/Blast.ogg</eventName>
+         <frameName>Kankuro_Skill05_22.png</frameName>
+         <frameName>Kankuro_Skill05_23.png</frameName>
+         <frameName>Kankuro_Skill05_24.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_25.png</frameName>        
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_26.png</frameName>
+
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_27.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_28.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+        <eventName type="setSound">Audio/Effect/BugPillar2.ogg</eventName>
+         <frameName>Kankuro_Skill05_29.png</frameName>
+         <frameName>Kankuro_Skill05_30.png</frameName>        
+         <frameName>Kankuro_Skill05_31.png</frameName>
+        <eventName type="setSound">Audio/Effect/FlameBom.ogg</eventName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_32.png</frameName>
+         
+         
+         
+        <eventName type="setSound">Audio/Code/Vo0001</eventName>
+         <eventName type="setAttackBox">f_hit</eventName>
+         <frameName>Kankuro_Skill05_33.png</frameName>
+         <frameName>Kankuro_Skill05_34.png</frameName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_35.png</frameName>
+        <eventName type="setSound">Audio/Effect/BugPillar2.ogg</eventName>
+         <frameName>Kankuro_Skill05_36.png</frameName>        
+         <frameName>Kankuro_Skill05_37.png</frameName>
+        <eventName type="setSound">Audio/Effect/kiplosion.ogg</eventName>
+         <eventName type="setAttackBox">ac_hit</eventName>
+         <frameName>Kankuro_Skill05_38.png</frameName>
+         <frameName>Kankuro_Skill05_39.png</frameName>
+         <frameName>Kankuro_Skill05_40.png</frameName>      
+--10
+        <eventName type="setCommand">reInvincible</eventName>
+
+     </frame>
+    </action>
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+        <date>
+            <dateName type="attackType">Summon</dateName>
+            <dateName type="attackValue">0</dateName>
+            <dateName type="attackRangeX">0</dateName>
+            <dateName type="attackRangeY">0</dateName>
+            <coldName type="coldDown">12</coldName>
+        </date>
+        <frame>
+            <eventName type="setMonAttack">1</eventName>
+    <frameName>Kankuro_Skill01_02.png</frameName>
+        <eventName type="setDelay">10</eventName>
+        <frameName>Kankuro_Skill01_03.png</frameName>
+        <eventName type="setSound">Audio/Kankuro/Kankuro_skill1.mp3</eventName>
+        <eventName type="setDelay">2</eventName>
+        <frameName>Kankuro_Skill01_01.png</frameName>
+        <eventName type="setDelay">30</eventName>
+        </frame>
+    </action>
+</animation>

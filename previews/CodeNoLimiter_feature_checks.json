@@ -1,0 +1,180 @@
+{
+  "runtime_sha256": "fe9c0e5ace0e30b1d81bf77f16ebfd47e401664212742742a6e72b87ccbe3cbf",
+  "cases": [
+    {
+      "kind": "expiry",
+      "form": 0,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 140,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 106
+    },
+    {
+      "kind": "expiry",
+      "form": 0,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 140,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 106
+    },
+    {
+      "kind": "expiry",
+      "form": 1,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 180,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 106
+    },
+    {
+      "kind": "expiry",
+      "form": 1,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 180,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 106
+    },
+    {
+      "kind": "defeat",
+      "form": 0,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 35,
+      "maximum_minions": 1,
+      "maximum_age": 87,
+      "minimum_health": 0,
+      "autonomous_hit_samples": 38
+    },
+    {
+      "kind": "defeat",
+      "form": 0,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 35,
+      "maximum_minions": 1,
+      "maximum_age": 87,
+      "minimum_health": 0,
+      "autonomous_hit_samples": 38
+    },
+    {
+      "kind": "defeat",
+      "form": 1,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 45,
+      "maximum_minions": 1,
+      "maximum_age": 87,
+      "minimum_health": 0,
+      "autonomous_hit_samples": 38
+    },
+    {
+      "kind": "defeat",
+      "form": 1,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 45,
+      "maximum_minions": 1,
+      "maximum_age": 87,
+      "minimum_health": 0,
+      "autonomous_hit_samples": 38
+    },
+    {
+      "kind": "cap",
+      "form": 0,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 300,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 108
+    },
+    {
+      "kind": "cap",
+      "form": 0,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 300,
+      "maximum_minions": 1,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 108
+    },
+    {
+      "kind": "cap",
+      "form": 1,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 790,
+      "maximum_minions": 2,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 112
+    },
+    {
+      "kind": "cap",
+      "form": 1,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 790,
+      "maximum_minions": 2,
+      "maximum_age": 419,
+      "minimum_health": 180,
+      "autonomous_hit_samples": 112
+    },
+    {
+      "kind": "travel",
+      "form": 0,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 190,
+      "original_mark_age_at_travel": 94,
+      "actual_exit_offset": 30,
+      "mark_count": 1
+    },
+    {
+      "kind": "travel",
+      "form": 0,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 190,
+      "original_mark_age_at_travel": 94,
+      "actual_exit_offset": 30,
+      "mark_count": 1
+    },
+    {
+      "kind": "travel",
+      "form": 1,
+      "face": 1,
+      "root_life": 1300,
+      "damage": 270,
+      "original_mark_age_at_travel": 94,
+      "actual_exit_offset": 30,
+      "mark_count": 1
+    },
+    {
+      "kind": "travel",
+      "form": 1,
+      "face": -1,
+      "root_life": 1300,
+      "damage": 270,
+      "original_mark_age_at_travel": 94,
+      "actual_exit_offset": 30,
+      "mark_count": 1
+    }
+  ],
+  "minion_health": 180,
+  "lifetime_ticks": 420,
+  "mark_ticks": 480
+}

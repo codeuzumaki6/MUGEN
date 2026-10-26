@@ -1,0 +1,129 @@
+{
+  "character": "CodeNoLimiter",
+  "frames": 813,
+  "cases": 13,
+  "duration": 81.76666666666667,
+  "video": "CodeNoLimiter_motor.mp4",
+  "sha256": "9512c6e905fa2326d65ffbcba9171f555233f50ba805158217681b67777971fe",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.5321089989734376,
+      "actual_sample_seconds": 4.829750566893424,
+      "voice": "grime",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.7666582951996885,
+      "actual_sample_seconds": 16.114648526077097,
+      "voice": "teleport",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.597339271607738,
+      "actual_sample_seconds": 27.16734693877551,
+      "voice": "rush",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1030,
+      "correlation": 0.6599180332834234,
+      "actual_sample_seconds": 38.22004535147392,
+      "voice": "superior",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1040,
+      "correlation": 0.6381574190625502,
+      "actual_sample_seconds": 49.27274376417233,
+      "voice": "rush",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1200,
+      "correlation": 0.7261073632037641,
+      "actual_sample_seconds": 60.32544217687075,
+      "voice": "rush",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 1210,
+      "correlation": 0.7820593862672408,
+      "actual_sample_seconds": 71.37814058956916,
+      "voice": "teleport",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 1440,
+      "correlation": 0.6216426865031613,
+      "actual_sample_seconds": 82.47727891156462,
+      "voice": "rush",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 3000,
+      "correlation": 0.8445056419694995,
+      "actual_sample_seconds": 93.5764172335601,
+      "voice": "ultimate",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 520,
+      "correlation": 0.7611728881984968,
+      "actual_sample_seconds": 104.6291156462585,
+      "voice": "karma",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 11040,
+      "correlation": 0.6555949206036719,
+      "actual_sample_seconds": 115.58893424036282,
+      "voice": "rush",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 11430,
+      "correlation": 0.41075091391628676,
+      "actual_sample_seconds": 126.64163265306122,
+      "voice": "grime",
+      "anchor": "Original Code startup voice"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 13000,
+      "correlation": 0.8445056419694995,
+      "actual_sample_seconds": 137.78721088435375,
+      "voice": "ultimate",
+      "anchor": "Original Code startup voice"
+    }
+  ],
+  "runtime_sha256": "fe9c0e5ace0e30b1d81bf77f16ebfd47e401664212742742a6e72b87ccbe3cbf"
+}

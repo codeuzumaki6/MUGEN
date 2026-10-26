@@ -1,0 +1,190 @@
+{
+  "keys": {
+    "intro": [
+      4,
+      0
+    ],
+    "win": [
+      4,
+      1
+    ],
+    "die": [
+      4,
+      2
+    ],
+    "attack": [
+      4,
+      3
+    ],
+    "claw": [
+      4,
+      4
+    ],
+    "teleport": [
+      4,
+      5
+    ],
+    "rush": [
+      4,
+      6
+    ],
+    "grime": [
+      4,
+      7
+    ],
+    "superior": [
+      4,
+      8
+    ],
+    "karma": [
+      4,
+      9
+    ],
+    "ultimate": [
+      4,
+      10
+    ],
+    "ultimate_end": [
+      4,
+      11
+    ],
+    "hurt": [
+      4,
+      12
+    ]
+  },
+  "source_audio": [
+    {
+      "name": "intro",
+      "group": 4,
+      "number": 0,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 190,
+      "source_number": 5,
+      "source_wav_sha256": "7c87b8b979e66b5ac3e45f794b9d455d2d6561c303f7cb4a979c1153590bd434",
+      "wav_sha256": "2945c0f026a027aabef67fb3cd2f272cbd01030c4746b8e80fb7fe743de31b77"
+    },
+    {
+      "name": "win",
+      "group": 4,
+      "number": 1,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 180,
+      "source_number": 0,
+      "source_wav_sha256": "7b5e44363419aa6fad50b7e4f2ffed1bf391501c1a6b462995d924bae82247c3",
+      "wav_sha256": "f8d84cdd7f9a6c1197f261c77363cfafd6d69dc931faf4576a0f7443a24f8da1"
+    },
+    {
+      "name": "die",
+      "group": 4,
+      "number": 2,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 170,
+      "source_number": 1,
+      "source_wav_sha256": "660c0a4caf708737bf81b4ec5419c3585c9641737220306fa40b8f21d33bd397",
+      "wav_sha256": "9b5df909d2033f9b3328ebb938122c2a617703db1575f5f7bcfa67f6490d4207"
+    },
+    {
+      "name": "attack",
+      "group": 4,
+      "number": 3,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 300,
+      "source_number": 0,
+      "source_wav_sha256": "8d623bdfd51a43e754176f663734efff9e3382c94e8fc486253fc9e0aa8d1c7f",
+      "wav_sha256": "51c1bb64a0d348bc97e67ef599af998349347f02d5457a9544455be94f8a3993"
+    },
+    {
+      "name": "claw",
+      "group": 4,
+      "number": 4,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 950,
+      "source_number": 2,
+      "source_wav_sha256": "fbd0f258e3f1cad5c6d8ca0cdae78d1c1f97c263e9f800f3f72b57cbdecb00e4",
+      "wav_sha256": "3a69d1f6b13794c2dba9967fa8fb7bd655c4896f61ce9bdd3b14f1993a9494c1"
+    },
+    {
+      "name": "teleport",
+      "group": 4,
+      "number": 5,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 1000,
+      "source_number": 0,
+      "source_wav_sha256": "521270ad299b22642957ba611caab444ad0286221b0fd1220807d12972f49637",
+      "wav_sha256": "31363b4f3294350620299f61223a6746656dcadae582484d7bc6d6bf8678f922"
+    },
+    {
+      "name": "rush",
+      "group": 4,
+      "number": 6,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 1100,
+      "source_number": 0,
+      "source_wav_sha256": "bece0ab3a9456b40bfeab55b13bdb176998c1d18630f47577965aba4fd23199a",
+      "wav_sha256": "0fdb050f61d55a9bb8323b1c778afe1b8a1daf295b8e01ac4d1b5f7318dca7d5"
+    },
+    {
+      "name": "grime",
+      "group": 4,
+      "number": 7,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 1200,
+      "source_number": 0,
+      "source_wav_sha256": "5b5e19c037ae362ae28ce18f751c5fec3c79a6582ad2bc2fb8c3887be9c49fae",
+      "wav_sha256": "05328433f07234b212ffa20705d68e8f7fd953a085dbbe791608a96a1398af7a"
+    },
+    {
+      "name": "superior",
+      "group": 4,
+      "number": 8,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 1300,
+      "source_number": 0,
+      "source_wav_sha256": "61f8bd7c54cb73bf703b5726f3aaeaf1a2a2d0cc13b0e29c4bcb6fdec57c2284",
+      "wav_sha256": "72b8a7fdd17700f0cc5b704f8163f6ac4f2b735c59f1871a572023d8e943727e"
+    },
+    {
+      "name": "karma",
+      "group": 4,
+      "number": 9,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 1400,
+      "source_number": 0,
+      "source_wav_sha256": "2ecd8274c80b3528c4ee36f797018e89d05fbec4ded936eba38d87b94b0b57a7",
+      "wav_sha256": "a0c3b8af0223b3b0753037c0a5ab8c77671d87f250cae2c81512beca07ca6897"
+    },
+    {
+      "name": "ultimate",
+      "group": 4,
+      "number": 10,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 3000,
+      "source_number": 7,
+      "source_wav_sha256": "94479e76769c7f61df342fba0ae9805e02a365890093083055655ae69ea61f91",
+      "wav_sha256": "cb9c477f8b3d12d7e8a504461a82c6333b40d3af5fa78159a7e44a66d1f561d9"
+    },
+    {
+      "name": "ultimate_end",
+      "group": 4,
+      "number": 11,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 3000,
+      "source_number": 4,
+      "source_wav_sha256": "7c33bb716bef790aafc9b426b75390d21a09f92bd9d8a97cfbb0afc2b773fed0",
+      "wav_sha256": "287781e595c175396d5a37aab9eb17a35bd672d23b19142150142719b20d113c"
+    },
+    {
+      "name": "hurt",
+      "group": 4,
+      "number": 12,
+      "source": "source_material/Shibai_Code_reference/Code.snd",
+      "source_group": 5000,
+      "source_number": 3,
+      "source_wav_sha256": "8b33c77119068292a6a110b83dc5354dc5c0a54484ec3aad0a7f7965c4bec81d",
+      "wav_sha256": "c19a61575ecd5c4cd4faa59307a02d3e384963a67d8e6367b55bfa02efd01491"
+    }
+  ],
+  "source_snd_sha256": "68227000758c7b72aeca96cb4663f74770ca477b700710866cd82923ca36fa41",
+  "uploaded_zip_has_audio": false
+}

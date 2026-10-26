@@ -1,0 +1,137 @@
+{
+  "runtime_sha256": "fe9c0e5ace0e30b1d81bf77f16ebfd47e401664212742742a6e72b87ccbe3cbf",
+  "cases": [
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        3000,
+        5000,
+        5001
+      ],
+      "damage": 486,
+      "minimum_life": 1245,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "true",
+      "guard": "false",
+      "damage_pulses": 6,
+      "pulse_span_ticks": 160,
+      "trapped_frames": 223,
+      "victim_released": "true",
+      "aura": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        3000,
+        5000,
+        5001
+      ],
+      "damage": 486,
+      "minimum_life": 1245,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "true",
+      "guard": "false",
+      "damage_pulses": 6,
+      "pulse_span_ticks": 160,
+      "trapped_frames": 223,
+      "victim_released": "true",
+      "aura": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        5000,
+        5001,
+        13000
+      ],
+      "damage": 600,
+      "minimum_life": 1245,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "true",
+      "guard": "false",
+      "damage_pulses": 6,
+      "pulse_span_ticks": 160,
+      "trapped_frames": 223,
+      "victim_released": "true",
+      "aura": 1,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "ult_interrupt",
+        "kind": "ult_interrupt",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "states": [
+        0,
+        5000,
+        5001,
+        13000
+      ],
+      "damage": 600,
+      "minimum_life": 1245,
+      "min_power": 0,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "true",
+      "guard": "false",
+      "damage_pulses": 6,
+      "pulse_span_ticks": 160,
+      "trapped_frames": 223,
+      "victim_released": "true",
+      "aura": 1,
+      "failures": []
+    }
+  ]
+}

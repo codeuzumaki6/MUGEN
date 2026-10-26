@@ -1,0 +1,6384 @@
+[
+  {
+    "key": "ThirdKazekage_Skill01_01",
+    "group": 31000,
+    "number": 0,
+    "file": "assets/frames/31000_0.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "132ed591a4aefb212f51dca114393bdb6570b54dc99c4af72d1d2e7f919d810d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_01.png",
+    "source_rectangle": [
+      1443,
+      1661,
+      1693,
+      1869
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_02",
+    "group": 31000,
+    "number": 1,
+    "file": "assets/frames/31000_1.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "b7fa843bd09e4fb944e6742407aa0ec4f5a52ca846469620a73deb33bb2ed1d4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_02.png",
+    "source_rectangle": [
+      1695,
+      1661,
+      1945,
+      1869
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_03",
+    "group": 31000,
+    "number": 2,
+    "file": "assets/frames/31000_2.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "e961df7dbcaa29656784ba0f3aeb360a37c4e64de817ce98059ab3eea54be7fa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_03.png",
+    "source_rectangle": [
+      1443,
+      1871,
+      1693,
+      2079
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_04",
+    "group": 31000,
+    "number": 3,
+    "file": "assets/frames/31000_3.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "1500ef9f79147c5bf2bdb9517ffd75d1e559c63a264606db6e9ef592900d8642",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_04.png",
+    "source_rectangle": [
+      1695,
+      1871,
+      1945,
+      2079
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_05",
+    "group": 31000,
+    "number": 4,
+    "file": "assets/frames/31000_4.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "8b054c5076a9ef12c4d8bf348541c6ea6755d60a9eef195ba814873af6de210c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_05.png",
+    "source_rectangle": [
+      767,
+      1974,
+      1017,
+      2182
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_06",
+    "group": 31000,
+    "number": 5,
+    "file": "assets/frames/31000_5.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "361f192ee09d1473af41ae7aa87f6a5b49174130dbb4331b58a9b9d0a0c3db1c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_06.png",
+    "source_rectangle": [
+      1019,
+      1974,
+      1269,
+      2182
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Skill01_07",
+    "group": 31000,
+    "number": 6,
+    "file": "assets/frames/31000_6.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "cbe558b648899a63dbd9cb74204e2764f3d97042e7e45b70c83a56e9ca94734f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Skill01_07.png",
+    "source_rectangle": [
+      1923,
+      1399,
+      2173,
+      1607
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_NAttack_01",
+    "group": 31000,
+    "number": 7,
+    "file": "assets/frames/31000_7.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "19475f907c712bfdd25741d90985e28a4772746eee41b332077bea6e0c957248",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_NAttack_01.png",
+    "source_rectangle": [
+      2442,
+      556,
+      2572,
+      647
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_NAttack_02",
+    "group": 31000,
+    "number": 8,
+    "file": "assets/frames/31000_8.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "bc586becc4cfea629a8d5d5d86770ecf574cd0a672796028c72e7417b67ba1f4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_NAttack_02.png",
+    "source_rectangle": [
+      2333,
+      873,
+      2463,
+      964
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_NAttack_03",
+    "group": 31000,
+    "number": 9,
+    "file": "assets/frames/31000_9.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "16d44156bafa9fc61c2ffa9c5417d7a4abe2f5b2299665653b67f1d472217e40",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_NAttack_03.png",
+    "source_rectangle": [
+      1931,
+      2319,
+      2061,
+      2410
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_NAttack_04",
+    "group": 31000,
+    "number": 10,
+    "file": "assets/frames/31000_10.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "0c8d323b379ab40ee6de2b613d3db87a7c177985e1b4f9528f24099f713a7b3b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_NAttack_04.png",
+    "source_rectangle": [
+      2063,
+      2347,
+      2193,
+      2438
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_NAttack_05",
+    "group": 31000,
+    "number": 11,
+    "file": "assets/frames/31000_11.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "3a886ebdb385915bee7922eb3f2321ef1725bc15193a29f2d10faa8e76c86f58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_NAttack_05.png",
+    "source_rectangle": [
+      2195,
+      2347,
+      2325,
+      2438
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_01",
+    "group": 31000,
+    "number": 12,
+    "file": "assets/frames/31000_12.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "290bda6adce111373be20aabf56fdebcc364c33ad4d98b77367e2e9d1b9c13f0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_01.png",
+    "source_rectangle": [
+      2327,
+      2263,
+      2457,
+      2354
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_02",
+    "group": 31000,
+    "number": 13,
+    "file": "assets/frames/31000_13.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "c7948d73b12bcf4fe577d5694dce4de758db4c460cc9eb4a09bea5bb45bd3353",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_02.png",
+    "source_rectangle": [
+      2327,
+      2356,
+      2457,
+      2447
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_03",
+    "group": 31000,
+    "number": 14,
+    "file": "assets/frames/31000_14.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "4a837998e310a92ebcbca3c6eca7d230b105d46e88ff793be6fe4a361b249c58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_03.png",
+    "source_rectangle": [
+      739,
+      2303,
+      869,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_04",
+    "group": 31000,
+    "number": 15,
+    "file": "assets/frames/31000_15.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "87b0913e2d208a4d3e5d5c6e098cfdbdbb2061da23c060ea60d281b71ba25f39",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_04.png",
+    "source_rectangle": [
+      597,
+      2343,
+      727,
+      2434
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_05",
+    "group": 31000,
+    "number": 16,
+    "file": "assets/frames/31000_16.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "286dfaef4a18c54cbc93ee6e72ef083216222ab141542469b9ebe1014e507dc4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_05.png",
+    "source_rectangle": [
+      871,
+      2303,
+      1001,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Walk_06",
+    "group": 31000,
+    "number": 17,
+    "file": "assets/frames/31000_17.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "5a4c83cc315d4ed1b81cc069c70fe8f920ec5afe2260ee735078654d398920c2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Walk_06.png",
+    "source_rectangle": [
+      1003,
+      2303,
+      1133,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Idle_03",
+    "group": 31000,
+    "number": 18,
+    "file": "assets/frames/31000_18.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Idle_03.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Hurt_01",
+    "group": 31000,
+    "number": 19,
+    "file": "assets/frames/31000_19.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Hurt_01.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_Hurt_02",
+    "group": 31000,
+    "number": 20,
+    "file": "assets/frames/31000_20.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_Hurt_02.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_KnockDown_01",
+    "group": 31000,
+    "number": 21,
+    "file": "assets/frames/31000_21.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_KnockDown_01.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_KnockDown_02",
+    "group": 31000,
+    "number": 22,
+    "file": "assets/frames/31000_22.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_KnockDown_02.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_KnockDown_03",
+    "group": 31000,
+    "number": 23,
+    "file": "assets/frames/31000_23.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_KnockDown_03.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "ThirdKazekage_KnockDown_04",
+    "group": 31000,
+    "number": 24,
+    "file": "assets/frames/31000_24.png",
+    "axis": [
+      55,
+      81
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "fragment",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "ThirdKazekage_KnockDown_04.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Idle_01",
+    "group": 31000,
+    "number": 25,
+    "file": "assets/frames/31000_25.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "2c4df6a5d6f06b67c5bc4a0432f9dc0a4778a2f0455d87145aefe53f234511ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Idle_01.png",
+    "source_rectangle": [
+      2465,
+      873,
+      2575,
+      966
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Idle_02",
+    "group": 31000,
+    "number": 26,
+    "file": "assets/frames/31000_26.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "2d63ab18a3e1dda2df553adf64627ac0fe840cdc6112a32446f29293804772fd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Idle_02.png",
+    "source_rectangle": [
+      2459,
+      2381,
+      2569,
+      2474
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Idle_03",
+    "group": 31000,
+    "number": 27,
+    "file": "assets/frames/31000_27.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "d9f58d1b738f66c89ff5e0d6b7c6142a743f93b272a473e9d974ab1ec5670058",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Idle_03.png",
+    "source_rectangle": [
+      2453,
+      1568,
+      2563,
+      1661
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_01",
+    "group": 31000,
+    "number": 28,
+    "file": "assets/frames/31000_28.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "290bda6adce111373be20aabf56fdebcc364c33ad4d98b77367e2e9d1b9c13f0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_01.png",
+    "source_rectangle": [
+      2327,
+      2263,
+      2457,
+      2354
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_02",
+    "group": 31000,
+    "number": 29,
+    "file": "assets/frames/31000_29.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "c7948d73b12bcf4fe577d5694dce4de758db4c460cc9eb4a09bea5bb45bd3353",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_02.png",
+    "source_rectangle": [
+      2327,
+      2356,
+      2457,
+      2447
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_03",
+    "group": 31000,
+    "number": 30,
+    "file": "assets/frames/31000_30.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "4a837998e310a92ebcbca3c6eca7d230b105d46e88ff793be6fe4a361b249c58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_03.png",
+    "source_rectangle": [
+      739,
+      2303,
+      869,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_04",
+    "group": 31000,
+    "number": 31,
+    "file": "assets/frames/31000_31.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "87b0913e2d208a4d3e5d5c6e098cfdbdbb2061da23c060ea60d281b71ba25f39",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_04.png",
+    "source_rectangle": [
+      597,
+      2343,
+      727,
+      2434
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_05",
+    "group": 31000,
+    "number": 32,
+    "file": "assets/frames/31000_32.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "286dfaef4a18c54cbc93ee6e72ef083216222ab141542469b9ebe1014e507dc4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_05.png",
+    "source_rectangle": [
+      871,
+      2303,
+      1001,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Walk_06",
+    "group": 31000,
+    "number": 33,
+    "file": "assets/frames/31000_33.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "5a4c83cc315d4ed1b81cc069c70fe8f920ec5afe2260ee735078654d398920c2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Walk_06.png",
+    "source_rectangle": [
+      1003,
+      2303,
+      1133,
+      2394
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_01",
+    "group": 31000,
+    "number": 34,
+    "file": "assets/frames/31000_34.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "132ed591a4aefb212f51dca114393bdb6570b54dc99c4af72d1d2e7f919d810d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_01.png",
+    "source_rectangle": [
+      1443,
+      1661,
+      1693,
+      1869
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_02",
+    "group": 31000,
+    "number": 35,
+    "file": "assets/frames/31000_35.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "b7fa843bd09e4fb944e6742407aa0ec4f5a52ca846469620a73deb33bb2ed1d4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_02.png",
+    "source_rectangle": [
+      1695,
+      1661,
+      1945,
+      1869
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_03",
+    "group": 31000,
+    "number": 36,
+    "file": "assets/frames/31000_36.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "e961df7dbcaa29656784ba0f3aeb360a37c4e64de817ce98059ab3eea54be7fa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_03.png",
+    "source_rectangle": [
+      1443,
+      1871,
+      1693,
+      2079
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_04",
+    "group": 31000,
+    "number": 37,
+    "file": "assets/frames/31000_37.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "1500ef9f79147c5bf2bdb9517ffd75d1e559c63a264606db6e9ef592900d8642",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_04.png",
+    "source_rectangle": [
+      1695,
+      1871,
+      1945,
+      2079
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_05",
+    "group": 31000,
+    "number": 38,
+    "file": "assets/frames/31000_38.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "8b054c5076a9ef12c4d8bf348541c6ea6755d60a9eef195ba814873af6de210c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_05.png",
+    "source_rectangle": [
+      767,
+      1974,
+      1017,
+      2182
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_06",
+    "group": 31000,
+    "number": 39,
+    "file": "assets/frames/31000_39.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "361f192ee09d1473af41ae7aa87f6a5b49174130dbb4331b58a9b9d0a0c3db1c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_06.png",
+    "source_rectangle": [
+      1019,
+      1974,
+      1269,
+      2182
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_Skill01_07",
+    "group": 31000,
+    "number": 40,
+    "file": "assets/frames/31000_40.png",
+    "axis": [
+      105,
+      152
+    ],
+    "rgba_sha256": "cbe558b648899a63dbd9cb74204e2764f3d97042e7e45b70c83a56e9ca94734f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_Skill01_07.png",
+    "source_rectangle": [
+      1923,
+      1399,
+      2173,
+      1607
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_NAttack_01",
+    "group": 31000,
+    "number": 41,
+    "file": "assets/frames/31000_41.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "19475f907c712bfdd25741d90985e28a4772746eee41b332077bea6e0c957248",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_NAttack_01.png",
+    "source_rectangle": [
+      2442,
+      556,
+      2572,
+      647
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_NAttack_02",
+    "group": 31000,
+    "number": 42,
+    "file": "assets/frames/31000_42.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "bc586becc4cfea629a8d5d5d86770ecf574cd0a672796028c72e7417b67ba1f4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_NAttack_02.png",
+    "source_rectangle": [
+      2333,
+      873,
+      2463,
+      964
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_NAttack_03",
+    "group": 31000,
+    "number": 43,
+    "file": "assets/frames/31000_43.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "16d44156bafa9fc61c2ffa9c5417d7a4abe2f5b2299665653b67f1d472217e40",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_NAttack_03.png",
+    "source_rectangle": [
+      1931,
+      2319,
+      2061,
+      2410
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_NAttack_04",
+    "group": 31000,
+    "number": 44,
+    "file": "assets/frames/31000_44.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "0c8d323b379ab40ee6de2b613d3db87a7c177985e1b4f9528f24099f713a7b3b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_NAttack_04.png",
+    "source_rectangle": [
+      2063,
+      2347,
+      2193,
+      2438
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Grime_NAttack_05",
+    "group": 31000,
+    "number": 45,
+    "file": "assets/frames/31000_45.png",
+    "axis": [
+      65,
+      87
+    ],
+    "rgba_sha256": "3a886ebdb385915bee7922eb3f2321ef1725bc15193a29f2d10faa8e76c86f58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Grime_NAttack_05.png",
+    "source_rectangle": [
+      2195,
+      2347,
+      2325,
+      2438
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTILES_01",
+    "group": 31000,
+    "number": 46,
+    "file": "assets/frames/31000_46.png",
+    "axis": [
+      575,
+      175
+    ],
+    "rgba_sha256": "db6c287f4ab9f7d0a97a9a23cf5a8a1bc03e741bd018e3985b0db5ff5c4b29a3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTILES_01.png",
+    "source_rectangle": [
+      1,
+      1,
+      1152,
+      351
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTILES_02",
+    "group": 31000,
+    "number": 47,
+    "file": "assets/frames/31000_47.png",
+    "axis": [
+      575,
+      175
+    ],
+    "rgba_sha256": "7e70a3fe261844065352fbd56eb542b746b52d9247e814d742a6a43c97de9837",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTILES_02.png",
+    "source_rectangle": [
+      1,
+      353,
+      1152,
+      703
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTILES_03",
+    "group": 31000,
+    "number": 48,
+    "file": "assets/frames/31000_48.png",
+    "axis": [
+      575,
+      175
+    ],
+    "rgba_sha256": "d91d28d6567ec17679fbea98cc10c239594c72a07e2f736a5ffb7af1376c8218",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTILES_03.png",
+    "source_rectangle": [
+      1,
+      705,
+      1152,
+      1055
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_02",
+    "group": 31000,
+    "number": 49,
+    "file": "assets/frames/31000_49.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "0e030b543e8318da78e1b1fff13e4662229bc02f7c28157abb18f9d5795bad5b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_02.png",
+    "source_rectangle": [
+      1,
+      1057,
+      471,
+      1341
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_03",
+    "group": 31000,
+    "number": 50,
+    "file": "assets/frames/31000_50.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "ccb3d85d8c509df7a3fe66d4645d0f6b72bccb309ab3aaf00ac1dc451a4eede7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_03.png",
+    "source_rectangle": [
+      473,
+      1057,
+      943,
+      1341
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_04",
+    "group": 31000,
+    "number": 51,
+    "file": "assets/frames/31000_51.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "af6c8e2f76c30db2949f84bbb92c08beb441c47183030f3e41644594e9adfafb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_04.png",
+    "source_rectangle": [
+      945,
+      1057,
+      1415,
+      1341
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_05",
+    "group": 31000,
+    "number": 52,
+    "file": "assets/frames/31000_52.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "b6b35faead9f3c78030f1c20ae9d11982fed9ca63d02521e526ac185b2d378e9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_05.png",
+    "source_rectangle": [
+      1154,
+      1,
+      1624,
+      285
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_06",
+    "group": 31000,
+    "number": 53,
+    "file": "assets/frames/31000_53.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "11fe5d3e8698fd8ba067bb85db438593d6e802fe1d6d3b8c8528483f68982cf3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_06.png",
+    "source_rectangle": [
+      1154,
+      287,
+      1624,
+      571
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_07",
+    "group": 31000,
+    "number": 54,
+    "file": "assets/frames/31000_54.png",
+    "axis": [
+      235,
+      220
+    ],
+    "rgba_sha256": "dbac8c92a929762f8cd03b33115cf0e47f94497efd340fc57451893935334a8f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_07.png",
+    "source_rectangle": [
+      1154,
+      573,
+      1624,
+      857
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "MokuShinju_01",
+    "group": 31000,
+    "number": 55,
+    "file": "assets/frames/31000_55.png",
+    "axis": [
+      231,
+      220
+    ],
+    "rgba_sha256": "56a50879b80208935e621d9ab988f5c126e35d1f6ff0d5f91c575fad58f236da",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original tree root and terrain centre",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "MokuShinju_01.png",
+    "source_rectangle": [
+      1,
+      1343,
+      463,
+      1627
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_10",
+    "group": 31000,
+    "number": 56,
+    "file": "assets/frames/31000_56.png",
+    "axis": [
+      200,
+      181
+    ],
+    "rgba_sha256": "1b6702333ff56c2cc0e0af2de4da51576f8861d1ac4263f4785aa03197f36773",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_10.png",
+    "source_rectangle": [
+      465,
+      1343,
+      835,
+      1611
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_11",
+    "group": 31000,
+    "number": 57,
+    "file": "assets/frames/31000_57.png",
+    "axis": [
+      200,
+      181
+    ],
+    "rgba_sha256": "d03b7471b80cb25a42158a429aa3822bbacd8b0f966350854e744fdea6d927db",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_11.png",
+    "source_rectangle": [
+      837,
+      1343,
+      1207,
+      1611
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_12",
+    "group": 31000,
+    "number": 58,
+    "file": "assets/frames/31000_58.png",
+    "axis": [
+      200,
+      181
+    ],
+    "rgba_sha256": "909ec3249f96f2c915b079851ba4b28371d86ce0e0ffd15359979de6650fb709",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_12.png",
+    "source_rectangle": [
+      1209,
+      1343,
+      1579,
+      1611
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_13",
+    "group": 31000,
+    "number": 59,
+    "file": "assets/frames/31000_59.png",
+    "axis": [
+      200,
+      181
+    ],
+    "rgba_sha256": "ee44e386629073b60415d1f74ea63de1f6e2ba6397fc31fa85e2b8f0145e1bb8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_13.png",
+    "source_rectangle": [
+      1417,
+      859,
+      1787,
+      1127
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_14",
+    "group": 31000,
+    "number": 60,
+    "file": "assets/frames/31000_60.png",
+    "axis": [
+      200,
+      181
+    ],
+    "rgba_sha256": "1b58256dd420013a1acdd3a081090efbb199228c47d633a3353092960c2288a8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_14.png",
+    "source_rectangle": [
+      1581,
+      1129,
+      1951,
+      1397
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_10",
+    "group": 31000,
+    "number": 61,
+    "file": "assets/frames/31000_61.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "7cc6974e5712acd08bec6b8434646a8d9cfe686251bb2228a176866ff7b43d6b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_10.png",
+    "source_rectangle": [
+      1626,
+      1,
+      1966,
+      261
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_11",
+    "group": 31000,
+    "number": 62,
+    "file": "assets/frames/31000_62.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "612bcd6c5f29d861f4a63ef4206936586a1b6f191cb2405233f053d941dab39d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_11.png",
+    "source_rectangle": [
+      1626,
+      263,
+      1966,
+      523
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_12",
+    "group": 31000,
+    "number": 63,
+    "file": "assets/frames/31000_63.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "4930e197c3eff155400a850f41867d3105785920cd7b77c701fd2f586a420cd7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_12.png",
+    "source_rectangle": [
+      1626,
+      525,
+      1966,
+      785
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_13",
+    "group": 31000,
+    "number": 64,
+    "file": "assets/frames/31000_64.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "af5fd7c77490d8665cd1af8ef9f40c92a2521eb7c6907e947068d9a8600e1fea",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_13.png",
+    "source_rectangle": [
+      1581,
+      1399,
+      1921,
+      1659
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_14",
+    "group": 31000,
+    "number": 65,
+    "file": "assets/frames/31000_65.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "aa0e0c95bcac996fc244da8aaa6ac664c29e7a2ec1f4c439601743dc226f8115",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_14.png",
+    "source_rectangle": [
+      465,
+      1613,
+      805,
+      1873
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_15",
+    "group": 31000,
+    "number": 66,
+    "file": "assets/frames/31000_66.png",
+    "axis": [
+      155,
+      177
+    ],
+    "rgba_sha256": "ff7112369dda3861a4723e776148f095ec67b07d0ae0b0b70268133b6ec2b9a0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_15.png",
+    "source_rectangle": [
+      1,
+      1629,
+      341,
+      1889
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_16",
+    "group": 31000,
+    "number": 67,
+    "file": "assets/frames/31000_67.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "7e90f0b3abdda0ebbc15aaeff5e02390f3ce170e4ac412e6a6c7a68a50de401c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_16.png",
+    "source_rectangle": [
+      807,
+      1613,
+      1017,
+      1972
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_17",
+    "group": 31000,
+    "number": 68,
+    "file": "assets/frames/31000_68.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "2e219d7abcbfbb466f811c989ebb6354dfbe72f42cc2dd59c25fe5e560f61c46",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_17.png",
+    "source_rectangle": [
+      343,
+      1875,
+      553,
+      2234
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_18",
+    "group": 31000,
+    "number": 69,
+    "file": "assets/frames/31000_69.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "13dfdb091aa303afbe45baa7f9d410cfd29db420dfe8b4fb81c8c4356732936a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_18.png",
+    "source_rectangle": [
+      555,
+      1875,
+      765,
+      2234
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_19",
+    "group": 31000,
+    "number": 70,
+    "file": "assets/frames/31000_70.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "aa97f466ea49f9e694f96e6d170444be09a920d38bfbd8df7648a10d0bac2180",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_19.png",
+    "source_rectangle": [
+      1,
+      1891,
+      211,
+      2250
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_20",
+    "group": 31000,
+    "number": 71,
+    "file": "assets/frames/31000_71.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "198e1970c87e545e91a4b2b6458e6a5402000e3dd1fd23415b1a12ab79ff0148",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_20.png",
+    "source_rectangle": [
+      1019,
+      1613,
+      1229,
+      1972
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_21",
+    "group": 31000,
+    "number": 72,
+    "file": "assets/frames/31000_72.png",
+    "axis": [
+      65,
+      220
+    ],
+    "rgba_sha256": "dfcbd30a5059299915a17b1c25865242f475ca798bfb8077c4d8005d3639a8ac",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_21.png",
+    "source_rectangle": [
+      1231,
+      1613,
+      1441,
+      1972
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_01",
+    "group": 31000,
+    "number": 73,
+    "file": "assets/frames/31000_73.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "7fc2496bc3d00efcb27bd86b723a0528007dc3349e2a1217bd42dfc2765e5ae8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_01.png",
+    "source_rectangle": [
+      1789,
+      787,
+      1999,
+      986
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_02",
+    "group": 31000,
+    "number": 74,
+    "file": "assets/frames/31000_74.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "c47f3c0bab6acf4dd2406ae6a7ead84a9f097f9e20747fa75415b0dd8191cd31",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_02.png",
+    "source_rectangle": [
+      1953,
+      988,
+      2163,
+      1187
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_03",
+    "group": 31000,
+    "number": 75,
+    "file": "assets/frames/31000_75.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "b51ca332d5e8c2a79080769f497dc1f4c45194f61ab71e9c8134e414b8343081",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_03.png",
+    "source_rectangle": [
+      1953,
+      1189,
+      2163,
+      1388
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_04",
+    "group": 31000,
+    "number": 76,
+    "file": "assets/frames/31000_76.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "4a7ddced7af5fa6de4267d82d5c9d241ca626d7c84bf0f9368e92b3d5f829444",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_04.png",
+    "source_rectangle": [
+      1947,
+      1609,
+      2157,
+      1808
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_05",
+    "group": 31000,
+    "number": 77,
+    "file": "assets/frames/31000_77.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "9080f1b832c81a2f354c01622bdd4e287f6c9788792929648aa0bfd7376352ce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_05.png",
+    "source_rectangle": [
+      1947,
+      1810,
+      2157,
+      2009
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_06",
+    "group": 31000,
+    "number": 78,
+    "file": "assets/frames/31000_78.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "ee128ee3c07b53463629695d3d7319039d6d834bac6f907488a6f61cd94ad1f0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_06.png",
+    "source_rectangle": [
+      1947,
+      2011,
+      2157,
+      2210
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_07",
+    "group": 31000,
+    "number": 79,
+    "file": "assets/frames/31000_79.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "e513b5909b1b7f75f8a2e14681278d1e9e16b6c8c9be75981d3546041484e467",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_07.png",
+    "source_rectangle": [
+      1968,
+      1,
+      2178,
+      200
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_08",
+    "group": 31000,
+    "number": 80,
+    "file": "assets/frames/31000_80.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "053cceaaf978a4bf4960118ac7bb7e6544c3e4f7c8919638472b3082608c3e74",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_08.png",
+    "source_rectangle": [
+      1968,
+      202,
+      2178,
+      401
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_09",
+    "group": 31000,
+    "number": 81,
+    "file": "assets/frames/31000_81.png",
+    "axis": [
+      65,
+      160
+    ],
+    "rgba_sha256": "f4475a92826e82c82ceab036c6d75966867c2bf934032517e985c55d2087e31e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_09.png",
+    "source_rectangle": [
+      1968,
+      403,
+      2178,
+      602
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_12",
+    "group": 31000,
+    "number": 82,
+    "file": "assets/frames/31000_82.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "84cefe36a8e62f0b9a0818e5689e4fc1e276fe1fee55abe8920c61e56258dcdf",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_12.png",
+    "source_rectangle": [
+      1271,
+      2081,
+      1601,
+      2203
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_13",
+    "group": 31000,
+    "number": 83,
+    "file": "assets/frames/31000_83.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "f81c17b2b8f6b8047176bd21dd2a12719cbde40ad1169599e5904f1092bccc7e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_13.png",
+    "source_rectangle": [
+      1603,
+      2081,
+      1933,
+      2203
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_14",
+    "group": 31000,
+    "number": 84,
+    "file": "assets/frames/31000_84.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "da75d59fce8c7687bb3c9bfe867f47cf6c2bf0d6ccc0fd06d7cd942c66ad8be0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_14.png",
+    "source_rectangle": [
+      1968,
+      604,
+      2298,
+      726
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_15",
+    "group": 31000,
+    "number": 85,
+    "file": "assets/frames/31000_85.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "9ec6e7e179693c6e9208833dba0eae8e69c1571ec14e9dc6bac9c699762d0e99",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_15.png",
+    "source_rectangle": [
+      2001,
+      728,
+      2331,
+      850
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_16",
+    "group": 31000,
+    "number": 86,
+    "file": "assets/frames/31000_86.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "88afe561afd0a786b1000700096c0d629066c078b98d2c4153329bbf006c0e4f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_16.png",
+    "source_rectangle": [
+      2001,
+      852,
+      2331,
+      974
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_17",
+    "group": 31000,
+    "number": 87,
+    "file": "assets/frames/31000_87.png",
+    "axis": [
+      135,
+      103
+    ],
+    "rgba_sha256": "ca019bf22172b82836dff22a879f97b9267797f1fcf42e94ec161d57425fd9c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_17.png",
+    "source_rectangle": [
+      2165,
+      976,
+      2495,
+      1098
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_04",
+    "group": 31000,
+    "number": 88,
+    "file": "assets/frames/31000_88.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "95a8bd7e4fe52a11de8ac27a595ba0fd2b7cac1817f7b1d1aadb7c238806fbb7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_04.png",
+    "source_rectangle": [
+      2165,
+      1100,
+      2305,
+      1316
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_05",
+    "group": 31000,
+    "number": 89,
+    "file": "assets/frames/31000_89.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "9589054241052e910653a86ce09350e3ff563497886a7ab18c881d5e52d5e918",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_05.png",
+    "source_rectangle": [
+      2300,
+      1,
+      2440,
+      217
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_06",
+    "group": 31000,
+    "number": 90,
+    "file": "assets/frames/31000_90.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "17d9df1ba0a714af1f3ac16b0f06b3ef21d9cf1a8b4f9e65fcedfaa09e2aa0b4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_06.png",
+    "source_rectangle": [
+      2300,
+      219,
+      2440,
+      435
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_07",
+    "group": 31000,
+    "number": 91,
+    "file": "assets/frames/31000_91.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "66198311fc054bbdd2759846a99a79acda85eca3c9347f8a789c578f1a8255d0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_07.png",
+    "source_rectangle": [
+      2300,
+      437,
+      2440,
+      653
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_08",
+    "group": 31000,
+    "number": 92,
+    "file": "assets/frames/31000_92.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "77be1e3fc327bf5d3547bcf7be5e931ebeef00aef962d271bfdfd50a0310631e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_08.png",
+    "source_rectangle": [
+      2333,
+      655,
+      2473,
+      871
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_09",
+    "group": 31000,
+    "number": 93,
+    "file": "assets/frames/31000_93.png",
+    "axis": [
+      60,
+      152
+    ],
+    "rgba_sha256": "ddf48cd193655dacecebfbf009a338fe5d3bf011e82c89b6edc174cbdbf311f9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_09.png",
+    "source_rectangle": [
+      2159,
+      1609,
+      2299,
+      1825
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_15",
+    "group": 31000,
+    "number": 94,
+    "file": "assets/frames/31000_94.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "720de51fb499feb888f8dae756dc72a899000c65ec1521826d12c0e8b5a24c85",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_15.png",
+    "source_rectangle": [
+      1417,
+      1129,
+      1567,
+      1302
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_16",
+    "group": 31000,
+    "number": 95,
+    "file": "assets/frames/31000_95.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "2aa8a6c16f202bea216e80ddb91563ed9e64e9ec014feccaebaad651c69db7ee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_16.png",
+    "source_rectangle": [
+      1154,
+      859,
+      1304,
+      1032
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_17",
+    "group": 31000,
+    "number": 96,
+    "file": "assets/frames/31000_96.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "94b597e7b64997cec6af30ad55f437f3793b2d60a8fd903d234913996edb9edb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_17.png",
+    "source_rectangle": [
+      2175,
+      1318,
+      2325,
+      1491
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_18",
+    "group": 31000,
+    "number": 97,
+    "file": "assets/frames/31000_97.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "96bf6232f14f7476065b8945cde1ec04e891e552e075b0b221bc22253fc9f0dc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_18.png",
+    "source_rectangle": [
+      2307,
+      1100,
+      2457,
+      1273
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_19",
+    "group": 31000,
+    "number": 98,
+    "file": "assets/frames/31000_98.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "a485c831af3bc9699433aee73f97fc3bc0638c510fba618a63c9e2e0afd67ece",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_19.png",
+    "source_rectangle": [
+      2159,
+      1827,
+      2309,
+      2000
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_20",
+    "group": 31000,
+    "number": 99,
+    "file": "assets/frames/31000_99.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "b66313d647debe2104608f199d1eda48be507f073861e753f764af04c14ffbbf",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_20.png",
+    "source_rectangle": [
+      2301,
+      1493,
+      2451,
+      1666
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_21",
+    "group": 31000,
+    "number": 100,
+    "file": "assets/frames/31000_100.png",
+    "axis": [
+      65,
+      130
+    ],
+    "rgba_sha256": "4171becf685b8b3937e7770bbaad225b66f1bde1c963fe93bd1cc76611924f0d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_21.png",
+    "source_rectangle": [
+      2327,
+      1275,
+      2477,
+      1448
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_01",
+    "group": 31000,
+    "number": 101,
+    "file": "assets/frames/31000_101.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "c1f62efa53b6c07190df80aa1096af210add846e714f48dc87afbaba4d4e312c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_01.png",
+    "source_rectangle": [
+      2301,
+      1668,
+      2491,
+      1785
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_02",
+    "group": 31000,
+    "number": 102,
+    "file": "assets/frames/31000_102.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "5d6a9d04222499f0f5349cbdc3e7162b654fb177efcdf0cf9ab7c31ace211288",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_02.png",
+    "source_rectangle": [
+      2159,
+      2002,
+      2349,
+      2119
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_03",
+    "group": 31000,
+    "number": 103,
+    "file": "assets/frames/31000_103.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "e011d43f329fb35154be71e92709252e2587536b3d7bd5c5e47576504c1bad5c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_03.png",
+    "source_rectangle": [
+      2159,
+      2121,
+      2349,
+      2238
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_04",
+    "group": 31000,
+    "number": 104,
+    "file": "assets/frames/31000_104.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "3ea602fd0a26364da6905f7339f06f6691b909bc28ff5def80fa2b9650c78760",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_04.png",
+    "source_rectangle": [
+      2311,
+      1787,
+      2501,
+      1904
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_05",
+    "group": 31000,
+    "number": 105,
+    "file": "assets/frames/31000_105.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "1515a3603bf4052975e0fd4f80d42fa95a615f147fce296de836ebb2af2c2d15",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_05.png",
+    "source_rectangle": [
+      2351,
+      1906,
+      2541,
+      2023
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_06",
+    "group": 31000,
+    "number": 106,
+    "file": "assets/frames/31000_106.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "f3989491a1eccf0c1ba80fbabd9be57a107ee126e6456b5d94e264ed4203d23c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_06.png",
+    "source_rectangle": [
+      2351,
+      2025,
+      2541,
+      2142
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_07",
+    "group": 31000,
+    "number": 107,
+    "file": "assets/frames/31000_107.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "59e2cef22ab40d384d4f971ab2d75599a8dbe155538e6b9b7acdb6ac5af707b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_07.png",
+    "source_rectangle": [
+      2351,
+      2144,
+      2541,
+      2261
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_08",
+    "group": 31000,
+    "number": 108,
+    "file": "assets/frames/31000_108.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "4b91632a8779098a541f158010e516c98d54af369b41352948ca6307dc7b953c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_08.png",
+    "source_rectangle": [
+      767,
+      2184,
+      957,
+      2301
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_09",
+    "group": 31000,
+    "number": 109,
+    "file": "assets/frames/31000_109.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "8920bdf293f9c9eca27ffa1244df54d30f5507e640b804e03d44e3f5c181b628",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_09.png",
+    "source_rectangle": [
+      959,
+      2184,
+      1149,
+      2301
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_10",
+    "group": 31000,
+    "number": 110,
+    "file": "assets/frames/31000_110.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "12420005f46bcfdb961af1457e368fdd9f02c2528696eb0eda3da873b09c255f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_10.png",
+    "source_rectangle": [
+      213,
+      2236,
+      403,
+      2353
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_11",
+    "group": 31000,
+    "number": 111,
+    "file": "assets/frames/31000_111.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "53bff1c398305b9779433d0168dc0e22566f59361bcb2f0918ba3b716c6b6060",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_11.png",
+    "source_rectangle": [
+      1,
+      2252,
+      191,
+      2369
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_12",
+    "group": 31000,
+    "number": 112,
+    "file": "assets/frames/31000_112.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "89606f9e709282350305a372de2f72bc18bde802c10732ed14f863a1e7e05b41",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_12.png",
+    "source_rectangle": [
+      405,
+      2236,
+      595,
+      2353
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_13",
+    "group": 31000,
+    "number": 113,
+    "file": "assets/frames/31000_113.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "78d6c3791202af85d6075013f190f0e1e6582d53652523b4b74482c53dbf29b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_13.png",
+    "source_rectangle": [
+      1151,
+      2205,
+      1341,
+      2322
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_NAttack_14",
+    "group": 31000,
+    "number": 114,
+    "file": "assets/frames/31000_114.png",
+    "axis": [
+      55,
+      103
+    ],
+    "rgba_sha256": "b34e60b196f168dc2a72ce1ebe32487ef844af61aa3f2dae857a0d8e77fcabd0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_NAttack_14.png",
+    "source_rectangle": [
+      1343,
+      2205,
+      1533,
+      2322
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_01",
+    "group": 31000,
+    "number": 115,
+    "file": "assets/frames/31000_115.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "0efcd28b161d1c5db55763a7df84c121805bfc3f9dbbf8764a6040cb4e315f37",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_01.png",
+    "source_rectangle": [
+      1271,
+      1974,
+      1411,
+      2079
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_02",
+    "group": 31000,
+    "number": 116,
+    "file": "assets/frames/31000_116.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "1f89238a83d5182aa8ae06f917a5495713b32dedf5e3102ea8d6cc50aaaa006b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_02.png",
+    "source_rectangle": [
+      597,
+      2236,
+      737,
+      2341
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_03",
+    "group": 31000,
+    "number": 117,
+    "file": "assets/frames/31000_117.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "e56e583be491fdd1ac1ca40e6ea2d9ccdf1877f6eebfecb34dc7d054af26387d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_03.png",
+    "source_rectangle": [
+      1789,
+      988,
+      1929,
+      1093
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_04",
+    "group": 31000,
+    "number": 118,
+    "file": "assets/frames/31000_118.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "a5a6d8fa3f826b18ab56ddc1719625d301740ee5b0256a31627261e98974ec3b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_04.png",
+    "source_rectangle": [
+      1535,
+      2205,
+      1675,
+      2310
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_05",
+    "group": 31000,
+    "number": 119,
+    "file": "assets/frames/31000_119.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "752a3e79050e2573fd7096140695427359eb52eb93d0065910b4be2a410ea83b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_05.png",
+    "source_rectangle": [
+      1677,
+      2205,
+      1817,
+      2310
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_06",
+    "group": 31000,
+    "number": 120,
+    "file": "assets/frames/31000_120.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "5256f14ab0931550cbd5394dee227fd0ad01ddb9932caadaa7e5bf7a426dca22",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_06.png",
+    "source_rectangle": [
+      1819,
+      2212,
+      1959,
+      2317
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_07",
+    "group": 31000,
+    "number": 121,
+    "file": "assets/frames/31000_121.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "44e3fad07f4a800cbfeb03d4c0dd68e129ac8d89bd8c2e5274680128ad75e3f1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_07.png",
+    "source_rectangle": [
+      1961,
+      2212,
+      2101,
+      2317
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLTelep_08",
+    "group": 31000,
+    "number": 122,
+    "file": "assets/frames/31000_122.png",
+    "axis": [
+      65,
+      90
+    ],
+    "rgba_sha256": "17ce49475547a97a52e127d404202f4168d7ba8956a11f1a8aef8370b30e1df0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "CodeNLTelep_08.png",
+    "source_rectangle": [
+      2103,
+      2240,
+      2243,
+      2345
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_04",
+    "group": 31000,
+    "number": 123,
+    "file": "assets/frames/31000_123.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "07b36aec13d4d5a92debded325f3d1c58ef3fc91c905332d8f1c2f1385bc5bc2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_04.png",
+    "source_rectangle": [
+      2442,
+      1,
+      2572,
+      110
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_05",
+    "group": 31000,
+    "number": 124,
+    "file": "assets/frames/31000_124.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "8eeac51b44f03a502eba2430a2a7cc65fcb16cd778cdfbd501f8390598d51dac",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_05.png",
+    "source_rectangle": [
+      2442,
+      112,
+      2572,
+      221
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_06",
+    "group": 31000,
+    "number": 125,
+    "file": "assets/frames/31000_125.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "003c5f9a43a748fc0e00256e1ee8692964f996d87d9a26d3b305f1df0aada844",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_06.png",
+    "source_rectangle": [
+      2442,
+      223,
+      2572,
+      332
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_07",
+    "group": 31000,
+    "number": 126,
+    "file": "assets/frames/31000_126.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "9d5fca331c77e45853f29cf1dcf4d19401c9e0c939bf9d053fb1cda577950628",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_07.png",
+    "source_rectangle": [
+      2442,
+      334,
+      2572,
+      443
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_08",
+    "group": 31000,
+    "number": 127,
+    "file": "assets/frames/31000_127.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "eaf7c7fc246b0f9ae7d61d224be0866384e542d98839f4e4037a1d64317ca10b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_08.png",
+    "source_rectangle": [
+      2442,
+      445,
+      2572,
+      554
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_09",
+    "group": 31000,
+    "number": 128,
+    "file": "assets/frames/31000_128.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "12ed80b1630a612ceafc0607a4bf105b91fc441a40b028c466ac942e50dc6404",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_09.png",
+    "source_rectangle": [
+      1535,
+      2312,
+      1665,
+      2421
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_10",
+    "group": 31000,
+    "number": 129,
+    "file": "assets/frames/31000_129.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "e11e59e6fbb9fa897198d375ac3cbc9ba460f61eacbe283d123cefb9fbdfc341",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_10.png",
+    "source_rectangle": [
+      1667,
+      2312,
+      1797,
+      2421
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_11",
+    "group": 31000,
+    "number": 130,
+    "file": "assets/frames/31000_130.png",
+    "axis": [
+      65,
+      86
+    ],
+    "rgba_sha256": "e34b4bb5a78a933c4667f828b461369ed15a078bcd06b81445468200221392d0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_11.png",
+    "source_rectangle": [
+      1799,
+      2319,
+      1929,
+      2428
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_22",
+    "group": 31000,
+    "number": 131,
+    "file": "assets/frames/31000_131.png",
+    "axis": [
+      45,
+      113
+    ],
+    "rgba_sha256": "a792267ad28996a2a6c102d4ae132ad205353bf71322e75707cf7c34b3b1151f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_22.png",
+    "source_rectangle": [
+      2459,
+      1100,
+      2549,
+      1216
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_23",
+    "group": 31000,
+    "number": 132,
+    "file": "assets/frames/31000_132.png",
+    "axis": [
+      45,
+      113
+    ],
+    "rgba_sha256": "4643bea598dbe398c130b44474bb8629f0fac8e4ce3b2f7796de19b7227174be",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_23.png",
+    "source_rectangle": [
+      1306,
+      859,
+      1396,
+      975
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_24",
+    "group": 31000,
+    "number": 133,
+    "file": "assets/frames/31000_133.png",
+    "axis": [
+      45,
+      113
+    ],
+    "rgba_sha256": "5b88f7ed3e1b0b7d1bc413a0d3b5b2fd36ad8cd62f209d778f3a1db75e24c3b7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_24.png",
+    "source_rectangle": [
+      2459,
+      2263,
+      2549,
+      2379
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill04_25",
+    "group": 31000,
+    "number": 134,
+    "file": "assets/frames/31000_134.png",
+    "axis": [
+      45,
+      113
+    ],
+    "rgba_sha256": "9db14d89ae472ec482546b0ccb2bf932999f899a0d6d94fed5fe8658d4f02cbd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill04_25.png",
+    "source_rectangle": [
+      2453,
+      1450,
+      2543,
+      1566
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_01",
+    "group": 31000,
+    "number": 135,
+    "file": "assets/frames/31000_135.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "f301065d4322b7cafe4b51462ea887e5b55cb46a7cf95e6cb4f5151bb4f24417",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_01.png",
+    "source_rectangle": [
+      2175,
+      1493,
+      2285,
+      1586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_02",
+    "group": 31000,
+    "number": 136,
+    "file": "assets/frames/31000_136.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "514634c58c660938a2ff36f1e625a4bbd1216565c91b378b8a2c2d2615a764a2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_02.png",
+    "source_rectangle": [
+      343,
+      1629,
+      453,
+      1722
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "PrimeTsumeaka_03",
+    "group": 31000,
+    "number": 137,
+    "file": "assets/frames/31000_137.png",
+    "axis": [
+      55,
+      87
+    ],
+    "rgba_sha256": "006f6556699008a23c564dfda59cec44d1ed001ab2b95d131da90755fad3f2e1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "minion",
+    "alignment": "original Claw Grime body foot",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "PrimeTsumeaka_03.png",
+    "source_rectangle": [
+      343,
+      1724,
+      453,
+      1817
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_AirHurt_01",
+    "group": 31000,
+    "number": 138,
+    "file": "assets/frames/31000_138.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "574416d05bf20832868d4dc7d13749b6756f981e260d1ca162471d9ad4ecba80",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_AirHurt_01.png",
+    "source_rectangle": [
+      2479,
+      1218,
+      2569,
+      1315
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Float_01",
+    "group": 31000,
+    "number": 139,
+    "file": "assets/frames/31000_139.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "eabf8a84a32687995467d1199f62fca6ecc5ea0f92cd9b5fc4c7edc472a50c7c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Float_01.png",
+    "source_rectangle": [
+      2479,
+      1317,
+      2569,
+      1414
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Hurt_01",
+    "group": 31000,
+    "number": 140,
+    "file": "assets/frames/31000_140.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "0ca50a3d45a3e5b26153d2637ea88a1e9af7bbdce7a50b152b57105205aba867",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Hurt_01.png",
+    "source_rectangle": [
+      2475,
+      649,
+      2565,
+      746
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Hurt_02",
+    "group": 31000,
+    "number": 141,
+    "file": "assets/frames/31000_141.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "901083b4eeb1ffbbc7702bd2268bd1b8a1ffc1e2d97644d3a4977408c832a320",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Hurt_02.png",
+    "source_rectangle": [
+      2475,
+      748,
+      2565,
+      845
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_01",
+    "group": 31000,
+    "number": 142,
+    "file": "assets/frames/31000_142.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "0bff4740d14b30f7a4a5f077737f48b267bc94cd74bb0597bba94772e3143ffb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_01.png",
+    "source_rectangle": [
+      213,
+      1891,
+      303,
+      1988
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_02",
+    "group": 31000,
+    "number": 143,
+    "file": "assets/frames/31000_143.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "affb22e34bda3817cdaad3897a2f493e00d112045cc232cfd663d03b6f351d99",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_02.png",
+    "source_rectangle": [
+      213,
+      1990,
+      303,
+      2087
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_03",
+    "group": 31000,
+    "number": 144,
+    "file": "assets/frames/31000_144.png",
+    "axis": [
+      45,
+      94
+    ],
+    "rgba_sha256": "ba05ad5ff107be2a543a0c4ee48a9a5405d677674019ca2fdc410acf593ddea5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_03.png",
+    "source_rectangle": [
+      213,
+      2089,
+      303,
+      2186
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_04",
+    "group": 31000,
+    "number": 145,
+    "file": "assets/frames/31000_145.png",
+    "axis": [
+      45,
+      94
+    ],
+    "rgba_sha256": "3f3e9520e70c63d2c73068cd5980ebf50fa4ffe40b78ddbc9670863cce25ba11",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_04.png",
+    "source_rectangle": [
+      193,
+      2355,
+      283,
+      2452
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_05",
+    "group": 31000,
+    "number": 146,
+    "file": "assets/frames/31000_146.png",
+    "axis": [
+      45,
+      91
+    ],
+    "rgba_sha256": "d4a8b16f9bd435c07109b85115c7c79860d218e9cf647ea1d44fc6358429fdaf",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_05.png",
+    "source_rectangle": [
+      1,
+      2371,
+      91,
+      2468
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_KnockDown_06",
+    "group": 31000,
+    "number": 147,
+    "file": "assets/frames/31000_147.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "8ff32d259fa7d436974495c019cc7e210754e4a1368d409e07c96d133793637d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_KnockDown_06.png",
+    "source_rectangle": [
+      93,
+      2371,
+      183,
+      2468
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_01",
+    "group": 31000,
+    "number": 148,
+    "file": "assets/frames/31000_148.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "4ce4c78810d64312e102318b737b996ad424505b7c6e949f19168cd65cc9fd1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_01.png",
+    "source_rectangle": [
+      285,
+      2355,
+      375,
+      2450
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_02",
+    "group": 31000,
+    "number": 149,
+    "file": "assets/frames/31000_149.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "5ed3881d5d4b1ff8feda92f7e193230f8d91b9043008b45ece88efeeae83843b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_02.png",
+    "source_rectangle": [
+      377,
+      2355,
+      467,
+      2450
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill01_03",
+    "group": 31000,
+    "number": 150,
+    "file": "assets/frames/31000_150.png",
+    "axis": [
+      45,
+      86
+    ],
+    "rgba_sha256": "ab05d340fea91313c4bd23be796811a480112ccefbe654a56d426733267f5770",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Skill01_03.png",
+    "source_rectangle": [
+      469,
+      2355,
+      559,
+      2450
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_01",
+    "group": 31000,
+    "number": 151,
+    "file": "assets/frames/31000_151.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "4d0a05294dd864c44c23d83bcf4137b42ea41ec2eaa12de953748f4b6d85c894",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_01.png",
+    "source_rectangle": [
+      1306,
+      977,
+      1396,
+      1050
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_02",
+    "group": 31000,
+    "number": 152,
+    "file": "assets/frames/31000_152.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "5b9667aff649f9b3e6b6e4fec65e2349e3de6870f5366802d0d70b96acfd309e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_02.png",
+    "source_rectangle": [
+      1135,
+      2324,
+      1225,
+      2397
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_03",
+    "group": 31000,
+    "number": 153,
+    "file": "assets/frames/31000_153.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "ceac98c13b9f09b67a5ba35f7ec916111bc573d48d0251b39973ed858cb6a80f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_03.png",
+    "source_rectangle": [
+      729,
+      2396,
+      819,
+      2469
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_04",
+    "group": 31000,
+    "number": 154,
+    "file": "assets/frames/31000_154.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "1b99c667f8ecb0b99d36a97ef453100be841900834729419f02737e1f8a97d0c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_04.png",
+    "source_rectangle": [
+      821,
+      2396,
+      911,
+      2469
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_05",
+    "group": 31000,
+    "number": 155,
+    "file": "assets/frames/31000_155.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "bab5bf26c598c1260a9f5ea661ff89406f75c9636f9267a53c21fe972cf47049",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_05.png",
+    "source_rectangle": [
+      913,
+      2396,
+      1003,
+      2469
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Walk_06",
+    "group": 31000,
+    "number": 156,
+    "file": "assets/frames/31000_156.png",
+    "axis": [
+      45,
+      72
+    ],
+    "rgba_sha256": "269ac875ed757ce9f43cdd9bea5654f07fc659288369a3edfb8e69c586b88cc7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Walk_06.png",
+    "source_rectangle": [
+      1005,
+      2396,
+      1095,
+      2469
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Idle_01",
+    "group": 31000,
+    "number": 157,
+    "file": "assets/frames/31000_157.png",
+    "axis": [
+      25,
+      91
+    ],
+    "rgba_sha256": "d74088b9eb0c8cf1ec9098bcde600591535be4fc50dba5257ea8ab831d8af8bb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Kankuro_Idle_01.png",
+    "source_rectangle": [
+      2245,
+      2240,
+      2295,
+      2340
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Tsumeato_01",
+    "group": 31000,
+    "number": 158,
+    "file": "assets/frames/31000_158.png",
+    "axis": [
+      65,
+      31
+    ],
+    "rgba_sha256": "005ed8f1ed4a804d5655f8831982d4be83b1e3cab6a9c2c4cda2e8a153e4416a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Tsumeato_01.png",
+    "source_rectangle": [
+      1443,
+      1613,
+      1573,
+      1651
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Tsumeato_02",
+    "group": 31000,
+    "number": 159,
+    "file": "assets/frames/31000_159.png",
+    "axis": [
+      65,
+      31
+    ],
+    "rgba_sha256": "f16741fcbb13481b78d7f19a89bb024d0d168b1b0c64ab39a33eeea07956994b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Tsumeato_02.png",
+    "source_rectangle": [
+      561,
+      2436,
+      691,
+      2474
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Tsumeato_03",
+    "group": 31000,
+    "number": 160,
+    "file": "assets/frames/31000_160.png",
+    "axis": [
+      65,
+      34
+    ],
+    "rgba_sha256": "864afae1630124f10eb3b25e5d009637b74c29979015dd44bb6571c1c34d0fd6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Tsumeato_03.png",
+    "source_rectangle": [
+      1931,
+      2412,
+      2061,
+      2450
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Tsumeato_04",
+    "group": 31000,
+    "number": 161,
+    "file": "assets/frames/31000_161.png",
+    "axis": [
+      65,
+      34
+    ],
+    "rgba_sha256": "b157b961aa1c8d7493ad7e701b30cc88caedd7d60e823866ee3e2ee6bb6f2d9c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Kankuro/Kankuro.plist",
+    "source_key": "Tsumeato_04.png",
+    "source_rectangle": [
+      2063,
+      2440,
+      2193,
+      2478
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_21",
+    "group": 31001,
+    "number": 0,
+    "file": "assets/frames/31001_0.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "e698a702330b25a00e6e43bc9b7a703c9daaabd63d64e4e7a885c13e98ff3054",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_21.png",
+    "source_rectangle": [
+      1,
+      1,
+      801,
+      586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_22",
+    "group": 31001,
+    "number": 1,
+    "file": "assets/frames/31001_1.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "7f74ee29c681c37b4d1bf2d3016a0dd9488e31826b8c33597d5ffc72abfd1944",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_22.png",
+    "source_rectangle": [
+      1,
+      588,
+      801,
+      1173
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_23",
+    "group": 31001,
+    "number": 2,
+    "file": "assets/frames/31001_2.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "dee2dc34a4c0624c3d568b59cb1b0140d764bd2a6808f888a5abfc0406655062",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_23.png",
+    "source_rectangle": [
+      803,
+      1,
+      1603,
+      586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_24",
+    "group": 31001,
+    "number": 3,
+    "file": "assets/frames/31001_3.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "88b143303f7be18101e57007520b735d2662a13bb6d8854f843153d9ded202a5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_24.png",
+    "source_rectangle": [
+      803,
+      588,
+      1603,
+      1173
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_25",
+    "group": 31001,
+    "number": 4,
+    "file": "assets/frames/31001_4.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "298099a1fed153196de41e3c18ccc3a88cf256e26489fef0357cef76638b9c39",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_25.png",
+    "source_rectangle": [
+      1,
+      1175,
+      801,
+      1760
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_26",
+    "group": 31001,
+    "number": 5,
+    "file": "assets/frames/31001_5.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "ade173d2fdeb6d4567f0f254609234824f7e19a4c6fb0a14c85865f19c5eec71",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_26.png",
+    "source_rectangle": [
+      803,
+      1175,
+      1603,
+      1760
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_27",
+    "group": 31001,
+    "number": 6,
+    "file": "assets/frames/31001_6.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "149f2361d57982332d5733dab13b73ecdfb8c68b20d054325a63d618c4f6a1b3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_27.png",
+    "source_rectangle": [
+      1605,
+      1,
+      2405,
+      586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_28",
+    "group": 31001,
+    "number": 7,
+    "file": "assets/frames/31001_7.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "6b6944ff2bba22d3d0f4c8c454b02f8c4ab1a1698b0b3423c4a067c69ebf42be",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_28.png",
+    "source_rectangle": [
+      1605,
+      588,
+      2405,
+      1173
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_29",
+    "group": 31001,
+    "number": 8,
+    "file": "assets/frames/31001_8.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "34b4f5dfa608d120860d87e157b33b1f7e7f4fe20e4d6a082a95870c3de7b192",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_29.png",
+    "source_rectangle": [
+      1605,
+      1175,
+      2405,
+      1760
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_30",
+    "group": 31001,
+    "number": 9,
+    "file": "assets/frames/31001_9.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "7990f4d64c62f11699b60eee3e229a21d70591f3522a6191a65f4b8d593b118f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_30.png",
+    "source_rectangle": [
+      1,
+      1762,
+      801,
+      2347
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_31",
+    "group": 31001,
+    "number": 10,
+    "file": "assets/frames/31001_10.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "d55ab32b3e883b6f406339068bba6086aa9e7044f5bcd86f703542f64c2e4b77",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_31.png",
+    "source_rectangle": [
+      803,
+      1762,
+      1603,
+      2347
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_32",
+    "group": 31001,
+    "number": 11,
+    "file": "assets/frames/31001_11.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "e312e45e7711866aad826268f6e59ab9fd0b3136aa7e31941885398620e0b148",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_32.png",
+    "source_rectangle": [
+      1605,
+      1762,
+      2405,
+      2347
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_33",
+    "group": 31001,
+    "number": 12,
+    "file": "assets/frames/31001_12.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "a9f73bcbb9e6499e222834e21f7ee73003f6d448759f16ff511d0b9907635141",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_33.png",
+    "source_rectangle": [
+      1,
+      2349,
+      801,
+      2934
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_34",
+    "group": 31001,
+    "number": 13,
+    "file": "assets/frames/31001_13.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "41506ea1f4ba4708b137073cedd3229e2990b93ccc191c785cc352ab04128a5c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_34.png",
+    "source_rectangle": [
+      803,
+      2349,
+      1603,
+      2934
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_35",
+    "group": 31001,
+    "number": 14,
+    "file": "assets/frames/31001_14.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "0e6b876774f1052fa3c82377f9f3e4ec2d7411a4296060d5294bc6bc07e0590f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_35.png",
+    "source_rectangle": [
+      1605,
+      2349,
+      2405,
+      2934
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_36",
+    "group": 31001,
+    "number": 15,
+    "file": "assets/frames/31001_15.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "b08dece959eda962552922594756096a047c944cc71ff909baf947f63618f5f4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_36.png",
+    "source_rectangle": [
+      2407,
+      1,
+      3207,
+      586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_37",
+    "group": 31001,
+    "number": 16,
+    "file": "assets/frames/31001_16.png",
+    "axis": [
+      400,
+      440
+    ],
+    "rgba_sha256": "ff82fdb02bab9af1f8334ca495d1a64bac628f0e8ebfb0c04ffd930718c52c41",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_37.png",
+    "source_rectangle": [
+      2407,
+      588,
+      3207,
+      1173
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_01",
+    "group": 31001,
+    "number": 17,
+    "file": "assets/frames/31001_17.png",
+    "axis": [
+      300,
+      339
+    ],
+    "rgba_sha256": "781df40924978dd30091e618d0b95531f68dd3b38966a5b894255950ec127cfa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_01.png",
+    "source_rectangle": [
+      2407,
+      1175,
+      3007,
+      1525
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_02",
+    "group": 31001,
+    "number": 18,
+    "file": "assets/frames/31001_18.png",
+    "axis": [
+      300,
+      339
+    ],
+    "rgba_sha256": "48b8b29d776a1352055cd8e775e5d549da316b19ba7b4fbd3c2e039978487797",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_02.png",
+    "source_rectangle": [
+      2407,
+      1527,
+      3007,
+      1877
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_03",
+    "group": 31001,
+    "number": 19,
+    "file": "assets/frames/31001_19.png",
+    "axis": [
+      300,
+      339
+    ],
+    "rgba_sha256": "6bc9fc61101e2eb7838d6e722926d2f6205cf705392e9e8af1f2cae747d27ebc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_03.png",
+    "source_rectangle": [
+      2407,
+      1879,
+      3007,
+      2229
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_04",
+    "group": 31001,
+    "number": 20,
+    "file": "assets/frames/31001_20.png",
+    "axis": [
+      300,
+      349
+    ],
+    "rgba_sha256": "c4083b19647455f0f28999690824465b5d977b6b465903ceac4c822385011169",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_04.png",
+    "source_rectangle": [
+      2407,
+      2231,
+      3007,
+      2581
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_05",
+    "group": 31001,
+    "number": 21,
+    "file": "assets/frames/31001_21.png",
+    "axis": [
+      300,
+      347
+    ],
+    "rgba_sha256": "9eadaf2f5c2aad088c1ea138a59b186b796f2b8e49dc708ebf75704568bd51b2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_05.png",
+    "source_rectangle": [
+      2407,
+      2583,
+      3007,
+      2933
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_06",
+    "group": 31001,
+    "number": 22,
+    "file": "assets/frames/31001_22.png",
+    "axis": [
+      300,
+      349
+    ],
+    "rgba_sha256": "f4eec623e2995441e12a376637f753227c62e9211dd8ee69a1801403a5d1e63e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_06.png",
+    "source_rectangle": [
+      1,
+      2936,
+      601,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Troops_07",
+    "group": 31001,
+    "number": 23,
+    "file": "assets/frames/31001_23.png",
+    "axis": [
+      300,
+      349
+    ],
+    "rgba_sha256": "598d15c29f24acfb8a8b693ff1f7eb9623f32ddaebbb4ed0591b871b67e868cd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Troops_07.png",
+    "source_rectangle": [
+      603,
+      2936,
+      1203,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_38",
+    "group": 31001,
+    "number": 24,
+    "file": "assets/frames/31001_24.png",
+    "axis": [
+      200,
+      440
+    ],
+    "rgba_sha256": "0e61f62ab8e9d100b5fa4ca8b770532ed65689b524d26b4225e1acdac62ee572",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_38.png",
+    "source_rectangle": [
+      3209,
+      1,
+      3609,
+      586
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_39",
+    "group": 31001,
+    "number": 25,
+    "file": "assets/frames/31001_25.png",
+    "axis": [
+      200,
+      440
+    ],
+    "rgba_sha256": "cd5bec38245ffbfdf27552c11dff4e55dc1e73076c9d192d0a39aa827888dccc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_39.png",
+    "source_rectangle": [
+      3209,
+      588,
+      3609,
+      1173
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_40",
+    "group": 31001,
+    "number": 26,
+    "file": "assets/frames/31001_26.png",
+    "axis": [
+      200,
+      440
+    ],
+    "rgba_sha256": "d22af394fc4b1cd69bbe911cac6f77d9475d941fb333be86f8926db0d39e95b3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original Code inside the complete Karma column, grounded final body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_40.png",
+    "source_rectangle": [
+      3009,
+      1175,
+      3409,
+      1760
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_00",
+    "group": 31001,
+    "number": 27,
+    "file": "assets/frames/31001_27.png",
+    "axis": [
+      225,
+      201
+    ],
+    "rgba_sha256": "86aba694984fba3325172f6ac2bbfead36000b9656c9400e7889e536363d65e0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_00.png",
+    "source_rectangle": [
+      1205,
+      2936,
+      1655,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_01",
+    "group": 31001,
+    "number": 28,
+    "file": "assets/frames/31001_28.png",
+    "axis": [
+      225,
+      201
+    ],
+    "rgba_sha256": "86aba694984fba3325172f6ac2bbfead36000b9656c9400e7889e536363d65e0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_01.png",
+    "source_rectangle": [
+      1205,
+      2936,
+      1655,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_02",
+    "group": 31001,
+    "number": 29,
+    "file": "assets/frames/31001_29.png",
+    "axis": [
+      225,
+      313
+    ],
+    "rgba_sha256": "b7a569da76127a213f16f78bac720649b55ac93005698d20e49844763220d2dc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_02.png",
+    "source_rectangle": [
+      1657,
+      2936,
+      2107,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_03",
+    "group": 31001,
+    "number": 30,
+    "file": "assets/frames/31001_30.png",
+    "axis": [
+      225,
+      275
+    ],
+    "rgba_sha256": "fa17995f8a3bc032383b01706449010edc5c0901b636ff3c525df2f6b820a08c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_03.png",
+    "source_rectangle": [
+      2109,
+      2936,
+      2559,
+      3286
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_04",
+    "group": 31001,
+    "number": 31,
+    "file": "assets/frames/31001_31.png",
+    "axis": [
+      225,
+      291
+    ],
+    "rgba_sha256": "37653c51f4d27fa2c836a042e1472f10bf8efcf0c495b3bf12884085fdf645d4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_04.png",
+    "source_rectangle": [
+      2561,
+      2935,
+      3011,
+      3285
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_05",
+    "group": 31001,
+    "number": 32,
+    "file": "assets/frames/31001_32.png",
+    "axis": [
+      225,
+      309
+    ],
+    "rgba_sha256": "68186926ea7f8023a6f93b5b8a4810b30e1d1a4ca88ea5b3fd4190ddb0b690e9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_05.png",
+    "source_rectangle": [
+      3013,
+      1762,
+      3463,
+      2112
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_06",
+    "group": 31001,
+    "number": 33,
+    "file": "assets/frames/31001_33.png",
+    "axis": [
+      225,
+      325
+    ],
+    "rgba_sha256": "a63e1237e3d4b8c9f1b2f947387e6389f6a0211f989652f4d2a1f70f7b430de1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_06.png",
+    "source_rectangle": [
+      3013,
+      2114,
+      3463,
+      2464
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_07",
+    "group": 31001,
+    "number": 34,
+    "file": "assets/frames/31001_34.png",
+    "axis": [
+      225,
+      335
+    ],
+    "rgba_sha256": "014b2ea617e10c631e014d689f954fc46653e465e2316550284401d189f80dab",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_07.png",
+    "source_rectangle": [
+      3009,
+      2466,
+      3459,
+      2816
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_08",
+    "group": 31001,
+    "number": 35,
+    "file": "assets/frames/31001_35.png",
+    "axis": [
+      225,
+      331
+    ],
+    "rgba_sha256": "468557830cd74dfd125363604466ec105b1db463e919f1a2689998835a40a1c0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_08.png",
+    "source_rectangle": [
+      3013,
+      2818,
+      3463,
+      3168
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_09",
+    "group": 31001,
+    "number": 36,
+    "file": "assets/frames/31001_36.png",
+    "axis": [
+      225,
+      349
+    ],
+    "rgba_sha256": "53d598d898cb247d421e2a392f80c751590ae8082fad44745e369d91d7d29721",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_09.png",
+    "source_rectangle": [
+      1,
+      3288,
+      451,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_10",
+    "group": 31001,
+    "number": 37,
+    "file": "assets/frames/31001_37.png",
+    "axis": [
+      225,
+      349
+    ],
+    "rgba_sha256": "3cc50783b61dbdf8ede9bf8b16d5c1d27be12613164b4aa52a4d7592022a1b8a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_10.png",
+    "source_rectangle": [
+      453,
+      3288,
+      903,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "TroopsAtk_11",
+    "group": 31001,
+    "number": 38,
+    "file": "assets/frames/31001_38.png",
+    "axis": [
+      225,
+      341
+    ],
+    "rgba_sha256": "a20cc979d9367ddeda688da9ed3794643af3ec70b4169eb23471fdb2c3de0ea7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "TroopsAtk_11.png",
+    "source_rectangle": [
+      905,
+      3288,
+      1355,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_11",
+    "group": 31001,
+    "number": 39,
+    "file": "assets/frames/31001_39.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "44a96c4e89c34f36c99dae8e614690cce9edc76f010cf378135a66e281f3c9eb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_11.png",
+    "source_rectangle": [
+      1357,
+      3288,
+      1757,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_12",
+    "group": 31001,
+    "number": 40,
+    "file": "assets/frames/31001_40.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "976a5b6880db706ad4a76b47a2b5c3c885d90a6e7069392e9192cabcf3e2aab6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_12.png",
+    "source_rectangle": [
+      1759,
+      3288,
+      2159,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_13",
+    "group": 31001,
+    "number": 41,
+    "file": "assets/frames/31001_41.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "4c1417cc3b359a71dee8c28cd03e3006352f05bf95feece980216d8adab3467f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_13.png",
+    "source_rectangle": [
+      2161,
+      3288,
+      2561,
+      3638
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_14",
+    "group": 31001,
+    "number": 42,
+    "file": "assets/frames/31001_42.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "c409bec42509be33568a52fa777538177b333b1f17f10850946f9e7c9f2d0df5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_14.png",
+    "source_rectangle": [
+      2563,
+      3287,
+      2963,
+      3637
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_15",
+    "group": 31001,
+    "number": 43,
+    "file": "assets/frames/31001_43.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "23c44e3db99baaad33efe87ea0bfbdedbe7f02bcea73fc02ea491d6e38bc72f8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_15.png",
+    "source_rectangle": [
+      2965,
+      3287,
+      3365,
+      3637
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_16",
+    "group": 31001,
+    "number": 44,
+    "file": "assets/frames/31001_44.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "bd7db5a63760d77ca0da878b1bf15c6e768d1a10b84ba48a6687ab45790bdb7a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_16.png",
+    "source_rectangle": [
+      1,
+      3640,
+      401,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_17",
+    "group": 31001,
+    "number": 45,
+    "file": "assets/frames/31001_45.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "3bec76a6cef0a24cd98f03e032486576f4fa101175cebea6449d06c8d967cc90",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_17.png",
+    "source_rectangle": [
+      403,
+      3640,
+      803,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_18",
+    "group": 31001,
+    "number": 46,
+    "file": "assets/frames/31001_46.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "24f809a4ebf423d4cd29c74bbe2182d36d9e3a0bd180464286aaefa4156a0874",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_18.png",
+    "source_rectangle": [
+      805,
+      3640,
+      1205,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_19",
+    "group": 31001,
+    "number": 47,
+    "file": "assets/frames/31001_47.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "3cc265295f892271832f1cfb527b821eb917f39e4683e0c1c9195f8f083cad7e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_19.png",
+    "source_rectangle": [
+      1207,
+      3640,
+      1607,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_20",
+    "group": 31001,
+    "number": 48,
+    "file": "assets/frames/31001_48.png",
+    "axis": [
+      200,
+      130
+    ],
+    "rgba_sha256": "2143da03abb6cdd41d97d4459ef7c9a0bbfd07f4f251caec42768c0e4fb64219",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_20.png",
+    "source_rectangle": [
+      1609,
+      3640,
+      2009,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_01",
+    "group": 31001,
+    "number": 49,
+    "file": "assets/frames/31001_49.png",
+    "axis": [
+      140,
+      290
+    ],
+    "rgba_sha256": "327a6277c4c866e74011e71128b2a9044d5aff2cdb2e7a539264deda7cad1cfc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_01.png",
+    "source_rectangle": [
+      2011,
+      3640,
+      2291,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_02",
+    "group": 31001,
+    "number": 50,
+    "file": "assets/frames/31001_50.png",
+    "axis": [
+      140,
+      288
+    ],
+    "rgba_sha256": "a42baafc3265d7a9a53ca032ac9c944adaed8d823af4cc8628773b39e93f5f97",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_02.png",
+    "source_rectangle": [
+      2293,
+      3640,
+      2573,
+      3990
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_03",
+    "group": 31001,
+    "number": 51,
+    "file": "assets/frames/31001_51.png",
+    "axis": [
+      140,
+      284
+    ],
+    "rgba_sha256": "76306911ef638c9a1282f272e2cf748743dde0d4d9701a8e571aca1bfea51416",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_03.png",
+    "source_rectangle": [
+      2575,
+      3639,
+      2855,
+      3989
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_04",
+    "group": 31001,
+    "number": 52,
+    "file": "assets/frames/31001_52.png",
+    "axis": [
+      140,
+      289
+    ],
+    "rgba_sha256": "f94e8f2651cfb90b149ba0d3706c5de4a98089fbafdbb4b5ca5499f2b3cdc622",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_04.png",
+    "source_rectangle": [
+      2857,
+      3639,
+      3137,
+      3989
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_05",
+    "group": 31001,
+    "number": 53,
+    "file": "assets/frames/31001_53.png",
+    "axis": [
+      140,
+      229
+    ],
+    "rgba_sha256": "66a2849406f531d8ddef09518371ccd24fc196a59ad9e21bc6e420a674220345",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_05.png",
+    "source_rectangle": [
+      3139,
+      3639,
+      3419,
+      3989
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Jiku_06",
+    "group": 31001,
+    "number": 54,
+    "file": "assets/frames/31001_54.png",
+    "axis": [
+      140,
+      273
+    ],
+    "rgba_sha256": "ab7d49a53d5f630e3c62ab23ebec0aabc5faf3f5164b442a3d387abad1de0b06",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "alignment": "original prop ground plane",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Jiku_06.png",
+    "source_rectangle": [
+      3461,
+      2466,
+      3741,
+      2816
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "EndChg_01",
+    "group": 31001,
+    "number": 55,
+    "file": "assets/frames/31001_55.png",
+    "axis": [
+      80,
+      145
+    ],
+    "rgba_sha256": "2de6cd892f300621c3dbb62c310404a22d22176d5e7ed954d37a61b8fad0897b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "EndChg_01.png",
+    "source_rectangle": [
+      3611,
+      1,
+      3771,
+      257
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "EndChg_02",
+    "group": 31001,
+    "number": 56,
+    "file": "assets/frames/31001_56.png",
+    "axis": [
+      80,
+      145
+    ],
+    "rgba_sha256": "ab0224721be5c97428632262121fe5b15a368eaef61a3105ee67b8cc04921b1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "EndChg_02.png",
+    "source_rectangle": [
+      3611,
+      259,
+      3771,
+      515
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "EndChg_03",
+    "group": 31001,
+    "number": 57,
+    "file": "assets/frames/31001_57.png",
+    "axis": [
+      80,
+      145
+    ],
+    "rgba_sha256": "a2592eedc972024619cbdb43d778b4f8c81d415b6baf46d6bc62fc406bc9d6e4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "EndChg_03.png",
+    "source_rectangle": [
+      3611,
+      517,
+      3771,
+      773
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "EndChg_04",
+    "group": 31001,
+    "number": 58,
+    "file": "assets/frames/31001_58.png",
+    "axis": [
+      80,
+      145
+    ],
+    "rgba_sha256": "602117cafc515f78cdfa714aa8e23ec8d45cf8005cdeed3c7d7cf20bd9ff80e6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "EndChg_04.png",
+    "source_rectangle": [
+      3611,
+      775,
+      3771,
+      1031
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_01",
+    "group": 31001,
+    "number": 59,
+    "file": "assets/frames/31001_59.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "b6f5ea2c3fe184790f0e423881def7e5b6fab95cf802013079ebb43b1b7b82ef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_01.png",
+    "source_rectangle": [
+      3611,
+      1033,
+      3841,
+      1236
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_02",
+    "group": 31001,
+    "number": 60,
+    "file": "assets/frames/31001_60.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "c9ced3d40b82b04ac80574a7ba730c8bfd2d48355acda6e049c36d1ead9d5284",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_02.png",
+    "source_rectangle": [
+      3465,
+      2818,
+      3695,
+      3021
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_03",
+    "group": 31001,
+    "number": 61,
+    "file": "assets/frames/31001_61.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "0124c294717553117e9425d13c63cd26d36fd659fdcb19c1fb0d3b9d95e0c38b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_03.png",
+    "source_rectangle": [
+      3465,
+      1238,
+      3695,
+      1441
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_04",
+    "group": 31001,
+    "number": 62,
+    "file": "assets/frames/31001_62.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "83d387f6a62155d9d1ba310003e3feb68d0bb627c0e1ca24c77922bd1d867ca4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_04.png",
+    "source_rectangle": [
+      3411,
+      1443,
+      3641,
+      1646
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_05",
+    "group": 31001,
+    "number": 63,
+    "file": "assets/frames/31001_63.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "0b425b69fe305b446d6d47b014a67fa2b992ba42ce0199b96784f945ad04d976",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_05.png",
+    "source_rectangle": [
+      3643,
+      1443,
+      3873,
+      1646
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_06",
+    "group": 31001,
+    "number": 64,
+    "file": "assets/frames/31001_64.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "68402585586f31ff8f1ab1d672e7c777168299d8a403c4952d2bec5077759bb3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_06.png",
+    "source_rectangle": [
+      3465,
+      3023,
+      3695,
+      3226
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_07",
+    "group": 31001,
+    "number": 65,
+    "file": "assets/frames/31001_65.png",
+    "axis": [
+      115,
+      160
+    ],
+    "rgba_sha256": "90a9af5ad6a889bfa22904dc0452fd3da0674054fab2d8a63eb92ad31ff1c832",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_07.png",
+    "source_rectangle": [
+      3465,
+      1648,
+      3695,
+      1851
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_01",
+    "group": 31001,
+    "number": 66,
+    "file": "assets/frames/31001_66.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "0cd0366d00641875b35c707106f1942b707367a4a4ef08f9e5edd19e0b3ec1e1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_01.png",
+    "source_rectangle": [
+      3697,
+      2818,
+      3847,
+      3027
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_02",
+    "group": 31001,
+    "number": 67,
+    "file": "assets/frames/31001_67.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "6e125c9f91ea0f901365f42776c2cbd4816130f4aec4ce1e6495e65a9e774eb3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_02.png",
+    "source_rectangle": [
+      3697,
+      1648,
+      3847,
+      1857
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_03",
+    "group": 31001,
+    "number": 68,
+    "file": "assets/frames/31001_68.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "d07144cc0baa06f21aadd96eb1f604f8d417ffeb820e0781ff9887815211526b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_03.png",
+    "source_rectangle": [
+      3697,
+      3029,
+      3847,
+      3238
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_04",
+    "group": 31001,
+    "number": 69,
+    "file": "assets/frames/31001_69.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "993fb052a70e9613cd7e47860d9e2a97a4f7cb75528ca66e34d92795e2062c4f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_04.png",
+    "source_rectangle": [
+      3465,
+      1853,
+      3615,
+      2062
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_05",
+    "group": 31001,
+    "number": 70,
+    "file": "assets/frames/31001_70.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "1e7760e4e21cfeffe2ee4dbc7d258b998132c83b67c1b04e6083c6c1351a2948",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_05.png",
+    "source_rectangle": [
+      3421,
+      3228,
+      3571,
+      3437
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_06",
+    "group": 31001,
+    "number": 71,
+    "file": "assets/frames/31001_71.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "3819607768b7859e3e9b3acff2b038d206fb7a1e41b89f938a6722cd19313cef",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_06.png",
+    "source_rectangle": [
+      3617,
+      1859,
+      3767,
+      2068
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_07",
+    "group": 31001,
+    "number": 72,
+    "file": "assets/frames/31001_72.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "34ac709fca9d3a41997f9e67623e4a0f91b3cc7aae6bf4c0237a4d26bed27b66",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_07.png",
+    "source_rectangle": [
+      3465,
+      2064,
+      3615,
+      2273
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_08",
+    "group": 31001,
+    "number": 73,
+    "file": "assets/frames/31001_73.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "a6922614b4dd54e57b5bfb038d84c5c6619127897008dc9ec8166156b95644c4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_08.png",
+    "source_rectangle": [
+      3617,
+      2070,
+      3767,
+      2279
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_09",
+    "group": 31001,
+    "number": 74,
+    "file": "assets/frames/31001_74.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "b9f3d22f783c19441ac05d0e0663973053dde753e99b72ea29f68b8eee2117df",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_09.png",
+    "source_rectangle": [
+      3573,
+      3240,
+      3723,
+      3449
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "CodeNLAura_10",
+    "group": 31001,
+    "number": 75,
+    "file": "assets/frames/31001_75.png",
+    "axis": [
+      70,
+      160
+    ],
+    "rgba_sha256": "bd0a783fb8b8546513fcb9de6a61b58f23766e8fe13affc6fcace81eb2b8c74f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "CodeNLAura_10.png",
+    "source_rectangle": [
+      3421,
+      3439,
+      3571,
+      3648
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_08",
+    "group": 31001,
+    "number": 76,
+    "file": "assets/frames/31001_76.png",
+    "axis": [
+      35,
+      72
+    ],
+    "rgba_sha256": "261e17af43ca4d47e796bee144fee061ba9d579f84ef16d0b5464a57e29fbf70",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_08.png",
+    "source_rectangle": [
+      3013,
+      3170,
+      3083,
+      3243
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_09",
+    "group": 31001,
+    "number": 77,
+    "file": "assets/frames/31001_77.png",
+    "axis": [
+      35,
+      72
+    ],
+    "rgba_sha256": "a070c2137306e00029616da76b7fa2818060fc804ce78904d472f9b0b27b96d9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_09.png",
+    "source_rectangle": [
+      3085,
+      3170,
+      3155,
+      3243
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Kankuro_Skill05_10",
+    "group": 31001,
+    "number": 78,
+    "file": "assets/frames/31001_78.png",
+    "axis": [
+      35,
+      72
+    ],
+    "rgba_sha256": "fcd92a99c15071724d9a32ac2194d481f2e390a683504664537c9cb61f7cfcb8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "alignment": "original body feet",
+    "source_plist": "source_material/CodeNoLimiter_original/Code/Skill/Kankuro_Skill.plist",
+    "source_key": "Kankuro_Skill05_10.png",
+    "source_rectangle": [
+      3157,
+      3170,
+      3227,
+      3243
+    ],
+    "source_rotated": false
+  },
+  {
+    "key": "Common_8700_0",
+    "group": 8700,
+    "number": 0,
+    "file": "assets/frames/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_1",
+    "group": 8700,
+    "number": 1,
+    "file": "assets/frames/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_2",
+    "group": 8700,
+    "number": 2,
+    "file": "assets/frames/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_3",
+    "group": 8700,
+    "number": 3,
+    "file": "assets/frames/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_0",
+    "group": 8710,
+    "number": 0,
+    "file": "assets/frames/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_1",
+    "group": 8710,
+    "number": 1,
+    "file": "assets/frames/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_2",
+    "group": 8710,
+    "number": 2,
+    "file": "assets/frames/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_3",
+    "group": 8710,
+    "number": 3,
+    "file": "assets/frames/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_0",
+    "group": 8720,
+    "number": 0,
+    "file": "assets/frames/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_1",
+    "group": 8720,
+    "number": 1,
+    "file": "assets/frames/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_2",
+    "group": 8720,
+    "number": 2,
+    "file": "assets/frames/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_3",
+    "group": 8720,
+    "number": 3,
+    "file": "assets/frames/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_4",
+    "group": 8720,
+    "number": 4,
+    "file": "assets/frames/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_5",
+    "group": 8720,
+    "number": 5,
+    "file": "assets/frames/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_0",
+    "group": 8900,
+    "number": 0,
+    "file": "assets/frames/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_1",
+    "group": 8900,
+    "number": 1,
+    "file": "assets/frames/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_2",
+    "group": 8900,
+    "number": 2,
+    "file": "assets/frames/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_3",
+    "group": 8900,
+    "number": 3,
+    "file": "assets/frames/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_4",
+    "group": 8900,
+    "number": 4,
+    "file": "assets/frames/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_5",
+    "group": 8900,
+    "number": 5,
+    "file": "assets/frames/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_6",
+    "group": 8900,
+    "number": 6,
+    "file": "assets/frames/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_7",
+    "group": 8900,
+    "number": 7,
+    "file": "assets/frames/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_8",
+    "group": 8900,
+    "number": 8,
+    "file": "assets/frames/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_9",
+    "group": 8900,
+    "number": 9,
+    "file": "assets/frames/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_10",
+    "group": 8900,
+    "number": 10,
+    "file": "assets/frames/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_11",
+    "group": 8900,
+    "number": 11,
+    "file": "assets/frames/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_12",
+    "group": 8900,
+    "number": 12,
+    "file": "assets/frames/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_13",
+    "group": 8900,
+    "number": 13,
+    "file": "assets/frames/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_14",
+    "group": 8900,
+    "number": 14,
+    "file": "assets/frames/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_15",
+    "group": 8900,
+    "number": 15,
+    "file": "assets/frames/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_16",
+    "group": 8900,
+    "number": 16,
+    "file": "assets/frames/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_17",
+    "group": 8900,
+    "number": 17,
+    "file": "assets/frames/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_18",
+    "group": 8900,
+    "number": 18,
+    "file": "assets/frames/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_19",
+    "group": 8900,
+    "number": 19,
+    "file": "assets/frames/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_20",
+    "group": 8900,
+    "number": 20,
+    "file": "assets/frames/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_21",
+    "group": 8900,
+    "number": 21,
+    "file": "assets/frames/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_22",
+    "group": 8900,
+    "number": 22,
+    "file": "assets/frames/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_23",
+    "group": 8900,
+    "number": 23,
+    "file": "assets/frames/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Portrait_0",
+    "group": 9000,
+    "number": 0,
+    "file": "assets/frames/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "1cd50dfedb3ebd327167ffc1fcc3eeff4b1a301fb87d045debaa8fef4bdd01c4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  },
+  {
+    "key": "Portrait_1",
+    "group": 9000,
+    "number": 1,
+    "file": "assets/frames/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "601c299c4c00431732b785ee09e2120b306ac378c62c66a540da9e4568ff6736",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "archive": {
+    "name": "CodeTBV rep kankuro V.1.17 (SFILE.MOBI).zip",
+    "bytes": 12471432,
+    "sha256": "e25627da804f5c62c02af2ee84fca7881f3bfd6f6d499592867e954244a0cc74"
+  },
+  "gameplay_reference": {
+    "name": "Share Sprite CODE NO LIMITER. Free Kaguya 1.17 VaydraSenki.mp4",
+    "sha256": "a8142ea2cb49a57bfd4886d8eb3ba25cd36ea0ec007c4260378ff80dc01485c1"
+  },
+  "original_files": {
+    "Code/Bullet/PreJiku.xml": "b85b3f2d4b09e6144c74061e043e456b2a2ddd77db090ac19b61d28e7be0a9f2",
+    "Code/Kankuro/Kankuro.plist": "c2db3c3625ab64a55f6628c31ef3eabfac26f19637859a05847b0e44e5748c59",
+    "Code/Kankuro/Kankuro.png": "9eeab71ac967e173d08a0ae204d73103173af61f04a51b8834987d623d134f29",
+    "Code/Kankuro/Kankuro.xml": "9eab8da3a0a657d4b6da9f9017f4f712670a24e1719c5a8a2b224bdd6761fef8",
+    "Code/Karasu/Karasu.plist": "7743a02210106e91b0dc4b97424f66676bb59ea0e5d36ab90798b622a2c45524",
+    "Code/Karasu/Karasu.png": "635bf82def9421b42674d31ea2d3c442ff2bd1b5cd4f309e5aa63648317d23ed",
+    "Code/Karasu/Karasu.xml": "8d048c4917ab521b20741ab0efb11f2b6ecedeb965576da3f2c6c57716aeba7b",
+    "Code/Mons/GrimeAdd.xml": "ca29aaf67e2159fb91e288ad8202bf6b6fcb093fbae2d7b02a19e2b6fd8c5046",
+    "Code/Mons/Prime.xml": "9ba67b1b53f7bc42eddb081416a34a51a706494ee7850c87e487208c243ce99d",
+    "Code/Mons/SakuraBom.xml": "668225d25d61c1b0e3c6cef077179356b7b4797071b5cc92e94eb76b9f973bfe",
+    "Code/Mons/Tsumeaka1.xml": "a1bbd6bf35af1a67a8d7ff5daada694e5d174935ae3170dd001a941cf526a6d0",
+    "Code/Mons/Tsumeaka2.xml": "2127776120df3c5f871eea78753eb07dfdf883b910fe9f489557531b787c0fff",
+    "Code/Mons/Tsumeato.xml": "0810a9fc694d3194abb4312ae6727e5499e3f9df060b1a1b283d7b20297271ea",
+    "Code/Mons/Tuji.xml": "33a605c84d3df29e509f6822a14602d4d4c4df97786a466f92c0065e764d628e",
+    "Code/Mons/Tuji2.xml": "21c037e3b525275a5ceefee1e534f6adb646e6c287a803664187f143bf715682",
+    "Code/Skill/Kankuro_Skill.plist": "953844b56933cb3f577c94631d073540cce3de08d6515f8fc7ba96b3e08d10a6",
+    "Code/Skill/Kankuro_Skill.png": "7cdb587228c7b6cb96e7b87c970b8e37a8f2119165e98e2776b8d4a22c6ee8b6"
+  },
+  "original_frames": 241,
+  "original_rgba_preserved": true,
+  "excluded": {
+    "empty": [
+      "CodeNol_01"
+    ],
+    "unrelated_donor_atlas": "Karasu/Karasu.plist",
+    "unrelated_frames": 23
+  },
+  "uploaded_zip_has_audio": false,
+  "reused_code_samples": 13,
+  "source_code_snd_sha256": "68227000758c7b72aeca96cb4663f74770ca477b700710866cd82923ca36fa41"
+}

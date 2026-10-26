@@ -1,0 +1,113 @@
+{
+  "moves": [
+    [
+      "Grime",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Emboscada",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Karma",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Superior",
+      "b",
+      "B",
+      1030,
+      600
+    ],
+    [
+      "DobleMarca",
+      "c",
+      "F",
+      1040,
+      450
+    ],
+    [
+      "Ascendente",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Patada",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Remolino",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Marca",
+      "y",
+      "N",
+      1200,
+      150
+    ],
+    [
+      "Viaje",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Cerco",
+      "y",
+      "D",
+      1430,
+      500
+    ],
+    [
+      "Arbol",
+      "z",
+      "D",
+      1440,
+      550
+    ]
+  ],
+  "base": "White hair Code without limiters",
+  "awakening": "Stronger Karma, original purple aura, two Claw Grimes",
+  "awakening_ticks": 1200,
+  "requires": 3000,
+  "cost": 1500,
+  "ultimate_cost": 3000,
+  "own_life_cost": 0,
+  "ultimate_damage": [
+    650,
+    800
+  ],
+  "minion_health": 180,
+  "minion_ticks": 420,
+  "minion_cap": [
+    1,
+    2
+  ],
+  "mark_ticks": 480
+}

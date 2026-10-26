@@ -1,0 +1,149 @@
+{
+  "runtime_sha256": "fe9c0e5ace0e30b1d81bf77f16ebfd47e401664212742742a6e72b87ccbe3cbf",
+  "cases": [
+    {
+      "case": {
+        "name": "Cerco",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "D",
+        "state": 1430,
+        "cost": 500,
+        "distance": 170
+      },
+      "states": [
+        0,
+        11,
+        1430
+      ],
+      "damage": 300,
+      "minimum_life": 1300,
+      "min_power": 2500,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 5,
+      "pulse_span_ticks": 377,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Cerco",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "y",
+        "d": "D",
+        "state": 1430,
+        "cost": 500,
+        "distance": 170
+      },
+      "states": [
+        0,
+        11,
+        1430
+      ],
+      "damage": 300,
+      "minimum_life": 1300,
+      "min_power": 2500,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 5,
+      "pulse_span_ticks": 377,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Cerco",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "y",
+        "d": "D",
+        "state": 11430,
+        "cost": 500,
+        "distance": 170
+      },
+      "states": [
+        0,
+        11,
+        11430
+      ],
+      "damage": 790,
+      "minimum_life": 1300,
+      "min_power": 2500,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 5,
+      "pulse_span_ticks": 377,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Cerco",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "y",
+        "d": "D",
+        "state": 11430,
+        "cost": 500,
+        "distance": 170
+      },
+      "states": [
+        0,
+        11,
+        11430
+      ],
+      "damage": 790,
+      "minimum_life": 1300,
+      "min_power": 2500,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 5,
+      "pulse_span_ticks": 377,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "failures": []
+    }
+  ]
+}

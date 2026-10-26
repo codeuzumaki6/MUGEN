@@ -1,0 +1,17 @@
+{
+  "character": "CodeNoLimiter",
+  "runtime_sha256": "fe9c0e5ace0e30b1d81bf77f16ebfd47e401664212742742a6e72b87ccbe3cbf",
+  "actual_inputs": 120,
+  "receiving_probes": 112,
+  "feature_checks": 16,
+  "beam_interruption_checks": 4,
+  "small_target_checks": 20,
+  "dash_checks": 8,
+  "original_frames": 241,
+  "reused_code_audio": 13,
+  "base": "Code without limiters, white hair",
+  "awakening": "Karma reinforcement and two Claw Grimes, 20 seconds",
+  "previous_characters_unchanged_from": "84264f97d95ce166b32ac1649e051895788b0eb7",
+  "archive_sha256": "bdb2399589d9349b5cd877b54fbe315857b3a2e61bd1274e385641b60e85fdbd",
+  "video_sha256": "9512c6e905fa2326d65ffbcba9171f555233f50ba805158217681b67777971fe"
+}
