@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Jibaku</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <e type="setCommand">reTransport</e>
+        <f>GozuTenou_01</f>
+        <f>GozuTenou_02</f>
+
+        <f>GozuTenou_03</f>
+        <f>GozuTenou_04</f>
+        <f>GozuTenou_05</f>
+        <f>GozuTenou_06</f>
+        <f>GozuTenou_07</f>
+        <f>GozuTenou_08</f>
+        <f>GozuTenou_09</f>
+        <f>GozuTenou_10</f>
+        <f>GozuTenou_11</f>
+        <f>GozuTenou_12</f>
+        <f>GozuTenou_13</f>
+        <f>GozuTenou_14</f>
+        <f>GozuTenou_15</f>
+        <f>GozuTenou_16</f>
+        <f>GozuTenou_17</f>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">Summon</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">0</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <e type="setCommand">reTransport</e>
+        <f>GozuTenou_01</f>
+        <f>GozuTenou_02</f>
+
+        <f>GozuTenou_03</f>
+        <f>GozuTenou_04</f>
+        <f>GozuTenou_05</f>
+        <f>GozuTenou_06</f>
+        <f>GozuTenou_07</f>
+        <f>GozuTenou_08</f>
+        <f>GozuTenou_09</f>
+        <f>GozuTenou_10</f>
+        <f>GozuTenou_11</f>
+        <f>GozuTenou_12</f>
+        <f>GozuTenou_13</f>
+        <f>GozuTenou_14</f>
+        <f>GozuTenou_15</f>
+        <f>GozuTenou_16</f>
+        <f>GozuTenou_17</f>
+      </frame>
+    </action>
+
+</unit>

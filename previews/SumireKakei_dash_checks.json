@@ -1,0 +1,234 @@
+[
+  {
+    "form": 0,
+    "face": 1,
+    "direction": "L",
+    "kind": "double",
+    "states": [
+      0,
+      105,
+      20
+    ],
+    "travel": -108.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "direction": "L",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": -2.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "direction": "R",
+    "kind": "double",
+    "states": [
+      0,
+      100,
+      20
+    ],
+    "travel": 110.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": 1,
+    "direction": "R",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": 3.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "direction": "L",
+    "kind": "double",
+    "states": [
+      0,
+      100,
+      20
+    ],
+    "travel": -110.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "direction": "L",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": -3.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "direction": "R",
+    "kind": "double",
+    "states": [
+      0,
+      105,
+      20
+    ],
+    "travel": 108.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 0,
+    "face": -1,
+    "direction": "R",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": 2.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "direction": "L",
+    "kind": "double",
+    "states": [
+      0,
+      105,
+      20
+    ],
+    "travel": -50.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "direction": "L",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": -2.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "direction": "R",
+    "kind": "double",
+    "states": [
+      0,
+      100,
+      20
+    ],
+    "travel": 68.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": 1,
+    "direction": "R",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": 3.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "direction": "L",
+    "kind": "double",
+    "states": [
+      0,
+      100,
+      20
+    ],
+    "travel": -68.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "direction": "L",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": -3.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "direction": "R",
+    "kind": "double",
+    "states": [
+      0,
+      105,
+      20
+    ],
+    "travel": 50.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  },
+  {
+    "form": 1,
+    "face": -1,
+    "direction": "R",
+    "kind": "single",
+    "states": [
+      0,
+      20
+    ],
+    "travel": 2.0,
+    "max_air_height": 0.0,
+    "minimum_power": 3000,
+    "passed": true
+  }
+]

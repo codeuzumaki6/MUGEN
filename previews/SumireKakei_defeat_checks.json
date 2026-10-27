@@ -1,0 +1,75 @@
+{
+  "runtime_sha256": "2bee0f374465458e13d31dbbb8530e6374e95a027928e99ead7944a19a70a3c0",
+  "cases": [
+    {
+      "case": {
+        "name": "Nue",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 250,
+        "distance": 70
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 115,
+      "minimum_life": 1200,
+      "min_power": 2750,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 19,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Nue",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 250,
+        "distance": 70
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 115,
+      "minimum_life": 1200,
+      "min_power": 2750,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 19,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "failures": []
+    }
+  ]
+}

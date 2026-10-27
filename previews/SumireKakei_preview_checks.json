@@ -1,0 +1,129 @@
+{
+  "character": "SumireKakei",
+  "frames": 809,
+  "cases": 13,
+  "duration": 81.71666666666667,
+  "video": "SumireKakei_motor.mp4",
+  "sha256": "29a17be584f1dad83d7348f99e7c2c544fb805ff45ef0e5833216e6c8e883ee3",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.7250187196811821,
+      "actual_sample_seconds": 4.829750566893424,
+      "voice": "SumireKakei/SumireSuiton",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.8156578463696755,
+      "actual_sample_seconds": 15.928888888888888,
+      "voice": "SumireKakei/SumireSuiton",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.8595883136231288,
+      "actual_sample_seconds": 26.842267573696144,
+      "voice": "SumireKakei/ikiyo",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1030,
+      "correlation": 0.8522111132711231,
+      "actual_sample_seconds": 37.755646258503404,
+      "voice": "SumireKakei/ikiyo",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1050,
+      "correlation": 0.8520024877719623,
+      "actual_sample_seconds": 48.854784580498865,
+      "voice": "SumireKakei/ikiyo",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1200,
+      "correlation": 0.9081932767625249,
+      "actual_sample_seconds": 59.953922902494334,
+      "voice": "SumireKakei/sumireNue02",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 1430,
+      "correlation": 0.8545302673455746,
+      "actual_sample_seconds": 71.0530612244898,
+      "voice": "SumireKakei/sumireNue02",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 3000,
+      "correlation": 0.8922845697788738,
+      "actual_sample_seconds": 82.15219954648526,
+      "voice": "SumireKakei/Sumirevoice",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 520,
+      "correlation": 0.9271956769898717,
+      "actual_sample_seconds": 93.15845804988662,
+      "voice": "SumireKakei/Sumirevoice",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 11000,
+      "correlation": 0.8873280682571985,
+      "actual_sample_seconds": 104.02539682539683,
+      "voice": "SumireKakei/nueF202",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 11210,
+      "correlation": 0.9278888902320782,
+      "actual_sample_seconds": 114.98521541950113,
+      "voice": "SumireKakei/nueF202",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 11440,
+      "correlation": 0.8755906467190605,
+      "actual_sample_seconds": 126.03791383219955,
+      "voice": "SumireKakei/nueF202",
+      "anchor": "Original Sumire pack startup sample"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 13000,
+      "correlation": 0.937275182872381,
+      "actual_sample_seconds": 137.09061224489795,
+      "voice": "SumireKakei/Nue02",
+      "anchor": "Original Sumire pack startup sample"
+    }
+  ],
+  "runtime_sha256": "2bee0f374465458e13d31dbbb8530e6374e95a027928e99ead7944a19a70a3c0"
+}

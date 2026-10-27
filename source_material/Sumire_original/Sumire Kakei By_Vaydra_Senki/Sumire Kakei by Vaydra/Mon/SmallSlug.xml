@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">SmallSlug</p>
+			<p type="attackValue">6000</p>
+			<p type="attackRangeX">126</p>
+			<p type="attackRangeY">45</p>
+			<p type="cd">400</p>
+		</data>
+		<frame>
+	<f>NueForm02_01</f>
+	    <f>NueForm02_02</f>
+	  	<f>NueForm02_03</f>
+	    <f>NueForm02_02</f>
+			
+
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>NueForm02_04</f>
+			<f>NueForm02_05</f>
+	  	<f>NueForm02_06</f>
+			<f>NueForm02_07</f>	
+			<f>NueForm02_08</f>
+			<f>NueForm02_09</f>	
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+			<f>NueForm02_02</f>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>NueForm02_04</f>
+			
+			
+      <e type="setChargeB">280</e>     		
+			<f>NueForm02_10</f>
+			<e type="setAttackBox">ac_hit</e>	
+			<f>NueForm02_11</f>
+			<e type="setSound">Audio/Effect/blade_damage3.ogg</e>	
+			<f>NueForm02_12</f>
+			<f>NueForm02_13</f>
+			<e type="setAttackBox">ac_hit</e>
+			<f>NueForm02_14</f>
+			<f>NueForm02_15</f>
+			<f>NueForm02_16</f>
+			
+
+			
+	
+			
+		  
+		</frame>
+	</action>
+
+</unit>

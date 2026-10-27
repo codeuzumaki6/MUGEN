@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">AsepFXSumire</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">57</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+          <f>AsepFXSumire_01</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+          <f>AsepFXSumire_07</f>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">400</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">16</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+      <e type="setMove">-9.5</e> 
+      <f>AsepFXSumire_01</f>
+		<e type="setSound">Audio/Effect/poof2.mp3</e>	
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_02</f>
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_03</f>
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_04</f>
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_05</f>
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_06</f>
+      <e type="setMove">-9.5</e>
+      <f>AsepFXSumire_07</f>
+      <e type="setDetonation">0</e>
+      </frame>
+    </action>
+
+</unit>

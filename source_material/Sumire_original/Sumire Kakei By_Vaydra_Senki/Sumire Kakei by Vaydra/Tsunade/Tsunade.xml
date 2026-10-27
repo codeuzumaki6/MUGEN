@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Tsunade</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>        
+        
+        <f>Tsunade_Idle2_01</f>
+      <!--  
+        <f>Tsunade_Idle2_02</f>
+        <f>Tsunade_Idle2_03</f>
+        <f>Tsunade_Idle2_02</f>
+        <f>Tsunade_Idle2_01</f>
+        <f>Tsunade_Idle2_02</f>
+        <f>Tsunade_Idle2_03</f>
+        <f>Tsunade_Idle2_02</f>
+        <f>Tsunade_Idle2_01</f>
+        <f>Tsunade_Idle2_02</f>
+        <f>Tsunade_Idle2_03</f>
+        <f>Tsunade_Idle2_02</f>
+-->
+        
+
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>Tsunade_Walk_01</f>
+        <f>Tsunade_Walk_02</f>
+        <e type="setSound">Audio/Effect/step1.mp3</e>
+        <f>Tsunade_Walk_03</f>
+        <f>Tsunade_Walk_04</f>
+        <f>Tsunade_Walk_05</f>
+        <e type="setSound">Audio/Effect/step1.mp3</e>
+        <f>Tsunade_Walk_06</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>Tsunade_Hurt_01</f>
+        <f>Tsunade_Hurt_01</f>
+       <e type="setSound">Audio/SumireKakei/SumireHurt.mp3</e>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+         <f>Tsunade_AirHurt_01</f>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+          <f>Tsunade_KnockDown_01</f>
+          <e type="setDelay">10</e>
+          <f>Tsunade_KnockDown_02</f>
+          <e type="setDelay">50</e>
+          <f>Tsunade_KnockDown_03</f>
+          <e type="setDelay">10</e>        
+          <f>Tsunade_KnockDown_04</f>
+          <e type="setDelay">10</e>
+          <f>Tsunade_KnockDown_05</f>
+  	    	<e type="setDelay">10</e>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+          <f>Tsunade_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Tsunade_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Tsunade_Float_01</f>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+          <f>Tsunade_KnockDown_01</f>
+          <f>Tsunade_KnockDown_02</f>
+          <e type="setSound">Audio/SumireKakei/SumireKnock.mp3</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">16</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>TsunadeAct_01</f>
+        <f>TsunadeAct_02</f>
+      
+        <e type="setMove">8</e>
+        <f>Tsunade_NAttack_01</f>
+        <e type="setSound">Audio/Effect/SLASH0.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/SumireKakei/Hit.mp3</e>
+        <f>Tsunade_NAttack_02</f>
+        <f>Tsunade_NAttack_03</f>        
+        <f>Tsunade_NAttack_04</f>
+              
+
+        <e type="setDelay">10</e>
+ 
+                       
+        <f>Tsunade_NAttack_05</f>            
+        <e type="setSound">Audio/Effect/SLASH0.mp3</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setSound">Audio/SumireKakei/Hit.mp3</e>
+        <f>Tsunade_NAttack_06</f>
+        <f>Tsunade_NAttack_07</f>
+        <f>Tsunade_NAttack_08</f>
+        
+
+        <e type="setDelay">10</e>
+        
+        
+        <f>Tsunade_Skill02_01</f>
+        <f>Tsunade_Skill02_12</f>
+        
+        <e type="setMove">16</e>
+        <f>Tsunade_NAttack_09</f>       
+        <f>Tsunade_NAttack_10</f>
+        <e type="setSound">Audio/Effect/SLASH0.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Tsunade_NAttack_11</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Tsunade_NAttack_12</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>Tsunade_NAttack_13</f>
+      </frame>
+    </action>
+
+   <action name="skill01">
+      <data>
+          <p type="attackType">cAttack</p>
+          <p type="attackValue">250</p>
+          <p type="attackRangeX">100</p>
+          <p type="attackRangeY">48</p>
+          <p type="cd">10</p>
+          <p type="combatPoint">1400</p>
+        </data>
+     <frame>
+     
+      <f>Tsunade_Skill01_07</f>   
+      <e type="setSound">Audio/SumireKakei/SumireSuiton.mp3</e>
+      <e type="setDelay">20</e>
+      <e type="setSound">Audio/Effect/water.ogg</e>
+      <f>Tsunade_Skill01_01</f>    
+      <f>Tsunade_Skill01_02</f>    
+      <f>Tsunade_Skill01_03</f>   
+      <f>Tsunade_Skill01_04</f>   
+      <e type="setSound">Audio/SumireKakei/SureihaSfx.mp3</e>
+      <e type="setBullet">Sureiha</e>
+      <f>Tsunade_Skill01_05</f>    
+      <e type="setAttackBox">ac_hit</e>  
+      <e type="setSound">Audio/SumireKakei/ Suireha.mp3</e>
+      <f>Tsunade_Skill01_06</f>   
+      <f>Tsunade_Skill01_07</f>   
+     
+     
+      <f>Tsunade_Skill01_04</f>   
+      <e type="setSound">Audio/SumireKakei/SureihaSfx.mp3</e>
+      <e type="setBullet">Sureiha</e>
+      <f>Tsunade_Skill01_05</f>    
+      <e type="setAttackBox">ac_hit</e>  
+      <f>Tsunade_Skill01_06</f>   
+      <f>Tsunade_Skill01_07</f>   
+      
+      
+      <f>Tsunade_Skill01_04</f>   
+      <e type="setSound">Audio/SumireKakei/SureihaSfx.mp3</e>
+      <e type="setBullet">Sureiha</e>
+      <f>Tsunade_Skill01_05</f>    
+      <e type="setAttackBox">ac_hit</e>  
+      <f>Tsunade_Skill01_06</f>   
+      <f>Tsunade_Skill01_07</f>   
+     
+     
+      <f>Tsunade_Skill01_04</f>   
+      <e type="setSound">Audio/SumireKakei/SureihaSfx.mp3</e>
+      <e type="setBullet">Sureiha</e>
+      <f>Tsunade_Skill01_05</f>    
+      <e type="setAttackBox">ac_hit</e>  
+      <f>Tsunade_Skill01_06</f>   
+      <f>Tsunade_Skill01_07</f>   
+
+     </frame>
+   </action>
+
+    <action name="skill02">
+      <data>
+        <p type="attackType">cAttack</p>
+        <p type="attackValue">160</p>
+        <p type="attackRangeX">30</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">15</p>
+        <p type="combatPoint">1600</p>
+        </data>    
+        <frame>
+ --Combo02     
+        
+        
+        <f>Tsunade_Idle2_01</f>
+        <e type="setDelay">20</e>
+        <f>Tsunade_Skill04_01</f>
+        <e type="setSound">Audio/SumireKakei/ikiyo.mp3</e>
+        <e type="setCharge">240</e>       
+        <f>Tsunade_Skill04_02</f>
+        <e type="setAttackBox">o2_hit</e>
+        <e type="setSound">Audio/Effect/BladeDamageMD01.mp3</e>
+        <f>Tsunade_Skill04_03</f>
+	     	<f>Tsunade_Skill04_04</f>
+	      <f>Tsunade_Skill04_05</f>
+	      
+	      
+        <f>Tsunade_Skill04_06</f>
+        <f>Tsunade_Skill04_07</f>       
+        <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/SumireKakei/Hit.mp3</e>
+        <f>Tsunade_Skill04_08</f>              
+        <f>Tsunade_Skill04_09</f>
+        <f>Tsunade_Skill04_10</f>
+        <f>Tsunade_Skill04_11</f>        
+        
+
+        <e type="setCharge">30</e>        
+        <e type="setSound">Audio/Effect/EfxJump2.mp3</e>
+        <f>Tsunade_Skill04_12</f>      
+        <e type="setSound">Audio/SumireKakei/Nimata.mp3</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_13</f>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_14</f>
+        <f>Tsunade_Skill04_15</f>
+        <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+        <e type="setAttackBox">b_hit</e>      
+        <f>Tsunade_Skill04_16</f>
+        <f>Tsunade_Skill04_17</f>
+        <f>Tsunade_Skill04_18</f>
+        <f>Tsunade_Skill04_19</f>                               
+        <f>Tsunade_Skill04_20</f>
+        <f>Tsunade_Skill04_21</f>
+        <e type="setDelay">10</e>       
+        
+        
+        <e type="setCharge">300</e>       
+        <f>Tsunade_Skill04_22</f>
+        <e type="setDelay">-1</e>       
+        <e type="setSound">Audio/Effect/rock_hit2.ogg</e>
+        <e type="setAttackBox">f2_hit</e>
+        <e type="setSound">Audio/SumireKakei/haat.mp3</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_23</f>
+        <e type="setDelay">-2</e>       
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_24</f>
+        <e type="setDelay">-2</e>       
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_25</f>
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_26</f>    
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_27</f>
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_28</f>
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_29</f>
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_30</f>
+        <e type="setDelay">-2</e>       
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_31</f>
+        <e type="setDelay">-2</e>       
+        <f>Tsunade_Skill04_32</f>
+        <e type="setDelay">10</e>       
+        
+
+        <f>Tsunade_Skill04_33</f>       
+        <e type="setDelay">-4</e>       
+        <e type="setSound">Audio/Effect/landing.mp3</e>
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_34</f>
+        <e type="setDelay">-4</e>       
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_35</f>
+        <e type="setDelay">-4</e>       
+        <e type="setChargeB">30</e>       
+        <f>Tsunade_Skill04_36</f>
+        <e type="setDelay">-4</e>       
+        <f>Tsunade_Skill04_37</f>
+        <e type="setDelay">-4</e>       
+        <f>Tsunade_Skill04_38</f>
+        <e type="setDelay">-4</e>       
+        <f>Tsunade_Skill04_39</f>
+ --15     
+        
+        
+        
+        
+        
+
+        </frame>
+    </action>
+
+    <action name="skill03">
+      <data>
+        <p type="attackType">Summon</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">0</p>
+        <p type="cd">25</p>
+        </data>   
+        <frame>
+        <f>Tsunade_Skill03_01</f>
+        <e type="setSound">Audio/SumireKakei/kuciyose.mp3</e>     
+        <e type="setDelay">10</e>
+        <f>Tsunade_Skill03_02</f>
+        <e type="setDelay">5</e>
+        <f>Tsunade_Skill03_03</f>
+        <e type="setDelay">5</e>
+        <f>Tsunade_Skill03_04</f>
+        <f>Tsunade_Skill03_05</f>
+        <e type="setSound">Audio/SumireKakei/sumireNue02.mp3</e>     
+        <e type="setBullet">AsapSumire</e>
+        <f>Tsunade_Skill03_06</f>
+     <!--<e type="setMon">NueForm01</e> -->
+      <e type="setClone">15</e> 
+        <f>Tsunade_Skill03_07</f>
+        <e type="setSound">Audio/SumireKakei/NueF1.mp3</e>     
+        </frame>
+    </action>
+
+   <action name="skill04">
+     <data>
+       <p type="attackType">aAttack</p>
+       <p type="attackValue">225</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+       <p type="combatPoint">3360</p>
+     </data>
+     <frame>
+        <f>Tsunade_Skill02_01</f>
+        <e type="setDelay">10</e>   
+        <e type="setSkillEffect">Hiraishin</e>
+        <e type="setCharge">240</e>       
+        <f>Tsunade_Skill02_02</f>
+        <e type="setSound">Audio/SumireKakei/Hit.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <f>Tsunade_Skill02_03</f>
+	     	<f>Tsunade_Skill02_04</f>		
+	      <e type="setAttackBox">ac_hit</e>	
+	      <f>Tsunade_Skill02_05</f>
+        <f>Tsunade_Skill02_06</f>
+                              
+        <f>Tsunade_Skill02_07</f>       
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/SumireKakei/Hit.mp3</e>
+        <f>Tsunade_Skill02_08</f>              
+        <f>Tsunade_Skill02_09</f>
+        <f>Tsunade_Skill02_10</f>
+        <f>Tsunade_Skill02_11</f>        
+
+        <e type="setCharge">180</e>        
+        <f>Tsunade_Skill02_12</f>                               
+        <f>Tsunade_Skill02_13</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">o_hit</e>
+        <e type="setSound">Audio/SumireKakei/hitt.mp3</e>
+        <f>Tsunade_Skill02_14</f>
+        <f>Tsunade_Skill02_15</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>Tsunade_Skill02_16</f>
+        <f>Tsunade_Skill02_17</f>
+
+        
+        
+        
+        
+      <e type="setSound">Audio/SumireKakei/SumireSuiton.mp3</e>
+      <f>Tsunade_Suiton_01</f>
+      <e type="setDelay">10</e>     
+      <f>Tsunade_Suiton_02</f>          
+      <e type="setAttackBox">ac_hit</e>  
+      <e type="setDelay">30</e>     
+
+      <e type="setSound">Audio/Effect/water.ogg</e>
+      <f>Tsunade_Suiton_03</f>
+      <e type="setCommand">setInvincible</e>
+      <f>Tsunade_Suiton_04</f>
+      <e type="setSound">Audio/SumireKakei/WtrBarrier.mp3</e>
+      <e type="setAttackBox">c_hit</e>     
+      <e type="setSound">Audio/Effect/Water.mp3</e>
+      <f>Tsunade_Suiton_05</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_06</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_07</f>      
+      <e type="setAttackBox">c_hit</e>     
+      
+      <e type="setSound">Audio/Effect/water.ogg</e>
+      <f>Tsunade_Suiton_04</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_05</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_06</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_07</f>      
+      <e type="setAttackBox">c_hit</e>     
+      <e type="setCommand">reInvincible</e>
+      
+            
+      <f>Tsunade_Suiton_08</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_09</f>
+      <e type="setAttackBox">c_hit</e>     
+      <f>Tsunade_Suiton_10</f>      
+      <f>Tsunade_Suiton_11</f>      
+      
+        
+
+     </frame>
+   </action>
+
+    <action name="skill05">
+        <data>
+      <p type="attackType">cBuff</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">0</p>
+        <p type="attackRangeY">15</p>
+        <p type="cd">1</p>
+        <p type="combatPoint">0</p>
+        </data>
+        <frame>
+        <e type="setCommand">setInvincible</e>
+       	<e type="setSound">Audio/SumireKakei/Sumirevoice.mp3</e>
+       	<e type="setSound">Audio/Effect/AuraGate.ogg</e>	
+      	<f>Ghost_01</f>
+        <f>Ghost_02</f>         
+        <e type="setAttackBox">f_hit</e>
+        <f>Ghost_03</f>
+        <f>Ghost_04</f>            
+      	<f>Ghost_05</f>
+        <f>Ghost_06</f>         
+        <f>Ghost_07</f>
+        
+        
+        <e type="setMon">GozuTenou</e>
+        
+
+       	<e type="setSound">Audio/Effect/OmnipotenceSFx.mp3</e>
+      	<f>Ghost_01</f>
+        <f>Ghost_02</f>         
+        <e type="setAttackBox">b_hit</e>
+        <f>Ghost_03</f>
+        <f>Ghost_04</f>            
+      	<f>Ghost_05</f>
+        <f>Ghost_06</f>         
+        <f>Ghost_07</f>
+       
+        <e type="setSound">Audio/SumireKakei/sumireNue03.mp3</e>     
+      	<f>Ghost_01</f>
+        <f>Ghost_02</f>         
+        <e type="setAttackBox">b_hit</e>
+        <f>Ghost_03</f>
+        <f>Ghost_04</f>            
+      	<f>Ghost_05</f>
+        <f>Ghost_06</f>         
+        <f>Ghost_07</f>
+        
+	      <f>Ghost_01</f>
+        <f>Ghost_02</f>         
+        <e type="setAttackBox">b_hit</e>
+        <f>Ghost_03</f>
+        
+        
+        
+        
+        <f>BeastNue_01</f>
+        <f>BeastNue_02</f>
+        <f>BeastNue_03</f>
+        <f>BeastNue_04</f>
+       	<e type="setSound">Audio/SumireKakei/Nue02.mp3</e>
+        <e type="setBuff">18</e>
+        <e type="setCommand">reInvincible</e>
+        </frame>
+    </action> 
+
+    <action name="skill06">
+        <frame></frame>
+    </action>
+    <action name="skill07">
+        <frame></frame>
+    </action>
+    <action name="skill08">
+        <frame></frame>
+    </action>
+    <action name="skill09">
+        <frame></frame>
+    </action>
+    <action name="skill10">
+        <data>
+            <p type="attackType">Idle</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+        <f>BeastNue_05</f>
+         <e type="setDelay">10</e>
+        <f>BeastNue_06</f>
+         <e type="setDelay">10</e>
+        <f>BeastNue_07</f>
+         <e type="setDelay">10</e>
+        </frame>
+    </action>
+
+    <action name="skill11">
+        <data>
+            <p type="attackType">Walk</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+        <f>BeastNueWalk_01</f>
+			  <f>BeastNueWalk_02</f>
+        <f>BeastNueWalk_03</f>
+        <f>BeastNueWalk_04</f>
+        <e type="setSound">Audio/Effect/HitDMG.mp3</e>
+        <f>BeastNueWalk_05</f>
+        <f>BeastNueWalk_06</f>
+        </frame>
+    </action>
+    <action name="skill12">
+        <data>
+            <p type="attackType">aAttack</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">16</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">2000</p>
+        </data>
+        <frame>
+          <f>BeastNueAtk_01</f>
+          <f>BeastNueAtk_02</f>
+          <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+          <e type="setAttackBox">l_hit</e>
+         	<e type="setSound">Audio/SumireKakei/nueF202.mp3</e>
+          <f>BeastNueAtk_03</f>          
+          <f>BeastNueAtk_04</f>
+          <f>BeastNueAtk_05</f>
+
+          
+          <f>BeastNueAtk_06</f>
+          <f>BeastNueAtk_07</f>          
+          <f>BeastNueAtk_08</f>
+          <e type="setAttackBox">l_hit</e>
+          <f>BeastNueAtk_09</f>
+          <e type="setSound">Audio/Effect/slsh.mp3</e>
+          <e type="setAttackBox">l_hit</e>
+          <e type="setSound">Audio/Effect/Babatuan.ogg</e>
+          <f>BeastNueAtk_10</f>
+          <f>BeastNueAtk_11</f>
+
+          <f>BeastNueAtk_12</f>
+          <f>BeastNueAtk_13</f>
+          <f>BeastNueAtk_14</f>
+          
+          
+        </frame>
+    </action>
+</unit>

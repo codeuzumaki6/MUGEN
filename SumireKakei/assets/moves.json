@@ -1,0 +1,109 @@
+{
+  "moves": [
+    [
+      "Suireiha",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Muro",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Corte",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Cascada",
+      "b",
+      "B",
+      1030,
+      550
+    ],
+    [
+      "Taijutsu",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Ascendente",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Bajo",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Doble",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Mordida",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Nue",
+      "y",
+      "N",
+      1200,
+      250
+    ],
+    [
+      "Disparo",
+      "z",
+      "N",
+      1210,
+      200
+    ],
+    [
+      "AsaltoNue",
+      "y",
+      "D",
+      1430,
+      450
+    ],
+    [
+      "Sello",
+      "z",
+      "D",
+      1440,
+      500
+    ]
+  ],
+  "base": "Sumire Kakei",
+  "awakening": "Controlled giant Nue",
+  "awakening_ticks": 1200,
+  "awakening_requires": 3000,
+  "awakening_cost": 1500,
+  "ultimate_cost": 3000,
+  "ultimate_damage": [
+    550,
+    700
+  ],
+  "own_life_cost": 0,
+  "familiar_health": 180,
+  "familiar_ticks": 420,
+  "beast_scale": 0.65
+}

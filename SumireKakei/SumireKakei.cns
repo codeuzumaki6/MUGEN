@@ -1,0 +1,6989 @@
+; Original Sumire, Suiton, familiar and full controlled Nue form.
+[Data]
+life=1200
+power=3000
+attack=100
+defence=105
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=75
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-72
+mid.pos=0,-42
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+
+
+[Statedef 200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=200
+velset=2,0
+
+[State 200, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 200, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 200, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 200, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=201
+velset=2,0
+
+[State 201, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 201, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 201, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 201, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=202
+velset=2,0
+
+[State 202, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 202, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 202, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 202, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=210
+velset=2,0
+
+[State 210, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 210, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 210, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 210, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=211
+velset=2,0
+
+[State 211, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 211, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 211, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 211, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=212
+velset=2,0
+
+[State 212, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 212, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 212, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 212, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=220
+velset=2,0
+
+[State 220, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 220, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 220, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 220, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=221
+velset=2,0
+
+[State 221, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 221, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 221, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 221, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=222
+velset=2,0
+
+[State 222, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=70
+
+
+[State 222, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 222, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 222, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=600
+
+[State 600, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 600, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 600, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 600, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=34,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 600, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 600, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=601
+
+[State 601, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 601, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 601, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 601, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=44,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 601, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 601, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=602
+
+[State 602, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 602, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 602, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 602, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 602, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 602, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=610
+
+[State 610, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 610, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 610, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 610, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=34,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 610, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 610, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=611
+
+[State 611, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 611, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 611, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 611, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=44,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 611, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 611, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=612
+
+[State 612, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 612, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 612, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 612, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 612, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 612, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=620
+
+[State 620, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 620, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 620, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 620, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=34,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 620, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 620, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=621
+
+[State 621, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 621, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 621, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 621, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=44,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 621, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 621, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=622
+
+[State 622, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 622, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 622, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 622, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 622, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 622, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10200
+velset=2,0
+
+[State 10200, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10200, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10200, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10200, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10201
+velset=2,0
+
+[State 10201, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10201, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10201, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10201, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10202
+velset=2,0
+
+[State 10202, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10202, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10202, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10202, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10210
+velset=2,0
+
+[State 10210, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10210, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10210, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10210, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10211
+velset=2,0
+
+[State 10211, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10211, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10211, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10211, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10212
+velset=2,0
+
+[State 10212, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10212, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10212, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10212, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10220
+velset=2,0
+
+[State 10220, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10220, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10220, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10220, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10221
+velset=2,0
+
+[State 10221, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10221, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10221, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10221, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10222
+velset=2,0
+
+[State 10222, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=70
+
+
+[State 10222, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=13
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10222, Brake normal]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10222, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10600
+
+[State 10600, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10600, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10600, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10600, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10600, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10600, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10601
+
+[State 10601, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10601, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10601, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10601, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=54,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10601, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10601, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10602
+
+[State 10602, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10602, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10602, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10602, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10602, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10602, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10610
+
+[State 10610, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10610, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10610, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10610, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10610, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10610, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10611
+
+[State 10611, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10611, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10611, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10611, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=54,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10611, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10611, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10612
+
+[State 10612, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10612, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10612, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10612, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10612, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10612, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10620
+
+[State 10620, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10620, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10620, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10620, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=42,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10620, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10620, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10621
+
+[State 10621, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10621, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10621, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10621, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=54,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10621, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10621, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10622
+
+[State 10622, Finite air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10622, Brief air strike]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10622, Air gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10622, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=72,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10622, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10622, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 1000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1000
+poweradd=-350
+velset=0,0
+
+[State 1000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,9
+channel=0
+volumescale=80
+
+
+[State 1000, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1000, Finite physical technique]
+type=Helper
+trigger1=Time=10
+helpertype=Normal
+name="Sumire technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=40,-32
+ownpal=1
+keyctrl=0
+
+
+[State 1000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=10
+value=S3,11
+channel=2
+volumescale=80
+
+
+[State 1000, Finite physical technique]
+type=Helper
+trigger1=Time=22
+helpertype=Normal
+name="Sumire technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=40,-32
+ownpal=1
+keyctrl=0
+
+
+[State 1000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=22
+value=S3,11
+channel=2
+volumescale=80
+
+
+[State 1000, Finite physical technique]
+type=Helper
+trigger1=Time=34
+helpertype=Normal
+name="Sumire technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=40,-32
+ownpal=1
+keyctrl=0
+
+
+[State 1000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=34
+value=S3,11
+channel=2
+volumescale=80
+
+
+[State 1000, Finite physical technique]
+type=Helper
+trigger1=Time=46
+helpertype=Normal
+name="Sumire technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=40,-32
+ownpal=1
+keyctrl=0
+
+
+[State 1000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=46
+value=S3,11
+channel=2
+volumescale=80
+
+
+[State 1000, Return control]
+type=ChangeState
+trigger1=Time>=57
+value=0
+ctrl=1
+
+
+[Statedef 1010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1010
+poweradd=-400
+velset=0,0
+
+[State 1010, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1010, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,9
+channel=0
+volumescale=80
+
+
+[State 1010, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1010, Real attack collision]
+type=HitDef
+trigger1=Time=12
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1010, Real attack collision]
+type=HitDef
+trigger1=Time=25
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1010, Real attack collision]
+type=HitDef
+trigger1=Time=38
+attr=S,SA
+damage=55,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1010, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=12
+value=S3,16
+channel=2
+volumescale=80
+
+
+[State 1010, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1020
+poweradd=-450
+velset=0,0
+
+[State 1020, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1020, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1020, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1020, Water blade rush]
+type=VelSet
+trigger1=Time>=5 && Time<25 && !MoveContact
+x=7.5
+
+
+[State 1020, Brake water blade]
+type=VelSet
+trigger1=MoveContact || Time>=25
+x=0
+
+
+[State 1020, Real attack collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=29
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1020, Real attack collision]
+type=HitDef
+trigger1=Time=25
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1020, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1030]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1030
+poweradd=-550
+velset=0,0
+
+[State 1030, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1030, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1030, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1030, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1030, Real attack collision]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=90,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1030, Real attack collision]
+type=HitDef
+trigger1=Time=41
+attr=S,SA
+damage=95,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1030, Return control]
+type=ChangeState
+trigger1=Time>=57
+value=0
+ctrl=1
+
+
+[Statedef 1040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1040
+poweradd=-350
+velset=0,0
+
+[State 1040, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1040, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1040, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1040, Close kunai combination]
+type=VelSet
+trigger1=Time<14 && !MoveContact
+x=4
+
+
+[State 1040, Brake combination]
+type=VelSet
+trigger1=MoveContact || Time>=14
+x=0
+
+
+[State 1040, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=29
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1040, Real attack collision]
+type=HitDef
+trigger1=Time=24
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1040, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1050]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1050
+poweradd=-450
+velset=0,0
+
+[State 1050, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1050, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1050, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1050, Jump into the kunai strike]
+type=VelSet
+trigger1=Time=4
+x=4
+y=-7
+
+
+[State 1050, Air state]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 1050, Gravity]
+type=VelAdd
+trigger1=Time>4
+y=.44
+
+
+[State 1050, Real attack collision]
+type=HitDef
+trigger1=Time=7
+attr=A,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1050, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=A,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1050, Original landing frames]
+type=ChangeState
+trigger1=Time>20 && Pos Y>=0 && Vel Y>0
+value=1060
+ctrl=0
+
+
+[State 1050, Return control]
+type=ChangeState
+trigger1=Time>=54
+value=50
+ctrl=1
+
+
+[Statedef 1400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1400
+poweradd=-200
+velset=0,0
+
+[State 1400, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1400, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1400, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1400, Low approach]
+type=VelSet
+trigger1=Time<13
+x=3.5
+
+
+[State 1400, Brake low cut]
+type=VelSet
+trigger1=Time>=13
+x=0
+
+
+[State 1400, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=C,SA
+damage=100,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1400, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1410
+poweradd=-300
+velset=0,0
+
+[State 1410, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1410, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,19
+channel=0
+volumescale=80
+
+
+[State 1410, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1410, Real attack collision]
+type=HitDef
+trigger1=Time=4
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1410, Real attack collision]
+type=HitDef
+trigger1=Time=16
+attr=S,SA
+damage=90,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1410, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1420
+poweradd=-400
+velset=0,0
+
+[State 1420, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1420, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,24
+channel=0
+volumescale=80
+
+
+[State 1420, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1420, Finite physical technique]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Sumire technique"
+ID=9502
+stateno=9502
+postype=P1
+pos=30,-30
+ownpal=1
+keyctrl=0
+
+
+[State 1420, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=9
+value=S3,4
+channel=2
+volumescale=80
+
+
+[State 1420, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1200]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1200
+poweradd=-250
+velset=0,0
+
+[State 1200, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1200, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,24
+channel=0
+volumescale=80
+
+
+[State 1200, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1200, Finite physical technique]
+type=Helper
+trigger1=Time=10 && NumHelper(9700)=0
+helpertype=Normal
+name="Sumire technique"
+ID=9700
+stateno=9700
+postype=P1
+pos=25,0
+ownpal=1
+keyctrl=0
+
+
+[State 1200, Original supplied effect]
+type=Explod
+trigger1=Time=10
+anim=8804
+postype=P1
+pos=20,0
+scale=0.6,0.6
+removetime=22
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1200, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1210
+poweradd=-200
+velset=0,0
+
+[State 1210, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1210, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,9
+channel=0
+volumescale=80
+
+
+[State 1210, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1210, Finite physical technique]
+type=Helper
+trigger1=Time=10
+helpertype=Normal
+name="Sumire technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=40,-32
+ownpal=1
+keyctrl=0
+
+
+[State 1210, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=10
+value=S3,11
+channel=2
+volumescale=80
+
+
+[State 1210, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1430]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1430
+poweradd=-450
+velset=0,0
+
+[State 1430, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1430, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,24
+channel=0
+volumescale=80
+
+
+[State 1430, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1430, Finite physical technique]
+type=Helper
+trigger1=Time=10 && NumHelper(9700)=0
+helpertype=Normal
+name="Sumire technique"
+ID=9700
+stateno=9700
+postype=P1
+pos=25,0
+ownpal=1
+keyctrl=0
+
+
+[State 1430, Original supplied effect]
+type=Explod
+trigger1=Time=10
+anim=8804
+postype=P1
+pos=20,0
+scale=0.6,0.6
+removetime=22
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1430, One Nue assault command]
+type=VarAdd
+trigger1=Time=12
+v=45
+value=1
+
+
+[State 1430, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1440
+poweradd=-500
+velset=0,0
+
+[State 1440, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1440, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,24
+channel=0
+volumescale=80
+
+
+[State 1440, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1440, Original supplied effect]
+type=Explod
+trigger1=Time=8
+anim=8801
+postype=P1
+pos=35,-70
+scale=0.24,0.24
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 1440, Real attack collision]
+type=HitDef
+trigger1=Time=12
+attr=S,SA
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1440, Real attack collision]
+type=HitDef
+trigger1=Time=29
+attr=S,SA
+damage=120,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1440, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1060]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=1060
+velset=0,0
+
+[State 1060, Ground the landing]
+type=PosSet
+trigger1=Time=0
+y=0
+
+
+[State 1060, Return control]
+type=ChangeState
+trigger1=Time>=20
+value=0
+ctrl=1
+
+
+[Statedef 11000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11000
+poweradd=-350
+velset=0,0
+
+[State 11000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11000, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11000, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=90,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11000, Real attack collision]
+type=HitDef
+trigger1=Time=20
+attr=S,SA
+damage=125,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11000, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11010
+poweradd=-400
+velset=0,0
+
+[State 11010, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11010, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11010, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11010, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=C,SA
+damage=100,0
+animtype=Medium
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=Low
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11010, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=C,SA
+damage=130,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11010, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11020
+poweradd=-450
+velset=0,0
+
+[State 11020, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11020, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11020, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11020, Nue charges physically]
+type=VelSet
+trigger1=Time<24 && !MoveContact
+x=7.5
+
+
+[State 11020, Brake Nue]
+type=VelSet
+trigger1=MoveContact || Time>=24
+x=0
+
+
+[State 11020, Real attack collision]
+type=HitDef
+trigger1=Time=9
+attr=S,SA
+damage=110,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11020, Real attack collision]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=130,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11020, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11030]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11030
+poweradd=-550
+velset=0,0
+
+[State 11030, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11030, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11030, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=24
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=42
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11030, Return control]
+type=ChangeState
+trigger1=Time>=56
+value=0
+ctrl=1
+
+
+[Statedef 11040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11040
+poweradd=-350
+velset=0,0
+
+[State 11040, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11040, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11040, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11040, Nue recoils before pouncing]
+type=VelSet
+trigger1=Time<8
+x=-4
+
+
+[State 11040, Predatory countercharge]
+type=VelSet
+trigger1=Time>=8 && Time<25 && !MoveContact
+x=10
+
+
+[State 11040, Brake the pounce]
+type=VelSet
+trigger1=MoveContact || Time>=25
+x=0
+
+
+[State 11040, Real attack collision]
+type=HitDef
+trigger1=Time=16
+attr=S,SA
+damage=225,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11040, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11050]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11050
+poweradd=-450
+velset=0,0
+
+[State 11050, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11050, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11050, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11050, Nue leaps]
+type=VelSet
+trigger1=Time=4
+x=5
+y=-6.5
+
+
+[State 11050, Nue in the air]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 11050, Nue gravity]
+type=VelAdd
+trigger1=Time>4
+y=.44
+
+
+[State 11050, Real attack collision]
+type=HitDef
+trigger1=Time=7
+attr=A,SA
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11050, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=A,SA
+damage=140,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11050, Nue lands]
+type=ChangeState
+trigger1=Time>20 && Pos Y>=0 && Vel Y>0
+value=11060
+ctrl=0
+
+
+[State 11050, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=50
+ctrl=1
+
+
+[Statedef 11400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11400
+poweradd=-200
+velset=0,0
+
+[State 11400, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11400, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11400, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11400, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=C,SA
+damage=175,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11400, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11410
+poweradd=-300
+velset=0,0
+
+[State 11410, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11410, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11410, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11410, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=230,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11410, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11420
+poweradd=-400
+velset=0,0
+
+[State 11420, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11420, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11420, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11420, Finite physical technique]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Sumire technique"
+ID=9502
+stateno=9502
+postype=P1
+pos=80,-45
+ownpal=1
+keyctrl=0
+
+
+[State 11420, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11200]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11200
+poweradd=-250
+velset=0,0
+
+[State 11200, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11200, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11200, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11200, Original supplied effect]
+type=Explod
+trigger1=Time=8
+anim=8801
+postype=P1
+pos=20,-65
+scale=0.28,0.28
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 11200, Real attack collision]
+type=HitDef
+trigger1=Time=12
+attr=S,SA
+damage=190,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11200, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11210
+poweradd=-200
+velset=0,0
+
+[State 11210, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11210, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11210, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11210, Nue charges physically]
+type=VelSet
+trigger1=Time<24 && !MoveContact
+x=10
+
+
+[State 11210, Brake Nue]
+type=VelSet
+trigger1=MoveContact || Time>=24
+x=0
+
+
+[State 11210, Real attack collision]
+type=HitDef
+trigger1=Time=9
+attr=S,SA
+damage=185,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11210, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11430]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11430
+poweradd=-450
+velset=0,0
+
+[State 11430, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11430, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11430, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11430, Original supplied effect]
+type=Explod
+trigger1=Time=8
+anim=8801
+postype=P1
+pos=20,-65
+scale=0.28,0.28
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 11430, Real attack collision]
+type=HitDef
+trigger1=Time=12
+attr=S,SA
+damage=100,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11430, Real attack collision]
+type=HitDef
+trigger1=Time=32
+attr=S,SA
+damage=145,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11430, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11440
+poweradd=-500
+velset=0,0
+
+[State 11440, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11440, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,21
+channel=0
+volumescale=80
+
+
+[State 11440, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=22
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=34
+attr=S,SA
+damage=100,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=27
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11440, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11060]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=11060
+velset=0,0
+
+[State 11060, Ground the landing]
+type=PosSet
+trigger1=Time=0
+y=0
+
+
+[State 11060, Return control]
+type=ChangeState
+trigger1=Time>=14
+value=0
+ctrl=1
+
+
+[Statedef 9500]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8800
+velset=11,0
+
+[State 9500, No projectile push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9500, No projectile shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9500, Projectile power]
+type=VarSet
+trigger1=Time=0
+v=0
+value=IfElse((Root,StateNo%10000)=1210,110,45)
+
+
+[State 9500, Spectral bite size]
+type=AngleDraw
+trigger1=1
+scale=1,1
+
+
+[State 9500, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=Var(0),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9500, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9502]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8802
+velset=8,0
+
+[State 9502, No projectile push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9502, No projectile shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9502, Projectile power]
+type=VarSet
+trigger1=Time=0
+v=0
+value=IfElse((Root,Var(42)),190,145)
+
+
+[State 9502, Spectral bite size]
+type=AngleDraw
+trigger1=1
+scale=.8,.8
+
+
+[State 9502, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=Var(0),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9502, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9700]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=9700
+velset=0,0
+
+[State 9700, Small Nue health]
+type=LifeSet
+trigger1=Time=0 && Var(2)=0
+value=180
+
+
+[State 9700, Initialize Nue command]
+type=VarSet
+trigger1=Time=0 && Var(2)=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9700, Initialize once]
+type=VarSet
+trigger1=Time=0
+v=2
+value=1
+
+
+[State 9700, Nue body size]
+type=AngleDraw
+trigger1=1
+scale=.7,.7
+
+
+[State 9700, Small Nue age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9700, No familiar push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9700, Nue can be hit]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9700, Nue defeat, fusion and expiry]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=420 || (Root,Var(42))=1 || (Root,StateNo%10000)=3000 || (Root,Life)<=0 || RoundState!=2)
+
+
+
+[State 9700, Face the opponent]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9700, Take the actual attack order]
+type=ChangeState
+trigger1=(Parent,Var(45))!=Var(1)
+value=9701
+ctrl=0
+
+
+[State 9700, Follow the opponent]
+type=VelSet
+trigger1=1
+x=IfElse(Abs(P2Dist X)>70,3,0)
+
+
+[State 9700, Nue running pose]
+type=ChangeAnim
+trigger1=Abs(P2Dist X)>70 && Anim!=9707
+value=9707
+
+
+[State 9700, Nue idle pose]
+type=ChangeAnim
+trigger1=Abs(P2Dist X)<=70 && Anim!=9700
+value=9700
+
+
+[State 9700, Autonomous Nue assault]
+type=ChangeState
+trigger1=Time>=36 && Abs(P2Dist X)<100
+value=9701
+
+
+[Statedef 9701]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=9701
+velset=0,0
+
+[State 9701, Consume Nue order]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9701, Nue body size]
+type=AngleDraw
+trigger1=1
+scale=.7,.7
+
+
+[State 9701, Small Nue age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9701, No familiar push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9701, Nue can be hit]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9701, Nue defeat, fusion and expiry]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=420 || (Root,Var(42))=1 || (Root,StateNo%10000)=3000 || (Root,Life)<=0 || RoundState!=2)
+
+
+
+[State 9701, Face the opponent]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9701, Take the actual attack order]
+type=ChangeState
+trigger1=(Parent,Var(45))!=Var(1)
+value=9701
+ctrl=0
+
+
+[State 9701, Actual Nue approach]
+type=VelSet
+trigger1=Time<12 && !MoveContact
+x=7
+
+
+[State 9701, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=12
+x=0
+
+
+[State 9701, Real attack collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=50,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=25
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9701, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=S,SA
+damage=65,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9701, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=8
+value=S3,5
+channel=2
+volumescale=80
+
+
+[State 9701, Return control]
+type=ChangeState
+trigger1=Time>=43
+value=9700
+ctrl=1
+
+
+[Statedef 9790]
+type=S
+movetype=H
+physics=N
+ctrl=0
+anim=9790
+velset=0,0
+
+[State 9790, Consume Nue order]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9790, Nue body size]
+type=AngleDraw
+trigger1=1
+scale=.7,.7
+
+
+[State 9790, Small Nue age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9790, No familiar push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9790, Nue can be hit]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9790, Nue defeat, fusion and expiry]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=420 || (Root,Var(42))=1 || (Root,StateNo%10000)=3000 || (Root,Life)<=0 || RoundState!=2)
+
+
+
+[State 9790, Face the opponent]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9790, Visible hit response]
+type=PalFX
+trigger1=1
+time=1
+add=70,-30,-30
+
+
+[State 9790, Return control]
+type=ChangeState
+trigger1=Time>=10
+value=9700
+ctrl=1
+
+
+[Statedef 170]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=170
+velset=0,0
+
+[State 170, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,8
+channel=0
+volumescale=80
+
+
+[Statedef 180]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=180
+velset=0,0
+
+[State 180, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,26
+channel=0
+volumescale=80
+
+
+[Statedef 190]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=190
+velset=0,0
+
+[State 190, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,26
+channel=0
+volumescale=80
+
+
+[State 190, Brief intro]
+type=AssertSpecial
+trigger1=Time<40
+flag=Intro
+
+
+[State 190, Return control]
+type=ChangeState
+trigger1=Time>=44
+value=0
+ctrl=1
+
+
+[Statedef 500]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=500
+velset=0,0
+
+[State 500, Charge chakra]
+type=PowerAdd
+trigger1=1
+value=20
+
+
+[State 500, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S2,0
+channel=3
+volumescale=80
+
+
+[State 500, Finite physical technique]
+type=Helper
+trigger1=Time=0 && Var(42)=1 && NumHelper(9551)=0
+helpertype=Normal
+name="Sumire technique"
+ID=9551
+stateno=9551
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State 500, Release charge]
+type=ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=80
+value=0
+ctrl=1
+
+
+[Statedef 9551]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9551, Nue energy follows its single body]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-55
+
+
+[State 9551, Violet energy]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=175,70,256
+
+
+[State 9551, Energy column]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.45,.5
+
+
+[State 9551, Behind Nue]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9551, Aura ends with charging]
+type=DestroySelf
+trigger1=(Root,StateNo)!=500 || RoundState!=2
+
+
+
+[Statedef 520]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=520
+velset=0,0
+
+[State 520, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 520, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,10
+channel=0
+volumescale=80
+
+
+[State 520, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 520, Original supplied effect]
+type=Explod
+trigger1=Time=12
+anim=8801
+postype=P1
+pos=0,-85
+scale=0.28,0.28
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 520, Pay the transformation]
+type=PowerAdd
+trigger1=Time=56
+value=-1500
+
+
+[State 520, Control giant Nue]
+type=VarSet
+trigger1=Time=56
+v=42
+value=1
+
+
+[State 520, Twenty second giant form]
+type=VarSet
+trigger1=Time=56
+v=40
+value=1200
+
+
+[State 520, Transformation cooldown]
+type=VarSet
+trigger1=Time=56
+v=41
+value=1500
+
+
+[State 520, Return control]
+type=ChangeState
+trigger1=Time>=74
+value=0
+ctrl=1
+
+
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3000
+poweradd=-3000
+velset=0,0
+
+[State 3000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,10
+channel=0
+volumescale=80
+
+
+[State 3000, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 3000, No push during the confirmed ultimate]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 3000, Clear ultimate contact]
+type=VarSet
+trigger1=Time=0
+v=21
+value=0
+
+
+[State 3000, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=240
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=3000
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+p2stateno=3010
+p2getp1state=1
+
+[State 3000, Record the actual opponent]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+fv=0
+value=Target(3000),Pos X
+
+
+[State 3000, Finite Nue damage budget]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,550,Floor((Target(3000),LifeMax)*0.55))
+
+
+[State 3000, Confirm real impact]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0
+v=21
+value=1
+
+
+[State 3000, Hold only a confirmed rival]
+type=TargetBind
+trigger1=NumTarget(3000)>0 && Time<200
+ID=3000
+time=1
+pos=(FVar(0)-Pos X)*Facing,0
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=22 && NumTarget(3000)>0
+anim=8801
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-80
+scale=0.28,0.28
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=45 && NumTarget(3000)>0
+anim=8803
+postype=P1
+pos=(FVar(0)-Pos X)*Facing-75,0
+scale=0.65,0.65
+removetime=168
+bindtime=1
+sprpriority=-2
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=44 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=44 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=44 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=44 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=64 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=64 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=64 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=64 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=84 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=84 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=84 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=84 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=104 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=104 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=104 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=104 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=124 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=124 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=124 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=124 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=144 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=144 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=144 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=144 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=164 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=164 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=164 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=164 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=184 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/8)*7)
+absolute=1
+kill=1
+
+
+[State 3000, Count actual impact]
+type=HitAdd
+trigger1=Time=184 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Original supplied effect]
+type=Explod
+trigger1=Time=184 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 3000, Release the opponent]
+type=TargetState
+trigger1=Time=200 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 3000, Return control]
+type=ChangeState
+trigger1=Time>=224
+value=0
+ctrl=1
+
+
+[Statedef 13000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=13000
+poweradd=-3000
+velset=0,0
+
+[State 13000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,3
+channel=0
+volumescale=80
+
+
+[State 13000, Brief activation focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 13000, No push during the confirmed ultimate]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 13000, Clear ultimate contact]
+type=VarSet
+trigger1=Time=0
+v=21
+value=0
+
+
+[State 13000, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=240
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=3000
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+p2stateno=3010
+p2getp1state=1
+
+[State 13000, Record the actual opponent]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+fv=0
+value=Target(3000),Pos X
+
+
+[State 13000, Finite Nue damage budget]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,700,Floor((Target(3000),LifeMax)*0.7))
+
+
+[State 13000, Confirm real impact]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0
+v=21
+value=1
+
+
+[State 13000, Hold only a confirmed rival]
+type=TargetBind
+trigger1=NumTarget(3000)>0 && Time<200
+ID=3000
+time=1
+pos=(FVar(0)-Pos X)*Facing,0
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=22 && NumTarget(3000)>0
+anim=8801
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-80
+scale=0.28,0.28
+removetime=51
+bindtime=1
+sprpriority=-3
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=44 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=44 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=44 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=44 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=64 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=64 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=64 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=64 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=84 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=84 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=84 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=84 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=104 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=104 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=104 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=104 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=124 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=124 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=124 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=124 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=144 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=144 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=144 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=144 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=164 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=164 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=164 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=164 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed seal and claw impact]
+type=TargetLifeAdd
+trigger1=Time=184 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/8)*7)
+absolute=1
+kill=1
+
+
+[State 13000, Count actual impact]
+type=HitAdd
+trigger1=Time=184 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Original supplied effect]
+type=Explod
+trigger1=Time=184 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,2
+channel=2
+volumescale=80
+
+
+[State 13000, Release the opponent]
+type=TargetState
+trigger1=Time=200 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 13000, Return control]
+type=ChangeState
+trigger1=Time>=224
+value=0
+ctrl=1
+
+
+[Statedef 3010]
+type=S
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3010, Opponent keeps its own artwork]
+type=ChangeAnim
+trigger1=Time=0 && SelfAnimExist(5000)
+value=5000
+
+
+[State 3010, Independent victim release]
+type=SelfState
+trigger1=Time>=260
+trigger2=NumEnemy=0
+trigger3=EnemyNear,StateNo%10000!=3000
+trigger4=RoundState!=2
+value=5050
+ctrl=0
+
+
+[Statedef 3011]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3011, Real release motion]
+type=VelSet
+trigger1=Time=0
+x=-4
+y=-6
+
+
+[State 3011, Restore opponent state ownership]
+type=SelfState
+trigger1=1
+value=5050
+ctrl=0
+
+
+[Statedef -2]
+
+[State -2, Finite Nue timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(40)>0
+v=40
+value=-1
+ignorehitpause=1
+
+[State -2, Finite Nue timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(41)>0
+v=41
+value=-1
+ignorehitpause=1
+
+[State -2, Safe return to Sumire]
+type=VarSet
+trigger1=!IsHelper && Var(42)=1 && Var(40)=0 && Ctrl && MoveType!=H
+v=42
+value=0
+
+
+[State -2, Restore Sumire artwork]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=0 && Anim>=10000 && SelfAnimExist(Anim-10000)
+value=Anim-10000
+
+
+[State -2, Controlled giant Nue artwork]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=1 && StateNo!=520 && Anim<10000 && SelfAnimExist(Anim+10000)
+value=Anim+10000
+
+
+[State -2, Original giant body scale]
+type=AngleDraw
+trigger1=!IsHelper && (Anim>=10000 || (StateNo=520 && Time>=56))
+scale=.65,.65
+
+
+[State -2, Actual beast body width]
+type=Width
+trigger1=!IsHelper && Var(42)=1
+player=65,95
+edge=65,95
+
+
+[State -2, Nue physical strength]
+type=AttackMulSet
+trigger1=!IsHelper
+value=IfElse(Var(42),1.18,1)
+
+
+[State -2, Reset grounded air chain]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=12
+value=0
+
+
+[State -2, Stop released charge audio]
+type=StopSnd
+trigger1=!IsHelper && StateNo!=500
+channel=3
+
+
+[State -2, Original supplied Sumire audio]
+type=PlaySnd
+trigger1=!IsHelper && MoveType=H && Time=0 && StateNo=5000
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State -2, Round form cleanup]
+type=VarSet
+trigger1=!IsHelper && RoundState!=2 && StateNo!=190
+v=42
+value=0
+
+
+[State -2, Round effect cleanup]
+type=RemoveExplod
+trigger1=!IsHelper && RoundState!=2

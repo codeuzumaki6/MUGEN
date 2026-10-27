@@ -1,0 +1,534 @@
+{
+  "keys": {
+    "Effect/AuraGate": [
+      2,
+      0
+    ],
+    "Effect/Babatuan": [
+      2,
+      1
+    ],
+    "Effect/BladeDamageMD01": [
+      2,
+      2
+    ],
+    "Effect/CB": [
+      2,
+      3
+    ],
+    "Effect/EfxJump2": [
+      2,
+      4
+    ],
+    "Effect/Hit": [
+      2,
+      5
+    ],
+    "Effect/HitDMG": [
+      2,
+      6
+    ],
+    "Effect/OmnipotenceSFx": [
+      2,
+      7
+    ],
+    "Effect/SLASH0": [
+      2,
+      8
+    ],
+    "Effect/Water": [
+      2,
+      9
+    ],
+    "Effect/blade_damage": [
+      2,
+      10
+    ],
+    "Effect/blade_damage3": [
+      2,
+      11
+    ],
+    "Effect/landing": [
+      2,
+      12
+    ],
+    "Effect/poof2": [
+      2,
+      13
+    ],
+    "Effect/rock_hit": [
+      2,
+      14
+    ],
+    "Effect/rock_hit2": [
+      2,
+      15
+    ],
+    "Effect/slsh": [
+      2,
+      16
+    ],
+    "Effect/step1": [
+      2,
+      17
+    ],
+    "Effect/water": [
+      2,
+      18
+    ],
+    "SumireKakei/ Suireha": [
+      3,
+      0
+    ],
+    "SumireKakei/Hit": [
+      3,
+      1
+    ],
+    "SumireKakei/Nimata": [
+      3,
+      2
+    ],
+    "SumireKakei/Nue02": [
+      3,
+      3
+    ],
+    "SumireKakei/NueF1": [
+      3,
+      4
+    ],
+    "SumireKakei/NueF2": [
+      3,
+      5
+    ],
+    "SumireKakei/Suireha": [
+      3,
+      6
+    ],
+    "SumireKakei/SumireHurt": [
+      3,
+      7
+    ],
+    "SumireKakei/SumireKnock": [
+      3,
+      8
+    ],
+    "SumireKakei/SumireSuiton": [
+      3,
+      9
+    ],
+    "SumireKakei/Sumirevoice": [
+      3,
+      10
+    ],
+    "SumireKakei/SureihaSfx": [
+      3,
+      11
+    ],
+    "SumireKakei/Too": [
+      3,
+      12
+    ],
+    "SumireKakei/Tsunade": [
+      3,
+      13
+    ],
+    "SumireKakei/Tsunade_ougis": [
+      3,
+      14
+    ],
+    "SumireKakei/Water": [
+      3,
+      15
+    ],
+    "SumireKakei/WtrBarrier": [
+      3,
+      16
+    ],
+    "SumireKakei/haat": [
+      3,
+      17
+    ],
+    "SumireKakei/hitt": [
+      3,
+      18
+    ],
+    "SumireKakei/ikiyo": [
+      3,
+      19
+    ],
+    "SumireKakei/kuciyose": [
+      3,
+      20
+    ],
+    "SumireKakei/nueF202": [
+      3,
+      21
+    ],
+    "SumireKakei/sumireNue": [
+      3,
+      22
+    ],
+    "SumireKakei/sumireNue01": [
+      3,
+      23
+    ],
+    "SumireKakei/sumireNue02": [
+      3,
+      24
+    ],
+    "SumireKakei/sumireNue03": [
+      3,
+      25
+    ],
+    "SumireKakei/sumiretalk": [
+      3,
+      26
+    ],
+    "Audio/Tsunade": [
+      4,
+      0
+    ],
+    "Audio/Tsunade_ougis": [
+      4,
+      1
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/AuraGate.ogg",
+      "source_sha256": "451d8223a3fbe0b9e482abb8950b5a3c0c5d6610a46fb047722c3368d272b9b7",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "b544cc90d2eecd718e19052ff32e96e13580328bc3e144736f4f5327faca69b2"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/Babatuan.ogg",
+      "source_sha256": "d6c84a060865de7096f04b87273edbfb51019f5e97e24dfca43742cebb62c163",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "7ed2c39a8b589330793cd7d81b9f20f38e6fb8fcd614996cce1b07f460fa31d0"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/BladeDamageMD01.mp3",
+      "source_sha256": "5791f20651a2611108cbec5b7743ec526393e858a4ab1dcb64b3f83887f7de09",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "8b40be8ccea116f30f16ae3c0408bf14367eef0edb614ce0fa8ec1ac9b0f122c"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/CB.mp3",
+      "source_sha256": "a3cde914766c883fd0f3b80100d5636454364e6962fbe8ec7d02b318797ddf73",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "c249cb3b4e299bbad9d5f5c5135144838907cfdf1be8ea29a1fd4caeac30640d"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/EfxJump2.mp3",
+      "source_sha256": "a813dcd3b4d937316ddbb79fb2cf45086d928dc29b41db40dea11df3e4bd49c7",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "b46afbbee413b77c751b0033835fd072eb97a201d8745678b5a4d4cf7d92c886"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/Hit.mp3",
+      "source_sha256": "7d623f04d2434affbfc8627bbfbe3b7714adc873ce859128fb406bd0b7d9d34c",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "99ed10bbd897e5b7f00f05713f878976550be14553e461de5b4b88c33823ce68"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/HitDMG.mp3",
+      "source_sha256": "a9744c8c91ab7275da8a75354f76667d43417c040db4a3309acdee92c865fa29",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "f80a83de54bc85964d88613a6cf286267431fb420854a04c8f23309a87da2b56"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/OmnipotenceSFx.mp3",
+      "source_sha256": "d5b15c1314547598017b78fc770d045eea46f3b8aecde726ff9d6a56f7777673",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "0bda6aa8d8198c7fdba563ea504132c29e7d0f24e2e2d7ef5f945a7f1c944f8a"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/SLASH0.mp3",
+      "source_sha256": "7b416c5dd3fb4563cb75bcdeb531d404d9cdefccf406d6e28273ba8853f91875",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "69e62a3e0cfffb76418c657a806655618f18bac7a2a6263a942d406556225e55"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/Water.mp3",
+      "source_sha256": "720058a99547432317c310385ae6842ef0c1b95ae45e377631fee6e14a3f7fc9",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "04e9c41ec169dbd49f6b3c4fbee2198963e98ed26d23501e7274dbce094c96ab"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/blade_damage.ogg",
+      "source_sha256": "4262d7d5559ac7453d25d36f1e7c380453ec475c0ed27545d046b9aa35e1f3b3",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "fdaca3d7a8ffcd0bce788fc7d5d26168c1b832c95a9f90623a310a0810c568df"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/blade_damage3.ogg",
+      "source_sha256": "c722c7666a94988a2195f2bc571359cfcb59fb1b7dd0877589b3331ab31f6160",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "1d6981c2c8d55df232704a09a3b3c9356f4c3c0c2ca7e404fd3f0c9482ee59d6"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/landing.mp3",
+      "source_sha256": "39862ba4fc20e6226be86389c1df4897dc7a8eae0c352a75122bc97ab91e7463",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "9ee0abe085f55a6dd5885bcf117c94ca85b9d8f96a2be6926593526768954fbc"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/poof2.mp3",
+      "source_sha256": "c9e7d910981d522d212eb5d9fd474efa960c294582864a3ba2580f59983333bd",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "cd058bfefdfde3974321564ac5c1b78e3fcafb7b8969a442c09e4c04af479720"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/rock_hit.ogg",
+      "source_sha256": "c1cd9577332dec3d874d54f965118f6ef0f9e344c66a1a7ad2a4bf2c384419bf",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "0d620badfa2efa1942dccf5ff61e99faa548181c4ff10efc5518403c12572124"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/rock_hit2.ogg",
+      "source_sha256": "829c5784a3e58706f2a59a8b36b103db9c7ec625a2483581dc1067138625d194",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "25ca9cefa2dbadd4ca4c340cd1f5fcc61f0c42d694b94242a268e19ad2a02539"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/slsh.mp3",
+      "source_sha256": "e3258deca0784fab022e73da63495677fc8c72512ef5ea1d9490192fb85ddaca",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "9f0ae80d8808977f11e8fe168e06ad9690786f729dfd741d7e153d1c6907b1e5"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/step1.mp3",
+      "source_sha256": "7b5abb446ebd3f6b70f3165fb39509bf270f6f0aa5b721893524bddc1c4757da",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "94e667781c92efb2d56ae19f55a0ffdeb5de6e084fd9759fc6aab866c661440b"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Effect/water.ogg",
+      "source_sha256": "a0c7e0a9022856792628542e9c9196686a143b7254b59f25aa6a591b4b440d61",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "c109c61f5a9ee79f97bce6a13ec38bc6afebbd10f392c57682527fa3476102fb"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/ Suireha.mp3",
+      "source_sha256": "f3ede5b7cbe0c2fbbb31dd406cff138d9cdcf389e86ff16dd4985678fcd9fce9",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "22ead2710f06ac22e167280b868ab2bb0aa0fdbea009a59c75960dee825f7ab3"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Hit.mp3",
+      "source_sha256": "fff33d8b735697b6dc3833b6c3d55f28b42a6e0070a574f2ebfc993e84ef6397",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "21da4428c7502ac54a43b79914108400bb92ce9b33b72f1f239cb40bffb2993e"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Nimata.mp3",
+      "source_sha256": "4824eaad18fcd46690c73b7f4e6fb5e2193622b4d5b6f412951d9ac2ee0a7aa4",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "f577d3fd8403a0382be7ff4d4aef336ec98a41742e5ad111aceb6b20fddfad38"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Nue02.mp3",
+      "source_sha256": "92817b00c9fd267a9389689ca879269790960116fe139e8901fa1baa3d4754ab",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "7b8b96c91ff210335f97a77e42498db21d84786ab3fb0934f39db924237d4080"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/NueF1.mp3",
+      "source_sha256": "f33b2d95dfcd89b93910a450e8694064dd7c584b0038d09069b892232e326973",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "1d76bd73b364eb48436e1f21688ccb6f5079e2b9d918689eba153d609a8b253a"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/NueF2.mp3",
+      "source_sha256": "b0b9efdb6de2afbbe02cf70f882efaa062eadfc950826d0f438f349cf996d404",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "f7a39724aa5867e2f461d8dc5e0f5f37ffdcd023cae32406af41afdbeae22a0b"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Suireha.mp3",
+      "source_sha256": "b934bf3617665f8eb9505c85c3c4a5668ab5372332bb67723f25b5570c8e14b9",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "4312a880e9c55994ca145179313efb90a1bfcb024de09158bc64f54dfadd487d"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/SumireHurt.mp3",
+      "source_sha256": "2fe29343ec2e76c04649c2ef301411fbea32aa53b854feb94591228ad690c03c",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "06cabdf66af539f64943eb111086347c7812ec2cc92aa1b8a5665305e9b8171c"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/SumireKnock.mp3",
+      "source_sha256": "be31bf3d99d2f4c82a029faa272921117fc4429d6c32e23752056e3d5e21ccd0",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "14e83c5cef2db2491fd7a8ffedacd5cfe16cc099d3d65db974253179bfce0729"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/SumireSuiton.mp3",
+      "source_sha256": "8af9eccd4e738da7f902869a85301f365b14f6c38ec3f5d0c67f8e2d3d8f3148",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "793069ce1b9f23c7a1d4e197ec9ea49467e6de6f83451718bd159847246047e9"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Sumirevoice.mp3",
+      "source_sha256": "6085658392bb2fc23b46c6904485fbae9ca38406fdadbae1bffcf0d86eaec6be",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "01f5cfc4b426a56ddc137e7dc0f8bc58bae55496ed097193a3a4b635e1cb6576"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/SureihaSfx.mp3",
+      "source_sha256": "0cfce73c2faff512ccc587ea5418d747de40531bc97adfb99321d1090ec5feaf",
+      "group": 3,
+      "number": 11,
+      "wav_sha256": "f89fb259701e13b311668f9ccfafa034f2cfc4bba825ccbd56dae391eeb5b2e2"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Too.mp3",
+      "source_sha256": "3348f11417d3eb36b849bbb0f8bf46cb4081c99cc1fc92033f94a02c4dafd4ac",
+      "group": 3,
+      "number": 12,
+      "wav_sha256": "dde303a20a12abfec46f14294a6dacf02b0f031514c370d630f050401fe72ee0"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Tsunade.ogg",
+      "source_sha256": "b7f5a98ebb377905cbaaa110c17866fc61f17314c2761e8a6bc350cd925037cd",
+      "group": 3,
+      "number": 13,
+      "wav_sha256": "38a309442c006592bdf2fa1b8de812a591d574c29549139909ac29b7134ae756"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Tsunade_ougis.ogg",
+      "source_sha256": "03e1d79a92d11dd428c706c5f6c15dad2e7a0838b426f9ba2e7052747891478f",
+      "group": 3,
+      "number": 14,
+      "wav_sha256": "145b2cf0bd4258e38c01e86c8e81946e115fe659df5802ee491409f010b84826"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/Water.ogg",
+      "source_sha256": "f4b680b1b6d48fe3d5c749b4d7b401da235b5da6923370dadac42885344f5514",
+      "group": 3,
+      "number": 15,
+      "wav_sha256": "8e0875c077c6f85127c72c6d11f8a80a13e94ef84cf5f3924aef42c1f9fbef9a"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/WtrBarrier.mp3",
+      "source_sha256": "69f6e96c3026868b13e1f20c602eae6cca2ddb8b6fed24611fff88a66412445a",
+      "group": 3,
+      "number": 16,
+      "wav_sha256": "2e98c5df790f32729ed2afa5907fa1ed78c6020eac84486d3331fbe6f928a19a"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/haat.mp3",
+      "source_sha256": "2befa83d9025f1e4a8b44753059d32c8e476fb5de8eec8d98f640d04ddd0752e",
+      "group": 3,
+      "number": 17,
+      "wav_sha256": "8809dfcb3f8542b1ed9bb8389c70fda64952bedcc658173fa104f34858c962af"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/hitt.mp3",
+      "source_sha256": "6efa4d1dbf3bcbb9bffce660356ff2ebb3bc29e3918a0609390c5bdda9b310f0",
+      "group": 3,
+      "number": 18,
+      "wav_sha256": "df383a68ae2bc53c0456480925e778b409a0c586baad11931e247f30cc187879"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/ikiyo.mp3",
+      "source_sha256": "a26516be7c73ae10017699cde1d227290458617d40a4d336d015b446b97d6001",
+      "group": 3,
+      "number": 19,
+      "wav_sha256": "67390bb0ca06e9338ef918de408e911e0715dc9cd1a6b1d1a691660018e808c4"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/kuciyose.mp3",
+      "source_sha256": "a983bdd33f9cc89ccf9d8c27209cd68bb0db7885bac95d2783ae4b60424c54b1",
+      "group": 3,
+      "number": 20,
+      "wav_sha256": "b7e9415dbbf49f9d153e2d0a6ceb402bdc23638f0db55867a2511e77f8359c63"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/nueF202.mp3",
+      "source_sha256": "a5f1f2d29eea9ab19a73bc2278a45dc08d0e0f63057ab15b7cdab4d7b2478e6a",
+      "group": 3,
+      "number": 21,
+      "wav_sha256": "451bb3f24968ed9d0491e7e9dad31aa70ce17de29f4948b2ba70e4dd4928ba09"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/sumireNue.mp3",
+      "source_sha256": "30723543ce3299be3da8b30f4eb73740e0d355675ad932b293c21044bbaa761c",
+      "group": 3,
+      "number": 22,
+      "wav_sha256": "1299c4f2a220a371a3ac60175a1688cac11ce748970fe2278885ab337f3765e9"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/sumireNue01.mp3",
+      "source_sha256": "8cd093229c9d2b39beeae52a15582028cc4e9439eb96e5370913f36d671ae5f9",
+      "group": 3,
+      "number": 23,
+      "wav_sha256": "ccb5d491b8437eb3f6cc5ccf9d570a469f21940457fc5e9ac37bc2fa4593bd0d"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/sumireNue02.mp3",
+      "source_sha256": "6112f8e2a2c3c36fd6222b40f3eff8f7db3443e0ca88ae8a597a3d131eb33e07",
+      "group": 3,
+      "number": 24,
+      "wav_sha256": "51b34f4ff534ca69143f241101372aa10c16f565249eafa471855bc44b25e15f"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/sumireNue03.mp3",
+      "source_sha256": "4b875e2bf7dc464df804be7e4f055e6e10b7bcc6225784ba2f0b32c31a743285",
+      "group": 3,
+      "number": 25,
+      "wav_sha256": "f888b872ff951b545dfe438bdc41a136c91696b80727dfc550b79d78c110d94a"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/SumireKakei/sumiretalk.mp3",
+      "source_sha256": "9502ee6afcf07711bb8ee7ca60ce6edaaed152df5b74e3c6175a44d1c72a9dfc",
+      "group": 3,
+      "number": 26,
+      "wav_sha256": "0d8d7bbdbd9767df6404436dca3b7ac2f0df17c3176ccea1eac34fb7a4fc58c1"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Tsunade.ogg",
+      "source_sha256": "b7f5a98ebb377905cbaaa110c17866fc61f17314c2761e8a6bc350cd925037cd",
+      "group": 4,
+      "number": 0,
+      "wav_sha256": "38a309442c006592bdf2fa1b8de812a591d574c29549139909ac29b7134ae756"
+    },
+    {
+      "source": "source_material/Sumire_original/Sumire Kakei By_Vaydra_Senki/Sumire Kakei by Vaydra/Audio/Tsunade_ougis.ogg",
+      "source_sha256": "03e1d79a92d11dd428c706c5f6c15dad2e7a0838b426f9ba2e7052747891478f",
+      "group": 4,
+      "number": 1,
+      "wav_sha256": "145b2cf0bd4258e38c01e86c8e81946e115fe659df5802ee491409f010b84826"
+    }
+  ]
+}
