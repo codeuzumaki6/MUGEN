@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Waver</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">49</p>
+			<p type="attackRangeY">47</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>Waver_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">300</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">10</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	   	<e type="setMove">-9.5</e>
+	    <f>Waver_01</f>	
+			<e type="setMove">-9.5</e>
+			<f>Waver_02</f>
+			<e type="setMove">-9.5</e>
+			<f>Waver_03</f>	
+			<e type="setMove">-9.5</e>	
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

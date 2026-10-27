@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Tsukuyomi</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">51</p>
+			<p type="attackRangeY">11</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Bombard_01</f>
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Bombard_01</f>
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">200</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">300</p>
+			<p type="cd">0</p>
+		  <p type="combatPoint">5000</p>
+		</data>
+		<frame>
+		  <e type="setCommand">reTransport</e>
+			<f>Bombard_01</f>
+	  	<e type="setSound">Audio/Effect/explosion.mp3</e>		
+			<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_02</f>
+	  	<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_03</f>
+	  	<e type="setAttackBox">c_hit</e>
+	    <f>Bombard_04</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	<f>Bombard_05</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	
+	  	<f>Bombard_06</f>
+	    <e type="setSound">Audio/Effect/explosion1.mp3</e>
+			<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_07</f>
+	  	<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_08</f>
+	  	<e type="setAttackBox">c_hit</e>
+	    <f>Bombard_09</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	<f>Bombard_10</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	
+	    <f>Bombard_11</f>
+	    <e type="setSound">Audio/Effect/explosion1.mp3</e>
+			<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_12</f>
+	  	<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_13</f>
+	  	<e type="setAttackBox">c_hit</e>
+	    <f>Bombard_14</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	<f>Bombard_15</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	
+	    <f>Bombard_16</f>
+	    <e type="setSound">Audio/Effect/explosion1.mp3</e>
+			<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_17</f>
+	  	<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_18</f>
+	  	<e type="setAttackBox">c_hit</e>
+	    <f>Bombard_19</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	<f>Bombard_20</f>
+	  	<e type="setAttackBox">c_hit</e>		
+	  	
+	    <f>Bombard_21</f>
+	    <e type="setSound">Audio/Effect/explosion1.mp3</e>
+			<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_22</f>
+	  	<e type="setAttackBox">c_hit</e>
+	  	<f>Bombard_23</f>
+	  	<e type="setAttackBox">c_hit</e>
+	    <f>Bombard_24</f>
+	  	<e type="setAttackBox">c_hit</e>	
+	  	<f>Bombard_25</f>
+	  	<e type="setAttackBox">ct_hit</e>	
+	  	
+	  	
+	    <f>Bombard_25</f>  
+	    <f>Bombard_25</f>
+	  	<f>Bombard_25</f>
+	  	
+			<e type="setDetonation">0</e>
+		</frame>
+	</action>
+
+</unit>

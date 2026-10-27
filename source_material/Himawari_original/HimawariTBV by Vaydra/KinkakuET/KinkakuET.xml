@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	      <p type="attackType">KinkakuET</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">63</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>KinkakuET_Idle_01</f>
+        <f>KinkakuET_Idle_02</f>
+        <f>KinkakuET_Idle_03</f>
+        <f>KinkakuET_Idle_03</f>
+        <f>KinkakuET_Idle_02</f>
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>KinkakuET_Walk_01</f>
+        <f>KinkakuET_Walk_02</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <f>KinkakuET_Walk_03</f>
+        <f>KinkakuET_Walk_04</f>
+        <f>KinkakuET_Walk_05</f>
+        <e type="setSound">Audio/Effect/step3.mp3</e>
+        <f>KinkakuET_Walk_06</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>KinkakuET_Hurt_01</f>
+        <f>KinkakuET_Hurt_02</f>
+        <e type="setSound">Audio/HimawariTBV/hurt.mp3</e>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+         <f>KinkakuET_AirHurt_01</f>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+          <f>KinkakuET_KnockDown_01</f>
+          <f>KinkakuET_KnockDown_02</f>
+           <e type="setDelay">60</e>
+          <f>KinkakuET_KnockDown_03</f>
+          <f>KinkakuET_KnockDown_03</f>
+          <f>KinkakuET_KnockDown_04</f>
+          <f>KinkakuET_KnockDown_04</f>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+          <f>KinkakuET_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>KinkakuET_Float_01</f>
+        <e type="setSound">Audio/HimawariTBV/hurt.mp3</e>
+          <e type="setDelay">10</e>
+          <f>KinkakuET_Float_01</f>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+          <f>KinkakuET_KnockDown_01</f>
+          <f>KinkakuET_KnockDown_02</f>
+        <e type="setSound">Audio/HimawariTBV/die.mp3</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>KinkakuET_NAttack_01</f>
+        <e type="setDelay">5</e>
+        <e type="setMove">12</e>
+        <f>KinkakuET_NAttack_02</f>
+        <e type="setSound">Audio/HimawariTBV/hit1.mp3</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <f>KinkakuET_NAttack_03</f>
+      <e type="setDelay">3</e>
+        
+        <f>KinkakuET_NAttack_04</f>
+        <e type="setDelay">5</e>
+        <f>KinkakuET_NAttack_05</f>
+        <e type="setSound">Audio/HimawariTBV/hit2.mp3</e>
+        <e type="setAttackBox">n_hit</e>
+        <e type="setSound">Audio/Effect/combo2.ogg</e>
+        <f>KinkakuET_NAttack_06</f>
+      <e type="setDelay">3</e>
+        
+        
+        <f>KinkakuET_NAttack_07</f>
+        <e type="setDelay">5</e>
+        <f>KinkakuET_NAttack_08</f>
+        <e type="setSound">Audio/HimawariTBV/hit3.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <f>KinkakuET_NAttack_08</f>
+        <f>KinkakuET_NAttack_09</f>
+      <e type="setDelay">3</e>
+      </frame>
+    </action>
+
+   <action name="skill01">
+     <data>
+	   <p type="attackType">aAttack</p>
+       <p type="attackValue">400</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">10</p>
+     </data>
+     <frame>
+      <f>KinkakuET_CHGKICK_01</f>
+      <e type="setDelay">10</e>
+      <e type="setSound">Audio/Effect/EfxJump2.mp3</e>
+      
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_01</f>
+      <e type="setSound">Audio/Effect/damage_o2.ogg</e>
+      <e type="setAttackBox">c_hit</e>
+        <e type="setSound">Audio/HimawariTBV/hea.mp3</e>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_02</f>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_03</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_01</f>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_02</f>
+      <e type="setAttackBox">c_hit</e>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_03</f>
+      <e type="setChargeB">80</e>
+      <f>KinkakuET_FlyKick_04</f>
+     </frame>
+   </action>
+    <action name="skill02">
+        <data>
+          <p type="attackType">aAttack</p>
+          <p type="attackValue">200</p>
+          <p type="attackRangeX">20</p>
+          <p type="attackRangeY">48</p>
+          <p type="cd">15</p>
+        </data>
+        <frame>
+        <f>KinkakuET_JknChg_01</f>
+        <e type="setSound">Audio/Effect/baiyan.ogg</e>
+        <e type="setBullet">ByakuganEye</e>
+      <e type="setDelay">30</e>
+      <e type="setChargeB">80</e>
+        
+        <f>KinkakuET_Jkn_01</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/HimawariTBV/chg.mp3</e>
+        <f>KinkakuET_Jkn_02</f>
+        <e type="setDelay">-5</e>
+        <f>KinkakuET_Jkn_03</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_04</f>      
+        <e type="setDelay">-5</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_Jkn_05</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_06</f>
+        <e type="setDelay">-5</e>        
+        
+       <e type="setChargeB">80</e>
+        <f>KinkakuET_Jkn_01</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>KinkakuET_Jkn_02</f>
+        <e type="setDelay">-5</e>
+        <f>KinkakuET_Jkn_03</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_04</f>      
+        <e type="setDelay">-5</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_Jkn_05</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_06</f>
+        <e type="setDelay">-5</e>
+        
+        <e type="setChargeB">80</e>
+        <f>KinkakuET_Jkn_01</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>KinkakuET_Jkn_02</f>
+        <e type="setDelay">-5</e>
+        <f>KinkakuET_Jkn_03</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_04</f>      
+        <e type="setDelay">-5</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_Jkn_05</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_06</f>
+        <e type="setDelay">-5</e>
+        
+        <e type="setChargeB">80</e>
+        <f>KinkakuET_Jkn_01</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>KinkakuET_Jkn_02</f>
+        <e type="setDelay">-5</e>
+        <f>KinkakuET_Jkn_03</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_04</f>      
+        <e type="setDelay">-5</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_Jkn_05</f>
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/blading sfx.mp3</e>
+        <f>KinkakuET_Jkn_06</f>
+        <e type="setDelay">-5</e>
+        
+        </frame>
+    </action>
+    <action name="skill03">
+        <data>
+			<p type="attackType">aAttack</p>
+      <p type="attackValue">340</p>
+      <p type="attackRangeX">10</p>
+      <p type="attackRangeY">48</p>
+      <p type="cd">25</p>
+        </data>
+        <frame>
+      <f>KinkakuET_CHGKICK_01</f>
+      <e type="setDelay">20</e>
+      <e type="setSound">Audio/Effect/EfxJump2.mp3</e>
+      <e type="setCharge">350</e>
+      
+      
+      <f>KinkakuET_ComKick01_01</f>
+        <e type="setSound">Audio/HimawariTBV/Skil.mp3</e>
+      <e type="setAttackBox">o_hit</e> 
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick01_02</f>
+      <e type="setAttackBox">b_hit</e> 
+      <e type="setDelay">0</e>
+      <e type="setChargeB">350</e>  
+      <f>KinkakuET_ComKick01_03</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick01_04</f>
+      <e type="setDelay">0</e>
+      <e type="setFlipped">10</e>
+      
+      <e type="setCharge">200</e>  
+      <f>KinkakuET_ComKick02_01</f>
+      <e type="setAttackBox">b_hit</e> 
+      <e type="setSound">Audio/Effect/rock_hit.ogg</e>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_ComKick02_02</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_ComKick02_03</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_ComKick02_04</f>
+      <e type="setDelay">3</e>
+      
+      
+      <e type="setChargeB">0</e>  
+      <f>KinkakuET_ComKick03_01</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick03_02</f>
+      <e type="setAttackBox">f_hit</e> 
+      <e type="setSound">Audio/Effect/rock_hit2.ogg</e>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick03_03</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick03_04</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick03_05</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_ComKick03_06</f>
+      <e type="setDelay">0</e>
+      
+      
+      <f>KinkakuET_Down_01</f>
+      <e type="setSound">Audio/Effect/landing2.mp3</e>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_Down_02</f>
+      <e type="setDelay">0</e>
+      <f>KinkakuET_Down_03</f>
+      <e type="setDelay">0</e>
+       </frame>
+    </action>
+   <action name="skill04">
+     <data>
+        <p type="attackType">aAttack</p>
+        <p type="attackValue">1300</p>
+        <p type="attackRangeX">20</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">1</p>
+     </data>
+     <frame>
+        <e type="setSound">Audio/HimawariTBV/lock.mp3</e>
+        <f>KinkakuET_Lock_01</f>
+        <e type="setSound">Audio/Effect/baiyan.ogg</e>
+        <e type="setBullet">ByakuganEye</e>
+        <e type="setDelay">30</e>
+        <f>KinkakuET_TksuChg_01</f>
+        <e type="setBullet">Waver</e>
+        <e type="setChargeB">390</e>
+        
+      <f>KinkakuET_Tksu_01</f>
+        <e type="setSound">Audio/HimawariTBV/hit.mp3</e>
+      <e type="setAttackBox">f_hit</e> 
+      <e type="setSound">Audio/Effect/hyper_punch.ogg</e>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_02</f>
+      <e type="setAttackBox">c_hit</e> 
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_03</f>
+      <e type="setAttackBox">ac_hit</e> 
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_04</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_05</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_06</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_Tksu_07</f>
+      <e type="setDelay">10</e>
+       </frame>
+   </action>
+    <action name="skill05">
+       <data>
+       <p type="attackType">aAttack</p>
+       <p type="attackValue">56</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+     </data>
+     <frame>
+        <e type="setSound">Audio/HimawariTBV/02.mp3</e>
+        <f>KinkakuET_Skill05_01</f>
+        <e type="setDelay">10</e>
+        <e type="setSound">Audio/Effect/chain.ogg</e>
+        <e type="setCommand">setInvincible</e>
+        
+        
+        
+        <e type="setSound">Audio/Effect/Biju.mp3</e>
+        <f>KinkakuET_Trans_01</f>
+        <e type="setDelay">3</e>
+        <f>KinkakuET_Trans_02</f>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setDelay">3</e>
+        <f>KinkakuET_Trans_03</f>
+        <e type="setDelay">10</e>
+        <f>KinkakuET_Trans_04</f>
+
+        <e type="setDelay">3</e>
+        <f>KinkakuET_Trans_05</f>
+        <e type="setDelay">3</e>
+        <f>KinkakuET_Trans_06</f>
+        <e type="setDelay">3</e>
+        <f>KinkakuET_Trans_07</f>
+        <e type="setDelay">3</e>
+        
+               
+        
+      <f>KinkakuET_kyubiCKRStance_01</f>
+      <f>KinkakuET_kyubiCKRStance_01</f>
+      <f>KinkakuET_kyubiCKRStance_01</f>
+      <f>KinkakuET_kyubiCKRStance_02</f>
+      <f>KinkakuET_kyubiCKRStance_03</f>
+      
+        <e type="setOugis">10</e>
+      
+      <f>KinkakuET_kyubiCKRCHG_01</f>
+      <e type="setDelay">3</e>
+
+      
+      
+      <e type="setCharge">400</e>
+
+			
+		  	<f>KinkakuET_kyubiCKRCLAW01_01</f>
+		    <e type="setMove">190</e>
+        <f>KinkakuET_kyubiCKRCLAW01_02</f>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/Effect/Blade-Damage.mp3</e>		
+        <e type="setMove">50</e>
+        <f>KinkakuET_kyubiCKRCLAW01_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_04</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_05</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_06</f>
+
+        
+
+        <e type="setFlipped">10</e>
+        <f>KinkakuET_kyubiCKRCHG_01</f>
+        <e type="setMove">180</e>
+        <f>KinkakuET_kyubiCKRCLAW01_01</f>
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/Effect/Blade-Damage.mp3</e>		
+        <e type="setMove">50</e>
+        <f>KinkakuET_kyubiCKRCLAW01_02</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_03</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_04</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW01_05</f>
+        <f>KinkakuET_kyubiCKRCLAW01_06</f>
+
+        
+
+
+			
+		    <e type="setFlipped">10</e>
+        <f>KinkakuET_kyubiCKRCHG_01</f>                       
+        <e type="setMove">180</e>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <f>KinkakuET_kyubiCKRCLAW02_01</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>	
+        <e type="setAttackBox">b_hit</e>
+        <e type="setMove">70</e>
+        <f>KinkakuET_kyubiCKRCLAW02_02</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_03</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_04</f>
+        <e type="setAttackBox">c_hit</e>
+		
+        <e type="setFlipped">10</e>
+        <f>KinkakuET_kyubiCKRCHG_01</f>                       
+        <e type="setMove">180</e>
+        
+        <f>KinkakuET_kyubiCKRCLAW02_01</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>	
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setMove">70</e>
+        <f>KinkakuET_kyubiCKRCLAW02_02</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_03</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_04</f>
+        <e type="setAttackBox">c_hit</e>
+        
+        <e type="setFlipped">10</e>
+        <f>KinkakuET_kyubiCKRCHG_01</f>                       
+        <e type="setMove">180</e>
+      
+      
+        <f>KinkakuET_kyubiCKRCLAW02_01</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>	
+        <e type="setAttackBox">ac_hit</e>
+        <e type="setMove">70</e>
+        <f>KinkakuET_kyubiCKRCLAW02_02</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_03</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>KinkakuET_kyubiCKRCLAW02_04</f>
+        <e type="setAttackBox">c_hit</e>
+        
+        
+        <e type="setFlipped">10</e>
+        <f>KinkakuET_kyubiCKRCHG_01</f>                       
+
+      
+          <f>Hiraishin_Effect_01</f>
+        <e type="setSound">Audio/Effect/Ping.mp3</e>
+          <f>Hiraishin_Effect_02</f>
+          <f>Hiraishin_Effect_03</f>
+          <f>KinkakuET_kyubiCKRNol_01</f>
+      <e type="setDelay">0</e>
+        <e type="setCommand">findTarget</e> 
+         <e type="setCommand">setTransport</e>           
+            
+      
+
+
+			      <f>KinkakuET_kyubiUlti_01</f>
+            <e type="setAttackBox">f_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_02</f>
+            <f>KinkakuET_kyubiUlti_03</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_04</f>
+            <f>KinkakuET_kyubiUlti_05</f>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_06</f>
+            <f>KinkakuET_kyubiUlti_07</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_08</f>
+            <f>KinkakuET_kyubiUlti_01</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_02</f>
+            <f>KinkakuET_kyubiUlti_03</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_04</f>
+         <e type="setSound">Audio/Effect/Biju mode.mp3</e>
+            <f>KinkakuET_kyubiUlti_05</f>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_06</f>
+            <f>KinkakuET_kyubiUlti_07</f>           
+            <e type="setSound">Audio/Effect/blade_damage3.ogg</e>
+            <f>KinkakuET_kyubiUlti_08</f>
+            
+            
+            
+
+      <f>KinkakuET_kyubiUltiBom_01</f>
+        <e type="setMon">FakeDeidara</e>
+         <e type="setAttackBox">f_hit</e>   
+         <e type="setAttackBox">f_hit</e>   
+         <e type="setSound">Audio/Effect/Blast.ogg</e>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_02</f>
+         <e type="setAttackBox">c_hit</e>   
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_03</f>
+         <e type="setAttackBox">c_hit</e>   
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_04</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_05</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_06</f>
+      <e type="setDelay">3</e>
+      <f>KinkakuET_kyubiUltiBom_07</f>
+      <e type="setDelay">3</e>
+
+        <f>KinkakuET_kyubiCKRCHG_01</f>                       
+          <e type="setDelay">30</e>
+          
+          
+          <f>KinkakuET_BidamCHG_01</f>
+        <e type="setSound">Audio/Effect/charge2.ogg</e>
+          <e type="setAttackBox">ab_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamCHG_02</f>
+          <e type="setAttackBox">ab_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamCHG_03</f>
+          <e type="setAttackBox">ab_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamCHG_04</f>          
+          <e type="setAttackBox">b_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamCHG_05</f>
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamCHG_06</f>
+          <e type="setDelay">20</e>
+          
+          
+          <f>KinkakuET_BidamCHG_07</f>
+          <e type="setDelay">3</e>
+          
+          
+          
+          <f>KinkakuET_BidamATK_01</f>
+        <e type="setSound">Audio/Effect/BijuDama.mp3</e>
+          <e type="setAttackBox">o_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_02</f>
+          <e type="setAttackBox">f_hit</e>   
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_03</f>
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_04</f>          
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_05</f>
+        <e type="setSound">Audio/Effect/bombs.ogg</e>
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_06</f>
+          <e type="setDelay">3</e>
+          <f>KinkakuET_BidamATK_07</f>
+          <e type="setDelay">3</e>
+
+          <e type="setMon">Tsukuyomi</e>
+          <f>KinkakuET_BidamATK_08</f>
+          <e type="setDelay">12</e>
+ 
+                   
+          
+          
+          
+          
+          <f>KinkakuET_KnockDown_03</f>
+          <f>KinkakuET_KnockDown_03</f>
+          <f>KinkakuET_KnockDown_04</f>
+          <f>KinkakuET_KnockDown_04</f>
+        <e type="setCommand">reInvincible</e>
+     </frame>
+   </action>
+</unit>

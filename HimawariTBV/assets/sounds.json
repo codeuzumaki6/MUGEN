@@ -1,0 +1,435 @@
+{
+  "keys": {
+    "Effect/Biju mode": [
+      2,
+      0
+    ],
+    "Effect/Biju": [
+      2,
+      1
+    ],
+    "Effect/BijuDama": [
+      2,
+      2
+    ],
+    "Effect/Blade-Damage": [
+      2,
+      3
+    ],
+    "Effect/Blast": [
+      2,
+      4
+    ],
+    "Effect/EfxJump2": [
+      2,
+      5
+    ],
+    "Effect/Ping": [
+      2,
+      6
+    ],
+    "Effect/baiyan": [
+      2,
+      7
+    ],
+    "Effect/blade_damage": [
+      2,
+      8
+    ],
+    "Effect/blade_damage3": [
+      2,
+      9
+    ],
+    "Effect/blading sfx": [
+      2,
+      10
+    ],
+    "Effect/bombs": [
+      2,
+      11
+    ],
+    "Effect/chain": [
+      2,
+      12
+    ],
+    "Effect/charge2": [
+      2,
+      13
+    ],
+    "Effect/combo1": [
+      2,
+      14
+    ],
+    "Effect/combo2": [
+      2,
+      15
+    ],
+    "Effect/combo3": [
+      2,
+      16
+    ],
+    "Effect/damage_o2": [
+      2,
+      17
+    ],
+    "Effect/explosion1": [
+      2,
+      18
+    ],
+    "Effect/hyper_punch": [
+      2,
+      19
+    ],
+    "Effect/landing2": [
+      2,
+      20
+    ],
+    "Effect/rock_hit": [
+      2,
+      21
+    ],
+    "Effect/rock_hit2": [
+      2,
+      22
+    ],
+    "Effect/step3": [
+      2,
+      23
+    ],
+    "HimawariTBV/02": [
+      3,
+      0
+    ],
+    "HimawariTBV/KinkakuET": [
+      3,
+      1
+    ],
+    "HimawariTBV/Skil": [
+      3,
+      2
+    ],
+    "HimawariTBV/chg": [
+      3,
+      3
+    ],
+    "HimawariTBV/die": [
+      3,
+      4
+    ],
+    "HimawariTBV/hea": [
+      3,
+      5
+    ],
+    "HimawariTBV/hima": [
+      3,
+      6
+    ],
+    "HimawariTBV/hit": [
+      3,
+      7
+    ],
+    "HimawariTBV/hit1": [
+      3,
+      8
+    ],
+    "HimawariTBV/hit2": [
+      3,
+      9
+    ],
+    "HimawariTBV/hit3": [
+      3,
+      10
+    ],
+    "HimawariTBV/hurt": [
+      3,
+      11
+    ],
+    "HimawariTBV/lock": [
+      3,
+      12
+    ],
+    "HimawariTBV/skil0": [
+      3,
+      13
+    ],
+    "Audio/KinkakuET": [
+      4,
+      0
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/Biju mode.mp3",
+      "source_sha256": "1b9210945cf269e73cbbe7b5d6bc04cbbcfea5071776b6c67f28e2cd7376e57f",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "b14d6ddd66f5683541aee668b408ee0d78b8978b44f1e6bb78144d68d1f32be4"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/Biju.mp3",
+      "source_sha256": "4add69dd1c04e7772e81df5e5b60b91d3271646e98b6b360b7face56c8352cd6",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "d8e9dad5f926c87a60069d872abd52b0f14dd88ebd2856298cf3715090f58dc9"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/BijuDama.mp3",
+      "source_sha256": "a25655416f54d4e818e5875ea23aac03967adae0c4a264b09884c8f27cc7a2ca",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "ea5adeef28b3df254181e789bf571980e3baf9072db5f0955f12c9c50b590e47"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/Blade-Damage.mp3",
+      "source_sha256": "10383c81102cf1bf4869f08599ddd940ca81d9da57650c7be8e9543982c4f0a5",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "60cb311391011f2482e7abc8400377c8313f53d37bfe68beebae9d4f9dd76174"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/Blast.ogg",
+      "source_sha256": "76892c39ed7f5a6e91621a41adb3c309801937b0ee89e7210a5c3f7fbc5afb27",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "614736fe3f3cd7805491545229b8fc9e16785a0e518692ecbf198c90e0ac9fda"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/EfxJump2.mp3",
+      "source_sha256": "a813dcd3b4d937316ddbb79fb2cf45086d928dc29b41db40dea11df3e4bd49c7",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "b46afbbee413b77c751b0033835fd072eb97a201d8745678b5a4d4cf7d92c886"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/Ping.mp3",
+      "source_sha256": "5db72c3458cac1237439ff4015eba81dd8f9c1be9b2d0386d07b2da3778b2e2a",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "61e16e9c90e0f765dc42d8e5d7cd6f0820e5d2b749f1a458e3d079fdc79a5d4c"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/baiyan.ogg",
+      "source_sha256": "58115f73c9f27252b96f6c2bda98b4a5a2ad491e9db6ccd1a2b7a1c463c0ac9a",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "0ac84655397616c1fb6e4aeb89c2bc03e9f1c16f1e2ead3d88af799d5cbf3fd2"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/blade_damage.ogg",
+      "source_sha256": "4262d7d5559ac7453d25d36f1e7c380453ec475c0ed27545d046b9aa35e1f3b3",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "fdaca3d7a8ffcd0bce788fc7d5d26168c1b832c95a9f90623a310a0810c568df"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/blade_damage3.ogg",
+      "source_sha256": "c722c7666a94988a2195f2bc571359cfcb59fb1b7dd0877589b3331ab31f6160",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "1d6981c2c8d55df232704a09a3b3c9356f4c3c0c2ca7e404fd3f0c9482ee59d6"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/blading sfx.mp3",
+      "source_sha256": "7b03f97d9dd799ed1711e833e4eaed6b43df4e06ab857a9b3fd7f87560e689f1",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "fcbedd20dea8202aab3e20d0debeed8946c42d9bcc19dc3e66d6a4c97cf744a6"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/bombs.ogg",
+      "source_sha256": "6201db0c9e251cc6f56b2851a359e1a9c09aed40422844aca3519c6a7e2eb9bd",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "92a904282bd2f2e5033ac245828925055fdf71449c0d8d1f978084c98c8d1c48"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/chain.ogg",
+      "source_sha256": "c5411d490681744a1cc97a4b8a054dd7fbbb2e389108ea04870db595fdfae122",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "b01ee2b724a1e934ae5920fb241dbd9ca05fc5f32809ed7137c1ed8b3da824f2"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/charge2.ogg",
+      "source_sha256": "c957db064ced75921e4c2958fca53c8eb1ce8c2c6c9ea99a70c8609b71d1a8bc",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "de7fc517b46044b8b91a0885cb411f5a79c81ae35e841098fff189b9babd9e6f"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/combo1.ogg",
+      "source_sha256": "51257497a545382bdc5b9472b62f41ef967ac845e1bf18ddf84973dcb86617aa",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "88e92bda2615f1f259896c345af8402348c40f8392f1f90f1bf2e1d229eb4c65"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/combo2.ogg",
+      "source_sha256": "0aa5f9d2ebe27b9854915013beeaaa05532663ba51842d3f1b16fa03fdfd13cc",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "341d13131c739e4b61fdae21bb6c5f91994c04d01443059ae27e70b467da086e"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/combo3.ogg",
+      "source_sha256": "0cbb52d022304c1b5fb487d7a83fac619f6afa7f1e4f42f5e2d5b1c3d2e4e3e7",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "5ba90d05f4cfcc75331da1c6118b1fdad1e247a9eaa57030d87137895081deeb"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/damage_o2.ogg",
+      "source_sha256": "1299c5403458d69a2b1f297f1148a08efbccd0f5df28b2bdbc7efc72f37e0939",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "db5a872b26777dea8e35c2ad088945a4df14f1d8913e8e2ba6150eae17b2f44c"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/explosion1.mp3",
+      "source_sha256": "fd59169d27cd930ef48b05509103e8e62649f2a38e9da687a2a10a201b65914d",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "a1358530f4cde1e4820e47bcfe506b884addae30a0aac336dd9c4c7e23a2bd67"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/hyper_punch.ogg",
+      "source_sha256": "002689262e972f54524444b750f677718eecba5ce07a0e0eb924d69da9b3c7cd",
+      "group": 2,
+      "number": 19,
+      "wav_sha256": "2ab5c57250f40313803b966b981c42e0e1b1f4dff812721d16f81efe299066d7"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/landing2.mp3",
+      "source_sha256": "6b542a3bc2759351fe794db8b18962d98426c8d09d94193154431a9c8c8628d7",
+      "group": 2,
+      "number": 20,
+      "wav_sha256": "1c89a85fd062562a50d539835ba6e40e7b8573462aa180ec2aad0f5a0014e0c8"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/rock_hit.ogg",
+      "source_sha256": "c1cd9577332dec3d874d54f965118f6ef0f9e344c66a1a7ad2a4bf2c384419bf",
+      "group": 2,
+      "number": 21,
+      "wav_sha256": "0d620badfa2efa1942dccf5ff61e99faa548181c4ff10efc5518403c12572124"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/rock_hit2.ogg",
+      "source_sha256": "829c5784a3e58706f2a59a8b36b103db9c7ec625a2483581dc1067138625d194",
+      "group": 2,
+      "number": 22,
+      "wav_sha256": "25ca9cefa2dbadd4ca4c340cd1f5fcc61f0c42d694b94242a268e19ad2a02539"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/Effect/step3.mp3",
+      "source_sha256": "d1191cc03302d5cd0f82b82821e6dabb44228e2f555899663694cfab546060b8",
+      "group": 2,
+      "number": 23,
+      "wav_sha256": "246c4358e8a13659785653febf9ac5bd30479422f654399dad67c1b6406cfd44"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/02.mp3",
+      "source_sha256": "838cca05fb11f384b368923963e0c991865d0810d1b390cb725420023a35f7ef",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "d118a544a99dbadc15d3ca75adcd78bcef6428efcf3ea32dc20e4bac64feb767"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/KinkakuET.ogg",
+      "source_sha256": "b120764e14b6d26050bfcc6930ec914022f8e5523452d0025bbd2c5a84e291f6",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "0ec706307a98db1f73abc87f3dcc21ce47a98ad06fabb648072beaa463826e1f"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/Skil.mp3",
+      "source_sha256": "7b5c31c3babe03905f8dbb1012d3f808cc622c793d0bb60876d0a3c6fdfa5ae1",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "ce1089bd694b2212ac085f218a665b83db34d47c841334c99a41572ea3092372"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/chg.mp3",
+      "source_sha256": "094920530700d487f457180c2c4541814f201032283dff1601244340302fb58a",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "2098bf2975fac9cd8200c8a78ef0e5d7ce7c22447e1edbaf18c8e2cc2f5e383e"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/die.mp3",
+      "source_sha256": "b5be7d740e2bc9c7b66af2e6800330fa6593ca7d48e7320fd917bb3c119eb5ed",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "2c7ac35b067c1497d28c962e1db4e665d87095ba2af7967c7dee7c9ceae2b426"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hea.mp3",
+      "source_sha256": "e5b0657f64efa348ace3cac309c9a10b302dbaceb94774a0d101723dc61aee12",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "b8cb9897d45ba347ae241289ea28a420ecd3e8d64fa1c2c33a87e8ce2327ae61"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hima.mp3",
+      "source_sha256": "42d730cf8aab7e00afa3a8e4c284b02c32cd3d76b9907e685d668a6f0bf4d231",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "a1d23fc208c387375c863fa8def7a9c585dede0f52bd62b47d48276b56888024"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hit.mp3",
+      "source_sha256": "1ed1569698d9a77440cb14ff33cd9106d01c0636e67776009b5f61aa3b4c4c17",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "0258b022d45ad4a5b5155ee5f40e3632e125e17520303583115f8efb607ca492"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hit1.mp3",
+      "source_sha256": "bef7e76a5337af0f66973f97dc2d316bf552ba8ac0b10102a805e547e1d32c8c",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "f98a69a94745a037b56ab3afe6355829c57e6a5116f2cad3a1ea20f569ba2d55"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hit2.mp3",
+      "source_sha256": "e5f833817c834be3615642753beb47b11afda659d773e1b3b138822b0e2b6c36",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "43afd9d98070229fdbb839b0282ead7196d84ad5b390cebec3b33eb1b6ccd673"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hit3.mp3",
+      "source_sha256": "f40bbffe8c959f458f14d353bf5ed2d6cbb9668b8d43a88e85eee5ab0ba423ef",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "516d1a84737c6a83ac567d452aea78d640bbdd4e8ee40d66ac2be1e8dbb6862b"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/hurt.mp3",
+      "source_sha256": "e8b7b2dadebf240f79b4c2b945d1121a1990180aa70c2f438822ba00351a7e1b",
+      "group": 3,
+      "number": 11,
+      "wav_sha256": "5b4f2bb831f2218253a9bbca8f9701f05ca2a90f6bd9f4feeac59e3d59926af9"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/lock.mp3",
+      "source_sha256": "acb05111bf87e4ee775ee179f0c0143813275e5453e66e21a949c8fa6ce72455",
+      "group": 3,
+      "number": 12,
+      "wav_sha256": "febcdd09448b3d75f353f5de3f29636b44c680df28bd436cea26cfe59d1be75f"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/HimawariTBV/skil0.mp3",
+      "source_sha256": "7761aba174290f3ef6e19f851ba107a5d2653fe46bc07b9ef4fd88643635d6ee",
+      "group": 3,
+      "number": 13,
+      "wav_sha256": "243e7adc114e3f88b7299af99c210c3003d76d061707a1ef87298b076b020b1d"
+    },
+    {
+      "source": "source_material/Himawari_original/HimawariTBV by Vaydra/Audio/KinkakuET.ogg",
+      "source_sha256": "b120764e14b6d26050bfcc6930ec914022f8e5523452d0025bbd2c5a84e291f6",
+      "group": 4,
+      "number": 0,
+      "wav_sha256": "0ec706307a98db1f73abc87f3dcc21ce47a98ad06fabb648072beaa463826e1f"
+    }
+  ]
+}

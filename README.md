@@ -424,3 +424,19 @@ RB invoca a Nue pequeño, que sigue y ataca al rival mientras controlas a Sumire
 Extrae `SumireKakei` en `chars` y añade `SumireKakei/SumireKakei.def` a `data/select.def`. ZIP independiente, con todos los recursos y estados comunes. Se preservan los 61 archivos originales y no se generan dibujos ni voces. La entrada de tamaño cero y los tres cuadros transparentes se conservan entre las fuentes y se excluyen de las animaciones.
 
 Pruebas nativas en Ikemen GO: [120 de entradas y combate](previews/SumireKakei_engine_checks.json), [seis de autonomía, derrota y transformación de Nue](previews/SumireKakei_feature_checks.json), [112 de recepción de golpes](previews/SumireKakei_receiving/SumireKakei.json), [20 contra un rival a media escala](previews/SumireKakei_short_target_checks.json) y [16 de dash en ambas formas](previews/SumireKakei_dash_checks.json). [Fuentes](previews/SumireKakei_source_checks.json) · [ZIP](previews/SumireKakei_package_checks.json) · [Entrega](previews/SumireKakei_delivery_checks.json). Contratos estáticos de MUGEN 1.1; el ejecutable concreto de Windows y el mando físico requieren comprobación local. Los personajes anteriores se conservan sin cambios.
+
+---
+
+# Himawari Uzumaki — Two Blue Vortex
+
+[**Descargar Himawari TBV**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/HimawariTBV.zip) · [Gameplay con audio del motor](previews/HimawariTBV_motor.mp4) · [Controles Xbox](HimawariTBV/CONTROLES_XBOX.md) · [Instalación](HimawariTBV/LEEME.md) · [Créditos](HimawariTBV/CREDITOS_Y_FUENTES.md)
+
+El taijutsu, Jūken, fijación de Byakugan y Kurama del video aportado, con los sprites y audios originales de Vaydra. Patada voladora, ráfagas de palmas, combo aéreo completo, tenketsu, palma del vacío y Bijūdama. Incluye tres cadenas terrestres y aéreas, trece especiales por forma, doble dash gratuito y carga con aura dorada o roja. Los golpes de Jūken drenan 180 de energía del rival al acertar.
+
+**Abajo + Pausa** requiere 3000, consume 1500 y activa el chakra de Kurama durante veinte segundos: cabello largo, aura roja y moveset de garras, embestidas, salto, remate contra el suelo y descarga reforzada. Las posturas de Kurama disponibles se usan también para movimiento y reacción; el paquete no incluye una segunda hoja completa de caminar y recibir daño. Ambas formas conservan sus cajas de recibir golpes, guardia y recuperación.
+
+**A** ejecuta la ulti del video: activación, garras, remate, carga, descarga y gran explosión de Bijūdama. Ocho impactos, máximo 600 en base y 750 en despertar, o el 60 % / 75 % de la vida máxima rival si tiene menos de 1000. Cuesta 3000, admite guardia y alcance finito y no consume vida propia. Una interrupción detiene el daño y libera al rival. Los efectos que contienen a Himawari se reproducen sobre el cuerpo principal, para evitar duplicados.
+
+Extrae `HimawariTBV` en `chars` y añade `HimawariTBV/HimawariTBV.def` a `data/select.def`. El ZIP incluye todos sus recursos y estados comunes. Se preservan todos los archivos originales, los 212 cuadros válidos y 39 archivos de audio. La entrada vacía y los recursos heredados ajenos a Himawari se conservan sin asignarles habilidades. No se generan dibujos ni voces.
+
+Pruebas en Ikemen GO: [120 de entradas y combate](previews/HimawariTBV_engine_checks.json), [112 de recepción de golpes](previews/HimawariTBV_receiving/HimawariTBV.json), [20 contra un rival a media escala](previews/HimawariTBV_short_target_checks.json), [16 de dash en ambas formas](previews/HimawariTBV_dash_checks.json) y drenaje de chakra confirmado en ambas orientaciones. [Fuentes y píxeles originales](previews/HimawariTBV_source_checks.json) · [ZIP](previews/HimawariTBV_package_checks.json) · [Entrega](previews/HimawariTBV_delivery_checks.json). Contratos estáticos de MUGEN 1.1; el ejecutable concreto de Windows y un mando físico requieren comprobación local. Los personajes anteriores permanecen sin cambios.

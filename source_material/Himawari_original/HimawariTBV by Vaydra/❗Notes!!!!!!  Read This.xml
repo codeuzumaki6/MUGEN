@@ -1,0 +1,53 @@
+
+
+
+File
+HimawariTBV  Replace KinkakuET (NinjaLegend)
+Sprite by       Vaydra
+Nzc Sprite by   Vaydra
+
+- This file Use Extra  Frame for Fx look only In bullets
+If You no need this   just   delete  bullet line in xml. With Named ByakuganEye and Waver like this
+      <e type="setBullet">ByakuganEye</e>
+      <e type="setBullet">Waver</e>
+      
+- File ini memakai extra Fx di bulet2 nya.  Jika tidak memerlukan nya  hanya hapus baris  bullet ByakuganEye     
+ Baris Anginribut dan Waver
+      <e type="setBullet">ByakuganEye</e>
+      <e type="setBullet">Waver</e>
+      
+  ❗❗❗   ==== Setting ====
+      
+ Untuk versi NinjaLegend  dan Ultimate Ninja legend  bisa menyimpan file  
+ Bombard.png  & Bombard.Plist
+ FxEx.png &  FxEx.Plist nya di Asset dan ubah setting lua nya sebagai berikut :
+ 
+ (For the NinjaLegend and Ultimate Ninja Legend versions, you can place the Bombard.png  & Bombard.Plist
+ FxEx.png &  FxEx.Plist  files in Assets and change the external settings as follows:)
+ 
+ 
+1 Open folder lua in Asset
+2 Open ui 
+3 Open StartMenu.lua
+ 
+4 Find this text :
+    function enterSelectLayer(gameMode, enableCustomSelect)
+    
+Eter down and Add  this 
+    tools.addSprites('Bombard.Plist')
+    tools.addSprites('FxEx.Plist')
+    
+   
+  ❗❗❗
+    
+     Example :
+     
+    function enterSelectLayer(gameMode, enableCustomSelect)
+    tools.addSprites('Bombard.Plist')
+    tools.addSprites('FxEx.Plist')
+       
+    
+ Dont delete anything or code or text. just Add the two of   settings
+    
+    
+    

@@ -1,0 +1,105 @@
+{
+  "moves": [
+    [
+      "Patada",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Juken",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Tenketsu",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Combo",
+      "b",
+      "B",
+      1030,
+      550
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Contraataque",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Palmas",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Caida",
+      "c",
+      "D",
+      1420,
+      400
+    ],
+    [
+      "Vacio",
+      "y",
+      "N",
+      1200,
+      250
+    ],
+    [
+      "Impacto",
+      "z",
+      "N",
+      1210,
+      300
+    ],
+    [
+      "Byakugan",
+      "y",
+      "D",
+      1430,
+      450
+    ],
+    [
+      "Bijudama",
+      "z",
+      "D",
+      1440,
+      600
+    ]
+  ],
+  "awakening": "Kurama chakra, original long-haired red cloak",
+  "awakening_requires": 3000,
+  "awakening_cost": 1500,
+  "awakening_ticks": 1200,
+  "ultimate_damage": [
+    600,
+    750
+  ],
+  "ultimate_cost": 3000,
+  "own_life_cost": 0
+}

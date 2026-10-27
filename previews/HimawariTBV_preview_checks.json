@@ -1,0 +1,138 @@
+{
+  "character": "HimawariTBV",
+  "frames": 874,
+  "cases": 14,
+  "duration": 87.91666666666667,
+  "video": "HimawariTBV_motor.mp4",
+  "sha256": "236aca9efae9fbeb94a93709685a12ea7cfdb074f047d12258bb2fd80ccf576f",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.8512516586427353,
+      "actual_sample_seconds": 5.154829931972789,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.6309352369902148,
+      "actual_sample_seconds": 16.39328798185941,
+      "voice": "HimawariTBV/lock",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.6262553367362503,
+      "actual_sample_seconds": 27.492426303854874,
+      "voice": "HimawariTBV/lock",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1030,
+      "correlation": 0.7903918182243991,
+      "actual_sample_seconds": 38.40580498866213,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1200,
+      "correlation": 0.6556123871670675,
+      "actual_sample_seconds": 49.87646258503401,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1440,
+      "correlation": 0.756425127356267,
+      "actual_sample_seconds": 60.97560090702948,
+      "voice": "HimawariTBV/02",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 3000,
+      "correlation": 0.9040357213019999,
+      "actual_sample_seconds": 72.07473922902494,
+      "voice": "HimawariTBV/02",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 520,
+      "correlation": 0.752494177310816,
+      "actual_sample_seconds": 82.9881179138322,
+      "voice": "HimawariTBV/02",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 11000,
+      "correlation": 0.8132448474508783,
+      "actual_sample_seconds": 94.04081632653062,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 11010,
+      "correlation": 0.6458935198221053,
+      "actual_sample_seconds": 105.13995464852607,
+      "voice": "HimawariTBV/lock",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 11420,
+      "correlation": 0.8205559317245864,
+      "actual_sample_seconds": 116.23909297052154,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 11200,
+      "correlation": 0.707270711041498,
+      "actual_sample_seconds": 127.24535147392291,
+      "voice": "HimawariTBV/Skil",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 11440,
+      "correlation": 0.756425127356267,
+      "actual_sample_seconds": 138.34448979591838,
+      "voice": "HimawariTBV/02",
+      "anchor": "Original Himawari pack startup sample"
+    },
+    {
+      "case": 13,
+      "cue_frame": 8609,
+      "state": 13000,
+      "correlation": 0.9040357213019999,
+      "actual_sample_seconds": 149.44362811791385,
+      "voice": "HimawariTBV/02",
+      "anchor": "Original Himawari pack startup sample"
+    }
+  ],
+  "runtime_sha256": "d683307d44c6b01f7e2d266d922f08d628da8383e80b83f2664bd290080d885e"
+}

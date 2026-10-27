@@ -1,0 +1,4756 @@
+[
+  {
+    "key": "KinkakuET_Walk_01",
+    "group": 32000,
+    "number": 0,
+    "file": "assets/frames/32000_0.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "c684e7b160a318dc2b04b8351a6069b491f1329620d7defa28d1df0f5d182235",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Walk_02",
+    "group": 32000,
+    "number": 1,
+    "file": "assets/frames/32000_1.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "b75485aec8b88626aabb978ed784d03f0392c450f92872c58d29fce57cec74ae",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Walk_03",
+    "group": 32000,
+    "number": 2,
+    "file": "assets/frames/32000_2.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "6ce51edeb90d54bade52642ceddd7b87ca090a0c7096f831e861af4e3a53712c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Walk_04",
+    "group": 32000,
+    "number": 3,
+    "file": "assets/frames/32000_3.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "a735ba0d5d2684fad9f8227875ce36460b8ce6baa9b6a430bb808cf34578a4d8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Walk_05",
+    "group": 32000,
+    "number": 4,
+    "file": "assets/frames/32000_4.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "053e8bf48c3d896eee071d9496d97723df2faf321eb7e9096ce3172b12958844",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Walk_06",
+    "group": 32000,
+    "number": 5,
+    "file": "assets/frames/32000_5.png",
+    "axis": [
+      35,
+      55
+    ],
+    "rgba_sha256": "73a0c421a63aaee25636fefb9b25cd44a7b00a7a59e9147042c43d93ef5d5e12",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Walk_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_AirHurt_01",
+    "group": 32000,
+    "number": 6,
+    "file": "assets/frames/32000_6.png",
+    "axis": [
+      25,
+      69
+    ],
+    "rgba_sha256": "351d0a6253d50145ef5b3c56358901c5836f7dd9ed08052f26b226b9c3b14032",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_AirHurt_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_AirHurt_02",
+    "group": 32000,
+    "number": 7,
+    "file": "assets/frames/32000_7.png",
+    "axis": [
+      25,
+      69
+    ],
+    "rgba_sha256": "351d0a6253d50145ef5b3c56358901c5836f7dd9ed08052f26b226b9c3b14032",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_AirHurt_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Float_01",
+    "group": 32000,
+    "number": 8,
+    "file": "assets/frames/32000_8.png",
+    "axis": [
+      25,
+      70
+    ],
+    "rgba_sha256": "62fefbda6db38bd06e439c087af06be89b05228bb004f631af7bfbb59beeea4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Float_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Float_02",
+    "group": 32000,
+    "number": 9,
+    "file": "assets/frames/32000_9.png",
+    "axis": [
+      22,
+      45
+    ],
+    "rgba_sha256": "743b8e7137c01317ebf267186447ebaade28b42e5ecd9ab7672dc46289e9aae7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "unused_inherited_effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Float_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Float_03",
+    "group": 32000,
+    "number": 10,
+    "file": "assets/frames/32000_10.png",
+    "axis": [
+      48,
+      39
+    ],
+    "rgba_sha256": "51dda216a854b2e22f1cd7c02e2134ca39342ff2196e6fad971ea586c60c597b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "unused_inherited_effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Float_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Hurt_01",
+    "group": 32000,
+    "number": 11,
+    "file": "assets/frames/32000_11.png",
+    "axis": [
+      25,
+      66
+    ],
+    "rgba_sha256": "8e435e127483f16d8f960e00189640ceda3fcdb52b4151d66c396d0d578e3a15",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Hurt_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Hurt_02",
+    "group": 32000,
+    "number": 12,
+    "file": "assets/frames/32000_12.png",
+    "axis": [
+      25,
+      66
+    ],
+    "rgba_sha256": "8e435e127483f16d8f960e00189640ceda3fcdb52b4151d66c396d0d578e3a15",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Hurt_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Idle_01",
+    "group": 32000,
+    "number": 13,
+    "file": "assets/frames/32000_13.png",
+    "axis": [
+      15,
+      67
+    ],
+    "rgba_sha256": "14f4f2823ba203fe63e87b05daa1a0c96f78d973d18a984f479fdf1d01049773",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Idle_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Idle_02",
+    "group": 32000,
+    "number": 14,
+    "file": "assets/frames/32000_14.png",
+    "axis": [
+      15,
+      67
+    ],
+    "rgba_sha256": "a3d179a6abb3a71d3cad7b17024492e49b8630b8002ef8c3a746abe732235a01",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Idle_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Idle_03",
+    "group": 32000,
+    "number": 15,
+    "file": "assets/frames/32000_15.png",
+    "axis": [
+      15,
+      67
+    ],
+    "rgba_sha256": "bc9087544676d7fad4c6a05d35549b405dce9953e321fe5c1e937ba0f3d42300",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Idle_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_KnockDown_01",
+    "group": 32000,
+    "number": 16,
+    "file": "assets/frames/32000_16.png",
+    "axis": [
+      35,
+      38
+    ],
+    "rgba_sha256": "93ed70b9066481d5d5d65514bef5e696ccd78964ac534bf30e6d78519efc5b65",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_KnockDown_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_KnockDown_02",
+    "group": 32000,
+    "number": 17,
+    "file": "assets/frames/32000_17.png",
+    "axis": [
+      35,
+      34
+    ],
+    "rgba_sha256": "ccad984980e2a413238ec86666dde40bde76643b14b3ab68d5ac33ea1e377f82",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_KnockDown_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_KnockDown_03",
+    "group": 32000,
+    "number": 18,
+    "file": "assets/frames/32000_18.png",
+    "axis": [
+      25,
+      46
+    ],
+    "rgba_sha256": "adc3748f2002fc68c108ea64db0d2900a950992bbb69c83a19b2539cf059e0de",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_KnockDown_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_KnockDown_04",
+    "group": 32000,
+    "number": 19,
+    "file": "assets/frames/32000_19.png",
+    "axis": [
+      15,
+      56
+    ],
+    "rgba_sha256": "d917c038bc68c62c51905b02154f948bcd2636b8d0b82e269f8341acf3e06d14",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_KnockDown_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_01",
+    "group": 32000,
+    "number": 20,
+    "file": "assets/frames/32000_20.png",
+    "axis": [
+      15,
+      67
+    ],
+    "rgba_sha256": "8f1e13c5352c6b8c7c0106165e3fc477ed986271a3a4b97cc05d9b0750028f44",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_02",
+    "group": 32000,
+    "number": 21,
+    "file": "assets/frames/32000_21.png",
+    "axis": [
+      25,
+      71
+    ],
+    "rgba_sha256": "cfbca2c96f7a489a99b5aa049e7776251da15b8c697962e35b97297b0a3e0ff8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_03",
+    "group": 32000,
+    "number": 22,
+    "file": "assets/frames/32000_22.png",
+    "axis": [
+      25,
+      71
+    ],
+    "rgba_sha256": "08b2e2b789388b416e9cb42f1d97d13a7518fbe311553c268046cf58b9ae56bd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_04",
+    "group": 32000,
+    "number": 23,
+    "file": "assets/frames/32000_23.png",
+    "axis": [
+      25,
+      70
+    ],
+    "rgba_sha256": "dfda6ff0426a64e43e7ac2eac3cfd4103f92120cd09f6c2a6e0f2ff8c5e73afc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_05",
+    "group": 32000,
+    "number": 24,
+    "file": "assets/frames/32000_24.png",
+    "axis": [
+      25,
+      70
+    ],
+    "rgba_sha256": "e8b630780b7d184575e5acd8517a0556e0013d8297c964a8d44e9a4e85a4f577",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_06",
+    "group": 32000,
+    "number": 25,
+    "file": "assets/frames/32000_25.png",
+    "axis": [
+      25,
+      70
+    ],
+    "rgba_sha256": "ce9ba97fc661bc0caafc608917bd02f7cc0d587064a47a24525ed52396b0b119",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_07",
+    "group": 32000,
+    "number": 26,
+    "file": "assets/frames/32000_26.png",
+    "axis": [
+      15,
+      72
+    ],
+    "rgba_sha256": "2a13b89e239396338165f6bb3ccbe86b52f4cc3a34ca14f789e1b597a904dab7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_08",
+    "group": 32000,
+    "number": 27,
+    "file": "assets/frames/32000_27.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "6fc3dd67d2fa6b9bdc866aff7b8809d85a1b583b6ab53c3ab56c769bf0c53089",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_08",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_NAttack_09",
+    "group": 32000,
+    "number": 28,
+    "file": "assets/frames/32000_28.png",
+    "axis": [
+      25,
+      70
+    ],
+    "rgba_sha256": "b02eee30fa129ed0e0f08df172ea8fec7e3676a81bac0a2bc590b79c707c0975",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_NAttack_09",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_CHGKICK_01",
+    "group": 32000,
+    "number": 29,
+    "file": "assets/frames/32000_29.png",
+    "axis": [
+      25,
+      59
+    ],
+    "rgba_sha256": "4caf59d6339e0e2c9b2264407f1f08da8e1b61cc0b636f9e88d4e1e4084ea6bd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_CHGKICK_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_FlyKick_01",
+    "group": 32000,
+    "number": 30,
+    "file": "assets/frames/32000_30.png",
+    "axis": [
+      153,
+      154
+    ],
+    "rgba_sha256": "acd460d65f959729ec3176f379feb0fc299f9bcea7f06101766d73cbf8ad764a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -79,
+      57,
+      -24
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_FlyKick_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_FlyKick_02",
+    "group": 32000,
+    "number": 31,
+    "file": "assets/frames/32000_31.png",
+    "axis": [
+      153,
+      154
+    ],
+    "rgba_sha256": "0223709b8a952163aac52c864b2756f9a78507c88ab891405e01924f6ace8ea5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -79,
+      57,
+      -24
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_FlyKick_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_FlyKick_03",
+    "group": 32000,
+    "number": 32,
+    "file": "assets/frames/32000_32.png",
+    "axis": [
+      153,
+      154
+    ],
+    "rgba_sha256": "22f37485b1db44714f683d46af528cf13ab7f3aba7d9f06dd8e6afcd7501b0f8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -79,
+      57,
+      -24
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_FlyKick_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_FlyKick_04",
+    "group": 32000,
+    "number": 33,
+    "file": "assets/frames/32000_33.png",
+    "axis": [
+      35,
+      54
+    ],
+    "rgba_sha256": "f087619f49316893f08fc4f20c58c693ec44e1ca88a48670ac5d161dbc0ff017",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_FlyKick_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_JknChg_01",
+    "group": 32000,
+    "number": 34,
+    "file": "assets/frames/32000_34.png",
+    "axis": [
+      25,
+      64
+    ],
+    "rgba_sha256": "4cb829e55814ec83102a7664adbe4f1b84114fe666fc11571a5dc0178df08a6b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_JknChg_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_01",
+    "group": 32000,
+    "number": 35,
+    "file": "assets/frames/32000_35.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "2bcd5df9742b15ca317be035167f17c40a9dd64bf7cff53f6320ef6efcc27aca",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_02",
+    "group": 32000,
+    "number": 36,
+    "file": "assets/frames/32000_36.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "c6219965ae4ce40b1ae1bd23618cc745bf32b6ad3ce21cb6e364e1d2f32ef8ca",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_03",
+    "group": 32000,
+    "number": 37,
+    "file": "assets/frames/32000_37.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "22e0de117610472b1dc64371d39adb137741f9122563f05d358cfab0f6440784",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_04",
+    "group": 32000,
+    "number": 38,
+    "file": "assets/frames/32000_38.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "3ab47ff820b9857fe22d9fd1aec82e12a157b961fb67a4b8191bb39d5fcae3c5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_05",
+    "group": 32000,
+    "number": 39,
+    "file": "assets/frames/32000_39.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "700ebae92e3819f152994f1e7008483ba4f38c285ed5c66c9b9452a9160036cd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Jkn_06",
+    "group": 32000,
+    "number": 40,
+    "file": "assets/frames/32000_40.png",
+    "axis": [
+      85,
+      141
+    ],
+    "rgba_sha256": "511391e6fefea2a1675f4a86ea484888b5cfb244d4e3bfce94af50be5b860810",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -75,
+      45,
+      -21
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Jkn_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick01_01",
+    "group": 32000,
+    "number": 41,
+    "file": "assets/frames/32000_41.png",
+    "axis": [
+      75,
+      141
+    ],
+    "rgba_sha256": "11476447a3ac122e84a75fd27a1348846947f9764bd93076b42a2a5c0a607f14",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -23,
+      -61,
+      35,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick01_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick01_02",
+    "group": 32000,
+    "number": 42,
+    "file": "assets/frames/32000_42.png",
+    "axis": [
+      75,
+      141
+    ],
+    "rgba_sha256": "334f4ed6de050ea0cdb33bdcca50e781c1f46818377b3ab8292a85b1037522fb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -23,
+      -61,
+      35,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick01_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick01_03",
+    "group": 32000,
+    "number": 43,
+    "file": "assets/frames/32000_43.png",
+    "axis": [
+      75,
+      141
+    ],
+    "rgba_sha256": "a8499cfca565c770203fc505eff5fb8e1b4cac805821e62fecc087ea94dc1c08",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -23,
+      -61,
+      35,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick01_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick01_04",
+    "group": 32000,
+    "number": 44,
+    "file": "assets/frames/32000_44.png",
+    "axis": [
+      25,
+      59
+    ],
+    "rgba_sha256": "a39657aa68b9966cec8b701bb1eb9379c35de3efa079c17b28c35f03773bdb00",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick01_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick02_01",
+    "group": 32000,
+    "number": 45,
+    "file": "assets/frames/32000_45.png",
+    "axis": [
+      65,
+      145
+    ],
+    "rgba_sha256": "7a6f5d66363b429049418165ef03377526db6990bd7d7c03bb7d306d31cf3271",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -65,
+      30,
+      -10
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick02_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick02_02",
+    "group": 32000,
+    "number": 46,
+    "file": "assets/frames/32000_46.png",
+    "axis": [
+      65,
+      145
+    ],
+    "rgba_sha256": "725583da5f73bdf43a11fb04d03e6f6b9f7e6735232e407d8f5af0504e25cf9b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -65,
+      30,
+      -10
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick02_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick02_03",
+    "group": 32000,
+    "number": 47,
+    "file": "assets/frames/32000_47.png",
+    "axis": [
+      65,
+      145
+    ],
+    "rgba_sha256": "5becaf4312b9804071452dbf9d67927f0c80cab490463ec0207484cca0f35d1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -65,
+      30,
+      -10
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick02_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick02_04",
+    "group": 32000,
+    "number": 48,
+    "file": "assets/frames/32000_48.png",
+    "axis": [
+      25,
+      64
+    ],
+    "rgba_sha256": "655e67baa943897d599d30426a189f4b1e10a1ffeb974f32340d9b6ab348edc9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick02_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_01",
+    "group": 32000,
+    "number": 49,
+    "file": "assets/frames/32000_49.png",
+    "axis": [
+      25,
+      55
+    ],
+    "rgba_sha256": "e95ab4a15538e6d102970488156c4c08ba0a1c0245266300b2778d705e1bf25c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_02",
+    "group": 32000,
+    "number": 50,
+    "file": "assets/frames/32000_50.png",
+    "axis": [
+      105,
+      135
+    ],
+    "rgba_sha256": "4a4ef2aed5aa71254d4ae5219f6dc32e076b3c64ca9f2943a9e8000c96576fd6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      15,
+      -13
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_03",
+    "group": 32000,
+    "number": 51,
+    "file": "assets/frames/32000_51.png",
+    "axis": [
+      105,
+      135
+    ],
+    "rgba_sha256": "0298ce8ca96cf0279f64058592549b12a2eaf1f543dee40a19d0f75eaeff03bd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      15,
+      -13
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_04",
+    "group": 32000,
+    "number": 52,
+    "file": "assets/frames/32000_52.png",
+    "axis": [
+      105,
+      135
+    ],
+    "rgba_sha256": "3d648386733185bd56d5434a5d0f92ee736242a1d451e3e23d70cc0b83132504",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      15,
+      -13
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_05",
+    "group": 32000,
+    "number": 53,
+    "file": "assets/frames/32000_53.png",
+    "axis": [
+      105,
+      135
+    ],
+    "rgba_sha256": "6de2966d0c7d053ad5f0fb25b917f91434024762f340fdb873fc754cbbcd8d90",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      15,
+      -13
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_ComKick03_06",
+    "group": 32000,
+    "number": 54,
+    "file": "assets/frames/32000_54.png",
+    "axis": [
+      105,
+      100
+    ],
+    "rgba_sha256": "e4bf326e97ce9f6bacb1a688ea00b4535061883a8b3d0aa69094990bcc036bc1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -40,
+      -38,
+      20,
+      25
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_ComKick03_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Down_01",
+    "group": 32000,
+    "number": 55,
+    "file": "assets/frames/32000_55.png",
+    "axis": [
+      25,
+      54
+    ],
+    "rgba_sha256": "c9cb4c346431eccd459af64a911aacd03a3742b13dd5088651ef78073999dc58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Down_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Down_02",
+    "group": 32000,
+    "number": 56,
+    "file": "assets/frames/32000_56.png",
+    "axis": [
+      25,
+      54
+    ],
+    "rgba_sha256": "24ebeb2582b2b537007582e970308da219f55645f72a6e831c152e2e494d007c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Down_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Down_03",
+    "group": 32000,
+    "number": 57,
+    "file": "assets/frames/32000_57.png",
+    "axis": [
+      25,
+      54
+    ],
+    "rgba_sha256": "757e39b69841237ef10490fa592a6833b62ea7243d9b595a27c1c3c6616df6aa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Down_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Lock_01",
+    "group": 32000,
+    "number": 58,
+    "file": "assets/frames/32000_58.png",
+    "axis": [
+      15,
+      87
+    ],
+    "rgba_sha256": "985f0a13b943b068371f446475b3334de31bc8699d33b6560dedab23f5d80a58",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Lock_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_TksuChg_01",
+    "group": 32000,
+    "number": 59,
+    "file": "assets/frames/32000_59.png",
+    "axis": [
+      35,
+      70
+    ],
+    "rgba_sha256": "c6b9b86f31d1c725b6eb71fb333f5f55115269ac2b041ed0697bbb95abf80b8e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_TksuChg_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_01",
+    "group": 32000,
+    "number": 60,
+    "file": "assets/frames/32000_60.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "bcc8ed237095f7e8ee4b4058514978b1bba23115e3899a1115946e709abe7c15",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_02",
+    "group": 32000,
+    "number": 61,
+    "file": "assets/frames/32000_61.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "d58b93eab903f2eb75177434d9127ce2156666a5a3b2bfccf3879fdfbc36d748",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_03",
+    "group": 32000,
+    "number": 62,
+    "file": "assets/frames/32000_62.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "c8f34b6281a19e0d650168aaf3a9fed24a969e14302cf3116669dbb1cfb49a0d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_04",
+    "group": 32000,
+    "number": 63,
+    "file": "assets/frames/32000_63.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "c8e65b7d256619586a64a5ba4a11d54263c51f41255fd48fda2d347d424a31b2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_05",
+    "group": 32000,
+    "number": 64,
+    "file": "assets/frames/32000_64.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "714ce89304dad58ffa7c2db7669d46e7252f20ad969a0e6270a94ed2e41f3500",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_06",
+    "group": 32000,
+    "number": 65,
+    "file": "assets/frames/32000_65.png",
+    "axis": [
+      179,
+      180
+    ],
+    "rgba_sha256": "dd545aec9433c646b94211bd99a7babfaf050e97148a9723012bf98d6c5e5e53",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -29,
+      -70,
+      39,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Tksu_07",
+    "group": 32000,
+    "number": 66,
+    "file": "assets/frames/32000_66.png",
+    "axis": [
+      35,
+      67
+    ],
+    "rgba_sha256": "56e89363673e215929d3b602078f8a4c2abdf8ff4d1ee1ee2b14b9525b62cf5c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Tksu_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Skill05_01",
+    "group": 32000,
+    "number": 67,
+    "file": "assets/frames/32000_67.png",
+    "axis": [
+      35,
+      68
+    ],
+    "rgba_sha256": "6421311be13fde11c994fe35045ba1d7b870a9a47ef3732c54b73ca2798012b5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET.plist",
+    "source_key": "KinkakuET_Skill05_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_01",
+    "group": 32001,
+    "number": 0,
+    "file": "assets/frames/32001_0.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "c7b2b3b0ea04cebe6776c7c9dea9c0b5307fad98ac58f595eada1da6b3941a40",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_02",
+    "group": 32001,
+    "number": 1,
+    "file": "assets/frames/32001_1.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "e8b0fec48f5c3290bf80b9e624ee81c2a106a9e18ed6dc04232b7a169327c835",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_03",
+    "group": 32001,
+    "number": 2,
+    "file": "assets/frames/32001_2.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "9e17fc4660cfdf0083e74c3bbff5189be0f8104abe0cdac4f98974f43b633b10",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_04",
+    "group": 32001,
+    "number": 3,
+    "file": "assets/frames/32001_3.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "771861dfc54d38dd1e7c38bfb2c631b6b39e0e30575f788e5757956381485a4b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_05",
+    "group": 32001,
+    "number": 4,
+    "file": "assets/frames/32001_4.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "61fc544e21df23736ba55f636d47f5ba40d7c84e45d4f3e0ba4146cd479c1a98",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_06",
+    "group": 32001,
+    "number": 5,
+    "file": "assets/frames/32001_5.png",
+    "axis": [
+      85,
+      232
+    ],
+    "rgba_sha256": "1425ad0b33cfba47e17b57ec913ff662c5fa44cc36c5fefc460dbe8250ce1d84",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamCHG_07",
+    "group": 32001,
+    "number": 6,
+    "file": "assets/frames/32001_6.png",
+    "axis": [
+      65,
+      228
+    ],
+    "rgba_sha256": "a197fc574dbaa5a66bbb4f68ccabe3ccca8d1feca50be93b209db0b79a49fb0d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -15,
+      -86,
+      35,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamCHG_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_01",
+    "group": 32001,
+    "number": 7,
+    "file": "assets/frames/32001_7.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "fedb583b1083d2171c04fc1b6778f31a6b26611e98e64b40505ac6c696424c75",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_02",
+    "group": 32001,
+    "number": 8,
+    "file": "assets/frames/32001_8.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "d772e7796c4d2d8538451ab11a42c62a1dcb1e943a123b98e39f7fb51a634195",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_03",
+    "group": 32001,
+    "number": 9,
+    "file": "assets/frames/32001_9.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "52853e03e32f34b6998740cd324c41da07eda03de90bfb71fe8214550bbbf2eb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_04",
+    "group": 32001,
+    "number": 10,
+    "file": "assets/frames/32001_10.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "367b2e9043e59137c22f62d64ac22e03a6bd2ba71490dd4e5f9d5eac7ba8c0c7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_05",
+    "group": 32001,
+    "number": 11,
+    "file": "assets/frames/32001_11.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "34f3b613c7330b206d3559f76e2e363b246c1780ab3869310515d3af48e865b6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_06",
+    "group": 32001,
+    "number": 12,
+    "file": "assets/frames/32001_12.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "3d6b66af2abc2e8fa8bff6e77fa5eca468536ec024e2c0ac1f0a72b8f35e5dd4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_07",
+    "group": 32001,
+    "number": 13,
+    "file": "assets/frames/32001_13.png",
+    "axis": [
+      135,
+      235
+    ],
+    "rgba_sha256": "ff574423a070bd7b521f27933cfac8cb9357beb2d77de95938f02715c9947207",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -13,
+      -80,
+      27,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_BidamATK_08",
+    "group": 32001,
+    "number": 14,
+    "file": "assets/frames/32001_14.png",
+    "axis": [
+      25,
+      96
+    ],
+    "rgba_sha256": "5f8f0ad1ce548627ca0a00044b50ffc6d21a9759bc941d4b83e6c6f72e0bd7a0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_BidamATK_08",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_01",
+    "group": 32001,
+    "number": 15,
+    "file": "assets/frames/32001_15.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "600dc095c6786f2f5d9fb13b907290bc1a0974bd190daa6d933fef76222f9aa4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_02",
+    "group": 32001,
+    "number": 16,
+    "file": "assets/frames/32001_16.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "3cd06a06a7f524aaa7008e734952365ebe758024a5f6900695ad0895b327333e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_03",
+    "group": 32001,
+    "number": 17,
+    "file": "assets/frames/32001_17.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "2dcd099700d6e2419cf9e53bcd728eeacf94865bbba129dd57b2ee676034b1d1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_04",
+    "group": 32001,
+    "number": 18,
+    "file": "assets/frames/32001_18.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "42c6d2ea8b9d1de8df985010110ad5cc5fa961c2a3224cadcdc1dd28a264e96c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_05",
+    "group": 32001,
+    "number": 19,
+    "file": "assets/frames/32001_19.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "ab9da2020dcda94f9cf52704aa31f658420d0abb05cc24a76ad9df6e11347356",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_06",
+    "group": 32001,
+    "number": 20,
+    "file": "assets/frames/32001_20.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "af14be95fca61f7d20ddd56cdbcc9b1b8ee138e097d1b67ff8f9b81599fda762",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_Trans_07",
+    "group": 32001,
+    "number": 21,
+    "file": "assets/frames/32001_21.png",
+    "axis": [
+      105,
+      207
+    ],
+    "rgba_sha256": "8b8593270582695c4eefa9492af446ed6503c49683fe621dbd7b7130ca765f54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -30,
+      -67,
+      30,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_Trans_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRStance_01",
+    "group": 32001,
+    "number": 22,
+    "file": "assets/frames/32001_22.png",
+    "axis": [
+      70,
+      100
+    ],
+    "rgba_sha256": "2691a0934920bf5a1ac369252f6cae59a86fa788a015e30f35287ca963ae38ff",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -28,
+      -55,
+      12,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRStance_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRStance_02",
+    "group": 32001,
+    "number": 23,
+    "file": "assets/frames/32001_23.png",
+    "axis": [
+      70,
+      100
+    ],
+    "rgba_sha256": "78d8bd4e2e727226ce225a833f4df586fc00e4be45845ff5b9179c98652d08d9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -28,
+      -55,
+      12,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRStance_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRStance_03",
+    "group": 32001,
+    "number": 24,
+    "file": "assets/frames/32001_24.png",
+    "axis": [
+      70,
+      100
+    ],
+    "rgba_sha256": "6325be7fbb84e7ee5b87f760fc7373a98528220433331d7856976fea996b3713",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -28,
+      -55,
+      12,
+      1
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRStance_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCHG_01",
+    "group": 32001,
+    "number": 25,
+    "file": "assets/frames/32001_25.png",
+    "axis": [
+      62,
+      75
+    ],
+    "rgba_sha256": "49b78fd0a08cd30b7fa337ce1be8aad8211baebb2d568434e083db205d280d44",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -32,
+      -38,
+      23,
+      5
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCHG_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_01",
+    "group": 32001,
+    "number": 26,
+    "file": "assets/frames/32001_26.png",
+    "axis": [
+      160,
+      202
+    ],
+    "rgba_sha256": "06377d4b362ef3cb6ab4442c868ca589e23e7915f0a882b66377c22f08300591",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -20,
+      -62,
+      58,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_02",
+    "group": 32001,
+    "number": 27,
+    "file": "assets/frames/32001_27.png",
+    "axis": [
+      160,
+      202
+    ],
+    "rgba_sha256": "fd91ac2e59804880e491a8359e200c628395eb73e8376c6abe6deaff7556a0f7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -20,
+      -62,
+      58,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_03",
+    "group": 32001,
+    "number": 28,
+    "file": "assets/frames/32001_28.png",
+    "axis": [
+      160,
+      202
+    ],
+    "rgba_sha256": "84ca984c915f1cdb7168392144e8d07480500e862c53760f55d6f210a3a5181b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -20,
+      -62,
+      58,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_04",
+    "group": 32001,
+    "number": 29,
+    "file": "assets/frames/32001_29.png",
+    "axis": [
+      160,
+      154
+    ],
+    "rgba_sha256": "e0d0db6deb8899da49a6c9e4df98a826207197f316b8c26d2ed2371e2483b63f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -35,
+      -59,
+      25,
+      -3
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_05",
+    "group": 32001,
+    "number": 30,
+    "file": "assets/frames/32001_30.png",
+    "axis": [
+      135,
+      98
+    ],
+    "rgba_sha256": "d45933e9a57587c3a3e5b0a24a884f1143573e75dc6cd3bfa2a34c828a8ec73e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -10,
+      -54,
+      47,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW01_06",
+    "group": 32001,
+    "number": 31,
+    "file": "assets/frames/32001_31.png",
+    "axis": [
+      135,
+      98
+    ],
+    "rgba_sha256": "94321d75b960828e1bde384f9a39b549d2e37710c5f218afc3c0f3831916322a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -10,
+      -54,
+      47,
+      -2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW01_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW02_01",
+    "group": 32001,
+    "number": 32,
+    "file": "assets/frames/32001_32.png",
+    "axis": [
+      155,
+      160
+    ],
+    "rgba_sha256": "35a2d9112b82599854457b9f4a32a9145daf58ca3184655555bc10a02e154d48",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -55,
+      50,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW02_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW02_02",
+    "group": 32001,
+    "number": 33,
+    "file": "assets/frames/32001_33.png",
+    "axis": [
+      155,
+      160
+    ],
+    "rgba_sha256": "f3d30569a90643f472a6f6b3c15f22468c44e30bc2ed9e351ee56186d2bbb155",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -55,
+      50,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW02_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW02_03",
+    "group": 32001,
+    "number": 34,
+    "file": "assets/frames/32001_34.png",
+    "axis": [
+      155,
+      160
+    ],
+    "rgba_sha256": "3f55519bdd672ec99143bbccdcb3a339802d836cb3d7eec9f2b9409ca5e91fa2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -55,
+      50,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW02_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiCKRCLAW02_04",
+    "group": 32001,
+    "number": 35,
+    "file": "assets/frames/32001_35.png",
+    "axis": [
+      155,
+      160
+    ],
+    "rgba_sha256": "6e102649bd60817e52136dec30dfecdf9a84c004ac950eca55f3e07b62ce0aa8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -25,
+      -55,
+      50,
+      0
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiCKRCLAW02_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_01",
+    "group": 32001,
+    "number": 36,
+    "file": "assets/frames/32001_36.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "474c0884ec1d5bfde39edf84dbc02a4ec441a9f29648024daa841cfd628ddd00",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_02",
+    "group": 32001,
+    "number": 37,
+    "file": "assets/frames/32001_37.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "a2b4eb94a9b40c7b82980b236b0a379a4c1c5183b51c083182850b684aeca660",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_03",
+    "group": 32001,
+    "number": 38,
+    "file": "assets/frames/32001_38.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "eb498f7eb6a315c205ccb8598fff00916264d057adf0106f57bdc468adb4a6b2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_04",
+    "group": 32001,
+    "number": 39,
+    "file": "assets/frames/32001_39.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "4662680e7dc337aa133e5acd6ce29d331878c7dddc86b7919f37065950175de6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_05",
+    "group": 32001,
+    "number": 40,
+    "file": "assets/frames/32001_40.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "ae557c8aff96029ba545947d8cd13a5c794f48d84736bb99db26c4a0fcaa0950",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_06",
+    "group": 32001,
+    "number": 41,
+    "file": "assets/frames/32001_41.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "afba6c5ac468d3ed2e7694b3f0f792ddd4fb3a95af03fdf5d23624cbbff1103b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_07",
+    "group": 32001,
+    "number": 42,
+    "file": "assets/frames/32001_42.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "ff3da671496bdfc73e411e4691784a6b90e9c4851f6f050ecb615916050f4c06",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_07",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUlti_08",
+    "group": 32001,
+    "number": 43,
+    "file": "assets/frames/32001_43.png",
+    "axis": [
+      200,
+      145
+    ],
+    "rgba_sha256": "d568af2b59a9e75483740622a839e97dbe2647388090521cc391b1c6ffee5f32",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUlti_08",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_01",
+    "group": 32001,
+    "number": 44,
+    "file": "assets/frames/32001_44.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "75d402ca5e9f14242d674115edda63ef6f7fca0494429384b9c42b63dbcf0399",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_02",
+    "group": 32001,
+    "number": 45,
+    "file": "assets/frames/32001_45.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "4eb014bc3cf226ca21d566d226a10aca514bc9f057cda0c13b6fc728922d5bb2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_03",
+    "group": 32001,
+    "number": 46,
+    "file": "assets/frames/32001_46.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "0a8aab93a070a75140d9bc8ce785e30f01ec823c82d34887283531cfab4cf706",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_04",
+    "group": 32001,
+    "number": 47,
+    "file": "assets/frames/32001_47.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "49f9d0f59907a7752ab4f06cce8010cd6399421bf714a63ec5446c12d266c505",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_05",
+    "group": 32001,
+    "number": 48,
+    "file": "assets/frames/32001_48.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "907a413924db0b984dd2f451eda868489c9f76ac05dedc492fd0e68290d45312",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_06",
+    "group": 32001,
+    "number": 49,
+    "file": "assets/frames/32001_49.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "ba6692e63cee5d1a51b102aa81ec7b0b421acedc85454099e5b43f13a0c7e6f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KinkakuET_kyubiUltiBom_07",
+    "group": 32001,
+    "number": 50,
+    "file": "assets/frames/32001_50.png",
+    "axis": [
+      300,
+      315
+    ],
+    "rgba_sha256": "7073af90615b94c3819f0bb0ac60d923232d6dd86b56a90940cf7257da46b18d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "body_with_effect",
+    "collision_box": [
+      -45,
+      -50,
+      15,
+      2
+    ],
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/KinkakuET/KinkakuET_Skill.plist",
+    "source_key": "KinkakuET_kyubiUltiBom_07",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_01",
+    "group": 32002,
+    "number": 0,
+    "file": "assets/frames/32002_0.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "55c28e534bbd26eacbb8fe5210b36679e2faaaf0fbe650d01234b90fa7ee2ac2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_01",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_02",
+    "group": 32002,
+    "number": 1,
+    "file": "assets/frames/32002_1.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "89be88adfbe2f5c8f95e394c6ec6ca9e2e4a2f7c24769fa28053094037003537",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_02",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_03",
+    "group": 32002,
+    "number": 2,
+    "file": "assets/frames/32002_2.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "2e0f40c0c0effd7d19e88f6547ae19675d368330c5faa30bd3794bea5066d5fd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_03",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_04",
+    "group": 32002,
+    "number": 3,
+    "file": "assets/frames/32002_3.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "0367d2c3f29021dc6baec07e61ba4fed9b995dfd47a9808df46ad978c8324f9e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_04",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_05",
+    "group": 32002,
+    "number": 4,
+    "file": "assets/frames/32002_4.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "1a892a17bcc7c9da4f2219b44985399b7cef21ab28e4b360d29242195ca348df",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_05",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_06",
+    "group": 32002,
+    "number": 5,
+    "file": "assets/frames/32002_5.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "9088202c0613af7910e466d91ecdc5ad7b9b2ee1d4c2c2bb5a91de781364a99f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_06",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_07",
+    "group": 32002,
+    "number": 6,
+    "file": "assets/frames/32002_6.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "193f0c00db6f9842a17f03944104647c9d05a28e5fef120b3e5788a857b95e30",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_07",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_08",
+    "group": 32002,
+    "number": 7,
+    "file": "assets/frames/32002_7.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "5f0bc40f85e37d2449e518be8284fdb73fe40a89eb26505807e799d686294762",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_08",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_09",
+    "group": 32002,
+    "number": 8,
+    "file": "assets/frames/32002_8.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "b196e8678a64db3961efabd752a646f1863721d52f62b2ccb9e26cda75edb14e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_09",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_10",
+    "group": 32002,
+    "number": 9,
+    "file": "assets/frames/32002_9.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "e4964ef569e11453c31b3a117299416805902281f70d48d7be016577d10dfa9f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_10",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_11",
+    "group": 32002,
+    "number": 10,
+    "file": "assets/frames/32002_10.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "49f5e3bf0f6063ac7732bfadf62c7db8aa618fd2942d7382fd547fc1f98b3602",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_11",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_12",
+    "group": 32002,
+    "number": 11,
+    "file": "assets/frames/32002_11.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "74547abeb7c1430169a5b4140184cdac6248a25802ec7078069d585912177b08",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_12",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_13",
+    "group": 32002,
+    "number": 12,
+    "file": "assets/frames/32002_12.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "f77ab7ae3bf65034937809aca9a6f7186ea36658c5530f3e12997788de43e0df",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_13",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_14",
+    "group": 32002,
+    "number": 13,
+    "file": "assets/frames/32002_13.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "719a5311227910ed20f1e37ecc8857646b5d3db91db1039e003f230ba49cc675",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_14",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_15",
+    "group": 32002,
+    "number": 14,
+    "file": "assets/frames/32002_14.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "7160e57ebf508f1545d0b64246665c59c8ebec4ee90bda1bf4cee796b53fe5a2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_15",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_16",
+    "group": 32002,
+    "number": 15,
+    "file": "assets/frames/32002_15.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "27b98df567eff06844d971132710d63a34a8fdd84c68e2115c725c076102072d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_16",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_17",
+    "group": 32002,
+    "number": 16,
+    "file": "assets/frames/32002_16.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "afd935c2616ccd13b7c577d069c00e70c4c692c0e55331d04a00ba2283274f14",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_17",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_18",
+    "group": 32002,
+    "number": 17,
+    "file": "assets/frames/32002_17.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "c8948e846510ab69406bab0981b4b1b746fc7f2d43f464bfc9e46c0d6145a242",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_18",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_19",
+    "group": 32002,
+    "number": 18,
+    "file": "assets/frames/32002_18.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "d20a7825eadc09db41a1992b8e3a50be9c8f17b36120eaf8e86778d3eea10aee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_19",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_20",
+    "group": 32002,
+    "number": 19,
+    "file": "assets/frames/32002_19.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "8877cd80efbda540f8bd464c6426429bccc0530a16f883ac34ca086f2f73841e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_20",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_21",
+    "group": 32002,
+    "number": 20,
+    "file": "assets/frames/32002_20.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "c687479bed3349d46c84296a2bf04978f967b83ffd207d9b4b6bac0dc35437c9",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_21",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_22",
+    "group": 32002,
+    "number": 21,
+    "file": "assets/frames/32002_21.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "efdefb16bac80a99cb8587a02fde0fde45e93358dd3a400426a40454b7816968",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_22",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_23",
+    "group": 32002,
+    "number": 22,
+    "file": "assets/frames/32002_22.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "f342f39d5c3a3cc1a6a57af8e3f8381a0d9f65ab98c262f97b0559feb9cd1023",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_23",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_24",
+    "group": 32002,
+    "number": 23,
+    "file": "assets/frames/32002_23.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "330b0bd32d11946b4f66740a0940a4b1c270afe3ac77e9b522c2c7cb5a596f6b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_24",
+    "source_rotated": false
+  },
+  {
+    "key": "Bombard_25",
+    "group": 32002,
+    "number": 24,
+    "file": "assets/frames/32002_24.png",
+    "axis": [
+      396,
+      570
+    ],
+    "rgba_sha256": "330b0bd32d11946b4f66740a0940a4b1c270afe3ac77e9b522c2c7cb5a596f6b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Bombard.plist",
+    "source_key": "Bombard_25",
+    "source_rotated": false
+  },
+  {
+    "key": "Waver_01",
+    "group": 32003,
+    "number": 0,
+    "file": "assets/frames/32003_0.png",
+    "axis": [
+      150,
+      150
+    ],
+    "rgba_sha256": "dad905bfed0fe3aa6a4e1083fd0629060bbd586c41088978d16c8dfb5b94c143",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Waver_01",
+    "source_rotated": false
+  },
+  {
+    "key": "Waver_02",
+    "group": 32003,
+    "number": 1,
+    "file": "assets/frames/32003_1.png",
+    "axis": [
+      150,
+      150
+    ],
+    "rgba_sha256": "d170b66cd27a28ad39c34d38ecc6e45f11ed73be686efd47ae108f626e526714",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Waver_02",
+    "source_rotated": false
+  },
+  {
+    "key": "Waver_03",
+    "group": 32003,
+    "number": 2,
+    "file": "assets/frames/32003_2.png",
+    "axis": [
+      150,
+      150
+    ],
+    "rgba_sha256": "fb594b646496ec1bb500cce53f99eb66cb5ee7ba4530afb11de3f0ae826ad30f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Waver_03",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_01",
+    "group": 32003,
+    "number": 3,
+    "file": "assets/frames/32003_3.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "e240418210394843b6863df62157ef8116a1e073135c50b76fdaa26ff561b8c0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_01",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_02",
+    "group": 32003,
+    "number": 4,
+    "file": "assets/frames/32003_4.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "c8ec212f86be148a5eff748a49a41f67addb2891f79e233c964fba81e0425be0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_02",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_03",
+    "group": 32003,
+    "number": 5,
+    "file": "assets/frames/32003_5.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "55637ec70a581fa1cef76841a2cd45ce76674c3bcd77ed93d8e141838f303c95",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_03",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_04",
+    "group": 32003,
+    "number": 6,
+    "file": "assets/frames/32003_6.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "aabfbcf7fe22367c3201565b506b99c1be6111a89310e3be22ee314756639c5b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_04",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_05",
+    "group": 32003,
+    "number": 7,
+    "file": "assets/frames/32003_7.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "87f9bcce4922cb2e112ed721a5abdbeedf069507efd7f65856e207d9f15a9948",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_05",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_06",
+    "group": 32003,
+    "number": 8,
+    "file": "assets/frames/32003_8.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "62bdc7c78ecad44f5aedc9c4af05ac633927115b0e187c3591702661e25e1cdd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_06",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_07",
+    "group": 32003,
+    "number": 9,
+    "file": "assets/frames/32003_9.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "fbbe7fe1f8e731d0922385b43b89c9cf337639eb5e776f8dd44e823fb28c175b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_07",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_08",
+    "group": 32003,
+    "number": 10,
+    "file": "assets/frames/32003_10.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "393fcde1dfa4bbdd1ff6a0e0d54e835a06a51239fb43ebc1cd6ea41dd871efc8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_08",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_09",
+    "group": 32003,
+    "number": 11,
+    "file": "assets/frames/32003_11.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "7c50d1931a8be20b5b4cadc96e3cce6559afbbd42c601891bd2bd82dc3c9746e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_09",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_10",
+    "group": 32003,
+    "number": 12,
+    "file": "assets/frames/32003_12.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "1b0df25e60bec0267a07ac50dc53aa6818259aee23529f1646c23307dfb33f8c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_10",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_11",
+    "group": 32003,
+    "number": 13,
+    "file": "assets/frames/32003_13.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "c0b43b8f22fb60c493be23ad629ac6f03fe7901ff0317d62ee57877dfb9dc0b6",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_11",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_12",
+    "group": 32003,
+    "number": 14,
+    "file": "assets/frames/32003_14.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "f3928a5f8f6eea86707fec0aabf1e0f825ede072efb63a2a661ce006d5c649c2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_12",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_13",
+    "group": 32003,
+    "number": 15,
+    "file": "assets/frames/32003_15.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "4fc13b0896541f83743a39ff107e0a6ef651389e423a48ad520f0f97b4464b8e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_13",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_14",
+    "group": 32003,
+    "number": 16,
+    "file": "assets/frames/32003_16.png",
+    "axis": [
+      206,
+      708
+    ],
+    "rgba_sha256": "7c396129d39fb527b33eb51dd3dc15d3c39eea486f587f766331e693e12f81ae",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_14",
+    "source_rotated": true
+  },
+  {
+    "key": "Duar_Move_15",
+    "group": 32003,
+    "number": 17,
+    "file": "assets/frames/32003_17.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "f8c39622cdfbe8392e93d12d39cc2e5c582f8bdfd4da6d1955dbfd50f4a15c23",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_15",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_16",
+    "group": 32003,
+    "number": 18,
+    "file": "assets/frames/32003_18.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "dad4be54efd0232d094c7797fe756403f0c484ad267756054172f8511a7be6ea",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_16",
+    "source_rotated": false
+  },
+  {
+    "key": "Duar_Move_17",
+    "group": 32003,
+    "number": 19,
+    "file": "assets/frames/32003_19.png",
+    "axis": [
+      354,
+      411
+    ],
+    "rgba_sha256": "0ca889a8cb9a0a8ce13e0a76fc965a71f04bd60de7e03828cc2e322ebe5b30fa",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/FxEx.plist",
+    "source_key": "Duar_Move_17",
+    "source_rotated": false
+  },
+  {
+    "key": "shadows",
+    "group": 32004,
+    "number": 0,
+    "file": "assets/frames/32004_0.png",
+    "axis": [
+      28,
+      17
+    ],
+    "rgba_sha256": "4ffddc54098d9187163cac073d544a35691d254b708bd4c35cb526a6a517c9f3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "shadows",
+    "source_rotated": false
+  },
+  {
+    "key": "BOLD_01",
+    "group": 32004,
+    "number": 1,
+    "file": "assets/frames/32004_1.png",
+    "axis": [
+      354,
+      206
+    ],
+    "rgba_sha256": "0a8ae9dfc238118c921103baa00019598b5abd1e0ca378fc6adf97b8185083d0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "BOLD_01",
+    "source_rotated": false
+  },
+  {
+    "key": "BOLD_02",
+    "group": 32004,
+    "number": 2,
+    "file": "assets/frames/32004_2.png",
+    "axis": [
+      354,
+      206
+    ],
+    "rgba_sha256": "c74de2b5a09a99bfbab5e741d6818e1d55fad277a0204d1a7303136247cd5459",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "BOLD_02",
+    "source_rotated": false
+  },
+  {
+    "key": "BOLD_03",
+    "group": 32004,
+    "number": 3,
+    "file": "assets/frames/32004_3.png",
+    "axis": [
+      206,
+      354
+    ],
+    "rgba_sha256": "b3aa9abefa9c70d58169e01ef2d69b8410f27c19a780497f8bbfca92300281b4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "BOLD_03",
+    "source_rotated": true
+  },
+  {
+    "key": "ByakuganEye_01",
+    "group": 32004,
+    "number": 4,
+    "file": "assets/frames/32004_4.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "2ce33383c2f63f75f624766626323a4607f0502715bc390291f5e2640bb71d56",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "ByakuganEye_01",
+    "source_rotated": false
+  },
+  {
+    "key": "ByakuganEye_02",
+    "group": 32004,
+    "number": 5,
+    "file": "assets/frames/32004_5.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "fb5cfc9f2c60b28d9c30279b59788bb1c1c5b3d39c7a6baf060af1455f199839",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "ByakuganEye_02",
+    "source_rotated": false
+  },
+  {
+    "key": "ByakuganEye_03",
+    "group": 32004,
+    "number": 6,
+    "file": "assets/frames/32004_6.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "87a5c2f61d02f75a203e31acafd93a346d4115b7e9b0ab0c5398512335c4153d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "ByakuganEye_03",
+    "source_rotated": false
+  },
+  {
+    "key": "SukonaEye_01",
+    "group": 32004,
+    "number": 7,
+    "file": "assets/frames/32004_7.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "ef4dd877f0d2a494a3b4d3e9bdd46d2961bd81d04dc9dc077752c04cc2860dd1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SukonaEye_01",
+    "source_rotated": false
+  },
+  {
+    "key": "SukonaEye_02",
+    "group": 32004,
+    "number": 8,
+    "file": "assets/frames/32004_8.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "076b8f14c5899843d5e9868b5d623290349775b994a56bf523717f6b71cc8832",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SukonaEye_02",
+    "source_rotated": false
+  },
+  {
+    "key": "SukonaEye_03",
+    "group": 32004,
+    "number": 9,
+    "file": "assets/frames/32004_9.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "d24d32d8fd48c2a04d1f0cc4a1a362d74bf8dd7e938f89745030b51241d22983",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SukonaEye_03",
+    "source_rotated": false
+  },
+  {
+    "key": "SaradaEye_01",
+    "group": 32004,
+    "number": 10,
+    "file": "assets/frames/32004_10.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "f651fdcae0f0f39988d9c02b3e5ca4b49c9bd2145673476b8f8b0d2f3e7eae01",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SaradaEye_01",
+    "source_rotated": false
+  },
+  {
+    "key": "SaradaEye_02",
+    "group": 32004,
+    "number": 11,
+    "file": "assets/frames/32004_11.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "3e9948e767c045d91223809254d5b9c17d6a73754650a11fb5b2d8c27fe32b40",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SaradaEye_02",
+    "source_rotated": false
+  },
+  {
+    "key": "SaradaEye_03",
+    "group": 32004,
+    "number": 12,
+    "file": "assets/frames/32004_12.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "28eedbf216bc72711846f0bb2076b6190a4da53c0f24daf4ecf0c392739acb7a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "SaradaEye_03",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganEye_01",
+    "group": 32004,
+    "number": 13,
+    "file": "assets/frames/32004_13.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "7ca7b6d22484181570e2cd0666246df98b32b64a69ac881efbcd78ea3054bdf1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganEye_01",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganEye_02",
+    "group": 32004,
+    "number": 14,
+    "file": "assets/frames/32004_14.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "3a282b365ae926352ee1355b9286b635a0a1e66fb1266713366fb53f1460232e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganEye_02",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganEye_03",
+    "group": 32004,
+    "number": 15,
+    "file": "assets/frames/32004_15.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "dc92255aba54a791e93c14ff983d8c6746d01c9cd4e993b38777ebb17c187a86",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganEye_03",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganSSKEye_01",
+    "group": 32004,
+    "number": 16,
+    "file": "assets/frames/32004_16.png",
+    "axis": [
+      78,
+      57
+    ],
+    "rgba_sha256": "1e9e93cda245873c3981fa03016ebd74ccf50ed4cf7be56acfbd181d38e42a9f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganSSKEye_01",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganSSKEye_02",
+    "group": 32004,
+    "number": 17,
+    "file": "assets/frames/32004_17.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "3cd5cb7a46b07701e332c4cfb7a883009bbace6872cbb1cc9b75e749ef8d3bf2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganSSKEye_02",
+    "source_rotated": false
+  },
+  {
+    "key": "RinneganSSKEye_03",
+    "group": 32004,
+    "number": 18,
+    "file": "assets/frames/32004_18.png",
+    "axis": [
+      79,
+      57
+    ],
+    "rgba_sha256": "1a0750abdf371f23b2f7e2162b1d47a16d1e131981cad16e88953b4f923c3780",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "RinneganSSKEye_03",
+    "source_rotated": false
+  },
+  {
+    "key": "UniDash_01",
+    "group": 32004,
+    "number": 19,
+    "file": "assets/frames/32004_19.png",
+    "axis": [
+      63,
+      39
+    ],
+    "rgba_sha256": "5d61c2209bc37b37e01d3a7fd54c8f294555585204aaa8d0a3df1d44fd6b639d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniDash_01",
+    "source_rotated": false
+  },
+  {
+    "key": "UniSlash_01",
+    "group": 32004,
+    "number": 20,
+    "file": "assets/frames/32004_20.png",
+    "axis": [
+      159,
+      85
+    ],
+    "rgba_sha256": "2765865a4fe29ce07407686a9aeed6eabe4c5ded2ee53c77d51a2aba4132b443",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniSlash_01",
+    "source_rotated": false
+  },
+  {
+    "key": "UniSlash_02",
+    "group": 32004,
+    "number": 21,
+    "file": "assets/frames/32004_21.png",
+    "axis": [
+      159,
+      85
+    ],
+    "rgba_sha256": "c36632b2079ef06f154ff89be06bb959286672bbf31b58dbb93dee8242cd2e31",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniSlash_02",
+    "source_rotated": false
+  },
+  {
+    "key": "UniSlash_03",
+    "group": 32004,
+    "number": 22,
+    "file": "assets/frames/32004_22.png",
+    "axis": [
+      159,
+      85
+    ],
+    "rgba_sha256": "41410555998f8566cc9d8d83bfb97321099d10aedfd6b24afc1af52ec9d8edce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniSlash_03",
+    "source_rotated": false
+  },
+  {
+    "key": "UniSlash_04",
+    "group": 32004,
+    "number": 23,
+    "file": "assets/frames/32004_23.png",
+    "axis": [
+      159,
+      85
+    ],
+    "rgba_sha256": "8aa34a576de79e14b40473fb2a06e61295f78fcfb41790ad2af3a2c58eaf4cf8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniSlash_04",
+    "source_rotated": false
+  },
+  {
+    "key": "UniSlash_05",
+    "group": 32004,
+    "number": 24,
+    "file": "assets/frames/32004_24.png",
+    "axis": [
+      159,
+      85
+    ],
+    "rgba_sha256": "4ac4ed2c31063a36569a15a9132ea49d4f1dcd666965c274cef1d0201a17d4e1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "UniSlash_05",
+    "source_rotated": false
+  },
+  {
+    "key": "kuburan",
+    "group": 32004,
+    "number": 25,
+    "file": "assets/frames/32004_25.png",
+    "axis": [
+      45,
+      20
+    ],
+    "rgba_sha256": "110f68aa04b3b36f2da2571b0656cb8cbd6473315355d65ee52d874cef37ad8b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "kuburan",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_01",
+    "group": 32004,
+    "number": 26,
+    "file": "assets/frames/32004_26.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "2b0962f74ac3b9300d2e90413c252c9a9035018a93e9dc701f35044eb27c8adc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_01",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_02",
+    "group": 32004,
+    "number": 27,
+    "file": "assets/frames/32004_27.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "8cb2bad0c939c6f2e6c47f03820006dcaadf517449d24671a4a584f1edf71bc7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_02",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_03",
+    "group": 32004,
+    "number": 28,
+    "file": "assets/frames/32004_28.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "1bd0cbda7ceca62b8f2f4128a48112784b390093fe61959fef6e4fb63abec3dc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_03",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_04",
+    "group": 32004,
+    "number": 29,
+    "file": "assets/frames/32004_29.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "2b0962f74ac3b9300d2e90413c252c9a9035018a93e9dc701f35044eb27c8adc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_04",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_05",
+    "group": 32004,
+    "number": 30,
+    "file": "assets/frames/32004_30.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "8cb2bad0c939c6f2e6c47f03820006dcaadf517449d24671a4a584f1edf71bc7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_05",
+    "source_rotated": false
+  },
+  {
+    "key": "hantu_06",
+    "group": 32004,
+    "number": 31,
+    "file": "assets/frames/32004_31.png",
+    "axis": [
+      30,
+      39
+    ],
+    "rgba_sha256": "1bd0cbda7ceca62b8f2f4128a48112784b390093fe61959fef6e4fb63abec3dc",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "hantu_06",
+    "source_rotated": false
+  },
+  {
+    "key": "EfekPukul_01",
+    "group": 32004,
+    "number": 32,
+    "file": "assets/frames/32004_32.png",
+    "axis": [
+      40,
+      60
+    ],
+    "rgba_sha256": "f01e58557e9386508738f168ead2f5c9a1299d98e79ce1d591584e66fe84d6d0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "EfekPukul_01",
+    "source_rotated": false
+  },
+  {
+    "key": "EfekPukul_02",
+    "group": 32004,
+    "number": 33,
+    "file": "assets/frames/32004_33.png",
+    "axis": [
+      40,
+      60
+    ],
+    "rgba_sha256": "e93d69ef9dad314ee67c531fb583a3dd4f64ddfd3140c2a4a0e6dbeef0c98a99",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "EfekPukul_02",
+    "source_rotated": false
+  },
+  {
+    "key": "EfekPukul_03",
+    "group": 32004,
+    "number": 34,
+    "file": "assets/frames/32004_34.png",
+    "axis": [
+      40,
+      60
+    ],
+    "rgba_sha256": "13cf852127804dbbbcd093ef5a7f39d40c338911d53b873c55d2fc07c50bdf24",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "EfekPukul_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_01",
+    "group": 32004,
+    "number": 35,
+    "file": "assets/frames/32004_35.png",
+    "axis": [
+      25,
+      16
+    ],
+    "rgba_sha256": "7f79a0219c6aa08120a7d51e3a5a690333fd3cc2706a08e79107f85a8aec81b5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusAppear_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_02",
+    "group": 32004,
+    "number": 36,
+    "file": "assets/frames/32004_36.png",
+    "axis": [
+      45,
+      36
+    ],
+    "rgba_sha256": "d385e763f6db097d92650a476763ced9ae5a6c1e4de4168240cedfac8310574a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusAppear_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_03",
+    "group": 32004,
+    "number": 37,
+    "file": "assets/frames/32004_37.png",
+    "axis": [
+      65,
+      52
+    ],
+    "rgba_sha256": "7dfe99967cf8353389d13bf4904b6fd375eeb8ba868a9c91eb53a7d195da353e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusAppear_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusAppear_04",
+    "group": 32004,
+    "number": 38,
+    "file": "assets/frames/32004_38.png",
+    "axis": [
+      85,
+      70
+    ],
+    "rgba_sha256": "0dbd968f8a230992bbb9fd3dc8257dd279a0c8c57b40576699581bd12ba90800",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusAppear_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusJatuh_01",
+    "group": 32004,
+    "number": 39,
+    "file": "assets/frames/32004_39.png",
+    "axis": [
+      85,
+      95
+    ],
+    "rgba_sha256": "f124d450ff2a61dd0df54c633817f57b0ea7de572eda741a01e59cff2360a27c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusJatuh_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusJatuh_02",
+    "group": 32004,
+    "number": 40,
+    "file": "assets/frames/32004_40.png",
+    "axis": [
+      85,
+      93
+    ],
+    "rgba_sha256": "85534c93d1b56d6a775313334aa0f52687082006cb92c86e11230823ed61ec35",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusJatuh_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_01",
+    "group": 32004,
+    "number": 41,
+    "file": "assets/frames/32004_41.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "f0c1a536329764ea492257d894bce54c4a86adc487f72302f355163a021fcbad",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_01",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_02",
+    "group": 32004,
+    "number": 42,
+    "file": "assets/frames/32004_42.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "5137cdb9fe109cd3e4fe1ed4188fced52451291036697fc28bd91661896ae4c2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_02",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_03",
+    "group": 32004,
+    "number": 43,
+    "file": "assets/frames/32004_43.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "6da27d44f19aa9564c3ddc24a04edb2c31e9291dce9c32542e997b9b802a8f96",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_03",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_04",
+    "group": 32004,
+    "number": 44,
+    "file": "assets/frames/32004_44.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "8fe29fe7ba9f0062e77e14607702e771de1a2909079d02cf0276110ecd8cd7ee",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_04",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_05",
+    "group": 32004,
+    "number": 45,
+    "file": "assets/frames/32004_45.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "ba99053c17d7d385dc47a531f1c1c7d297938cf2ca0a653411f59cbc69d40f8f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_05",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusBom_06",
+    "group": 32004,
+    "number": 46,
+    "file": "assets/frames/32004_46.png",
+    "axis": [
+      185,
+      115
+    ],
+    "rgba_sha256": "8450756cae24a1e8ce8269db19cf069c2ff6d7ddbb3706870d553dde53d1f669",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusBom_06",
+    "source_rotated": false
+  },
+  {
+    "key": "KubusIdle_01",
+    "group": 32004,
+    "number": 47,
+    "file": "assets/frames/32004_47.png",
+    "axis": [
+      135,
+      82
+    ],
+    "rgba_sha256": "88bb84092199b90876e041eba4f012bc023b976afacbb25a24ef07c3b8a2eb0c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "collision_box": null,
+    "source_plist": "source_material/Himawari_original/HimawariTBV by Vaydra/Effects/Shadows.plist",
+    "source_key": "KubusIdle_01",
+    "source_rotated": false
+  },
+  {
+    "key": "Common_8700_0",
+    "group": 8700,
+    "number": 0,
+    "file": "assets/frames/8700_0.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "4167a222fcdd67535d6c0115dad447c022d1704cddb907933f8607b8fbabf9c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_1",
+    "group": 8700,
+    "number": 1,
+    "file": "assets/frames/8700_1.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "b865fe1c0904a445acfd1b3f0cf16082be4f15b66c07a8f04daa236bc826f40c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_2",
+    "group": 8700,
+    "number": 2,
+    "file": "assets/frames/8700_2.png",
+    "axis": [
+      15,
+      14
+    ],
+    "rgba_sha256": "86b0f0b5aeac4c79aab814ced8bdd15e00d6a49c85170ea431555b9f3c4183db",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8700_3",
+    "group": 8700,
+    "number": 3,
+    "file": "assets/frames/8700_3.png",
+    "axis": [
+      14,
+      13
+    ],
+    "rgba_sha256": "0249ae643fa6de44442f86341dd2140f590423e853bf5b53344a60f6bb8ad054",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_0",
+    "group": 8710,
+    "number": 0,
+    "file": "assets/frames/8710_0.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "a271d59fe491a314e8646ec093c117e9b84ae521c674115fe955e52307af4bbd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_1",
+    "group": 8710,
+    "number": 1,
+    "file": "assets/frames/8710_1.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "f0f9481967439b1ac4a2cbc495896c116e00b65b0572e0d50d755e7fbb197aba",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_2",
+    "group": 8710,
+    "number": 2,
+    "file": "assets/frames/8710_2.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "66b00504f07cf26db92410dd491e4c9b9da68befd0394e362ad978b159406f24",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8710_3",
+    "group": 8710,
+    "number": 3,
+    "file": "assets/frames/8710_3.png",
+    "axis": [
+      42,
+      31
+    ],
+    "rgba_sha256": "d8412817d6e6acf2b5200cef86ba9399685f3aa6fb0a5b916911e2253da0763f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_0",
+    "group": 8720,
+    "number": 0,
+    "file": "assets/frames/8720_0.png",
+    "axis": [
+      10,
+      10
+    ],
+    "rgba_sha256": "29ea08ea1ff23dfd8ecc157015d1eebe7ae2f0a24086c5150200affc5c67df4e",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_1",
+    "group": 8720,
+    "number": 1,
+    "file": "assets/frames/8720_1.png",
+    "axis": [
+      13,
+      13
+    ],
+    "rgba_sha256": "d46ef2c9fd1455401cd98c607253584effd12517cba44d2ecb5f1560cabc1d2a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_2",
+    "group": 8720,
+    "number": 2,
+    "file": "assets/frames/8720_2.png",
+    "axis": [
+      14,
+      14
+    ],
+    "rgba_sha256": "347c16782528dd83e0d9c45c1e107c03c747c1a34e835c7dda7f803f7caf6481",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_3",
+    "group": 8720,
+    "number": 3,
+    "file": "assets/frames/8720_3.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "6c85098a4e5594adb53b7f5be62d630b75e0c7c9b28d0a7e4f1091c9bdf3c339",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_4",
+    "group": 8720,
+    "number": 4,
+    "file": "assets/frames/8720_4.png",
+    "axis": [
+      15,
+      15
+    ],
+    "rgba_sha256": "ce4fe0013b8f8a8d2f609df55f798b2f2abc632e402726a8e029afc317d27db0",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8720_5",
+    "group": 8720,
+    "number": 5,
+    "file": "assets/frames/8720_5.png",
+    "axis": [
+      16,
+      15
+    ],
+    "rgba_sha256": "0039ae8771b868307aceada466c633254358ffe12b387ddb1cda564a673b60b8",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_0",
+    "group": 8900,
+    "number": 0,
+    "file": "assets/frames/8900_0.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "18262399c3afbe98ed664207e893fd3492c8b497a390694597af309ca9c75776",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_1",
+    "group": 8900,
+    "number": 1,
+    "file": "assets/frames/8900_1.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "bb01e12bda04cb7b3523d108e49c3601ee4f297c6fa1e777b6a36b025323a02b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_2",
+    "group": 8900,
+    "number": 2,
+    "file": "assets/frames/8900_2.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "93b24c05c2a6e887ccdc6ab3b7554bc4f07426a26f70cfcbf3cc69d81eec19af",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_3",
+    "group": 8900,
+    "number": 3,
+    "file": "assets/frames/8900_3.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ab00ee7a26c666b33ad0e35d033b748de2e06780a7859ba74fcac19f6f8a0c1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_4",
+    "group": 8900,
+    "number": 4,
+    "file": "assets/frames/8900_4.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "479dab407f2fce52a8ceca5aa67118f7f517387dc9975055f68630e4914ad90f",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_5",
+    "group": 8900,
+    "number": 5,
+    "file": "assets/frames/8900_5.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "34fac7b2d857a6b04f98e2d86884b23e729e190fb78d51b9102bc8a524fe5c0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_6",
+    "group": 8900,
+    "number": 6,
+    "file": "assets/frames/8900_6.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5be935b75cc199bac2e0fa36745359e0a32f3910ac0f2529223c0ff225aaee1b",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_7",
+    "group": 8900,
+    "number": 7,
+    "file": "assets/frames/8900_7.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "d055910e4174743f92e82972340a2a8bdf73ebc071d7fdcca520e8214a3825ce",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_8",
+    "group": 8900,
+    "number": 8,
+    "file": "assets/frames/8900_8.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "2f96991304638201a387d2d972de62798d6e65a08541064c357fbe4bd812dc18",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_9",
+    "group": 8900,
+    "number": 9,
+    "file": "assets/frames/8900_9.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "514f60d131847c056890767aa4a64de58a3597df17b6a4e8f5d5080d6a06f33c",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_10",
+    "group": 8900,
+    "number": 10,
+    "file": "assets/frames/8900_10.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "4cf642b3c5772672e258b8b664016580976d97ffd88a31efdde165d6e9522c54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_11",
+    "group": 8900,
+    "number": 11,
+    "file": "assets/frames/8900_11.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "ceaa7c5237ef9f5f654f11cb08657b715d358b992aeb2392330dc5848f19de0a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_12",
+    "group": 8900,
+    "number": 12,
+    "file": "assets/frames/8900_12.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "801f5d1c579a17f3124a8a6a1f81de0db1bcc8989dc323392e329592f306cecd",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_13",
+    "group": 8900,
+    "number": 13,
+    "file": "assets/frames/8900_13.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a2626ee269d7c80a34ae6f476ebcc8be841b622892bddebed920a25c8764df54",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_14",
+    "group": 8900,
+    "number": 14,
+    "file": "assets/frames/8900_14.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "819bb26d3c8648f065a130a07c01d05d77271f40efbc8e8e29020a95ac29cd1a",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_15",
+    "group": 8900,
+    "number": 15,
+    "file": "assets/frames/8900_15.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "695b52785097b2a39769706b095a927e491c77046a75bb123926b825f60198c1",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_16",
+    "group": 8900,
+    "number": 16,
+    "file": "assets/frames/8900_16.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "fdb91e6ae59010fdb31323add6a80dabc7cfa47e6a28eeccf2cc38b9f0b48331",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_17",
+    "group": 8900,
+    "number": 17,
+    "file": "assets/frames/8900_17.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "343bed25f06921d89a6e55b5d935a3f00ac4b63bad66ecd50f327069dc813beb",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_18",
+    "group": 8900,
+    "number": 18,
+    "file": "assets/frames/8900_18.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "1596176e703b37aa14a8d470695cd88baf3937a4a649eab4e9bcd651488569f2",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_19",
+    "group": 8900,
+    "number": 19,
+    "file": "assets/frames/8900_19.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "3ee63f32fd215c6d35ffd1e4d5ad32f1983a3d6614f7775b647fdca13da808fe",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_20",
+    "group": 8900,
+    "number": 20,
+    "file": "assets/frames/8900_20.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "5a0ec7a719710f4ec0f34701bf26e1b33e86bb092f48677e839db3a5001d781d",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_21",
+    "group": 8900,
+    "number": 21,
+    "file": "assets/frames/8900_21.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "7783d2678d1f08c215e1837d335c85cc4bb5b6d26958d1d0caaadce35b1e2ee5",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_22",
+    "group": 8900,
+    "number": 22,
+    "file": "assets/frames/8900_22.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "a05fdf5e1eff80c258d49978efde7a954174c42166357d34cb8aee0dec9b26e4",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Common_8900_23",
+    "group": 8900,
+    "number": 23,
+    "file": "assets/frames/8900_23.png",
+    "axis": [
+      307,
+      307
+    ],
+    "rgba_sha256": "24c7e805fc48e986b9777bc021985aff501750780a3693989f81174e43eb3bf7",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "shared_project_effect": true
+  },
+  {
+    "key": "Portrait_0",
+    "group": 9000,
+    "number": 0,
+    "file": "assets/frames/9000_0.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "6cd15347c97747754f9c9f78590934dd3aaf8b13f95d5b6ed4176c560cedbc72",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  },
+  {
+    "key": "Portrait_1",
+    "group": 9000,
+    "number": 1,
+    "file": "assets/frames/9000_1.png",
+    "axis": [
+      0,
+      0
+    ],
+    "rgba_sha256": "d6dd3fc853807c114ad77bc2fce50442215a62461ac1db8426960f66aff137c3",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "portrait"
+  }
+]
