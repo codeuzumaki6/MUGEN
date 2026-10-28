@@ -487,8 +487,8 @@
     "number": 20,
     "file": "assets/frames/32000_20.png",
     "axis": [
-      181,
-      154
+      185,
+      145
     ],
     "rgba_sha256": "5384f4c2f42b4cfb492abaf038c75692eaf3eb7e00ff478da105f75fc0d392e8",
     "indexed_pixels_sha256": "18242468d84ef840690a5ab1745d231d5d9dc0966d7ca076b1e00c277c9ba687",
@@ -497,12 +497,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        181,
-        154
+        185,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Hurt_01",
-      "error": 0.11015011370182037
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Pain/Pain.plist",
@@ -515,8 +513,8 @@
     "number": 21,
     "file": "assets/frames/32000_21.png",
     "axis": [
-      171,
-      167
+      185,
+      145
     ],
     "rgba_sha256": "35e08da59d99b5496af044ff8349b4074ac4d670e5a68166acc00b74bfd9d207",
     "indexed_pixels_sha256": "4264170370fba60a871d37f73bf10f0a436b83b9e1e2d329b32f3cbaf04b65dd",
@@ -525,12 +523,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        171,
-        167
+        185,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.14604055881500244
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Pain/Pain.plist",
@@ -543,8 +539,8 @@
     "number": 22,
     "file": "assets/frames/32000_22.png",
     "axis": [
-      175,
-      157
+      185,
+      145
     ],
     "rgba_sha256": "9ab4c1701b7cde90b8e154cd336278a26c1f11193393ee64f401c185533da0e6",
     "indexed_pixels_sha256": "ebc65140733daf86c69837d6aa10f4f20888643b402a367a4da46d292c1fa40a",
@@ -553,12 +549,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        175,
-        157
+        185,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.14536894857883453
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Pain/Pain.plist",
@@ -571,8 +565,8 @@
     "number": 23,
     "file": "assets/frames/32000_23.png",
     "axis": [
-      184,
-      133
+      185,
+      145
     ],
     "rgba_sha256": "b44e1ddec6aedee827039d35e0f788994fe4839188724670136fca84de9413fc",
     "indexed_pixels_sha256": "a4d92a4d1add95dc64d52036a4a3bdb21b5d677bc623af4bdcd74ca628063e2b",
@@ -581,12 +575,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        184,
-        133
+        185,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.127264603972435
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Pain/Pain.plist",
@@ -3463,8 +3455,8 @@
     "number": 14,
     "file": "assets/frames/32001_14.png",
     "axis": [
-      56,
-      187
+      55,
+      205
     ],
     "rgba_sha256": "0fc15475d99b9fc2e2aef860f9c106e7804514ea4706c231bcb1dff9c1bf06b2",
     "indexed_pixels_sha256": "c94b51204e82fecd39d47b556ed9e0637cf5cf058edccfd1d5655cb160590677",
@@ -3473,12 +3465,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        56,
-        187
+        55,
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11506819725036621
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3492,7 +3482,7 @@
     "file": "assets/frames/32001_15.png",
     "axis": [
       55,
-      186
+      205
     ],
     "rgba_sha256": "eb26dc5deb8458ad50ebc19850529451d10f7592162e3d1ed05acb7a1b7dae48",
     "indexed_pixels_sha256": "1c63e6c0e192614528f1df01c7606bcf8ba82d2cc5c0d150cf28d91a0aa542d3",
@@ -3502,11 +3492,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11356159299612045
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3520,7 +3508,7 @@
     "file": "assets/frames/32001_16.png",
     "axis": [
       55,
-      186
+      205
     ],
     "rgba_sha256": "34ceab45acdb981692813e521afb1a9ef0f4d555074cc53a7ea431c9972aa87e",
     "indexed_pixels_sha256": "0919181f2d4124325b5686a77e7b9574d35c6504c924df4a1526d47025682007",
@@ -3530,11 +3518,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11691717803478241
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3548,7 +3534,7 @@
     "file": "assets/frames/32001_17.png",
     "axis": [
       55,
-      186
+      205
     ],
     "rgba_sha256": "cffe5c39abf6794505f28c19e342297fc3fc15c05f84c870c7862fb7c9bfffe8",
     "indexed_pixels_sha256": "2054636ffe73c28a672899247445ebead48f653bba12b09dfdeee724317c7995",
@@ -3558,11 +3544,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.10956420749425888
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3576,7 +3560,7 @@
     "file": "assets/frames/32001_18.png",
     "axis": [
       55,
-      186
+      205
     ],
     "rgba_sha256": "b5c4a10ff7fc762715b66cde1432962de9abe95936ba4ba54eab83e0ce5a2984",
     "indexed_pixels_sha256": "073a893234f7b82de75c7fc3b3ddfec3cefb53643ad9dc2ad547f5610a24ea72",
@@ -3586,11 +3570,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.102024607360363
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3604,7 +3586,7 @@
     "file": "assets/frames/32001_19.png",
     "axis": [
       55,
-      187
+      205
     ],
     "rgba_sha256": "5b57b21cdad9fd9413d47a04a4350a346b447f6161b6feb8a10c04a77a21dc26",
     "indexed_pixels_sha256": "af2952968b81dd6d8859cb7a8a0797a97e8619f8790debb196a1ba5255707e65",
@@ -3614,11 +3596,9 @@
     "alignment": {
       "axis": [
         55,
-        187
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.12102648615837097
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -3632,7 +3612,7 @@
     "file": "assets/frames/32001_20.png",
     "axis": [
       55,
-      187
+      205
     ],
     "rgba_sha256": "d04e2e23b5ea2ce017cdb6b53462e75825a983a78e5a2f7e27f8725e4cf6a1ad",
     "indexed_pixels_sha256": "0be6054c0e987a4329d61654e9875f9dd26bbf1115be5171f8b1a908f9d743be",
@@ -3642,11 +3622,9 @@
     "alignment": {
       "axis": [
         55,
-        187
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.12102648615837097
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4650,8 +4628,8 @@
     "number": 64,
     "file": "assets/frames/32001_64.png",
     "axis": [
-      114,
-      198
+      55,
+      205
     ],
     "rgba_sha256": "bbac93ee22e6d784c7e219e374b22b06114fa2b50bc887c12cb7b446b904e29f",
     "indexed_pixels_sha256": "7940d0f89601ac0458bba0e5b5c29c63e0567b969ca1c3c18f2a61e998f75e4a",
@@ -4660,12 +4638,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        114,
-        198
+        55,
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.10242991894483566
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4678,8 +4654,8 @@
     "number": 65,
     "file": "assets/frames/32001_65.png",
     "axis": [
-      114,
-      195
+      55,
+      205
     ],
     "rgba_sha256": "744a12e349151eec00de2188a017297900b79743b81601faa3f42399900da3bf",
     "indexed_pixels_sha256": "58c8354b0e6a862c277aaf9eabcae102a79f8c3b9dce24db6f9c2ef12fb2fe77",
@@ -4688,12 +4664,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        114,
-        195
+        55,
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.022432519122958183
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4706,8 +4680,8 @@
     "number": 66,
     "file": "assets/frames/32001_66.png",
     "axis": [
-      114,
-      195
+      55,
+      205
     ],
     "rgba_sha256": "95dbf3470b72e5fd92e23401e51a2a24f4a6e89fe87a6bf588faae1106565149",
     "indexed_pixels_sha256": "452fda6c6fc1acb0db27e3f465195fa2ff852243125ec26b3de9ddebecf900a4",
@@ -4716,12 +4690,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        114,
-        195
+        55,
+        205
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.058944784104824066
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4902,8 +4874,8 @@
     "number": 73,
     "file": "assets/frames/32001_73.png",
     "axis": [
-      252,
-      225
+      155,
+      85
     ],
     "rgba_sha256": "58969e390a808db29f30eae42c847060b5da08b9f163a2c3a7167f3cfb84be81",
     "indexed_pixels_sha256": "45034ecf1800453806c752fae7d0770304c4da26580079f3dd0317dd10188227",
@@ -4912,12 +4884,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        252,
-        225
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.08197236806154251
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4930,8 +4900,8 @@
     "number": 74,
     "file": "assets/frames/32001_74.png",
     "axis": [
-      249,
-      225
+      155,
+      85
     ],
     "rgba_sha256": "555722969ed7e160eb2864b2e313b43b6e4b005757c57d3c90d5afe2373b56a7",
     "indexed_pixels_sha256": "0b6d4b3501257e1adde836ec14285ad8905377e4f91169abba127ab43947b4f5",
@@ -4940,12 +4910,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        249,
-        225
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.07752411812543869
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4958,8 +4926,8 @@
     "number": 75,
     "file": "assets/frames/32001_75.png",
     "axis": [
-      91,
-      225
+      155,
+      85
     ],
     "rgba_sha256": "f6f1fe86cc998af805feca45cfe95a7bbcf62b68f3466e72a8df623ac35a17f1",
     "indexed_pixels_sha256": "5b3ec574235548554cfa0c105fe272c9306a7fdb33cc88014c4339b7f1fb898e",
@@ -4968,12 +4936,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        91,
-        225
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.0699973851442337
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -4986,8 +4952,8 @@
     "number": 76,
     "file": "assets/frames/32001_76.png",
     "axis": [
-      64,
-      221
+      155,
+      85
     ],
     "rgba_sha256": "8627aa65852291a4ad14f54a4bcb5b8870287add95b7ff732a3bcf6518ab6016",
     "indexed_pixels_sha256": "12bdef2bff033e57e028e5b0907df553f27f4bf722189fa472d60a2dc9a80098",
@@ -4996,12 +4962,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        64,
-        221
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.08006824553012848
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5014,8 +4978,8 @@
     "number": 77,
     "file": "assets/frames/32001_77.png",
     "axis": [
-      218,
-      224
+      155,
+      85
     ],
     "rgba_sha256": "460d1a1bffd1d7a55ed9a0d80b22efce5719f91a7a24b1b16ed3b5d26c8c9d3c",
     "indexed_pixels_sha256": "56ffc1c5ad13517ef207ea02fe07911d79a2db97b1c0fc20e0314502040c71e2",
@@ -5024,12 +4988,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        218,
-        224
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.06601076573133469
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5042,8 +5004,8 @@
     "number": 78,
     "file": "assets/frames/32001_78.png",
     "axis": [
-      226,
-      228
+      155,
+      85
     ],
     "rgba_sha256": "d2667588ab0a6cc688af97b090873ac39bbaa58e1a49b839bbfbe36ef6c4f039",
     "indexed_pixels_sha256": "4e75cdd44646aec88a4c0582dd1e65c94bfbb9d4f109e1cf3194384ce9d0ad2a",
@@ -5052,12 +5014,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        226,
-        228
+        155,
+        85
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.09165847301483154
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5083,9 +5043,7 @@
         55,
         215
       ],
-      "method": "masked original body match",
-      "reference": "Unframe_01",
-      "error": 0.0927208960056305
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5099,7 +5057,7 @@
     "file": "assets/frames/32001_80.png",
     "axis": [
       55,
-      186
+      215
     ],
     "rgba_sha256": "665eb7d4128578a1f3c70ad0cd8f7cf61aa6e628ccf2d5732c414ac448f45956",
     "indexed_pixels_sha256": "6d36825564d5a6500f37883a2711a7ec2575a2dbe505d633573d71a633138818",
@@ -5109,11 +5067,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        215
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.10479199141263962
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5127,7 +5083,7 @@
     "file": "assets/frames/32001_81.png",
     "axis": [
       55,
-      186
+      215
     ],
     "rgba_sha256": "cea4963da2efe8673b1195705abeb210ae6c730bdcd38f485f0437c0c9005558",
     "indexed_pixels_sha256": "488419d38c8932b58479c6ac33907a8028ae33c0bd76f8dabc2ca53a5bed8f22",
@@ -5137,11 +5093,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        215
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11517451703548431
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5155,7 +5109,7 @@
     "file": "assets/frames/32001_82.png",
     "axis": [
       55,
-      186
+      215
     ],
     "rgba_sha256": "4621d5fe02cca9183b8135cbafaac222d9e26108508acec891b20b3aa4123de5",
     "indexed_pixels_sha256": "2994b7d0e713e1a6d963a8ac9e4cf50b59e79c4ee22f38dc9e0079ec2513e717",
@@ -5165,11 +5119,9 @@
     "alignment": {
       "axis": [
         55,
-        186
+        215
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11252710223197937
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5182,8 +5134,8 @@
     "number": 83,
     "file": "assets/frames/32001_83.png",
     "axis": [
-      76,
-      146
+      185,
+      155
     ],
     "rgba_sha256": "a3cfeafaa6622ad4ac677b13096e1d24100adafa96ae22b8072cb99b759f20b2",
     "indexed_pixels_sha256": "76c4e5696e49dfafe16365e0ba3327de8ff58e3214a2bb98dcbeddadea6493ba",
@@ -5192,12 +5144,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        76,
-        146
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.1137712374329567
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5210,8 +5160,8 @@
     "number": 84,
     "file": "assets/frames/32001_84.png",
     "axis": [
-      74,
-      147
+      185,
+      155
     ],
     "rgba_sha256": "467384a0174e112fe293e0866371fef9a04cefa7d65536c13baf361d853dbbd6",
     "indexed_pixels_sha256": "a259734e8a12dff54d1d4786eab10b1ac0983fea36958832201fa25fb6f62e51",
@@ -5220,12 +5170,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        74,
-        147
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.11337371170520782
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5238,8 +5186,8 @@
     "number": 85,
     "file": "assets/frames/32001_85.png",
     "axis": [
-      109,
-      165
+      185,
+      155
     ],
     "rgba_sha256": "a0f604b3af1fff336dfffba221cb4d1f43b62b598fef632a6247c89cf4c5fc87",
     "indexed_pixels_sha256": "f73a3c98949daafa8f317f2108f1079ac89b7ad7cddaa150e6fd079ea77acf9a",
@@ -5248,12 +5196,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        109,
-        165
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill01_35ex",
-      "error": 0.12819045782089233
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5266,8 +5212,8 @@
     "number": 86,
     "file": "assets/frames/32001_86.png",
     "axis": [
-      92,
-      165
+      185,
+      155
     ],
     "rgba_sha256": "448b7b869c6d9cc3faa9240a42fc525894de81bc1ee8ab0cf937f19a105d6035",
     "indexed_pixels_sha256": "63f3da7d7ccc8c85f97ad5e665fe0d93a83e7d97ade45e03369d3fe86b92a258",
@@ -5276,12 +5222,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        92,
-        165
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.1365664005279541
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5294,8 +5238,8 @@
     "number": 87,
     "file": "assets/frames/32001_87.png",
     "axis": [
-      196,
-      144
+      185,
+      155
     ],
     "rgba_sha256": "5222118c0df08fe010f88afedc59d4bf839be89181ccbc09de987b6a02a05d23",
     "indexed_pixels_sha256": "d3484fab79acc0ba20e4e52573ab81c377063a81f4186923d736863aa8f19506",
@@ -5304,12 +5248,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        196,
-        144
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_05",
-      "error": 0.09696851670742035
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5322,8 +5264,8 @@
     "number": 88,
     "file": "assets/frames/32001_88.png",
     "axis": [
-      191,
-      162
+      185,
+      155
     ],
     "rgba_sha256": "4ffbac000bd9983c0cbcc4f144826b6358d90e7c17eaa56ce94c5c8ef3672164",
     "indexed_pixels_sha256": "22f9dac2f7d0a708f5cd766f93b00bd8a286256d53f164b4d71241f948b0e03d",
@@ -5332,12 +5274,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        191,
-        162
+        185,
+        155
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.1185196042060852
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5574,8 +5514,8 @@
     "number": 97,
     "file": "assets/frames/32001_97.png",
     "axis": [
-      195,
-      113
+      200,
+      110
     ],
     "rgba_sha256": "e4deabc6067d129b65a12b312a8638949fc44ab62ea8b029034861a23a37b130",
     "indexed_pixels_sha256": "26eadb57c0d376a54218b8c0b961a9abb44ba102d9e0e0c82dfb6c0adcb2bee1",
@@ -5584,11 +5524,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        113
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.17173267900943756
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5601,8 +5540,8 @@
     "number": 98,
     "file": "assets/frames/32001_98.png",
     "axis": [
-      195,
-      118
+      200,
+      110
     ],
     "rgba_sha256": "6c4ee3b7a053042496a9c7a7674c99dbefccf71eed3b46798fdc3b6c9217e31e",
     "indexed_pixels_sha256": "77926363cc19490102dfcf7e3920027c155c8d0da8cd26933bf7e6d9d21e741c",
@@ -5611,11 +5550,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        118
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.17622606456279755
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5628,8 +5566,8 @@
     "number": 99,
     "file": "assets/frames/32001_99.png",
     "axis": [
-      195,
-      119
+      200,
+      110
     ],
     "rgba_sha256": "7ccb6927adeeed7d1dd5ee3e6f2d60b8455d25dcbb64b9f33773998be3495e66",
     "indexed_pixels_sha256": "fd6da3e853983855ae82d3f9c14296d20a6ee5a19abb858b76e4cc79fcceaf4c",
@@ -5638,11 +5576,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        119
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.17888134717941284
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5655,8 +5592,8 @@
     "number": 100,
     "file": "assets/frames/32001_100.png",
     "axis": [
-      195,
-      113
+      200,
+      110
     ],
     "rgba_sha256": "81bb77c824244ff3232e0b1371f9122dce6c9e166a373fa8ccac5b5bd5382d84",
     "indexed_pixels_sha256": "4bf6b3e9cf0f0cd68d9bbf1ff19521ff11880c1e45eba313fcf93728ead85a2a",
@@ -5665,11 +5602,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        113
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.18236765265464783
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5682,8 +5618,8 @@
     "number": 101,
     "file": "assets/frames/32001_101.png",
     "axis": [
-      195,
-      112
+      200,
+      110
     ],
     "rgba_sha256": "1a694e202c7a46680bfb26e30e07761be4a2eaa4390902c7289121877046fb8c",
     "indexed_pixels_sha256": "e4938102796b5ca6d846ffc6a4a63df2b79b4e6f8332e2111c0910fc8d6e6ec5",
@@ -5692,11 +5628,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        112
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.17258615791797638
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5709,8 +5644,8 @@
     "number": 102,
     "file": "assets/frames/32001_102.png",
     "axis": [
-      195,
-      124
+      200,
+      110
     ],
     "rgba_sha256": "209b6dea71e3d4c17ac6b89b271e5fd5de5a2a3ab93d80b8e568b653c1b0af35",
     "indexed_pixels_sha256": "9ec844365ce016918ac5b72aab099e2e629d3b5e7283efe075e85485355bd70c",
@@ -5719,11 +5654,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        124
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.17265444993972778
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5736,8 +5670,8 @@
     "number": 103,
     "file": "assets/frames/32001_103.png",
     "axis": [
-      195,
-      125
+      200,
+      110
     ],
     "rgba_sha256": "49b97427a0199d6297be01255e61a93514dd09e59804f122186231acaee8b970",
     "indexed_pixels_sha256": "658122b9aa235c1a7a91584f4f133a959dd8c6a3e80b233542545db117dfb2d2",
@@ -5746,11 +5680,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        195,
-        125
+        200,
+        110
       ],
-      "method": "original frame ground fallback",
-      "error": 0.19793811440467834
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5763,8 +5696,8 @@
     "number": 104,
     "file": "assets/frames/32001_104.png",
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
     "rgba_sha256": "3ee2a729afa60838209120a3cfc2e7779c644226639fc190097af455deaa20d5",
     "indexed_pixels_sha256": "7736e9a40129add853216f0903b8bc3dcd9701d3bdb8f4dcac4ffe7638212ccf",
@@ -5773,12 +5706,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        201,
-        91
+        200,
+        110
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.1526721864938736
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5791,8 +5722,8 @@
     "number": 105,
     "file": "assets/frames/32001_105.png",
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
     "rgba_sha256": "cf87cd036e5c17c25b689bb796e8dcae6409ec32b2f6cadac684a38c7757af68",
     "indexed_pixels_sha256": "c3ef83e5d9e3cafcc16fcdd18ad0808d0d9b37051517ee95d6ea6bd94971e445",
@@ -5801,12 +5732,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        201,
-        91
+        200,
+        110
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.1588054597377777
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5819,8 +5748,8 @@
     "number": 106,
     "file": "assets/frames/32001_106.png",
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
     "rgba_sha256": "64dd9c205c3cd0bcce5d9b0f79bf7f719afe493506f8f00ba88afcaded4ea57d",
     "indexed_pixels_sha256": "e556b4d28f287a2182cc35c17b631c73ac11023eb80a499920beee30c4f6cd15",
@@ -5829,12 +5758,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        201,
-        91
+        200,
+        110
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.11157778650522232
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -5975,8 +5902,8 @@
     "number": 112,
     "file": "assets/frames/32001_112.png",
     "axis": [
-      83,
-      124
+      75,
+      145
     ],
     "rgba_sha256": "9e869f0a9cb752ff2e1df3dcc7973c38d17e443642ea60619f64799339b00cf1",
     "indexed_pixels_sha256": "ecbaa819c5e90c0a6ead969d9c55d1be0513b30b46a0b621809f66752c981c2f",
@@ -5985,12 +5912,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        83,
-        124
+        75,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.15787546336650848
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -6003,8 +5928,8 @@
     "number": 113,
     "file": "assets/frames/32001_113.png",
     "axis": [
-      80,
-      124
+      75,
+      145
     ],
     "rgba_sha256": "bb5f8ec344a4635b4f5b04470f463f54a531c5418c0e1e0e05d5f8eae0920233",
     "indexed_pixels_sha256": "17a8487ab173d417cf16114913ad2ef06be7ffd09b143f1301ceabbee847b757",
@@ -6013,12 +5938,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        80,
-        124
+        75,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.15069516003131866
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -6031,8 +5954,8 @@
     "number": 114,
     "file": "assets/frames/32001_114.png",
     "axis": [
-      76,
-      128
+      75,
+      145
     ],
     "rgba_sha256": "be551b0832d6de1c5bb6f0340999e4b0d9588ea8bb0b3503e48777081c0b7045",
     "indexed_pixels_sha256": "9e696af0950ce63844ea238bad01adc87579ea6ed7e03ec9120ae34631820aad",
@@ -6041,12 +5964,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        76,
-        128
+        75,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.14120888710021973
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -6059,8 +5980,8 @@
     "number": 115,
     "file": "assets/frames/32001_115.png",
     "axis": [
-      76,
-      126
+      75,
+      145
     ],
     "rgba_sha256": "ba2f1acf670adce30e06586aaeaf87bc89b50ab7302c0bd52c3c09aa5e57401f",
     "indexed_pixels_sha256": "eebb12b158f3afe560fce478a6ffa9217dee61beaa42f3476a69917d1f3f657c",
@@ -6069,12 +5990,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        76,
-        126
+        75,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.14300763607025146
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -6087,8 +6006,8 @@
     "number": 116,
     "file": "assets/frames/32001_116.png",
     "axis": [
-      74,
-      135
+      75,
+      145
     ],
     "rgba_sha256": "3fc63e06ea46672d396bc2c3c195940d8a5daa24d7a53473fae0f973b48d7123",
     "indexed_pixels_sha256": "68da69471e34306406e2c6b8c108b407d94a5a8417840e8171b6cde494ffee28",
@@ -6097,12 +6016,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        74,
-        135
+        75,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_01",
-      "error": 0.1690015345811844
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Nagato/Nagato.plist",
@@ -6687,8 +6604,8 @@
     "number": 1,
     "file": "assets/frames/32002_1.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "6972538d30b9395bf1b685bcbbe7e861031778e697b96d819ac71750c16f9e65",
     "indexed_pixels_sha256": "5ef1463eae06d76a26d1bcbed244e98644f4020f346ea8b5f7c2476505b9dea8",
@@ -6697,12 +6614,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06896357983350754
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -6737,8 +6652,8 @@
     "number": 3,
     "file": "assets/frames/32002_3.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "bb8d5195ce62f31d59eff0cb57e92cd769acdccbd1f8e81408b4f9e6129cef08",
     "indexed_pixels_sha256": "918a8ad74acce21edade6d24a00d470a25850c3a737f2eadd617281188535788",
@@ -6747,12 +6662,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06678344309329987
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -6809,8 +6722,8 @@
     "number": 6,
     "file": "assets/frames/32002_6.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "30eccfb6863c2579204d2ca7b22238d594d273495134293770467aafcdf1ecaa",
     "indexed_pixels_sha256": "11eb316c8c727289b359a75b58f086229f0a8df3878769ac196dccb42b9f9a9c",
@@ -6819,12 +6732,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.0724835991859436
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -6837,8 +6748,8 @@
     "number": 7,
     "file": "assets/frames/32002_7.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "5c1f51ada27947aa346c5ef7f448e9014413c6bf4c410d4210f769335f75acb2",
     "indexed_pixels_sha256": "7d964f4fb1b4b149a74d3dd707906537b3244cd191e5edab70688bcad801670f",
@@ -6847,12 +6758,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.07195406407117844
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -6909,8 +6818,8 @@
     "number": 10,
     "file": "assets/frames/32002_10.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "7fb7c6b51b7aa9a4867fe5d733bbe61c5853f0c9c959bf75f25a0de287b4f767",
     "indexed_pixels_sha256": "5b0b3c9b7d1505219a218205538ad0d7ad5b16316675ac2df9e419baa9cdc414",
@@ -6919,12 +6828,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06416879594326019
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -6937,8 +6844,8 @@
     "number": 11,
     "file": "assets/frames/32002_11.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "c93faada42e80c1648367c21e10bf29feecdf200971546b73c9efa27e46e6d9a",
     "indexed_pixels_sha256": "6451212caf3fa27992821a2050184284811de1978e1a55ca7fdeefe5664985d8",
@@ -6947,12 +6854,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06180695444345474
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7031,8 +6936,8 @@
     "number": 15,
     "file": "assets/frames/32002_15.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "69ad3f18245443330f637b3c27ea4345621453190cda3d013181939a0f102820",
     "indexed_pixels_sha256": "704aafce5d02771d9ebf6718b613d3806aefd1a060367332269dc12e16a9e6fa",
@@ -7041,12 +6946,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.0684831440448761
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7059,8 +6962,8 @@
     "number": 16,
     "file": "assets/frames/32002_16.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "46e6376f320d43e14d149ed733d3903dc113a8e4c06b4e0107ad206c43b7a265",
     "indexed_pixels_sha256": "9396a4628d7fddca4586d00e690d734e410751714bc4ed82c286376d5db42012",
@@ -7069,12 +6972,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06843386590480804
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7175,8 +7076,8 @@
     "number": 21,
     "file": "assets/frames/32002_21.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "ba975333c4b1bfed37ff78def672107180813d7c248a0bdd70f426ea7f643ab4",
     "indexed_pixels_sha256": "2ea239073e0691747cde674a304bf3e30d196fc92d35f92a9ff37a6d9d8bb823",
@@ -7185,12 +7086,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.07453539967536926
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7203,8 +7102,8 @@
     "number": 22,
     "file": "assets/frames/32002_22.png",
     "axis": [
-      162,
-      243
+      112,
+      153
     ],
     "rgba_sha256": "67171efc736861360b571a7bbd02202816e98da79f7ca153414074a4080f6301",
     "indexed_pixels_sha256": "5a259f23f949864f4c301137f694b511eb661e621ba293785e8d0e35b9e8c233",
@@ -7213,12 +7112,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        162,
-        243
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.13123594224452972
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7275,8 +7172,8 @@
     "number": 25,
     "file": "assets/frames/32002_25.png",
     "axis": [
-      143,
-      297
+      112,
+      153
     ],
     "rgba_sha256": "2c23c5ecd48568e71d2323237cb38f70c62b4e8f5255aa94a3712cd65a5da38c",
     "indexed_pixels_sha256": "0220444ed9d95afb71e1dbfe982d7ce3106b9b492f345991f572a81c785d321e",
@@ -7285,12 +7182,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        143,
-        297
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.14007042348384857
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7347,8 +7242,8 @@
     "number": 28,
     "file": "assets/frames/32002_28.png",
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
     "rgba_sha256": "2ade14d12759bd4465988f5307530ebf22668408838b9c1bf80955a23a58f552",
     "indexed_pixels_sha256": "f729cfc8d9058deb2a93d62bb539933ee8cbaeed4494de2448f4a99c2f11251d",
@@ -7357,12 +7252,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        62,
-        331
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill01_60",
-      "error": 0.12784594297409058
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7375,8 +7268,8 @@
     "number": 29,
     "file": "assets/frames/32002_29.png",
     "axis": [
-      153,
-      282
+      112,
+      153
     ],
     "rgba_sha256": "a4ecac91da2af0220e27ffe76032f7632ba8beb1b8c61bf128c3aec9c8ff25c1",
     "indexed_pixels_sha256": "381da1c4c993f737fc322016be6a0979cbf36ddeea1ee99559e646db36512feb",
@@ -7385,12 +7278,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        153,
-        282
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.13613559305667877
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7448,7 +7339,7 @@
     "file": "assets/frames/32002_32.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "ba2d392e2f5710b5c427cca62e721ca002edee649fe8fb85b41104c27b636f5e",
     "indexed_pixels_sha256": "2080b96deae56a8145d062a7cc2d4f193b5c346ed0e9d294ef651e5fe4b85d99",
@@ -7458,11 +7349,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_01",
-      "error": 0.011096595786511898
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7476,7 +7365,7 @@
     "file": "assets/frames/32002_33.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "3e3332c7bab8ad1ecd067acc1eb14edc2c4733b4dba9df13f7384360fd4762b8",
     "indexed_pixels_sha256": "1a11bd24cb784830a1991d974960c5f81968ad8908cd04648cb841d88fdce97d",
@@ -7486,11 +7375,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.011503411456942558
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7548,7 +7435,7 @@
     "file": "assets/frames/32002_36.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "15a0db2bbcb159ce8185c5ad321585fb9129dd52e71635f806a6b91703c1fa45",
     "indexed_pixels_sha256": "38df9e21a4658b3ff12a6293d4307761cebb400e0046574415eb8b68b4b282ea",
@@ -7558,11 +7445,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.0
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7620,7 +7505,7 @@
     "file": "assets/frames/32002_39.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "f24de227850e8cc4cb0bee0966bb47002471dd296e0b7a759446d701183ff939",
     "indexed_pixels_sha256": "9a7dc340d9eb99337465320eda436ba99d8667bf8a587b51acf43433f999fc83",
@@ -7630,11 +7515,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.0
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7648,7 +7531,7 @@
     "file": "assets/frames/32002_40.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "b08fa8ec9b9e48ee4e9780fce8b4e3b46004038d280e09592a80ecafd4a76203",
     "indexed_pixels_sha256": "036357301ea5a8c40bb22529f42c83eeba7a7d194816cd080ed8071c80d10648",
@@ -7658,11 +7541,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.0
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7742,7 +7623,7 @@
     "file": "assets/frames/32002_44.png",
     "axis": [
       125,
-      239
+      240
     ],
     "rgba_sha256": "6e249562b7fdb097ad8da730f3c7728be800b97bb78e30cf7999b733a758be19",
     "indexed_pixels_sha256": "4f07180a250488d4783d2b8f4c70ea1c9321568b482f0e52e203e846a3ff7d84",
@@ -7752,11 +7633,9 @@
     "alignment": {
       "axis": [
         125,
-        239
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.0
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7813,8 +7692,8 @@
     "number": 47,
     "file": "assets/frames/32002_47.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "1db0d2c6141ae1e2260d24bc6a28710adad7f85f52d2eff589abfff2d8393900",
     "indexed_pixels_sha256": "6a90a6d3183e5a4841aa22e702a85743b40c97419275efa0489e7d37818d1200",
@@ -7823,12 +7702,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.0384758822619915
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7841,8 +7718,8 @@
     "number": 48,
     "file": "assets/frames/32002_48.png",
     "axis": [
-      102,
-      244
+      125,
+      240
     ],
     "rgba_sha256": "4c3adea0435463872f4e7ac7697b840c9af94e0e20287b7f7c49a21e1dae2554",
     "indexed_pixels_sha256": "57ea4f7f73d13c7c03e3516703a01b361a1062b7da0fc21670d908993840f422",
@@ -7851,12 +7728,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        102,
-        244
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.03732849285006523
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7869,8 +7744,8 @@
     "number": 49,
     "file": "assets/frames/32002_49.png",
     "axis": [
-      165,
-      129
+      170,
+      145
     ],
     "rgba_sha256": "79d3a626a14759bbb10bb8fdda5a1e786196e6316920ea81d98950a91b3d3999",
     "indexed_pixels_sha256": "7b31adf97e2a4e930d76a22e7124e13ee2ac678730792c66a7ad55d0f9359c55",
@@ -7879,12 +7754,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        165,
-        129
+        170,
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.06041526794433594
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7963,8 +7836,8 @@
     "number": 53,
     "file": "assets/frames/32002_53.png",
     "axis": [
-      104,
-      252
+      125,
+      240
     ],
     "rgba_sha256": "e3053f839379260b7e74cb0ed85630f7589850973273c297837e7a23358641de",
     "indexed_pixels_sha256": "8cc5deff06fc7ee5dbca955c812a227b91b88d6c8e5ade72c5d8c5495e77429e",
@@ -7973,12 +7846,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        104,
-        252
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.036194611340761185
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -7991,8 +7862,8 @@
     "number": 54,
     "file": "assets/frames/32002_54.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "cb7ef855684dd3d9d3b158d8d30eea8123f8e9815e8b122f6dcd8bd7084f8907",
     "indexed_pixels_sha256": "a2f7cfbd7cd262315af600d0279eb06b1837f2b3322d8b1c304a06797d4084be",
@@ -8001,12 +7872,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8019,8 +7888,8 @@
     "number": 55,
     "file": "assets/frames/32002_55.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "7dff93404978ffcd77db86c08853f46a0cb623c23bb23d48f50161d30347be33",
     "indexed_pixels_sha256": "0c3da94b864ec4adf0661fe13510b42462e04f3b2d135841fff5535ab24013f0",
@@ -8029,12 +7898,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8157,8 +8024,8 @@
     "number": 61,
     "file": "assets/frames/32002_61.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "ad28c431ff68b9f997d81325ec3d9dd4a4bfd336964ecd01c7a1b2ec5aef391d",
     "indexed_pixels_sha256": "3c403ba7cf4512a34bffa78b232643d841d440d24889913d6938affb02693b61",
@@ -8167,12 +8034,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8185,8 +8050,8 @@
     "number": 62,
     "file": "assets/frames/32002_62.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "201d4b1d24dce19670fbc28d15030c0c9e028c4df8822c37581dd201b98718d4",
     "indexed_pixels_sha256": "4eb7314f81816230065165ae00cd7e57d63e51bbb963e21ee8bb71362c19441f",
@@ -8195,12 +8060,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8213,8 +8076,8 @@
     "number": 63,
     "file": "assets/frames/32002_63.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "c729d12fe15f89843df952eb5f4047c8c2e9994aa85b4ef8d631c65aef3f4df9",
     "indexed_pixels_sha256": "348c8d5eb93def1aab4c93b62857f97f25fdc298a768c05b9e73d01ee0d5a9bc",
@@ -8223,12 +8086,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8241,8 +8102,8 @@
     "number": 64,
     "file": "assets/frames/32002_64.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "e2f3158b93b85ad05399908365db354a661aa1e1777df8b7bc68ce33cf64932e",
     "indexed_pixels_sha256": "2467d59fe9ecd91c3fc0e8cb4a4c3601bb5c82b370438ddafbdc301e501a3f28",
@@ -8251,12 +8112,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8313,8 +8172,8 @@
     "number": 67,
     "file": "assets/frames/32002_67.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "05adc7cb6b7ae9e4ba578a16f9330a3e34b9100851beceff3515acde72d1e6b6",
     "indexed_pixels_sha256": "25dd1ceccdffb4184d6b688ec60c55f724689161a3bc954a0dc6311b46a96a40",
@@ -8323,12 +8182,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8363,8 +8220,8 @@
     "number": 69,
     "file": "assets/frames/32002_69.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "8445ef50953a451a92104e25a1baad4b53b09a4a4230ca0e8ce0691ff2293982",
     "indexed_pixels_sha256": "e957a619155054d3b56fdf691d002ba11719bcb89ba6f3cd145342a364ee4a10",
@@ -8373,12 +8230,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8391,8 +8246,8 @@
     "number": 70,
     "file": "assets/frames/32002_70.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "71d3d914374f7e0158ac2a0bf155afe5c7610702506b8647dd1db4194414fa58",
     "indexed_pixels_sha256": "60bf8d8c2e1605d97f3df45039df23b940ea3032dcc87cf551f21f0f078597ca",
@@ -8401,12 +8256,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8419,8 +8272,8 @@
     "number": 71,
     "file": "assets/frames/32002_71.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "165e98a56ede7009d1a912e155974e8df94144123d4a66b324bb305af5c7516e",
     "indexed_pixels_sha256": "f377d445165a94e63103e3f836adb1213a6ea6bfcfd551189656586e45dab1a4",
@@ -8429,12 +8282,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8447,8 +8298,8 @@
     "number": 72,
     "file": "assets/frames/32002_72.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "1276907e2bb4da17717c12a135e9b4b2b250088cb4a48c75b68bc9d8c4216310",
     "indexed_pixels_sha256": "81461ed51c6ca68083a69f10f62575f52a950fc8da6db1568dfe69e5b11ff6c7",
@@ -8457,12 +8308,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8475,8 +8324,8 @@
     "number": 73,
     "file": "assets/frames/32002_73.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "bd7af1b4e1fb71bf2703f630718f3be22682ad9e7db98c07de200039df9b70ec",
     "indexed_pixels_sha256": "ebb879b81a2ed9f195fecd6f098d28d59c8ebc881adb24a1ea1006d0c4dcf238",
@@ -8485,12 +8334,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8503,8 +8350,8 @@
     "number": 74,
     "file": "assets/frames/32002_74.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "d0070eb870e072f68ff14cfc34bdd32b515f60960977b222d7c17f0b90bb2f67",
     "indexed_pixels_sha256": "496c973436db667a2691caf83398c401ec871955bd9c09d0ea9ea31c949aae63",
@@ -8513,12 +8360,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8553,8 +8398,8 @@
     "number": 76,
     "file": "assets/frames/32002_76.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "9199cfb292dbbb9877055cc248931b63ee9ff2d2ae27fc493952ac0eb7385889",
     "indexed_pixels_sha256": "4d15ee151c5527279a56b98e195c3c079f84249024137d3bb15b86b201c269c5",
@@ -8563,12 +8408,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8581,8 +8424,8 @@
     "number": 77,
     "file": "assets/frames/32002_77.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "9882ed389e1226d43a245ee0dc02e10290c35a064f321824881a34d32b910c34",
     "indexed_pixels_sha256": "433daddc2779c7af315a2f79844d9f7181dcbd7c56ab7ca088c378b905bbcde8",
@@ -8591,12 +8434,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.009602217935025692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8631,8 +8472,8 @@
     "number": 79,
     "file": "assets/frames/32002_79.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "881ab54cf55e52c96e02f28eed0333d9dfb777f7a0edcbc32b51523481453f1c",
     "indexed_pixels_sha256": "a8c757e0466ac84e5d7735f4d5c1468cc395f47dbeb920caf4b8d4da4fd614fc",
@@ -8641,12 +8482,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.015587566420435905
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8659,8 +8498,8 @@
     "number": 80,
     "file": "assets/frames/32002_80.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "832b09c1255aa1049fcfac6c2e7f381ee020bcbaea1292666e03636eae5ffe07",
     "indexed_pixels_sha256": "db581a4a531dff09a4520dea345ecb862faa635e7744d155f0a880c5661d895b",
@@ -8669,12 +8508,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.0178611408919096
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8700,9 +8537,7 @@
         112,
         153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.13287422060966492
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8715,8 +8550,8 @@
     "number": 82,
     "file": "assets/frames/32002_82.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "a35bf8c3ae30c41e5ea2e7e215e20e257db2fb28e0d819cdf2e05b7e55c181ba",
     "indexed_pixels_sha256": "bd385577734d3eebc47ebf066debdc52269e1510c909f29944d2eeabe202c674",
@@ -8725,12 +8560,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.017702201381325722
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8743,8 +8576,8 @@
     "number": 83,
     "file": "assets/frames/32002_83.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "26d0e666435e943f017ef48aaa4170a05a38a830f7ad04674c2e083cd0780f54",
     "indexed_pixels_sha256": "de04b8f2801f438a7576659eb50a79b2554f03c97f632e3ededbf7493e2b7788",
@@ -8753,12 +8586,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.017868241295218468
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8771,8 +8602,8 @@
     "number": 84,
     "file": "assets/frames/32002_84.png",
     "axis": [
-      111,
-      152
+      112,
+      153
     ],
     "rgba_sha256": "99327f2e547fd825398e9cf096f0e47619204cb570d5c5f0206abf754d8f0e3c",
     "indexed_pixels_sha256": "f54a22e280f79b60b405104ab1bdc0fbc537a4aafb3b31e6567598b10ecc5b1d",
@@ -8781,12 +8612,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        111,
-        152
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.1443013697862625
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8799,8 +8628,8 @@
     "number": 85,
     "file": "assets/frames/32002_85.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "8cb7eed1d00b06b6ed799083196f4e3230f6b6897f1d00a04d05ea42aac4f7b8",
     "indexed_pixels_sha256": "8ef06826c921c685dd2ff8b728487814530c07f903950fd7610986c0223f9d8d",
@@ -8809,12 +8638,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.01800881326198578
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8827,8 +8654,8 @@
     "number": 86,
     "file": "assets/frames/32002_86.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "c0a87e778016696f2079d54637fb16be39ff4e4299639aa7f9770f330ee48ceb",
     "indexed_pixels_sha256": "9fa2cdc000077337e438ccff1253950b1b80b6005a33b107da0e291e55eb7d43",
@@ -8837,12 +8664,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.01902163214981556
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8855,8 +8680,8 @@
     "number": 87,
     "file": "assets/frames/32002_87.png",
     "axis": [
-      110,
-      152
+      112,
+      153
     ],
     "rgba_sha256": "d4d14684c13a743b2478a1fefaa0fb2055753d87efc76ad95e650ed190292b3e",
     "indexed_pixels_sha256": "45a33dd2b3c012dce819c104ffd437f3d1a3ddfe3ef3775a78a3b10774e70680",
@@ -8865,12 +8690,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        110,
-        152
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.11623821407556534
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8883,8 +8706,8 @@
     "number": 88,
     "file": "assets/frames/32002_88.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "ad6fae758875003b6e0a656d90036380b51fad0952680bc80f4c2adedd5c55f3",
     "indexed_pixels_sha256": "c1bdc24c162706f12844eef8ea76015eac06a416fd4e4f34c5ffc377d4b305a4",
@@ -8893,12 +8716,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.017889264971017838
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8912,7 +8733,7 @@
     "file": "assets/frames/32002_89.png",
     "axis": [
       170,
-      140
+      145
     ],
     "rgba_sha256": "a5e202028c001a513d331cea9dfdcfa49e2a3ae5dfff45b2f1aacfa2d04fd48b",
     "indexed_pixels_sha256": "1c0c511913a1a0375b5574e4f4d257b6397de981105ab2e85ab1fc6778f17d9e",
@@ -8922,11 +8743,9 @@
     "alignment": {
       "axis": [
         170,
-        140
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_36",
-      "error": 0.16186894476413727
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8939,8 +8758,8 @@
     "number": 90,
     "file": "assets/frames/32002_90.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "921b2e8f087f7526782837bc56a4a36e10efbb5c8f6f657b2596d35357203a71",
     "indexed_pixels_sha256": "6a0e905808c936e08429e283feeaf64fa21cf636a690a7dea8b6f00c79e32e58",
@@ -8949,12 +8768,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.016432559117674828
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8968,7 +8785,7 @@
     "file": "assets/frames/32002_91.png",
     "axis": [
       170,
-      141
+      145
     ],
     "rgba_sha256": "79adaae2307e93ddecdbb039fff605d3015e7a1535aa84aad577315ee94abf9e",
     "indexed_pixels_sha256": "2d8924bc17b6bbb2ab7448e79efb842965a75883d568da8c24cf058cdbb05725",
@@ -8978,11 +8795,9 @@
     "alignment": {
       "axis": [
         170,
-        141
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_36",
-      "error": 0.10908064246177673
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -8996,7 +8811,7 @@
     "file": "assets/frames/32002_92.png",
     "axis": [
       112,
-      152
+      153
     ],
     "rgba_sha256": "741b2dcc88cae085832df7ecc558e34a683587b2639e646127f56c6118bf8843",
     "indexed_pixels_sha256": "01033680bb78cb5d1fc9882030999916eb53914cb3d800bd7a3f84f5b8bcdd19",
@@ -9006,11 +8821,9 @@
     "alignment": {
       "axis": [
         112,
-        152
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.11829887330532074
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9023,8 +8836,8 @@
     "number": 93,
     "file": "assets/frames/32002_93.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "6823c5618763dc659333ac71ecc85a99bf489d64d056eaaaf0f69313431f7a6e",
     "indexed_pixels_sha256": "76ecc1db01c963b9d5b7b0fff90d57124fb0019a499ac92934f36b55cf0e2fb2",
@@ -9033,12 +8846,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.018560567870736122
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9051,8 +8862,8 @@
     "number": 94,
     "file": "assets/frames/32002_94.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "2695f600fbe30d74356fdb5a5adafcc3ec5067083f78c14f5dae727ea56b4a32",
     "indexed_pixels_sha256": "cb09f3aa7562329adef1ca2dad829e8c64793d8d2c93914828716d7221f06c7e",
@@ -9061,12 +8872,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.01689971424639225
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9080,7 +8889,7 @@
     "file": "assets/frames/32002_95.png",
     "axis": [
       170,
-      141
+      145
     ],
     "rgba_sha256": "5c84bf2c83b8f303d9bda95a7d691ea259867a8c832e6cc8be17c4b2ce827f7e",
     "indexed_pixels_sha256": "3a801ad1aa6becb8b5b816c3ced22e4dc9502f072ee7471f5712ccf0cb569a7a",
@@ -9090,11 +8899,9 @@
     "alignment": {
       "axis": [
         170,
-        141
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_36",
-      "error": 0.08801665902137756
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9108,7 +8915,7 @@
     "file": "assets/frames/32002_96.png",
     "axis": [
       170,
-      141
+      145
     ],
     "rgba_sha256": "ab47406940f21001a38dce772e983acca4664924828733c01aa0bfcccba0fde5",
     "indexed_pixels_sha256": "f7943ccaa1d53f6f38a22bc9a441ff22535ddf920227c9e4bf6d00d104913e45",
@@ -9118,11 +8925,9 @@
     "alignment": {
       "axis": [
         170,
-        141
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_36",
-      "error": 0.04636242985725403
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9136,7 +8941,7 @@
     "file": "assets/frames/32002_97.png",
     "axis": [
       170,
-      141
+      145
     ],
     "rgba_sha256": "895a584dbd549f54f97b795e528293c101464e5d9e836d8ff74864aea794cbff",
     "indexed_pixels_sha256": "d1d78104f69edb8d6823933a691110f1dd6cd2d4d3caf428c092659aad28aecc",
@@ -9146,11 +8951,9 @@
     "alignment": {
       "axis": [
         170,
-        141
+        145
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_36",
-      "error": 0.007778624072670937
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9163,8 +8966,8 @@
     "number": 98,
     "file": "assets/frames/32002_98.png",
     "axis": [
-      111,
-      154
+      112,
+      153
     ],
     "rgba_sha256": "5a80c0f00407bd9749f989bd89649e345a383f7022f344bf5376f9c9c8e8604b",
     "indexed_pixels_sha256": "2ded1d1163bbd2f6679bc65fb1f46ed35ae5416480375e1478187ca15f33c551",
@@ -9173,12 +8976,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        111,
-        154
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.10299737006425858
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9191,8 +8992,8 @@
     "number": 99,
     "file": "assets/frames/32002_99.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "1942b41536eeee925a56e38b1abcdfbb523dd43d302afc2d3c06c45f2bd38835",
     "indexed_pixels_sha256": "8124563026a8bbe586872baf8a166041a7e31da84a62cb76852250977f17b797",
@@ -9201,12 +9002,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.020120196044445038
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9219,7 +9018,7 @@
     "number": 100,
     "file": "assets/frames/32002_100.png",
     "axis": [
-      107,
+      112,
       153
     ],
     "rgba_sha256": "50d81c02079d5f7f6189657271b01cf2507eec7d90f9b22b5412c93db0c8c67a",
@@ -9229,12 +9028,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        107,
+        112,
         153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.12803247570991516
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9247,8 +9044,8 @@
     "number": 101,
     "file": "assets/frames/32002_101.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "f32067552ced172fa3b21fd5ac79b24cb52873ffff718472a711d6abc3703cf5",
     "indexed_pixels_sha256": "8e25d024fd2f49d621a4554e2eda7fa599138135f43a446c31a503b6817ec59c",
@@ -9257,12 +9054,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.02310904487967491
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9275,8 +9070,8 @@
     "number": 102,
     "file": "assets/frames/32002_102.png",
     "axis": [
-      102,
-      138
+      112,
+      153
     ],
     "rgba_sha256": "c000486972468858c1952aab32f87a590d2dd24eedce8a973d05b0fb9c145a04",
     "indexed_pixels_sha256": "107af45c2f1f2aea406f597583b61bc90f3d08bb8f6b2ab863142954c6792c86",
@@ -9285,12 +9080,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        102,
-        138
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.1655554473400116
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9303,8 +9096,8 @@
     "number": 103,
     "file": "assets/frames/32002_103.png",
     "axis": [
-      98,
-      134
+      112,
+      153
     ],
     "rgba_sha256": "45b1499952d857475a00cae91b111bf677baf91db0caea745ae4c97fff72a14f",
     "indexed_pixels_sha256": "18eda35c7d284e3de728ec0460d6ee754461045f902fcfad682041e810c430bc",
@@ -9313,12 +9106,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        98,
-        134
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.16374124586582184
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9331,8 +9122,8 @@
     "number": 104,
     "file": "assets/frames/32002_104.png",
     "axis": [
-      103,
-      132
+      112,
+      153
     ],
     "rgba_sha256": "492e39cc9863cf0ca15efccab0a9fa59104a540cc459181c953595979322171c",
     "indexed_pixels_sha256": "fc879689d4a0d855ec74cd5ddf9a306b7d0b6d6e41e5d560b6415cd142054f22",
@@ -9341,12 +9132,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        103,
-        132
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.15719537436962128
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9359,8 +9148,8 @@
     "number": 105,
     "file": "assets/frames/32002_105.png",
     "axis": [
-      115,
-      195
+      112,
+      153
     ],
     "rgba_sha256": "144669bda182b6cc5a3d66a6c96ea7d85acf1c857d5f8d0c62abe6b0ecf0ef2b",
     "indexed_pixels_sha256": "fdc22ec38ab1855d3e59ff7a6742dbc724857cc8d1254991dc667bd10e547f0b",
@@ -9369,11 +9158,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        115,
-        195
+        112,
+        153
       ],
-      "method": "original frame ground fallback",
-      "error": 0.1708613783121109
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9386,8 +9174,8 @@
     "number": 106,
     "file": "assets/frames/32002_106.png",
     "axis": [
-      103,
-      132
+      112,
+      153
     ],
     "rgba_sha256": "b0b5d8791cdb7199c573775c63203af5ce7c32b88e9ae084da4b87d920aa7d96",
     "indexed_pixels_sha256": "bbbf1f92dbcd0ad285f1223fd8807862797e2b576a7f8e310b79ba9c02eaad24",
@@ -9396,12 +9184,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        103,
-        132
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.15889890491962433
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9414,8 +9200,8 @@
     "number": 107,
     "file": "assets/frames/32002_107.png",
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
     "rgba_sha256": "ab9484a15a0d20e092189d78c0c0f230c0eb9947996fc9bd3761a7045eeaab41",
     "indexed_pixels_sha256": "606f31e813a8e190973f932709dc2c3c15a29a2b39cc9b3457cb5a24acce4487",
@@ -9424,12 +9210,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        239
+        125,
+        240
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.026911970227956772
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9442,8 +9226,8 @@
     "number": 108,
     "file": "assets/frames/32002_108.png",
     "axis": [
-      109,
-      152
+      112,
+      153
     ],
     "rgba_sha256": "e88bd063fd7bf8d81fc25a7a091e55d80423461da5cad35867c0e4523b8a022c",
     "indexed_pixels_sha256": "c0aa03d5e9854245277b71f3a1aa3c39aaf01151889a25b6c28345cf005961c8",
@@ -9452,12 +9236,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        109,
-        152
+        112,
+        153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.12250915169715881
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -9483,9 +9265,7 @@
         112,
         153
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill02_15",
-      "error": 0.11650527268648148
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/DevaPath/DevaPath.plist",
@@ -12214,8 +11994,8 @@
     "number": 0,
     "file": "assets/frames/32004_0.png",
     "axis": [
-      392,
-      267
+      315,
+      291
     ],
     "rgba_sha256": "9f5ec723d73e51b2676db609054aabccff1194fb9bab49b7cf80a51022915e1b",
     "indexed_pixels_sha256": "a9ba034c3e40581a72f3f9e5c480e3c1d5a3962e2fd35b7d992a18b933d7be50",
@@ -12224,12 +12004,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        392,
-        267
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.06015007570385933
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12242,8 +12020,8 @@
     "number": 1,
     "file": "assets/frames/32004_1.png",
     "axis": [
-      348,
-      438
+      315,
+      291
     ],
     "rgba_sha256": "5df340d30c4e861e46b1e698ce32211e71a3e9f7fe1197b8a24bfbaa6562b30f",
     "indexed_pixels_sha256": "805257eb7e42dafd952ef63f04908ef9975a3864c4edc23543a110785c979169",
@@ -12252,12 +12030,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        348,
-        438
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.08427444845438004
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12283,9 +12059,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.046021148562431335
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12311,9 +12085,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.010304036550223827
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12339,9 +12111,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.010304036550223827
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12367,9 +12137,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.010304036550223827
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12395,9 +12163,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.018451785668730736
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12423,9 +12189,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.010290752165019512
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12451,9 +12215,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.01952180452644825
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12479,9 +12241,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.023423703387379646
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12494,8 +12254,8 @@
     "number": 10,
     "file": "assets/frames/32004_10.png",
     "axis": [
-      314,
-      288
+      315,
+      291
     ],
     "rgba_sha256": "aa28b5bd94fe731fc43b348ea7ff0628780eb7dde4d3d143b39897c62169966a",
     "indexed_pixels_sha256": "9c92450bc1f9de3780462d544d387d414afc254efe53c2eba763a6965e975cc0",
@@ -12504,12 +12264,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        314,
-        288
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Unframe_01",
-      "error": 0.03479558974504471
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12522,8 +12280,8 @@
     "number": 11,
     "file": "assets/frames/32004_11.png",
     "axis": [
-      371,
-      235
+      315,
+      291
     ],
     "rgba_sha256": "0b96f8788d03a6f0bb932c3154db1baacb35e663670b3fd7b1506a770d24970e",
     "indexed_pixels_sha256": "7214219122695cffa44cb0b2c4bef5bd92f428c08e94322846c8a2015b31fabb",
@@ -12532,12 +12290,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        371,
-        235
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.031707923859357834
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12550,8 +12306,8 @@
     "number": 12,
     "file": "assets/frames/32004_12.png",
     "axis": [
-      314,
-      259
+      315,
+      291
     ],
     "rgba_sha256": "f92e8f9a96ed21f9f2c65eeec1fe0acb62e04c2764fecc3333cd283e6992229a",
     "indexed_pixels_sha256": "ea214f053a2b99057d8f8c35a8db336a4287c40a9f0b1f88b57135bf70e226a5",
@@ -12560,12 +12316,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        314,
-        259
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_01",
-      "error": 0.03656195104122162
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12578,8 +12332,8 @@
     "number": 13,
     "file": "assets/frames/32004_13.png",
     "axis": [
-      392,
-      382
+      315,
+      291
     ],
     "rgba_sha256": "c50e1a800f1ccb411ac388cb4f5adcf5198b84417703c21968ee9c4ef957dc1e",
     "indexed_pixels_sha256": "8d321224f40434aec3379e610ef9010d73ec7f82ee6a69150c5333c464bea415",
@@ -12588,12 +12342,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        392,
-        382
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.047513604164123535
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12606,8 +12358,8 @@
     "number": 14,
     "file": "assets/frames/32004_14.png",
     "axis": [
-      412,
-      298
+      315,
+      291
     ],
     "rgba_sha256": "6b4f1b847becf79b6dea0d46b784b46926c4f128736c51512db100f6fa2a14a8",
     "indexed_pixels_sha256": "56b6a43dae1aa122d7f5f9c2319c0dd0c17fd275ad4963b574bf2aaa5e2d497e",
@@ -12616,12 +12368,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        412,
-        298
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.04003307968378067
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12634,8 +12384,8 @@
     "number": 15,
     "file": "assets/frames/32004_15.png",
     "axis": [
-      392,
-      248
+      315,
+      291
     ],
     "rgba_sha256": "39a0403111e281694216f0c9d5a1c14f63399256e03aaec08d9d3d179f77da05",
     "indexed_pixels_sha256": "dd1e2011293148f6876f16a5478f4e7a821b35fc2f710e023738199ba4508d7d",
@@ -12644,12 +12394,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        392,
-        248
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.044157400727272034
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12662,8 +12410,8 @@
     "number": 16,
     "file": "assets/frames/32004_16.png",
     "axis": [
-      361,
-      299
+      315,
+      291
     ],
     "rgba_sha256": "cf561b750790511fa0a8623f6e31019f2dfaa79c1e7cc537b7b8cebc33bdb091",
     "indexed_pixels_sha256": "0999a18f500f1a0a08ce0a23444753deec09cedb200f5a1d2914935e2ff45af6",
@@ -12672,12 +12420,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        361,
-        299
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_29",
-      "error": 0.06187420338392258
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12690,8 +12436,8 @@
     "number": 17,
     "file": "assets/frames/32004_17.png",
     "axis": [
-      348,
-      459
+      315,
+      291
     ],
     "rgba_sha256": "0ea9ed8290a5950175dac72505e32cc650051404cceb079a596a949997c35320",
     "indexed_pixels_sha256": "8303f20b565f77c3d33568a0d1a139c456ccbd684bcb0e3376a29e72b2d97e16",
@@ -12700,12 +12446,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        348,
-        459
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.051013682037591934
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12718,8 +12462,8 @@
     "number": 18,
     "file": "assets/frames/32004_18.png",
     "axis": [
-      238,
-      198
+      315,
+      291
     ],
     "rgba_sha256": "1450740932ebcb0c4f52e1d52e3d31f035dee89cb937e133a05eb418b95f4193",
     "indexed_pixels_sha256": "1a1328e4e78c21dee9b69ba3624786b1277a562644ded8fe813bf7fded198baf",
@@ -12728,12 +12472,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        238,
-        198
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.05169930309057236
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12746,8 +12488,8 @@
     "number": 19,
     "file": "assets/frames/32004_19.png",
     "axis": [
-      219,
-      181
+      315,
+      291
     ],
     "rgba_sha256": "13315bb4290e5e65efeff7b388fc4c3c66429a23d35c46bbada7868f6657dcba",
     "indexed_pixels_sha256": "ada3bfe4ad01ddc8b27602666ce424ac70d8e1bfd8fff009f353517cb591d3a7",
@@ -12756,12 +12498,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        219,
-        181
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill03_55",
-      "error": 0.04632037132978439
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12787,9 +12527,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.030173471197485924
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12815,9 +12553,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.019740939140319824
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12830,8 +12566,8 @@
     "number": 22,
     "file": "assets/frames/32004_22.png",
     "axis": [
-      255,
-      158
+      315,
+      291
     ],
     "rgba_sha256": "073e18dd551fea3490bffbe81268f9a7c261ceee40fcb7797d97e33aab1f6e63",
     "indexed_pixels_sha256": "932212b6c19a6c3fcfe1bce0c928c127d99286029f615798b98c153a2cb6c6e9",
@@ -12840,12 +12576,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        255,
-        158
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.04422479867935181
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12871,9 +12605,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.01968647539615631
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12886,8 +12618,8 @@
     "number": 24,
     "file": "assets/frames/32004_24.png",
     "axis": [
-      246,
-      169
+      315,
+      291
     ],
     "rgba_sha256": "7d4db5cbcbcd4969b532f25f4fd56ed38733ccf6eb14621f5d804afc4d6089b8",
     "indexed_pixels_sha256": "7fef2e08f8543035b3cc3615fa171c555092fd70c415f0df9489e86e45a78231",
@@ -12896,12 +12628,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        246,
-        169
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.04446331784129143
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12927,9 +12657,7 @@
         315,
         291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.02978900447487831
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12942,8 +12670,8 @@
     "number": 26,
     "file": "assets/frames/32004_26.png",
     "axis": [
-      393,
-      123
+      315,
+      291
     ],
     "rgba_sha256": "5ea0545f43b5764e27bd69575e70cbcf06a73ee21fb42a67f76280b108eb0df9",
     "indexed_pixels_sha256": "2fa22e142ace1ee741ec0a2a1642a68c5652d1c8c4a5d92b67c628d7e5bc6ff9",
@@ -12952,12 +12680,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        393,
-        123
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_03",
-      "error": 0.05083901807665825
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12970,8 +12696,8 @@
     "number": 27,
     "file": "assets/frames/32004_27.png",
     "axis": [
-      394,
-      301
+      315,
+      291
     ],
     "rgba_sha256": "d4baa89e8be7b5178ff00fde7133846ec2eb11d395c09fe88cece8e26908c93d",
     "indexed_pixels_sha256": "ef5774d466c4e36dc97b1866c9d07fb67591c723122ad96ab782548a73a5be8e",
@@ -12980,12 +12706,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        394,
-        301
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_29",
-      "error": 0.05086330696940422
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -12998,8 +12722,8 @@
     "number": 28,
     "file": "assets/frames/32004_28.png",
     "axis": [
-      219,
-      383
+      315,
+      291
     ],
     "rgba_sha256": "7fb9c19fb93c18af9fc8d0c99bcf3d8bf1359b9fd310f894676b30f7612e4e75",
     "indexed_pixels_sha256": "f48e82f39cdabac91745d8b87aacaca089dd0b03ad237921985a5fa4331d432a",
@@ -13008,12 +12732,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        219,
-        383
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill04_29",
-      "error": 0.05665407329797745
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13026,8 +12748,8 @@
     "number": 29,
     "file": "assets/frames/32004_29.png",
     "axis": [
-      219,
-      362
+      315,
+      291
     ],
     "rgba_sha256": "ebe7bd9df74a046f2f96c8f05edbbf1142054334bdfc6dbded807e9c5d98104c",
     "indexed_pixels_sha256": "c2628766742fd81c95613e3e897e51ac2a0f6daa02aeceae20389cf3b2746544",
@@ -13036,12 +12758,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        219,
-        362
+        315,
+        291
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.05099378153681755
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13054,8 +12774,8 @@
     "number": 30,
     "file": "assets/frames/32004_30.png",
     "axis": [
-      265,
-      254
+      225,
+      188
     ],
     "rgba_sha256": "00ec1983e563d7bed096a1b1fc4209b2544744bfa898fc536fe4b54ee841693c",
     "indexed_pixels_sha256": "cc219536a9e5303d7a4f1bd20b00b9c433f3f7a471385962f9e338b382dc1571",
@@ -13064,12 +12784,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        265,
-        254
+        225,
+        188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.05341354385018349
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13082,8 +12800,8 @@
     "number": 31,
     "file": "assets/frames/32004_31.png",
     "axis": [
-      241,
-      270
+      225,
+      188
     ],
     "rgba_sha256": "97e24657218203d4bedc3e36b37cd09fc1e10922255889b06ac3184c9618a3fd",
     "indexed_pixels_sha256": "5ef21cc09b45861bd622bc0d8d833c8eed84606a160ef13a9275f20846e42ea0",
@@ -13092,12 +12810,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        241,
-        270
+        225,
+        188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.08715404570102692
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13110,8 +12826,8 @@
     "number": 32,
     "file": "assets/frames/32004_32.png",
     "axis": [
-      250,
-      277
+      225,
+      188
     ],
     "rgba_sha256": "0588ab9a7eb0261cbd9119bf47a8c1b26688c37398bf64fec721fbe89f15781f",
     "indexed_pixels_sha256": "6fe61cd2abf6b956de634ecbaab90682f12b83fa39ca9c8a351dce787630af7e",
@@ -13120,12 +12836,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        250,
-        277
+        225,
+        188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.08531472086906433
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13138,8 +12852,8 @@
     "number": 33,
     "file": "assets/frames/32004_33.png",
     "axis": [
-      193,
-      157
+      225,
+      188
     ],
     "rgba_sha256": "652dbeb74a4d593edc6fc74de959d9be3f27b1cfd44b4548b390baa9126c5e3a",
     "indexed_pixels_sha256": "3d3d41186cfb7e7442db729d389aeb0b25e852371a7d7b2868c501e92dc3c359",
@@ -13148,12 +12862,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        193,
-        157
+        225,
+        188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_02",
-      "error": 0.06908738613128662
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13166,8 +12878,8 @@
     "number": 34,
     "file": "assets/frames/32004_34.png",
     "axis": [
-      214,
-      155
+      225,
+      188
     ],
     "rgba_sha256": "3713080878fca5568fbfbcfb00f51fddfa80be9c0baa1923dbbc02d66534f8d9",
     "indexed_pixels_sha256": "64527bba5b5b1f42c0b10d729ed1157146a0bfb313109c8593b9bd030fff095e",
@@ -13176,12 +12888,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        214,
-        155
+        225,
+        188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.045714039355516434
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13207,9 +12917,7 @@
         225,
         188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.03335016965866089
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13235,9 +12943,7 @@
         225,
         188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.014156324788928032
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -13263,9 +12969,7 @@
         225,
         188
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_63",
-      "error": 0.011340540833771229
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14032,8 +13736,8 @@
     "number": 67,
     "file": "assets/frames/32004_67.png",
     "axis": [
-      121,
-      93
+      125,
+      120
     ],
     "rgba_sha256": "0cab83f6c6587f496224ce3e53571644c04a77f7989211d441e0537758d03298",
     "indexed_pixels_sha256": "eab933b08daf2532e91e6c9f3cb2cfeb965667373f98e7249e3907bbf461384e",
@@ -14042,12 +13746,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        121,
-        93
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06860701739788055
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14060,8 +13762,8 @@
     "number": 68,
     "file": "assets/frames/32004_68.png",
     "axis": [
-      119,
-      90
+      125,
+      120
     ],
     "rgba_sha256": "ff2c100ace8781540b0da311528247fb2ca6a52fc9f14d70f84054229ea48271",
     "indexed_pixels_sha256": "33abcc3ec1f0c109ea0f07118bc8c12d5e6cd820dd3fe1c05bc345d8bcc57634",
@@ -14070,12 +13772,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        119,
-        90
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.06898894160985947
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14088,8 +13788,8 @@
     "number": 69,
     "file": "assets/frames/32004_69.png",
     "axis": [
-      122,
-      93
+      125,
+      120
     ],
     "rgba_sha256": "192ef0ccd3e3e73827fe26716b96a6c0e0928cefc4ac6074c61c456e5c2779b3",
     "indexed_pixels_sha256": "cbe43227cb8f967ed10e1c62269a8268cd72cc2f81d21c886bf42153b8a158fd",
@@ -14098,12 +13798,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        93
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.10171306878328323
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14116,8 +13814,8 @@
     "number": 70,
     "file": "assets/frames/32004_70.png",
     "axis": [
-      119,
-      88
+      125,
+      120
     ],
     "rgba_sha256": "8c6c24abab18c4e5a0ece6dbb9de1d9f3a3bc5fb782a77fadecd449188968e2a",
     "indexed_pixels_sha256": "39e14a49f366527bac009832e11cecee6903b6d900dd1b342aa39ba3f8029db8",
@@ -14126,12 +13824,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        119,
-        88
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.10146207362413406
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14144,8 +13840,8 @@
     "number": 71,
     "file": "assets/frames/32004_71.png",
     "axis": [
-      122,
-      94
+      125,
+      120
     ],
     "rgba_sha256": "1fb20390f4ac1c14636a3438263799a1c1babce9f7f4bfb761dfa8756333a4be",
     "indexed_pixels_sha256": "132cb1bb6d7e2821910f8ab2b3f369da30c58dc48fcaac64ed31d1d411ba851c",
@@ -14154,12 +13850,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        122,
-        94
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_04",
-      "error": 0.1143404170870781
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14173,7 +13867,7 @@
     "file": "assets/frames/32004_72.png",
     "axis": [
       125,
-      92
+      120
     ],
     "rgba_sha256": "3c5336063d8777e3c14935f7c0f66860522b5e45d77b0ea787bba680297a1455",
     "indexed_pixels_sha256": "308e51137648b07b0d6884a1b7aead6ae42d9744a4527b13a24dd0655b9a3b50",
@@ -14183,11 +13877,9 @@
     "alignment": {
       "axis": [
         125,
-        92
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Skill05_02",
-      "error": 0.11313984543085098
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14200,8 +13892,8 @@
     "number": 73,
     "file": "assets/frames/32004_73.png",
     "axis": [
-      134,
-      117
+      125,
+      120
     ],
     "rgba_sha256": "84ce9dc86fe8d71f96babaeba1b5195b2a46b550fb3b421343f8495fb6bc1050",
     "indexed_pixels_sha256": "b41fd99c4afb6ff80e6ff68717312c077f42421e61d86bed20c4a5d376fd20d4",
@@ -14210,12 +13902,10 @@
     "ai_generated": false,
     "alignment": {
       "axis": [
-        134,
-        117
+        125,
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_Hurt_02",
-      "error": 0.1265082210302353
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14229,7 +13919,7 @@
     "file": "assets/frames/32004_74.png",
     "axis": [
       125,
-      69
+      120
     ],
     "rgba_sha256": "59199984549c89a31b48e554d18c5e8c320233e2a770dc8e9a03f64c40162aed",
     "indexed_pixels_sha256": "6c669db3ea59607d35c6e4c8639ff4fb650a424d4a7daa17d7f81728086b1d4d",
@@ -14239,11 +13929,9 @@
     "alignment": {
       "axis": [
         125,
-        69
+        120
       ],
-      "method": "masked original body match",
-      "reference": "Pain_KnockDown_03",
-      "error": 0.11937285214662552
+      "method": "reviewed shared animation canvas"
     },
     "kind": "body_with_effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Skill/Pain_Skill.plist",
@@ -14634,8 +14322,8 @@
       202
     ],
     "rgba_sha256": "f0016b2c45ea483a5881045a5b3c7344da352dfa72c2edf27865dfb09ee62fb7",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "4cf80ad6381be27c45a0a720ded7b5ffd479517c38a03ba614e7aa716fe2cd5b",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14644,7 +14332,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_02",
@@ -14656,8 +14345,8 @@
       202
     ],
     "rgba_sha256": "a5b784a9da531be4ed7164abcc672703700c52d9e5d219137fd832e97adc13a5",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "325c339cd91dc8cc73c7103d34241f3201a88d0f9d148d651399a8282a202759",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14666,7 +14355,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_03",
@@ -14678,8 +14368,8 @@
       202
     ],
     "rgba_sha256": "4f9971c66a86f07748cd2f74a285dcc52fd81c85cfcaa0269ef230bf13d905e1",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "681c2a41fd4d1d045fca4c4db70d80fdc7c95e938a9d4afe4f283117b04c84b3",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14688,7 +14378,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_04",
@@ -14700,8 +14391,8 @@
       202
     ],
     "rgba_sha256": "1f92b750acd6d55e22ace625a1a7717e73f8f53f19c4d9e69d2dd25a92b1921b",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "343ce0a9ada4c5ee639aa321a382c214ac20025e382ddd48b50ff6d7be0846f9",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14710,7 +14401,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_05",
@@ -14722,8 +14414,8 @@
       202
     ],
     "rgba_sha256": "dc48fd21fe99bbd9e7517535c324a652d5761740fb4335984dd7d410943820a5",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "eef1fbb9db080cf3929f6ab9a2b1cc8040411eebe00ec762f9ecc99fa001e4e0",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14732,7 +14424,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_06",
@@ -14744,8 +14437,8 @@
       202
     ],
     "rgba_sha256": "719b2e3ca6d3ce74f65732e045b7a4c84cad435ccc05ed0ddc779807426dbfc8",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "ceaedc2a54b7740512a6de937c7193eeed52401628f2d73fdc78f585013fbcda",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14754,7 +14447,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_07",
@@ -14766,8 +14460,8 @@
       202
     ],
     "rgba_sha256": "087d885cf9b03962f58709e8f1d3a40a84b446257607a0409b670cc10a5f468a",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "8588b19e73b214b412fba07b37ee70373f321bf8fbe56b000bf66496914a3e19",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14776,7 +14470,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_08",
@@ -14788,8 +14483,8 @@
       202
     ],
     "rgba_sha256": "b22a912969bff3ff88b9afcee1bcb700d8def77fd83e62c870575ff192ea2200",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "38860b7ff32026de8440fe1298a9d3118246d7d43c1a2e8ccd377a330a54726d",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14798,7 +14493,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_08.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginRibut_09",
@@ -14810,8 +14506,8 @@
       202
     ],
     "rgba_sha256": "0b23a629344758258b2902c755b171a30c926e99e65f66c7e30df59128bcc219",
-    "indexed_pixels_sha256": "a95fd2a0496a923282eed372c81df6601aa95fa7c3c33e88f539e3b67df9cee5",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "47e1abe3054484eccee92ffba86dd259740a257b88205b9cb87cc4834c3369de",
+    "palette_sha256": "78b75f1242a5615cafa4a2116f2057b82df7929e6d0edaae1e89c4c4e0fddcc7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14820,7 +14516,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginRibut_09.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_01",
@@ -14832,8 +14529,8 @@
       160
     ],
     "rgba_sha256": "81f8847827a56fbee94060107868f03350128345c43a17f3097f42119c56ae7d",
-    "indexed_pixels_sha256": "fd18eef12e40d5e57f5e04047c956952ea0435ee891efdf3d5682bbdc5548247",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "258082e41b2074ac613acdf48df8f4b9e735dbe14feb44f51485bd143a89296e",
+    "palette_sha256": "9982a415570ccbf02a7c110df2874debc1a62ceef89024af38966f19dacdf32b",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14842,7 +14539,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_02",
@@ -14854,8 +14552,8 @@
       160
     ],
     "rgba_sha256": "82a47fbf823563a9b399c846eafc66c47dc412f52221302cbb22847d39e02d43",
-    "indexed_pixels_sha256": "f1a8f554c93823dce44ea4f9e5f8d821f0e6e16fbab125480862fbd65450dd88",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "24dd07e84ed584dbbdfd3ef6d5fc8bbdd6194170aa6cc808421259caf3e236f1",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14864,7 +14562,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_03",
@@ -14876,8 +14575,8 @@
       160
     ],
     "rgba_sha256": "ebbe17e474640f040b07ff8d389697f4fbe94a43676e779575a7c868e51f9190",
-    "indexed_pixels_sha256": "31f0e631e449cd4f72506c102675eb4777cf54edfb7b9323283ff75cdd478326",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "4a847c57b0cf2a36f65dd979d4507602f6b916f25107e917412a42f8531f31cf",
+    "palette_sha256": "1f4cb66a4ec95c7d6eb65b91c269b98c03cda0cc9a630eae0aa3bac890f25120",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14886,7 +14585,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_04",
@@ -14898,8 +14598,8 @@
       160
     ],
     "rgba_sha256": "bab5ef817d1cb43c3daba53a2611b33b1cb9aa7f4294e513bb77535965928e40",
-    "indexed_pixels_sha256": "51a4f63397c58961172f486b853f39a1b06942c799eca5c04fc9090f923c2a99",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "ebdc43bfcc83e159e619569bb6428d39c9ad29221667bd39866c0f63908d3eed",
+    "palette_sha256": "78b64a6e21a62d23003f6319644a8581208bb22d4f724c2140bf596521759e29",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14908,7 +14608,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_05",
@@ -14920,8 +14621,8 @@
       160
     ],
     "rgba_sha256": "18cc930d7cebfa0a5be0e32922cee91978807271ead4f358b1e345554e2fa30b",
-    "indexed_pixels_sha256": "2430b181e5e4d2ae51f18a98d6471fe0f6b24a92e6135d39139df442c5a45e8c",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "5ab76f5495a2cee168e82402e5be19f3b5abf1f6c9e51fadedd36d99b05cac65",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14930,7 +14631,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_06",
@@ -14942,8 +14644,8 @@
       160
     ],
     "rgba_sha256": "99196ee74e9e11dcfd5bd73d96759cd742c3abb757fecb9a2aacafa6b3f9beb5",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "f398fba21f748a535aa72f9182b3282b2697764f6daf9e63d3ddc7775d6ad749",
+    "palette_sha256": "40d11a21397e0975ec3e345f8460a7f48fd04b0d04a31c91ec65419831287110",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14952,7 +14654,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow2_07",
@@ -14964,8 +14667,8 @@
       160
     ],
     "rgba_sha256": "9bfaeab3dabde8e9763d851afa7515a923f6409edf57e7791ec443419ca14d11",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "38b25821e066364cd2cbd6b672400bae4630028b5fec0a2cfa88ee245e548527",
+    "palette_sha256": "b25ba77a3503b7bd763a8710a9ddea8017917e3e3c8a0d3bd20ecefad29a7507",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14974,7 +14677,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow2_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_01",
@@ -14986,8 +14690,8 @@
       160
     ],
     "rgba_sha256": "c5ab7897ff251b2c7c60fc8f7486d199c81bafc57204d667efca4e2f557b9ef7",
-    "indexed_pixels_sha256": "c33b1562e06728a74c5c720fcc9306920833a0ea2b0c23461552a10ab3698419",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "43989b716a75ddb0fa42f12226dbc14944e382be6badfe3b99bf1b2c7ff7a734",
+    "palette_sha256": "15aeb083aade0a05d2e86ec73d5192f1c1b9aac3ee931d5fbd795c221078e9cd",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -14996,7 +14700,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_02",
@@ -15008,8 +14713,8 @@
       160
     ],
     "rgba_sha256": "b8eb062c67453865eafa58157d715e2d50039e27305e4d77c3bddc522c200985",
-    "indexed_pixels_sha256": "4b6c9d0632ec8880da7989f238e9f880729ffc2ab8bc5c92705be660a38aed3c",
-    "palette_sha256": "0f3ff8f5498cf127c67c5efca70d8d7b2c7237f682f1fafacb4dfee47b315b6f",
+    "indexed_pixels_sha256": "8a2296d7b88966ed91c24fab3f2f38d53f0b322d80d7d783b6d580c45ee50305",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15018,7 +14723,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_03",
@@ -15030,8 +14736,8 @@
       160
     ],
     "rgba_sha256": "42dcd54ccdf8b3f8e41ed5771af2c57123dee91c18e80ad08b8f05b06e066769",
-    "indexed_pixels_sha256": "b4863d12c3c899176086778bb83129852ef597457d91e227a8775acf2dcd187f",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "8fda1b11c3537a4a08787716d1ab8b2eab620ca9916c631e1a597f66c17458c6",
+    "palette_sha256": "0469107778bebaff59b93ef9bf2cabd3b2b71335f060a204356a68cf51fabde7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15040,7 +14746,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_04",
@@ -15052,8 +14759,8 @@
       160
     ],
     "rgba_sha256": "9973cf7c2dd1bf17d8d111322aba00f115e1979c05568b28cb568559ae16806b",
-    "indexed_pixels_sha256": "ab0f62ae77165e4325665822f24a3503bc7808d2bd4470717e4f4e12a8a04cee",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "cad3aa8c7e36658699c6380b1e67d175cecd18e63aade6aa326ccb0a71f47fc0",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15062,7 +14769,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_05",
@@ -15074,8 +14782,8 @@
       160
     ],
     "rgba_sha256": "f14f1637c9df49590e737d0810a1d79b22a7dcf75f2e0dae9bd1d3f7371f7c5d",
-    "indexed_pixels_sha256": "971ccc266a9eb58cae36d11a0579efb0ce94c769b11e3866856442c7b8e4f6a4",
-    "palette_sha256": "4ce9ab263c6248af66b20bdcf938fa75c66e99a089f5c0cbd6bc8b31fdfdb808",
+    "indexed_pixels_sha256": "b6d1ebc925f1c70f21ea87660e9047f1daebadccac4882fae7deffe48fbdca63",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15084,7 +14792,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_06",
@@ -15096,8 +14805,8 @@
       160
     ],
     "rgba_sha256": "3935f0076755761fa50a79ae7cfbff6e57ab36d144481b3ce4141dd21f481704",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "ece49fc5dc3ad9cc635afe0dee8947986982690f570669f74c76ccf33ecac928",
+    "palette_sha256": "2874ad7dd8d8ecb3459a85dfdea9bde2fbaec4197c0d6a43a8e7fd80af7d6bcc",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15106,7 +14815,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWow_07",
@@ -15118,8 +14828,8 @@
       160
     ],
     "rgba_sha256": "4b503e37158721171777a7d61add814fe7bc51bf1981a6868794cbbd5f5fff34",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "8cacd52d6a52a5332951aa8ee9ed71b737e56e40075191703d3a7e59847d0afe",
+    "palette_sha256": "e1ded84a67cf5f2c14326c33fb1b746694879230bf4f30b0fde984c2d251c941",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15128,7 +14838,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWow_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_01",
@@ -15140,8 +14851,8 @@
       160
     ],
     "rgba_sha256": "c5ab7897ff251b2c7c60fc8f7486d199c81bafc57204d667efca4e2f557b9ef7",
-    "indexed_pixels_sha256": "c33b1562e06728a74c5c720fcc9306920833a0ea2b0c23461552a10ab3698419",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "43989b716a75ddb0fa42f12226dbc14944e382be6badfe3b99bf1b2c7ff7a734",
+    "palette_sha256": "15aeb083aade0a05d2e86ec73d5192f1c1b9aac3ee931d5fbd795c221078e9cd",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15150,7 +14861,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_02",
@@ -15162,8 +14874,8 @@
       160
     ],
     "rgba_sha256": "b8eb062c67453865eafa58157d715e2d50039e27305e4d77c3bddc522c200985",
-    "indexed_pixels_sha256": "4b6c9d0632ec8880da7989f238e9f880729ffc2ab8bc5c92705be660a38aed3c",
-    "palette_sha256": "0f3ff8f5498cf127c67c5efca70d8d7b2c7237f682f1fafacb4dfee47b315b6f",
+    "indexed_pixels_sha256": "8a2296d7b88966ed91c24fab3f2f38d53f0b322d80d7d783b6d580c45ee50305",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15172,7 +14884,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_03",
@@ -15184,8 +14897,8 @@
       160
     ],
     "rgba_sha256": "42dcd54ccdf8b3f8e41ed5771af2c57123dee91c18e80ad08b8f05b06e066769",
-    "indexed_pixels_sha256": "b4863d12c3c899176086778bb83129852ef597457d91e227a8775acf2dcd187f",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "8fda1b11c3537a4a08787716d1ab8b2eab620ca9916c631e1a597f66c17458c6",
+    "palette_sha256": "0469107778bebaff59b93ef9bf2cabd3b2b71335f060a204356a68cf51fabde7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15194,7 +14907,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_04",
@@ -15206,8 +14920,8 @@
       160
     ],
     "rgba_sha256": "9973cf7c2dd1bf17d8d111322aba00f115e1979c05568b28cb568559ae16806b",
-    "indexed_pixels_sha256": "ab0f62ae77165e4325665822f24a3503bc7808d2bd4470717e4f4e12a8a04cee",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "cad3aa8c7e36658699c6380b1e67d175cecd18e63aade6aa326ccb0a71f47fc0",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15216,7 +14930,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_05",
@@ -15228,8 +14943,8 @@
       160
     ],
     "rgba_sha256": "f14f1637c9df49590e737d0810a1d79b22a7dcf75f2e0dae9bd1d3f7371f7c5d",
-    "indexed_pixels_sha256": "971ccc266a9eb58cae36d11a0579efb0ce94c769b11e3866856442c7b8e4f6a4",
-    "palette_sha256": "4ce9ab263c6248af66b20bdcf938fa75c66e99a089f5c0cbd6bc8b31fdfdb808",
+    "indexed_pixels_sha256": "b6d1ebc925f1c70f21ea87660e9047f1daebadccac4882fae7deffe48fbdca63",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15238,7 +14953,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_06",
@@ -15250,8 +14966,8 @@
       160
     ],
     "rgba_sha256": "3935f0076755761fa50a79ae7cfbff6e57ab36d144481b3ce4141dd21f481704",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "ece49fc5dc3ad9cc635afe0dee8947986982690f570669f74c76ccf33ecac928",
+    "palette_sha256": "2874ad7dd8d8ecb3459a85dfdea9bde2fbaec4197c0d6a43a8e7fd80af7d6bcc",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15260,7 +14976,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "AnginWowRight_07",
@@ -15272,8 +14989,8 @@
       160
     ],
     "rgba_sha256": "4b503e37158721171777a7d61add814fe7bc51bf1981a6868794cbbd5f5fff34",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "8cacd52d6a52a5332951aa8ee9ed71b737e56e40075191703d3a7e59847d0afe",
+    "palette_sha256": "e1ded84a67cf5f2c14326c33fb1b746694879230bf4f30b0fde984c2d251c941",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15282,7 +14999,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "AnginWowRight_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_01",
@@ -15294,8 +15012,8 @@
       160
     ],
     "rgba_sha256": "81f8847827a56fbee94060107868f03350128345c43a17f3097f42119c56ae7d",
-    "indexed_pixels_sha256": "fd18eef12e40d5e57f5e04047c956952ea0435ee891efdf3d5682bbdc5548247",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "258082e41b2074ac613acdf48df8f4b9e735dbe14feb44f51485bd143a89296e",
+    "palette_sha256": "9982a415570ccbf02a7c110df2874debc1a62ceef89024af38966f19dacdf32b",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15304,7 +15022,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_02",
@@ -15316,8 +15035,8 @@
       160
     ],
     "rgba_sha256": "82a47fbf823563a9b399c846eafc66c47dc412f52221302cbb22847d39e02d43",
-    "indexed_pixels_sha256": "f1a8f554c93823dce44ea4f9e5f8d821f0e6e16fbab125480862fbd65450dd88",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "24dd07e84ed584dbbdfd3ef6d5fc8bbdd6194170aa6cc808421259caf3e236f1",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15326,7 +15045,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_03",
@@ -15338,8 +15058,8 @@
       160
     ],
     "rgba_sha256": "ebbe17e474640f040b07ff8d389697f4fbe94a43676e779575a7c868e51f9190",
-    "indexed_pixels_sha256": "31f0e631e449cd4f72506c102675eb4777cf54edfb7b9323283ff75cdd478326",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "4a847c57b0cf2a36f65dd979d4507602f6b916f25107e917412a42f8531f31cf",
+    "palette_sha256": "1f4cb66a4ec95c7d6eb65b91c269b98c03cda0cc9a630eae0aa3bac890f25120",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15348,7 +15068,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_04",
@@ -15360,8 +15081,8 @@
       160
     ],
     "rgba_sha256": "bab5ef817d1cb43c3daba53a2611b33b1cb9aa7f4294e513bb77535965928e40",
-    "indexed_pixels_sha256": "51a4f63397c58961172f486b853f39a1b06942c799eca5c04fc9090f923c2a99",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "ebdc43bfcc83e159e619569bb6428d39c9ad29221667bd39866c0f63908d3eed",
+    "palette_sha256": "78b64a6e21a62d23003f6319644a8581208bb22d4f724c2140bf596521759e29",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15370,7 +15091,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_05",
@@ -15382,8 +15104,8 @@
       160
     ],
     "rgba_sha256": "18cc930d7cebfa0a5be0e32922cee91978807271ead4f358b1e345554e2fa30b",
-    "indexed_pixels_sha256": "2430b181e5e4d2ae51f18a98d6471fe0f6b24a92e6135d39139df442c5a45e8c",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "5ab76f5495a2cee168e82402e5be19f3b5abf1f6c9e51fadedd36d99b05cac65",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15392,7 +15114,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_06",
@@ -15404,8 +15127,8 @@
       160
     ],
     "rgba_sha256": "99196ee74e9e11dcfd5bd73d96759cd742c3abb757fecb9a2aacafa6b3f9beb5",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "f398fba21f748a535aa72f9182b3282b2697764f6daf9e63d3ddc7775d6ad749",
+    "palette_sha256": "40d11a21397e0975ec3e345f8460a7f48fd04b0d04a31c91ec65419831287110",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15414,7 +15137,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindHand_07",
@@ -15426,8 +15150,8 @@
       160
     ],
     "rgba_sha256": "9bfaeab3dabde8e9763d851afa7515a923f6409edf57e7791ec443419ca14d11",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "38b25821e066364cd2cbd6b672400bae4630028b5fec0a2cfa88ee245e548527",
+    "palette_sha256": "b25ba77a3503b7bd763a8710a9ddea8017917e3e3c8a0d3bd20ecefad29a7507",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15436,7 +15160,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindHand_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_01",
@@ -15448,8 +15173,8 @@
       160
     ],
     "rgba_sha256": "81f8847827a56fbee94060107868f03350128345c43a17f3097f42119c56ae7d",
-    "indexed_pixels_sha256": "fd18eef12e40d5e57f5e04047c956952ea0435ee891efdf3d5682bbdc5548247",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "258082e41b2074ac613acdf48df8f4b9e735dbe14feb44f51485bd143a89296e",
+    "palette_sha256": "9982a415570ccbf02a7c110df2874debc1a62ceef89024af38966f19dacdf32b",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15458,7 +15183,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_02",
@@ -15470,8 +15196,8 @@
       160
     ],
     "rgba_sha256": "82a47fbf823563a9b399c846eafc66c47dc412f52221302cbb22847d39e02d43",
-    "indexed_pixels_sha256": "f1a8f554c93823dce44ea4f9e5f8d821f0e6e16fbab125480862fbd65450dd88",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "24dd07e84ed584dbbdfd3ef6d5fc8bbdd6194170aa6cc808421259caf3e236f1",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15480,7 +15206,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_03",
@@ -15492,8 +15219,8 @@
       160
     ],
     "rgba_sha256": "ebbe17e474640f040b07ff8d389697f4fbe94a43676e779575a7c868e51f9190",
-    "indexed_pixels_sha256": "31f0e631e449cd4f72506c102675eb4777cf54edfb7b9323283ff75cdd478326",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "4a847c57b0cf2a36f65dd979d4507602f6b916f25107e917412a42f8531f31cf",
+    "palette_sha256": "1f4cb66a4ec95c7d6eb65b91c269b98c03cda0cc9a630eae0aa3bac890f25120",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15502,7 +15229,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_04",
@@ -15514,8 +15242,8 @@
       160
     ],
     "rgba_sha256": "bab5ef817d1cb43c3daba53a2611b33b1cb9aa7f4294e513bb77535965928e40",
-    "indexed_pixels_sha256": "51a4f63397c58961172f486b853f39a1b06942c799eca5c04fc9090f923c2a99",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "ebdc43bfcc83e159e619569bb6428d39c9ad29221667bd39866c0f63908d3eed",
+    "palette_sha256": "78b64a6e21a62d23003f6319644a8581208bb22d4f724c2140bf596521759e29",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15524,7 +15252,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_05",
@@ -15536,8 +15265,8 @@
       160
     ],
     "rgba_sha256": "18cc930d7cebfa0a5be0e32922cee91978807271ead4f358b1e345554e2fa30b",
-    "indexed_pixels_sha256": "2430b181e5e4d2ae51f18a98d6471fe0f6b24a92e6135d39139df442c5a45e8c",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "5ab76f5495a2cee168e82402e5be19f3b5abf1f6c9e51fadedd36d99b05cac65",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15546,7 +15275,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_06",
@@ -15558,8 +15288,8 @@
       160
     ],
     "rgba_sha256": "99196ee74e9e11dcfd5bd73d96759cd742c3abb757fecb9a2aacafa6b3f9beb5",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "f398fba21f748a535aa72f9182b3282b2697764f6daf9e63d3ddc7775d6ad749",
+    "palette_sha256": "40d11a21397e0975ec3e345f8460a7f48fd04b0d04a31c91ec65419831287110",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15568,7 +15298,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTornado_07",
@@ -15580,8 +15311,8 @@
       160
     ],
     "rgba_sha256": "9bfaeab3dabde8e9763d851afa7515a923f6409edf57e7791ec443419ca14d11",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "38b25821e066364cd2cbd6b672400bae4630028b5fec0a2cfa88ee245e548527",
+    "palette_sha256": "b25ba77a3503b7bd763a8710a9ddea8017917e3e3c8a0d3bd20ecefad29a7507",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15590,7 +15321,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTornado_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "RasenShotWind_01",
@@ -15756,8 +15488,8 @@
       160
     ],
     "rgba_sha256": "c5ab7897ff251b2c7c60fc8f7486d199c81bafc57204d667efca4e2f557b9ef7",
-    "indexed_pixels_sha256": "c33b1562e06728a74c5c720fcc9306920833a0ea2b0c23461552a10ab3698419",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "43989b716a75ddb0fa42f12226dbc14944e382be6badfe3b99bf1b2c7ff7a734",
+    "palette_sha256": "15aeb083aade0a05d2e86ec73d5192f1c1b9aac3ee931d5fbd795c221078e9cd",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15766,7 +15498,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_02",
@@ -15778,8 +15511,8 @@
       160
     ],
     "rgba_sha256": "b8eb062c67453865eafa58157d715e2d50039e27305e4d77c3bddc522c200985",
-    "indexed_pixels_sha256": "4b6c9d0632ec8880da7989f238e9f880729ffc2ab8bc5c92705be660a38aed3c",
-    "palette_sha256": "0f3ff8f5498cf127c67c5efca70d8d7b2c7237f682f1fafacb4dfee47b315b6f",
+    "indexed_pixels_sha256": "8a2296d7b88966ed91c24fab3f2f38d53f0b322d80d7d783b6d580c45ee50305",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15788,7 +15521,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_03",
@@ -15800,8 +15534,8 @@
       160
     ],
     "rgba_sha256": "42dcd54ccdf8b3f8e41ed5771af2c57123dee91c18e80ad08b8f05b06e066769",
-    "indexed_pixels_sha256": "b4863d12c3c899176086778bb83129852ef597457d91e227a8775acf2dcd187f",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "8fda1b11c3537a4a08787716d1ab8b2eab620ca9916c631e1a597f66c17458c6",
+    "palette_sha256": "0469107778bebaff59b93ef9bf2cabd3b2b71335f060a204356a68cf51fabde7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15810,7 +15544,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_04",
@@ -15822,8 +15557,8 @@
       160
     ],
     "rgba_sha256": "9973cf7c2dd1bf17d8d111322aba00f115e1979c05568b28cb568559ae16806b",
-    "indexed_pixels_sha256": "ab0f62ae77165e4325665822f24a3503bc7808d2bd4470717e4f4e12a8a04cee",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "cad3aa8c7e36658699c6380b1e67d175cecd18e63aade6aa326ccb0a71f47fc0",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15832,7 +15567,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_05",
@@ -15844,8 +15580,8 @@
       160
     ],
     "rgba_sha256": "f14f1637c9df49590e737d0810a1d79b22a7dcf75f2e0dae9bd1d3f7371f7c5d",
-    "indexed_pixels_sha256": "971ccc266a9eb58cae36d11a0579efb0ce94c769b11e3866856442c7b8e4f6a4",
-    "palette_sha256": "4ce9ab263c6248af66b20bdcf938fa75c66e99a089f5c0cbd6bc8b31fdfdb808",
+    "indexed_pixels_sha256": "b6d1ebc925f1c70f21ea87660e9047f1daebadccac4882fae7deffe48fbdca63",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15854,7 +15590,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_06",
@@ -15866,8 +15603,8 @@
       160
     ],
     "rgba_sha256": "3935f0076755761fa50a79ae7cfbff6e57ab36d144481b3ce4141dd21f481704",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "ece49fc5dc3ad9cc635afe0dee8947986982690f570669f74c76ccf33ecac928",
+    "palette_sha256": "2874ad7dd8d8ecb3459a85dfdea9bde2fbaec4197c0d6a43a8e7fd80af7d6bcc",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15876,7 +15613,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "WindTwoTornado_07",
@@ -15888,8 +15626,8 @@
       160
     ],
     "rgba_sha256": "4b503e37158721171777a7d61add814fe7bc51bf1981a6868794cbbd5f5fff34",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "8cacd52d6a52a5332951aa8ee9ed71b737e56e40075191703d3a7e59847d0afe",
+    "palette_sha256": "e1ded84a67cf5f2c14326c33fb1b746694879230bf4f30b0fde984c2d251c941",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15898,7 +15636,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "WindTwoTornado_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_01",
@@ -15910,8 +15649,8 @@
       160
     ],
     "rgba_sha256": "c5ab7897ff251b2c7c60fc8f7486d199c81bafc57204d667efca4e2f557b9ef7",
-    "indexed_pixels_sha256": "c33b1562e06728a74c5c720fcc9306920833a0ea2b0c23461552a10ab3698419",
-    "palette_sha256": "9c6e0fb25f6c5868db4a6c3d9deea3b57c477646ac71b172d7261132a462264b",
+    "indexed_pixels_sha256": "43989b716a75ddb0fa42f12226dbc14944e382be6badfe3b99bf1b2c7ff7a734",
+    "palette_sha256": "15aeb083aade0a05d2e86ec73d5192f1c1b9aac3ee931d5fbd795c221078e9cd",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15920,7 +15659,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_01.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_02",
@@ -15932,8 +15672,8 @@
       160
     ],
     "rgba_sha256": "b8eb062c67453865eafa58157d715e2d50039e27305e4d77c3bddc522c200985",
-    "indexed_pixels_sha256": "4b6c9d0632ec8880da7989f238e9f880729ffc2ab8bc5c92705be660a38aed3c",
-    "palette_sha256": "0f3ff8f5498cf127c67c5efca70d8d7b2c7237f682f1fafacb4dfee47b315b6f",
+    "indexed_pixels_sha256": "8a2296d7b88966ed91c24fab3f2f38d53f0b322d80d7d783b6d580c45ee50305",
+    "palette_sha256": "1f8588544d924f6a40101b3c8a6af022c6f732192d3458eb872703f0a20085ec",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15942,7 +15682,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_02.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_03",
@@ -15954,8 +15695,8 @@
       160
     ],
     "rgba_sha256": "42dcd54ccdf8b3f8e41ed5771af2c57123dee91c18e80ad08b8f05b06e066769",
-    "indexed_pixels_sha256": "b4863d12c3c899176086778bb83129852ef597457d91e227a8775acf2dcd187f",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "8fda1b11c3537a4a08787716d1ab8b2eab620ca9916c631e1a597f66c17458c6",
+    "palette_sha256": "0469107778bebaff59b93ef9bf2cabd3b2b71335f060a204356a68cf51fabde7",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15964,7 +15705,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_03.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_04",
@@ -15976,8 +15718,8 @@
       160
     ],
     "rgba_sha256": "9973cf7c2dd1bf17d8d111322aba00f115e1979c05568b28cb568559ae16806b",
-    "indexed_pixels_sha256": "ab0f62ae77165e4325665822f24a3503bc7808d2bd4470717e4f4e12a8a04cee",
-    "palette_sha256": "1f1eb5dd4293d0c2b33ec7da0288c6310cf5d4bd2ff7b2e8c459b28bf4795f43",
+    "indexed_pixels_sha256": "cad3aa8c7e36658699c6380b1e67d175cecd18e63aade6aa326ccb0a71f47fc0",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -15986,7 +15728,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_04.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_05",
@@ -15998,8 +15741,8 @@
       160
     ],
     "rgba_sha256": "f14f1637c9df49590e737d0810a1d79b22a7dcf75f2e0dae9bd1d3f7371f7c5d",
-    "indexed_pixels_sha256": "971ccc266a9eb58cae36d11a0579efb0ce94c769b11e3866856442c7b8e4f6a4",
-    "palette_sha256": "4ce9ab263c6248af66b20bdcf938fa75c66e99a089f5c0cbd6bc8b31fdfdb808",
+    "indexed_pixels_sha256": "b6d1ebc925f1c70f21ea87660e9047f1daebadccac4882fae7deffe48fbdca63",
+    "palette_sha256": "3e8f5cc598dbadbffbf3669ae958e4b1d3b2352e21c17a75f3f74dca64f7ea80",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -16008,7 +15751,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_05.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_06",
@@ -16020,8 +15764,8 @@
       160
     ],
     "rgba_sha256": "3935f0076755761fa50a79ae7cfbff6e57ab36d144481b3ce4141dd21f481704",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "ece49fc5dc3ad9cc635afe0dee8947986982690f570669f74c76ccf33ecac928",
+    "palette_sha256": "2874ad7dd8d8ecb3459a85dfdea9bde2fbaec4197c0d6a43a8e7fd80af7d6bcc",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -16030,7 +15774,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_06.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "FutonRasenWind_07",
@@ -16042,8 +15787,8 @@
       160
     ],
     "rgba_sha256": "4b503e37158721171777a7d61add814fe7bc51bf1981a6868794cbbd5f5fff34",
-    "indexed_pixels_sha256": "6c723ebf7fe7876c11a4f5b6703c794f060a612ff1c6f816ec2f0ac79ae97a1c",
-    "palette_sha256": "5c6c5cee0390620b7650c359b5cccef21bcff751cbbddaed0d7ee9e14a10e328",
+    "indexed_pixels_sha256": "8cacd52d6a52a5332951aa8ee9ed71b737e56e40075191703d3a7e59847d0afe",
+    "palette_sha256": "e1ded84a67cf5f2c14326c33fb1b746694879230bf4f30b0fde984c2d251c941",
     "redrawn": false,
     "ai_generated": false,
     "alignment": {
@@ -16052,7 +15797,8 @@
     "kind": "effect",
     "source_plist": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Flog/IzumoFlog.plist",
     "source_key": "FutonRasenWind_07.png",
-    "source_rotated": false
+    "source_rotated": false,
+    "rendering": "source alpha premultiplied into RGB for additive wind"
   },
   {
     "key": "Waver_01",

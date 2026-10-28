@@ -1260,14 +1260,17 @@
     "face": 1,
     "pose": "special",
     "attack": "low",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1276,14 +1279,17 @@
     "face": 1,
     "pose": "special",
     "attack": "mid",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1292,14 +1298,17 @@
     "face": 1,
     "pose": "special",
     "attack": "projectile",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1308,14 +1317,17 @@
     "face": 1,
     "pose": "special",
     "attack": "combo",
+    "probe_alignment": "actual airborne defender height",
     "damage": 171,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 3
   },
@@ -1700,14 +1712,17 @@
     "face": -1,
     "pose": "special",
     "attack": "low",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1716,14 +1731,17 @@
     "face": -1,
     "pose": "special",
     "attack": "mid",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1732,14 +1750,17 @@
     "face": -1,
     "pose": "special",
     "attack": "projectile",
+    "probe_alignment": "actual airborne defender height",
     "damage": 57,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 1
   },
@@ -1748,14 +1769,17 @@
     "face": -1,
     "pose": "special",
     "attack": "combo",
+    "probe_alignment": "actual airborne defender height",
     "damage": 171,
     "hurt": true,
     "recovered": true,
     "states": [
       0,
       11000,
-      5000,
-      5001
+      50,
+      5020,
+      5030,
+      52
     ],
     "hits_received": 3
   }

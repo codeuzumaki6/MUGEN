@@ -449,7 +449,7 @@ Pruebas en Ikemen GO: [120 de entradas y combate](previews/HimawariTBV_engine_ch
 
 Boruto con capa, espada y marcas azules de Vaydra, usando los 663 cuadros válidos del paquete y las secuencias del video: kenjutsu, Shiden, Rasengan, Fūton, tajos, disparos e invocación gigante. Se incluyen las once muestras de voz de su carpeta y 56 efectos originales. Tres cadenas terrestres y aéreas, trece especiales por forma, dash doble gratuito y carga con aura.
 
-**Abajo + Pausa** requiere 3000, consume 1500 y activa la resonancia de Karma y Jōgan durante veinte segundos. Conserva la apariencia original y añade el corte del ojo y electricidad azul persistente. Cambian los especiales a rayos, tornados dobles, cargas, Rasengan doble y campo de resonancia. La descarga de RT pasa a dos proyectiles y RB a tres kunai.
+**Abajo + Pausa** requiere 3000, consume 1500 y activa la resonancia de Karma y Jōgan durante veinte segundos. Conserva la apariencia original y añade el corte del ojo y electricidad azul persistente. Cambian los especiales a rayos, Uzuhiko, cargas, Rasengan doble y campo de resonancia. La descarga de RT pasa a dos proyectiles y RB a tres kunai.
 
 **Abajo + Y** crea un clon de tamaño completo que persigue y ataca al rival con Rasengan mientras controlas a Boruto. Tiene 120 de vida, puede recibir golpes y dura como máximo tres segundos. Hay un máximo de uno; repetir el comando le ordena atacar. Desaparece al iniciar la ulti o terminar la ronda. Las copias de los efectos se evitan manteniendo los cuadros compuestos sobre el jugador principal.
 
@@ -464,6 +464,7 @@ python tools/build_boruto_assets.py
 python tools/build_boruto_runtime.py
 python tools/validate_boruto.py
 python tools/check_boruto_in_engine.py
+python tools/check_boruto_visual_contact.py
 python tools/check_roster_receiving.py --characters BorutoKarmaJogan --out previews/BorutoKarmaJogan_receiving
 python tools/check_boruto_clone.py
 python tools/check_boruto_short_targets.py
@@ -473,3 +474,5 @@ python tools/verify_boruto_sources.py
 python tools/package_boruto.py
 python tools/verify_boruto_delivery.py --write
 ```
+
+Corrección de Boruto Karma/Jōgan: se estabilizan 160 puntos de apoyo; el personaje despega durante los Rasengan descendentes y dobles y sus zonas de impacto siguen las esferas. Uzuhiko envuelve el cuerpo en viento, exige contacto de palma y libera al rival al terminar o sufrir una interrupción. Se recuperan 58 efectos de viento que se perdían por su transparencia y se cambia la pose sentada entre comandos por una postura baja. [40 contactos visibles, alcance, guardia e interrupción](previews/BorutoKarmaJogan_visual_contact_checks.json). Sustituye la carpeta anterior y reinicia MUGEN.

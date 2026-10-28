@@ -9,6 +9,9 @@ from boruto_source import ROOT,SRC,BodyPivots,nums,sha,save_sff,read_sff
 CHAR=ROOT/'BorutoKarmaJogan';A=CHAR/'assets'
 ATLASES=['Pain/Pain.plist','Nagato/Nagato.plist','DevaPath/DevaPath.plist','AsuraPath/AsuraPath.plist','Skill/Pain_Skill.plist','Animalpath/AnimalPath.plist','Flog/IzumoFlog.plist','Flog/KakashiFlog.plist']
 PREFIXES=('Pain_','PainNol','Unframe_','UnFx_','JgDm','Jougan','BOLT_','Angin','Wind','RasenShotWind_','FutonRasenWind_','Duar_Move_','Waver_')
+def additive_wind(key,im):
+ if not key.startswith(('Angin','Wind','FutonRasenWind_')):return None
+ a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0).astype('uint8');return Image.fromarray(a)
 def kind(key):
  n=int(key.rsplit('_',1)[-1]) if key.rsplit('_',1)[-1].isdigit() else 0
  if key.startswith(('JouganSCR_','JouganEye_')):return 'cutin'
@@ -43,12 +46,12 @@ def main():
  pivots=BodyPivots(templates);pack=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes());pack.entries.clear()
  cache=Path('/tmp/boruto-review/indexed_cache');cache.mkdir(exist_ok=True)
  def put(key,g,n,im,axis,**meta):
-  p=A/'frames'/f'{g}_{n}.png';im.save(p);digest=sha(im.tobytes());npz=cache/(digest+'.npz')
+  p=A/'frames'/f'{g}_{n}.png';im.save(p);digest=sha(im.tobytes());render=additive_wind(key,im);storage=render if render is not None else im;npz=cache/(sha(storage.tobytes())+'.npz')
   if npz.exists():
    v=np.load(npz);pix=v['pix'].tobytes();pal=v['pal'].tobytes();pack.entries[g,n]=(im.width,im.height,*axis,pix,pal)
   else:
-   pack.put((g,n),im,axis);e=pack.entries[g,n];np.savez_compressed(npz,pix=np.frombuffer(e[4],dtype=np.uint8),pal=np.frombuffer(e[5],dtype=np.uint8))
-  e=pack.entries[g,n];manifest.append(dict(key=key,group=g,number=n,file=str(p.relative_to(CHAR)),axis=list(axis),rgba_sha256=digest,indexed_pixels_sha256=sha(e[4]),palette_sha256=sha(e[5]),redrawn=False,ai_generated=False,**meta));keys[key]=[g,n]
+   pack.put((g,n),storage,axis);e=pack.entries[g,n];np.savez_compressed(npz,pix=np.frombuffer(e[4],dtype=np.uint8),pal=np.frombuffer(e[5],dtype=np.uint8))
+  e=pack.entries[g,n];manifest.append(dict(key=key,group=g,number=n,file=str(p.relative_to(CHAR)),axis=list(axis),rgba_sha256=digest,indexed_pixels_sha256=sha(e[4]),palette_sha256=sha(e[5]),redrawn=False,ai_generated=False,**({'rendering':'source alpha premultiplied into RGB for additive wind'} if render is not None else {}),**meta));keys[key]=[g,n]
  for i,cell in enumerate(cells):
   im=cell['im'];axis=cell['axis'];alignment=dict(method='original body feet' if cell['kind'] in ['body','body_with_effect'] else 'standalone effect centre')
   if cell['kind']=='body_with_effect' and (im.width>160 or im.height>150):

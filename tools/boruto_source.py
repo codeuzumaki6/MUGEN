@@ -12,6 +12,10 @@ RAW_INDEXED_SPRITES={(32003,15)}
 def nums(s):return list(map(float,re.findall(r'-?\d+(?:\.\d+)?',s)))
 def sha(b):return hashlib.sha256(b).hexdigest()
 def reviewed_body_axis(key,im):
+ reviewed=ROOT/'design/boruto_karma_jogan/reviewed_geometry.json'
+ if reviewed.exists():
+  axes=json.loads(reviewed.read_text()).get('axes',{})
+  if key in axes:return tuple(axes[key])
  # These authored composites share a fixed character position while their
  # terrain/glow changes. Matching the glow to a bent limb gave false pivots.
  m=re.fullmatch(r'Pain_Skill05_(\d+)',key)

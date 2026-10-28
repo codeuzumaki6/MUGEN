@@ -19,13 +19,15 @@ for face in [1,-1]:
 for c in cases:
  if c['kind']=='move':c['distance']=150 if c['name'] in ['Kunai','Disparo','Futon'] else 80
 if os.environ.get('BORUTO_DEMO')=='showcase':
- names=['Rasengan','Shiden','Kenjutsu','Ascendente','Bunshin','Invocacion','Futon','ultimate']
- cases=[c for c in cases if c['face']==1 and c['form']==0 and c['name'] in names]+[c for c in cases if c['name']=='awakening' and c['face']==1]+[c for c in cases if c['face']==1 and c['form']==1 and c['name'] in ['Shiden','Espiral','Caida','Futon','ultimate']]
+ names=['Rasengan','Shiden','Kenjutsu','Espiral','Caida','Futon','ultimate']
+ cases=[c for c in cases if c['face']==1 and c['form']==0 and c['name'] in names]+[c for c in cases if c['name']=='awakening' and c['face']==1]+[c for c in cases if c['face']==1 and c['form']==1 and c['name'] in ['Rasengan','Espiral','Caida','Invocacion','Futon','ultimate']]
 if os.environ.get('BORUTO_CASES'):cases=[c for c in cases if c['name'] in json.loads(os.environ['BORUTO_CASES'])]
 if os.environ.get('BORUTO_FORM'):cases=[c for c in cases if c['form']==int(os.environ['BORUTO_FORM'])]
 if os.environ.get('BORUTO_FACE'):cases=[c for c in cases if c['face']==int(os.environ['BORUTO_FACE'])]
 if os.environ.get('BORUTO_DEMO')=='awake':cases=[c for c in cases if c['kind']=='awakening' and c['face']==1]+[c for c in cases if c['form']==1 and c['face']==1 and c['kind'] in ['move','ultimate']]
 if os.environ.get('BORUTO_DEMO')=='all':cases=[c for c in cases if c['form']==0 and c['kind'] in ['move','ultimate']]+[c for c in cases if c['kind']=='awakening']+[c for c in cases if c['form']==1 and c['kind'] in ['move','ultimate']]
+if os.environ.get('BORUTO_DISTANCE'):
+ for case in cases:case['distance']=int(os.environ['BORUTO_DISTANCE'])
 assert cases
 char=ENGINE/'chars/BorutoCheck';dummy=ENGINE/'chars/BorutoDummy';shutil.copytree(ROOT/'BorutoKarmaJogan',char,dirs_exist_ok=True);shutil.copytree(ENGINE/'chars/kfm',dummy,dirs_exist_ok=True);shutil.copyfile(char/'BorutoKarmaJogan.def',char/'BorutoCheck.def');shutil.copyfile(dummy/'kfm.def',dummy/'BorutoDummy.def')
 if os.environ.get('BORUTO_TARGET_SCALE'):
@@ -39,7 +41,7 @@ for i,case in enumerate(cases):
  for side in [1,2]:
   block=ctl('PosSet',at(1),f'x={(-1 if side==1 else 1)*face*dist/2}\ny=0')+ctl('VelSet',at(1),'x=0\ny=0')+ctl('Turn',at(1)+f' && Facing!={face if side==1 else -face}','')
   block+=ctl('LifeSet',at(1),f'value={1 if side==1 and kind=="ultimate_one_hp" else 1200 if side==1 else 1000}')+ctl('PowerSet',at(1),f'value={0 if kind in ["charge","empty","no_awake"] else 3000}')+ctl('ChangeState',at(1),'value=0\nctrl=1')
-  if kind=='ultifar':block+=ctl('ScreenBound',win(2,TICKS-2),'value=0\nmovecamera=0,0')+ctl('PosSet',at(5),f'x={(-1 if side==1 else 1)*face*dist/2}\ny=0')
+  if kind=='ultifar' or dist>=400:block+=ctl('ScreenBound',win(2,TICKS-2),'value=0\nmovecamera=0,0')+ctl('PosSet',at(5),f'x={(-1 if side==1 else 1)*face*dist/2}\ny=0')
   if side==1:p1+=block
   else:p2+=block
  for v in [12,20,21,40,41,42]:p1+=ctl('VarSet',at(2),f'v={v}\nvalue={1 if v==42 and form else 900 if v==40 and form else 0}')
@@ -50,7 +52,9 @@ for i,case in enumerate(cases):
    return ctl('AssertInput',win(t-8,t-3),'flag=D')+ctl('AssertInput',win(t-5,t+1),'flag='+lr)+press(t,b)
   return (ctl('AssertInput',win(t-4,t+1),'flag=D') if d=='D' else '')+press(t,b)
  if kind=='move':p1+=motion(case['b'],case['d'])
- elif kind in ['combo','air']:
+ if kind=='move' and os.environ.get('BORUTO_SPECIAL_GUARD'):p2+=ctl('AssertInput',win(18,250),'flag='+('R' if face==1 else 'L'))
+ if kind=='move' and os.environ.get('BORUTO_UZUHIKO_INTERRUPT'):p2+=ctl('Helper',at(10),'helpertype=Normal\nID=9705\nname="Real spiral interruption"\nstateno=9705\npostype=P2\npos=0,0\nownpal=1\nkeyctrl=0')
+ if kind in ['combo','air']:
   if kind=='air':p1+=press(18,'U');p2+=ctl('PosSet',at(20),'y=-85')+ctl('ChangeState',at(20),'value=9702\nctrl=0')
   p1+=press(36 if kind=='air' else 26,case['b'])+ctl('AssertInput',win(30,150)+(' && StateNo%10000>=600 && StateNo%10000<=621' if kind=='air' else ' && StateNo%10000>=200 && StateNo%10000<=221')+' && Time>=6 && MoveHit && Var(58)%3=0','flag='+case['b'])
  elif kind in ['ultimate','ultiblock','ultifar','ultimate_one_hp','ult_interrupt','empty']:
@@ -81,6 +85,8 @@ with (dummy/'kfm.cns').open('a') as f:
 with (dummy/'kfm.air').open('a') as f:f.write('\n[Begin Action 9707]\nClsn1Default: 1\nClsn1[0]=-50,-80,50,5\nLoopstart\n200,2,0,0,5\n')
 if os.environ.get('BORUTO_LATE_INTERRUPT'):
  p=dummy/'kfm.cns';p.write_text(p.read_text().replace('trigger1=Time=170\nattr=A,NP','trigger1=Time=260\nattr=A,NP').replace('trigger1=Time>=195','trigger1=Time>=290'))
+if os.environ.get('BORUTO_UZUHIKO_INTERRUPT'):
+ p=dummy/'kfm.cns';p.write_text(p.read_text().replace('trigger1=Time=170\nattr=A,NP','trigger1=Time=75\nattr=A,NP').replace('trigger1=Time>=195','trigger1=Time>=100'))
 trace=ENGINE/'boruto_trace.tsv';trace.write_text('');module=ENGINE/'external/mods/boruto_checks.lua'
 lua='''modifyGameOption('Debug.RetryLoadOnError',false)
 local f=assert(io.open('boruto_trace.tsv','w'));local last=-1;local rows={};local frames=0
@@ -126,6 +132,19 @@ hook.add('loop','boruto_clone_observer',function()
  cf:write(table.concat(values,'\\t')..'\\n');cf:flush()
 end)
 """.replace('TRACE',json.dumps(str(clone_trace))).replace('TICKS',str(TICKS))
+if os.environ.get('BORUTO_CONTACT_TRACE'):
+ contact_trace=Path(os.environ['BORUTO_CONTACT_TRACE']);contact_trace.parent.mkdir(parents=True,exist_ok=True)
+ lua+="""
+local vf=assert(io.open(TRACE,'w'))
+hook.add('loop','boruto_visual_contact_observer',function()
+ if not player(1) or roundState()~=2 then return end
+ local clock=var(58);local ci=math.floor((clock-1)/TICKS);local tick=(clock-1)%TICKS+1
+ local values={ci,tick,stateNo(),time(),spriteVar('group'),spriteVar('image'),posX(),posY(),facing(),var(22),tostring(ctrl())}
+ player(2)
+ for _,v in ipairs({posX(),posY(),life(),stateNo(),tostring(ctrl()),const('size.height')}) do values[#values+1]=v end
+ vf:write(table.concat(values,'\\t')..'\\n');vf:flush();player(1)
+end)
+""".replace('TRACE',json.dumps(str(contact_trace))).replace('TICKS',str(TICKS))
 module.write_text(lua);debug=ENGINE/'external/script/debug.lua';saved=debug.read_text();debug.write_text(saved+"\ndofile('external/mods/boruto_checks.lua')\n")
 env=os.environ.copy();env.update(SDL_VIDEODRIVER='offscreen',SDL_AUDIODRIVER='dummy',MESA_SHADER_CACHE_DISABLE='true')
 if AUDIO:env.update(SDL_AUDIODRIVER='disk',SDL_DISKAUDIOFILE=AUDIO,SDL_DISKAUDIODELAY='46')
@@ -136,7 +155,7 @@ assert not [l for l in (r.stdout+r.stderr).splitlines() if 'Unknown state contro
 rows=[l.split('\t') for l in trace.read_text().splitlines()];assert len(rows)==len(cases),(len(rows),len(cases));reports=[]
 for case,row in zip(cases,rows):
  states=set(map(int,row[1].split(',')));damage=int(row[2]);life=int(row[3]);power=int(row[4]);kind=case['kind'];form=case['form'];bad=[]
- if kind=='move' and (case['state'] not in states or power!=3000-case['cost'] or (damage<=0)):bad.append('input, cost or collision failed')
+ if kind=='move' and (case['state'] not in states or power!=3000-case['cost'] or (damage!=0 if os.environ.get('BORUTO_EXPECT_MISS') else damage<=0)):bad.append('input, cost or collision failed')
  if kind in ['combo','air'] and (case['state'] not in states or damage<100):bad.append('three-hit chain failed')
  if kind in ['ultimate','ultimate_one_hp'] and (damage!=(800 if form else 650) or power!=0 or life!=(1 if kind=='ultimate_one_hp' else 1200)):bad.append('finite ultimate or zero own-life cost failed')
  if kind in ['ultiblock','ultifar','empty'] and (damage or life!=1200):bad.append('guard, range or empty meter ultimate failed')

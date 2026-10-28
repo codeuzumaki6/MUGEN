@@ -64,39 +64,31 @@
   },
   "5384f4c2f42b4cfb492abaf038c75692eaf3eb7e00ff478da105f75fc0d392e8:Pain_Skill01_49": {
     "axis": [
-      181,
-      154
+      185,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Hurt_01",
-    "error": 0.11015011370182037
+    "method": "reviewed shared animation canvas"
   },
   "35e08da59d99b5496af044ff8349b4074ac4d670e5a68166acc00b74bfd9d207:Pain_Skill01_50": {
     "axis": [
-      171,
-      167
+      185,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.14604055881500244
+    "method": "reviewed shared animation canvas"
   },
   "9ab4c1701b7cde90b8e154cd336278a26c1f11193393ee64f401c185533da0e6:Pain_Skill01_51": {
     "axis": [
-      175,
-      157
+      185,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.14536894857883453
+    "method": "reviewed shared animation canvas"
   },
   "b44e1ddec6aedee827039d35e0f788994fe4839188724670136fca84de9413fc:Pain_Skill01_52": {
     "axis": [
-      184,
-      133
+      185,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.127264603972435
+    "method": "reviewed shared animation canvas"
   },
   "3e2b48d25cebb5c87d47cec9d7745b8d4b7604578e63e8e9412f8c8faffbfe41:Pain_Skill01_07": {
     "axis": [
@@ -503,66 +495,52 @@
   },
   "0fc15475d99b9fc2e2aef860f9c106e7804514ea4706c231bcb1dff9c1bf06b2:Pain_Skill03_39": {
     "axis": [
-      56,
-      187
+      55,
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11506819725036621
+    "method": "reviewed shared animation canvas"
   },
   "eb26dc5deb8458ad50ebc19850529451d10f7592162e3d1ed05acb7a1b7dae48:Pain_Skill03_40": {
     "axis": [
       55,
-      186
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11356159299612045
+    "method": "reviewed shared animation canvas"
   },
   "34ceab45acdb981692813e521afb1a9ef0f4d555074cc53a7ea431c9972aa87e:Pain_Skill03_41": {
     "axis": [
       55,
-      186
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11691717803478241
+    "method": "reviewed shared animation canvas"
   },
   "cffe5c39abf6794505f28c19e342297fc3fc15c05f84c870c7862fb7c9bfffe8:Pain_Skill03_42": {
     "axis": [
       55,
-      186
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.10956420749425888
+    "method": "reviewed shared animation canvas"
   },
   "b5c4a10ff7fc762715b66cde1432962de9abe95936ba4ba54eab83e0ce5a2984:Pain_Skill03_43": {
     "axis": [
       55,
-      186
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.102024607360363
+    "method": "reviewed shared animation canvas"
   },
   "5b57b21cdad9fd9413d47a04a4350a346b447f6161b6feb8a10c04a77a21dc26:Pain_Skill03_44": {
     "axis": [
       55,
-      187
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.12102648615837097
+    "method": "reviewed shared animation canvas"
   },
   "d04e2e23b5ea2ce017cdb6b53462e75825a983a78e5a2f7e27f8725e4cf6a1ad:Pain_Skill03_45": {
     "axis": [
       55,
-      187
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.12102648615837097
+    "method": "reviewed shared animation canvas"
   },
   "29761b28ca409875b6e5c1dafa1d5c093dab3f1cc538bfd8b5e423ee9b919f02:Pain_Skill03_60": {
     "axis": [
@@ -635,30 +613,24 @@
   },
   "bbac93ee22e6d784c7e219e374b22b06114fa2b50bc887c12cb7b446b904e29f:Pain_Skill03_46": {
     "axis": [
-      114,
-      198
+      55,
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.10242991894483566
+    "method": "reviewed shared animation canvas"
   },
   "744a12e349151eec00de2188a017297900b79743b81601faa3f42399900da3bf:Pain_Skill03_47": {
     "axis": [
-      114,
-      195
+      55,
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.022432519122958183
+    "method": "reviewed shared animation canvas"
   },
   "95dbf3470b72e5fd92e23401e51a2a24f4a6e89fe87a6bf588faae1106565149:Pain_Skill03_48": {
     "axis": [
-      114,
-      195
+      55,
+      205
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.058944784104824066
+    "method": "reviewed shared animation canvas"
   },
   "91168e0fb6aedc00a1511d832b84b86ad04e39a97c6829f53641492a426728ca:Pain_Skill03_49": {
     "axis": [
@@ -716,147 +688,115 @@
   },
   "58969e390a808db29f30eae42c847060b5da08b9f163a2c3a7167f3cfb84be81:Pain_Skill02_49": {
     "axis": [
-      252,
-      225
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.08197236806154251
+    "method": "reviewed shared animation canvas"
   },
   "555722969ed7e160eb2864b2e313b43b6e4b005757c57d3c90d5afe2373b56a7:Pain_Skill02_50": {
     "axis": [
-      249,
-      225
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.07752411812543869
+    "method": "reviewed shared animation canvas"
   },
   "f6f1fe86cc998af805feca45cfe95a7bbcf62b68f3466e72a8df623ac35a17f1:Pain_Skill02_51": {
     "axis": [
-      91,
-      225
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.0699973851442337
+    "method": "reviewed shared animation canvas"
   },
   "8627aa65852291a4ad14f54a4bcb5b8870287add95b7ff732a3bcf6518ab6016:Pain_Skill02_52": {
     "axis": [
-      64,
-      221
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.08006824553012848
+    "method": "reviewed shared animation canvas"
   },
   "460d1a1bffd1d7a55ed9a0d80b22efce5719f91a7a24b1b16ed3b5d26c8c9d3c:Pain_Skill02_53": {
     "axis": [
-      218,
-      224
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.06601076573133469
+    "method": "reviewed shared animation canvas"
   },
   "d2667588ab0a6cc688af97b090873ac39bbaa58e1a49b839bbfbe36ef6c4f039:Pain_Skill02_54": {
     "axis": [
-      226,
-      228
+      155,
+      85
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.09165847301483154
+    "method": "reviewed shared animation canvas"
   },
   "db6eaa4c4f247a868f1c9a6a4d1efec266dad1c499b57b05f2a703146b6178cb:Pain_Skill03_35": {
     "axis": [
       55,
       215
     ],
-    "method": "masked original body match",
-    "reference": "Unframe_01",
-    "error": 0.0927208960056305
+    "method": "reviewed shared animation canvas"
   },
   "665eb7d4128578a1f3c70ad0cd8f7cf61aa6e628ccf2d5732c414ac448f45956:Pain_Skill03_36": {
     "axis": [
       55,
-      186
+      215
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.10479199141263962
+    "method": "reviewed shared animation canvas"
   },
   "cea4963da2efe8673b1195705abeb210ae6c730bdcd38f485f0437c0c9005558:Pain_Skill03_37": {
     "axis": [
       55,
-      186
+      215
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11517451703548431
+    "method": "reviewed shared animation canvas"
   },
   "4621d5fe02cca9183b8135cbafaac222d9e26108508acec891b20b3aa4123de5:Pain_Skill03_38": {
     "axis": [
       55,
-      186
+      215
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11252710223197937
+    "method": "reviewed shared animation canvas"
   },
   "a3cfeafaa6622ad4ac677b13096e1d24100adafa96ae22b8072cb99b759f20b2:Pain_Skill03_06": {
     "axis": [
-      76,
-      146
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.1137712374329567
+    "method": "reviewed shared animation canvas"
   },
   "467384a0174e112fe293e0866371fef9a04cefa7d65536c13baf361d853dbbd6:Pain_Skill03_07": {
     "axis": [
-      74,
-      147
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.11337371170520782
+    "method": "reviewed shared animation canvas"
   },
   "a0f604b3af1fff336dfffba221cb4d1f43b62b598fef632a6247c89cf4c5fc87:Pain_Skill03_08": {
     "axis": [
-      109,
-      165
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill01_35ex",
-    "error": 0.12819045782089233
+    "method": "reviewed shared animation canvas"
   },
   "448b7b869c6d9cc3faa9240a42fc525894de81bc1ee8ab0cf937f19a105d6035:Pain_Skill03_09": {
     "axis": [
-      92,
-      165
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.1365664005279541
+    "method": "reviewed shared animation canvas"
   },
   "5222118c0df08fe010f88afedc59d4bf839be89181ccbc09de987b6a02a05d23:Pain_Skill03_10": {
     "axis": [
-      196,
-      144
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_05",
-    "error": 0.09696851670742035
+    "method": "reviewed shared animation canvas"
   },
   "4ffbac000bd9983c0cbcc4f144826b6358d90e7c17eaa56ce94c5c8ef3672164:Pain_Skill03_11": {
     "axis": [
-      191,
-      162
+      185,
+      155
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.1185196042060852
+    "method": "reviewed shared animation canvas"
   },
   "ec629c52a5fe4715ed5c0b15bb5d8e7e768a0e6f502aa0f88c87943ca10fc3f6:Pain_Skill02_17": {
     "axis": [
@@ -932,86 +872,73 @@
   },
   "e4deabc6067d129b65a12b312a8638949fc44ab62ea8b029034861a23a37b130:Pain_Skill02_34": {
     "axis": [
-      195,
-      113
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.17173267900943756
+    "method": "reviewed shared animation canvas"
   },
   "6c4ee3b7a053042496a9c7a7674c99dbefccf71eed3b46798fdc3b6c9217e31e:Pain_Skill02_35": {
     "axis": [
-      195,
-      118
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.17622606456279755
+    "method": "reviewed shared animation canvas"
   },
   "7ccb6927adeeed7d1dd5ee3e6f2d60b8455d25dcbb64b9f33773998be3495e66:Pain_Skill02_36": {
     "axis": [
-      195,
-      119
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.17888134717941284
+    "method": "reviewed shared animation canvas"
   },
   "81bb77c824244ff3232e0b1371f9122dce6c9e166a373fa8ccac5b5bd5382d84:Pain_Skill02_37": {
     "axis": [
-      195,
-      113
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.18236765265464783
+    "method": "reviewed shared animation canvas"
   },
   "1a694e202c7a46680bfb26e30e07761be4a2eaa4390902c7289121877046fb8c:Pain_Skill02_38": {
     "axis": [
-      195,
-      112
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.17258615791797638
+    "method": "reviewed shared animation canvas"
   },
   "209b6dea71e3d4c17ac6b89b271e5fd5de5a2a3ab93d80b8e568b653c1b0af35:Pain_Skill02_39": {
     "axis": [
-      195,
-      124
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.17265444993972778
+    "method": "reviewed shared animation canvas"
   },
   "49b97427a0199d6297be01255e61a93514dd09e59804f122186231acaee8b970:Pain_Skill02_40": {
     "axis": [
-      195,
-      125
+      200,
+      110
     ],
-    "method": "original frame ground fallback",
-    "error": 0.19793811440467834
+    "method": "reviewed shared animation canvas"
   },
   "3ee2a729afa60838209120a3cfc2e7779c644226639fc190097af455deaa20d5:Pain_Skill02_41": {
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.1526721864938736
+    "method": "reviewed shared animation canvas"
   },
   "cf87cd036e5c17c25b689bb796e8dcae6409ec32b2f6cadac684a38c7757af68:Pain_Skill02_42": {
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.1588054597377777
+    "method": "reviewed shared animation canvas"
   },
   "64dd9c205c3cd0bcce5d9b0f79bf7f719afe493506f8f00ba88afcaded4ea57d:Pain_Skill02_43": {
     "axis": [
-      201,
-      91
+      200,
+      110
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.11157778650522232
+    "method": "reviewed shared animation canvas"
   },
   "da4cbdc3742770f7d525bae233f959acbe7687abe119cd7de01280a5cf0b6daf:Pain_Skill02_10": {
     "axis": [
@@ -1042,668 +969,521 @@
   },
   "9e869f0a9cb752ff2e1df3dcc7973c38d17e443642ea60619f64799339b00cf1:Pain_Skill02_44": {
     "axis": [
-      83,
-      124
+      75,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.15787546336650848
+    "method": "reviewed shared animation canvas"
   },
   "bb5f8ec344a4635b4f5b04470f463f54a531c5418c0e1e0e05d5f8eae0920233:Pain_Skill02_45": {
     "axis": [
-      80,
-      124
+      75,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.15069516003131866
+    "method": "reviewed shared animation canvas"
   },
   "be551b0832d6de1c5bb6f0340999e4b0d9588ea8bb0b3503e48777081c0b7045:Pain_Skill02_46": {
     "axis": [
-      76,
-      128
+      75,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.14120888710021973
+    "method": "reviewed shared animation canvas"
   },
   "ba2f1acf670adce30e06586aaeaf87bc89b50ab7302c0bd52c3c09aa5e57401f:Pain_Skill02_47": {
     "axis": [
-      76,
-      126
+      75,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.14300763607025146
+    "method": "reviewed shared animation canvas"
   },
   "3fc63e06ea46672d396bc2c3c195940d8a5daa24d7a53473fae0f973b48d7123:Pain_Skill02_48": {
     "axis": [
-      74,
-      135
+      75,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_01",
-    "error": 0.1690015345811844
+    "method": "reviewed shared animation canvas"
   },
   "6972538d30b9395bf1b685bcbbe7e861031778e697b96d819ac71750c16f9e65:Pain_Skill04_100": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06896357983350754
+    "method": "reviewed shared animation canvas"
   },
   "bb8d5195ce62f31d59eff0cb57e92cd769acdccbd1f8e81408b4f9e6129cef08:Pain_Skill04_101": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06678344309329987
+    "method": "reviewed shared animation canvas"
   },
   "30eccfb6863c2579204d2ca7b22238d594d273495134293770467aafcdf1ecaa:Pain_Skill04_102": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.0724835991859436
+    "method": "reviewed shared animation canvas"
   },
   "5c1f51ada27947aa346c5ef7f448e9014413c6bf4c410d4210f769335f75acb2:Pain_Skill04_103": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.07195406407117844
+    "method": "reviewed shared animation canvas"
   },
   "7fb7c6b51b7aa9a4867fe5d733bbe61c5853f0c9c959bf75f25a0de287b4f767:Pain_Skill04_104": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06416879594326019
+    "method": "reviewed shared animation canvas"
   },
   "c93faada42e80c1648367c21e10bf29feecdf200971546b73c9efa27e46e6d9a:Pain_Skill04_105": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06180695444345474
+    "method": "reviewed shared animation canvas"
   },
   "69ad3f18245443330f637b3c27ea4345621453190cda3d013181939a0f102820:Pain_Skill04_106": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.0684831440448761
+    "method": "reviewed shared animation canvas"
   },
   "46e6376f320d43e14d149ed733d3903dc113a8e4c06b4e0107ad206c43b7a265:Pain_Skill04_107": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06843386590480804
+    "method": "reviewed shared animation canvas"
   },
   "ba975333c4b1bfed37ff78def672107180813d7c248a0bdd70f426ea7f643ab4:Pain_Skill04_99": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.07453539967536926
+    "method": "reviewed shared animation canvas"
   },
   "67171efc736861360b571a7bbd02202816e98da79f7ca153414074a4080f6301:Pain_Skill04_95": {
     "axis": [
-      162,
-      243
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.13123594224452972
+    "method": "reviewed shared animation canvas"
   },
   "2c23c5ecd48568e71d2323237cb38f70c62b4e8f5255aa94a3712cd65a5da38c:Pain_Skill04_96": {
     "axis": [
-      143,
-      297
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.14007042348384857
+    "method": "reviewed shared animation canvas"
   },
   "2ade14d12759bd4465988f5307530ebf22668408838b9c1bf80955a23a58f552:Pain_Skill04_97": {
     "axis": [
-      62,
-      331
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill01_60",
-    "error": 0.12784594297409058
+    "method": "reviewed shared animation canvas"
   },
   "a4ecac91da2af0220e27ffe76032f7632ba8beb1b8c61bf128c3aec9c8ff25c1:Pain_Skill04_98": {
     "axis": [
-      153,
-      282
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.13613559305667877
+    "method": "reviewed shared animation canvas"
   },
   "ba2d392e2f5710b5c427cca62e721ca002edee649fe8fb85b41104c27b636f5e:Pain_Skill04_45": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_01",
-    "error": 0.011096595786511898
+    "method": "reviewed shared animation canvas"
   },
   "3e3332c7bab8ad1ecd067acc1eb14edc2c4733b4dba9df13f7384360fd4762b8:Pain_Skill04_46": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.011503411456942558
+    "method": "reviewed shared animation canvas"
   },
   "15a0db2bbcb159ce8185c5ad321585fb9129dd52e71635f806a6b91703c1fa45:Pain_Skill04_47": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.0
+    "method": "reviewed shared animation canvas"
   },
   "f24de227850e8cc4cb0bee0966bb47002471dd296e0b7a759446d701183ff939:Pain_Skill04_48": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.0
+    "method": "reviewed shared animation canvas"
   },
   "b08fa8ec9b9e48ee4e9780fce8b4e3b46004038d280e09592a80ecafd4a76203:Pain_Skill04_49": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.0
+    "method": "reviewed shared animation canvas"
   },
   "6e249562b7fdb097ad8da730f3c7728be800b97bb78e30cf7999b733a758be19:Pain_Skill04_50": {
     "axis": [
       125,
-      239
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.0
+    "method": "reviewed shared animation canvas"
   },
   "1db0d2c6141ae1e2260d24bc6a28710adad7f85f52d2eff589abfff2d8393900:Pain_Skill04_51": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.0384758822619915
+    "method": "reviewed shared animation canvas"
   },
   "4c3adea0435463872f4e7ac7697b840c9af94e0e20287b7f7c49a21e1dae2554:Pain_Skill04_52": {
     "axis": [
-      102,
-      244
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.03732849285006523
+    "method": "reviewed shared animation canvas"
   },
   "79d3a626a14759bbb10bb8fdda5a1e786196e6316920ea81d98950a91b3d3999:Pain_Skill04_30": {
     "axis": [
-      165,
-      129
+      170,
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.06041526794433594
+    "method": "reviewed shared animation canvas"
   },
   "e3053f839379260b7e74cb0ed85630f7589850973273c297837e7a23358641de:Pain_Skill04_53": {
     "axis": [
-      104,
-      252
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.036194611340761185
+    "method": "reviewed shared animation canvas"
   },
   "cb7ef855684dd3d9d3b158d8d30eea8123f8e9815e8b122f6dcd8bd7084f8907:Pain_Skill04_54": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "7dff93404978ffcd77db86c08853f46a0cb623c23bb23d48f50161d30347be33:Pain_Skill04_55": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "ad28c431ff68b9f997d81325ec3d9dd4a4bfd336964ecd01c7a1b2ec5aef391d:Pain_Skill04_56": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "201d4b1d24dce19670fbc28d15030c0c9e028c4df8822c37581dd201b98718d4:Pain_Skill04_57": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "c729d12fe15f89843df952eb5f4047c8c2e9994aa85b4ef8d631c65aef3f4df9:Pain_Skill04_58": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "e2f3158b93b85ad05399908365db354a661aa1e1777df8b7bc68ce33cf64932e:Pain_Skill04_59": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "05adc7cb6b7ae9e4ba578a16f9330a3e34b9100851beceff3515acde72d1e6b6:Pain_Skill04_60": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "8445ef50953a451a92104e25a1baad4b53b09a4a4230ca0e8ce0691ff2293982:Pain_Skill04_61": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "71d3d914374f7e0158ac2a0bf155afe5c7610702506b8647dd1db4194414fa58:Pain_Skill04_62": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "165e98a56ede7009d1a912e155974e8df94144123d4a66b324bb305af5c7516e:Pain_Skill04_63": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "1276907e2bb4da17717c12a135e9b4b2b250088cb4a48c75b68bc9d8c4216310:Pain_Skill04_64": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "bd7af1b4e1fb71bf2703f630718f3be22682ad9e7db98c07de200039df9b70ec:Pain_Skill04_65": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "d0070eb870e072f68ff14cfc34bdd32b515f60960977b222d7c17f0b90bb2f67:Pain_Skill04_66": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "9199cfb292dbbb9877055cc248931b63ee9ff2d2ae27fc493952ac0eb7385889:Pain_Skill04_67": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "9882ed389e1226d43a245ee0dc02e10290c35a064f321824881a34d32b910c34:Pain_Skill04_68": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.009602217935025692
+    "method": "reviewed shared animation canvas"
   },
   "881ab54cf55e52c96e02f28eed0333d9dfb777f7a0edcbc32b51523481453f1c:Pain_Skill04_69": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.015587566420435905
+    "method": "reviewed shared animation canvas"
   },
   "832b09c1255aa1049fcfac6c2e7f381ee020bcbaea1292666e03636eae5ffe07:Pain_Skill04_70": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.0178611408919096
+    "method": "reviewed shared animation canvas"
   },
   "031f63aea7421a0cddc2f34dfaff893ed51062d209558d5951c100c729fb3679:Pain_Skill04_82": {
     "axis": [
       112,
       153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.13287422060966492
+    "method": "reviewed shared animation canvas"
   },
   "a35bf8c3ae30c41e5ea2e7e215e20e257db2fb28e0d819cdf2e05b7e55c181ba:Pain_Skill04_71": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.017702201381325722
+    "method": "reviewed shared animation canvas"
   },
   "26d0e666435e943f017ef48aaa4170a05a38a830f7ad04674c2e083cd0780f54:Pain_Skill04_72": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.017868241295218468
+    "method": "reviewed shared animation canvas"
   },
   "99327f2e547fd825398e9cf096f0e47619204cb570d5c5f0206abf754d8f0e3c:Pain_Skill04_83": {
     "axis": [
-      111,
-      152
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.1443013697862625
+    "method": "reviewed shared animation canvas"
   },
   "8cb7eed1d00b06b6ed799083196f4e3230f6b6897f1d00a04d05ea42aac4f7b8:Pain_Skill04_73": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.01800881326198578
+    "method": "reviewed shared animation canvas"
   },
   "c0a87e778016696f2079d54637fb16be39ff4e4299639aa7f9770f330ee48ceb:Pain_Skill04_74": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.01902163214981556
+    "method": "reviewed shared animation canvas"
   },
   "d4d14684c13a743b2478a1fefaa0fb2055753d87efc76ad95e650ed190292b3e:Pain_Skill04_84": {
     "axis": [
-      110,
-      152
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.11623821407556534
+    "method": "reviewed shared animation canvas"
   },
   "ad6fae758875003b6e0a656d90036380b51fad0952680bc80f4c2adedd5c55f3:Pain_Skill04_75": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.017889264971017838
+    "method": "reviewed shared animation canvas"
   },
   "a5e202028c001a513d331cea9dfdcfa49e2a3ae5dfff45b2f1aacfa2d04fd48b:Pain_Skill04_31": {
     "axis": [
       170,
-      140
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_36",
-    "error": 0.16186894476413727
+    "method": "reviewed shared animation canvas"
   },
   "921b2e8f087f7526782837bc56a4a36e10efbb5c8f6f657b2596d35357203a71:Pain_Skill04_76": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.016432559117674828
+    "method": "reviewed shared animation canvas"
   },
   "79adaae2307e93ddecdbb039fff605d3015e7a1535aa84aad577315ee94abf9e:Pain_Skill04_32": {
     "axis": [
       170,
-      141
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_36",
-    "error": 0.10908064246177673
+    "method": "reviewed shared animation canvas"
   },
   "741b2dcc88cae085832df7ecc558e34a683587b2639e646127f56c6118bf8843:Pain_Skill04_85": {
     "axis": [
       112,
-      152
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.11829887330532074
+    "method": "reviewed shared animation canvas"
   },
   "6823c5618763dc659333ac71ecc85a99bf489d64d056eaaaf0f69313431f7a6e:Pain_Skill04_77": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.018560567870736122
+    "method": "reviewed shared animation canvas"
   },
   "2695f600fbe30d74356fdb5a5adafcc3ec5067083f78c14f5dae727ea56b4a32:Pain_Skill04_78": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.01689971424639225
+    "method": "reviewed shared animation canvas"
   },
   "5c84bf2c83b8f303d9bda95a7d691ea259867a8c832e6cc8be17c4b2ce827f7e:Pain_Skill04_33": {
     "axis": [
       170,
-      141
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_36",
-    "error": 0.08801665902137756
+    "method": "reviewed shared animation canvas"
   },
   "ab47406940f21001a38dce772e983acca4664924828733c01aa0bfcccba0fde5:Pain_Skill04_34": {
     "axis": [
       170,
-      141
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_36",
-    "error": 0.04636242985725403
+    "method": "reviewed shared animation canvas"
   },
   "895a584dbd549f54f97b795e528293c101464e5d9e836d8ff74864aea794cbff:Pain_Skill04_35": {
     "axis": [
       170,
-      141
+      145
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_36",
-    "error": 0.007778624072670937
+    "method": "reviewed shared animation canvas"
   },
   "5a80c0f00407bd9749f989bd89649e345a383f7022f344bf5376f9c9c8e8604b:Pain_Skill04_86": {
     "axis": [
-      111,
-      154
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.10299737006425858
+    "method": "reviewed shared animation canvas"
   },
   "1942b41536eeee925a56e38b1abcdfbb523dd43d302afc2d3c06c45f2bd38835:Pain_Skill04_79": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.020120196044445038
+    "method": "reviewed shared animation canvas"
   },
   "50d81c02079d5f7f6189657271b01cf2507eec7d90f9b22b5412c93db0c8c67a:Pain_Skill04_87": {
     "axis": [
-      107,
+      112,
       153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.12803247570991516
+    "method": "reviewed shared animation canvas"
   },
   "f32067552ced172fa3b21fd5ac79b24cb52873ffff718472a711d6abc3703cf5:Pain_Skill04_80": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.02310904487967491
+    "method": "reviewed shared animation canvas"
   },
   "c000486972468858c1952aab32f87a590d2dd24eedce8a973d05b0fb9c145a04:Pain_Skill04_88": {
     "axis": [
-      102,
-      138
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.1655554473400116
+    "method": "reviewed shared animation canvas"
   },
   "45b1499952d857475a00cae91b111bf677baf91db0caea745ae4c97fff72a14f:Pain_Skill04_89": {
     "axis": [
-      98,
-      134
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.16374124586582184
+    "method": "reviewed shared animation canvas"
   },
   "492e39cc9863cf0ca15efccab0a9fa59104a540cc459181c953595979322171c:Pain_Skill04_90": {
     "axis": [
-      103,
-      132
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.15719537436962128
+    "method": "reviewed shared animation canvas"
   },
   "144669bda182b6cc5a3d66a6c96ea7d85acf1c857d5f8d0c62abe6b0ecf0ef2b:Pain_Skill04_91": {
     "axis": [
-      115,
-      195
+      112,
+      153
     ],
-    "method": "original frame ground fallback",
-    "error": 0.1708613783121109
+    "method": "reviewed shared animation canvas"
   },
   "b0b5d8791cdb7199c573775c63203af5ce7c32b88e9ae084da4b87d920aa7d96:Pain_Skill04_92": {
     "axis": [
-      103,
-      132
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.15889890491962433
+    "method": "reviewed shared animation canvas"
   },
   "ab9484a15a0d20e092189d78c0c0f230c0eb9947996fc9bd3761a7045eeaab41:Pain_Skill04_81": {
     "axis": [
-      122,
-      239
+      125,
+      240
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.026911970227956772
+    "method": "reviewed shared animation canvas"
   },
   "e88bd063fd7bf8d81fc25a7a091e55d80423461da5cad35867c0e4523b8a022c:Pain_Skill04_93": {
     "axis": [
-      109,
-      152
+      112,
+      153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.12250915169715881
+    "method": "reviewed shared animation canvas"
   },
   "a51264a59f730318d6f9bb2eab3d6892bcbf94e331a9ad4997c8b30a9995c10a:Pain_Skill04_94": {
     "axis": [
       112,
       153
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill02_15",
-    "error": 0.11650527268648148
+    "method": "reviewed shared animation canvas"
   },
   "c56fa8334373985a078dd442891e9064eda9f682d57ed86d824b35a3ee92609e:Pain_Skill05_35": {
     "axis": [
@@ -2331,345 +2111,269 @@
   },
   "9f5ec723d73e51b2676db609054aabccff1194fb9bab49b7cf80a51022915e1b:Pain_Skill05_100": {
     "axis": [
-      392,
-      267
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.06015007570385933
+    "method": "reviewed shared animation canvas"
   },
   "5df340d30c4e861e46b1e698ce32211e71a3e9f7fe1197b8a24bfbaa6562b30f:Pain_Skill05_101": {
     "axis": [
-      348,
-      438
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.08427444845438004
+    "method": "reviewed shared animation canvas"
   },
   "73bf5f01bd2550e589606db7ce055cbff499d47af77704bea01a68244b9da48a:Pain_Skill05_102": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.046021148562431335
+    "method": "reviewed shared animation canvas"
   },
   "a157fe016908e04cc3a3e178a7b6cb0dfe4a65c338173c58f9ed3ee9c6fa2a65:Pain_Skill05_73": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.010304036550223827
+    "method": "reviewed shared animation canvas"
   },
   "a292b3de17474eb52356e41241f46f80b9719fb4a089885ed0c5210910e2afb4:Pain_Skill05_74": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.010304036550223827
+    "method": "reviewed shared animation canvas"
   },
   "5a409a567e1c1ed752cb4cb3cd522ebebb8eea2184344ed586cbf4b6382f0cf9:Pain_Skill05_75": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.010304036550223827
+    "method": "reviewed shared animation canvas"
   },
   "9e2ec3d8caac63b013c4f12fe8dabb426805302279929eae595dc6b463d51805:Pain_Skill05_76": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.018451785668730736
+    "method": "reviewed shared animation canvas"
   },
   "bfcb2c610462308dc4a4bd835d5756c55095c5ffcfb75186feb411bb60214c1a:Pain_Skill05_77": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.010290752165019512
+    "method": "reviewed shared animation canvas"
   },
   "5656a2acc0b8347bcfa63103ab688383685e2d895c1f80783314a3c823ebb560:Pain_Skill05_78": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.01952180452644825
+    "method": "reviewed shared animation canvas"
   },
   "ce5e79eec0d5a42f1f5bf424cc02e50664552ca5a7930949c45da26ca43b1be1:Pain_Skill05_79": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.023423703387379646
+    "method": "reviewed shared animation canvas"
   },
   "aa28b5bd94fe731fc43b348ea7ff0628780eb7dde4d3d143b39897c62169966a:Pain_Skill05_80": {
     "axis": [
-      314,
-      288
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Unframe_01",
-    "error": 0.03479558974504471
+    "method": "reviewed shared animation canvas"
   },
   "0b96f8788d03a6f0bb932c3154db1baacb35e663670b3fd7b1506a770d24970e:Pain_Skill05_81": {
     "axis": [
-      371,
-      235
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.031707923859357834
+    "method": "reviewed shared animation canvas"
   },
   "f92e8f9a96ed21f9f2c65eeec1fe0acb62e04c2764fecc3333cd283e6992229a:Pain_Skill05_82": {
     "axis": [
-      314,
-      259
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_01",
-    "error": 0.03656195104122162
+    "method": "reviewed shared animation canvas"
   },
   "c50e1a800f1ccb411ac388cb4f5adcf5198b84417703c21968ee9c4ef957dc1e:Pain_Skill05_83": {
     "axis": [
-      392,
-      382
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.047513604164123535
+    "method": "reviewed shared animation canvas"
   },
   "6b4f1b847becf79b6dea0d46b784b46926c4f128736c51512db100f6fa2a14a8:Pain_Skill05_84": {
     "axis": [
-      412,
-      298
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.04003307968378067
+    "method": "reviewed shared animation canvas"
   },
   "39a0403111e281694216f0c9d5a1c14f63399256e03aaec08d9d3d179f77da05:Pain_Skill05_85": {
     "axis": [
-      392,
-      248
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.044157400727272034
+    "method": "reviewed shared animation canvas"
   },
   "cf561b750790511fa0a8623f6e31019f2dfaa79c1e7cc537b7b8cebc33bdb091:Pain_Skill05_86": {
     "axis": [
-      361,
-      299
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_29",
-    "error": 0.06187420338392258
+    "method": "reviewed shared animation canvas"
   },
   "0ea9ed8290a5950175dac72505e32cc650051404cceb079a596a949997c35320:Pain_Skill05_87": {
     "axis": [
-      348,
-      459
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.051013682037591934
+    "method": "reviewed shared animation canvas"
   },
   "1450740932ebcb0c4f52e1d52e3d31f035dee89cb937e133a05eb418b95f4193:Pain_Skill05_88": {
     "axis": [
-      238,
-      198
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.05169930309057236
+    "method": "reviewed shared animation canvas"
   },
   "13315bb4290e5e65efeff7b388fc4c3c66429a23d35c46bbada7868f6657dcba:Pain_Skill05_89": {
     "axis": [
-      219,
-      181
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill03_55",
-    "error": 0.04632037132978439
+    "method": "reviewed shared animation canvas"
   },
   "1caf44001628302fae4b0f701a3d0ac14d6d05a1f96d17d189648f535dadcbd5:Pain_Skill05_90": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.030173471197485924
+    "method": "reviewed shared animation canvas"
   },
   "ec994300d994056f2d7287fa0d5e157a58d67e98c14f2a23df3a061243d3e958:Pain_Skill05_91": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.019740939140319824
+    "method": "reviewed shared animation canvas"
   },
   "073e18dd551fea3490bffbe81268f9a7c261ceee40fcb7797d97e33aab1f6e63:Pain_Skill05_92": {
     "axis": [
-      255,
-      158
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.04422479867935181
+    "method": "reviewed shared animation canvas"
   },
   "eeed8111d2142e6d01a84e7e3601681273bc08eb70a8c04eaafc2c7d1a5d351c:Pain_Skill05_93": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.01968647539615631
+    "method": "reviewed shared animation canvas"
   },
   "7d4db5cbcbcd4969b532f25f4fd56ed38733ccf6eb14621f5d804afc4d6089b8:Pain_Skill05_94": {
     "axis": [
-      246,
-      169
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.04446331784129143
+    "method": "reviewed shared animation canvas"
   },
   "65405108db491b929bf5cb5399a8243db1dbbf62c1f89b073642a3293f37dbcf:Pain_Skill05_95": {
     "axis": [
       315,
       291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.02978900447487831
+    "method": "reviewed shared animation canvas"
   },
   "5ea0545f43b5764e27bd69575e70cbcf06a73ee21fb42a67f76280b108eb0df9:Pain_Skill05_96": {
     "axis": [
-      393,
-      123
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_03",
-    "error": 0.05083901807665825
+    "method": "reviewed shared animation canvas"
   },
   "d4baa89e8be7b5178ff00fde7133846ec2eb11d395c09fe88cece8e26908c93d:Pain_Skill05_97": {
     "axis": [
-      394,
-      301
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_29",
-    "error": 0.05086330696940422
+    "method": "reviewed shared animation canvas"
   },
   "7fb9c19fb93c18af9fc8d0c99bcf3d8bf1359b9fd310f894676b30f7612e4e75:Pain_Skill05_98": {
     "axis": [
-      219,
-      383
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill04_29",
-    "error": 0.05665407329797745
+    "method": "reviewed shared animation canvas"
   },
   "ebe7bd9df74a046f2f96c8f05edbbf1142054334bdfc6dbded807e9c5d98104c:Pain_Skill05_99": {
     "axis": [
-      219,
-      362
+      315,
+      291
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.05099378153681755
+    "method": "reviewed shared animation canvas"
   },
   "00ec1983e563d7bed096a1b1fc4209b2544744bfa898fc536fe4b54ee841693c:Pain_Skill05_103": {
     "axis": [
-      265,
-      254
+      225,
+      188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.05341354385018349
+    "method": "reviewed shared animation canvas"
   },
   "97e24657218203d4bedc3e36b37cd09fc1e10922255889b06ac3184c9618a3fd:Pain_Skill05_104": {
     "axis": [
-      241,
-      270
+      225,
+      188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.08715404570102692
+    "method": "reviewed shared animation canvas"
   },
   "0588ab9a7eb0261cbd9119bf47a8c1b26688c37398bf64fec721fbe89f15781f:Pain_Skill05_105": {
     "axis": [
-      250,
-      277
+      225,
+      188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.08531472086906433
+    "method": "reviewed shared animation canvas"
   },
   "652dbeb74a4d593edc6fc74de959d9be3f27b1cfd44b4548b390baa9126c5e3a:Pain_Skill05_106": {
     "axis": [
-      193,
-      157
+      225,
+      188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_02",
-    "error": 0.06908738613128662
+    "method": "reviewed shared animation canvas"
   },
   "3713080878fca5568fbfbcfb00f51fddfa80be9c0baa1923dbbc02d66534f8d9:Pain_Skill05_107": {
     "axis": [
-      214,
-      155
+      225,
+      188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.045714039355516434
+    "method": "reviewed shared animation canvas"
   },
   "9a280bc323de40c9894ee82b45ad3a4149fd736cc4eea0367cf4963bf99525dc:Pain_Skill05_108": {
     "axis": [
       225,
       188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.03335016965866089
+    "method": "reviewed shared animation canvas"
   },
   "d7de9414e73bb51fb8a79acc31c57c22201eb91419267c343034a1202e4a6d93:Pain_Skill05_109": {
     "axis": [
       225,
       188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.014156324788928032
+    "method": "reviewed shared animation canvas"
   },
   "92ef40a45a2699694b60e482f750bd058fc273ef6bcc78d7dfb5121d99d9faba:Pain_Skill05_110": {
     "axis": [
       225,
       188
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_63",
-    "error": 0.011340540833771229
+    "method": "reviewed shared animation canvas"
   },
   "5a8bce49377a7e261743d903a919f67112a7a9cdf53ddda180262fd2ee2472d1:Pain_Skill05_164": {
     "axis": [
@@ -2876,74 +2580,58 @@
   },
   "0cab83f6c6587f496224ce3e53571644c04a77f7989211d441e0537758d03298:Pain_Skill05_141": {
     "axis": [
-      121,
-      93
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06860701739788055
+    "method": "reviewed shared animation canvas"
   },
   "ff2c100ace8781540b0da311528247fb2ca6a52fc9f14d70f84054229ea48271:Pain_Skill05_142": {
     "axis": [
-      119,
-      90
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.06898894160985947
+    "method": "reviewed shared animation canvas"
   },
   "192ef0ccd3e3e73827fe26716b96a6c0e0928cefc4ac6074c61c456e5c2779b3:Pain_Skill05_143": {
     "axis": [
-      122,
-      93
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.10171306878328323
+    "method": "reviewed shared animation canvas"
   },
   "8c6c24abab18c4e5a0ece6dbb9de1d9f3a3bc5fb782a77fadecd449188968e2a:Pain_Skill05_144": {
     "axis": [
-      119,
-      88
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.10146207362413406
+    "method": "reviewed shared animation canvas"
   },
   "1fb20390f4ac1c14636a3438263799a1c1babce9f7f4bfb761dfa8756333a4be:Pain_Skill05_145": {
     "axis": [
-      122,
-      94
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_04",
-    "error": 0.1143404170870781
+    "method": "reviewed shared animation canvas"
   },
   "3c5336063d8777e3c14935f7c0f66860522b5e45d77b0ea787bba680297a1455:Pain_Skill05_146": {
     "axis": [
       125,
-      92
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Skill05_02",
-    "error": 0.11313984543085098
+    "method": "reviewed shared animation canvas"
   },
   "84ce9dc86fe8d71f96babaeba1b5195b2a46b550fb3b421343f8495fb6bc1050:Pain_Skill05_147": {
     "axis": [
-      134,
-      117
+      125,
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_Hurt_02",
-    "error": 0.1265082210302353
+    "method": "reviewed shared animation canvas"
   },
   "59199984549c89a31b48e554d18c5e8c320233e2a770dc8e9a03f64c40162aed:Pain_Skill05_148": {
     "axis": [
       125,
-      69
+      120
     ],
-    "method": "masked original body match",
-    "reference": "Pain_KnockDown_03",
-    "error": 0.11937285214662552
+    "method": "reviewed shared animation canvas"
   }
 }

@@ -68,6 +68,11 @@ def run(name,out,capture=None):
         # force its state or velocity while it receives and recovers from a hit.
         p1+=controller('PosSet',window(10,55),f'x=EnemyNear,Pos X-{c["face"]*60}\ny=0')
         pose=c['pose'];state={'idle':0,'walk':20,'dash':100,'backdash':105,'charge':500,'normal':200,'special':1000}[pose]
+        if name=='BorutoKarmaJogan' and c['form'] and pose=='special':
+            # This Rasengan now really lifts its caster. Aim the attack at
+            # that airborne body instead of firing a ground jab underneath it.
+            p1+=controller('PosSet',window(25,70),'y=EnemyNear,Pos Y')
+            c['probe_alignment']='actual airborne defender height'
         if name=='Eida' and c['form'] and pose=='idle':state=4001
         if c['form'] and name in ['MitsukiTBV','RyuShinju','HidariShinju','MatsuriShinju','DeepaKara','OugaYatsume','JigenKara','CodeNoLimiter','SumireKakei','HimawariTBV','BorutoKarmaJogan'] and pose in ['normal','special']:state+=10000
         p2+=controller('ChangeState',at(18),f'value={state}\nctrl={1 if pose in ["idle","walk"] else 0}')

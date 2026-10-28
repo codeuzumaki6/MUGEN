@@ -2980,9 +2980,9 @@ volumescale=75
 [State 1030, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,2
+value=S3,4
 channel=0
-volumescale=110
+volumescale=90
 
 
 [State 1030, Brief technique focus]
@@ -2998,11 +2998,43 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 1030, Clear spiral contact clock]
+type=VarSet
+trigger1=Time=0
+v=22
+value=-1
+
+
+[State 1030, Finite technique resource]
+type=Helper
+trigger1=Time=0 && NumHelper(9561)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9561
+stateno=9561
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State 1030, Close with the rotating chakra]
+type=VelSet
+trigger1=Time>=14 && Time<42 && !MoveContact
+x=IfElse(P2Dist X>42,7,0)
+
+
+[State 1030, Plant feet on palm contact]
+type=VelSet
+trigger1=MoveContact || Time>=42
+x=0
+
+
 [State 1030, Real attack collision]
 type=HitDef
-trigger1=Time=15
+trigger1=Time=28
 attr=S,SA
-damage=80,0
+damage=75,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3014,7 +3046,7 @@ sparkxy=0,-35
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=85
 ground.slidetime=14
 ground.velocity=-0.3,0
 air.hittime=30
@@ -3024,47 +3056,217 @@ fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=10,5
-ID=0
+ID=1030
 hitonce=1
 envshake.time=2
 envshake.ampl=-1
 
+p2stateno=3020
+p2getp1state=1
 
-[State 1030, Real attack collision]
-type=HitDef
-trigger1=Time=30
-attr=S,SA
-damage=115,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-5,-6
-air.hittime=30
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=6
-envshake.ampl=-4
+[State 1030, Remember real palm contact]
+type=VarSet
+trigger1=MoveHit && NumTarget(1030)>0 && Var(22)<0
+v=22
+value=Time
+
+
+[State 1030, Wind at the hand]
+type=Explod
+trigger1=Time=23
+anim=8816
+postype=P1
+pos=42,-45
+scale=.23,.23
+bindtime=-1
+removetime=48
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 1030, Spiral on the actual struck opponent]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0
+anim=8815
+postype=P1
+pos=58,-48
+scale=.3,.3
+bindtime=-1
+removetime=42
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 1030, Finite rotational impact]
+type=TargetBind
+trigger1=Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42
+ID=1030
+time=1
+pos=58+8*Sin(Time*.3),-12-10*Abs(Sin(Time*.3))
+
+
+[State 1030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+ID=1030
+value=-35
+absolute=1
+kill=1
+
+
+[State 1030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+value=1
+
+
+[State 1030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 1030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+ID=1030
+value=-35
+absolute=1
+kill=1
+
+
+[State 1030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=1
+
+
+[State 1030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 1030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+ID=1030
+value=-35
+absolute=1
+kill=1
+
+
+[State 1030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=1
+
+
+[State 1030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 1030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+ID=1030
+value=-35
+absolute=1
+kill=1
+
+
+[State 1030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=1
+
+
+[State 1030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 1030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 1030, Release the spinning opponent]
+type=TargetState
+trigger1=Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0
+ID=1030
+value=3021
 
 
 [State 1030, Return control]
 type=ChangeState
-trigger1=Time>=50
+trigger1=Time>=100
 value=0
 ctrl=1
 
@@ -3551,36 +3753,62 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 1420, Real rising motion]
-type=VelSet
-trigger1=Time=4
-x=4
-y=-6.5
+[State 1420, Show opponent reacting in the sphere]
+type=SprPriority
+trigger1=1
+value=-1
 
 
-[State 1420, Airborne]
+[State 1420, Airborne Rasengan caster]
 type=StateTypeSet
 trigger1=Time=4
 statetype=A
 physics=N
 
 
-[State 1420, Finite gravity]
-type=VelAdd
-trigger1=Time>4
-y=.46
+[State 1420, Controlled takeoff]
+type=PosSet
+trigger1=Time>=4 && Time<20
+y=-110*(Time-4)/16
 
 
-[State 1420, Original landing]
+[State 1420, Original airborne contact height]
+type=PosSet
+trigger1=Time>=20
+y=-110
+
+
+[State 1420, Airborne approach]
+type=VelSet
+trigger1=Time>=4 && Time<20
+x=IfElse(P2Dist X>85,4,0)
+y=0
+
+
+[State 1420, Keep caster above the spheres]
+type=VelSet
+trigger1=Time>=20
+x=0
+y=0
+
+
+[State 1420, Descend after the original impact]
+type=VelSet
+trigger1=Time>=44
+x=0
+y=2
+
+
+[State 1420, Return through real air physics]
 type=ChangeState
-trigger1=Time>20 && Pos Y>=0 && Vel Y>0
-value=1060
+trigger1=Time>=44
+value=50
 ctrl=0
 
 
 [State 1420, Real attack collision]
 type=HitDef
-trigger1=Time=7
+trigger1=Time=23
 attr=A,SA
 damage=70,0
 animtype=Medium
@@ -3612,7 +3840,7 @@ envshake.ampl=-1
 
 [State 1420, Real attack collision]
 type=HitDef
-trigger1=Time=21
+trigger1=Time=35
 attr=A,SA
 damage=115,0
 animtype=Up
@@ -3645,7 +3873,7 @@ envshake.ampl=-4
 [State 1420, Return control]
 type=ChangeState
 trigger1=Time>=50
-value=50
+value=0
 ctrl=1
 
 
@@ -3968,86 +4196,22 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 1440, Real attack collision]
-type=HitDef
-trigger1=Time=10
-attr=S,SA
-damage=85,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-0.3,0
-air.hittime=30
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=2
-envshake.ampl=-1
-
-
-[State 1440, Real attack collision]
-type=HitDef
-trigger1=Time=25
-attr=S,SA
-damage=120,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-5,-6
-air.hittime=30
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=6
-envshake.ampl=-4
-
-
 [State 1440, Finite technique resource]
 type=Helper
-trigger1=Time=9
+trigger1=Time=12
 helpertype=Normal
 name="Boruto technique"
-ID=9503
-stateno=9503
+ID=9504
+stateno=9504
 postype=P1
-pos=35,-38
+pos=40,-38
 ownpal=1
 keyctrl=0
 
 
 [State 1440, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=9
+trigger1=Time=12
 value=S2,15
 channel=2
 volumescale=80
@@ -4119,22 +4283,63 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 11000, Physical technique approach]
-type=VelSet
-trigger1=Time>=6 && Time<28 && !MoveContact
-x=7
+[State 11000, Show opponent reacting in the sphere]
+type=SprPriority
+trigger1=1
+value=-1
 
 
-[State 11000, Brake on contact]
+[State 11000, Airborne Rasengan caster]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 11000, Controlled takeoff]
+type=PosSet
+trigger1=Time>=4 && Time<20
+y=-110*(Time-4)/16
+
+
+[State 11000, Original airborne contact height]
+type=PosSet
+trigger1=Time>=20
+y=-110
+
+
+[State 11000, Airborne approach]
 type=VelSet
-trigger1=MoveContact || Time>=28
+trigger1=Time>=4 && Time<20
+x=IfElse(P2Dist X>85,4,0)
+y=0
+
+
+[State 11000, Keep caster above the spheres]
+type=VelSet
+trigger1=Time>=20
 x=0
+y=0
+
+
+[State 11000, Descend after the original impact]
+type=VelSet
+trigger1=Time>=44
+x=0
+y=2
+
+
+[State 11000, Return through real air physics]
+type=ChangeState
+trigger1=Time>=44
+value=50
+ctrl=0
 
 
 [State 11000, Real attack collision]
 type=HitDef
-trigger1=Time=15
-attr=S,SA
+trigger1=Time=23
+attr=A,SA
 damage=90,0
 animtype=Medium
 guardflag=MA
@@ -4165,8 +4370,8 @@ envshake.ampl=-1
 
 [State 11000, Real attack collision]
 type=HitDef
-trigger1=Time=28
-attr=S,SA
+trigger1=Time=35
+attr=A,SA
 damage=125,0
 animtype=Up
 guardflag=MA
@@ -4497,9 +4702,9 @@ volumescale=75
 [State 11030, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,2
+value=S3,4
 channel=0
-volumescale=110
+volumescale=90
 
 
 [State 11030, Brief technique focus]
@@ -4515,11 +4720,43 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 11030, Clear spiral contact clock]
+type=VarSet
+trigger1=Time=0
+v=22
+value=-1
+
+
+[State 11030, Finite technique resource]
+type=Helper
+trigger1=Time=0 && NumHelper(9561)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9561
+stateno=9561
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State 11030, Close with the rotating chakra]
+type=VelSet
+trigger1=Time>=14 && Time<42 && !MoveContact
+x=IfElse(P2Dist X>42,7,0)
+
+
+[State 11030, Plant feet on palm contact]
+type=VelSet
+trigger1=MoveContact || Time>=42
+x=0
+
+
 [State 11030, Real attack collision]
 type=HitDef
-trigger1=Time=8
+trigger1=Time=28
 attr=S,SA
-damage=70,0
+damage=105,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4531,7 +4768,7 @@ sparkxy=0,-35
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=85
 ground.slidetime=14
 ground.velocity=-0.3,0
 air.hittime=30
@@ -4541,79 +4778,217 @@ fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=10,5
-ID=0
+ID=1030
 hitonce=1
 envshake.time=2
 envshake.ampl=-1
 
+p2stateno=3020
+p2getp1state=1
 
-[State 11030, Real attack collision]
-type=HitDef
-trigger1=Time=26
-attr=S,SA
-damage=85,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-0.3,0
-air.hittime=30
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=2
-envshake.ampl=-1
+[State 11030, Remember real palm contact]
+type=VarSet
+trigger1=MoveHit && NumTarget(1030)>0 && Var(22)<0
+v=22
+value=Time
 
 
-[State 11030, Real attack collision]
-type=HitDef
-trigger1=Time=44
-attr=S,SA
-damage=125,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-5,-6
-air.hittime=30
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=6
-envshake.ampl=-4
+[State 11030, Wind at the hand]
+type=Explod
+trigger1=Time=23
+anim=8816
+postype=P1
+pos=42,-45
+scale=.23,.23
+bindtime=-1
+removetime=48
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 11030, Spiral on the actual struck opponent]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0
+anim=8815
+postype=P1
+pos=58,-48
+scale=.3,.3
+bindtime=-1
+removetime=42
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 11030, Finite rotational impact]
+type=TargetBind
+trigger1=Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42
+ID=1030
+time=1
+pos=58+8*Sin(Time*.3),-12-10*Abs(Sin(Time*.3))
+
+
+[State 11030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+ID=1030
+value=-45
+absolute=1
+kill=1
+
+
+[State 11030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+value=1
+
+
+[State 11030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+ID=1030
+value=-45
+absolute=1
+kill=1
+
+
+[State 11030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=1
+
+
+[State 11030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+ID=1030
+value=-45
+absolute=1
+kill=1
+
+
+[State 11030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=1
+
+
+[State 11030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11030, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+ID=1030
+value=-45
+absolute=1
+kill=1
+
+
+[State 11030, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=1
+
+
+[State 11030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11030, Release the spinning opponent]
+type=TargetState
+trigger1=Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0
+ID=1030
+value=3021
 
 
 [State 11030, Return control]
 type=ChangeState
-trigger1=Time>=60
+trigger1=Time>=100
 value=0
 ctrl=1
 
@@ -5100,10 +5475,63 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 11420, Show opponent reacting in the sphere]
+type=SprPriority
+trigger1=1
+value=-1
+
+
+[State 11420, Airborne Rasengan caster]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 11420, Controlled takeoff]
+type=PosSet
+trigger1=Time>=4 && Time<20
+y=-90*(Time-4)/16
+
+
+[State 11420, Original airborne contact height]
+type=PosSet
+trigger1=Time>=20
+y=-90
+
+
+[State 11420, Airborne approach]
+type=VelSet
+trigger1=Time>=4 && Time<20
+x=IfElse(P2Dist X>85,4,0)
+y=0
+
+
+[State 11420, Keep caster above the spheres]
+type=VelSet
+trigger1=Time>=20
+x=0
+y=0
+
+
+[State 11420, Descend after the original impact]
+type=VelSet
+trigger1=Time>=69
+x=0
+y=2
+
+
+[State 11420, Return through real air physics]
+type=ChangeState
+trigger1=Time>=69
+value=50
+ctrl=0
+
+
 [State 11420, Real attack collision]
 type=HitDef
-trigger1=Time=14
-attr=S,SA
+trigger1=Time=28
+attr=A,SA
 damage=75,0
 animtype=Medium
 guardflag=MA
@@ -5134,8 +5562,8 @@ envshake.ampl=-1
 
 [State 11420, Real attack collision]
 type=HitDef
-trigger1=Time=32
-attr=S,SA
+trigger1=Time=40
+attr=A,SA
 damage=90,0
 animtype=Medium
 guardflag=MA
@@ -5166,8 +5594,8 @@ envshake.ampl=-1
 
 [State 11420, Real attack collision]
 type=HitDef
-trigger1=Time=50
-attr=S,SA
+trigger1=Time=54
+attr=A,SA
 damage=115,0
 animtype=Up
 guardflag=MA
@@ -5418,7 +5846,7 @@ volumescale=75
 [State 11430, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,3
+value=S3,4
 channel=0
 volumescale=90
 
@@ -5436,11 +5864,43 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 11430, Clear spiral contact clock]
+type=VarSet
+trigger1=Time=0
+v=22
+value=-1
+
+
+[State 11430, Finite technique resource]
+type=Helper
+trigger1=Time=0 && NumHelper(9561)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9561
+stateno=9561
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State 11430, Close with the rotating chakra]
+type=VelSet
+trigger1=Time>=14 && Time<42 && !MoveContact
+x=IfElse(P2Dist X>42,7,0)
+
+
+[State 11430, Plant feet on palm contact]
+type=VelSet
+trigger1=MoveContact || Time>=42
+x=0
+
+
 [State 11430, Real attack collision]
 type=HitDef
-trigger1=Time=18
+trigger1=Time=28
 attr=S,SA
-damage=75,0
+damage=130,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5452,7 +5912,7 @@ sparkxy=0,-35
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=30
+ground.hittime=85
 ground.slidetime=14
 ground.velocity=-0.3,0
 air.hittime=30
@@ -5462,101 +5922,217 @@ fall.recover=1
 fall.recovertime=45
 getpower=0,0
 givepower=10,5
-ID=0
+ID=1030
 hitonce=1
 envshake.time=2
 envshake.ampl=-1
 
+p2stateno=3020
+p2getp1state=1
 
-[State 11430, Real attack collision]
-type=HitDef
-trigger1=Time=36
-attr=S,SA
-damage=85,0
-animtype=Medium
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,7
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-0.3,0
-air.hittime=30
-air.velocity=-0.5,-1
-fall=0
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=2
-envshake.ampl=-1
+[State 11430, Remember real palm contact]
+type=VarSet
+trigger1=MoveHit && NumTarget(1030)>0 && Var(22)<0
+v=22
+value=Time
 
 
-[State 11430, Real attack collision]
-type=HitDef
-trigger1=Time=54
-attr=S,SA
-damage=110,0
-animtype=Up
-guardflag=MA
-hitflag=MAF
-priority=5,Hit
-pausetime=4,8
-sparkno=S8700
-guard.sparkno=-1
-sparkxy=0,-35
-hitsound=S1,19
-guardsound=S1,9
-ground.type=High
-ground.hittime=30
-ground.slidetime=14
-ground.velocity=-5,-6
-air.hittime=30
-air.velocity=-4,-5
-fall=1
-fall.recover=1
-fall.recovertime=45
-getpower=0,0
-givepower=10,5
-ID=0
-hitonce=1
-envshake.time=6
-envshake.ampl=-4
+[State 11430, Wind at the hand]
+type=Explod
+trigger1=Time=23
+anim=8816
+postype=P1
+pos=42,-45
+scale=.23,.23
+bindtime=-1
+removetime=48
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 11430, Spiral on the actual struck opponent]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0
+anim=8815
+postype=P1
+pos=58,-48
+scale=.3,.3
+bindtime=-1
+removetime=42
+sprpriority=3
+ownpal=1
+trans=add
+removeongethit=1
+
+
+[State 11430, Finite rotational impact]
+type=TargetBind
+trigger1=Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42
+ID=1030
+time=1
+pos=58+8*Sin(Time*.3),-12-10*Abs(Sin(Time*.3))
+
+
+[State 11430, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+ID=1030
+value=-55
+absolute=1
+kill=1
+
+
+[State 11430, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+value=1
+
+
+[State 11430, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
 
 
 [State 11430, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=14
+trigger1=Var(22)>=0 && Time=Var(22)+6 && NumTarget(1030)>0
 value=S2,53
 channel=2
 volumescale=80
 
 
+[State 11430, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+ID=1030
+value=-55
+absolute=1
+kill=1
+
+
+[State 11430, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=1
+
+
 [State 11430, Separate original effect]
 type=Explod
-trigger1=Time=20
-anim=8813
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+anim=8700
 postype=P1
-pos=0,0
-scale=0.65,0.65
-removetime=48
+pos=58,-40
+scale=0.5,0.5
+removetime=8
 bindtime=1
-sprpriority=-2
+sprpriority=4
 ownpal=1
 removeongethit=1
 
 
+[State 11430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+14 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11430, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+ID=1030
+value=-55
+absolute=1
+kill=1
+
+
+[State 11430, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=1
+
+
+[State 11430, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+22 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11430, Rotation after confirmed contact]
+type=TargetLifeAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+ID=1030
+value=-55
+absolute=1
+kill=1
+
+
+[State 11430, Count spiral impact]
+type=HitAdd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=1
+
+
+[State 11430, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+anim=8700
+postype=P1
+pos=58,-40
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 11430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Var(22)>=0 && Time=Var(22)+30 && NumTarget(1030)>0
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11430, Release the spinning opponent]
+type=TargetState
+trigger1=Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0
+ID=1030
+value=3021
+
+
 [State 11430, Return control]
 type=ChangeState
-trigger1=Time>=76
+trigger1=Time>=100
 value=0
 ctrl=1
 
@@ -5599,10 +6175,63 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 11440, Show opponent reacting in the sphere]
+type=SprPriority
+trigger1=1
+value=-1
+
+
+[State 11440, Airborne Rasengan caster]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 11440, Controlled takeoff]
+type=PosSet
+trigger1=Time>=4 && Time<16
+y=-90*(Time-4)/12
+
+
+[State 11440, Original airborne contact height]
+type=PosSet
+trigger1=Time>=16
+y=-90
+
+
+[State 11440, Airborne approach]
+type=VelSet
+trigger1=Time>=4 && Time<16
+x=IfElse(P2Dist X>85,4,0)
+y=0
+
+
+[State 11440, Keep caster above the spheres]
+type=VelSet
+trigger1=Time>=16
+x=0
+y=0
+
+
+[State 11440, Descend after the original impact]
+type=VelSet
+trigger1=Time>=66
+x=0
+y=2
+
+
+[State 11440, Return through real air physics]
+type=ChangeState
+trigger1=Time>=66
+value=50
+ctrl=0
+
+
 [State 11440, Real attack collision]
 type=HitDef
-trigger1=Time=10
-attr=S,SA
+trigger1=Time=22
+attr=A,SA
 damage=80,0
 animtype=Medium
 guardflag=MA
@@ -5633,8 +6262,8 @@ envshake.ampl=-1
 
 [State 11440, Real attack collision]
 type=HitDef
-trigger1=Time=25
-attr=S,SA
+trigger1=Time=38
+attr=A,SA
 damage=95,0
 animtype=Medium
 guardflag=MA
@@ -5665,8 +6294,8 @@ envshake.ampl=-1
 
 [State 11440, Real attack collision]
 type=HitDef
-trigger1=Time=42
-attr=S,SA
+trigger1=Time=52
+attr=A,SA
 damage=135,0
 animtype=Up
 guardflag=MA
@@ -5695,22 +6324,9 @@ envshake.time=6
 envshake.ampl=-4
 
 
-[State 11440, Finite technique resource]
-type=Helper
-trigger1=Time=9
-helpertype=Normal
-name="Boruto technique"
-ID=9503
-stateno=9503
-postype=P1
-pos=35,-38
-ownpal=1
-keyctrl=0
-
-
 [State 11440, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=9
+trigger1=Time=16
 value=S2,15
 channel=2
 volumescale=80
@@ -5971,6 +6587,64 @@ envshake.ampl=-4
 
 
 [State 9503, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9504]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8804
+velset=10,0
+
+[State 9504, Standalone projectile size]
+type=AngleDraw
+trigger1=1
+scale=.55,.55
+
+
+[State 9504, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9504, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=205,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9504, Finite projectile]
 type=DestroySelf
 trigger1=MoveContact || Time>=50 || RoundState!=2
 
@@ -6468,6 +7142,52 @@ trigger1=RoundState!=2 || (Root,Life)<=0 || (Root,Var(42))=0
 
 
 
+[Statedef 9561]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8815
+velset=0,0
+
+[State 9561, Wind wraps actual caster]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-43
+
+
+[State 9561, Torso sized rotation]
+type=AngleDraw
+trigger1=1
+scale=.24,.24
+
+
+[State 9561, Bright original chakra ribbons]
+type=Trans
+trigger1=1
+trans=addalpha
+alpha=256,256
+
+
+[State 9561, Visible wind over the coat]
+type=SprPriority
+trigger1=1
+value=3
+
+
+[State 9561, No push from chakra]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9561, Stop with actual technique]
+type=DestroySelf
+trigger1=RoundState!=2 || (Root,Life)<=0 || ((Root,StateNo)%10000!=1030 && (Root,StateNo)!=11430)
+
+
+
 [Statedef 520]
 type=S
 movetype=I
@@ -6599,6 +7319,12 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 3000, See the victim inside the original effects]
+type=SprPriority
+trigger1=1
+value=-1
+
+
 [State 3000, No cinematic push]
 type=PlayerPush
 trigger1=1
@@ -6670,15 +7396,51 @@ value=1
 [State 3000, Approach actual target]
 type=PosSet
 trigger1=Time=40 && NumTarget(3000)>0
-x=FVar(0)-Facing*70
+x=FVar(0)-Facing*90
 
 
-[State 3000, Hold confirmed opponent]
+[State 3000, Caster lifts with the lightning]
+type=PosSet
+trigger1=Time>=72 && Time<100
+y=-60
+
+
+[State 3000, Return from lightning before wind]
+type=PosSet
+trigger1=Time=100
+y=0
+
+
+[State 3000, Real double Rasengan takeoff]
+type=PosSet
+trigger1=Time>=176 && Time<192
+y=-90*(Time-176)/16
+
+
+[State 3000, Double Rasengan sphere contact height]
+type=PosSet
+trigger1=Time>=192 && Time<257
+y=-90
+
+
+[State 3000, Land with the final source frames]
+type=PosSet
+trigger1=Time>=257 && Time<275
+y=-90+5*(Time-257)
+
+
+[State 3000, Feet back on stage]
+type=PosSet
+trigger1=Time>=275
+y=0
+
+
+[State 3000, Hold opponent inside the actual ground effect]
 type=TargetBind
-trigger1=NumTarget(3000)>0 && Time<268
+trigger1=NumTarget(3000)>0 && Time<280
 ID=3000
 time=1
-pos=(FVar(0)-Pos X)*Facing,0
+pos=(FVar(0)-Pos X)*Facing,-Pos Y
 
 
 [State 3000, Separate original effect]
@@ -6748,7 +7510,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6757,13 +7519,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6777,7 +7539,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -6785,7 +7547,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6794,13 +7556,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6814,7 +7576,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -6822,7 +7584,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6831,13 +7593,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6851,7 +7613,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -6859,7 +7621,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6868,13 +7630,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6888,7 +7650,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -6896,7 +7658,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6905,13 +7667,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6925,7 +7687,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -6933,7 +7695,7 @@ volumescale=80
 
 [State 3000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -6942,13 +7704,13 @@ kill=1
 
 [State 3000, Count actual pulse]
 type=HitAdd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 value=1
 
 
 [State 3000, Separate original effect]
 type=Explod
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -6962,7 +7724,7 @@ removeongethit=1
 
 [State 3000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7026,7 +7788,7 @@ type=Explod
 trigger1=Time=244 && NumTarget(3000)>0
 anim=8814
 postype=P1
-pos=(FVar(0)-Pos X)*Facing,0
+pos=(FVar(0)-Pos X)*Facing,-Pos Y
 scale=0.4,0.4
 removetime=51
 bindtime=1
@@ -7037,14 +7799,14 @@ removeongethit=1
 
 [State 3000, Release rival]
 type=TargetState
-trigger1=Time=268 && NumTarget(3000)>0
+trigger1=Time=280 && NumTarget(3000)>0
 ID=3000
 value=3011
 
 
 [State 3000, Return control]
 type=ChangeState
-trigger1=Time>=290
+trigger1=Time>=310
 value=0
 ctrl=1
 
@@ -7086,6 +7848,12 @@ unhittable=0
 p2defmul=1
 poweradd=0
 persistent=0
+
+[State 13000, See the victim inside the original effects]
+type=SprPriority
+trigger1=1
+value=-1
+
 
 [State 13000, No cinematic push]
 type=PlayerPush
@@ -7158,15 +7926,51 @@ value=1
 [State 13000, Approach actual target]
 type=PosSet
 trigger1=Time=40 && NumTarget(3000)>0
-x=FVar(0)-Facing*70
+x=FVar(0)-Facing*90
 
 
-[State 13000, Hold confirmed opponent]
+[State 13000, Caster lifts with the lightning]
+type=PosSet
+trigger1=Time>=72 && Time<100
+y=-60
+
+
+[State 13000, Return from lightning before wind]
+type=PosSet
+trigger1=Time=100
+y=0
+
+
+[State 13000, Real double Rasengan takeoff]
+type=PosSet
+trigger1=Time>=176 && Time<192
+y=-90*(Time-176)/16
+
+
+[State 13000, Double Rasengan sphere contact height]
+type=PosSet
+trigger1=Time>=192 && Time<257
+y=-90
+
+
+[State 13000, Land with the final source frames]
+type=PosSet
+trigger1=Time>=257 && Time<275
+y=-90+5*(Time-257)
+
+
+[State 13000, Feet back on stage]
+type=PosSet
+trigger1=Time>=275
+y=0
+
+
+[State 13000, Hold opponent inside the actual ground effect]
 type=TargetBind
-trigger1=NumTarget(3000)>0 && Time<268
+trigger1=NumTarget(3000)>0 && Time<280
 ID=3000
 time=1
-pos=(FVar(0)-Pos X)*Facing,0
+pos=(FVar(0)-Pos X)*Facing,-Pos Y
 
 
 [State 13000, Separate original effect]
@@ -7236,7 +8040,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7245,13 +8049,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7265,7 +8069,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=72 && NumTarget(3000)>0
+trigger1=Time=82 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7273,7 +8077,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7282,13 +8086,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7302,7 +8106,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=100 && NumTarget(3000)>0
+trigger1=Time=118 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7310,7 +8114,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7319,13 +8123,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7339,7 +8143,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=128 && NumTarget(3000)>0
+trigger1=Time=142 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7347,7 +8151,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7356,13 +8160,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7376,7 +8180,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=156 && NumTarget(3000)>0
+trigger1=Time=164 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7384,7 +8188,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7393,13 +8197,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7413,7 +8217,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=184 && NumTarget(3000)>0
+trigger1=Time=198 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7421,7 +8225,7 @@ volumescale=80
 
 [State 13000, Confirmed impact]
 type=TargetLifeAdd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 ID=3000
 value=-(Floor(Var(20)/8))
 absolute=1
@@ -7430,13 +8234,13 @@ kill=1
 
 [State 13000, Count actual pulse]
 type=HitAdd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 value=1
 
 
 [State 13000, Separate original effect]
 type=Explod
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 anim=8700
 postype=P1
 pos=(FVar(0)-Pos X)*Facing,-35
@@ -7450,7 +8254,7 @@ removeongethit=1
 
 [State 13000, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=212 && NumTarget(3000)>0
+trigger1=Time=220 && NumTarget(3000)>0
 value=S2,1
 channel=2
 volumescale=80
@@ -7514,7 +8318,7 @@ type=Explod
 trigger1=Time=244 && NumTarget(3000)>0
 anim=8814
 postype=P1
-pos=(FVar(0)-Pos X)*Facing,0
+pos=(FVar(0)-Pos X)*Facing,-Pos Y
 scale=0.4,0.4
 removetime=51
 bindtime=1
@@ -7525,14 +8329,14 @@ removeongethit=1
 
 [State 13000, Release rival]
 type=TargetState
-trigger1=Time=268 && NumTarget(3000)>0
+trigger1=Time=280 && NumTarget(3000)>0
 ID=3000
 value=3011
 
 
 [State 13000, Return control]
 type=ChangeState
-trigger1=Time>=290
+trigger1=Time>=310
 value=0
 ctrl=1
 
@@ -7575,6 +8379,56 @@ y=-6
 
 
 [State 3011, Return opponent state ownership]
+type=SelfState
+trigger1=1
+value=5050
+ctrl=0
+
+
+[Statedef 3020]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3020, Retain victim artwork]
+type=ChangeAnim
+trigger1=Time=0 && SelfAnimExist(5000)
+value=5000
+
+
+[State 3020, Uzuhiko rotational reaction]
+type=AngleDraw
+trigger1=1
+value=Time*18
+
+
+[State 3020, Independent spiral escape]
+type=SelfState
+trigger1=Time>=90
+trigger2=NumEnemy=0
+trigger3=(EnemyNear,StateNo)%10000!=1030 && (EnemyNear,StateNo)!=11430
+trigger4=RoundState!=2
+value=5050
+ctrl=0
+
+
+[Statedef 3021]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3021, Spiral release velocity]
+type=VelSet
+trigger1=Time=0
+x=-5
+y=-5
+
+
+[State 3021, Restore victim state ownership]
 type=SelfState
 trigger1=1
 value=5050

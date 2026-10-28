@@ -1,0 +1,1051 @@
+{
+  "runtime_sha256": "1deb5ba3c5085c013f9d3535670a2a3cc3e1f112788bf046456cdc0390bc692e",
+  "sphere_contacts": [
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        -81.68749237060547,
+        -110.0
+      ],
+      "victim": [
+        -1.6875,
+        0.0
+      ],
+      "damage": 70,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        -81.68749237060547,
+        -110.0
+      ],
+      "victim": [
+        -1.3874969482421875,
+        0.0
+      ],
+      "damage": 115,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        56.437496185302734,
+        -110.0
+      ],
+      "victim": [
+        -23.5625,
+        0.0
+      ],
+      "damage": 70,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        56.437496185302734,
+        -110.0
+      ],
+      "victim": [
+        -23.862503051757812,
+        0.0
+      ],
+      "damage": 115,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        81.68749237060547,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        81.98749542236328,
+        0.0
+      ],
+      "damage": 147,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 58,
+      "source_frame": "Pain_Skill05_150",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        45.8125,
+        0.0
+      ],
+      "damage": 88,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 74,
+      "source_frame": "Pain_Skill05_154",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        46.11249542236328,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 92,
+      "source_frame": "Pain_Skill05_159",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        46.412498474121094,
+        0.0
+      ],
+      "damage": 136,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 52,
+      "source_frame": "Pain_Skill05_152",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        45.875,
+        0.0
+      ],
+      "damage": 94,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 72,
+      "source_frame": "Pain_Skill05_160",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        46.17500305175781,
+        0.0
+      ],
+      "damage": 112,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 90,
+      "source_frame": "Pain_Skill05_167",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        46.475006103515625,
+        0.0
+      ],
+      "damage": 159,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        -4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        -81.68749237060547,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        -4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        -81.98749542236328,
+        0.0
+      ],
+      "damage": 147,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 58,
+      "source_frame": "Pain_Skill05_150",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -45.8125,
+        0.0
+      ],
+      "damage": 88,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 74,
+      "source_frame": "Pain_Skill05_154",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -46.11249542236328,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 92,
+      "source_frame": "Pain_Skill05_159",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -46.412498474121094,
+        0.0
+      ],
+      "damage": 136,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 52,
+      "source_frame": "Pain_Skill05_152",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -45.875,
+        0.0
+      ],
+      "damage": 94,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 72,
+      "source_frame": "Pain_Skill05_160",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -46.17500305175781,
+        0.0
+      ],
+      "damage": 112,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 1,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 90,
+      "source_frame": "Pain_Skill05_167",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -46.475006103515625,
+        0.0
+      ],
+      "damage": 159,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        -81.68749237060547,
+        -110.0
+      ],
+      "victim": [
+        -1.6875,
+        0.0
+      ],
+      "damage": 70,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        -81.68749237060547,
+        -110.0
+      ],
+      "victim": [
+        -1.3874969482421875,
+        0.0
+      ],
+      "damage": 115,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        56.437496185302734,
+        -110.0
+      ],
+      "victim": [
+        -23.5625,
+        0.0
+      ],
+      "damage": 70,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        56.437496185302734,
+        -110.0
+      ],
+      "victim": [
+        -23.862503051757812,
+        0.0
+      ],
+      "damage": 115,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        81.68749237060547,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        81.98749542236328,
+        0.0
+      ],
+      "damage": 147,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 58,
+      "source_frame": "Pain_Skill05_150",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        45.8125,
+        0.0
+      ],
+      "damage": 88,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 74,
+      "source_frame": "Pain_Skill05_154",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        46.11249542236328,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 92,
+      "source_frame": "Pain_Skill05_159",
+      "caster": [
+        -34.1875,
+        -90.0
+      ],
+      "victim": [
+        46.412498474121094,
+        0.0
+      ],
+      "damage": 136,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 52,
+      "source_frame": "Pain_Skill05_152",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        45.875,
+        0.0
+      ],
+      "damage": 94,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 72,
+      "source_frame": "Pain_Skill05_160",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        46.17500305175781,
+        0.0
+      ],
+      "damage": 112,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 90,
+      "source_frame": "Pain_Skill05_167",
+      "caster": [
+        -56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        46.475006103515625,
+        0.0
+      ],
+      "damage": 159,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 53,
+      "source_frame": "Pain_Skill02_49",
+      "caster": [
+        -4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        -81.68749237060547,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "tick": 69,
+      "source_frame": "Pain_Skill02_52",
+      "caster": [
+        -4.4875030517578125,
+        -110.0
+      ],
+      "victim": [
+        -81.98749542236328,
+        0.0
+      ],
+      "damage": 147,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 58,
+      "source_frame": "Pain_Skill05_150",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -45.8125,
+        0.0
+      ],
+      "damage": 88,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 74,
+      "source_frame": "Pain_Skill05_154",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -46.11249542236328,
+        0.0
+      ],
+      "damage": 106,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Caida",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 450,
+        "distance": 80
+      },
+      "tick": 92,
+      "source_frame": "Pain_Skill05_159",
+      "caster": [
+        34.1875,
+        -90.0
+      ],
+      "victim": [
+        -46.412498474121094,
+        0.0
+      ],
+      "damage": 136,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 52,
+      "source_frame": "Pain_Skill05_152",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -45.875,
+        0.0
+      ],
+      "damage": 94,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 72,
+      "source_frame": "Pain_Skill05_160",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -46.17500305175781,
+        0.0
+      ],
+      "damage": 112,
+      "inside_visible_effect": true
+    },
+    {
+      "scale": 0.5,
+      "case": {
+        "name": "Futon",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "z",
+        "d": "D",
+        "state": 11440,
+        "cost": 600,
+        "distance": 150
+      },
+      "tick": 90,
+      "source_frame": "Pain_Skill05_167",
+      "caster": [
+        56.12499237060547,
+        -90.0
+      ],
+      "victim": [
+        -46.475006103515625,
+        0.0
+      ],
+      "damage": 159,
+      "inside_visible_effect": true
+    }
+  ],
+  "contacts": 40,
+  "far_misses": 8,
+  "blocked_spirals": 4,
+  "interrupted_spirals": 4,
+  "late_ultimate_interruptions": 4,
+  "source": "Actual engine positions and HP changes; torso lies in source-art sphere cores"
+}

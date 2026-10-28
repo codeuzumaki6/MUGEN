@@ -29,6 +29,8 @@
   "original_character_audio": 11,
   "original_rgba_preserved": true,
   "indexed_rle8_lossless": true,
+  "additive_wind_frames": 58,
+  "wind_frames_visible": true,
   "excluded_frames": [
     {
       "plist": "Pain/Pain.plist",

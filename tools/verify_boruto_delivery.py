@@ -15,6 +15,8 @@ def main():
  for c in core['cases']:
   if c['case']['kind'] in ['ultimate','ultimate_one_hp']:assert c['damage']==(800 if c['case']['form'] else 650) and c['damage_pulses']==8 and c['pulse_span_ticks']==200 and c['victim_released']=='true'
  assert len(clone['cases'])==8 and {c['kind'] for c in clone['cases']}=={'expiry','defeat'} and clone['clone_health']==120 and clone['clone_ticks']==180
+ contact=report(NAME+'_visual_contact_checks.json');assert contact['runtime_sha256']==runtime and contact['contacts']==40 and all(c['inside_visible_effect'] for c in contact['sphere_contacts'])
+ assert contact['far_misses']==8 and contact['blocked_spirals']==4 and contact['interrupted_spirals']==4 and contact['late_ultimate_interruptions']==4
  receiving=report(NAME+'_receiving/'+NAME+'.json');assert len(receiving)==112 and all(c['damage']>0 and c['hurt'] and c['recovered'] for c in receiving);assert all(c['hits_received']==3 for c in receiving if c['attack']=='combo')
  dash=report(NAME+'_dash_checks.json');assert len(dash)==16 and all(c['passed'] for c in dash) and {c['form'] for c in dash}=={0,1}
  video=ROOT/'previews'/preview['video'];assert sha(video.read_bytes())==preview['sha256'] and all(c['correlation']>=.20 for c in preview['activations'])
@@ -22,9 +24,9 @@ def main():
  with zipfile.ZipFile(archive) as z:
   assert z.testzip() is None and set(z.namelist())=={NAME+'/'+f for f in package['files']}
   for f,digest in package['files'].items():assert sha((ROOT/NAME/f).read_bytes())==digest==sha(z.read(NAME+'/'+f)),f
- source=report(NAME+'_source_checks.json');assert source['original_rgba_preserved'] and source['indexed_rle8_lossless'] and source['original_files']==618 and source['original_frames']==663 and source['selected_original_audio']==67
+ source=report(NAME+'_source_checks.json');assert source['original_rgba_preserved'] and source['indexed_rle8_lossless'] and source['original_files']==618 and source['original_frames']==663 and source['selected_original_audio']==67 and source['wind_frames_visible'] and source['additive_wind_frames']==58
  assert subprocess.run(['git','diff','--quiet',BASELINE,'--']+PREVIOUS,cwd=ROOT).returncode==0,'Previous playable character changed'
- result=dict(character=NAME,runtime_sha256=runtime,actual_inputs=120,receiving_probes=112,clone_checks=8,short_target_checks=20,dash_checks=16,original_files=618,original_frames=663,selected_original_audio=67,awakening='Karma Jogan resonance, 20 seconds',previous_characters_unchanged_from=BASELINE,archive_sha256=package['sha256'],video_sha256=preview['sha256'])
+ result=dict(character=NAME,runtime_sha256=runtime,actual_inputs=120,receiving_probes=112,clone_checks=8,short_target_checks=20,dash_checks=16,visible_sphere_contacts=40,additive_wind_frames=58,original_files=618,original_frames=663,selected_original_audio=67,awakening='Karma Jogan resonance, 20 seconds',previous_characters_unchanged_from=BASELINE,archive_sha256=package['sha256'],video_sha256=preview['sha256'])
  if args.write:(ROOT/'previews'/f'{NAME}_delivery_checks.json').write_text(json.dumps(result,indent=2)+'\n')
  if args.commit:
   assert subprocess.check_output(['git','rev-parse',args.commit],cwd=ROOT,text=True).strip()==args.commit;result['public']={}

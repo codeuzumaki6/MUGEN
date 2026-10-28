@@ -1,0 +1,39 @@
+{
+  "file_id": "file_00000000138c81f693b882476fe6831c",
+  "name": "mugen-2026-10-27-21-09-24_Jz8sn7xB.mp4",
+  "bytes": 14567297,
+  "sha256": "17e579ff27d0e280c3530ad9b55cf574109c9f628f164d61424220a0871539b8",
+  "duration_seconds": 34.027027,
+  "width": 1920,
+  "height": 1080,
+  "observations": [
+    {
+      "seconds": [
+        10,
+        14
+      ],
+      "problem": "caster and wave jump between frame origins"
+    },
+    {
+      "seconds": [
+        16,
+        20
+      ],
+      "problem": "single Rasengan impact rendered away from the struck character"
+    },
+    {
+      "seconds": [
+        23,
+        29
+      ],
+      "problem": "double Rasengan rendered below stage while a ground hitbox damages the opponent"
+    },
+    {
+      "seconds": [
+        30,
+        33
+      ],
+      "problem": "large wind composites shift and cover the stage instead of a torso spiral"
+    }
+  ]
+}
