@@ -440,3 +440,36 @@ El taijutsu, Jūken, fijación de Byakugan y Kurama del video aportado, con los 
 Extrae `HimawariTBV` en `chars` y añade `HimawariTBV/HimawariTBV.def` a `data/select.def`. El ZIP incluye todos sus recursos y estados comunes. Se preservan todos los archivos originales, los 212 cuadros válidos y 39 archivos de audio. La entrada vacía y los recursos heredados ajenos a Himawari se conservan sin asignarles habilidades. No se generan dibujos ni voces.
 
 Pruebas en Ikemen GO: [120 de entradas y combate](previews/HimawariTBV_engine_checks.json), [112 de recepción de golpes](previews/HimawariTBV_receiving/HimawariTBV.json), [20 contra un rival a media escala](previews/HimawariTBV_short_target_checks.json), [16 de dash en ambas formas](previews/HimawariTBV_dash_checks.json) y drenaje de chakra confirmado en ambas orientaciones. [Fuentes y píxeles originales](previews/HimawariTBV_source_checks.json) · [ZIP](previews/HimawariTBV_package_checks.json) · [Entrega](previews/HimawariTBV_delivery_checks.json). Contratos estáticos de MUGEN 1.1; el ejecutable concreto de Windows y un mando físico requieren comprobación local. Los personajes anteriores permanecen sin cambios.
+
+---
+
+# Boruto Uzumaki — Karma y Jōgan
+
+[**Descargar Boruto Karma/Jōgan**](https://raw.githubusercontent.com/codeuzumaki6/MUGEN/main/BorutoKarmaJogan.zip) · [Gameplay con audio del motor](previews/BorutoKarmaJogan_motor.mp4) · [Controles Xbox](BorutoKarmaJogan/CONTROLES_XBOX.md) · [Instalación](BorutoKarmaJogan/LEEME.md) · [Créditos](BorutoKarmaJogan/CREDITOS_Y_FUENTES.md)
+
+Boruto con capa, espada y marcas azules de Vaydra, usando los 663 cuadros válidos del paquete y las secuencias del video: kenjutsu, Shiden, Rasengan, Fūton, tajos, disparos e invocación gigante. Se incluyen las once muestras de voz de su carpeta y 56 efectos originales. Tres cadenas terrestres y aéreas, trece especiales por forma, dash doble gratuito y carga con aura.
+
+**Abajo + Pausa** requiere 3000, consume 1500 y activa la resonancia de Karma y Jōgan durante veinte segundos. Conserva la apariencia original y añade el corte del ojo y electricidad azul persistente. Cambian los especiales a rayos, tornados dobles, cargas, Rasengan doble y campo de resonancia. La descarga de RT pasa a dos proyectiles y RB a tres kunai.
+
+**Abajo + Y** crea un clon de tamaño completo que persigue y ataca al rival con Rasengan mientras controlas a Boruto. Tiene 120 de vida, puede recibir golpes y dura como máximo tres segundos. Hay un máximo de uno; repetir el comando le ordena atacar. Desaparece al iniciar la ulti o terminar la ronda. Las copias de los efectos se evitan manteniendo los cuadros compuestos sobre el jugador principal.
+
+**A** ejecuta el remate de Jōgan del video: pilares, tormenta eléctrica, tornados y Rasengan doble con campo de resonancia. Ocho impactos, máximo 650 en base y 800 en despertar, o el 65 % / 80 % de la vida máxima rival si tiene menos de 1000. Cuesta 3000, puede bloquearse, tiene alcance finito y no consume vida propia. Una interrupción detiene el daño y libera al rival.
+
+Extrae `BorutoKarmaJogan` en `chars` y añade `BorutoKarmaJogan/BorutoKarmaJogan.def` a `data/select.def`. ZIP independiente con recursos y estados comunes. Se verificaron los tres volúmenes del RAR y se preservan sus 618 archivos originales y los envíos sueltos. El SFF conserva sus píxeles indexados mediante RLE8 y un cuadro sin compresión. No se generan dibujos ni voces. Los nombres Pain y Tenten son espacios reemplazados del mod; se adapta el moveset fan aportado.
+
+Pruebas nativas en Ikemen GO: [120 de entradas y combate](previews/BorutoKarmaJogan_engine_checks.json), [112 de recepción de golpes](previews/BorutoKarmaJogan_receiving/BorutoKarmaJogan.json), [ocho de autonomía y derrota del clon](previews/BorutoKarmaJogan_clone_checks.json), [20 contra un rival a media escala](previews/BorutoKarmaJogan_short_target_checks.json) y [16 de dash en ambas formas](previews/BorutoKarmaJogan_dash_checks.json). [Fuentes y conservación de píxeles](previews/BorutoKarmaJogan_source_checks.json) · [ZIP](previews/BorutoKarmaJogan_package_checks.json) · [Entrega](previews/BorutoKarmaJogan_delivery_checks.json). Contratos estáticos de MUGEN 1.1; el ejecutable exacto de Windows y un mando físico requieren comprobación local. Los personajes anteriores se conservan sin cambios.
+
+```sh
+python tools/build_boruto_assets.py
+python tools/build_boruto_runtime.py
+python tools/validate_boruto.py
+python tools/check_boruto_in_engine.py
+python tools/check_roster_receiving.py --characters BorutoKarmaJogan --out previews/BorutoKarmaJogan_receiving
+python tools/check_boruto_clone.py
+python tools/check_boruto_short_targets.py
+python tools/check_boruto_dashes.py
+python tools/make_boruto_preview.py
+python tools/verify_boruto_sources.py
+python tools/package_boruto.py
+python tools/verify_boruto_delivery.py --write
+```

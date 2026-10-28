@@ -1,0 +1,743 @@
+{
+  "keys": {
+    "BorutoJogan/01": [
+      3,
+      0
+    ],
+    "BorutoJogan/02": [
+      3,
+      1
+    ],
+    "BorutoJogan/03": [
+      3,
+      2
+    ],
+    "BorutoJogan/04": [
+      3,
+      3
+    ],
+    "BorutoJogan/05": [
+      3,
+      4
+    ],
+    "BorutoJogan/Dead": [
+      3,
+      5
+    ],
+    "BorutoJogan/Die": [
+      3,
+      6
+    ],
+    "BorutoJogan/Hit": [
+      3,
+      7
+    ],
+    "BorutoJogan/Tenten": [
+      3,
+      8
+    ],
+    "BorutoJogan/Tenten_ougis": [
+      3,
+      9
+    ],
+    "BorutoJogan/hurt1": [
+      3,
+      10
+    ],
+    "Effect/Blade-Damage": [
+      2,
+      0
+    ],
+    "Effect/BladeA": [
+      2,
+      1
+    ],
+    "Effect/BladeB": [
+      2,
+      2
+    ],
+    "Effect/BladeC": [
+      2,
+      3
+    ],
+    "Effect/BorushikiRSGEfx": [
+      2,
+      4
+    ],
+    "Effect/BugPillar": [
+      2,
+      5
+    ],
+    "Effect/Charging0": [
+      2,
+      6
+    ],
+    "Effect/ChgDeepa2": [
+      2,
+      7
+    ],
+    "Effect/Chidori2": [
+      2,
+      8
+    ],
+    "Effect/Ciah": [
+      2,
+      9
+    ],
+    "Effect/DashFx": [
+      2,
+      10
+    ],
+    "Effect/Duar": [
+      2,
+      11
+    ],
+    "Effect/EfxJump2": [
+      2,
+      12
+    ],
+    "Effect/N1": [
+      2,
+      13
+    ],
+    "Effect/N2": [
+      2,
+      14
+    ],
+    "Effect/RSGfuton": [
+      2,
+      15
+    ],
+    "Effect/RaitonEfx": [
+      2,
+      16
+    ],
+    "Effect/RsChg": [
+      2,
+      17
+    ],
+    "Effect/RsgAura": [
+      2,
+      18
+    ],
+    "Effect/RtnSfx": [
+      2,
+      19
+    ],
+    "Effect/S4": [
+      2,
+      20
+    ],
+    "Effect/Shooot": [
+      2,
+      21
+    ],
+    "Effect/Sw3": [
+      2,
+      22
+    ],
+    "Effect/Wind": [
+      2,
+      23
+    ],
+    "Effect/aura": [
+      2,
+      24
+    ],
+    "Effect/bladeFx2": [
+      2,
+      25
+    ],
+    "Effect/blade_damage": [
+      2,
+      26
+    ],
+    "Effect/blagar": [
+      2,
+      27
+    ],
+    "Effect/break_sound2": [
+      2,
+      28
+    ],
+    "Effect/charge2": [
+      2,
+      29
+    ],
+    "Effect/dash2": [
+      2,
+      30
+    ],
+    "Effect/dash_effect": [
+      2,
+      31
+    ],
+    "Effect/fire": [
+      2,
+      32
+    ],
+    "Effect/fireblaze": [
+      2,
+      33
+    ],
+    "Effect/flash": [
+      2,
+      34
+    ],
+    "Effect/fudon_effect": [
+      2,
+      35
+    ],
+    "Effect/gledek": [
+      2,
+      36
+    ],
+    "Effect/hiraishin_effect2": [
+      2,
+      37
+    ],
+    "Effect/kawaki bom": [
+      2,
+      38
+    ],
+    "Effect/kilat": [
+      2,
+      39
+    ],
+    "Effect/kong": [
+      2,
+      40
+    ],
+    "Effect/m_exp": [
+      2,
+      41
+    ],
+    "Effect/mon2": [
+      2,
+      42
+    ],
+    "Effect/monster": [
+      2,
+      43
+    ],
+    "Effect/pup": [
+      2,
+      44
+    ],
+    "Effect/raitonsfx": [
+      2,
+      45
+    ],
+    "Effect/raitonsfx1": [
+      2,
+      46
+    ],
+    "Effect/rasenS": [
+      2,
+      47
+    ],
+    "Effect/rsShuriken": [
+      2,
+      48
+    ],
+    "Effect/shuriken": [
+      2,
+      49
+    ],
+    "Effect/slsh": [
+      2,
+      50
+    ],
+    "Effect/step1": [
+      2,
+      51
+    ],
+    "Effect/waterA": [
+      2,
+      52
+    ],
+    "Effect/windeffect": [
+      2,
+      53
+    ],
+    "Effect/woos0": [
+      2,
+      54
+    ],
+    "Effect/wooss": [
+      2,
+      55
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/01.mp3",
+      "source_sha256": "7af962a93afd947c0ac5af712246b828c1e459d8bcbd3fdf4466ac653f2a47d9",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "b5a98d05619eea98161cd8242a6e4fe9bcb41ed5a2f4c9c435cd93eec1250987"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/02.mp3",
+      "source_sha256": "16c68010083bd045389337993bd925896d15b13e31c39c0075f6797f36a65197",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "18b8dc3f5981c36d45c1a68843bdf0e5e04455fa3ea42ed89f0e5a2f12cd0aec"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/03.mp3",
+      "source_sha256": "987a5261d1b08c861b1d7daf8a850c28eeaf6a9d1670e915d6d3f08a4112b739",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "3515671e1c9fef65940c746dda89ba71ede3e42ad97bce0138bda56f6a75e7f8"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/04.mp3",
+      "source_sha256": "f4ce564ef56760523c774c13eda89aca5cff876d4c98b0130ded4df95880365c",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "613933ac97d93c3d4b9e6122f796b686785d909fed504f95f4d8b0327457d9c6"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/05.mp3",
+      "source_sha256": "59868a65fc237a24f1a5652de355ec6ec11d37f3e6abcf8d30a80da7079d69e0",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "dda8157ff39b86f3bcb7703b7bb3c8535ae5b594c0548afb29353f40f556b5c4"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/Dead.mp3",
+      "source_sha256": "a658e96fd195d630a67366bb8d6411a1dbf271b3ea782c943b0c1e0678ac99d8",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "fca13ae103f1784b25778eb1adf3220abaa9d07ae185ad9360bbe36a0bdc0e13"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/Die.mp3",
+      "source_sha256": "9145a10107ee7c469bfdd05aa15e455f545eba051f0218b44b29e197fca62f56",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "79a0897c7548916adcf61ec2ae716038b658da7f65b4f21e6df600835ebc42ac"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/Hit.mp3",
+      "source_sha256": "3cd4b25d0c6442741a872409bf16f776938dbed16eaa42cdc928a10a9a74e6be",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "064cf811b99df67b95c6a3c1e7707ce2752b44c88a02e4fa24dd838980a7bfbd"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/Tenten.ogg",
+      "source_sha256": "811f87b4038f7a7214f555a87b66292609f5ea47d6d29a71252b183e28a105a2",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "f05dc084c263ee8ecf4e97d1ea5687e8a141ba4ec87943e11703ec97695c742d"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/Tenten_ougis.ogg",
+      "source_sha256": "e034ddfbd038944402f074c08b88f360bead8c0733303addf1de32761bbbb56a",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "00091a814329985d417cafb1613de0234d63d9ad74bc90382aeb92cbfb372f5f"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/BorutoJogan/hurt1.mp3",
+      "source_sha256": "987d24240f1fc1a0989188907dedd456c76de7bedc2abf7d254b19e98fd2b8fa",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "caa4644a58187290d76f2e98402f9d3aed5ecded0ac249def4ad9b8718187871"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Blade-Damage.mp3",
+      "source_sha256": "10383c81102cf1bf4869f08599ddd940ca81d9da57650c7be8e9543982c4f0a5",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "56e6de7adb23adb8bcab0fe610112839a71525d21b1064693eac50dfbf3bc5a0"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/BladeA.ogg",
+      "source_sha256": "6cfa1e0c136a8525210e02056d59030a5bb51a2ddf99f84b0cf08c2f65b5d2d1",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "4a74c6be3088584672a0b8b6d9047ca80afc2f9aa18fa05a70c34285728251c0"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/BladeB.ogg",
+      "source_sha256": "4e7d90d89150e431c7603e18d3fe4374e0f48cac7fbed1eb111de608dd095481",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "a61c4821f5a165014cb55da2a9b56c6291f21a5ba614962d7bd5e407e19556b2"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/BladeC.ogg",
+      "source_sha256": "abf66b1ff48bfe1752b5ca556a95c33847d860d010943039fe8d8855251abdba",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "3dd037bf5cd009b96ab9244e9265f889a409f700f80e6d23fe0f7501081729a9"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/BorushikiRSGEfx.mp3",
+      "source_sha256": "e8c36a49b95c1add511a38d9ce48d11d53dc1ccbabee5aefaffa243ce0fcfaa9",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "8214762c0fefa7152e01068a7ffadbd5779a932f18a434dcbf097077e5015e8c"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/BugPillar.ogg",
+      "source_sha256": "be9af3c7914f70b205e557e2d4886e6a47521e8f61c4b253943f6b03c39c6196",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "42cc54008f583eb31ae572b9310e01d42bd3ad45036062678b0b62e06fd9c7b2"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Charging0.ogg",
+      "source_sha256": "f5e32a5ced888e36d0373e079234aa16b7d2c540e41af5abf4082398126e579e",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "0db968da8f40168e8a9a5cce66513ad9ece1217af038f4fa4d6f9957cc359bda"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/ChgDeepa2.mp3",
+      "source_sha256": "018f2721a768f1436332d9b1987c67eaf22a5b18e5156eb819d92bfc33c568bc",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "d6f8e89d44a1893f42864b096a4c04fe0002f2d1a4cc55ebda0692f98de69abd"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Chidori2.ogg",
+      "source_sha256": "38c2cf6d391b231ace61f80469d89189a8944a41101542cc15e59fb884409c12",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "952da41f36d72eb54a910f7bca396958b0eab9c828d5f6270fd22e1694228834"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Ciah.wav",
+      "source_sha256": "893885d2f359130c2f1bd9871588773602033ad3b12b22c184b04088e4b73f08",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "8cca1362a4dd70d7fbdeaa5ccd05f20864f9ed356b75f84fd2809cb56db9225a"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/DashFx.mp3",
+      "source_sha256": "971d39624ab484ac0b230393477601412b1094790602f77e8ccadb6df947be77",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "57da4fb64b7dd25d5a478adc3b638c72926be0f154b651e169a8c6b0a5f2cfb5"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Duar.ogg",
+      "source_sha256": "31509526afaf24fe1f31efd2cb994e40bb7c2e992e08c1418b6459944bc14841",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "87ac632d4098e0823f4d4aa848eb4085bc993024afb03d77d1fde197a63bd2a1"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/EfxJump2.mp3",
+      "source_sha256": "a813dcd3b4d937316ddbb79fb2cf45086d928dc29b41db40dea11df3e4bd49c7",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "6148ce9f3c01bd74bfd9800d19d37fb9934c9810e157cafea3216b2813d64d1e"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/N1.wav",
+      "source_sha256": "b86f72db63062dcbd97492c1f9dc360f05c57c0b0eec05de5a073d6d013493b9",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "5ec8a5991b67dc4afd82b302191281a8a83546516baea40a205df55c9bc0f7cc"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/N2.wav",
+      "source_sha256": "fcfc2c86f1d03f0556052e455ddaea2daa5749e44f8b9554f68058430d4a347f",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "14cd3a9fdc7b05fcecf66d2ccb9c54442c62ca6936adaadf3c26b2a041502ba3"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/RSGfuton.mp3",
+      "source_sha256": "ca5a508a2ff676363fee54ad1e67ddd42c7107b057a88fac0bcd2eb2f209ce1f",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "5347c7d09e39a17c83c051e0b86c8407ae4095089866b294393b955c5d656dca"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/RaitonEfx.mp3",
+      "source_sha256": "ef3c59d40123eae6096adfafc3730a4bece77aabb14b5842cf6bdd8ad62f17c3",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "a3fc8b8576643c9d87224ecc05b7a74de00412a4fa34e80fb736dba2b7c6c6c8"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/RsChg.mp3",
+      "source_sha256": "e937029aba367718bacea3f8184d353041d51af9fd7cbd1f9c04110a610890ac",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "bf3fc5de661e7f2ec1d36fa4c176b514d6f76859a15ebcb5aeca52295f2963ee"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/RsgAura.mp3",
+      "source_sha256": "46c5f84c704f76b17a0e279d5ab65f4c178e7346ccac6d04c3528263e0cefba4",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "e9a8293c1c1f6154bd37a76d13cceee8160b8a369642aa5e63a4237414c36e94"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/RtnSfx.mp3",
+      "source_sha256": "4c7472024b2ae8ccd8991c9c02d5e039eb7d75365dde39ad4456ddf7840c8bd1",
+      "group": 2,
+      "number": 19,
+      "wav_sha256": "6c376d3ef28945a8dfad2a37277acbc224c86db5a411e501dedabf9fb075c9cd"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/S4.mp3",
+      "source_sha256": "edd8765d5998bb4c33bb1709a2eb8ade8e81a600413f1bcdcfcf3dd40b1c5983",
+      "group": 2,
+      "number": 20,
+      "wav_sha256": "85a45f1b5f498464d4edd7c33d1521accda954cac5e34370c943d80b082fd9b6"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Shooot.mp3",
+      "source_sha256": "101da4f901abb03dbeaa0e2a298ebdaa3a8c3d4fa6f10b6e43f379acec043a1e",
+      "group": 2,
+      "number": 21,
+      "wav_sha256": "211880a781b118e7f5de86b6bacb93544e8be545f3d1d316e85fdf7a3aa6f495"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Sw3.wav",
+      "source_sha256": "aab01944878dfc0f4524e6da8a8dc22b8a5792ee9363ab12632c61e1fc0d1e94",
+      "group": 2,
+      "number": 22,
+      "wav_sha256": "46150c7a8c5059fafb7d324d9877a8b6dbe5eb94e53365f31281f46b137bd028"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/Wind.ogg",
+      "source_sha256": "e17873fd0c4681c678e950864db090012b81ce1231debb9fd43ad657800b1010",
+      "group": 2,
+      "number": 23,
+      "wav_sha256": "1e427aa6ed19bc07eec5de1c7ab398d58d2b39c0d214e169f2269a9334ee1b1d"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/aura.ogg",
+      "source_sha256": "1ce15790b2a6a82aa33e70721362e9d2212b9c0c1a11e0b6de7cf67f4b047994",
+      "group": 2,
+      "number": 24,
+      "wav_sha256": "6bfe2bfab98147ab65428f3ea34f9f3481c9350d38e3e565bc1e33c718fb57cb"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/bladeFx2.mp3",
+      "source_sha256": "0b2d02be45e8f7216da602b70d546fd7e2c9ded11273e4ebacf5caa747b33cf3",
+      "group": 2,
+      "number": 25,
+      "wav_sha256": "6f58005b2f52c00b700888e88be3c8913519b16e9af54784727deb3baf4d19ee"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/blade_damage.ogg",
+      "source_sha256": "4262d7d5559ac7453d25d36f1e7c380453ec475c0ed27545d046b9aa35e1f3b3",
+      "group": 2,
+      "number": 26,
+      "wav_sha256": "98a6bd449898a12cfbeacf0d71c7d72ec237992b5f65ca9961922af2ba88168c"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/blagar.ogg",
+      "source_sha256": "67192cbb5bdf5fd5ed329007ee224e89e8ca10a409f617d6cd6f29e20117a545",
+      "group": 2,
+      "number": 27,
+      "wav_sha256": "7be08664af49a0c870bd6aaf0358f8adafb849a1464bd6d5a5aa04e91a6cbe29"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/break_sound2.ogg",
+      "source_sha256": "3af73425fc85a36d6e197d1eb5f852d076a41e39326f9c791d128bb469992efb",
+      "group": 2,
+      "number": 28,
+      "wav_sha256": "093f3bf45b9aae1a864277c5932e5cad5a00c9be4716d0fb8f1274041a26e23b"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/charge2.ogg",
+      "source_sha256": "c957db064ced75921e4c2958fca53c8eb1ce8c2c6c9ea99a70c8609b71d1a8bc",
+      "group": 2,
+      "number": 29,
+      "wav_sha256": "75349a5372f11a5c796ce53a7b7329d69f06c50e0fcba78b5051fc2dbb916eb4"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/dash2.wav",
+      "source_sha256": "95d47cfc8d373c84ae0981a8b6d929fea2735030e2004861ad53f6099a7871b1",
+      "group": 2,
+      "number": 30,
+      "wav_sha256": "bbe12502b8c9135f37fe314a7865f7fc25802324910af462ad1e23e0390ce6c3"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/dash_effect.ogg",
+      "source_sha256": "ed545e88b9a61189dba4eaf4cad97ba5c3ba62f9c8e0f1e825de8c9e5fb3809b",
+      "group": 2,
+      "number": 31,
+      "wav_sha256": "a9f71d63cda95b41accdf04f7f2f8e8ca6516725205db4edd52ae921a033d1f4"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/fire.ogg",
+      "source_sha256": "6217320c95e7a26bb2fe3b64454e843bfda29146f0e8a04c43a5eba2f2604227",
+      "group": 2,
+      "number": 32,
+      "wav_sha256": "75465c0d0c5fb786a6b013423f1402ac32f3d64134776a82363c84f715b725b0"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/fireblaze.mp3",
+      "source_sha256": "5d39b99b59c7bc0a1b1e2c739573c493b281f9d534480c0b44ac3d5927625545",
+      "group": 2,
+      "number": 33,
+      "wav_sha256": "4beb1b7cd651532829615f92e55ee3c7e4a4e36ad0b6cccc572ee4bd938e108f"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/flash.ogg",
+      "source_sha256": "492e89ee6de777e79243b080e5d228925d00ac1cd2b9d5fa29ac6114a1cf4d74",
+      "group": 2,
+      "number": 34,
+      "wav_sha256": "e556e6863ae5f6d24e0cf571ee3f82209d1f9c307e2818b438f65e4560013fe2"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/fudon_effect.mp3",
+      "source_sha256": "0d39838d179bfe2ce0c5b1c456de98436f3fc95c04e796d6fabee0f512fbac8d",
+      "group": 2,
+      "number": 35,
+      "wav_sha256": "4c21c6a9fffa5e38c6902db54873103adb27075c5537547461f780720a04df4a"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/gledek.mp3",
+      "source_sha256": "1d74b808736492c9a7c2b94dcab16331831b778b15c308598d06f31ce3fb12e1",
+      "group": 2,
+      "number": 36,
+      "wav_sha256": "fd23c8207c59ccdfe67989884f553d50cb6476de9a6a900844897bb7e048f6a5"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/hiraishin_effect2.ogg",
+      "source_sha256": "93ccaa9a5f14dabe8385e590678ce7875117ddc092f6a827f455eedbd4672920",
+      "group": 2,
+      "number": 37,
+      "wav_sha256": "496624e65d6794c37cfa4ab4634afbbb9d8b5202ea2dd0a83e98e1b6be17002b"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/kawaki bom.mp3",
+      "source_sha256": "e57636bb3bace21e171a63f3debc023ef8174090cfbccb6398d5db2788694c9d",
+      "group": 2,
+      "number": 38,
+      "wav_sha256": "7ec9eee333b57a2964718c13644ef1dfa4b36894884aef9a2a792c89ec008ac2"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/kilat.ogg",
+      "source_sha256": "aa51ca1443b2d359a556c285c77a63aef73b46658b52dd5629c4a88b9489c30e",
+      "group": 2,
+      "number": 39,
+      "wav_sha256": "8225c943cf01d7499fce91c7787fd8560edb72868ef7ffd9436e2a74dac983b5"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/kong.ogg",
+      "source_sha256": "98a7b9ba4cbfc7a16259be2e0b5352b01c60b471582b774750710f7106d26f66",
+      "group": 2,
+      "number": 40,
+      "wav_sha256": "5226d8c643bdb085f22f26b9643197e108ee931b1d4e8c308989cc03cf0174a5"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/m_exp.ogg",
+      "source_sha256": "3e06d9d6915f6746cc40b96700c9a0a1c1337b08b6db1e7f6b4e578507282445",
+      "group": 2,
+      "number": 41,
+      "wav_sha256": "cccc9bbd92dd1e44ec08b9c6ccd155a203ac4fed15e15d895f0eacf3234221c9"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/mon2.ogg",
+      "source_sha256": "2bfc17adccad46a7aaec7ae2f72a4fe790e304236d0927fc3bff305fc01ca8d5",
+      "group": 2,
+      "number": 42,
+      "wav_sha256": "aba1a59a9e4d084954d9a05faaf9326f502bdd7ccc5086ae7b5c6787ffc87ffb"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/monster.ogg",
+      "source_sha256": "63d356c20524b3e883e0a4d66f93147a605b70016a95b3da67574bd4c3ed26d3",
+      "group": 2,
+      "number": 43,
+      "wav_sha256": "358dd33665d212cae1a6eb296b67c9f2caa335f5e788c1b8882e5f86dd263087"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/pup.ogg",
+      "source_sha256": "ee0882368be35d93822128879ff29140994134710aabf3fc6bb6049b5dac68ef",
+      "group": 2,
+      "number": 44,
+      "wav_sha256": "f65cdfa0a0e9da3f5fd3711ae379812852d6a08b9aeb38429c9f5a299f6d9da2"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/raitonsfx.mp3",
+      "source_sha256": "e97ca0d5da52adb3604978b8c367d7fe725117cccae1ea2aeebe4f04d01cc68e",
+      "group": 2,
+      "number": 45,
+      "wav_sha256": "1a4b40e2c536b8429d080c3fccb6e240e5eee67dd463b16c25b0cac65c7fbc42"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/raitonsfx1.mp3",
+      "source_sha256": "4e617955095ea462e42551ff79f1428a9e2ead9e67661f79d39f6b5a75744e4a",
+      "group": 2,
+      "number": 46,
+      "wav_sha256": "e57802eb9a6251b38a14e9dcaf5a1789d69d217361870bf4f992ce9b1de8e241"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/rasenS.ogg",
+      "source_sha256": "d658f3bac864a7505759154d342e12e56892ca23de453567f57d13b4dc169564",
+      "group": 2,
+      "number": 47,
+      "wav_sha256": "053bac63f6f575b48f822fe01df740543a91e4d45d624ef13a9052287d47d1dd"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/rsShuriken.ogg",
+      "source_sha256": "beb16cef5e5a70f18f19a1ce7ba81f8a16c5b27a03f56f8384ba5a3e6449168a",
+      "group": 2,
+      "number": 48,
+      "wav_sha256": "0c39d7906343e7271ba05fdfa539c9014a085e3cf9f9c04d885f999b01be2209"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/shuriken.mp3",
+      "source_sha256": "e34ba8f9c29c8111e225d371951fc1797a79afe2a629a078c4a694283c22cb60",
+      "group": 2,
+      "number": 49,
+      "wav_sha256": "b5e75d0d7eb43ea0bdbe9d1a3e786c7db20d543bcd4a1941b1557d3d3bfacd67"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/slsh.mp3",
+      "source_sha256": "e3258deca0784fab022e73da63495677fc8c72512ef5ea1d9490192fb85ddaca",
+      "group": 2,
+      "number": 50,
+      "wav_sha256": "17c582a49dbf3784f24933b6ea0817bc6548cd6bdda0b24b6dfed3722dee7f21"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/step1.mp3",
+      "source_sha256": "7b5abb446ebd3f6b70f3165fb39509bf270f6f0aa5b721893524bddc1c4757da",
+      "group": 2,
+      "number": 51,
+      "wav_sha256": "d34977559633e182e3285a0b1689315a8c8e08b608a8570f2b77c03f54e1c6a7"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/waterA.mp3",
+      "source_sha256": "44e2fa8044f09999606eb2db29c87f3f5730692181a13f95257492c80567ee36",
+      "group": 2,
+      "number": 52,
+      "wav_sha256": "ec6116d49537d4e3e82921f495343ec3f9d4f6b089b02772177c00b88a2b8895"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/windeffect.mp3",
+      "source_sha256": "f032db223071ff2ff140c55b5e954297b27bbe4bab15c8d58226eb51de35833f",
+      "group": 2,
+      "number": 53,
+      "wav_sha256": "106bb74201611ca07c8f3afae0f1e6721e54ebce38749f8dce722d116b900f78"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/woos0.mp3",
+      "source_sha256": "aeda455352a2d74b95e3c284a86a2daa46b4b2ae1f0d82a2ca847a9c791ff006",
+      "group": 2,
+      "number": 54,
+      "wav_sha256": "ec380d8037c928785c05fa6ac0f640070ad01267d152b828e6eeb75c02379c00"
+    },
+    {
+      "source": "source_material/Boruto_original/full_archive/\u2705Sprite BorutoJougan by Vaydra/Audio/Effect/wooss.mp3",
+      "source_sha256": "c79cacf4f8f625e47247464081de6d3ccd4e1b05890936feff826869a3bb1114",
+      "group": 2,
+      "number": 55,
+      "wav_sha256": "ba38fdfea0bd6dccadaccaa8707476b8253a8360d47adcd7d08e10e86471e13e"
+    }
+  ]
+}

@@ -1,0 +1,7668 @@
+; Boruto original sword, Karma, Jogan and Rasengan.
+[Data]
+life=1200
+power=3000
+attack=100
+defence=105
+fall.defence_up=20
+liedown.time=28
+airjuggle=15
+sparkno=2
+guard.sparkno=40
+KO.echo=0
+volume=0
+IntPersistIndex=60
+FloatPersistIndex=40
+[Size]
+xscale=1
+yscale=1
+ground.back=16
+ground.front=16
+air.back=14
+air.front=14
+height=86
+attack.dist=90
+proj.attack.dist=280
+head.pos=0,-78
+mid.pos=0,-45
+shadowoffset=0
+draw.offset=0,0
+[Velocity]
+walk.fwd=2.8
+walk.back=-2.5
+run.fwd=7.6,0
+run.back=-7.6,0
+jump.neu=0,-9
+jump.back=-3
+jump.fwd=3.2
+runjump.back=-3,-9
+runjump.fwd=4.5,-9
+airjump.neu=0,-7.5
+airjump.back=-3
+airjump.fwd=3.2
+[Movement]
+airjump.num=1
+airjump.height=35
+yaccel=.48
+stand.friction=.85
+crouch.friction=.82
+stand.friction.threshold=2
+crouch.friction.threshold=.05
+
+
+
+
+
+[Statedef 200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=200
+velset=2,0
+
+[State 200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 200, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 200, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 200, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=201
+velset=2,0
+
+[State 201, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 201, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 201, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 201, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=202
+velset=2,0
+
+[State 202, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 202, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 202, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 202, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=210
+velset=2,0
+
+[State 210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 210, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 210, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 210, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=211
+velset=2,0
+
+[State 211, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 211, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 211, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 211, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=212
+velset=2,0
+
+[State 212, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 212, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 212, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 212, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=220
+velset=2,0
+
+[State 220, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 220, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 220, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 220, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=221
+velset=2,0
+
+[State 221, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 221, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 221, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 221, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=222
+velset=2,0
+
+[State 222, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 222, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 222, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 222, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=600
+
+[State 600, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 600, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 600, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 600, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 600, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 600, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 600, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=601
+
+[State 601, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 601, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 601, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 601, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 601, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 601, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 601, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=602
+
+[State 602, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 602, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 602, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 602, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 602, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 602, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 602, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=610
+
+[State 610, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 610, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 610, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 610, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 610, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 610, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 610, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=611
+
+[State 611, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 611, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 611, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 611, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 611, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 611, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 611, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=612
+
+[State 612, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 612, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 612, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 612, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 612, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 612, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 612, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=620
+
+[State 620, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 620, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=36,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 620, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 620, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 620, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 620, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 620, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=621
+
+[State 621, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 621, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=48,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 621, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 621, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 621, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 621, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 621, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=622
+
+[State 622, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 622, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=66,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 622, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 622, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 622, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 622, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 622, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10200]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10200
+velset=2,0
+
+[State 10200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10200, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10200, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10200, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10201]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10201
+velset=2,0
+
+[State 10201, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10201, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10201, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10201, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10202]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10202
+velset=2,0
+
+[State 10202, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10202, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10202, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10202, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10210]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10210
+velset=2,0
+
+[State 10210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10210, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10210, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10210, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10211]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10211
+velset=2,0
+
+[State 10211, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10211, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10211, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10211, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10212]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10212
+velset=2,0
+
+[State 10212, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10212, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10212, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10212, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10220]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10220
+velset=2,0
+
+[State 10220, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10220, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10220, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10220, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10221]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10221
+velset=2,0
+
+[State 10221, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10221, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10221, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10221, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10222]
+type=S
+movetype=A
+physics=S
+ctrl=0
+anim=10222
+velset=2,0
+
+[State 10222, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10222, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=S,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10222, Brake]
+type=VelSet
+trigger1=Time>=8
+x=0
+
+
+[State 10222, Return control]
+type=ChangeState
+trigger1=Time>=25
+value=0
+ctrl=1
+
+
+[Statedef 10600]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10600
+
+[State 10600, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10600, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10600, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10600, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10600, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10600, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10600, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10601]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10601
+
+[State 10601, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10601, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10601, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10601, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10601, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10601, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10601, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10602]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10602
+
+[State 10602, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10602, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10602, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10602, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10602, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10602, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10602, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10610]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10610
+
+[State 10610, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10610, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10610, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10610, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10610, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10610, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10610, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10611]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10611
+
+[State 10611, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10611, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10611, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10611, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10611, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10611, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10611, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10612]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10612
+
+[State 10612, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10612, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10612, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10612, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10612, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10612, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10612, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10620]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10620
+
+[State 10620, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10620, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=45,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10620, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10620, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10620, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10620, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10620, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10621]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10621
+
+[State 10621, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10621, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=60,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 10621, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10621, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10621, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10621, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10621, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 10622]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=10622
+
+[State 10622, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,7
+channel=0
+volumescale=70
+
+
+[State 10622, Real attack collision]
+type=HitDef
+trigger1=Time=3
+attr=A,NA
+damage=80,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=15
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=25,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 10622, Count air chain]
+type=VarAdd
+trigger1=Time=0
+v=12
+value=1
+
+
+[State 10622, Air approach]
+type=VelSet
+trigger1=Time<7
+x=2
+y=-.4
+
+
+[State 10622, Gravity]
+type=VelAdd
+trigger1=Time>=7
+y=.48
+
+
+[State 10622, Land]
+type=ChangeState
+trigger1=Pos Y>=0 && Vel Y>0
+value=52
+ctrl=1
+
+
+[State 10622, Return control]
+type=ChangeState
+trigger1=Time>=21
+value=50
+ctrl=1
+
+
+[Statedef 1000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1000
+poweradd=-350
+velset=0,0
+
+[State 1000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 1000, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1000, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=7
+
+
+[State 1000, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 1000, Real attack collision]
+type=HitDef
+trigger1=Time=15
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1000, Real attack collision]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1000, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1010
+poweradd=-400
+velset=0,0
+
+[State 1010, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1010, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 1010, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1010, Real attack collision]
+type=HitDef
+trigger1=Time=16
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1010, Real attack collision]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=140,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1010, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1020
+poweradd=-450
+velset=0,0
+
+[State 1020, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1020, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=90
+
+
+[State 1020, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1020, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=7
+
+
+[State 1020, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 1020, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1020, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=S,SA
+damage=115,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1020, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1030]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1030
+poweradd=-550
+velset=0,0
+
+[State 1030, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 1030, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1030, Real attack collision]
+type=HitDef
+trigger1=Time=15
+attr=S,SA
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1030, Real attack collision]
+type=HitDef
+trigger1=Time=30
+attr=S,SA
+damage=115,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1030, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1040
+poweradd=-350
+velset=0,0
+
+[State 1040, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1040, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=90
+
+
+[State 1040, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1040, Real rising motion]
+type=VelSet
+trigger1=Time=4
+x=4
+y=-6.5
+
+
+[State 1040, Airborne]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 1040, Finite gravity]
+type=VelAdd
+trigger1=Time>4
+y=.46
+
+
+[State 1040, Original landing]
+type=ChangeState
+trigger1=Time>20 && Pos Y>=0 && Vel Y>0
+value=1060
+ctrl=0
+
+
+[State 1040, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=A,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1040, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=A,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1040, Finite technique resource]
+type=Helper
+trigger1=Time=13
+helpertype=Normal
+name="Boruto technique"
+ID=9502
+stateno=9502
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 1040, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=50
+ctrl=1
+
+
+[Statedef 1050]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1050
+poweradd=-450
+velset=0,0
+
+[State 1050, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1050, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 1050, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1050, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=7
+
+
+[State 1050, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 1050, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=S,SA
+damage=55,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1050, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1050, Real attack collision]
+type=HitDef
+trigger1=Time=30
+attr=S,SA
+damage=100,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1050, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1400
+poweradd=-200
+velset=0,0
+
+[State 1400, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1400, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 1400, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1400, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=C,SA
+damage=110,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1400, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1410
+poweradd=-300
+velset=0,0
+
+[State 1410, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1410, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 1410, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1410, Finite technique resource]
+type=Helper
+trigger1=Time=10 && NumHelper(9700)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9700
+stateno=9700
+postype=P1
+pos=-28,0
+ownpal=1
+keyctrl=0
+
+
+[State 1410, Order the existing clone]
+type=VarAdd
+trigger1=Time=12
+v=45
+value=1
+
+
+[State 1410, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1420
+poweradd=-450
+velset=0,0
+
+[State 1420, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1420, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 1420, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1420, Real rising motion]
+type=VelSet
+trigger1=Time=4
+x=4
+y=-6.5
+
+
+[State 1420, Airborne]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 1420, Finite gravity]
+type=VelAdd
+trigger1=Time>4
+y=.46
+
+
+[State 1420, Original landing]
+type=ChangeState
+trigger1=Time>20 && Pos Y>=0 && Vel Y>0
+value=1060
+ctrl=0
+
+
+[State 1420, Real attack collision]
+type=HitDef
+trigger1=Time=7
+attr=A,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1420, Real attack collision]
+type=HitDef
+trigger1=Time=21
+attr=A,SA
+damage=115,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1420, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=50
+ctrl=1
+
+
+[Statedef 1200]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1200
+poweradd=-200
+velset=0,0
+
+[State 1200, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 1200, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1200, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 1200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 1200, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1210
+poweradd=-250
+velset=0,0
+
+[State 1210, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 1210, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1210, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9501
+stateno=9501
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 1210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 1210, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1430]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1430
+poweradd=-600
+velset=0,0
+
+[State 1430, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,3
+channel=0
+volumescale=90
+
+
+[State 1430, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1430, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1430, Real attack collision]
+type=HitDef
+trigger1=Time=36
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1430, Real attack collision]
+type=HitDef
+trigger1=Time=54
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=14
+value=S2,42
+channel=2
+volumescale=80
+
+
+[State 1430, Return control]
+type=ChangeState
+trigger1=Time>=74
+value=0
+ctrl=1
+
+
+[Statedef 1440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=1440
+poweradd=-600
+velset=0,0
+
+[State 1440, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 1440, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,4
+channel=0
+volumescale=90
+
+
+[State 1440, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 1440, Real attack collision]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 1440, Real attack collision]
+type=HitDef
+trigger1=Time=25
+attr=S,SA
+damage=120,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 1440, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9503
+stateno=9503
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 1440, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,15
+channel=2
+volumescale=80
+
+
+[State 1440, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 1060]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=1060
+velset=0,0
+
+[State 1060, Ground landing]
+type=PosSet
+trigger1=Time=0
+y=0
+
+
+[State 1060, Return control]
+type=ChangeState
+trigger1=Time>=10
+value=0
+ctrl=1
+
+
+[Statedef 11000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11000
+poweradd=-350
+velset=0,0
+
+[State 11000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 11000, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11000, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=7
+
+
+[State 11000, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 11000, Real attack collision]
+type=HitDef
+trigger1=Time=15
+attr=S,SA
+damage=90,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11000, Real attack collision]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=125,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11000, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11010]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11010
+poweradd=-400
+velset=0,0
+
+[State 11010, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11010, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 11010, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11010, Real attack collision]
+type=HitDef
+trigger1=Time=16
+attr=S,SA
+damage=65,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11010, Real attack collision]
+type=HitDef
+trigger1=Time=28
+attr=S,SA
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11010, Real attack collision]
+type=HitDef
+trigger1=Time=40
+attr=S,SA
+damage=125,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11010, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11020]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11020
+poweradd=-450
+velset=0,0
+
+[State 11020, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11020, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=90
+
+
+[State 11020, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11020, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=10
+
+
+[State 11020, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 11020, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=S,SA
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11020, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=S,SA
+damage=130,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11020, Finite technique resource]
+type=Helper
+trigger1=Time=8
+helpertype=Normal
+name="Boruto technique"
+ID=9502
+stateno=9502
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11020, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11030]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11030
+poweradd=-550
+velset=0,0
+
+[State 11030, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11030, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 11030, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=8
+attr=S,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=26
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11030, Real attack collision]
+type=HitDef
+trigger1=Time=44
+attr=S,SA
+damage=125,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11030, Return control]
+type=ChangeState
+trigger1=Time>=60
+value=0
+ctrl=1
+
+
+[Statedef 11040]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11040
+poweradd=-350
+velset=0,0
+
+[State 11040, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11040, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,1
+channel=0
+volumescale=90
+
+
+[State 11040, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11040, Real rising motion]
+type=VelSet
+trigger1=Time=4
+x=4
+y=-6.5
+
+
+[State 11040, Airborne]
+type=StateTypeSet
+trigger1=Time=4
+statetype=A
+physics=N
+
+
+[State 11040, Finite gravity]
+type=VelAdd
+trigger1=Time>4
+y=.46
+
+
+[State 11040, Original landing]
+type=ChangeState
+trigger1=Time>20 && Pos Y>=0 && Vel Y>0
+value=11060
+ctrl=0
+
+
+[State 11040, Real attack collision]
+type=HitDef
+trigger1=Time=6
+attr=A,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11040, Real attack collision]
+type=HitDef
+trigger1=Time=23
+attr=A,SA
+damage=125,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11040, Finite technique resource]
+type=Helper
+trigger1=Time=13
+helpertype=Normal
+name="Boruto technique"
+ID=9502
+stateno=9502
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11040, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=50
+ctrl=1
+
+
+[Statedef 11050]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11050
+poweradd=-450
+velset=0,0
+
+[State 11050, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11050, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 11050, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11050, Physical technique approach]
+type=VelSet
+trigger1=Time>=6 && Time<28 && !MoveContact
+x=7
+
+
+[State 11050, Brake on contact]
+type=VelSet
+trigger1=MoveContact || Time>=28
+x=0
+
+
+[State 11050, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=S,SA
+damage=70,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11050, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11050, Real attack collision]
+type=HitDef
+trigger1=Time=30
+attr=S,SA
+damage=115,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11050, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11400]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11400
+poweradd=-200
+velset=0,0
+
+[State 11400, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11400, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 11400, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11400, Real attack collision]
+type=HitDef
+trigger1=Time=5
+attr=C,SA
+damage=125,0
+animtype=Up
+guardflag=L
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=Low
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11400, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11410]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11410
+poweradd=-300
+velset=0,0
+
+[State 11410, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11410, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 11410, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11410, Finite technique resource]
+type=Helper
+trigger1=Time=10 && NumHelper(9700)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9700
+stateno=9700
+postype=P1
+pos=-28,0
+ownpal=1
+keyctrl=0
+
+
+[State 11410, Order the existing clone]
+type=VarAdd
+trigger1=Time=12
+v=45
+value=1
+
+
+[State 11410, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11420]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11420
+poweradd=-450
+velset=0,0
+
+[State 11420, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11420, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 11420, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11420, Real attack collision]
+type=HitDef
+trigger1=Time=14
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11420, Real attack collision]
+type=HitDef
+trigger1=Time=32
+attr=S,SA
+damage=90,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11420, Real attack collision]
+type=HitDef
+trigger1=Time=50
+attr=S,SA
+damage=115,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11420, Return control]
+type=ChangeState
+trigger1=Time>=69
+value=0
+ctrl=1
+
+
+[Statedef 11200]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11200
+poweradd=-200
+velset=0,0
+
+[State 11200, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,0
+channel=0
+volumescale=90
+
+
+[State 11200, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11200, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 11200, Finite technique resource]
+type=Helper
+trigger1=Time=19
+helpertype=Normal
+name="Boruto technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=19
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 11200, Finite technique resource]
+type=Helper
+trigger1=Time=29
+helpertype=Normal
+name="Boruto technique"
+ID=9500
+stateno=9500
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11200, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=29
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 11200, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11210]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11210
+poweradd=-250
+velset=0,0
+
+[State 11210, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,2
+channel=0
+volumescale=110
+
+
+[State 11210, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11210, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9501
+stateno=9501
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 11210, Finite technique resource]
+type=Helper
+trigger1=Time=24
+helpertype=Normal
+name="Boruto technique"
+ID=9501
+stateno=9501
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11210, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=24
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 11210, Return control]
+type=ChangeState
+trigger1=Time>=50
+value=0
+ctrl=1
+
+
+[Statedef 11430]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11430
+poweradd=-600
+velset=0,0
+
+[State 11430, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,3
+channel=0
+volumescale=90
+
+
+[State 11430, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11430, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,SA
+damage=75,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11430, Real attack collision]
+type=HitDef
+trigger1=Time=36
+attr=S,SA
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11430, Real attack collision]
+type=HitDef
+trigger1=Time=54
+attr=S,SA
+damage=110,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11430, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=14
+value=S2,53
+channel=2
+volumescale=80
+
+
+[State 11430, Separate original effect]
+type=Explod
+trigger1=Time=20
+anim=8813
+postype=P1
+pos=0,0
+scale=0.65,0.65
+removetime=48
+bindtime=1
+sprpriority=-2
+ownpal=1
+removeongethit=1
+
+
+[State 11430, Return control]
+type=ChangeState
+trigger1=Time>=76
+value=0
+ctrl=1
+
+
+[Statedef 11440]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=11440
+poweradd=-600
+velset=0,0
+
+[State 11440, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 11440, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,4
+channel=0
+volumescale=90
+
+
+[State 11440, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=10
+attr=S,SA
+damage=80,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=25
+attr=S,SA
+damage=95,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 11440, Real attack collision]
+type=HitDef
+trigger1=Time=42
+attr=S,SA
+damage=135,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=30
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 11440, Finite technique resource]
+type=Helper
+trigger1=Time=9
+helpertype=Normal
+name="Boruto technique"
+ID=9503
+stateno=9503
+postype=P1
+pos=35,-38
+ownpal=1
+keyctrl=0
+
+
+[State 11440, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=9
+value=S2,15
+channel=2
+volumescale=80
+
+
+[State 11440, Return control]
+type=ChangeState
+trigger1=Time>=66
+value=0
+ctrl=1
+
+
+[Statedef 11060]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=11060
+velset=0,0
+
+[State 11060, Ground landing]
+type=PosSet
+trigger1=Time=0
+y=0
+
+
+[State 11060, Return control]
+type=ChangeState
+trigger1=Time>=10
+value=0
+ctrl=1
+
+
+[Statedef 9500]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8800
+velset=11,0
+
+[State 9500, Standalone projectile size]
+type=AngleDraw
+trigger1=1
+scale=.9,.9
+
+
+[State 9500, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9500, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=85,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9500, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9501]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8801
+velset=9,0
+
+[State 9501, Standalone projectile size]
+type=AngleDraw
+trigger1=1
+scale=.45,.45
+
+
+[State 9501, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9501, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=125,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9501, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9502]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8802
+velset=9,0
+
+[State 9502, Standalone projectile size]
+type=AngleDraw
+trigger1=1
+scale=.65,.65
+
+
+[State 9502, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9502, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=75,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9502, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9503]
+type=A
+movetype=A
+physics=N
+ctrl=0
+anim=8803
+velset=10,0
+
+[State 9503, Standalone projectile size]
+type=AngleDraw
+trigger1=1
+scale=.6,.6
+
+
+[State 9503, No push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9503, Real attack collision]
+type=HitDef
+trigger1=Time=0
+attr=A,SP
+damage=100,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9503, Finite projectile]
+type=DestroySelf
+trigger1=MoveContact || Time>=50 || RoundState!=2
+
+
+
+[Statedef 9700]
+type=S
+movetype=I
+physics=N
+ctrl=0
+anim=9700
+velset=0,0
+
+[State 9700, Finite clone health]
+type=LifeSet
+trigger1=Time=0 && Var(2)=0
+value=120
+
+
+[State 9700, Remember clone form]
+type=VarSet
+trigger1=Time=0 && Var(2)=0
+v=0
+value=Root,Var(42)
+
+
+[State 9700, Remember order]
+type=VarSet
+trigger1=Time=0 && Var(2)=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9700, Initialize once]
+type=VarSet
+trigger1=Time=0
+v=2
+value=1
+
+
+[State 9700, Finite clone age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9700, No clone push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9700, Clone can receive real damage]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9700, Clone defeat and cleanup]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+
+
+
+[State 9700, Face actual enemy]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9700, Take clone order]
+type=ChangeState
+trigger1=(Parent,Var(45))!=Var(1)
+value=9701
+ctrl=0
+
+
+[State 9700, Close on opponent]
+type=VelSet
+trigger1=1
+x=IfElse(Abs(P2Dist X)>90,4,0)
+
+
+[State 9700, Autonomous clone Rasengan]
+type=ChangeState
+trigger1=Time>=18 && Abs(P2Dist X)<130
+value=9701
+ctrl=0
+
+
+[Statedef 9701]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=9701
+velset=0,0
+
+[State 9701, Consume command]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9701, Finite clone age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9701, No clone push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9701, Clone can receive real damage]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9701, Clone defeat and cleanup]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+
+
+
+[State 9701, Face actual enemy]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9701, Take clone order]
+type=ChangeState
+trigger1=(Parent,Var(45))!=Var(1)
+value=9701
+ctrl=0
+
+
+[State 9701, Clone actual approach]
+type=VelSet
+trigger1=Time<18 && !MoveContact
+x=7
+
+
+[State 9701, Clone brake]
+type=VelSet
+trigger1=MoveContact || Time>=18
+x=0
+
+
+[State 9701, Real attack collision]
+type=HitDef
+trigger1=Time=15
+attr=S,SA
+damage=IfElse(Var(0),65,45),0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=28
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+
+[State 9701, Real attack collision]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=IfElse(Var(0),85,70),0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
+
+
+[State 9701, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=10
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 9701, Return control]
+type=ChangeState
+trigger1=Time>=38
+value=9700
+ctrl=1
+
+
+[Statedef 9790]
+type=S
+movetype=H
+physics=N
+ctrl=0
+anim=9790
+velset=0,0
+
+[State 9790, Consume command]
+type=VarSet
+trigger1=Time=0
+v=1
+value=Parent,Var(45)
+
+
+[State 9790, Finite clone age]
+type=VarAdd
+trigger1=1
+v=5
+value=1
+ignorehitpause=1
+
+[State 9790, No clone push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9790, Clone can receive real damage]
+type=HitOverride
+trigger1=1
+attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT
+stateno=9790
+time=1
+forceair=0
+ignorehitpause=1
+
+[State 9790, Clone defeat and cleanup]
+type=DestroySelf
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+
+
+
+[State 9790, Face actual enemy]
+type=Turn
+trigger1=P2Dist X<0
+
+
+
+[State 9790, Clone hurt flash]
+type=PalFX
+trigger1=1
+time=1
+add=60,80,100
+
+
+[State 9790, Return control]
+type=ChangeState
+trigger1=Time>=10
+value=9700
+ctrl=1
+
+
+[Statedef 170]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=170
+velset=0,0
+
+[State 170, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,5
+channel=0
+volumescale=80
+
+
+[Statedef 180]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=180
+velset=0,0
+
+[State 180, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,8
+channel=0
+volumescale=80
+
+
+[Statedef 190]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=190
+velset=0,0
+
+[State 190, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,8
+channel=0
+volumescale=80
+
+
+[State 190, Brief intro]
+type=AssertSpecial
+trigger1=Time<36
+flag=Intro
+
+
+[State 190, Return control]
+type=ChangeState
+trigger1=Time>=40
+value=0
+ctrl=1
+
+
+[Statedef 500]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=500
+velset=0,0
+
+[State 500, Real chakra charge]
+type=PowerAdd
+trigger1=1
+value=20
+
+
+[State 500, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S2,24
+channel=3
+volumescale=80
+
+
+[State 500, Finite technique resource]
+type=Helper
+trigger1=Time=0 && Var(42)=0 && NumHelper(9551)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9551
+stateno=9551
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State 500, Release charge]
+type=ChangeState
+trigger1=AILevel=0 && command!="hold_s"
+trigger2=Power>=3000
+trigger3=AILevel>0 && Time>=80
+value=0
+ctrl=1
+
+
+[Statedef 9551]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9551, Follow main body]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-45
+
+
+[State 9551, Green charge aura]
+type=PalFX
+trigger1=1
+time=1
+color=0
+mul=70,230,120
+
+
+[State 9551, Charge aura drawing]
+type=AngleDraw
+trigger1=1
+value=90
+scale=.38,.4
+
+
+[State 9551, Behind main body]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9551, Aura cleanup]
+type=DestroySelf
+trigger1=RoundState!=2 || (Root,Life)<=0 || (Root,StateNo)!=500
+
+
+
+[Statedef 9560]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8900
+velset=0,0
+
+[State 9560, Follow main body]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,-45
+
+
+[State 9560, Blue Jogan electricity]
+type=ChangeAnim
+trigger1=(Root,StateNo)!=500 && Anim!=8812
+value=8812
+
+
+[State 9560, Charging resonance aura]
+type=ChangeAnim
+trigger1=(Root,StateNo)=500 && Anim!=8900
+value=8900
+
+
+[State 9560, Original blue arcs drawing]
+type=AngleDraw
+trigger1=1
+value=IfElse((Root,StateNo)=500,90,0)
+scale=IfElse((Root,StateNo)=500,.45,.28),IfElse((Root,StateNo)=500,.5,.28)
+
+
+[State 9560, Behind main body]
+type=SprPriority
+trigger1=1
+value=-2
+
+
+[State 9560, Aura cleanup]
+type=DestroySelf
+trigger1=RoundState!=2 || (Root,Life)<=0 || (Root,Var(42))=0
+
+
+
+[Statedef 520]
+type=S
+movetype=I
+physics=S
+ctrl=0
+anim=520
+velset=0,0
+
+[State 520, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 520, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,4
+channel=0
+volumescale=90
+
+
+[State 520, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 520, Separate original effect]
+type=Explod
+trigger1=Time=12
+anim=8810
+postype=P1
+pos=0,-135
+scale=0.28,0.28
+removetime=20
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 520, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=12
+value=S2,16
+channel=2
+volumescale=80
+
+
+[State 520, Pay resonance]
+type=PowerAdd
+trigger1=Time=47
+value=-1500
+
+
+[State 520, Karma and Jogan resonance]
+type=VarSet
+trigger1=Time=47
+v=42
+value=1
+
+
+[State 520, Twenty second resonance]
+type=VarSet
+trigger1=Time=47
+v=40
+value=1200
+
+
+[State 520, Resonance cooldown]
+type=VarSet
+trigger1=Time=47
+v=41
+value=1500
+
+
+[State 520, Return control]
+type=ChangeState
+trigger1=Time>=62
+value=0
+ctrl=1
+
+
+[Statedef 3000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=3000
+poweradd=-3000
+velset=0,0
+
+[State 3000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,4
+channel=0
+volumescale=90
+
+
+[State 3000, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 3000, No cinematic push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 3000, Clear confirmed hit]
+type=VarSet
+trigger1=Time=0
+v=21
+value=0
+
+
+[State 3000, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=330
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=3000
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+p2stateno=3010
+p2getp1state=1
+
+[State 3000, Remember actual target position]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+fv=0
+value=Target(3000),Pos X
+
+
+[State 3000, Finite Jogan damage budget]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,650,Floor((Target(3000),LifeMax)*0.65))
+
+
+[State 3000, Confirm contact]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0
+v=21
+value=1
+
+
+[State 3000, Approach actual target]
+type=PosSet
+trigger1=Time=40 && NumTarget(3000)>0
+x=FVar(0)-Facing*70
+
+
+[State 3000, Hold confirmed opponent]
+type=TargetBind
+trigger1=NumTarget(3000)>0 && Time<268
+ID=3000
+time=1
+pos=(FVar(0)-Pos X)*Facing,0
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=62 && NumTarget(3000)>0
+anim=8810
+postype=P1
+pos=0,-135
+scale=0.28,0.28
+removetime=20
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=100 && NumTarget(3000)>0
+anim=8813
+postype=P1
+pos=0,0
+scale=0.65,0.65
+removetime=48
+bindtime=1
+sprpriority=-2
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=44 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=44 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=44 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=44 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=72 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=72 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=72 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=72 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=100 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=100 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=100 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=100 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=128 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=128 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=128 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=128 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=156 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=156 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=156 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=156 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=184 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=184 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=184 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=212 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=212 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=212 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=212 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=244 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/8)*7)
+absolute=1
+kill=1
+
+
+[State 3000, Count actual pulse]
+type=HitAdd
+trigger1=Time=244 && NumTarget(3000)>0
+value=1
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=244 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=244 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 3000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=244 && NumTarget(3000)>0
+value=S2,15
+channel=4
+volumescale=80
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=244 && NumTarget(3000)>0
+anim=8814
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,0
+scale=0.4,0.4
+removetime=51
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 3000, Release rival]
+type=TargetState
+trigger1=Time=268 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 3000, Return control]
+type=ChangeState
+trigger1=Time>=290
+value=0
+ctrl=1
+
+
+[Statedef 13000]
+type=S
+movetype=A
+physics=N
+ctrl=0
+anim=13000
+poweradd=-3000
+velset=0,0
+
+[State 13000, Technique effect]
+type=PlaySnd
+trigger1=Time=0
+value=S1,21
+channel=4
+volumescale=75
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S3,4
+channel=0
+volumescale=90
+
+
+[State 13000, Brief technique focus]
+type=SuperPause
+trigger1=Time=0
+time=8
+movetime=0
+anim=-1
+sound=-1
+darken=1
+unhittable=0
+p2defmul=1
+poweradd=0
+persistent=0
+
+[State 13000, No cinematic push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 13000, Clear confirmed hit]
+type=VarSet
+trigger1=Time=0
+v=21
+value=0
+
+
+[State 13000, Real attack collision]
+type=HitDef
+trigger1=Time=18
+attr=S,HP
+damage=0,0
+animtype=Medium
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,7
+guardsound=S1,9
+ground.type=High
+ground.hittime=330
+ground.slidetime=14
+ground.velocity=-0.3,0
+air.hittime=30
+air.velocity=-0.5,-1
+fall=0
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=3000
+hitonce=1
+envshake.time=2
+envshake.ampl=-1
+
+p2stateno=3010
+p2getp1state=1
+
+[State 13000, Remember actual target position]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+fv=0
+value=Target(3000),Pos X
+
+
+[State 13000, Finite Jogan damage budget]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
+v=20
+value=IfElse((Target(3000),LifeMax)>=1000,800,Floor((Target(3000),LifeMax)*0.8))
+
+
+[State 13000, Confirm contact]
+type=VarSet
+trigger1=MoveHit && NumTarget(3000)>0
+v=21
+value=1
+
+
+[State 13000, Approach actual target]
+type=PosSet
+trigger1=Time=40 && NumTarget(3000)>0
+x=FVar(0)-Facing*70
+
+
+[State 13000, Hold confirmed opponent]
+type=TargetBind
+trigger1=NumTarget(3000)>0 && Time<268
+ID=3000
+time=1
+pos=(FVar(0)-Pos X)*Facing,0
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=62 && NumTarget(3000)>0
+anim=8810
+postype=P1
+pos=0,-135
+scale=0.28,0.28
+removetime=20
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=100 && NumTarget(3000)>0
+anim=8813
+postype=P1
+pos=0,0
+scale=0.65,0.65
+removetime=48
+bindtime=1
+sprpriority=-2
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=44 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=44 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=44 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=44 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=72 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=72 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=72 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=72 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=100 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=100 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=100 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=100 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=128 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=128 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=128 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=128 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=156 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=156 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=156 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=156 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=184 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=184 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=184 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=212 && NumTarget(3000)>0
+ID=3000
+value=-(Floor(Var(20)/8))
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=212 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=212 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=212 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Confirmed impact]
+type=TargetLifeAdd
+trigger1=Time=244 && NumTarget(3000)>0
+ID=3000
+value=-(Var(20)-Floor(Var(20)/8)*7)
+absolute=1
+kill=1
+
+
+[State 13000, Count actual pulse]
+type=HitAdd
+trigger1=Time=244 && NumTarget(3000)>0
+value=1
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=244 && NumTarget(3000)>0
+anim=8700
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,-35
+scale=0.8,0.8
+removetime=9
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=244 && NumTarget(3000)>0
+value=S2,1
+channel=2
+volumescale=80
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=184 && NumTarget(3000)>0
+value=S2,47
+channel=2
+volumescale=80
+
+
+[State 13000, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=244 && NumTarget(3000)>0
+value=S2,15
+channel=4
+volumescale=80
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=244 && NumTarget(3000)>0
+anim=8814
+postype=P1
+pos=(FVar(0)-Pos X)*Facing,0
+scale=0.4,0.4
+removetime=51
+bindtime=1
+sprpriority=4
+ownpal=1
+removeongethit=1
+
+
+[State 13000, Release rival]
+type=TargetState
+trigger1=Time=268 && NumTarget(3000)>0
+ID=3000
+value=3011
+
+
+[State 13000, Return control]
+type=ChangeState
+trigger1=Time>=290
+value=0
+ctrl=1
+
+
+[Statedef 3010]
+type=S
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3010, Retain opponent artwork]
+type=ChangeAnim
+trigger1=Time=0 && SelfAnimExist(5000)
+value=5000
+
+
+[State 3010, Independent victim release]
+type=SelfState
+trigger1=Time>=350
+trigger2=NumEnemy=0
+trigger3=EnemyNear,StateNo%10000!=3000
+trigger4=RoundState!=2
+value=5050
+ctrl=0
+
+
+[Statedef 3011]
+type=A
+movetype=H
+physics=N
+ctrl=0
+velset=0,0
+
+[State 3011, Release motion]
+type=VelSet
+trigger1=Time=0
+x=-4
+y=-6
+
+
+[State 3011, Return opponent state ownership]
+type=SelfState
+trigger1=1
+value=5050
+ctrl=0
+
+
+[Statedef -2]
+
+[State -2, Finite resonance timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(40)>0
+v=40
+value=-1
+ignorehitpause=1
+
+[State -2, Finite resonance timer]
+type=VarAdd
+trigger1=!IsHelper && RoundState=2 && Var(41)>0
+v=41
+value=-1
+ignorehitpause=1
+
+[State -2, Safe resonance expiry]
+type=VarSet
+trigger1=!IsHelper && Var(42)=1 && Var(40)=0 && Ctrl && MoveType!=H
+v=42
+value=0
+
+
+[State -2, Restore base animation bank]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=0 && Anim>=10000 && SelfAnimExist(Anim-10000)
+value=Anim-10000
+
+
+[State -2, Resonance animation bank]
+type=ChangeAnim
+trigger1=!IsHelper && Var(42)=1 && StateNo!=520 && Anim<10000 && SelfAnimExist(Anim+10000)
+value=Anim+10000
+
+
+[State -2, Finite technique resource]
+type=Helper
+trigger1=!IsHelper && RoundState=2 && Var(42)=1 && NumHelper(9560)=0
+helpertype=Normal
+name="Boruto technique"
+ID=9560
+stateno=9560
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0
+
+
+[State -2, Karma strength]
+type=AttackMulSet
+trigger1=!IsHelper
+value=IfElse(Var(42),1.18,1)
+
+
+[State -2, Reset air chain]
+type=VarSet
+trigger1=!IsHelper && StateType!=A
+v=12
+value=0
+
+
+[State -2, Supplied Boruto audio]
+type=PlaySnd
+trigger1=!IsHelper && MoveType=H && Time=0 && StateNo=5000
+value=S3,10
+channel=0
+volumescale=70
+
+
+[State -2, Stop released charge sound]
+type=StopSnd
+trigger1=!IsHelper && StateNo!=500
+channel=3
+
+
+[State -2, Round resonance cleanup]
+type=VarSet
+trigger1=!IsHelper && RoundState!=2 && StateNo!=190
+v=42
+value=0
+
+
+[State -2, Round effect cleanup]
+type=RemoveExplod
+trigger1=!IsHelper && RoundState!=2

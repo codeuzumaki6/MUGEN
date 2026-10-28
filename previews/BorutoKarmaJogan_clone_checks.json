@@ -1,0 +1,79 @@
+{
+  "runtime_sha256": "2dfa0894b90268d5c40443b76480134bd9f8130f1967f0dbab7baccbf53c5547",
+  "clone_health": 120,
+  "clone_ticks": 180,
+  "cases": [
+    {
+      "kind": "expiry",
+      "form": 0,
+      "face": 1,
+      "root_life": 1200,
+      "damage": 115,
+      "maximum_age": 179,
+      "minimum_health": 120
+    },
+    {
+      "kind": "expiry",
+      "form": 0,
+      "face": -1,
+      "root_life": 1200,
+      "damage": 115,
+      "maximum_age": 179,
+      "minimum_health": 120
+    },
+    {
+      "kind": "expiry",
+      "form": 1,
+      "face": 1,
+      "root_life": 1200,
+      "damage": 150,
+      "maximum_age": 179,
+      "minimum_health": 120
+    },
+    {
+      "kind": "expiry",
+      "form": 1,
+      "face": -1,
+      "root_life": 1200,
+      "damage": 150,
+      "maximum_age": 179,
+      "minimum_health": 120
+    },
+    {
+      "kind": "defeat",
+      "form": 0,
+      "face": 1,
+      "root_life": 1200,
+      "damage": 115,
+      "maximum_age": 54,
+      "minimum_health": 0
+    },
+    {
+      "kind": "defeat",
+      "form": 0,
+      "face": -1,
+      "root_life": 1200,
+      "damage": 115,
+      "maximum_age": 54,
+      "minimum_health": 0
+    },
+    {
+      "kind": "defeat",
+      "form": 1,
+      "face": 1,
+      "root_life": 1200,
+      "damage": 150,
+      "maximum_age": 54,
+      "minimum_health": 0
+    },
+    {
+      "kind": "defeat",
+      "form": 1,
+      "face": -1,
+      "root_life": 1200,
+      "damage": 150,
+      "maximum_age": 54,
+      "minimum_health": 0
+    }
+  ]
+}

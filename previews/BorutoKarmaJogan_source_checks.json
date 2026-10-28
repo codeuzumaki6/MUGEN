@@ -1,0 +1,53 @@
+{
+  "original_files": 618,
+  "archive_volumes": [
+    {
+      "name": "✅Sprite BorutoJougan by Vaydra.part1.rar",
+      "file_id": "file_00000000eff081f4b12efddd16afd97f",
+      "file": "source_material/Boruto_original/archive_parts/✅Sprite BorutoJougan by Vaydra.part1.rar",
+      "bytes": 31457280,
+      "sha256": "48a00a803b6a02e6729270dbe5396ad14b4c155baff6fab1aa0881169aa12bbe",
+      "signature": "526172211a070100"
+    },
+    {
+      "name": "✅Sprite BorutoJougan by Vaydra.part2.rar",
+      "file_id": "file_000000008d08820db9061081f786c29a",
+      "file": "source_material/Boruto_original/archive_parts/✅Sprite BorutoJougan by Vaydra.part2.rar",
+      "bytes": 31457280,
+      "sha256": "bfb3db02d0d40d2aca169b47641f4158c8622d27170a810ceae90bf2d1781534"
+    },
+    {
+      "name": "✅Sprite BorutoJougan by Vaydra.part3.rar",
+      "file_id": "file_0000000077708230984206692c907356",
+      "file": "source_material/Boruto_original/archive_parts/✅Sprite BorutoJougan by Vaydra.part3.rar",
+      "bytes": 21002747,
+      "sha256": "513362774d91b75bc21a3f6a5a01474df7b64d12a29adf44e7961f6bc383b842"
+    }
+  ],
+  "original_frames": 663,
+  "selected_original_audio": 67,
+  "original_character_audio": 11,
+  "original_rgba_preserved": true,
+  "indexed_rle8_lossless": true,
+  "excluded_frames": [
+    {
+      "plist": "Pain/Pain.plist",
+      "key": "PainNol"
+    },
+    {
+      "plist": "Pain/Pain.plist",
+      "key": "Pain_None"
+    }
+  ],
+  "gameplay_reference": {
+    "file": "Share❗ Sprite Boruto Karma Jougan Gameplay Skill Moveset.mp4",
+    "sha256": "2728068f31af8e8fe5fd6831211195feba99a3f476d655f50c3a7fbba549148b",
+    "bytes": 23408778,
+    "duration_seconds": 217.00059,
+    "width": 854,
+    "height": 438,
+    "source": "User supplied gameplay reference",
+    "sprite_archive_file_id": "file_0000000021dc820d961a4859278ff97e",
+    "sprite_archive_status": "Complete: three RAR volumes tested, 618 files extracted and CRC verified"
+  }
+}

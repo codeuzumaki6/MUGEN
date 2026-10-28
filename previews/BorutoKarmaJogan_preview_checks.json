@@ -1,0 +1,138 @@
+{
+  "character": "BorutoKarmaJogan",
+  "frames": 854,
+  "cases": 14,
+  "duration": 88.06666666666666,
+  "video": "BorutoKarmaJogan_motor.mp4",
+  "sha256": "de2f18e6e4c04ef359fb013905f7b1bddd0d97fc0bb8603693c6623dfb26baea",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.3357531148442862,
+      "actual_sample_seconds": 5.247687074829932,
+      "voice": "BorutoJogan/03",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.76944925974272,
+      "actual_sample_seconds": 16.3468253968254,
+      "voice": "BorutoJogan/01",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.9059385522880556,
+      "actual_sample_seconds": 27.39954648526077,
+      "voice": "BorutoJogan/02",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1040,
+      "correlation": 0.8747693406949503,
+      "actual_sample_seconds": 39.19528344671202,
+      "voice": "BorutoJogan/02",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1410,
+      "correlation": 0.8064413152061917,
+      "actual_sample_seconds": 50.24798185941043,
+      "voice": "BorutoJogan/01",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1430,
+      "correlation": 0.9115571746421433,
+      "actual_sample_seconds": 61.30068027210884,
+      "voice": "BorutoJogan/04",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 1440,
+      "correlation": 0.7432590560495954,
+      "actual_sample_seconds": 72.35337868480725,
+      "voice": "BorutoJogan/05",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 3000,
+      "correlation": 0.8869993927231171,
+      "actual_sample_seconds": 83.49895691609977,
+      "voice": "BorutoJogan/05",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 520,
+      "correlation": 0.785954654133168,
+      "actual_sample_seconds": 94.69097505668934,
+      "voice": "BorutoJogan/05",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 11010,
+      "correlation": 0.7779447680380408,
+      "actual_sample_seconds": 105.41857142857143,
+      "voice": "BorutoJogan/01",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 11030,
+      "correlation": 0.2586492606206266,
+      "actual_sample_seconds": 116.42485260770975,
+      "voice": "BorutoJogan/03",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 11420,
+      "correlation": 0.27773586160610086,
+      "actual_sample_seconds": 127.52399092970522,
+      "voice": "BorutoJogan/03",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 11440,
+      "correlation": 0.7455400427080825,
+      "actual_sample_seconds": 138.48380952380953,
+      "voice": "BorutoJogan/05",
+      "anchor": "Original Boruto pack startup sample"
+    },
+    {
+      "case": 13,
+      "cue_frame": 8609,
+      "state": 13000,
+      "correlation": 0.886999392723117,
+      "actual_sample_seconds": 149.4900680272109,
+      "voice": "BorutoJogan/05",
+      "anchor": "Original Boruto pack startup sample"
+    }
+  ],
+  "runtime_sha256": "2dfa0894b90268d5c40443b76480134bd9f8130f1967f0dbab7baccbf53c5547"
+}

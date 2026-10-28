@@ -1,0 +1,44 @@
+
+
+
+===  Activate png  extra ===
+
+Open : 
+
+- lua
+- ui
+- StartMenu.lua
+
+Find :
+function enterSelectLayer(gameMode, 
+
+Add this :
+    tools.addSprites('AnginRibut.png')
+    tools.addSprites('Duar.plist')
+    tools.addSprites('TentenEx01.plist')
+    tools.addSprites('TentenEx02.plist')
+    tools.addSprites('TentenEx03.plist')
+    tools.addSprites('TentenEx04.plist')
+    
+
+Open 
+Assets
+Effect
+Add Shadow.png  &  Shadow.plist
+
+Sprite : BorutoKarmaJouugan
+Rep   : Tenten
+Author  : Vaydra
+Sheet : Vaydra
+Assist  : AmirZ
+Thanks To :
+Zakume
+Mashashi
+Haickal
+Kayla
+n all  source fx
+All my friends,Channel
+Subscribers
+
+
+Like Subscribe n Comment

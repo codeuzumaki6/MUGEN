@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation>
+		  <action value="Idle">
+		<date>
+			<dateName type="attackType">Pain</dateName>
+			<dateName type="attackValue">6500</dateName>
+			<dateName type="attackRangeX">51</dateName>
+			<dateName type="attackRangeY">100</dateName>
+			<coldName type="coldDown">224</coldName>
+		</date>
+		<frame>
+			<frameName>Pain_Idle_01.png</frameName>
+			<eventName type="setCommand">reInvincible</eventName>
+<frameName>Pain_Idle_02.png</frameName>
+<frameName>Pain_Idle_03.png</frameName>
+		</frame>
+		  </action>
+		  <action value="Walk">
+		<frame>
+		<eventName type="setMove">5</eventName>	
+			<eventName type="setCommand">reInvincible</eventName>
+			<frameName>Pain_Walk_01.png</frameName>
+			<eventName type="setMove">5</eventName>	
+<frameName>Pain_Walk_02.png</frameName>
+<eventName type="setSound">Audio/Effect/step1.mp3</eventName>
+	<eventName type="setMove">5</eventName>	
+<frameName>Pain_Walk_03.png</frameName>
+	<eventName type="setMove">5</eventName>	
+<frameName>Pain_Walk_04.png</frameName>
+	<eventName type="setMove">5</eventName>	
+<frameName>Pain_Walk_05.png</frameName>
+<eventName type="setSound">Audio/Effect/step1.mp3</eventName>
+	<eventName type="setMove">5</eventName>	
+<frameName>Pain_Walk_06.png</frameName>
+		</frame>
+		  </action>
+		  <action value="Hurt">
+		<frame>
+			<eventName type="setMove">32</eventName>
+			<frameName>Pain_Hurt_01.png</frameName>
+			<frameName>Pain_Hurt_02.png</frameName>
+			<eventName type="setSound">Audio/BorutoJogan/hurt1.mp3</eventName>
+			
+			
+			
+		</frame>
+		  </action>
+		  <action value="AirHurt">
+		<frame>
+			<frameName>Pain_AirHurt_01.png</frameName>
+		</frame>
+		  </action>
+	  <action value="KnockDown">
+
+		<frame>
+			<frameName>Pain_KnockDown_02.png</frameName>
+			<eventName type="setDelay">10</eventName>
+			<frameName>Pain_KnockDown_03.png</frameName>
+			<eventName type="setDelay">10</eventName>		
+				<!-- <eventName type="setCommand">setInvisible</eventName> -->
+				<!-- <eventName type="setMon">JouganEye</eventName> -->	
+			<!-- <eventName type="setMon">fakedead</eventName> -->	
+				<frameName>Pain_KnockDown_03.png</frameName>
+			<eventName type="setDelay">60</eventName>			
+	
+			<frameName>Pain_KnockDown_04.png</frameName>
+			<eventName type="setDelay">10</eventName>
+			<frameName>Pain_KnockDown_05.png</frameName>
+		  <eventName type="setDelay">10</eventName>
+		<eventName type="setSound">Audio/BorutoJogan/Die.mp3</eventName>	
+				<!-- <eventName type="setCommand">reInvisible</eventName> -->
+			</frame>
+	</action>
+		  <action value="Float">
+		<frame>
+			<frameName>Pain_KnockDown_01.png</frameName>
+			<eventName type="setDelay">10</eventName>
+			<frameName>Pain_KnockDown_01.png</frameName>
+			<eventName type="setDelay">10</eventName>
+			<frameName>Pain_KnockDown_01.png</frameName>
+		</frame>
+		  </action>
+		  <action value="Dead">
+		<frame>
+			<frameName>Pain_KnockDown_02.png</frameName>
+			<frameName>Pain_KnockDown_03.png</frameName>
+			<eventName type="setSound">Audio/BorutoJogan/Dead.mp3</eventName>
+		</frame>
+		  </action>
+		  <action value="nAttack">
+		<date>
+			<dateName type="attackType">nAttack</dateName>
+			<dateName type="attackValue">70</dateName>
+			<dateName type="attackRangeX">16</dateName>
+			<dateName type="attackRangeY">48</dateName>
+			<coldName type="coldDown">0</coldName>
+		</date>
+		<frame>
+    <frameName>Pain_NAttack_01.png</frameName>
+			<frameName>Pain_NAttack_02.png</frameName>
+			<eventName type="setSound">Audio/Effect/N2.wav</eventName>
+			<frameName>Pain_NAttack_03.png</frameName>
+			<eventName type="setAttackBox">n_hit</eventName>
+			<eventName type="setAttackBox">c_hit</eventName>
+			<frameName>Pain_NAttack_04.png</frameName>
+			<frameName>Pain_NAttack_05.png</frameName>
+			<frameName>Pain_NAttack_06.png</frameName>		
+		
+			<frameName>Pain_NAttack_07.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N2.wav</eventName>
+			<eventName type="setAttackBox">n_hit</eventName>	
+			<eventName type="setAttackBox">c_hit</eventName>
+			<frameName>Pain_NAttack_08.png</frameName>
+			<frameName>Pain_NAttack_09.png</frameName>
+			<frameName>Pain_NAttack_10.png</frameName>
+			<eventName type="setAttackBox">bl_hit</eventName>	
+			<!-- <eventName type="setSound">Audio/Effect/kong.ogg</eventName> -->
+			<frameName>Pain_NAttack_11.png</frameName>
+	
+			<frameName>Pain_NAttack_12.png</frameName>
+			<eventName type="setMove">16</eventName>	
+			<eventName type="setSound">Audio/BorutoJogan/Hit.mp3</eventName>	
+			<frameName>Pain_NAttack_13.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N1.wav</eventName>
+			<eventName type="setAttackBox">l_hit</eventName>		
+			<frameName>Pain_NAttack_14.png</frameName>
+			<frameName>Pain_NAttack_15.png</frameName>
+			<frameName>Pain_NAttack_16.png</frameName>
+			<eventName type="setAttackBox">l_hit</eventName>		
+			<frameName>Pain_NAttack_17.png</frameName>
+			<frameName>Pain_NAttack_18.png</frameName>
+
+		  <frameName>Pain_Skill04_29.png</frameName>
+			<eventName type="setDelay">20</eventName>	
+		  <frameName>Pain_Skill04_30.png</frameName>				
+			<!-- <eventName type="setDelay">-3</eventName> -->
+					<eventName type="setCharge">150</eventName>	
+    <eventName type="setSound">Audio/Effect/S4.mp3</eventName>				
+		<eventName type="setAttackBox">o2_hit</eventName>						
+		  <frameName>Pain_Skill04_31.png</frameName>
+			<!-- <eventName type="setDelay">-3</eventName> -->
+			<frameName>Pain_Skill04_32.png</frameName>
+			<!-- <eventName type="setDelay">-3</eventName> -->
+			<frameName>Pain_Skill04_33.png</frameName>
+
+			<frameName>Pain_Skill03_26.png</frameName>
+			<eventName type="setChargeB">-165</eventName>
+			<eventName type="setSound">Audio/Effect/blade_damage.ogg</eventName>	
+			<eventName type="setAttackBox">b_hit</eventName>				
+			<frameName>Pain_Skill03_27.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_28.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_29.png</frameName>
+			<frameName>Pain_Skill03_30.png</frameName>
+			<frameName>Pain_Skill03_31.png</frameName>		
+	  	<frameName>Pain_Skill03_32.png</frameName>				
+
+		<eventName type="setChargeB">80</eventName>
+			<frameName>Pain_Skill04_23.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>			
+			<frameName>Pain_Skill04_24.png</frameName>
+		<eventName type="setSound">Audio/Effect/BladeA.ogg</eventName>			
+			<frameName>Pain_Skill04_25.png</frameName>
+			<frameName>Pain_Skill04_26.png</frameName>
+			<eventName type="setAttackBox">f_hit</eventName>
+			<frameName>Pain_Skill04_27.png</frameName>
+			<frameName>Pain_Skill04_28.png</frameName>
+			<eventName type="setCommand">reInvincible</eventName>
+	
+		  <frameName>Pain_Skill04_29.png</frameName>
+			<eventName type="setDelay">20</eventName>	
+			<eventName type="setChargeB">200</eventName>	
+		  <frameName>Pain_Skill04_30.png</frameName>		
+			<eventName type="setSound">Audio/Effect/slsh.mp3</eventName>		  
+		  <eventName type="setAttackBox">b_hit</eventName>			
+		  <eventName type="setBullet">BoruWave3</eventName>		
+		  <frameName>Pain_Skill04_31.png</frameName>
+			<frameName>Pain_Skill04_32.png</frameName>
+			<frameName>Pain_Skill04_33.png</frameName>
+			<frameName>Pain_Skill04_34.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill04_35.png</frameName>
+			<frameName>Pain_Skill04_36.png</frameName>
+
+			--sui
+			<frameName>Pain_Skill03_33.png</frameName>		
+	  	<frameName>Pain_Skill03_34.png</frameName>				
+			
+			<frameName>Pain_Skill03_35.png</frameName>		
+	  	<frameName>Pain_Skill03_36.png</frameName>				
+			<eventName type="setSound">Audio/Effect/waterA.mp3</eventName>	
+			<eventName type="setAttackBox">c_hit</eventName>				
+			<frameName>Pain_Skill03_37.png</frameName>
+			<frameName>Pain_Skill03_38.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">o_hit</eventName>				
+			<frameName>Pain_Skill03_39.png</frameName>
+			<frameName>Pain_Skill03_40.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">b_hit</eventName>					
+			<frameName>Pain_Skill03_41.png</frameName>		
+	  	<frameName>Pain_Skill03_42.png</frameName>				
+	  	<frameName>Pain_Skill03_43.png</frameName>
+			<frameName>Pain_Skill03_44.png</frameName>		
+	  	<frameName>Pain_Skill03_45.png</frameName>
+
+		<eventName type="setSound">Audio/BorutoJogan/01.mp3</eventName>
+			<frameName>Pain_Skill01_01.png</frameName>
+			<frameName>Pain_Skill01_02.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/rasenS.ogg</eventName>
+		  <frameName>Pain_Skill01_03.png</frameName>
+			<frameName>Pain_Skill01_04.png</frameName>
+		  <frameName>Pain_Skill01_05.png</frameName>
+			<frameName>Pain_Skill01_06.png</frameName>	
+			
+		--chg2	
+			<frameName>Pain_Skill01_07.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		
+			<frameName>Pain_Skill01_08.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/RsgAura.mp3</eventName>	
+		  <frameName>Pain_Skill01_09.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		  
+			<frameName>Pain_Skill01_10.png</frameName>
+		  <frameName>Pain_Skill01_11.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		
+			<frameName>Pain_Skill01_12.png</frameName>				
+
+			--Trw=400
+	    <frameName>Pain_Skill01_13.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/rsShuriken.ogg</eventName>	
+			<eventName type="setMon">FutonRasen</eventName>
+			<frameName>Pain_Skill01_14.png</frameName>
+		  <frameName>Pain_Skill01_15.png</frameName>
+			<frameName>Pain_Skill01_16.png</frameName>	
+
+	<frameName>Pain_Skill03_01.png</frameName>
+		<eventName type="setBullet">UnFx</eventName>		
+		
+		  <eventName type="setSound">Audio/Effect/Sw3.wav</eventName>  
+			<frameName>Pain_Skill03_02.png</frameName>
+			<frameName>Pain_Skill03_03.png</frameName>
+			<frameName>Pain_Skill03_04.png</frameName>
+			<frameName>Pain_Skill03_05.png</frameName>				
+
+		--Dash	
+			<eventName type="setCharge">200</eventName>	
+			<eventName type="setSound">Audio/BorutoJogan/03.mp3</eventName>
+			<frameName>Pain_Skill03_06.png</frameName>			
+			<eventName type="setAttackBox">o_hit</eventName>
+      <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>  		
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_07.png</frameName>			
+			<eventName type="setAttackBox">o_hit</eventName>
+			<eventName type="setCharge">80</eventName>	
+			<frameName>Pain_Skill03_08.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+			<eventName type="setCharge">80</eventName>	
+			<frameName>Pain_Skill03_09.png</frameName>
+			<eventName type="setAttackBox">f_hit</eventName>
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_10.png</frameName>
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_11.png</frameName>
+
+	<eventName type="setFlipped">2</eventName>	
+			<eventName type="setCommand">reInvincible</eventName>
+
+	--Slash
+	    <eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>  
+			<frameName>Pain_Skill02_09.png</frameName>
+			<frameName>Pain_Skill02_10.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/BladeC.ogg</eventName>	
+			<eventName type="setAttackBox">ab_hit</eventName>					
+			<frameName>Pain_Skill02_11.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">o2_hit</eventName>				
+			<frameName>Pain_Skill02_12.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<frameName>Pain_Skill02_13.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<frameName>Pain_Skill02_14.png</frameName>		
+			<eventName type="setDelay">-3</eventName>
+		<eventName type="setChargeB">65</eventName>
+			<eventName type="setCommand">setInvincible</eventName>
+		  <eventName type="setSound">Audio/Effect/shuriken.mp3</eventName>  
+	    <eventName type="setMon">FakeBorutrhrow2</eventName>
+<frameName>Pain_Skill01_36.png</frameName>	
+		<eventName type="setAttackBox">f2_hit</eventName>
+		<frameName>Pain_Skill01_37.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+	    <eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>  		
+		<frameName>Pain_Skill01_38.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_39.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_40.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_41.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_42.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_43.png</frameName>			
+		<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_44.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<eventName type="setChargeB">320</eventName>
+
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>
+			<eventName type="setChargeB">320</eventName>	
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>		
+   	<eventName type="setFlipped">2</eventName>					
+      <frameName>Pain_Skill01_63.png</frameName>
+			<frameName>Pain_Skill01_64.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+
+ 	<eventName type="setSound">Audio/Effect/hiraishin_effect2</eventName>	
+      <frameName>Pain_Skill01_63.png</frameName>
+			<frameName>Pain_Skill01_64.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/RaitonEfx.mp3</eventName>	
+		  <frameName>Pain_Skill01_65.png</frameName>
+		  <frameName>Pain_Skill01_66.png</frameName>
+			<frameName>Pain_Skill01_67.png</frameName>
+		  <frameName>Pain_Skill01_68.png</frameName>
+		  <frameName>Pain_Skill01_69.png</frameName>
+			<frameName>Pain_Skill01_70.png</frameName>
+      --SdenBlast
+      <frameName>Pain_Skill01_71.png</frameName>
+			<frameName>Pain_Skill01_72.png</frameName>
+		  <eventName type="setAttackBox">b_hit</eventName>
+	<eventName type="setFlipped">2</eventName>
+		  <eventName type="setAttackBox">b_hit</eventName>
+	<eventName type="setFlipped">2</eventName>
+		 	<eventName type="setSound">Audio/Effect/Duar.ogg</eventName>	  
+			<eventName type="setCommand">reInvincible</eventName>
+		  <frameName>Pain_Skill01_73.png</frameName>
+		  <frameName>Pain_Skill01_74.png</frameName>
+			<frameName>Pain_Skill01_75.png</frameName>
+		  <frameName>Pain_Skill01_76.png</frameName>
+			<eventName type="setSound">Audio/Effect/RtnSfx.mp3</eventName>	  
+		  <eventName type="setAttackBox">c_hit</eventName>		
+		  <frameName>Pain_Skill01_77.png</frameName>
+			<frameName>Pain_Skill01_78.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>		
+		  <frameName>Pain_Skill01_79.png</frameName>
+		  <frameName>Pain_Skill01_80.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>		  
+		  <frameName>Pain_Skill01_81.png</frameName>
+			<frameName>Pain_Skill01_82.png</frameName>
+		</frame>
+		  </action>
+		  <action value="skill01">
+		<date>
+			<dateName type="attackType">cAttack</dateName>
+			<dateName type="attackValue">100</dateName>
+			<dateName type="attackRangeX">30</dateName>
+			<dateName type="attackRangeY">38</dateName>
+			<coldName type="coldDown">10</coldName>
+		</date>
+		<frame>
+		--Cp1440
+		<eventName type="setSound">Audio/BorutoJogan/01.mp3</eventName>
+			<eventName type="setCommand">setInvincible</eventName>	
+			<frameName>Pain_Skill01_01.png</frameName>
+			<frameName>Pain_Skill01_02.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/rasenS.ogg</eventName>
+		  <frameName>Pain_Skill01_03.png</frameName>
+			<frameName>Pain_Skill01_04.png</frameName>
+		  <frameName>Pain_Skill01_05.png</frameName>
+			<frameName>Pain_Skill01_06.png</frameName>	
+			
+		--chg2	
+			<frameName>Pain_Skill01_07.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		
+			<frameName>Pain_Skill01_08.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/RsgAura.mp3</eventName>	
+		  <frameName>Pain_Skill01_09.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		  
+			<frameName>Pain_Skill01_10.png</frameName>
+		  <frameName>Pain_Skill01_11.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>		
+			<frameName>Pain_Skill01_12.png</frameName>				
+
+			--Trw=400
+	    <frameName>Pain_Skill01_13.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/rsShuriken.ogg</eventName>	
+			<eventName type="setMon">FutonRasen</eventName>
+			<frameName>Pain_Skill01_14.png</frameName>
+		  <frameName>Pain_Skill01_15.png</frameName>
+			<frameName>Pain_Skill01_16.png</frameName>		
+		
+      --TrwBld
+      <frameName>Pain_Skill01_32.png</frameName>
+		  <eventName type="setAttackBox">o2_hit</eventName>		
+			<frameName>Pain_Skill01_33.png</frameName>
+			<eventName type="setBullet">BoruBlade</eventName>
+		  <frameName>Pain_Skill01_34.png</frameName>
+			<frameName>Pain_Skill01_35.png</frameName>		
+
+      --ChgSden
+		  <frameName>Pain_Skill01_49.png</frameName>
+		 	<eventName type="setSound">Audio/Effect/raitonsfx1.mp3</eventName>	
+		  <frameName>Pain_Skill01_50.png</frameName>
+			<frameName>Pain_Skill01_51.png</frameName>
+		  <frameName>Pain_Skill01_52.png</frameName>
+
+      --Sden
+	    <frameName>Pain_Skill01_53.png</frameName>
+		  <eventName type="setAttackBox">ac_hit</eventName>		
+		 	<eventName type="setSound">Audio/Effect/raitonsfx.mp3</eventName>	
+			<frameName>Pain_Skill01_54.png</frameName>
+		  <frameName>Pain_Skill01_55.png</frameName>
+		  <eventName type="setAttackBox">ac_hit</eventName>		
+			<frameName>Pain_Skill01_56.png</frameName>
+		  <frameName>Pain_Skill01_57.png</frameName>
+		  <eventName type="setAttackBox">f2_hit</eventName>		
+			<frameName>Pain_Skill01_58.png</frameName>
+    	<frameName>Pain_Skill01_59.png</frameName>
+
+      --tlp
+      <frameName>Pain_Skill01_60.png</frameName>
+ 	<eventName type="setSound">Audio/Effect/dash2.wav</eventName>	
+			<frameName>Pain_Skill01_61.png</frameName>
+		  <frameName>Pain_Skill01_62.png</frameName>
+			<eventName type="setDelay">-5</eventName>
+		  <eventName type="setChargeB">200</eventName>	
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-5</eventName>
+		<eventName type="setChargeB">200</eventName>
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-5</eventName>
+		  <eventName type="setChargeB">200</eventName>	
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-5</eventName>
+		<eventName type="setChargeB">200</eventName>
+			<frameName>Pain_None.png</frameName>
+
+ 	<eventName type="setSound">Audio/Effect/hiraishin_effect2</eventName>	
+      <frameName>Pain_Skill01_63.png</frameName>
+			<frameName>Pain_Skill01_64.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/RaitonEfx.mp3</eventName>	
+		  <frameName>Pain_Skill01_65.png</frameName>
+		  <frameName>Pain_Skill01_66.png</frameName>
+			<frameName>Pain_Skill01_67.png</frameName>
+		  <frameName>Pain_Skill01_68.png</frameName>
+		  <frameName>Pain_Skill01_69.png</frameName>
+			<frameName>Pain_Skill01_70.png</frameName>
+      --SdenBlast
+      <frameName>Pain_Skill01_71.png</frameName>
+			<frameName>Pain_Skill01_72.png</frameName>
+		  <eventName type="setAttackBox">b_hit</eventName>
+	<eventName type="setFlipped">2</eventName>
+		  <eventName type="setAttackBox">b_hit</eventName>
+	<eventName type="setFlipped">2</eventName>
+		 	<eventName type="setSound">Audio/Effect/Duar.ogg</eventName>	  
+			<eventName type="setCommand">reInvincible</eventName>
+		  <frameName>Pain_Skill01_73.png</frameName>
+		  <frameName>Pain_Skill01_74.png</frameName>
+			<frameName>Pain_Skill01_75.png</frameName>
+		  <frameName>Pain_Skill01_76.png</frameName>
+			<eventName type="setSound">Audio/Effect/RtnSfx.mp3</eventName>	  
+		  <eventName type="setAttackBox">c_hit</eventName>		
+		  <frameName>Pain_Skill01_77.png</frameName>
+			<frameName>Pain_Skill01_78.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>		
+		  <frameName>Pain_Skill01_79.png</frameName>
+		  <frameName>Pain_Skill01_80.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>
+		  <eventName type="setAttackBox">c_hit</eventName>
+		  <eventName type="setFlipped">10</eventName>		  
+		  <frameName>Pain_Skill01_81.png</frameName>
+			<frameName>Pain_Skill01_82.png</frameName>
+		</frame>
+		  </action>
+		  <action value="skill02">
+		<date>
+			<dateName type="attackType">aAttack</dateName>
+			<dateName type="attackValue">100</dateName>
+			<dateName type="attackRangeX">0</dateName>
+			<dateName type="attackRangeY">48</dateName>
+			<coldName type="coldDown">15</coldName>
+		</date>
+		<frame>
+		<!-- cp  1900+800
+      --TrwBld
+      <frameName>Pain_Skill01_32.png</frameName>
+		  <eventName type="setAttackBox">f_hit</eventName>		
+			<frameName>Pain_Skill01_33.png</frameName>
+			<eventName type="setMon">BoruBlade</eventName>
+		  <frameName>Pain_Skill01_34.png</frameName>
+			<frameName>Pain_Skill01_35.png</frameName>		
+	-->
+			<eventName type="setCommand">setInvincible</eventName>
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>
+		    <eventName type="setSound">Audio/Effect/shuriken.mp3</eventName>  
+	     <eventName type="setMon">FakeBorutrhrow</eventName>				
+		<eventName type="setChargeB">250</eventName>
+			<frameName>Pain_Skill02_01.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>		
+			<eventName type="setChargeB">100</eventName>	
+			<frameName>Pain_Skill02_02.png</frameName>
+			<eventName type="setSound">Audio/BorutoJogan/02.mp3</eventName>
+			<eventName type="setAttackBox">o_hit</eventName>		
+			<eventName type="setChargeB">100</eventName>	
+			<frameName>Pain_Skill02_03.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>		
+			<eventName type="setChargeB">100</eventName>	
+			<frameName>Pain_Skill02_04.png</frameName>
+		<eventName type="setChargeB">150</eventName>	
+	<eventName type="setFlipped">2</eventName>	
+			<eventName type="setCommand">reInvincible</eventName>
+
+	--Slash
+	    <eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>  
+			<frameName>Pain_Skill02_09.png</frameName>
+			<frameName>Pain_Skill02_10.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/BladeC.ogg</eventName>	
+			<eventName type="setAttackBox">ab_hit</eventName>					
+			<frameName>Pain_Skill02_11.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">o2_hit</eventName>				
+			<frameName>Pain_Skill02_12.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<frameName>Pain_Skill02_13.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<frameName>Pain_Skill02_14.png</frameName>		
+			<eventName type="setDelay">-3</eventName>
+		<eventName type="setChargeB">65</eventName>
+			<eventName type="setCommand">setInvincible</eventName>
+		  <eventName type="setSound">Audio/Effect/shuriken.mp3</eventName>  
+	    <eventName type="setMon">FakeBorutrhrow2</eventName>
+		<frameName>Pain_Skill01_36.png</frameName>	
+		<eventName type="setAttackBox">f2_hit</eventName>
+		<frameName>Pain_Skill01_37.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+	    <eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>  		
+		<frameName>Pain_Skill01_38.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_39.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_40.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_41.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_42.png</frameName>	
+			<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_43.png</frameName>			
+		<eventName type="setDelay">-3</eventName>
+		<frameName>Pain_Skill01_44.png</frameName>
+			<eventName type="setDelay">-3</eventName>
+			<eventName type="setChargeB">320</eventName>
+
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>
+			<eventName type="setChargeB">320</eventName>	
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>		
+   	<eventName type="setFlipped">2</eventName>					
+      <frameName>Pain_Skill01_63.png</frameName>
+			<frameName>Pain_Skill01_64.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+									
+	--SlashA
+			<frameName>Pain_Skill02_17.png</frameName>
+			<frameName>Pain_Skill02_18.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N2.wav</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>			
+		  <eventName type="setBullet">BoruWave</eventName>		
+			<frameName>Pain_Skill02_19.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/bladeFx2.mp3</eventName> -->					
+			<frameName>Pain_Skill02_20.png</frameName>
+		  <eventName type="setAttackBox">ac_hit</eventName>	
+																									
+	--SlashB
+			<frameName>Pain_Skill02_21.png</frameName>
+			<frameName>Pain_Skill02_22.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N2.wav</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>			
+		  <eventName type="setBullet">BoruWave2</eventName>		
+			<frameName>Pain_Skill02_23.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/bladeFx2.mp3</eventName> -->					
+			<frameName>Pain_Skill02_24.png</frameName>
+		  <eventName type="setAttackBox">ac_hit</eventName>
+															
+
+	--SlashA
+			<frameName>Pain_Skill02_17.png</frameName>
+			<frameName>Pain_Skill02_18.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<eventName type="setAttackBox">ac_hit</eventName>
+		  <eventName type="setBullet">BoruWave</eventName>		
+			<frameName>Pain_Skill02_19.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/bladeFx2.mp3</eventName> -->					
+			<frameName>Pain_Skill02_20.png</frameName>	
+		  <eventName type="setAttackBox">ac_hit</eventName>
+																									
+	--SlashB
+			<frameName>Pain_Skill02_21.png</frameName>
+			<frameName>Pain_Skill02_22.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/N2.wav</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>			
+		  <eventName type="setBullet">BoruWave2</eventName>		
+			<frameName>Pain_Skill02_23.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/bladeFx2.mp3</eventName> -->					
+			<frameName>Pain_Skill02_24.png</frameName>	
+		  <eventName type="setAttackBox">ac_hit</eventName>
+
+      --penet
+      <frameName>Pain_Skill02_33.png</frameName>
+		  <eventName type="setDelay">10</eventName>		
+		  <eventName type="setChargeB">380</eventName>			 
+			<frameName>Pain_Skill02_34.png</frameName>
+	  	<eventName type="setSound">Audio/Effect/BladeC.ogg</eventName>			
+		  <eventName type="setAttackBox">c_hit</eventName>		
+		  <frameName>Pain_Skill02_35.png</frameName>
+		  <frameName>Pain_Skill02_36.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>		
+	  	<eventName type="setSound">Audio/Effect/Chidori2.ogg</eventName>			  
+			<frameName>Pain_Skill02_37.png</frameName>
+		  <frameName>Pain_Skill02_38.png</frameName>
+		  <eventName type="setAttackBox">c_hit</eventName>		
+		  <frameName>Pain_Skill02_39.png</frameName>
+			<frameName>Pain_Skill02_40.png</frameName>
+		  <eventName type="setAttackBox">o2_hit</eventName>		
+		  <frameName>Pain_Skill02_41.png</frameName>
+		  <frameName>Pain_Skill02_42.png</frameName>
+		  <frameName>Pain_Skill02_43.png</frameName>
+	
+      --rsChg
+	    <frameName>Pain_Skill02_44.png</frameName>		
+	    <eventName type="setSound">Audio/Effect/RsChg.mp3</eventName>  
+		  <frameName>Pain_Skill02_45.png</frameName>
+			<frameName>Pain_Skill02_46.png</frameName>
+		  <frameName>Pain_Skill02_47.png</frameName>
+	    <eventName type="setSound">Audio/Effect/pup.ogg</eventName>    
+		  <frameName>Pain_Skill02_48.png</frameName>
+	
+      --Ashuku
+      <frameName>Pain_Skill02_48.png</frameName>
+		  <eventName type="setAttackBox">b_hit</eventName>	
+		  <eventName type="setSound">Audio/Effect/ChgDeepa2.mp3</eventName>  	
+			<frameName>Pain_Skill02_49.png</frameName>		
+		  <frameName>Pain_Skill02_50.png</frameName>
+		  <frameName>Pain_Skill02_51.png</frameName>
+		  <eventName type="setAttackBox">ac_hit</eventName>		
+			<frameName>Pain_Skill02_52.png</frameName>		
+		  <frameName>Pain_Skill02_53.png</frameName>		
+		  <frameName>Pain_Skill02_54.png</frameName>		
+		  <eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill02_55.png</frameName>		
+		  <frameName>Pain_Skill02_56.png</frameName>		
+		  <frameName>Pain_Skill02_57.png</frameName>
+		  <eventName type="setAttackBox">bf_hit</eventName>
+		  <eventName type="setSound">Audio/Effect/BorushikiRSGEfx.mp3</eventName>  
+		  <frameName>Pain_Skill02_58.png</frameName>		
+			<frameName>Pain_Skill02_59.png</frameName>
+		  <frameName>Pain_Skill02_60.png</frameName>		
+		  <eventName type="setAttackBox">ac_hit</eventName>
+		  <frameName>Pain_Skill02_61.png</frameName>
+			<frameName>Pain_Skill02_62.png</frameName>		
+		  <frameName>Pain_Skill02_63.png</frameName>
+		  <eventName type="setAttackBox">sl_hit</eventName>
+		  <frameName>Pain_Skill02_64.png</frameName>
+      <frameName>Pain_Skill02_65.png</frameName>
+
+			<frameName>Pain_None.png</frameName>
+			<eventName type="setDelay">-7</eventName>
+			<eventName type="setChargeB">-150</eventName>
+			<frameName>Pain_Skill01_61.png</frameName>
+			<eventName type="setDelay">-7</eventName>
+			<eventName type="setCommand">reInvincible</eventName>
+			<eventName type="setChargeB">-150</eventName>
+		  <frameName>Pain_Skill01_60.png</frameName>
+		</frame>
+		  </action>
+	<action value="skill03">
+		<date>
+			<dateName type="attackType">aAttack</dateName>
+			<dateName type="attackValue">190</dateName>
+			<dateName type="attackRangeX">20</dateName>
+			<dateName type="attackRangeY">30</dateName>
+			<coldName type="coldDown">25</coldName>
+		</date>
+		<frame>
+		--charge
+			<frameName>Pain_Skill03_01.png</frameName>
+		<eventName type="setBullet">UnFx</eventName>		
+		
+		  <eventName type="setSound">Audio/Effect/Sw3.wav</eventName>  
+			<frameName>Pain_Skill03_02.png</frameName>
+			<frameName>Pain_Skill03_03.png</frameName>
+			<frameName>Pain_Skill03_04.png</frameName>
+			<frameName>Pain_Skill03_05.png</frameName>
+			
+		--Dash	
+			<eventName type="setCharge">200</eventName>	
+			<eventName type="setSound">Audio/BorutoJogan/03.mp3</eventName>
+			<frameName>Pain_Skill03_06.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+      <eventName type="setSound">Audio/Effect/BladeB.ogg</eventName>  		
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_07.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+			<eventName type="setCharge">80</eventName>	
+			<frameName>Pain_Skill03_08.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+			<eventName type="setCharge">80</eventName>	
+			<frameName>Pain_Skill03_09.png</frameName>
+			<eventName type="setAttackBox">f_hit</eventName>
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_10.png</frameName>
+			<eventName type="setCharge">60</eventName>	
+			<frameName>Pain_Skill03_11.png</frameName>		
+			
+		--flash	
+			<eventName type="setCommand">setInvincible</eventName>
+			<frameName>Pain_Skill03_12.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_13.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_14.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>					
+			<frameName>Pain_Skill03_15.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_16.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_17.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_18.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_19.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_20.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_21.png</frameName>	
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_22.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_23.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<frameName>Pain_Skill03_24.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill03_25.png</frameName>
+			<eventName type="setSound">Audio/Effect/dash_effect.ogg</eventName>	
+			<eventName type="setCommand">reInvincible</eventName>
+			
+			--Slash
+			<frameName>Pain_Skill03_26.png</frameName>
+			<eventName type="setChargeB">-165</eventName>
+			<eventName type="setSound">Audio/Effect/slsh.mp3</eventName>	
+			<eventName type="setAttackBox">bf_hit</eventName>				
+			<frameName>Pain_Skill03_27.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_28.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_29.png</frameName>
+			<frameName>Pain_Skill03_30.png</frameName>
+			<frameName>Pain_Skill03_31.png</frameName>		
+	  	<frameName>Pain_Skill03_32.png</frameName>				
+					
+			--sui
+			<frameName>Pain_Skill03_33.png</frameName>		
+	  	<frameName>Pain_Skill03_34.png</frameName>				
+			
+			<frameName>Pain_Skill03_35.png</frameName>		
+	  	<frameName>Pain_Skill03_36.png</frameName>				
+			<eventName type="setSound">Audio/Effect/waterA.mp3</eventName>	
+			<eventName type="setAttackBox">c_hit</eventName>				
+			<frameName>Pain_Skill03_37.png</frameName>
+			<frameName>Pain_Skill03_38.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">o_hit</eventName>				
+			<frameName>Pain_Skill03_39.png</frameName>
+			<frameName>Pain_Skill03_40.png</frameName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">b_hit</eventName>					
+			<frameName>Pain_Skill03_41.png</frameName>		
+	  	<frameName>Pain_Skill03_42.png</frameName>				
+	  	<frameName>Pain_Skill03_43.png</frameName>
+			<frameName>Pain_Skill03_44.png</frameName>		
+	  	<frameName>Pain_Skill03_45.png</frameName>			
+	  	--17
+	  	--ChgRS
+			<frameName>Pain_Skill03_46.png</frameName>		
+			<eventName type="setSound">Audio/Effect/Charging0.ogg</eventName>	
+	  	<frameName>Pain_Skill03_47.png</frameName>				
+	  	<frameName>Pain_Skill03_48.png</frameName>
+			<frameName>Pain_Skill03_49.png</frameName>		
+	  	<frameName>Pain_Skill03_50.png</frameName>				
+	  	
+	  	--shot150
+		  <frameName>Pain_Skill03_51.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/Wind.ogg</eventName>	
+			<eventName type="setMon">RasenShot</eventName>
+	  	<frameName>Pain_Skill03_52.png</frameName>				
+	  	<frameName>Pain_Skill03_53.png</frameName>
+			<frameName>Pain_Skill03_54.png</frameName>		
+	  	<frameName>Pain_Skill03_55.png</frameName>				  
+
+<frameName>Pain_Skill03_46.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/Ciah.wav</eventName>		
+	  	<frameName>Pain_Skill03_47.png</frameName>				
+	  	<frameName>Pain_Skill03_48.png</frameName>
+			<frameName>Pain_Skill03_49.png</frameName>
+	  	<frameName>Pain_Skill03_50.png</frameName>
+
+	   <frameName>Pain_Skill03_51.png</frameName>		
+			<eventName type="setMon">RasenShot</eventName>
+		 	<eventName type="setSound">Audio/Effect/Wind.ogg</eventName>		
+	  	<frameName>Pain_Skill03_52.png</frameName>				
+	  	<frameName>Pain_Skill03_53.png</frameName>
+			<frameName>Pain_Skill03_54.png</frameName>		
+	  	<frameName>Pain_Skill03_55.png</frameName>
+
+<frameName>Pain_Skill03_46.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/Ciah.wav</eventName>		
+	  	<frameName>Pain_Skill03_47.png</frameName>				
+	  	<frameName>Pain_Skill03_48.png</frameName>
+			<frameName>Pain_Skill03_49.png</frameName>
+	  	<frameName>Pain_Skill03_50.png</frameName>
+
+	   <frameName>Pain_Skill03_51.png</frameName>		
+			<eventName type="setMon">RasenShot</eventName>
+		 	<eventName type="setSound">Audio/Effect/Wind.ogg</eventName>		
+	  	<frameName>Pain_Skill03_52.png</frameName>				
+	  	<frameName>Pain_Skill03_53.png</frameName>
+			<frameName>Pain_Skill03_54.png</frameName>		
+	  	<frameName>Pain_Skill03_55.png</frameName>	
+
+<frameName>Pain_Skill03_46.png</frameName>		
+		 	<eventName type="setSound">Audio/Effect/Ciah.wav</eventName>		
+	  	<frameName>Pain_Skill03_47.png</frameName>				
+	  	<frameName>Pain_Skill03_48.png</frameName>
+			<frameName>Pain_Skill03_49.png</frameName>
+	  	<frameName>Pain_Skill03_50.png</frameName>
+
+	   <frameName>Pain_Skill03_51.png</frameName>		
+			<eventName type="setMon">RasenShot1</eventName>
+		 	<eventName type="setSound">Audio/Effect/Wind.ogg</eventName>		
+	  	<frameName>Pain_Skill03_52.png</frameName>				
+	  	<frameName>Pain_Skill03_53.png</frameName>
+			<frameName>Pain_Skill03_54.png</frameName>		
+	  	<frameName>Pain_Skill03_55.png</frameName>
+		</frame>
+		  </action>
+	<action value="skill04">
+		<date>
+			<dateName type="attackType">aAttack</dateName>
+			<dateName type="attackValue">200</dateName>
+			<dateName type="attackRangeX">40</dateName>
+			<dateName type="attackRangeY">48</dateName>
+			<coldName type="coldDown">1</coldName>
+		</date>
+		<frame>
+		--cp3680+400
+		  <frameName>Pain_Skill04_29.png</frameName>
+			<eventName type="setDelay">20</eventName>	
+		  <frameName>Pain_Skill04_30.png</frameName>				
+			<!-- <eventName type="setDelay">-3</eventName> -->
+					<eventName type="setCharge">350</eventName>	
+    <eventName type="setSound">Audio/Effect/S4.mp3</eventName>				
+		<eventName type="setAttackBox">o2_hit</eventName>						
+		  <frameName>Pain_Skill04_31.png</frameName>
+			<!-- <eventName type="setDelay">-3</eventName> -->
+			<frameName>Pain_Skill04_32.png</frameName>
+			<!-- <eventName type="setDelay">-3</eventName> -->
+			<frameName>Pain_Skill04_33.png</frameName>
+			<!-- <eventName type="setDelay">-3</eventName> -->
+			<eventName type="setCommand">setInvincible</eventName>
+
+    <frameName>Pain_Skill04_01.png</frameName>
+			<frameName>Pain_Skill04_02.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>		
+			<eventName type="setAttackBox">ab_hit</eventName>				
+			<frameName>Pain_Skill04_03.png</frameName>
+			<eventName type="setSound">Audio/Effect/N2.wav</eventName>			
+			<frameName>Pain_Skill04_04.png</frameName>	
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>						
+			<frameName>Pain_Skill04_05.png</frameName>
+		  <eventName type="setSound">Audio/Effect/N2.wav</eventName>			
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_06.png</frameName>		
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>					
+			<frameName>Pain_Skill04_07.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_08.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_09.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_10.png</frameName>		
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_11.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<eventName type="setAttackBox">ab_hit</eventName>
+			<frameName>Pain_Skill04_12.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_13.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_14.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_15.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_16.png</frameName>			
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_17.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+		  <eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill04_18.png</frameName>			
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_19.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_20.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<eventName type="setAttackBox">o_hit</eventName>						
+			<frameName>Pain_Skill04_21.png</frameName>
+	    <eventName type="setSound">Audio/Effect/N2.wav</eventName>				
+			<frameName>Pain_Skill04_22.png</frameName>
+      <eventName type="setSound">Audio/Effect/N2.wav</eventName>			
+
+			<frameName>Pain_Skill03_26.png</frameName>
+			<eventName type="setChargeB">-165</eventName>
+			<eventName type="setSound">Audio/Effect/blade_damage.ogg</eventName>	
+			<eventName type="setAttackBox">b_hit</eventName>				
+			<frameName>Pain_Skill03_27.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_28.png</frameName>
+			<eventName type="setChargeB">-15</eventName>
+			<!-- <eventName type="setSound">Audio/Effect/flash.ogg</eventName> -->	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<eventName type="setChargeB">-15</eventName>
+			<frameName>Pain_Skill03_29.png</frameName>
+			<frameName>Pain_Skill03_30.png</frameName>
+			<frameName>Pain_Skill03_31.png</frameName>		
+	  	<frameName>Pain_Skill03_32.png</frameName>				
+
+		<eventName type="setChargeB">80</eventName>
+			<frameName>Pain_Skill04_23.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>			
+			<frameName>Pain_Skill04_24.png</frameName>
+		<eventName type="setSound">Audio/Effect/BladeA.ogg</eventName>			
+			<frameName>Pain_Skill04_25.png</frameName>
+			<frameName>Pain_Skill04_26.png</frameName>
+			<eventName type="setAttackBox">f_hit</eventName>
+			<frameName>Pain_Skill04_27.png</frameName>
+			<frameName>Pain_Skill04_28.png</frameName>
+			<eventName type="setCommand">reInvincible</eventName>
+	
+		  <frameName>Pain_Skill04_29.png</frameName>
+			<eventName type="setDelay">20</eventName>	
+			<eventName type="setChargeB">150</eventName>	
+		  <frameName>Pain_Skill04_30.png</frameName>		
+			<eventName type="setSound">Audio/Effect/slsh.mp3</eventName>		  
+		  <eventName type="setAttackBox">b_hit</eventName>			
+		  <eventName type="setBullet">BoruWave3</eventName>		
+		  <frameName>Pain_Skill04_31.png</frameName>
+			<frameName>Pain_Skill04_32.png</frameName>
+			<frameName>Pain_Skill04_33.png</frameName>
+			<frameName>Pain_Skill04_34.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill04_35.png</frameName>
+			<frameName>Pain_Skill04_36.png</frameName>
+			
+			--snake
+			<eventName type="setCommand">setInvincible</eventName>
+			<frameName>Pain_Skill04_45.png</frameName>
+			<eventName type="setSound">Audio/Effect/break_sound2.ogg</eventName>		 	
+		  <eventName type="setAttackBox">b_hit</eventName>			
+			<frameName>Pain_Skill04_46.png</frameName>
+			<frameName>Pain_Skill04_47.png</frameName>
+			<frameName>Pain_Skill04_48.png</frameName>
+			<frameName>Pain_Skill04_49.png</frameName>
+			<frameName>Pain_Skill04_50.png</frameName>		
+					
+			<frameName>Pain_Skill04_51.png</frameName>
+			<eventName type="setMon">JouganEye</eventName>		
+			<eventName type="setSound">Audio/Effect/mon2.ogg</eventName>		
+	    <eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_52.png</frameName>
+			<frameName>Pain_Skill04_53.png</frameName>
+			<frameName>Pain_Skill04_54.png</frameName>
+					
+		  <frameName>Pain_Skill04_55.png</frameName>
+			<frameName>Pain_Skill04_56.png</frameName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>			
+	    <eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill04_57.png</frameName>				
+			<frameName>Pain_Skill04_58.png</frameName>					
+			<frameName>Pain_Skill04_59.png</frameName>
+	    <eventName type="setAttackBox">ac_hit</eventName>					
+			<frameName>Pain_Skill04_60.png</frameName>					
+			<frameName>Pain_Skill04_61.png</frameName>					
+			<frameName>Pain_Skill04_62.png</frameName>
+	    <eventName type="setAttackBox">ac_hit</eventName>					
+			<frameName>Pain_Skill04_63.png</frameName>					
+			<frameName>Pain_Skill04_64.png</frameName>					
+			<frameName>Pain_Skill04_65.png</frameName>
+	    <eventName type="setAttackBox">b_hit</eventName>					
+			<frameName>Pain_Skill04_66.png</frameName>
+			<frameName>Pain_Skill04_67.png</frameName>
+			<frameName>Pain_Skill04_68.png</frameName>
+	
+			<frameName>Pain_Skill04_69.png</frameName>
+			<eventName type="setSound">Audio/Effect/wooss.mp3</eventName>				
+	    <eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_70.png</frameName>
+			<frameName>Pain_Skill04_71.png</frameName>
+			<frameName>Pain_Skill04_72.png</frameName>
+			<frameName>Pain_Skill04_73.png</frameName>
+			<frameName>Pain_Skill04_74.png</frameName>
+	    <eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill04_75.png</frameName>
+			<frameName>Pain_Skill04_76.png</frameName>
+			<frameName>Pain_Skill04_77.png</frameName>
+			<frameName>Pain_Skill04_78.png</frameName>
+			<frameName>Pain_Skill04_79.png</frameName>
+	    <eventName type="setAttackBox">o_hit</eventName>
+			<frameName>Pain_Skill04_80.png</frameName>
+			<frameName>Pain_Skill04_81.png</frameName>
+			<eventName type="setCommand">reInvincible</eventName>
+
+--chg
+		<eventName type="setSound">Audio/BorutoJogan/04.mp3</eventName>
+			<frameName>Pain_Skill04_82.png</frameName>
+		  <eventName type="setAttackBox">ab_hit</eventName>			
+		<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			  	
+			<frameName>Pain_Skill04_83.png</frameName>
+	    <eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill04_84.png</frameName>			
+			<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			 			
+			<frameName>Pain_Skill04_85.png</frameName>
+			<frameName>Pain_Skill04_86.png</frameName>				
+			<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			 	
+	    <eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill04_87.png</frameName>
+			<frameName>Pain_Skill04_88.png</frameName>			
+			<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			 		
+			<frameName>Pain_Skill04_89.png</frameName>
+	    <eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_90.png</frameName>			
+			<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			 			
+			<frameName>Pain_Skill04_91.png</frameName>
+			<frameName>Pain_Skill04_92.png</frameName>			
+			<eventName type="setSound">Audio/Effect/woos0.mp3</eventName>			 		
+	    <eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill04_93.png</frameName>
+			<frameName>Pain_Skill04_94.png</frameName>				
+					
+			<eventName type="setCommand">setInvincible</eventName>
+		--uzu	
+			<frameName>Pain_Skill04_95.png</frameName>
+				<eventName type="setSound">Audio/Effect/windeffect.mp3</eventName>			
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_96.png</frameName>			
+			<frameName>Pain_Skill04_97.png</frameName>
+			<frameName>Pain_Skill04_98.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+
+			<frameName>Pain_Skill04_95.png</frameName>	
+			<eventName type="setSound">Audio/Effect/windeffect.mp3</eventName>		
+			<frameName>Pain_Skill04_96.png</frameName>
+			<frameName>Pain_Skill04_97.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>		
+			<frameName>Pain_Skill04_96.png</frameName>
+
+			<frameName>Pain_Skill04_95.png</frameName>
+			<eventName type="setSound">Audio/Effect/windeffect.mp3</eventName>	
+			<frameName>Pain_Skill04_96.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill04_97.png</frameName>				
+			<frameName>Pain_Skill04_98.png</frameName>
+
+			<frameName>Pain_Skill04_97.png</frameName>
+		<eventName type="setSound">Audio/Effect/windeffect.mp3</eventName>	
+			<eventName type="setAttackBox">ac_hit</eventName>				
+			<frameName>Pain_Skill04_96.png</frameName>				
+			<frameName>Pain_Skill04_95.png</frameName>				
+			<frameName>Pain_Skill04_96.png</frameName>				
+			<eventName type="setAttackBox">o2_hit</eventName>
+
+			<frameName>Pain_Skill04_95.png</frameName>
+			<eventName type="setSound">Audio/Effect/windeffect.mp3</eventName>			
+			<frameName>Pain_Skill04_96.png</frameName>			
+			<frameName>Pain_Skill04_97.png</frameName>
+			<frameName>Pain_Skill04_98.png</frameName>
+			<eventName type="setAttackBox">ab_hit</eventName>					
+			<eventName type="setCommand">reInvincible</eventName>		
+			
+			<frameName>Pain_Skill04_99.png</frameName>
+			<eventName type="setSound">Audio/Effect/Blade-Damage.mp3</eventName>		
+			<eventName type="setAttackBox">f_hit</eventName>						
+			<frameName>Pain_Skill04_100.png</frameName>										
+	   <frameName>Pain_Skill04_102.png</frameName>		
+			<eventName type="setSound">Audio/Effect/Blade-Damage.mp3</eventName>				
+			<frameName>Pain_Skill04_103.png</frameName>											
+	   <eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_104.png</frameName>
+		<eventName type="setSound">Audio/Effect/Blade-Damage.mp3</eventName>			
+			<frameName>Pain_Skill04_105.png</frameName>
+			<frameName>Pain_Skill04_106.png</frameName>
+			<eventName type="setSound">Audio/Effect/Blade-Damage.mp3</eventName>		
+    	<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill04_107.png</frameName>
+		</frame>
+		  </action>
+		  <action value="skill05">
+		<date>
+			<dateName type="attackType">aAttack</dateName>
+			<dateName type="attackValue">280</dateName>
+			<dateName type="attackRangeX">40</dateName>
+			<dateName type="attackRangeY">48</dateName>
+			<coldName type="coldDown">1</coldName>
+		</date>
+		<frame>
+		
+		--cp8800+1200
+		  <frameName>Pain_Skill05_01.png</frameName>
+			<frameName>Pain_Skill05_02.png</frameName>
+			<eventName type="setSound">Audio/BorutoJogan/05.mp3</eventName>	
+			<frameName>Pain_Skill05_03.png</frameName>
+		  <eventName type="setBullet">MonsterTanah</eventName>	
+			<eventName type="setSound">Audio/Effect/monster.ogg</eventName>		  	
+			<frameName>Pain_Skill05_04.png</frameName> 	
+		  <eventName type="setDelay">160</eventName>	
+		  <eventName type="setMon">MonsterTanah</eventName>
+		  --1200
+
+     <frameName>Pain_Skill05_23.png</frameName>
+		  <eventName type="setDelay">10</eventName>	
+			<frameName>Pain_Skill05_24.png</frameName>
+			<frameName>Pain_Skill05_25.png</frameName>
+		
+			<frameName>Pain_Skill05_26.png</frameName>
+		<eventName type="setSound">Audio/Effect/BugPillar.ogg</eventName>		
+			<frameName>Pain_Skill05_27.png</frameName>
+			<frameName>Pain_Skill05_28.png</frameName>
+	  	<frameName>Pain_Skill05_29.png</frameName>
+			<frameName>Pain_Skill05_30.png</frameName>
+		  <frameName>Pain_Skill05_31.png</frameName>
+			<frameName>Pain_Skill05_32.png</frameName>
+		  
+	   <frameName>Pain_Skill05_33.png</frameName> 
+			<frameName>Pain_Skill05_34.png</frameName>
+		  
+			<frameName>Pain_Skill05_35.png</frameName>
+			<frameName>Pain_Skill05_36.png</frameName>
+		    <eventName type="setBullet">WindHand</eventName>			
+			<eventName type="setSound">Audio/Effect/blagar.ogg</eventName>			
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill05_37.png</frameName>
+	  	<frameName>Pain_Skill05_38.png</frameName>
+			<frameName>Pain_Skill05_39.png</frameName>
+		 <frameName>Pain_Skill05_40.png</frameName>
+			<frameName>Pain_Skill05_41.png</frameName>
+
+--boom
+	   <frameName>Pain_Skill05_42.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill05_43.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>
+			<frameName>Pain_Skill05_44.png</frameName>		
+		<eventName type="setMon">AnginWowRight</eventName>		
+			<eventName type="setSound">Audio/Effect/m_exp.ogg</eventName>				  
+	  	<frameName>Pain_Skill05_45.png</frameName>		
+			<frameName>Pain_Skill05_46.png</frameName>		
+	  <frameName>Pain_Skill05_47.png</frameName>		
+			<frameName>Pain_Skill05_48.png</frameName>		
+			<eventName type="setAttackBox">o2_hit</eventName>
+	   <frameName>Pain_Skill05_49.png</frameName>		
+			<frameName>Pain_Skill05_50.png</frameName>		
+			<frameName>Pain_Skill05_51.png</frameName>		
+	  	<frameName>Pain_Skill05_52.png</frameName>		
+			<frameName>Pain_Skill05_53.png</frameName>		
+		 <frameName>Pain_Skill05_54.png</frameName>		
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill05_55.png</frameName>		
+
+--jump
+		<eventName type="setSound">Audio/Effect/EfxJump2.mp3</eventName>			
+    <frameName>Pain_Skill05_56.png</frameName>
+			<frameName>Pain_Skill05_57.png</frameName>
+	   <frameName>Pain_Skill05_63.png</frameName>	
+   <eventName type="setOugis">10</eventName>
+  <eventName type="setDelay">20</eventName>	
+   
+   
+    <eventName type="setBullet">preJgdm</eventName>		
+	   <!-- <eventName type="setOugis">10</eventName> -->
+	
+		<eventName type="setMon">JgnSCR</eventName>	
+			<eventName type="setAttackBox">ab_hit</eventName>
+		<eventName type="setMon">Kilats</eventName>		
+		<eventName type="setAttackBox">f_hit</eventName>		
+  <eventName type="setDelay">70</eventName>	
+	   <frameName>Pain_Skill05_73.png</frameName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>		
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_74.png</frameName>
+			<frameName>Pain_Skill05_75.png</frameName>
+			<frameName>Pain_Skill05_76.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill05_77.png</frameName>
+			<frameName>Pain_Skill05_78.png</frameName>
+			<frameName>Pain_Skill05_79.png</frameName>
+			<eventName type="setAttackBox">s_hit</eventName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>		
+			<frameName>Pain_Skill05_80.png</frameName>
+			<frameName>Pain_Skill05_81.png</frameName>
+			<frameName>Pain_Skill05_82.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill05_83.png</frameName>
+			<frameName>Pain_Skill05_84.png</frameName>
+			<frameName>Pain_Skill05_85.png</frameName>
+			<eventName type="setAttackBox">s_hit</eventName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>			
+			<frameName>Pain_Skill05_86.png</frameName>
+			<frameName>Pain_Skill05_87.png</frameName>
+			<frameName>Pain_Skill05_88.png</frameName>
+    <eventName type="setBullet">preJgdm</eventName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_89.png</frameName>
+			<frameName>Pain_Skill05_90.png</frameName>
+			<frameName>Pain_Skill05_91.png</frameName>
+			<eventName type="setAttackBox">ab_hit</eventName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>		
+			<frameName>Pain_Skill05_92.png</frameName>
+			<frameName>Pain_Skill05_93.png</frameName>
+			<frameName>Pain_Skill05_94.png</frameName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_95.png</frameName>
+      <frameName>Pain_Skill05_96.png</frameName>
+			<frameName>Pain_Skill05_97.png</frameName>
+			<eventName type="setAttackBox">ab_hit</eventName>
+			<eventName type="setSound">Audio/Effect/fire.ogg</eventName>			
+			<frameName>Pain_Skill05_98.png</frameName>
+			<frameName>Pain_Skill05_99.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+			<frameName>Pain_Skill05_100.png</frameName>	
+
+    <frameName>Pain_Skill05_101.png</frameName>
+		<eventName type="setSound">Audio/Effect/Shooot.mp3</eventName>			
+			<eventName type="setBullet">preThunder</eventName>
+			<eventName type="setMon">Kilats</eventName>			
+			<eventName type="setAttackBox">b_hit</eventName>
+		  <eventName type="setBullet">WindTornado</eventName>			
+		  <eventName type="setBullet">WindTwoTornado</eventName>		
+	  	<frameName>Pain_Skill05_102.png</frameName>
+		
+	   <frameName>Pain_Skill05_103.png</frameName>
+			<frameName>Pain_Skill05_104.png</frameName>
+			<frameName>Pain_Skill05_105.png</frameName>
+			<frameName>Pain_Skill05_106.png</frameName>
+			<eventName type="setAttackBox">o_hit</eventName>
+			<frameName>Pain_Skill05_107.png</frameName>
+			<frameName>Pain_Skill05_108.png</frameName>
+			<frameName>Pain_Skill05_109.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+			<frameName>Pain_Skill05_110.png</frameName>			
+		-chg
+			<frameName>Pain_Skill05_111.png</frameName>
+		<eventName type="setSound">Audio/Effect/kilat.ogg</eventName>				
+			<eventName type="setBullet">preThunder</eventName>
+			<frameName>Pain_Skill05_112.png</frameName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_113.png</frameName>
+			<frameName>Pain_Skill05_114.png</frameName>	
+      <frameName>Pain_Skill05_115.png</frameName>		
+				
+	  	<frameName>Pain_Skill05_111.png</frameName>
+			<frameName>Pain_Skill05_112.png</frameName>
+			<frameName>Pain_Skill05_113.png</frameName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_114.png</frameName>
+			<frameName>Pain_Skill05_115.png</frameName>			
+			
+		  <frameName>Pain_Skill05_111.png</frameName>
+		<eventName type="setSound">Audio/Effect/kilat.ogg</eventName>				  
+			<frameName>Pain_Skill05_112.png</frameName>
+			<frameName>Pain_Skill05_113.png</frameName>
+			<frameName>Pain_Skill05_114.png</frameName>
+			<eventName type="setAttackBox">ab_hit</eventName>
+			<frameName>Pain_Skill05_115.png</frameName>		
+			
+		  <frameName>Pain_Skill05_111.png</frameName>
+			<frameName>Pain_Skill05_112.png</frameName>
+			<frameName>Pain_Skill05_113.png</frameName>
+			<eventName type="setAttackBox">c_hit</eventName>
+			<frameName>Pain_Skill05_114.png</frameName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_115.png</frameName>				
+		--Rai
+    <frameName>Pain_Skill05_116.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+		<eventName type="setSound">Audio/Effect/gledek.mp3</eventName>					
+			<frameName>Pain_Skill05_117.png</frameName>
+			<frameName>Pain_Skill05_118.png</frameName>
+			<frameName>Pain_Skill05_119.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<eventName type="setSound">Audio/Effect/raitonsfx1.mp3</eventName>				
+			<frameName>Pain_Skill05_120.png</frameName>
+			<frameName>Pain_Skill05_121.png</frameName>
+			<frameName>Pain_Skill05_122.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_123.png</frameName>
+			<frameName>Pain_Skill05_124.png</frameName>			
+      --tran
+		<eventName type="setChargeB">350</eventName>
+			<frameName>Pain_Skill05_141.png</frameName>
+			<eventName type="setSound">Audio/Effect/DashFx.mp3</eventName>			
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_142.png</frameName>
+			<frameName>Pain_Skill05_143.png</frameName>
+			<frameName>Pain_Skill05_144.png</frameName>
+			<eventName type="setSound">Audio/Effect/fudon_effect.mp3</eventName>			
+			<frameName>Pain_Skill05_145.png</frameName>
+			<frameName>Pain_Skill05_146.png</frameName>
+			<eventName type="setAttackBox">o2_hit</eventName>
+			<frameName>Pain_Skill05_147.png</frameName>	
+			<frameName>Pain_Skill05_148.png</frameName>	
+      --rs
+			<frameName>Pain_Skill05_149.png</frameName>
+			<eventName type="setAttackBox">sl_hit</eventName>
+			<eventName type="setSound">Audio/Effect/fireblaze.mp3</eventName>			
+			<frameName>Pain_Skill05_150.png</frameName>
+			<frameName>Pain_Skill05_151.png</frameName>
+			<eventName type="setSound">Audio/Effect/rasenS.ogg</eventName>			
+			<frameName>Pain_Skill05_152.png</frameName>
+			<eventName type="setAttackBox">b_hit</eventName>
+			<frameName>Pain_Skill05_153.png</frameName>
+			<frameName>Pain_Skill05_154.png</frameName>
+			<frameName>Pain_Skill05_155.png</frameName>
+			<eventName type="setSound">Audio/Effect/RSGfuton.mp3</eventName>				
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_156.png</frameName>
+			<frameName>Pain_Skill05_157.png</frameName>
+			<frameName>Pain_Skill05_158.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_159.png</frameName>
+			<frameName>Pain_Skill05_160.png</frameName>
+			<frameName>Pain_Skill05_161.png</frameName>
+			<eventName type="setAttackBox">s_hit</eventName>
+			<frameName>Pain_Skill05_162.png</frameName>
+			<frameName>Pain_Skill05_163.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+
+		<eventName type="setMon">Duar</eventName>	
+		  <frameName>Pain_Skill05_164.png</frameName>
+				<eventName type="setAttackBox">f_hit</eventName>		
+			
+			<frameName>Pain_Skill05_165.png</frameName>
+			<eventName type="setSound">Audio/Effect/kawaki bom.mp3</eventName>			
+			<frameName>Pain_Skill05_166.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_167.png</frameName>
+			<frameName>Pain_Skill05_168.png</frameName>
+			<frameName>Pain_Skill05_169.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_170.png</frameName>
+	  	<frameName>Pain_Skill05_171.png</frameName>
+			<frameName>Pain_Skill05_172.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_173.png</frameName>
+			<frameName>Pain_Skill05_174.png</frameName>
+			<frameName>Pain_Skill05_175.png</frameName>
+			<eventName type="setAttackBox">ac_hit</eventName>
+			<frameName>Pain_Skill05_176.png</frameName>
+			<frameName>Pain_Skill05_177.png</frameName>
+    <eventName type="setCommand">reInvincible</eventName>
+		</frame>
+    </action>    
+    <action value="skill06">
+        <frame></frame>
+    </action>
+    <action value="skill07">
+        <frame></frame>
+    </action>
+    <action value="skill08">
+        <frame></frame>
+    </action>
+    <action value="skill09">
+        <frame></frame>
+    </action>
+    <action value="skill10">
+    </action>
+</animation>
+

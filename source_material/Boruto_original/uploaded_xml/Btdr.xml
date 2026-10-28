@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	      <dateName type="attackType">Dogs</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame><eventName type="setCommand">reTransport</eventName>
+  <frameName>Pain_Skill05_125.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_126.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+				<eventName type="setSound">Audio/Effect/Guntur.mp3</eventName>
+			<frameName>Pain_Skill05_127.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_128.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_129.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_130.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+		  <frameName>Pain_Skill05_131.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_132.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_133.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_134.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_135.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_136.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_137.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_138.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_139.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+			<frameName>Pain_Skill05_140.png</frameName>        
+			<eventName type="setDelay">-7</eventName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        <eventName type="setCommand">reTransport</eventName>
+  <frameName>Pain_Skill05_125.png</frameName>
+			<frameName>Pain_Skill05_126.png</frameName>
+				<eventName type="setSound">Audio/Effect/Guntur.mp3</eventName>
+			<frameName>Pain_Skill05_127.png</frameName>
+			<frameName>Pain_Skill05_128.png</frameName>
+			<frameName>Pain_Skill05_129.png</frameName>
+			<frameName>Pain_Skill05_130.png</frameName>
+		  <frameName>Pain_Skill05_131.png</frameName>
+			<frameName>Pain_Skill05_132.png</frameName>
+			<frameName>Pain_Skill05_133.png</frameName>
+			<frameName>Pain_Skill05_134.png</frameName>
+			<frameName>Pain_Skill05_135.png</frameName>
+			<frameName>Pain_Skill05_136.png</frameName>
+			<frameName>Pain_Skill05_137.png</frameName>
+			<frameName>Pain_Skill05_138.png</frameName>
+			<frameName>Pain_Skill05_139.png</frameName>
+			<frameName>Pain_Skill05_140.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+	      <eventName type="setCommand">reTransport</eventName>
+		  <frameName>Pain_Skill05_125.png</frameName>
+			<frameName>Pain_Skill05_126.png</frameName>
+		<eventName type="setSound">Audio/Effect/Guntur.mp3</eventName>				
+			<frameName>Pain_Skill05_127.png</frameName>
+			<frameName>Pain_Skill05_128.png</frameName>
+			<frameName>Pain_Skill05_129.png</frameName>
+			<frameName>Pain_Skill05_130.png</frameName>
+		  <frameName>Pain_Skill05_131.png</frameName>
+			<frameName>Pain_Skill05_132.png</frameName>
+			<frameName>Pain_Skill05_133.png</frameName>
+			<frameName>Pain_Skill05_134.png</frameName>
+			<frameName>Pain_Skill05_135.png</frameName>
+			<frameName>Pain_Skill05_136.png</frameName>
+			<frameName>Pain_Skill05_137.png</frameName>
+			<frameName>Pain_Skill05_138.png</frameName>
+			<frameName>Pain_Skill05_139.png</frameName>
+			<frameName>Pain_Skill05_140.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">250</dateName>
+        <dateName type="attackRangeX">10</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+            <eventName type="setCommand">reTransport</eventName>
+  <frameName>Pain_Skill05_125.png</frameName>
+			<frameName>Pain_Skill05_126.png</frameName>
+				<eventName type="setSound">Audio/Effect/Guntur.mp3</eventName>
+			<frameName>Pain_Skill05_127.png</frameName>
+			<frameName>Pain_Skill05_128.png</frameName>
+			<frameName>Pain_Skill05_129.png</frameName>
+			<frameName>Pain_Skill05_130.png</frameName>
+		  <frameName>Pain_Skill05_131.png</frameName>
+			<frameName>Pain_Skill05_132.png</frameName>
+			<frameName>Pain_Skill05_133.png</frameName>
+			<frameName>Pain_Skill05_134.png</frameName>
+			<frameName>Pain_Skill05_135.png</frameName>
+			<frameName>Pain_Skill05_136.png</frameName>
+			<frameName>Pain_Skill05_137.png</frameName>
+			<frameName>Pain_Skill05_138.png</frameName>
+			<frameName>Pain_Skill05_139.png</frameName>
+			<frameName>Pain_Skill05_140.png</frameName>
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

@@ -1,0 +1,702 @@
+[
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_AirHurt_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Float_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Float_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Float_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Hurt_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Hurt_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_07"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Idle_08"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_KnockDown_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_KnockDown_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_KnockDown_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_KnockDown_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_KnockDown_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_07"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_08"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_09"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_10"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_11"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_12"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_13"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_14"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_15"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_16"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_17"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_18"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_19"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_NAttack_20"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill01_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_07"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_08"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_09"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_10"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_11"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill02_12"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill03_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill03_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill03_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill03_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill03_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill04_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_06"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_07"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_08"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_09"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_10"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Skill05_11"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_01"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_02"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_03"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_04"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_05"
+  },
+  {
+    "plist": "Nagato/Nagato.plist",
+    "key": "Nagato_Walk_06"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_AirHurt_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Float_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Float_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Float_03"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Hurt_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Hurt_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Idle_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_KnockDown_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_KnockDown_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_KnockDown_03"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_KnockDown_04"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_KnockDown_05"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_03"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_04"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_05"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_06"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_07"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_08"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_09"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_10"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_11"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_12"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_13"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_NAttack_14"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Skill01_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Skill01_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_01"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_02"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_03"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_04"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_05"
+  },
+  {
+    "plist": "DevaPath/DevaPath.plist",
+    "key": "DevaPath_Walk_06"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Idle_01"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_NAttack_01"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_NAttack_02"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_NAttack_03"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_NAttack_04"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Skill01_01"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Skill01_02"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Skill01_03"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Skill01_04"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_01"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_02"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_03"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_04"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_05"
+  },
+  {
+    "plist": "AsuraPath/AsuraPath.plist",
+    "key": "AsuraPath_Walk_06"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Idle_01"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_NAttack_01"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_NAttack_02"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_NAttack_03"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_NAttack_04"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Skill01_01"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Skill01_02"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Skill01_03"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Skill01_04"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_01"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_02"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_03"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_04"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_05"
+  },
+  {
+    "plist": "Animalpath/AnimalPath.plist",
+    "key": "AnimalPath_Walk_06"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_Float_01"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_Idle_01"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_KnockDown_01"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_KnockDown_02"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_KnockDown_03"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_KnockDown_04"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_NAttack_01"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_NAttack_02"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_NAttack_03"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_NAttack_04"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_Walk_01"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_Walk_02"
+  },
+  {
+    "plist": "Flog/IzumoFlog.plist",
+    "key": "IzumoFlog_Walk_03"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_Float_01"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_Idle_01"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_KnockDown_01"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_KnockDown_02"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_KnockDown_03"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_KnockDown_04"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_NAttack_01"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_NAttack_02"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_NAttack_03"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_NAttack_04"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_Walk_01"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_Walk_02"
+  },
+  {
+    "plist": "Flog/KakashiFlog.plist",
+    "key": "KakashiFlog_Walk_03"
+  }
+]

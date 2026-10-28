@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Shakujou</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">49</dateName>
+        <dateName type="attackRangeY">47</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <frameName>Pain_Skill04_37.png</frameName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	    <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">50</dateName>
+        <dateName type="attackRangeX">5</dateName>
+        <dateName type="attackRangeY">48</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+      <eventName type="setChargeB">50</eventName>
+      <eventName type="setSound">Audio/Effect/CB.mp3</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <frameName>Pain_Skill04_37.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_38.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_39.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_40.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_41.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_42.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_43.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+      <eventName type="setChargeB">50</eventName>
+      <frameName>Pain_Skill04_44.png</frameName>
+      <eventName type="setAttackBox">c_hit</eventName>
+		<eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>

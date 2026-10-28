@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <animation>
+   
+    <action value="Idle">
+	 <date>
+	    <dateName type="attackType">Dogs</dateName>
+        <dateName type="attackValue">0</dateName>
+        <dateName type="attackRangeX">51</dateName>
+        <dateName type="attackRangeY">11</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        <eventName type="setCommand">reTransport</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_01.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>  
+        <eventName type="setDelay">-7</eventName>	
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_02.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>                    
+        <eventName type="setDelay">-7</eventName>	
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_03.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_04.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_05.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>       
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_06.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_07.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_08.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>              
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>      
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>BOLT_09.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <eventName type="setDelay">-7</eventName>	
+        <frameName>PainNol.png</frameName>  
+        <eventName type="setDelay">-7</eventName>	
+--28        
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="Walk">
+      <frame>
+        
+        <eventName type="setCommand">reTransport</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">30</eventName>	      	
+        <frameName>BOLT_01.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">20</eventName>		       
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <frameName>BOLT_02.png</frameName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">10</eventName>                          
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_03.png</frameName>
+        <frameName>BOLT_04.png</frameName>
+        <frameName>BOLT_05.png</frameName>
+        <frameName>PainNol.png</frameName>       
+        <frameName>BOLT_06.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_07.png</frameName>
+        <frameName>BOLT_08.png</frameName>
+        <frameName>PainNol.png</frameName>              
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">30</eventName>	        
+        <frameName>BOLT_09.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">10</eventName>	      
+--28        
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action value="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action value="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action value="Dead">
+      <frame>
+      
+        <!--
+         <frameName>BOLT_06.png</frameName> = BOLD3
+         -->
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">10</eventName>	
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+   
+    <action value="nAttack">
+      <date>
+	      <dateName type="attackType">aAttack</dateName>
+        <dateName type="attackValue">300</dateName>
+        <dateName type="attackRangeX">40</dateName>
+        <dateName type="attackRangeY">28</dateName>
+        <coldName type="coldDown">0</coldName>
+      </date>
+      <frame>
+        
+        <eventName type="setCommand">reTransport</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">30</eventName>	      	
+        <frameName>BOLT_01.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">20</eventName>		       
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <frameName>BOLT_02.png</frameName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">10</eventName>                          
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_03.png</frameName>
+        <frameName>BOLT_04.png</frameName>
+        <frameName>BOLT_05.png</frameName>
+        <frameName>PainNol.png</frameName>       
+        <frameName>BOLT_06.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_07.png</frameName>
+        <frameName>BOLT_08.png</frameName>
+        <frameName>PainNol.png</frameName>              
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">30</eventName>	        
+        <frameName>BOLT_09.png</frameName>
+        <eventName type="setSound">Audio/Efek/Guntur.mp3</eventName>
+        <frameName>BOLT_06.png</frameName>
+        <frameName>PainNol.png</frameName>
+        <eventName type="setDelay">10</eventName>	      
+--28        
+        <eventName type="setDetonation">0</eventName>
+      </frame>
+    </action>
+
+</animation>
