@@ -74,7 +74,7 @@ def run(name,out,capture=None):
             p1+=controller('PosSet',window(25,70),'y=EnemyNear,Pos Y')
             c['probe_alignment']='actual airborne defender height'
         if name=='Eida' and c['form'] and pose=='idle':state=4001
-        if c['form'] and name in ['MitsukiTBV','RyuShinju','HidariShinju','MatsuriShinju','DeepaKara','OugaYatsume','JigenKara','CodeNoLimiter','SumireKakei','HimawariTBV','BorutoKarmaJogan'] and pose in ['normal','special']:state+=10000
+        if c['form'] and name in ['MitsukiTBV','RyuShinju','HidariShinju','MatsuriShinju','DeepaKara','OugaYatsume','JigenKara','CodeNoLimiter','SumireKakei','HimawariTBV','BorutoKarmaJogan','BorutoTBVBase'] and pose in ['normal','special']:state+=10000
         p2+=controller('ChangeState',at(18),f'value={state}\nctrl={1 if pose in ["idle","walk"] else 0}')
         if pose=='charge':p2+=controller('AssertInput',window(18,75),'flag=s')
         if pose=='walk':p2+=controller('AssertInput',window(18,35),'flag='+('L' if c['face']==1 else 'R'))

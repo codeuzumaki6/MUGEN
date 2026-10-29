@@ -1,0 +1,7 @@
+# Referencia — Boruto TBV base
+
+Paquete y video aportados para este personaje. Se revisaron las secuencias de espada, la onda de Shiden, el Rasengan con viento, los ataques de Hiraishin y Uzuhiko. El video muestra la envoltura y tornado de Uzuhiko alrededor de 28–33, 49–53 y 108–113 segundos. La hoja contiene 161 cuadros válidos; el segundo atlas está completamente vacío y sus dieciséis celdas se excluyen junto con Hiruzen_Nol.
+
+La adaptación utiliza los cuadros compuestos de cuerpo únicamente en el jugador principal. Los cuadros 04Chg_03–10 contienen a Boruto bajo el Rasengan; 04Hit y 04Bom_01–08 también contienen al personaje y nunca se instancian como proyectiles. El Rasengan descendente despega físicamente y la colisión se contrasta con el centro de su esfera. ShidenBlade_06–11, ShidenBlade_17–23, BoruBlade, Skil01_01–06, Skill05_14–19 y 04Bom_09–14 son efectos independientes con AIR A.
+
+La ulti utiliza Skill05_01–13, el tornado 14–19 sostenido al confirmar la palma y la onda 20–27. Mantiene un presupuesto finito de daño, guardia y liberación normal o por interrupción. Abajo + Pausa es una concentración temporal de Uzuhiko, conservando la apariencia de la base. La vida, controles y temporizadores siguen las convenciones de los personajes anteriores del proyecto.

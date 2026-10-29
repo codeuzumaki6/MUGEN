@@ -1,0 +1,424 @@
+{
+  "keys": {
+    "BorutoTBv/005": [
+      3,
+      0
+    ],
+    "BorutoTBv/01": [
+      3,
+      1
+    ],
+    "BorutoTBv/02": [
+      3,
+      2
+    ],
+    "BorutoTBv/03": [
+      3,
+      3
+    ],
+    "BorutoTBv/03_1": [
+      3,
+      4
+    ],
+    "BorutoTBv/04": [
+      3,
+      5
+    ],
+    "BorutoTBv/Die": [
+      3,
+      6
+    ],
+    "BorutoTBv/Hiruzen": [
+      3,
+      7
+    ],
+    "BorutoTBv/Hiruzen_ougis": [
+      3,
+      8
+    ],
+    "BorutoTBv/Hit": [
+      3,
+      9
+    ],
+    "BorutoTBv/Minato": [
+      3,
+      10
+    ],
+    "BorutoTBv/hurt1": [
+      3,
+      11
+    ],
+    "Effect/BladeBrto": [
+      2,
+      0
+    ],
+    "Effect/BugPillar": [
+      2,
+      1
+    ],
+    "Effect/Chidori2": [
+      2,
+      2
+    ],
+    "Effect/L2": [
+      2,
+      3
+    ],
+    "Effect/Pedang1": [
+      2,
+      4
+    ],
+    "Effect/Pedang2": [
+      2,
+      5
+    ],
+    "Effect/RaitonEfx": [
+      2,
+      6
+    ],
+    "Effect/RsChg": [
+      2,
+      7
+    ],
+    "Effect/RsgAura": [
+      2,
+      8
+    ],
+    "Effect/Step": [
+      2,
+      9
+    ],
+    "Effect/blade_dmg": [
+      2,
+      10
+    ],
+    "Effect/close": [
+      2,
+      11
+    ],
+    "Effect/damage_h": [
+      2,
+      12
+    ],
+    "Effect/dash2": [
+      2,
+      13
+    ],
+    "Effect/dash_effect": [
+      2,
+      14
+    ],
+    "Effect/fire3": [
+      2,
+      15
+    ],
+    "Effect/hiraishin_effect2": [
+      2,
+      16
+    ],
+    "Effect/rasenS": [
+      2,
+      17
+    ],
+    "Effect/rsShuriken": [
+      2,
+      18
+    ],
+    "Effect/shuriken": [
+      2,
+      19
+    ],
+    "Effect/slsh": [
+      2,
+      20
+    ],
+    "Effect/wind2": [
+      2,
+      21
+    ],
+    "Effect/windeffect": [
+      2,
+      22
+    ],
+    "Effect/woos0": [
+      2,
+      23
+    ],
+    "Audio/Hiruzen": [
+      3,
+      7
+    ],
+    "Audio/Hiruzen_ougis": [
+      3,
+      8
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/005.mp3",
+      "source_sha256": "bbfd944936be578da90e4fc62424b31c61b5d697020be9db0af48b3eeff09090",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "e1164781c5c3d68d99c8ab23451b61cbabe88726e359fd7d5edde261bf9a8b50"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/01.mp3",
+      "source_sha256": "9b11faec7399be1843b4c98359c3a1d3fecf4b8a9d52f5c2f41be9bfca206da8",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "9781ebbc49d3a34377614d84a6e06247a49edde1c3685c2278810f3ad87b9692"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/02.mp3",
+      "source_sha256": "3c2ebda82d3202ebb68112d33f133776f5f00cf3858eb11b9a41ab359c9399af",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "864acc8f8da94986071c5ddf1c9f7099e680ceca2f9745f36cd7258fe13f51d5"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/03.mp3",
+      "source_sha256": "9c419cb538fa9540d06085bf8b843285e183799740ff0475636bdc492bf7f2a0",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "7a72ad60aeb6b1412079e16416a2caf814de342b67253617fa0004c4e847b14c"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/03_1.mp3",
+      "source_sha256": "ba9647af62bce6fbf1dd0ce521397ea2bf5f7febcd9e60b6dd4473351ff1a45f",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "5e6ef4c266926e0e53998b473d6d3a4fa9cf828b4b00d46be664d847258dbc51"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/04.mp3",
+      "source_sha256": "7dd78747faac2707147c03e4eee7a15e07112c9659b5aa1a058eb6c4a1097086",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "61022f719043a0fbc5055e63a49dc4e24da0f31ce5b32efbd7035bc226c9d140"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/Die.mp3",
+      "source_sha256": "11c489fe8efe29b1f8bda745a184c3a041e7ed0346a7ad5d521dc39e2e396841",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "ec36fa9d9440e925a783d02b20e1d188f7b46e4175837bcdfce8405ae2c13dcb"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/Hiruzen.ogg",
+      "source_sha256": "be3219eb19839885ea1c2977cf246f86b4497c7ed203a5a9ce267107c7a123f0",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "f790a5fdf4f704be54a7d10db2afb0ef37960c2c25fad43ca9e312ad613e6895"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/Hiruzen_ougis.ogg",
+      "source_sha256": "3b7ef68f5031777eedcdb9e3eb0c015e7b3f85e02f3778f043d7cdacd22063c1",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "b3c9ef89acca221835e249d983d96443e8a99de8482a324cd2151b5034a96f4c"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/Hit.mp3",
+      "source_sha256": "3cd4b25d0c6442741a872409bf16f776938dbed16eaa42cdc928a10a9a74e6be",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "064cf811b99df67b95c6a3c1e7707ce2752b44c88a02e4fa24dd838980a7bfbd"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/Minato.ogg",
+      "source_sha256": "96eae223b7402c25811c9bb1a524edbc0d7be4ed7186c3b08e7ecf729f5d450f",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "43e2599c453cd0d1a90248cf85a9ea354bdd2860d45219e919a1f68e9f8b6ca8"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/BorutoTBv/hurt1.mp3",
+      "source_sha256": "987d24240f1fc1a0989188907dedd456c76de7bedc2abf7d254b19e98fd2b8fa",
+      "group": 3,
+      "number": 11,
+      "wav_sha256": "caa4644a58187290d76f2e98402f9d3aed5ecded0ac249def4ad9b8718187871"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/BladeBrto.mp3",
+      "source_sha256": "f34eb5b295a957bdcbc1c3570992d3b3c3e8d2ebd152c292c9d247f482f7188c",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "37ec5fa36a100cddb61ef2a650575437763f9c4114c45cbaa3bab6e65420faa1"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/BugPillar.ogg",
+      "source_sha256": "be9af3c7914f70b205e557e2d4886e6a47521e8f61c4b253943f6b03c39c6196",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "42cc54008f583eb31ae572b9310e01d42bd3ad45036062678b0b62e06fd9c7b2"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/Chidori2.ogg",
+      "source_sha256": "a0d308e1033296b8947c42aa15937be3c8e3fbea361b26d7948c39d31da9128f",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "c236cf62878d04fc517a8781a8b9f76f3831a5dcdc997aa024b2485d9f9e17d9"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/L2.ogg",
+      "source_sha256": "380bdcd4e543e21354d168a596ca5f6b0271600aa3f9e18fa0f574483febf79f",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "f4a5cdd6d1b4c90a36083727fcd2621186b11a2cbc9aecadc3cd39d21aba4fdf"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/Pedang1.ogg",
+      "source_sha256": "b2cb23018f076aeca465e46347bcdaac0d21b0ce9d16e48acb31fc376a321813",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "4b672ee3609f71e62c87126f8d95c28abba342b8437a6d3bc104f8a399d443d1"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/Pedang2.ogg",
+      "source_sha256": "9c8c561df3af835b8072d23e6ad3068116c2283e4bfa0a532a5ca34e09833d07",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "227588984985beecaa271e71e9b594004d216c57b4d6acb9e359acc3fb92eac3"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/RaitonEfx.mp3",
+      "source_sha256": "ef3c59d40123eae6096adfafc3730a4bece77aabb14b5842cf6bdd8ad62f17c3",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "a3fc8b8576643c9d87224ecc05b7a74de00412a4fa34e80fb736dba2b7c6c6c8"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/RsChg.mp3",
+      "source_sha256": "e937029aba367718bacea3f8184d353041d51af9fd7cbd1f9c04110a610890ac",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "bf3fc5de661e7f2ec1d36fa4c176b514d6f76859a15ebcb5aeca52295f2963ee"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/RsgAura.mp3",
+      "source_sha256": "46c5f84c704f76b17a0e279d5ab65f4c178e7346ccac6d04c3528263e0cefba4",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "e9a8293c1c1f6154bd37a76d13cceee8160b8a369642aa5e63a4237414c36e94"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/Step.mp3",
+      "source_sha256": "574dd66d653d0df935943844d35fb53cc6f35478c843689b669703244fba9c03",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "30cf2179abc49aea45a5ef7f27043acdc54d3ea62c91651c6b65d56f0f51adf5"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/blade_dmg.mp3",
+      "source_sha256": "aaef9e5a36cb3dab9bc89a51103235e03c8fd557ea5650bbf3cbb00b75f6805e",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "d9cbeeef48cb0f0ae1ecc7c43f9b1afb65a6898c47f2b2146d38afb1dabc7eb0"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/close.wav",
+      "source_sha256": "4aea960701663025016ea497285c20e264490ea24029db6da7fbbaec4b290a9f",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "9e3440c174c3cb5994dddfbdcb67a11025f09cd88c189c1d1027da3d00a993e8"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/damage_h.ogg",
+      "source_sha256": "2b72beaae00ae1b62e4257da4ce0df845ee0f96176f52300f8da7c071e1414cf",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "eb371deba75f8728c5e6b76d481a97b193f1ae3ba0dcacccfe7468e92f130052"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/dash2.wav",
+      "source_sha256": "95d47cfc8d373c84ae0981a8b6d929fea2735030e2004861ad53f6099a7871b1",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "bbe12502b8c9135f37fe314a7865f7fc25802324910af462ad1e23e0390ce6c3"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/dash_effect.ogg",
+      "source_sha256": "ed545e88b9a61189dba4eaf4cad97ba5c3ba62f9c8e0f1e825de8c9e5fb3809b",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "a9f71d63cda95b41accdf04f7f2f8e8ca6516725205db4edd52ae921a033d1f4"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/fire3.ogg",
+      "source_sha256": "5def89d304480ad375e985155292cc59f09fb37a103842122b4832a708ee9ea9",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "4028e9a6d1fba86b8e24eb28899f9609f85bbdff626b15caa70562b7f2a8fbed"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/hiraishin_effect2.ogg",
+      "source_sha256": "93ccaa9a5f14dabe8385e590678ce7875117ddc092f6a827f455eedbd4672920",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "496624e65d6794c37cfa4ab4634afbbb9d8b5202ea2dd0a83e98e1b6be17002b"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/rasenS.ogg",
+      "source_sha256": "d658f3bac864a7505759154d342e12e56892ca23de453567f57d13b4dc169564",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "053bac63f6f575b48f822fe01df740543a91e4d45d624ef13a9052287d47d1dd"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/rsShuriken.ogg",
+      "source_sha256": "beb16cef5e5a70f18f19a1ce7ba81f8a16c5b27a03f56f8384ba5a3e6449168a",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "0c39d7906343e7271ba05fdfa539c9014a085e3cf9f9c04d885f999b01be2209"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/shuriken.mp3",
+      "source_sha256": "e34ba8f9c29c8111e225d371951fc1797a79afe2a629a078c4a694283c22cb60",
+      "group": 2,
+      "number": 19,
+      "wav_sha256": "b5e75d0d7eb43ea0bdbe9d1a3e786c7db20d543bcd4a1941b1557d3d3bfacd67"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/slsh.mp3",
+      "source_sha256": "e3258deca0784fab022e73da63495677fc8c72512ef5ea1d9490192fb85ddaca",
+      "group": 2,
+      "number": 20,
+      "wav_sha256": "17c582a49dbf3784f24933b6ea0817bc6548cd6bdda0b24b6dfed3722dee7f21"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/wind2.wav",
+      "source_sha256": "f06fff444e8a65c0d2d9a6f65099b7fc65e1d49ccdbba85911ccee51b53e6390",
+      "group": 2,
+      "number": 21,
+      "wav_sha256": "3894a02b136d171757588cfc06a141a052b831dccf941fc4023272aed110f461"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/windeffect.mp3",
+      "source_sha256": "f032db223071ff2ff140c55b5e954297b27bbe4bab15c8d58226eb51de35833f",
+      "group": 2,
+      "number": 22,
+      "wav_sha256": "106bb74201611ca07c8f3afae0f1e6721e54ebce38749f8dce722d116b900f78"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Effect/woos0.mp3",
+      "source_sha256": "aeda455352a2d74b95e3c284a86a2daa46b4b2ae1f0d82a2ca847a9c791ff006",
+      "group": 2,
+      "number": 23,
+      "wav_sha256": "ec380d8037c928785c05fa6ac0f640070ad01267d152b828e6eeb75c02379c00"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Hiruzen.ogg",
+      "source_sha256": "be3219eb19839885ea1c2977cf246f86b4497c7ed203a5a9ce267107c7a123f0",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "f790a5fdf4f704be54a7d10db2afb0ef37960c2c25fad43ca9e312ad613e6895"
+    },
+    {
+      "source": "source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra/Audio/Hiruzen_ougis.ogg",
+      "source_sha256": "3b7ef68f5031777eedcdb9e3eb0c015e7b3f85e02f3778f043d7cdacd22063c1",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "b3c9ef89acca221835e249d983d96443e8a99de8482a324cd2151b5034a96f4c"
+    }
+  ]
+}

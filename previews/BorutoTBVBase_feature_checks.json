@@ -1,0 +1,82 @@
+{
+  "runtime_sha256": "4842a4496ab642fba67a4c04652622e681c5237417a653ce7fb6f8aee4c47726",
+  "giant_sphere_contacts": [
+    {
+      "scale": 1,
+      "form": 0,
+      "face": 1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 41.0
+    },
+    {
+      "scale": 1,
+      "form": 0,
+      "face": -1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 41.00000762939453
+    },
+    {
+      "scale": 1,
+      "form": 1,
+      "face": 1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 41.00001525878906
+    },
+    {
+      "scale": 1,
+      "form": 1,
+      "face": -1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 41.00000762939453
+    },
+    {
+      "scale": 0.5,
+      "form": 0,
+      "face": 1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 50.1422975141746
+    },
+    {
+      "scale": 0.5,
+      "form": 0,
+      "face": -1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 50.142304817608185
+    },
+    {
+      "scale": 0.5,
+      "form": 1,
+      "face": 1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 50.142312121041876
+    },
+    {
+      "scale": 0.5,
+      "form": 1,
+      "face": -1,
+      "tick": 66,
+      "frame": "Hiruzen_04Hit_02",
+      "inside_source_rasengan": true,
+      "distance_to_sphere": 50.142304817608185
+    }
+  ],
+  "far_giant_misses": 4,
+  "blocked_uzuhiko": 4,
+  "interrupted_uzuhiko": 4,
+  "late_ultimate_interruptions": 4,
+  "standard_mugen_additive_frames": 37
+}

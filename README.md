@@ -482,3 +482,29 @@ Corrección de Boruto Karma/Jōgan: se estabilizan 166 puntos de apoyo; el perso
 Restauración del kit original de Boruto: **RT dispara dos Rasengan azules**, **abajo + RT lanza el Fūton Rasengan verde**, **abajo-atrás + Y encadena envoltura, avance, impacto y tornado de Uzuhiko**, y **abajo + RB en despertar invoca el Mokuton de cuatro criaturas**. Los Rasengan dobles gigantes siguen en abajo + B. Se usan las secuencias originales del paquete y cuatro recortes del tornado para separar el efecto de Boruto. [32 comprobaciones de las técnicas originales](previews/BorutoKarmaJogan_original_kit_checks.json).
 
 Corregida la transparencia de Uzuhiko en MUGEN: los veinte cuadros de viento, mano y tornado usan mezcla aditiva en el AIR; los nueve cuadros del viento suavizan sus bordes para evitar el recuadro. Se mantienen los demás sprites empacados y las cuatro técnicas restauradas. [Clip de Uzuhiko en base y despertar](previews/BorutoKarmaJogan_uzuhiko_motor.mp4) · [Comprobación de transparencia y bordes](previews/BorutoKarmaJogan_uzuhiko_rendering_checks.json) · [Cuatro casos nativos de Uzuhiko](previews/BorutoKarmaJogan_uzuhiko_native_checks.json).
+
+# Boruto Uzumaki — TBV base
+
+[**Descargar Boruto TBV base**](BorutoTBVBase.zip) · [Gameplay con audio del motor](previews/BorutoTBVBase_motor.mp4) · [Uzuhiko en base y concentración](previews/BorutoTBVBase_uzuhiko_motor.mp4) · [Controles Xbox](BorutoTBVBase/CONTROLES_XBOX.md)
+
+El paquete Boruto Ver2 de Vaydra: 161 cuadros válidos, capa con interior rosa, katana, Shiden, ráfaga de Rasengan, Hiraishin y Uzuhiko. Se mantienen las 38 referencias de audio originales, con 36 muestras únicas. Incluye tres cadenas terrestres y aéreas, trece especiales, doble dash gratuito, carga con aura y un clon autónomo de katana que puede recibir daño. Los cuadros compuestos permanecen en el jugador principal; los proyectiles y tornados usan efectos independientes con transparencia aditiva del AIR de MUGEN.
+
+**Abajo + Pausa** requiere 3000, consume 1500 y activa veinte segundos de concentración de Uzuhiko con su aspecto TBV base. **A** realiza la secuencia completa del video: capullo de viento, envoltura, impacto de palma, tornado sostenido y onda final. Ocho impactos causan como máximo 650 en base u 800 con concentración, sin consumir vida propia. Debe acertar, se puede bloquear y libera al rival si interrumpen a Boruto. **Abajo + RT** ejecuta Hiraishin con el Rasengan gigante: el jugador despega y la zona de impacto sigue la esfera visible.
+
+Personaje independiente: extrae `BorutoTBVBase` en `chars` y añade `BorutoTBVBase/BorutoTBVBase.def` a `data/select.def`. [Fuentes originales](source_material/BorutoTBV_original/archive_checks.json) · [Pruebas de combate](previews/BorutoTBVBase_engine_checks.json) · [Recepción de golpes](previews/BorutoTBVBase_receiving/BorutoTBVBase.json) · [Contacto de las esferas, guardia e interrupción](previews/BorutoTBVBase_feature_checks.json) · [Entrega](previews/BorutoTBVBase_delivery_checks.json). Pruebas nativas en Ikemen GO y contrato estático de MUGEN 1.1. Los dieciocho personajes anteriores se conservan.
+
+```sh
+python tools/build_boruto_tbv_assets.py
+python tools/build_boruto_tbv_runtime.py
+python tools/validate_boruto_tbv.py
+python tools/verify_boruto_tbv_sources.py
+python tools/check_boruto_tbv_in_engine.py
+python tools/check_boruto_tbv_features.py
+python tools/check_boruto_tbv_short_targets.py
+python tools/check_boruto_tbv_clone.py
+python tools/check_boruto_tbv_dashes.py
+python tools/check_roster_receiving.py --characters BorutoTBVBase --out previews/BorutoTBVBase_receiving
+python tools/make_boruto_tbv_preview.py
+python tools/package_boruto_tbv.py
+python tools/verify_boruto_tbv_delivery.py --write
+```

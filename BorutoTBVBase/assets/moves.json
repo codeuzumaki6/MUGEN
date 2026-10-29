@@ -1,0 +1,115 @@
+{
+  "moves": [
+    [
+      "Rasengan",
+      "a",
+      "F",
+      1000,
+      350
+    ],
+    [
+      "Shiden",
+      "a",
+      "B",
+      1010,
+      400
+    ],
+    [
+      "Kenjutsu",
+      "b",
+      "F",
+      1020,
+      450
+    ],
+    [
+      "Espiral",
+      "b",
+      "B",
+      1030,
+      550
+    ],
+    [
+      "Ascendente",
+      "c",
+      "F",
+      1040,
+      350
+    ],
+    [
+      "Combo",
+      "c",
+      "B",
+      1050,
+      450
+    ],
+    [
+      "Barrido",
+      "a",
+      "D",
+      1400,
+      200
+    ],
+    [
+      "Bunshin",
+      "b",
+      "D",
+      1410,
+      300
+    ],
+    [
+      "Caida",
+      "c",
+      "D",
+      1420,
+      450
+    ],
+    [
+      "Kunai",
+      "y",
+      "N",
+      1200,
+      200
+    ],
+    [
+      "Disparo",
+      "z",
+      "N",
+      1210,
+      250
+    ],
+    [
+      "Invocacion",
+      "y",
+      "D",
+      1430,
+      600
+    ],
+    [
+      "Futon",
+      "z",
+      "D",
+      1440,
+      600
+    ]
+  ],
+  "awakening": "Uzuhiko focus, original TBV base appearance",
+  "awakening_ticks": 1200,
+  "awakening_cost": 1500,
+  "ultimate_damage": [
+    650,
+    800
+  ],
+  "ultimate_pulses": [
+    84,
+    112,
+    140,
+    168,
+    196,
+    224,
+    252,
+    284
+  ],
+  "own_life_cost": 0,
+  "clone_health": 120,
+  "clone_ticks": 180
+}

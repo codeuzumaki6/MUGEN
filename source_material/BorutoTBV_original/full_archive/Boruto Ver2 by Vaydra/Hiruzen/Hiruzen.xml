@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Hiruzen</p>
+        <p type="attackValue">5000</p>
+        <p type="attackRangeX">63</p>
+        <p type="attackRangeY">100</p>
+        <p type="cd">224</p>
+      </data>
+      <frame>
+        <f>Hiruzen_Idle_01</f>
+        <f>Hiruzen_Idle_02</f>
+        <f>Hiruzen_Idle_03</f>
+
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+        <f>Hiruzen_Walk_01</f>
+        <e type="setMove">2</e>
+        <f>Hiruzen_Walk_02</f>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <e type="setMove">2</e>
+        <f>Hiruzen_Walk_03</f>
+        <e type="setMove">2</e>
+        <f>Hiruzen_Walk_04</f>
+        <e type="setMove">2</e>
+        <f>Hiruzen_Walk_05</f>
+        <e type="setSound">Audio/Effect/Step.mp3</e>
+        <e type="setMove">2</e>
+        <f>Hiruzen_Walk_06</f>
+        <e type="setMove">2</e>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+        <e type="setMove">32</e>
+        <f>Hiruzen_Hurt_01</f>
+        <f>Hiruzen_Hurt_02</f>
+        <e type="setSound">Audio/BorutoTBv/hurt1.mp3</e>
+        
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+         <f>Hiruzen_AirHurt_001</f>
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+          <f>Hiruzen_Knock_01</f>
+           <e type="setDelay">10</e>
+          <f>Hiruzen_Dead_01</f>
+          <e type="setDelay">40</e>
+          <f>Hiruzen_Wake_01</f>
+            <e type="setDelay">20</e>
+          <f>Hiruzen_Wake_01</f>
+          <e type="setDelay">20</e>
+          
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+          <f>Hiruzen_Float_01</f>
+	      	<e type="setFont">dbtx</e>
+          <e type="setDelay">10</e>
+          <f>Hiruzen_Float_01</f>
+          <e type="setDelay">10</e>
+          <f>Hiruzen_Float_01</f>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+          <f>Hiruzen_Knock_01</f>
+          <f>Hiruzen_Dead_01</f>           
+          <e type="setSound">Audio/BorutoTBv/Die.mp3</e>
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">nAttack</p>
+        <p type="attackValue">80</p>
+        <p type="attackRangeX">16</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+      <f>Hiruzen_NAttack_001</f>
+      <e type="setSound">Audio/Effect/close.wav</e>
+      <e type="setDelay">10</e>
+      <f>Hiruzen_NAttack_002</f>
+      <e type="setSound">Audio/Effect/Pedang1.ogg</e>
+      <e type="setAttackBox">n_hit</e>
+      <f>Hiruzen_NAttack_003</f>     
+      <f>Hiruzen_NAttack_004</f>
+      <f>Hiruzen_NAttack_005</f>
+      
+      <f>Hiruzen_NAttack_006</f>
+      <e type="setDelay">10</e>
+      <e type="setMove">12</e>
+      <e type="setSound">Audio/BorutoTBv/Hit.mp3</e>
+      <f>Hiruzen_NAttack_007</f>
+      <e type="setSound">Audio/Effect/Pedang2.ogg</e>
+      <e type="setAttackBox">l_hit</e>
+      <f>Hiruzen_NAttack_008</f>
+      <f>Hiruzen_NAttack_009</f>
+      <f>Hiruzen_NAttack_010</f>
+
+
+--Extra
+
+        <f>ShidenBlade_01</f>  
+        <e type="setDelay">-5</e>
+        <e type="setSound">Audio/Effect/RaitonEfx.mp3</e>
+        <f>ShidenBlade_02</f>
+        <e type="setDelay">-5</e>
+        <f>ShidenBlade_03</f>
+        <e type="setDelay">-5</e>
+        <f>ShidenBlade_04</f>       
+        <e type="setDelay">-5</e>
+        <e type="setMove">16</e>
+        <f>ShidenBlade_05</f>
+        
+        <f>ShidenBlade_06</f>  
+        <e type="setAttackBox">l_hit</e>
+        <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+        <f>ShidenBlade_07</f>
+        <f>ShidenBlade_08</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>ShidenBlade_09</f>       
+        <f>ShidenBlade_10</f>
+        <e type="setAttackBox">l_hit</e>
+        <f>ShidenBlade_11</f>
+        
+
+      </frame>
+    </action>
+
+   <action name="skill01">
+     <data>
+	   <p type="attackType">cAttack</p>
+       <p type="attackValue">200</p>
+       <p type="attackRangeX">10</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">10</p>
+        <p type="combatPoint">1120</p>
+     </data>
+     <frame>
+    <e type="setSound">Audio/Effect/close.wav</e>
+    <f>Hiruzen_Skil01_01</f>
+    <e type="setSound">Audio/Effect/woos0.mp3</e>
+    <f>Hiruzen_Skil01_02</f>
+    <f>Hiruzen_Skil01_03</f>
+    <f>Hiruzen_Skil01_04</f>
+    <f>Hiruzen_Skil01_05</f>
+    <f>Hiruzen_Skil01_06</f>
+    
+
+    <e type="setMove">12</e>    
+    <f>Hiruzen_Skil01_07</f>
+    <e type="setSound">Audio/Effect/wind2.wav</e>
+    <e type="setAttackBox">l_hit</e>
+   <e type="setSound">Audio/BorutoTBv/01.mp3</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_08</f>
+    <e type="setSound">Audio/Effect/wind2.wav</e>
+    <e type="setAttackBox">c_hit</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_09</f>
+    <e type="setSound">Audio/Effect/wind2.wav</e>
+    <e type="setAttackBox">l_hit</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_10</f>
+    <e type="setSound">Audio/Effect/wind2.wav</e>
+    <e type="setAttackBox">c_hit</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_11</f>
+    <e type="setSound">Audio/Effect/wind2.wav</e>
+    <e type="setAttackBox">l_hit</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_12</f>
+    <e type="setSound">Audio/Effect/wind.wav</e>
+    <e type="setAttackBox">f_hit</e>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_13</f>
+    <e type="setDelay">3</e>
+    <f>Hiruzen_Skil01_14</f>
+    <e type="setDelay">3</e>
+     </frame>
+   </action>
+    <action name="skill02">
+        <data>
+          <p type="attackType">aAttack</p>
+          <p type="attackValue">320</p>
+          <p type="attackRangeX">10</p>
+          <p type="attackRangeY">48</p>
+          <p type="cd">15</p>
+          <p type="combatPoint">2080</p>
+        </data>
+        <frame>
+        <e type="setSound">Audio/BorutoTBv/02.mp3</e>
+        <f>ShidenBlade_01</f>  
+        <e type="setSound">Audio/Effect/RaitonEfx.mp3</e>
+        <f>ShidenBlade_02</f>
+        <f>ShidenBlade_03</f>
+        <f>ShidenBlade_04</f>       
+        <e type="setChargeB">280</e>    
+        <f>ShidenBlade_05</f>
+        
+        <f>ShidenBlade_06</f>  
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+        <f>ShidenBlade_07</f>
+        <f>ShidenBlade_08</f>
+        <f>ShidenBlade_09</f>       
+        <f>ShidenBlade_10</f>
+        <f>ShidenBlade_11</f>
+        
+        
+        <f>ShidenBlade_12</f>  
+        <e type="setAttackBox">b_hit</e>
+        <e type="setSound">Audio/Effect/Chidori2.ogg</e>
+        <e type="setDelay">4</e>
+        <f>ShidenBlade_13</f>
+        <e type="setDelay">4</e>
+        <f>ShidenBlade_14</f>
+        <e type="setDelay">4</e>
+        <f>ShidenBlade_15</f>       
+        <e type="setDelay">4</e>
+        
+        <f>ShidenBlade_16</f>
+        <e type="setDelay">4</e>
+        <e type="setSound">Audio/Effect/BugPillar.ogg</e>
+        <f>ShidenBlade_17</f>
+        <e type="setSound">Audio/Effect/L2.ogg</e>
+        <e type="setAttackBox">f_hit</e>
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_18</f>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_19</f>
+        <e type="setAttackBox">c_hit</e>
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_20</f>       
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_21</f>
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_22</f>
+        <e type="setDelay">3</e>
+        <f>ShidenBlade_23</f>
+        <e type="setDelay">3</e>
+        
+        
+        
+        </frame>
+    </action>
+    <action name="skill03">
+        <data>
+			<p type="attackType">cBuff</p>
+      <p type="attackValue">0</p>
+      <p type="attackRangeX">0</p>
+      <p type="attackRangeY">0</p>
+      <p type="cd">25</p>
+      <p type="combatPoint">2240</p>
+        </data>
+        <frame>
+      <f>HiruzenChg03_01</f>   
+      <e type="setSound">Audio/BorutoTBv/03_1.mp3</e>
+      <e type="setSound">Audio/Effect/fire3.ogg</e>  
+      <f>HiruzenChg03_02</f>
+      <f>HiruzenChg03_03</f>
+      <f>HiruzenChg03_04</f>
+      <f>HiruzenChg03_05</f>
+      <e type="setBuff">17</e>
+    </frame>
+    </action>
+   <action name="skill04">
+     <data>
+        <p type="attackType">aAttack</p>
+        <p type="attackValue">150</p>
+        <p type="attackRangeX">15</p>
+        <p type="attackRangeY">35</p>
+        <p type="cd">1</p>
+        <p type="combatPoint">3180</p>
+     </data>
+     <frame>
+     <e type="setCommand">setInvincible</e>
+    <f>Hiruzen_NAttack_001</f>
+    <e type="setSound">Audio/Effect/shuriken.mp3</e>  
+    <e type="setMon">BorutoTBVclone</e>
+        <f>BoruBlade_01</f>
+      <e type="setAttackBox">o_hit</e>
+        <e type="setCharge">180</e> 
+        <f>BoruBlade_02</f>
+        <e type="setCharge">180</e>
+        <e type="setAttackBox">o_hit</e>
+        <f>BoruBlade_03</f>
+        <e type="setCharge">180</e>
+        <e type="setAttackBox">o_hit</e>
+        <f>BoruBlade_04</f>
+        <e type="setCharge">180</e>
+        <f>BoruBlade_05</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>BoruBlade_06</f>
+      <e type="setSound">Audio/BorutoTBv/03.mp3</e>
+    <f>Hiruzen_skill04_05</f>
+    <e type="setSound">Audio/Effect/dash2.wav</e>  
+    <e type="setCommand">findTarget</e> 
+    <e type="setSkillEffect">Hiraishin2</e>
+    <e type="setCommand">setTransport</e>     
+    <e type="setAttackBox">b_hit</e>     
+    <f>Hiruzen_04Chg_01</f>
+    <f>Hiruzen_04Chg_02</f>
+    <e type="setSound">Audio/Effect/hiraishin_effect2.ogg</e>  
+    <f>Hiruzen_04Chg_03</f>
+    <f>Hiruzen_04Chg_04</f>     
+    <e type="setAttackBox">b_hit</e>
+    <e type="setSound">Audio/Effect/RsChg.mp3</e>  
+    <f>Hiruzen_04Chg_05</f>
+    <f>Hiruzen_04Chg_06</f>
+    <f>Hiruzen_04Chg_07</f>
+    <f>Hiruzen_04Chg_08</f>
+    <f>Hiruzen_04Chg_09</f>
+    <f>Hiruzen_04Chg_10</f>         
+      <f>Hiruzen_04Hit_01</f>      
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <e type="setAttackBox">f_hit</e>
+      <f>Hiruzen_04Hit_02</f>       
+      <f>Hiruzen_04Hit_03</f>
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <f>Hiruzen_04Hit_04</f>
+      <e type="setAttackBox">c_hit</e>
+      <f>Hiruzen_04Hit_05</f>
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <f>Hiruzen_04Hit_06</f>     
+      <f>Hiruzen_04Hit_01</f>      
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <e type="setAttackBox">c_hit</e>
+      <f>Hiruzen_04Hit_02</f>  
+      <f>Hiruzen_04Hit_03</f>
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Hit_04</f>
+      <f>Hiruzen_04Hit_05</f>
+      <e type="setSound">Audio/Effect/damage_h.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Hit_06</f>     
+      <f>Hiruzen_04Bom_01</f>      
+      <e type="setSound">Audio/Effect/rasenS.ogg</e>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Bom_02</f>  
+      <f>Hiruzen_04Bom_03</f>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Bom_04</f>
+      <f>Hiruzen_04Bom_05</f>
+      <e type="setAttackBox">ac_hit</e>
+        <e type="setCommand">reInvincible</e>
+      <f>Hiruzen_04Bom_06</f>
+      <e type="setSound">Audio/Effect/rsShuriken.ogg</e>  
+      <e type="setAttackBox">ac_hit</e> 
+      <f>Hiruzen_04Bom_07</f>      
+      <f>Hiruzen_04Bom_08</f>  
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Bom_09</f>
+      <f>Hiruzen_04Bom_10</f>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Bom_11</f>
+      <f>Hiruzen_04Bom_12</f>
+      <e type="setAttackBox">ac_hit</e>
+      <f>Hiruzen_04Bom_13</f>
+      <f>Hiruzen_04Bom_14</f>     
+      
+      
+          <f>Hiruzen_Skil4ED_05</f>        
+          <f>Hiruzen_Skil4ED_04</f>
+          <f>Hiruzen_Skil4ED_03</f>
+
+     </frame>
+   </action>
+    <action name="skill05">
+     <data>
+       <p type="attackType">cAttack</p>
+       <p type="attackValue">240</p>
+       <p type="attackRangeX">0</p>
+       <p type="attackRangeY">48</p>
+       <p type="cd">1</p>
+       <p type="combatPoint">8400</p>
+     </data>
+     <frame>
+
+
+      
+      
+        <e type="setSound">Audio/Effect/RsgAura.mp3</e>  
+        <f>Hiruzen_Skill05_01</f>
+        <f>Hiruzen_Skill05_02</f>
+      <e type="setSound">Audio/BorutoTBv/005.mp3</e>
+      <e type="setAttackBox">f_hit</e>
+        <f>Hiruzen_Skill05_03</f>
+        <f>Hiruzen_Skill05_04</f>
+        <f>Hiruzen_Skill05_05</f>
+        <f>Hiruzen_Skill05_06</f>
+        
+        <e type="setSound">Audio/Effect/RsgAura.mp3</e>  
+        <f>Hiruzen_Skill05_01</f>
+        <f>Hiruzen_Skill05_02</f>
+        <f>Hiruzen_Skill05_03</f>
+        <f>Hiruzen_Skill05_04</f>
+        <f>Hiruzen_Skill05_05</f>
+        <f>Hiruzen_Skill05_06</f>
+        
+     
+        <e type="setCommand">setInvincible</e>
+
+        
+        <e type="setSound">Audio/Effect/woos0.mp3</e>  
+      <e type="setAttackBox">b_hit</e>
+        <f>Hiruzen_Skill05_03</f>
+        <f>Hiruzen_Skill05_07</f>
+        <f>Hiruzen_Skill05_08</f>
+        <f>Hiruzen_Skill05_09</f>
+        <e type="setSound">Audio/Effect/woos0.mp3</e>  
+        <f>Hiruzen_Skill05_10</f>
+        <f>Hiruzen_Skill05_11</f>
+        <f>Hiruzen_Skill05_12</f>
+        
+        <e type="setSound">Audio/Effect/woos0.mp3</e>  
+        <f>Hiruzen_Skill05_07</f>
+        <f>Hiruzen_Skill05_08</f>
+        <f>Hiruzen_Skill05_09</f>
+        <e type="setSound">Audio/Effect/woos0.mp3</e>  
+        <f>Hiruzen_Skill05_10</f>
+        <f>Hiruzen_Skill05_11</f>
+        <f>Hiruzen_Skill05_12</f>
+        
+
+
+--Ex
+
+        
+        
+
+         <e type="setOugis">10</e>
+         
+         
+         <f>Hiruzen_Skill05_12</f>
+    <e type="setMove">20</e>
+         <f>Hiruzen_Skill05_13</f>
+         
+         
+         
+        <f>Hiruzen_Skill05_14</f>
+        <e type="setSound">Audio/Effect/windeffect.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_15</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_16</f>            
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_17</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_19</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+            
+        <f>Hiruzen_Skill05_14</f>
+        <e type="setSound">Audio/Effect/windeffect.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_15</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_16</f>            
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_17</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_19</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        
+        
+        <f>Hiruzen_Skill05_14</f>
+        <e type="setSound">Audio/Effect/windeffect.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_15</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_16</f>            
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_17</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_19</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+       
+       
+        <f>Hiruzen_Skill05_14</f>
+        <e type="setSound">Audio/Effect/windeffect.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_15</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_16</f>            
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_17</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_19</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        
+        <f>Hiruzen_Skill05_14</f>
+        <e type="setSound">Audio/Effect/windeffect.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_15</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_16</f>            
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_17</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_18</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>Hiruzen_Skill05_19</f>
+        <e type="setSound">Audio/Effect/blade_dmg.mp3</e>
+        <e type="setAttackBox">ac_hit</e>
+        
+        
+        <f>Hiruzen_Skill05_20</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">ac_hit</e>   
+        <f>Hiruzen_Skill05_21</f>
+        <e type="setAttackBox">f_hit</e>   
+        <f>Hiruzen_Skill05_22</f>     
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">ob_hit</e>
+        <f>Hiruzen_Skill05_23</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Hiruzen_Skill05_24</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">c_hit</e>
+        <f>Hiruzen_Skill05_25</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>Hiruzen_Skill05_26</f>
+        <e type="setSound">Audio/Effect/blade_damage.ogg</e>
+        <e type="setAttackBox">c_hit</e>
+        <f>Hiruzen_Skill05_27</f>
+
+        
+        
+        
+        <e type="setCommand">reInvincible</e>
+     </frame>
+   </action>
+    <action name="skill06">
+        <frame></frame>
+    </action>
+    <action name="skill07">
+        <frame></frame>
+    </action>
+    <action name="skill08">
+        <frame></frame>
+    </action>
+    <action name="skill09">
+        <frame></frame>
+    </action>
+    <action name="skill10">
+        <data>
+            <p type="attackType">Idle</p>
+            <p type="attackValue">660</p>
+            <p type="attackRangeX">16</p>
+            <p type="attackRangeY">32</p>
+            <p type="cd">10</p>
+        </data>
+        <frame>
+          <f>Hiruzen_Idle_001</f>
+          <f>Hiruzen_Idle_002</f>
+          <f>Hiruzen_Idle_003</f>
+        </frame>
+    </action>
+    <action name="skill11">
+        <data>
+            <p type="attackType">Walk</p>
+            <p type="attackValue">0</p>
+            <p type="attackRangeX">0</p>
+            <p type="attackRangeY">0</p>
+            <p type="cd">15</p>
+        </data>
+        <frame>
+        <f>Hiruzen_Fly_01</f>
+        <e type="setChargeB">8</e>
+        <f>Hiruzen_Fly_02</f>
+        <e type="setChargeB">8</e>     
+        <f>Hiruzen_Fly_03</f>
+        <e type="setChargeB">8</e>
+        </frame>
+
+    </action>
+    <action name="skill12">
+        <data>
+            <p type="attackType">aAttack</p>
+            <p type="attackValue">700</p>
+            <p type="attackRangeX">16</p>
+            <p type="attackRangeY">48</p>
+            <p type="cd">0</p>
+        </data>
+        <frame>
+
+          <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+          <f>Hiruzen_Skill03Atk_01</f>
+          <f>Hiruzen_Skill03Atk_02</f>
+          
+          
+          
+
+          <e type="setCharge">280</e>
+          <f>Hiruzen_Nol</f>
+          <e type="setSound">Audio/Effect/hiraishin_effect2.ogg</e>
+          <e type="setAttackBox">b_hit</e>
+          <e type="setChargeB">60</e>
+          <f>Hiruzen_Skill03Atk_03</f>        
+      <e type="setSound">Audio/BorutoTBv/04.mp3</e>		
+          <f>Hiruzen_Skill03Atk_04</f>
+          <f>Hiruzen_Skill03Atk_05</f>
+
+          
+
+          <f>Hiruzen_Skill03Atk_06</f>
+          <e type="setSound">Audio/boruto/003_0</e>
+          <e type="setSound">Audio/Effect/slsh.mp3</e>
+          <e type="setAttackBox">f_hit</e>
+          <f>Hiruzen_Skill03Atk_07</f>
+          <f>Hiruzen_Skill03Atk_08</f>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Hiruzen_Skill03Atk_09</f>
+          <f>Hiruzen_Skill03Atk_10</f>
+          <e type="setAttackBox">ac_hit</e>
+          <f>Hiruzen_Skill03Atk_11</f>
+          <f>Hiruzen_Skill03Atk_12</f>
+          <f>Hiruzen_Skill03Atk_13</f>
+      <e type="setActionResume">20</e>
+          <f>Hiruzen_Skill03Atk_02</f>
+          <f>Hiruzen_Skill03Atk_01</f>
+         
+        </frame>
+    </action>
+</unit>

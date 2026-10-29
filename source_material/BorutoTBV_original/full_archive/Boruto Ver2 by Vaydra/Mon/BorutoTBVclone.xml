@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+    <f>Hiruzen_skill04_01</f>
+    <e type="setSound">Audio/Effect/BladeBrto.mp3</e>  
+    <f>Hiruzen_skill04_02</f>
+
+    <f>Hiruzen_skill04_03</f>
+    <f>Hiruzen_skill04_04</f>
+    <e type="setSkillEffect">Hiraishin2</e>
+        <e type="setDetonation">0</e>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+     <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">20</p>
+        <p type="attackRangeX">12</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>   
+
+    <f>Hiruzen_skill04_01</f>
+    <e type="setAttackBox">o_hit</e>
+    <e type="setSound">Audio/Effect/BladeBrto.mp3</e>  
+    <f>Hiruzen_skill04_02</f>
+
+    <f>Hiruzen_skill04_03</f>
+    <f>Hiruzen_skill04_04</f>
+        <f>Hiruzen_Idle_01</f>
+
+        <e type="setDelay">5</e>  
+        <f>Hiruzen_Idle_02</f>
+
+        <e type="setDelay">5</e>  
+        <f>Hiruzen_Idle_03</f>
+    <e type="setSkillEffect">Hiraishin2</e>
+        <e type="setDetonation">0</e>  
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <f>BoruBlade_01</f>
+        <e type="setChargeB">380</e> 
+        <f>BoruBlade_02</f>
+        <e type="setAttackBox">f_hit</e>
+        <f>BoruBlade_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>BoruBlade_04</f>
+        <f>BoruBlade_05</f>
+        <e type="setAttackBox">ac_hit</e>
+        <f>BoruBlade_06</f>
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">500</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">36</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>Hiruzen_Idle_01</f>
+
+        <e type="setDelay">5</e>  
+        <f>Hiruzen_Idle_02</f>
+
+        <e type="setDelay">5</e>  
+        <f>Hiruzen_Idle_03</f>
+
+        <e type="setDelay">5</e>  
+        
+    <e type="setSkillEffect">Hiraishin2</e>
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+
+</unit>
