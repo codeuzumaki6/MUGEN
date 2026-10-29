@@ -18,4 +18,4 @@ Se conservan los 45 archivos originales del ZIP, los 161 cuadros válidos, las 3
 
 Consulta `CONTROLES_XBOX.md`. Las pruebas nativas se realizan en Ikemen GO; el ejecutable exacto de MUGEN del usuario y el mando físico se comprueban localmente.
 
-Revisión de animaciones: los 161 cuadros originales conservan ahora todos sus colores y niveles de transparencia mediante PNG32 de MUGEN 1.1. Saltar, agacharse y aterrizar usan poses de movimiento; el Rasengan aéreo despega y desciende de forma continua. El remate de Uzuhiko mantiene el cuerpo estable y separa la onda final para controlar su tamaño.
+Revisión de visibilidad: los 287 sprites de la entrega usan formato indexado RLE8 para evitar la invisibilidad producida por PNG32 en el juego del usuario. El cuerpo conserva sus píxeles opacos y la luz se dibuja en capas aditivas sincronizadas que no contienen otro cuerpo ni colisiones. Los PNG fuente originales se conservan. Saltar, agacharse y aterrizar usan poses de movimiento; el Rasengan aéreo despega y desciende de forma continua. El remate de Uzuhiko mantiene el cuerpo estable y separa la onda final para controlar su tamaño.

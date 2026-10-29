@@ -113,16 +113,32 @@ def ultimate():
  for n,parent,limit in [(3010,3000,350),(3020,1030,90)]:
   b.STATES.append(state(n,None,'A','H','N')+c(n,'Keep opponent artwork','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+c(n,'Spin reaction','AngleDraw','1','value=Time*15')+ctl(n,'Independent release','SelfState',f'trigger1=Time>={limit}\ntrigger2=NumEnemy=0\ntrigger3=(EnemyNear,StateNo)%10000!={parent}\ntrigger4=RoundState!=2','value=5050\nctrl=0'))
  for n in [3011,3021]:b.STATES.append(state(n,None,'A','H','N')+c(n,'Release velocity','VelSet','Time=0','x=-4\ny=-6')+c(n,'Restore own states','SelfState','1','value=5050\nctrl=0'))
+def compatible_light_layers():
+ # AIR copies retain the main actor's exact frame timing and axis, with
+ # translucent light only. No body, collision or attack is duplicated.
+ lookup={(r['group'],r['number']):r for r in b.SPRITES.values()}
+ for source in list(b.AIR):
+  n=int(re.search(r'\[Begin Action (\d+)\]',source)[1])
+  if n%10000>=8700:continue
+  lines=[f'\n[Begin Action {40000+n}]']
+  for line in source.splitlines():
+   if line.lower()=='loopstart':lines.append(line)
+   m=re.match(r'\s*(\d+),(\d+),(-?\d+),(-?\d+),(-?\d+)',line)
+   if m:
+    g,p,x,y,t=map(int,m.groups());r=lookup[g,p];g,p=b.KEY.get(r['key']+'_Light',b.KEY['LightEmpty']);lines.append(f'{g},{p},{x},{y},{t},,A')
+  b.AIR.append('\n'.join(lines)+'\n')
+ b.STATES.append(state(9580,40000,'A','I','N')+c(9580,'Match the actual actor frame','ChangeAnim','SelfAnimExist(40000+(Root,Anim))','value=40000+(Root,Anim)\nelem=Root,AnimElemNo(0)')+c(9580,'Light follows actor','BindToRoot','1','time=1\npos=0,0')+c(9580,'Follow facing','Turn','Facing!=(Root,Facing)','')+c(9580,'Behind the opaque actor','SprPriority','1','value=-1')+c(9580,'No shadow from light','AssertSpecial','1','flag=NoShadow')+c(9580,'No physical push','PlayerPush','1','value=0')+c(9580,'Finite light layer','DestroySelf','RoundState!=2 || (Root,Life)<=0 || ((Root,MoveType!=A) && (Root,StateNo)!=500 && (Root,StateNo)!=520)'))
 def main():
  b.CHAR=CHAR;b.NAME=NAME;b.AIR=[];b.STATES=[];b.KEY=json.loads((CHAR/'assets/keys.json').read_text());b.SPRITES={r['key']:r for r in json.loads((CHAR/'assets/sprites.json').read_text())};b.SOUNDS=json.loads((CHAR/'assets/sounds.json').read_text())['keys'];b.SOUNDS['BorutoJogan/hurt1']=b.SOUNDS['BorutoTBv/hurt1'];b.idle=idle
- basic();normals();specials();helpers();utility();ultimate()
+ basic();normals();specials();helpers();utility();ultimate();compatible_light_layers()
  import build_sarada_runtime as ref
  saved=ref.CHAR,ref.MOVES
  try:ref.CHAR=CHAR;ref.MOVES=MOVES;ref.commands()
  finally:ref.CHAR,ref.MOVES=saved
  path=CHAR/'SaradaTBV.cmd';(CHAR/(NAME+'.cmd')).write_text(path.read_text().replace('Pink Susanoo awakening','Uzuhiko focus'));path.unlink()
  const=(ROOT/'BorutoKarmaJogan/BorutoKarmaJogan.cns').read_text().split('[Statedef',1)[0];const=const[const.index('[Data]'):]
- (CHAR/(NAME+'.cns')).write_text('; TBV base, original supplied sprites and voices.\n'+const+''.join(b.STATES)+b.system().replace('Karma strength','Uzuhiko focus strength').rstrip()+'\n')
+ light=b.cast(-2,'!IsHelper && RoundState=2 && NumHelper(9580)=0 && (MoveType=A || StateNo=500 || StateNo=520)',9580,0,0)
+ (CHAR/(NAME+'.cns')).write_text('; TBV base, original supplied sprites and voices.\n'+const+''.join(b.STATES)+b.system().replace('Karma strength','Uzuhiko focus strength').rstrip()+light.rstrip()+'\n')
  (CHAR/(NAME+'.air')).write_text('; Body composites belong only to the main fighter. Effects use standard AIR A.\n'+''.join(b.AIR))
  (CHAR/(NAME+'_common.cns')).write_bytes((ROOT/'BorutoKarmaJogan/BorutoKarmaJogan_common.cns').read_bytes())
  d=(ROOT/'BorutoKarmaJogan/BorutoKarmaJogan.def').read_text().replace('BorutoKarmaJogan',NAME).replace('Boruto Uzumaki Karma Jogan','Boruto Uzumaki TBV Base').replace('versiondate=10,27,2026','versiondate=10,28,2026');(CHAR/(NAME+'.def')).write_text(d)

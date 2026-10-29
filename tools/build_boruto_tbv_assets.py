@@ -27,12 +27,19 @@ def main():
  def put(key,g,n,im,xy,**meta):
   dest=A/'frames'/f'{g}_{n}.png';im.save(dest);storage=im
   if g in [31000,31010]:
-   if g==31010:
-    a=np.array(im.convert('RGBA'));ramp=np.minimum(np.arange(im.width)/18,1);a[:,:,3]=np.rint(a[:,:,3]*ramp[None,:]).astype('uint8');storage=Image.fromarray(a)
-   archive.entries[g,n]=(im.width,im.height,*xy,storage.convert('RGBA').tobytes(),b'')
-  else:archive.put((g,n),storage,xy)
+   a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16')
+   if g==31010:alpha=np.rint(alpha*np.minimum(np.arange(im.width)/18,1)[None,:]).astype('uint16')
+   if meta.get('kind')=='effect':
+    # AIR A supplies additive blending. Black adds zero on legacy renderers.
+    a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0)
+   else:
+    # Keep the visible actor in the ordinary indexed sprite. Translucent
+    # light in composite frames is exported separately for AIR A blending.
+    a[:,:,3]=np.where(alpha>=(250 if meta.get('kind')=='body_with_effect' else 128),255,0)
+   storage=Image.fromarray(a)
+  archive.put((g,n),storage,xy)
   entry=archive.entries[g,n];keys[key]=[g,n]
-  manifest.append(dict(key=key,group=g,number=n,file=str(dest.relative_to(CHAR)),axis=list(xy),rgba_sha256=sha(im.tobytes()),pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),storage='PNG32 RGBA' if not entry[5] else 'RLE8 indexed',redrawn=False,ai_generated=False,**meta))
+  manifest.append(dict(key=key,group=g,number=n,file=str(dest.relative_to(CHAR)),axis=list(xy),rgba_sha256=sha(im.tobytes()),pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),storage='RLE8 indexed',transparency='AIR additive' if meta.get('kind')=='effect' else 'indexed opaque actor',redrawn=False,ai_generated=False,**meta))
  for rel in ['Hiruzen/Hiruzen.plist','Hiruzen/Hiruzen_Skill.plist']:
   p=SRC/rel;data=plistlib.loads(p.read_bytes());sheet=Image.open(p.parent/data['metadata']['textureFileName']).convert('RGBA')
   for raw,r in data['frames'].items():
@@ -45,6 +52,12 @@ def main():
  for i,n in enumerate(range(20,28)):
   parent=bykey[f'Hiruzen_Skill05_{n:02}'];im=Image.open(CHAR/parent['file']).convert('RGBA');rect=(170,0,680,396)
   put(f'UzuhikoWave_{i:02}',31010,i,im.crop(rect),(-45,375),kind='effect',source_parent=parent['key'],source_rect=list(rect))
+ for r in list(manifest):
+  if r['group']!=31000 or r['kind']!='body_with_effect':continue
+  a=np.array(Image.open(CHAR/r['file']).convert('RGBA'));alpha=a[:,:,3].astype('uint16');mask=(alpha>0)&(alpha<250)
+  a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[~mask,:3]=0;a[:,:,3]=np.where(mask,255,0)
+  put(r['key']+'_Light',31200,r['number'],Image.fromarray(a),tuple(r['axis']),kind='effect',source_light_parent=r['key'])
+ put('LightEmpty',31201,0,Image.new('RGBA',(1,1)),(0,0),kind='effect')
  for g,count in [(8700,4),(8710,4),(8720,6),(8900,24)]:
   for n in range(count):im,xy=common.image((g,n));put(f'Common_{g}_{n}',g,n,im,xy,kind='effect',shared_project_effect=True)
  face=Image.open(CHAR/manifest[3]['file']).crop((20,4,50,34))

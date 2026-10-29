@@ -511,4 +511,4 @@ python tools/package_boruto_tbv.py
 python tools/verify_boruto_tbv_delivery.py --write
 ```
 
-Revisión de animaciones de Boruto TBV base: los 161 cuadros originales conservan todos sus canales RGBA mediante PNG32 de MUGEN 1.1. Se corrigen las poses de salto, agachado y aterrizaje, las transiciones aéreas y el tamaño de la onda final de Uzuhiko. [Comprobación de fidelidad del alfa y las animaciones](previews/BorutoTBVBase_rendering_checks.json).
+Revisión de visibilidad de Boruto TBV base: la entrega usa 287 sprites indexados RLE8 y conserva los PNG originales como fuentes. PNG32 se retiró tras causar invisibilidad en el juego del usuario. El cuerpo conserva sus píxeles opacos y las capas de luz aditivas siguen cada cuadro sin duplicar el cuerpo ni las colisiones. Se mantienen las poses corregidas de salto, agachado y aterrizaje, las transiciones aéreas y el tamaño de la onda final de Uzuhiko. [Comprobación de visibilidad y animaciones](previews/BorutoTBVBase_rendering_checks.json).

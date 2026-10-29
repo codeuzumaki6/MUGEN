@@ -7289,6 +7289,58 @@ value=5050
 ctrl=0
 
 
+[Statedef 9580]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=40000
+velset=0,0
+
+[State 9580, Match the actual actor frame]
+type=ChangeAnim
+trigger1=SelfAnimExist(40000+(Root,Anim))
+value=40000+(Root,Anim)
+elem=Root,AnimElemNo(0)
+
+
+[State 9580, Light follows actor]
+type=BindToRoot
+trigger1=1
+time=1
+pos=0,0
+
+
+[State 9580, Follow facing]
+type=Turn
+trigger1=Facing!=(Root,Facing)
+
+
+
+[State 9580, Behind the opaque actor]
+type=SprPriority
+trigger1=1
+value=-1
+
+
+[State 9580, No shadow from light]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9580, No physical push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9580, Finite light layer]
+type=DestroySelf
+trigger1=RoundState!=2 || (Root,Life)<=0 || ((Root,MoveType!=A) && (Root,StateNo)!=500 && (Root,StateNo)!=520)
+
+
+
 [Statedef -2]
 
 [State -2, Finite resonance timer]
@@ -7374,3 +7426,14 @@ value=0
 [State -2, Round effect cleanup]
 type=RemoveExplod
 trigger1=!IsHelper && RoundState!=2
+[State -2, Finite technique resource]
+type=Helper
+trigger1=!IsHelper && RoundState=2 && NumHelper(9580)=0 && (MoveType=A || StateNo=500 || StateNo=520)
+helpertype=Normal
+name="Boruto technique"
+ID=9580
+stateno=9580
+postype=P1
+pos=0,0
+ownpal=1
+keyctrl=0

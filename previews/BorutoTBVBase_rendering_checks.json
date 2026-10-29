@@ -1,9 +1,13 @@
 {
-  "runtime_sha256": "3d2d9789aa229dfe06f081965025f9c0bef8f932866ae961e49a1c6c6273a2dc",
-  "exact_rgba_frames": 161,
-  "retained_translucent_pixels": 4793534,
+  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
+  "original_source_frames": 161,
+  "indexed_release_sprites": 287,
+  "png32_release_sprites": 0,
+  "preserved_opaque_pixels": 1383943,
+  "source_light_layers": 77,
+  "no_opaque_actor_in_light": true,
   "movement_uses_movement_sprites": true,
   "source_crops": 8,
   "final_wave_separate_from_body": true,
-  "format": "MUGEN 1.1 SFF 2.01 PNG32 (12), 32-bit RGBA"
+  "format": "SFF RLE8, 8-bit indexed; no PNG32 dependency"
 }

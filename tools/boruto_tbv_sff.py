@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MUGEN 1.1 SFF 2.01: lossless PNG32 RGBA plus legacy indexed effects."""
+"""Compatible indexed SFF export; read PNG32 only for historical comparison."""
 import io,struct
 from PIL import Image
 from boruto_source import rle8_encode,rle8_decode
@@ -8,12 +8,9 @@ def save_sff(entries,path):
     count=len(entries);pc=sum(bool(e[5]) for e in entries.values())
     ph=512;sh=ph+pc*16;ld=sh+count*28;offset=0;pals=[];sprites=[];chunks=[]
     for (g,n),(w,h,x,y,pixels,palette) in entries.items():
-        if palette:
-            pi=len(pals);pals.append(struct.pack('<4H2I',1,pi+1,256,0,offset,1024));chunks.append(palette);offset+=1024
-            fmt,depth=2,8;block=rle8_encode(pixels)
-        else:
-            pi=0;fmt,depth=12,32;png=io.BytesIO();Image.frombytes('RGBA',(w,h),pixels).save(png,format='PNG')
-            block=struct.pack('<I',w*h*4)+png.getvalue()
+        assert palette, 'Release sprites must use the proven indexed format'
+        pi=len(pals);pals.append(struct.pack('<4H2I',1,pi+1,256,0,offset,1024));chunks.append(palette);offset+=1024
+        fmt,depth=2,8;block=rle8_encode(pixels)
         sprites.append(struct.pack('<4H2hH2B2I2H',g,n,w,h,x,y,0,fmt,depth,offset,len(block),pi,0));chunks.append(block);offset+=len(block)
         padding=(-offset)%4
         if padding:chunks.append(bytes(padding));offset+=padding

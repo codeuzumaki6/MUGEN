@@ -1,6 +1,6 @@
 {
   "character": "BorutoTBVBase",
-  "runtime_sha256": "3d2d9789aa229dfe06f081965025f9c0bef8f932866ae961e49a1c6c6273a2dc",
+  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
   "actual_inputs": 120,
   "short_target_cases": 20,
   "receiving_probes": 112,
@@ -10,11 +10,14 @@
   "mugen_additive_effect_frames": 37,
   "original_frames": 161,
   "original_audio_references": 38,
-  "archive_sha256": "d12cae4e98bbe147ab93f26ad89c3c767b2ec7545375eb694a9bffb4ff4911d9",
-  "video_sha256": "30515fcb79babbb303162f20a04ad9d4b990bb6d742f38e3ad68c58cc583a740",
+  "archive_sha256": "82507cce6f6319f72c093063cdae275a8d3b83d475c9f631e6d7a7a167c0e553",
+  "video_sha256": "bd812a4d1b35472e751031df4183c3ad2bd007ad49b152d3b0e20d8a690663a2",
   "previous_characters_unchanged_from": "ade99b53f2b2d32bf0b5c1c974e023e10eac6938",
-  "png32_original_frames": 161,
-  "retained_translucent_pixels": 4793534,
+  "indexed_release_sprites": 287,
+  "png32_release_sprites": 0,
+  "preserved_opaque_pixels": 1383943,
+  "source_light_layers": 77,
+  "no_opaque_actor_in_light": true,
   "actual_movement_cases": 4,
   "smooth_rasengan_motion_cases": 8
 }
