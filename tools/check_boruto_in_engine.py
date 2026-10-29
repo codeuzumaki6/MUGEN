@@ -19,8 +19,8 @@ for face in [1,-1]:
 for c in cases:
  if c['kind']=='move':c['distance']=150 if c['name'] in ['Kunai','Disparo','Futon'] else 80
 if os.environ.get('BORUTO_DEMO')=='showcase':
- names=['Rasengan','Shiden','Kenjutsu','Espiral','Caida','Futon','ultimate']
- cases=[c for c in cases if c['face']==1 and c['form']==0 and c['name'] in names]+[c for c in cases if c['name']=='awakening' and c['face']==1]+[c for c in cases if c['face']==1 and c['form']==1 and c['name'] in ['Rasengan','Espiral','Caida','Invocacion','Futon','ultimate']]
+ names=['Rasengan','Shiden','Kenjutsu','Espiral','Caida','Disparo','Futon','ultimate']
+ cases=[c for c in cases if c['face']==1 and c['form']==0 and c['name'] in names]+[c for c in cases if c['name']=='awakening' and c['face']==1]+[c for c in cases if c['face']==1 and c['form']==1 and c['name'] in ['Rasengan','Espiral','Caida','Disparo','Invocacion','Futon','ultimate']]
 if os.environ.get('BORUTO_CASES'):cases=[c for c in cases if c['name'] in json.loads(os.environ['BORUTO_CASES'])]
 if os.environ.get('BORUTO_FORM'):cases=[c for c in cases if c['form']==int(os.environ['BORUTO_FORM'])]
 if os.environ.get('BORUTO_FACE'):cases=[c for c in cases if c['face']==int(os.environ['BORUTO_FACE'])]
@@ -142,6 +142,12 @@ hook.add('loop','boruto_visual_contact_observer',function()
  local values={ci,tick,stateNo(),time(),spriteVar('group'),spriteVar('image'),posX(),posY(),facing(),var(22),tostring(ctrl())}
  player(2)
  for _,v in ipairs({posX(),posY(),life(),stateNo(),tostring(ctrl()),const('size.height')}) do values[#values+1]=v end
+ player(1);values[#values+1]=numExplod(9570)
+ for _,hid in ipairs({9501,9505,9540}) do
+  local count=numHelper(hid);local st,g,n=-1,-1,-1
+  if count>0 and helper(hid) then st=stateNo();g=spriteVar('group');n=spriteVar('image');player(1) end
+  for _,v in ipairs({count,st,g,n}) do values[#values+1]=v end
+ end
  vf:write(table.concat(values,'\\t')..'\\n');vf:flush();player(1)
 end)
 """.replace('TRACE',json.dumps(str(contact_trace))).replace('TICKS',str(TICKS))

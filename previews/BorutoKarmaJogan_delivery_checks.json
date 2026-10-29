@@ -1,18 +1,19 @@
 {
   "character": "BorutoKarmaJogan",
-  "runtime_sha256": "1deb5ba3c5085c013f9d3535670a2a3cc3e1f112788bf046456cdc0390bc692e",
+  "runtime_sha256": "e6c777ed062fde1f037bac954db4e2c745eb5c49425a6129df2294c18052a5ba",
   "actual_inputs": 120,
   "receiving_probes": 112,
   "clone_checks": 8,
   "short_target_checks": 20,
   "dash_checks": 16,
-  "visible_sphere_contacts": 40,
+  "visible_sphere_contacts": 28,
+  "original_technique_checks": 32,
   "additive_wind_frames": 58,
   "original_files": 618,
   "original_frames": 663,
   "selected_original_audio": 67,
   "awakening": "Karma Jogan resonance, 20 seconds",
   "previous_characters_unchanged_from": "1d4788747397dd88b1130f082cb31cd85a710e51",
-  "archive_sha256": "dc0a94d0599a1f436ea653bb79945fc7872d0e1ba861791f98b1dd7dcebce986",
-  "video_sha256": "444c5f54d751eba30c6682eb8c0f31a22adb972086afd019e4c8a9950804367c"
+  "archive_sha256": "2c2a6b4d97c98563ebe7cfc21d4d9bc904d1a6ae5ef05340bd0882f63c63e5e3",
+  "video_sha256": "3650cc742fe66590fd5e42f6aa58adc428bc4fcf9464b8141c355a111f21e9b2"
 }

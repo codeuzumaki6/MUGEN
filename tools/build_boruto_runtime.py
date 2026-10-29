@@ -39,7 +39,10 @@ def basic():
   for n,p in base.items():action(n+10000*form,p,form,loop=n in [0,11,20,21,100,105,41,44,500,5150],hurt_box='-40,-25,42,0' if n in [170,5100,5110,5150] else None)
  for g,count in [(8700,4),(8710,4),(8720,6),(8900,24)]:action(g,[(f'Common_{g}_{i}',3) for i in range(count)],hurt=False,loop=g==8900,add=True)
  action(8800,seq('Skill02',1,8,3),hurt=False,loop=True,box=lambda k:visual_box(k,.9))
- action(8801,seq('Skill04',1,8,3),hurt=False,loop=True,box=lambda k:visual_box(k,.45))
+ # RasenShot.xml supplies a spherical Rasengan and its burst. The old
+ # Skill04 cells were cylindrical spirals from a different technique.
+ action(8801,seq('Skill03',56,59,3),hurt=False,loop=True,box='-30,-30,30,30')
+ action(8805,seq('Skill03',60,66,2),hurt=False)
  action(8802,seq('Skill02',25,32,3),hurt=False,box=lambda k:visual_box(k,.65))
  action(8803,seq('Skill04',37,44,3),hurt=False,box=lambda k:visual_box(k,.6))
  action(8804,seq('Skill03',12,30,2),hurt=False,box=lambda k:visual_box(k,.55))
@@ -50,6 +53,10 @@ def basic():
  action(8814,rawseq('Duar_Move',1,17,3),hurt=False)
  action(8815,rawseq('AnginRibut',1,9,3),hurt=False,loop=True)
  action(8816,rawseq('WindHand',1,7,3),hurt=False,loop=True)
+ action(8817,[(f'Uzuhiko_Tornado_{i:02}',3) for i in range(4)],hurt=False,loop=True)
+ action(8820,seq('Skill01',17,19,3),hurt=False,loop=True,box='-36,-36,36,36')
+ action(8821,seq('Skill01',20,31,2),hurt=False)
+ action(8822,seq('Skill05',5,22,3),hurt=False,box=lambda k:visual_box(k,.55))
  action(9700,seq('Walk',1,6,3),loop=True)
  action(9701,seq('Skill03',1,11,3),box='-5,-85,130,5')
  action(9790,seq('Hurt',1,2,5))
@@ -66,12 +73,16 @@ def normals():
     STATES.append(s+end(n,21 if air else 25,50 if air else 0))
 def specials():
  throw=[(f'Pain_Skill01_{i:02}ex',5) for i in range(32,36)]
- base={1000:seq('Skill03',1,11,3),1010:seq('Skill01',49,52,4)+seq('Skill01',53,59,3),1020:seq('Skill02',34,43,4),1040:seq('Skill02',17,24,4),1050:seq('Skill04',29,36,4),1400:seq('NAttack',7,10,4),1410:rawseq('Unframe',1,3,8),1420:seq('Skill02',44,54,4),1200:throw,1210:seq('Skill03',33,34,7)+seq('Skill03',55,55,9),1430:seq('Skill04',45,81,2),1440:seq('Skill03',33,35,5)+seq('Skill03',55,55,24)}
- awake={1000:seq('Skill02',44,54,4),1010:seq('Skill05',111,124,3),1020:base[1020],1040:seq('Skill04',82,94,3),1050:seq('Skill03',6,11,3)+seq('Skill04',30,35,3),1400:seq('NAttack',13,16,4),1410:base[1410],1420:seq('Skill05',141,163,3),1200:throw*2,1210:base[1210]*2,1440:seq('Skill05',141,173,2)}
+ base={1000:seq('Skill03',1,11,3),1010:seq('Skill01',49,52,4)+seq('Skill01',53,59,3),1020:seq('Skill02',34,43,4),1040:seq('Skill02',17,24,4),1050:seq('Skill04',29,36,4),1400:seq('NAttack',7,10,4),1410:rawseq('Unframe',1,3,8),1420:seq('Skill02',44,54,4),1200:throw,1210:(seq('Skill03',33,34,7)+seq('Skill03',55,55,9))*2,1430:seq('Skill04',45,81,2)}
+ awake={1000:seq('Skill02',44,54,4),1010:seq('Skill05',111,124,3),1020:base[1020],1040:seq('Skill04',82,94,3),1050:seq('Skill03',6,11,3)+seq('Skill04',30,35,3),1400:seq('NAttack',13,16,4),1410:base[1410],1420:seq('Skill05',141,163,3)+seq('Skill05',164,173,2),1200:throw*2,1210:base[1210]}
  for form in [0,1]:
   for name,b,d,ident,cost in MOVES:
-   if ident==1030 or (form and ident==1430):
-    uzuhiko(ident+10000*form,form,cost,ident==1430);continue
+   if ident==1030:
+    uzuhiko(ident+10000*form,form,cost);continue
+   if ident==1440:
+    futon_rasengan(ident+10000*form,form,cost);continue
+   if form and ident==1430:
+    mokuton(ident+10000*form,cost);continue
    n=ident+10000*form;p=(awake if form else base)[ident];box='-5,-85,145,5'
    if ident in [1000,1020,1050]:box='-15,-85,95,5'
    if ident==1040:box='-15,-90,90,10'
@@ -99,7 +110,7 @@ def specials():
    if not form and ident==1440:
     s+=cast(n,'Time=12',9504,40,-38)+sound(n,'Time=12','Effect/RSGfuton',2)
    elif ident in [1200,1210]:
-    for t in ([9,19,29] if form and ident==1200 else [9,24] if form else [9]):s+=cast(n,f'Time={t}',9500 if ident==1200 else 9501)+sound(n,f'Time={t}','Effect/BladeA' if ident==1200 else 'Effect/rasenS',2)
+    for t in ([14,37] if ident==1210 else [9,19,29] if form else [9]):s+=cast(n,f'Time={t}',9500 if ident==1200 else 9501)+sound(n,f'Time={t}','Effect/BladeA' if ident==1200 else 'Effect/rasenS',2)
    elif ident==1410:s+=cast(n,'Time=10 && NumHelper(9700)=0',9700,-28,0)+c(n,'Order the existing clone','VarAdd','Time=12','v=45\nvalue=1')
    else:
     times={1000:[23,35] if aerial_single else [15,28],1010:[16,28,40] if form else [16,28],1020:[6,23],1040:[6,23],1050:[5,18,30],1400:[5],1420:[28,40,54] if form else [23,35],1430:[18,36,54],1440:[22,38,52]}[ident]
@@ -111,24 +122,39 @@ def specials():
     if ident==1430:s+=sound(n,'Time=14','Effect/windeffect' if form else 'Effect/mon2',2)+(effect(n,'Time=20',8813,0,0,.65,48,-2) if form else '')
    s+=end(n,max(50,sum(t for _,t in p)),50 if ident==1040 else 0);STATES.append(s)
   n=1060+10000*form;action(n,seq('Skill01',60,60,5)+seq('Idle',1,1,5),form);STATES.append(state(n,n)+c(n,'Ground landing','PosSet','Time=0','y=0')+end(n,10))
-def uzuhiko(n,form,cost,charged=False):
- p=seq('Skill03',33,34,8)+seq('Walk',1,6,2)+seq('Skill03',55,55,58)
- action(n,p+single(idle(),-1),form,box='5,-78,68,3',active=list(range(7,len(p))))
- s=state(n,n,move='A',physics='N',cost=cost)+startup(n,'BorutoJogan/05')+c(n,'Clear spiral contact clock','VarSet','Time=0','v=22\nvalue=-1')+cast(n,'Time=0 && NumHelper(9561)=0',9561,0,0)
- s+=c(n,'Close with the rotating chakra','VelSet','Time>=14 && Time<42 && !MoveContact','x=IfElse(P2Dist X>42,7,0)')+c(n,'Plant feet on palm contact','VelSet','MoveContact || Time>=42','x=0')
- first=130 if charged else 105 if form else 75;step=55 if charged else 45 if form else 35
+def uzuhiko(n,form,cost):
+ p=seq('Skill04',82,94,2)+seq('Skill01',60,60,56)
+ action(n,p+single(idle(),-1),form,box='5,-78,68,3',active=list(range(13,len(p))))
+ s=state(n,n,move='A',physics='N',cost=cost)+startup(n,'BorutoJogan/04')+c(n,'Clear spiral contact clock','VarSet','Time=0','v=22\nvalue=-1')+cast(n,'Time=0 && NumHelper(9561)=0',9561,0,0)
+ s+=c(n,'Close with the rotating chakra','VelSet','Time>=20 && Time<50 && !MoveContact','x=IfElse(P2Dist X>42,8,0)')+c(n,'Plant feet on palm contact','VelSet','MoveContact || Time>=50','x=0')
+ first=105 if form else 75;step=45 if form else 35
  s+=hit(n,28,first,ident=1030,stun=85)+'p2stateno=3020\np2getp1state=1\n'
  s+=c(n,'Remember real palm contact','VarSet','MoveHit && NumTarget(1030)>0 && Var(22)<0','v=22\nvalue=Time')
  s+=c(n,'Wind at the hand','Explod','Time=23','anim=8816\npostype=P1\npos=42,-45\nscale=.23,.23\nbindtime=-1\nremovetime=48\nsprpriority=3\nownpal=1\ntrans=add\nremoveongethit=1')
- s+=c(n,'Spiral on the actual struck opponent','Explod','Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0','anim=8815\npostype=P1\npos=58,-48\nscale=.3,.3\nbindtime=-1\nremovetime=42\nsprpriority=3\nownpal=1\ntrans=add\nremoveongethit=1')
+ s+=c(n,'Original tornado only after real contact','Explod','Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0','ID=9570\nanim=8817\npostype=P1\npos=58,0\nscale=.08,.08\nbindtime=-1\nremovetime=42\nsprpriority=-1\nownpal=1\ntrans=add\nremoveongethit=1')
+ s+=c(n,'Tornado grows around the struck opponent','ModifyExplod','Var(22)>=0 && Time>Var(22) && Time<=Var(22)+7','ID=9570\nscale=IfElse(Var(42),.55,.45)*IfElse(Time-Var(22)>=6,1,(Time-Var(22))/6.0),IfElse(Var(42),.55,.45)*IfElse(Time-Var(22)>=6,1,(Time-Var(22))/6.0)')
  s+=c(n,'Finite rotational impact','TargetBind','Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42','ID=1030\ntime=1\npos=58+8*Sin(Time*.3),-12-10*Abs(Sin(Time*.3))')
  for delay in [6,14,22,30]:
   when=f'Var(22)>=0 && Time=Var(22)+{delay} && NumTarget(1030)>0'
   s+=c(n,'Rotation after confirmed contact','TargetLifeAdd',when,f'ID=1030\nvalue=-{step}\nabsolute=1\nkill=1')+c(n,'Count spiral impact','HitAdd',when,'value=1')+effect(n,when,8700,58,-40,.5,8)+sound(n,when,'Effect/windeffect',2)
  s+=c(n,'Release the spinning opponent','TargetState','Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0','ID=1030\nvalue=3021')+end(n,100);STATES.append(s)
+def futon_rasengan(n,form,cost):
+ p=seq('Skill01',1,16,2)+seq('Skill03',55,55,18);action(n,p+single(idle(),-1),form)
+ STATES.append(state(n,n,move='A',physics='N',cost=cost)+startup(n,'BorutoJogan/01')+sound(n,'Time=6','Effect/RsgAura',2)+cast(n,'Time=30',9505,35,-38)+sound(n,'Time=30','Effect/RSGfuton',2)+end(n,60))
+def mokuton(n,cost):
+ p=seq('Skill05',1,4,4)+seq('Skill05',23,25,4);action(n,p+single(idle(),-1),1)
+ STATES.append(state(n,n,move='A',physics='N',cost=cost)+startup(n,'BorutoJogan/05')+cast(n,'Time=14',9540,'IfElse(P2Dist X<60,60,IfElse(P2Dist X>220,220,P2Dist X))',0)+sound(n,'Time=14','Effect/monster',2)+end(n,85))
 def helpers():
- for n,anim,damage,speed,size in [(9500,8800,85,11,'.9,.9'),(9501,8801,125,9,'.45,.45'),(9502,8802,75,9,'.65,.65'),(9503,8803,100,10,'.6,.6'),(9504,8804,205,10,'.55,.55')]:
-  s=state(n,anim,'A','A','N',vel=f'{speed},0')+c(n,'Standalone projectile size','AngleDraw','1','scale='+size)+c(n,'No push','PlayerPush','1','value=0')+hit(n,0,damage,n not in [9500,9501],air=True,projectile=True)+c(n,'Finite projectile','DestroySelf','MoveContact || Time>=50 || RoundState!=2');STATES.append(s)
+ for n,anim,damage,speed,size in [(9500,8800,85,11,'.9,.9'),(9501,8801,125,9,'.65,.65'),(9502,8802,75,9,'.65,.65'),(9503,8803,100,10,'.6,.6'),(9504,8804,205,10,'.55,.55')]:
+  s=state(n,anim,'A','A','N',vel=f'{speed},0')+c(n,'Standalone projectile size','AngleDraw','1','scale='+size)+c(n,'No push','PlayerPush','1','value=0')+hit(n,0,damage,n not in [9500,9501],air=True,projectile=True)
+  if n==9501:s+=c(n,'Original Rasengan burst on real contact','ChangeState','MoveContact','value=9511\nctrl=0')
+  s+=c(n,'Finite projectile','DestroySelf',('' if n==9501 else 'MoveContact || ')+'Time>=50 || RoundState!=2');STATES.append(s)
+ STATES.append(state(9511,8805,'A','I','N',vel='0,0')+c(9511,'Original Rasengan impact size','AngleDraw','1','scale=.23,.23')+c(9511,'No impact push','PlayerPush','1','value=0')+sound(9511,'Time=0','Effect/rasenS',2,65)+c(9511,'Finite non damaging burst','DestroySelf','AnimTime=0 || Time>=16 || RoundState!=2'))
+ STATES.append(state(9505,8820,'A','A','N',vel='10,0')+c(9505,'Original green Futon sphere size','AngleDraw','1','scale=IfElse((Root,Var(42)),.85,.65),IfElse((Root,Var(42)),.85,.65)')+c(9505,'No projectile push','PlayerPush','1','value=0')+hit(9505,0,'IfElse((Root,Var(42)),240,205)',True,air=True,projectile=True)+c(9505,'Green burst on actual contact','ChangeState','MoveContact','value=9512\nctrl=0')+c(9505,'Finite green Rasengan flight','DestroySelf','Time>=50 || RoundState!=2'))
+ STATES.append(state(9512,8821,'A','I','N',vel='0,0')+c(9512,'Green impact at the opponents feet','PosSet','Time=0 && NumEnemy>0','y=EnemyNear,Pos Y')+c(9512,'Original green impact scale','AngleDraw','1','scale=.65,.65')+c(9512,'See the struck opponent','SprPriority','1','value=-1')+c(9512,'No impact push','PlayerPush','1','value=0')+sound(9512,'Time=0','Effect/RSGfuton',2,70)+c(9512,'Finite green impact','DestroySelf','AnimTime=0 || Time>=26 || RoundState!=2'))
+ s=state(9540,8822,'S','A','N',vel='0,0')+c(9540,'Original four Mokuton creatures','AngleDraw','1','scale=.55,.55')+c(9540,'Dragons behind the actual victim','SprPriority','1','value=-1')+c(9540,'No creature push','PlayerPush','1','value=0')
+ for t,d in [(9,90),(21,105),(33,150)]:s+=hit(9540,t,d,t==33,projectile=True,stun=30)+sound(9540,f'Time={t}','Effect/BugPillar',2,65)
+ STATES.append(s+c(9540,'Finite Mokuton attack','DestroySelf','Time>=54 || RoundState!=2 || (Root,Life)<=0'))
  for n in [9700,9701,9790]:
   s=state(n,n,'S','H' if n==9790 else 'I' if n==9700 else 'A','N')
   if n==9700:s+=c(n,'Finite clone health','LifeSet','Time=0 && Var(2)=0','value=120')+c(n,'Remember clone form','VarSet','Time=0 && Var(2)=0','v=0\nvalue=Root,Var(42)')+c(n,'Remember order','VarSet','Time=0 && Var(2)=0','v=1\nvalue=Parent,Var(45)')+c(n,'Initialize once','VarSet','Time=0','v=2\nvalue=1')
@@ -150,7 +176,7 @@ def utility():
   if n==9551:s+=c(n,'Green charge aura','PalFX','1','time=1\ncolor=0\nmul=70,230,120')+c(n,'Charge aura drawing','AngleDraw','1','value=90\nscale=.38,.4')
   else:s+=c(n,'Blue Jogan electricity','ChangeAnim','(Root,StateNo)!=500 && Anim!=8812','value=8812')+c(n,'Charging resonance aura','ChangeAnim','(Root,StateNo)=500 && Anim!=8900','value=8900')+c(n,'Original blue arcs drawing','AngleDraw','1','value=IfElse((Root,StateNo)=500,90,0)\nscale=IfElse((Root,StateNo)=500,.45,.28),IfElse((Root,StateNo)=500,.5,.28)')
   s+=c(n,'Behind main body','SprPriority','1','value=-2')+c(n,'Aura cleanup','DestroySelf','RoundState!=2 || (Root,Life)<=0 || '+('(Root,StateNo)!=500' if n==9551 else '(Root,Var(42))=0'));STATES.append(s)
- STATES.append(state(9561,8815,'A','I','N')+c(9561,'Wind wraps actual caster','BindToRoot','1','time=1\npos=0,-43')+c(9561,'Torso sized rotation','AngleDraw','1','scale=.24,.24')+c(9561,'Bright original chakra ribbons','Trans','1','trans=addalpha\nalpha=256,256')+c(9561,'Visible wind over the coat','SprPriority','1','value=3')+c(9561,'No push from chakra','PlayerPush','1','value=0')+c(9561,'Stop with actual technique','DestroySelf','RoundState!=2 || (Root,Life)<=0 || ((Root,StateNo)%10000!=1030 && (Root,StateNo)!=11430)'))
+ STATES.append(state(9561,8815,'A','I','N')+c(9561,'Wind wraps actual caster','BindToRoot','1','time=1\npos=0,-43')+c(9561,'Torso sized rotation','AngleDraw','1','scale=.24,.24')+c(9561,'Bright original chakra ribbons','Trans','1','trans=addalpha\nalpha=256,256')+c(9561,'Visible wind over the coat','SprPriority','1','value=3')+c(9561,'No push from chakra','PlayerPush','1','value=0')+c(9561,'Stop with actual technique','DestroySelf','RoundState!=2 || (Root,Life)<=0 || (Root,StateNo)%10000!=1030'))
  STATES.append(state(520,520)+startup(520,'BorutoJogan/05')+effect(520,'Time=12',8810,0,-135,.28,20)+sound(520,'Time=12','Effect/RaitonEfx',2)+c(520,'Pay resonance','PowerAdd','Time=47','value=-1500')+c(520,'Karma and Jogan resonance','VarSet','Time=47','v=42\nvalue=1')+c(520,'Twenty second resonance','VarSet','Time=47','v=40\nvalue=1200')+c(520,'Resonance cooldown','VarSet','Time=47','v=41\nvalue=1500')+end(520,62))
 def ultimate():
  for form in [0,1]:
@@ -163,7 +189,7 @@ def ultimate():
   s+=sound(n,'Time=184 && NumTarget(3000)>0','Effect/rasenS',2)+sound(n,'Time=244 && NumTarget(3000)>0','Effect/RSGfuton',4)+effect(n,'Time=244 && NumTarget(3000)>0',8814,'(FVar(0)-Pos X)*Facing','-Pos Y',.4,51)+c(n,'Release rival','TargetState','Time=280 && NumTarget(3000)>0','ID=3000\nvalue=3011')+end(n,310);STATES.append(s)
  STATES.append(state(3010,None,'S','H','N')+c(3010,'Retain opponent artwork','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+ctl(3010,'Independent victim release','SelfState','trigger1=Time>=350\ntrigger2=NumEnemy=0\ntrigger3=EnemyNear,StateNo%10000!=3000\ntrigger4=RoundState!=2','value=5050\nctrl=0'))
  STATES.append(state(3011,None,'A','H','N')+c(3011,'Release motion','VelSet','Time=0','x=-4\ny=-6')+c(3011,'Return opponent state ownership','SelfState','1','value=5050\nctrl=0'))
- STATES.append(state(3020,None,'A','H','N')+c(3020,'Retain victim artwork','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+c(3020,'Uzuhiko rotational reaction','AngleDraw','1','value=Time*18')+ctl(3020,'Independent spiral escape','SelfState','trigger1=Time>=90\ntrigger2=NumEnemy=0\ntrigger3=(EnemyNear,StateNo)%10000!=1030 && (EnemyNear,StateNo)!=11430\ntrigger4=RoundState!=2','value=5050\nctrl=0'))
+ STATES.append(state(3020,None,'A','H','N')+c(3020,'Retain victim artwork','ChangeAnim','Time=0 && SelfAnimExist(5000)','value=5000')+c(3020,'Uzuhiko rotational reaction','AngleDraw','1','value=Time*18')+ctl(3020,'Independent spiral escape','SelfState','trigger1=Time>=90\ntrigger2=NumEnemy=0\ntrigger3=(EnemyNear,StateNo)%10000!=1030\ntrigger4=RoundState!=2','value=5050\nctrl=0'))
  STATES.append(state(3021,None,'A','H','N')+c(3021,'Spiral release velocity','VelSet','Time=0','x=-5\ny=-5')+c(3021,'Restore victim state ownership','SelfState','1','value=5050\nctrl=0'))
 def system():
  s='\n[Statedef -2]\n'

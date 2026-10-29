@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "1deb5ba3c5085c013f9d3535670a2a3cc3e1f112788bf046456cdc0390bc692e",
+  "runtime_sha256": "e6c777ed062fde1f037bac954db4e2c745eb5c49425a6129df2294c18052a5ba",
   "sphere_contacts": [
     {
       "scale": 1,
@@ -238,84 +238,6 @@
     {
       "scale": 1,
       "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 52,
-      "source_frame": "Pain_Skill05_152",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        45.875,
-        0.0
-      ],
-      "damage": 94,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 72,
-      "source_frame": "Pain_Skill05_160",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        46.17500305175781,
-        0.0
-      ],
-      "damage": 112,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 90,
-      "source_frame": "Pain_Skill05_167",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        46.475006103515625,
-        0.0
-      ],
-      "damage": 159,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
         "name": "Rasengan",
         "kind": "move",
         "form": 1,
@@ -441,84 +363,6 @@
         0.0
       ],
       "damage": 136,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 52,
-      "source_frame": "Pain_Skill05_152",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -45.875,
-        0.0
-      ],
-      "damage": 94,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 72,
-      "source_frame": "Pain_Skill05_160",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -46.17500305175781,
-        0.0
-      ],
-      "damage": 112,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 1,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 90,
-      "source_frame": "Pain_Skill05_167",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -46.475006103515625,
-        0.0
-      ],
-      "damage": 159,
       "inside_visible_effect": true
     },
     {
@@ -758,84 +602,6 @@
     {
       "scale": 0.5,
       "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 52,
-      "source_frame": "Pain_Skill05_152",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        45.875,
-        0.0
-      ],
-      "damage": 94,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 72,
-      "source_frame": "Pain_Skill05_160",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        46.17500305175781,
-        0.0
-      ],
-      "damage": 112,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": 1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 90,
-      "source_frame": "Pain_Skill05_167",
-      "caster": [
-        -56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        46.475006103515625,
-        0.0
-      ],
-      "damage": 159,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
         "name": "Rasengan",
         "kind": "move",
         "form": 1,
@@ -962,87 +728,9 @@
       ],
       "damage": 136,
       "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 52,
-      "source_frame": "Pain_Skill05_152",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -45.875,
-        0.0
-      ],
-      "damage": 94,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 72,
-      "source_frame": "Pain_Skill05_160",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -46.17500305175781,
-        0.0
-      ],
-      "damage": 112,
-      "inside_visible_effect": true
-    },
-    {
-      "scale": 0.5,
-      "case": {
-        "name": "Futon",
-        "kind": "move",
-        "form": 1,
-        "face": -1,
-        "b": "z",
-        "d": "D",
-        "state": 11440,
-        "cost": 600,
-        "distance": 150
-      },
-      "tick": 90,
-      "source_frame": "Pain_Skill05_167",
-      "caster": [
-        56.12499237060547,
-        -90.0
-      ],
-      "victim": [
-        -46.475006103515625,
-        0.0
-      ],
-      "damage": 159,
-      "inside_visible_effect": true
     }
   ],
-  "contacts": 40,
+  "contacts": 28,
   "far_misses": 8,
   "blocked_spirals": 4,
   "interrupted_spirals": 4,

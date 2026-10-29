@@ -9,18 +9,24 @@ from boruto_source import ROOT,SRC,BodyPivots,nums,sha,save_sff,read_sff
 CHAR=ROOT/'BorutoKarmaJogan';A=CHAR/'assets'
 ATLASES=['Pain/Pain.plist','Nagato/Nagato.plist','DevaPath/DevaPath.plist','AsuraPath/AsuraPath.plist','Skill/Pain_Skill.plist','Animalpath/AnimalPath.plist','Flog/IzumoFlog.plist','Flog/KakashiFlog.plist']
 PREFIXES=('Pain_','PainNol','Unframe_','UnFx_','JgDm','Jougan','BOLT_','Angin','Wind','RasenShotWind_','FutonRasenWind_','Duar_Move_','Waver_')
+def n_from_key(key):
+ m=re.search(r'_(\d+)$',key);return int(m[1]) if m else -1
 def additive_wind(key,im):
- if not key.startswith(('Angin','Wind','FutonRasenWind_')):return None
- a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0).astype('uint8');return Image.fromarray(a)
+ if not key.startswith(('Angin','Wind','FutonRasenWind_','Uzuhiko_Tornado_')):return None
+ a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8')
+ if key.startswith('Uzuhiko_Tornado_'):
+  # Fade only the new cut edge; the original caster is outside this crop.
+  ramp=np.minimum(np.arange(im.width,dtype=float)/24,1);a[:,:,:3]=np.rint(a[:,:,:3]*ramp[None,:,None]).astype('uint8')
+ a[:,:,3]=np.where(alpha>0,255,0).astype('uint8');return Image.fromarray(a)
 def kind(key):
  n=int(key.rsplit('_',1)[-1]) if key.rsplit('_',1)[-1].isdigit() else 0
  if key.startswith(('JouganSCR_','JouganEye_')):return 'cutin'
  if not key.startswith(('Pain_','Unframe_')):return 'effect'
- if key.startswith('Pain_Skill01_') and (20<=n<=31 or 36<=n<=48):return 'effect'
+ if key.startswith('Pain_Skill01_') and (17<=n<=31 or 36<=n<=48):return 'effect'
  if key.startswith('Pain_Skill02_') and (n in list(range(1,9))+[13] or 25<=n<=32 or 55<=n<=65):return 'effect'
- if key.startswith('Pain_Skill03_') and 12<=n<=30:return 'effect'
+ if key.startswith('Pain_Skill03_') and (12<=n<=30 or 56<=n<=66):return 'effect'
  if key.startswith('Pain_Skill04_') and (1<=n<=28 or 37<=n<=44):return 'effect'
- if key.startswith('Pain_Skill05_') and 125<=n<=140:return 'effect'
+ if key.startswith('Pain_Skill05_') and (5<=n<=22 or 125<=n<=140):return 'effect'
  return 'body' if key.startswith(('Pain_Idle_','Pain_Walk_','Pain_Hurt_','Pain_AirHurt_','Pain_KnockDown_','Unframe_')) else 'body_with_effect'
 def main():
  for f in ['frames','sound']:(A/f).mkdir(parents=True,exist_ok=True)
@@ -36,6 +42,10 @@ def main():
    if not bb:excluded.append(dict(plist=rel,key=key));continue
    ox,oy=nums(m['offset']);axis=(round(im.width/2-ox),bb[3]-1);k=kind(key)
    if k in ['effect','cutin']:axis=(im.width//2,im.height//2)
+   if key.startswith('Pain_Skill03_') and 56<=int(key.rsplit('_',1)[-1])<=66:axis=(60,60) if int(key.rsplit('_',1)[-1])<=59 else (205,217)
+   if key.startswith('Pain_Skill01_') and 17<=n_from_key(key)<=19:axis=(140,84)
+   if key.startswith('Pain_Skill01_') and 20<=n_from_key(key)<=31:axis=(im.width//2,bb[3]-1)
+   if key.startswith('Pain_Skill05_') and 5<=n_from_key(key)<=22:axis=(265,249)
    if key.startswith(('Duar_Move_','Pain_Skill01_2','Pain_Skill04_2')) and k=='effect':axis=(im.width//2,bb[3]-1)
    assert key not in keys,key;keys[key]=[g,counter[g]];counter[g]+=1
    cells.append(dict(key=key,group=g,number=keys[key][1],im=im,axis=axis,kind=k,source_plist=str(p.relative_to(ROOT)),source_key=source_key,source_rotated=m.get('rotated',False)))
@@ -66,6 +76,11 @@ def main():
  entry=next(c for c in cells if c['key']=='Pain_Idle_01');face=entry['im'].crop((25,0,65,40))
  for n,size in [(0,(25,25)),(1,(120,140))]:
   tile=face.resize((25,25) if n==0 else (110,120),Image.Resampling.NEAREST);im=Image.new('RGBA',size);im.alpha_composite(tile,((size[0]-tile.width)//2,(size[1]-tile.height)//2));put(f'Portrait_{n}',9000,n,im,(0,0),kind='portrait')
+ bykey={c['key']:c for c in cells}
+ for i,n in enumerate(range(95,99)):
+  parent=bykey[f'Pain_Skill04_{n:02}']
+  for stem,g,rect,axis,k in [('Uzuhiko_Tornado',34010,(120,0,490,440),(180,420),'effect')]:
+   put(f'{stem}_{i:02}',g,i,parent['im'].crop(rect),axis,kind=k,source_parent=parent['key'],source_rect=list(rect),cut_edge_fade_pixels=24,alignment={'method':'separate original caster and tornado crop'})
  save_sff(pack.entries,CHAR/'BorutoKarmaJogan.sff');actual=read_sff(CHAR/'BorutoKarmaJogan.sff');assert actual==pack.entries
  for name,data in [('keys',keys),('sprites',manifest),('excluded_frames',excluded),('unused_inherited_frames',inherited)]:(A/(name+'.json')).write_text(json.dumps(data,indent=2)+'\n')
  original_pixels=sum(len(v[4]) for v in actual.values());print('SFF:',len(actual),'sprites;',original_pixels,'raw pixel bytes;',(CHAR/'BorutoKarmaJogan.sff').stat().st_size,'RLE8 bytes',flush=True)

@@ -31,6 +31,7 @@
   "indexed_rle8_lossless": true,
   "additive_wind_frames": 58,
   "wind_frames_visible": true,
+  "exact_original_crops": 4,
   "excluded_frames": [
     {
       "plist": "Pain/Pain.plist",

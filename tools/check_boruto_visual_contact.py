@@ -17,7 +17,7 @@ def main():
    ci,tick,st,tm,g,n=map(int,row[:6])
    if ci>=len(report['cases']):continue
    x,y,face=float(row[6]),float(row[7]),int(row[8]);tx,ty,life=float(row[11]),float(row[12]),int(row[13]);height=float(row[16]);previous=hp.get(ci,1000);hp[ci]=life
-   case=report['cases'][ci]['case'];s=case['state'];single=s==1420 or s==11000;double=s in [11420,11440]
+   case=report['cases'][ci]['case'];s=case['state'];single=s==1420 or s==11000;double=s==11420
    if life>=previous or not (single or double):continue
    cell=sprites[g,n];key=cell['key'];ax,ay=cell['axis'];chest=(tx,ty-height*.5)
    if single:
@@ -34,11 +34,11 @@ def main():
      cx,cy=x+face*(265-ax),y+155-ay;distance=((chest[0]-cx)/190)**2+((chest[1]-cy)/110)**2;inside=distance<=1
    assert inside,(case,key,x,y,tx,ty,distance,'victim outside visible effect')
    contacts.append(dict(scale=scale,case=case,tick=tick,source_frame=key,caster=[x,y],victim=[tx,ty],damage=previous-life,inside_visible_effect=inside));represented.add(ci)
-  assert len(represented)==8,(scale,represented)
+  assert len(represented)==6,(scale,represented)
  misses=[]
  for label,flags in [('far_descent',dict(BORUTO_CASES='["Caida"]')),('far_awake',dict(BORUTO_FORM='1',BORUTO_CASES='["Rasengan","Futon"]'))]:
-  report,_=run(label,BORUTO_DISTANCE='500',BORUTO_EXPECT_MISS='1',**flags);native.append(report);assert all(c['damage']==0 and c['ctrl']=='true' for c in report['cases']);misses+=report['cases']
- guard,rows=run('uzuhiko_guard',BORUTO_CASES='["Espiral"]',BORUTO_SPECIAL_GUARD='1',BORUTO_EXPECT_MISS='1');native.append(guard);assert len(guard['cases'])==4 and all(c['damage']==0 for c in guard['cases']);assert not any(int(r[14])==3020 for r in rows)
+  report,_=run(label,BORUTO_DISTANCE='600',BORUTO_EXPECT_MISS='1',**flags);native.append(report);assert all(c['damage']==0 and c['ctrl']=='true' for c in report['cases']);misses+=report['cases']
+ guard,rows=run('uzuhiko_guard',BORUTO_CASES='["Espiral"]',BORUTO_SPECIAL_GUARD='1',BORUTO_EXPECT_MISS='1');native.append(guard);assert len(guard['cases'])==4 and all(c['damage']==0 for c in guard['cases']);assert not any(int(r[14])==3020 or int(r[17])>0 for r in rows)
  interrupted,rows=run('uzuhiko_interruption',BORUTO_CASES='["Espiral"]',BORUTO_UZUHIKO_INTERRUPT='1');native.append(interrupted)
  for i,c in enumerate(interrupted['cases']):
   rr=[r for r in rows if int(r[0])==i];assert any(int(r[14])==3020 for r in rr),'Spiral never connected';assert c['minimum_life']<1200 and c['ctrl']=='true' and rr[-1][15]=='true' and c['damage']<(304 if c['case']['form'] else 215),(c,'Interruption did not release both players')

@@ -1,0 +1,654 @@
+{
+  "runtime_sha256": "e6c777ed062fde1f037bac954db4e2c745eb5c49425a6129df2294c18052a5ba",
+  "cases": [
+    {
+      "scale": 1,
+      "name": "Espiral",
+      "form": 0,
+      "face": 1,
+      "damage": 215,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 1,
+      "name": "Disparo",
+      "form": 0,
+      "face": 1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Invocacion",
+      "form": 0,
+      "face": 1,
+      "damage": 270,
+      "damage_pulses": 3
+    },
+    {
+      "scale": 1,
+      "name": "Futon",
+      "form": 0,
+      "face": 1,
+      "damage": 205,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Espiral",
+      "form": 0,
+      "face": -1,
+      "damage": 215,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 1,
+      "name": "Disparo",
+      "form": 0,
+      "face": -1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Invocacion",
+      "form": 0,
+      "face": -1,
+      "damage": 270,
+      "damage_pulses": 3
+    },
+    {
+      "scale": 1,
+      "name": "Futon",
+      "form": 0,
+      "face": -1,
+      "damage": 205,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Espiral",
+      "form": 1,
+      "face": 1,
+      "damage": 304,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 1,
+      "name": "Disparo",
+      "form": 1,
+      "face": 1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Invocacion",
+      "form": 1,
+      "face": 1,
+      "damage": 345,
+      "damage_pulses": 3,
+      "original_mokuton_creatures": [
+        "Pain_Skill05_05",
+        "Pain_Skill05_06",
+        "Pain_Skill05_07",
+        "Pain_Skill05_08",
+        "Pain_Skill05_09",
+        "Pain_Skill05_10",
+        "Pain_Skill05_11",
+        "Pain_Skill05_12",
+        "Pain_Skill05_13",
+        "Pain_Skill05_14",
+        "Pain_Skill05_15",
+        "Pain_Skill05_16",
+        "Pain_Skill05_17",
+        "Pain_Skill05_18",
+        "Pain_Skill05_19",
+        "Pain_Skill05_20",
+        "Pain_Skill05_21",
+        "Pain_Skill05_22"
+      ],
+      "finite_creatures": true
+    },
+    {
+      "scale": 1,
+      "name": "Futon",
+      "form": 1,
+      "face": 1,
+      "damage": 240,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Espiral",
+      "form": 1,
+      "face": -1,
+      "damage": 304,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 1,
+      "name": "Disparo",
+      "form": 1,
+      "face": -1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 1,
+      "name": "Invocacion",
+      "form": 1,
+      "face": -1,
+      "damage": 345,
+      "damage_pulses": 3,
+      "original_mokuton_creatures": [
+        "Pain_Skill05_05",
+        "Pain_Skill05_06",
+        "Pain_Skill05_07",
+        "Pain_Skill05_08",
+        "Pain_Skill05_09",
+        "Pain_Skill05_10",
+        "Pain_Skill05_11",
+        "Pain_Skill05_12",
+        "Pain_Skill05_13",
+        "Pain_Skill05_14",
+        "Pain_Skill05_15",
+        "Pain_Skill05_16",
+        "Pain_Skill05_17",
+        "Pain_Skill05_18",
+        "Pain_Skill05_19",
+        "Pain_Skill05_20",
+        "Pain_Skill05_21",
+        "Pain_Skill05_22"
+      ],
+      "finite_creatures": true
+    },
+    {
+      "scale": 1,
+      "name": "Futon",
+      "form": 1,
+      "face": -1,
+      "damage": 240,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Espiral",
+      "form": 0,
+      "face": 1,
+      "damage": 215,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Disparo",
+      "form": 0,
+      "face": 1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Invocacion",
+      "form": 0,
+      "face": 1,
+      "damage": 270,
+      "damage_pulses": 3
+    },
+    {
+      "scale": 0.5,
+      "name": "Futon",
+      "form": 0,
+      "face": 1,
+      "damage": 205,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Espiral",
+      "form": 0,
+      "face": -1,
+      "damage": 215,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Disparo",
+      "form": 0,
+      "face": -1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Invocacion",
+      "form": 0,
+      "face": -1,
+      "damage": 270,
+      "damage_pulses": 3
+    },
+    {
+      "scale": 0.5,
+      "name": "Futon",
+      "form": 0,
+      "face": -1,
+      "damage": 205,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Espiral",
+      "form": 1,
+      "face": 1,
+      "damage": 304,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Disparo",
+      "form": 1,
+      "face": 1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Invocacion",
+      "form": 1,
+      "face": 1,
+      "damage": 345,
+      "damage_pulses": 3,
+      "original_mokuton_creatures": [
+        "Pain_Skill05_05",
+        "Pain_Skill05_06",
+        "Pain_Skill05_07",
+        "Pain_Skill05_08",
+        "Pain_Skill05_09",
+        "Pain_Skill05_10",
+        "Pain_Skill05_11",
+        "Pain_Skill05_12",
+        "Pain_Skill05_13",
+        "Pain_Skill05_14",
+        "Pain_Skill05_15",
+        "Pain_Skill05_16",
+        "Pain_Skill05_17",
+        "Pain_Skill05_18",
+        "Pain_Skill05_19",
+        "Pain_Skill05_20",
+        "Pain_Skill05_21",
+        "Pain_Skill05_22"
+      ],
+      "finite_creatures": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Futon",
+      "form": 1,
+      "face": 1,
+      "damage": 240,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Espiral",
+      "form": 1,
+      "face": -1,
+      "damage": 304,
+      "damage_pulses": 5,
+      "original_body_wrap": true,
+      "original_lunge": true,
+      "tornado_after_contact": true,
+      "victim_released": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Disparo",
+      "form": 1,
+      "face": -1,
+      "damage": 250,
+      "damage_pulses": 2,
+      "blue_spheres_landed": 2,
+      "original_flight": [
+        "Pain_Skill03_56",
+        "Pain_Skill03_57",
+        "Pain_Skill03_58"
+      ],
+      "original_burst": [
+        "Pain_Skill03_60",
+        "Pain_Skill03_61",
+        "Pain_Skill03_62",
+        "Pain_Skill03_63",
+        "Pain_Skill03_64",
+        "Pain_Skill03_65",
+        "Pain_Skill03_66"
+      ]
+    },
+    {
+      "scale": 0.5,
+      "name": "Invocacion",
+      "form": 1,
+      "face": -1,
+      "damage": 345,
+      "damage_pulses": 3,
+      "original_mokuton_creatures": [
+        "Pain_Skill05_05",
+        "Pain_Skill05_06",
+        "Pain_Skill05_07",
+        "Pain_Skill05_08",
+        "Pain_Skill05_09",
+        "Pain_Skill05_10",
+        "Pain_Skill05_11",
+        "Pain_Skill05_12",
+        "Pain_Skill05_13",
+        "Pain_Skill05_14",
+        "Pain_Skill05_15",
+        "Pain_Skill05_16",
+        "Pain_Skill05_17",
+        "Pain_Skill05_18",
+        "Pain_Skill05_19",
+        "Pain_Skill05_20",
+        "Pain_Skill05_21",
+        "Pain_Skill05_22"
+      ],
+      "finite_creatures": true
+    },
+    {
+      "scale": 0.5,
+      "name": "Futon",
+      "form": 1,
+      "face": -1,
+      "damage": 240,
+      "damage_pulses": 1,
+      "original_green_projectile": [
+        "Pain_Skill01_17",
+        "Pain_Skill01_18",
+        "Pain_Skill01_19"
+      ],
+      "original_green_impact": [
+        "Pain_Skill01_20",
+        "Pain_Skill01_21",
+        "Pain_Skill01_22",
+        "Pain_Skill01_23",
+        "Pain_Skill01_24",
+        "Pain_Skill01_25",
+        "Pain_Skill01_26",
+        "Pain_Skill01_27",
+        "Pain_Skill01_28",
+        "Pain_Skill01_29",
+        "Pain_Skill01_30",
+        "Pain_Skill01_31"
+      ]
+    }
+  ],
+  "blue_double_shot_cases": 8,
+  "green_futon_cases": 8,
+  "contact_tornado_cases": 8,
+  "awakened_mokuton_cases": 4,
+  "original_assets": "Mon/RasenShot.xml, Mon/FutonRasen.xml, main skill04 uzu sequence, Mon/MonsterTanah.xml"
+}

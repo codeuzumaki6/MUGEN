@@ -27,11 +27,11 @@ def main():
  stereo=np.frombuffer(raw.read_bytes(),dtype='<i2').reshape(-1,2).astype(float)/32768;mono=stereo.mean(1)
  # The claw effect shares the startup effect's opening waveform. Anchor to
  # each original startup voice instead, so later minion hits cannot win.
- voices={name:'BorutoJogan/'+('05' if name in ['Futon','ultimate','awakening'] else '04' if name=='Invocacion' else '03' if name in ['Rasengan','Espiral','Caida'] else '02' if name in ['Kenjutsu','Ascendente'] else '01') for name in ['Rasengan','Shiden','Kenjutsu','Espiral','Ascendente','Combo','Barrido','Bunshin','Caida','Kunai','Disparo','Invocacion','Futon','ultimate','awakening']}
+ voices={name:'BorutoJogan/'+('05' if name in ['ultimate','awakening'] else '04' if name in ['Invocacion','Espiral'] else '03' if name in ['Rasengan','Caida','Disparo'] else '02' if name in ['Kenjutsu','Ascendente'] else '01') for name in ['Rasengan','Shiden','Kenjutsu','Espiral','Ascendente','Combo','Barrido','Bunshin','Caida','Kunai','Disparo','Invocacion','Futon','ultimate','awakening']}
  soundmap=json.loads((ROOT/'BorutoKarmaJogan/assets/sounds.json').read_text())['keys'];entries=[];selected=[];scores={};voicenames={}
  for case in ids:
   act=[c for c in cues if c[1]==case and c[2] in activations];assert len(act)==1,(case,act);entries.append(act[0])
-  rec=reports[case]['case'];name='BorutoJogan/05' if rec['name']=='Espiral' or (rec['name']=='Invocacion' and rec['form']) else voices[rec['name']];g,n=soundmap[name];voicenames[case]=name
+  rec=reports[case]['case'];name='BorutoJogan/05' if rec['name']=='Invocacion' and rec['form'] else voices[rec['name']];g,n=soundmap[name];voicenames[case]=name
   with wave.open(str(ROOT/'BorutoKarmaJogan/assets/sound'/f'{g}_{n}.wav')) as wav:
    cue=resample_poly(np.frombuffer(wav.readframes(wav.getnframes()),dtype='<i2').astype(float)/32768,44100,wav.getframerate())[:round(.6*44100)]
   prediction=None if not selected else selected[-1]+(act[0][0]-entries[-2][0])*44100/60
@@ -50,7 +50,7 @@ def main():
   offset=p/44100-activation[0][0]/60
   start=round((fs[0][1]/60+offset)*44100);end=round(((fs[-1][1]+6)/60+offset)*44100)
   assert start>=0 and end<=len(stereo),(case,start,end,len(stereo))
-  rec=reports[case]['case'];display='Uzuhiko reforzado' if rec['name']=='Invocacion' and rec['form'] else 'Uzuhiko' if rec['name']=='Espiral' else 'Rasengan doble' if rec['name']=='Caida' and rec['form'] else 'Rasengan doble y resonancia' if rec['name']=='Futon' and rec['form'] else rec['name'];label=folder/f'label-{case}.txt';label.write_text(('KARMA / JOGAN' if rec['form'] else 'BASE')+' | '+display if rec['kind']!='awakening' else 'ABAJO + PAUSA | Resonancia Karma / Jogan');segment=(end-start)/44100;labels.append((label,elapsed,elapsed+segment));elapsed+=segment
+  rec=reports[case]['case'];display='Mokuton' if rec['name']=='Invocacion' and rec['form'] else 'Uzuhiko: envoltura, impacto y tornado' if rec['name']=='Espiral' else 'Rasengan doble gigante' if rec['name']=='Caida' and rec['form'] else 'Futon Rasengan verde' if rec['name']=='Futon' else 'RT: dos Rasengan azules' if rec['name']=='Disparo' else rec['name'];label=folder/f'label-{case}.txt';label.write_text(('KARMA / JOGAN' if rec['form'] else 'BASE')+' | '+display if rec['kind']!='awakening' else 'ABAJO + PAUSA | Resonancia Karma / Jogan');segment=(end-start)/44100;labels.append((label,elapsed,elapsed+segment));elapsed+=segment
   samples.append(stereo[start:end]);proof.append(dict(case=case,cue_frame=activation[0][0],state=activation[0][2],correlation=float(scores[p]),actual_sample_seconds=p/44100,voice=voicenames[case],anchor='Original Boruto pack startup sample'))
   for j,row in enumerate(fs):
    image=folder/f'Ikemen_GO{row[0]:03d}.png';assert image.exists();step=fs[j+1][1]-row[1] if j+1<len(fs) else 6
