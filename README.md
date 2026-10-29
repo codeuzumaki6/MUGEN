@@ -466,6 +466,7 @@ python tools/validate_boruto.py
 python tools/check_boruto_in_engine.py
 python tools/check_boruto_visual_contact.py
 python tools/check_boruto_original_kit.py
+python tools/check_boruto_uzuhiko_rendering.py
 python tools/check_roster_receiving.py --characters BorutoKarmaJogan --out previews/BorutoKarmaJogan_receiving
 python tools/check_boruto_clone.py
 python tools/check_boruto_short_targets.py
@@ -479,3 +480,5 @@ python tools/verify_boruto_delivery.py --write
 Corrección de Boruto Karma/Jōgan: se estabilizan 166 puntos de apoyo; el personaje despega durante los Rasengan descendentes y dobles y sus zonas de impacto siguen las esferas. Uzuhiko envuelve el cuerpo en viento, exige contacto de palma y libera al rival al terminar o sufrir una interrupción. Se recuperan 58 efectos de viento que se perdían por su transparencia y se cambia la pose sentada entre comandos por una postura baja. [28 contactos visibles, alcance, guardia e interrupción](previews/BorutoKarmaJogan_visual_contact_checks.json). Sustituye la carpeta anterior y reinicia MUGEN.
 
 Restauración del kit original de Boruto: **RT dispara dos Rasengan azules**, **abajo + RT lanza el Fūton Rasengan verde**, **abajo-atrás + Y encadena envoltura, avance, impacto y tornado de Uzuhiko**, y **abajo + RB en despertar invoca el Mokuton de cuatro criaturas**. Los Rasengan dobles gigantes siguen en abajo + B. Se usan las secuencias originales del paquete y cuatro recortes del tornado para separar el efecto de Boruto. [32 comprobaciones de las técnicas originales](previews/BorutoKarmaJogan_original_kit_checks.json).
+
+Corregida la transparencia de Uzuhiko en MUGEN: los veinte cuadros de viento, mano y tornado usan mezcla aditiva en el AIR; los nueve cuadros del viento suavizan sus bordes para evitar el recuadro. Se mantienen los demás sprites empacados y las cuatro técnicas restauradas. [Clip de Uzuhiko en base y despertar](previews/BorutoKarmaJogan_uzuhiko_motor.mp4) · [Comprobación de transparencia y bordes](previews/BorutoKarmaJogan_uzuhiko_rendering_checks.json) · [Cuatro casos nativos de Uzuhiko](previews/BorutoKarmaJogan_uzuhiko_native_checks.json).

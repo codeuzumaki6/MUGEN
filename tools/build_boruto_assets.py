@@ -17,6 +17,14 @@ def additive_wind(key,im):
  if key.startswith('Uzuhiko_Tornado_'):
   # Fade only the new cut edge; the original caster is outside this crop.
   ramp=np.minimum(np.arange(im.width,dtype=float)/24,1);a[:,:,:3]=np.rint(a[:,:,:3]*ramp[None,:,None]).astype('uint8')
+ if key.startswith('AnginRibut_'):
+  # The source ribbons continue beyond this rectangular atlas cell. Fade
+  # their four cut edges before indexing, so the canvas cannot draw a box.
+  xx=np.arange(im.width);yy=np.arange(im.height)
+  fx=np.minimum(np.minimum(xx,im.width-1-xx)/72,1)
+  fy=np.minimum(np.minimum(yy,im.height-1-yy)/48,1)
+  fx=fx*fx*(3-2*fx);fy=fy*fy*(3-2*fy)
+  a[:,:,:3]=np.rint(a[:,:,:3]*fy[:,None,None]*fx[None,:,None]).astype('uint8')
  a[:,:,3]=np.where(alpha>0,255,0).astype('uint8');return Image.fromarray(a)
 def kind(key):
  n=int(key.rsplit('_',1)[-1]) if key.rsplit('_',1)[-1].isdigit() else 0
@@ -61,7 +69,7 @@ def main():
    v=np.load(npz);pix=v['pix'].tobytes();pal=v['pal'].tobytes();pack.entries[g,n]=(im.width,im.height,*axis,pix,pal)
   else:
    pack.put((g,n),storage,axis);e=pack.entries[g,n];np.savez_compressed(npz,pix=np.frombuffer(e[4],dtype=np.uint8),pal=np.frombuffer(e[5],dtype=np.uint8))
-  e=pack.entries[g,n];manifest.append(dict(key=key,group=g,number=n,file=str(p.relative_to(CHAR)),axis=list(axis),rgba_sha256=digest,indexed_pixels_sha256=sha(e[4]),palette_sha256=sha(e[5]),redrawn=False,ai_generated=False,**({'rendering':'source alpha premultiplied into RGB for additive wind'} if render is not None else {}),**meta));keys[key]=[g,n]
+  e=pack.entries[g,n];manifest.append(dict(key=key,group=g,number=n,file=str(p.relative_to(CHAR)),axis=list(axis),rgba_sha256=digest,indexed_pixels_sha256=sha(e[4]),palette_sha256=sha(e[5]),redrawn=False,ai_generated=False,**({'rendering':'source alpha premultiplied into RGB for additive wind'} if render is not None else {}),**({'canvas_edge_fade_pixels':[72,48]} if key.startswith('AnginRibut_') else {}),**meta));keys[key]=[g,n]
  for i,cell in enumerate(cells):
   im=cell['im'];axis=cell['axis'];alignment=dict(method='original body feet' if cell['kind'] in ['body','body_with_effect'] else 'standalone effect centre')
   if cell['kind']=='body_with_effect' and (im.width>160 or im.height>150):

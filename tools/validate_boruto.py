@@ -27,6 +27,9 @@ for line in (CHAR/'BorutoKarmaJogan.air').read_text().splitlines():
     m=re.match(r'\s*(\d+),\s*(\d+),\s*(-?\d+),\s*(-?\d+),\s*(-?\d+)',line)
     if m:
         g,n,x,y,t=map(int,m.groups());check((g,n) in sprites,f'Action {current}: missing sprite {g},{n}');actions[current].append((g,n,t))
+        if current in [8815,8816,8817]:
+            parts=[s.strip().upper() for s in line.split(',')]
+            check(len(parts)>=7 and parts[6]=='A',f'Action {current}: missing standard MUGEN AIR additive transparency')
 check(len(actions.get(0,[]))==3,'Invalid original idle')
 for n in [5100,5110,5120]:check(n in actions and all(t>=0 for _,_,t in actions[n]),f'Infinite recovery {n}')
 states=set();sections=[];counts={};commands=set();used=set()

@@ -51,9 +51,11 @@ def basic():
  action(8812,[(f'BOLT_{i:02}',4) for i in [1,2,3,7,8,9]],hurt=False,loop=True)
  action(8813,seq('Skill05',125,140,3),hurt=False)
  action(8814,rawseq('Duar_Move',1,17,3),hurt=False)
- action(8815,rawseq('AnginRibut',1,9,3),hurt=False,loop=True)
- action(8816,rawseq('WindHand',1,7,3),hurt=False,loop=True)
- action(8817,[(f'Uzuhiko_Tornado_{i:02}',3) for i in range(4)],hurt=False,loop=True)
+ # MUGEN reads additive blending from AIR. Explod's trans parameter is an
+ # Ikemen extension and must not be the only source of transparency.
+ action(8815,rawseq('AnginRibut',1,9,3),hurt=False,loop=True,add=True)
+ action(8816,rawseq('WindHand',1,7,3),hurt=False,loop=True,add=True)
+ action(8817,[(f'Uzuhiko_Tornado_{i:02}',3) for i in range(4)],hurt=False,loop=True,add=True)
  action(8820,seq('Skill01',17,19,3),hurt=False,loop=True,box='-36,-36,36,36')
  action(8821,seq('Skill01',20,31,2),hurt=False)
  action(8822,seq('Skill05',5,22,3),hurt=False,box=lambda k:visual_box(k,.55))
@@ -130,8 +132,8 @@ def uzuhiko(n,form,cost):
  first=105 if form else 75;step=45 if form else 35
  s+=hit(n,28,first,ident=1030,stun=85)+'p2stateno=3020\np2getp1state=1\n'
  s+=c(n,'Remember real palm contact','VarSet','MoveHit && NumTarget(1030)>0 && Var(22)<0','v=22\nvalue=Time')
- s+=c(n,'Wind at the hand','Explod','Time=23','anim=8816\npostype=P1\npos=42,-45\nscale=.23,.23\nbindtime=-1\nremovetime=48\nsprpriority=3\nownpal=1\ntrans=add\nremoveongethit=1')
- s+=c(n,'Original tornado only after real contact','Explod','Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0','ID=9570\nanim=8817\npostype=P1\npos=58,0\nscale=.08,.08\nbindtime=-1\nremovetime=42\nsprpriority=-1\nownpal=1\ntrans=add\nremoveongethit=1')
+ s+=c(n,'Wind at the hand','Explod','Time=23','anim=8816\npostype=P1\npos=42,-45\nscale=.23,.23\nbindtime=-1\nremovetime=48\nsprpriority=3\nownpal=1\nremoveongethit=1')
+ s+=c(n,'Original tornado only after real contact','Explod','Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0','ID=9570\nanim=8817\npostype=P1\npos=58,0\nscale=.08,.08\nbindtime=-1\nremovetime=42\nsprpriority=-1\nownpal=1\nremoveongethit=1')
  s+=c(n,'Tornado grows around the struck opponent','ModifyExplod','Var(22)>=0 && Time>Var(22) && Time<=Var(22)+7','ID=9570\nscale=IfElse(Var(42),.55,.45)*IfElse(Time-Var(22)>=6,1,(Time-Var(22))/6.0),IfElse(Var(42),.55,.45)*IfElse(Time-Var(22)>=6,1,(Time-Var(22))/6.0)')
  s+=c(n,'Finite rotational impact','TargetBind','Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42','ID=1030\ntime=1\npos=58+8*Sin(Time*.3),-12-10*Abs(Sin(Time*.3))')
  for delay in [6,14,22,30]:

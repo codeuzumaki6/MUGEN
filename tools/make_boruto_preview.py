@@ -69,5 +69,19 @@ def main():
   im=Image.open(folder/f'Ikemen_GO{row[0]:03d}.png');im.thumbnail((320,180));sheet.paste(im,((i%3)*320,(i//3)*180))
  sheet.save(video.with_suffix('.jpg'))
  report=dict(character='BorutoKarmaJogan',frames=len(frames),cases=len(ids),duration=duration,video=video.name,sha256=hashlib.sha256(video.read_bytes()).hexdigest(),audio='Actual engine SDL stereo; no offline sound effects',activations=proof,runtime_sha256=json.loads((OUT/capture_report).read_text())['runtime_sha256'])
+ # A short excerpt makes the reported visual bug easy to review in both forms.
+ segments=[]
+ for label,a,b in labels:
+  ci=int(label.stem.split('-')[-1]);rec=reports[ci]['case']
+  if rec['name']=='Espiral':segments.append(dict(case=ci,form=rec['form'],start=a,end=b))
+ assert len(segments)==2 and {s['form'] for s in segments}=={0,1}
+ filters=[]
+ for i,segment in enumerate(segments):
+  a,b=segment['start'],segment['end']
+  filters.extend([f'[0:v]trim=start={a}:end={b},setpts=PTS-STARTPTS[v{i}]',f'[0:a]atrim=start={a}:end={b},asetpts=PTS-STARTPTS[a{i}]'])
+ filters.append('[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]')
+ focus=OUT/'BorutoKarmaJogan_uzuhiko_motor.mp4'
+ subprocess.run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(video),'-filter_complex',';'.join(filters),'-map','[v]','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','18','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart',str(focus)],check=True)
+ report['uzuhiko_excerpt']=dict(video=focus.name,sha256=hashlib.sha256(focus.read_bytes()).hexdigest(),segments=segments,duration=sum(s['end']-s['start'] for s in segments),source='Excerpt of the actual engine recording, with its captured audio')
  (OUT/(prefix+'_preview_checks.json')).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 if __name__=='__main__':main()

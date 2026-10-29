@@ -1,0 +1,251 @@
+{
+  "runtime_sha256": "92299a61018149af743fedbd1a162d98f895cf12f467ae7f3c9a94b394ddc451",
+  "standard_air_actions": [
+    8815,
+    8816,
+    8817
+  ],
+  "additive_frames": [
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        0
+      ],
+      "key": "AnginRibut_01",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        1
+      ],
+      "key": "AnginRibut_02",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        2
+      ],
+      "key": "AnginRibut_03",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        3
+      ],
+      "key": "AnginRibut_04",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        4
+      ],
+      "key": "AnginRibut_05",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        5
+      ],
+      "key": "AnginRibut_06",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        6
+      ],
+      "key": "AnginRibut_07",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        7
+      ],
+      "key": "AnginRibut_08",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8815,
+      "sprite": [
+        32006,
+        8
+      ],
+      "key": "AnginRibut_09",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        30
+      ],
+      "key": "WindHand_01",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        31
+      ],
+      "key": "WindHand_02",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        32
+      ],
+      "key": "WindHand_03",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        33
+      ],
+      "key": "WindHand_04",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        34
+      ],
+      "key": "WindHand_05",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        35
+      ],
+      "key": "WindHand_06",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8816,
+      "sprite": [
+        32006,
+        36
+      ],
+      "key": "WindHand_07",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8817,
+      "sprite": [
+        34010,
+        0
+      ],
+      "key": "Uzuhiko_Tornado_00",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8817,
+      "sprite": [
+        34010,
+        1
+      ],
+      "key": "Uzuhiko_Tornado_01",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8817,
+      "sprite": [
+        34010,
+        2
+      ],
+      "key": "Uzuhiko_Tornado_02",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    },
+    {
+      "action": 8817,
+      "sprite": [
+        34010,
+        3
+      ],
+      "key": "Uzuhiko_Tornado_03",
+      "air_additive": true,
+      "light_and_dark_backgrounds": true
+    }
+  ],
+  "feathered_canvas_frames": [
+    {
+      "key": "AnginRibut_01",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_02",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_03",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_04",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_05",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_06",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_07",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_08",
+      "maximum_canvas_edge_rgb": 0
+    },
+    {
+      "key": "AnginRibut_09",
+      "maximum_canvas_edge_rgb": 0
+    }
+  ],
+  "original_rgba_preserved": true,
+  "method": "Packed SFF + standard MUGEN AIR A; software blend on light and dark backgrounds",
+  "native_engine_validation": "BorutoKarmaJogan_original_kit_checks.json"
+}
