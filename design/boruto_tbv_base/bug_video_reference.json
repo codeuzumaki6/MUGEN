@@ -1,0 +1,15 @@
+{
+  "file_id": "file_00000000b7a4820dbc396b7c367cc106",
+  "name": "mugen-2026-10-28-20-43-22_77af3L57.mp4",
+  "bytes": 18010177,
+  "sha256": "aa3b33fa1606ddb891c4b685671f121d5e46a7b991bd1d6be06e1cea9a9e3ede",
+  "duration_seconds": 33.189189,
+  "width": 1920,
+  "height": 1080,
+  "reviewed_defects": [
+    "Opacity and colour banding in composite wind and attack frames",
+    "Hurt and get-up poses reused during movement",
+    "Abrupt aerial position resets",
+    "Oversized final wave around 26.5 seconds"
+  ]
+}

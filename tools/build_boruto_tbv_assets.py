@@ -4,7 +4,8 @@ from pathlib import Path
 import hashlib,json,plistlib,re,struct,subprocess
 import numpy as np
 from PIL import Image,ImageDraw
-from boruto_source import ROOT,nums,sha,save_sff,read_sff
+from boruto_source import ROOT,nums,sha
+from boruto_tbv_sff import save_sff,read_sff
 from build_roster_revision import Archive
 
 NAME='BorutoTBVBase';CHAR=ROOT/NAME;SRC=ROOT/'source_material/BorutoTBV_original/full_archive/Boruto Ver2 by Vaydra'
@@ -25,11 +26,13 @@ def main():
  archive=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes());archive.entries.clear();manifest=[];keys={};excluded=[]
  def put(key,g,n,im,xy,**meta):
   dest=A/'frames'/f'{g}_{n}.png';im.save(dest);storage=im
-  if meta.get('kind')=='effect' and not meta.get('shared_project_effect'):
-   a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8')
-   yy=np.minimum(np.arange(im.height),im.height-1-np.arange(im.height));xx=np.minimum(np.arange(im.width),im.width-1-np.arange(im.width));fade=np.minimum(yy[:,None]/12,1)*np.minimum(xx[None,:]/12,1);a[:,:,:3]=np.rint(a[:,:,:3]*fade[:,:,None]).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0);storage=Image.fromarray(a)
-  archive.put((g,n),storage,xy);entry=archive.entries[g,n];keys[key]=[g,n]
-  manifest.append(dict(key=key,group=g,number=n,file=str(dest.relative_to(CHAR)),axis=list(xy),rgba_sha256=sha(im.tobytes()),indexed_pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),redrawn=False,ai_generated=False,**meta))
+  if g in [31000,31010]:
+   if g==31010:
+    a=np.array(im.convert('RGBA'));ramp=np.minimum(np.arange(im.width)/18,1);a[:,:,3]=np.rint(a[:,:,3]*ramp[None,:]).astype('uint8');storage=Image.fromarray(a)
+   archive.entries[g,n]=(im.width,im.height,*xy,storage.convert('RGBA').tobytes(),b'')
+  else:archive.put((g,n),storage,xy)
+  entry=archive.entries[g,n];keys[key]=[g,n]
+  manifest.append(dict(key=key,group=g,number=n,file=str(dest.relative_to(CHAR)),axis=list(xy),rgba_sha256=sha(im.tobytes()),pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),storage='PNG32 RGBA' if not entry[5] else 'RLE8 indexed',redrawn=False,ai_generated=False,**meta))
  for rel in ['Hiruzen/Hiruzen.plist','Hiruzen/Hiruzen_Skill.plist']:
   p=SRC/rel;data=plistlib.loads(p.read_bytes());sheet=Image.open(p.parent/data['metadata']['textureFileName']).convert('RGBA')
   for raw,r in data['frames'].items():
@@ -38,6 +41,10 @@ def main():
    xy=axis(key,im);xy=(min(xy[0],im.width-1),min(xy[1],im.height-1))
    put(key,31000,len(keys),im,xy,kind='effect' if effect(key) else 'body_with_effect' if im.width>160 or im.height>170 else 'body',source_plist=str(p.relative_to(ROOT)),source_key=raw)
  common=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes())
+ bykey={r['key']:r for r in manifest}
+ for i,n in enumerate(range(20,28)):
+  parent=bykey[f'Hiruzen_Skill05_{n:02}'];im=Image.open(CHAR/parent['file']).convert('RGBA');rect=(170,0,680,396)
+  put(f'UzuhikoWave_{i:02}',31010,i,im.crop(rect),(-45,375),kind='effect',source_parent=parent['key'],source_rect=list(rect))
  for g,count in [(8700,4),(8710,4),(8720,6),(8900,24)]:
   for n in range(count):im,xy=common.image((g,n));put(f'Common_{g}_{n}',g,n,im,xy,kind='effect',shared_project_effect=True)
  face=Image.open(CHAR/manifest[3]['file']).crop((20,4,50,34))

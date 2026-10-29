@@ -1,0 +1,149 @@
+{
+  "runtime_sha256": "3d2d9789aa229dfe06f081965025f9c0bef8f932866ae961e49a1c6c6273a2dc",
+  "cases": [
+    {
+      "case": {
+        "name": "movement",
+        "kind": "movement",
+        "form": 0,
+        "face": 1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        11,
+        12,
+        40,
+        50,
+        52
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 3000,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "movement",
+        "kind": "movement",
+        "form": 0,
+        "face": -1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        11,
+        12,
+        40,
+        50,
+        52
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 3000,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "movement",
+        "kind": "movement",
+        "form": 1,
+        "face": 1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        11,
+        12,
+        40,
+        50,
+        52
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 3000,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "movement",
+        "kind": "movement",
+        "form": 1,
+        "face": -1,
+        "distance": 180
+      },
+      "states": [
+        0,
+        11,
+        12,
+        40,
+        50,
+        52
+      ],
+      "damage": 0,
+      "minimum_life": 1200,
+      "min_power": 3000,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 0,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    }
+  ]
+}

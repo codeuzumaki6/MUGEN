@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "4842a4496ab642fba67a4c04652622e681c5237417a653ce7fb6f8aee4c47726",
+  "runtime_sha256": "3d2d9789aa229dfe06f081965025f9c0bef8f932866ae961e49a1c6c6273a2dc",
   "cases": [
     {
       "case": {
@@ -176,7 +176,7 @@
         20,
         1040
       ],
-      "damage": 120,
+      "damage": 210,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -188,8 +188,8 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
-      "damage_pulses": 1,
-      "pulse_span_ticks": 0,
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 0,
@@ -1187,7 +1187,7 @@
         20,
         1040
       ],
-      "damage": 120,
+      "damage": 210,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -1199,8 +1199,8 @@
       "end_form": 0,
       "hurt": "false",
       "guard": "false",
-      "damage_pulses": 1,
-      "pulse_span_ticks": 0,
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 0,
@@ -2198,7 +2198,7 @@
         20,
         11040
       ],
-      "damage": 177,
+      "damage": 319,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -2210,8 +2210,8 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
-      "damage_pulses": 1,
-      "pulse_span_ticks": 0,
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 1,
@@ -3280,7 +3280,7 @@
         20,
         11040
       ],
-      "damage": 177,
+      "damage": 319,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -3292,8 +3292,8 @@
       "end_form": 1,
       "hurt": "false",
       "guard": "false",
-      "damage_pulses": 1,
-      "pulse_span_ticks": 0,
+      "damage_pulses": 2,
+      "pulse_span_ticks": 11,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 1,

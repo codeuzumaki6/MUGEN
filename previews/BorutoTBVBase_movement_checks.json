@@ -1,0 +1,41 @@
+{
+  "runtime_sha256": "3d2d9789aa229dfe06f081965025f9c0bef8f932866ae961e49a1c6c6273a2dc",
+  "cases": [
+    {
+      "form": 0,
+      "face": 1,
+      "actual_jump": true,
+      "correct_air_sprites": true,
+      "correct_crouch": true,
+      "correct_landing": true,
+      "control_returned": true
+    },
+    {
+      "form": 0,
+      "face": -1,
+      "actual_jump": true,
+      "correct_air_sprites": true,
+      "correct_crouch": true,
+      "correct_landing": true,
+      "control_returned": true
+    },
+    {
+      "form": 1,
+      "face": 1,
+      "actual_jump": true,
+      "correct_air_sprites": true,
+      "correct_crouch": true,
+      "correct_landing": true,
+      "control_returned": true
+    },
+    {
+      "form": 1,
+      "face": -1,
+      "actual_jump": true,
+      "correct_air_sprites": true,
+      "correct_crouch": true,
+      "correct_landing": true,
+      "control_returned": true
+    }
+  ]
+}

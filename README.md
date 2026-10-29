@@ -498,6 +498,8 @@ python tools/build_boruto_tbv_assets.py
 python tools/build_boruto_tbv_runtime.py
 python tools/validate_boruto_tbv.py
 python tools/verify_boruto_tbv_sources.py
+python tools/check_boruto_tbv_rendering.py
+python tools/check_boruto_tbv_movement.py
 python tools/check_boruto_tbv_in_engine.py
 python tools/check_boruto_tbv_features.py
 python tools/check_boruto_tbv_short_targets.py
@@ -508,3 +510,5 @@ python tools/make_boruto_tbv_preview.py
 python tools/package_boruto_tbv.py
 python tools/verify_boruto_tbv_delivery.py --write
 ```
+
+Revisión de animaciones de Boruto TBV base: los 161 cuadros originales conservan todos sus canales RGBA mediante PNG32 de MUGEN 1.1. Se corrigen las poses de salto, agachado y aterrizaje, las transiciones aéreas y el tamaño de la onda final de Uzuhiko. [Comprobación de fidelidad del alfa y las animaciones](previews/BorutoTBVBase_rendering_checks.json).

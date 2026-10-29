@@ -2726,7 +2726,7 @@ x=0
 
 [State 1000, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=40
 value=0
 ctrl=1
 
@@ -2798,7 +2798,7 @@ x=0
 
 [State 1010, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=33
 value=0
 ctrl=1
 
@@ -2919,7 +2919,7 @@ x=0
 
 [State 1020, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=33
 value=0
 ctrl=1
 
@@ -3173,7 +3173,7 @@ envshake.ampl=-1
 
 [State 1040, Real attack collision]
 type=HitDef
-trigger1=Time=16
+trigger1=Time=12
 attr=S,SA
 damage=90,0
 animtype=Up
@@ -3211,7 +3211,7 @@ x=0
 
 [State 1040, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=24
 value=0
 ctrl=1
 
@@ -3353,7 +3353,7 @@ x=0
 
 [State 1050, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=34
 value=0
 ctrl=1
 
@@ -3474,7 +3474,7 @@ x=0
 
 [State 1400, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=28
 value=0
 ctrl=1
 
@@ -3545,7 +3545,7 @@ x=0
 
 [State 1410, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=32
 value=0
 ctrl=1
 
@@ -3588,10 +3588,22 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 1420, Actual airborne strike]
+[State 1420, Rise into the strike]
 type=PosSet
-trigger1=Time>=9 && Time<32
+trigger1=Time>=8 && Time<16
+y=-45*(Time-8)/8.0
+
+
+[State 1420, Airborne strike height]
+type=PosSet
+trigger1=Time>=16 && Time<26
 y=-45
+
+
+[State 1420, Continuous descent]
+type=PosSet
+trigger1=Time>=26 && Time<41
+y=-45+3*(Time-26)
 
 
 [State 1420, Aerial approach]
@@ -3632,9 +3644,9 @@ envshake.time=6
 envshake.ampl=-4
 
 
-[State 1420, Return to stage]
+[State 1420, Feet return to stage]
 type=PosSet
-trigger1=Time>=32
+trigger1=Time>=41
 y=0
 
 
@@ -3646,7 +3658,7 @@ x=0
 
 [State 1420, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=50
 value=0
 ctrl=1
 
@@ -3718,7 +3730,7 @@ x=0
 
 [State 1200, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=28
 value=0
 ctrl=1
 
@@ -3790,7 +3802,7 @@ x=0
 
 [State 1210, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=46
 value=0
 ctrl=1
 
@@ -3901,7 +3913,7 @@ x=0
 
 [State 1430, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=47
 value=0
 ctrl=1
 
@@ -3948,6 +3960,12 @@ persistent=0
 type=PosAdd
 trigger1=Time=8
 x=IfElse(P2Dist X>250,180,IfElse(P2Dist X>55,P2Dist X-55,0))
+
+
+[State 1440, Smooth Rasengan takeoff]
+type=PosSet
+trigger1=Time>=16 && Time<24
+y=-100*(Time-16)/8.0
 
 
 [State 1440, Lift with the actual Rasengan pose]
@@ -4010,15 +4028,21 @@ channel=2
 volumescale=80
 
 
-[State 1440, Land after impact]
+[State 1440, Continuous Rasengan landing]
 type=PosSet
-trigger1=Time>=72
+trigger1=Time>=72 && Time<92
+y=-100+5*(Time-72)
+
+
+[State 1440, Feet on the stage]
+type=PosSet
+trigger1=Time>=92
 y=0
 
 
 [State 1440, Return control]
 type=ChangeState
-trigger1=Time>=90
+trigger1=Time>=108
 value=0
 ctrl=1
 
@@ -4139,7 +4163,7 @@ x=0
 
 [State 11000, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=40
 value=0
 ctrl=1
 
@@ -4211,7 +4235,7 @@ x=0
 
 [State 11010, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=33
 value=0
 ctrl=1
 
@@ -4332,7 +4356,7 @@ x=0
 
 [State 11020, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=33
 value=0
 ctrl=1
 
@@ -4586,7 +4610,7 @@ envshake.ampl=-1
 
 [State 11040, Real attack collision]
 type=HitDef
-trigger1=Time=16
+trigger1=Time=12
 attr=S,SA
 damage=120,0
 animtype=Up
@@ -4624,7 +4648,7 @@ x=0
 
 [State 11040, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=24
 value=0
 ctrl=1
 
@@ -4766,7 +4790,7 @@ x=0
 
 [State 11050, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=34
 value=0
 ctrl=1
 
@@ -4887,7 +4911,7 @@ x=0
 
 [State 11400, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=28
 value=0
 ctrl=1
 
@@ -4958,7 +4982,7 @@ x=0
 
 [State 11410, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=32
 value=0
 ctrl=1
 
@@ -5001,10 +5025,22 @@ p2defmul=1
 poweradd=0
 persistent=0
 
-[State 11420, Actual airborne strike]
+[State 11420, Rise into the strike]
 type=PosSet
-trigger1=Time>=9 && Time<32
+trigger1=Time>=8 && Time<16
+y=-45*(Time-8)/8.0
+
+
+[State 11420, Airborne strike height]
+type=PosSet
+trigger1=Time>=16 && Time<26
 y=-45
+
+
+[State 11420, Continuous descent]
+type=PosSet
+trigger1=Time>=26 && Time<41
+y=-45+3*(Time-26)
 
 
 [State 11420, Aerial approach]
@@ -5045,9 +5081,9 @@ envshake.time=6
 envshake.ampl=-4
 
 
-[State 11420, Return to stage]
+[State 11420, Feet return to stage]
 type=PosSet
-trigger1=Time>=32
+trigger1=Time>=41
 y=0
 
 
@@ -5059,7 +5095,7 @@ x=0
 
 [State 11420, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=50
 value=0
 ctrl=1
 
@@ -5131,7 +5167,7 @@ x=0
 
 [State 11200, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=28
 value=0
 ctrl=1
 
@@ -5203,7 +5239,7 @@ x=0
 
 [State 11210, Return control]
 type=ChangeState
-trigger1=Time>=55
+trigger1=Time>=46
 value=0
 ctrl=1
 
@@ -5314,7 +5350,7 @@ x=0
 
 [State 11430, Return control]
 type=ChangeState
-trigger1=Time>=65
+trigger1=Time>=47
 value=0
 ctrl=1
 
@@ -5361,6 +5397,12 @@ persistent=0
 type=PosAdd
 trigger1=Time=8
 x=IfElse(P2Dist X>250,180,IfElse(P2Dist X>55,P2Dist X-55,0))
+
+
+[State 11440, Smooth Rasengan takeoff]
+type=PosSet
+trigger1=Time>=16 && Time<24
+y=-100*(Time-16)/8.0
 
 
 [State 11440, Lift with the actual Rasengan pose]
@@ -5423,15 +5465,21 @@ channel=2
 volumescale=80
 
 
-[State 11440, Land after impact]
+[State 11440, Continuous Rasengan landing]
 type=PosSet
-trigger1=Time>=72
+trigger1=Time>=72 && Time<92
+y=-100+5*(Time-72)
+
+
+[State 11440, Feet on the stage]
+type=PosSet
+trigger1=Time>=92
 y=0
 
 
 [State 11440, Return control]
 type=ChangeState
-trigger1=Time>=90
+trigger1=Time>=108
 value=0
 ctrl=1
 
@@ -6344,7 +6392,7 @@ postype=P1
 pos=65,0
 scale=0.55,0.55
 bindtime=-1
-removetime=220
+removetime=240
 sprpriority=-1
 ownpal=1
 removeongethit=1
@@ -6356,6 +6404,20 @@ trigger1=NumTarget(3000)>0 && Time<300
 ID=3000
 time=1
 pos=65,-18-8*Abs(Sin(Time*.3))
+
+
+[State 3000, Separate original effect]
+type=Explod
+trigger1=Time=270 && NumTarget(3000)>0
+anim=8820
+postype=P1
+pos=0,0
+scale=0.55,0.55
+removetime=24
+bindtime=1
+sprpriority=-1
+ownpal=1
+removeongethit=1
 
 
 [State 3000, Confirmed rotation]
@@ -6789,7 +6851,7 @@ postype=P1
 pos=65,0
 scale=0.65,0.65
 bindtime=-1
-removetime=220
+removetime=240
 sprpriority=-1
 ownpal=1
 removeongethit=1
@@ -6801,6 +6863,20 @@ trigger1=NumTarget(3000)>0 && Time<300
 ID=3000
 time=1
 pos=65,-18-8*Abs(Sin(Time*.3))
+
+
+[State 13000, Separate original effect]
+type=Explod
+trigger1=Time=270 && NumTarget(3000)>0
+anim=8820
+postype=P1
+pos=0,0
+scale=0.55,0.55
+removetime=24
+bindtime=1
+sprpriority=-1
+ownpal=1
+removeongethit=1
 
 
 [State 13000, Confirmed rotation]
@@ -7298,5 +7374,3 @@ value=0
 [State -2, Round effect cleanup]
 type=RemoveExplod
 trigger1=!IsHelper && RoundState!=2
-
-

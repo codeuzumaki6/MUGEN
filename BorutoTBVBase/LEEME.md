@@ -17,3 +17,5 @@ Abajo + Pausa requiere 3000, consume 1500 y activa veinte segundos de concentrac
 Se conservan los 45 archivos originales del ZIP, los 161 cuadros válidos, las 38 referencias de audio originales (36 archivos de audio únicos) y sus colores. Los 17 cuadros vacíos se excluyen de las animaciones. Los sprites y voces no se redibujan ni generan. Los nombres de recursos Hiruzen corresponden al espacio reemplazado por el mod original.
 
 Consulta `CONTROLES_XBOX.md`. Las pruebas nativas se realizan en Ikemen GO; el ejecutable exacto de MUGEN del usuario y el mando físico se comprueban localmente.
+
+Revisión de animaciones: los 161 cuadros originales conservan ahora todos sus colores y niveles de transparencia mediante PNG32 de MUGEN 1.1. Saltar, agacharse y aterrizar usan poses de movimiento; el Rasengan aéreo despega y desciende de forma continua. El remate de Uzuhiko mantiene el cuerpo estable y separa la onda final para controlar su tamaño.
