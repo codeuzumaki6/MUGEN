@@ -1,0 +1,624 @@
+{
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
+  "source_sole_landmarks": 37,
+  "cases": [
+    {
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 80
+      },
+      "samples": 48,
+      "frames": [
+        "Hiruzen_Skil01_07",
+        "Hiruzen_Skil01_08",
+        "Hiruzen_Skil01_09",
+        "Hiruzen_Skil01_10",
+        "Hiruzen_Skil01_11",
+        "Hiruzen_Skil01_12",
+        "Hiruzen_Skil01_13",
+        "Hiruzen_Skil01_14"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Shiden",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "a",
+        "d": "B",
+        "state": 1010,
+        "cost": 400,
+        "distance": 80
+      },
+      "samples": 33,
+      "frames": [
+        "ShidenBlade_01",
+        "ShidenBlade_02",
+        "ShidenBlade_03",
+        "ShidenBlade_04",
+        "ShidenBlade_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Kenjutsu",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "b",
+        "d": "F",
+        "state": 1020,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 14,
+      "frames": [
+        "Hiruzen_skill04_03",
+        "Hiruzen_skill04_04"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "b",
+        "d": "B",
+        "state": 1030,
+        "cost": 550,
+        "distance": 80
+      },
+      "samples": 38,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Combo",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "B",
+        "state": 1050,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 41,
+      "frames": [
+        "ShidenBlade_12",
+        "ShidenBlade_13",
+        "ShidenBlade_14",
+        "ShidenBlade_15",
+        "ShidenBlade_16"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "charge",
+        "kind": "charge",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "samples": 86,
+      "frames": [
+        "HiruzenChg03_01",
+        "HiruzenChg03_02",
+        "HiruzenChg03_03",
+        "HiruzenChg03_04",
+        "HiruzenChg03_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 1000,
+        "cost": 350,
+        "distance": 80
+      },
+      "samples": 48,
+      "frames": [
+        "Hiruzen_Skil01_07",
+        "Hiruzen_Skil01_08",
+        "Hiruzen_Skil01_09",
+        "Hiruzen_Skil01_10",
+        "Hiruzen_Skil01_11",
+        "Hiruzen_Skil01_12",
+        "Hiruzen_Skil01_13",
+        "Hiruzen_Skil01_14"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Shiden",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "a",
+        "d": "B",
+        "state": 1010,
+        "cost": 400,
+        "distance": 80
+      },
+      "samples": 33,
+      "frames": [
+        "ShidenBlade_01",
+        "ShidenBlade_02",
+        "ShidenBlade_03",
+        "ShidenBlade_04",
+        "ShidenBlade_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Kenjutsu",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "b",
+        "d": "F",
+        "state": 1020,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 14,
+      "frames": [
+        "Hiruzen_skill04_03",
+        "Hiruzen_skill04_04"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "b",
+        "d": "B",
+        "state": 1030,
+        "cost": 550,
+        "distance": 80
+      },
+      "samples": 38,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Combo",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "B",
+        "state": 1050,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 41,
+      "frames": [
+        "ShidenBlade_12",
+        "ShidenBlade_13",
+        "ShidenBlade_14",
+        "ShidenBlade_15",
+        "ShidenBlade_16"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "charge",
+        "kind": "charge",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "samples": 86,
+      "frames": [
+        "HiruzenChg03_01",
+        "HiruzenChg03_02",
+        "HiruzenChg03_03",
+        "HiruzenChg03_04",
+        "HiruzenChg03_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "samples": 48,
+      "frames": [
+        "Hiruzen_Skil01_07",
+        "Hiruzen_Skil01_08",
+        "Hiruzen_Skil01_09",
+        "Hiruzen_Skil01_10",
+        "Hiruzen_Skil01_11",
+        "Hiruzen_Skil01_12",
+        "Hiruzen_Skil01_13",
+        "Hiruzen_Skil01_14"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Shiden",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "a",
+        "d": "B",
+        "state": 11010,
+        "cost": 400,
+        "distance": 80
+      },
+      "samples": 33,
+      "frames": [
+        "ShidenBlade_01",
+        "ShidenBlade_02",
+        "ShidenBlade_03",
+        "ShidenBlade_04",
+        "ShidenBlade_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Kenjutsu",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "F",
+        "state": 11020,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 14,
+      "frames": [
+        "Hiruzen_skill04_03",
+        "Hiruzen_skill04_04"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "samples": 38,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Combo",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "B",
+        "state": 11050,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 41,
+      "frames": [
+        "ShidenBlade_12",
+        "ShidenBlade_13",
+        "ShidenBlade_14",
+        "ShidenBlade_15",
+        "ShidenBlade_16"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "charge",
+        "kind": "charge",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "samples": 86,
+      "frames": [
+        "HiruzenChg03_01",
+        "HiruzenChg03_02",
+        "HiruzenChg03_03",
+        "HiruzenChg03_04",
+        "HiruzenChg03_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Rasengan",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "F",
+        "state": 11000,
+        "cost": 350,
+        "distance": 80
+      },
+      "samples": 48,
+      "frames": [
+        "Hiruzen_Skil01_07",
+        "Hiruzen_Skil01_08",
+        "Hiruzen_Skil01_09",
+        "Hiruzen_Skil01_10",
+        "Hiruzen_Skil01_11",
+        "Hiruzen_Skil01_12",
+        "Hiruzen_Skil01_13",
+        "Hiruzen_Skil01_14"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Shiden",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "a",
+        "d": "B",
+        "state": 11010,
+        "cost": 400,
+        "distance": 80
+      },
+      "samples": 33,
+      "frames": [
+        "ShidenBlade_01",
+        "ShidenBlade_02",
+        "ShidenBlade_03",
+        "ShidenBlade_04",
+        "ShidenBlade_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Kenjutsu",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "b",
+        "d": "F",
+        "state": 11020,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 14,
+      "frames": [
+        "Hiruzen_skill04_03",
+        "Hiruzen_skill04_04"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "samples": 38,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "Combo",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "B",
+        "state": 11050,
+        "cost": 450,
+        "distance": 80
+      },
+      "samples": 41,
+      "frames": [
+        "ShidenBlade_12",
+        "ShidenBlade_13",
+        "ShidenBlade_14",
+        "ShidenBlade_15",
+        "ShidenBlade_16"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "charge",
+        "kind": "charge",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "samples": 86,
+      "frames": [
+        "HiruzenChg03_01",
+        "HiruzenChg03_02",
+        "HiruzenChg03_03",
+        "HiruzenChg03_04",
+        "HiruzenChg03_05"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "awakening",
+        "kind": "awakening",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "samples": 70,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    },
+    {
+      "case": {
+        "name": "awakening",
+        "kind": "awakening",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "samples": 70,
+      "frames": [
+        "Hiruzen_Skill05_01",
+        "Hiruzen_Skill05_02",
+        "Hiruzen_Skill05_03",
+        "Hiruzen_Skill05_04",
+        "Hiruzen_Skill05_05",
+        "Hiruzen_Skill05_06",
+        "Hiruzen_Skill05_07",
+        "Hiruzen_Skill05_08",
+        "Hiruzen_Skill05_09",
+        "Hiruzen_Skill05_10",
+        "Hiruzen_Skill05_11",
+        "Hiruzen_Skill05_12"
+      ],
+      "minimum_sole_y": -1.0,
+      "maximum_sole_y": -1.0
+    }
+  ],
+  "grounded_charge": true,
+  "matching_body_and_light_axes": true
+}

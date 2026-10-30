@@ -2969,21 +2969,41 @@ v=22
 value=-1
 
 
+[State 1030, Clear palm clock]
+type=VarSet
+trigger1=Time=0
+v=23
+value=-1
+
+
 [State 1030, Real palm approach]
 type=VelSet
-trigger1=Time>=22 && Time<55 && !MoveContact
-x=IfElse(P2Dist X>42,6,0)
+trigger1=Time>=22 && Time<75 && Var(23)<0
+x=IfElse(P2Dist X>55,6,0)
 
 
-[State 1030, Plant feet]
+[State 1030, Begin the visible palm strike]
+type=VarSet
+trigger1=Time>=30 && Time<75 && Var(23)<0 && P2Dist X>=0 && P2Dist X<=60 && Abs(P2Dist Y)<75
+v=23
+value=Time
+
+
+[State 1030, Extend the palm at the rival]
+type=ChangeAnim
+trigger1=Var(23)>=0 && Time=Var(23)
+value=1031
+
+
+[State 1030, Plant feet for contact]
 type=VelSet
-trigger1=MoveContact || Time>=55
+trigger1=Var(23)>=0 || Time>=75
 x=0
 
 
 [State 1030, Real attack collision]
 type=HitDef
-trigger1=Time=31
+trigger1=Time=Var(23)+4
 attr=S,SA
 damage=75,0
 animtype=Medium
@@ -3012,6 +3032,7 @@ hitonce=1
 envshake.time=2
 envshake.ampl=-1
 
+triggerall=Var(23)>=0
 p2stateno=3020
 p2getp1state=1
 
@@ -3081,6 +3102,20 @@ absolute=1
 kill=1
 
 
+[State 1030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)
+anim=8700
+postype=P1
+pos=45,-48
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=3
+ownpal=1
+removeongethit=1
+
+
 [State 1030, Release target]
 type=TargetState
 trigger1=Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0
@@ -3088,9 +3123,9 @@ ID=1030
 value=3021
 
 
-[State 1030, Return control]
+[State 1030, Recover after the actual strike]
 type=ChangeState
-trigger1=Time>=110
+trigger1=(Var(22)>=0 && Time>=Var(22)+48) || (Var(22)<0 && Time>=110)
 value=0
 ctrl=1
 
@@ -4406,21 +4441,41 @@ v=22
 value=-1
 
 
+[State 11030, Clear palm clock]
+type=VarSet
+trigger1=Time=0
+v=23
+value=-1
+
+
 [State 11030, Real palm approach]
 type=VelSet
-trigger1=Time>=22 && Time<55 && !MoveContact
-x=IfElse(P2Dist X>42,6,0)
+trigger1=Time>=22 && Time<75 && Var(23)<0
+x=IfElse(P2Dist X>55,6,0)
 
 
-[State 11030, Plant feet]
+[State 11030, Begin the visible palm strike]
+type=VarSet
+trigger1=Time>=30 && Time<75 && Var(23)<0 && P2Dist X>=0 && P2Dist X<=60 && Abs(P2Dist Y)<75
+v=23
+value=Time
+
+
+[State 11030, Extend the palm at the rival]
+type=ChangeAnim
+trigger1=Var(23)>=0 && Time=Var(23)
+value=11031
+
+
+[State 11030, Plant feet for contact]
 type=VelSet
-trigger1=MoveContact || Time>=55
+trigger1=Var(23)>=0 || Time>=75
 x=0
 
 
 [State 11030, Real attack collision]
 type=HitDef
-trigger1=Time=31
+trigger1=Time=Var(23)+4
 attr=S,SA
 damage=105,0
 animtype=Medium
@@ -4449,6 +4504,7 @@ hitonce=1
 envshake.time=2
 envshake.ampl=-1
 
+triggerall=Var(23)>=0
 p2stateno=3020
 p2getp1state=1
 
@@ -4518,6 +4574,20 @@ absolute=1
 kill=1
 
 
+[State 11030, Separate original effect]
+type=Explod
+trigger1=Var(22)>=0 && Time=Var(22)
+anim=8700
+postype=P1
+pos=45,-48
+scale=0.5,0.5
+removetime=8
+bindtime=1
+sprpriority=3
+ownpal=1
+removeongethit=1
+
+
 [State 11030, Release target]
 type=TargetState
 trigger1=Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0
@@ -4525,9 +4595,9 @@ ID=1030
 value=3021
 
 
-[State 11030, Return control]
+[State 11030, Recover after the actual strike]
 type=ChangeState
-trigger1=Time>=110
+trigger1=(Var(22)>=0 && Time>=Var(22)+48) || (Var(22)<0 && Time>=110)
 value=0
 ctrl=1
 
@@ -5785,6 +5855,13 @@ v=5
 value=1
 ignorehitpause=1
 
+[State 9700, Attack recovery clock]
+type=VarAdd
+trigger1=Var(3)>0
+v=3
+value=-1
+ignorehitpause=1
+
 [State 9700, No clone push]
 type=PlayerPush
 trigger1=1
@@ -5802,8 +5879,15 @@ ignorehitpause=1
 
 [State 9700, Finite killable clone]
 type=DestroySelf
-trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=480 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
 
+
+
+[State 9700, Fade at the end]
+type=Trans
+trigger1=Var(5)>=456
+trans=addalpha
+alpha=Floor(256*(480-Var(5))/24.0),Floor(256*(Var(5)-456)/24.0)
 
 
 [State 9700, Face enemy]
@@ -5822,12 +5906,24 @@ ctrl=0
 [State 9700, Approach]
 type=VelSet
 trigger1=1
-x=IfElse(Abs(P2Dist X)>90,4,0)
+x=IfElse(Abs(P2Dist X)>75,4,0)
+
+
+[State 9700, Run while pursuing]
+type=ChangeAnim
+trigger1=Abs(P2Dist X)>75 && Anim!=9700
+value=9700
+
+
+[State 9700, Stand while waiting]
+type=ChangeAnim
+trigger1=Abs(P2Dist X)<=75 && Anim!=9702
+value=9702
 
 
 [State 9700, Autonomous katana assault]
 type=ChangeState
-trigger1=Time>=18 && Abs(P2Dist X)<130
+trigger1=Time>=12 && Var(3)<=0 && Abs(P2Dist X)<100 && Abs(P2Dist Y)<70
 value=9701
 ctrl=0
 
@@ -5854,6 +5950,13 @@ v=5
 value=1
 ignorehitpause=1
 
+[State 9701, Attack recovery clock]
+type=VarAdd
+trigger1=Var(3)>0
+v=3
+value=-1
+ignorehitpause=1
+
 [State 9701, No clone push]
 type=PlayerPush
 trigger1=1
@@ -5871,8 +5974,15 @@ ignorehitpause=1
 
 [State 9701, Finite killable clone]
 type=DestroySelf
-trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=480 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
 
+
+
+[State 9701, Fade at the end]
+type=Trans
+trigger1=Var(5)>=456
+trans=addalpha
+alpha=Floor(256*(480-Var(5))/24.0),Floor(256*(Var(5)-456)/24.0)
 
 
 [State 9701, Face enemy]
@@ -5886,6 +5996,21 @@ type=ChangeState
 trigger1=(Parent,Var(45))!=Var(1)
 value=9701
 ctrl=0
+
+
+[State 9701, Attack cadence]
+type=VarSet
+trigger1=Time=0
+v=3
+value=90
+
+
+[State 9701, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=10
+value=S2,0
+channel=2
+volumescale=80
 
 
 [State 9701, Actual clone movement]
@@ -5993,6 +6118,13 @@ v=5
 value=1
 ignorehitpause=1
 
+[State 9790, Attack recovery clock]
+type=VarAdd
+trigger1=Var(3)>0
+v=3
+value=-1
+ignorehitpause=1
+
 [State 9790, No clone push]
 type=PlayerPush
 trigger1=1
@@ -6010,8 +6142,15 @@ ignorehitpause=1
 
 [State 9790, Finite killable clone]
 type=DestroySelf
-trigger1=Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
+trigger1=Var(2)=1 && (Life<=0 || Var(5)>=480 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)
 
+
+
+[State 9790, Fade at the end]
+type=Trans
+trigger1=Var(5)>=456
+trans=addalpha
+alpha=Floor(256*(480-Var(5))/24.0),Floor(256*(Var(5)-456)/24.0)
 
 
 [State 9790, Face enemy]
@@ -6154,6 +6293,24 @@ value=90
 scale=.38,.45
 
 
+[State 9551, Follow aura facing]
+type=Turn
+trigger1=Facing!=(Root,Facing)
+
+
+
+[State 9551, No aura shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9551, No aura push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
 [State 9551, Aura behind fighter]
 type=SprPriority
 trigger1=1
@@ -6171,21 +6328,32 @@ type=A
 movetype=I
 physics=N
 ctrl=0
-anim=8900
+anim=8818
 velset=0,0
 
 [State 9560, Aura follows body]
 type=BindToRoot
 trigger1=1
 time=1
-pos=0,-42
+pos=0,0
 
 
-[State 9560, Chakra aura]
-type=AngleDraw
+[State 9560, Follow aura facing]
+type=Turn
+trigger1=Facing!=(Root,Facing)
+
+
+
+[State 9560, No aura shadow]
+type=AssertSpecial
 trigger1=1
-value=90
-scale=.38,.45
+flag=NoShadow
+
+
+[State 9560, No aura push]
+type=PlayerPush
+trigger1=1
+value=0
 
 
 [State 9560, Aura behind fighter]
@@ -6318,19 +6486,19 @@ value=0
 
 [State 3000, Palm approach]
 type=VelSet
-trigger1=Time>=36 && Time<60 && !MoveContact
-x=IfElse(P2Dist X>65,5,0)
+trigger1=Time>=36 && Time<54 && !MoveContact
+x=IfElse(P2Dist X>55,5,0)
 
 
 [State 3000, Plant on contact]
 type=VelSet
-trigger1=MoveContact || Time>=60
+trigger1=MoveContact || Time>=54
 x=0
 
 
 [State 3000, Real attack collision]
 type=HitDef
-trigger1=Time=55
+trigger1=Time=58
 attr=S,HP
 damage=0,0
 animtype=Medium
@@ -6777,19 +6945,19 @@ value=0
 
 [State 13000, Palm approach]
 type=VelSet
-trigger1=Time>=36 && Time<60 && !MoveContact
-x=IfElse(P2Dist X>65,5,0)
+trigger1=Time>=36 && Time<54 && !MoveContact
+x=IfElse(P2Dist X>55,5,0)
 
 
 [State 13000, Plant on contact]
 type=VelSet
-trigger1=MoveContact || Time>=60
+trigger1=MoveContact || Time>=54
 x=0
 
 
 [State 13000, Real attack collision]
 type=HitDef
-trigger1=Time=55
+trigger1=Time=58
 attr=S,HP
 damage=0,0
 animtype=Medium

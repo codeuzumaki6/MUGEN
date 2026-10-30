@@ -15,7 +15,9 @@ def effect(key):
  return key.startswith('BoruBlade_') or key.startswith('ShidenBlade_') and (6<=n<=11 or n>=17) or key.startswith('Hiruzen_Skil01_') and n<=6 or key.startswith('Hiruzen_Skill05_') and 14<=n<=19 or key.startswith('Hiruzen_04Bom_') and n>=9
 def axis(key,im):
  n=number(key);w,h=im.size
- for prefix,limits,pos in [('Hiruzen_NAttack_',None,(145,161)),('Hiruzen_Skil01_',range(7,15),(155,205)),('ShidenBlade_',range(1,6),(145,208)),('ShidenBlade_',range(12,17),(160,240)),('HiruzenChg03_',None,(145,195)),('Hiruzen_04Chg_',range(1,3),(60,110)),('Hiruzen_04Chg_',range(3,11),(115,225)),('Hiruzen_04Hit_',None,(105,145)),('Hiruzen_04Bom_',range(1,9),(115,100)),('Hiruzen_skill04_',None,(65,110)),('Hiruzen_Skill05_',range(1,7),(105,235)),('Hiruzen_Skill05_',range(7,13),(75,125)),('Hiruzen_Skill05_',range(13,14),(35,76)),('Hiruzen_Skill05_',range(20,28),(125,375)),('Hiruzen_Skill03Atk_',range(3,6),(110,90)),('Hiruzen_Skill03Atk_',range(6,12),(110,115)),('Hiruzen_Skill03Atk_',range(12,14),(110,100)),('Hiruzen_Skil4ED_',None,(110,90))]:
+ # Grounded composites use the character's soles, not the much larger glow.
+ # The independent light sprites below inherit these exact same axes.
+ for prefix,limits,pos in [('Hiruzen_NAttack_',None,(145,161)),('Hiruzen_Skil01_',range(7,15),(155,203)),('ShidenBlade_',range(1,6),(145,190)),('ShidenBlade_',range(12,17),(160,186)),('HiruzenChg03_',None,(145,161)),('Hiruzen_04Chg_',range(1,3),(60,110)),('Hiruzen_04Chg_',range(3,11),(115,225)),('Hiruzen_04Hit_',None,(105,145)),('Hiruzen_04Bom_',range(1,9),(115,100)),('Hiruzen_skill04_',None,(65,98)),('Hiruzen_Skill05_',range(1,7),(105,195)),('Hiruzen_Skill05_',range(7,13),(75,131)),('Hiruzen_Skill05_',range(13,14),(35,76)),('Hiruzen_Skill05_',range(20,28),(125,375)),('Hiruzen_Skill03Atk_',range(3,6),(110,90)),('Hiruzen_Skill03Atk_',range(6,12),(110,115)),('Hiruzen_Skill03Atk_',range(12,14),(110,100)),('Hiruzen_Skil4ED_',None,(110,90))]:
   if key.startswith(prefix) and (limits is None or n in limits):return pos
  if key.startswith('Hiruzen_Skill05_') and 14<=n<=19:return (260,425)
  if effect(key):return (w//2,339 if key.startswith('Hiruzen_04Bom_') else 370 if key.startswith('ShidenBlade_') and n>=17 else h//2)
@@ -26,7 +28,7 @@ def main():
  archive=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes());archive.entries.clear();manifest=[];keys={};excluded=[]
  def put(key,g,n,im,xy,**meta):
   dest=A/'frames'/f'{g}_{n}.png';im.save(dest);storage=im
-  if g in [31000,31010]:
+  if g in [31000,31010,31020,31100]:
    a=np.array(im.convert('RGBA'));alpha=a[:,:,3].astype('uint16')
    if g==31010:alpha=np.rint(alpha*np.minimum(np.arange(im.width)/18,1)[None,:]).astype('uint16')
    if meta.get('kind')=='effect':
@@ -49,11 +51,21 @@ def main():
    put(key,31000,len(keys),im,xy,kind='effect' if effect(key) else 'body_with_effect' if im.width>160 or im.height>170 else 'body',source_plist=str(p.relative_to(ROOT)),source_key=raw)
  common=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes())
  bykey={r['key']:r for r in manifest}
+ parent=bykey['Hiruzen_Skil01_14'];im=Image.open(CHAR/parent['file']).convert('RGBA');rect=(110,120,205,204)
+ put('UzuhikoPalm',31020,0,im.crop(rect),(45,83),kind='body_with_effect',source_parent=parent['key'],source_rect=list(rect))
+ for i in range(6):
+  parent=bykey[f'Hiruzen_Skill05_{i+1:02}'];a=np.array(Image.open(CHAR/parent['file']).convert('RGBA'))
+  # Keep soft cyan energy and bright wind ribbons across the whole cell.
+  # Opaque character colours are excluded without a rectangular cut-out.
+  rgb=a[:,:,:3].astype(int);bright=(rgb[:,:,0]>=170)&(rgb[:,:,1]>=200)&(rgb[:,:,2]>=200)&(rgb[:,:,2]>=rgb[:,:,0]-8)&(rgb[:,:,1]>=rgb[:,:,0]-8)
+  soft=(a[:,:,3]<250)&(rgb.max(2)>=130)&(rgb[:,:,2]>=rgb[:,:,0])&(rgb[:,:,1]>=rgb[:,:,0])
+  a[~(bright|soft)]=0
+  put(f'UzuhikoAura_{i:02}',31100,i,Image.fromarray(a),tuple(parent['axis']),kind='effect',source_aura_parent=parent['key'],energy_filter='soft cyan energy and bright white wind; no opaque character colours')
  for i,n in enumerate(range(20,28)):
   parent=bykey[f'Hiruzen_Skill05_{n:02}'];im=Image.open(CHAR/parent['file']).convert('RGBA');rect=(170,0,680,396)
   put(f'UzuhikoWave_{i:02}',31010,i,im.crop(rect),(-45,375),kind='effect',source_parent=parent['key'],source_rect=list(rect))
  for r in list(manifest):
-  if r['group']!=31000 or r['kind']!='body_with_effect':continue
+  if r['group'] not in [31000,31020] or r['kind']!='body_with_effect':continue
   a=np.array(Image.open(CHAR/r['file']).convert('RGBA'));alpha=a[:,:,3].astype('uint16');mask=(alpha>0)&(alpha<250)
   a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[~mask,:3]=0;a[:,:,3]=np.where(mask,255,0)
   put(r['key']+'_Light',31200,r['number'],Image.fromarray(a),tuple(r['axis']),kind='effect',source_light_parent=r['key'])

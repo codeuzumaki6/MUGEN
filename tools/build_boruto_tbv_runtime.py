@@ -7,6 +7,7 @@ from build_sumire_runtime import c,ctl,state,hit,end,single
 ROOT=Path(__file__).resolve().parents[1];NAME='BorutoTBVBase';CHAR=ROOT/NAME
 MOVES=b.MOVES
 PULSES=[84,112,140,168,196,224,252,284]
+CLONE_TICKS=480
 def seq(prefix,a,z,t=3):return [(prefix+'_'+str(i).zfill(3 if prefix=='Hiruzen_NAttack' else 2),t) for i in range(a,z+1)]
 def idle(form=0):return 'Hiruzen_Idle_01'
 def anim(n,p,form=0,**kw):b.action(n,p,form,**kw)
@@ -25,9 +26,11 @@ def basic():
  for g,count in [(8700,4),(8710,4),(8720,6),(8900,24)]:anim(g,[(f'Common_{g}_{i}',3) for i in range(count)],hurt=False,loop=g==8900,add=True)
  for n,p,box,loop in [(8800,seq('BoruBlade',1,6),'-45,-14,45,14',True),(8801,seq('Hiruzen_Skil01',1,4),'-35,-35,35,35',True),(8802,seq('ShidenBlade',6,11),'-65,-28,65,28',True),(8803,seq('ShidenBlade',17,23),'-120,-150,120,3',False),(8804,seq('Hiruzen_04Bom',9,14),None,False),(8805,seq('Hiruzen_Skil01',5,6),None,False),(8817,seq('Hiruzen_Skill05',14,19),None,True)]:anim(n,p,hurt=False,box=box,loop=loop,add=True)
  anim(9700,seq('Hiruzen_Walk',1,6,3),loop=True)
+ anim(9702,seq('Hiruzen_Idle',1,3,8),loop=True)
  anim(9701,seq('Hiruzen_skill04',1,4,5)+seq('Hiruzen_NAttack',6,10,3),box='-5,-85,110,5')
  anim(9790,single('Hiruzen_Hurt_01',10))
  anim(8820,[(f'UzuhikoWave_{i:02}',3) for i in range(8)],hurt=False,add=True)
+ anim(8818,[(f'UzuhikoAura_{i:02}',6) for i in range(6)],hurt=False,loop=True,add=True)
 def normals():
  sets=[[(f'Hiruzen_NAttack_{i:03}',2) for i in range(1,6)],[(f'Hiruzen_NAttack_{i:03}',2) for i in range(6,11)],seq('Hiruzen_skill04',1,4,3)]
  for form in [0,1]:
@@ -68,10 +71,11 @@ def specials():
    s+=c(n,'Stop after contact','VelSet','MoveContact || Time>=30','x=0')+end(n,recovery);b.STATES.append(s)
 def uzuhiko(n,form,cost):
  p=seq('Hiruzen_Skill05',1,6,2)+seq('Hiruzen_Skill05',7,12,3)+single('Hiruzen_Skill05_13',70);attack(n,p,form,'5,-78,95,5')
- s=state(n,n,move='A',physics='N',cost=cost)+start(n,'005')+c(n,'Clear contact clock','VarSet','Time=0','v=22\nvalue=-1')+c(n,'Real palm approach','VelSet','Time>=22 && Time<55 && !MoveContact','x=IfElse(P2Dist X>42,6,0)')+c(n,'Plant feet','VelSet','MoveContact || Time>=55','x=0')+hit(n,31,105 if form else 75,ident=1030,stun=85)+'p2stateno=3020\np2getp1state=1\n'
+ anim(n+1,single('UzuhikoPalm',12)+single(idle(),-1),form,box='30,-62,65,-32',active=[0])
+ s=state(n,n,move='A',physics='N',cost=cost)+start(n,'005')+c(n,'Clear contact clock','VarSet','Time=0','v=22\nvalue=-1')+c(n,'Clear palm clock','VarSet','Time=0','v=23\nvalue=-1')+c(n,'Real palm approach','VelSet','Time>=22 && Time<75 && Var(23)<0','x=IfElse(P2Dist X>55,6,0)')+c(n,'Begin the visible palm strike','VarSet','Time>=30 && Time<75 && Var(23)<0 && P2Dist X>=0 && P2Dist X<=60 && Abs(P2Dist Y)<75','v=23\nvalue=Time')+c(n,'Extend the palm at the rival','ChangeAnim',f'Var(23)>=0 && Time=Var(23)','value='+str(n+1))+c(n,'Plant feet for contact','VelSet','Var(23)>=0 || Time>=75','x=0')+hit(n,'Var(23)+4',105 if form else 75,ident=1030,stun=85)+'triggerall=Var(23)>=0\np2stateno=3020\np2getp1state=1\n'
  s+=c(n,'Remember confirmed palm hit','VarSet','MoveHit && NumTarget(1030)>0 && Var(22)<0','v=22\nvalue=Time')+c(n,'Original tornado after contact','Explod','Var(22)>=0 && Time=Var(22)+1 && NumTarget(1030)>0',f'ID=9570\nanim=8817\npostype=P1\npos=60,0\nscale={.55 if form else .45},{.55 if form else .45}\nbindtime=-1\nremovetime=42\nsprpriority=-1\nownpal=1\nremoveongethit=1')+c(n,'Finite spinning reaction','TargetBind','Var(22)>=0 && NumTarget(1030)>0 && Time-Var(22)<42','ID=1030\ntime=1\npos=60,-15-8*Abs(Sin(Time*.3))')
  for delay in [6,14,22,30]:s+=c(n,'Uzuhiko rotation','TargetLifeAdd',f'Var(22)>=0 && Time=Var(22)+{delay} && NumTarget(1030)>0',f'ID=1030\nvalue=-{45 if form else 35}\nabsolute=1\nkill=1')
- s+=c(n,'Release target','TargetState','Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0','ID=1030\nvalue=3021')+end(n,110);b.STATES.append(s)
+ s+=fx(n,'Var(22)>=0 && Time=Var(22)',8700,45,-48,.5,8)+c(n,'Release target','TargetState','Var(22)>=0 && Time=Var(22)+42 && NumTarget(1030)>0','ID=1030\nvalue=3021')+c(n,'Recover after the actual strike','ChangeState','(Var(22)>=0 && Time>=Var(22)+48) || (Var(22)<0 && Time>=110)','value=0\nctrl=1');b.STATES.append(s)
 def giant(n,form,cost):
  p=seq('Hiruzen_04Chg',1,2,4)+seq('Hiruzen_04Chg',3,10,3)+seq('Hiruzen_04Hit',1,6,4)+seq('Hiruzen_04Bom',1,8,3)+seq('Hiruzen_Skill03Atk',12,13,4)+seq('Hiruzen_Fly',1,3,3)+single('Hiruzen_NAttack_006',5)
  anim(n,p+single(idle(),-1),form,box='-75,15,75,135',active=list(range(10,16)))
@@ -86,11 +90,11 @@ def helpers():
   s=state(n,n,'S','H' if n==9790 else 'I' if n==9700 else 'A','N')
   if n==9700:s+=c(n,'Clone health once','LifeSet','Time=0 && Var(2)=0','value=120')+c(n,'Remember clone form','VarSet','Time=0 && Var(2)=0','v=0\nvalue=Root,Var(42)')+c(n,'Remember order','VarSet','Time=0 && Var(2)=0','v=1\nvalue=Parent,Var(45)')+c(n,'Initialize once','VarSet','Time=0','v=2\nvalue=1')
   else:s+=c(n,'Consume order','VarSet','Time=0','v=1\nvalue=Parent,Var(45)')
-  s+=c(n,'Clone age','VarAdd','1','v=5\nvalue=1','ignorehitpause=1')+c(n,'No clone push','PlayerPush','1','value=0')+c(n,'Clone receives damage','HitOverride','1','attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT\nstateno=9790\ntime=1\nforceair=0','ignorehitpause=1')+c(n,'Finite killable clone','DestroySelf','Var(2)=1 && (Life<=0 || Var(5)>=180 || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)')+c(n,'Face enemy','Turn','P2Dist X<0','')
+  s+=c(n,'Clone age','VarAdd','1','v=5\nvalue=1','ignorehitpause=1')+c(n,'Attack recovery clock','VarAdd','Var(3)>0','v=3\nvalue=-1','ignorehitpause=1')+c(n,'No clone push','PlayerPush','1','value=0')+c(n,'Clone receives damage','HitOverride','1','attr=SCA,NA,SA,HA,NP,SP,HP,NT,ST,HT\nstateno=9790\ntime=1\nforceair=0','ignorehitpause=1')+c(n,'Finite killable clone','DestroySelf',f'Var(2)=1 && (Life<=0 || Var(5)>={CLONE_TICKS} || (Root,Life)<=0 || (Root,StateNo%10000)=3000 || RoundState!=2)')+c(n,'Fade at the end','Trans',f'Var(5)>={CLONE_TICKS-24}',f'trans=addalpha\nalpha=Floor(256*({CLONE_TICKS}-Var(5))/24.0),Floor(256*(Var(5)-{CLONE_TICKS-24})/24.0)')+c(n,'Face enemy','Turn','P2Dist X<0','')
   if n!=9790:s+=c(n,'Take order','ChangeState','(Parent,Var(45))!=Var(1)','value=9701\nctrl=0')
-  if n==9700:s+=c(n,'Approach','VelSet','1','x=IfElse(Abs(P2Dist X)>90,4,0)')+c(n,'Autonomous katana assault','ChangeState','Time>=18 && Abs(P2Dist X)<130','value=9701\nctrl=0')
+  if n==9700:s+=c(n,'Approach','VelSet','1','x=IfElse(Abs(P2Dist X)>75,4,0)')+c(n,'Run while pursuing','ChangeAnim','Abs(P2Dist X)>75 && Anim!=9700','value=9700')+c(n,'Stand while waiting','ChangeAnim','Abs(P2Dist X)<=75 && Anim!=9702','value=9702')+c(n,'Autonomous katana assault','ChangeState','Time>=12 && Var(3)<=0 && Abs(P2Dist X)<100 && Abs(P2Dist Y)<70','value=9701\nctrl=0')
   elif n==9790:s+=end(n,10,9700)
-  else:s+=c(n,'Actual clone movement','VelSet','Time<18 && !MoveContact','x=6')+c(n,'Stop on hit','VelSet','MoveContact || Time>=18','x=0')+hit(n,10,'IfElse(Var(0),65,45)',stun=28)+hit(n,23,'IfElse(Var(0),85,70)',True)+end(n,38,9700)
+  else:s+=c(n,'Attack cadence','VarSet','Time=0','v=3\nvalue=90')+b.sound(n,'Time=10','Effect/BladeBrto',2)+c(n,'Actual clone movement','VelSet','Time<18 && !MoveContact','x=6')+c(n,'Stop on hit','VelSet','MoveContact || Time>=18','x=0')+hit(n,10,'IfElse(Var(0),65,45)',stun=28)+hit(n,23,'IfElse(Var(0),85,70)',True)+end(n,38,9700)
   b.STATES.append(s)
 def utility():
  for n in [170,180,190]:
@@ -99,12 +103,14 @@ def utility():
   b.STATES.append(s)
  b.STATES.append(state(500,500)+c(500,'Charge','PowerAdd','1','value=20')+b.sound(500,'Time=0','Effect/RsgAura',3)+b.cast(500,'Time=0 && Var(42)=0 && NumHelper(9551)=0',9551,0,0)+ctl(500,'Release charge','ChangeState','trigger1=AILevel=0 && command!="hold_s"\ntrigger2=Power>=3000\ntrigger3=AILevel>0 && Time>=80','value=0\nctrl=1'))
  for n in [9551,9560]:
-  s=state(n,8900,'A','I','N')+c(n,'Aura follows body','BindToRoot','1','time=1\npos=0,-42')+c(n,'Chakra aura','AngleDraw','1','value=90\nscale=.38,.45')+c(n,'Aura behind fighter','SprPriority','1','value=-2')+c(n,'Finite aura','DestroySelf','RoundState!=2 || (Root,Life)<=0 || '+('(Root,StateNo)!=500' if n==9551 else '(Root,Var(42))=0'));b.STATES.append(s)
+  s=state(n,8818 if n==9560 else 8900,'A','I','N')+c(n,'Aura follows body','BindToRoot','1','time=1\npos=0,0' if n==9560 else 'time=1\npos=0,-42')
+  if n==9551:s+=c(n,'Chakra aura','AngleDraw','1','value=90\nscale=.38,.45')
+  s+=c(n,'Follow aura facing','Turn','Facing!=(Root,Facing)','')+c(n,'No aura shadow','AssertSpecial','1','flag=NoShadow')+c(n,'No aura push','PlayerPush','1','value=0')+c(n,'Aura behind fighter','SprPriority','1','value=-2')+c(n,'Finite aura','DestroySelf','RoundState!=2 || (Root,Life)<=0 || '+('(Root,StateNo)!=500' if n==9551 else '(Root,Var(42))=0'));b.STATES.append(s)
  b.STATES.append(state(520,520)+start(520,'005')+c(520,'Pay focus','PowerAdd','Time=47','value=-1500')+c(520,'Uzuhiko focus','VarSet','Time=47','v=42\nvalue=1')+c(520,'Twenty seconds','VarSet','Time=47','v=40\nvalue=1200')+c(520,'Cooldown','VarSet','Time=47','v=41\nvalue=1500')+end(520,62))
 def ultimate():
  for form in [0,1]:
-  n=3000+form*10000;p=seq('Hiruzen_Skill05',1,6,3)*2+seq('Hiruzen_Skill05',7,12,3)+single('Hiruzen_Skill05_13',240)+list(reversed(seq('Hiruzen_Skill05',7,12,2)))+single(idle(),4);attack(n,p,form,'5,-85,135,5')
-  s=state(n,n,move='A',physics='N',cost=3000)+start(n,'005')+c(n,'Clear contact','VarSet','Time=0','v=21\nvalue=0')+c(n,'Palm approach','VelSet','Time>=36 && Time<60 && !MoveContact','x=IfElse(P2Dist X>65,5,0)')+c(n,'Plant on contact','VelSet','MoveContact || Time>=60','x=0')+hit(n,55,0,ident=3000,stun=330)+'p2stateno=3010\np2getp1state=1\n'
+  n=3000+form*10000;p=seq('Hiruzen_Skill05',1,6,3)*2+seq('Hiruzen_Skill05',7,12,3)+single('UzuhikoPalm',12)+single(idle(),228)+list(reversed(seq('Hiruzen_Skill05',7,12,2)))+single(idle(),4);anim(n,p+single(idle(),-1),form,box='30,-62,65,-32',active=[18])
+  s=state(n,n,move='A',physics='N',cost=3000)+start(n,'005')+c(n,'Clear contact','VarSet','Time=0','v=21\nvalue=0')+c(n,'Palm approach','VelSet','Time>=36 && Time<54 && !MoveContact','x=IfElse(P2Dist X>55,5,0)')+c(n,'Plant on contact','VelSet','MoveContact || Time>=54','x=0')+hit(n,58,0,ident=3000,stun=330)+'p2stateno=3010\np2getp1state=1\n'
   s+=c(n,'Target position','VarSet','MoveHit && NumTarget(3000)>0 && Var(21)=0','fv=0\nvalue=Target(3000),Pos X')+c(n,'Finite damage budget','VarSet','MoveHit && NumTarget(3000)>0 && Var(21)=0',f'v=20\nvalue=IfElse((Target(3000),LifeMax)>=1000,{800 if form else 650},Floor((Target(3000),LifeMax)*{.8 if form else .65}))')+c(n,'Confirmed','VarSet','MoveHit && NumTarget(3000)>0','v=21\nvalue=1')+c(n,'Original tornado at the struck opponent','Explod','Time=61 && NumTarget(3000)>0',f'ID=9571\nanim=8817\npostype=P1\npos=65,0\nscale={.65 if form else .55},{.65 if form else .55}\nbindtime=-1\nremovetime=240\nsprpriority=-1\nownpal=1\nremoveongethit=1')+c(n,'Finite rotating bind','TargetBind','NumTarget(3000)>0 && Time<300','ID=3000\ntime=1\npos=65,-18-8*Abs(Sin(Time*.3))')
   s+=fx(n,'Time=270 && NumTarget(3000)>0',8820,0,0,.55,24,-1)
   for i,t in enumerate(PULSES):
@@ -142,6 +148,6 @@ def main():
  (CHAR/(NAME+'.air')).write_text('; Body composites belong only to the main fighter. Effects use standard AIR A.\n'+''.join(b.AIR))
  (CHAR/(NAME+'_common.cns')).write_bytes((ROOT/'BorutoKarmaJogan/BorutoKarmaJogan_common.cns').read_bytes())
  d=(ROOT/'BorutoKarmaJogan/BorutoKarmaJogan.def').read_text().replace('BorutoKarmaJogan',NAME).replace('Boruto Uzumaki Karma Jogan','Boruto Uzumaki TBV Base').replace('versiondate=10,27,2026','versiondate=10,28,2026');(CHAR/(NAME+'.def')).write_text(d)
- (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,awakening='Uzuhiko focus, original TBV base appearance',awakening_ticks=1200,awakening_cost=1500,ultimate_damage=[650,800],ultimate_pulses=PULSES,own_life_cost=0,clone_health=120,clone_ticks=180),indent=2)+'\n')
+ (CHAR/'assets/moves.json').write_text(json.dumps(dict(moves=MOVES,awakening='Uzuhiko focus, original TBV base appearance',awakening_ticks=1200,awakening_cost=1500,ultimate_damage=[650,800],ultimate_pulses=PULSES,own_life_cost=0,clone_health=120,clone_ticks=CLONE_TICKS),indent=2)+'\n')
  print(NAME,len(b.STATES),'states',len(b.AIR),'actions')
 if __name__=='__main__':main()

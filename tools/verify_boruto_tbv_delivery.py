@@ -12,8 +12,10 @@ def main():
  for j,count in [(core,120),(small,20),(capture,16)]:assert len(j['cases'])==count and all(not c['failures'] for c in j['cases'])
  for c in core['cases']:
   if c['case']['kind'] in ['ultimate','ultimate_one_hp']:assert c['damage']==(800 if c['case']['form'] else 650) and c['damage_pulses']==8 and c['pulse_span_ticks']==200 and c['victim_released']=='true'
- assert len(clone['cases'])==8 and len(feature['giant_sphere_contacts'])==8 and all(c['inside_source_rasengan'] for c in feature['giant_sphere_contacts'])
- rendering=report('rendering');assert rendering['runtime_sha256']==runtime and rendering['original_source_frames']==161 and rendering['indexed_release_sprites']==287 and rendering['png32_release_sprites']==0 and rendering['preserved_opaque_pixels']>10000 and rendering['source_light_layers']==77 and rendering['no_opaque_actor_in_light'] and rendering['movement_uses_movement_sprites'] and rendering['final_wave_separate_from_body']
+ assert len(clone['cases'])==8 and clone['clone_ticks']==480 and all(c['attack_cycles']>=3 and c['late_independent_hits'] for c in clone['cases'] if c['kind']=='expiry') and len(feature['giant_sphere_contacts'])==8 and all(c['inside_source_rasengan'] for c in feature['giant_sphere_contacts'])
+ grounding=report('grounding');assert grounding['runtime_sha256']==runtime and grounding['source_sole_landmarks']==37 and len(grounding['cases'])==26 and grounding['grounded_charge'] and grounding['matching_body_and_light_axes'] and all(-2<=c['minimum_sole_y']<=c['maximum_sole_y']<=0 for c in grounding['cases'])
+ rendering=report('rendering');assert rendering['runtime_sha256']==runtime and rendering['original_source_frames']==161 and rendering['indexed_release_sprites']==295 and rendering['png32_release_sprites']==0 and rendering['preserved_opaque_pixels']>10000 and rendering['source_light_layers']==78 and rendering['no_opaque_actor_in_light'] and rendering['wind_aura_frames']==6 and rendering['no_embedded_actor_in_aura'] and rendering['movement_uses_movement_sprites'] and rendering['final_wave_separate_from_body']
+ palm_aura=report('palm_aura');assert palm_aura['runtime_sha256']==runtime and len(palm_aura['palm_contacts'])==8 and len(palm_aura['wind_aura_cases'])==10 and all(c['palm_visible_at_contact'] and c['no_running_during_damage'] for c in palm_aura['palm_contacts'])
  movement=report('movement');assert movement['runtime_sha256']==runtime and len(movement['cases'])==4 and all(c['actual_jump'] and c['correct_air_sprites'] and c['correct_crouch'] and c['correct_landing'] and c['control_returned'] for c in movement['cases'])
  assert len(feature['smooth_rasengan_motion'])==8 and all(c['maximum_vertical_step']<=13 for c in feature['smooth_rasengan_motion'])
  assert feature['blocked_uzuhiko']==4 and feature['interrupted_uzuhiko']==4 and feature['far_giant_misses']==4 and feature['late_ultimate_interruptions']==4 and feature['standard_mugen_additive_frames']==37
@@ -25,13 +27,14 @@ def main():
   assert z.testzip() is None and set(z.namelist())=={NAME+'/'+f for f in package['files']}
   for f,digest in package['files'].items():assert sha((ROOT/NAME/f).read_bytes())==digest==sha(z.read(NAME+'/'+f))
  video=ROOT/'previews'/preview['video'];focus=ROOT/'previews'/preview['uzuhiko_excerpt']['video'];assert sha(video.read_bytes())==preview['sha256'] and sha(focus.read_bytes())==preview['uzuhiko_excerpt']['sha256'] and all(c['correlation']>=.20 for c in preview['activations'])
+ extra=report('carga_clon_preview');extra_capture=report('carga_clon_capture');extra_video=ROOT/'previews'/extra['video'];assert extra['runtime_sha256']==extra_capture['runtime_sha256']==runtime and len(extra_capture['cases'])==2 and all(not c['failures'] for c in extra_capture['cases']) and sha(extra_video.read_bytes())==extra['sha256'] and all(c['correlation']>=.20 for c in extra['activations'])
  assert subprocess.run(['git','diff','--quiet',BASELINE,'--']+PREVIOUS,cwd=ROOT).returncode==0,'An earlier playable character changed'
  result=dict(character=NAME,runtime_sha256=runtime,actual_inputs=120,short_target_cases=20,receiving_probes=112,clone_cases=8,dash_cases=16,source_sphere_contacts=8,mugen_additive_effect_frames=37,original_frames=161,original_audio_references=38,archive_sha256=package['sha256'],video_sha256=preview['sha256'],previous_characters_unchanged_from=BASELINE)
- result.update(indexed_release_sprites=rendering['indexed_release_sprites'],png32_release_sprites=0,preserved_opaque_pixels=rendering['preserved_opaque_pixels'],source_light_layers=rendering['source_light_layers'],no_opaque_actor_in_light=rendering['no_opaque_actor_in_light'],actual_movement_cases=4,smooth_rasengan_motion_cases=8)
+ result.update(indexed_release_sprites=rendering['indexed_release_sprites'],png32_release_sprites=0,preserved_opaque_pixels=rendering['preserved_opaque_pixels'],source_light_layers=rendering['source_light_layers'],no_opaque_actor_in_light=rendering['no_opaque_actor_in_light'],actual_movement_cases=4,smooth_rasengan_motion_cases=8,grounding_cases=26,source_sole_landmarks=37,clone_ticks=480,palm_contact_cases=8,persistent_wind_aura_cases=10,charge_clone_video_sha256=extra['sha256'])
  if args.write:(ROOT/'previews'/(NAME+'_delivery_checks.json')).write_text(json.dumps(result,indent=2)+'\n')
  if args.commit:
   assert subprocess.check_output(['git','rev-parse',args.commit],cwd=ROOT,text=True).strip()==args.commit;result['public']={}
-  for p in [archive,video,focus]:
+  for p in [archive,video,focus,extra_video]:
    url=f'https://raw.githubusercontent.com/codeuzumaki6/MUGEN/{args.commit}/{p.relative_to(ROOT).as_posix()}'
    with urllib.request.urlopen(url,timeout=60) as response:data=response.read()
    assert data==p.read_bytes();result['public'][p.name]=dict(url=url,bytes=len(data),sha256=sha(data))

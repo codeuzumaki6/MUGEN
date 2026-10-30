@@ -1,13 +1,15 @@
 {
-  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
   "original_source_frames": 161,
-  "indexed_release_sprites": 287,
+  "indexed_release_sprites": 295,
   "png32_release_sprites": 0,
   "preserved_opaque_pixels": 1383943,
-  "source_light_layers": 77,
+  "source_light_layers": 78,
   "no_opaque_actor_in_light": true,
   "movement_uses_movement_sprites": true,
-  "source_crops": 8,
+  "source_crops": 9,
+  "wind_aura_frames": 6,
+  "no_embedded_actor_in_aura": true,
   "final_wave_separate_from_body": true,
   "format": "SFF RLE8, 8-bit indexed; no PNG32 dependency"
 }

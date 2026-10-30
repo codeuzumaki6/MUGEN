@@ -1,0 +1,30 @@
+{
+  "character": "BorutoTBVBase",
+  "frames": 196,
+  "cases": 2,
+  "duration": 21.616666666666667,
+  "video": "BorutoTBVBase_carga_clon_motor.mp4",
+  "sha256": "a55e6875bd6a2b7fea3b773451c5de70a671b0d04744958e5b26f6eec55f077f",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1410,
+      "correlation": 0.512598225636144,
+      "actual_sample_seconds": 4.783310657596372,
+      "voice": "Shared/startup",
+      "anchor": "Shared startup effect"
+    },
+    {
+      "case": 1,
+      "cue_frame": 681,
+      "state": 500,
+      "correlation": 0.9910197702411162,
+      "actual_sample_seconds": 15.696689342403628,
+      "voice": "Effect/RsgAura",
+      "anchor": "Original Boruto pack startup sample"
+    }
+  ],
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123"
+}

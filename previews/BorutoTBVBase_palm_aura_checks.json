@@ -1,0 +1,237 @@
+{
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
+  "palm_contacts": [
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "b",
+        "d": "B",
+        "state": 1030,
+        "cost": 550,
+        "distance": 80
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 52.5,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 54.99999237060547,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "b",
+        "d": "B",
+        "state": 1030,
+        "cost": 550,
+        "distance": 80
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 52.49999237060547,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 55.0,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 52.49999237060547,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 55.0,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 52.49999237060547,
+      "no_running_during_damage": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "palm_visible_at_contact": true,
+      "contact_distance": 55.0,
+      "no_running_during_damage": true
+    }
+  ],
+  "wind_aura_cases": [
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "active_samples": 663,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "active_samples": 663,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "expire_attack",
+        "kind": "expire_attack",
+        "form": 1,
+        "face": 1,
+        "distance": 110
+      },
+      "active_samples": 65,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "expire_hurt",
+        "kind": "expire_hurt",
+        "form": 1,
+        "face": 1,
+        "distance": 35
+      },
+      "active_samples": 134,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "Espiral",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "b",
+        "d": "B",
+        "state": 11030,
+        "cost": 550,
+        "distance": 80
+      },
+      "active_samples": 663,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "ultimate",
+        "kind": "ultimate",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "active_samples": 663,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "expire_attack",
+        "kind": "expire_attack",
+        "form": 1,
+        "face": -1,
+        "distance": 110
+      },
+      "active_samples": 65,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "expire_hurt",
+        "kind": "expire_hurt",
+        "form": 1,
+        "face": -1,
+        "distance": 35
+      },
+      "active_samples": 134,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "awakening",
+        "kind": "awakening",
+        "form": 0,
+        "face": 1,
+        "distance": 110
+      },
+      "active_samples": 585,
+      "persistent_source_dome": true
+    },
+    {
+      "case": {
+        "name": "awakening",
+        "kind": "awakening",
+        "form": 0,
+        "face": -1,
+        "distance": 110
+      },
+      "active_samples": 585,
+      "persistent_source_dome": true
+    }
+  ]
+}

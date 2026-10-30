@@ -1,17 +1,17 @@
 {
   "character": "BorutoTBVBase",
-  "frames": 992,
+  "frames": 952,
   "cases": 16,
-  "duration": 100.46666666666667,
+  "duration": 100.45,
   "video": "BorutoTBVBase_motor.mp4",
-  "sha256": "bd812a4d1b35472e751031df4183c3ad2bd007ad49b152d3b0e20d8a690663a2",
+  "sha256": "1daab4b7a2cd250d168a3b1bd07416e4e9bc0420d9d773cd151295e43df31d37",
   "audio": "Actual engine SDL stereo; no offline sound effects",
   "activations": [
     {
       "case": 0,
       "cue_frame": 29,
       "state": 1000,
-      "correlation": 0.2709027291858601,
+      "correlation": 0.2699266406223671,
       "actual_sample_seconds": 4.876190476190477,
       "voice": "Shared/startup",
       "anchor": "Shared startup effect"
@@ -20,8 +20,8 @@
       "case": 1,
       "cue_frame": 689,
       "state": 1010,
-      "correlation": 0.8600925504060032,
-      "actual_sample_seconds": 16.16108843537415,
+      "correlation": 0.8602236821250677,
+      "actual_sample_seconds": 16.62548752834467,
       "voice": "BorutoTBv/02",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -29,8 +29,8 @@
       "case": 2,
       "cue_frame": 1349,
       "state": 1020,
-      "correlation": 0.8862541590194625,
-      "actual_sample_seconds": 28.23546485260771,
+      "correlation": 0.8884662536202997,
+      "actual_sample_seconds": 27.678185941043083,
       "voice": "BorutoTBv/01",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -38,8 +38,8 @@
       "case": 3,
       "cue_frame": 2009,
       "state": 1030,
-      "correlation": 0.9503682100345269,
-      "actual_sample_seconds": 39.288163265306125,
+      "correlation": 0.9516851362883261,
+      "actual_sample_seconds": 38.730884353741494,
       "voice": "BorutoTBv/005",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -47,8 +47,8 @@
       "case": 4,
       "cue_frame": 2669,
       "state": 1420,
-      "correlation": 0.9351827237369542,
-      "actual_sample_seconds": 50.712380952380954,
+      "correlation": 0.92810876556297,
+      "actual_sample_seconds": 49.83002267573696,
       "voice": "BorutoTBv/04",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -56,8 +56,8 @@
       "case": 5,
       "cue_frame": 3329,
       "state": 1210,
-      "correlation": 0.8836331117987135,
-      "actual_sample_seconds": 61.811519274376415,
+      "correlation": 0.8857811552128096,
+      "actual_sample_seconds": 60.836281179138325,
       "voice": "BorutoTBv/01",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -65,8 +65,8 @@
       "case": 6,
       "cue_frame": 3989,
       "state": 1440,
-      "correlation": 0.8122260493740494,
-      "actual_sample_seconds": 72.86421768707483,
+      "correlation": 0.808112585758409,
+      "actual_sample_seconds": 71.9354195011338,
       "voice": "BorutoTBv/03",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -74,8 +74,8 @@
       "case": 7,
       "cue_frame": 4649,
       "state": 3000,
-      "correlation": 0.9517298895017441,
-      "actual_sample_seconds": 84.00979591836735,
+      "correlation": 0.9516851604114671,
+      "actual_sample_seconds": 83.03455782312925,
       "voice": "BorutoTBv/005",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -83,8 +83,8 @@
       "case": 8,
       "cue_frame": 5309,
       "state": 520,
-      "correlation": 0.9516851604114671,
-      "actual_sample_seconds": 95.06249433106576,
+      "correlation": 0.9516851604114669,
+      "actual_sample_seconds": 94.04081632653062,
       "voice": "BorutoTBv/005",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -92,8 +92,8 @@
       "case": 9,
       "cue_frame": 5969,
       "state": 11000,
-      "correlation": 0.8933028084716249,
-      "actual_sample_seconds": 106.11519274376417,
+      "correlation": 0.9064744178476828,
+      "actual_sample_seconds": 105.09351473922902,
       "voice": "BorutoTBv/01",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -101,8 +101,8 @@
       "case": 10,
       "cue_frame": 6629,
       "state": 11030,
-      "correlation": 0.9516851089797962,
-      "actual_sample_seconds": 117.58585034013605,
+      "correlation": 0.9516851089797965,
+      "actual_sample_seconds": 116.19265306122449,
       "voice": "BorutoTBv/005",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -110,8 +110,8 @@
       "case": 11,
       "cue_frame": 7289,
       "state": 11420,
-      "correlation": 0.9288329496856669,
-      "actual_sample_seconds": 128.5921088435374,
+      "correlation": 0.9285705199793921,
+      "actual_sample_seconds": 127.24535147392291,
       "voice": "BorutoTBv/04",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -119,8 +119,8 @@
       "case": 12,
       "cue_frame": 7949,
       "state": 11210,
-      "correlation": 0.8917079271115651,
-      "actual_sample_seconds": 139.55192743764172,
+      "correlation": 0.8833846452928061,
+      "actual_sample_seconds": 138.34448979591838,
       "voice": "BorutoTBv/01",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -128,8 +128,8 @@
       "case": 13,
       "cue_frame": 8609,
       "state": 11430,
-      "correlation": 0.8702400354186458,
-      "actual_sample_seconds": 150.6510657596372,
+      "correlation": 0.8703556110216316,
+      "actual_sample_seconds": 149.35074829931972,
       "voice": "BorutoTBv/04",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -137,8 +137,8 @@
       "case": 14,
       "cue_frame": 9269,
       "state": 11440,
-      "correlation": 0.8123966745710791,
-      "actual_sample_seconds": 161.75020408163266,
+      "correlation": 0.812225961751288,
+      "actual_sample_seconds": 160.3570068027211,
       "voice": "BorutoTBv/03",
       "anchor": "Original Boruto pack startup sample"
     },
@@ -146,31 +146,31 @@
       "case": 15,
       "cue_frame": 9929,
       "state": 13000,
-      "correlation": 0.9516851604114669,
-      "actual_sample_seconds": 172.80290249433108,
+      "correlation": 0.9516851604114671,
+      "actual_sample_seconds": 171.36326530612246,
       "voice": "BorutoTBv/005",
       "anchor": "Original Boruto pack startup sample"
     }
   ],
-  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
   "uzuhiko_excerpt": {
     "video": "BorutoTBVBase_uzuhiko_motor.mp4",
-    "sha256": "03bc0e595c3374df8ca723597970d529d9f0edd40f153fe13c90ca17132695ff",
+    "sha256": "c704cf1781979fc173d717a251e68dcce85b5dfad3a2d6dcb2d6fe2c6e6a9198",
     "segments": [
       {
         "case": 3,
         "form": 0,
-        "start": 18.816666666666666,
-        "end": 25.05
+        "start": 18.85,
+        "end": 25.150000000000002
       },
       {
         "case": 10,
         "form": 1,
-        "start": 62.69999999999999,
-        "end": 69.01666666666665
+        "start": 62.75,
+        "end": 69.01666666666667
       }
     ],
-    "duration": 12.549999999999997,
+    "duration": 12.566666666666666,
     "source": "Excerpt of the actual engine recording, with its captured audio"
   }
 }

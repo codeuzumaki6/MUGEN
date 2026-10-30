@@ -7,7 +7,7 @@ from boruto_source import ROOT,sha
 from boruto_tbv_sff import read_sff
 NAME='BorutoTBVBase';CHAR=ROOT/NAME
 def main():
-    sprites=read_sff(CHAR/(NAME+'.sff'));manifest=json.loads((CHAR/'assets/sprites.json').read_text());keys={(r['group'],r['number']):r['key'] for r in manifest};byname={r['key']:r for r in manifest};opaque=0;count=0;light_layers=0
+    sprites=read_sff(CHAR/(NAME+'.sff'));manifest=json.loads((CHAR/'assets/sprites.json').read_text());keys={(r['group'],r['number']):r['key'] for r in manifest};byname={r['key']:r for r in manifest};opaque=0;count=0;light_layers=0;crops=0;auras=0
     data=(CHAR/(NAME+'.sff')).read_bytes();sh,total=struct.unpack_from('<2I',data,36)
     for i in range(total):
         header=struct.unpack_from('<4H2hH2B2I2H',data,sh+i*28)
@@ -29,7 +29,13 @@ def main():
             light_layers+=1
         if r.get('source_parent'):
             im=Image.open(CHAR/byname[r['source_parent']]['file']).convert('RGBA').crop(r['source_rect']);assert im.tobytes()==Image.open(CHAR/r['file']).convert('RGBA').tobytes()
-    assert count==161 and opaque>10000 and light_layers==77
+            crops+=1
+        if r.get('source_aura_parent'):
+            source=np.array(Image.open(CHAR/byname[r['source_aura_parent']]['file']).convert('RGBA'));actual=np.array(Image.open(CHAR/r['file']).convert('RGBA'));rgb=source[:,:,:3].astype(int);bright=(rgb[:,:,0]>=170)&(rgb[:,:,1]>=200)&(rgb[:,:,2]>=200)&(rgb[:,:,2]>=rgb[:,:,0]-8)&(rgb[:,:,1]>=rgb[:,:,0]-8);soft=(source[:,:,3]<250)&(rgb.max(2)>=130)&(rgb[:,:,2]>=rgb[:,:,0])&(rgb[:,:,1]>=rgb[:,:,0]);wind=bright|soft
+            assert not actual[~wind].any(),'An embedded actor leaked into the persistent aura'
+            source[~wind]=0;assert np.array_equal(source,actual)
+            auras+=1
+    assert count==161 and opaque>10000 and light_layers==78 and crops==9 and auras==6
     actions={};current=None
     for line in (CHAR/(NAME+'.air')).read_text().splitlines():
         m=re.match(r'\[Begin Action (\d+)\]',line)
@@ -40,6 +46,6 @@ def main():
         for n in [40,41,44]:assert all(k.startswith('Hiruzen_Fly_') for k in actions[n+10000*form])
         for n in [6,10,11,52]:assert not any('Hurt' in k or 'Wake' in k or 'Dead' in k for k in actions[n+10000*form])
         assert not any(k.startswith('Hiruzen_Skill05_') and 20<=int(k.rsplit('_',1)[-1])<=27 for k in actions[3000+10000*form]),'Final wave must not displace the main body'
-    files=[NAME+'.'+s for s in ['def','cns','cmd','air','sff','snd']]+[NAME+'_common.cns'];result=dict(runtime_sha256=sha(b''.join((CHAR/f).read_bytes() for f in files)),original_source_frames=count,indexed_release_sprites=total,png32_release_sprites=0,preserved_opaque_pixels=opaque,source_light_layers=light_layers,no_opaque_actor_in_light=True,movement_uses_movement_sprites=True,source_crops=8,final_wave_separate_from_body=True,format='SFF RLE8, 8-bit indexed; no PNG32 dependency')
+    files=[NAME+'.'+s for s in ['def','cns','cmd','air','sff','snd']]+[NAME+'_common.cns'];result=dict(runtime_sha256=sha(b''.join((CHAR/f).read_bytes() for f in files)),original_source_frames=count,indexed_release_sprites=total,png32_release_sprites=0,preserved_opaque_pixels=opaque,source_light_layers=light_layers,no_opaque_actor_in_light=True,movement_uses_movement_sprites=True,source_crops=crops,wind_aura_frames=auras,no_embedded_actor_in_aura=True,final_wave_separate_from_body=True,format='SFF RLE8, 8-bit indexed; no PNG32 dependency')
     (ROOT/'previews'/(NAME+'_rendering_checks.json')).write_text(json.dumps(result,indent=2)+'\n');print('PASS:',total,'indexed RLE8 sprites, no PNG32;',opaque,'opaque pixels retained; movement corrections retained')
 if __name__=='__main__':main()

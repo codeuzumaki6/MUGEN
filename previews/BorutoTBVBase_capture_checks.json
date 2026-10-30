@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
   "cases": [
     {
       "case": {
@@ -293,7 +293,7 @@
       "guard": "false",
       "damage_pulses": 8,
       "pulse_span_ticks": 200,
-      "trapped_frames": 249,
+      "trapped_frames": 246,
       "victim_released": "true",
       "aura": 0,
       "target_minpower": 3000,
@@ -583,7 +583,7 @@
       "guard": "false",
       "damage_pulses": 8,
       "pulse_span_ticks": 200,
-      "trapped_frames": 249,
+      "trapped_frames": 246,
       "victim_released": "true",
       "aura": 1,
       "target_minpower": 3000,

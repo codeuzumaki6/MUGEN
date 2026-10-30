@@ -19,4 +19,6 @@ source=source.replace('prediction-2*44100','prediction-8*44100').replace('predic
 # inside exact silence. Require measurable captured audio for every anchor.
 source=source.replace("candidates,_=find_peaks(local", "local=np.where((energy[len(cue):]-energy[:-len(cue)])>len(cue)*1e-6,local,0);candidates,_=find_peaks(local")
 source=source.replace("'Mokuton' if rec['name']=='Invocacion' and rec['form']","'Hiraishin' if rec['name']=='Invocacion'").replace('Rasengan doble gigante','Hiraishin: golpe aereo').replace('Futon Rasengan verde','Hiraishin: Rasengan descendente').replace('RT: dos Rasengan azules','RT: Rasengan').replace('KARMA / JOGAN','CONCENTRACION UZUHIKO').replace('Resonancia Karma / Jogan','Concentracion Uzuhiko').replace('Karma y Jogan','TBV base')
-exec(compile(source,str(ROOT/'tools/make_boruto_preview.py'),'exec'),dict(__file__=str(ROOT/'tools/make_boruto_preview.py'),__name__='__main__'))
+def main():
+ exec(compile(source,str(ROOT/'tools/make_boruto_preview.py'),'exec'),dict(__file__=str(ROOT/'tools/make_boruto_preview.py'),__name__='__main__'))
+if __name__=='__main__':main()

@@ -1,43 +1,51 @@
 {
-  "runtime_sha256": "31fcdab6b1e0a3a5d537597353bed41d4d3ee11b9663d1e046f7755f52c651c4",
+  "runtime_sha256": "b74a93e9b36e82d88783cde61ba4d84eecd07b18280c279911cb863cb3307123",
   "clone_health": 120,
-  "clone_ticks": 180,
+  "clone_ticks": 480,
   "cases": [
     {
       "kind": "expiry",
       "form": 0,
       "face": 1,
       "root_life": 1200,
-      "damage": 115,
-      "maximum_age": 179,
-      "minimum_health": 120
+      "damage": 345,
+      "maximum_age": 479,
+      "minimum_health": 120,
+      "attack_cycles": 6,
+      "late_independent_hits": true
     },
     {
       "kind": "expiry",
       "form": 0,
       "face": -1,
       "root_life": 1200,
-      "damage": 115,
-      "maximum_age": 179,
-      "minimum_health": 120
+      "damage": 345,
+      "maximum_age": 479,
+      "minimum_health": 120,
+      "attack_cycles": 6,
+      "late_independent_hits": true
     },
     {
       "kind": "expiry",
       "form": 1,
       "face": 1,
       "root_life": 1200,
-      "damage": 150,
-      "maximum_age": 179,
-      "minimum_health": 120
+      "damage": 450,
+      "maximum_age": 479,
+      "minimum_health": 120,
+      "attack_cycles": 6,
+      "late_independent_hits": true
     },
     {
       "kind": "expiry",
       "form": 1,
       "face": -1,
       "root_life": 1200,
-      "damage": 150,
-      "maximum_age": 179,
-      "minimum_health": 120
+      "damage": 450,
+      "maximum_age": 479,
+      "minimum_health": 120,
+      "attack_cycles": 6,
+      "late_independent_hits": true
     },
     {
       "kind": "defeat",
@@ -46,7 +54,9 @@
       "root_life": 1200,
       "damage": 115,
       "maximum_age": 57,
-      "minimum_health": 0
+      "minimum_health": 0,
+      "attack_cycles": 1,
+      "late_independent_hits": false
     },
     {
       "kind": "defeat",
@@ -55,7 +65,9 @@
       "root_life": 1200,
       "damage": 115,
       "maximum_age": 57,
-      "minimum_health": 0
+      "minimum_health": 0,
+      "attack_cycles": 1,
+      "late_independent_hits": false
     },
     {
       "kind": "defeat",
@@ -64,7 +76,9 @@
       "root_life": 1200,
       "damage": 150,
       "maximum_age": 57,
-      "minimum_health": 0
+      "minimum_health": 0,
+      "attack_cycles": 1,
+      "late_independent_hits": false
     },
     {
       "kind": "defeat",
@@ -73,7 +87,9 @@
       "root_life": 1200,
       "damage": 150,
       "maximum_age": 57,
-      "minimum_health": 0
+      "minimum_health": 0,
+      "attack_cycles": 1,
+      "late_independent_hits": false
     }
   ]
 }

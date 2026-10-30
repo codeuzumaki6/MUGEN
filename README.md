@@ -499,6 +499,8 @@ python tools/build_boruto_tbv_runtime.py
 python tools/validate_boruto_tbv.py
 python tools/verify_boruto_tbv_sources.py
 python tools/check_boruto_tbv_rendering.py
+python tools/check_boruto_tbv_grounding.py
+python tools/check_boruto_tbv_uzuhiko.py
 python tools/check_boruto_tbv_movement.py
 python tools/check_boruto_tbv_in_engine.py
 python tools/check_boruto_tbv_features.py
@@ -507,8 +509,13 @@ python tools/check_boruto_tbv_clone.py
 python tools/check_boruto_tbv_dashes.py
 python tools/check_roster_receiving.py --characters BorutoTBVBase --out previews/BorutoTBVBase_receiving
 python tools/make_boruto_tbv_preview.py
+python tools/make_boruto_tbv_charge_clone_preview.py
 python tools/package_boruto_tbv.py
 python tools/verify_boruto_tbv_delivery.py --write
 ```
 
-Revisión de visibilidad de Boruto TBV base: la entrega usa 287 sprites indexados RLE8 y conserva los PNG originales como fuentes. PNG32 se retiró tras causar invisibilidad en el juego del usuario. El cuerpo conserva sus píxeles opacos y las capas de luz aditivas siguen cada cuadro sin duplicar el cuerpo ni las colisiones. Se mantienen las poses corregidas de salto, agachado y aterrizaje, las transiciones aéreas y el tamaño de la onda final de Uzuhiko. [Comprobación de visibilidad y animaciones](previews/BorutoTBVBase_rendering_checks.json).
+Revisión de visibilidad de Boruto TBV base: la entrega usa 295 sprites indexados RLE8 y conserva los PNG originales como fuentes. PNG32 se retiró tras causar invisibilidad en el juego del usuario. El cuerpo conserva sus píxeles opacos y las capas de luz aditivas siguen cada cuadro sin duplicar el cuerpo ni las colisiones. Se mantienen las poses corregidas de salto, agachado y aterrizaje, las transiciones aéreas y el tamaño de la onda final de Uzuhiko. [Comprobación de visibilidad y animaciones](previews/BorutoTBVBase_rendering_checks.json).
+
+Corregida la altura de la carga y los ataques terrestres: los puntos de apoyo siguen las suelas y sus capas de luz, en vez del borde del resplandor. [26 comprobaciones de apoyo en el suelo](previews/BorutoTBVBase_grounding_checks.json). **Abajo + Y** invoca un clon de katana de hasta ocho segundos, con persecución, reposo y asaltos repetidos. Conserva sus 120 de vida y puede recibir golpes. [Prueba de carga y clon con audio del motor](previews/BorutoTBVBase_carga_clon_motor.mp4).
+
+Uzuhiko muestra ahora una palma extendida tocando al rival antes del daño del tornado. Boruto vuelve al reposo tras conectar; la ulti también inicia la sujeción con esa palma. En despertar conserva el capullo de viento de la referencia durante todo el modo, incluso al moverse, atacar o recibir golpes. [Ocho contactos y diez casos del aura persistente](previews/BorutoTBVBase_palm_aura_checks.json).
