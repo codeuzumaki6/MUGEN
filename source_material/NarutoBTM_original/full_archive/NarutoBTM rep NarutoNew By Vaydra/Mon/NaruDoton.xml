@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <data>
+	    <p type="attackType">Dogs</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>fxDoton_01</f>
+        <e type="setDelay">30</e> 
+        <e type="setCommand">setDead</e> 
+      </frame>
+    </action>
+   
+    <action name="Walk">
+     <data>
+	      <p type="attackType">aAttack</p>
+        <p type="attackValue">500</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">36</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>fxDoton_01</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_02</f>
+        <e type="setSound">Audio/Effect/Batu murag.ogg</e> 
+        <f>fxDoton_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_04</f>
+        <f>fxDoton_05</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>fxDoton_06</f>
+        <e type="setDelay">300</e> 
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+        <f>fxDoton_01</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_02</f>
+        <e type="setSound">Audio/Effect/Batu murag.ogg</e> 
+        <f>fxDoton_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_04</f>
+        <f>fxDoton_05</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>fxDoton_06</f>
+        <e type="setDelay">300</e> 
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <data>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">500</p>
+        <p type="attackRangeX">40</p>
+        <p type="attackRangeY">36</p>
+        <p type="cd">0</p>
+      </data>
+      <frame>
+        <f>fxDoton_01</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_02</f>
+        <e type="setSound">Audio/Effect/Batu murag.ogg</e> 
+        <f>fxDoton_03</f>
+        <e type="setAttackBox">c_hit</e>
+        <f>fxDoton_04</f>
+        <f>fxDoton_05</f>
+        <e type="setAttackBox">b_hit</e>
+        <f>fxDoton_06</f>
+        <e type="setDelay">300</e> 
+        <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+
+</unit>

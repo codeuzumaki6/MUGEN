@@ -1,0 +1,42 @@
+{
+  "character": "Naruto Uzumaki BTM",
+  "uploaded_archive": "file_00000000d89c820dbe77fa831c00b516",
+  "uploaded_gameplay": "file_000000002520820daca35f51937a876e",
+  "source_frames": 164,
+  "valid_frames": 160,
+  "excluded_gameplay_patches": [
+    "NarutoNew_Float_02",
+    "NarutoNew_Float_03",
+    "NarutoNew_KnockDown_05",
+    "NarutoNew_KnockDown_06"
+  ],
+  "reference_seconds": {
+    "Rasengan": [
+      8,
+      13,
+      93
+    ],
+    "Clones and Doton": [
+      16,
+      34,
+      70
+    ],
+    "Chakra combo": [
+      23,
+      28,
+      82
+    ],
+    "Rasenshuriken": [
+      38,
+      45,
+      73
+    ],
+    "Kurama avatar and blast": [
+      54,
+      64,
+      89
+    ]
+  },
+  "awakening": "Kurama chakra aura, 20 seconds, original avatar for heavy techniques",
+  "interpretation": "MUGEN extension of supplied five original skill sequences to established Xbox commands; source XML is data only"
+}

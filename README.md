@@ -544,3 +544,28 @@ python tools/make_konohamaru_preview.py
 python tools/package_konohamaru.py
 python tools/verify_konohamaru_delivery.py --write
 ```
+
+# Naruto Uzumaki — BTM
+
+[**Descargar Naruto BTM**](NarutoBTM.zip) · [Gameplay con audio del motor](previews/NarutoBTM_motor.mp4) · [Ulti de Kurama](previews/NarutoBTM_ultimate_motor.mp4) · [Controles Xbox](NarutoBTM/CONTROLES_XBOX.md)
+
+Usa los sprites y audios originales de Vaydra entregados por el usuario: 160 cuadros útiles, todos incorporados, y las 59 muestras de audio del ZIP. Rasengan con avance y choque, clones de sombra, Doton, puños y patadas de chakra, Rasenshuriken arrojado con explosión y avatar de Kurama. Incluye trece especiales, tres cadenas terrestres y aéreas, doble dash y carga de energía.
+
+**Abajo + Pausa** con la barra completa activa veinte segundos de chakra de Kurama por 1500 de energía: llama dorada persistente, técnicas reforzadas y el avatar original para los ataques grandes. **A** inicia un Rasengan que debe tocar al rival antes de la transformación y la explosión de Kurama. Ocho impactos, hasta 650 de daño en base u 800 en despertar frente a un rival de 1000 de vida. La ulti puede bloquearse, falla por distancia, admite interrupción y no consume vida propia.
+
+Extrae `NarutoBTM` dentro de `chars` y añade `NarutoBTM/NarutoBTM.def` a `data/select.def`. Paquete independiente para MUGEN 1.1; pruebas y grabación nativa en Ikemen GO. [Integridad de recursos](previews/NarutoBTM_source_checks.json) · [120 entradas de combate](previews/NarutoBTM_engine_checks.json) · [24 contra rivales pequeños](previews/NarutoBTM_short_target_checks.json) · [112 pruebas de recepción de golpes](previews/NarutoBTM_receiving/NarutoBTM.json) · [Clones](previews/NarutoBTM_clone_checks.json) · [Entrega](previews/NarutoBTM_delivery_checks.json). Se conservan los veinte personajes anteriores.
+
+```sh
+python tools/build_naruto_btm_assets.py
+python tools/build_naruto_btm_runtime.py
+python tools/validate_naruto_btm.py
+python tools/verify_naruto_btm_sources.py
+python tools/check_naruto_btm_in_engine.py
+python tools/check_naruto_btm_short_targets.py
+python tools/check_naruto_btm_clones.py
+python tools/check_naruto_btm_dashes.py
+python tools/check_roster_receiving.py --characters NarutoBTM --out previews/NarutoBTM_receiving
+python tools/make_naruto_btm_preview.py
+python tools/package_naruto_btm.py
+python tools/verify_naruto_btm_delivery.py --write
+```

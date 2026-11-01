@@ -1,0 +1,37 @@
+
+
+
+File
+Naruto Btm   Replace NarutoNew (NinjaLegend)
+Sprite by       Vaydra
+Nzc Sprite by   Vaydra
+
+- This file Use Extra  Frame for Fx look only
+If Yo no need this   just   delete  bullet line in xml. With Named Anginribut like this
+      <e type="setBullet">AnginRibut</e>
+      
+- File ini memakai extra Fx.  Jika tidak memerlukan nya  hanya hapus baris  bullet AnginRibut     
+ Baris Anginribut
+      <e type="setBullet">AnginRibut</e>
+      
+      
+     ==== Setting ====
+      
+ Untuk versi NinjaLegend  dan Ultimate Ninja legend  bisa menyimpan file    AnginRibut.png  & AnginRibut.Plist nya di Asset dan ubah setting lua nya sebagai berikut :
+ 
+ (For the NinjaLegend and Ultimate Ninja Legend versions, you can place the AnginRibut.png & AnginRibut.Plist files in Assets and change the external settings as follows:)
+ 
+ 
+1 Open folder lua in Asset
+2 Open ui 
+3 Open StartMenu.lua
+ 
+4 Find this text :
+    function enterSelectLayer(gameMode, enableCustomSelect)
+    
+Eter down and Add  this 
+    tools.addSprites('AnginRibut.plist')
+    
+    
+    
+    Or  u can replace StartMenu.lua in Folder to your ninja legend  lua

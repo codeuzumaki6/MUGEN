@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <unit>
+   
+    <action name="Idle">
+	 <date>
+	    <p type="attackType">Deidara</p>
+        <p type="attackValue">0</p>
+        <p type="attackRangeX">51</p>
+        <p type="attackRangeY">11</p>
+        <p type="cd">700</p>
+      </date>
+      <frame>
+	<e type="setSound">Audio/Effect/RsgAura.mp3</e> 
+        <f>SRK_Walks_01</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_02</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_03</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_04</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+	<e type="setSound">Audio/Effect/RsgAura.mp3</e> 
+        <f>SRK_Walks_01</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_02</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_03</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_04</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e>        
+	<e type="setSound">Audio/Effect/RsgAura.mp3</e> 
+        <f>SRK_Walks_01</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_02</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_03</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+       <f>SRK_Walks_04</f>
+        <e type="setDelay">-8</e>     
+        <e type="setMove">30</e> 
+        
+        
+        
+        <f>SRKBOM_01</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_02</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_03</f>   
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_04</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_05</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_06</f>
+        <e type="setDelay">-8</e>     
+        
+        <f>SRKDEAD_01</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKDEAD_02</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKDEAD_03</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKDEAD_04</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKDEAD_05</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKDEAD_06</f>
+        <e type="setDelay">-8</e>     
+        <f>SRKBOM_09</f>
+        <e type="setDelay">-8</e>       
+   
+        
+        <e type="setDetonation">0</e>         
+      </frame>
+    </action>
+   
+    <action name="Walk">
+      <frame>
+	<e type="setSound">Audio/Effect/RsgAura.mp3</e> 
+ <f>SRK_Walks_01</f>
+ <f>SRK_Walks_02</f>
+ <f>SRK_Walks_03</f>
+ <f>SRK_Walks_04</f>
+      </frame>
+    </action>
+   
+    <action name="Hurt">
+      <frame>
+      </frame>
+    </action>
+   
+   <action name="AirHurt">
+     <frame>
+
+     </frame>
+   </action>
+   
+   <action name="KnockDown">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Float">
+      <frame>
+      </frame>
+    </action>
+   
+    <action name="Dead">
+      <frame>
+
+      </frame>
+    </action>
+   
+    <action name="nAttack">
+      <date>
+	    <p type="attackType">aAttack</p>
+        <p type="attackValue">213</p>
+        <p type="attackRangeX">10</p>
+        <p type="attackRangeY">48</p>
+        <p type="cd">0</p>
+      </date>
+      <frame> 
+      
+	<e type="setSound">Audio/Effect/Boom.mp3</e> 
+	
+        <f>SRKBOM_01</f>
+        <e type="setAttackBox">f_hit</e>  
+      <e type="setSound">Audio/Effect/explosion1.mp3</e>
+        <f>SRKBOM_02</f>
+        <f>SRKBOM_03</f>
+        <f>SRKBOM_04</f>
+        <e type="setAttackBox">c_hit</e>  
+        <f>SRKBOM_05</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_06</f>
+        <e type="setAttackBox">ac_hit</e>  
+        
+        <f>SRKBOM_01</f>
+      <e type="setSound">Audio/Effect/explosion1.mp3</e>
+        <f>SRKBOM_02</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_03</f>
+        <f>SRKBOM_04</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_05</f>
+        <f>SRKBOM_06</f>
+        <e type="setAttackBox">ac_hit</e>  
+        
+        
+        <f>SRKBOM_01</f>
+      <e type="setSound">Audio/Effect/explosion1.mp3</e>
+        <f>SRKBOM_02</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_03</f>
+        <f>SRKBOM_04</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_05</f>
+        <f>SRKBOM_06</f>
+        <e type="setAttackBox">ac_hit</e>  
+        
+        <f>SRKBOM_01</f>
+      <e type="setSound">Audio/Effect/explosion1.mp3</e>
+        <f>SRKBOM_02</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_03</f>
+        <f>SRKBOM_04</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_05</f>
+        <f>SRKBOM_06</f>
+        <e type="setAttackBox">ac_hit</e>  
+        
+        
+
+        
+        <f>SRKDEAD_01</f>
+<e type="setSound">Audio/Effect/Boom.mp3</e> 
+
+        <f>SRKDEAD_02</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKDEAD_03</f>
+        <f>SRKDEAD_04</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKDEAD_05</f>
+        <f>SRKDEAD_06</f>
+        <e type="setAttackBox">ac_hit</e>  
+        <f>SRKBOM_09</f>
+
+      <e type="setDetonation">0</e> 
+      </frame>
+    </action>
+
+</unit>

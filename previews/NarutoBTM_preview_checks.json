@@ -1,0 +1,221 @@
+{
+  "character": "NarutoBTM",
+  "frames": 924,
+  "cases": 21,
+  "duration": 92.46666666666667,
+  "video": "NarutoBTM_motor.mp4",
+  "sha256": "0b769577949aed4117fecc7e5f7fce4dbb5416c1ad65dcc730c2a9441e05241c",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.56244212294667,
+      "actual_sample_seconds": 4.73687074829932,
+      "voice": "Shared/startup",
+      "anchor": "Shared startup effect"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.41487014241542464,
+      "actual_sample_seconds": 15.882448979591837,
+      "voice": "BTM/04",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.9251484966600144,
+      "actual_sample_seconds": 26.93514739229025,
+      "voice": "BTM/Rs Srkn",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1030,
+      "correlation": 0.8127973315023587,
+      "actual_sample_seconds": 38.080725623582765,
+      "voice": "BTM/1",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1040,
+      "correlation": 0.6803387110098816,
+      "actual_sample_seconds": 49.179863945578234,
+      "voice": "BTM/N",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1050,
+      "correlation": 0.77692980438355,
+      "actual_sample_seconds": 60.32544217687075,
+      "voice": "BTM/heaa",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 1400,
+      "correlation": 0.7504659641147998,
+      "actual_sample_seconds": 71.37814058956916,
+      "voice": "BTM/Hit",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 1410,
+      "correlation": 0.4626879572588829,
+      "actual_sample_seconds": 82.47727891156462,
+      "voice": "BTM/04",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 1420,
+      "correlation": 0.6350228508873345,
+      "actual_sample_seconds": 93.62285714285714,
+      "voice": "BTM/1",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 1200,
+      "correlation": 0.7504658325807115,
+      "actual_sample_seconds": 104.72199546485261,
+      "voice": "BTM/Hit",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 1210,
+      "correlation": 0.9011912234309506,
+      "actual_sample_seconds": 115.77469387755102,
+      "voice": "BTM/Rs Srkn",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 1430,
+      "correlation": 0.5947075262049419,
+      "actual_sample_seconds": 126.78095238095239,
+      "voice": "BTM/3",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 1440,
+      "correlation": 0.9112560573627243,
+      "actual_sample_seconds": 137.88009070294785,
+      "voice": "BTM/kurama2",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 13,
+      "cue_frame": 8609,
+      "state": 3000,
+      "correlation": 0.7659307243407634,
+      "actual_sample_seconds": 148.97922902494332,
+      "voice": "BTM/Kurama_combo",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 14,
+      "cue_frame": 9269,
+      "state": 520,
+      "correlation": 0.7049517792938392,
+      "actual_sample_seconds": 160.0319274376417,
+      "voice": "BTM/koc",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 15,
+      "cue_frame": 9929,
+      "state": 11000,
+      "correlation": 0.7992793836076424,
+      "actual_sample_seconds": 171.13106575963718,
+      "voice": "BTM/rasen",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 16,
+      "cue_frame": 10589,
+      "state": 11020,
+      "correlation": 0.9149436021095423,
+      "actual_sample_seconds": 182.23020408163265,
+      "voice": "BTM/Rs Srkn",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 17,
+      "cue_frame": 11249,
+      "state": 11410,
+      "correlation": 0.4429097367692834,
+      "actual_sample_seconds": 193.32934240362812,
+      "voice": "BTM/04",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 18,
+      "cue_frame": 11909,
+      "state": 11430,
+      "correlation": 0.5947075262049419,
+      "actual_sample_seconds": 204.38204081632654,
+      "voice": "BTM/3",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 19,
+      "cue_frame": 12569,
+      "state": 11440,
+      "correlation": 0.9109749327353868,
+      "actual_sample_seconds": 215.481179138322,
+      "voice": "BTM/kurama2",
+      "anchor": "Original Naruto BTM pack startup sample"
+    },
+    {
+      "case": 20,
+      "cue_frame": 13229,
+      "state": 13000,
+      "correlation": 0.7616638385568738,
+      "actual_sample_seconds": 226.5338775510204,
+      "voice": "BTM/Kurama_combo",
+      "anchor": "Original Naruto BTM pack startup sample"
+    }
+  ],
+  "runtime_sha256": "aa4b0f3b9e9fd0084fd9be3271eabfc2fc7ed91500c55feb872db18e2f734b31",
+  "ultimate_excerpt": {
+    "video": "NarutoBTM_ultimate_motor.mp4",
+    "sha256": "b8c7c270f869c0aedb8ba4ed79edafa64bc1f72c485d53c204f3dd4827ca2bcf",
+    "segments": [
+      {
+        "case": 13,
+        "form": 0,
+        "start": 54.65000000000001,
+        "end": 60.95000000000001
+      },
+      {
+        "case": 20,
+        "form": 1,
+        "start": 86.16666666666669,
+        "end": 92.46666666666668
+      }
+    ],
+    "duration": 12.599999999999994,
+    "source": "Excerpt of the actual engine recording, with its captured audio"
+  }
+}
