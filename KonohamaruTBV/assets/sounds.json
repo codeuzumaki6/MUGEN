@@ -1,0 +1,691 @@
+{
+  "keys": {
+    "Effect/BladeB": [
+      2,
+      0
+    ],
+    "Effect/Boom": [
+      2,
+      1
+    ],
+    "Effect/BugPillar": [
+      2,
+      2
+    ],
+    "Effect/Charging": [
+      2,
+      3
+    ],
+    "Effect/EfxJump2": [
+      2,
+      4
+    ],
+    "Effect/HitDMG": [
+      2,
+      5
+    ],
+    "Effect/HitDMG2": [
+      2,
+      6
+    ],
+    "Effect/HitDMG3": [
+      2,
+      7
+    ],
+    "Effect/HittA": [
+      2,
+      8
+    ],
+    "Effect/Jutsu": [
+      2,
+      9
+    ],
+    "Effect/Katon": [
+      2,
+      10
+    ],
+    "Effect/Ledakan": [
+      2,
+      11
+    ],
+    "Effect/RsChg2": [
+      2,
+      12
+    ],
+    "Effect/SLASH0": [
+      2,
+      13
+    ],
+    "Effect/Slash01": [
+      2,
+      14
+    ],
+    "Effect/Transform": [
+      2,
+      15
+    ],
+    "Effect/closed": [
+      2,
+      16
+    ],
+    "Effect/damage_rasen": [
+      2,
+      17
+    ],
+    "Effect/fudon_effect": [
+      2,
+      18
+    ],
+    "Effect/hits0": [
+      2,
+      19
+    ],
+    "Effect/jump": [
+      2,
+      20
+    ],
+    "Effect/kawaki bom": [
+      2,
+      21
+    ],
+    "Effect/kong": [
+      2,
+      22
+    ],
+    "Effect/landing2": [
+      2,
+      23
+    ],
+    "Effect/ougis": [
+      2,
+      24
+    ],
+    "Effect/poof2": [
+      2,
+      25
+    ],
+    "Effect/rasenS": [
+      2,
+      26
+    ],
+    "Effect/rock_hit3": [
+      2,
+      27
+    ],
+    "Effect/shuriken": [
+      2,
+      28
+    ],
+    "Effect/slsh": [
+      2,
+      29
+    ],
+    "Effect/step3": [
+      2,
+      30
+    ],
+    "Effect/stick_damage": [
+      2,
+      31
+    ],
+    "Effect/throw": [
+      2,
+      32
+    ],
+    "Audio/Kakashi": [
+      3,
+      0
+    ],
+    "Audio/Kakashi_ougis": [
+      3,
+      1
+    ],
+    "Khm/Attack01_01": [
+      3,
+      2
+    ],
+    "Khm/Attack02_01": [
+      3,
+      3
+    ],
+    "Khm/Attack03_01": [
+      3,
+      4
+    ],
+    "Khm/Dead": [
+      3,
+      5
+    ],
+    "Khm/Enra": [
+      3,
+      6
+    ],
+    "Khm/Fuin": [
+      3,
+      7
+    ],
+    "Khm/Haaaa": [
+      3,
+      8
+    ],
+    "Khm/Ikuzo": [
+      3,
+      9
+    ],
+    "Khm/Kakashi": [
+      3,
+      0
+    ],
+    "Khm/Kakashi_ougis": [
+      3,
+      1
+    ],
+    "Khm/Ougis": [
+      3,
+      10
+    ],
+    "Khm/S05": [
+      3,
+      11
+    ],
+    "Khm/S4": [
+      3,
+      12
+    ],
+    "Khm/dead1": [
+      3,
+      13
+    ],
+    "Khm/enra02": [
+      3,
+      14
+    ],
+    "Khm/enra03": [
+      3,
+      15
+    ],
+    "Khm/enrahengge": [
+      3,
+      16
+    ],
+    "Khm/fuinFx": [
+      3,
+      17
+    ],
+    "Khm/garyuEndan": [
+      3,
+      18
+    ],
+    "Khm/heat": [
+      3,
+      19
+    ],
+    "Khm/konohamaruGamagoro": [
+      3,
+      20
+    ],
+    "Khm/kuchiyose": [
+      3,
+      21
+    ],
+    "Khm/lets go": [
+      3,
+      22
+    ],
+    "Khm/n": [
+      3,
+      23
+    ],
+    "Khm/rasen": [
+      3,
+      24
+    ],
+    "Khm/seah": [
+      3,
+      25
+    ],
+    "Khm/summon": [
+      3,
+      26
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/BladeB.ogg",
+      "source_sha256": "4e7d90d89150e431c7603e18d3fe4374e0f48cac7fbed1eb111de608dd095481",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "a61c4821f5a165014cb55da2a9b56c6291f21a5ba614962d7bd5e407e19556b2"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Boom.mp3",
+      "source_sha256": "cbb14eb9d35a359bed92595a21746ad73f27cbff2fe5346da31e5d0e9649b77d",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "23859a99d9b6655639998bfea699c8c49a7f57f2114d7e19f4e9e4a06f946290"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/BugPillar.ogg",
+      "source_sha256": "be9af3c7914f70b205e557e2d4886e6a47521e8f61c4b253943f6b03c39c6196",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "42cc54008f583eb31ae572b9310e01d42bd3ad45036062678b0b62e06fd9c7b2"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Charging.ogg",
+      "source_sha256": "93da3c059d24d62011f4ebfdbd34c8fef5ee26c94e2a38081d794ac1d9e0f3c2",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "02881e0d5c8b38f5261157d504a40caff948efe60df44e75fd9d27e865f30d97"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/EfxJump2.mp3",
+      "source_sha256": "a813dcd3b4d937316ddbb79fb2cf45086d928dc29b41db40dea11df3e4bd49c7",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "6148ce9f3c01bd74bfd9800d19d37fb9934c9810e157cafea3216b2813d64d1e"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/HitDMG.mp3",
+      "source_sha256": "a9744c8c91ab7275da8a75354f76667d43417c040db4a3309acdee92c865fa29",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "b092486082b6cb7cf8bc0f4462795aa9c1a6a45ca3d326e94a6e5c6313e6ef2b"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/HitDMG2.mp3",
+      "source_sha256": "d128d82aaae20f9652ab37803aca699f8338ee479da828a3faf82d5041827b78",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "72c0f099a111fd8e48e6b1e37fe8ad89c6607a06b21e7a40cc97df02625f204b"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/HitDMG3.mp3",
+      "source_sha256": "feb39ed384ff2a08bc53b6fbf9be264297937dc1c373cb92102fca268be1a668",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "50ed584254afd0c2abd7e3f193e84394d02eab108c908f5694bd743303178de5"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/HittA.ogg",
+      "source_sha256": "a0fc4b96bc17928cbf2ee86e677af5a4087c2c7649b1cc295d80761d2152c144",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "e494cf30c7c98f96226a86fee788c5100e28e5b6ae37133a6f18177b4e62ff67"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Jutsu.ogg",
+      "source_sha256": "51f8d51c98a36dd049e0f9aee983c6fcd362657d2732980e1b6af8f952abe5ac",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "30cb26d9be53ca633a54f83626761aa01e0451e3995aae68bd9f304a10f87827"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Katon.mp3",
+      "source_sha256": "afef0bd56106ef4fc4ecd178f720b29b66f97d903fc4cd334b2da7c266e0bf1b",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "d42f2db1f6c1fe70fbb5f7e605c25a13d07bced8515f6b43eb7e0a176db1e510"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Ledakan.ogg",
+      "source_sha256": "e6a3277ef3cb1dd3ad1d616bd3c62dac73c71fa3260417a50946caeac165dda9",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "8cbbbf9b0674f47df301b50e4813f05fc8eb393a425a5c072bf1888c0a50a8bf"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/RsChg2.mp3",
+      "source_sha256": "a64b82c39d4baac4d3cdcbefd4723889f3820a53264c296254b3f7f10d63c079",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "7474ba2f0e5cea7e6f9b2ccb6a265a95d46bf1ec7cb6aeea2403295db401eb1f"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/SLASH0.mp3",
+      "source_sha256": "7b416c5dd3fb4563cb75bcdeb531d404d9cdefccf406d6e28273ba8853f91875",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "fbe46b085b5af21b745cab5c784e7108f9a50a89583c008ff6b2bea7b25140de"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Slash01.mp3",
+      "source_sha256": "b9f40dce8dece65c8e965cf149cb8fc8c942596a3ff6ee1a1f6bd8c86d934643",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "e6adc40f37a7ed3e7db252e542cfa03b8da5ae34723f4183d2645abba2c43af8"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/Transform.mp3",
+      "source_sha256": "43f309df42b4b9aac940e7f832e33bf5151f0820d72ed6ac22249f0b62fff89b",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "3861f459a633130b53237148b7f987aa4384a4d15b39e39cd7facd5a2ad8ac1b"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/closed.mp3",
+      "source_sha256": "48a5c15f5363d83a7113ba6375e795b5bced322397306af8b7b3b676908e662f",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "982cf11cb147608a7818d0ed2fcf128d5edde071b4c6009ae923216f770fd1da"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/damage_rasen.ogg",
+      "source_sha256": "a4665fea0cebb151671e588435d9afeed3865e1e2eaac8e3666a9e1420b91171",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "933a8537f4514a3fcc0b225920b69da92223eaba2126ba561f9b90d6dc439ffa"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/fudon_effect.mp3",
+      "source_sha256": "0d39838d179bfe2ce0c5b1c456de98436f3fc95c04e796d6fabee0f512fbac8d",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "4c21c6a9fffa5e38c6902db54873103adb27075c5537547461f780720a04df4a"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/hits0.ogg",
+      "source_sha256": "f7392e399fb8be9d4a26af9c2ead70c28a97a12dc26572e3da5dd9f68b4136b2",
+      "group": 2,
+      "number": 19,
+      "wav_sha256": "6cc583cb9b2a5c34fdc46f96be49076bd5442a7556e05475ddc0d830cb6c8598"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/jump.ogg",
+      "source_sha256": "faa5a31c51bc611a9081771183c66416f748f88280f928f9f21601ba96b4b634",
+      "group": 2,
+      "number": 20,
+      "wav_sha256": "930bc663d5d3ca4922d6a89b093bec5060bf741983195b2fb86b744e59349405"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/kawaki bom.mp3",
+      "source_sha256": "e57636bb3bace21e171a63f3debc023ef8174090cfbccb6398d5db2788694c9d",
+      "group": 2,
+      "number": 21,
+      "wav_sha256": "7ec9eee333b57a2964718c13644ef1dfa4b36894884aef9a2a792c89ec008ac2"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/kong.ogg",
+      "source_sha256": "98a7b9ba4cbfc7a16259be2e0b5352b01c60b471582b774750710f7106d26f66",
+      "group": 2,
+      "number": 22,
+      "wav_sha256": "5226d8c643bdb085f22f26b9643197e108ee931b1d4e8c308989cc03cf0174a5"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/landing2.mp3",
+      "source_sha256": "6b542a3bc2759351fe794db8b18962d98426c8d09d94193154431a9c8c8628d7",
+      "group": 2,
+      "number": 23,
+      "wav_sha256": "0b8d3f302201f3925b29961c3c43927c58d65844b1338f8971c7f78000cc05c5"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/ougis.ogg",
+      "source_sha256": "ed43a98d2a59f6a7839180498e2a7b8814227055eddf15d508d5a25085158a8c",
+      "group": 2,
+      "number": 24,
+      "wav_sha256": "19a4d324cf4f4ecd266ee73d52a7a5d435f08245a04155fe652001e8384aa64f"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/poof2.ogg",
+      "source_sha256": "c9e7d910981d522d212eb5d9fd474efa960c294582864a3ba2580f59983333bd",
+      "group": 2,
+      "number": 25,
+      "wav_sha256": "fc848b208a0efcfba08b4087a56702c455c6bb4b75a8a7c3c79ea1dabfb883dd"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/rasenS.ogg",
+      "source_sha256": "d658f3bac864a7505759154d342e12e56892ca23de453567f57d13b4dc169564",
+      "group": 2,
+      "number": 26,
+      "wav_sha256": "053bac63f6f575b48f822fe01df740543a91e4d45d624ef13a9052287d47d1dd"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/rock_hit3.ogg",
+      "source_sha256": "75853f57cdda57b35b8a78b5c42ba48496d1fc63596fc92860ea1985edd709b8",
+      "group": 2,
+      "number": 27,
+      "wav_sha256": "70c1c5700eb3e2887683eff53f15c747236fa073f5985e06d4e73569a3e61251"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/shuriken.mp3",
+      "source_sha256": "e34ba8f9c29c8111e225d371951fc1797a79afe2a629a078c4a694283c22cb60",
+      "group": 2,
+      "number": 28,
+      "wav_sha256": "b5e75d0d7eb43ea0bdbe9d1a3e786c7db20d543bcd4a1941b1557d3d3bfacd67"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/slsh.mp3",
+      "source_sha256": "e3258deca0784fab022e73da63495677fc8c72512ef5ea1d9490192fb85ddaca",
+      "group": 2,
+      "number": 29,
+      "wav_sha256": "17c582a49dbf3784f24933b6ea0817bc6548cd6bdda0b24b6dfed3722dee7f21"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/step3.mp3",
+      "source_sha256": "d1191cc03302d5cd0f82b82821e6dabb44228e2f555899663694cfab546060b8",
+      "group": 2,
+      "number": 30,
+      "wav_sha256": "cbfe507f6323cc249123ecd7c47d5e7e8aa3d30e947f714fec8372751287094c"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/stick_damage.ogg",
+      "source_sha256": "338a864ca94f3c99a6039756e8edaae1cee5bb0a23b5f0a21bcd8cf2ae4d4353",
+      "group": 2,
+      "number": 31,
+      "wav_sha256": "93e04168492771b3ab5fa578cf2d6d60c47daf46e830fe72ea8024e04b74e7d9"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Effect/throw.ogg",
+      "source_sha256": "b87047ea4f6d6d6ea004e37aef3f0460d0cd5c1885f9965add8159df1e0619d7",
+      "group": 2,
+      "number": 32,
+      "wav_sha256": "22b1e951c8b99d3649517d80bffcceacd3f6e2c41a679f4447242d7108d78988"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Kakashi.ogg",
+      "source_sha256": "c2f1effd7c946bcf2faf02969acd5102da9489664f835eb60d834a7dfdb71129",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "ed431e26e2b90bedf0931efbe276f38e58ba0c66b5661a17c181b9fd2d61e7bc"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Kakashi_ougis.ogg",
+      "source_sha256": "5ad45bfb5aafa36a8a9579143c27157c4808833b174600e3b4df17b2b7c7ed7a",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "21e31ca83ab4cbd216d655df7a3d4800f2c6a4cb6f37dd5e780a4c9d8834c2c7"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Attack01_01.mp3",
+      "source_sha256": "e850b4e10a274fe0653f5f96d0886bf015ae775843a7c241928925253f9c1500",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "e657f30b999bfe5d0fc5f100fea24d5c01c4e15f3227091d3ded27ac0feae8fd"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Attack02_01.mp3",
+      "source_sha256": "7896f5850676450244c67ddf6d1103ef2648575abe630af6b1f8fcff0094a705",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "a278faa6effe69a08fcd49ea5f79c01970ffbb24f32669be105323bd1850c539"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Attack03_01.mp3",
+      "source_sha256": "668713efaf23c8aed32c428fc88d898f1020c1cae2db76e111092bcbff9be247",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "ca1094e1374f3311e90e4bae5badc8f335977d924ec6de0b11ece62c6cf48b9c"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Dead.mp3",
+      "source_sha256": "bdc223ad4b3080578443e741c9bd09f7c12814041d76fe5245134161db7f2b2d",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "15cac6cd3ef85b380881becb98fa90454609628a60545680058aa6050dfeb542"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Enra.mp3",
+      "source_sha256": "49610e61ed190cecbb3b4819cbdcebd16bcedaf43f7d0b4a529503832fb90546",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "7fb20e7d4ba3709b2cb9f328ff55809f47411f61c1a8b93e2b690e2f0269d140"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Fuin.mp3",
+      "source_sha256": "be0fd2be0a24d5a4eb6d2cccbad31c22bd81d8d5db3c43839f3a7f2d25f28639",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "39f8e5e8f99cb2741fe3ac3c232b9317809432e359472f1c146436518ec2c57a"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Haaaa.mp3",
+      "source_sha256": "a2fc9c4c4907645ecc278baaeb8829b2b710ee3980bfe07f61d6dbc9852b6d81",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "2b3470aa0ed54aad1421180f089e2a02afe8cac3f2512853bcc5450600f65b48"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Ikuzo.mp3",
+      "source_sha256": "4cd7d13b1c1107646218f9766752effe87f52ca17dd689517a9bcac1260536a8",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "243478c35d6ae7405056a078fda5ba7209aca0859a46782563110aae535794b0"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Kakashi.ogg",
+      "source_sha256": "c2f1effd7c946bcf2faf02969acd5102da9489664f835eb60d834a7dfdb71129",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "ed431e26e2b90bedf0931efbe276f38e58ba0c66b5661a17c181b9fd2d61e7bc"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Kakashi_ougis.ogg",
+      "source_sha256": "5ad45bfb5aafa36a8a9579143c27157c4808833b174600e3b4df17b2b7c7ed7a",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "21e31ca83ab4cbd216d655df7a3d4800f2c6a4cb6f37dd5e780a4c9d8834c2c7"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/Ougis.mp3",
+      "source_sha256": "f814fe2cde40180f9c3d9e09fc304afee64ab34f93cebcbb7cf29e311daaa7bb",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "79ea4ee83cecfe7a74ede3618f601fcd3546163c407b75f5267b31c86d8a84c9"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/S05.mp3",
+      "source_sha256": "2a0268ae4652591c5170a1b24b482210da64e20c717b523b3bb4cc94ec4b0375",
+      "group": 3,
+      "number": 11,
+      "wav_sha256": "b2a3bab19afcd9a7f81c6fe07f88c006a51e7a7a885cd3e3e85a1fdad0ddd567"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/S4.mp3",
+      "source_sha256": "3ae7cf53b37b27c8f0bd8e70769e05c173427799b8a528f18ddc29ffe7a00d6e",
+      "group": 3,
+      "number": 12,
+      "wav_sha256": "022f331204e2fe8d4a258f4904aecf44532fe3f362fed96d04afbc28dfb6784b"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/dead1.mp3",
+      "source_sha256": "6ce11c51f4c5813f5de67afe744b2d0b0de77e548f56b367c657b7e67b3c044f",
+      "group": 3,
+      "number": 13,
+      "wav_sha256": "5a0f98e5f032c418b53dddd6688f9134d8e51130e65f91d1d6d9f961c354e9d5"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/enra02.mp3",
+      "source_sha256": "f0656308d8762b6fb50096391e1df14959a43dacfb6f5ce940c20c8074430737",
+      "group": 3,
+      "number": 14,
+      "wav_sha256": "b01026e3b48086b830a13572d6ad35f0ee9be867c79aac7895f3dae4590119a4"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/enra03.mp3",
+      "source_sha256": "a7b7023b4c2351802b8b499365f43d4d588797b2bf4fd74bc4259a5bedc3adec",
+      "group": 3,
+      "number": 15,
+      "wav_sha256": "82159ccd91cd7e00772c7bb771abeaa0ddd8bf27674068d3f6b96a8bd2186632"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/enrahengge.mp3",
+      "source_sha256": "43d132fbb03089a70f0105d1a1410afe3f8d0d33d943ae916e4e8bb45b81a2f0",
+      "group": 3,
+      "number": 16,
+      "wav_sha256": "47c86615c76528dc572d9e37d969da835a81c39065f836e179532a5a51944abe"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/fuinFx.mp3",
+      "source_sha256": "6171b5021ead33fbf5490d04458d561c01045f012cd3b43154e753d6916febb4",
+      "group": 3,
+      "number": 17,
+      "wav_sha256": "8ddbbefd6de7cac4a0bdef9d2e6a5192a663b3e27ec56854dec2dce191feed66"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/garyuEndan.mp3",
+      "source_sha256": "a036d3c5395db98854f5f414abc1f6bdc900686af9c3553937dca3759d98a45e",
+      "group": 3,
+      "number": 18,
+      "wav_sha256": "7193dc37fc64981747f64476683fe8bc400017167a5845b9164c39fc3346621a"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/heat.mp3",
+      "source_sha256": "23b3d2b0428f927c77ea8ee45db11a3a002d705fc8d6d1a4293a8119dd5ced31",
+      "group": 3,
+      "number": 19,
+      "wav_sha256": "e5e9fa2c28730db2326304eeb07e0ee0729e7fb930b5afc95f9092beeeb6e138"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/konohamaruGamagoro.mp3",
+      "source_sha256": "448a9f12c49f6782d6bc1d30d048467fb7a76e4c51352b13abd03ba45e6c3864",
+      "group": 3,
+      "number": 20,
+      "wav_sha256": "9d16818b15228c9da7860d15f36da05e3a5390fa7544102a5ef6fce07d173cb4"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/kuchiyose.mp3",
+      "source_sha256": "58ea67bb979939c21fad0b775796283354c7c19765669eb4df8de2069d67ebb2",
+      "group": 3,
+      "number": 21,
+      "wav_sha256": "d4bbc5b3ffb64210046fab3b13d4d5538b39327fcf58a225153db88e2166df67"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/lets go.mp3",
+      "source_sha256": "db1b58f53ddee5a0c6ff37f84a5e786d28a2336b23ea51d337b523d6b5ae3a08",
+      "group": 3,
+      "number": 22,
+      "wav_sha256": "4125d1ab4f53ea61e81ce8f9240b7372fbc6675b1f13650c34e899acb96683f7"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/n.mp3",
+      "source_sha256": "f3551eefdf1e0a20e9edb0830eaff4d1686469aa12cfa4eca4a506cda572f6cf",
+      "group": 3,
+      "number": 23,
+      "wav_sha256": "0efad7713afa76051b7d0bb0e059148574f4e54b31e93733b9d3dbad35c49976"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/rasen.mp3",
+      "source_sha256": "38a06bd845f2b58dadcb20992bc4a110d6584a527eb95748a657eb42c4efb920",
+      "group": 3,
+      "number": 24,
+      "wav_sha256": "1b873c266815314ec45de3993289f1c8233cacf84a4a33204140bc7200f240cf"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/seah.mp3",
+      "source_sha256": "99238cfa79a282b0b9430b94b34483e48cab7884f72c2e2f1d6e995d2c203236",
+      "group": 3,
+      "number": 25,
+      "wav_sha256": "e23eb26a1ee990d9e1363884756cd382571f882d839f51b460afa3cb6f420488"
+    },
+    {
+      "source": "source_material/Konohamaru_original/full_archive/KonohamaruTBV by vaydra/Audio/Khm/summon.mp3",
+      "source_sha256": "18f2eb566c8404d01023863c4d9e450626d6379b4feac4c4a999f5d4514a783e",
+      "group": 3,
+      "number": 26,
+      "wav_sha256": "bfe7d28767267bab8cee3da36732d4ec1491f509bfa0ee2a44b488c82a38ad79"
+    }
+  ],
+  "missing_source_references": [
+    "Audio/Khm/xxx"
+  ]
+}

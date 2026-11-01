@@ -519,3 +519,28 @@ Revisión de visibilidad de Boruto TBV base: la entrega usa 295 sprites indexado
 Corregida la altura de la carga y los ataques terrestres: los puntos de apoyo siguen las suelas y sus capas de luz, en vez del borde del resplandor. [26 comprobaciones de apoyo en el suelo](previews/BorutoTBVBase_grounding_checks.json). **Abajo + Y** invoca un clon de katana de hasta ocho segundos, con persecución, reposo y asaltos repetidos. Conserva sus 120 de vida y puede recibir golpes. [Prueba de carga y clon con audio del motor](previews/BorutoTBVBase_carga_clon_motor.mp4).
 
 Uzuhiko muestra ahora una palma extendida tocando al rival antes del daño del tornado. Boruto vuelve al reposo tras conectar; la ulti también inicia la sujeción con esa palma. En despertar conserva el capullo de viento de la referencia durante todo el modo, incluso al moverse, atacar o recibir golpes. [Ocho contactos y diez casos del aura persistente](previews/BorutoTBVBase_palm_aura_checks.json).
+
+# Konohamaru Sarutobi — Two Blue Vortex
+
+[**Descargar Konohamaru TBV**](KonohamaruTBV.zip) · [Gameplay con audio del motor](previews/KonohamaruTBV_motor.mp4) · [Rasengan masivo](previews/KonohamaruTBV_ultimate_motor.mp4) · [Controles Xbox](KonohamaruTBV/CONTROLES_XBOX.md)
+
+Los sprites y audios originales de Vaydra aportados por el usuario: 301 cuadros válidos de ambos atlas, todos utilizados en animaciones o efectos derivados. Rasengan, Katon Garyū Endan, invocación de Enra, barrera, sellado triangular, kunai, cuchillas de chakra y los ataques completos del bastón. Incluye tres cadenas terrestres y aéreas, trece especiales por modo, doble dash gratuito y carga. Los dos clones con Rasengan conservan el tamaño del personaje y sus desplazamientos de profundidad se adaptan al suelo 2D.
+
+**Abajo + Pausa** exige 3000, consume 1500 y activa veinte segundos con el bastón de Enra: cambia postura, carrera y cadenas, y refuerza los especiales. **A** inicia un Rasengan que debe tocar al rival; los cinco clones originales forman después el Rasengan masivo. Ocho impactos, con un máximo de 650 de daño en base u 800 con Enra y límite proporcional contra rivales de poca vida. La ulti admite guardia, falla por distancia, se interrumpe y no consume vida propia.
+
+Extrae `KonohamaruTBV` dentro de `chars` y añade `KonohamaruTBV/KonohamaruTBV.def` a `data/select.def`. Paquete independiente para MUGEN 1.1; grabaciones y pruebas en Ikemen GO. [Fuentes y uso de los 301 cuadros](previews/KonohamaruTBV_source_checks.json) · [120 entradas de combate](previews/KonohamaruTBV_engine_checks.json) · [24 contra rivales pequeños](previews/KonohamaruTBV_short_target_checks.json) · [112 pruebas de recepción de golpes](previews/KonohamaruTBV_receiving/KonohamaruTBV.json) · [Clones](previews/KonohamaruTBV_clone_checks.json) · [Entrega](previews/KonohamaruTBV_delivery_checks.json). Se conservan los diecinueve personajes anteriores.
+
+```sh
+python tools/build_konohamaru_assets.py
+python tools/build_konohamaru_runtime.py
+python tools/validate_konohamaru.py
+python tools/verify_konohamaru_sources.py
+python tools/check_konohamaru_in_engine.py
+python tools/check_konohamaru_short_targets.py
+python tools/check_konohamaru_clones.py
+python tools/check_konohamaru_dashes.py
+python tools/check_roster_receiving.py --characters KonohamaruTBV --out previews/KonohamaruTBV_receiving
+python tools/make_konohamaru_preview.py
+python tools/package_konohamaru.py
+python tools/verify_konohamaru_delivery.py --write
+```

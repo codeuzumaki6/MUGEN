@@ -1,0 +1,13 @@
+# Referencia — Konohamaru TBV
+
+El ZIP y el video de 214,204 segundos fueron aportados por el usuario. Los contactos visuales del video se conservan en las dos hojas adjuntas. Se contrastaron Rasengan, Garyū Endan, invocación y transformación de Enra, jab y combos de bastón, clones, sellado triangular, barrera y el remate de Rasengan masivo. Los dos atlas referenciados por sus PLIST contienen 301 celdas válidas; todas se conservan y se utilizan en animaciones o derivados documentados.
+
+Los archivos Kakashi pertenecen al espacio reemplazado de Naruto Senki. Los sprites son el Konohamaru adulto de capa blanca del video. El modo de bastón tiene sus propios Idle y Walk y sus 42 cuadros de combos, además de cuatro cuadros de estocada. Se adapta como despertar con abajo + Pausa. El coste, duración de veinte segundos y refuerzo de daño son reglas de esta adaptación.
+
+Los ejes se obtienen del desplazamiento horizontal y relleno inferior originales. Las dos series idénticas de clones de Rasengan traen offsets verticales de +20 y −20 para la profundidad de Naruto Senki. En MUGEN se alinean con los ejes de la serie principal idéntica, manteniendo intactos los píxeles. Sus zonas de ataque siguen el frente de las esferas y ambos clones deben conectar en las cuatro combinaciones de forma y orientación. Se dispersan al recibir un golpe, conservando el control y vida del cuerpo principal.
+
+Los efectos de sellado y Rasengan masivo se separan del invocador incrustado. El sellado dibuja al jugador a tamaño normal y a un asistente reflejado, con la pirámide centrada en el rival. Los 31 cuadros del remate conservan los cinco clones atacantes originales; se elimina únicamente el pequeño invocador cuando ya se representa mediante el jugador. La formación se centra en el objetivo confirmado, con daño finito y liberación normal o por interrupción.
+
+La exportación usa exclusivamente RLE8 indexado. Se conservan todos los PNG RGBA originales y se verifican contra las celdas del atlas. Los píxeles opacos del cuerpo permanecen en su sprite y 235 capas de luz sincronizadas conservan los resplandores. Los efectos independientes usan mezcla aditiva AIR A. No se dibujan personajes ni se generan voces.
+
+Los XML son datos de referencia de otro motor. No se ejecutan ni se trasladan sus órdenes de invencibilidad. Las pruebas usan entradas reales en Ikemen GO: 120 casos generales, 24 contra rivales de media escala, 112 de recepción de daño, ocho de clones y 16 de dash. La grabación cubre los trece especiales de base, el despertar, cinco técnicas con bastón y ambas versiones de la ulti, conservando el audio SDL del motor.

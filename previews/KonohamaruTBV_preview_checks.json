@@ -1,0 +1,221 @@
+{
+  "character": "KonohamaruTBV",
+  "frames": 924,
+  "cases": 21,
+  "duration": 92.43333333333334,
+  "video": "KonohamaruTBV_motor.mp4",
+  "sha256": "0b8fb01c9015989750913c3c8199090b17bfaf80c60aecbabb6675a1c4ce1dd5",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.3152707327214829,
+      "actual_sample_seconds": 5.061950113378685,
+      "voice": "Shared/startup",
+      "anchor": "Shared startup effect"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.7455985488904574,
+      "actual_sample_seconds": 16.16108843537415,
+      "voice": "Khm/garyuEndan",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1020,
+      "correlation": 0.8914826308932542,
+      "actual_sample_seconds": 27.260226757369615,
+      "voice": "Khm/summon",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1030,
+      "correlation": 0.8214794734230363,
+      "actual_sample_seconds": 38.080725623582765,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1040,
+      "correlation": 0.8427714517990268,
+      "actual_sample_seconds": 49.13342403628118,
+      "voice": "Khm/Attack02_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 1050,
+      "correlation": 0.6495047648634279,
+      "actual_sample_seconds": 60.232562358276645,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 1400,
+      "correlation": 0.8565119750453586,
+      "actual_sample_seconds": 71.3317006802721,
+      "voice": "Khm/Attack02_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 1410,
+      "correlation": 0.6222179857591718,
+      "actual_sample_seconds": 82.43083900226758,
+      "voice": "Khm/summon",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 1420,
+      "correlation": 0.9174540038786275,
+      "actual_sample_seconds": 93.48353741496598,
+      "voice": "Khm/Fuin",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 1200,
+      "correlation": 0.8977866239777007,
+      "actual_sample_seconds": 104.5362358276644,
+      "voice": "Khm/Attack02_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 1210,
+      "correlation": 0.9015460930194407,
+      "actual_sample_seconds": 115.68181405895692,
+      "voice": "Khm/Attack02_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 1430,
+      "correlation": 0.830326454849969,
+      "actual_sample_seconds": 126.82739229024943,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 12,
+      "cue_frame": 7949,
+      "state": 1440,
+      "correlation": 0.8726455847949803,
+      "actual_sample_seconds": 137.9265306122449,
+      "voice": "Khm/S05",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 13,
+      "cue_frame": 8609,
+      "state": 3000,
+      "correlation": 0.8862153055646736,
+      "actual_sample_seconds": 149.02566893424037,
+      "voice": "Khm/Haaaa",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 14,
+      "cue_frame": 9269,
+      "state": 520,
+      "correlation": 0.7880033870674007,
+      "actual_sample_seconds": 160.07836734693876,
+      "voice": "Khm/summon",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 15,
+      "cue_frame": 9929,
+      "state": 11020,
+      "correlation": 0.6765719854699629,
+      "actual_sample_seconds": 171.17750566893423,
+      "voice": "Khm/summon",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 16,
+      "cue_frame": 10589,
+      "state": 11030,
+      "correlation": 0.821479597610204,
+      "actual_sample_seconds": 182.32308390022675,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 17,
+      "cue_frame": 11249,
+      "state": 11050,
+      "correlation": 0.6495047648634279,
+      "actual_sample_seconds": 193.42222222222222,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 18,
+      "cue_frame": 11909,
+      "state": 11430,
+      "correlation": 0.8303264592478519,
+      "actual_sample_seconds": 204.52136054421769,
+      "voice": "Khm/Attack03_01",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 19,
+      "cue_frame": 12569,
+      "state": 11440,
+      "correlation": 0.8652587303970882,
+      "actual_sample_seconds": 215.62049886621315,
+      "voice": "Khm/S05",
+      "anchor": "Original Konohamaru pack startup sample"
+    },
+    {
+      "case": 20,
+      "cue_frame": 13229,
+      "state": 13000,
+      "correlation": 0.8860458749394762,
+      "actual_sample_seconds": 226.67319727891157,
+      "voice": "Khm/Haaaa",
+      "anchor": "Original Konohamaru pack startup sample"
+    }
+  ],
+  "runtime_sha256": "0bc0bbe6efdf86e2b8184ce06c13f3f1f2b0fecfad51cdd28be7f96c2f269f3d",
+  "ultimate_excerpt": {
+    "video": "KonohamaruTBV_ultimate_motor.mp4",
+    "sha256": "a0efbc00ab7c06baa42d66009864f4af1751af8c72e0cfba94146c0ec1458ead",
+    "segments": [
+      {
+        "case": 13,
+        "form": 0,
+        "start": 54.61666666666668,
+        "end": 60.91666666666668
+      },
+      {
+        "case": 20,
+        "form": 1,
+        "start": 86.13333333333335,
+        "end": 92.43333333333335
+      }
+    ],
+    "duration": 12.599999999999994,
+    "source": "Excerpt of the actual engine recording, with its captured audio"
+  }
+}
