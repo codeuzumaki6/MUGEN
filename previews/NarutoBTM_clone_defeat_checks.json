@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "aa4b0f3b9e9fd0084fd9be3271eabfc2fc7ed91500c55feb872db18e2f734b31",
+  "runtime_sha256": "ee959d5df1b05b5857d3440104e5fa385067d86ca2f427a6771bb9388f54645f",
   "cases": [
     {
       "case": {
@@ -18,7 +18,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -55,7 +55,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -92,7 +92,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -129,7 +129,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,

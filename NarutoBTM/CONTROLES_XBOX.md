@@ -15,8 +15,8 @@ X=a, Y=b, B=c, A=x, RB=y, RT=z y Pausa=s. Las direcciones suponen que miras a la
 | ↓↙← + B | Asalto descendente | 450 |
 | ↓ + X | Barrido bajo | 200 |
 | ↓ + Y | Dos clones de sombra | 400 |
-| ↓ + B | Puño de chakra y onda | 400 |
-| RB | Onda de impacto | 200 |
+| ↓ + B | Rasengan de impacto | 400 |
+| RB | Rasengan arrojado | 200 |
 | RT | Disco Rasenshuriken rápido | 250 |
 | ↓ + RB | Campo de explosión Rasenshuriken | 550 |
 | ↓ + RT | Kurama: Bijūdama | 600 |

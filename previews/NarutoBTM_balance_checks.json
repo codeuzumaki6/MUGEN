@@ -1,0 +1,684 @@
+{
+  "runtime_sha256": "ee959d5df1b05b5857d3440104e5fa385067d86ca2f427a6771bb9388f54645f",
+  "baseline_commit": "567f81b698454f352e97cc0f6bfc16829fee7c96",
+  "target_life": 1000,
+  "ultimate_damage": [
+    300,
+    360
+  ],
+  "rasengan_guard_cases": 8,
+  "cases": [
+    {
+      "name": "Rasengan",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 255,
+      "after": 126
+    },
+    {
+      "name": "Muro",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 145,
+      "after": 72
+    },
+    {
+      "name": "Rasenshuriken",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 340,
+      "after": 170
+    },
+    {
+      "name": "Combo",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 245,
+      "after": 121
+    },
+    {
+      "name": "Ascendente",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 180,
+      "after": 90
+    },
+    {
+      "name": "Caida",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "Barrido",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 110,
+      "after": 55
+    },
+    {
+      "name": "Clones",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 230,
+      "after": 114
+    },
+    {
+      "name": "Impacto",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 195,
+      "after": 120
+    },
+    {
+      "name": "Onda",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 105,
+      "after": 75
+    },
+    {
+      "name": "Disco",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 150,
+      "after": 75
+    },
+    {
+      "name": "RasenCampo",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 280,
+      "after": 140
+    },
+    {
+      "name": "Bijudama",
+      "kind": "move",
+      "form": 0,
+      "face": 1,
+      "before": 305,
+      "after": 151
+    },
+    {
+      "name": "combo a",
+      "kind": "combo",
+      "form": 0,
+      "face": 1,
+      "before": 186,
+      "after": 119
+    },
+    {
+      "name": "air a",
+      "kind": "air",
+      "form": 0,
+      "face": 1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "combo b",
+      "kind": "combo",
+      "form": 0,
+      "face": 1,
+      "before": 300,
+      "after": 192
+    },
+    {
+      "name": "air b",
+      "kind": "air",
+      "form": 0,
+      "face": 1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "combo c",
+      "kind": "combo",
+      "form": 0,
+      "face": 1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "air c",
+      "kind": "air",
+      "form": 0,
+      "face": 1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "ultimate",
+      "kind": "ultimate",
+      "form": 0,
+      "face": 1,
+      "before": 650,
+      "after": 300
+    },
+    {
+      "name": "ultimate_one_hp",
+      "kind": "ultimate_one_hp",
+      "form": 0,
+      "face": 1,
+      "before": 650,
+      "after": 300
+    },
+    {
+      "name": "Rasengan",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 255,
+      "after": 126
+    },
+    {
+      "name": "Muro",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 145,
+      "after": 72
+    },
+    {
+      "name": "Rasenshuriken",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 340,
+      "after": 170
+    },
+    {
+      "name": "Combo",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 245,
+      "after": 121
+    },
+    {
+      "name": "Ascendente",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 180,
+      "after": 90
+    },
+    {
+      "name": "Caida",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "Barrido",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 110,
+      "after": 55
+    },
+    {
+      "name": "Clones",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 230,
+      "after": 114
+    },
+    {
+      "name": "Impacto",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 195,
+      "after": 120
+    },
+    {
+      "name": "Onda",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 105,
+      "after": 75
+    },
+    {
+      "name": "Disco",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 150,
+      "after": 75
+    },
+    {
+      "name": "RasenCampo",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 280,
+      "after": 140
+    },
+    {
+      "name": "Bijudama",
+      "kind": "move",
+      "form": 0,
+      "face": -1,
+      "before": 305,
+      "after": 151
+    },
+    {
+      "name": "combo a",
+      "kind": "combo",
+      "form": 0,
+      "face": -1,
+      "before": 186,
+      "after": 119
+    },
+    {
+      "name": "air a",
+      "kind": "air",
+      "form": 0,
+      "face": -1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "combo b",
+      "kind": "combo",
+      "form": 0,
+      "face": -1,
+      "before": 300,
+      "after": 192
+    },
+    {
+      "name": "air b",
+      "kind": "air",
+      "form": 0,
+      "face": -1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "combo c",
+      "kind": "combo",
+      "form": 0,
+      "face": -1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "air c",
+      "kind": "air",
+      "form": 0,
+      "face": -1,
+      "before": 150,
+      "after": 96
+    },
+    {
+      "name": "ultimate",
+      "kind": "ultimate",
+      "form": 0,
+      "face": -1,
+      "before": 650,
+      "after": 300
+    },
+    {
+      "name": "ultimate_one_hp",
+      "kind": "ultimate_one_hp",
+      "form": 0,
+      "face": -1,
+      "before": 650,
+      "after": 300
+    },
+    {
+      "name": "Rasengan",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 401,
+      "after": 178
+    },
+    {
+      "name": "Muro",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "Rasenshuriken",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 450,
+      "after": 201
+    },
+    {
+      "name": "Combo",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 377,
+      "after": 167
+    },
+    {
+      "name": "Ascendente",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 283,
+      "after": 125
+    },
+    {
+      "name": "Caida",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 289,
+      "after": 128
+    },
+    {
+      "name": "Barrido",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 171,
+      "after": 76
+    },
+    {
+      "name": "Clones",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 310,
+      "after": 154
+    },
+    {
+      "name": "Impacto",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 282,
+      "after": 152
+    },
+    {
+      "name": "Onda",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 140,
+      "after": 90
+    },
+    {
+      "name": "Disco",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "RasenCampo",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 380,
+      "after": 168
+    },
+    {
+      "name": "Bijudama",
+      "kind": "move",
+      "form": 1,
+      "face": 1,
+      "before": 431,
+      "after": 191
+    },
+    {
+      "name": "combo a",
+      "kind": "combo",
+      "form": 1,
+      "face": 1,
+      "before": 271,
+      "after": 156
+    },
+    {
+      "name": "air a",
+      "kind": "air",
+      "form": 1,
+      "face": 1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "combo b",
+      "kind": "combo",
+      "form": 1,
+      "face": 1,
+      "before": 436,
+      "after": 252
+    },
+    {
+      "name": "air b",
+      "kind": "air",
+      "form": 1,
+      "face": 1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "combo c",
+      "kind": "combo",
+      "form": 1,
+      "face": 1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "air c",
+      "kind": "air",
+      "form": 1,
+      "face": 1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "ultimate",
+      "kind": "ultimate",
+      "form": 1,
+      "face": 1,
+      "before": 800,
+      "after": 360
+    },
+    {
+      "name": "ultimate_one_hp",
+      "kind": "ultimate_one_hp",
+      "form": 1,
+      "face": 1,
+      "before": 800,
+      "after": 360
+    },
+    {
+      "name": "Rasengan",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 401,
+      "after": 178
+    },
+    {
+      "name": "Muro",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "Rasenshuriken",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 450,
+      "after": 201
+    },
+    {
+      "name": "Combo",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 377,
+      "after": 167
+    },
+    {
+      "name": "Ascendente",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 283,
+      "after": 125
+    },
+    {
+      "name": "Caida",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 289,
+      "after": 128
+    },
+    {
+      "name": "Barrido",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 171,
+      "after": 76
+    },
+    {
+      "name": "Clones",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 310,
+      "after": 154
+    },
+    {
+      "name": "Impacto",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 282,
+      "after": 152
+    },
+    {
+      "name": "Onda",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 140,
+      "after": 90
+    },
+    {
+      "name": "Disco",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 185,
+      "after": 92
+    },
+    {
+      "name": "RasenCampo",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 380,
+      "after": 168
+    },
+    {
+      "name": "Bijudama",
+      "kind": "move",
+      "form": 1,
+      "face": -1,
+      "before": 431,
+      "after": 191
+    },
+    {
+      "name": "combo a",
+      "kind": "combo",
+      "form": 1,
+      "face": -1,
+      "before": 271,
+      "after": 156
+    },
+    {
+      "name": "air a",
+      "kind": "air",
+      "form": 1,
+      "face": -1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "combo b",
+      "kind": "combo",
+      "form": 1,
+      "face": -1,
+      "before": 436,
+      "after": 252
+    },
+    {
+      "name": "air b",
+      "kind": "air",
+      "form": 1,
+      "face": -1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "combo c",
+      "kind": "combo",
+      "form": 1,
+      "face": -1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "air c",
+      "kind": "air",
+      "form": 1,
+      "face": -1,
+      "before": 218,
+      "after": 126
+    },
+    {
+      "name": "ultimate",
+      "kind": "ultimate",
+      "form": 1,
+      "face": -1,
+      "before": 800,
+      "after": 360
+    },
+    {
+      "name": "ultimate_one_hp",
+      "kind": "ultimate_one_hp",
+      "form": 1,
+      "face": -1,
+      "before": 800,
+      "after": 360
+    }
+  ]
+}

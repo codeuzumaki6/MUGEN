@@ -15,7 +15,7 @@ def main():
    assert c['minimum_life']==1200 and max(int(r[6]) for r in data)==1 and int(data[-1][6])==0
    e=dict(kind=kind,form=c['case']['form'],face=c['case']['face'],root_life=1200,damage=c['damage'],maximum_age=max(int(r[12]) for r in clone),last_seen_tick=int(clone[-1][1]),minimum_health=min(int(r[10]) for r in clone))
    if kind=='expiry':
-    assert e['maximum_age']==70 and e['damage']==(310 if c['case']['form'] else 230),e
+    assert e['maximum_age']==70 and e['damage']==(154 if c['case']['form'] else 114),e
     assert any(float(r[13])>0 and int(r[2])==0 and r[3]=='true' for r in clone),'Player did not regain control while the clone attacked'
    else:
     # Real jabs start at tick 86. Dispersal must occur during that probe,

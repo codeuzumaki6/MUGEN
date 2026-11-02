@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "aa4b0f3b9e9fd0084fd9be3271eabfc2fc7ed91500c55feb872db18e2f734b31",
+  "runtime_sha256": "ee959d5df1b05b5857d3440104e5fa385067d86ca2f427a6771bb9388f54645f",
   "clone_health": 120,
   "clone_ticks": 70,
   "cases": [
@@ -8,7 +8,7 @@
       "form": 0,
       "face": 1,
       "root_life": 1200,
-      "damage": 230,
+      "damage": 114,
       "maximum_age": 70,
       "last_seen_tick": 114,
       "minimum_health": 120
@@ -18,7 +18,7 @@
       "form": 0,
       "face": -1,
       "root_life": 1200,
-      "damage": 230,
+      "damage": 114,
       "maximum_age": 70,
       "last_seen_tick": 114,
       "minimum_health": 120
@@ -28,7 +28,7 @@
       "form": 1,
       "face": 1,
       "root_life": 1200,
-      "damage": 310,
+      "damage": 154,
       "maximum_age": 70,
       "last_seen_tick": 114,
       "minimum_health": 120
@@ -38,7 +38,7 @@
       "form": 1,
       "face": -1,
       "root_life": 1200,
-      "damage": 310,
+      "damage": 154,
       "maximum_age": 70,
       "last_seen_tick": 114,
       "minimum_health": 120
@@ -48,7 +48,7 @@
       "form": 0,
       "face": 1,
       "root_life": 1200,
-      "damage": 230,
+      "damage": 114,
       "maximum_age": 41,
       "last_seen_tick": 86,
       "minimum_health": 120
@@ -58,7 +58,7 @@
       "form": 0,
       "face": -1,
       "root_life": 1200,
-      "damage": 230,
+      "damage": 114,
       "maximum_age": 41,
       "last_seen_tick": 86,
       "minimum_health": 120
@@ -68,7 +68,7 @@
       "form": 1,
       "face": 1,
       "root_life": 1200,
-      "damage": 310,
+      "damage": 154,
       "maximum_age": 41,
       "last_seen_tick": 86,
       "minimum_health": 120
@@ -78,7 +78,7 @@
       "form": 1,
       "face": -1,
       "root_life": 1200,
-      "damage": 310,
+      "damage": 154,
       "maximum_age": 41,
       "last_seen_tick": 86,
       "minimum_health": 120

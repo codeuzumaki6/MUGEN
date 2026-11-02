@@ -96,9 +96,12 @@
   "awakening_ticks": 1200,
   "awakening_cost": 1500,
   "ultimate_damage": [
-    650,
-    800
+    300,
+    360
   ],
+  "normal_damage_scale": 0.65,
+  "special_damage_scale": 0.5,
+  "awake_multiplier": 1.05,
   "ultimate_pulses": [
     84,
     112,

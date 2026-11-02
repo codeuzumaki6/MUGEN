@@ -24,6 +24,10 @@ def main():
    a=np.array(actual);idx=np.frombuffer(pix,np.uint8).reshape(h,w);solid=a[:,:,3]>=250;assert np.all(idx[solid]>0) and np.all(idx[a[:,:,3]==0]==0);opaque+=int(solid.sum())
   if r.get('source_light_parent'):
    parent=np.array(Image.open(CHAR/bykey[r['source_light_parent']]['file']).convert('RGBA'));mask=(parent[:,:,3]>0)&(parent[:,:,3]<250);idx=np.frombuffer(pix,np.uint8).reshape(h,w);assert np.array_equal(idx>0,mask);assert r['axis']==bykey[r['source_light_parent']]['axis'];light+=1
+  if r.get('source_effect_crop'):
+   source_image=Image.open(CHAR/bykey[r['source_parent']]['file']).convert('RGBA');a=np.array(source_image.crop(tuple(r['source_effect_crop'])));yy,xx=np.indices(a.shape[:2]);radius=r['source_effect_radius'];distance=np.hypot(xx-radius,yy-radius);cool=(a[:,:,2].astype(float)>=a[:,:,0]*.95)&(a[:,:,1].astype(float)>=a[:,:,0]*.9);a[:,:,3]=np.round(a[:,:,3]*np.clip((radius-distance)/r['source_effect_feather'],0,1)*cool).astype('uint8');a[a[:,:,3]==0]=0
+   assert np.array_equal(a,np.array(actual)) and r['axis']==[radius,radius]
+   assert r['kind']=='effect' and r['source_cool_color_mask']
   if r.get('excluded_caster_rects') is not None:
    a=np.array(Image.open(CHAR/bykey[r['source_parent']]['file']).convert('RGBA'))
    for x0,y0,x1,y1 in r['excluded_caster_rects']:a[y0:y1,x0:x1]=0
@@ -46,7 +50,7 @@ def main():
   if r['group']==30000:used.add(r['key'])
   if r.get('source_parent'):used.add(r['source_parent'])
  excluded=json.loads((CHAR/'assets/excluded_frames.json').read_text());assert {r['key'] for r in excluded}=={'NarutoNew_Float_02','NarutoNew_Float_03','NarutoNew_KnockDown_05','NarutoNew_KnockDown_06'}
- assert original==160 and used=={r['key'] for r in manifest if r['group']==30000},('Unused original frames',set(bykey)-used)
+ assert original==160 and used=={r['key'] for r in manifest if r['group']==30000},('Unused original frames',{r['key'] for r in manifest if r['group']==30000}-used)
  data=(CHAR/(NAME+'.snd')).read_bytes();count,off=struct.unpack_from('<2I',data,16);samples={}
  for _ in range(count):nxt,size,g,n=struct.unpack_from('<4I',data,off);samples[g,n]=data[off+16:off+16+size];off=nxt
  audio=json.loads((CHAR/'assets/sounds.json').read_text())

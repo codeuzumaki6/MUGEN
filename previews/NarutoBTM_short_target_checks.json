@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "aa4b0f3b9e9fd0084fd9be3271eabfc2fc7ed91500c55feb872db18e2f734b31",
+  "runtime_sha256": "ee959d5df1b05b5857d3440104e5fa385067d86ca2f427a6771bb9388f54645f",
   "cases": [
     {
       "case": {
@@ -20,7 +20,7 @@
         20,
         1000
       ],
-      "damage": 255,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -59,7 +59,7 @@
         20,
         1020
       ],
-      "damage": 340,
+      "damage": 170,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -96,7 +96,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -118,6 +118,79 @@
     },
     {
       "case": {
+        "name": "Impacto",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 400,
+        "distance": 80
+      },
+      "states": [
+        0,
+        11,
+        1420
+      ],
+      "damage": 120,
+      "minimum_life": 1200,
+      "min_power": 2600,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 17,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Onda",
+        "kind": "move",
+        "form": 0,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 150
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 75,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
         "name": "Disco",
         "kind": "move",
         "form": 0,
@@ -126,13 +199,13 @@
         "d": "N",
         "state": 1210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1210
       ],
-      "damage": 150,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -169,7 +242,7 @@
         11,
         1440
       ],
-      "damage": 305,
+      "damage": 151,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -201,7 +274,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -240,7 +313,7 @@
         20,
         1000
       ],
-      "damage": 255,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -279,7 +352,7 @@
         20,
         1020
       ],
-      "damage": 340,
+      "damage": 170,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -316,7 +389,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -338,6 +411,79 @@
     },
     {
       "case": {
+        "name": "Impacto",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 1420,
+        "cost": 400,
+        "distance": 80
+      },
+      "states": [
+        0,
+        11,
+        1420
+      ],
+      "damage": 120,
+      "minimum_life": 1200,
+      "min_power": 2600,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 17,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Onda",
+        "kind": "move",
+        "form": 0,
+        "face": -1,
+        "b": "y",
+        "d": "N",
+        "state": 1200,
+        "cost": 200,
+        "distance": 150
+      },
+      "states": [
+        0,
+        1200
+      ],
+      "damage": 75,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "form_reached": 0,
+      "max_duration": 0,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 0,
+      "end_form": 0,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 0,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
         "name": "Disco",
         "kind": "move",
         "form": 0,
@@ -346,13 +492,13 @@
         "d": "N",
         "state": 1210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1210
       ],
-      "damage": 150,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -389,7 +535,7 @@
         11,
         1440
       ],
-      "damage": 305,
+      "damage": 151,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -421,7 +567,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -460,7 +606,7 @@
         20,
         11000
       ],
-      "damage": 401,
+      "damage": 178,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -499,7 +645,7 @@
         20,
         11020
       ],
-      "damage": 450,
+      "damage": 201,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -536,7 +682,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -558,6 +704,79 @@
     },
     {
       "case": {
+        "name": "Impacto",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 400,
+        "distance": 80
+      },
+      "states": [
+        0,
+        11,
+        11420
+      ],
+      "damage": 152,
+      "minimum_life": 1200,
+      "min_power": 2600,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 17,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Onda",
+        "kind": "move",
+        "form": 1,
+        "face": 1,
+        "b": "y",
+        "d": "N",
+        "state": 11200,
+        "cost": 200,
+        "distance": 150
+      },
+      "states": [
+        0,
+        11200
+      ],
+      "damage": 90,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
         "name": "Disco",
         "kind": "move",
         "form": 1,
@@ -566,13 +785,13 @@
         "d": "N",
         "state": 11210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11210
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -609,7 +828,7 @@
         11,
         11440
       ],
-      "damage": 431,
+      "damage": 191,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -641,7 +860,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -680,7 +899,7 @@
         20,
         11000
       ],
-      "damage": 401,
+      "damage": 178,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -719,7 +938,7 @@
         20,
         11020
       ],
-      "damage": 450,
+      "damage": 201,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -756,7 +975,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -778,6 +997,79 @@
     },
     {
       "case": {
+        "name": "Impacto",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "c",
+        "d": "D",
+        "state": 11420,
+        "cost": 400,
+        "distance": 80
+      },
+      "states": [
+        0,
+        11,
+        11420
+      ],
+      "damage": 152,
+      "minimum_life": 1200,
+      "min_power": 2600,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 2,
+      "pulse_span_ticks": 17,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
+        "name": "Onda",
+        "kind": "move",
+        "form": 1,
+        "face": -1,
+        "b": "y",
+        "d": "N",
+        "state": 11200,
+        "cost": 200,
+        "distance": 150
+      },
+      "states": [
+        0,
+        11200
+      ],
+      "damage": 90,
+      "minimum_life": 1200,
+      "min_power": 2800,
+      "max_power": 3000,
+      "form_reached": 1,
+      "max_duration": 895,
+      "end_state": 0,
+      "ctrl": "true",
+      "helpers": 1,
+      "end_form": 1,
+      "hurt": "false",
+      "guard": "false",
+      "damage_pulses": 1,
+      "pulse_span_ticks": 0,
+      "trapped_frames": 0,
+      "victim_released": "false",
+      "aura": 1,
+      "target_minpower": 3000,
+      "failures": []
+    },
+    {
+      "case": {
         "name": "Disco",
         "kind": "move",
         "form": 1,
@@ -786,13 +1078,13 @@
         "d": "N",
         "state": 11210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11210
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -829,7 +1121,7 @@
         11,
         11440
       ],
-      "damage": 431,
+      "damage": 191,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -861,7 +1153,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,

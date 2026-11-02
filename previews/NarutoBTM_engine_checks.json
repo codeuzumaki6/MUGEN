@@ -1,5 +1,5 @@
 {
-  "runtime_sha256": "aa4b0f3b9e9fd0084fd9be3271eabfc2fc7ed91500c55feb872db18e2f734b31",
+  "runtime_sha256": "ee959d5df1b05b5857d3440104e5fa385067d86ca2f427a6771bb9388f54645f",
   "cases": [
     {
       "case": {
@@ -20,7 +20,7 @@
         20,
         1000
       ],
-      "damage": 255,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -59,7 +59,7 @@
         20,
         1010
       ],
-      "damage": 145,
+      "damage": 72,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -98,7 +98,7 @@
         20,
         1020
       ],
-      "damage": 340,
+      "damage": 170,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -137,7 +137,7 @@
         20,
         1030
       ],
-      "damage": 245,
+      "damage": 121,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -177,7 +177,7 @@
         52,
         1040
       ],
-      "damage": 180,
+      "damage": 90,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -217,7 +217,7 @@
         52,
         1050
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -254,7 +254,7 @@
         11,
         1400
       ],
-      "damage": 110,
+      "damage": 55,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -291,7 +291,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -328,7 +328,7 @@
         11,
         1420
       ],
-      "damage": 195,
+      "damage": 120,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -341,7 +341,7 @@
       "hurt": "false",
       "guard": "false",
       "damage_pulses": 2,
-      "pulse_span_ticks": 9,
+      "pulse_span_ticks": 17,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 0,
@@ -358,13 +358,13 @@
         "d": "N",
         "state": 1200,
         "cost": 200,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1200
       ],
-      "damage": 105,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -394,13 +394,13 @@
         "d": "N",
         "state": 1210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1210
       ],
-      "damage": 150,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -437,7 +437,7 @@
         11,
         1430
       ],
-      "damage": 280,
+      "damage": 140,
       "minimum_life": 1200,
       "min_power": 2450,
       "max_power": 3000,
@@ -474,7 +474,7 @@
         11,
         1440
       ],
-      "damage": 305,
+      "damage": 151,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -510,7 +510,7 @@
         201,
         202
       ],
-      "damage": 186,
+      "damage": 119,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -549,7 +549,7 @@
         601,
         602
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -585,7 +585,7 @@
         211,
         212
       ],
-      "damage": 300,
+      "damage": 192,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -624,7 +624,7 @@
         611,
         612
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -660,7 +660,7 @@
         221,
         222
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -699,7 +699,7 @@
         621,
         622
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -731,7 +731,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -827,7 +827,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -861,7 +861,7 @@
         5000,
         5001
       ],
-      "damage": 243,
+      "damage": 111,
       "minimum_life": 1143,
       "min_power": 0,
       "max_power": 3000,
@@ -1033,7 +1033,7 @@
         20,
         1000
       ],
-      "damage": 255,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -1072,7 +1072,7 @@
         20,
         1010
       ],
-      "damage": 145,
+      "damage": 72,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -1111,7 +1111,7 @@
         20,
         1020
       ],
-      "damage": 340,
+      "damage": 170,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -1150,7 +1150,7 @@
         20,
         1030
       ],
-      "damage": 245,
+      "damage": 121,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -1190,7 +1190,7 @@
         52,
         1040
       ],
-      "damage": 180,
+      "damage": 90,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -1230,7 +1230,7 @@
         52,
         1050
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -1267,7 +1267,7 @@
         11,
         1400
       ],
-      "damage": 110,
+      "damage": 55,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -1304,7 +1304,7 @@
         11,
         1410
       ],
-      "damage": 230,
+      "damage": 114,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -1341,7 +1341,7 @@
         11,
         1420
       ],
-      "damage": 195,
+      "damage": 120,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -1354,7 +1354,7 @@
       "hurt": "false",
       "guard": "false",
       "damage_pulses": 2,
-      "pulse_span_ticks": 9,
+      "pulse_span_ticks": 17,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 0,
@@ -1371,13 +1371,13 @@
         "d": "N",
         "state": 1200,
         "cost": 200,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1200
       ],
-      "damage": 105,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -1407,13 +1407,13 @@
         "d": "N",
         "state": 1210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         1210
       ],
-      "damage": 150,
+      "damage": 75,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -1450,7 +1450,7 @@
         11,
         1430
       ],
-      "damage": 280,
+      "damage": 140,
       "minimum_life": 1200,
       "min_power": 2450,
       "max_power": 3000,
@@ -1487,7 +1487,7 @@
         11,
         1440
       ],
-      "damage": 305,
+      "damage": 151,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -1523,7 +1523,7 @@
         201,
         202
       ],
-      "damage": 186,
+      "damage": 119,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1562,7 +1562,7 @@
         601,
         602
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1598,7 +1598,7 @@
         211,
         212
       ],
-      "damage": 300,
+      "damage": 192,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1637,7 +1637,7 @@
         611,
         612
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1673,7 +1673,7 @@
         221,
         222
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1712,7 +1712,7 @@
         621,
         622
       ],
-      "damage": 150,
+      "damage": 96,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -1744,7 +1744,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -1840,7 +1840,7 @@
         0,
         3000
       ],
-      "damage": 650,
+      "damage": 300,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -1874,7 +1874,7 @@
         5000,
         5001
       ],
-      "damage": 243,
+      "damage": 111,
       "minimum_life": 1143,
       "min_power": 0,
       "max_power": 3000,
@@ -2046,7 +2046,7 @@
         20,
         11000
       ],
-      "damage": 401,
+      "damage": 178,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -2085,7 +2085,7 @@
         20,
         11010
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -2124,7 +2124,7 @@
         20,
         11020
       ],
-      "damage": 450,
+      "damage": 201,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -2163,7 +2163,7 @@
         20,
         11030
       ],
-      "damage": 377,
+      "damage": 167,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -2203,7 +2203,7 @@
         52,
         11040
       ],
-      "damage": 283,
+      "damage": 125,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -2243,7 +2243,7 @@
         52,
         11050
       ],
-      "damage": 289,
+      "damage": 128,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -2280,7 +2280,7 @@
         11,
         11400
       ],
-      "damage": 171,
+      "damage": 76,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -2317,7 +2317,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -2354,7 +2354,7 @@
         11,
         11420
       ],
-      "damage": 282,
+      "damage": 152,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -2367,7 +2367,7 @@
       "hurt": "false",
       "guard": "false",
       "damage_pulses": 2,
-      "pulse_span_ticks": 9,
+      "pulse_span_ticks": 17,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 1,
@@ -2384,13 +2384,13 @@
         "d": "N",
         "state": 11200,
         "cost": 200,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11200
       ],
-      "damage": 140,
+      "damage": 90,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -2420,13 +2420,13 @@
         "d": "N",
         "state": 11210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11210
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -2463,7 +2463,7 @@
         11,
         11430
       ],
-      "damage": 380,
+      "damage": 168,
       "minimum_life": 1200,
       "min_power": 2450,
       "max_power": 3000,
@@ -2500,7 +2500,7 @@
         11,
         11440
       ],
-      "damage": 431,
+      "damage": 191,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -2536,7 +2536,7 @@
         10201,
         10202
       ],
-      "damage": 271,
+      "damage": 156,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2575,7 +2575,7 @@
         10601,
         10602
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2611,7 +2611,7 @@
         10211,
         10212
       ],
-      "damage": 436,
+      "damage": 252,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2650,7 +2650,7 @@
         10611,
         10612
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2686,7 +2686,7 @@
         10221,
         10222
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2725,7 +2725,7 @@
         10621,
         10622
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -2757,7 +2757,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -2853,7 +2853,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -2887,7 +2887,7 @@
         5001,
         13000
       ],
-      "damage": 300,
+      "damage": 135,
       "minimum_life": 1143,
       "min_power": 0,
       "max_power": 3000,
@@ -3055,7 +3055,7 @@
         20,
         11010
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -3130,7 +3130,7 @@
         20,
         11000
       ],
-      "damage": 401,
+      "damage": 178,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -3169,7 +3169,7 @@
         20,
         11010
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -3208,7 +3208,7 @@
         20,
         11020
       ],
-      "damage": 450,
+      "damage": 201,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -3247,7 +3247,7 @@
         20,
         11030
       ],
-      "damage": 377,
+      "damage": 167,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -3287,7 +3287,7 @@
         52,
         11040
       ],
-      "damage": 283,
+      "damage": 125,
       "minimum_life": 1200,
       "min_power": 2650,
       "max_power": 3000,
@@ -3327,7 +3327,7 @@
         52,
         11050
       ],
-      "damage": 289,
+      "damage": 128,
       "minimum_life": 1200,
       "min_power": 2550,
       "max_power": 3000,
@@ -3364,7 +3364,7 @@
         11,
         11400
       ],
-      "damage": 171,
+      "damage": 76,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -3401,7 +3401,7 @@
         11,
         11410
       ],
-      "damage": 310,
+      "damage": 154,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -3438,7 +3438,7 @@
         11,
         11420
       ],
-      "damage": 282,
+      "damage": 152,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,
@@ -3451,7 +3451,7 @@
       "hurt": "false",
       "guard": "false",
       "damage_pulses": 2,
-      "pulse_span_ticks": 9,
+      "pulse_span_ticks": 17,
       "trapped_frames": 0,
       "victim_released": "false",
       "aura": 1,
@@ -3468,13 +3468,13 @@
         "d": "N",
         "state": 11200,
         "cost": 200,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11200
       ],
-      "damage": 140,
+      "damage": 90,
       "minimum_life": 1200,
       "min_power": 2800,
       "max_power": 3000,
@@ -3504,13 +3504,13 @@
         "d": "N",
         "state": 11210,
         "cost": 250,
-        "distance": 80
+        "distance": 150
       },
       "states": [
         0,
         11210
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2750,
       "max_power": 3000,
@@ -3547,7 +3547,7 @@
         11,
         11430
       ],
-      "damage": 380,
+      "damage": 168,
       "minimum_life": 1200,
       "min_power": 2450,
       "max_power": 3000,
@@ -3584,7 +3584,7 @@
         11,
         11440
       ],
-      "damage": 431,
+      "damage": 191,
       "minimum_life": 1200,
       "min_power": 2400,
       "max_power": 3000,
@@ -3620,7 +3620,7 @@
         10201,
         10202
       ],
-      "damage": 271,
+      "damage": 156,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3659,7 +3659,7 @@
         10601,
         10602
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3695,7 +3695,7 @@
         10211,
         10212
       ],
-      "damage": 436,
+      "damage": 252,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3734,7 +3734,7 @@
         10611,
         10612
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3770,7 +3770,7 @@
         10221,
         10222
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3809,7 +3809,7 @@
         10621,
         10622
       ],
-      "damage": 218,
+      "damage": 126,
       "minimum_life": 1200,
       "min_power": 3000,
       "max_power": 3000,
@@ -3841,7 +3841,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1200,
       "min_power": 0,
       "max_power": 3000,
@@ -3937,7 +3937,7 @@
         0,
         13000
       ],
-      "damage": 800,
+      "damage": 360,
       "minimum_life": 1,
       "min_power": 0,
       "max_power": 3000,
@@ -3971,7 +3971,7 @@
         5001,
         13000
       ],
-      "damage": 300,
+      "damage": 135,
       "minimum_life": 1143,
       "min_power": 0,
       "max_power": 3000,
@@ -4139,7 +4139,7 @@
         20,
         11010
       ],
-      "damage": 185,
+      "damage": 92,
       "minimum_life": 1200,
       "min_power": 2600,
       "max_power": 3000,

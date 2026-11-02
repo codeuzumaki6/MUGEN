@@ -75,7 +75,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -136,7 +136,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -197,7 +197,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -258,7 +258,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -319,7 +319,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -380,7 +380,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -441,7 +441,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -502,7 +502,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -563,7 +563,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -623,7 +623,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -704,7 +704,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -785,7 +785,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -866,7 +866,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -947,7 +947,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1028,7 +1028,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -1109,7 +1109,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=36,0
+damage=23,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1190,7 +1190,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=48,0
+damage=31,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1271,7 +1271,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=66,0
+damage=42,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -1353,7 +1353,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1414,7 +1414,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1475,7 +1475,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -1536,7 +1536,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1597,7 +1597,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1658,7 +1658,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -1719,7 +1719,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1780,7 +1780,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1841,7 +1841,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=S,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -1901,7 +1901,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -1982,7 +1982,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2063,7 +2063,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -2144,7 +2144,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2225,7 +2225,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2306,7 +2306,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -2387,7 +2387,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=45,0
+damage=29,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2468,7 +2468,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=60,0
+damage=39,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2549,7 +2549,7 @@ volumescale=80
 type=HitDef
 trigger1=Time=3
 attr=A,NA
-damage=80,0
+damage=52,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -2659,7 +2659,7 @@ x=IfElse(P2Dist X>55,6,0)
 type=HitDef
 trigger1=Time=28
 attr=S,SA
-damage=65,0
+damage=32,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2691,7 +2691,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=44
 attr=S,SA
-damage=75,0
+damage=37,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2723,7 +2723,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=55
 attr=S,SA
-damage=115,0
+damage=57,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -2964,7 +2964,7 @@ x=5
 type=HitDef
 trigger1=Time=7
 attr=S,SA
-damage=55,0
+damage=27,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -2996,7 +2996,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=24
 attr=S,SA
-damage=65,0
+damage=32,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3028,7 +3028,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=31
 attr=S,SA
-damage=125,0
+damage=62,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -3054,6 +3054,21 @@ ID=0
 hitonce=1
 envshake.time=6
 envshake.ampl=-4
+
+
+[State 1030, Separate original effect]
+type=Explod
+trigger1=MoveHit
+anim=8805
+postype=P1
+pos=65,-42
+scale=0.25,0.25
+removetime=6
+bindtime=1
+sprpriority=3
+ownpal=1
+removeongethit=1
+persistent=0
 
 
 [State 1030, Stop movement on contact]
@@ -3131,7 +3146,7 @@ y=.5
 type=HitDef
 trigger1=Time=5
 attr=A,SA
-damage=70,0
+damage=35,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3163,7 +3178,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=14
 attr=A,SA
-damage=110,0
+damage=55,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -3273,7 +3288,7 @@ y=.55
 type=HitDef
 trigger1=Time=6
 attr=A,SA
-damage=65,0
+damage=32,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3305,7 +3320,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=16
 attr=A,SA
-damage=120,0
+damage=60,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -3401,7 +3416,7 @@ x=3
 type=HitDef
 trigger1=Time=5
 attr=C,SA
-damage=110,0
+damage=55,0
 animtype=Up
 guardflag=L
 hitflag=MAF
@@ -3547,7 +3562,7 @@ volumescale=75
 [State 1420, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,1
+value=S3,28
 channel=0
 volumescale=80
 
@@ -3565,11 +3580,17 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 1420, Bring the Rasengan to the opponent]
+type=VelSet
+trigger1=Time>=8 && Time<22 && !MoveContact
+x=IfElse(P2Dist X>55,4,0)
+
+
 [State 1420, Real attack collision]
 type=HitDef
-trigger1=Time=8
+trigger1=Time=14
 attr=S,SA
-damage=90,0
+damage=45,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3581,7 +3602,7 @@ sparkxy=0,-35
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=28
+ground.hittime=34
 ground.slidetime=14
 ground.velocity=-0.3,0
 air.hittime=30
@@ -3597,23 +3618,42 @@ envshake.time=2
 envshake.ampl=-1
 
 
-[State 1420, Finite technique resource]
-type=Helper
-trigger1=Time=13
-helpertype=Normal
-name="Naruto technique"
-ID=9500
-stateno=9500
-postype=P1
-pos=60,-42
-ownpal=1
-keyctrl=0
+[State 1420, Real attack collision]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=75,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
 
 
 [State 1420, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=8
-value=S2,13
+trigger1=Time=14
+value=S2,15
 channel=2
 volumescale=80
 
@@ -3626,7 +3666,7 @@ x=0
 
 [State 1420, Return control]
 type=ChangeState
-trigger1=Time>=36
+trigger1=Time>=50
 value=0
 ctrl=1
 
@@ -3651,7 +3691,7 @@ volumescale=75
 [State 1200, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,7
+value=S3,28
 channel=0
 volumescale=80
 
@@ -3671,21 +3711,21 @@ persistent=0
 
 [State 1200, Finite technique resource]
 type=Helper
-trigger1=Time=6
+trigger1=Time=13
 helpertype=Normal
 name="Naruto technique"
 ID=9500
 stateno=9500
 postype=P1
-pos=50,-38
+pos=40,-38
 ownpal=1
 keyctrl=0
 
 
 [State 1200, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=6
-value=S2,11
+trigger1=Time=13
+value=S2,20
 channel=2
 volumescale=80
 
@@ -3889,7 +3929,7 @@ persistent=0
 type=HitDef
 trigger1=Time=39
 attr=S,SA
-damage=85,0
+damage=42,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3921,7 +3961,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=48
 attr=S,SA
-damage=95,0
+damage=47,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -3953,7 +3993,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=60
 attr=S,SA
-damage=125,0
+damage=62,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -4064,7 +4104,7 @@ x=IfElse(P2Dist X>55,6,0)
 type=HitDef
 trigger1=Time=28
 attr=S,SA
-damage=90,0
+damage=45,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4096,7 +4136,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=44
 attr=S,SA
-damage=100,0
+damage=50,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4128,7 +4168,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=55
 attr=S,SA
-damage=150,0
+damage=75,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -4369,7 +4409,7 @@ x=5
 type=HitDef
 trigger1=Time=7
 attr=S,SA
-damage=75,0
+damage=37,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4401,7 +4441,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=24
 attr=S,SA
-damage=90,0
+damage=45,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4433,7 +4473,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=31
 attr=S,SA
-damage=155,0
+damage=77,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -4459,6 +4499,21 @@ ID=0
 hitonce=1
 envshake.time=6
 envshake.ampl=-4
+
+
+[State 11030, Separate original effect]
+type=Explod
+trigger1=MoveHit
+anim=8805
+postype=P1
+pos=65,-42
+scale=0.25,0.25
+removetime=6
+bindtime=1
+sprpriority=3
+ownpal=1
+removeongethit=1
+persistent=0
 
 
 [State 11030, Stop movement on contact]
@@ -4536,7 +4591,7 @@ y=.5
 type=HitDef
 trigger1=Time=5
 attr=A,SA
-damage=95,0
+damage=47,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4568,7 +4623,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=14
 attr=A,SA
-damage=145,0
+damage=72,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -4678,7 +4733,7 @@ y=.55
 type=HitDef
 trigger1=Time=6
 attr=A,SA
-damage=90,0
+damage=45,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4710,7 +4765,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=16
 attr=A,SA
-damage=155,0
+damage=77,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -4806,7 +4861,7 @@ x=3
 type=HitDef
 trigger1=Time=5
 attr=C,SA
-damage=145,0
+damage=72,0
 animtype=Up
 guardflag=L
 hitflag=MAF
@@ -4952,7 +5007,7 @@ volumescale=75
 [State 11420, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,1
+value=S3,28
 channel=0
 volumescale=80
 
@@ -4970,11 +5025,17 @@ p2defmul=1
 poweradd=0
 persistent=0
 
+[State 11420, Bring the Rasengan to the opponent]
+type=VelSet
+trigger1=Time>=8 && Time<22 && !MoveContact
+x=IfElse(P2Dist X>55,4,0)
+
+
 [State 11420, Real attack collision]
 type=HitDef
-trigger1=Time=8
+trigger1=Time=14
 attr=S,SA
-damage=120,0
+damage=55,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -4986,7 +5047,7 @@ sparkxy=0,-35
 hitsound=S1,7
 guardsound=S1,9
 ground.type=High
-ground.hittime=28
+ground.hittime=34
 ground.slidetime=14
 ground.velocity=-0.3,0
 air.hittime=30
@@ -5002,23 +5063,42 @@ envshake.time=2
 envshake.ampl=-1
 
 
-[State 11420, Finite technique resource]
-type=Helper
-trigger1=Time=13
-helpertype=Normal
-name="Naruto technique"
-ID=9500
-stateno=9500
-postype=P1
-pos=60,-42
-ownpal=1
-keyctrl=0
+[State 11420, Real attack collision]
+type=HitDef
+trigger1=Time=27
+attr=S,SA
+damage=90,0
+animtype=Up
+guardflag=MA
+hitflag=MAF
+priority=5,Hit
+pausetime=4,8
+sparkno=S8700
+guard.sparkno=-1
+sparkxy=0,-35
+hitsound=S1,19
+guardsound=S1,9
+ground.type=High
+ground.hittime=22
+ground.slidetime=14
+ground.velocity=-5,-6
+air.hittime=30
+air.velocity=-4,-5
+fall=1
+fall.recover=1
+fall.recovertime=45
+getpower=0,0
+givepower=10,5
+ID=0
+hitonce=1
+envshake.time=6
+envshake.ampl=-4
 
 
 [State 11420, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=8
-value=S2,13
+trigger1=Time=14
+value=S2,15
 channel=2
 volumescale=80
 
@@ -5031,7 +5111,7 @@ x=0
 
 [State 11420, Return control]
 type=ChangeState
-trigger1=Time>=36
+trigger1=Time>=50
 value=0
 ctrl=1
 
@@ -5056,7 +5136,7 @@ volumescale=75
 [State 11200, Supplied Boruto audio]
 type=PlaySnd
 trigger1=Time=0
-value=S3,7
+value=S3,28
 channel=0
 volumescale=80
 
@@ -5076,21 +5156,21 @@ persistent=0
 
 [State 11200, Finite technique resource]
 type=Helper
-trigger1=Time=6
+trigger1=Time=13
 helpertype=Normal
 name="Naruto technique"
 ID=9500
 stateno=9500
 postype=P1
-pos=50,-38
+pos=40,-38
 ownpal=1
 keyctrl=0
 
 
 [State 11200, Supplied Boruto audio]
 type=PlaySnd
-trigger1=Time=6
-value=S2,11
+trigger1=Time=13
+value=S2,20
 channel=2
 volumescale=80
 
@@ -5294,7 +5374,7 @@ persistent=0
 type=HitDef
 trigger1=Time=39
 attr=S,SA
-damage=105,0
+damage=52,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5326,7 +5406,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=48
 attr=S,SA
-damage=115,0
+damage=57,0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5358,7 +5438,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=60
 attr=S,SA
-damage=145,0
+damage=72,0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5427,12 +5507,12 @@ movetype=A
 physics=N
 ctrl=0
 anim=8800
-velset=10,0
+velset=6.5,0
 
 [State 9500, Original projectile scale]
 type=AngleDraw
 trigger1=1
-scale=0.35,0.35
+scale=0.82,0.82
 
 
 [State 9500, No projectile push]
@@ -5445,7 +5525,7 @@ value=0
 type=HitDef
 trigger1=Time=0
 attr=A,SP
-damage=IfElse((Root,Var(42)),140,105),0
+damage=Floor((IfElse((Root,Var(42)),180,150))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5473,9 +5553,22 @@ envshake.time=6
 envshake.ampl=-4
 
 
+[State 9500, No sphere shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9500, Sphere stops at actual contact]
+type=ChangeState
+trigger1=MoveContact
+value=9510
+ctrl=0
+
+
 [State 9500, Finite projectile]
 type=DestroySelf
-trigger1=MoveContact || Time>=65 || RoundState!=2
+trigger1=Time>=65 || RoundState!=2
 
 
 
@@ -5503,7 +5596,7 @@ value=0
 type=HitDef
 trigger1=Time=0
 attr=A,SP
-damage=IfElse((Root,Var(42)),165,130),0
+damage=Floor((IfElse((Root,Var(42)),150,130))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5568,7 +5661,7 @@ value=0
 type=HitDef
 trigger1=Time=0
 attr=A,SP
-damage=IfElse((Root,Var(42)),185,150),0
+damage=Floor((IfElse((Root,Var(42)),185,150))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5599,6 +5692,53 @@ envshake.ampl=-4
 [State 9502, Finite projectile]
 type=DestroySelf
 trigger1=MoveContact || Time>=65 || RoundState!=2
+
+
+
+[Statedef 9510]
+type=A
+movetype=I
+physics=N
+ctrl=0
+anim=8806
+velset=0,0
+
+[State 9510, Original rotating impact expands briefly]
+type=AngleDraw
+trigger1=1
+scale=.82+.025*Time,.82+.025*Time
+
+
+[State 9510, Impact glow fades]
+type=Trans
+trigger1=1
+trans=addalpha
+alpha=256-Floor(256*Time/12.0),256
+
+
+[State 9510, No impact shadow]
+type=AssertSpecial
+trigger1=1
+flag=NoShadow
+
+
+[State 9510, No impact push]
+type=PlayerPush
+trigger1=1
+value=0
+
+
+[State 9510, Supplied Boruto audio]
+type=PlaySnd
+trigger1=Time=0
+value=S2,15
+channel=2
+volumescale=80
+
+
+[State 9510, Finite Rasengan impact]
+type=DestroySelf
+trigger1=Time>=12 || RoundState!=2
 
 
 
@@ -5638,7 +5778,7 @@ value=0
 type=HitDef
 trigger1=Time=6
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5670,7 +5810,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=17
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5702,7 +5842,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=28
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5772,7 +5912,7 @@ value=0
 type=HitDef
 trigger1=Time=8
 attr=S,SP
-damage=IfElse((Root,Var(42)),185,145),0
+damage=Floor((IfElse((Root,Var(42)),185,145))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -5842,7 +5982,7 @@ value=0
 type=HitDef
 trigger1=Time=4
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5874,7 +6014,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=20
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5906,7 +6046,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=36
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -5938,7 +6078,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=52
 attr=S,SP
-damage=IfElse((Root,Var(42)),95,70),0
+damage=Floor((IfElse((Root,Var(42)),85,70))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -6005,7 +6145,7 @@ ignorehitpause=1
 type=HitDef
 trigger1=Time=4
 attr=S,SA
-damage=IfElse((Root,Var(42)),70,50),0
+damage=Floor((IfElse((Root,Var(42)),70,50))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -6037,7 +6177,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=14
 attr=S,SA
-damage=IfElse((Root,Var(42)),85,65),0
+damage=Floor((IfElse((Root,Var(42)),85,65))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -6110,7 +6250,7 @@ ignorehitpause=1
 type=HitDef
 trigger1=Time=4
 attr=S,SA
-damage=IfElse((Root,Var(42)),70,50),0
+damage=Floor((IfElse((Root,Var(42)),70,50))*0.5),0
 animtype=Medium
 guardflag=MA
 hitflag=MAF
@@ -6142,7 +6282,7 @@ envshake.ampl=-1
 type=HitDef
 trigger1=Time=14
 attr=S,SA
-damage=IfElse((Root,Var(42)),85,65),0
+damage=Floor((IfElse((Root,Var(42)),85,65))*0.5),0
 animtype=Up
 guardflag=MA
 hitflag=MAF
@@ -6576,7 +6716,7 @@ p2getp1state=1
 type=VarSet
 trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
 v=20
-value=IfElse((Target(3000),LifeMax)>=1000,650,Floor((Target(3000),LifeMax)*0.65))
+value=IfElse((Target(3000),LifeMax)>=1000,300,Floor((Target(3000),LifeMax)*0.3))
 
 
 [State 3000, Confirm impact]
@@ -6999,7 +7139,7 @@ p2getp1state=1
 type=VarSet
 trigger1=MoveHit && NumTarget(3000)>0 && Var(21)=0
 v=20
-value=IfElse((Target(3000),LifeMax)>=1000,800,Floor((Target(3000),LifeMax)*0.8))
+value=IfElse((Target(3000),LifeMax)>=1000,360,Floor((Target(3000),LifeMax)*0.36))
 
 
 [State 13000, Confirm impact]
@@ -7474,7 +7614,7 @@ keyctrl=0
 [State -2, Awake technique power]
 type=AttackMulSet
 trigger1=!IsHelper
-value=IfElse(Var(42),1.18,1)
+value=IfElse(Var(42),1.05,1)
 
 
 [State -2, Reset air chain]

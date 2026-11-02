@@ -5791,5 +5791,140 @@
     "redrawn": false,
     "ai_generated": false,
     "kind": "portrait"
+  },
+  {
+    "key": "RasenganSphere_01",
+    "group": 30101,
+    "number": 0,
+    "file": "assets/frames/30101_0.png",
+    "axis": [
+      29,
+      29
+    ],
+    "rgba_sha256": "bbc97c267771aec80ea7253130d4c3aca9ace2fdd00e29d47d7bbe06597c653a",
+    "pixels_sha256": "00dd3bfe5d0467737b1952f8c0f2b6d7ed63ce1d1f3499b5628f266b9b4db6bc",
+    "palette_sha256": "8c96028808900187cf8138b61a3debbbe80c0ec1b586d395855b82d7aa20af18",
+    "storage": "RLE8 indexed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_parent": "NarutoNew_RS_Hit_01",
+    "source_effect_crop": [
+      133,
+      73,
+      191,
+      131
+    ],
+    "source_effect_radius": 29,
+    "source_effect_feather": 5,
+    "source_cool_color_mask": true
+  },
+  {
+    "key": "RasenganSphere_02",
+    "group": 30101,
+    "number": 1,
+    "file": "assets/frames/30101_1.png",
+    "axis": [
+      29,
+      29
+    ],
+    "rgba_sha256": "355896e82b3c9e2b1a55584161d0d6f5fe7f1f336d7c8975e0ec961f5c3dcf78",
+    "pixels_sha256": "f12b7c5794d1555370a6b7d0335187857cae94a2b05334f28b94a2197723521a",
+    "palette_sha256": "432657096b40e910fee400d4634ca3c7290f81d3cb1ad7b00b815699c35c22a4",
+    "storage": "RLE8 indexed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_parent": "NarutoNew_RS_Hit_02",
+    "source_effect_crop": [
+      133,
+      73,
+      191,
+      131
+    ],
+    "source_effect_radius": 29,
+    "source_effect_feather": 5,
+    "source_cool_color_mask": true
+  },
+  {
+    "key": "RasenganSphere_03",
+    "group": 30101,
+    "number": 2,
+    "file": "assets/frames/30101_2.png",
+    "axis": [
+      29,
+      29
+    ],
+    "rgba_sha256": "2f6d746e59a965dfbe1afbc2f784eef8ff053d9651536349ae00a2d330ec5f53",
+    "pixels_sha256": "0ec5feff5b38634b904c3af2b3a475c427cdfedae65b2882f9bc1df3f48ef576",
+    "palette_sha256": "fb798517d210f2dc6f9f2f60352ed56b59a80191b5206efac959677f74b747da",
+    "storage": "RLE8 indexed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_parent": "NarutoNew_RS_Hit_03",
+    "source_effect_crop": [
+      133,
+      73,
+      191,
+      131
+    ],
+    "source_effect_radius": 29,
+    "source_effect_feather": 5,
+    "source_cool_color_mask": true
+  },
+  {
+    "key": "RasenganSphere_04",
+    "group": 30101,
+    "number": 3,
+    "file": "assets/frames/30101_3.png",
+    "axis": [
+      29,
+      29
+    ],
+    "rgba_sha256": "0bce0e701339f0f61a82d9bae74ebb2fe34f276977817765fac2afd8559d6b49",
+    "pixels_sha256": "3083a2a6af53e9ce09be6592669e9c4a94c8744db2cf854998d1a88e06fba04a",
+    "palette_sha256": "116faa5012a594bebc71bda2cea59667b4b387af933d8e4bab4215a24181ea71",
+    "storage": "RLE8 indexed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_parent": "NarutoNew_RS_Hit_04",
+    "source_effect_crop": [
+      133,
+      73,
+      191,
+      131
+    ],
+    "source_effect_radius": 29,
+    "source_effect_feather": 5,
+    "source_cool_color_mask": true
+  },
+  {
+    "key": "RasenganSphere_05",
+    "group": 30101,
+    "number": 4,
+    "file": "assets/frames/30101_4.png",
+    "axis": [
+      29,
+      29
+    ],
+    "rgba_sha256": "2f1528f98f285c4f866b6d5de9bef1a00a1cb8417922060ecb0dbed290670b28",
+    "pixels_sha256": "3b3396e717c5fc2bcd115a69dfc151275a0f4c8e4e76cef0e26199727fedda85",
+    "palette_sha256": "34196045ed3d0d54977ab5728e2aadcfe7252ca9b0330f2ec8dc942907c8c0e3",
+    "storage": "RLE8 indexed",
+    "redrawn": false,
+    "ai_generated": false,
+    "kind": "effect",
+    "source_parent": "NarutoNew_RS_Hit_05",
+    "source_effect_crop": [
+      133,
+      73,
+      191,
+      131
+    ],
+    "source_effect_radius": 29,
+    "source_effect_feather": 5,
+    "source_cool_color_mask": true
   }
 ]

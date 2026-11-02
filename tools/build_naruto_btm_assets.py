@@ -28,6 +28,25 @@ def refresh_aura():
   r=bykey[f'KuramaAura_{n:02}'];parent=bykey[r['source_parent']];im=aura_without_actor(Image.open(CHAR/parent['file']).convert('RGBA'),parent['axis'],Image.open(CHAR/body['file']).convert('RGBA'),body['axis']);im.save(CHAR/r['file']);a=np.array(im);alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0);archive.put((r['group'],r['number']),Image.fromarray(a),tuple(r['axis']));entry=archive.entries[r['group'],r['number']];r.update(rgba_sha256=sha(im.tobytes()),pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),silhouette_fill='horizontal interpolation of adjacent original glow')
  save_sff(archive.entries,CHAR/(NAME+'.sff'));assert read_sff(CHAR/(NAME+'.sff'))==archive.entries;(A/'sprites.json').write_text(json.dumps(manifest,indent=2)+'\n');print('Updated eight original aura layers; other sprites unchanged')
 
+def rasengan_sphere(im):
+ """Extract the rotating blue sphere, excluding the caster and motion streaks."""
+ im=im.crop((133,73,191,131));a=np.array(im);y,x=np.indices(a.shape[:2]);distance=np.hypot(x-29,y-29)
+ cool=(a[:,:,2].astype(float)>=a[:,:,0]*.95)&(a[:,:,1].astype(float)>=a[:,:,0]*.9)
+ a[:,:,3]=np.round(a[:,:,3]*np.clip((29-distance)/5,0,1)*cool).astype('uint8');a[a[:,:,3]==0]=0
+ return Image.fromarray(a)
+
+def refresh_spheres():
+ A=CHAR/'assets';manifest=json.loads((A/'sprites.json').read_text());keys=json.loads((A/'keys.json').read_text());bykey={r['key']:r for r in manifest};archive=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes());archive.entries=read_sff(CHAR/(NAME+'.sff'))
+ for n in range(1,6):
+  parent=f'NarutoNew_RS_Hit_{n:02}';key=f'RasenganSphere_{n:02}';im=rasengan_sphere(Image.open(CHAR/bykey[parent]['file']).convert('RGBA'));dest=A/'frames'/f'30101_{n-1}.png';im.save(dest);a=np.array(im);alpha=a[:,:,3].astype('uint16');a[:,:,:3]=((a[:,:,:3].astype('uint16')*alpha[:,:,None]+127)//255).astype('uint8');a[:,:,3]=np.where(alpha>0,255,0);archive.put((30101,n-1),Image.fromarray(a),(29,29));entry=archive.entries[30101,n-1]
+  rec=dict(key=key,group=30101,number=n-1,file=str(dest.relative_to(CHAR)),axis=[29,29],rgba_sha256=sha(im.tobytes()),pixels_sha256=sha(entry[4]),palette_sha256=sha(entry[5]),storage='RLE8 indexed',redrawn=False,ai_generated=False,kind='effect',source_parent=parent,source_effect_crop=[133,73,191,131],source_effect_radius=29,source_effect_feather=5,source_cool_color_mask=True)
+  if key in bykey:bykey[key].update(rec)
+  else:manifest.append(rec)
+  keys[key]=[30101,n-1]
+ save_sff(archive.entries,CHAR/(NAME+'.sff'));assert read_sff(CHAR/(NAME+'.sff'))==archive.entries
+ for name,data in [('keys',keys),('sprites',manifest)]:(A/(name+'.json')).write_text(json.dumps(data,indent=2)+'\n')
+ print('Packed five rotating Rasengan sphere crops from the original artwork')
+
 def main():
  A=CHAR/'assets';(A/'frames').mkdir(parents=True,exist_ok=True);(A/'sound').mkdir(exist_ok=True)
  archive=Archive((ROOT/'JuraShinju/JuraShinju.sff').read_bytes());archive.entries.clear();manifest=[];keys={};raw={};excluded=[]
@@ -54,6 +73,8 @@ def main():
  for n in range(1,9):
   key=f'KCM_Trans_{n:02}';im,axis=raw[key];body,body_axis=raw['NarutoNew_Idle_002'];aura=aura_without_actor(im,axis,body,body_axis)
   put(f'KuramaAura_{n:02}',30100,n-1,aura,axis,kind='effect',source_parent=key,excluded_caster_silhouette='NarutoNew_Idle_002',silhouette_filter_size=5,silhouette_fill='horizontal interpolation of adjacent original glow')
+ for n in range(1,6):
+  parent=f'NarutoNew_RS_Hit_{n:02}';put(f'RasenganSphere_{n:02}',30101,n-1,rasengan_sphere(raw[parent][0]),(29,29),kind='effect',source_parent=parent,source_effect_crop=[133,73,191,131],source_effect_radius=29,source_effect_feather=5,source_cool_color_mask=True)
  # Light layers contain no opaque actor pixels, and follow the actor's axes.
  for r in list(manifest):
   if r['kind'] not in ['body','body_with_effect']:continue
@@ -96,4 +117,4 @@ def main():
  board.save(ROOT/'previews'/f'{NAME}_original_sprites.jpg');print(NAME,len(raw),'original frames;',len(manifest),'indexed sprites;',len(audio),'audio references;',len(samples),'sounds;',len(excluded),'excluded atlas cells')
 if __name__=='__main__':
  import sys
- refresh_aura() if '--aura-only' in sys.argv else main()
+ refresh_aura() if '--aura-only' in sys.argv else refresh_spheres() if '--spheres-only' in sys.argv else main()
