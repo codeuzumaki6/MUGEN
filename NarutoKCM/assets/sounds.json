@@ -1,0 +1,746 @@
+{
+  "keys": {
+    "BTM/04": [
+      3,
+      0
+    ],
+    "BTM/1": [
+      3,
+      1
+    ],
+    "BTM/2": [
+      3,
+      2
+    ],
+    "BTM/3": [
+      3,
+      3
+    ],
+    "BTM/Angin": [
+      3,
+      4
+    ],
+    "BTM/Dead": [
+      3,
+      5
+    ],
+    "BTM/Die": [
+      3,
+      6
+    ],
+    "BTM/Hit": [
+      3,
+      7
+    ],
+    "BTM/Hurt": [
+      3,
+      8
+    ],
+    "BTM/Kurama_combo": [
+      3,
+      9
+    ],
+    "BTM/N": [
+      3,
+      10
+    ],
+    "BTM/NAttack02": [
+      3,
+      11
+    ],
+    "BTM/NarutoBaryon": [
+      3,
+      12
+    ],
+    "BTM/NarutoSannin_Combo_02": [
+      3,
+      13
+    ],
+    "BTM/Nrto OdamaRsg": [
+      3,
+      14
+    ],
+    "BTM/RK_Naruto_s2_01": [
+      3,
+      15
+    ],
+    "BTM/RK_Naruto_s3_01": [
+      3,
+      16
+    ],
+    "BTM/RK_Naruto_s4_01": [
+      3,
+      17
+    ],
+    "BTM/RK_Naruto_s4_02": [
+      3,
+      18
+    ],
+    "BTM/RK_Naruto_s4_03": [
+      3,
+      19
+    ],
+    "BTM/RikudoNaruto_skill5": [
+      3,
+      20
+    ],
+    "BTM/Rs Srkn": [
+      3,
+      21
+    ],
+    "BTM/SageNaruto_skill3": [
+      3,
+      22
+    ],
+    "BTM/Skill3_1": [
+      3,
+      23
+    ],
+    "BTM/heaa": [
+      3,
+      24
+    ],
+    "BTM/heal": [
+      3,
+      25
+    ],
+    "BTM/ikeze": [
+      3,
+      26
+    ],
+    "BTM/koc": [
+      3,
+      27
+    ],
+    "BTM/kurama01": [
+      3,
+      28
+    ],
+    "BTM/kurama2": [
+      3,
+      29
+    ],
+    "BTM/naruto_combo": [
+      3,
+      30
+    ],
+    "BTM/nrtoVo": [
+      3,
+      31
+    ],
+    "BTM/rasen": [
+      3,
+      32
+    ],
+    "BTM/wes": [
+      3,
+      33
+    ],
+    "BTM/wus": [
+      3,
+      34
+    ],
+    "Effect/1": [
+      2,
+      0
+    ],
+    "Effect/1_1": [
+      2,
+      1
+    ],
+    "Effect/BEAM": [
+      2,
+      2
+    ],
+    "Effect/Biju": [
+      2,
+      3
+    ],
+    "Effect/Boom": [
+      2,
+      4
+    ],
+    "Effect/Burst Deepa": [
+      2,
+      5
+    ],
+    "Effect/Cambuk": [
+      2,
+      6
+    ],
+    "Effect/RSGfuton": [
+      2,
+      7
+    ],
+    "Effect/RsChg": [
+      2,
+      8
+    ],
+    "Effect/RsgAura": [
+      2,
+      9
+    ],
+    "Effect/Wus": [
+      2,
+      10
+    ],
+    "Effect/chang_tokusyu": [
+      2,
+      11
+    ],
+    "Effect/combo1": [
+      2,
+      12
+    ],
+    "Effect/combo2": [
+      2,
+      13
+    ],
+    "Effect/combo3": [
+      2,
+      14
+    ],
+    "Effect/damage_i": [
+      2,
+      15
+    ],
+    "Effect/damage_rasen": [
+      2,
+      16
+    ],
+    "Effect/dash": [
+      2,
+      17
+    ],
+    "Effect/dash_effect": [
+      2,
+      18
+    ],
+    "Effect/desis": [
+      2,
+      19
+    ],
+    "Effect/efxJump": [
+      2,
+      20
+    ],
+    "Effect/futon_effect": [
+      2,
+      21
+    ],
+    "Effect/hiraishin_effect2": [
+      2,
+      22
+    ],
+    "Effect/hit01": [
+      2,
+      23
+    ],
+    "Effect/kawaki bom": [
+      2,
+      24
+    ],
+    "Effect/kiplosion": [
+      2,
+      25
+    ],
+    "Effect/landing2": [
+      2,
+      26
+    ],
+    "Effect/rock_hit": [
+      2,
+      27
+    ],
+    "Effect/rock_hit2": [
+      2,
+      28
+    ],
+    "Effect/slsh": [
+      2,
+      29
+    ],
+    "Effect/step1": [
+      2,
+      30
+    ],
+    "Audio/Naruto": [
+      3,
+      35
+    ]
+  },
+  "source_audio": [
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/04.wav",
+      "source_sha256": "0f523d40c0c4e3fab69931968f021255e32312fcc9968464425637959e39d4f5",
+      "group": 3,
+      "number": 0,
+      "wav_sha256": "95ba0cf6d07a84bf2da8c76ca39ccd547ac783e57838f300566f1170e67c951e"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/1.mp3",
+      "source_sha256": "a9be0356ec1ff1d3ae75cac7a180a9ff59f0cd7a6e463e843cbd4b15f009fd16",
+      "group": 3,
+      "number": 1,
+      "wav_sha256": "b6fb6daa5f496701848d691d518be444e190fe37f6ce846aaf1fa96c9b60b0b5"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/2.mp3",
+      "source_sha256": "eab721567935c01d2cd0b3d8ff13dfe601a5ce76aadaf1da8e90b2e11a57779b",
+      "group": 3,
+      "number": 2,
+      "wav_sha256": "081738b281add6647167ab42a9bdf9180b7ea7e4b6a6212359e801d8ef4afd92"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/3.mp3",
+      "source_sha256": "47353b1934e7b4fe645b6c9214f561f275e90bf39d40329185193a5486070bab",
+      "group": 3,
+      "number": 3,
+      "wav_sha256": "285cb9adda6f6f9eba4760ac1b1dc0919730835795e4855b7d3eca7ec43f997c"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Angin.ogg",
+      "source_sha256": "cac897d316e17e7ab44709a207e62b1364213d1e686cfbf4bd4aae4b2f722524",
+      "group": 3,
+      "number": 4,
+      "wav_sha256": "15f17f4eba3075ff0031a4de8debee86aa787a203c9a289da3701e7654f8a33b"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Dead.wav",
+      "source_sha256": "867eff90ededd7e18eec9aaa99205940baa632bfa7edfcb92004474d58ba5860",
+      "group": 3,
+      "number": 5,
+      "wav_sha256": "d62dba57a04142492688742266b4eaef820a33afb659133d61ce4e1dabb8331f"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Die.wav",
+      "source_sha256": "04ba449bb36f2f3ccd656a8c34946bd7638644af0c791385c563ad67459510fe",
+      "group": 3,
+      "number": 6,
+      "wav_sha256": "f2bb7f741777b3d7b2cec43bec3d04dd0fe95183658c961a6037ff3088668e15"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Hit.wav",
+      "source_sha256": "32d0bb50f4058fd76e1f400f831981a21df87f9e4869091b1281e4d20c276663",
+      "group": 3,
+      "number": 7,
+      "wav_sha256": "eeafe4991df154a8cc9122aa827d1c854d06172a3128f43fca6f528223306f87"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Hurt.wav",
+      "source_sha256": "0e1a4f70cf2aa60e70170b92bfb7f540af50b127f6af8e90bd50a53e9dca442a",
+      "group": 3,
+      "number": 8,
+      "wav_sha256": "fe2826cbda790e8eaec429e4405e2abf6bf057fd088a8f50f917d5cc03b0274d"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Kurama_combo.ogg",
+      "source_sha256": "0dc11de426594a22c8d53e539a3e704547d606c780acc798b30f6254fd190cec",
+      "group": 3,
+      "number": 9,
+      "wav_sha256": "c0bdc1c22b445b335b52cb80fda97ab367d8255d2bfb1b21ca9cd3e3afa6b0ff"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/N.wav",
+      "source_sha256": "c054c2a0770adfe579dfb493675d21b85bcf3e4a31c9da4efe206a3d166942c3",
+      "group": 3,
+      "number": 10,
+      "wav_sha256": "55b7538f9706c8b77621a2b0ef54d56598e81104668e41080d525260b997bd69"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/NAttack02.ogg",
+      "source_sha256": "b0203f562e112f4253e41afc3db7a8c778803b7b0becbce0c2c48568668f9d9d",
+      "group": 3,
+      "number": 11,
+      "wav_sha256": "8c6014c4d19999056223e055419bc0e056c4c2f9f696711c162d59e551e97149"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/NarutoBaryon.ogg",
+      "source_sha256": "a550e4d11b2ac4afbbc747fc272c43d139c8f3f4f119989e45d70cf5b65e3a34",
+      "group": 3,
+      "number": 12,
+      "wav_sha256": "54b8dba75da23c3f3dcd1bbf1f1ed9ad40af5937c14dcf2562705242c4072c43"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/NarutoSannin_Combo_02.ogg",
+      "source_sha256": "974d9e8436236101f03048d00657fad4cf0efbe79678887c607e971756e3f97f",
+      "group": 3,
+      "number": 13,
+      "wav_sha256": "5bbc3c402daeccb69c71b5b1ec9581b7c8adad930a8259878a533dd647627aaa"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Nrto OdamaRsg.mp3",
+      "source_sha256": "703c1582170f644ff36c8f5d97aaf8d9bd2eceae1d458330a75030848eef3002",
+      "group": 3,
+      "number": 14,
+      "wav_sha256": "6d5f7bcbc0ffc643b4bc2d69a138afb4a48fabe27adb8c0185323a8a1efdbc81"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RK_Naruto_s2_01.ogg",
+      "source_sha256": "68bc6f9aa1e56e24d184729caa2b6a96308481bbec681b695e4349ac5add2603",
+      "group": 3,
+      "number": 15,
+      "wav_sha256": "60870cae051de6f852e22e6aab5e3f5782aaa7326574ba80f8ccf02841620144"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RK_Naruto_s3_01.ogg",
+      "source_sha256": "69f62787a1f0bad6b47b268c567fa1eee1033eb4c142049769ecca1fc654897a",
+      "group": 3,
+      "number": 16,
+      "wav_sha256": "9df92053bc998002194c94bf62d46f436a9ffec0595eca384882bc1307a11f32"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RK_Naruto_s4_01.ogg",
+      "source_sha256": "39831b195c125b941dc6b80c36a03e2eb0093aa8e618ccd7a29c1e3256b036fd",
+      "group": 3,
+      "number": 17,
+      "wav_sha256": "07616f1fd56567bfb62515162f6298994508fd257f91654e76937e59857e8896"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RK_Naruto_s4_02.ogg",
+      "source_sha256": "08ebe934a64e665874be11e34ae01da918bcf27333608a3720b9eaa3680cccde",
+      "group": 3,
+      "number": 18,
+      "wav_sha256": "195b1f48fe87a7741a7b47c2a02f8d93e4ab0f13ecb9b9b1dbb4625919d8b40f"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RK_Naruto_s4_03.ogg",
+      "source_sha256": "3a3d0fac85c28870970be74a76f70b935073378bdbdac0b2f93f47311c209eb5",
+      "group": 3,
+      "number": 19,
+      "wav_sha256": "f84e55e487de5574db0624a0ce7d0e91db5450d1fa0756802cfaf5c48d55bae1"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/RikudoNaruto_skill5.ogg",
+      "source_sha256": "36b1471b608ac50b271058e5595beae135b2b267796fb2442237ccc0fb04b940",
+      "group": 3,
+      "number": 20,
+      "wav_sha256": "6fded0ab4dfbb2555b6282101169697d4bdf4b81655b6a483da9329d3b9e1ab2"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Rs Srkn.mp3",
+      "source_sha256": "c95391d55585b278e9e1d7dd482784211c26824df2ee78164bf066bb17e20c44",
+      "group": 3,
+      "number": 21,
+      "wav_sha256": "2e985ab0bd4e4de564a1f8c243e923781a28fb7d35694875512c0dc82a28bc48"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/SageNaruto_skill3.ogg",
+      "source_sha256": "efe87ffb0aaef1026322d1a3f158f2763241885525869bdc82c335b2d3454710",
+      "group": 3,
+      "number": 22,
+      "wav_sha256": "3200ac9dfe173679bde85b7981ec3d19266e8778d6194f5946b6102dcc13d80b"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/Skill3_1.mp3",
+      "source_sha256": "00cfd672280446ec8c0a9e72d147ae1fc2781ba15049cebe26b85bdbb9999408",
+      "group": 3,
+      "number": 23,
+      "wav_sha256": "0a0c8cbdb3214478546acf909e612ee58ff33028561d0208dedd17c4d24b66bf"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/heaa.ogg",
+      "source_sha256": "24926f35b8a42b301bcd7ef7261f1202189380665943a5e22c365c9e6a279f6b",
+      "group": 3,
+      "number": 24,
+      "wav_sha256": "76d0b8b76d96809f2dfe0a103518438d64e6f26b20bde50475787a4546a53e96"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/heal.ogg",
+      "source_sha256": "a2f8b46c91fc5e2a86c8488d14c0c02c8cdb75f9dad1c89e3cf0c6416eb99a5e",
+      "group": 3,
+      "number": 25,
+      "wav_sha256": "d44c865cee2cf64baf9168dce4f5bc8529c247e02319ebf18f768e2c3d47c6f8"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/ikeze.ogg",
+      "source_sha256": "473f099fc22f47e2e1184dd3456a075020dbada22482478b115ed3036ad483bc",
+      "group": 3,
+      "number": 26,
+      "wav_sha256": "6bca25bb7b8ff0d8c05b2ceea167dc2ab428155db444e65889d08cf7634a9541"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/koc.ogg",
+      "source_sha256": "9dec31160dd7b5782b12793dec92d39dfa3fe7e6abd8202c61b53ea7e6be9edf",
+      "group": 3,
+      "number": 27,
+      "wav_sha256": "8e0d1a61c8b62cd860c08bff72cc12178ced6d14bfdac85aa508e542bbc2cd7c"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/kurama01.mp3",
+      "source_sha256": "bb895473205f893e2366da00964b53e288f9340de68cace25fd73ea292d13d72",
+      "group": 3,
+      "number": 28,
+      "wav_sha256": "ea55fd77a5a51645675d3c8801186d30834e43bd09eb82744d606e4d0a8ecdd6"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/kurama2.mp3",
+      "source_sha256": "1a2d49a1d8aea0d00095363eb36370c928b00882314e8723ac4e4975c15bdfd5",
+      "group": 3,
+      "number": 29,
+      "wav_sha256": "dd14187c1e8dde4191e6f170e7163ec8480edc3690db5347c9281888d24d907c"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/naruto_combo.ogg",
+      "source_sha256": "500564578a4b33e21f56ab0b330e4cfbcc000f472b04255e39d0bc67fb17a26e",
+      "group": 3,
+      "number": 30,
+      "wav_sha256": "258bad9d9b4bb9b99ba30021f50977bfae0e410d16432c49ef4df0bcac3304eb"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/nrtoVo.mp3",
+      "source_sha256": "b4bdd4d3f7d891629cf57f57ff72a6a0dc79e83f0ded6be0794056b5704d6821",
+      "group": 3,
+      "number": 31,
+      "wav_sha256": "b9bdb81e42abd2e34ee6b7424e4d7c37040cc7636d15ceb1e51ad05d586b8120"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/rasen.ogg",
+      "source_sha256": "e6d91c3bdd20f6645c8c2832642f8e24aedd4effb5e4e4f137d4ded989a1e0a3",
+      "group": 3,
+      "number": 32,
+      "wav_sha256": "eb1369b49363c4225e96f319933043b95a0db9ab3fe4be7534facc0d20d5e4ea"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/wes.ogg",
+      "source_sha256": "ad233ba3e437016a7c0c81e5b3dd5fb61e3cb09e9da339b216402a3a751f52d0",
+      "group": 3,
+      "number": 33,
+      "wav_sha256": "c4cfcd2849746dd82a7523f9b4e27ccd41c610823336e42e0356f4549d625c62"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/BTM/wus.ogg",
+      "source_sha256": "d299bdbe8884a560bca902aad87eaa28ac22e28013c1fe32559999dc1907bfe5",
+      "group": 3,
+      "number": 34,
+      "wav_sha256": "f7c73ba8d06d61c6fe82c03d1133bb29cc28983d94c2ecbe3a0db1bd1a10642e"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/1.wav",
+      "source_sha256": "60e98b557f76b9e1d3c5039087cc7da15a3e2951e192c5efa4b3e15d6badce90",
+      "group": 2,
+      "number": 0,
+      "wav_sha256": "85377f1c28535d6dfb4fa8b8fb9a50c8dcbde50eea7b79038e143ff38f65e669"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/1_1.wav",
+      "source_sha256": "2405f603b8fbbd09460588e334cb415b0663bae49fcfd77a7726ba62a08c7995",
+      "group": 2,
+      "number": 1,
+      "wav_sha256": "f80111652b94cd9885f0ea4568d6f24b0a73e7f9459789c8315b98592043f87a"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/BEAM.ogg",
+      "source_sha256": "6e706c88b8b550f0ea4d900a427e1ff7b923bb99aae001bce0838b266f0f7f33",
+      "group": 2,
+      "number": 2,
+      "wav_sha256": "4d989c894e1ccdc72b3f626f9142e88f70359b570d7ae89fb72d391ff417a0c5"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/Biju.mp3",
+      "source_sha256": "4add69dd1c04e7772e81df5e5b60b91d3271646e98b6b360b7face56c8352cd6",
+      "group": 2,
+      "number": 3,
+      "wav_sha256": "8ced2a62eff9fbb1d1c20de2bd223df02344846f4ef790879590419befb8d83a"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/Boom.mp3",
+      "source_sha256": "cbb14eb9d35a359bed92595a21746ad73f27cbff2fe5346da31e5d0e9649b77d",
+      "group": 2,
+      "number": 4,
+      "wav_sha256": "23859a99d9b6655639998bfea699c8c49a7f57f2114d7e19f4e9e4a06f946290"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/Burst Deepa.mp3",
+      "source_sha256": "c8dda2bfb7eb97f7cc00d9d57fbe8cf8982313ba1825f68babdf206d741317a2",
+      "group": 2,
+      "number": 5,
+      "wav_sha256": "4021c0a83c2d335e146d5426315d9b5472aa525dd4ce022fe526db301d692836"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/Cambuk.wav",
+      "source_sha256": "cc1a59e2a1e738254091cbac96c991ab1b401df5de9d2f3cf75d42bb6b3eca08",
+      "group": 2,
+      "number": 6,
+      "wav_sha256": "cc1a59e2a1e738254091cbac96c991ab1b401df5de9d2f3cf75d42bb6b3eca08"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/RSGfuton.mp3",
+      "source_sha256": "ca5a508a2ff676363fee54ad1e67ddd42c7107b057a88fac0bcd2eb2f209ce1f",
+      "group": 2,
+      "number": 7,
+      "wav_sha256": "5347c7d09e39a17c83c051e0b86c8407ae4095089866b294393b955c5d656dca"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/RsChg.mp3",
+      "source_sha256": "e937029aba367718bacea3f8184d353041d51af9fd7cbd1f9c04110a610890ac",
+      "group": 2,
+      "number": 8,
+      "wav_sha256": "bf3fc5de661e7f2ec1d36fa4c176b514d6f76859a15ebcb5aeca52295f2963ee"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/RsgAura.mp3",
+      "source_sha256": "46c5f84c704f76b17a0e279d5ab65f4c178e7346ccac6d04c3528263e0cefba4",
+      "group": 2,
+      "number": 9,
+      "wav_sha256": "e9a8293c1c1f6154bd37a76d13cceee8160b8a369642aa5e63a4237414c36e94"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/Wus.wav",
+      "source_sha256": "3a8f3d6dd4482d6b56f53abe552a17c9d00dd079fda8dc76b865b52091667637",
+      "group": 2,
+      "number": 10,
+      "wav_sha256": "4918155564b1fc9aeed657f49546ea43795d3f9637e27aacf1169231f835d2dd"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/chang_tokusyu.ogg",
+      "source_sha256": "1531da5823a562a7d60eca2c35dffabccb80f3c747722a710988cef10cfdd3f3",
+      "group": 2,
+      "number": 11,
+      "wav_sha256": "451960e647c0d8acbe9d45d3b65131f8497e70e012c3922eb71ceb5e339f7b3f"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/combo1.ogg",
+      "source_sha256": "51257497a545382bdc5b9472b62f41ef967ac845e1bf18ddf84973dcb86617aa",
+      "group": 2,
+      "number": 12,
+      "wav_sha256": "5ecc2c7ad283e7a7d1ff0cf825092e5b75f3396ad35c7ce660799ad8771ed965"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/combo2.ogg",
+      "source_sha256": "0aa5f9d2ebe27b9854915013beeaaa05532663ba51842d3f1b16fa03fdfd13cc",
+      "group": 2,
+      "number": 13,
+      "wav_sha256": "e87ead3a0227a75adf30681a406bf99bc9c80b3eb85c6997b664f931135f2b25"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/combo3.ogg",
+      "source_sha256": "0cbb52d022304c1b5fb487d7a83fac619f6afa7f1e4f42f5e2d5b1c3d2e4e3e7",
+      "group": 2,
+      "number": 14,
+      "wav_sha256": "fe0c2fe37326a4c057a73357d906d2c7fa8ae8b898c7942563d3925b984fd14f"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/damage_i.ogg",
+      "source_sha256": "d52ad55e5f918fca5023250ea43a7029270a3df5bebbcbefacea0df38030f40a",
+      "group": 2,
+      "number": 15,
+      "wav_sha256": "123cb721886d58cba8bcee836c26cedf6b895070823947f159a098d1f26d2571"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/damage_rasen.ogg",
+      "source_sha256": "a4665fea0cebb151671e588435d9afeed3865e1e2eaac8e3666a9e1420b91171",
+      "group": 2,
+      "number": 16,
+      "wav_sha256": "933a8537f4514a3fcc0b225920b69da92223eaba2126ba561f9b90d6dc439ffa"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/dash.wav",
+      "source_sha256": "4eabce872083bffc0eafb2041300ac6d49e916a799b4efb1475966f1e2c40cac",
+      "group": 2,
+      "number": 17,
+      "wav_sha256": "de07b2b3277ba610cc16eca74ab108314ac1db71a1b04436394142fcde9bbd1c"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/dash_effect.ogg",
+      "source_sha256": "ed545e88b9a61189dba4eaf4cad97ba5c3ba62f9c8e0f1e825de8c9e5fb3809b",
+      "group": 2,
+      "number": 18,
+      "wav_sha256": "a9f71d63cda95b41accdf04f7f2f8e8ca6516725205db4edd52ae921a033d1f4"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/desis.ogg",
+      "source_sha256": "49711f8036e2dd3165510a0073dc66c36d1eb35cfd692592cadb1d3aa5f2aa45",
+      "group": 2,
+      "number": 19,
+      "wav_sha256": "ebac9a78d7a7f7205ba52ec8addacfff1fda7580f73627977f73d01ccd51051e"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/efxJump.mp3",
+      "source_sha256": "9412b5b4fd405e3232c8f63f54b282415409c1e961ba48c2ba57bb328f6a48a2",
+      "group": 2,
+      "number": 20,
+      "wav_sha256": "38483ef1c2b9dc9a402b8fffb922bed28ec9f53703ebf575c2fde4eb92d21a15"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/futon_effect.ogg",
+      "source_sha256": "f13e738bebbc4f9e70415ec5a1360e2b329b32a098fa6e5ea356d70a1296e776",
+      "group": 2,
+      "number": 21,
+      "wav_sha256": "733b98e75d5d9ce8c881d326e6694659376c049e105927bafe7d49466c84f19b"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/hiraishin_effect2.ogg",
+      "source_sha256": "93ccaa9a5f14dabe8385e590678ce7875117ddc092f6a827f455eedbd4672920",
+      "group": 2,
+      "number": 22,
+      "wav_sha256": "496624e65d6794c37cfa4ab4634afbbb9d8b5202ea2dd0a83e98e1b6be17002b"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/hit01.ogg",
+      "source_sha256": "78ab48edc81a9eff9498bb08d820dd82de262e6f00b8bb725a76a736183ffcf9",
+      "group": 2,
+      "number": 23,
+      "wav_sha256": "855a98baa8b8a9c7be424bd54c7c545225b20afbb1de5153e30c0660e3303009"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/kawaki bom.mp3",
+      "source_sha256": "e57636bb3bace21e171a63f3debc023ef8174090cfbccb6398d5db2788694c9d",
+      "group": 2,
+      "number": 24,
+      "wav_sha256": "7ec9eee333b57a2964718c13644ef1dfa4b36894884aef9a2a792c89ec008ac2"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/kiplosion.ogg",
+      "source_sha256": "4252d9c3adf4c11ba40aa79cec5c3082bcc379c67aa1a8bcc09f262f0e8b8a33",
+      "group": 2,
+      "number": 25,
+      "wav_sha256": "eda75e5baa502fb0c5bdcff738526c9ec7a3a0f839cca9a8c3b8413a9c079255"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/landing2.mp3",
+      "source_sha256": "6b542a3bc2759351fe794db8b18962d98426c8d09d94193154431a9c8c8628d7",
+      "group": 2,
+      "number": 26,
+      "wav_sha256": "0b8d3f302201f3925b29961c3c43927c58d65844b1338f8971c7f78000cc05c5"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/rock_hit.ogg",
+      "source_sha256": "c1cd9577332dec3d874d54f965118f6ef0f9e344c66a1a7ad2a4bf2c384419bf",
+      "group": 2,
+      "number": 27,
+      "wav_sha256": "cc6b929a799577620db4003fb32dc87d47ce9ebd0826d22f9cff5d6a971563d1"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/rock_hit2.ogg",
+      "source_sha256": "829c5784a3e58706f2a59a8b36b103db9c7ec625a2483581dc1067138625d194",
+      "group": 2,
+      "number": 28,
+      "wav_sha256": "30804f91fd5f300738bb4ceba9feb9d6b28e8f910647f065cfc3c23d4326268b"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/slsh.mp3",
+      "source_sha256": "e3258deca0784fab022e73da63495677fc8c72512ef5ea1d9490192fb85ddaca",
+      "group": 2,
+      "number": 29,
+      "wav_sha256": "17c582a49dbf3784f24933b6ea0817bc6548cd6bdda0b24b6dfed3722dee7f21"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Effect/step1.mp3",
+      "source_sha256": "7b5abb446ebd3f6b70f3165fb39509bf270f6f0aa5b721893524bddc1c4757da",
+      "group": 2,
+      "number": 30,
+      "wav_sha256": "d34977559633e182e3285a0b1689315a8c8e08b608a8570f2b77c03f54e1c6a7"
+    },
+    {
+      "source": "source_material/NarutoKCM_original/full_archive/NarutoAdult KCM by vaydra/NarutoAdultKCM rep Naruto/Audio/Naruto.ogg",
+      "source_sha256": "6fcc5a525c936921e2f47723c7c002717763b3218197d3e04c0dbf25d04698f0",
+      "group": 3,
+      "number": 35,
+      "wav_sha256": "55096547988e30f31f129ff808de1e5007e667a5263fb599a532522cd2ba3140"
+    }
+  ],
+  "missing_source_references": [
+    "Audio/BTM/RikudoNaruto_skill5.og"
+  ]
+}

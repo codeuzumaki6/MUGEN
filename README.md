@@ -569,3 +569,29 @@ python tools/make_naruto_btm_preview.py
 python tools/package_naruto_btm.py
 python tools/verify_naruto_btm_delivery.py --write
 ```
+
+# Naruto Uzumaki — KCM / Barión
+
+[**Descargar Naruto KCM**](NarutoKCM.zip) · [Gameplay con audio del motor](previews/NarutoKCM_motor.mp4) · [Ultis de Kurama y Barión](previews/NarutoKCM_ultimate_motor.mp4) · [Controles Xbox](NarutoKCM/CONTROLES_XBOX.md)
+
+Personaje independiente con los sprites originales del KCM dorado y Barión rojo de Vaydra: 198 cuadros útiles de los dos atlas y las 67 muestras de audio suministradas. Incluye Rasengan, brazos de chakra, taijutsu, brazos giratorios, Ōdama aéreo y avatar de Kurama. Los efectos se separan del caster incrustado; los colores opacos y las luces se dibujan en capas distintas.
+
+**Abajo + Pausa**, con 3000 de energía, activa veinte segundos de Barión por 1500. Cambian las posturas, la carrera y los trece especiales: asaltos, palmas, ráfagas, ganchos y remates originales. Incluye tres cadenas terrestres y aéreas, dash gratuito en ambos sentidos y carga al mantener Pausa. Recibe golpes y proyectiles en los dos modos.
+
+**A** requiere contacto real y tiene ocho impactos: hasta 300 en KCM y 360 en Barión frente a un rival de 1000 de vida. La ulti puede bloquearse, fallar por distancia o interrumpirse, y no consume vida propia.
+
+Extrae `NarutoKCM` dentro de `chars` y agrega `NarutoKCM/NarutoKCM.def` a `data/select.def`. Paquete para MUGEN 1.1; grabación y pruebas nativas en Ikemen GO. [Recursos originales](previews/NarutoKCM_source_checks.json) · [120 entradas de combate](previews/NarutoKCM_engine_checks.json) · [32 pruebas contra rivales pequeños](previews/NarutoKCM_short_target_checks.json) · [112 de recepción de golpes](previews/NarutoKCM_receiving/NarutoKCM.json) · [Entrega](previews/NarutoKCM_delivery_checks.json). Se conservan los veintiún personajes anteriores.
+
+```sh
+python tools/build_naruto_kcm_assets.py
+python tools/build_naruto_kcm_runtime.py
+python tools/validate_naruto_kcm.py
+python tools/verify_naruto_kcm_sources.py
+python tools/check_naruto_kcm_in_engine.py
+python tools/check_naruto_kcm_short_targets.py
+python tools/check_roster_receiving.py --characters NarutoKCM --out previews/NarutoKCM_receiving
+python tools/check_naruto_kcm_dashes.py
+python tools/make_naruto_kcm_preview.py
+python tools/package_naruto_kcm.py
+python tools/verify_naruto_kcm_delivery.py --write
+```

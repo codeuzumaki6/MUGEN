@@ -1,0 +1,23 @@
+{
+  "character": "NarutoKCM",
+  "runtime_sha256": "abd9cc45dc1298b647c051a4c53ae12cc0a1938e55d260800f74ead024d8b9d9",
+  "actual_inputs": 120,
+  "short_target_cases": 32,
+  "receiving_probes": 112,
+  "dash_cases": 16,
+  "blocked_technique_cases": 16,
+  "original_frames": 198,
+  "used_source_frames": 198,
+  "original_files": 74,
+  "source_audio_references": 67,
+  "indexed_release_sprites": 451,
+  "png32_release_sprites": 0,
+  "ultimate_damage": [
+    300,
+    360
+  ],
+  "own_life_cost": 0,
+  "archive_sha256": "446a5c7537e0b387ccdf3a58eec67846b5172921d442f8beecaf852a9331990d",
+  "video_sha256": "e73c654a3e361a63aefb6029f9b6274d12632b7735bd0c209efa1140b02d4232",
+  "previous_characters_unchanged_from": "8c5d54e91afe2a54ce18ad8bd26da28239c4a98b"
+}

@@ -1,0 +1,1806 @@
+{
+  "Kcm_Idle_01": [
+    30000,
+    0
+  ],
+  "Kcm_Idle_02": [
+    30000,
+    1
+  ],
+  "Kcm_Idle_03": [
+    30000,
+    2
+  ],
+  "Naruto_Walk_01": [
+    30000,
+    3
+  ],
+  "Naruto_Walk_02": [
+    30000,
+    4
+  ],
+  "Naruto_Walk_03": [
+    30000,
+    5
+  ],
+  "Naruto_Walk_04": [
+    30000,
+    6
+  ],
+  "Naruto_Walk_05": [
+    30000,
+    7
+  ],
+  "Naruto_Walk_06": [
+    30000,
+    8
+  ],
+  "Naruto_AirHurt_01": [
+    30000,
+    9
+  ],
+  "Naruto_Hurt_01": [
+    30000,
+    10
+  ],
+  "Naruto_Hurt_02": [
+    30000,
+    11
+  ],
+  "Naruto_Knock_01": [
+    30000,
+    12
+  ],
+  "Naruto_Dead_01": [
+    30000,
+    13
+  ],
+  "Naruto_Wake_01": [
+    30000,
+    14
+  ],
+  "Naruto_Wake_02": [
+    30000,
+    15
+  ],
+  "Naruto_Wake_03": [
+    30000,
+    16
+  ],
+  "Naruto_Float_01": [
+    30000,
+    17
+  ],
+  "Naruto_Natk_01": [
+    30000,
+    18
+  ],
+  "Naruto_Natk_02": [
+    30000,
+    19
+  ],
+  "Naruto_Natk_03": [
+    30000,
+    20
+  ],
+  "Naruto_Natk_04": [
+    30000,
+    21
+  ],
+  "Naruto_Natk_05": [
+    30000,
+    22
+  ],
+  "Naruto_Natk_06": [
+    30000,
+    23
+  ],
+  "Naruto_Natk_07": [
+    30000,
+    24
+  ],
+  "Naruto_Natk_08": [
+    30000,
+    25
+  ],
+  "Naruto_Natk_09": [
+    30000,
+    26
+  ],
+  "Naruto_Natk_10": [
+    30000,
+    27
+  ],
+  "NarutoRSCHG_01": [
+    30000,
+    28
+  ],
+  "NarutoRSCHG_02": [
+    30000,
+    29
+  ],
+  "NarutoRSCHG_03": [
+    30000,
+    30
+  ],
+  "NarutoRSCHG_04": [
+    30000,
+    31
+  ],
+  "NarutoRSCHG_05": [
+    30000,
+    32
+  ],
+  "NarutoRSCHG_06": [
+    30000,
+    33
+  ],
+  "Naruto_Skill01_Dash_01": [
+    30000,
+    34
+  ],
+  "Naruto_RSHIT_01": [
+    30000,
+    35
+  ],
+  "Naruto_RSHIT_02": [
+    30000,
+    36
+  ],
+  "Naruto_RSHIT_03": [
+    30000,
+    37
+  ],
+  "Naruto_RSHIT_04": [
+    30000,
+    38
+  ],
+  "Naruto_RSHIT_05": [
+    30000,
+    39
+  ],
+  "Naruto_RSHIT_06": [
+    30000,
+    40
+  ],
+  "Naruto_RSDD_01": [
+    30000,
+    41
+  ],
+  "Naruto_RSDD_02": [
+    30000,
+    42
+  ],
+  "Naruto_RSDD_03": [
+    30000,
+    43
+  ],
+  "Naruto_RSDD_04": [
+    30000,
+    44
+  ],
+  "Naruto_RSDD_05": [
+    30000,
+    45
+  ],
+  "Naruto_RSDD_06": [
+    30000,
+    46
+  ],
+  "Naruto_Skill02_punch_01": [
+    30000,
+    47
+  ],
+  "Naruto_Skill02_punch_02": [
+    30000,
+    48
+  ],
+  "Naruto_Skill02_punch_03": [
+    30000,
+    49
+  ],
+  "Naruto_Skill02_punch_04": [
+    30000,
+    50
+  ],
+  "Naruto_Skill02_punch_05": [
+    30000,
+    51
+  ],
+  "Naruto_Skill02_KickA_01": [
+    30000,
+    52
+  ],
+  "Naruto_Skill02_KickA_02": [
+    30000,
+    53
+  ],
+  "Naruto_Skill02_KickA_03": [
+    30000,
+    54
+  ],
+  "Naruto_Skill02_KickA_04": [
+    30000,
+    55
+  ],
+  "Naruto_Skill02_KickA_05": [
+    30000,
+    56
+  ],
+  "Naruto_Skill02_KickB_01": [
+    30000,
+    57
+  ],
+  "Naruto_Skill02_KickB_02": [
+    30000,
+    58
+  ],
+  "Naruto_Skill02_KickB_03": [
+    30000,
+    59
+  ],
+  "Naruto_Skill02_KickB_04": [
+    30000,
+    60
+  ],
+  "Naruto_Skill02_KickB_05": [
+    30000,
+    61
+  ],
+  "Naruto_Skill02_KickB_06": [
+    30000,
+    62
+  ],
+  "Naruto_Skill02_KickB_07": [
+    30000,
+    63
+  ],
+  "Naruto_Skill04_Punch_01": [
+    30000,
+    64
+  ],
+  "Naruto_Skill04_Punch_02": [
+    30000,
+    65
+  ],
+  "Naruto_Skill04_Punch_03": [
+    30000,
+    66
+  ],
+  "Naruto_Skill04_Punch_04": [
+    30000,
+    67
+  ],
+  "Naruto_Skill04_Punch_05": [
+    30000,
+    68
+  ],
+  "Naruto_Skill03_Kick_01": [
+    30000,
+    69
+  ],
+  "Naruto_Skill03_Kick_02": [
+    30000,
+    70
+  ],
+  "Naruto_Skill03_Kick_03": [
+    30000,
+    71
+  ],
+  "Naruto_Skill03_Kick_04": [
+    30000,
+    72
+  ],
+  "Naruto_Skill03_Kick_05": [
+    30000,
+    73
+  ],
+  "Naruto_Skill03_Kick_06": [
+    30000,
+    74
+  ],
+  "Naruto_Skill03_Kick_07": [
+    30000,
+    75
+  ],
+  "Naruto_Skill03_Kick_08": [
+    30000,
+    76
+  ],
+  "Naruto_Skill03_Kick_09": [
+    30000,
+    77
+  ],
+  "Naruto_Skill03_Kick_10": [
+    30000,
+    78
+  ],
+  "Naruto_Skill03_Kick_11": [
+    30000,
+    79
+  ],
+  "Naruto_Skill03_Kurama_01": [
+    30000,
+    80
+  ],
+  "Naruto_Skill03_Kurama_02": [
+    30000,
+    81
+  ],
+  "Naruto_Skill03_Kurama_03": [
+    30000,
+    82
+  ],
+  "Naruto_Skill03_Kurama_04": [
+    30000,
+    83
+  ],
+  "Naruto_Skill03_Kurama_05": [
+    30000,
+    84
+  ],
+  "Naruto_Skill03_Kurama_06": [
+    30000,
+    85
+  ],
+  "Naruto_Skill03_Kurama_07": [
+    30000,
+    86
+  ],
+  "Naruto_Skill03_Kurama_08": [
+    30000,
+    87
+  ],
+  "Naruto_Skill03_Kurama_09": [
+    30000,
+    88
+  ],
+  "Naruto_Skill03_Kurama_10": [
+    30000,
+    89
+  ],
+  "Naruto_Skill03_Kurama_11": [
+    30000,
+    90
+  ],
+  "Naruto_Skill03_Kurama_12": [
+    30000,
+    91
+  ],
+  "Naruto_Skill03_Kurama_13": [
+    30000,
+    92
+  ],
+  "Naruto_Skill03_Kurama_14": [
+    30000,
+    93
+  ],
+  "Naruto_Skill03_Kurama_15": [
+    30000,
+    94
+  ],
+  "Naruto_Skill03_Kurama_16": [
+    30000,
+    95
+  ],
+  "Naruto_Skill03_Kurama_17": [
+    30000,
+    96
+  ],
+  "Naruto_Skill03_Kurama_18": [
+    30000,
+    97
+  ],
+  "Naruto_Skill03_Kurama_19": [
+    30000,
+    98
+  ],
+  "Naruto_Skill03_Kurama_20": [
+    30000,
+    99
+  ],
+  "Naruto_Skill04_Hst_01": [
+    30000,
+    100
+  ],
+  "Naruto_Skill04_Hst_02": [
+    30000,
+    101
+  ],
+  "Naruto_Skill04_Hst_03": [
+    30000,
+    102
+  ],
+  "Naruto_Skill04_Hst_04": [
+    30000,
+    103
+  ],
+  "Naruto_Skill04_Hst_05": [
+    30000,
+    104
+  ],
+  "Naruto_Skill04_Hst_06": [
+    30000,
+    105
+  ],
+  "Naruto_Skill04_Hst_07": [
+    30000,
+    106
+  ],
+  "Naruto_Skill04_bom_01": [
+    30000,
+    107
+  ],
+  "Naruto_Skill04_bom_02": [
+    30000,
+    108
+  ],
+  "Naruto_Skill04_bom_03": [
+    30000,
+    109
+  ],
+  "Naruto_Skill04_bom_04": [
+    30000,
+    110
+  ],
+  "Naruto_Skill04_bom_05": [
+    30000,
+    111
+  ],
+  "Naruto_Skill04_bom_06": [
+    30000,
+    112
+  ],
+  "Naruto_Skill04_bom_07": [
+    30000,
+    113
+  ],
+  "Naruto_Skill04_bom_08": [
+    30000,
+    114
+  ],
+  "Naruto_Skill04_bom_09": [
+    30000,
+    115
+  ],
+  "Naruto_Skill04_bom_10": [
+    30000,
+    116
+  ],
+  "Naruto_Skill04_bom_11": [
+    30000,
+    117
+  ],
+  "Naruto_Skill04_bom_12": [
+    30000,
+    118
+  ],
+  "Naruto_Skill04_bom_13": [
+    30000,
+    119
+  ],
+  "Naruto_Transform_01": [
+    30000,
+    120
+  ],
+  "Naruto_Transform_02": [
+    30000,
+    121
+  ],
+  "Naruto_Transform_03": [
+    30000,
+    122
+  ],
+  "Naruto_Transform_04": [
+    30000,
+    123
+  ],
+  "Naruto_Transform_05": [
+    30000,
+    124
+  ],
+  "Naruto_Transform_06": [
+    30000,
+    125
+  ],
+  "Naruto_Transform_07": [
+    30000,
+    126
+  ],
+  "Naruto_Transform_08": [
+    30000,
+    127
+  ],
+  "Naruto_Transform_09": [
+    30000,
+    128
+  ],
+  "Baryon_idle_01": [
+    30000,
+    129
+  ],
+  "Baryon_idle_02": [
+    30000,
+    130
+  ],
+  "Baryon_idle_03": [
+    30000,
+    131
+  ],
+  "Baryon_Walk_01": [
+    30000,
+    132
+  ],
+  "Baryon_Walk_02": [
+    30000,
+    133
+  ],
+  "Baryon_Walk_03": [
+    30000,
+    134
+  ],
+  "Baryon_Walk_04": [
+    30000,
+    135
+  ],
+  "Baryon_Walk_05": [
+    30000,
+    136
+  ],
+  "Baryon_Walk_06": [
+    30000,
+    137
+  ],
+  "BaryonEnd_01": [
+    30000,
+    138
+  ],
+  "BaryonEnd_02": [
+    30000,
+    139
+  ],
+  "BaryonEnd_03": [
+    30000,
+    140
+  ],
+  "BaryonEnd_04": [
+    30000,
+    141
+  ],
+  "BaryonDash_01": [
+    30000,
+    142
+  ],
+  "BaryonDash_02": [
+    30000,
+    143
+  ],
+  "BaryonDash_03": [
+    30000,
+    144
+  ],
+  "BaryonDash_04": [
+    30000,
+    145
+  ],
+  "BaryonDash_05": [
+    30000,
+    146
+  ],
+  "BaryonDash_06": [
+    30000,
+    147
+  ],
+  "BaryonDash_07": [
+    30000,
+    148
+  ],
+  "Baryon_Hit01_01": [
+    30000,
+    149
+  ],
+  "Baryon_Hit01_02": [
+    30000,
+    150
+  ],
+  "Baryon_Hit01_03": [
+    30000,
+    151
+  ],
+  "Baryon_Hit01_04": [
+    30000,
+    152
+  ],
+  "Baryon_Hit01_05": [
+    30000,
+    153
+  ],
+  "Baryon_Hit01_06": [
+    30000,
+    154
+  ],
+  "Baryon_Hit02_01": [
+    30000,
+    155
+  ],
+  "Baryon_Hit02_02": [
+    30000,
+    156
+  ],
+  "Baryon_Hit02_03": [
+    30000,
+    157
+  ],
+  "Baryon_Hit02_04": [
+    30000,
+    158
+  ],
+  "Baryon_Hit02_05": [
+    30000,
+    159
+  ],
+  "Baryon_Hit02_06": [
+    30000,
+    160
+  ],
+  "BaryonUK_01": [
+    30000,
+    161
+  ],
+  "BaryonUK_02": [
+    30000,
+    162
+  ],
+  "BaryonUK_03": [
+    30000,
+    163
+  ],
+  "BaryonUK_04": [
+    30000,
+    164
+  ],
+  "BaryonUK_05": [
+    30000,
+    165
+  ],
+  "BaryonUK_06": [
+    30000,
+    166
+  ],
+  "BaryonUK_07": [
+    30000,
+    167
+  ],
+  "BaryonUK_08": [
+    30000,
+    168
+  ],
+  "BaryonUK_09": [
+    30000,
+    169
+  ],
+  "BaryonUK_10": [
+    30000,
+    170
+  ],
+  "BaryonUK_11": [
+    30000,
+    171
+  ],
+  "BaryonUK_12": [
+    30000,
+    172
+  ],
+  "BaryonUK_13": [
+    30000,
+    173
+  ],
+  "BaryonUK_14": [
+    30000,
+    174
+  ],
+  "DustFx_00": [
+    30000,
+    175
+  ],
+  "DustFx_01": [
+    30000,
+    176
+  ],
+  "DustFx_02": [
+    30000,
+    177
+  ],
+  "DustFx_03": [
+    30000,
+    178
+  ],
+  "BlinkEfx_00": [
+    30000,
+    179
+  ],
+  "BlinkEfx_01": [
+    30000,
+    180
+  ],
+  "BlinkEfx_02": [
+    30000,
+    181
+  ],
+  "BlinkEfx_03": [
+    30000,
+    182
+  ],
+  "BlinkEfx_04": [
+    30000,
+    183
+  ],
+  "OdamaNrt_CHG_01": [
+    30000,
+    184
+  ],
+  "OdamaNrt_CHG_02": [
+    30000,
+    185
+  ],
+  "OdamaNrt_CHG_03": [
+    30000,
+    186
+  ],
+  "OdamaNrt_CHG_04": [
+    30000,
+    187
+  ],
+  "OdamaNrt_Hit_01": [
+    30000,
+    188
+  ],
+  "OdamaNrt_Hit_02": [
+    30000,
+    189
+  ],
+  "OdamaNrt_Hit_03": [
+    30000,
+    190
+  ],
+  "OdamaNrt_Hit_04": [
+    30000,
+    191
+  ],
+  "OdamaNrt_Bom_01": [
+    30000,
+    192
+  ],
+  "OdamaNrt_Bom_02": [
+    30000,
+    193
+  ],
+  "OdamaNrt_Bom_03": [
+    30000,
+    194
+  ],
+  "OdamaNrt_Bom_04": [
+    30000,
+    195
+  ],
+  "OdamaNrt_Bom_05": [
+    30000,
+    196
+  ],
+  "OdamaNrt_Bom_06": [
+    30000,
+    197
+  ],
+  "Naruto_Skill04_Hst_01_FX": [
+    30100,
+    0
+  ],
+  "Naruto_Skill04_Hst_02_FX": [
+    30100,
+    1
+  ],
+  "Naruto_Skill04_Hst_03_FX": [
+    30100,
+    2
+  ],
+  "Naruto_Skill04_Hst_04_FX": [
+    30100,
+    3
+  ],
+  "Naruto_Skill04_Hst_05_FX": [
+    30100,
+    4
+  ],
+  "Naruto_Skill04_Hst_06_FX": [
+    30100,
+    5
+  ],
+  "Naruto_Skill04_Hst_07_FX": [
+    30100,
+    6
+  ],
+  "Naruto_Skill04_bom_01_FX": [
+    30101,
+    0
+  ],
+  "Naruto_Skill04_bom_02_FX": [
+    30101,
+    1
+  ],
+  "Naruto_Skill04_bom_03_FX": [
+    30101,
+    2
+  ],
+  "Naruto_Skill04_bom_04_FX": [
+    30101,
+    3
+  ],
+  "Naruto_Skill04_bom_05_FX": [
+    30101,
+    4
+  ],
+  "Naruto_Skill04_bom_06_FX": [
+    30101,
+    5
+  ],
+  "Naruto_Skill04_bom_07_FX": [
+    30101,
+    6
+  ],
+  "Naruto_Skill04_bom_08_FX": [
+    30101,
+    7
+  ],
+  "Naruto_Skill04_bom_09_FX": [
+    30101,
+    8
+  ],
+  "Naruto_Skill04_bom_10_FX": [
+    30101,
+    9
+  ],
+  "Naruto_Skill04_bom_11_FX": [
+    30101,
+    10
+  ],
+  "Naruto_Skill04_bom_12_FX": [
+    30101,
+    11
+  ],
+  "Naruto_Skill04_bom_13_FX": [
+    30101,
+    12
+  ],
+  "OdamaNrt_Hit_01_FX": [
+    30102,
+    0
+  ],
+  "OdamaNrt_Hit_02_FX": [
+    30102,
+    1
+  ],
+  "OdamaNrt_Hit_03_FX": [
+    30102,
+    2
+  ],
+  "OdamaNrt_Hit_04_FX": [
+    30102,
+    3
+  ],
+  "OdamaNrt_Bom_01_FX": [
+    30103,
+    0
+  ],
+  "OdamaNrt_Bom_02_FX": [
+    30103,
+    1
+  ],
+  "OdamaNrt_Bom_03_FX": [
+    30103,
+    2
+  ],
+  "OdamaNrt_Bom_04_FX": [
+    30103,
+    3
+  ],
+  "OdamaNrt_Bom_05_FX": [
+    30103,
+    4
+  ],
+  "OdamaNrt_Bom_06_FX": [
+    30103,
+    5
+  ],
+  "OdamaOrb_01": [
+    30104,
+    0
+  ],
+  "OdamaOrb_02": [
+    30104,
+    1
+  ],
+  "OdamaOrb_03": [
+    30104,
+    2
+  ],
+  "OdamaOrb_04": [
+    30104,
+    3
+  ],
+  "NarutoRSCHG_01_Light": [
+    30200,
+    28
+  ],
+  "NarutoRSCHG_02_Light": [
+    30200,
+    29
+  ],
+  "NarutoRSCHG_03_Light": [
+    30200,
+    30
+  ],
+  "NarutoRSCHG_04_Light": [
+    30200,
+    31
+  ],
+  "NarutoRSCHG_05_Light": [
+    30200,
+    32
+  ],
+  "NarutoRSCHG_06_Light": [
+    30200,
+    33
+  ],
+  "Naruto_Skill01_Dash_01_Light": [
+    30200,
+    34
+  ],
+  "Naruto_RSHIT_01_Light": [
+    30200,
+    35
+  ],
+  "Naruto_RSHIT_02_Light": [
+    30200,
+    36
+  ],
+  "Naruto_RSHIT_03_Light": [
+    30200,
+    37
+  ],
+  "Naruto_RSHIT_04_Light": [
+    30200,
+    38
+  ],
+  "Naruto_RSHIT_05_Light": [
+    30200,
+    39
+  ],
+  "Naruto_RSHIT_06_Light": [
+    30200,
+    40
+  ],
+  "Naruto_RSDD_01_Light": [
+    30200,
+    41
+  ],
+  "Naruto_RSDD_02_Light": [
+    30200,
+    42
+  ],
+  "Naruto_RSDD_03_Light": [
+    30200,
+    43
+  ],
+  "Naruto_RSDD_04_Light": [
+    30200,
+    44
+  ],
+  "Naruto_RSDD_05_Light": [
+    30200,
+    45
+  ],
+  "Naruto_RSDD_06_Light": [
+    30200,
+    46
+  ],
+  "Naruto_Skill02_punch_03_Light": [
+    30200,
+    49
+  ],
+  "Naruto_Skill02_punch_04_Light": [
+    30200,
+    50
+  ],
+  "Naruto_Skill02_punch_05_Light": [
+    30200,
+    51
+  ],
+  "Naruto_Skill02_KickA_02_Light": [
+    30200,
+    53
+  ],
+  "Naruto_Skill02_KickA_03_Light": [
+    30200,
+    54
+  ],
+  "Naruto_Skill02_KickA_04_Light": [
+    30200,
+    55
+  ],
+  "Naruto_Skill02_KickB_02_Light": [
+    30200,
+    58
+  ],
+  "Naruto_Skill02_KickB_03_Light": [
+    30200,
+    59
+  ],
+  "Naruto_Skill02_KickB_04_Light": [
+    30200,
+    60
+  ],
+  "Naruto_Skill02_KickB_05_Light": [
+    30200,
+    61
+  ],
+  "Naruto_Skill02_KickB_06_Light": [
+    30200,
+    62
+  ],
+  "Naruto_Skill04_Punch_01_Light": [
+    30200,
+    64
+  ],
+  "Naruto_Skill04_Punch_02_Light": [
+    30200,
+    65
+  ],
+  "Naruto_Skill04_Punch_03_Light": [
+    30200,
+    66
+  ],
+  "Naruto_Skill04_Punch_04_Light": [
+    30200,
+    67
+  ],
+  "Naruto_Skill03_Kick_02_Light": [
+    30200,
+    70
+  ],
+  "Naruto_Skill03_Kick_03_Light": [
+    30200,
+    71
+  ],
+  "Naruto_Skill03_Kick_04_Light": [
+    30200,
+    72
+  ],
+  "Naruto_Skill03_Kick_05_Light": [
+    30200,
+    73
+  ],
+  "Naruto_Skill03_Kick_06_Light": [
+    30200,
+    74
+  ],
+  "Naruto_Skill03_Kurama_01_Light": [
+    30200,
+    80
+  ],
+  "Naruto_Skill03_Kurama_02_Light": [
+    30200,
+    81
+  ],
+  "Naruto_Skill03_Kurama_03_Light": [
+    30200,
+    82
+  ],
+  "Naruto_Skill03_Kurama_04_Light": [
+    30200,
+    83
+  ],
+  "Naruto_Skill03_Kurama_05_Light": [
+    30200,
+    84
+  ],
+  "Naruto_Skill03_Kurama_06_Light": [
+    30200,
+    85
+  ],
+  "Naruto_Skill03_Kurama_07_Light": [
+    30200,
+    86
+  ],
+  "Naruto_Skill03_Kurama_08_Light": [
+    30200,
+    87
+  ],
+  "Naruto_Skill03_Kurama_09_Light": [
+    30200,
+    88
+  ],
+  "Naruto_Skill03_Kurama_10_Light": [
+    30200,
+    89
+  ],
+  "Naruto_Skill03_Kurama_11_Light": [
+    30200,
+    90
+  ],
+  "Naruto_Skill03_Kurama_12_Light": [
+    30200,
+    91
+  ],
+  "Naruto_Skill03_Kurama_13_Light": [
+    30200,
+    92
+  ],
+  "Naruto_Skill03_Kurama_14_Light": [
+    30200,
+    93
+  ],
+  "Naruto_Skill03_Kurama_15_Light": [
+    30200,
+    94
+  ],
+  "Naruto_Skill03_Kurama_16_Light": [
+    30200,
+    95
+  ],
+  "Naruto_Skill03_Kurama_17_Light": [
+    30200,
+    96
+  ],
+  "Naruto_Skill03_Kurama_18_Light": [
+    30200,
+    97
+  ],
+  "Naruto_Skill03_Kurama_19_Light": [
+    30200,
+    98
+  ],
+  "Naruto_Skill03_Kurama_20_Light": [
+    30200,
+    99
+  ],
+  "Naruto_Skill04_Hst_01_Light": [
+    30200,
+    100
+  ],
+  "Naruto_Skill04_Hst_02_Light": [
+    30200,
+    101
+  ],
+  "Naruto_Skill04_Hst_03_Light": [
+    30200,
+    102
+  ],
+  "Naruto_Skill04_Hst_04_Light": [
+    30200,
+    103
+  ],
+  "Naruto_Skill04_Hst_05_Light": [
+    30200,
+    104
+  ],
+  "Naruto_Skill04_Hst_06_Light": [
+    30200,
+    105
+  ],
+  "Naruto_Skill04_Hst_07_Light": [
+    30200,
+    106
+  ],
+  "Naruto_Skill04_bom_01_Light": [
+    30200,
+    107
+  ],
+  "Naruto_Skill04_bom_02_Light": [
+    30200,
+    108
+  ],
+  "Naruto_Skill04_bom_03_Light": [
+    30200,
+    109
+  ],
+  "Naruto_Skill04_bom_04_Light": [
+    30200,
+    110
+  ],
+  "Naruto_Skill04_bom_05_Light": [
+    30200,
+    111
+  ],
+  "Naruto_Skill04_bom_06_Light": [
+    30200,
+    112
+  ],
+  "Naruto_Skill04_bom_07_Light": [
+    30200,
+    113
+  ],
+  "Naruto_Skill04_bom_08_Light": [
+    30200,
+    114
+  ],
+  "Naruto_Skill04_bom_09_Light": [
+    30200,
+    115
+  ],
+  "Naruto_Skill04_bom_10_Light": [
+    30200,
+    116
+  ],
+  "Naruto_Skill04_bom_11_Light": [
+    30200,
+    117
+  ],
+  "Naruto_Skill04_bom_12_Light": [
+    30200,
+    118
+  ],
+  "Naruto_Skill04_bom_13_Light": [
+    30200,
+    119
+  ],
+  "Naruto_Transform_01_Light": [
+    30200,
+    120
+  ],
+  "Naruto_Transform_02_Light": [
+    30200,
+    121
+  ],
+  "Naruto_Transform_03_Light": [
+    30200,
+    122
+  ],
+  "Naruto_Transform_04_Light": [
+    30200,
+    123
+  ],
+  "Naruto_Transform_05_Light": [
+    30200,
+    124
+  ],
+  "Naruto_Transform_06_Light": [
+    30200,
+    125
+  ],
+  "Naruto_Transform_07_Light": [
+    30200,
+    126
+  ],
+  "Naruto_Transform_08_Light": [
+    30200,
+    127
+  ],
+  "Naruto_Transform_09_Light": [
+    30200,
+    128
+  ],
+  "Baryon_idle_01_Light": [
+    30200,
+    129
+  ],
+  "Baryon_idle_02_Light": [
+    30200,
+    130
+  ],
+  "Baryon_idle_03_Light": [
+    30200,
+    131
+  ],
+  "Baryon_Walk_01_Light": [
+    30200,
+    132
+  ],
+  "Baryon_Walk_02_Light": [
+    30200,
+    133
+  ],
+  "Baryon_Walk_03_Light": [
+    30200,
+    134
+  ],
+  "Baryon_Walk_04_Light": [
+    30200,
+    135
+  ],
+  "Baryon_Walk_05_Light": [
+    30200,
+    136
+  ],
+  "Baryon_Walk_06_Light": [
+    30200,
+    137
+  ],
+  "BaryonEnd_01_Light": [
+    30200,
+    138
+  ],
+  "BaryonEnd_02_Light": [
+    30200,
+    139
+  ],
+  "BaryonEnd_03_Light": [
+    30200,
+    140
+  ],
+  "BaryonEnd_04_Light": [
+    30200,
+    141
+  ],
+  "BaryonDash_01_Light": [
+    30200,
+    142
+  ],
+  "BaryonDash_02_Light": [
+    30200,
+    143
+  ],
+  "BaryonDash_03_Light": [
+    30200,
+    144
+  ],
+  "BaryonDash_04_Light": [
+    30200,
+    145
+  ],
+  "BaryonDash_05_Light": [
+    30200,
+    146
+  ],
+  "BaryonDash_06_Light": [
+    30200,
+    147
+  ],
+  "BaryonDash_07_Light": [
+    30200,
+    148
+  ],
+  "Baryon_Hit01_01_Light": [
+    30200,
+    149
+  ],
+  "Baryon_Hit01_02_Light": [
+    30200,
+    150
+  ],
+  "Baryon_Hit01_03_Light": [
+    30200,
+    151
+  ],
+  "Baryon_Hit01_04_Light": [
+    30200,
+    152
+  ],
+  "Baryon_Hit01_05_Light": [
+    30200,
+    153
+  ],
+  "Baryon_Hit01_06_Light": [
+    30200,
+    154
+  ],
+  "Baryon_Hit02_01_Light": [
+    30200,
+    155
+  ],
+  "Baryon_Hit02_02_Light": [
+    30200,
+    156
+  ],
+  "Baryon_Hit02_03_Light": [
+    30200,
+    157
+  ],
+  "Baryon_Hit02_04_Light": [
+    30200,
+    158
+  ],
+  "Baryon_Hit02_05_Light": [
+    30200,
+    159
+  ],
+  "Baryon_Hit02_06_Light": [
+    30200,
+    160
+  ],
+  "BaryonUK_01_Light": [
+    30200,
+    161
+  ],
+  "BaryonUK_02_Light": [
+    30200,
+    162
+  ],
+  "BaryonUK_03_Light": [
+    30200,
+    163
+  ],
+  "BaryonUK_04_Light": [
+    30200,
+    164
+  ],
+  "BaryonUK_05_Light": [
+    30200,
+    165
+  ],
+  "BaryonUK_06_Light": [
+    30200,
+    166
+  ],
+  "BaryonUK_07_Light": [
+    30200,
+    167
+  ],
+  "BaryonUK_08_Light": [
+    30200,
+    168
+  ],
+  "BaryonUK_09_Light": [
+    30200,
+    169
+  ],
+  "BaryonUK_10_Light": [
+    30200,
+    170
+  ],
+  "BaryonUK_11_Light": [
+    30200,
+    171
+  ],
+  "BaryonUK_12_Light": [
+    30200,
+    172
+  ],
+  "BaryonUK_13_Light": [
+    30200,
+    173
+  ],
+  "BaryonUK_14_Light": [
+    30200,
+    174
+  ],
+  "OdamaNrt_CHG_01_Light": [
+    30200,
+    184
+  ],
+  "OdamaNrt_CHG_02_Light": [
+    30200,
+    185
+  ],
+  "OdamaNrt_CHG_03_Light": [
+    30200,
+    186
+  ],
+  "OdamaNrt_CHG_04_Light": [
+    30200,
+    187
+  ],
+  "OdamaNrt_Hit_01_Light": [
+    30200,
+    188
+  ],
+  "OdamaNrt_Hit_02_Light": [
+    30200,
+    189
+  ],
+  "OdamaNrt_Hit_03_Light": [
+    30200,
+    190
+  ],
+  "OdamaNrt_Hit_04_Light": [
+    30200,
+    191
+  ],
+  "OdamaNrt_Bom_01_Light": [
+    30200,
+    192
+  ],
+  "OdamaNrt_Bom_02_Light": [
+    30200,
+    193
+  ],
+  "OdamaNrt_Bom_03_Light": [
+    30200,
+    194
+  ],
+  "OdamaNrt_Bom_04_Light": [
+    30200,
+    195
+  ],
+  "OdamaNrt_Bom_05_Light": [
+    30200,
+    196
+  ],
+  "OdamaNrt_Bom_06_Light": [
+    30200,
+    197
+  ],
+  "LightEmpty": [
+    30201,
+    0
+  ],
+  "Common_8700_0": [
+    8700,
+    0
+  ],
+  "Common_8700_1": [
+    8700,
+    1
+  ],
+  "Common_8700_2": [
+    8700,
+    2
+  ],
+  "Common_8700_3": [
+    8700,
+    3
+  ],
+  "Common_8710_0": [
+    8710,
+    0
+  ],
+  "Common_8710_1": [
+    8710,
+    1
+  ],
+  "Common_8710_2": [
+    8710,
+    2
+  ],
+  "Common_8710_3": [
+    8710,
+    3
+  ],
+  "Common_8720_0": [
+    8720,
+    0
+  ],
+  "Common_8720_1": [
+    8720,
+    1
+  ],
+  "Common_8720_2": [
+    8720,
+    2
+  ],
+  "Common_8720_3": [
+    8720,
+    3
+  ],
+  "Common_8720_4": [
+    8720,
+    4
+  ],
+  "Common_8720_5": [
+    8720,
+    5
+  ],
+  "Common_8900_0": [
+    8900,
+    0
+  ],
+  "Common_8900_1": [
+    8900,
+    1
+  ],
+  "Common_8900_2": [
+    8900,
+    2
+  ],
+  "Common_8900_3": [
+    8900,
+    3
+  ],
+  "Common_8900_4": [
+    8900,
+    4
+  ],
+  "Common_8900_5": [
+    8900,
+    5
+  ],
+  "Common_8900_6": [
+    8900,
+    6
+  ],
+  "Common_8900_7": [
+    8900,
+    7
+  ],
+  "Common_8900_8": [
+    8900,
+    8
+  ],
+  "Common_8900_9": [
+    8900,
+    9
+  ],
+  "Common_8900_10": [
+    8900,
+    10
+  ],
+  "Common_8900_11": [
+    8900,
+    11
+  ],
+  "Common_8900_12": [
+    8900,
+    12
+  ],
+  "Common_8900_13": [
+    8900,
+    13
+  ],
+  "Common_8900_14": [
+    8900,
+    14
+  ],
+  "Common_8900_15": [
+    8900,
+    15
+  ],
+  "Common_8900_16": [
+    8900,
+    16
+  ],
+  "Common_8900_17": [
+    8900,
+    17
+  ],
+  "Common_8900_18": [
+    8900,
+    18
+  ],
+  "Common_8900_19": [
+    8900,
+    19
+  ],
+  "Common_8900_20": [
+    8900,
+    20
+  ],
+  "Common_8900_21": [
+    8900,
+    21
+  ],
+  "Common_8900_22": [
+    8900,
+    22
+  ],
+  "Common_8900_23": [
+    8900,
+    23
+  ],
+  "Portrait_0": [
+    9000,
+    0
+  ],
+  "Portrait_1": [
+    9000,
+    1
+  ],
+  "Naruto_Skill04_Hst_01_FX_Light": [
+    30202,
+    0
+  ],
+  "Naruto_Skill04_Hst_02_FX_Light": [
+    30202,
+    1
+  ],
+  "Naruto_Skill04_Hst_03_FX_Light": [
+    30202,
+    2
+  ],
+  "Naruto_Skill04_Hst_04_FX_Light": [
+    30202,
+    3
+  ],
+  "Naruto_Skill04_Hst_05_FX_Light": [
+    30202,
+    4
+  ],
+  "Naruto_Skill04_Hst_06_FX_Light": [
+    30202,
+    5
+  ],
+  "Naruto_Skill04_Hst_07_FX_Light": [
+    30202,
+    6
+  ],
+  "Naruto_Skill04_bom_01_FX_Light": [
+    30202,
+    7
+  ],
+  "Naruto_Skill04_bom_02_FX_Light": [
+    30202,
+    8
+  ],
+  "Naruto_Skill04_bom_03_FX_Light": [
+    30202,
+    9
+  ],
+  "Naruto_Skill04_bom_04_FX_Light": [
+    30202,
+    10
+  ],
+  "Naruto_Skill04_bom_05_FX_Light": [
+    30202,
+    11
+  ],
+  "Naruto_Skill04_bom_06_FX_Light": [
+    30202,
+    12
+  ],
+  "Naruto_Skill04_bom_07_FX_Light": [
+    30202,
+    13
+  ],
+  "Naruto_Skill04_bom_08_FX_Light": [
+    30202,
+    14
+  ],
+  "Naruto_Skill04_bom_09_FX_Light": [
+    30202,
+    15
+  ],
+  "Naruto_Skill04_bom_10_FX_Light": [
+    30202,
+    16
+  ],
+  "Naruto_Skill04_bom_11_FX_Light": [
+    30202,
+    17
+  ],
+  "Naruto_Skill04_bom_12_FX_Light": [
+    30202,
+    18
+  ],
+  "Naruto_Skill04_bom_13_FX_Light": [
+    30202,
+    19
+  ],
+  "OdamaNrt_Hit_01_FX_Light": [
+    30202,
+    20
+  ],
+  "OdamaNrt_Hit_02_FX_Light": [
+    30202,
+    21
+  ],
+  "OdamaNrt_Hit_03_FX_Light": [
+    30202,
+    22
+  ],
+  "OdamaNrt_Hit_04_FX_Light": [
+    30202,
+    23
+  ],
+  "OdamaNrt_Bom_01_FX_Light": [
+    30202,
+    24
+  ],
+  "OdamaNrt_Bom_02_FX_Light": [
+    30202,
+    25
+  ],
+  "OdamaNrt_Bom_03_FX_Light": [
+    30202,
+    26
+  ],
+  "OdamaNrt_Bom_04_FX_Light": [
+    30202,
+    27
+  ],
+  "OdamaNrt_Bom_05_FX_Light": [
+    30202,
+    28
+  ],
+  "OdamaNrt_Bom_06_FX_Light": [
+    30202,
+    29
+  ]
+}

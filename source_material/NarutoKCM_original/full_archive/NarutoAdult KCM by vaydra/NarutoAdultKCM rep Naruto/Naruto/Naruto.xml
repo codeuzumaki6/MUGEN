@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+
+	<action name="Idle">
+		<data>
+			<p type="attackType">Naruto</p>
+			<p type="attackValue">6500</p>
+			<p type="attackRangeX">63</p>
+			<p type="attackRangeY">100</p>
+			<p type="cd">224</p>
+		</data>
+		<frame>
+			<f>Kcm_Idle_01</f>
+			<f>Kcm_Idle_02</f>
+			<f>Kcm_Idle_03</f>
+			<f>Kcm_Idle_03</f>
+	  	<f>Kcm_Idle_02</f>		
+		</frame>
+	</action>
+
+	<action name="Walk">
+		<frame>
+			<f>Naruto_Walk_01</f>
+  		<e type="setMove">4</e>		
+			<f>Naruto_Walk_02</f>
+	    <e type="setSound">Audio/Effect/step1.mp3</e>	
+			<e type="setMove">4</e>		
+			<f>Naruto_Walk_03</f>
+			<e type="setMove">4</e>			
+			<f>Naruto_Walk_04</f>
+			<e type="setMove">4</e>			
+			<f>Naruto_Walk_05</f>
+	    <e type="setSound">Audio/Effect/step1.mp3</e>
+			<e type="setMove">4</e>			
+			<f>Naruto_Walk_06</f>
+			<e type="setMove">4</e>			
+		</frame>
+	</action>
+
+	<action name="Hurt">
+		<frame>
+			<e type="setMove">32</e>
+			<f>Naruto_Hurt_01</f>
+			<f>Naruto_Hurt_02</f>
+		  <e type="setSound">Audio/BTM/Die.wav</e>
+		</frame>
+	</action>
+
+	<action name="AirHurt">
+		<frame>
+			<f>Naruto_AirHurt_01</f>
+		</frame>
+	</action>
+
+	<action name="KnockDown">
+		<frame>
+			<f>Naruto_Knock_01</f>
+			<f>Naruto_Dead_01</f>
+			<e type="setDelay">60</e>
+			<f>Naruto_Wake_01</f>
+			<f>Naruto_Wake_02</f>
+			<f>Naruto_Wake_03</f>
+			<f>Naruto_Wake_03</f>
+
+		</frame>
+	</action>
+
+	<action name="Float">
+		<frame>
+			<f>Naruto_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Float_01</f>
+			<e type="setDelay">10</e>
+			<f>Naruto_Float_01</f>
+		</frame>
+	</action>
+
+	<action name="Dead">
+		<frame>
+	  	<f>Naruto_Knock_01</f>
+			<f>Naruto_Dead_01</f>
+	    <e type="setSound">Audio/BTM/Dead.wav</e>
+
+		</frame>
+	</action>
+
+	<action name="nAttack">
+		<data>
+			<p type="attackType">nAttack</p>
+			<p type="attackValue">90</p>
+			<p type="attackRangeX">16</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+        <f>Naruto_Natk_01</f>
+        <e type="setDelay">10</e>
+        <f>Naruto_Natk_02</f>
+        <e type="setSound">Audio/Effect/combo1.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Naruto_Natk_03</f>
+        <e type="setDelay">10</e>
+
+        <f>Naruto_Natk_04</f>
+        <e type="setSound">Audio/Effect/combo2.ogg</e>
+        <e type="setAttackBox">n_hit</e>
+        <f>Naruto_Natk_05</f>
+        <e type="setDelay">10</e>
+        
+        
+        <f>Naruto_Natk_06</f>
+        <f>Naruto_Natk_07</f>
+        <e type="setMove">16</e>
+        <f>Naruto_Natk_08</f>
+        <e type="setSound">Audio/Effect/combo3.ogg</e>
+        <e type="setSound">Audio/BTM/N.wav</e>
+        <e type="setAttackBox">l_hit</e>
+        <f>Naruto_Natk_09</f>
+        <f>Naruto_Natk_10</f>	
+		</frame>
+	</action>
+
+	<action name="skill01">
+		<data>
+			<p type="attackType">cAttack</p>
+			<p type="attackValue">660</p>
+			<p type="attackRangeX">26</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">10</p>
+			<p type="combatPoint">1320</p>
+		</data>
+		<frame>
+			<e type="setSound">Audio/Effect/futon_effect.ogg</e>
+			<f>NarutoRSCHG_01</f>
+			<f>NarutoRSCHG_02</f>
+			<f>NarutoRSCHG_03</f>
+	  	<f>NarutoRSCHG_04</f>
+			<f>NarutoRSCHG_05</f>
+      <e type="setSound">Audio/BTM/rasen.ogg</e>			
+			<f>NarutoRSCHG_06</f>	
+			
+			<f>Naruto_Skill01_Dash_01</f>		
+			
+			<e type="setCharge">180</e>
+			<f>Naruto_RSHIT_01</f>
+	  	<e type="setAttackBox">ac_hit</e>	
+			<f>Naruto_RSHIT_02</f>	
+			<f>Naruto_RSHIT_03</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_RSHIT_04</f>
+			<f>Naruto_RSHIT_05</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_RSHIT_06</f>
+			<f>Naruto_RSHIT_01</f>
+	  	<e type="setSound">Audio/Effect/damage_rasen.ogg</e>	
+			<f>Naruto_RSHIT_02</f>
+			<f>Naruto_RSHIT_03</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_RSHIT_04</f>
+			<f>Naruto_RSHIT_05</f>
+			<e type="setAttackBox">ac_hit</e>
+			<e type="setSound">Audio/Effect/damage_rasen.ogg</e>
+			<f>Naruto_RSHIT_06</f>
+			
+			
+  		<f>Naruto_RSDD_01</f>
+      <e type="setSound">Audio/Effect/1_1.wav</e>		
+			<f>Naruto_RSDD_02</f>
+			<f>Naruto_RSDD_03</f>
+			<e type="setAttackBox">ac_hit</e>
+	    <e type="setSound">Audio/Effect/1_1.wav</e>
+			<f>Naruto_RSDD_04</f>
+			<f>Naruto_RSDD_05</f>	
+	    <e type="setSound">Audio/BTM/Angin.ogg</e>
+			<f>Naruto_RSDD_06</f>		
+			
+		</frame>
+	</action>
+
+	<action name="skill02">
+		<data>
+		<p type="attackType">aAttack</p>
+			<p type="attackValue">80</p>
+			<p type="attackRangeX">20</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">15</p>
+			<p type="combatPoint">1980</p>
+		</data>
+		<frame>
+	      <f>Naruto_Natk_01</f>
+        <e type="setDelay">10</e>
+		    <e type="setMove">20</e>	
+        
+			<e type="setSound">Audio/BTM/naruto_combo.ogg</e>
+			<f>Naruto_Skill04_Punch_01</f>
+	  	<e type="setAttackBox">l_hit</e>
+			<e type="setSound">Audio/Effect/rock_hit.ogg</e>				
+			<f>Naruto_Skill04_Punch_02</f>
+	  	<e type="setAttackBox">l_hit</e>	
+			<f>Naruto_Skill04_Punch_03</f>
+    	<e type="setAttackBox">l_hit</e>		
+			<f>Naruto_Skill04_Punch_04</f>
+			<f>Naruto_Skill04_Punch_05</f>
+		
+			
+			
+  <e type="setBullet">BlinkNrt</e>		
+  <e type="setSound">Audio/Effect/efxJump.mp3</e>
+	<e type="setCharge">280</e>		
+		
+		
+			<f>Naruto_Skill03_Kick_01</f>
+	  	<e type="setDelay">10</e>	
+			<e type="setAttackBox">ac_hit</e>
+			<f>Naruto_Skill03_Kick_02</f>
+			<e type="setSound">Audio/BTM/NarutoSannin_Combo_02.ogg</e>	
+			<e type="setAttackBox">b_hit</e>
+			<e type="setSound">Audio/Effect/rock_hit2.ogg</e>
+			<f>Naruto_Skill03_Kick_03</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Naruto_Skill03_Kick_04</f>
+			<e type="setAttackBox">c_hit</e>
+			<f>Naruto_Skill03_Kick_05</f>
+	  	<f>Naruto_Skill03_Kick_06</f>
+	  	
+	  	<f>Naruto_Skill03_Kick_07</f>
+	  	<f>Naruto_Skill03_Kick_08</f>
+	  	
+	  	
+	  	<f>Naruto_Skill03_Kick_09</f>
+	    <e type="setSound">Audio/Effect/landing2.mp3</e>
+      <e type="setBullet">DustFxNrt</e>		  	
+	  	<f>Naruto_Skill03_Kick_10</f>
+	  	<f>Naruto_Skill03_Kick_11</f>
+	
+	  			
+			
+			
+			
+	  	<f>Naruto_Skill03_Kurama_01</f>
+			<e type="setSound">Audio/BTM/koc.ogg</e>	
+			<e type="setAttackBox">b_hit</e>
+			<e type="setSound">Audio/Effect/Boom.mp3</e>
+			<f>Naruto_Skill03_Kurama_02</f>
+			<f>Naruto_Skill03_Kurama_03</f>
+			<f>Naruto_Skill03_Kurama_04</f>
+			<e type="setSound">Audio/Effect/Biju.mp3</e>	
+	  	<f>Naruto_Skill03_Kurama_05</f>	  	
+	  	<f>Naruto_Skill03_Kurama_06</f>
+	  	<f>Naruto_Skill03_Kurama_07</f>	  	  	
+	  	<f>Naruto_Skill03_Kurama_08</f>
+	  	<f>Naruto_Skill03_Kurama_09</f>
+	  	
+	  	
+	  	<f>Naruto_Skill03_Kurama_10</f>
+			<e type="setAttackBox">f_hit</e>
+			<e type="setAttackBox">ac_hit</e>			
+			<e type="setAttackBox">c_hit</e>	
+			<e type="setAttackBox">c_hit</e>		
+			<e type="setAttackBox">c_hit</e>	
+			<e type="setAttackBox">c_hit</e>			
+			<e type="setAttackBox">ac_hit</e>			
+			<e type="setSound">Audio/Effect/slsh.mp3</e>	
+	  	<f>Naruto_Skill03_Kurama_11</f>
+			<e type="setAttackBox">c_hit</e>	
+			<e type="setAttackBox">c_hit</e>		
+	  	<f>Naruto_Skill03_Kurama_12</f>	  	
+			<e type="setAttackBox">ac_hit</e>		
+			<e type="setAttackBox">ac_hit</e>			
+	  	<f>Naruto_Skill03_Kurama_13</f>
+			<e type="setAttackBox">c_hit</e>		
+	  	<f>Naruto_Skill03_Kurama_14</f>	  	
+	  			
+		  <f>Naruto_Skill03_Kurama_15</f>
+			<e type="setSound">Audio/Effect/Wus.wav</e>	  
+	  	<f>Naruto_Skill03_Kurama_16</f>
+	  	<f>Naruto_Skill03_Kurama_17</f>	  	
+	  	<f>Naruto_Skill03_Kurama_18</f>
+	  	<f>Naruto_Skill03_Kurama_19</f>	  	
+    	<f>Naruto_Skill03_Kurama_20</f>	 
+	
+		</frame>
+	</action>
+
+	<action name="skill03">
+		<data>
+    	<p type="attackType">aAttack</p>
+			<p type="attackValue">130</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">25</p>
+			<p type="combatPoint">2880</p>
+		</data>
+		<frame>
+		
+	    <e type="setDelay">10</e>	
+      <e type="setBullet">BlinkNrt</e>	
+      <e type="setBullet">DustFxNrt</e>		  	
+			<e type="setSound">Audio/Effect/dash.wav</e>
+	  	<f>nol_01</f>	
+	    <e type="setDelay">20</e>
+	
+            <e type="setChargeB">280</e>
+            <e type="setSound">Audio/BTM/heaa.ogg</e>
+            <f>Naruto_Skill04_Hst_01</f>
+            <e type="setAttackBox">f_hit</e>   
+            <e type="setAttackBox">ac_hit</e>
+            <f>Naruto_Skill04_Hst_02</f>
+            <f>Naruto_Skill04_Hst_03</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_04</f>
+            <f>Naruto_Skill04_Hst_05</f>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_06</f>
+            <f>Naruto_Skill04_Hst_01</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_02</f>
+            <f>Naruto_Skill04_Hst_03</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_04</f>
+            <f>Naruto_Skill04_Hst_05</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_06</f>
+            <f>Naruto_Skill04_Hst_07</f>
+            <e type="setAttackBox">c_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_01</f>
+            <f>Naruto_Skill04_Hst_02</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_03</f>
+            <f>Naruto_Skill04_Hst_04</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_05</f>
+            <f>Naruto_Skill04_Hst_06</f>
+            <e type="setAttackBox">ac_hit</e>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>Naruto_Skill04_Hst_07</f>
+            <f>nol_01</f>
+            <e type="setSound">Audio/Effect/dash_effect.ogg</e>
+            <f>nol_01</f>
+            <f>nol_01</f>
+            
+            
+            
+            
+      <f>Naruto_Skill04_bom_01</f>
+      <e type="setAttackBox">b_hit</e>   
+			<e type="setSound">Audio/Effect/RSGfuton.mp3</e>	  
+	  	<f>Naruto_Skill04_bom_02</f>
+	  	<f>Naruto_Skill04_bom_03</f>	  	
+	    <e type="setAttackBox">a_hit</e>	
+	  	<f>Naruto_Skill04_bom_04</f>
+	  	<f>Naruto_Skill04_bom_05</f>
+	    <e type="setAttackBox">a_hit</e>		
+	  	<f>Naruto_Skill04_bom_06</f>	  	
+	  	<f>Naruto_Skill04_bom_07</f>	
+	  	<f>Naruto_Skill04_bom_08</f>
+
+            
+      <f>Naruto_Skill04_bom_09</f>
+      <e type="setAttackBox">f_hit</e>   
+      <e type="setAttackBox">a_hit</e>	
+      <e type="setAttackBox">a_hit</e>	
+      <e type="setAttackBox">c_hit</e>	
+      <e type="setAttackBox">c_hit</e>	
+      <e type="setAttackBox">c_hit</e>	
+			<e type="setSound">Audio/Effect/Burst Deepa.mp3</e>	  
+	  	<f>Naruto_Skill04_bom_10</f>
+	  	<f>Naruto_Skill04_bom_11</f>	  	
+	  	<f>Naruto_Skill04_bom_12</f>
+	  	<f>Naruto_Skill04_bom_13</f>	
+	
+    	<f>Naruto_Skill03_Kick_09</f>
+      <e type="setBullet">DustFxNrt</e>		  	
+	  	<f>Naruto_Skill03_Kick_10</f>
+	  	<f>Naruto_Skill03_Kick_11</f>
+		
+		</frame>
+	</action>
+
+	<action name="skill04">
+		<data>
+	
+			<p type="attackType">oAttack</p>
+			<p type="attackValue">144</p>
+			<p type="attackRangeX">15</p>
+			<p type="attackRangeY">30</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">0</p>
+		</data>
+		<frame>
+	  	<f>Naruto_Skill02_punch_01</f>	
+	    <e type="setDelay">10</e>	
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+			<e type="setClone">10</e>	
+	  	<f>nol_01</f>	
+	    <e type="setDelay">10</e>
+	    <e type="setCommand">findTarget</e>  
+      <e type="setCommand">setTransport</e> 	
+			
+		
+			<f>Naruto_Skill02_punch_02</f>
+			<e type="setMove">8</e>	
+			<f>Naruto_Skill02_punch_03</f>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>	
+	  	<e type="setAttackBox">o2_hit</e>
+	    <e type="setSound">Audio/BTM/Hurt.wav</e>	
+			<f>Naruto_Skill02_punch_04</f>
+			<f>Naruto_Skill02_punch_05</f>
+			
+			
+			
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+	  <e type="setChargeB">370</e>  	
+	  	<f>nol_01</f>			
+    	<f>nol_01</f>			
+      <e type="setFlipped">10</e>	
+      <e type="setBullet">DustFxNrt</e>		  
+	  	<f>Naruto_Skill02_punch_02</f>
+			<e type="setMove">12</e>	
+			<f>Naruto_Skill02_punch_03</f>
+			<e type="setSound">Audio/Effect/damage_i.ogg</e>	
+	  	<e type="setAttackBox">o_hit</e>
+	    <e type="setSound">Audio/BTM/Hurt.wav</e>		
+			<f>Naruto_Skill02_punch_04</f>
+			<f>Naruto_Skill02_punch_05</f>
+			
+			
+			
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+      <e type="setChargeB">370</e>  		
+	  	<f>nol_01</f>			
+    	<f>nol_01</f>			
+      <e type="setFlipped">10</e>	
+      <e type="setBullet">DustFxNrt</e>		  
+      
+	  	<f>Naruto_Skill02_punch_02</f>
+			<e type="setMove">12</e>	
+			<f>Naruto_Skill02_punch_03</f>
+	  	<e type="setSound">Audio/Effect/damage_i.ogg</e>	
+	  	<e type="setAttackBox">o2_hit</e>
+	    <e type="setSound">Audio/BTM/Hurt.wav</e>		
+			<f>Naruto_Skill02_punch_04</f>
+			<f>Naruto_Skill02_punch_05</f>
+			
+			
+			
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+		  <e type="setChargeB">370</e>  	
+	  	<f>nol_01</f>			
+    	<f>nol_01</f>			
+      <e type="setFlipped">10</e>	
+      <e type="setBullet">DustFxNrt</e>		  
+      
+			
+	
+			
+					
+							
+											
+	  	<f>Naruto_Skill02_KickA_01</f>
+			<e type="setMove">12</e>	
+			<f>Naruto_Skill02_KickA_02</f>
+			<e type="setSound">Audio/Effect/rock_hit.ogg</e>	
+	  	<e type="setAttackBox">b_hit</e>	
+	    <e type="setSound">Audio/BTM/RikudoNaruto_skill5.og</e>	
+			<f>Naruto_Skill02_KickA_03</f>
+			<f>Naruto_Skill02_KickA_04</f>
+			<e type="setDelay">-5</e>		
+			<f>Naruto_Skill02_KickA_05</f>
+			
+			
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+	  	<f>nol_01</f>			
+		  <e type="setCommand">findTarget</e>  
+      <e type="setCommand">setTransport</e> 			
+			
+			
+    	<f>Naruto_Skill02_KickB_01</f>
+			<e type="setMove">8</e>	
+			<f>Naruto_Skill02_KickB_02</f>
+			<e type="setSound">Audio/Effect/rock_hit2.ogg</e>	
+	  	<e type="setAttackBox">b_hit</e>
+	    <e type="setSound">Audio/BTM/NAttack02.ogg</e>	
+			<f>Naruto_Skill02_KickB_03</f>
+			<f>Naruto_Skill02_KickB_04</f>
+			<f>Naruto_Skill02_KickB_05</f>
+			<e type="setDelay">-5</e>			
+			<f>Naruto_Skill02_KickB_06</f>
+			<e type="setDelay">-5</e>		
+			<f>Naruto_Skill02_KickB_07</f>
+			
+				
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+	  	<f>nol_01</f>			
+	  	
+	
+		<e type="setCommand">setInvincible</e>	
+			<e type="setMove">28</e>		
+			<e type="setSound">Audio/Effect/RsChg.mp3</e>		
+	  	<f>OdamaNrt_CHG_01</f>
+    	<e type="setDelay">8</e>		
+			<f>OdamaNrt_CHG_02</f>
+		 	<e type="setDelay">8</e>	
+	  	<f>OdamaNrt_CHG_03</f>
+    	<e type="setDelay">8</e>		
+			<f>OdamaNrt_CHG_04</f>
+		 	<e type="setDelay">8</e>	 	
+			<e type="setCommand">reInvincible</e> 	
+	
+		  <e type="setSound">Audio/BTM/Nrto OdamaRsg.mp3</e>	
+			<f>OdamaNrt_Hit_01</f>	
+			<e type="setSound">Audio/Effect/kawaki bom.mp3</e>	
+	  	<e type="setAttackBox">f_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>
+			
+			<f>OdamaNrt_Hit_01</f>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>
+			
+		  <f>OdamaNrt_Hit_01</f>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>
+				
+		  <f>OdamaNrt_Hit_01</f>	
+		  <e type="setSound">Audio/Effect/RsgAura.mp3</e>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>	
+	  	
+		  <f>OdamaNrt_Hit_01</f>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>	
+	  	
+	    <f>OdamaNrt_Hit_01</f>	
+	    <e type="setSound">Audio/Effect/RsgAura.mp3</e>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Hit_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Hit_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Hit_04</f>
+			
+			<f>OdamaNrt_Bom_01</f>	
+		  <e type="setSound">Audio/Effect/Boom.mp3</e>	
+	  	<e type="setAttackBox">c_hit</e>
+			<f>OdamaNrt_Bom_02</f>
+    	<e type="setAttackBox">ac_hit</e>				
+			<f>OdamaNrt_Bom_03</f>
+    	<e type="setAttackBox">ac_hit</e>		
+			<f>OdamaNrt_Bom_04</f>	
+	  	<f>OdamaNrt_Bom_05</f>	
+	  	<f>OdamaNrt_Bom_06</f>	
+	  	
+	  	
+				
+      <e type="setBullet">BlinkNrt</e>	
+			<e type="setSound">Audio/Effect/dash_effect.ogg</e>
+	  	<f>nol_01</f>			
+	  		
+      <e type="setCommand">setTransport</e> 			
+		 	<f>Naruto_Skill03_Kick_09</f>
+      <e type="setBullet">DustFxNrt</e>		  	
+	  	<e type="setSound">Audio/Effect/hiraishin_effect2.ogg</e>
+	  	<f>Naruto_Skill03_Kick_10</f>
+	  	<f>Naruto_Skill03_Kick_11</f>			
+		
+		
+		</frame>
+	</action>
+
+	<action name="skill05">
+		<data>
+			<p type="attackType">cBuff</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">15</p>
+			<p type="cd">1</p>
+			<p type="combatPoint">5000</p>
+		</data>
+		<frame>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSound">Audio/Effect/BEAM.ogg</e>
+			<f>Naruto_Transform_01</f>
+			<f>Naruto_Transform_02</f>
+			<e type="setSound">Audio/Effect/kiplosion.ogg</e>	
+			<f>Naruto_Transform_04</f>
+			<f>Naruto_Transform_03</f>
+			<f>Naruto_Transform_05</f>
+			<f>Naruto_Transform_07</f>
+			<f>Naruto_Transform_06</f>
+			<f>Naruto_Transform_09</f>
+			<f>Naruto_Transform_08</f>	 
+	  	<e type="setSound">Audio/BTM/NarutoBaryon.ogg</e>		
+			<e type="setOugis">10</e>
+			<f>Baryon_idle_01</f>
+			<e type="setBuff">17</e>
+			<e type="setCommand">reInvincible</e>
+		</frame>
+	</action>
+
+	<action name="skill06">
+		<frame></frame>
+	</action>
+	<action name="skill07">
+		<frame></frame>
+	</action>
+	<action name="skill08">
+		<frame></frame>
+	</action>
+	<action name="skill09">
+		<data>
+			<p type="attackType">KnockDown</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<e type="setCommand">setInvincible</e>
+			<e type="setSkillEffect">smk</e>
+			<f>BaryonEnd_01</f>
+			<e type="setSound">Audio/Effect/1.wav</e>	
+			<e type="setDelay">40</e>	
+			<f>BaryonEnd_02</f>
+			<f>BaryonEnd_03</f>
+			<f>BaryonEnd_04</f>			
+			<f>BaryonEnd_01</f>
+			<e type="setDelay">40</e>
+	  	<e type="setSound">Audio/Effect/1.wav</e>	
+			<f>BaryonEnd_02</f>
+			<f>BaryonEnd_03</f>
+			<f>BaryonEnd_04</f>			
+			<f>BaryonEnd_01</f>
+			<e type="setDelay">40</e>	
+			<e type="setSound">Audio/Effect/1.wav</e>	
+			<f>BaryonEnd_02</f>
+			<f>BaryonEnd_03</f>
+			<f>BaryonEnd_04</f>	
+	  	<f>BaryonEnd_01</f>
+			<e type="setSound">Audio/Effect/1.wav</e>	
+			<f>BaryonEnd_02</f>
+			<f>BaryonEnd_03</f>
+			<f>BaryonEnd_04</f>			
+			<e type="setCommand">reInvincible</e>	
+			<f>Naruto_Knock_01</f>
+			<f>Naruto_Dead_01</f>
+			<e type="setDelay">100</e>
+			<f>Naruto_Wake_01</f>
+			<f>Naruto_Wake_02</f>
+			<f>Naruto_Wake_03</f>
+			<f>Naruto_Wake_03</f>
+	
+		</frame>
+
+	</action>
+	<action name="skill10">
+		<data>
+			<p type="attackType">Idle</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	  	<e type="setSound">Audio/Effect/desis.ogg</e>	
+			<f>Baryon_idle_01</f>
+			<e type="setCommand">setCounter</e>			
+			<e type="setDelay">5</e>
+			<f>Baryon_idle_02</f>
+			<e type="setDelay">5</e>
+			<f>Baryon_idle_01</f>
+			<e type="setDelay">5</e>
+			<f>Baryon_idle_02</f>
+			<e type="setDelay">5</e>
+		</frame>
+	</action>
+
+	<action name="skill11">
+		<data>
+			<p type="attackType">Walk</p>
+			<p type="attackValue">0</p>
+			<p type="attackRangeX">0</p>
+			<p type="attackRangeY">0</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+	  	<e type="setSound">Audio/Effect/desis.ogg</e>	
+			<e type="setCommand">setCounter</e>			
+			<f>Baryon_Walk_01</f>
+			<e type="setShadow">10</e>
+			<f>Baryon_Walk_02</f>
+			<f>Baryon_Walk_03</f>
+			<e type="setShadow">10</e>
+			<f>Baryon_Walk_04</f>
+			<f>Baryon_Walk_05</f>
+			<e type="setShadow">10</e>
+			<f>Baryon_Walk_06</f>
+		</frame>
+	</action>
+
+	<action name="skill12">
+		<data>
+			<p type="attackType">aAttack</p>
+			<p type="attackValue">40</p>
+			<p type="attackRangeX">10</p>
+			<p type="attackRangeY">48</p>
+			<p type="cd">0</p>
+		</data>
+		<frame>
+			<f>BaryonDash_01</f>
+		
+		
+  		<e type="setCharge">288</e>	 		
+  		<f>BaryonDash_02</f>	
+    	<e type="setAttackBox">ac_hit</e>	
+			<e type="setChargeB">128</e>
+			<e type="setSound">Audio/Effect/chang_tokusyu.ogg</e>
+			<f>BaryonDash_03</f>
+			<f>BaryonDash_04</f>			
+			<f>BaryonDash_05</f>
+			<f>BaryonDash_06</f>	
+		  <e type="setAttackBox">ac_hit</e>		
+			<e type="setCommand">setCounter</e>		  
+			<f>BaryonDash_07</f>	
+    	<e type="setDelay">10</e>
+	
+    <e type="setFlipped">10</e>
+    
+    
+			<f>Baryon_Hit01_01</f>
+			<f>Baryon_Hit01_02</f>
+			<e type="setDelay">-5</e>
+	    <e type="setAttackBox">ac_hit</e>		
+			<e type="setSound">Audio/Effect/Cambuk.wav</e>
+			<f>Baryon_Hit01_03</f>		
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit01_04</f>
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit01_05</f>	
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit01_06</f>	
+			<e type="setDelay">-5</e>
+			
+			<f>Baryon_Hit02_01</f>
+			<f>Baryon_Hit02_02</f>
+			<e type="setDelay">-5</e>
+	    <e type="setAttackBox">ac_hit</e>		
+			<e type="setSound">Audio/Effect/Cambuk.wav</e>
+			<f>Baryon_Hit02_03</f>		
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit02_04</f>
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit02_05</f>	
+			<e type="setDelay">-5</e>	
+			<f>Baryon_Hit02_06</f>	
+			<e type="setDelay">-5</e>	
+			
+			
+			<f>BaryonUK_01</f>
+			<e type="setMove">10</e>	
+			<f>BaryonUK_02</f>
+			<e type="setDelay">-5</e>
+	    <e type="setAttackBox">ac_hit</e>		
+			<e type="setSound">Audio/Effect/hit01.ogg</e>
+			<f>BaryonUK_03</f>		
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_04</f>
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_05</f>	
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_06</f>	
+			<e type="setDelay">-5</e>
+			
+				
+					
+							
+			<f>BaryonUK_07</f>
+			<e type="setMove">5</e>	
+			<f>BaryonUK_08</f>
+			<e type="setDelay">-5</e>
+	    <e type="setAttackBox">ac_hit</e>		
+			<e type="setSound">Audio/Effect/rock_hit2.ogg</e>	
+			<f>BaryonUK_09</f>		
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_10</f>
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_11</f>	
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_12</f>	
+			<e type="setDelay">-5</e>
+			<f>BaryonUK_13</f>	
+			<e type="setDelay">-5</e>	
+			<f>BaryonUK_14</f>	
+	
+			
+		</frame>
+	</action>
+
+</unit>

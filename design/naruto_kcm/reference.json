@@ -1,0 +1,17 @@
+{
+  "character": "Naruto Adult KCM / Baryon",
+  "archive_id": "file_0000000079c8820ca740365e2a1d223c",
+  "video_id": "file_0000000017a0820dbf049d4e77eecb32",
+  "video_sha256": "e41b6ad3d330bb7dc9f44cf19aed59dee7a829e81d799ad2db83c177049b2850",
+  "video_duration": 178.282812,
+  "source_frames": 215,
+  "valid_frames": 198,
+  "excluded_cells": 17,
+  "base": "Original gold KCM sprites",
+  "awakening": "Original red Baryon sprites, down + Pause, twenty seconds",
+  "ultimate_damage": [
+    300,
+    360
+  ],
+  "own_life_cost": 0
+}

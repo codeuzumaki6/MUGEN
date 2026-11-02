@@ -1,0 +1,140 @@
+{
+  "character": "NarutoKCM",
+  "frames": 538,
+  "cases": 12,
+  "duration": 54.53333333333333,
+  "video": "NarutoKCM_motor.mp4",
+  "sha256": "e73c654a3e361a63aefb6029f9b6274d12632b7735bd0c209efa1140b02d4232",
+  "audio": "Actual engine SDL stereo; no offline sound effects",
+  "activations": [
+    {
+      "case": 0,
+      "cue_frame": 29,
+      "state": 1000,
+      "correlation": 0.5547649652172298,
+      "actual_sample_seconds": 4.876190476190477,
+      "voice": "Shared/startup",
+      "anchor": "Shared startup effect"
+    },
+    {
+      "case": 1,
+      "cue_frame": 689,
+      "state": 1010,
+      "correlation": 0.9216968123877946,
+      "actual_sample_seconds": 15.928888888888888,
+      "voice": "BTM/NAttack02",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 2,
+      "cue_frame": 1349,
+      "state": 1030,
+      "correlation": 0.6756396260605957,
+      "actual_sample_seconds": 27.028027210884353,
+      "voice": "BTM/heaa",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 3,
+      "cue_frame": 2009,
+      "state": 1430,
+      "correlation": 0.8418282709445613,
+      "actual_sample_seconds": 38.12716553287982,
+      "voice": "BTM/Nrto OdamaRsg",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 4,
+      "cue_frame": 2669,
+      "state": 1440,
+      "correlation": 0.8941031162225873,
+      "actual_sample_seconds": 49.27274376417233,
+      "voice": "BTM/kurama2",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 5,
+      "cue_frame": 3329,
+      "state": 3000,
+      "correlation": 0.7656804104028151,
+      "actual_sample_seconds": 60.232562358276645,
+      "voice": "BTM/Kurama_combo",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 6,
+      "cue_frame": 3989,
+      "state": 520,
+      "correlation": 0.9087236605173659,
+      "actual_sample_seconds": 71.23882086167801,
+      "voice": "BTM/NarutoBaryon",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 7,
+      "cue_frame": 4649,
+      "state": 11000,
+      "correlation": 0.921696607794293,
+      "actual_sample_seconds": 82.24507936507936,
+      "voice": "BTM/NAttack02",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 8,
+      "cue_frame": 5309,
+      "state": 11020,
+      "correlation": 0.8656020980065712,
+      "actual_sample_seconds": 93.15845804988662,
+      "voice": "BTM/NAttack02",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 9,
+      "cue_frame": 5969,
+      "state": 11040,
+      "correlation": 0.9178170801588105,
+      "actual_sample_seconds": 104.11827664399092,
+      "voice": "BTM/NAttack02",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 10,
+      "cue_frame": 6629,
+      "state": 11440,
+      "correlation": 0.8268613156014276,
+      "actual_sample_seconds": 115.17097505668934,
+      "voice": "BTM/NarutoBaryon",
+      "anchor": "Original Naruto KCM pack startup sample"
+    },
+    {
+      "case": 11,
+      "cue_frame": 7289,
+      "state": 13000,
+      "correlation": 0.908723777118766,
+      "actual_sample_seconds": 126.03791383219955,
+      "voice": "BTM/NarutoBaryon",
+      "anchor": "Original Naruto KCM pack startup sample"
+    }
+  ],
+  "runtime_sha256": "abd9cc45dc1298b647c051a4c53ae12cc0a1938e55d260800f74ead024d8b9d9",
+  "ultimate_excerpt": {
+    "video": "NarutoKCM_ultimate_motor.mp4",
+    "sha256": "d114e48e1dd907b396e81706675d421346df33e75a2e93d4c0684dcde71eace5",
+    "segments": [
+      {
+        "case": 5,
+        "form": 0,
+        "start": 21.0,
+        "end": 27.3
+      },
+      {
+        "case": 11,
+        "form": 1,
+        "start": 48.26666666666667,
+        "end": 54.53333333333334
+      }
+    ],
+    "duration": 12.566666666666666,
+    "source": "Excerpt of the actual engine recording, with its captured audio"
+  }
+}
